@@ -7,21 +7,24 @@
       "labels": 2,
       "monomials": 6,
       "coefficient_span_dimension": 3,
-      "univariate_degree_bound": 10
+      "univariate_degree_bound": 10,
+      "complete_cut_reciprocity_identities": 6
     },
     {
       "length": 6,
       "labels": 5,
       "monomials": 10,
       "coefficient_span_dimension": 4,
-      "univariate_degree_bound": 21
+      "univariate_degree_bound": 21,
+      "complete_cut_reciprocity_identities": 10
     },
     {
       "length": 8,
       "labels": 13,
       "monomials": 15,
       "coefficient_span_dimension": 7,
-      "univariate_degree_bound": 36
+      "univariate_degree_bound": 36,
+      "complete_cut_reciprocity_identities": 15
     }
   ],
   "independent_magnetic_entry_controls": 40,
@@ -57,7 +60,7 @@
   "source_sha256": {
     "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
     "tools/bounded_spin_six_vertex.py": "fba0658d6ad3dd1b308f61420ca6e3d17533a8e2eace2f66dbe5a9e5bbe907f8",
-    "tools/check_bounded_spin_six_vertex.py": "ea464a6441e74f3e2212d7b38d1a1809b7616d1629b193aaf69e8039633b2971",
+    "tools/check_bounded_spin_six_vertex.py": "33b024282f4f31b7f39a4fdeb989915e2516ba13ed2b7a07cc3b713144727c79",
     "tools/check_bounded_spin_rank_algebra.py": "67fe2140c08db6ebf482c7380343d1ab9db4e09a16647d8d030eb7ccd9a37a16"
   }
 }

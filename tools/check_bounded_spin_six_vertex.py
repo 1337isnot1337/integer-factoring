@@ -133,9 +133,14 @@ def check():
         # from the coefficient tensors of the univariate construction.
         substitution = np.array([unveil_coefficients({m:1},n) for m in monomials])
         assert rank(substitution) == len(monomials)
+        row_cut,column_cut = operators(t,n)
+        slots = {m:i for i,m in enumerate(monomials)}
+        for i,(a,b,c) in enumerate(monomials):
+            assert np.array_equal(row_cut[i],column_cut[slots[c,b,a]])
         cases.append({'length':n,'labels':len(ps),'monomials':len(monomials),
                       'coefficient_span_dimension':rank(t.reshape(len(t),-1)),
-                      'univariate_degree_bound':n//2*(n+1)})
+                      'univariate_degree_bound':n//2*(n+1),
+                      'complete_cut_reciprocity_identities':len(monomials)})
 
     # Recover the old pencil as u=1,v=(1-z)^2,w=z^2, entry by entry.
     old = np.zeros((9,)+t.shape[1:],dtype=np.int64)
@@ -143,6 +148,8 @@ def check():
         for j in range(2*b+1):
             old[2*c+j] = (old[2*c+j]+comb(2*b,j)*(-1)**j*tensor) % 5
     assert np.array_equal(old,coefficient_tensor(8))
+    old_row,old_column = operators(old,8)
+    assert np.array_equal(old_row,old_column[::-1])
     basis = np.concatenate((old[[0,2,3,5,4,6]],t[0,None,:]))
     assert rank(basis.reshape(7,-1)) == 7
     modules = []

@@ -1,0 +1,257 @@
+{
+  "claim_scope": "Parameter and finite combinatorial checks; no norm finder.",
+  "kernel": {
+    "exact_kernel_grid_points": 2049,
+    "shell_error_discriminant_bits": [
+      2,
+      3,
+      7,
+      32,
+      1024,
+      262144,
+      1000000,
+      100000000
+    ]
+  },
+  "band_coefficients": {
+    "tested_band_counts": 64,
+    "examples": [
+      {
+        "bands": 1,
+        "largest_index": 0,
+        "largest_coefficient_bits": 1
+      },
+      {
+        "bands": 2,
+        "largest_index": 1,
+        "largest_coefficient_bits": 2
+      },
+      {
+        "bands": 8,
+        "largest_index": 28,
+        "largest_coefficient_bits": 20
+      },
+      {
+        "bands": 32,
+        "largest_index": 496,
+        "largest_coefficient_bits": 153
+      },
+      {
+        "bands": 64,
+        "largest_index": 2016,
+        "largest_coefficient_bits": 376
+      }
+    ]
+  },
+  "weighted_selection": {
+    "distinct_choice_examples": [
+      {
+        "bands": 1,
+        "objects": 8,
+        "ordered_mass_bits": 4,
+        "direct_lower_bound_bits": 4
+      },
+      {
+        "bands": 2,
+        "objects": 32,
+        "ordered_mass_bits": 11,
+        "direct_lower_bound_bits": 11
+      },
+      {
+        "bands": 3,
+        "objects": 72,
+        "ordered_mass_bits": 20,
+        "direct_lower_bound_bits": 19
+      },
+      {
+        "bands": 4,
+        "objects": 128,
+        "ordered_mass_bits": 30,
+        "direct_lower_bound_bits": 29
+      },
+      {
+        "bands": 5,
+        "objects": 200,
+        "ordered_mass_bits": 41,
+        "direct_lower_bound_bits": 39
+      },
+      {
+        "bands": 6,
+        "objects": 288,
+        "ordered_mass_bits": 52,
+        "direct_lower_bound_bits": 51
+      },
+      {
+        "bands": 7,
+        "objects": 392,
+        "ordered_mass_bits": 64,
+        "direct_lower_bound_bits": 62
+      },
+      {
+        "bands": 8,
+        "objects": 512,
+        "ordered_mass_bits": 76,
+        "direct_lower_bound_bits": 74
+      }
+    ]
+  },
+  "parameters": {
+    "eligible_parameter_cases": 4,
+    "parameter_cases": [
+      {
+        "discriminant_bits": 2,
+        "ceil_log_two_bits": 1,
+        "smoothness_exponent": 4,
+        "radius_exponent": -2,
+        "eligible": false,
+        "conditions": {
+          "u_at_least_four": false
+        }
+      },
+      {
+        "discriminant_bits": 64,
+        "ceil_log_two_bits": 6,
+        "smoothness_exponent": 56,
+        "radius_exponent": 29,
+        "eligible": false,
+        "conditions": {
+          "u_at_least_four": false
+        }
+      },
+      {
+        "discriminant_bits": 1024,
+        "ceil_log_two_bits": 10,
+        "smoothness_exponent": 287,
+        "radius_exponent": 509,
+        "eligible": false,
+        "conditions": {
+          "u_at_least_four": false
+        }
+      },
+      {
+        "discriminant_bits": 65536,
+        "ceil_log_two_bits": 16,
+        "smoothness_exponent": 2897,
+        "radius_exponent": 32765,
+        "eligible": false,
+        "conditions": {
+          "u_at_least_four": true,
+          "wide_prime_bands": true,
+          "analytic_shell_floor": false,
+          "distinct_prime_budget": true,
+          "final_prime_budget": true
+        },
+        "eta_denominator": 4,
+        "band_count": 15
+      },
+      {
+        "discriminant_bits": 131072,
+        "ceil_log_two_bits": 17,
+        "smoothness_exponent": 4223,
+        "radius_exponent": 65533,
+        "eligible": false,
+        "conditions": {
+          "u_at_least_four": true,
+          "wide_prime_bands": true,
+          "analytic_shell_floor": false,
+          "distinct_prime_budget": true,
+          "final_prime_budget": true
+        },
+        "eta_denominator": 4,
+        "band_count": 20
+      },
+      {
+        "discriminant_bits": 262144,
+        "ceil_log_two_bits": 18,
+        "smoothness_exponent": 6144,
+        "radius_exponent": 131069,
+        "eligible": true,
+        "conditions": {
+          "u_at_least_four": true,
+          "wide_prime_bands": true,
+          "analytic_shell_floor": true,
+          "distinct_prime_budget": true,
+          "final_prime_budget": true
+        },
+        "eta_denominator": 5,
+        "band_count": 26,
+        "norm_multiplicity": 55,
+        "relation_diagonal": 56,
+        "density_denominator_bits": 410,
+        "sample_cutoff_bits": 14170,
+        "largest_prime_cutoff_bits": 14170,
+        "guaranteed_norm_bits": 276308,
+        "accepted_norm_bits_upper_bound": 779350
+      },
+      {
+        "discriminant_bits": 1000000,
+        "ceil_log_two_bits": 20,
+        "smoothness_exponent": 12650,
+        "radius_exponent": 499997,
+        "eligible": true,
+        "conditions": {
+          "u_at_least_four": true,
+          "wide_prime_bands": true,
+          "analytic_shell_floor": true,
+          "distinct_prime_budget": true,
+          "final_prime_budget": true
+        },
+        "eta_denominator": 6,
+        "band_count": 47,
+        "norm_multiplicity": 97,
+        "relation_diagonal": 98,
+        "density_denominator_bits": 754,
+        "sample_cutoff_bits": 25227,
+        "largest_prime_cutoff_bits": 25227,
+        "guaranteed_norm_bits": 1025221,
+        "accepted_norm_bits_upper_bound": 2447019
+      },
+      {
+        "discriminant_bits": 10000000,
+        "ceil_log_two_bits": 24,
+        "smoothness_exponent": 43818,
+        "radius_exponent": 4999997,
+        "eligible": true,
+        "conditions": {
+          "u_at_least_four": true,
+          "wide_prime_bands": true,
+          "analytic_shell_floor": true,
+          "distinct_prime_budget": true,
+          "final_prime_budget": true
+        },
+        "eta_denominator": 7,
+        "band_count": 131,
+        "norm_multiplicity": 265,
+        "relation_diagonal": 266,
+        "density_denominator_bits": 2221,
+        "sample_cutoff_bits": 72299,
+        "largest_prime_cutoff_bits": 72299,
+        "guaranteed_norm_bits": 10072293,
+        "accepted_norm_bits_upper_bound": 19159235
+      },
+      {
+        "discriminant_bits": 100000000,
+        "ceil_log_two_bits": 27,
+        "smoothness_exponent": 146970,
+        "radius_exponent": 49999997,
+        "eligible": true,
+        "conditions": {
+          "u_at_least_four": true,
+          "wide_prime_bands": true,
+          "analytic_shell_floor": true,
+          "distinct_prime_budget": true,
+          "final_prime_budget": true
+        },
+        "eta_denominator": 9,
+        "band_count": 379,
+        "norm_multiplicity": 761,
+        "relation_diagonal": 762,
+        "density_denominator_bits": 7017,
+        "sample_cutoff_bits": 225859,
+        "largest_prime_cutoff_bits": 225859,
+        "guaranteed_norm_bits": 100225853,
+        "accepted_norm_bits_upper_bound": 171878699
+      }
+    ]
+  }
+}

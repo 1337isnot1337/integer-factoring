@@ -1,0 +1,276 @@
+{
+  "claim_scope": "Existence parameters and decoding costs; no target-norm selector.",
+  "binomial_inequality_cases": 8256,
+  "convolution": {
+    "exact_rational_convolution_examples": [
+      {
+        "cyclic_order": 3,
+        "powers_checked": 6
+      },
+      {
+        "cyclic_order": 4,
+        "powers_checked": 6
+      },
+      {
+        "cyclic_order": 5,
+        "powers_checked": 6
+      },
+      {
+        "cyclic_order": 6,
+        "powers_checked": 6
+      },
+      {
+        "cyclic_order": 7,
+        "powers_checked": 6
+      },
+      {
+        "cyclic_order": 8,
+        "powers_checked": 6
+      },
+      {
+        "cyclic_order": 9,
+        "powers_checked": 6
+      },
+      {
+        "cyclic_order": 10,
+        "powers_checked": 6
+      },
+      {
+        "cyclic_order": 11,
+        "powers_checked": 6
+      },
+      {
+        "cyclic_order": 12,
+        "powers_checked": 6
+      }
+    ],
+    "complex_checks": "Diagnostic only; tolerance 1e-12, not used by parameter proofs."
+  },
+  "parameters": {
+    "eligible_balanced_cases": 3,
+    "balanced_cases": [
+      {
+        "discriminant_bits": 2,
+        "smoothness_exponent": 32,
+        "root_base_exponent": 1,
+        "radius_exponent": -2,
+        "smooth_form_multiplicity": -1,
+        "sample_bias_bits": -15,
+        "eligible": false,
+        "conditions": {
+          "positive_smooth_multiplicity": false,
+          "positive_sample_bias_bits": false,
+          "analytic_shell_floor": false,
+          "enough_distinct_primes": true
+        }
+      },
+      {
+        "discriminant_bits": 1024,
+        "smoothness_exponent": 32,
+        "root_base_exponent": 1,
+        "radius_exponent": 509,
+        "smooth_form_multiplicity": 15,
+        "sample_bias_bits": -23,
+        "eligible": false,
+        "conditions": {
+          "positive_smooth_multiplicity": true,
+          "positive_sample_bias_bits": false,
+          "analytic_shell_floor": false,
+          "enough_distinct_primes": true
+        }
+      },
+      {
+        "discriminant_bits": 1000000,
+        "smoothness_exponent": 736,
+        "root_base_exponent": 23,
+        "radius_exponent": 499997,
+        "smooth_form_multiplicity": 679,
+        "sample_bias_bits": -11,
+        "eligible": false,
+        "conditions": {
+          "positive_smooth_multiplicity": true,
+          "positive_sample_bias_bits": false,
+          "analytic_shell_floor": false,
+          "enough_distinct_primes": true
+        }
+      },
+      {
+        "discriminant_bits": 10000000,
+        "smoothness_exponent": 2240,
+        "root_base_exponent": 70,
+        "radius_exponent": 4999997,
+        "smooth_form_multiplicity": 2232,
+        "sample_bias_bits": 33,
+        "eligible": true,
+        "conditions": {
+          "positive_smooth_multiplicity": true,
+          "positive_sample_bias_bits": true,
+          "analytic_shell_floor": true,
+          "enough_distinct_primes": true
+        },
+        "density_bias_bits": 61175,
+        "walk_steps": 1854,
+        "norm_multiplicity": 6318,
+        "relation_diagonal": 6319,
+        "guaranteed_norm_log_two_bound": 14152954,
+        "accepted_norm_log_two_bound": 14152320,
+        "orientation_table_exponent": 3159,
+        "batch_orientation_exponent": 5399,
+        "density_denominator_bits": 61173,
+        "sample_cutoff_bits": 2226
+      },
+      {
+        "discriminant_bits": 100000000,
+        "smoothness_exponent": 7072,
+        "root_base_exponent": 221,
+        "radius_exponent": 49999997,
+        "smooth_form_multiplicity": 7070,
+        "sample_bias_bits": 181,
+        "eligible": true,
+        "conditions": {
+          "positive_smooth_multiplicity": true,
+          "positive_sample_bias_bits": true,
+          "analytic_shell_floor": true,
+          "enough_distinct_primes": true
+        },
+        "density_bias_bits": 217157,
+        "walk_steps": 1200,
+        "norm_multiplicity": 15340,
+        "relation_diagonal": 15341,
+        "guaranteed_norm_log_two_bound": 108486394,
+        "accepted_norm_log_two_bound": 108484480,
+        "orientation_table_exponent": 7670,
+        "batch_orientation_exponent": 14742,
+        "density_denominator_bits": 217155,
+        "sample_cutoff_bits": 7068
+      },
+      {
+        "discriminant_bits": 10000000000,
+        "smoothness_exponent": 70720,
+        "root_base_exponent": 2210,
+        "radius_exponent": 4999999997,
+        "smooth_form_multiplicity": 70701,
+        "sample_bias_bits": 2163,
+        "eligible": true,
+        "conditions": {
+          "positive_smooth_multiplicity": true,
+          "positive_sample_bias_bits": true,
+          "analytic_shell_floor": true,
+          "enough_distinct_primes": true
+        },
+        "density_bias_bits": 2656756,
+        "walk_steps": 1229,
+        "norm_multiplicity": 142631,
+        "relation_diagonal": 142632,
+        "guaranteed_norm_log_two_bound": 10086914874,
+        "accepted_norm_log_two_bound": 10086864320,
+        "orientation_table_exponent": 71316,
+        "batch_orientation_exponent": 142036,
+        "density_denominator_bits": 2656754,
+        "sample_cutoff_bits": 70705
+      }
+    ],
+    "custom_width_cases": [
+      {
+        "discriminant_bits": 100000000,
+        "smoothness_exponent": 4096,
+        "root_base_exponent": 128,
+        "radius_exponent": 49999997,
+        "smooth_form_multiplicity": 12207,
+        "sample_bias_bits": 88,
+        "eligible": true,
+        "conditions": {
+          "positive_smooth_multiplicity": true,
+          "positive_sample_bias_bits": true,
+          "analytic_shell_floor": true,
+          "enough_distinct_primes": true
+        },
+        "density_bias_bits": 373391,
+        "walk_steps": 4244,
+        "norm_multiplicity": 28658,
+        "relation_diagonal": 28659,
+        "guaranteed_norm_log_two_bound": 117383418,
+        "accepted_norm_log_two_bound": 117383168,
+        "orientation_table_exponent": 14329,
+        "batch_orientation_exponent": 18425,
+        "density_denominator_bits": 373389,
+        "sample_cutoff_bits": 4092
+      },
+      {
+        "discriminant_bits": 100000000,
+        "smoothness_exponent": 8192,
+        "root_base_exponent": 256,
+        "radius_exponent": 49999997,
+        "smooth_form_multiplicity": 6103,
+        "sample_bias_bits": 216,
+        "eligible": true,
+        "conditions": {
+          "positive_smooth_multiplicity": true,
+          "positive_sample_bias_bits": true,
+          "analytic_shell_floor": true,
+          "enough_distinct_primes": true
+        },
+        "density_bias_bits": 190854,
+        "walk_steps": 884,
+        "norm_multiplicity": 13090,
+        "relation_diagonal": 13091,
+        "guaranteed_norm_log_two_bound": 107241722,
+        "accepted_norm_log_two_bound": 107233280,
+        "orientation_table_exponent": 6545,
+        "batch_orientation_exponent": 14737,
+        "density_denominator_bits": 190852,
+        "sample_cutoff_bits": 8188
+      },
+      {
+        "discriminant_bits": 100000000,
+        "smoothness_exponent": 16384,
+        "root_base_exponent": 512,
+        "radius_exponent": 49999997,
+        "smooth_form_multiplicity": 3051,
+        "sample_bias_bits": 472,
+        "eligible": true,
+        "conditions": {
+          "positive_smooth_multiplicity": true,
+          "positive_sample_bias_bits": true,
+          "analytic_shell_floor": true,
+          "enough_distinct_primes": true
+        },
+        "density_bias_bits": 105730,
+        "walk_steps": 225,
+        "norm_multiplicity": 6327,
+        "relation_diagonal": 6328,
+        "guaranteed_norm_log_two_bound": 103686394,
+        "accepted_norm_log_two_bound": 103661568,
+        "orientation_table_exponent": 3164,
+        "batch_orientation_exponent": 19548,
+        "density_denominator_bits": 105728,
+        "sample_cutoff_bits": 16380
+      },
+      {
+        "discriminant_bits": 100000000,
+        "smoothness_exponent": 32768,
+        "root_base_exponent": 1024,
+        "radius_exponent": 49999997,
+        "smooth_form_multiplicity": 1525,
+        "sample_bias_bits": 984,
+        "eligible": true,
+        "conditions": {
+          "positive_smooth_multiplicity": true,
+          "positive_sample_bias_bits": true,
+          "analytic_shell_floor": true,
+          "enough_distinct_primes": true
+        },
+        "density_bias_bits": 75455,
+        "walk_steps": 77,
+        "norm_multiplicity": 3127,
+        "relation_diagonal": 3128,
+        "guaranteed_norm_log_two_bound": 102523130,
+        "accepted_norm_log_two_bound": 102465536,
+        "orientation_table_exponent": 1564,
+        "batch_orientation_exponent": 34332,
+        "density_denominator_bits": 75453,
+        "sample_cutoff_bits": 32764
+      }
+    ]
+  }
+}

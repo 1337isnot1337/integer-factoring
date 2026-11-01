@@ -324,8 +324,19 @@ dimension 28. Uniform favorable ranks remain open. Run the optional
 The [modular interface](research/bounded-spin-modular-interface.md)
 connects these constructors to the existing fixed-characteristic transfer:
 dense rank factors meet its cost bound, and the original coefficient
-space also permits automatic selection. A favorable uniform rank
+space permits automatic selection even from existential decompositions
+over extensions of degree `2^o(lambda)`. A favorable uniform rank
 estimate is still missing.
+The [constant-state spin projector](research/bounded-spin-projector.md)
+uses thirty states, or sixty for exact binary label selection, and
+preserves the encoded rank problem under ambient extension. An exact
+coefficient involution also identifies the two cut operator spaces.
+Run the optional `make verify-bounded-spin-projector`.
+The [bounded-support rank factors](research/bounded-spin-support-ranks.md)
+give explicit `O(L^(4/3))` channels for the shared extreme coefficient,
+below the post-half scale for that piece. Sublinear corner bands still
+cannot span the crossing; a complete favorable decomposition remains
+open. Run `make verify-bounded-spin-support`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

@@ -1,0 +1,372 @@
+{
+  "claim_scope": "Root and factor-base arithmetic; no norm selection algorithm.",
+  "square_roots": {
+    "small_prime_count": 168,
+    "complete_residue_decisions": 76127,
+    "largest_small_nonresidue": 13,
+    "stats": {
+      "legendre_tests": 75958,
+      "direct_exponent_roots": 19705,
+      "nonresidue_tests": 35162,
+      "largest_nonresidue": 7,
+      "order_test_squarings": 37413,
+      "tonelli_rounds": 18377
+    },
+    "large_two_power_controls": [
+      {
+        "prime": 65537,
+        "stats": {
+          "legendre_tests": 7,
+          "nonresidue_tests": 10,
+          "largest_nonresidue": 3,
+          "order_test_squarings": 143,
+          "tonelli_rounds": 20
+        }
+      },
+      {
+        "prime": 998244353,
+        "stats": {
+          "legendre_tests": 7,
+          "nonresidue_tests": 10,
+          "largest_nonresidue": 3,
+          "order_test_squarings": 371,
+          "tonelli_rounds": 39
+        }
+      },
+      {
+        "prime": 2013265921,
+        "stats": {
+          "legendre_tests": 7,
+          "nonresidue_tests": 50,
+          "largest_nonresidue": 11,
+          "order_test_squarings": 670,
+          "tonelli_rounds": 51
+        }
+      }
+    ]
+  },
+  "factor_bases": {
+    "discriminant_count": 22,
+    "prime_cutoff": 499,
+    "records_compared": 987,
+    "examples": [
+      {
+        "discriminant": -3,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 24,
+          "nonresidue_tests": 52,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 37,
+          "tonelli_rounds": 20,
+          "primes_tested": 95,
+          "split_prime_records": 45,
+          "excluded_discriminant_primes": 1
+        }
+      },
+      {
+        "discriminant": -4,
+        "stats": {
+          "legendre_tests": 94,
+          "nonresidue_tests": 86,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 40,
+          "tonelli_rounds": 21,
+          "primes_tested": 95,
+          "split_prime_records": 44,
+          "excluded_discriminant_primes": 1
+        }
+      },
+      {
+        "discriminant": -7,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 25,
+          "nonresidue_tests": 35,
+          "largest_nonresidue": 5,
+          "order_test_squarings": 33,
+          "tonelli_rounds": 19,
+          "primes_tested": 95,
+          "split_prime_records": 46,
+          "excluded_discriminant_primes": 1
+        }
+      },
+      {
+        "discriminant": -8,
+        "stats": {
+          "legendre_tests": 94,
+          "direct_exponent_roots": 25,
+          "nonresidue_tests": 62,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 80,
+          "tonelli_rounds": 37,
+          "primes_tested": 95,
+          "split_prime_records": 45,
+          "excluded_discriminant_primes": 1
+        }
+      },
+      {
+        "discriminant": -11,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 25,
+          "nonresidue_tests": 37,
+          "largest_nonresidue": 5,
+          "order_test_squarings": 59,
+          "tonelli_rounds": 26,
+          "primes_tested": 95,
+          "split_prime_records": 46,
+          "excluded_discriminant_primes": 1
+        }
+      },
+      {
+        "discriminant": -15,
+        "stats": {
+          "legendre_tests": 92,
+          "nonresidue_tests": 35,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 31,
+          "tonelli_rounds": 17,
+          "direct_exponent_roots": 23,
+          "primes_tested": 95,
+          "split_prime_records": 43,
+          "excluded_discriminant_primes": 2
+        }
+      },
+      {
+        "discriminant": -16,
+        "stats": {
+          "legendre_tests": 94,
+          "nonresidue_tests": 86,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 49,
+          "tonelli_rounds": 42,
+          "primes_tested": 95,
+          "split_prime_records": 44,
+          "excluded_discriminant_primes": 1
+        }
+      },
+      {
+        "discriminant": -20,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 24,
+          "nonresidue_tests": 34,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 22,
+          "tonelli_rounds": 13,
+          "primes_tested": 95,
+          "split_prime_records": 43,
+          "excluded_discriminant_primes": 2
+        }
+      },
+      {
+        "discriminant": -23,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 26,
+          "nonresidue_tests": 35,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 54,
+          "tonelli_rounds": 26,
+          "primes_tested": 95,
+          "split_prime_records": 46,
+          "excluded_discriminant_primes": 1
+        }
+      },
+      {
+        "discriminant": -24,
+        "stats": {
+          "legendre_tests": 93,
+          "nonresidue_tests": 52,
+          "largest_nonresidue": 7,
+          "direct_exponent_roots": 26,
+          "order_test_squarings": 39,
+          "tonelli_rounds": 22,
+          "primes_tested": 95,
+          "split_prime_records": 47,
+          "excluded_discriminant_primes": 2
+        }
+      },
+      {
+        "discriminant": -27,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 24,
+          "nonresidue_tests": 52,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 40,
+          "tonelli_rounds": 23,
+          "primes_tested": 95,
+          "split_prime_records": 45,
+          "excluded_discriminant_primes": 1
+        }
+      },
+      {
+        "discriminant": -31,
+        "stats": {
+          "legendre_tests": 93,
+          "nonresidue_tests": 30,
+          "largest_nonresidue": 5,
+          "order_test_squarings": 53,
+          "tonelli_rounds": 21,
+          "direct_exponent_roots": 24,
+          "primes_tested": 95,
+          "split_prime_records": 44,
+          "excluded_discriminant_primes": 1
+        }
+      },
+      {
+        "discriminant": -36,
+        "stats": {
+          "legendre_tests": 93,
+          "nonresidue_tests": 86,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 86,
+          "tonelli_rounds": 41,
+          "primes_tested": 95,
+          "split_prime_records": 44,
+          "excluded_discriminant_primes": 2
+        }
+      },
+      {
+        "discriminant": -40,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 25,
+          "nonresidue_tests": 33,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 28,
+          "tonelli_rounds": 15,
+          "primes_tested": 95,
+          "split_prime_records": 43,
+          "excluded_discriminant_primes": 2
+        }
+      },
+      {
+        "discriminant": -44,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 25,
+          "nonresidue_tests": 37,
+          "largest_nonresidue": 5,
+          "order_test_squarings": 60,
+          "tonelli_rounds": 25,
+          "primes_tested": 95,
+          "split_prime_records": 46,
+          "excluded_discriminant_primes": 2
+        }
+      },
+      {
+        "discriminant": -48,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 24,
+          "nonresidue_tests": 52,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 32,
+          "tonelli_rounds": 18,
+          "primes_tested": 95,
+          "split_prime_records": 45,
+          "excluded_discriminant_primes": 2
+        }
+      },
+      {
+        "discriminant": -63,
+        "stats": {
+          "legendre_tests": 92,
+          "direct_exponent_roots": 25,
+          "nonresidue_tests": 35,
+          "largest_nonresidue": 5,
+          "order_test_squarings": 31,
+          "tonelli_rounds": 19,
+          "primes_tested": 95,
+          "split_prime_records": 46,
+          "excluded_discriminant_primes": 2
+        }
+      },
+      {
+        "discriminant": -84,
+        "stats": {
+          "legendre_tests": 92,
+          "nonresidue_tests": 33,
+          "largest_nonresidue": 5,
+          "direct_exponent_roots": 24,
+          "order_test_squarings": 33,
+          "tonelli_rounds": 17,
+          "primes_tested": 95,
+          "split_prime_records": 43,
+          "excluded_discriminant_primes": 3
+        }
+      },
+      {
+        "discriminant": -92,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 26,
+          "nonresidue_tests": 35,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 37,
+          "tonelli_rounds": 17,
+          "primes_tested": 95,
+          "split_prime_records": 45,
+          "excluded_discriminant_primes": 2
+        }
+      },
+      {
+        "discriminant": -120,
+        "stats": {
+          "legendre_tests": 92,
+          "direct_exponent_roots": 23,
+          "nonresidue_tests": 36,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 39,
+          "tonelli_rounds": 19,
+          "primes_tested": 95,
+          "split_prime_records": 43,
+          "excluded_discriminant_primes": 3
+        }
+      },
+      {
+        "discriminant": -41612,
+        "stats": {
+          "legendre_tests": 92,
+          "direct_exponent_roots": 26,
+          "nonresidue_tests": 52,
+          "largest_nonresidue": 7,
+          "order_test_squarings": 34,
+          "tonelli_rounds": 17,
+          "primes_tested": 95,
+          "split_prime_records": 50,
+          "excluded_discriminant_primes": 3
+        }
+      },
+      {
+        "discriminant": -4145955690243,
+        "stats": {
+          "legendre_tests": 93,
+          "direct_exponent_roots": 27,
+          "nonresidue_tests": 34,
+          "largest_nonresidue": 5,
+          "order_test_squarings": 42,
+          "tonelli_rounds": 21,
+          "primes_tested": 95,
+          "split_prime_records": 44,
+          "excluded_discriminant_primes": 1
+        }
+      }
+    ]
+  },
+  "orientation_decoder": {
+    "small_positive_and_negative_controls": 2,
+    "large_input_norm_bits": 73,
+    "large_input_distinct_primes": 8,
+    "large_decoder_stats": {
+      "distinct_primes": 8,
+      "multiplicity": 15,
+      "group_multiplications": 73,
+      "left_products": 16,
+      "right_products_examined": 6
+    }
+  }
+}
