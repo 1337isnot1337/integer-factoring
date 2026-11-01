@@ -208,6 +208,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Exact nonlinear symbol-charge domain](nonlinear-symbol-charge-lattices.md): arbitrary physical-symbol potentials satisfy the full reflection coefficient inequalities exactly when their Hamming-cube Lipschitz constants sum to at most two; the four-symbol polytope has twelve vertices and sixty-four facets, including nonlinear parity charges.
 
 - [Finite fused six-vertex crossings](finite-fused-six-vertex-crossings.md): literal three- and four-symbol F16 fusion, exact common-factor cancellation, 24 independent binary profiles, and 144 replayed full-gauge starts; the completed finite searches remain uncompetitive.
+- [Binary scalar projection and a complete fused coefficient envelope](fused-scalar-projection-envelope.md): exhaustive rank-span separation excludes every binary decomposition in the 21-dimensional symmetric two-copy space, with an independent affine-hyperplane replay.
 
 - [Exact F4 regular row fibers](colored-regular-row-fibers.md): nonbinary polynomial row operations preserve a common binary affine floor, allowing exact compressed F4 synthesis with complete coefficient windows and literal untruncated tensor replays.
 

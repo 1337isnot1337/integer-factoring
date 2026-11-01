@@ -871,6 +871,15 @@ back to the 69-dimensional energy-block group. It also gives the exact
 extra pole in terms of the largest energy difference in the inverse gauge.
 Run `make verify-joint-filtered-gauges`.
 
+The [fused coefficient-envelope certificate](research/fused-scalar-projection-envelope.md)
+tests arbitrary binary recombinations after scalar projection of a complete
+two-copy crossing. All `2^21` vectors of the symmetric envelope were checked;
+the 17 tensors below the rank-product threshold span a space excluding the
+crossing. A different elimination algorithm independently checks the separating
+affine hyperplane. This rules out that entire finite envelope, with the full
+ordered space, higher powers and physical type restrictions still open.
+Run `make verify-fused-scalar-projection` (requires a C++17 compiler).
+
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
 `p`-group, with a constant nonzero determinant in characteristic `p`.

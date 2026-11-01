@@ -192,6 +192,10 @@ verify-joint-nilpotent-depths:
 verify-joint-filtered-gauges:
 	python3 tools/check_joint_filtered_gauges.py
 
+.PHONY: verify-fused-scalar-projection
+verify-fused-scalar-projection:
+	python3 tools/check_fused_scalar_projection.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
