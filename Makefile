@@ -2064,3 +2064,8 @@ verify-coherent-free-tail:
 	python3 tools/check_coherent_free_tail.py --output /tmp/integer-factoring-coherent-free-tail-controls.json
 verify-coherent-asymmetric-gauges:
 	python3 tools/check_coherent_asymmetric_gauges.py --output /tmp/integer-factoring-coherent-asymmetric-gauge-controls.json
+
+
+.PHONY: verify-cube-generic-smith
+verify-cube-generic-smith:
+	python3 tools/check_cube_generic_smith128.py --output /tmp/integer-factoring-cube-generic-smith128.json

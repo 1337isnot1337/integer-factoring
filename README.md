@@ -188,6 +188,12 @@ below `72/125 < 1/sqrt(3)`; no tensor realizing it is claimed.
 [Scalar color clones](research/cube-scalar-color-clone-floor.md) cannot
 realize that target: for at least 33 colors their profile pressure exceeds
 `3/4`. Proper interacting codes remain a constructive direction.
+
+The [generic specialization engine](research/cube-generic-smith-specialization.md)
+preserves every homogeneous minor valuation by evaluating in an extension field
+whose degree exceeds the complete minor-degree budget. Its F2 implementation
+uses degree 128, rejects larger budgets, and is checked against 96 known profiles
+and 12,869 independently enumerated minors.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence

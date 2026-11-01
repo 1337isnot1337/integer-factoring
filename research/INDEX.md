@@ -1131,3 +1131,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 - [A fixed active matrix for an arbitrarily long free tail](coherent-free-tail-reduction.md)
 - [Independent letter gauges at the two crossing cuts](coherent-asymmetric-letter-gauges.md)
+
+
+## Exact generic cube profile computation
+
+- [Generic Smith profiles from homogeneous finite-field specialization](cube-generic-smith-specialization.md)
