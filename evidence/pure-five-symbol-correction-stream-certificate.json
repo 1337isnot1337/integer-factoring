@@ -1,0 +1,90 @@
+{
+  "scope": "Complete historical pure-correction stream replay through explicit finite frames and the tracked-error profile engine; exact all-scale convolution comparison.",
+  "record": "evidence/pure-five-symbol-correction-search.json",
+  "record_sha256": "592f91fd836cbdfae91f84ae54d86d375503248655e85f4611ced21ff8457967",
+  "status": "passed",
+  "historical_source_provenance": {
+    "search_pure_five_symbol_corrections.py": {
+      "location": "worktree",
+      "sha256": "5c39e14b92164fbc7492a1248fa7b672bc2dff8a10adb843b4d1837513605ecb"
+    },
+    "pure_five_symbol_frames.py": {
+      "location": "worktree",
+      "sha256": "92c238c0bc638f6d36c93f9526b3fde09961f4c79e8f1c4187678639c34dd7a3"
+    },
+    "convolution_prefix_dominance.py": {
+      "location": "worktree",
+      "sha256": "007c7cd26e8700f5876a44326059a76a764b1db20731ab1ee95e8be9bdf4b819"
+    },
+    "native_rank_one_smith_f4.py": {
+      "location": "worktree",
+      "sha256": "f4ab4a1fe764e255849a83a54672018fb91e98503e759c663ad4d963fbd21fcf"
+    },
+    "native_rank_one_smith_f4.cpp": {
+      "location": "worktree",
+      "sha256": "92f37ba7b46e82a6bb3d00874a73a42f4e49b002f967f05056cb42ed77baa9e9"
+    },
+    "native_rectangular_smith_f4.cpp": {
+      "location": "worktree",
+      "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+    },
+    "f4_recentered_lattices.py": {
+      "location": "worktree",
+      "sha256": "64e72e1a3a2893ee1c36a8f65064b25a7f6c33dd1c519187b28cd80ea22d2d78"
+    },
+    "search_saturated_dual_directions.py": {
+      "location": "worktree",
+      "sha256": "004df609daab720110423f432b359a4ff12b0ec10bc1478e5e8548147a92016c"
+    },
+    "search_f4_recentered_crossings.py": {
+      "location": "worktree",
+      "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+    },
+    "native_matrix_smith_f4.py": {
+      "location": "worktree",
+      "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+    },
+    "native_matrix_smith_f4.cpp": {
+      "location": "worktree",
+      "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+    },
+    "weighted_smith_oracle_f4.py": {
+      "location": "worktree",
+      "sha256": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+    }
+  },
+  "checker_source_sha256": {
+    "check_pure_five_symbol_stream.py": "3530fcfc366d4375f9b4d9977cd7e49eb6ca7ae031487b834ea5bee5953b0202",
+    "native_certified_rank_one_smith_f4.py": "513c19f323b7c2588e26b486fe0ab2ca6d941c838b21faaf0c6394749a6715fd",
+    "native_certified_rank_one_smith_f4.cpp": "1076b594201d7bde0b661705ecf205125b0c11b4bdaa004c021e5169f61a07fe",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  },
+  "completed_requested_schedule": true,
+  "certified_tensor_queries": 192238,
+  "certified_complete_matrix_profiles": 768952,
+  "exact_frame_identity_entries": 2500,
+  "regular_constant_frame_ranks": 8,
+  "minimum_certified_pivot_error_margin": 488,
+  "minimum_frame_tail_transfer_margin": 73,
+  "certified_engine_calls_by_work_precision": {
+    "512": 768952
+  },
+  "matching_parameter_profile_stream_sha256": "bc3649c16e5c1861fa869569a966c03b518bcd164c8e7a1ac336c1f2d2713688",
+  "gauges": {
+    "natural": {
+      "dominated": 192238,
+      "nondominated": 0,
+      "distinct_profile_classes": 21493
+    },
+    "two_zero": {
+      "dominated": 192238,
+      "nondominated": 0,
+      "distinct_profile_classes": 26042
+    }
+  },
+  "all_tested_profile_products_pointwise_no_better_than_reference": true,
+  "additional_literal_tensor_replays": 24,
+  "additional_complete_polynomial_frame_profiles": 96,
+  "literal_endpoint_entries": 15000,
+  "elapsed_seconds": 400.9687262469997
+}

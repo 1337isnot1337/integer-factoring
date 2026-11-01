@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "checker_sha256": "2cd6cfabf2dcdb1b41de317d608153f620628f9e401e23a8b1cd3172a5a7f5db",
+  "natural": {
+    "record": "evidence/balanced-particle-extension-natural-search.json",
+    "record_sha256": "bdeef0ea904672a3afa504aa7fddae8486d932672963766bcd413415e3bd399c",
+    "source_provenance": {
+      "search_balanced_particle_extensions.py": {
+        "location": "worktree",
+        "sha256": "4e759c66fb8692d9f442b7200c20e258382bd5f7b77a6d23edd4791ddbdd2d0d"
+      },
+      "balanced_particle_extensions.py": {
+        "location": "worktree",
+        "sha256": "efa61dd3e921d2d642dca0863a13bd807ce22dac150a7b04bc04ba63af880168"
+      },
+      "balanced_four_particle_codes.py": {
+        "location": "worktree",
+        "sha256": "b1164944d90556e1a52b694e618dcc8f33cf4c1c51af26fdabb53caae831d008"
+      },
+      "selected_gaussian_coefficients.py": {
+        "location": "worktree",
+        "sha256": "eba892e833a2b61abc8af15fe57a31a7781670fe7287277371f5de9e89f91354"
+      },
+      "selected_gaussian_coefficients.cpp": {
+        "location": "worktree",
+        "sha256": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15"
+      },
+      "native_rectangular_smith_f4.cpp": {
+        "location": "worktree",
+        "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+      },
+      "native_matrix_smith_f4.py": {
+        "location": "worktree",
+        "sha256": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203"
+      },
+      "native_matrix_smith_f4.cpp": {
+        "location": "worktree",
+        "sha256": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+      },
+      "search_f4_recentered_crossings.py": {
+        "location": "worktree",
+        "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+      }
+    },
+    "complete_extension_tensors": 196,
+    "literal_complete_gaussian_minors": 201865,
+    "complete_integer_profiles_certified_by_regular_frames": 392,
+    "best_recorded_rho": 0.7226932545985394
+  },
+  "elapsed_seconds": 265.0720307060001
+}
