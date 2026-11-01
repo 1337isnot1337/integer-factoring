@@ -1,0 +1,2794 @@
+{
+  "arithmetic": "Exact rational controls and unsigned integer residues modulo powers of two",
+  "controls": {
+    "independent_rational_local_polynomials": 44,
+    "unique_four_dimensional_subspaces": 67
+  },
+  "full_eight_wire_search": true,
+  "positive_controls": [
+    {
+      "characters": 307,
+      "exact_witnesses": [
+        {
+          "basis": [],
+          "character": 0
+        },
+        {
+          "basis": [
+            5
+          ],
+          "character": 0
+        },
+        {
+          "basis": [
+            5
+          ],
+          "character": 1
+        }
+      ],
+      "length": 4,
+      "matrix_sha256": "e6ecef352824542d3cfc1710eedbf5ebd3b002e2d7b7c059c2dd0caeb5a0c02d",
+      "precision": 11,
+      "row": 5,
+      "spaces": 67,
+      "survivors": 3
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [
+        {
+          "basis": [],
+          "character": 0
+        },
+        {
+          "basis": [
+            85
+          ],
+          "character": 0
+        },
+        {
+          "basis": [
+            85
+          ],
+          "character": 1
+        }
+      ],
+      "length": 8,
+      "matrix_sha256": "32962fb404b86dee6a2f80230ba18132f741e566df31f780db350194f56daeda",
+      "precision": 31,
+      "row": 85,
+      "spaces": 417199,
+      "survivors": 3
+    }
+  ],
+  "rows": [
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "8414a1de33d0e466d6c24d743454b1a10b8d1de601b28bcf74a93033556a3fa9",
+      "precision": 12,
+      "row": 0,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "a70c5fb5877dea10445f2e02c5c52167e1f4d9e453e9769c8d85f30d93e360aa",
+      "precision": 12,
+      "row": 1,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "3a1bdacabc3e308c4535204f6f017c7984c7032aa7bb20c9045b1d888b09fb65",
+      "precision": 12,
+      "row": 2,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "841fdb600572ea3a451fc8443d950ccde8402acaa0c63b17be07a5862bcb02b1",
+      "precision": 12,
+      "row": 3,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "3c3466500e59393a5630fe3e4013cbc88744c3410b692448b512c0f4f8e3e442",
+      "precision": 12,
+      "row": 4,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "237de25c5d3ff8c7606e282cb8e71733439566b034d0b17ddfe0b0bb944a116d",
+      "precision": 12,
+      "row": 5,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "1f9948db582f84149065df32ecc777e286a5e859526429bab34c0938961c38fc",
+      "precision": 12,
+      "row": 6,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "97a707445e03205007658aa8f40d7a4c3516bf41c37ef90b7b23f864f6ca51c4",
+      "precision": 12,
+      "row": 7,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "13966a23766dd4a707a34f6405904657afec14f19070f673a19bf9964b362176",
+      "precision": 12,
+      "row": 8,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "0b155c97a8da31313aabca9654deaf3bf5b3c95ee5e417046d010826c2e57ad8",
+      "precision": 12,
+      "row": 9,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "1317abf5e1ccbec123c2a65dd76587aa174693a448ae67450796a357886e8bd4",
+      "precision": 12,
+      "row": 10,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "4311483c49e57c3a209a2d57824f080dbe5f99b34070ecb29b3fe29cd273860a",
+      "precision": 12,
+      "row": 11,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "0222f7a7b9e1fd04f43abf8cf96cc529ce1b2d7cc421d32ff3ce05aeaf817edb",
+      "precision": 12,
+      "row": 12,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "aa234e0a224a855756c2914a7d0ce2114da03d8e5667fa6d833de3c60003578c",
+      "precision": 12,
+      "row": 13,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "f7929e0ab43e1cf2e23e7de087dfe05b5012d59abc39ab8a843224c8538ee0e1",
+      "precision": 12,
+      "row": 14,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 307,
+      "exact_witnesses": [],
+      "length": 4,
+      "matrix_sha256": "070367e86127fe5a0ad971f73587825e2b3a35b9991316ac06adcfb72466414e",
+      "precision": 12,
+      "row": 15,
+      "spaces": 67,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "935d58a5889b0bf9648ffcd72860c14c1cf640d55c25a61251a468b780d71e6c",
+      "precision": 32,
+      "row": 0,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "cba7b6919e8de8b46ede42c737406d834bf1663784a73d69c70da646f7a38bd2",
+      "precision": 32,
+      "row": 1,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f33b2710c3793b550e9fa9312ff5f9a011078971f1b89869df40c50773eb740e",
+      "precision": 32,
+      "row": 2,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "cb7f303db94fbafefeb1d7cbbaeae5d80fb992db9dfb228831594b857b369a4b",
+      "precision": 32,
+      "row": 3,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "aff4466052b10a5949edca1e8aa22042b93483ef72cc34e3f453b1c7a249af5f",
+      "precision": 32,
+      "row": 4,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "6e86f3eee710359d6f956daf4cbf93712c908208e13cb51ed551fd3d5bba6225",
+      "precision": 32,
+      "row": 5,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e2605ad68b62cc6566b490648d2554f53bb38480cd346e81c014d58ec77b1c32",
+      "precision": 32,
+      "row": 6,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "64a5a20afb0b3a6fac58d0da338c3e2cdd8913e2a90bb31039c91c1f4fc023a2",
+      "precision": 32,
+      "row": 7,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4ef446405b0c0b7bad1667b03010810a85c7fb909cbf87d8d97b0a46a876554b",
+      "precision": 32,
+      "row": 8,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5b7c53d1513556adb5b40c16913a662bb507b78d718a1d430b3f512a5aec3621",
+      "precision": 32,
+      "row": 9,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "db0330dd34456c191918d296302d01cb1eff1fce04ae13496fbc38cedde054fe",
+      "precision": 32,
+      "row": 10,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "22cacfaa2c5e17d2dc92db483f422977e785e01970faa99d9d85c81d011ab628",
+      "precision": 32,
+      "row": 11,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "6767f5f5b6af5e3fe270d30396e370aba7a0b54bd423cef294bcf7e06e370306",
+      "precision": 32,
+      "row": 12,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f5afbb21290f16ddd800308d2941351777dd0386381b481321f510fc1cf51d14",
+      "precision": 32,
+      "row": 13,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "fb6e67ddc6f327a1d38a1a35aef07644435e15d0acb9be6899a4dc703e09fd70",
+      "precision": 32,
+      "row": 14,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "6a836a0f8485663eb7b2ba0c06dde687480e354979beb8b57860800f65896f5d",
+      "precision": 32,
+      "row": 15,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f98db643111796ddd8699db4db7abc7d6d77ffd05ff32ee3525f71521d24301e",
+      "precision": 32,
+      "row": 16,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "46e9291c1fa8efa48a0b2be9cf9cdb55b3d4bb80094c1d63ddc4488c9ff03aef",
+      "precision": 32,
+      "row": 17,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "cef11ae7e9b4f5c4abf0984dd5d6c774f6937f5b0f1342e345fa49d5fb5efeb6",
+      "precision": 32,
+      "row": 18,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "d13404b67fc585745ceb6a3474d4bff92faf0d7ee4b048f41d0e4a81ae9f926c",
+      "precision": 32,
+      "row": 19,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "de77cfaf4088ce56c612fecb4e1d8f67290b1ce7761ffa4dfe01e6f9888d85e0",
+      "precision": 32,
+      "row": 20,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "2f6b23b8a9f8e8182ce0b3c2e247c13e4e9e8fb16c15e0fd9de27b0640366239",
+      "precision": 32,
+      "row": 21,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "2920df2ae7a3585380c873f59b14746d69ce520160e55665649a4f0bf25c1bd5",
+      "precision": 32,
+      "row": 22,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4f08e2576fc22760d06eb7bae9c11601986fd4d9e0f5cd7b277d1a5aa3e96b6a",
+      "precision": 32,
+      "row": 23,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "a3405485a3f659f48eaba7528b0ddd90aa51a32291c3000e87879a739fe356f5",
+      "precision": 32,
+      "row": 24,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "fa5be3d76d724a19308fb2daa1f5b1c2d3660141630269b7c59be75cf92b9435",
+      "precision": 32,
+      "row": 25,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5a8b985e61943603ae6a24cc509f8ebbafb339f9f273af88d37f701c68075722",
+      "precision": 32,
+      "row": 26,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "26d2d6ba9275518664190feb488aa73c6d7e609d8a48358fe59ad100fa620ded",
+      "precision": 32,
+      "row": 27,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "93877d86c8d2feee4b75e715aba5480f07d47ba973d8e4dc132688d904d33878",
+      "precision": 32,
+      "row": 28,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "054ec41557ecfb3856c5b2d9a0e23daa0610b3ef5fb6006312cc423ef8d23666",
+      "precision": 32,
+      "row": 29,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "7527da3bf190e6f0619798922c79411469f9c5e999c385ea36a325b0fb9b090b",
+      "precision": 32,
+      "row": 30,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "ac0a67f51f7be4f553d1c9951a30db63bd0e60915590bde53726c1ce463342a5",
+      "precision": 32,
+      "row": 31,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "794d67545828a9055433892983e25f08157e29bb7f1f6a2c73b1d7c50450f459",
+      "precision": 32,
+      "row": 32,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "6075c60330e29ee1db8d932f164dd4448e6018fd25c4d18cfe88c43837e79602",
+      "precision": 32,
+      "row": 33,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "24fc264655c7d1182222410cf5219328078690d6479fa32c41a7a4e087b85fb4",
+      "precision": 32,
+      "row": 34,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c1d72bfdc322f56e31f84631978ff3f7d5ea7b6950c93bc998b7cbb636feeccf",
+      "precision": 32,
+      "row": 35,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "42f9e55df2ac76c282f8c5d0a1d448a7073a3794c3fed3c95883a4d615c8cfb6",
+      "precision": 32,
+      "row": 36,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "023e6e0597a78367b00ba1420cb9247089e1c5b51150c7186ae163ea8c13b5e8",
+      "precision": 32,
+      "row": 37,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "48a4c9da6efc47279fb31b5a3fc2227b9f5d411f2ee5cd0942538c2f2cc428b1",
+      "precision": 32,
+      "row": 38,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "8a1adff0e8e60ac469847267abf4d2e2fb68c0e0fe96856de41c4b583f2ffc0b",
+      "precision": 32,
+      "row": 39,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "ba28d1506a6054e3e67edfdd6f5752a45ce8833898468fc3ac5b4c08678a1cd4",
+      "precision": 32,
+      "row": 40,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "911cb01d9de5113dc67b1d82d0cd2dbd38bcd8f4655ed7049456355aebad59e9",
+      "precision": 32,
+      "row": 41,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "726cfbd7a87d1a5bc1481ac8ce85db3b5f447b155accf5b4a79aa59d2169a9ad",
+      "precision": 32,
+      "row": 42,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "bdebeed12ee6e7e43ba726eb273a2a898b8c13811ac6d6fd2be05fa3fd488bbc",
+      "precision": 32,
+      "row": 43,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "04e067fd84f1e9bdcd5c37b20f1bcd353aeeaecd9e1408c7fdafa4f472275540",
+      "precision": 32,
+      "row": 44,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "3b12e170c9df09123327452496b8bee031fc1d637a7498ce7dbf69bc6fd8fc0a",
+      "precision": 32,
+      "row": 45,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "baa54e2229944bbec85ee3561404e4ea6a9b56a4607816d32876a2d3427d7de2",
+      "precision": 32,
+      "row": 46,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "1c84f28811e0507f2249987a2c99ba57a1718abc7385af81436d6157a49e58ec",
+      "precision": 32,
+      "row": 47,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "b8a8d1c447ea488c43740fee473ff219f79f17a1e7530d85650c5d140479469a",
+      "precision": 32,
+      "row": 48,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "2ff08f3b65a2585d42c05926d7698c6f68b49a87f2e0fab860c693b8729c53fe",
+      "precision": 32,
+      "row": 49,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "469f96afefe5849d29ccc8cc401e6dd1464e28122a1b5b66b6f40a31fb68f0b1",
+      "precision": 32,
+      "row": 50,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4e1408cb9bd7e9d7640f5a84a42c6fb25f0e8260affdf0ffd04f5728195ee7b8",
+      "precision": 32,
+      "row": 51,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c440c776dafb289398fe865d5990e45a3a38c5ab2e7398856d5440cd23fb44ec",
+      "precision": 32,
+      "row": 52,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "2eeedb45ba5b9f0396edb7df5863ff8a85f3510691668533c5e394d49f60386f",
+      "precision": 32,
+      "row": 53,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e0b09c596a0e30943fa6fa48b0b05b5519f6072d64d13a114ac3ab1be8fdf03c",
+      "precision": 32,
+      "row": 54,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "320bda4b9822d74bc18d22b8a0ca7154ccb520200dac2969705dc83483007693",
+      "precision": 32,
+      "row": 55,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "51b030125e4ec593f03b2c511447bde502dfed2f884db7fffc3d346b4c2d4882",
+      "precision": 32,
+      "row": 56,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "af35f574324948c479d469d2fc13bbad3c3f9b972cc3f22a6aa0649136326312",
+      "precision": 32,
+      "row": 57,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4b42c186ed17ee894f2dfeab5f50c24da45fbb1e02af2c968bb272ea1857db0f",
+      "precision": 32,
+      "row": 58,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5a26bed429841a5b588f05f7038fad9395be6af8b79ab5727d7456b6dd7fd2a4",
+      "precision": 32,
+      "row": 59,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "74b23690d138b146d7d7580a9e148b55bc9672f92b203589c64128be3bd07f5b",
+      "precision": 32,
+      "row": 60,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c3e5ba68a7749fecbac33c755fbcabdbd8711c0f89dafba0008ee646e469c2a9",
+      "precision": 32,
+      "row": 61,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "21c63618d05f22a9aa64522ace8df382876440402d9bf3127cc4fdabf8d75f48",
+      "precision": 32,
+      "row": 62,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "ae03f581ae3c06ac8df73b4d943d43867099560aa43f4293c49e625fee9f483a",
+      "precision": 32,
+      "row": 63,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "fe9acaa992a06b7161db8b2d0cdf6537b8792842e5418162ad4579fa1f062630",
+      "precision": 32,
+      "row": 64,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "fbf3fdc062f869dea2d59d283c46dd93761b531ea94b1dad0e48dd8a5dabed25",
+      "precision": 32,
+      "row": 65,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f5f19a7532f5d588b40ddcc55c2b608dba11fb4136d1e270ddddb120787fb337",
+      "precision": 32,
+      "row": 66,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "6bccdf38e4a0a43aef5de4ff730bdd517b22775fd2639c3a5bc94d009761bfd3",
+      "precision": 32,
+      "row": 67,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "3cbc9ac250aa8f3a2587af9fb28d48662af078a6b9c94d701ba1a0dd0559f4e8",
+      "precision": 32,
+      "row": 68,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5a32e430925f796f8a0e1355cdbf26cdae8aeb129fb77f8948e8aa5bcea6d2a7",
+      "precision": 32,
+      "row": 69,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "0ddd3b923261c10b4e4a00734e0e479d7fbece53a8519d0bd880853794468162",
+      "precision": 32,
+      "row": 70,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "24f6c623426bb7c13a9889871bd1fcf1066d5c8fa0cd5b289f6ed1a4afbe452e",
+      "precision": 32,
+      "row": 71,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "d089113277ff65fae96dd98504bcb08d05f17b7d943b674714054ec72fd252e4",
+      "precision": 32,
+      "row": 72,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "d22ba37607bc5be979887870efca05fd959e52af16299004c748338239bcbe8b",
+      "precision": 32,
+      "row": 73,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "749a71f85680b508603578fb01620d4f0c2a0677d3a7b492af9b9fdcc3bf5964",
+      "precision": 32,
+      "row": 74,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "db0ceed12a872be7cb3a893695e7ed83b98d4dbbc1a8bd6f9736ea2ea8de4ef7",
+      "precision": 32,
+      "row": 75,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "7537dde10567e4580ba8e6d13cad4c87f1603f0bf03ea4e61975423c47ca6c4c",
+      "precision": 32,
+      "row": 76,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f2ea0f4a674f731a5ac1b49a64358f4392ac92e914ca2a942b29588d0948d03d",
+      "precision": 32,
+      "row": 77,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "73bdc24f77d09e6eb661ba4a95f33d2f55b68911de231fc0d839112d8a38c10f",
+      "precision": 32,
+      "row": 78,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "3989b584432eb0cc77be406e8dbfd173df3349d7735b96143ecd52a3c1eaa047",
+      "precision": 32,
+      "row": 79,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "549c9479f2c6b9d318f1427524852ba36b72f721c9607cfb93da67507d961af6",
+      "precision": 32,
+      "row": 80,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "8d3551a53d720083140f708d60c174fe2d69d6968e727dd5720221d1ad3758b3",
+      "precision": 32,
+      "row": 81,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "6fb48c76fd90457574ae338bb3a03cc2e83440654d44b0c2e5011404171edb0f",
+      "precision": 32,
+      "row": 82,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "29e61efa438f0ad4750a140cdc8e29903f64ba6d684df10a7f06d8c34198f644",
+      "precision": 32,
+      "row": 83,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f284d7a50dfe7f8c822c426a787932cf2ca8677c1f5e78eed25d14af1df017f7",
+      "precision": 32,
+      "row": 84,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "2946a7f1f6abc7f6abf1ca3e78b304e44f30cf070f5eebf111ff1b6676f702cd",
+      "precision": 32,
+      "row": 85,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "ce5d533cd9f44f4da71ff406b8a1f5a52d293df377cce8275ddcf6614c2266df",
+      "precision": 32,
+      "row": 86,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "9ec6baa0e7f1f650d04cfc1d5dcedf142a4cafffd6ef403847580ca4e822e003",
+      "precision": 32,
+      "row": 87,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "b000f3268bd49760df982dba4d0088cb68cbbafdc54660b5a47d350b599ede7d",
+      "precision": 32,
+      "row": 88,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "fda8dfd769c60349ac3e20bc53eaa6556162a95bcb209234a166691bda93e03b",
+      "precision": 32,
+      "row": 89,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "be2bd477c64a910202132e6b886b6ebc34ae489fd6bb4edad2054b447d0a2457",
+      "precision": 32,
+      "row": 90,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "ac1f9cda7556c1803a6fc42813862e8bbc09cc841d4106acf4ccf7e6f756bad6",
+      "precision": 32,
+      "row": 91,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "1967fe219a85952d18a940f7ca02bcb2f10662a13ea6c4284c4be2d6d5a9ec0a",
+      "precision": 32,
+      "row": 92,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "cbbc667311de415043ae6f41ecdd936c19813e65b8488c9d51a64d664384388c",
+      "precision": 32,
+      "row": 93,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "ef39d974d0fe119464aa8b89b9054aecfcb40581ff64279a277a650d960217ca",
+      "precision": 32,
+      "row": 94,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e7fa6db12218c995733d9546b309c3eda23370cbfd05ddebae2b2f67cae9cea9",
+      "precision": 32,
+      "row": 95,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "fe591824c01c0bf6fbfa17f0147dd41f0df163e3fb0fdfdb704456eb7bc360cc",
+      "precision": 32,
+      "row": 96,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "38494625f332b0385f99183246aed1bc9d2fb2a81972d3ab92c304e2a9f0028a",
+      "precision": 32,
+      "row": 97,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "12b05d3752f1417db3a53780bacf7d2cd51592a74756adfaef12327b2a4e52a3",
+      "precision": 32,
+      "row": 98,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "9b0d422354b7df7865dc33ee3200132ff122ac95903abdb4928d94a7af2ad168",
+      "precision": 32,
+      "row": 99,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "657d33eb7feccfaf67d3c53a47ca2800ffce36ed4e094667799e8f5bc412722e",
+      "precision": 32,
+      "row": 100,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "db332b7aa7be92b7f0d561b45914090af508ce2b8572ceeb01da00b9e891dbce",
+      "precision": 32,
+      "row": 101,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4fc426e3cc53f00c514ef4e184d323e49f421af40dba621877ba5c671fa4a523",
+      "precision": 32,
+      "row": 102,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "8f5e3c428b75d3279ed5eeaf4d2c734bf297387d8a09b2c057ea1f1bb0d15489",
+      "precision": 32,
+      "row": 103,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "0bf186e4001cf188abd420a0e150e166ef68adcbbf746600e7596b786580af58",
+      "precision": 32,
+      "row": 104,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "1c6d260c672eabc84f2444285f819ae546474fabd7578242e8a7eab0d1eeadd2",
+      "precision": 32,
+      "row": 105,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4d8c48e8abb719cd4920e5b76f134b3c1e8f146e94dc410dfbbd934a90087776",
+      "precision": 32,
+      "row": 106,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "a9e797d8524cdeb5f59a528be07783622d470f84498b5e6c73fbba9ba7105bb2",
+      "precision": 32,
+      "row": 107,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "48d78571cf26f76cea768cd5156d7b00af0c68f71d77386c003fb3ae0c1abffa",
+      "precision": 32,
+      "row": 108,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "db86a8519b01840f52e351d8161172cb49706c4a8fadd39f8475185085804270",
+      "precision": 32,
+      "row": 109,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "9e84d9e792dbf194a6ccf7ba79749cd4d886f83d9fb154c5be8731aac57dd8e6",
+      "precision": 32,
+      "row": 110,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "6be4eb5c90855b14547dec1dcee7d678cb4dfe03a58c298af3b0469b5db3705a",
+      "precision": 32,
+      "row": 111,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "446b26f5512a984a9c021ee4ff974764616f6f5578d1475a4f562d4a210d383e",
+      "precision": 32,
+      "row": 112,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "b4b0500e8a1c255d8dc04655e41ec0d1c7fb0357274861b0e0f11cf64c42ae2c",
+      "precision": 32,
+      "row": 113,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "af895fdff410ddb17a4583065c3c59254ce69cf5d7dfcb61c988780d73c3be25",
+      "precision": 32,
+      "row": 114,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "163df29fea655395a9f536b007003323a1c97a9ddb6dddd0c4ca5c51744103bd",
+      "precision": 32,
+      "row": 115,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "803f3fc46af4f6be88a9aa89b2e3ecfe880edab591256a3aa335cec67f96e7fb",
+      "precision": 32,
+      "row": 116,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "01a125226981177dfcd5e3c17bd0a5bc7b2c0bd94e9c88571461b63550ef81ca",
+      "precision": 32,
+      "row": 117,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "ce81046fbac3723caf095197497af9bf93b111eb524be636cabf868e1873c1a1",
+      "precision": 32,
+      "row": 118,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "bbd299b29efaa56757762282c4ec136a38e513493306a3c4687b6566d0edd886",
+      "precision": 32,
+      "row": 119,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "144d5464cd0d360a450c0b0c4366a4651b2c38a4db8d592e0a12574a605c8f6a",
+      "precision": 32,
+      "row": 120,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "17f58fc363deb0f40d2098815297e3c99cd16827fae4df80babbe974e8ccb1fa",
+      "precision": 32,
+      "row": 121,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "06cfbb58763a6cb31529b9802504582c0bc0b37a83b6f4004fdd7e92c64f0358",
+      "precision": 32,
+      "row": 122,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "590709587893549263bc1c0d0e5035c10c7bafd59095092bf822f8731fa67afa",
+      "precision": 32,
+      "row": 123,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5a5cad3f0bb5c0267b32f0570cee43e8dd39dc405494dde9fb5669832cee812f",
+      "precision": 32,
+      "row": 124,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "592a78eaf0a0b3924ec197f325a50195a288098153ac2bcde86c10bd343f670b",
+      "precision": 32,
+      "row": 125,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e8f3487712d3042c399f59440793f63a06016ebb803156c9c57161732c988e1d",
+      "precision": 32,
+      "row": 126,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "fec94ba49b222fb3e29697273afd73ff1686fb16418f5968a3fe8f1d694fe9a3",
+      "precision": 32,
+      "row": 127,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "3e9877d6b91f288f7aedcb835205bfd8d8c02aa03813941a10c958526d01dcb5",
+      "precision": 32,
+      "row": 128,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "9652cb3745ada0853f77070ae2b5ebccc9dd6198099dfd6eb5b5945e1da4783b",
+      "precision": 32,
+      "row": 129,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "447324ce30d03ee957c84166eb58f6e69a9882212d4d56568217d81dd4d80cbc",
+      "precision": 32,
+      "row": 130,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "84f93fe9803264844675dcd9aabef13b9b34b65844f6392d2393935248aaca39",
+      "precision": 32,
+      "row": 131,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "6a57b71ff35eb5901abcef1ec3a3ad8eea0f597a01df0b00e66f896d3eff8771",
+      "precision": 32,
+      "row": 132,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c14caeae7f12f4da53971081286c1937a357ac00530ac1fe1ea0573df98bfc01",
+      "precision": 32,
+      "row": 133,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "9e12b7334f1bc702056f281a7090e2f79f712fb7f9cbe489233afc0e569359fe",
+      "precision": 32,
+      "row": 134,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c6670962532ebb85e5db45fa56b755acd6231c37fead179bec9778662ab389bd",
+      "precision": 32,
+      "row": 135,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "abe07694351d1b90bc55ce8940e35cbedb8540c59de998e061c903bd7f26744d",
+      "precision": 32,
+      "row": 136,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c9a130eb146396d94152912cff35269ff76ae97298a5f46d934931fff981aacd",
+      "precision": 32,
+      "row": 137,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4036afea219cb39017f2ca23bab75bb3b0ff1559f504243e515ce27abe549b63",
+      "precision": 32,
+      "row": 138,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "2d6bba528f1b7f196f41470bb5553e587b76de520bcde5807b2c2b883f43d844",
+      "precision": 32,
+      "row": 139,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "0b78dcd4c2ed6cad02d26fef887ed94c1af1bec0a23906b695cb40ff3badac67",
+      "precision": 32,
+      "row": 140,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "eea46957b7c4e92eb03ee276d11a5da7a430f4f15e9d90c79314eb61e7b1a23b",
+      "precision": 32,
+      "row": 141,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "96896c93452d74e23481cb706804fdd4b1191c26ad9ca54e870ab40634bd2386",
+      "precision": 32,
+      "row": 142,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "997be029f4b298578f0db1cad6fb538fc6f4120c79c1390126a416b5ebd2278d",
+      "precision": 32,
+      "row": 143,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "a455e007937c5d8ad41a54e949f9c2d22778e90b0e028a1ed465938a3bb71596",
+      "precision": 32,
+      "row": 144,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "99b8602039bc8bfd234e0ff8b80106eff5d81e63779ca3bc642aa1a1c04cd35f",
+      "precision": 32,
+      "row": 145,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "89ddab6501cdea51c25ad939df89a239452453db9701a0f4b5f4e43135c1b9b7",
+      "precision": 32,
+      "row": 146,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "b1cd99bb303b2933a31fdce9ad0ad133b7e01dc42235c015ced6a4da8cbfc480",
+      "precision": 32,
+      "row": 147,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "dd68af1cee4321ab68eb3b7364400156470b73f8c3e67600d37be1def4e149e9",
+      "precision": 32,
+      "row": 148,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e9742b7f0a447856c3f900a25e9e0bbd221de733c5ec00bcff26ee3da7d77037",
+      "precision": 32,
+      "row": 149,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "aeeece6a86f1db7a760c5111606b2b9d023171ecd1ffeec6f175db662fe5188c",
+      "precision": 32,
+      "row": 150,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "8dad9b242a60894f971d985e584ac035e031ae574e9b8a04912506c57a4f9ab6",
+      "precision": 32,
+      "row": 151,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "a1e8617fb47e3386818beacc2a767e944d8ca6fcce3596db4f74838e76f96f51",
+      "precision": 32,
+      "row": 152,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "54fc957fae2790110a45464da0a14c4b410147459f5d5b66ed1cc02c014110b3",
+      "precision": 32,
+      "row": 153,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e37e7b90567b270901c6077a530cba43bf21d788aa8887a7f32fbbb524ab8dd4",
+      "precision": 32,
+      "row": 154,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "d29623485ef827d3551872b9799bbc5c1f97007abca0210a52e263ccceb55bde",
+      "precision": 32,
+      "row": 155,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c2e9c50329d86fcd2ed45efc45cef257222d01aef05001c19d2dad8aa59c9683",
+      "precision": 32,
+      "row": 156,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "990c8b849314eb41345bbc68ac487744c5370149eed1124f9534250cd0474d5d",
+      "precision": 32,
+      "row": 157,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "a9bb7e26b447add65385221f27de664d4a013634ca3d5973e8ad35b859b5ebfd",
+      "precision": 32,
+      "row": 158,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c4b948d1f9624a8274197c40b785c3d185106b37d6290ae272515150411e946e",
+      "precision": 32,
+      "row": 159,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "7a296c2b67a9d5320c737000f0cc7dd521ef8afe5570ac628bc06eb5bd958833",
+      "precision": 32,
+      "row": 160,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5dac4d2504544308b72b5a1db6537114626f05ecb149ff027d90f1bc7d74edac",
+      "precision": 32,
+      "row": 161,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "30e9d12fd9808f4390c8ff57733bb571f7e878154cf3e58f731a43c873692dc3",
+      "precision": 32,
+      "row": 162,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "52a5df30274e9c63687c0a465c4b727f5d12dd6fa2976c7807624fbf814b6933",
+      "precision": 32,
+      "row": 163,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "2980a7ae48878d6333032b126f806786b4407be8cdcc05f82fa61d9124a59883",
+      "precision": 32,
+      "row": 164,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "b7b7132e098ccf3a247dd109e724321b98fab2b797863920e4b99bbbf0401daf",
+      "precision": 32,
+      "row": 165,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "df41b59be1c01b4e997d90e69f80353ff37f721ef5bd0c2b213fc109eaf781b4",
+      "precision": 32,
+      "row": 166,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "793126b36c0acadac287939233b31d355392274e387739a3b1a16ebe0b67fcb1",
+      "precision": 32,
+      "row": 167,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c577217d8b4988ed5a397c3c4084aa45afcde7780089171ba63045cf548a0321",
+      "precision": 32,
+      "row": 168,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "91e56e85e463deeb4012efb5e35b915abbebaac89daadf85842414f588155c25",
+      "precision": 32,
+      "row": 169,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f7901bc87aaf413d851862523f7e7fadabf5f5a7e1fb041dcc1506a0ec314a3f",
+      "precision": 32,
+      "row": 170,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "cf23d83c4f674e3336d3997e686e3307023eff7257df455f872db06a9fa77ad2",
+      "precision": 32,
+      "row": 171,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "9c8a58ea48b48aeb86cca27481c87b3e53c9c6ff5e68a2e452b39d4fb5a74832",
+      "precision": 32,
+      "row": 172,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "550062dbd139bf629808b9cb840b82a7c036ee05622acae9a7d38906e20a753c",
+      "precision": 32,
+      "row": 173,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e8cd39af8b3dfefbf59603f2e11b97dea5423a0a2b7556675908a2053ed6f82e",
+      "precision": 32,
+      "row": 174,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "b19409bb0d2e72e8c808c0688a046d4a2fdb5285f0a628c5f6e079d0bba758c7",
+      "precision": 32,
+      "row": 175,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "672f57bcd61dc7c19bc7d9694e4bf46d50e5c8c4d83f22d500ab43e8e8da0a0e",
+      "precision": 32,
+      "row": 176,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "466f922993c7aec5117708cd846152258b113dbf339691e8e368e966286b242d",
+      "precision": 32,
+      "row": 177,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "1f069bdd054430e362db1199963db6213f2853d3ffb2454ccd4eb65958132e3a",
+      "precision": 32,
+      "row": 178,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "252a50dcd68e4fd45a398f16ca5611e397fe673de604646cdb970360b1adc424",
+      "precision": 32,
+      "row": 179,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f7e016df3d0552efd1781c9a802d0dce99033978a5182bf5495851a6a072c04e",
+      "precision": 32,
+      "row": 180,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "3e15c1dcaa583fc9d76f45ef71a892e191a0d93f908777f95226aa67710a95b6",
+      "precision": 32,
+      "row": 181,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "0a3630a7617e42941553f8ac44dfcbf651eb5d06b11fff0784395d116d2a51d4",
+      "precision": 32,
+      "row": 182,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "908debc549103202751154e6f416975741f32f90b1f0024d0daaa76c5327c3de",
+      "precision": 32,
+      "row": 183,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4681e29b849cbb3fc10ed693b0c18e26382526fa71a1ff7ae200adf4bffe938f",
+      "precision": 32,
+      "row": 184,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "af437affce4da94b72b52de613c2122cc9c10201ea4ae27ed39517283aefd1b5",
+      "precision": 32,
+      "row": 185,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "547133bac668c68650f4fc9253404d5877e59f97eedfcb6e67fcdfd5000e9167",
+      "precision": 32,
+      "row": 186,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5d142ad12b3531dce404e6b2532c63e113483c52eacb8e0e4684660a51ce401c",
+      "precision": 32,
+      "row": 187,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "97d7976037c3f72a994d0562e64eb145c2342940a4a73bc65ff9f864ee807244",
+      "precision": 32,
+      "row": 188,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "a6ef4e76403558df4b72f056f75c10c2d5e7a13d29615519b9a9b96f54b9a54f",
+      "precision": 32,
+      "row": 189,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "12b8955fcc8a1d79b435107d15e5493568f0b6673c9fe9580a97bc41f8ad79bd",
+      "precision": 32,
+      "row": 190,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "dbe5f9ce82cbf53f5f3653bd1e85a5352637fd68936cf9ef0ad55d6ce5d92116",
+      "precision": 32,
+      "row": 191,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e46cfff47ef1a5ee66c3223d3f7dfeed294b12211cbd956bda2281b3b0202559",
+      "precision": 32,
+      "row": 192,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "a0f8832e926b994cde95c30f667f92de7c08bf257f996cf22dbd416c56b5baae",
+      "precision": 32,
+      "row": 193,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4a0e4e8ef113a3556d8c6d039844d36ca6ef7290f2171e98e5ce87e08685d5b6",
+      "precision": 32,
+      "row": 194,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "9f2593c184aebfe2aab95daa8bb9e02003873ed543c5caaedbfd240dfeee5aea",
+      "precision": 32,
+      "row": 195,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f8649b1195f8fdde8593806d70893ee2af7d73cde7b26db58c538ad70d81d597",
+      "precision": 32,
+      "row": 196,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "988b03c4556e4f5cbae50e2c23e6bc87bf99a04a8cf59091d98c8ac989918885",
+      "precision": 32,
+      "row": 197,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "ab80dfddef4cfb472ce1b836f0c4bcf62efcd338a5659290d55523a5d725a610",
+      "precision": 32,
+      "row": 198,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "348e077e81feed8ccd90ea60363af32f41f34bc00cd7358440d4fd2153d23159",
+      "precision": 32,
+      "row": 199,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "592927f90b34752a319e8fa7511028600b007a47766f431b22a5d19187e506c9",
+      "precision": 32,
+      "row": 200,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "d1a087d0ea834782a59363f5e1e4e7f7d731cab51a64c0a77e64720c1f2fc37a",
+      "precision": 32,
+      "row": 201,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "93056dbd0f3e61acaa73cd54478a31f88bee429087b29066163448cd4c28d104",
+      "precision": 32,
+      "row": 202,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5d5fef0a2c2a063c3bf90b50c1c523dd64609abb21e1648e7a54451385d08239",
+      "precision": 32,
+      "row": 203,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "0d3458f277a9f6b7cf4ffd23a128ee94edd2cec3aa797fd42678741e676bfe13",
+      "precision": 32,
+      "row": 204,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "0570d6261bc08762645d290b34b11405a041c355637628d5073c97ea13a4dde3",
+      "precision": 32,
+      "row": 205,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "529a2c74adcdf1d062414b57b4aeb17259315f57ad8f9d8818163b6594041598",
+      "precision": 32,
+      "row": 206,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "fe02a26abc102cb2bb9ee81588e7390104448487bacc68795263bc197bb7c305",
+      "precision": 32,
+      "row": 207,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "484f8fecb7be2c7e5d3d6f249b8a45ee3e28742f1c0f7ce297f9c31201c295a4",
+      "precision": 32,
+      "row": 208,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "3555e2119774d711a44e60c37653e162a08cdb6232b7f74a22147504dd2142ea",
+      "precision": 32,
+      "row": 209,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e8790d1178b39bf5c34d59af26ab1674cf3321f8e03258446ba053a4a78dc760",
+      "precision": 32,
+      "row": 210,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "b0cb5ed517d26e0d8b2c28911507d8b791c7b3f15e524e12f4993d0b50f45a14",
+      "precision": 32,
+      "row": 211,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "467dd1fdef722eb8f09ac5bf2c59a088598a510269390632ad4d426012f1ef8b",
+      "precision": 32,
+      "row": 212,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e8f15570888d88f1a1ce915832b3426c385094462b4e3eca6cdb203455edbbc0",
+      "precision": 32,
+      "row": 213,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5085a2b7b5deaf9861e93b9987fb0c82769b0eaee7a13d1cc5246ad25d6b31b6",
+      "precision": 32,
+      "row": 214,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5ab03b4e2276cacc18c963861952b7040aaee667338b83275fb041823dbe691a",
+      "precision": 32,
+      "row": 215,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "1eaea1d4e1dbd3aa1bfa8765e2b55899f48edecc48fcf25806694728578cb51c",
+      "precision": 32,
+      "row": 216,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "41f5393c171e2a1acac5d3b84820e40a7247d331c6c19d94ad943426badfb666",
+      "precision": 32,
+      "row": 217,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "f35acc9774ad6e3914077d447004f6dda0b2cdf25af2751a4d8c663d375ae93c",
+      "precision": 32,
+      "row": 218,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "7367df9ea6cf39db8a5e8448cc8ae922161205c64defdf2bf0c87373dfec9ca0",
+      "precision": 32,
+      "row": 219,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "809fa1257da60abbb0837d86150458c6f2ea9fa7525fb9c12e8f3c12ff011bc6",
+      "precision": 32,
+      "row": 220,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e9f3b28a7c932887beb9e86b2eb7199881d4fdad16aba1496a8e81715c453c13",
+      "precision": 32,
+      "row": 221,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "3529ba07dc3f3b0f7f42a42667ea37de411b1fcad4ef0268c86f818e46e4e6c9",
+      "precision": 32,
+      "row": 222,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "522357d75c0e8953903246ee6702cb9b8cdde032c6096d96aa494d5655077e77",
+      "precision": 32,
+      "row": 223,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "a8eaf37d56556f9011776774ff45f8a89e0a1cbc2294c85f3e175a20ccd151e7",
+      "precision": 32,
+      "row": 224,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "e76a1e8c8e635b17e8e9fad201828b286e10e25b35f4a957f861839624f29339",
+      "precision": 32,
+      "row": 225,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "cff0c58a321542093a2c6796b5962eeecf2ff557cfc89d4f7c33e53e9d7ba75b",
+      "precision": 32,
+      "row": 226,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "a614dceb50fa53fd35e4458dd322b9f63f9afbbda1f1cd30cec017db9f05c615",
+      "precision": 32,
+      "row": 227,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "beeab82d29f8e1da056a9653f34aaf7d57147a3019c405a42ba2bb4a8fbc0647",
+      "precision": 32,
+      "row": 228,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "d79a4f3da4f5c5f1f5b961e30709558b9f89415dca4d9419827a8894fe538da7",
+      "precision": 32,
+      "row": 229,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "aedf865ca5fc7d6f631641d3751e7702dae21f1b9857123e0adfd93ecbc6897d",
+      "precision": 32,
+      "row": 230,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "66c9a6500602378fcdd825ad5cae3736b2ff2dc10b169bdb7e4a9064ed43f500",
+      "precision": 32,
+      "row": 231,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "7839e85715e9ad736d716bd530f9efaa467ae8676e9b40a8d6f6613134ac4410",
+      "precision": 32,
+      "row": 232,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "243457e1727b4e2be0a8e259f29f18fe4350d9912754ccd8a045879becb5139e",
+      "precision": 32,
+      "row": 233,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4933e0ed3b3c8178b31d39afef5bafa8c94cb5513c133fe018c71b1a3142f58e",
+      "precision": 32,
+      "row": 234,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "bd63fbbd6036fe925ec9b69d3c09a91eeab05066e4dcf0b23100ff5578cc2a10",
+      "precision": 32,
+      "row": 235,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "d8bd2036d3410441be27f4bab317013bad6c783f16e46d38014c62b73ba7cc89",
+      "precision": 32,
+      "row": 236,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "63e54568578a693adcbdebb10bb6688e64e836e9a4f6059aa8b830caa50d2b9b",
+      "precision": 32,
+      "row": 237,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "486e38ea925103caf31674a94c02272d9773d1ef5e9ab412844038846a8dce1a",
+      "precision": 32,
+      "row": 238,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c377a791fc796ac4b028ea5fa76a7a2462d0840e878d030a987636f732476d85",
+      "precision": 32,
+      "row": 239,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "7525ba89f454ef07317150738ae06b3cddb23da1f94bc388138941f6dce82459",
+      "precision": 32,
+      "row": 240,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c94822d421df5fe0362cdd1b66a659833102adcb30dcd273b8504e00bfca17b0",
+      "precision": 32,
+      "row": 241,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "5e1e6ffe1d0759529e18cfadcab4fd3de0bf9121ad1a54e4e55db9ff07c8a745",
+      "precision": 32,
+      "row": 242,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c0eef4b1142476ce37ad125062f3bfc2e3e249837666ef509294392985422a44",
+      "precision": 32,
+      "row": 243,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "bb9debcba82686a5b060f57422515b9b59bd91e7d5a68ffbf459ac29c472ae3d",
+      "precision": 32,
+      "row": 244,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "ddb23a8641814a2fce350e7227c53ca3ed10b3be9df525b50ccc3672e42b7f02",
+      "precision": 32,
+      "row": 245,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "78a186cabd6a19b01c58c0412a298775de05df16259e23d8c8d71b5cdc9313f7",
+      "precision": 32,
+      "row": 246,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "9759ea16f5263adb177ce0930276915a860e456aba97bdfa94267abf79441126",
+      "precision": 32,
+      "row": 247,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "d25d63a197a6cf4ab8f2224fff0b6379920be907bd04f83edd8dff0c29806ab9",
+      "precision": 32,
+      "row": 248,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "c4985e48d01b0c6ac61b6da823a4be36a1ad1f99e12638e1bb2d30627b8416ca",
+      "precision": 32,
+      "row": 249,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "33e7f8e1cc39ec6b2a013c9d92604f35337f6b78a935d636d3012b3213c757d1",
+      "precision": 32,
+      "row": 250,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "4d9f12401db12d884798039ebc2d13dc00a019413fe6d25ee7d123089dac701e",
+      "precision": 32,
+      "row": 251,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "458a5e0d8859a416b0569273fdcb70422e60e3df4a839a4e7b43c4d407bd1285",
+      "precision": 32,
+      "row": 252,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "9cc0fd769d4b4357c1aaf39d2a95788a9ac0bbfcae048bb5472f5ef3ade25412",
+      "precision": 32,
+      "row": 253,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "92e161ff590d5434a4246bd1b64b360248f595e533975a90d51496882d00c940",
+      "precision": 32,
+      "row": 254,
+      "spaces": 417199,
+      "survivors": 0
+    },
+    {
+      "characters": 7866259,
+      "exact_witnesses": [],
+      "length": 8,
+      "matrix_sha256": "42e9feea5de50f848c3bc3e0e47d3c4a94ffce86f01006734d5debdff0acaf19",
+      "precision": 32,
+      "row": 255,
+      "spaces": 417199,
+      "survivors": 0
+    }
+  ],
+  "scope": "Fixed point rows and all signed affine-code columns; no all-input decoder or factoring improvement.",
+  "sources": {
+    "tools/canonical_affine_code_jets.py": "87d9ff27601e7c8cc70bf966ec02ae4f86b80f9f6bf0328be94c0bf2fff514c9",
+    "tools/cauchy_packet_polynomials.py": "cd29d42d40fdf2872fcddab558bddfa52b0e7b02fea9005afc80ff33c0d6691a",
+    "tools/check_canonical_affine_codes.py": "474b168673b63b0795264ad2144de94d9b909975177a80d3dd143fdb405c272d",
+    "tools/check_canonical_signed_affine_codes.cpp": "b08d157a63dc12ebe46aa2e9d50e73c82da9323b008b80d3712434a6a2b21f28"
+  },
+  "total_signed_affine_pairs_checked": 2013767216
+}

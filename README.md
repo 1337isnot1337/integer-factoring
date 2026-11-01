@@ -1883,3 +1883,6 @@ The [rectangular modular compiler](research/rectangular-bezout-modular.md) const
 The [entrywise Cauchy-power theorem](research/pole-cauchy-hadamard-rank.md) gives exact Smith profiles and optimal separation ranks at every finite precision. Standard trace padding can retain exponentially many nonfactor rows; a larger polynomial displacement reduces the optimal rank exactly to the factor count. Constructing that small-rank representation remains a separate algorithmic problem.
 
 A [quadratic coalescence testbed](research/quadratic-coalescence-bezout.md) now handles reflected progressions with two different matching depths. A normalized weighted reciprocal sum has an odd unit computable from only linearly many Mahler coefficients in the requested precision; this determines the exact primitive scale and complete coefficient residues in the proved stability range.
+
+
+The [exact signed affine-code screen](research/canonical-affine-code-visibility.md) proves the sharp 32-bit visibility threshold for all 2,013,762,304 eight-wire point-row and signed affine-code column pairs. Original-coefficient replays and positive controls accompany the exhaustive finite result; a general efficient decoder is still required.
