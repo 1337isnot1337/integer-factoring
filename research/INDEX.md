@@ -1260,3 +1260,6 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Rational joint retraction model
 
 - [Complete polynomial normal form](joint-hot-rational-retraction-module.md): a degree-11 polynomial right inverse removes all pole-location/order guesses for the stated fixed embedding. Raw-jet rigidity is narrower than Smith-profile rigidity; no improved crossing cost is claimed.
+
+
+- [Nonlinear filtered Pascal exponent maps](filtered-pascal-exponents.md): an exact classification, a larger effective crossing family with a fixed complete zero spectrum, and independent checks of actual infinity and Fock profiles.

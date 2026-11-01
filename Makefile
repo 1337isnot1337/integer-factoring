@@ -2263,3 +2263,8 @@ verify-leading-bezout-factoring:
 .PHONY: verify-joint-retraction-module
 verify-joint-retraction-module:
 	python3 tools/check_joint_hot_retraction_module.py
+
+
+.PHONY: verify-filtered-pascal-exponents
+verify-filtered-pascal-exponents:
+	python3 tools/check_filtered_pascal_exponents.py --output /tmp/filtered-pascal-exponents.json
