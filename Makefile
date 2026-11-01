@@ -1580,3 +1580,7 @@ verify-coherent-q32-catalogue:
 .PHONY: verify-cube-transfer
 verify-cube-transfer:
 	python3 tools/check_cube_crossing_transfer.py --output /tmp/cube-crossing-transfer.json
+
+.PHONY: verify-cube-gaussian
+verify-cube-gaussian:
+	python3 tools/check_cube_homogeneous_gaussian.py --output /tmp/cube-homogeneous-gaussian.json

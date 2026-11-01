@@ -69,13 +69,16 @@ Run `make verify-coherent-retractions` for focused exact controls and
 <!-- coherent-compound-checkpoint:end -->
 
 <!-- cube-transfer-checkpoint:start -->
-The [three-axis cube transfer](research/cube-crossing-transfer.md) supplies a
-second fully costed sufficient interface: one common eight-leg crossing family
-with polynomially many pieces and total three-cut width at most
-`12 rho lambda + O(log lambda)` would give
-`alpha = log_3(1/rho)`. Its target is `rho < 1/sqrt(3)`.
-Exact cube edge coverage, equitable grouping, entry-query costs, and recursion
-are proved; the required improved local family remains unconstructed.
+The [three-axis cube transfer](research/cube-crossing-transfer.md) gives
+`alpha = log_3(1/rho)` from a uniform common eight-leg crossing family.
+An [explicit homogeneous Gaussian family](research/cube-homogeneous-gaussian.md)
+now meets this interface with **`rho = 5/8`**, using one three-variable
+coefficient decomposition at all three cuts. Its exact rational certificate,
+complete Laurent-polynomial factorizations, and full evaluation costs are retained.
+This gives `alpha = log_3(8/5)`, below the existing **1/2**.
+The same note proves an all-scale `rho > 3/5` floor for its specified
+homogeneous Cayley/common-profile method; crossing the target
+`1/sqrt(3)` needs a different construction or stronger rank estimate.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence
