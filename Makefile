@@ -3178,3 +3178,7 @@ verify-block-gaussian-floor:
 .PHONY: verify-trace-selection-weil
 verify-trace-selection-weil:
 	python3 tools/check_trace_selection_weil.py
+
+.PHONY: verify-mixed-direction-carries
+verify-mixed-direction-carries:
+	python3 tools/check_mixed_direction_carries.py

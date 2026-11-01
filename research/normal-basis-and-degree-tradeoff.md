@@ -37,6 +37,12 @@ row sum into that API is supplied. This permissive gate test fails the
 degree/dimension criterion before that additional compilation problem.
 The complete factoring score remains **1/2**.
 
+The later [opposite-direction diagnostic](mixed-direction-frobenius-carries.md)
+changes the aligned-row assumption used here. Its fixed F16 panel admits
+degree four after reversing one word's direction and retiming its input;
+the present aligned minimum remains five. No asymptotic compression or
+complete arithmetic compiler follows from that finite improvement.
+
 ## 1. The packed gate and its unique bilinear polynomial
 
 Let beta_j=beta^(2^j), for 0<=j<w, be a normal basis, and let

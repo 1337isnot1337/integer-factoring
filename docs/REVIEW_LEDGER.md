@@ -1401,3 +1401,25 @@ retain exact commands and clean pre/post status. This includes the actual
 22-piece, 72-of-256 adaptive-pairing counterexample, but predates the
 arbitrary-block Gaussian floor and AS/Weil selection analysis. Their
 focused checks remain separately scoped. The complete score is unchanged.
+
+## Polynomial carries with opposite Frobenius directions
+
+The [ordinary proof](../research/mixed-direction-frobenius-carries.md)
+changes the per-word direction assumption. Forward carries use
+`b=(a+n)/2` with a parity check; reverse carries use `b=2a-n`.
+Both have the same unique nonnegative closed-cycle criterion and scalar
+Teichmuller moment. The [polynomial extension](../tools/mixed_direction_carries.py)
+uses the charged carry box and one relative column per word, with cost
+`(S+2)^O(v)*poly(input,H,d,w,v)`. It exposes no denominator or trace
+projector closure, since ordinary scalar Frobenius conjugation generally
+destroys this mixed alignment.
+
+The [receipt](../evidence/mixed-direction-carry-controls.json) retains
+11 contractions against 732 direct assignments, two canonical uniform-sign
+comparisons, four invalid-input controls and 2,272 AND word pairs on the
+registered 13 normal bases. All eight F16 bases admit a degree-four
+opposite-direction AND row sum after retiming, compared with the aligned
+minimum five. This finite acquisition benefit is not an asymptotic family,
+a free sum-to-product conversion or a complete factoring query. Focused
+checks and docs are its local gate. No new Lean, score improvement or
+independent mathematical acceptance is claimed.

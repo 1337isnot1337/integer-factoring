@@ -1,0 +1,1731 @@
+{
+  "AND": {
+    "records": [
+      {
+        "beta": 2,
+        "metadata": {
+          "antidiagonal_support": [
+            0,
+            1
+          ],
+          "forward_minimum": 3,
+          "retime_Y": 0,
+          "reverse_degree": 3
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ]
+          ]
+        ],
+        "width": 2
+      },
+      {
+        "beta": 3,
+        "metadata": {
+          "antidiagonal_support": [
+            0,
+            1
+          ],
+          "forward_minimum": 3,
+          "retime_Y": 0,
+          "reverse_degree": 3
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ]
+          ]
+        ],
+        "width": 2
+      },
+      {
+        "beta": 3,
+        "metadata": {
+          "antidiagonal_support": [
+            0,
+            1
+          ],
+          "forward_minimum": 3,
+          "retime_Y": 0,
+          "reverse_degree": 3
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        "width": 3
+      },
+      {
+        "beta": 5,
+        "metadata": {
+          "antidiagonal_support": [
+            0,
+            1
+          ],
+          "forward_minimum": 3,
+          "retime_Y": 0,
+          "reverse_degree": 3
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        "width": 3
+      },
+      {
+        "beta": 7,
+        "metadata": {
+          "antidiagonal_support": [
+            0,
+            1
+          ],
+          "forward_minimum": 3,
+          "retime_Y": 0,
+          "reverse_degree": 3
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        "width": 3
+      },
+      {
+        "beta": 8,
+        "metadata": {
+          "antidiagonal_support": [
+            1,
+            2,
+            3
+          ],
+          "forward_minimum": 5,
+          "retime_Y": 1,
+          "reverse_degree": 4
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        "width": 4
+      },
+      {
+        "beta": 9,
+        "metadata": {
+          "antidiagonal_support": [
+            0,
+            2,
+            3
+          ],
+          "forward_minimum": 5,
+          "retime_Y": 2,
+          "reverse_degree": 4
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ]
+          ]
+        ],
+        "width": 4
+      },
+      {
+        "beta": 10,
+        "metadata": {
+          "antidiagonal_support": [
+            1,
+            2,
+            3
+          ],
+          "forward_minimum": 5,
+          "retime_Y": 1,
+          "reverse_degree": 4
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        "width": 4
+      },
+      {
+        "beta": 11,
+        "metadata": {
+          "antidiagonal_support": [
+            0,
+            2,
+            3
+          ],
+          "forward_minimum": 5,
+          "retime_Y": 2,
+          "reverse_degree": 4
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ]
+          ]
+        ],
+        "width": 4
+      },
+      {
+        "beta": 12,
+        "metadata": {
+          "antidiagonal_support": [
+            1,
+            2,
+            3
+          ],
+          "forward_minimum": 5,
+          "retime_Y": 1,
+          "reverse_degree": 4
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        "width": 4
+      },
+      {
+        "beta": 13,
+        "metadata": {
+          "antidiagonal_support": [
+            0,
+            2,
+            3
+          ],
+          "forward_minimum": 5,
+          "retime_Y": 2,
+          "reverse_degree": 4
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ]
+          ]
+        ],
+        "width": 4
+      },
+      {
+        "beta": 14,
+        "metadata": {
+          "antidiagonal_support": [
+            0,
+            2,
+            3
+          ],
+          "forward_minimum": 5,
+          "retime_Y": 2,
+          "reverse_degree": 4
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ]
+          ]
+        ],
+        "width": 4
+      },
+      {
+        "beta": 15,
+        "metadata": {
+          "antidiagonal_support": [
+            1,
+            2,
+            3
+          ],
+          "forward_minimum": 5,
+          "retime_Y": 1,
+          "reverse_degree": 4
+        },
+        "rows": [
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                1
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ]
+          ],
+          [
+            [
+              1,
+              [
+                2,
+                2
+              ]
+            ],
+            [
+              1,
+              [
+                1,
+                2
+              ]
+            ]
+          ]
+        ],
+        "width": 4
+      }
+    ],
+    "scope": "Fixed registered small panel only; no asymptotic reverse-direction AND compression established",
+    "word_pairs": 2272
+  },
+  "contractions": {
+    "canonical_uniform_comparisons": 2,
+    "direct_assignments": 732,
+    "records": [
+      {
+        "input": {
+          "H": 5,
+          "d": 2,
+          "factors": [],
+          "name": "exact full domain",
+          "signs": [
+            1,
+            -1
+          ],
+          "v": 2,
+          "w": 2
+        },
+        "invoice": {
+          "accepted_transitions": 2,
+          "carry_bounds": [
+            0,
+            0
+          ],
+          "carry_box_size": 1,
+          "coefficient_degree": 2,
+          "degree_budget": 0,
+          "directions": [
+            1,
+            -1
+          ],
+          "local_terms": [
+            1,
+            1
+          ],
+          "nonzero_initial_states": 1,
+          "peak_states": 1,
+          "precision": 5,
+          "variables": 2,
+          "width": 2
+        },
+        "value": 16
+      },
+      {
+        "input": {
+          "H": 3,
+          "d": 3,
+          "factors": [
+            [
+              0,
+              [
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  1,
+                  [
+                    3,
+                    5
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "name": "reverse distinct from forward",
+          "signs": [
+            1,
+            -1
+          ],
+          "v": 2,
+          "w": 3
+        },
+        "invoice": {
+          "accepted_transitions": 9,
+          "carry_bounds": [
+            4,
+            6
+          ],
+          "carry_box_size": 35,
+          "coefficient_degree": 3,
+          "degree_budget": 10,
+          "directions": [
+            1,
+            -1
+          ],
+          "local_terms": [
+            1,
+            1,
+            1
+          ],
+          "nonzero_initial_states": 24,
+          "peak_states": 1,
+          "precision": 3,
+          "variables": 2,
+          "width": 3
+        },
+        "value": 1
+      },
+      {
+        "input": {
+          "H": 3,
+          "d": 3,
+          "factors": [
+            [
+              0,
+              [
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  1,
+                  [
+                    3,
+                    5
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "name": "forward distinct control",
+          "signs": [
+            1,
+            1
+          ],
+          "v": 2,
+          "w": 3
+        },
+        "invoice": {
+          "accepted_transitions": 9,
+          "carry_bounds": [
+            4,
+            6
+          ],
+          "carry_box_size": 35,
+          "coefficient_degree": 3,
+          "degree_budget": 10,
+          "directions": [
+            1,
+            1
+          ],
+          "local_terms": [
+            1,
+            1,
+            1
+          ],
+          "nonzero_initial_states": 24,
+          "peak_states": 1,
+          "precision": 3,
+          "variables": 2,
+          "width": 3
+        },
+        "value": 0
+      },
+      {
+        "input": {
+          "H": 5,
+          "d": 3,
+          "factors": [
+            [
+              0,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              2,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "name": "mixed Frobenius product",
+          "signs": [
+            1,
+            -1
+          ],
+          "v": 2,
+          "w": 3
+        },
+        "invoice": {
+          "accepted_transitions": 12,
+          "carry_bounds": [
+            3,
+            3
+          ],
+          "carry_box_size": 16,
+          "coefficient_degree": 3,
+          "degree_budget": 6,
+          "directions": [
+            1,
+            -1
+          ],
+          "local_terms": [
+            2,
+            2,
+            2
+          ],
+          "nonzero_initial_states": 15,
+          "peak_states": 1,
+          "precision": 5,
+          "variables": 2,
+          "width": 3
+        },
+        "value": 17
+      },
+      {
+        "input": {
+          "H": 4,
+          "d": 3,
+          "factors": [
+            [
+              0,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  3,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  3,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              2,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  3,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "mask": [
+            true,
+            false
+          ],
+          "name": "mixed punctures",
+          "signs": [
+            1,
+            -1
+          ],
+          "v": 2,
+          "w": 3
+        },
+        "invoice": {
+          "accepted_transitions": 15,
+          "carry_bounds": [
+            3,
+            3
+          ],
+          "carry_box_size": 16,
+          "coefficient_degree": 3,
+          "degree_budget": 6,
+          "directions": [
+            1,
+            -1
+          ],
+          "local_terms": [
+            2,
+            2,
+            2
+          ],
+          "nonzero_initial_states": 16,
+          "peak_states": 1,
+          "precision": 4,
+          "variables": 2,
+          "width": 3
+        },
+        "value": 3
+      },
+      {
+        "input": {
+          "H": 4,
+          "d": 3,
+          "factors": [
+            [
+              0,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              2,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "name": "all reverse",
+          "signs": [
+            -1,
+            -1
+          ],
+          "v": 2,
+          "w": 3
+        },
+        "invoice": {
+          "accepted_transitions": 13,
+          "carry_bounds": [
+            3,
+            3
+          ],
+          "carry_box_size": 16,
+          "coefficient_degree": 3,
+          "degree_budget": 6,
+          "directions": [
+            -1,
+            -1
+          ],
+          "local_terms": [
+            2,
+            2,
+            2
+          ],
+          "nonzero_initial_states": 15,
+          "peak_states": 3,
+          "precision": 4,
+          "variables": 2,
+          "width": 3
+        },
+        "value": 1
+      },
+      {
+        "input": {
+          "H": 3,
+          "d": 4,
+          "factors": [
+            [
+              0,
+              [
+                [
+                  1,
+                  [
+                    1,
+                    2
+                  ]
+                ],
+                [
+                  3,
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  1,
+                  [
+                    3,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              3,
+              [
+                [
+                  2,
+                  [
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "name": "even width",
+          "signs": [
+            1,
+            -1
+          ],
+          "v": 2,
+          "w": 4
+        },
+        "invoice": {
+          "accepted_transitions": 16,
+          "carry_bounds": [
+            5,
+            4
+          ],
+          "carry_box_size": 30,
+          "coefficient_degree": 4,
+          "degree_budget": 9,
+          "directions": [
+            1,
+            -1
+          ],
+          "local_terms": [
+            2,
+            1,
+            1,
+            2
+          ],
+          "nonzero_initial_states": 20,
+          "peak_states": 1,
+          "precision": 3,
+          "variables": 2,
+          "width": 4
+        },
+        "value": 0
+      },
+      {
+        "input": {
+          "H": 3,
+          "d": 4,
+          "factors": [
+            [
+              0,
+              [
+                [
+                  11,
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                [
+                  2,
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  5,
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0,
+                    0
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "name": "proper summation subfield",
+          "signs": [
+            1,
+            -1
+          ],
+          "v": 2,
+          "w": 2
+        },
+        "invoice": {
+          "accepted_transitions": 5,
+          "carry_bounds": [
+            2,
+            2
+          ],
+          "carry_box_size": 9,
+          "coefficient_degree": 4,
+          "degree_budget": 4,
+          "directions": [
+            1,
+            -1
+          ],
+          "local_terms": [
+            2,
+            2
+          ],
+          "nonzero_initial_states": 8,
+          "peak_states": 1,
+          "precision": 3,
+          "variables": 2,
+          "width": 2
+        },
+        "value": 47
+      },
+      {
+        "input": {
+          "H": 3,
+          "d": 2,
+          "factors": [
+            [
+              0,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    1,
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ],
+            [
+              1,
+              [
+                [
+                  1,
+                  [
+                    0,
+                    0,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    1,
+                    1,
+                    1
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "name": "three signs",
+          "signs": [
+            1,
+            -1,
+            1
+          ],
+          "v": 3,
+          "w": 2
+        },
+        "invoice": {
+          "accepted_transitions": 6,
+          "carry_bounds": [
+            2,
+            2,
+            2
+          ],
+          "carry_box_size": 27,
+          "coefficient_degree": 2,
+          "degree_budget": 6,
+          "directions": [
+            1,
+            -1,
+            1
+          ],
+          "local_terms": [
+            2,
+            2
+          ],
+          "nonzero_initial_states": 20,
+          "peak_states": 1,
+          "precision": 3,
+          "variables": 3,
+          "width": 2
+        },
+        "value": 3
+      },
+      {
+        "input": {
+          "H": 3,
+          "d": 3,
+          "factors": [
+            [
+              2,
+              []
+            ]
+          ],
+          "name": "zero factor",
+          "signs": [
+            1,
+            -1
+          ],
+          "v": 2,
+          "w": 3
+        },
+        "invoice": {
+          "accepted_transitions": 0,
+          "carry_bounds": [
+            0,
+            0
+          ],
+          "carry_box_size": 1,
+          "coefficient_degree": 3,
+          "degree_budget": 0,
+          "directions": [
+            1,
+            -1
+          ],
+          "local_terms": [
+            1,
+            1,
+            0
+          ],
+          "nonzero_initial_states": 0,
+          "peak_states": 0,
+          "precision": 3,
+          "variables": 2,
+          "width": 3
+        },
+        "value": 0
+      },
+      {
+        "input": {
+          "H": 3,
+          "d": 1,
+          "factors": [
+            [
+              0,
+              [
+                [
+                  1,
+                  [
+                    1,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0,
+                    1
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "name": "width one",
+          "signs": [
+            1,
+            -1
+          ],
+          "v": 2,
+          "w": 1
+        },
+        "invoice": {
+          "accepted_transitions": 2,
+          "carry_bounds": [
+            1,
+            1
+          ],
+          "carry_box_size": 4,
+          "coefficient_degree": 1,
+          "degree_budget": 1,
+          "directions": [
+            1,
+            -1
+          ],
+          "local_terms": [
+            2
+          ],
+          "nonzero_initial_states": 4,
+          "peak_states": 1,
+          "precision": 3,
+          "variables": 2,
+          "width": 1
+        },
+        "value": 4
+      }
+    ]
+  },
+  "rejected": [
+    "sign",
+    "row",
+    "negative exponent",
+    "mask"
+  ],
+  "scope": "Polynomial mixed-direction Frobenius sums and a direct AND diagnostic; scalar inverse/trace-projector closure and complete integer arithmetic remain open.",
+  "source_sha256": {
+    "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
+    "tools/check_mixed_direction_carries.py": "f05a5a41cb92b3b9941eb720bf6bd52818dda50d46affb5200525f0e634ed79e",
+    "tools/check_teichmuller_cyclic_carries.py": "fd2dbc89319864dbf7de4b38bf38633bb4e8fe2ee0af1cef0515b3c1f07c648b",
+    "tools/mixed_direction_carries.py": "7b70b61d867ab8e549e79180a7be8b9bd842d8de5fe0e02b9c299f4e47579900",
+    "tools/normal_basis_and_tradeoff.py": "a2170973182bae81e54d41d287e2f8cab9bdefee01fc0aba3cd0f2ca5d309f2a",
+    "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1"
+  }
+}
