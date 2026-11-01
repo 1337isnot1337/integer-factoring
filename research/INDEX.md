@@ -16,6 +16,18 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Weighted fixed-characteristic transfer](fixed-characteristic-transfer.md): uniform factoring from a modular evaluator.
+
+- [Weighted prefix constructor](weighted-prefix-constructor.md): exact weighted tables and their construction cost.
+
+- [Modular crossing pieces](past-half-pieces.md): effective characteristic-two pieces and the half-rate bound.
+
+- [Polynomial Pfaffian formula](modular-pfaffian.md): polynomial-time computation of complete piece profiles.
+
+- [Shared-mode Schur reduction](fermi-sea-schur.md): exact common-block convolution and rank restrictions.
+
+- [Sparse-grid geometry](past-half-sparse-grids.md): limitations of regular-grid density changes.
+
 - [Coarsened grid check](coarsened-grid-validation.md): exact finite integration checks for signed network grouping, orientation, composite moduli, and padded clique tables.
 
 - [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): proved box-minor Kronecker budgets couple the two cuts; exact entropy-dual certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries; an exact thirteen-letter profile satisfies every box budget and adjugate inequality and is the remaining construction target.

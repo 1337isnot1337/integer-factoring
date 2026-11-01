@@ -116,6 +116,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Weighted fixed-characteristic transfer](research/fixed-characteristic-transfer.md), [polynomial Pfaffian profiles](research/modular-pfaffian.md), and [shared-mode Schur reduction](research/fermi-sea-schur.md): retained PR #22 constructions, effective evaluation, and scoped obstructions. No improved exponent is claimed. Run `make verify-modular` for the extended exact controls.
+
 - [Coarsened grid check](research/coarsened-grid-validation.md): a finite signed network-to-padded-clique check, including internal edges and grouping.
 
 The [auxiliary extension](research/auxiliary-binary-gauge-floor.md) carries

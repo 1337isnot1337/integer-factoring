@@ -183,3 +183,9 @@ Exact source head `b89916cde2b30c9d1c5bfc9500482856999f6b4e`, by Hao Yan / FanPU
 ## 2026-11-01: PR #4 coarsening checker integration
 
 Exact head `16b9dba1839aa671a68802309d08d9817ee8f799`, by Cinna Davis / 1337isnot1337 with disclosed AI assistance. Retained the exact finite network-to-padded-clique reference, four unit tests, orientation negative control, and scoped note; added current README/index links without reverting later work. All four focused tests passed. Full `make verify` passed on the integration tree (340 Markdown files, 54 unit tests and five crossing tests). These are finite integration checks, not a uniform machine proof or a new exponent. No Lean rebuild, PR approval, or independent mathematical acceptance.
+
+## 2026-11-01: PR #22 fixed-characteristic checkpoint integration
+
+Exact head `d94e4a99fec453768d69ae083038ba65cf31ae9e`. Retained the original source attribution to Claude / Anthropic Appendix B and Isaac Rudich / Louis-Martin Rousseau, and the contribution's OpenAI assistant disclosure. Inspected the incremental source and preserved all current main work. Restored the six notes, seven implementation/checker files, six evidence records, default verification wiring, and extended `verify-modular` target. The weighted transfer is conditional on its stated evaluator; the Pfaffian algorithm evaluates profiles, and the finite rank/Schur/grid controls do not prove a stronger exponent.
+
+`make verify-modular` passed, and all six JSON results matched the saved evidence exactly. The extended Pfaffian replay includes 45,122 source piece entries, 80 independent perfect-matching comparisons, 992 product/division controls, and 768 folded-block controls. Full `make verify` passed on the integration tree (347 Markdown files, 54 unit tests and five crossing tests). This is source inspection and integration testing, not independent mathematical acceptance. No new Lean work or PR approval review was performed.
