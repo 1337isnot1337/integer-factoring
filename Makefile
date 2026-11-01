@@ -2279,3 +2279,7 @@ verify-filtered-pascal-exponents:
 .PHONY: verify-prime-bezout-counting
 verify-prime-bezout-counting:
 	python3 tools/check_prime_bezout_counting.py --output /tmp/prime-bezout-counting.json
+
+.PHONY: verify-cube-optimized-type
+verify-cube-optimized-type:
+	python3 tools/certify_cube_optimized_type.py
