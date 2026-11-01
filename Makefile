@@ -2398,3 +2398,23 @@ verify-circuit-box-bezout-averages:
 
 verify-circuit-box-pole-trace:
 	python3 tools/check_circuit_box_pole_trace.py
+
+.PHONY: verify-tensor-orthogonal verify-tensor-orthogonal-scaling verify-tensor-orthogonal-capacity verify-tensor-f4-catalogues verify-tensor-orthogonal-comparisons
+
+verify-tensor-orthogonal: verify-tensor-orthogonal-scaling verify-tensor-orthogonal-capacity verify-tensor-f4-catalogues verify-tensor-orthogonal-comparisons
+
+verify-tensor-orthogonal-scaling:
+	python3 tools/check_tensor_orthogonal_scaling.py --output /tmp/integer-factoring-tensor-scaling-check.json
+
+verify-tensor-orthogonal-capacity:
+	python3 tools/check_tensor_orthogonal_capacity.py --output /tmp/integer-factoring-tensor-capacity-check.json
+
+verify-tensor-f4-catalogues:
+	python3 tools/check_tensor_f4_rank_two.py --output /tmp/integer-factoring-tensor-rank-two-check.json
+	python3 tools/tensor_f4_rank_three_catalogue.py --output /tmp/integer-factoring-tensor-rank-three-check.json
+	python3 tools/check_tensor_f4_hyperoval_obstruction.py --output /tmp/integer-factoring-tensor-hyperoval-check.json
+
+verify-tensor-orthogonal-comparisons:
+	python3 -c 'import pathlib, shutil, subprocess, tempfile; d=tempfile.TemporaryDirectory(prefix="factoring-tensor-"); p=pathlib.Path(d.name)/"certificate.json"; shutil.copyfile("evidence/tensor-orthogonal-pressure-dominance.json",p); subprocess.run(["python3","tools/check_tensor_orthogonal_pressure_dominance.py","--output",str(p)],check=True)'
+	python3 tools/check_tensor_f4_five_pair_dominance.py --output /tmp/integer-factoring-tensor-five-pair-check.json
+	python3 tools/check_tensor_coupled_quadratic_dominance.py --output /tmp/integer-factoring-tensor-coupled-check.json

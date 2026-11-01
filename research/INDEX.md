@@ -21,6 +21,13 @@
 
 ## Coherent physical crossing spaces
 
+- [Deterministic all-subset Gram scalings](tensor-orthogonal-scaling.md): unique minimum-weight bases and an explicit quadratic tower give polynomial construction cost with a corank-dependent degree budget.
+- [All-subset coefficient capacity](tensor-orthogonal-capacity.md): a linear rank bound, exact binary classification, and exact rank-two capacities over every characteristic-two finite field.
+- [Complete F4 rank-two catalogue](tensor-f4-rank-two-limit.md) and [rank-three catalogue](tensor-f4-rank-three-catalogue.md): exact maximal sets, physical kernel dimensions, and complete five-pair ordering comparisons.
+- [F4 hyperoval scaling obstruction](tensor-f4-hyperoval-orthogonal-obstruction.md): every scaling has an isotropic four-column dependence; extension fields remain outside the obstruction.
+- [Four-pair pressure dominance](tensor-orthogonal-pressure-dominance.md): all six completed orthogonal maps are strictly worse than their coordinate control at every scale.
+- [Coupled quadratic pressure dominance](tensor-coupled-quadratic-dominance.md): complete profiles and integer polynomial certificates for the height-8/12 F4 family.
+
 - [Protected lower-space boundary floor](coherent-boundary-protected-floor.md): `rho >= 17/24` for every natural-scale boundary retraction retaining the 28 lower coordinates, over every characteristic-two field and common physical type.
 - [Exact F4 boundary retractions](coherent-f4-boundary.md): full field-valued constructors, literal controls, and a certified prefix of 153 orbits covering 530 projectors; the structural floor stopped the incomplete catalogue.
 - [Quadratic-parity Walsh paths and the full radial obstruction](bell-walsh-constructions.md): arbitrary positive energy tables, an exact radial optimum `H_2(1/4)`, and strict reciprocal retiming improvements for fixed folded seeds.

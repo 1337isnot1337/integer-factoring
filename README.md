@@ -115,6 +115,32 @@ certificate is retained in XZ form and independently replayed, including all
 50,126 residual-prime certificates and 1,776 integer graph eliminations.
 <!-- cofactor-collision-checkpoint:end -->
 
+<!-- tensor-orthogonal-checkpoint:start -->
+## Effective orthogonal tensor constructions
+
+The [all-subset scaling theorem](research/tensor-orthogonal-scaling.md)
+constructs the required column scalings in deterministic polynomial time.
+For coefficient rank `R` and `m` columns, a single minimum-basis argument
+reduces the extension-degree budget to `O((m-R)^2+1)`, without enumerating
+column subsets. Corank one requires only a quadratic extension.
+
+The [capacity theorem](research/tensor-orthogonal-capacity.md) bounds the
+number of nonzero columns by
+`floor(fr(1+q^-1+...+q^(1-r)))` over `q=2^f`.
+It determines every binary rank and every rank-two capacity exactly.
+Complete F4 catalogues, hyperoval scaling obstructions, and
+[all-scale four-pair comparisons](research/tensor-orthogonal-pressure-dominance.md)
+make the remaining finite searches explicit.
+The [coupled quadratic screen](research/tensor-coupled-quadratic-dominance.md)
+also has exact integer dominance certificates for all 31 completed maps.
+
+These results construct and delimit physical-code families. None gives a
+crossing contraction below `1/sqrt(2)`; the complete factoring score remains
+**1/2**. Run `make verify-tensor-orthogonal` for the focused theorem controls,
+finite catalogues, and saved-profile certificates. Full native profile
+reconstruction is available separately and is not part of that quick target.
+<!-- tensor-orthogonal-checkpoint:end -->
+
 <!-- coherent-compound-checkpoint:start -->
 ## Coherent crossing profiles
 
