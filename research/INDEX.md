@@ -1,5 +1,7 @@
 # Research index
 
+- [Independent physical energies in box-minor budgets](graded-box-minor-caps.md): all-field scalar original and word-adjugate constraints with exact low/top energy charges; 36 signed Laurent controls retain 348 determinant polynomials and 696 complete orders. No global weighted pressure floor is claimed.
+
 - [Box budgets on the word-controlled adjugate](box-adjugate-word-caps.md): all-field scalar bare constraints at every physical subalphabet, with complete polynomial controls; 52 oriented violations exclude the recorded q13 seven-family point. No universal q13 rate floor follows.
 
 - [A local order-five twist of the CSS crossing code](nonclifford-css-crossing.md): preserves rate, split and 32 one-site annihilations, while nonzero odd coefficients break the old Frobenius identity. All 6561 polynomials and 162 untruncated weighted orders pass independent checks; three registered fits remain above support one.

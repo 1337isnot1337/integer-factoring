@@ -626,6 +626,22 @@ Focused replay and documentation checks validate this finite audit. The
 separate full run at `d159502` predates this addition. No new Lean or
 independent mathematical review is claimed.
 
+## Graded original and word-adjugate box budgets
+
+The [ordinary extension](../research/graded-box-minor-caps.md) retains
+independent physical energies in both box orientations, then applies the
+budget to the graded adjugate with negative energies. The low-energy term
+for the original crossing becomes a top-energy subtraction for the
+adjugate. The [receipt](../evidence/graded-box-minor-controls.json) retains
+36 exact Laurent controls over F2/F3/F5/F7, 696 complete source/adjugate
+orders, 348 full determinant polynomials, 252 original and 576 composed
+checks. Actual adjugates satisfy the coefficientwise determinant identity,
+exact complement profiles and word bounds. Zero energies reproduce the
+bare compiler. The earlier full run at `37dc71d` predates this extension;
+its focused replay and documentation checks are separate. No global
+weighted entropy floor, new factoring score, Lean or independent
+mathematical review is claimed.
+
 ## Box budgets applied to the word-controlled adjugate
 
 The [composition proof](../research/box-adjugate-word-caps.md) applies the

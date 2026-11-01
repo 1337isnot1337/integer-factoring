@@ -1,5 +1,9 @@
 # Apply box budgets to the word-controlled adjugate
 
+The [graded extension](graded-box-minor-caps.md) retains independent
+physical energies through the original box and adjugate budgets. Its
+necessary inequalities do not supply a uniform pressure floor.
+
 ## Question and scope
 
 Base: `4c3d135`. The box budgets and higher-word adjugate bounds have so

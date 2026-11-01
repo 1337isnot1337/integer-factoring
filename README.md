@@ -2648,6 +2648,13 @@ exact Frobenius identity. Complete polynomial and weighted-order controls
 pass; three bounded weighted-type fits remain above the required support.
 The specified code stops without a factoring improvement.
 
+The [graded box-minor theorem](research/graded-box-minor-caps.md) extends
+the box and word-adjugate compatibility budgets to independent physical
+energies over every field. Exact signed Laurent controls verify the
+determinant charges and complete derived profiles. This supplies stronger
+necessary constraints for weighted constructions; a global weighted
+pressure floor and a stronger factoring bound remain unproved.
+
 The [latest full verification receipt](evidence/higher-words-full-verification.json)
 pins a successful clean default replay and fifteen named joint/cofactor
 targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,

@@ -57,6 +57,11 @@ gauges and types, multipoint jets, cancellation modules, coefficient
 recombination, and alphabets q>=13 remain outside it. The proved factoring
 score remains 1/2.
 
+The later [graded box extension](graded-box-minor-caps.md) retains independent
+physical energies in the necessary box inequalities and applies them to
+the word-controlled adjugate. It does not extend the entropy floors in this
+table to arbitrary physical types.
+
 **Relation to the inverse-degree aspect bounds.** The
 [aspect-bound note](inverse-degree-aspect-bounds.md) treats q=7,8,9,10. It
 takes the scalar crossing obtained by reversing Phi(R), where R(1)=I, R has

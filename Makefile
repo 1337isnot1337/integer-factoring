@@ -2307,6 +2307,10 @@ verify-nonclifford-css:
 verify-box-adjugate-words:
 	python3 tools/check_box_adjugate_word_caps.py
 
+.PHONY: verify-graded-box-minors
+verify-graded-box-minors:
+	python3 tools/check_graded_box_minor_caps.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py
