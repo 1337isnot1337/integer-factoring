@@ -169,6 +169,60 @@ In particular, the requested scalar is real modulo `ell`. This
 statement holds for the actual specialization `N`; it does not rely
 on a generic determinant value or an assumed absence of factor pairs.
 
+### The complete pair and the maximal primitive scale
+
+Write `D` for the factor count in (12), and let the unique reduced
+pair satisfy `U_z P+V_z Q_z=1`, with both degrees less than `m`.
+Put `L=K+2E` and clear both polynomials by `omega ell^L`.
+Every row is congruent to `a_0 mod ell`, so (10) gives the complete
+polynomial reduction
+
+\[
+ \widehat V\equiv D(X-a_0)^{m-1}\pmod\ell.
+ \tag{12a}
+\]
+
+The cleared `U` is integral: divide `omega ell^L-widehat V Q_z`
+by the monic integral polynomial `P`. Furthermore, Frobenius and
+`m=ell^u` give
+
+\[
+ P\equiv(X-a_0)^m,\qquad
+ Q_z\equiv-b_0(X-a_0)^m\pmod\ell.
+\]
+
+Reducing the Bezout identity in the polynomial ring over the residue
+field and cancelling its nonzero monic common power yields
+
+\[
+ \boxed{\widehat U\equiv b_0D(X-a_0)^{m-1},\qquad
+        \widehat V\equiv D(X-a_0)^{m-1}\pmod\ell.}
+ \tag{12b}
+\]
+
+Let `r` be the smallest nonnegative integer for which there are
+integral polynomials `U,V` with `UP+VQ_z=ell^r`. Monic reduction
+puts any such pair in the same degree ranges, so uniqueness gives
+`r` by the coefficient content of the reduced pair. Since `omega`
+is a unit, the known scale satisfies `r<=L`, and (12b) proves
+
+\[
+ \boxed{r=L\quad\Longleftrightarrow\quad D\ne0\pmod\ell.}
+ \tag{12c}
+\]
+
+Thus a provider for the single equality `r=L` can replace each
+coefficient query in the reduction below. This conclusion needs no
+unknown-content stabilization threshold or factor-count bound. It
+does not compute the primitive scale itself. For the suffix decision,
+take the logical OR over all selected residue rectangles and primes.
+If every equality test is false, each selected prime divides every
+rectangle count and hence their total. Their product exceeds the
+possible nonzero total, so the support is empty. Equivalently, the
+wrapper can receive zero-or-one equality answers: at most `ell-1`
+answers are summed for a prime, so that sum is nonzero modulo `ell`
+exactly when at least one answer is one.
+
 ## 4. Disjoint residue rectangles give suffix counts
 
 Fix an integer threshold `2<=q<=N`, and choose the least power
@@ -271,6 +325,8 @@ does not depend on extra padding.
 The receipt records 75 complete rational leading coefficients, 966
 literal derivative-unit checks, eight independent padding comparisons,
 and 2,136 elementary primorial, factorial-unit, and Lucas controls.
+Eighteen complete rational Bezout pairs also verify (12b), their
+exact primitive scales, and the maximum-scale test (12c).
 
 Separate wrapper controls use an explicitly supplied finite divisor
 list as their oracle. They test residue partitioning, prime selection,

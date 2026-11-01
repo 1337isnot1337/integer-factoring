@@ -70,7 +70,36 @@ class Quadratic:
         return reduce(self.a), reduce(self.b)
 
 
-def dense_leading_coefficient(contract):
+def multiply(first, second):
+    result = [Quadratic(d=first[0].d) for _ in range(len(first) + len(second) - 1)]
+    for i, a in enumerate(first):
+        for j, b in enumerate(second):
+            result[i + j] += a * b
+    return result
+
+
+def linear_product(roots, d):
+    answer = [Quadratic(1, d=d)]
+    for root in roots:
+        answer = multiply(answer, [Quadratic(-root, d=d), Quadratic(1, d=d)])
+    return answer
+
+
+def rational_order(value, prime):
+    if not value:
+        return None
+    numerator, denominator = abs(value.numerator), value.denominator
+    order = 0
+    while numerator % prime == 0:
+        numerator //= prime
+        order += 1
+    while denominator % prime == 0:
+        denominator //= prime
+        order -= 1
+    return order
+
+
+def dense_leading_coefficient(contract, *, check_pair=False):
     prime, count = contract["prime"], contract["count"]
     if count > 25:
         raise ValueError("Dense controls are limited to 25 nodes per axis")
@@ -80,17 +109,47 @@ def dense_leading_coefficient(contract):
     z = contract["n"] + prime ** contract["padding_exponent"] * omega
     scale = prime ** contract["clearing_exponent"] * omega
     answer = Quadratic(d=omega.d)
+    if check_pair:
+        vv = [Quadratic(d=omega.d) for _ in aa]
     for a in aa:
         denominator = prod((z - a * b for b in bb), start=Quadratic(1, d=omega.d))
         denominator *= prod(a - other for other in aa if other != a)
-        answer += scale / denominator
+        weight = scale / denominator
+        assert weight.residue(prime) == (int(any(a * b == contract["n"] for b in bb)), 0)
+        answer += weight
+        if check_pair:
+            basis = linear_product([other for other in aa if other != a], omega.d)
+            vv = [old + weight * coefficient for old, coefficient in zip(vv, basis)]
     real, imaginary = answer.residue(prime)
     assert imaginary == 0
+    if check_pair:
+        pp = linear_product(aa, omega.d)
+        qq = [Quadratic(1, d=omega.d)]
+        for b in bb:
+            qq = multiply(qq, [z, Quadratic(-b, d=omega.d)])
+        numerator = [-x for x in multiply(vv, qq)]
+        numerator[0] += scale
+        uu = [Quadratic(d=omega.d) for _ in aa]
+        for i in range(len(uu) - 1, -1, -1):
+            uu[i] = numerator[i + count]
+            for j, coefficient in enumerate(pp):
+                numerator[i + j] -= uu[i] * coefficient
+        assert all(x.a == x.b == 0 for x in numerator)
+        common = linear_product([contract["first_a"]] * (count - 1), omega.d)
+        expected_v = [(real * x).residue(prime) for x in common]
+        expected_u = [(contract["first_b"] * real * x).residue(prime) for x in common]
+        assert [x.residue(prime) for x in vv] == expected_v
+        assert [x.residue(prime) for x in uu] == expected_u
+        orders = [order for x in vv + uu for coordinate in (x.a, x.b)
+                  if (order := rational_order(coordinate, prime)) is not None]
+        assert min(orders) >= 0
+        primitive_scale = max(0, contract["clearing_exponent"] - min(orders))
+        assert (primitive_scale == contract["clearing_exponent"]) == bool(real)
     return real, aa, bb
 
 
 def dense_controls():
-    cases = derivative_units = padding_controls = 0
+    cases = derivative_units = padding_controls = complete_pairs = 0
     examples = []
     for prime in (3, 5, 7):
         for exponent in (0, 1, 2):
@@ -102,7 +161,9 @@ def dense_controls():
                 for a0 in (1, 2, prime + 1):
                     b0 = n * pow(a0, -1, prime) % prime
                     contract = prime_rectangle_contract(n, prime, a0, b0, exponent)
-                    value, aa, bb = dense_leading_coefficient(contract)
+                    check_pair = contract["count"] <= 7 and cases % 3 == 0
+                    value, aa, bb = dense_leading_coefficient(contract, check_pair=check_pair)
+                    complete_pairs += check_pair
                     expected = sum(a * b == n for a in aa for b in bb) % prime
                     assert value == expected
                     count, order = contract["count"], contract["derivative_order"]
@@ -127,6 +188,7 @@ def dense_controls():
                                                           if a * b == n]})
                     cases += 1
     return {"dense_exact_quadratic_coefficients": cases,
+            "complete_pairs_and_maximal_scales": complete_pairs,
             "literal_derivative_unit_controls": derivative_units,
             "independent_padding_controls": padding_controls, "examples": examples}
 
