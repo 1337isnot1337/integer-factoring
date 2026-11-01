@@ -1076,3 +1076,9 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Higher external poles with explicit precision costs](pole-cauchy-repeated-poles.md)
 - [Quadratic poles give inverse residue-block sums](pole-cauchy-quadratic-selectors.md)
 - [Inverse residue-block sums at arbitrary precision](pole-cauchy-residue-blocks.md)
+
+
+## Certified binary coherent crossing improvements
+
+- [A 96-letter coherent pressure certificate](coherent-q96-pressure.md)
+- [The complete 496-map boundary optimum](coherent-q32-complete-boundary-optimum.md)

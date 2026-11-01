@@ -2004,3 +2004,10 @@ verify-coherent-boundary-floor:
 .PHONY: verify-coherent-f4-boundary
 verify-coherent-f4-boundary:
 	python3 tools/check_coherent_f4_boundary.py --catalogue evidence/coherent-f4-boundary-orbits.json
+
+
+.PHONY: verify-coherent-q96-pressure verify-coherent-mixed-catalogue
+verify-coherent-q96-pressure:
+	python3 tools/check_coherent_q96_pressure.py --output /tmp/integer-factoring-coherent-q96-pressure.json
+verify-coherent-mixed-catalogue:
+	python3 tools/check_coherent_q32_mixed_catalogue.py --output /tmp/integer-factoring-coherent-q32-mixed-boundary-optimum.json
