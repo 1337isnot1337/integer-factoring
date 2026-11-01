@@ -735,11 +735,20 @@ Their checked edge spans also miss the small crossing. Run the NumPy replay
 An [exact all-degree rank envelope](research/nilpotent-seam-rank-envelope.md)
 now bounds both cuts throughout that coefficient grid. An eight-counter
 integer recurrence includes the residual vacuum dimensions; exact rational
-certificates give a middle window with both ranks at most `L^(5/4+o(1))`.
+certificates give middle rank bounds
+`(L^(5/4+o(1)),L^(9/8+o(1)))` after vacuum-interface compression.
 Shoulder windows and cut reflection provide other candidate aspect ratios.
 A compatible graded spanning identity remains open; weighted cut budgets
 rule out completing the crossing from just the edges and middle window.
 Run `make verify-braid-rank-envelope` (NumPy for the complete finite replay).
+The [triplet-projector seam](research/fusion-projector-seams.md) supplies
+another source of middle pieces: its row factors have size polynomial
+times `L`, and selected boundary interfaces use `v_b` vacuum channels
+instead of `4^b` physical channels. A certified range has column rank
+`L^(3/2+o(1))`; an eight-site piece has ranks `(17,28)`.
+The proposed mixed list still misses the five- and thirteen-label crossings.
+A uniform mixed spanning identity remains open. Run the NumPy replay
+`make verify-braid-fusion-seam`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

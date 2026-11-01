@@ -1,0 +1,401 @@
+{
+  "status": "pass",
+  "field": "F16 with the height-three order-five path quotient",
+  "independent_field_rank_controls": 24,
+  "global_triplet_projector_controls": [
+    {
+      "central_pairs": 1,
+      "global_vacuum_dimension": 1,
+      "exact_projector_rank": 0
+    },
+    {
+      "central_pairs": 2,
+      "global_vacuum_dimension": 2,
+      "exact_projector_rank": 1
+    },
+    {
+      "central_pairs": 3,
+      "global_vacuum_dimension": 5,
+      "exact_projector_rank": 1
+    },
+    {
+      "central_pairs": 4,
+      "global_vacuum_dimension": 13,
+      "exact_projector_rank": 2
+    },
+    {
+      "central_pairs": 5,
+      "global_vacuum_dimension": 34,
+      "exact_projector_rank": 3
+    },
+    {
+      "central_pairs": 6,
+      "global_vacuum_dimension": 89,
+      "exact_projector_rank": 5
+    },
+    {
+      "central_pairs": 7,
+      "global_vacuum_dimension": 233,
+      "exact_projector_rank": 8
+    },
+    {
+      "central_pairs": 8,
+      "global_vacuum_dimension": 610,
+      "exact_projector_rank": 13
+    }
+  ],
+  "complete_selected_subset_interfaces": 336,
+  "independent_scalar_evaluations": 96,
+  "independent_complete_sampled_polynomials": 6,
+  "profiles": [
+    {
+      "length": 4,
+      "labels": 2,
+      "boundary_degree": 4,
+      "rank_pairs_by_b": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "complete_subset_interfaces": [
+        {
+          "boundary_gates": 0,
+          "subsets": 1,
+          "column_ranks": [
+            1
+          ],
+          "vacuum_bound": 1
+        },
+        {
+          "boundary_gates": 1,
+          "subsets": 4,
+          "column_ranks": [
+            1
+          ],
+          "vacuum_bound": 1
+        },
+        {
+          "boundary_gates": 2,
+          "subsets": 6,
+          "column_ranks": [
+            0,
+            1,
+            2
+          ],
+          "vacuum_bound": 2
+        },
+        {
+          "boundary_gates": 3,
+          "subsets": 4,
+          "column_ranks": [
+            1,
+            2
+          ],
+          "vacuum_bound": 5
+        },
+        {
+          "boundary_gates": 4,
+          "subsets": 1,
+          "column_ranks": [
+            3
+          ],
+          "vacuum_bound": 13
+        }
+      ],
+      "candidate_middle_boundary_limit": 1,
+      "all_joint_bounds_pass": true,
+      "mixed_candidate_span": {
+        "nilpotent_central_gaps": [
+          0,
+          1,
+          2
+        ],
+        "triplet_boundary_limit": 1,
+        "includes_cut_reflections_and_two_pairings": true,
+        "listed_nonzero_pieces": 26,
+        "span_dimension": 13,
+        "crossing_in_span": true,
+        "scope": "Complete finite full-alphabet span test; no extrapolation to larger widths."
+      }
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "boundary_degree": 6,
+      "rank_pairs_by_b": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          16
+        ],
+        [
+          10,
+          14
+        ],
+        [
+          14,
+          24
+        ],
+        [
+          10,
+          20
+        ],
+        [
+          5,
+          25
+        ]
+      ],
+      "complete_subset_interfaces": [
+        {
+          "boundary_gates": 0,
+          "subsets": 1,
+          "column_ranks": [
+            1
+          ],
+          "vacuum_bound": 1
+        },
+        {
+          "boundary_gates": 1,
+          "subsets": 6,
+          "column_ranks": [
+            1
+          ],
+          "vacuum_bound": 1
+        },
+        {
+          "boundary_gates": 2,
+          "subsets": 15,
+          "column_ranks": [
+            2
+          ],
+          "vacuum_bound": 2
+        },
+        {
+          "boundary_gates": 3,
+          "subsets": 20,
+          "column_ranks": [
+            5
+          ],
+          "vacuum_bound": 5
+        },
+        {
+          "boundary_gates": 4,
+          "subsets": 15,
+          "column_ranks": [
+            9,
+            10
+          ],
+          "vacuum_bound": 13
+        },
+        {
+          "boundary_gates": 5,
+          "subsets": 6,
+          "column_ranks": [
+            15
+          ],
+          "vacuum_bound": 34
+        },
+        {
+          "boundary_gates": 6,
+          "subsets": 1,
+          "column_ranks": [
+            25
+          ],
+          "vacuum_bound": 89
+        }
+      ],
+      "candidate_middle_boundary_limit": 2,
+      "all_joint_bounds_pass": true,
+      "mixed_candidate_span": {
+        "nilpotent_central_gaps": [
+          0,
+          1,
+          2
+        ],
+        "triplet_boundary_limit": 2,
+        "includes_cut_reflections_and_two_pairings": true,
+        "listed_nonzero_pieces": 34,
+        "span_dimension": 32,
+        "crossing_in_span": false,
+        "scope": "Complete finite full-alphabet span test; no extrapolation to larger widths."
+      }
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "boundary_degree": 8,
+      "rank_pairs_by_b": [
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          17,
+          28
+        ],
+        [
+          26,
+          56
+        ],
+        [
+          39,
+          148
+        ],
+        [
+          44,
+          144
+        ],
+        [
+          39,
+          168
+        ],
+        [
+          26,
+          156
+        ],
+        [
+          13,
+          169
+        ]
+      ],
+      "complete_subset_interfaces": [
+        {
+          "boundary_gates": 0,
+          "subsets": 1,
+          "column_ranks": [
+            1
+          ],
+          "vacuum_bound": 1
+        },
+        {
+          "boundary_gates": 1,
+          "subsets": 8,
+          "column_ranks": [
+            1
+          ],
+          "vacuum_bound": 1
+        },
+        {
+          "boundary_gates": 2,
+          "subsets": 28,
+          "column_ranks": [
+            2
+          ],
+          "vacuum_bound": 2
+        },
+        {
+          "boundary_gates": 3,
+          "subsets": 56,
+          "column_ranks": [
+            5
+          ],
+          "vacuum_bound": 5
+        },
+        {
+          "boundary_gates": 4,
+          "subsets": 70,
+          "column_ranks": [
+            13
+          ],
+          "vacuum_bound": 13
+        },
+        {
+          "boundary_gates": 5,
+          "subsets": 56,
+          "column_ranks": [
+            34
+          ],
+          "vacuum_bound": 34
+        },
+        {
+          "boundary_gates": 6,
+          "subsets": 28,
+          "column_ranks": [
+            63,
+            64,
+            65
+          ],
+          "vacuum_bound": 89
+        },
+        {
+          "boundary_gates": 7,
+          "subsets": 8,
+          "column_ranks": [
+            103,
+            104
+          ],
+          "vacuum_bound": 233
+        },
+        {
+          "boundary_gates": 8,
+          "subsets": 1,
+          "column_ranks": [
+            169
+          ],
+          "vacuum_bound": 610
+        }
+      ],
+      "candidate_middle_boundary_limit": 2,
+      "all_joint_bounds_pass": true,
+      "mixed_candidate_span": {
+        "nilpotent_central_gaps": [
+          0,
+          1,
+          2
+        ],
+        "triplet_boundary_limit": 2,
+        "includes_cut_reflections_and_two_pairings": true,
+        "listed_nonzero_pieces": 54,
+        "span_dimension": 54,
+        "crossing_in_span": false,
+        "scope": "Complete finite full-alphabet span test; no extrapolation to larger widths."
+      }
+    }
+  ],
+  "middle_window_integer_certificate": {
+    "lhs": 131428241729736328125,
+    "rhs": 147573952589676412928
+  },
+  "scope": "Uniform vacuum-interface and fusion-projector rank factors; complete finite controls; mixed crossing span and stronger factoring rate remain unproved.",
+  "source_sha256": {
+    "research/fusion-projector-seams.md": "42812e6f1bf1e3b8501f9fbf6e2bdfff8b355350ea9213158cf03c2dbb63c3e3",
+    "tools/quantum_braid_fusion_seam.py": "5061f4a0eb82cb6b319650d552790f16d7ab18b392cc64ea5e3e4b328b6399bb",
+    "tools/check_quantum_braid_fusion_seam.py": "bc31dda9402bf41bf09230693e60d44d1f6d3264b7ec8ed86e324fc6977eda14",
+    "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
+    "tools/quantum_braid_nilpotent_seam.py": "d1b32af8841288e739d9b089f2439c03f34502d933f4c377f29dca10bc3363d6",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9"
+  }
+}

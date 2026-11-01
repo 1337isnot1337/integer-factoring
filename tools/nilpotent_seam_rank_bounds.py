@@ -47,6 +47,11 @@ def rank_envelope(length, central_degree, boundary_degree, weights=None):
     if weights is None:
         weights = central_weights(length)
     return (
-        4 * (boundary_degree + 1) * weights[central_degree],
-        16 * (central_degree + 1) * comb(length, boundary_degree) * 4**boundary_degree,
+        4
+        * min(boundary_degree + 1, length - boundary_degree + 1)
+        * weights[central_degree],
+        16
+        * (central_degree + 1)
+        * comb(length, boundary_degree)
+        * vacuum_dimension(boundary_degree),
     )
