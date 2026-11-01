@@ -1,5 +1,7 @@
 # Research index
 
+- [Two classical passes for all supplied orientations](circuit-box-orientation-batch.md): normalized root differences, sparse incidence signs, and essentially linear integer-data construction.
+
 - [Classical quarter-bit residue terminal](circuit-box-ratio-small-roots.md): charged complete small-root recovery with exact LLL and Sturm certificates and honest outer-enumeration cost.
 
 - [Complete 112-bit oriented prefix](oriented-power-112-prefix.md): 73,728 queries, all ideal and integer-presentation identities replayed, and the complete 96,752-query original comparison.
