@@ -1916,3 +1916,6 @@ The [fixed-field count-value refinement](research/bezout-count-values.md) reduce
 
 
 The [binary-linear Pascal extension](research/linear-pascal-matroid-energies.md) computes complete zero-cut spectra from minimum-weight projected row bases. It supplies actual kernels outside the earlier filtered class and charges their changed physical energies. The other cut remains part of the required contraction calculation.
+
+
+The [arbitrary-permutation Pascal theorem](research/permuted-pascal-zero-spectra.md) removes the linearity restriction: every exponent permutation now has a proved complete zero spectrum. A compatible cone supplies explicit infinity spectra for the same kernel. Both matching-pair energies are retained in the pressure calculation; an improving contraction certificate is still required.

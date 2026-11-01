@@ -1290,3 +1290,6 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Pascal zero spectra from binary linear maps](linear-pascal-matroid-energies.md): exact Boolean-subcube orders, a supermodular projected-basis weight, explicit polynomial kernels, and complete zero profiles with their physical charges.
+
+
+- [Complete Pascal profiles for arbitrary exponent permutations](permuted-pascal-zero-spectra.md): a coefficientwise-product valuation inequality, explicit zero spectra without monotonicity assumptions, and a compatible infinity cone with both physical charges.

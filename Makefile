@@ -2312,3 +2312,8 @@ verify-orthogonal-differential-pairs:
 .PHONY: verify-linear-pascal-matroid
 verify-linear-pascal-matroid:
 	python3 tools/check_linear_pascal_matroid.py --output /tmp/linear-pascal-matroid-energies.json
+
+
+.PHONY: verify-permuted-pascal-kernels
+verify-permuted-pascal-kernels:
+	python3 tools/check_permuted_pascal_kernels.py --output /tmp/permuted-pascal-zero-spectra.json
