@@ -1,0 +1,1635 @@
+{
+  "all_invertible_two_by_two_f4_flags": 180,
+  "all_singular_two_by_two_flags_rejected": 76,
+  "binary_complete_clifford_specializations": 12,
+  "independent_original_profile_controls": [
+    {
+      "constant_flag": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -7.0,
+            -6.0,
+            -5.0,
+            -2.0,
+            2.0,
+            5.0,
+            6.0,
+            7.0
+          ],
+          "complete_original_fock_orders": [
+            -12,
+            -10,
+            -7,
+            -6,
+            -5,
+            -5,
+            -4,
+            -3,
+            -1,
+            0,
+            1,
+            1,
+            2,
+            3,
+            6,
+            8
+          ],
+          "physical_mode_heights": [
+            [
+              -2,
+              -2
+            ],
+            [
+              -4,
+              -3
+            ],
+            [
+              -2,
+              1
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -6.0,
+            -5.0,
+            -4.0,
+            -2.0,
+            2.0,
+            4.0,
+            5.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -10,
+            -8,
+            -6,
+            -5,
+            -4,
+            -4,
+            -3,
+            -2,
+            -1,
+            0,
+            1,
+            1,
+            2,
+            3,
+            5,
+            7
+          ],
+          "physical_mode_heights": [
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -3,
+              -3
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -5.0,
+            -4.0,
+            -4.0,
+            -3.0,
+            3.0,
+            4.0,
+            4.0,
+            5.0
+          ],
+          "complete_original_fock_orders": [
+            -4,
+            -1,
+            0,
+            0,
+            1,
+            3,
+            3,
+            4,
+            4,
+            5,
+            5,
+            7,
+            8,
+            8,
+            9,
+            12
+          ],
+          "physical_mode_heights": [
+            [
+              0,
+              0
+            ],
+            [
+              -3,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              0,
+              3
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -4.0,
+            -4.0,
+            -3.0,
+            -3.0,
+            3.0,
+            3.0,
+            4.0,
+            4.0
+          ],
+          "complete_original_fock_orders": [
+            -7,
+            -4,
+            -4,
+            -3,
+            -3,
+            -1,
+            0,
+            0,
+            0,
+            0,
+            1,
+            3,
+            3,
+            4,
+            4,
+            7
+          ],
+          "physical_mode_heights": [
+            [
+              0,
+              2
+            ],
+            [
+              4,
+              3
+            ],
+            [
+              -3,
+              0
+            ],
+            [
+              -4,
+              -2
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -6.0,
+            -5.0,
+            -5.0,
+            -2.0,
+            2.0,
+            5.0,
+            5.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -2,
+            0,
+            3,
+            3,
+            4,
+            5,
+            5,
+            6,
+            8,
+            9,
+            9,
+            10,
+            11,
+            11,
+            14,
+            16
+          ],
+          "physical_mode_heights": [
+            [
+              1,
+              2
+            ],
+            [
+              -3,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -6.0,
+            -4.0,
+            -2.0,
+            0.0,
+            0.0,
+            2.0,
+            4.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -2,
+            -2,
+            0,
+            0,
+            2,
+            2,
+            4,
+            4,
+            4,
+            4,
+            6,
+            6,
+            8,
+            8,
+            10,
+            10
+          ],
+          "physical_mode_heights": [
+            [
+              -1,
+              3
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              -1,
+              -1
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -7.0,
+            -5.0,
+            -5.0,
+            -4.0,
+            4.0,
+            5.0,
+            5.0,
+            7.0
+          ],
+          "complete_original_fock_orders": [
+            -3,
+            1,
+            2,
+            2,
+            4,
+            6,
+            6,
+            7,
+            8,
+            9,
+            9,
+            11,
+            13,
+            13,
+            14,
+            18
+          ],
+          "physical_mode_heights": [
+            [
+              -2,
+              1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              4
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -6.0,
+            -4.0,
+            -4.0,
+            -3.0,
+            3.0,
+            4.0,
+            4.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -10,
+            -7,
+            -6,
+            -6,
+            -4,
+            -3,
+            -3,
+            -2,
+            -1,
+            0,
+            0,
+            1,
+            3,
+            3,
+            4,
+            7
+          ],
+          "physical_mode_heights": [
+            [
+              -2,
+              0
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              -4,
+              0
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -5.0,
+            -4.0,
+            -2.0,
+            -2.0,
+            2.0,
+            2.0,
+            4.0,
+            5.0
+          ],
+          "complete_original_fock_orders": [
+            -4,
+            -2,
+            -2,
+            0,
+            0,
+            1,
+            2,
+            2,
+            3,
+            3,
+            4,
+            5,
+            5,
+            7,
+            7,
+            9
+          ],
+          "physical_mode_heights": [
+            [
+              0,
+              -1
+            ],
+            [
+              -4,
+              -1
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -7.0,
+            -6.0,
+            -4.0,
+            -2.0,
+            2.0,
+            4.0,
+            6.0,
+            7.0
+          ],
+          "complete_original_fock_orders": [
+            -9,
+            -7,
+            -5,
+            -3,
+            -3,
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            4,
+            6,
+            8,
+            10
+          ],
+          "physical_mode_heights": [
+            [
+              -3,
+              2
+            ],
+            [
+              3,
+              2
+            ],
+            [
+              0,
+              -1
+            ],
+            [
+              -2,
+              0
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          1,
+          2
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -7.0,
+            -6.0,
+            -5.0,
+            -2.0,
+            2.0,
+            5.0,
+            6.0,
+            7.0
+          ],
+          "complete_original_fock_orders": [
+            -8,
+            -6,
+            -3,
+            -2,
+            -1,
+            -1,
+            0,
+            1,
+            3,
+            4,
+            5,
+            5,
+            6,
+            7,
+            10,
+            12
+          ],
+          "physical_mode_heights": [
+            [
+              -2,
+              -2
+            ],
+            [
+              -4,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              5
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -7.0,
+            -5.0,
+            -3.0,
+            -3.0,
+            3.0,
+            3.0,
+            5.0,
+            7.0
+          ],
+          "complete_original_fock_orders": [
+            -10,
+            -7,
+            -7,
+            -5,
+            -4,
+            -3,
+            -2,
+            -2,
+            0,
+            0,
+            1,
+            2,
+            3,
+            5,
+            5,
+            8
+          ],
+          "physical_mode_heights": [
+            [
+              1,
+              0
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              -2,
+              3
+            ],
+            [
+              -1,
+              -4
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          0
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -6.0,
+            -5.0,
+            -4.0,
+            -2.0,
+            2.0,
+            4.0,
+            5.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -1,
+            1,
+            3,
+            4,
+            5,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            10,
+            11,
+            12,
+            14,
+            16
+          ],
+          "physical_mode_heights": [
+            [
+              -1,
+              2
+            ],
+            [
+              -3,
+              0
+            ],
+            [
+              2,
+              2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -5.0,
+            -5.0,
+            -2.0,
+            -1.0,
+            1.0,
+            2.0,
+            5.0,
+            5.0
+          ],
+          "complete_original_fock_orders": [
+            -10,
+            -9,
+            -8,
+            -7,
+            -5,
+            -5,
+            -4,
+            -4,
+            -3,
+            -3,
+            -2,
+            -2,
+            0,
+            1,
+            2,
+            3
+          ],
+          "physical_mode_heights": [
+            [
+              -2,
+              1
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -2,
+              0
+            ],
+            [
+              -3,
+              -3
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          2,
+          0
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -6.0,
+            -4.0,
+            -4.0,
+            0.0,
+            0.0,
+            4.0,
+            4.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -2,
+            -2,
+            2,
+            2,
+            2,
+            2,
+            4,
+            4,
+            6,
+            6,
+            8,
+            8,
+            8,
+            8,
+            12,
+            12
+          ],
+          "physical_mode_heights": [
+            [
+              2,
+              1
+            ],
+            [
+              -4,
+              1
+            ],
+            [
+              -1,
+              -2
+            ],
+            [
+              2,
+              3
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -6.0,
+            -5.0,
+            -4.0,
+            -3.0,
+            3.0,
+            4.0,
+            5.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -11,
+            -8,
+            -7,
+            -6,
+            -5,
+            -4,
+            -3,
+            -2,
+            -2,
+            -1,
+            0,
+            1,
+            2,
+            3,
+            4,
+            7
+          ],
+          "physical_mode_heights": [
+            [
+              0,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              -3,
+              -1
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          2,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -6.0,
+            -5.0,
+            -4.0,
+            -2.0,
+            2.0,
+            4.0,
+            5.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -1,
+            1,
+            3,
+            4,
+            5,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            10,
+            11,
+            12,
+            14,
+            16
+          ],
+          "physical_mode_heights": [
+            [
+              2,
+              2
+            ],
+            [
+              -3,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              2,
+              2
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -5.0,
+            -5.0,
+            -4.0,
+            -3.0,
+            3.0,
+            4.0,
+            5.0,
+            5.0
+          ],
+          "complete_original_fock_orders": [
+            -9,
+            -6,
+            -5,
+            -4,
+            -4,
+            -2,
+            -1,
+            -1,
+            0,
+            0,
+            1,
+            3,
+            3,
+            4,
+            5,
+            8
+          ],
+          "physical_mode_heights": [
+            [
+              -1,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              -2,
+              2
+            ],
+            [
+              -4,
+              0
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          0
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -5.0,
+            -5.0,
+            -3.0,
+            -2.0,
+            2.0,
+            3.0,
+            5.0,
+            5.0
+          ],
+          "complete_original_fock_orders": [
+            -2,
+            0,
+            1,
+            3,
+            3,
+            3,
+            5,
+            5,
+            6,
+            6,
+            8,
+            8,
+            8,
+            10,
+            11,
+            13
+          ],
+          "physical_mode_heights": [
+            [
+              2,
+              0
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              -2,
+              -1
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -6.0,
+            -4.0,
+            -2.0,
+            -1.0,
+            1.0,
+            2.0,
+            4.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -5,
+            -4,
+            -3,
+            -2,
+            -1,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "physical_mode_heights": [
+            [
+              1,
+              1
+            ],
+            [
+              3,
+              4
+            ],
+            [
+              -2,
+              2
+            ],
+            [
+              -4,
+              -2
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          2,
+          3
+        ],
+        [
+          3,
+          2
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -5.0,
+            -4.0,
+            -4.0,
+            -3.0,
+            3.0,
+            4.0,
+            4.0,
+            5.0
+          ],
+          "complete_original_fock_orders": [
+            -6,
+            -3,
+            -2,
+            -2,
+            -1,
+            1,
+            1,
+            2,
+            2,
+            3,
+            3,
+            5,
+            6,
+            6,
+            7,
+            10
+          ],
+          "physical_mode_heights": [
+            [
+              2,
+              -1
+            ],
+            [
+              -2,
+              -2
+            ],
+            [
+              -2,
+              0
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -7.0,
+            -4.0,
+            -1.0,
+            -1.0,
+            1.0,
+            1.0,
+            4.0,
+            7.0
+          ],
+          "complete_original_fock_orders": [
+            -2,
+            -1,
+            -1,
+            0,
+            2,
+            3,
+            3,
+            4,
+            5,
+            6,
+            6,
+            7,
+            9,
+            10,
+            10,
+            11
+          ],
+          "physical_mode_heights": [
+            [
+              0,
+              3
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              0,
+              2
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          3,
+          0
+        ],
+        [
+          3,
+          3
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -7.0,
+            -5.0,
+            -3.0,
+            -3.0,
+            3.0,
+            3.0,
+            5.0,
+            7.0
+          ],
+          "complete_original_fock_orders": [
+            -7,
+            -4,
+            -4,
+            -2,
+            -1,
+            0,
+            1,
+            1,
+            3,
+            3,
+            4,
+            5,
+            6,
+            8,
+            8,
+            11
+          ],
+          "physical_mode_heights": [
+            [
+              1,
+              0
+            ],
+            [
+              -3,
+              -2
+            ],
+            [
+              -2,
+              2
+            ],
+            [
+              -1,
+              1
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -7.0,
+            -3.0,
+            -3.0,
+            -2.0,
+            2.0,
+            3.0,
+            3.0,
+            7.0
+          ],
+          "complete_original_fock_orders": [
+            -10,
+            -8,
+            -7,
+            -7,
+            -5,
+            -5,
+            -4,
+            -3,
+            -2,
+            -1,
+            0,
+            0,
+            2,
+            2,
+            3,
+            5
+          ],
+          "physical_mode_heights": [
+            [
+              -3,
+              -1
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              -1,
+              -1
+            ],
+            [
+              -1,
+              0
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          3,
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -6.0,
+            -5.0,
+            -4.0,
+            -1.0,
+            1.0,
+            4.0,
+            5.0,
+            6.0
+          ],
+          "complete_original_fock_orders": [
+            -6,
+            -5,
+            -2,
+            -1,
+            -1,
+            0,
+            0,
+            1,
+            3,
+            4,
+            4,
+            5,
+            5,
+            6,
+            9,
+            10
+          ],
+          "physical_mode_heights": [
+            [
+              0,
+              0
+            ],
+            [
+              -5,
+              -3
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              0,
+              4
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -5.0,
+            -5.0,
+            -5.0,
+            -3.0,
+            3.0,
+            5.0,
+            5.0,
+            5.0
+          ],
+          "complete_original_fock_orders": [
+            -8,
+            -5,
+            -3,
+            -3,
+            -3,
+            0,
+            0,
+            0,
+            2,
+            2,
+            2,
+            5,
+            5,
+            5,
+            7,
+            10
+          ],
+          "physical_mode_heights": [
+            [
+              -1,
+              1
+            ],
+            [
+              4,
+              4
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              -4,
+              -2
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    },
+    {
+      "constant_flag": [
+        [
+          3,
+          3
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "controls": [
+        {
+          "clifford_orders": [
+            -7.0,
+            -6.0,
+            -3.0,
+            -1.0,
+            1.0,
+            3.0,
+            6.0,
+            7.0
+          ],
+          "complete_original_fock_orders": [
+            -5,
+            -4,
+            -2,
+            -1,
+            1,
+            2,
+            2,
+            3,
+            4,
+            5,
+            5,
+            6,
+            8,
+            9,
+            11,
+            12
+          ],
+          "physical_mode_heights": [
+            [
+              0,
+              1
+            ],
+            [
+              -5,
+              -1
+            ],
+            [
+              -2,
+              -1
+            ],
+            [
+              2,
+              5
+            ]
+          ],
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -5.0,
+            -4.0,
+            -3.0,
+            -3.0,
+            3.0,
+            3.0,
+            4.0,
+            5.0
+          ],
+          "complete_original_fock_orders": [
+            -6,
+            -3,
+            -3,
+            -2,
+            -1,
+            0,
+            1,
+            1,
+            2,
+            2,
+            3,
+            4,
+            5,
+            6,
+            6,
+            9
+          ],
+          "physical_mode_heights": [
+            [
+              -2,
+              2
+            ],
+            [
+              4,
+              2
+            ],
+            [
+              1,
+              1
+            ],
+            [
+              -1,
+              -4
+            ]
+          ],
+          "place": 1
+        }
+      ]
+    }
+  ],
+  "numerical_gradient_controls": [
+    {
+      "constant_flag": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "fitted_rho": 0.9059957421014262,
+      "gradient_max_error": 1.6481806718038339e-09
+    },
+    {
+      "constant_flag": [
+        [
+          0,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "fitted_rho": 0.9059957421014262,
+      "gradient_max_error": 1.6169632299778414e-09
+    },
+    {
+      "constant_flag": [
+        [
+          0,
+          3
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "fitted_rho": 0.9059957421014262,
+      "gradient_max_error": 1.2101323727808921e-09
+    }
+  ],
+  "original_orders_compared": 448,
+  "scope": "Exact field/kernel identities and independent full-polynomial F4 Fock profiles; numerical scale and gradient controls are separate. No improved factoring exponent is claimed.",
+  "source_sha256": {
+    "tools/check_f4_pascal_flags.py": "18de37c152e89779799423bba61a63d5d5005a6badc98ceda44537b9ea120508",
+    "tools/check_weighted_pascal_flags.py": "730b5cf7a71e02ba2d71e716262315da2662eacb99a4b169684d8712968913d1",
+    "tools/cube_f4_bivariate_smith.py": "5eed7b79c017771a4aaf846b7fe68865179989ae7568ebf7cb367da67a233fe1",
+    "tools/f4_pascal_flags.py": "93f265989c8c482720a9350eb651728e67299d3557ddc4f10bb9e8350f94b240",
+    "tools/native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "tools/native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "tools/native_weighted_smith_f4.py": "8bb117a1284edc0e11d6e4dbc5ba05537701e00f5e0e2aa88cd23e466d319abb",
+    "tools/search_weighted_pascal_flags.py": "872eeee12967034d52d5736f2f75fe156d22ce0c7b8ca0b2ae2ed26a1d98e254",
+    "tools/weighted_pascal_flags.py": "47944dd96fe1b9aea6bfe56706cb9038490e6c344e97716d360b9afce420efb4",
+    "tools/weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+  },
+  "status": "pass"
+}

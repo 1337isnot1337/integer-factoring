@@ -2358,6 +2358,10 @@ verify-pascal-letter-gauges:
 verify-pascal-coordinate-sectors:
 	python3 tools/check_pascal_coordinate_sectors.py --output /tmp/pascal-coordinate-sectors-controls.json
 
+.PHONY: verify-f4-pascal-flags
+verify-f4-pascal-flags:
+	python3 tools/check_f4_pascal_flags.py --output /tmp/f4-pascal-flag-controls.json
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py

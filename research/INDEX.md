@@ -1,5 +1,7 @@
 # Research index
 
+- [Constant F4 Pascal flags](f4-pascal-flags.md): exact constant-field extension, all 180 invertible two-by-two flags, 448 independent original-Fock orders, a scale-gradient guard repair, and pinned default verification at 566b596; no score improvement.
+
 - [Selected-entry Pascal occupation sectors](pascal-coordinate-sectors.md): complete coordinate crossings without ambient Fock expansion, independent selected-minor checks, 1,782 full-profile comparisons, and filled-sea starts through thirty-two letters; no score improvement.
 
 - [Correlated symbol potentials and coordinate Pascal alphabets](pascal-symbol-potentials.md): arbitrary whole-symbol gauges with the complete original-polynomial profiles, a typed endpoint proof for every coordinate restriction, 740 independent integer orders, and a registered 339-case numerical screen; no score improvement.
