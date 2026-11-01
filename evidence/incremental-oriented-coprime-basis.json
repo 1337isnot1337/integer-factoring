@@ -1,0 +1,333 @@
+{
+  "claim": "Exact sparse incremental oriented ideal refinement",
+  "tree_controls": {
+    "overlap_queries": 12336,
+    "capacity_doublings": 5,
+    "leaf_updates": 48,
+    "visited_node_bound": "1 + 2 h log2(capacity)"
+  },
+  "ideal_controls": {
+    "literal_ideal_identities": 623,
+    "matched_batches": 43,
+    "mixed_orientation_batches": 29,
+    "invalid_inputs_rejected": 5,
+    "corrupt_certificate_rejected": true,
+    "retained_power_atom_norms": [
+      3,
+      169
+    ]
+  },
+  "prefixes": [
+    {
+      "integer": 1022117,
+      "queries": 16,
+      "keys": 7,
+      "atoms": 8,
+      "sparse_entries": 9,
+      "dense_entries": 56,
+      "factor_preserved": 1009,
+      "identical_atoms_and_signed_words": true,
+      "checkpoints": [
+        {
+          "queries": 8,
+          "keys": 3,
+          "incremental_gcd_decisions": 2,
+          "rebuild_gcd_decisions": 9
+        },
+        {
+          "queries": 16,
+          "keys": 7,
+          "incremental_gcd_decisions": 24,
+          "rebuild_gcd_decisions": 72
+        }
+      ],
+      "statistics": {
+        "tree_gcd_calls": 12,
+        "tree_gcd_operand_bits": 344,
+        "local_gcd_calls": 12,
+        "local_refinements": 1,
+        "maximum_local_inputs": 2,
+        "maximum_local_norm_bits": 18,
+        "tree_multiplications": 34,
+        "tree_multiplication_operand_bits": 710,
+        "tree_leaf_updates": 10,
+        "tree_capacity_doublings": 3,
+        "tree_capacity": 8,
+        "tree_product_bits": 54,
+        "maximum_atoms": 8,
+        "usage_entries": 9,
+        "usage_writes": 10,
+        "maximum_usage_entries": 9
+      }
+    },
+    {
+      "integer": 1040399,
+      "queries": 16,
+      "keys": 11,
+      "atoms": 9,
+      "sparse_entries": 15,
+      "dense_entries": 99,
+      "factor_preserved": 1019,
+      "identical_atoms_and_signed_words": true,
+      "checkpoints": [
+        {
+          "queries": 8,
+          "keys": 7,
+          "incremental_gcd_decisions": 54,
+          "rebuild_gcd_decisions": 73
+        },
+        {
+          "queries": 16,
+          "keys": 11,
+          "incremental_gcd_decisions": 82,
+          "rebuild_gcd_decisions": 224
+        }
+      ],
+      "statistics": {
+        "tree_gcd_calls": 37,
+        "tree_gcd_operand_bits": 693,
+        "local_gcd_calls": 45,
+        "local_refinements": 6,
+        "maximum_local_inputs": 2,
+        "maximum_local_norm_bits": 17,
+        "tree_multiplications": 53,
+        "tree_multiplication_operand_bits": 639,
+        "tree_leaf_updates": 13,
+        "tree_capacity_doublings": 4,
+        "tree_capacity": 16,
+        "tree_product_bits": 42,
+        "maximum_atoms": 9,
+        "usage_entries": 15,
+        "usage_writes": 17,
+        "maximum_usage_entries": 15
+      }
+    },
+    {
+      "integer": 100160063,
+      "queries": 64,
+      "keys": 38,
+      "atoms": 34,
+      "sparse_entries": 43,
+      "dense_entries": 1292,
+      "factor_preserved": 10007,
+      "identical_atoms_and_signed_words": true,
+      "checkpoints": [
+        {
+          "queries": 8,
+          "keys": 5,
+          "incremental_gcd_decisions": 4,
+          "rebuild_gcd_decisions": 20
+        },
+        {
+          "queries": 16,
+          "keys": 10,
+          "incremental_gcd_decisions": 25,
+          "rebuild_gcd_decisions": 111
+        },
+        {
+          "queries": 24,
+          "keys": 15,
+          "incremental_gcd_decisions": 30,
+          "rebuild_gcd_decisions": 282
+        },
+        {
+          "queries": 32,
+          "keys": 19,
+          "incremental_gcd_decisions": 50,
+          "rebuild_gcd_decisions": 553
+        },
+        {
+          "queries": 40,
+          "keys": 21,
+          "incremental_gcd_decisions": 52,
+          "rebuild_gcd_decisions": 871
+        },
+        {
+          "queries": 48,
+          "keys": 26,
+          "incremental_gcd_decisions": 57,
+          "rebuild_gcd_decisions": 1326
+        },
+        {
+          "queries": 56,
+          "keys": 32,
+          "incremental_gcd_decisions": 113,
+          "rebuild_gcd_decisions": 2049
+        },
+        {
+          "queries": 64,
+          "keys": 38,
+          "incremental_gcd_decisions": 185,
+          "rebuild_gcd_decisions": 3291
+        }
+      ],
+      "statistics": {
+        "tree_gcd_calls": 123,
+        "tree_gcd_operand_bits": 10992,
+        "local_gcd_calls": 62,
+        "local_refinements": 7,
+        "maximum_local_inputs": 3,
+        "maximum_local_norm_bits": 30,
+        "tree_multiplications": 279,
+        "tree_multiplication_operand_bits": 12995,
+        "tree_leaf_updates": 38,
+        "tree_capacity_doublings": 6,
+        "tree_capacity": 64,
+        "tree_product_bits": 293,
+        "maximum_atoms": 34,
+        "usage_entries": 43,
+        "usage_writes": 45,
+        "maximum_usage_entries": 43
+      }
+    },
+    {
+      "integer": 1000036000099,
+      "queries": 320,
+      "keys": 250,
+      "atoms": 249,
+      "sparse_entries": 361,
+      "dense_entries": 62250,
+      "factor_preserved": 1000003,
+      "identical_atoms_and_signed_words": true,
+      "checkpoints": [
+        {
+          "queries": 64,
+          "keys": 54,
+          "incremental_gcd_decisions": 326,
+          "rebuild_gcd_decisions": 6939
+        },
+        {
+          "queries": 128,
+          "keys": 104,
+          "incremental_gcd_decisions": 900,
+          "rebuild_gcd_decisions": 44640
+        },
+        {
+          "queries": 192,
+          "keys": 156,
+          "incremental_gcd_decisions": 1550,
+          "rebuild_gcd_decisions": 147432
+        },
+        {
+          "queries": 256,
+          "keys": 200,
+          "incremental_gcd_decisions": 2024,
+          "rebuild_gcd_decisions": 305712
+        },
+        {
+          "queries": 320,
+          "keys": 250,
+          "incremental_gcd_decisions": 2719,
+          "rebuild_gcd_decisions": 711903
+        }
+      ],
+      "statistics": {
+        "tree_gcd_calls": 1775,
+        "tree_gcd_operand_bits": 834463,
+        "local_gcd_calls": 944,
+        "local_refinements": 94,
+        "maximum_local_inputs": 4,
+        "maximum_local_norm_bits": 41,
+        "tree_multiplications": 2507,
+        "tree_multiplication_operand_bits": 837316,
+        "tree_leaf_updates": 289,
+        "tree_capacity_doublings": 8,
+        "tree_capacity": 256,
+        "tree_product_bits": 3252,
+        "maximum_atoms": 249,
+        "usage_entries": 361,
+        "usage_writes": 381,
+        "maximum_usage_entries": 361
+      }
+    }
+  ],
+  "matched_benchmark": {
+    "integer": 1000036000099,
+    "keys": 250,
+    "repetitions": 7,
+    "results": {
+      "rebuild": {
+        "runs": [
+          {
+            "wall_seconds": 0.06013205299677793,
+            "cpu_seconds": 0.059838818000000016
+          },
+          {
+            "wall_seconds": 0.07414149000396719,
+            "cpu_seconds": 0.074089289
+          },
+          {
+            "wall_seconds": 0.05232858099770965,
+            "cpu_seconds": 0.052331782999999965
+          },
+          {
+            "wall_seconds": 0.05163431799883256,
+            "cpu_seconds": 0.05158684499999999
+          },
+          {
+            "wall_seconds": 0.05478710800525732,
+            "cpu_seconds": 0.054789590000000055
+          },
+          {
+            "wall_seconds": 0.050103264999052044,
+            "cpu_seconds": 0.05001975400000003
+          },
+          {
+            "wall_seconds": 0.05510389399569249,
+            "cpu_seconds": 0.055100090000000046
+          }
+        ],
+        "median_wall_seconds": 0.05478710800525732,
+        "median_cpu_seconds": 0.054789590000000055,
+        "tracemalloc_peak_bytes_separate_run": 1167924,
+        "decision_gcd_calls": 406191
+      },
+      "incremental": {
+        "runs": [
+          {
+            "wall_seconds": 0.0061732109970762394,
+            "cpu_seconds": 0.006174824000000023
+          },
+          {
+            "wall_seconds": 0.005583975005720276,
+            "cpu_seconds": 0.00558501699999997
+          },
+          {
+            "wall_seconds": 0.0053921860016998835,
+            "cpu_seconds": 0.005395234999999943
+          },
+          {
+            "wall_seconds": 0.003915736997441854,
+            "cpu_seconds": 0.003916845000000002
+          },
+          {
+            "wall_seconds": 0.004487727004743647,
+            "cpu_seconds": 0.004488966999999899
+          },
+          {
+            "wall_seconds": 0.003756748999876436,
+            "cpu_seconds": 0.0037577089999999425
+          },
+          {
+            "wall_seconds": 0.007167515002947766,
+            "cpu_seconds": 0.0071704750000000095
+          }
+        ],
+        "median_wall_seconds": 0.0053921860016998835,
+        "median_cpu_seconds": 0.005395234999999943,
+        "tracemalloc_peak_bytes_separate_run": 247672,
+        "decision_gcd_calls": 2719
+      }
+    },
+    "scope": "Supplied-basis construction and export only; verification and power generation excluded.",
+    "allocation_scope": "Python allocations from a separate tracemalloc run, not process RSS."
+  },
+  "source_sha256": {
+    "tools/incremental_oriented_coprime_basis.py": "e669db7d6d6acae9eca39304d2b4ad6bd1936adba5dab929faca51ec3005a154",
+    "tools/check_incremental_oriented_coprime_basis.py": "3dbcc961bcb1f5ff590a68c827024ab40cdfaaf73ec0dee40f0fd47269edcfd7",
+    "tools/oriented_coprime_basis.py": "dba31b12ce2a93b7de9a79f69e4ffb2a8f0aec8218f3ab6082ad25817117571d",
+    "tools/quadratic_ideal_hnf.py": "fd9c4217f1c751c1d2f20485a35ae36ae749c24980d90a6aae13fbc471634a74",
+    "evidence/oriented-cofactor-prefixes.json": "59aad27fb0dd1e0cd2111656c941cde373be060919b31766a19f647c4c62c794"
+  },
+  "scope": "Supplied-witness implementation improvement; no complete factoring exponent claim."
+}

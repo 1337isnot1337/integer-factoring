@@ -1,0 +1,34 @@
+{
+  "claim": "Predeclared bounded 208-bit batched selective-promotion follow-on policy",
+  "input_file": "prime-cofactor-fresh-208-input.json",
+  "input_sha256": "9e17d797f2e2aea59c7c9b7b146874207e4e1207b67311da08d1eb27d4278049",
+  "input_verification": {
+    "prime_certificates": 38,
+    "rejected_candidates": 32
+  },
+  "policy": {
+    "bits": 208,
+    "cutoff": 131071,
+    "window": 3200000,
+    "max_queries": 160000000,
+    "max_generators": 350000,
+    "promotion_multiplier": 16,
+    "batch_size": 32,
+    "memory_limit_mib": 3584
+  },
+  "source_sha256": {
+    "tools/batch_smooth_fresh_run.py": "f48dbdf007be248160ae67f9a2059e7aba8761865d12455e19e229ef49262312",
+    "tools/batch_smooth_parts.py": "cda74765dbe776b94113fcf538fe4749c123c694097fccd45ede6a186dd59333",
+    "tools/prime_cofactor_saturation.py": "7af1f32dc9426575bc62f900c0ed4ee2bfd25802f97e245822c77f34affac6e4",
+    "tools/leading_power_smooth_relations.py": "ab10b90877e39b8174164c1d201d5e1da35472b7079453acf741166142543791",
+    "tools/check_fresh_prime_cofactor_control.py": "0bd1ff8dca962902d6bc4b0770f616bcb3afb2d58d2e9cd48711ee1c624d891d",
+    "tools/check_prime_cofactor_saturation.py": "1a9341b715786f09d235e142b77bdd0282c1315e76491729df37cde107718653",
+    "tools/certified_small_factor.py": "d377c6a58bfc0e22f0feef4879945e45f534ee2fe8c2e4b6c1f93c63b8b732c6",
+    "tools/cofactor_collision_relations.py": "e3ca86c6e2208edf1f5edc980ed954c6fb3919f21a4cce40a8681d0d908022c5",
+    "tools/relation_two_saturation.py": "c1fdbfbc88029eeece010c8da63e6d864bd19e8adb58493f6977958ed3aa50f0"
+  },
+  "start_gate": "Start only after the 192-bit run returns a proper factor and its saved result passes independent replay, and after this input and policy are committed.",
+  "policy_basis": "The 192-bit run remained within its resource guard and had reached 2211 independent fixed-base rows after 39.5 million generated norms; this follow-on doubles the initial smoothness cutoff and retains finite query, generator, and address-space limits. No 208-bit factor search has run.",
+  "status": "Prepared; not started.",
+  "scope": "Input construction is separate from the factor search; the search receives only N. This is a finite deterministic attempt, not a uniform exponent claim."
+}

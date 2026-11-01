@@ -43,6 +43,10 @@
 
 ## Composite-cofactor relations
 
+- [Predeclared 208-bit follow-on policy](../evidence/batch-smooth-fresh-208-policy.json): a separately certified fresh input, fixed resource/query limits, source hashes, and a start gate after the 192-bit certificate; no completed run yet.
+
+- [Sparse incremental oriented atoms](incremental-oriented-coprime-basis.md): exact local replacements, product-tree overlap discovery, a charged sparse-space bound, and matched component improvements with literal HNF replay.
+
 - [Sparse graph input and certified unit pivots](signed-residual-graph-elimination.md#additional-unit-pivots): the same integer maps support sparse rows and further residual elimination; 420 dense/sparse comparisons and 137 additional unit pivots are replayed.
 
 - [Matched oriented-atom prefixes](oriented-coprime-basis.md#8-more-emitted-rows-on-actual-selector-prefixes): 416 independently replayed powers, exact integer combinations, and three strict factor gains against the original selector at equal query caps.
