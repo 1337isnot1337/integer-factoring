@@ -2060,3 +2060,9 @@ opposite-cut product pressure. A complete 1,696-evaluation interior-pair
 screen and 144 declared frame pilot cases give no improved bound. Dense
 Laurent contraction checks and all complete finite profiles are retained;
 the larger frame search remains open.
+
+An [exact-source receipt](evidence/moving-map-verification/receipt.json)
+retains the full default pass at `410e3e2` (341 Python command blocks,
+66 unit tests, five crossing tests, 973 Markdown files) and four focused
+moving-map checks at `1dba7ba`. These are source-specific ordinary checks;
+later integrations and the full frame search have separate status.

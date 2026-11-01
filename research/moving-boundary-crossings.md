@@ -190,6 +190,18 @@ The mathematical obstruction is an ordinary proof supported by exact
 finite certificates. It is not a stronger factoring bound, a Lean theorem,
 or an independent mathematical review.
 
+The [exact-source verification receipt](../evidence/moving-map-verification/receipt.json)
+records a completed default `make verify` at
+`410e3e2cda3b416dffe358be67fc8e1413ee66a9`: 341 Python command blocks,
+66 unit tests, five crossing tests, and links in 973 Markdown files. The
+frozen worktree remained clean. The
+[complete compressed log](../evidence/moving-map-verification/full-410e3e2.log.gz)
+is retained. The same receipt records all four focused moving-map checks
+at the later frame source `1dba7bad8628b7ce3b3448da76bb79361c316cb5`, with
+their [focused log](../evidence/moving-map-verification/focused-1dba7ba.log).
+Later integrations and the separate full frame search are outside the
+default-gate source pin. No Lean replay is claimed by these ordinary checks.
+
 ## Moving lower states and complete interior-pair controls
 
 The boundary obstruction motivates a different search: move any pair of
