@@ -432,8 +432,12 @@ The [ordered Weyl construction](research/weyl-ordered-boundaries.md) writes
 the auxiliary word as an explicit quadratic phase. A Fourier argument
 classifies boundaries retaining the rank-one zero cut at every length.
 All 4,096 normalized F4 choices fail the two-position bare criterion by
-an exact four-jet floor `738>9^3`; longer ordered words remain open.
-Run `make verify-weyl-ordered-boundaries` for the standard-library replay.
+an exact four-jet floor `738>9^3`. Beyond bare profiles, complete F4
+middle-coefficient tests reject the entire coefficient spans at two
+selected boundaries, with rank-product floors 576 and 1950. These tests
+leave other boundaries and longer ordered words open. Run
+`make verify-weyl-ordered-boundaries` and
+`make verify-weyl-middle-coefficients` for the standard-library replays.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
