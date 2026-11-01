@@ -1,0 +1,45 @@
+{
+  "source_commit": "80835e8d88f2a28c94f648ce11589b7b590d9db5",
+  "source_tree": "490eafbca5ae6d45ca6e352e823079c7d705daef",
+  "started_utc": "2026-11-01T19:45:07.493504+00:00",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-teichmuller-inverses",
+      "verify-precision-rational-carries"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "returncode": 0,
+      "seconds": 778.181859664619
+    },
+    {
+      "command": [
+        "make",
+        "verify-teichmuller-inverses",
+        "verify-precision-rational-carries"
+      ],
+      "returncode": 0,
+      "seconds": 60.19674558704719
+    }
+  ],
+  "seconds": 838.3790103830397,
+  "finished_utc": "2026-11-01T19:59:06.871313+00:00",
+  "post_status": "",
+  "stdout": {
+    "path": "evidence/verify-integrated-graph-unit-80835e8.stdout.txt.xz",
+    "uncompressed_sha256": "a98729baeb22c553bfc1064e0ab498809014102e1178fc176732f7042dddfbc4",
+    "compressed_sha256": "46a47b7f5a07da17fb2b27e2f2c3d14e27db0f20a9b1ba17f3329df620cd601c"
+  }
+}

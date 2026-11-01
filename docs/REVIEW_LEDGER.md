@@ -1076,3 +1076,36 @@ declared factor graph after deleting only the fresh product vertices. It
 does not identify arbitrary propagation with that deletion. The abstract
 arithmetic theorem itself distinguishes the Boolean compiler interface;
 this integration performs an ordinary source mapping, not a Lean replay.
+
+## Exact integrated replay at `80835e8`
+
+The clean frozen source `80835e8d88f2a28c94f648ce11589b7b590d9db5`,
+tree `490eafbca5ae6d45ca6e352e823079c7d705daef`, passed the default suite in
+778.18 seconds and the canonical inverse/packed-system focused commands
+in 60.20 seconds. The [receipt](../evidence/verify-integrated-graph-unit-80835e8.json)
+and [complete compressed log](../evidence/verify-integrated-graph-unit-80835e8.stdout.txt.xz)
+retain exact commands, hashes and clean pre/post status. This source includes
+the graph scope repairs, D1 declared-scope mapping and inverse consolidation,
+but predates the divided-power trace extension below. No new Lean is included.
+
+## Growing-precision divided-power trace counts
+
+The [ordinary proof](../research/divided-power-trace-lifting.md) uses the
+integral divided-power exponential identity to retain all Hermite moments
+of polynomial trace predicates through one coefficient-algebra contraction.
+The algebra has dimension `(2H)^r`, explicitly charged in the cost; the
+carry dimension remains `v*w/t`. Nonlinear predicate lists use their written
+length; the affine frontend reuses valid binary row reduction. Only scalar
+base-ring denominators are inverted. Higher coefficient digits outside the
+subring are allowed when their residues lie in the summation subfield.
+
+The [receipt](../evidence/divided-power-trace-controls.json) preserves 4,160
+basis associativity triples, 256 exponential identities, 13 contractions
+against 76 direct assignments and six affine controls. Field traces are
+computed independently; each 0/1 indicator is checked pointwise. Cases cover
+an even-width target, relative columns, nonlinear/coupled predicates,
+non-Teichmuller lifts, scalar poles, nonunit denominators and exact integer
+recovery above the domain bit count. The focused target and documentation
+checks are its local gate. The full `80835e8` pass predates this source.
+The integer arithmetic representation and stronger complete factoring score
+remain open; no Lean or independent mathematical review is claimed.

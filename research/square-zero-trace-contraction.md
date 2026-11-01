@@ -18,6 +18,12 @@ trace equations are exactly those in the preceding note. Field construction
 and the construction of a complete arithmetic representation are still
 separate. The complete factoring score stays **1/2**.
 
+The later [divided-power lift](divided-power-trace-lifting.md) retains the
+moments needed for exact 0/1 trace predicates modulo a growing power of two.
+Its coefficient dimension is (2H)^r and is explicitly charged; it recovers
+integer counts at sufficient precision for that represented input class.
+The field-valued construction and its original scope below remain intact.
+
 Square-zero variables and subset coefficient extraction are standard
 algebraic tools. This application uses the existing cyclic carry theorem
 and trace row packets, with OpenAI Codex assistance. It is an ordinary
