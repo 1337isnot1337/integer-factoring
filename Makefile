@@ -3077,3 +3077,9 @@ verify-uniform-axis-window:
 .PHONY: verify-approximate-strictification
 verify-approximate-strictification:
 	python3 tools/check_approximate_strictification.py
+
+.PHONY: verify-elliptic-word-costs
+verify-elliptic-word-costs:
+	python3 tools/check_elliptic_word_costs.py
+
+verify-arithmetic: verify-elliptic-word-costs

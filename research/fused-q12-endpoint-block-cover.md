@@ -18,6 +18,13 @@ all decompositions, or integer factoring. Physical heights, type selections,
 new joint maps and endpoints outside the base-field panel remain outside
 the claim. The complete factoring exponent stays **1/2**.
 
+The earlier [box-minor theorem](bare-seven-to-twelve-letters.md) already
+excludes a post-half bare certificate for every twelve-letter strict crossing.
+This source-specific rank cover proves the stronger floor `3/4` for its
+panel; it does not make other bare twelve-letter endpoint normalizations
+open post-half targets. Charged physical types and different coefficient
+rank estimates require their own analysis.
+
 ## 1. Exact source and finite endpoint coverage
 
 Reuse the [compressed fusion constructor](compressed-fusion-root-resonance.md)

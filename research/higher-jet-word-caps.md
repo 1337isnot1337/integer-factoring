@@ -16,6 +16,8 @@ give uniform bare coverage through twelve letters. The later
 [historical thirteen-letter point](joint-bare-profile-feasibility.md) passes
 both those original budgets and the word conditions, but the subsequent
 [box-adjugate composition](box-adjugate-word-caps.md) excludes it.
+All these compatibility families must be checked before treating a point
+of a smaller cofactor relaxation as a live polynomial construction target.
 
 ## 1. The integral low-jet identity
 
@@ -159,6 +161,6 @@ test the implementation. A [clean full replay](../evidence/higher-words-full-ver
 at exact `269efb8` passed defaults and fifteen named joint/cofactor targets:
 356 Python command blocks, 66 unit tests, five crossing tests and 988
 Markdown files. Later main integration and integer targets are outside that
-source pin. No uniform twelve-letter obstruction, realizing tensor, new Lean
-proof or independent mathematical review is claimed. Substantial OpenAI
+source pin. This word package supplies no stronger factoring bound,
+realizing tensor, new Lean proof or independent mathematical review. Substantial OpenAI
 assistant support was used.

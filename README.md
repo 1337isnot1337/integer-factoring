@@ -2010,6 +2010,12 @@ the resulting bare linear pencil is covered before any large profile search.
 Its [full replay receipt](evidence/finite-cover-full-verification.json) pins
 the successful default-plus-focused integration checks at `b9ffbaf`.
 
+An [elliptic word-encoding audit](research/elliptic-word-multiplication-cost.md)
+changes the binary-linear successor assumption but charges multiplication:
+direct charts have an exponential count/degree tradeoff, and direct graph
+equations need degree at least order `2^(w/3)`. Auxiliary finite-field fibre
+selection remains open; the audit supplies no stronger factoring bound.
+
 For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
 extends the existing permutation calculation to dependent and noncommuting
 controls. It gives `B >= q^3/sqrt(2)` in its stated scope. A separate
