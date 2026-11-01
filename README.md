@@ -117,6 +117,15 @@ been certified.
 can choose a different rank-bound gauge for each jet while keeping one
 physical tensor and one pair of types. Their exact coefficient formula
 improves some finite jet bounds, with complete typed reconstructions.
+An [exact finite-block amplification theorem](research/finite-block-crossing-amplification.md)
+now converts a single complete rank table into an effective family at every
+label width. Its sharper bound uses `sum_i sqrt(r_i c_i)`, with explicit
+factor queries and every coefficient piece included.
+[Finite typed adaptive certificates](research/finite-typed-adaptive-certificates.md)
+feed this theorem through exact integer inequalities, and
+[rational coefficient majorants](research/rational-finite-adaptive-bounds.md)
+avoid large channel convolutions while retaining the first positive jet
+after every zero prefix. No tested finite block passes the post-half gate.
 The completed [ternary basis search](research/ternary-physical-basis-search.md)
 and [fused gauge search](research/fused-weighted-search-checkpoint.md)
 retain every trial outcome and independently replay their winners.
@@ -260,6 +269,7 @@ make verify-reflection-truncations # Uniform truncations, all coefficients, and 
 make verify-observable-constructors # Boolean boundary tables and exact polynomial lattice decoder
 make verify-prime-constructors # Narrow primes, width-sensitive schedule, and elementary factor recovery
 make verify-frobenius-stars # Exact field/torus sums, infinity correction, and cyclic-algebra compatibility
+make verify-finite-crossing-certificates # Exact finite block to all-width amplification and adaptive gates
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8

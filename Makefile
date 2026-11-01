@@ -721,6 +721,12 @@ verify-joint-residue-retiming:
 .PHONY: verify-degree16-crossing verify-reflection-truncations
 .PHONY: verify-observable-constructors verify-prime-constructors
 .PHONY: verify-frobenius-stars
+.PHONY: verify-finite-crossing-certificates
+verify-finite-crossing-certificates:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_block_amplification.py --output /tmp/integer-factoring-finite-amplification.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_typed_adaptive_certificate.py --output /tmp/integer-factoring-finite-typed.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_rational_typed_adaptive_bounds.py --output /tmp/integer-factoring-rational-finite.json
+
 verify-frobenius-stars:
 	python3 tools/check_frobenius_rational_trace.py --output /tmp/integer-factoring-rational-star.json
 	python3 tools/check_fermat_torus_binomials.py --output /tmp/integer-factoring-torus-star.json
