@@ -2243,3 +2243,5 @@ On the 96-bit core, five paired runs reduce median selection CPU time from
 reference. This changes component cost without weakening torsion information.
 
 The [prepared bucket basis](research/batched-coprime-bucket-basis.md) preserves complete oriented ideal words while sharing frozen remainders across supplied batches. Full 80/96-bit fixture replays pass; matched 96-bit basis CPU falls from 4.8112 to 1.7320 seconds. This is a supplied-basis implementation improvement, with no new uniform relation-supply or factoring exponent claim.
+
+The [compact oriented selector](research/compact-oriented-power-search.md) combines quotient tree updates, primitive integer rank tests, and independently replayed unit traces. Its complete 80-bit result has the same 10,240 queried norms and factor as the retained baseline, while the incremental unit certificate shrinks from 3,113,278 to 21,639 JSON bytes. No relation is divided or omitted.

@@ -1,5 +1,7 @@
 # Research index
 
+- [Compact oriented power search](compact-oriented-power-search.md): unchanged complete 80-bit mathematical result with smaller unit proofs and exact original-row selection.
+
 - [Prepared bucket remainders](batched-coprime-bucket-basis.md): exact mutable delta correction, complete oriented-word equality, and charged matched 80/96-bit measurements.
 
 - [Primitive temporary rows for exact relation selection](primitive-integer-row-selection.md): an all-matrix equivalence proof, charged coefficient bounds, 17,000 matched decisions and measured 96-bit core selection; original relations remain intact.

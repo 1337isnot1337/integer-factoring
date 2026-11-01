@@ -2584,3 +2584,9 @@ verify-batched-coprime-bucket-basis:
 	python3 tools/check_batched_coprime_bucket_basis.py --output /tmp/batched-coprime-bucket-basis-verify.json
 
 verify-oriented-coprime-basis: verify-batched-coprime-bucket-basis
+
+.PHONY: verify-compact-oriented-power-search
+verify-compact-oriented-power-search:
+	python3 tools/check_compact_oriented_power_search.py --replay evidence/compact-oriented-power-search.json
+
+verify-oriented-coprime-basis: verify-compact-oriented-power-search
