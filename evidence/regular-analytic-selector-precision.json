@@ -1,0 +1,93 @@
+{
+  "claim": "Sharp dyadic denominator cost for a regular analytic residue-class parity selector",
+  "finite_difference_controls": 1920,
+  "sharp_selector_values": 1530,
+  "sharp_selectors": [
+    {
+      "residue_bits_in_centered_variable": 1,
+      "odd_input_modulus": 4,
+      "degree": 1,
+      "sharp_denominator_bits": 1,
+      "compiled_degree": 1,
+      "precision_for_parity": 2,
+      "tested_integer_arguments": 6,
+      "circuit_gates": 8
+    },
+    {
+      "residue_bits_in_centered_variable": 2,
+      "odd_input_modulus": 8,
+      "degree": 3,
+      "sharp_denominator_bits": 4,
+      "compiled_degree": 3,
+      "precision_for_parity": 5,
+      "tested_integer_arguments": 12,
+      "circuit_gates": 14
+    },
+    {
+      "residue_bits_in_centered_variable": 3,
+      "odd_input_modulus": 16,
+      "degree": 7,
+      "sharp_denominator_bits": 11,
+      "compiled_degree": 7,
+      "precision_for_parity": 12,
+      "tested_integer_arguments": 24,
+      "circuit_gates": 26
+    },
+    {
+      "residue_bits_in_centered_variable": 4,
+      "odd_input_modulus": 32,
+      "degree": 15,
+      "sharp_denominator_bits": 26,
+      "compiled_degree": 15,
+      "precision_for_parity": 27,
+      "tested_integer_arguments": 48,
+      "circuit_gates": 50
+    },
+    {
+      "residue_bits_in_centered_variable": 5,
+      "odd_input_modulus": 64,
+      "degree": 31,
+      "sharp_denominator_bits": 57,
+      "compiled_degree": 31,
+      "precision_for_parity": 58,
+      "tested_integer_arguments": 96,
+      "circuit_gates": 98
+    },
+    {
+      "residue_bits_in_centered_variable": 6,
+      "odd_input_modulus": 128,
+      "degree": 63,
+      "sharp_denominator_bits": 120,
+      "compiled_degree": 63,
+      "precision_for_parity": 121,
+      "tested_integer_arguments": 192,
+      "circuit_gates": 194
+    },
+    {
+      "residue_bits_in_centered_variable": 7,
+      "odd_input_modulus": 256,
+      "degree": 127,
+      "sharp_denominator_bits": 247,
+      "compiled_degree": 127,
+      "precision_for_parity": 248,
+      "tested_integer_arguments": 384,
+      "circuit_gates": 386
+    },
+    {
+      "residue_bits_in_centered_variable": 8,
+      "odd_input_modulus": 512,
+      "degree": 255,
+      "sharp_denominator_bits": 502,
+      "compiled_degree": 255,
+      "precision_for_parity": 503,
+      "tested_integer_arguments": 768,
+      "circuit_gates": 770
+    }
+  ],
+  "source_sha256": {
+    "check_regular_analytic_selector_precision.py": "fbaa5d2a24a4dad3208d7638eac8d6b4bbf1519baba6e994e6272e09581d1b7f",
+    "pole_cauchy_analytic_weights.py": "6a0e9520b5bf6851c71b2b3ac71ebf7b8d1590bfc98b865ea70f150573ad9be9"
+  },
+  "factoring_lower_bound": false,
+  "scope": "Regular odd-input circuits divided by a charged external power of two; pointwise parity selection."
+}

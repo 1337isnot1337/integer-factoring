@@ -1023,3 +1023,9 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 - [Endpoint-minor budgets beyond the Cayley kernel class](cube-gaussian-profile-budget.md)
 - [A sharper rational certificate for the common cube family](cube-gaussian-tight-pressure.md)
+
+## Implicit analytic inverse contractions
+
+- [Regular analytic weights for complete pole-Cauchy inverse contractions](pole-cauchy-analytic-weights.md)
+- [Joint regular analytic kernels and a two-dimensional moment recurrence](pole-cauchy-analytic-kernels.md)
+- [The sharp precision cost of analytic residue selectors](regular-analytic-selector-precision.md)

@@ -137,15 +137,18 @@ rectangular maximal-minor slope. It does not identify the unknown factor pivots
 or supply a compressed global evaluator. Run `make verify-pole-smith`.
 
 <!-- pole-implicit-checkpoint:start -->
-The pole-Cauchy route now has [linear explicit Smith-profile computation](research/pole-smith-residue-flow.md),
-a [balanced overlap histogram](research/pole-smith-overlap-spectrum.md), and
-[dimension-independent inverse conditioning](research/pole-cauchy-conditioning.md).
-Individual inverse entries and [complete low-degree polynomial bilinear moments](research/pole-cauchy-polynomial-moments.md)
-are computable from binary-encoded progressions in polynomial bit time.
-[Precision-bounded Newton arithmetic](research/modular-interval-jet-arithmetic.md)
-keeps the interval-jet coefficient sizes controlled. These are exact ordinary
-results with independent finite controls; the factor-count Hadamard-square trace
-and implicit reciprocal-overlap counts remain open. Run `make verify-pole-arithmetic`.
+The [pole-Cauchy stabilization theorem](research/pole-cauchy-smith-stabilization.md)
+and [inverse conditioning bounds](research/pole-cauchy-conditioning.md) give exact
+structural and precision controls. [Polynomial inverse moments](research/pole-cauchy-polynomial-moments.md)
+reduce complete contractions to short product jets.
+[Regular analytic weights](research/pole-cauchy-analytic-weights.md) and
+[joint analytic kernels](research/pole-cauchy-analytic-kernels.md) now extend
+that algorithm to succinct arithmetic circuits, including binary-encoded powers
+and unit inverses, without enumerating the matrix indices.
+The [sharp selector precision theorem](research/regular-analytic-selector-precision.md)
+also proves the exact denominator cost `2^(h+1)-h-2` for a residue-class
+parity selector in this circuit representation. It is a representation bound,
+and the complete factoring score remains **1/2**.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.

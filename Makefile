@@ -1895,3 +1895,9 @@ verify-bilinear-pole-packets:
 verify-cube-profile-pressure:
 	python3 tools/check_cube_gaussian_profile_budget.py --output /tmp/integer-factoring-cube-gaussian-profile-budget.json
 	python3 tools/check_cube_gaussian_tight_pressure.py --output /tmp/integer-factoring-cube-gaussian-tight-pressure.json
+
+.PHONY: verify-pole-cauchy-analytic
+verify-pole-cauchy-analytic:
+	python3 tools/check_pole_cauchy_analytic_weights.py --output /tmp/integer-factoring-pole-cauchy-analytic-weights.json
+	python3 tools/check_pole_cauchy_analytic_kernels.py --output /tmp/integer-factoring-pole-cauchy-analytic-kernels.json
+	python3 tools/check_regular_analytic_selector_precision.py --output /tmp/integer-factoring-regular-analytic-selector-precision.json
