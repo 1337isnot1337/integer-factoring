@@ -1,5 +1,7 @@
 # Research index
 
+- [Exact interval-weighted Kloosterman blocks](circuit-box-kloosterman-blocks.md): polynomial-bit summation of complete unit-frequency and ratio-progression blocks, a positive ratio-filtered factor count, and a fully charged outer inversion; no exponent gain.
+
 - [Larger power-prefix gains from sparse oriented residuals](sparse-oriented-power-prefixes.md): complete certified 64-bit and 80-bit searches, 1.94 and 3.79 times fewer relation queries, exact presentation maps and full original-traversal comparisons; baseline wall time is slower and no exponent improves.
 
 - [An asymmetric determinant target and an all-field pencil ceiling](two-place-determinant-target.md): determinant degree below 70 would suffice at the retained heights; the full eleven-parameter pencil has exact minimum degree 78 over every characteristic-two field, with a fresh whole-determinant replay.

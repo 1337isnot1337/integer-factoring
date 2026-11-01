@@ -2497,3 +2497,10 @@ verify-sparse-oriented-power:
 .PHONY: verify-binary-extension-smith
 verify-binary-extension-smith:
 	python3 tools/check_binary_extension_smith.py
+
+.PHONY: verify-circuit-box-kloosterman-blocks
+
+verify-circuit-box-normalization: verify-circuit-box-kloosterman-blocks
+
+verify-circuit-box-kloosterman-blocks:
+	python3 tools/check_circuit_box_kloosterman_blocks.py --output /tmp/integer-factoring-kloosterman-blocks.json

@@ -2141,3 +2141,10 @@ queries from the unchanged prime-power stream. The original selector needs
 presentation map is retained in a compressed replayable certificate. These
 are finite query gains: the baseline implementation is slower in wall time,
 and the uniform factoring exponent remains `1/2`.
+
+An [exact Kloosterman block evaluator](research/circuit-box-kloosterman-blocks.md)
+contracts an entire unit-frequency orbit and a ratio progression while keeping
+both ordinary interval weights. At conductor `2^1024`, the retained control
+aggregates `2^1535` frequency pairs with at most eight roots and sixteen affine
+counts. In the no-wrap range it is a positive factor-count query for one ratio
+class. The full outer sum still costs `2^(m/2)*poly(m)`, so no score improves.
