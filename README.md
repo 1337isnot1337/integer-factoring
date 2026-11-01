@@ -573,6 +573,12 @@ of arbitrary rank: the pole bound forces it into that sector, and the
 leading rank condition makes the transformation trivial.
 Run `make verify-joint-energy-dressings` and
 `make verify-joint-energy-riccati`.
+The [formal polynomial gauge theorem](research/joint-polynomial-formal-rigidity.md)
+removes the single-generator assumption for families through the identity:
+two exact direct sums control every degree, and formal lifting reduces
+every such pole/rank-preserving gauge to a constant conjugation and a
+tensor-preserving commutant unit. Separate components remain open.
+Run `make verify-joint-polynomial-tangent`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

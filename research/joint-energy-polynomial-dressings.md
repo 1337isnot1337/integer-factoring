@@ -354,3 +354,6 @@ independent coefficient directions outside `R`, products of generators
 that leave the classified sector, and gauges allowing a worse leading
 pole or a larger leading rank. Closing this scalar-polynomial class
 does not prove a lower bound for those classes or for factoring.
+The later [formal polynomial theorem](joint-polynomial-formal-rigidity.md)
+handles all coefficient directions for identity-based formal families;
+it leaves individual gauges on separate components unclassified.

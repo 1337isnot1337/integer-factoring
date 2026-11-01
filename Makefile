@@ -157,6 +157,10 @@ verify-joint-energy-dressings:
 verify-joint-energy-riccati:
 	python3 tools/check_joint_energy_riccati.py
 
+.PHONY: verify-joint-polynomial-tangent
+verify-joint-polynomial-tangent:
+	python3 tools/check_joint_polynomial_tangent.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
