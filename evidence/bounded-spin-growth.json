@@ -1,0 +1,210 @@
+{
+  "status": "pass",
+  "flint_version": "3.6.0",
+  "native_reference_controls": 4,
+  "batched_eight_site_tensor_matches_reference": true,
+  "ten_site_magnetic_entries": 16,
+  "length": 10,
+  "labels": 34,
+  "original_span_dimension": 8,
+  "six_vertex_span_dimension": 9,
+  "algebra": "F5^6 times F5[e]/(e^2)",
+  "F5_characters": 7,
+  "single_F5_generator_impossible": true,
+  "verified_F5_generators": 2,
+  "primary_dimensions": [
+    34,
+    1,
+    225,
+    300,
+    35,
+    406,
+    155
+  ],
+  "nilpotent_rank": 56,
+  "vertex_rank": 116,
+  "vertex_generated_module_dimension": 170,
+  "original_optimization": {
+    "common_kernel_flats": 9805,
+    "sharp_all_extension_minmax": 50625,
+    "separator": [
+      0,
+      0,
+      0,
+      3,
+      0,
+      3,
+      0,
+      0
+    ],
+    "attaining_piece_rank_pairs": [
+      [
+        1156,
+        1
+      ],
+      [
+        35,
+        1122
+      ],
+      [
+        35,
+        506
+      ],
+      [
+        1000,
+        35
+      ],
+      [
+        70,
+        631
+      ],
+      [
+        856,
+        57
+      ],
+      [
+        225,
+        225
+      ]
+    ]
+  },
+  "twelve_site_entry_certificate": {
+    "labels": 89,
+    "entry_labels": [
+      [
+        79,
+        68,
+        68,
+        79
+      ],
+      [
+        74,
+        21,
+        74,
+        21
+      ],
+      [
+        81,
+        81,
+        46,
+        46
+      ],
+      [
+        26,
+        84,
+        46,
+        13
+      ],
+      [
+        54,
+        81,
+        81,
+        54
+      ],
+      [
+        64,
+        85,
+        64,
+        85
+      ],
+      [
+        51,
+        51,
+        39,
+        39
+      ],
+      [
+        45,
+        76,
+        15,
+        58
+      ],
+      [
+        31,
+        21,
+        21,
+        31
+      ],
+      [
+        88,
+        77,
+        88,
+        77
+      ],
+      [
+        33,
+        33,
+        25,
+        25
+      ],
+      [
+        81,
+        67,
+        79,
+        73
+      ],
+      [
+        5,
+        9,
+        9,
+        5
+      ],
+      [
+        79,
+        6,
+        79,
+        6
+      ],
+      [
+        81,
+        81,
+        25,
+        25
+      ],
+      [
+        36,
+        25,
+        57,
+        72
+      ],
+      [
+        40,
+        1,
+        1,
+        40
+      ],
+      [
+        55,
+        73,
+        55,
+        73
+      ],
+      [
+        5,
+        5,
+        71,
+        71
+      ],
+      [
+        27,
+        78,
+        23,
+        67
+      ]
+    ],
+    "full_span_dimension": 14,
+    "original_span_dimension": 10,
+    "original_plus_vertex_dimension": 11
+  },
+  "scope": "Exact finite algebra and correction-module structure, with a conditional uniform module bound; no uniform favorable crossing decomposition.",
+  "source_sha256": {
+    "tools/native_gf5_flint.c": "866d83dcaeef0936feebba30c6a9fa92042c01fd855ddd882363aa110970f6a5",
+    "tools/native_gf5_flint.py": "8832f40479e49ee3b2ac9289fd79d0001e0fc8c170ee21de0497adba46060082",
+    "tools/bounded_spin_batched_blocks.py": "2765d69d920ea8a6b0f4d54fb9bf71c9063d347ea145bdec3908cc2946fecfa7",
+    "tools/check_bounded_spin_growth.py": "75945d7ae70beed2d2a9a597fc37a9a8ac7897c85f6158f518ed609dc50249be",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_six_vertex.py": "fba0658d6ad3dd1b308f61420ca6e3d17533a8e2eace2f66dbe5a9e5bbe907f8",
+    "tools/check_bounded_spin_six_vertex.py": "33b024282f4f31b7f39a4fdeb989915e2516ba13ed2b7a07cc3b713144727c79",
+    "evidence/bounded-spin-ten-algebra-model.json": "d90022bd8760fa64c850344136d63375497b4c004da2a7e3f7f86406a479de43"
+  }
+}

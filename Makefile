@@ -189,6 +189,10 @@ verify-bounded-spin-projector:
 verify-bounded-spin-support:
 	python3 tools/check_bounded_spin_support.py
 
+.PHONY: verify-bounded-spin-growth
+verify-bounded-spin-growth:
+	python3 tools/check_bounded_spin_growth.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py

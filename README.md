@@ -337,6 +337,13 @@ give explicit `O(L^(4/3))` channels for the shared extreme coefficient,
 below the post-half scale for that piece. Sublinear corner bands still
 cannot span the crossing; a complete favorable decomposition remains
 open. Run `make verify-bounded-spin-support`.
+The [correction-module analysis](research/bounded-spin-correction-modules.md)
+gives the next algebraic target and an exact ten-site replay: two F5
+generators are needed, the vertex module has dimension 170, and the
+original coefficient span has sharp minmax product `225^2`. A small
+twelve-site certificate rules out the simpler linear pencil-plus-vertex
+formula. Uniform algebra containment and two-cut lifting remain open.
+The optional `make verify-bounded-spin-growth` requires FLINT.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
