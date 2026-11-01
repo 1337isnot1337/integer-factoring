@@ -50,11 +50,15 @@ def main():
     wrapper_cases = wrapper_queries = trial_cases = 0
     for integer in range(2, 257):
         values = divisors(integer)
-        result = factor_with_odd_moments(integer, lambda j: sum(d**(2*j+3) for d in values))
-        assert result["smallest_prime_factor"] == values[1]
-        wrapper_cases += 1
-        wrapper_queries += result["moment_queries"]
-        trial_cases += result["stage"] == "trial_division"
+        bits = integer.bit_length()
+        ell = (bits+1).bit_length()  # ceil(log2(bits+2))
+        score_one_trial = (bits+ell-1)//ell
+        for trial_bits in (None, score_one_trial):
+            result = factor_with_odd_moments(integer, lambda j: sum(d**(2*j+3) for d in values), trial_bits)
+            assert result["smallest_prime_factor"] == values[1]
+            wrapper_cases += 1
+            wrapper_queries += result["moment_queries"]
+            trial_cases += result["stage"] == "trial_division"
     large = []
     for p, q in ((1000000007, 1000000009), (824633708473, 1099511627689)):
         # This expensive finite-provider work is charged explicitly. The
@@ -70,6 +74,7 @@ def main():
                       "core_recoveries": cases, "core_moment_queries": queries,
                       "largest_hankel_rank": maximum_degree,
                       "uniform_wrapper_cases": wrapper_cases,
+                      "uniform_wrapper_trial_policies": ["balanced square-root", "score-one b/ceil(log2(b+2))"],
                       "uniform_wrapper_trial_returns": trial_cases,
                       "uniform_wrapper_moment_queries": wrapper_queries,
                       "large_supplied_divisor_controls": large}, indent=2))

@@ -1162,7 +1162,9 @@ positive Hankel reconstruction and integer root isolation. After small-factor
 trial division, recovery costs `exp(O(sqrt(b)))`. The moments are coefficients
 of level-one Eisenstein series with explicitly bounded growing weights.
 A suitably uniform fast coefficient engine would preserve its saving exponent
-in the complete factoring bound; that engine remains unproved. Run
+in the complete factoring bound. At the trial budget for `1/2 < beta <= 1`,
+the required weights, query count and recovery work are polynomial in `b`.
+The coefficient engine remains unproved. Run
 `make verify-divisor-moments` for the supplied-moment controls.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)

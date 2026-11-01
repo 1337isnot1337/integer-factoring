@@ -151,12 +151,18 @@ def factor_from_odd_moments(integer, divisor_count_bound, moment):
             "maximum_polynomial_coefficient_bits": max(abs(value).bit_length() for value in polynomial)}
 
 
-def factor_with_odd_moments(integer, moment):
-    """Trial divide to 2^ceil(sqrt(bits(N))), then use a uniform rank bound."""
+def factor_with_odd_moments(integer, moment, trial_bits=None):
+    """Trial divide to 2^t, then use D=2^ceil(bits(N)/t).
+
+    The default t=ceil(sqrt(b)) balances preprocessing and recovery.
+    A larger permitted trial budget shrinks the required weight family.
+    """
     if integer < 2:
         raise ValueError("N>=2 is required")
     bits = integer.bit_length()
-    threshold_bits = isqrt(bits-1)+1
+    threshold_bits = isqrt(bits-1)+1 if trial_bits is None else trial_bits
+    if threshold_bits < 1 or threshold_bits > bits:
+        raise ValueError("the trial exponent must lie between one and bits(N)")
     trial_bound = 1 << threshold_bits
     for candidate in range(2, min(trial_bound, integer)+1):
         if integer % candidate == 0:

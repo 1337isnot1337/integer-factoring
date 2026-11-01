@@ -1,8 +1,8 @@
 # A uniform Eisenstein coefficient engine would recover factors deterministically
 
 This is a counting alternative to smooth-norm witness search. After trial
-division at the arithmetic subexponential scale, the divisors of N form a
-positive measure with at most exp(O(sqrt(b))) support points. A short list
+division at a chosen time budget, the divisors of N form a
+positive measure with an explicit support bound. A short list
 of its odd power sums determines every support point. Exact Hankel
 recovery and integer root isolation then give the smallest prime factor.
 
@@ -21,15 +21,14 @@ accounting and independently supplied-moment controls.
 
 ## 1. The divisor measure has small support after cheap trial division
 
-Let N>=2 have b binary digits. Put
+Let N>=2 have b binary digits. Choose an integer 1<=t<=b and put
 
 ```math
-t=\lceil\sqrt b\rceil,\qquad
 D=2^{\lceil b/t\rceil}.
 ```
 
 Test the integers 2 through min(N,2^t) in order. A first divisor is the
-smallest prime factor, so return it. This costs exp(O(sqrt(b))) bit
+smallest prime factor, so return it. This costs 2^t poly(b) bit
 operations. If no divisor was found, write N=product p_i^(e_i) in the
 proof; this factorization is not supplied to the algorithm. Every p_i
 is greater than 2^t. Hence
@@ -37,11 +36,15 @@ is greater than 2^t. Hence
 ```math
 \sum_i e_i<b/t,\qquad
 \tau(N)=\prod_i(e_i+1)\le2^{\sum_i e_i}\le D
-       =\exp(O(\sqrt b)).                                \tag{1}
+                                                        \tag{1}
 ```
 
 No squarefree or semiprime assumption is needed. Prime inputs are also
 covered: their smallest prime factor is N.
+
+The default t=ceil(sqrt(b)) balances trial division and polynomial
+recovery in D, giving exp(O(sqrt(b))) overhead. Section 4 instead uses
+the desired trial budget to make the coefficient weights much smaller.
 
 For j>=0 define
 
@@ -125,7 +128,8 @@ steps therefore also have polynomial bit cost in D and b. No numeric
 precision promise is involved. A standard deterministic root-isolation
 algorithm could be used instead with the same polynomial conclusion.
 
-Thus trial division, recovery and output together cost exp(O(sqrt(b))).
+Thus trial division, recovery and output together cost
+2^t poly(b)+poly(D,b). At the balanced default this is exp(O(sqrt(b))).
 The additional input is exactly 2D coefficient queries, with maximum
 power-sum exponent 4D+1. These quantities and their output lengths are
 charged; a constant-weight coefficient oracle is not being assumed to
@@ -158,8 +162,32 @@ The usual divisor-sum formula is an identity, not an algorithm to
 evaluate (6) without divisors. Computing all coefficients through N
 would also be exponential in b and does not meet the target.
 
-**Conditional transfer.** Fix beta>0. Suppose a uniform deterministic
-algorithm computes (6), for all weights queried above, within
+There is already a baseline coefficient algorithm at beta=1/2: apply
+the repository's [complete factoring theorem](half-rate-factoring.md)
+recursively, then evaluate
+
+```math
+\sigma_s(N)=\prod_{p^e\parallel N}
+               \frac{p^{s(e+1)}-1}{p^s-1}.
+```
+
+There are at most b factor calls, and the remaining exact arithmetic
+costs poly(b+s). Thus merely obtaining coefficients at the existing
+factoring rate does not improve that rate. The open target below is
+a faster coefficient engine with the stated uniform dependence on weight.
+
+**Conditional transfer.** Fix a positive rational beta. Define
+
+```math
+\ell=\lceil\log_2(b+2)\rceil,\qquad
+t=\left\lceil\frac b{\ell^\beta}\right\rceil,\qquad
+D=2^{\lceil b/t\rceil}\le2^{\lceil\ell^\beta\rceil}.
+```
+
+For a fixed rational beta=p/q, t is computable with exact integer
+arithmetic: take the least positive t with t^q ell^p>=b^q. Suppose a
+uniform deterministic algorithm computes (6), for the even weights
+4<=w<=4*2^ceil(ell^beta)+2, within
 
 ```math
 2^{O(b/(\log(b+2))^\beta)}(b+w)^{O(1)}                 \tag{7}
@@ -169,12 +197,20 @@ bit operations, with constants independent of N and w. Then a uniform
 deterministic machine computes the smallest prime factor of every N in
 time 2^O(b/(log(b+2))^beta).
 
-To prove this, multiply (7) by the number 2D of queries. Both D and
-w<=4D+2 are exp(O(sqrt(b))). The recovery cost has the same smaller
-scale. For each fixed beta, sqrt(b)=o(b/log^beta(b+2)), so all overhead
-is absorbed into the claimed bound. Finite inputs can be handled by
-the explicit trial procedure. All arithmetic is exact and its bit cost
-has been counted, giving a deterministic finite-alphabet implementation.
+To prove this, trial division has precisely the target cost. Multiply
+(7) by the number 2D of queries. Both D and w<=4D+2 are
+2^O((log(b+2))^beta), and recovery is polynomial in D,b. For fixed beta,
+(log(b+2))^beta+log(b+2)=o(b/log^beta(b+2)), so all this overhead is
+absorbed. The trial rule covers finite inputs as well. All arithmetic
+is exact and its bit cost has been counted, giving a deterministic
+finite-alphabet implementation.
+
+For beta<1 the requested weights are b^o(1); for beta=1 they are O(b).
+Thus throughout 1/2<beta<=1, both the required number of coefficient
+queries and all recovery work are polynomial in b. The coefficient
+indices remain the same original N, and the output-size bound is
+polynomial too. This sharper trial/weight tradeoff is optional; the
+balanced default gives a simpler exp(O(sqrt(b))) postprocessing bound.
 
 In particular a beta>1/2 engine would improve the score. There is no
 such engine in this note. Algorithms stated for fixed weight with an
@@ -213,7 +249,7 @@ four-node moment lists. That source knowledge and expensive trial check
 belong to the finite provider, not an algorithmic advance on those inputs.
 
 The [receipt](../evidence/divisor-moment-recovery.json) records 516 core
-recoveries and 255 uniform-wrapper controls, including prime powers and
+recoveries and 510 uniform-wrapper controls using both trial policies, including prime powers and
 nonsquarefree inputs. The two large controls recover their smallest
 prime factors from 16 supplied moments each, through weight 34. None of
 these tests implements the missing fast coefficient engine or proves

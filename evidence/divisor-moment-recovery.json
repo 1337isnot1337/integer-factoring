@@ -4,9 +4,13 @@
   "core_recoveries": 516,
   "core_moment_queries": 7224,
   "largest_hankel_rank": 32,
-  "uniform_wrapper_cases": 255,
-  "uniform_wrapper_trial_returns": 195,
-  "uniform_wrapper_moment_queries": 832,
+  "uniform_wrapper_cases": 510,
+  "uniform_wrapper_trial_policies": [
+    "balanced square-root",
+    "score-one b/ceil(log2(b+2))"
+  ],
+  "uniform_wrapper_trial_returns": 365,
+  "uniform_wrapper_moment_queries": 3192,
   "large_supplied_divisor_controls": [
     {
       "integer": 1000000016000000063,
