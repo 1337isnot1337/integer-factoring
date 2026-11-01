@@ -1,0 +1,262 @@
+{
+  "cases": [
+    {
+      "center_bits": 1,
+      "coefficient_profiles": [
+        [
+          0,
+          64,
+          4,
+          256
+        ],
+        [
+          1,
+          28,
+          12,
+          336
+        ],
+        [
+          2,
+          18,
+          24,
+          432
+        ],
+        [
+          3,
+          6,
+          28,
+          168
+        ],
+        [
+          4,
+          1,
+          64,
+          64
+        ]
+      ],
+      "columns": [
+        1
+      ],
+      "horizontal_pairs": 1,
+      "label_bits": 3,
+      "labels": 8,
+      "literal_and_substitution_matrices_equal": true,
+      "matrix_digest_sum": "8864884590251080230",
+      "matrix_digest_xor": "1234253869614660228",
+      "maximum_rank_product": 432,
+      "native_complete_profile_and_digest_equal": true,
+      "nonzero_polynomial_entries": 272
+    },
+    {
+      "center_bits": 1,
+      "coefficient_profiles": [
+        [
+          0,
+          1024,
+          10,
+          10240
+        ],
+        [
+          1,
+          560,
+          45,
+          25200
+        ],
+        [
+          2,
+          348,
+          136,
+          47328
+        ],
+        [
+          3,
+          142,
+          258,
+          36636
+        ],
+        [
+          4,
+          48,
+          468,
+          22464
+        ],
+        [
+          5,
+          10,
+          560,
+          5600
+        ],
+        [
+          6,
+          1,
+          1024,
+          1024
+        ]
+      ],
+      "columns": [
+        1,
+        1
+      ],
+      "horizontal_pairs": 2,
+      "label_bits": 5,
+      "labels": 32,
+      "literal_and_substitution_matrices_equal": true,
+      "matrix_digest_sum": "2680530327550268173",
+      "matrix_digest_xor": "10416217273981365857",
+      "maximum_rank_product": 47328,
+      "native_complete_profile_and_digest_equal": true,
+      "nonzero_polynomial_entries": 12032
+    },
+    {
+      "center_bits": 2,
+      "coefficient_profiles": [
+        [
+          0,
+          4096,
+          16,
+          65536
+        ],
+        [
+          1,
+          2336,
+          78,
+          182208
+        ],
+        [
+          2,
+          1730,
+          218,
+          377140
+        ],
+        [
+          3,
+          868,
+          460,
+          399280
+        ],
+        [
+          4,
+          446,
+          839,
+          374194
+        ],
+        [
+          5,
+          162,
+          1384,
+          224208
+        ],
+        [
+          6,
+          50,
+          2212,
+          110600
+        ],
+        [
+          7,
+          10,
+          2336,
+          23360
+        ],
+        [
+          8,
+          1,
+          4096,
+          4096
+        ]
+      ],
+      "columns": [
+        1,
+        2
+      ],
+      "horizontal_pairs": 2,
+      "label_bits": 6,
+      "labels": 64,
+      "literal_and_substitution_matrices_equal": true,
+      "matrix_digest_sum": "17464084158171546748",
+      "matrix_digest_xor": "14225070192111494446",
+      "maximum_rank_product": 399280,
+      "native_complete_profile_and_digest_equal": true,
+      "nonzero_polynomial_entries": 73984
+    },
+    {
+      "center_bits": 2,
+      "coefficient_profiles": [
+        [
+          0,
+          4096,
+          16,
+          65536
+        ],
+        [
+          1,
+          2336,
+          78,
+          182208
+        ],
+        [
+          2,
+          1730,
+          218,
+          377140
+        ],
+        [
+          3,
+          868,
+          460,
+          399280
+        ],
+        [
+          4,
+          446,
+          839,
+          374194
+        ],
+        [
+          5,
+          162,
+          1384,
+          224208
+        ],
+        [
+          6,
+          50,
+          2212,
+          110600
+        ],
+        [
+          7,
+          10,
+          2336,
+          23360
+        ],
+        [
+          8,
+          1,
+          4096,
+          4096
+        ]
+      ],
+      "columns": [
+        1,
+        3
+      ],
+      "horizontal_pairs": 2,
+      "label_bits": 6,
+      "labels": 64,
+      "literal_and_substitution_matrices_equal": true,
+      "matrix_digest_sum": "5017146548701391478",
+      "matrix_digest_xor": "131390181757492050",
+      "maximum_rank_product": 399280,
+      "native_complete_profile_and_digest_equal": true,
+      "nonzero_polynomial_entries": 87424
+    }
+  ],
+  "scope": "literal Hopf formula, polynomial substitution, both native cuts, and central basis naturality; no stronger factoring exponent",
+  "source_sha256": {
+    "check_graded_hopf_crossings.py": "4954df461806c57f11508cd5b5635937fac1372005951a9ff8aa8a91783b35a5",
+    "explore_graded_hopf_crossings.cpp": "078b99d2f78d848d78b15594bd370d63cb9a0fe905e825bbf4121526876d0b18",
+    "explore_graded_hopf_crossings.py": "25acaa0fd221eff285cd93ab07e89384226dfaef28ae3b6bedc35155471147ee"
+  },
+  "status": "pass"
+}

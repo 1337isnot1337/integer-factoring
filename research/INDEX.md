@@ -1,8 +1,69 @@
 # Research index
 
-Latest: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
+Related checkpoint: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
 
 This index covers research notes on `main`. Open PRs can contain later work. Each note states its own assumptions, proof scope, and evidence. An obstruction to a specific construction is not a factoring lower bound.
+
+<!-- beyond-half-index:start -->
+## November 1 arithmetic and tensor checkpoint
+
+[Overview and exact selector contracts](beyond-half-research-checkpoint.md). Ordinary proofs and executable evidence; complete score remains 1/2.
+
+- [Prove polynomial-size prime-form generation and exact biased samples](polylog-prime-form-generators.md).
+- [Make prime-form generator and bias cutoffs explicit](explicit-prime-form-cutoffs.md).
+- [Record prime-translation and smooth-set Fourier obstructions](prime-translates-miss-smooth-forms.md).
+- [Smooth set fourier norm](smooth-set-fourier-norm.md).
+- [Extract useful ambiguous forms in polynomial time from an annihilator](polynomial-ambiguous-extraction.md).
+- [Decode primitive factored norms by exact orientation matching](factored-norm-orientation-search.md).
+- [Prove explicit multiband smooth-ideal density](smooth-band-density.md).
+- [Construct the prime-form base deterministically](prime-form-root-construction.md).
+- [Amplify prime bias to obtain short smooth norms in every class](powered-prime-smooth-norms.md).
+- [Replay powered-prime smooth-norm existence on finite class groups](powered-prime-finite-replay.md).
+- [Complete the selected-integer factoring consumer](selected-norm-factoring-interface.md).
+- [Remove the multiplicity promise from the unsigned consumer](height-only-selected-integers.md).
+- [Decode arbitrary factored norms with a bound on primitive norm](arbitrary-factored-norm-representation.md).
+- [Bound coverage of one target-independent norm list](norm-selector-coverage.md).
+- [Prove the elementary crossing floor after all binary type restrictions](direct-type-elementary-pressure-floor.md).
+- [Classify all rank-seven constant restrictions of three elementary sites](linear-physical-restriction-crossings.md).
+- [Prove Clifford compression layers and near-full pressure floors](clifford-compression-pressure-floor.md).
+- [Pin the scope of the recent rigorous ideal sampler](rigorous-ideal-sampling-scope.md).
+- [Show the row-frame threshold is sharp and exhibit the cubic induction obstruction](clifford-threshold-sharpness.md).
+- [Sharpen supplied-norm processing to a uniform one-half leading coefficient](quasipolynomial-base-norm-processing.md).
+- [Construct dynamic half-size leading norms with certified fresh-unit elimination](dynamic-leading-norm-closure.md).
+- [Search fixed prime-form power windows and factor 92-bit and 124-bit controls](smooth-leading-power-selection.md).
+- [Replay an unrelated fixed-seed 124-bit smooth-power factorization](fresh-leading-power-control.md).
+- [Direct supplied smooth norms give signed short prime words](smooth-norm-short-words.md).
+- [Polynomial ideal HNF and uniform Delta=-4N extraction structure](direct-discriminant-short-norms.md).
+- [Complete finite norm sieve and original 60/92-bit factoring certificates](complete-smooth-norm-sieve.md).
+- [Determinant-free full and partial relation halving](determinant-free-ambiguous-extraction.md).
+- [Finite partial norm search and 124-bit certificate](partial-norm-search.md).
+- [Height-only norms and logarithm-weighted relation independence](height-only-smooth-norm-relations.md).
+- [Adaptive target exponents improve the finite height search](adaptive-height-norm-selection.md).
+- [Polynomial-size complete subspace Smith-channel oracle](subspace-smith-channel-oracle.md).
+- [Exact all-state channel-pressure separation](channel-pressure-separation.md).
+- [Exact block and precision hierarchy for complete subspace channels](block-subspace-channel-hierarchy.md).
+- [Exact modular higher-spin crossing exclusions](modular-spin-crossings.md).
+- [Exact homogeneous physical restrictions of the two-site reflection seed](reflection-homogeneous-restrictions.md).
+- [All-scale 5/7 floor for every homogeneous middle-fiber restriction](homogeneous-restriction-pressure-floor.md).
+- [Complete joint physical conjugations cannot improve the four-letter reflection seed](joint-height-conjugation-floor.md).
+- [Fresh odd pivots preserve exact identities and the presented two-primary torsion](odd-pivot-two-primary-elimination.md).
+- [All-degree binary nilpotent joint frames of the four-letter reflection seed are rigid](polynomial-joint-height-rigidity.md).
+- [State-adaptive physical Smith channels](state-adaptive-smith-channels.md).
+- [Matroid optimization within equal-order channel blocks](matroid-adaptive-smith-channels.md).
+- [Complete regular channel bases through finite jets](dvr-adaptive-smith-channels.md).
+- [Complete triangular auxiliary row fiber and word obstruction](triangular-auxiliary-row-fiber.md).
+- [Protected subtensor and maximal regular left projection](protected-subtensor-pressure.md).
+- [Bounded boundary extraction of protected scalar lines](boundary-extracted-scalar-pressure.md).
+- [All binary code embeddings with arbitrary diagonal gauges](arbitrary-binary-code-pressure-floor.md).
+- [Integer shared-minor floors and the universal affine exclusion](integer-shared-minor-pressure-floor.md).
+- [All-degree seven-letter adjugate floor and capped jets](adjugate-seven-letter-pressure-floor.md).
+- [All coordinate codes of two reflection sites have an exact pressure floor](reflection-coordinate-code-pressure-floor.md).
+- [Smith orders bounded by degree close alphabets through ten](bounded-order-smith-pressure-floor.md).
+- [An explicit eight-letter nonorthogonal reflection crossing](eight-letter-reflection-retraction.md).
+- [A wider exact pressure-gain interval for the eight-letter retraction](eight-letter-pressure-gain-factorization.md).
+- [Adaptive power windows and a fresh 144-bit factorization](adaptive-power-window-selection.md).
+
+<!-- beyond-half-index:end -->
 
 ## Proved machine bounds and their foundations
 
@@ -72,7 +133,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Conic denominator audit](conic-denominator-descent.md): for discriminant -4N, cancellation is one explicit linear gcd and a parity factor; nonsplitting cases preserve the root class up to the exceptional ambiguous class, with exact failures of monotone descent.
 - [Divisor moments and Eisenstein coefficients](divisor-moment-recovery.md): positive Hankel recovery gives a deterministic smallest-factor reduction to a uniform family of level-one coefficients; a trial/weight tradeoff makes the weights and recovery polynomial in b for target scores through one, while the fast coefficient engine remains open.
 - [Global sparse divisor residues](sparse-divisor-residues.md): Garg--Schost interpolation and a chosen trial budget preserve every fixed-characteristic saving exponent, with polynomial cyclic degrees through score one and a global-only query contract; a faster evaluator remains open.
-- [Fixed weight-one coefficient target](weight-one-divisor-coefficients.md): odd-character Fourier inversion supplies signed divisor residues from weight-one Eisenstein coefficients at small prime levels; signed sparse recovery preserves every fixed saving exponent, conditional on a faster composite-index coefficient engine.
+- [Fixed weight-one coefficient target](weight-one-divisor-coefficients.md): one bit per cyclotomic coordinate supplies signed divisor residues at every prime level, by an injective binary decoder retaining nilpotent coordinates; paired sparse recovery preserves every fixed saving exponent, conditional on a faster composite-index weight-one coefficient engine.
 - [Polynomial divisor-gap extraction](smooth-norm-gap.md): integer multiplicative trimming converts promised inner-radius balanced norms at a specified outer radius, without enumerating all divisors.
 - [Relations from small smooth norms](smooth-norm-relations.md): primitive smooth norms yield bounded prime-form words directly, removing the balanced-factor condition and strictly enlarging the accepted target set.
 - [Exact search for a factored norm](factored-norm-search.md): ideal-lattice composition and deterministic meet-in-the-middle decide one primitive representation and recover coordinates in `Y poly(b)+2^O(b/log b)` bit time; selecting candidate norms remains open.
@@ -388,6 +449,12 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Ordered charge-area crossings](ordered-charge-area-crossings.md): growing clocks have an exact integer charge-walk normal form; polynomial-degree field descent preserves the exponent, and a binary area-zero filter retains both strict endpoints with linearly many coefficients; complete binary spans fail at two selected lengths.
 
+- [Joint energy conjugations](joint-energy-conjugations.md): joint-pair changes preserve one entire weighted Smith profile; a 16-dimensional bimodule enumerates the complete 1,296-member F4 orbit fixing the five-letter reference's leading coefficient, and exact prefix dominance excludes any scale improvement at its natural heights; a tangent identity classifies all formal leading-rank-one motions near the identity.
+
+- [Polynomial joint-energy dressings](joint-energy-polynomial-dressings.md): a four-dimensional square-zero sector preserves one full profile; 180 quadratic identities and two explicit minors reduce every degree over every characteristic-two field to a constant conjugate under the original pole/rank constraints; exact quadratic/Frobenius elimination also closes every square-zero scalar-polynomial energy generator of arbitrary rank.
+- [Formal polynomial energy-gauge rigidity](joint-polynomial-formal-rigidity.md): two exact direct sums classify all polynomial tangent degrees; every identity-based formal energy gauge retaining the original pole and leading rank factors into a constant gauge and a tensor-preserving full-commutant unit, without a generator or nilpotency assumption.
+- [Discrete joint lattice modifications](joint-monomial-lattice-modifications.md): difference constraints classify all integer joint coordinate charges into 12 effective tensors with dominated profiles; exact all-field polynomial/Frobenius elimination also classifies arbitrary energy-block projector modifications at every positive depth into four tensor-preserving projectors under the stated conditions.
+
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
 - [All-degree homogeneous Boolean charge bands](homogeneous-boolean-charge-bands.md): a degree-independent loss cap and stronger Gaussian floors exclude all exterior charges and a linearly growing interior band, including overlapping monomials.
@@ -442,6 +509,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Coherent bounded-spin crossing](bounded-spin-crossing.md): uniform height-three path encoders over F5, Fibonacci growth, strict endpoint, exact binary widths and a finite-state entry constructor; a post-half actual-rank bound remains open.
 - [Bounded-spin primary rank algebra](bounded-spin-rank-algebra.md): exact six-dimensional cut algebras at length eight, a rank formula over every characteristic-five extension, and a sharp minmax product 2304 certified by 759 common kernels and a separating hyperplane.
+- [Second coefficient and the transposition class sum](bounded-spin-second-coefficient.md): a uniform compressed-operator formula identifies the eight-site row algebra with the replica swap and diagonal transposition sum, including its square-zero component; larger-length ranks remain open.
 - [Three uniform spin-zero jets](bounded-spin-three-jets.md): integral scalar one-site transition matrices force three coefficient relations and an `n-2` span bound at every even length at least six; a four-qubit invariant model separates this from the open rank-growth problem.
 - [Four-qubit generators in odd characteristic](four-qubit-orthogonal-generators.md): a direct `SO_4 x SO_4` proof of the free degree `2,4,4,6` invariant ring, complete F5 pencil relations and the exact universal `n-2` scalar Hilbert function; ordinary cut ranks remain open.
 - [Enlarged coherent six-vertex crossing](bounded-spin-six-vertex.md): a uniform degree-`O(n^2)` substitution exposes the full monomial span and adds a seventh direction at eight sites; each cut has an exact invariant commutator module of dimension 28, with uniform favorable ranks still open.
@@ -632,3 +700,124 @@ Integrated from [exact PR #26 source](https://github.com/1337isnot1337/integer-f
 - [An all-energy row filtration for the binary weighted Weyl curve](weighted-weyl-row-filtration.md)
 - [The constant alternate-order Weyl algebra](weyl-alternate-order-algebra.md)
 - [A p-typical Witt state space with perfect modular duality](witt-duality-and-vertex-jets.md)
+
+## Retained PR #27 conservation and crossing checkpoint
+
+Integrated from [exact PR #27 source](https://github.com/1337isnot1337/integer-factoring/tree/b49b9e19480c65d139ef15beecacb92064c1a960), retaining original credits and scope. Ordinary transfers and restricted rank barriers do not establish a stronger complete factoring exponent.
+
+- [An exact exterior-algebra model for both crossing cuts](bi-exterior-crossing-algebra.md)
+- [Degree and quadratic-rank budgets for the full exterior model](bi-exterior-degree-budget.md)
+- [Verified divisor recovery in a varying characteristic](characteristic-independent-recovery.md)
+- [Dual code sections: exact normal forms and complete finite screens](code-section-normal-forms.md)
+- [A rank-sum barrier for all unsymmetrized diagonal words](diagonal-word-rank-sum-barrier.md)
+- [A rank quotient for arbitrary fixed-target Feistel relabelings](fixed-target-feistel-barrier.md)
+- [Flag quotients exclude finite rank-sum seeds through eighty-two labels](flagged-cut-rank-budget.md)
+- [A common rank quotient for all affine-selector frames](frame-filtration-barrier.md)
+- [A rank-sum obstruction for every binary conservation kernel](full-conservation-rank-sum-barrier.md)
+- [Formal crossing limits are excluded through sixty-four labels](geometric-border-cutoff.md)
+- [Geometric compression excludes exact rank-sum seeds through ninety-five labels](geometric-cut-rank-budget.md)
+- [The geometric compression bounds still admit the dyadic scalar profile](geometric-cut-relaxation-limit.md)
+- [Universal subspace compression from integer Jacobian certificates](geometric-subspace-compression.md)
+- [One global block length permits growing coefficient fields](global-block-field-transfer.md)
+- [A support barrier for Boolean-incidence crossing kernels](incidence-kernel-rank-sum-barrier.md)
+- [Nonlinear label maps give a genuinely new layer family, but no gain yet](nonlinear-layer-probe.md)
+- [Pauli/Walsh atoms: an exact sixty-four-label dictionary exclusion](pauli-walsh-dictionary.md)
+- [Polynomial-time coefficient queries on quadratic Boolean codes](quadratic-code-oracle.md)
+- [Factor kernels exclude formal crossing limits through seventy-one labels](rank-one-formal-cutoff.md)
+- [A quantitative global transfer from raw rank sums](rank-sum-global-transfer.md)
+- [A two-product approximation leaves a half-dimensional complement](two-product-complement.md)
+- [The two-product theorem excludes rank-sum seeds through 54 labels](two-product-seed-cutoff.md)
+- [Weighted cut budgets survive formal one-parameter degenerations](weighted-cut-border-stability.md)
+- [Positive cut duals exclude seeds through fifty-two labels](weighted-cut-dual-certificate.md)
+- [Weighted cut budgets and a forty-six-label cutoff](weighted-cut-rank-budget.md)
+- [An exact limitation of the scalar cut budgets](weighted-cut-relaxation-limit.md)
+- [Residual cut budgets exclude seeds through fifty labels](weighted-cut-residual-budget.md)
+- [Arbitrary binary-word restrictions of the 23-term profile](word-restriction-barrier.md)
+
+## Retained PR #29 Ward and crossing checkpoint
+
+Integrated from [exact PR #29 source](https://github.com/1337isnot1337/integer-factoring/tree/7154cec09b982b54a0fcc0bb7a303318fc1f90da), retaining its original credits and scope. Entry algorithms, conditional interfaces and construction-specific finite or all-size barriers do not establish an exponent above `1/2`.
+
+- [Complete control permutations and bipartite Pfaffian codes](additional-crossing-screens.md)
+- [Quadratic charges, residue syndromes, and label entropy](binary-quadratic-charge-shells.md)
+- [Moment identities and a cumulative bosonic crossing profile](bosonic-hermite-profile.md)
+- [Crossing families from coded central quotients](coded-central-crossings.md)
+- [Common-functional rank compressions without coefficient algebras](common-functional-rank-compressions.md)
+- [Explicit complement shells and their finite local tensor](complement-shell-crossings.md)
+- [Exact rank blocks and protected minors for complementary shells](complement-shell-rank-blocks.md)
+- [Cubic crossings with arbitrary dual output maps](cubic-arbitrary-output-identity.md)
+- [A bounded non-diagonal cubic probe over F8](cubic-complement-F8-probe.md)
+- [Allowing a nonzero complementary output image](cubic-complementary-output-maps.md)
+- [Coordinate-image output mixtures: an all-power barrier](cubic-coordinate-image-mixtures.md)
+- [Cyclic complementary maps: an all-field, all-power barrier](cubic-cyclic-all-power-barrier.md)
+- [Fixed-image rank-one outputs: a universal all-power barrier](cubic-fixed-image-rank-one-barrier.md)
+- [Jordan complementary maps: a triangular all-power barrier](cubic-jordan-all-power-barrier.md)
+- [Full mixed cubic coefficient spaces over F8](cubic-mixed-F8-spaces.md)
+- [Mixing the recorded cubic output spaces](cubic-mixed-output-pool.md)
+- [A gate for changing a few cubic output rows](cubic-output-perturbations.md)
+- [Cubic radical codes with syndrome-preserving output maps](cubic-radical-output-maps.md)
+- [Varying rank-one images: an affordable-span escape](cubic-varying-image-affordable-escape.md)
+- [Structure and bounded optimization of the varying-image space](cubic-varying-image-normal-form-and-peels.md)
+- [Exact weighted aggregation of complete folded-Gram channels](folded-gram-aggregation.md)
+- [Complete folded-Gram channels and exact Johnson ranks](folded-gram-channels.md)
+- [The first characteristic-two residual jet at even state energy](homogeneous-central-eighth-jet.md)
+- [Quotient symbols for the modular partition crossing](homogeneous-central-modular-symbols.md)
+- [Complete homogeneous profiles and their first nonzero jets](homogeneous-central-profiles.md)
+- [Homogeneous modular duals at every label width](homogeneous-central-selection.md)
+- [Mixed products of the certified coefficient spaces](mixed-common-functional-barrier.md)
+- [A nonbinary output section for the 24-label code](nonbinary-two-even-site-sections.md)
+- [Abelian orbit kernels: midpoint blocks and an all-cyclic exclusion](noncommutative-crossing-abelian-midpoints.md)
+- [Finite rank-sum gates for crossing constructions](noncommutative-crossing-finite-gates.md)
+- [Graded Hopf crossing families and scalar rank factorizations](noncommutative-crossing-graded-hopf.md)
+- [Class-two group-word crossings with arbitrary central controls](noncommutative-crossing-group-degeneration.md)
+- [Involution-free minors of group orbit tensors](noncommutative-crossing-involution-support.md)
+- [Optimal common retracts that cancel two Pfaffian vertices](noncommutative-crossing-optimal-retracts.md)
+- [Crossing pieces from noncommuting group words](noncommutative-crossing-orbits.md)
+- [A PBW degeneration closes the graded Hopf crossing lane](noncommutative-crossing-pbw-degeneration.md)
+- [Pfaffian boundary sections](noncommutative-crossing-pfaffian-boundaries.md)
+- [Sparse isotropic Pfaffian sections](noncommutative-crossing-pfaffian-isotropic.md)
+- [Ward factors from commuting symplectic forms](noncommutative-crossing-radical-ward.md)
+- [Sparse symplectic radical codes with two vanishing endpoints](noncommutative-crossing-symplectic-radicals.md)
+- [Charge filtration for the Ward rank factors](noncommutative-crossing-ward-charge-filtration.md)
+- [Euler refinement and a small Ward interface](noncommutative-crossing-ward-euler.md)
+- [Graded rank descent after the Ward factor](noncommutative-crossing-ward-rank-descent.md)
+- [A uniform binary barrier for cancelling P6 boundary sections](pfaffian-p6-boundary-orbit-barrier.md)
+- [Exact one-particle reduction of the four-state Pfaffian](pfaffian-particle-hole.md)
+- [Exact ranks of Pfaffian retract families](pfaffian-retract-rank-profiles.md)
+- [A three-parameter Pfaffian family on fixed-length codes](pfaffian-ternary-edge-family.md)
+- [Exact high-mode residue folding and two-cut channel dimensions](residue-folded-channels.md)
+- [Simultaneous time and workspace at the finite-seed endpoint](simultaneous-seed-endpoint.md)
+- [A certified limitation of the stabilized centered-bound computation](stable-boundary-envelope.md)
+- [Complete coordinate changes in the stable Pfaffian evaluator](stable-pfaffian-coordinate-search.md)
+- [A stable two-factor decomposition of the complete Pfaffian](stable-pfaffian-modules.md)
+- [Exact rank profiles for symplectic boundary codes](symplectic-boundary-code-profiles.md)
+- [Mixed exterior grades: endpoint contacts and exact repairs](symplectic-mixed-grade-codes.md)
+- [The coefficient algebra of the 26-label radical seed](symplectic-radical-seed-algebra.md)
+- [A common-character barrier for every power of the 24- and 26-label seeds](symplectic-seed-character-barrier.md)
+- [Exact field screens for shared-parameter seed powers](symplectic-seed-tensor-field-screens.md)
+- [Exact small modules for the 26-label radical seed](symplectic-seed-tensor-modules.md)
+- [Weighted radical-seed powers and exact small modules](symplectic-seed-weighted-powers.md)
+- [A sumset lower bound from the two syndrome block decompositions](syndrome-sumset-rank-cost.md)
+- [Bounded Frobenius modules at ten sites](two-even-site-P10-frobenius-probe.md)
+- [An all-field, all-power barrier for the 240-label seed](two-even-site-P6-character-barrier.md)
+- [A 672-label all-field certificate from small Jordan blocks](two-even-site-P7-jordan-barrier.md)
+- [Eight-site barrier from bounded Jordan modules](two-even-site-P8-character-barrier.md)
+- [All-size assembly from four-site cores](two-even-site-core-factorization.md)
+- [Small row corners close the nine-site coefficient span](two-even-site-row-corner-barrier.md)
+- [Two-even-site codes with different output sections](two-even-site-section-search.md)
+- [Independent operator and state grades in the complete Gram construction](unequal-grade-folded-gram.md)
+- [Computed Euler and charge-filtered Ward bounds](ward-charge-bound-computations.md)
+- [Label entropy for binary Ward codes](ward-code-charge-entropy.md)
+- [Computable Ward bounds and actual overlapping codes](ward-code-rank-bounds.md)
+- [Complete coefficient ranks with the Ward operator retained](ward-combined-operator-ranks.md)
+- [Sixteen scalar channels for disjoint Ward forms](ward-disjoint-operator-transfer.md)
+- [The complete lowest Ward boundary vanishes for the 84-label fan](ward-fan-boundary.md)
+- [The 84-label fan has exact Ward vanishing order four](ward-fan-exact-order.md)
+- [An overlapping Ward family with interval width two](ward-fan-family.md)
+- [An exact vanishing block improves the first fan upper profile](ward-fan-leading-block.md)
+- [Two-state formal Ward queries for the fan](ward-fan-polynomial-queries.md)
+- [Several Ward forms in the same eight-dimensional operator algebra](ward-form-operator-transfer.md)
+- [Ward entry evaluation controlled by support overlap](ward-interval-operator-transfer.md)
+- [Polynomial-time physical Ward entry queries](ward-pfaffian-entry-queries.md)
+- [An asymptotic floor for the computed Ward rectangular bound](ward-rectangular-bound-envelope.md)
+- [An eight-dimensional interface for the actual Ward operators](ward-stable-operator-interface.md)

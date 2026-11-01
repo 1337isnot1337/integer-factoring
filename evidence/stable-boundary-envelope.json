@@ -1,0 +1,93 @@
+{
+  "all_six_ancillary_boundary_block_checks": 114,
+  "checker_sha256": "1160338b4ef3360fd263c27b3d3c7b7809334a5733440af6c02032416586dbd9",
+  "exact_integer_entropy_certificates": {
+    "certified_computation_exponent_lower_bound": [
+      29,
+      20
+    ],
+    "certified_computation_rho_lower_bound": [
+      29,
+      40
+    ],
+    "first_entropy_endpoint_integer_pair": [
+      9865048520787797067024962790568855952556976318359375,
+      2453941043571712080345525993154183331998142701305856
+    ],
+    "second_entropy_endpoint_integer_pair": [
+      6283298708943145751953125,
+      5965713238587556958830592
+    ]
+  },
+  "finite_boundary_cases": [
+    {
+      "complement_pairs": 16,
+      "determinant_twist": 2,
+      "exact_stable_multiplicity": 5151658368,
+      "first_highest_weight": 7,
+      "labels": 3365856,
+      "length": 7,
+      "rho_lower_bound_on_stabilized_computation": 0.7439715726368248,
+      "second_highest_weight": 23,
+      "symmetric_jet": 2
+    },
+    {
+      "complement_pairs": 32,
+      "determinant_twist": 4,
+      "exact_stable_multiplicity": 295704904904002049904,
+      "first_highest_weight": 13,
+      "labels": 47855699958816,
+      "length": 14,
+      "rho_lower_bound_on_stabilized_computation": 0.7482075212471307,
+      "second_highest_weight": 45,
+      "symmetric_jet": 4
+    },
+    {
+      "complement_pairs": 64,
+      "determinant_twist": 7,
+      "exact_stable_multiplicity": 19268374161477885037869597169622066606899200,
+      "first_highest_weight": 31,
+      "labels": 46732349780051591701222672000,
+      "length": 29,
+      "rho_lower_bound_on_stabilized_computation": 0.7548905194139516,
+      "second_highest_weight": 85,
+      "symmetric_jet": 7
+    },
+    {
+      "complement_pairs": 128,
+      "determinant_twist": 14,
+      "exact_stable_multiplicity": 15663274958450836217014769034444569072801089384367021516725736839384328629326794363596800,
+      "first_highest_weight": 61,
+      "labels": 18416957501521750956180603687896892143521991758499560176000,
+      "length": 58,
+      "rho_lower_bound_on_stabilized_computation": 0.7568398932653817,
+      "second_highest_weight": 169,
+      "symmetric_jet": 14
+    },
+    {
+      "complement_pairs": 256,
+      "determinant_twist": 29,
+      "exact_stable_multiplicity": 3592072198475934126999092802775427046323268810024083324762839929703811225984087068849089642780411142102199204248007358667313721931432089774116585510292530546110367914386310299648,
+      "first_highest_weight": 115,
+      "labels": 1179241855996580953269193641111486864345250669837842172375997109443336061355583550385648775977439545665754073311987200,
+      "length": 115,
+      "rho_lower_bound_on_stabilized_computation": 0.7583194416095693,
+      "second_highest_weight": 341,
+      "symmetric_jet": 29
+    },
+    {
+      "complement_pairs": 512,
+      "determinant_twist": 58,
+      "exact_stable_multiplicity": 14596335997966059401488271924254203658992808108782610152709183515721940631081196100620981452848471783283817009937871806865772569090809738093350493738030278372948744715885109088749467579781018473488664296850895337386175450381094895746723833007528876626061510204592593048383306426001343298167315988993801619613717707285148330011198478752736553216551417819430912,
+      "first_highest_weight": 231,
+      "labels": 80094223365245911852595535594859831485008825462875402499963443798370358153206762094479455630995949785800486451303473874680187144328889113620131144834435606307767348107864509343687515169436285759686155800859878002801575136089546888084480,
+      "length": 231,
+      "rho_lower_bound_on_stabilized_computation": 0.7591326330718609,
+      "second_highest_weight": 679,
+      "symmetric_jet": 58
+    }
+  ],
+  "fusion_path_multiplicity_checks": 2080,
+  "scope": "lower bounds only on the stabilized six-ancilla centered upper-bound computation; no lower bound on actual tensor ranks",
+  "status": "pass"
+}

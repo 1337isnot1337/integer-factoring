@@ -64,6 +64,46 @@ The [research index](research/INDEX.md) links proofs, exact evidence, and replay
 
 The result table distinguishes verified machine bounds from conditional constructions and finite experiments. A merged PR or a passing finite test does not imply independent mathematical review.
 
+
+<!-- beyond-half-checkpoint:start -->
+## Arithmetic and tensor checkpoint, November 1
+
+The [consolidated research guide](research/beyond-half-research-checkpoint.md)
+connects the ordinary proofs, exact programs, and remaining obligations.
+The complete factoring score remains **1/2**; this checkpoint adds no Lean
+formalization.
+
+A constructed prime-form power selector now finds smooth leading norms using
+an exact primorial filter and CRT composition. Its adaptive continuation
+[factors a fresh 144-bit semiprime](research/adaptive-power-window-selection.md)
+after 8,232,730 norm tests, including the exhausted first phase. It retains
+successful rows and extends only unfinished targets. Both input primes and all
+accepted relations are certified. A uniform bound on the required power window
+remains open.
+
+The wider arithmetic route has explicit prime-form generators, uniform
+represented-smooth-norm existence, unsigned-norm decoding, weighted independent
+relations, and determinant-free extraction. With a quasipolynomial base, a full
+batch of supplied norms can be processed in `2^((1/2+o(1))b/log_2 b)` time.
+Generation and existence use the pinned all-number-field Hecke zero-free theorem.
+That existence result does not imply that a reduced leading coefficient is smooth.
+
+State-dependent channels, a polynomial subspace oracle, and blocking improve
+exact tensor certificates. An [explicit eight-letter crossing](research/eight-letter-reflection-retraction.md)
+has a rational-type certificate `rho<0.72` and beats its matched coordinate
+restriction. The certified trial rate remains above `1/sqrt(2)`.
+The new pressure restrictions have their stated scope; they are not lower
+bounds on integer factoring.
+
+Run `make verify-beyond-half` for the core checkpoint replays. The
+[verification record](evidence/beyond-half-verification-20261101.json) pins the
+executed suites and source hashes. `make verify-adaptive-power-full` repeats
+all 8,232,730 candidates of the 144-bit search; `make verify-reflection-codes-full`
+repeats the separate exhaustive 65,519-code classification. Individual notes
+state which checks replay certificates and which regenerate the complete search.
+<!-- beyond-half-checkpoint:end -->
+
+
 ## Verification
 
 Before starting overlapping work, run `python3 tools/find_overlap.py KEYWORD`
@@ -126,6 +166,10 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+- [Ward/Pfaffian entry queries](research/ward-pfaffian-entry-queries.md), [simultaneous seed endpoint](research/simultaneous-seed-endpoint.md), and the [PR #29 checkpoint](research/INDEX.md#retained-pr-29-ward-and-crossing-checkpoint): exact entry constructions, effective interfaces and scoped crossing barriers. Entry evaluation alone is not a favorable rank bound. `verify-constructions` is in the default gate; larger native/extended screens remain separate. No stronger complete factoring exponent is claimed.
+
+- [Full binary conservation-kernel barrier](research/full-conservation-rank-sum-barrier.md) and [PR #27 checkpoint](research/INDEX.md#retained-pr-27-conservation-and-crossing-checkpoint): ordinary rank-sum theorems, transfers and exact finite controls. The all-kernel characteristic-two theorem and the [elementary all-code bound](research/difference-support-rank-floor.md) have distinct scopes. No general factoring lower bound, new Lean result, or exponent above `1/2` is claimed.
 
 - [Vanishing-slack transfer](research/vanishing-slack-score-transfer.md), [optimized divisor bound](research/optimized-divisor-count-bound.md), and the [PR #26 checkpoint](research/INDEX.md#retained-pr-26-effective-transfer-and-crossing-checkpoint): effective interfaces, arithmetic bounds and scoped crossing work. Universal verified search does not supply a new numerical exponent. See `make verify-further` and the retained optional targets; no new Lean or stronger complete factoring bound is claimed.
 
@@ -309,6 +353,11 @@ exact ranks over every characteristic-five extension and minmax rank
 product 2304; that finite block cannot improve the rate. Run
 `make verify-bounded-spin` and the optional NumPy target
 `make verify-bounded-spin-algebra`.
+The [second-coefficient formula](research/bounded-spin-second-coefficient.md)
+expresses `3C_2` as a compressed diagonal transposition sum plus
+`k(k+1)I` at every length `n=2k`. At eight sites this sum and the replica
+swap generate the certified row algebra, including its nilpotent part.
+Run `make verify-bounded-spin-second` for independent entry controls.
 The [spin-zero jet identities](research/bounded-spin-three-jets.md)
 hold at every length and bound the coefficient span by `n-2` for even
 `n>=6`; ordinary cut-rank growth remains open.
@@ -519,6 +568,45 @@ Selecting charge zero and area zero gives a binary family with strict
 endpoints and linearly many coefficients. Its complete binary spans fail
 the finite half target at lengths two and three; useful uniform rank
 bounds remain open. Run `make verify-ordered-charge-area`.
+
+[Joint-pair energy conjugations](research/joint-energy-conjugations.md)
+preserve one full weighted Smith profile while changing the other cut.
+For the five-letter Gaussian reference, exact commutants reduce the
+leading-coefficient-preserving F4 family to 1,296 distinct tensors.
+Fraction-free profiles and prefix dominance show that none improves the
+reference at its natural heights at any scale. Fixing its next complete
+coefficient forces a trivial conjugation. A tangent-space identity also
+classifies every formal leading-rank-one deformation near the identity
+as a centralizer motion and separate physical diagonal changes.
+Other constant components and weaker order-preserving changes remain
+open. Run `make verify-joint-energy-conjugations` and
+`make verify-joint-leading-tangent`.
+The [polynomial dressing reduction](research/joint-energy-polynomial-dressings.md)
+also handles arbitrary polynomial degrees in its four-dimensional
+nilpotent sector: retaining the original worst pole and rank-one leading
+coefficient reduces the seed to a constant conjugate, over every
+characteristic-two field. Exact quadratic elimination with Frobenius
+roots also closes every square-zero scalar-polynomial energy generator,
+of arbitrary rank: the pole bound forces it into that sector, and the
+leading rank condition makes the transformation trivial.
+Run `make verify-joint-energy-dressings` and
+`make verify-joint-energy-riccati`.
+The [formal polynomial gauge theorem](research/joint-polynomial-formal-rigidity.md)
+removes the single-generator assumption for families through the identity:
+two exact direct sums control every degree, and formal lifting reduces
+every such pole/rank-preserving gauge to a constant conjugation and a
+tensor-preserving commutant unit. Separate components remain open.
+Run `make verify-joint-polynomial-tangent`.
+The [discrete coordinate lattice calculation](research/joint-monomial-lattice-modifications.md)
+allows singular joint monomial gauges that change both profiles. Exact
+difference constraints classify every integer charge preserving the
+original pole bound into 12 effective tensors; both profiles are
+dominated by the reference at every scale. A subsequent all-field
+classification also closes every energy-projector modification at
+every positive depth under the stated conditions; the only four
+projectors preserve the tensor. Interacting subspaces and other
+finite places remain open. Run `make verify-joint-monomial-lattices`
+and `make verify-joint-projector-lattices`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite
@@ -1187,9 +1275,11 @@ deterministic class-group relation generation outside the crossing evaluator.
 It proves a positive Fourier hitting lemma and deterministic extraction of
 two-torsion from unsaturated relation data. A powering seed with published
 expander amplification supplies biased words from generators without a group
-decomposition. The fast generator and smooth-pair
-construction steps remain open, so the score is still `1/2`. Reproduce the
-current exact controls with `make verify-arithmetic-framework`.
+decomposition. Full prime-form generation now has an [explicit polynomial cutoff](research/explicit-prime-form-cutoffs.md)
+under the pinned finite-order Hecke zero-free theorem. Fast norm selection
+remains open; the [completed processing stack](research/beyond-half-research-checkpoint.md)
+states its precise contract. The score remains `1/2`. Reproduce the earlier
+framework controls with `make verify-arithmetic-framework`.
 The [actual quadratic-form controls](research/arithmetic-class-group-controls.md)
 also recover proper factors for 18 finite targets and check complete
 two-torsion recovery; their generator and order searches enumerate classes.
@@ -1247,7 +1337,9 @@ weighted evaluator remains unproved. Run `make verify-sparse-divisor-residues`.
 A [fixed weight-one alternative](research/weight-one-divisor-coefficients.md)
 uses odd-character Eisenstein coefficients at small prime levels. Exact
 Fourier inversion gives signed divisor residues, and the same sparse
-reconstruction recovers factors. The coefficient at the original composite
+reconstruction recovers factors. One bit per cyclotomic coordinate suffices
+at every level `q`: a binary decoder keeps the full algebra modulo two,
+including its nilpotents. The coefficient at the original composite
 index remains the unresolved engine; no improvement follows from prime-index
 formulas. Run `make verify-odd-character-residues` for the component checks.
 

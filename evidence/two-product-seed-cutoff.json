@@ -1,0 +1,1120 @@
+{
+  "status": "PASS",
+  "scope": "All-field rank-sum exclusion through 54; no new factoring exponent",
+  "previous_cutoff": 52,
+  "last_certified_dimension": 54,
+  "arithmetic": "Integers and rational numbers only",
+  "dimensions": [
+    {
+      "d": 53,
+      "lower_bound": {
+        "numerator": "27261101706102515573784128688252490485620633",
+        "denominator": "98743125767552694663449415720884524259100",
+        "decimal": 276.0810081126741
+      },
+      "strict_above_d_to_sqrt2": true,
+      "scalar_classes": 4544,
+      "strictly_improved_b2_classes": 12,
+      "minimizing_class": {
+        "k": 49,
+        "b": 1,
+        "a_lower": 2305,
+        "a_upper": 2401,
+        "row_rest": 1584,
+        "col_rest": 2808,
+        "extra_rank_budget": 1129
+      },
+      "minimum_by_k": [
+        {
+          "k": 2,
+          "b": 2,
+          "bound": {
+            "numerator": "11236",
+            "denominator": "5",
+            "decimal": 2247.2
+          },
+          "classes": 2808
+        },
+        {
+          "k": 3,
+          "b": 2,
+          "bound": {
+            "numerator": "8427",
+            "denominator": "5",
+            "decimal": 1685.4
+          },
+          "classes": 702
+        },
+        {
+          "k": 4,
+          "b": 2,
+          "bound": {
+            "numerator": "22472",
+            "denominator": "17",
+            "decimal": 1321.8823529411766
+          },
+          "classes": 312
+        },
+        {
+          "k": 5,
+          "b": 2,
+          "bound": {
+            "numerator": "14045",
+            "denominator": "13",
+            "decimal": 1080.3846153846155
+          },
+          "classes": 175
+        },
+        {
+          "k": 6,
+          "b": 2,
+          "bound": {
+            "numerator": "33708",
+            "denominator": "37",
+            "decimal": 911.027027027027
+          },
+          "classes": 112
+        },
+        {
+          "k": 7,
+          "b": 2,
+          "bound": {
+            "numerator": "19663",
+            "denominator": "25",
+            "decimal": 786.52
+          },
+          "classes": 78
+        },
+        {
+          "k": 8,
+          "b": 2,
+          "bound": {
+            "numerator": "44944",
+            "denominator": "65",
+            "decimal": 691.4461538461538
+          },
+          "classes": 57
+        },
+        {
+          "k": 9,
+          "b": 2,
+          "bound": {
+            "numerator": "25281",
+            "denominator": "41",
+            "decimal": 616.609756097561
+          },
+          "classes": 43
+        },
+        {
+          "k": 10,
+          "b": 2,
+          "bound": {
+            "numerator": "56180",
+            "denominator": "101",
+            "decimal": 556.2376237623762
+          },
+          "classes": 34
+        },
+        {
+          "k": 11,
+          "b": 2,
+          "bound": {
+            "numerator": "93121",
+            "denominator": "183",
+            "decimal": 508.85792349726773
+          },
+          "classes": 28
+        },
+        {
+          "k": 12,
+          "b": 2,
+          "bound": {
+            "numerator": "41075",
+            "denominator": "87",
+            "decimal": 472.1264367816092
+          },
+          "classes": 23
+        },
+        {
+          "k": 13,
+          "b": 2,
+          "bound": {
+            "numerator": "112837",
+            "denominator": "255",
+            "decimal": 442.4980392156863
+          },
+          "classes": 19
+        },
+        {
+          "k": 14,
+          "b": 2,
+          "bound": {
+            "numerator": "8657497",
+            "denominator": "20685",
+            "decimal": 418.53985980178874
+          },
+          "classes": 16
+        },
+        {
+          "k": 15,
+          "b": 2,
+          "bound": {
+            "numerator": "1573941",
+            "denominator": "3955",
+            "decimal": 397.9623261694058
+          },
+          "classes": 14
+        },
+        {
+          "k": 16,
+          "b": 2,
+          "bound": {
+            "numerator": "30858031",
+            "denominator": "80955",
+            "decimal": 381.1751096288061
+          },
+          "classes": 12
+        },
+        {
+          "k": 17,
+          "b": 2,
+          "bound": {
+            "numerator": "36830813",
+            "denominator": "100485",
+            "decimal": 366.53045728218143
+          },
+          "classes": 10
+        },
+        {
+          "k": 18,
+          "b": 2,
+          "bound": {
+            "numerator": "6130457",
+            "denominator": "17325",
+            "decimal": 353.8503318903319
+          },
+          "classes": 9
+        },
+        {
+          "k": 19,
+          "b": 2,
+          "bound": {
+            "numerator": "2797254829",
+            "denominator": "8153145",
+            "decimal": 343.0890569222061
+          },
+          "classes": 8
+        },
+        {
+          "k": 20,
+          "b": 2,
+          "bound": {
+            "numerator": "6025960133",
+            "denominator": "18063045",
+            "decimal": 333.6071040624657
+          },
+          "classes": 7
+        },
+        {
+          "k": 21,
+          "b": 2,
+          "bound": {
+            "numerator": "4234267573",
+            "denominator": "13018005",
+            "decimal": 325.2624018042703
+          },
+          "classes": 7
+        },
+        {
+          "k": 22,
+          "b": 2,
+          "bound": {
+            "numerator": "23614335977",
+            "denominator": "74279205",
+            "decimal": 317.9131491377701
+          },
+          "classes": 6
+        },
+        {
+          "k": 23,
+          "b": 2,
+          "bound": {
+            "numerator": "4531932533",
+            "denominator": "14549535",
+            "decimal": 311.4829809337549
+          },
+          "classes": 5
+        },
+        {
+          "k": 24,
+          "b": 2,
+          "bound": {
+            "numerator": "2567124576227",
+            "denominator": "8395081695",
+            "decimal": 305.78911194586055
+          },
+          "classes": 5
+        },
+        {
+          "k": 25,
+          "b": 2,
+          "bound": {
+            "numerator": "31498336408519",
+            "denominator": "104742102465",
+            "decimal": 300.7227816440318
+          },
+          "classes": 4
+        },
+        {
+          "k": 26,
+          "b": 2,
+          "bound": {
+            "numerator": "335532203660281",
+            "denominator": "1132754047425",
+            "decimal": 296.20922955254036
+          },
+          "classes": 4
+        },
+        {
+          "k": 27,
+          "b": 3,
+          "bound": {
+            "numerator": "11896046819581",
+            "denominator": "40714448775",
+            "decimal": 292.18243590431615
+          },
+          "classes": 4
+        },
+        {
+          "k": 28,
+          "b": 3,
+          "bound": {
+            "numerator": "6595369146627739",
+            "denominator": "22854191334975",
+            "decimal": 288.58466484152035
+          },
+          "classes": 3
+        },
+        {
+          "k": 29,
+          "b": 3,
+          "bound": {
+            "numerator": "542140316813781247",
+            "denominator": "1899809242756425",
+            "decimal": 285.3656591475427
+          },
+          "classes": 3
+        },
+        {
+          "k": 30,
+          "b": 3,
+          "bound": {
+            "numerator": "3998839060870427539",
+            "denominator": "14110934684321475",
+            "decimal": 283.3858387363595
+          },
+          "classes": 3
+        },
+        {
+          "k": 31,
+          "b": 3,
+          "bound": {
+            "numerator": "1713103648418498637583",
+            "denominator": "6029498149295821200",
+            "decimal": 284.12043689217654
+          },
+          "classes": 3
+        },
+        {
+          "k": 32,
+          "b": 1,
+          "bound": {
+            "numerator": "21712900743304923067",
+            "denominator": "75301940222984475",
+            "decimal": 288.3445058521543
+          },
+          "classes": 2
+        },
+        {
+          "k": 33,
+          "b": 1,
+          "bound": {
+            "numerator": "427589782686857324167",
+            "denominator": "1492347542600965050",
+            "decimal": 286.52158460463215
+          },
+          "classes": 2
+        },
+        {
+          "k": 34,
+          "b": 1,
+          "bound": {
+            "numerator": "500089872861942909375916",
+            "denominator": "1755281380966838750025",
+            "decimal": 284.9058152639236
+          },
+          "classes": 2
+        },
+        {
+          "k": 35,
+          "b": 1,
+          "bound": {
+            "numerator": "9616628477856334176513673",
+            "denominator": "33923469305407071089700",
+            "decimal": 283.48010020082285
+          },
+          "classes": 2
+        },
+        {
+          "k": 36,
+          "b": 1,
+          "bound": {
+            "numerator": "193617810832367501258759207",
+            "denominator": "686013728996396871880425",
+            "decimal": 282.23605833023265
+          },
+          "classes": 2
+        },
+        {
+          "k": 37,
+          "b": 1,
+          "bound": {
+            "numerator": "544601016009509936405534251",
+            "denominator": "1937096505435263316294150",
+            "decimal": 281.14294485660577
+          },
+          "classes": 2
+        },
+        {
+          "k": 38,
+          "b": 1,
+          "bound": {
+            "numerator": "461298079009914164675204",
+            "denominator": "1646367392880685750275",
+            "decimal": 280.19145726809535
+          },
+          "classes": 2
+        },
+        {
+          "k": 39,
+          "b": 1,
+          "bound": {
+            "numerator": "65885209587728216898585211",
+            "denominator": "235837286773120349357040",
+            "decimal": 279.3672302171241
+          },
+          "classes": 1
+        },
+        {
+          "k": 40,
+          "b": 1,
+          "bound": {
+            "numerator": "12284209418162927501137900883503",
+            "denominator": "44083706731851667916441481075",
+            "decimal": 278.6564544783902
+          },
+          "classes": 1
+        },
+        {
+          "k": 41,
+          "b": 1,
+          "bound": {
+            "numerator": "100503620624108028966565123",
+            "denominator": "361454760164210162149700",
+            "decimal": 278.0531112066386
+          },
+          "classes": 1
+        },
+        {
+          "k": 42,
+          "b": 1,
+          "bound": {
+            "numerator": "189897908473120351450758513178076",
+            "denominator": "684206635701950325548240181525",
+            "decimal": 277.54467519640144
+          },
+          "classes": 1
+        },
+        {
+          "k": 43,
+          "b": 1,
+          "bound": {
+            "numerator": "685983313943206294717518651383",
+            "denominator": "2475371288590284122601913350",
+            "decimal": 277.123402499296
+          },
+          "classes": 1
+        },
+        {
+          "k": 44,
+          "b": 1,
+          "bound": {
+            "numerator": "4991653941292189779407912642547959",
+            "denominator": "18034410933261820268956715255325",
+            "decimal": 276.7849728923398
+          },
+          "classes": 1
+        },
+        {
+          "k": 45,
+          "b": 1,
+          "bound": {
+            "numerator": "12069756763712653716024492397305059887",
+            "denominator": "43649084201613045100357867846290900",
+            "decimal": 276.5179839275212
+          },
+          "classes": 1
+        },
+        {
+          "k": 46,
+          "b": 1,
+          "bound": {
+            "numerator": "2642125715092404631974231767778916",
+            "denominator": "9561868884078414773473694665575",
+            "decimal": 276.3189651650464
+          },
+          "classes": 1
+        },
+        {
+          "k": 47,
+          "b": 1,
+          "bound": {
+            "numerator": "21042175363563937308348203953529361023",
+            "denominator": "76188971268336808915038399095301600",
+            "decimal": 276.1840068617491
+          },
+          "classes": 1
+        },
+        {
+          "k": 48,
+          "b": 1,
+          "bound": {
+            "numerator": "2121367378358779316782734121756647027203",
+            "denominator": "7683181571341340074025903558766820725",
+            "decimal": 276.1053293692275
+          },
+          "classes": 1
+        },
+        {
+          "k": 49,
+          "b": 1,
+          "bound": {
+            "numerator": "27261101706102515573784128688252490485620633",
+            "denominator": "98743125767552694663449415720884524259100",
+            "decimal": 276.0810081126741
+          },
+          "classes": 1
+        },
+        {
+          "k": 50,
+          "b": 1,
+          "bound": {
+            "numerator": "58506836540304351838609603195699024346",
+            "denominator": "211900576340061749794950547483807575",
+            "decimal": 276.1051317123912
+          },
+          "classes": 1
+        },
+        {
+          "k": 51,
+          "b": 1,
+          "bound": {
+            "numerator": "745908365353489108060788535927612832592490457",
+            "denominator": "2700862920271064036526210798322220518769775",
+            "decimal": 276.17409227071334
+          },
+          "classes": 1
+        },
+        {
+          "k": 52,
+          "b": 1,
+          "bound": {
+            "numerator": "1693917551027674591814038844784006772378263440423",
+            "denominator": "6131060552522689138577672827586611821885190725",
+            "decimal": 276.2845900014304
+          },
+          "classes": 1
+        },
+        {
+          "k": 53,
+          "b": 1,
+          "bound": {
+            "numerator": "66438455075729228422729561202140235380949659859",
+            "denominator": "240341508075035838306466161831944745502701300",
+            "decimal": 276.4335449496589
+          },
+          "classes": 1
+        }
+      ]
+    },
+    {
+      "d": 54,
+      "lower_bound": {
+        "numerator": "1925089758967050249313297321591107767",
+        "denominator": "6818901363705690794858760787274925",
+        "decimal": 282.3167041561182
+      },
+      "strict_above_d_to_sqrt2": true,
+      "scalar_classes": 4718,
+      "strictly_improved_b2_classes": 12,
+      "minimizing_class": {
+        "k": 50,
+        "b": 1,
+        "a_lower": 2402,
+        "a_upper": 2500,
+        "row_rest": 1641,
+        "col_rest": 2915,
+        "extra_rank_budget": 1177
+      },
+      "minimum_by_k": [
+        {
+          "k": 2,
+          "b": 2,
+          "bound": {
+            "numerator": "11664",
+            "denominator": "5",
+            "decimal": 2332.8
+          },
+          "classes": 2915
+        },
+        {
+          "k": 3,
+          "b": 2,
+          "bound": {
+            "numerator": "8748",
+            "denominator": "5",
+            "decimal": 1749.6
+          },
+          "classes": 728
+        },
+        {
+          "k": 4,
+          "b": 2,
+          "bound": {
+            "numerator": "23328",
+            "denominator": "17",
+            "decimal": 1372.235294117647
+          },
+          "classes": 323
+        },
+        {
+          "k": 5,
+          "b": 2,
+          "bound": {
+            "numerator": "14580",
+            "denominator": "13",
+            "decimal": 1121.5384615384614
+          },
+          "classes": 182
+        },
+        {
+          "k": 6,
+          "b": 2,
+          "bound": {
+            "numerator": "34992",
+            "denominator": "37",
+            "decimal": 945.7297297297297
+          },
+          "classes": 116
+        },
+        {
+          "k": 7,
+          "b": 2,
+          "bound": {
+            "numerator": "20412",
+            "denominator": "25",
+            "decimal": 816.48
+          },
+          "classes": 80
+        },
+        {
+          "k": 8,
+          "b": 2,
+          "bound": {
+            "numerator": "46656",
+            "denominator": "65",
+            "decimal": 717.7846153846153
+          },
+          "classes": 59
+        },
+        {
+          "k": 9,
+          "b": 2,
+          "bound": {
+            "numerator": "26244",
+            "denominator": "41",
+            "decimal": 640.0975609756098
+          },
+          "classes": 45
+        },
+        {
+          "k": 10,
+          "b": 2,
+          "bound": {
+            "numerator": "58320",
+            "denominator": "101",
+            "decimal": 577.4257425742575
+          },
+          "classes": 35
+        },
+        {
+          "k": 11,
+          "b": 2,
+          "bound": {
+            "numerator": "32202",
+            "denominator": "61",
+            "decimal": 527.9016393442623
+          },
+          "classes": 29
+        },
+        {
+          "k": 12,
+          "b": 2,
+          "bound": {
+            "numerator": "70938",
+            "denominator": "145",
+            "decimal": 489.22758620689655
+          },
+          "classes": 24
+        },
+        {
+          "k": 13,
+          "b": 2,
+          "bound": {
+            "numerator": "7794",
+            "denominator": "17",
+            "decimal": 458.47058823529414
+          },
+          "classes": 20
+        },
+        {
+          "k": 14,
+          "b": 2,
+          "bound": {
+            "numerator": "2987262",
+            "denominator": "6895",
+            "decimal": 433.25047135605513
+          },
+          "classes": 17
+        },
+        {
+          "k": 15,
+          "b": 2,
+          "bound": {
+            "numerator": "1628838",
+            "denominator": "3955",
+            "decimal": 411.8427307206068
+          },
+          "classes": 14
+        },
+        {
+          "k": 16,
+          "b": 2,
+          "bound": {
+            "numerator": "3545862",
+            "denominator": "8995",
+            "decimal": 394.20366870483605
+          },
+          "classes": 12
+        },
+        {
+          "k": 17,
+          "b": 2,
+          "bound": {
+            "numerator": "845850",
+            "denominator": "2233",
+            "decimal": 378.79534258844603
+          },
+          "classes": 11
+        },
+        {
+          "k": 18,
+          "b": 2,
+          "bound": {
+            "numerator": "703842",
+            "denominator": "1925",
+            "decimal": 365.6322077922078
+          },
+          "classes": 10
+        },
+        {
+          "k": 19,
+          "b": 2,
+          "bound": {
+            "numerator": "320953098",
+            "denominator": "905905",
+            "decimal": 354.2900171651553
+          },
+          "classes": 8
+        },
+        {
+          "k": 20,
+          "b": 2,
+          "bound": {
+            "numerator": "691012986",
+            "denominator": "2007005",
+            "decimal": 344.3005802177872
+          },
+          "classes": 8
+        },
+        {
+          "k": 21,
+          "b": 2,
+          "bound": {
+            "numerator": "485296986",
+            "denominator": "1446445",
+            "decimal": 335.5101548970061
+          },
+          "classes": 7
+        },
+        {
+          "k": 22,
+          "b": 2,
+          "bound": {
+            "numerator": "2705861562",
+            "denominator": "8253245",
+            "decimal": 327.85426362600407
+          },
+          "classes": 6
+        },
+        {
+          "k": 23,
+          "b": 2,
+          "bound": {
+            "numerator": "1447967298",
+            "denominator": "4509505",
+            "decimal": 321.0922923912935
+          },
+          "classes": 6
+        },
+        {
+          "k": 24,
+          "b": 2,
+          "bound": {
+            "numerator": "293901914454",
+            "denominator": "932786855",
+            "decimal": 315.07939126564986
+          },
+          "classes": 5
+        },
+        {
+          "k": 25,
+          "b": 2,
+          "bound": {
+            "numerator": "3604609365978",
+            "denominator": "11638011385",
+            "decimal": 309.7272589562774
+          },
+          "classes": 5
+        },
+        {
+          "k": 26,
+          "b": 2,
+          "bound": {
+            "numerator": "38382329267202",
+            "denominator": "125861560825",
+            "decimal": 304.9567240038396
+          },
+          "classes": 4
+        },
+        {
+          "k": 27,
+          "b": 2,
+          "bound": {
+            "numerator": "4080918475306",
+            "denominator": "13571482925",
+            "decimal": 300.69805177948155
+          },
+          "classes": 4
+        },
+        {
+          "k": 28,
+          "b": 3,
+          "bound": {
+            "numerator": "251303304600706",
+            "denominator": "846451530925",
+            "decimal": 296.8903657437803
+          },
+          "classes": 3
+        },
+        {
+          "k": 29,
+          "b": 3,
+          "bound": {
+            "numerator": "20650275051715198",
+            "denominator": "70363305287275",
+            "decimal": 293.48074209142845
+          },
+          "classes": 3
+        },
+        {
+          "k": 30,
+          "b": 3,
+          "bound": {
+            "numerator": "151885145822165026",
+            "denominator": "522627210530425",
+            "decimal": 290.61851882532807
+          },
+          "classes": 3
+        },
+        {
+          "k": 31,
+          "b": 3,
+          "bound": {
+            "numerator": "109243576091860281",
+            "denominator": "377220855186175",
+            "decimal": 289.60110394199654
+          },
+          "classes": 3
+        },
+        {
+          "k": 32,
+          "b": 3,
+          "bound": {
+            "numerator": "1462116651922231211",
+            "denominator": "5020129348198965",
+            "decimal": 291.2507926607079
+          },
+          "classes": 3
+        },
+        {
+          "k": 33,
+          "b": 1,
+          "bound": {
+            "numerator": "16252573002950874143",
+            "denominator": "55272131207443150",
+            "decimal": 294.04643258558195
+          },
+          "classes": 2
+        },
+        {
+          "k": 34,
+          "b": 1,
+          "bound": {
+            "numerator": "26604802608463933784001",
+            "denominator": "91014590124206453705",
+            "decimal": 292.31360128257126
+          },
+          "classes": 2
+        },
+        {
+          "k": 35,
+          "b": 1,
+          "bound": {
+            "numerator": "209876060869279351439927",
+            "denominator": "721775942668235555100",
+            "decimal": 290.7773014620258
+          },
+          "classes": 2
+        },
+        {
+          "k": 36,
+          "b": 1,
+          "bound": {
+            "numerator": "13656369177703805141838142",
+            "denominator": "47186129507688673727225",
+            "decimal": 289.4149047651511
+          },
+          "classes": 2
+        },
+        {
+          "k": 37,
+          "b": 1,
+          "bound": {
+            "numerator": "20678386851297611850032039",
+            "denominator": "71744315016120863566450",
+            "decimal": 288.2233504724549
+          },
+          "classes": 2
+        },
+        {
+          "k": 38,
+          "b": 1,
+          "bound": {
+            "numerator": "214171466939261136525509",
+            "denominator": "745790357458772177475",
+            "decimal": 287.17382143292286
+          },
+          "classes": 2
+        },
+        {
+          "k": 39,
+          "b": 1,
+          "bound": {
+            "numerator": "1987794394584919297971257627",
+            "denominator": "6944097888319654731068400",
+            "decimal": 286.2566781969615
+          },
+          "classes": 2
+        },
+        {
+          "k": 40,
+          "b": 1,
+          "bound": {
+            "numerator": "404960090347354174562146810696",
+            "denominator": "1418601370241735518865451425",
+            "decimal": 285.46433046116914
+          },
+          "classes": 1
+        },
+        {
+          "k": 41,
+          "b": 1,
+          "bound": {
+            "numerator": "4271686979632360915939241943961",
+            "denominator": "15000011092054557519050400300",
+            "decimal": 284.7789213899352
+          },
+          "classes": 1
+        },
+        {
+          "k": 42,
+          "b": 1,
+          "bound": {
+            "numerator": "335117766811532868304375305843",
+            "denominator": "1179167941085532053915284025",
+            "decimal": 284.198505687855
+          },
+          "classes": 1
+        },
+        {
+          "k": 43,
+          "b": 1,
+          "bound": {
+            "numerator": "26010493921338713100482857071",
+            "denominator": "91680418095936448985256050",
+            "decimal": 283.7082821123345
+          },
+          "classes": 1
+        },
+        {
+          "k": 44,
+          "b": 1,
+          "bound": {
+            "numerator": "49458973963012471965831633813070",
+            "denominator": "174579685746644104886704275531",
+            "decimal": 283.30314464415403
+          },
+          "classes": 1
+        },
+        {
+          "k": 45,
+          "b": 1,
+          "bound": {
+            "numerator": "24245994576633571361394974845706410813",
+            "denominator": "85681535655018199641443222068645100",
+            "decimal": 282.9780581227658
+          },
+          "classes": 1
+        },
+        {
+          "k": 46,
+          "b": 1,
+          "bound": {
+            "numerator": "5306613192068005373051300312694607",
+            "denominator": "18769594476153925296077993232425",
+            "decimal": 282.7239128053545
+          },
+          "classes": 1
+        },
+        {
+          "k": 47,
+          "b": 1,
+          "bound": {
+            "numerator": "221703047350672076353458043877524367",
+            "denominator": "784690143261144747861841265458800",
+            "decimal": 282.5357872207773
+          },
+          "classes": 1
+        },
+        {
+          "k": 48,
+          "b": 1,
+          "bound": {
+            "numerator": "608463142138703546850990642835215881848",
+            "denominator": "2154542980323232930811496765156833325",
+            "decimal": 282.4093776246782
+          },
+          "classes": 1
+        },
+        {
+          "k": 49,
+          "b": 1,
+          "bound": {
+            "numerator": "10945049092888769213669842137973126229330899",
+            "denominator": "38765819745779946793798659505236146560980",
+            "decimal": 282.3376150605005
+          },
+          "classes": 1
+        },
+        {
+          "k": 50,
+          "b": 1,
+          "bound": {
+            "numerator": "1925089758967050249313297321591107767",
+            "denominator": "6818901363705690794858760787274925",
+            "decimal": 282.3167041561182
+          },
+          "classes": 1
+        },
+        {
+          "k": 51,
+          "b": 1,
+          "bound": {
+            "numerator": "1496896407619961233733888961837829768468215439",
+            "denominator": "5301693880532088664292191567076951388696225",
+            "decimal": 282.34304759024104
+          },
+          "classes": 1
+        },
+        {
+          "k": 52,
+          "b": 1,
+          "bound": {
+            "numerator": "64129362290447306597390459209327854855333044282",
+            "denominator": "227076316760099597725098993614318956366118175",
+            "decimal": 282.41325738165096
+          },
+          "classes": 1
+        },
+        {
+          "k": 53,
+          "b": 1,
+          "bound": {
+            "numerator": "44429888280135062899293416190886475525894901271",
+            "denominator": "157260492937986412719045760211025574217816900",
+            "decimal": 282.5241575304956
+          },
+          "classes": 1
+        },
+        {
+          "k": 54,
+          "b": 1,
+          "bound": {
+            "numerator": "3366557909394978277011682306891158811808971290023",
+            "denominator": "11909734987539157510058842679870209770128791575",
+            "decimal": 282.6727809575376
+          },
+          "classes": 1
+        }
+      ]
+    }
+  ],
+  "dimension_55_control": {
+    "k": 51,
+    "b": 1,
+    "bound": {
+      "numerator": "12388327331280585900005995752018324099780773",
+      "denominator": "42930304712087390871119526841185435799752",
+      "decimal": 288.5683531566583
+    },
+    "below_target": true,
+    "meaning": "This certificate alone fails; no realizable seed is asserted"
+  },
+  "source_sha256": {
+    "check_two_product_seed_cutoff.py": "6fcdb6c7080a326c824dd328ccca69493ed4d6ef8ad07039396789b153350377",
+    "check_weighted_cut_rank_budget.py": "a369e633f974a5c013de3fc998908d61946ccf3741c42b63e4508df56048ea82",
+    "check_weighted_cut_residual_budget.py": "6aa95409f1c19b4b1bd6a1cdfc277617d5cd37a168795f5116d989ac20d24136",
+    "check_two_product_complement.py": "47498508e1bdea42cd61d88df700c6e7d5475f9c25fd293fc1e7cc304c9c5be0"
+  }
+}

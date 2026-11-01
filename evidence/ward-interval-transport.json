@@ -1,0 +1,231 @@
+{
+  "fixed_order_basis_optimization": {
+    "all_invertible_row_changes_checked": 35409,
+    "example": {
+      "columns": [
+        3,
+        3,
+        5,
+        5,
+        7,
+        7
+      ],
+      "optimal_width": 1,
+      "optimized_rows": [
+        3,
+        12,
+        48
+      ],
+      "original_rows": [
+        63,
+        51,
+        60
+      ],
+      "original_width": 3,
+      "row_change": [
+        5,
+        3,
+        7
+      ],
+      "trailing_reductions": 2
+    },
+    "full_rank_form_matrices": 1854
+  },
+  "interval_transport": [
+    {
+      "active_interval_width": 2,
+      "basis_changed_entry_controls": 100,
+      "columns": [
+        1,
+        3,
+        2
+      ],
+      "form_rank": 2,
+      "forms": 2,
+      "full_ring_vs_active_memory_entries": 100,
+      "grade_controls": 69,
+      "nonzero_entries": 69,
+      "operator_channel_bound": 32,
+      "optimized_columns": [
+        1,
+        3,
+        2
+      ],
+      "scalar_vs_polynomial_entries": 100
+    },
+    {
+      "active_interval_width": 2,
+      "basis_changed_entry_controls": 100,
+      "columns": [
+        1,
+        3,
+        2,
+        6,
+        4
+      ],
+      "form_rank": 3,
+      "forms": 3,
+      "full_ring_vs_active_memory_entries": 100,
+      "grade_controls": 66,
+      "nonzero_entries": 66,
+      "operator_channel_bound": 32,
+      "optimized_columns": [
+        1,
+        3,
+        2,
+        6,
+        4
+      ],
+      "scalar_vs_polynomial_entries": 100
+    },
+    {
+      "active_interval_width": 2,
+      "basis_changed_entry_controls": 100,
+      "columns": [
+        1,
+        3,
+        2,
+        6,
+        4,
+        12,
+        8
+      ],
+      "form_rank": 4,
+      "forms": 4,
+      "full_ring_vs_active_memory_entries": 100,
+      "grade_controls": 42,
+      "nonzero_entries": 42,
+      "operator_channel_bound": 32,
+      "optimized_columns": [
+        1,
+        3,
+        2,
+        6,
+        4,
+        12,
+        8
+      ],
+      "scalar_vs_polynomial_entries": 100
+    },
+    {
+      "active_interval_width": 3,
+      "basis_changed_entry_controls": 100,
+      "columns": [
+        1,
+        2,
+        4,
+        3,
+        6,
+        4
+      ],
+      "form_rank": 3,
+      "forms": 3,
+      "full_ring_vs_active_memory_entries": 100,
+      "grade_controls": 65,
+      "nonzero_entries": 65,
+      "operator_channel_bound": 64,
+      "optimized_columns": [
+        1,
+        2,
+        4,
+        3,
+        6,
+        4
+      ],
+      "scalar_vs_polynomial_entries": 100
+    },
+    {
+      "active_interval_width": 2,
+      "basis_changed_entry_controls": 0,
+      "columns": [
+        3
+      ],
+      "form_rank": 1,
+      "forms": 2,
+      "full_ring_vs_active_memory_entries": 100,
+      "grade_controls": 0,
+      "nonzero_entries": 0,
+      "operator_channel_bound": 32,
+      "optimized_columns": null,
+      "scalar_vs_polynomial_entries": 100
+    },
+    {
+      "active_interval_width": 3,
+      "basis_changed_entry_controls": 100,
+      "columns": [
+        1,
+        2,
+        7
+      ],
+      "form_rank": 3,
+      "forms": 3,
+      "full_ring_vs_active_memory_entries": 100,
+      "grade_controls": 75,
+      "nonzero_entries": 75,
+      "operator_channel_bound": 64,
+      "optimized_columns": [
+        1,
+        2,
+        4
+      ],
+      "scalar_vs_polynomial_entries": 100
+    },
+    {
+      "active_interval_width": 2,
+      "basis_changed_entry_controls": 100,
+      "columns": [
+        1,
+        0,
+        3,
+        0,
+        2
+      ],
+      "form_rank": 2,
+      "forms": 2,
+      "full_ring_vs_active_memory_entries": 100,
+      "grade_controls": 70,
+      "nonzero_entries": 70,
+      "operator_channel_bound": 32,
+      "optimized_columns": [
+        1,
+        0,
+        3,
+        0,
+        2
+      ],
+      "scalar_vs_polynomial_entries": 100
+    },
+    {
+      "active_interval_width": 3,
+      "basis_changed_entry_controls": 100,
+      "columns": [
+        3,
+        3,
+        5,
+        5,
+        7,
+        7
+      ],
+      "form_rank": 3,
+      "forms": 3,
+      "full_ring_vs_active_memory_entries": 100,
+      "grade_controls": 57,
+      "nonzero_entries": 57,
+      "operator_channel_bound": 64,
+      "optimized_columns": [
+        1,
+        1,
+        2,
+        2,
+        4,
+        4
+      ],
+      "scalar_vs_polynomial_entries": 100
+    }
+  ],
+  "source_sha256": {
+    "check_ward_form_operator_transport.py": "171e18f3831cd42e40078eb5ea9dd01d50a7feeed0770ab0cf7350d98a5bc389",
+    "check_ward_interval_transport.py": "d8c3a61bcb575d1f81f0bbe893ef7166071edd83990c55875f160b7cf699c026",
+    "check_ward_stable_operators.py": "62299105879afa4b9662ee7dcf7daa33c57852f563a0f1b9b72debbff7677794"
+  }
+}

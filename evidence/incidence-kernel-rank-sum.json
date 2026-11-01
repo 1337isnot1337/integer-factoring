@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "scope": "All-field support proof; no improved factoring exponent",
+  "all_binary_kernels_at_four_labels": 65536,
+  "exhaustive_binary_incidence_kernels": 520,
+  "random_binary_incidence_controls": 200,
+  "prime_three_incidence_controls": 32,
+  "independent_dense_tensor_controls": 18,
+  "off_incidence_negative_controls": 5,
+  "checker_sha256": "c1190d2045aa2e94dd72eed2cfb1d5ccb97d6456d630568838fa37093cf0f34e"
+}

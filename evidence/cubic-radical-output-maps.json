@@ -1,0 +1,67 @@
+{
+  "checker_sha256": "a63685a16115556bd8c38e6c40e299206b544f9a857ec0d760d213b95594c0ab",
+  "independent_dense_rank_checks": [
+    {
+      "complete_binary_combinations": 8,
+      "dense_entries": 81,
+      "output_mask": 1,
+      "pairs": 3,
+      "rank_table_sha256": "59a71d2579bbf68e9c907eee27808e1326a1a9d18dcd0b99b7d480d5a1dd55c8"
+    },
+    {
+      "complete_binary_combinations": 16,
+      "dense_entries": 625,
+      "output_mask": 1,
+      "pairs": 5,
+      "rank_table_sha256": "222ba77574f83d39aa4c01e5f977590ebcd170b96624a2b14bb788c413c7c266"
+    },
+    {
+      "complete_binary_combinations": 16,
+      "dense_entries": 625,
+      "output_mask": 7,
+      "pairs": 5,
+      "rank_table_sha256": "222ba77574f83d39aa4c01e5f977590ebcd170b96624a2b14bb788c413c7c266"
+    },
+    {
+      "complete_binary_combinations": 16,
+      "dense_entries": 2401,
+      "output_mask": 7,
+      "pairs": 7,
+      "rank_table_sha256": "fb593cf10777a7c52cc6a4bfd0c3b89195318bf8522ef1a47fb9b239f2ada2d2"
+    },
+    {
+      "complete_binary_combinations": 16,
+      "dense_entries": 6561,
+      "output_mask": 31,
+      "pairs": 9,
+      "rank_table_sha256": "fa4e6585ccfae4244cbed5983dc9080863c44749ab7088fb6c0d0a640e13b069"
+    }
+  ],
+  "literal_exterior_polynomial_checks": [
+    {
+      "generic_polynomial_comparisons": 20,
+      "pairs": 3
+    },
+    {
+      "generic_polynomial_comparisons": 80,
+      "pairs": 5
+    },
+    {
+      "generic_polynomial_comparisons": 180,
+      "pairs": 7
+    },
+    {
+      "generic_polynomial_comparisons": 320,
+      "pairs": 9
+    }
+  ],
+  "polynomial_encodings_p_stride4_q": {
+    "A": 531,
+    "B": 257,
+    "C": 325,
+    "H": 771,
+    "K": 582
+  },
+  "scope": "All odd dimensions: polynomial block formula and all-field rank-charge theorem for the stated syndrome-preserving outputs; finite dense controls",
+  "status": "pass"
+}

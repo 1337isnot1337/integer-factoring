@@ -1,0 +1,545 @@
+{
+  "scope": "all-degree bare seven-letter Smith pressure, all fields and fixed auxiliary dimension",
+  "scalar_profile_constraints_extend_by_constant_contraction_only_at_pressure_level": true,
+  "transpose_channel_controls": [
+    {
+      "alphabet": 2,
+      "operator_dimension": 4,
+      "singular_leading_channel_factors": true,
+      "operator_adjugate_product_entries": 32,
+      "reshuffled_two_minors_zero": 36
+    },
+    {
+      "alphabet": 3,
+      "operator_dimension": 9,
+      "singular_leading_channel_factors": true,
+      "operator_adjugate_product_entries": 162,
+      "reshuffled_two_minors_zero": 1296
+    }
+  ],
+  "small_polynomial_adjugate_controls": [
+    {
+      "name": "elementary",
+      "degree": 1,
+      "row_infinity": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "column_zero": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "adjugate_degree": 1,
+      "adjugate_row_zero": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "adjugate_column_infinity": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "leading_column_operator_rank": 4,
+      "determinant_is_monomial": true,
+      "positive_second_row_order": true,
+      "literal_adjugate_product_entries": 32
+    },
+    {
+      "name": "elementary_exchanged",
+      "degree": 1,
+      "row_infinity": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "column_zero": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "adjugate_degree": 1,
+      "adjugate_row_zero": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "adjugate_column_infinity": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "leading_column_operator_rank": 4,
+      "determinant_is_monomial": true,
+      "positive_second_row_order": true,
+      "literal_adjugate_product_entries": 32
+    },
+    {
+      "name": "ramified_cubic",
+      "degree": 3,
+      "row_infinity": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "column_zero": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "adjugate_degree": 3,
+      "adjugate_row_zero": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "adjugate_column_infinity": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "leading_column_operator_rank": 4,
+      "determinant_is_monomial": true,
+      "positive_second_row_order": true,
+      "literal_adjugate_product_entries": 32
+    },
+    {
+      "name": "ramified_cubic_exchanged",
+      "degree": 3,
+      "row_infinity": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "column_zero": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "adjugate_degree": 3,
+      "adjugate_row_zero": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "adjugate_column_infinity": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "leading_column_operator_rank": 4,
+      "determinant_is_monomial": true,
+      "positive_second_row_order": true,
+      "literal_adjugate_product_entries": 32
+    },
+    {
+      "name": "nonmonomial_cubic",
+      "degree": 3,
+      "row_infinity": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "column_zero": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "adjugate_degree": 7,
+      "adjugate_row_zero": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "adjugate_column_infinity": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "leading_column_operator_rank": 4,
+      "determinant_is_monomial": false,
+      "positive_second_row_order": true,
+      "literal_adjugate_product_entries": 32
+    },
+    {
+      "name": "nonmonomial_cubic_exchanged",
+      "degree": 3,
+      "row_infinity": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "column_zero": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "adjugate_degree": 3,
+      "adjugate_row_zero": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "adjugate_column_infinity": [
+        0,
+        3,
+        3,
+        6
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        1,
+        1,
+        2
+      ],
+      "leading_column_operator_rank": 4,
+      "determinant_is_monomial": true,
+      "positive_second_row_order": true,
+      "literal_adjugate_product_entries": 32
+    },
+    {
+      "name": "singular_leading_vacuum_defect",
+      "degree": 3,
+      "row_infinity": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "column_zero": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "adjugate_degree": 7,
+      "adjugate_row_zero": [
+        4,
+        5,
+        5,
+        7
+      ],
+      "adjugate_column_infinity": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "leading_column_operator_rank": 1,
+      "determinant_is_monomial": false,
+      "positive_second_row_order": true,
+      "literal_adjugate_product_entries": 32
+    },
+    {
+      "name": "singular_leading_vacuum_defect_exchanged",
+      "degree": 3,
+      "row_infinity": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "column_zero": [
+        0,
+        2,
+        3,
+        4
+      ],
+      "adjugate_degree": 4,
+      "adjugate_row_zero": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "adjugate_column_infinity": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "leading_column_operator_rank": 4,
+      "determinant_is_monomial": false,
+      "positive_second_row_order": true,
+      "literal_adjugate_product_entries": 32
+    },
+    {
+      "name": "strict_two_jet_cap",
+      "degree": 3,
+      "row_infinity": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "column_zero": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "adjugate_degree": 9,
+      "adjugate_row_zero": [
+        0,
+        1,
+        2,
+        6
+      ],
+      "adjugate_column_infinity": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "leading_column_operator_rank": 4,
+      "determinant_is_monomial": false,
+      "positive_second_row_order": true,
+      "literal_adjugate_product_entries": 32
+    },
+    {
+      "name": "strict_two_jet_cap_exchanged",
+      "degree": 3,
+      "row_infinity": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "column_zero": [
+        0,
+        1,
+        2,
+        7
+      ],
+      "adjugate_degree": 6,
+      "adjugate_row_zero": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "adjugate_column_infinity": [
+        0,
+        5,
+        6,
+        7
+      ],
+      "universal_two_jet_lower_profile": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "leading_column_operator_rank": 3,
+      "determinant_is_monomial": true,
+      "positive_second_row_order": false,
+      "literal_adjugate_product_entries": 32
+    }
+  ],
+  "entropy_certificate": {
+    "multipliers": [
+      "34/875",
+      "1/28000",
+      "1/1200"
+    ],
+    "weighted_rhs": "1/2",
+    "probability_denominator": 84000,
+    "probability_counts": [
+      [
+        33913,
+        1
+      ],
+      [
+        4465,
+        1
+      ],
+      [
+        3901,
+        5
+      ],
+      [
+        637,
+        35
+      ],
+      [
+        567,
+        6
+      ],
+      [
+        420,
+        1
+      ]
+    ],
+    "exact_comparison_seven_exponent": 119112,
+    "left_integer_bits": 1374081,
+    "right_integer_bits": 1374049,
+    "left_sha256": "291b35cbfb4bec0717bb35c5b7a8036113d6446226d524486f7cd6513277515c",
+    "right_sha256": "e4decccdd4472bbd14467aae49e1f128217f12cdb63a99ecea26b1632a9009a0",
+    "strict_integer_entropy_inequality": true,
+    "rho_lower_bound": "709/1000",
+    "strictly_above_one_over_sqrt_two": 5362
+  },
+  "eight_letter_formal_relaxation_witness": {
+    "alphabet": 8,
+    "degree": 140,
+    "both_profiles": [
+      [
+        0,
+        1
+      ],
+      [
+        80,
+        7
+      ],
+      [
+        147,
+        55
+      ],
+      [
+        224,
+        1
+      ]
+    ],
+    "profile_total": 8869,
+    "profile_total_budget": 8960,
+    "capped_profile_total": 8805,
+    "adjugate_determinant_lhs": 558320,
+    "two_jet_determinant_lhs": 562085,
+    "adjugate_determinant_rhs": 564480,
+    "prefix_checks": [
+      {
+        "size": 2,
+        "original_lhs": 160,
+        "adjugate_lhs": 17447,
+        "two_jet_lhs": 17447,
+        "adjugate_rhs": 17640
+      },
+      {
+        "size": 3,
+        "original_lhs": 320,
+        "adjugate_lhs": 26249,
+        "two_jet_lhs": 26249,
+        "adjugate_rhs": 26460
+      },
+      {
+        "size": 4,
+        "original_lhs": 480,
+        "adjugate_lhs": 35051,
+        "two_jet_lhs": 35051,
+        "adjugate_rhs": 35280
+      },
+      {
+        "size": 5,
+        "original_lhs": 640,
+        "adjugate_lhs": 43853,
+        "two_jet_lhs": 43853,
+        "adjugate_rhs": 44100
+      },
+      {
+        "size": 6,
+        "original_lhs": 800,
+        "adjugate_lhs": 52655,
+        "two_jet_lhs": 52655,
+        "adjugate_rhs": 52920
+      },
+      {
+        "size": 7,
+        "original_lhs": 960,
+        "adjugate_lhs": 61457,
+        "two_jet_lhs": 61457,
+        "adjugate_rhs": 61740
+      },
+      {
+        "size": 8,
+        "original_lhs": 1120,
+        "adjugate_lhs": 70259,
+        "two_jet_lhs": 70259,
+        "adjugate_rhs": 70560
+      }
+    ],
+    "scale": "36/35",
+    "strict_rho_upper_bound": "707/1000",
+    "left_integer_bits": 579725,
+    "right_integer_bits": 579731,
+    "left_sha256": "a624516206f0c769e651e9fd7ef87e6338b86bb037a590fa1a1c01ead155b346",
+    "right_sha256": "dac5de9991d35e770983075eea1bde6a740f5c180f7194d8d2ecbb1f1f1688f9",
+    "strict_integer_pressure_inequality": true,
+    "strictly_below_one_over_sqrt_two": 302,
+    "crossing_realization_claimed": false
+  },
+  "floating_arithmetic_used": false,
+  "factoring_exponent_improved": false
+}

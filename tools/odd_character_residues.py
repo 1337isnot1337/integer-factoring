@@ -72,12 +72,14 @@ def primitive_generator(prime):
                 if all(pow(value, (prime-1)//factor, prime) != 1 for factor in factors))
 
 
-def signed_residue_from_odd_characters(prime, coefficient, characteristic=2):
+def signed_residue_from_odd_characters(prime, coefficient, characteristic=2, coefficient_modulus=None):
     """Convert c_j=sum_(d|N) chi_j(d) for odd j to c_a-c_-a.
 
     Characters are extended by zero on multiples of the prime. coefficient(g,j)
     returns an integer vector in Q[zeta_(q-1)]'s standard power basis. q=2 has the
     zero signed image. A primitive generator is found by small trial work.
+    For output modulo two, inputs modulo 2^v2(q-1) already suffice; supply
+    that integer as coefficient_modulus to use the finite-precision path.
     """
     if prime == 2:
         return (0, 0)
@@ -85,6 +87,9 @@ def signed_residue_from_odd_characters(prime, coefficient, characteristic=2):
         raise ValueError("an odd prime level and characteristic>=2 are required")
     generator = primitive_generator(prime)
     order = prime-1
+    if coefficient_modulus is not None and (
+            characteristic != 2 or coefficient_modulus != (order & -order)):
+        raise ValueError("the binary output needs coefficient modulus 2^v2(q-1)")
     modulus, powers = root_of_unity_powers(order)
     values = {index: tuple(coefficient(generator, index)) for index in range(1, order, 2)}
     if any(len(value) != len(modulus)-1 or any(not isinstance(x, int) for x in value)
@@ -96,8 +101,82 @@ def signed_residue_from_odd_characters(prime, coefficient, characteristic=2):
         for index, value in values.items():
             summand = multiply_cyclotomic(value, powers[-index*exponent % order], modulus)
             total = [left+right for left, right in zip(total, summand)]
-        if any(total[1:]) or (2*total[0]) % order:
-            raise ValueError("the odd-character inverse transform is not an integer residue count")
-        output[residue] = (2*total[0]//order) % characteristic
+        if coefficient_modulus is None:
+            if any(total[1:]) or (2*total[0]) % order:
+                raise ValueError("the odd-character inverse transform is not an integer residue count")
+            output[residue] = (2*total[0]//order) % characteristic
+        else:
+            total = [value % coefficient_modulus for value in total]
+            divisor = coefficient_modulus//2
+            if any(total[1:]) or total[0] % divisor:
+                raise ValueError("the finite-precision inverse transform is inconsistent")
+            output[residue] = total[0]//divisor % 2
+        residue = residue*generator % prime
+    return tuple(output)
+
+
+@lru_cache(None)
+def character_bit_decoder(prime):
+    """Precompute the injective confluent character map over F_2.
+
+    The full, possibly nonreduced cyclotomic algebra is essential. Only
+    character indices dividing the odd part of q-1 are needed.
+    """
+    order = prime-1
+    pair_count = order//2
+    odd_part = order//(order & -order)
+    indices = tuple(index for index in range(1, odd_part+1) if odd_part % index == 0)
+    modulus, powers = root_of_unity_powers(order)
+    basis = {}
+    for exponent in range(pair_count):
+        column, position, mask = 0, 0, 1 << exponent
+        for index in indices:
+            for value in powers[index*exponent % order]:
+                column |= (value & 1) << position
+                position += 1
+        while column:
+            pivot = column.bit_length()-1
+            if pivot in basis:
+                vector, relation = basis[pivot]
+                column, mask = column ^ vector, mask ^ relation
+            else:
+                basis[pivot] = column, mask
+                break
+        if not column:
+            raise ValueError("the full cyclotomic character map lost injectivity")
+    rows = tuple((pivot, *basis[pivot]) for pivot in sorted(basis, reverse=True))
+    assert len(rows) == pair_count
+    return primitive_generator(prime), indices, len(modulus)-1, rows
+
+
+def signed_residue_from_character_bits(prime, coefficient):
+    """Recover the signed residue from ONE bit per cyclotomic coordinate.
+
+    coefficient(g,j) supplies M_j mod 2 in F_2[T]/Phi_(q-1), keeping all
+    nilpotents. Replacing this algebra by its reduced quotient is invalid.
+    """
+    if prime == 2:
+        return (0, 0)
+    if prime < 3:
+        raise ValueError("an odd prime level is required")
+    generator, indices, dimension, rows = character_bit_decoder(prime)
+    observations, position = 0, 0
+    for index in indices:
+        values = tuple(coefficient(generator, index))
+        if len(values) != dimension or any(value not in (0, 1) for value in values):
+            raise ValueError("canonical binary cyclotomic coordinate vectors are required")
+        for value in values:
+            observations |= value << position
+            position += 1
+    solution = 0
+    for pivot, vector, relation in rows:
+        if observations >> pivot & 1:
+            observations, solution = observations ^ vector, solution ^ relation
+    if observations:
+        raise ValueError("inconsistent character coefficient bits")
+    pair_count = (prime-1)//2
+    output, residue = [0]*prime, 1
+    for exponent in range(prime-1):
+        output[residue] = solution >> (exponent % pair_count) & 1
         residue = residue*generator % prime
     return tuple(output)

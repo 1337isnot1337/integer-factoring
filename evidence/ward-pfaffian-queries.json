@@ -1,0 +1,32 @@
+{
+  "interpolation_controls": {
+    "coefficient_comparisons": 567,
+    "grid_points_with_zero_ordinary_entries": 357,
+    "interpolation_points": 567,
+    "polynomial_query_cases": 27
+  },
+  "physical_kernel_controls": {
+    "literal_global_operator_entries": 108,
+    "maximum_local_pfaffian_total_degree": 4,
+    "nonzero_literal_entries": 31
+  },
+  "scalar_controls": {
+    "dependent forced columns": 554,
+    "exhaustive_binary_queries": 5520,
+    "nonzero_queries": 1520,
+    "odd_residual_queries": 4088,
+    "paired_elimination_vs_matching_controls": 960,
+    "queries_with_forced_sites": 6021,
+    "random_extension_field_queries": 2160,
+    "too many forced sites": 75,
+    "zero local factor": 3580
+  },
+  "scope": "Exact physical-entry and formal coefficient queries in characteristic two; no coefficient-rank or factoring-score claim.",
+  "source_sha256": {
+    "check_ward_pfaffian_queries.py": "3a8cae8e26d55ed8dac43b6c761d4690b90c9733e3c1ce8e6d07b1a2816dd1c3",
+    "check_ward_stable_operators.py": "62299105879afa4b9662ee7dcf7daa33c57852f563a0f1b9b72debbff7677794",
+    "explore_complement_edge_pencils.py": "730649e439a994ab7722e20faeeab3162ae7fad477c9530c5753e5862d7aaec0",
+    "pfaffian_particle_hole.py": "d254d9331f7552a7993f8f549380ab2b08fa809e1730d8b0be19093d380ef96b",
+    "ward_pfaffian_queries.py": "f2ac6446f74acbe171681218bb60dddd992c236314a1cdee0dc685aa1e16adf5"
+  }
+}

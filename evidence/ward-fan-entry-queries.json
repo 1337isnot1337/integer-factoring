@@ -1,0 +1,457 @@
+{
+  "oracle_controls": {
+    "exhaustive_binary_queries": 4112,
+    "extension_field_three_way_queries": 600,
+    "full_bivariate_polynomial_queries": 90,
+    "nonreduced_commutative_ring_queries": 160,
+    "nonzero_binary_queries": 326,
+    "nonzero_extension_queries": 345
+  },
+  "restricted_rank_interface": {
+    "blocks": [
+      {
+        "coefficient_matrix_dimension": 592,
+        "type_pair_syndrome": 0,
+        "uncached_physical_polynomial_queries": 4469760
+      },
+      {
+        "coefficient_matrix_dimension": 192,
+        "type_pair_syndrome": 1,
+        "uncached_physical_polynomial_queries": 1216512
+      },
+      {
+        "coefficient_matrix_dimension": 192,
+        "type_pair_syndrome": 2,
+        "uncached_physical_polynomial_queries": 1216512
+      },
+      {
+        "coefficient_matrix_dimension": 416,
+        "type_pair_syndrome": 3,
+        "uncached_physical_polynomial_queries": 1781760
+      },
+      {
+        "coefficient_matrix_dimension": 256,
+        "type_pair_syndrome": 4,
+        "uncached_physical_polynomial_queries": 1835008
+      },
+      {
+        "coefficient_matrix_dimension": 288,
+        "type_pair_syndrome": 5,
+        "uncached_physical_polynomial_queries": 1034752
+      },
+      {
+        "coefficient_matrix_dimension": 288,
+        "type_pair_syndrome": 6,
+        "uncached_physical_polynomial_queries": 1034752
+      },
+      {
+        "coefficient_matrix_dimension": 128,
+        "type_pair_syndrome": 7,
+        "uncached_physical_polynomial_queries": 458752
+      },
+      {
+        "coefficient_matrix_dimension": 192,
+        "type_pair_syndrome": 8,
+        "uncached_physical_polynomial_queries": 1216512
+      },
+      {
+        "coefficient_matrix_dimension": 160,
+        "type_pair_syndrome": 9,
+        "uncached_physical_polynomial_queries": 372736
+      },
+      {
+        "coefficient_matrix_dimension": 160,
+        "type_pair_syndrome": 10,
+        "uncached_physical_polynomial_queries": 372736
+      },
+      {
+        "coefficient_matrix_dimension": 128,
+        "type_pair_syndrome": 11,
+        "uncached_physical_polynomial_queries": 458752
+      },
+      {
+        "coefficient_matrix_dimension": 288,
+        "type_pair_syndrome": 12,
+        "uncached_physical_polynomial_queries": 1034752
+      },
+      {
+        "coefficient_matrix_dimension": 192,
+        "type_pair_syndrome": 13,
+        "uncached_physical_polynomial_queries": 1216512
+      },
+      {
+        "coefficient_matrix_dimension": 192,
+        "type_pair_syndrome": 14,
+        "uncached_physical_polynomial_queries": 1216512
+      },
+      {
+        "coefficient_matrix_dimension": 256,
+        "type_pair_syndrome": 15,
+        "uncached_physical_polynomial_queries": 524288
+      },
+      {
+        "coefficient_matrix_dimension": 192,
+        "type_pair_syndrome": 16,
+        "uncached_physical_polynomial_queries": 1216512
+      },
+      {
+        "coefficient_matrix_dimension": 160,
+        "type_pair_syndrome": 17,
+        "uncached_physical_polynomial_queries": 372736
+      },
+      {
+        "coefficient_matrix_dimension": 160,
+        "type_pair_syndrome": 18,
+        "uncached_physical_polynomial_queries": 372736
+      },
+      {
+        "coefficient_matrix_dimension": 128,
+        "type_pair_syndrome": 19,
+        "uncached_physical_polynomial_queries": 458752
+      },
+      {
+        "coefficient_matrix_dimension": 288,
+        "type_pair_syndrome": 20,
+        "uncached_physical_polynomial_queries": 1034752
+      },
+      {
+        "coefficient_matrix_dimension": 192,
+        "type_pair_syndrome": 21,
+        "uncached_physical_polynomial_queries": 1216512
+      },
+      {
+        "coefficient_matrix_dimension": 192,
+        "type_pair_syndrome": 22,
+        "uncached_physical_polynomial_queries": 1216512
+      },
+      {
+        "coefficient_matrix_dimension": 256,
+        "type_pair_syndrome": 23,
+        "uncached_physical_polynomial_queries": 524288
+      },
+      {
+        "coefficient_matrix_dimension": 416,
+        "type_pair_syndrome": 24,
+        "uncached_physical_polynomial_queries": 1781760
+      },
+      {
+        "coefficient_matrix_dimension": 128,
+        "type_pair_syndrome": 25,
+        "uncached_physical_polynomial_queries": 458752
+      },
+      {
+        "coefficient_matrix_dimension": 128,
+        "type_pair_syndrome": 26,
+        "uncached_physical_polynomial_queries": 458752
+      },
+      {
+        "coefficient_matrix_dimension": 256,
+        "type_pair_syndrome": 27,
+        "uncached_physical_polynomial_queries": 524288
+      },
+      {
+        "coefficient_matrix_dimension": 128,
+        "type_pair_syndrome": 28,
+        "uncached_physical_polynomial_queries": 458752
+      },
+      {
+        "coefficient_matrix_dimension": 256,
+        "type_pair_syndrome": 29,
+        "uncached_physical_polynomial_queries": 524288
+      },
+      {
+        "coefficient_matrix_dimension": 256,
+        "type_pair_syndrome": 30,
+        "uncached_physical_polynomial_queries": 524288
+      }
+    ],
+    "dense_coefficient_entries_after_syndrome_split": 1917184,
+    "dense_coefficient_entries_without_split": 49787136,
+    "forms": 3,
+    "input_image_support_sum": 1040,
+    "input_preimage_support_sum": 116,
+    "labels": 84,
+    "length": 10,
+    "pairs": 10,
+    "scope": "Exact sparse code and block interface; no restricted coefficient matrix has been assembled and no rank is inferred.",
+    "sectors": [
+      {
+        "coordinate_output_pivots": [
+          21
+        ],
+        "input_support_sizes": [
+          8
+        ],
+        "labels": 8,
+        "orientation_count": 8,
+        "preimage_support_sizes": [
+          1
+        ],
+        "selected_type_indices": [
+          0,
+          1,
+          3
+        ],
+        "type_syndrome": 20
+      },
+      {
+        "coordinate_output_pivots": [
+          21
+        ],
+        "input_support_sizes": [
+          8
+        ],
+        "labels": 8,
+        "orientation_count": 8,
+        "preimage_support_sizes": [
+          1
+        ],
+        "selected_type_indices": [
+          0,
+          1,
+          4
+        ],
+        "type_syndrome": 12
+      },
+      {
+        "coordinate_output_pivots": [
+          21
+        ],
+        "input_support_sizes": [
+          8
+        ],
+        "labels": 8,
+        "orientation_count": 8,
+        "preimage_support_sizes": [
+          1
+        ],
+        "selected_type_indices": [
+          0,
+          2,
+          3
+        ],
+        "type_syndrome": 18
+      },
+      {
+        "coordinate_output_pivots": [
+          21
+        ],
+        "input_support_sizes": [
+          8
+        ],
+        "labels": 8,
+        "orientation_count": 8,
+        "preimage_support_sizes": [
+          1
+        ],
+        "selected_type_indices": [
+          0,
+          2,
+          4
+        ],
+        "type_syndrome": 10
+      },
+      {
+        "coordinate_output_pivots": [
+          21
+        ],
+        "input_support_sizes": [
+          8
+        ],
+        "labels": 8,
+        "orientation_count": 8,
+        "preimage_support_sizes": [
+          1
+        ],
+        "selected_type_indices": [
+          0,
+          3,
+          4
+        ],
+        "type_syndrome": 6
+      },
+      {
+        "coordinate_output_pivots": [
+          21
+        ],
+        "input_support_sizes": [
+          8
+        ],
+        "labels": 8,
+        "orientation_count": 8,
+        "preimage_support_sizes": [
+          1
+        ],
+        "selected_type_indices": [
+          1,
+          2,
+          3
+        ],
+        "type_syndrome": 17
+      },
+      {
+        "coordinate_output_pivots": [
+          21
+        ],
+        "input_support_sizes": [
+          8
+        ],
+        "labels": 8,
+        "orientation_count": 8,
+        "preimage_support_sizes": [
+          1
+        ],
+        "selected_type_indices": [
+          1,
+          2,
+          4
+        ],
+        "type_syndrome": 9
+      },
+      {
+        "coordinate_output_pivots": [
+          21
+        ],
+        "input_support_sizes": [
+          8
+        ],
+        "labels": 8,
+        "orientation_count": 8,
+        "preimage_support_sizes": [
+          1
+        ],
+        "selected_type_indices": [
+          1,
+          3,
+          4
+        ],
+        "type_syndrome": 5
+      },
+      {
+        "coordinate_output_pivots": [
+          85,
+          71
+        ],
+        "input_support_sizes": [
+          16,
+          32
+        ],
+        "labels": 4,
+        "orientation_count": 2,
+        "preimage_support_sizes": [
+          2,
+          3
+        ],
+        "selected_type_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "type_syndrome": 16
+      },
+      {
+        "coordinate_output_pivots": [
+          85,
+          71
+        ],
+        "input_support_sizes": [
+          16,
+          32
+        ],
+        "labels": 4,
+        "orientation_count": 2,
+        "preimage_support_sizes": [
+          2,
+          3
+        ],
+        "selected_type_indices": [
+          0,
+          1,
+          2,
+          4
+        ],
+        "type_syndrome": 8
+      },
+      {
+        "coordinate_output_pivots": [
+          85,
+          23
+        ],
+        "input_support_sizes": [
+          16,
+          56
+        ],
+        "labels": 4,
+        "orientation_count": 2,
+        "preimage_support_sizes": [
+          2,
+          4
+        ],
+        "selected_type_indices": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "type_syndrome": 4
+      },
+      {
+        "coordinate_output_pivots": [
+          85,
+          29
+        ],
+        "input_support_sizes": [
+          16,
+          32
+        ],
+        "labels": 4,
+        "orientation_count": 2,
+        "preimage_support_sizes": [
+          2,
+          3
+        ],
+        "selected_type_indices": [
+          0,
+          2,
+          3,
+          4
+        ],
+        "type_syndrome": 2
+      },
+      {
+        "coordinate_output_pivots": [
+          85,
+          29
+        ],
+        "input_support_sizes": [
+          16,
+          32
+        ],
+        "labels": 4,
+        "orientation_count": 2,
+        "preimage_support_sizes": [
+          2,
+          3
+        ],
+        "selected_type_indices": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "type_syndrome": 1
+      }
+    ],
+    "uncached_physical_polynomial_queries_for_all_blocks": 30604288
+  },
+  "scope": "Division-free formal physical-entry queries and exact sparse interface; no rank or factoring-score improvement asserted.",
+  "source_sha256": {
+    "check_ward_fan_entry_queries.py": "b658971ef1858f50a913fb1fb20444379304299afce1db4540ef3a5abf56dfba",
+    "check_ward_fan_family.py": "c2f293c7950cab2fb2e6a792bdd189b8e24bee0e1a285e1a70c0381f4bc0bc85",
+    "check_ward_pfaffian_queries.py": "3a8cae8e26d55ed8dac43b6c761d4690b90c9733e3c1ce8e6d07b1a2816dd1c3",
+    "complement_shell_tensor.py": "8a37f03f385c64aaac948d2d0754adc684b48786614b3380060004bb936deded",
+    "ward_fan_entry_queries.py": "5389755219e3d03f7aaebf92b0da453cd29c0192de686bc458999f07084dd7dd",
+    "ward_pfaffian_queries.py": "f2ac6446f74acbe171681218bb60dddd992c236314a1cdee0dc685aa1e16adf5"
+  }
+}

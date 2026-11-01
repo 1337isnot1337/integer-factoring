@@ -13,8 +13,52 @@
       23
     ],
     "conversion_cases": 1040,
-    "supplied_weight_one_coefficients": 5850,
-    "completely_zero_signed_residues": 184
+    "supplied_weight_one_coefficients": 9685,
+    "exact_coefficient_queries": 5850,
+    "completely_zero_signed_residues": 184,
+    "finite_precision_cases": 520,
+    "finite_precision_coefficient_queries": 2925,
+    "two_adic_precisions_tested": [
+      1,
+      2,
+      4
+    ],
+    "single_bit_cases": 520,
+    "single_bit_coefficient_queries": 910,
+    "single_bit_decoder_ranks": [
+      [
+        3,
+        1
+      ],
+      [
+        5,
+        2
+      ],
+      [
+        7,
+        3
+      ],
+      [
+        11,
+        5
+      ],
+      [
+        13,
+        6
+      ],
+      [
+        17,
+        8
+      ],
+      [
+        19,
+        9
+      ],
+      [
+        23,
+        11
+      ]
+    ]
   },
   "signed_recovery": {
     "recoveries": 10,

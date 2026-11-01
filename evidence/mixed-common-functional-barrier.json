@@ -1,0 +1,177 @@
+{
+  "cost_exponent": {
+    "denominator": 12,
+    "numerator": 17
+  },
+  "families": [
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 43,
+      "exact_margin": {
+        "difference": 19976604109559862719938560,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "symplectic-24",
+      "labels": 24,
+      "rank_product": 16512,
+      "row_rank_base": 384,
+      "scope": null
+    },
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 43,
+      "exact_margin": {
+        "difference": 42290156997525089895845888,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "symplectic-26",
+      "labels": 26,
+      "rank_product": 18748,
+      "row_rank_base": 436,
+      "scope": null
+    },
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 286,
+      "exact_margin": {
+        "difference": 43079487204046281448040050504761344,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "two-even-80",
+      "labels": 80,
+      "rank_product": 592592,
+      "row_rank_base": 2072,
+      "scope": null
+    },
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 718,
+      "exact_margin": {
+        "difference": 2013373586764992086344399813630928896393216,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "two-even-240",
+      "labels": 240,
+      "rank_product": 11263984,
+      "row_rank_base": 15688,
+      "scope": null
+    },
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 1150,
+      "exact_margin": {
+        "difference": 2573049971980248272067807982750005219749997146688,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "two-even-672",
+      "labels": 672,
+      "rank_product": 124562250,
+      "row_rank_base": 108315,
+      "scope": null
+    },
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 2106,
+      "exact_margin": {
+        "difference": 274937323112978348763910876990177166308630956063016091648,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "two-even-1792",
+      "labels": 1792,
+      "rank_product": 2580397560,
+      "row_rank_base": 1225260,
+      "scope": null
+    },
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 3332,
+      "exact_margin": {
+        "difference": 57548571342725793129251867311725263843316799834668177452695552,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "two-even-4608",
+      "labels": 4608,
+      "rank_product": 25064903360,
+      "row_rank_base": 7522480,
+      "scope": null
+    },
+    {
+      "column_mechanism": "four diagonal copies per grid point; seven-point degree-one grid",
+      "column_rank_base": 24,
+      "exact_margin": {
+        "difference": 1206286223511929,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "cubic-cyclic",
+      "labels": 7,
+      "rank_product": 336,
+      "row_rank_base": 14,
+      "scope": "The full formal scalar-output space C=lambda*S for the fixed seven-cycle shift."
+    },
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 28,
+      "exact_margin": {
+        "difference": 3395779878031737,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "cubic-jordan",
+      "labels": 7,
+      "rank_product": 392,
+      "row_rank_base": 14,
+      "scope": "The full formal scalar-output space C=lambda*J for the fixed strict shift."
+    },
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 28,
+      "exact_margin": {
+        "difference": 23465751060857,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "cubic-fixed-image-rank-one",
+      "labels": 7,
+      "rank_product": 252,
+      "row_rank_base": 9,
+      "scope": "The image vector u is fixed within this local factor; covectors vary. Distinct tensor factors may use different fixed u."
+    },
+    {
+      "column_mechanism": "common triangular/scalar diagonal",
+      "column_rank_base": 28,
+      "exact_margin": {
+        "difference": 3395779878031737,
+        "label_power": 17,
+        "rank_product_power": 6
+      },
+      "family": "cubic-coordinate-images",
+      "labels": 7,
+      "rank_product": 392,
+      "row_rank_base": 14,
+      "scope": "All coordinate image choices e_i and covectors may mix inside this local factor; general multiple-row cross terms are excluded."
+    }
+  ],
+  "local_space_limit": "This is a tensor-product closure, not an arbitrary union of distinct local coefficient spaces. Each rank-one image vector remains fixed within its own local factor.",
+  "scope": "Every characteristic-two field; every nonempty mixed tensor product of the listed fixed local spaces; arbitrary coefficient-space recombinations within that tensor product.",
+  "source_certificate_sha256": {
+    "evidence/cubic-coordinate-image-mixtures.json": "98e7787d3f67571150371d1911b2f4aea14b490f7b9e1ddf3a50428616d51e58",
+    "evidence/cubic-cyclic-fourier-bound.json": "f8e46faeee82d49e5acf7d1de4b1446f5fac19ad9e7d658ba6aa938326a74a16",
+    "evidence/cubic-fixed-image-rank-one.json": "903b045c038d8ff430b3da5f59c0a64a177a5c2006ec722d6025ee79b0de9053",
+    "evidence/cubic-jordan-filtration.json": "f6a05394f64bb64b4cd0e9a05015e8a870d37812ee2203f557b274a55fc6d383",
+    "evidence/noncommutative-crossing-character-compression.json": "a8891f144a4a02de46c3314a8d166ce9c49a300b47c217019968babc794c0a20",
+    "evidence/symplectic-two-even-P5-compression.json": "1cffd6709c34c50bd2492c8be570dbef009d47987d149c80c9ab0ec22b344fd3",
+    "evidence/two-even-site-P6-compression.json": "57716ad06deeac6ae01fddd4ea19191062204db4d10863915cfc9498cb45addf",
+    "evidence/two-even-site-P7-jordan-compression.json": "5916b373fa961f8a5f3121662ad86841fcf8cc49e7816cba0f58ab58e0170dcc",
+    "evidence/two-even-site-row-corner.json": "e580048082faee5f9dc225e35af4cd6eadc3b2c02153da575604c35d96944d10"
+  },
+  "source_sha256": "3c9edb4ce3daccff8ebe9588aecd844d96e29ca0b7ac1856ed5014092a18a8d6",
+  "status": "pass"
+}

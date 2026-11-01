@@ -215,3 +215,79 @@ Exact source head `dd28d375ea65863356c67b051f5d4f217562475d`, with original auth
 Full `make verify` passed on the reconciled tree: 514 Markdown files, 59 unit tests, five crossing tests, the newly restored further checks and the existing default gates. Both 300-second tagged/bivariate checks actually completed with `status: passed`, rather than timing out. The bivariate replay checked all 2,048 tensors with both block and independent dense ranks and recorded the finite exact optimum. All five generated two-patch/shear verification records reported passed with their finite scope retained. The polynomial-shear diagnostic does not turn its retained partial search into an exhaustive result.
 
 Not newly run: optional `verify-energy-full`, `verify-search-native`, `verify-weyl-orbit`, `verify-witt-full`, or Lean targets. Those source implementations/evidence are retained without a fresh full-run claim. Integration and finite checks are not independent mathematical acceptance, a PR approval review, or an exponent above `1/2`.
+
+## 2026-11-01: Second spin coefficient checkpoint and session handoff
+
+Exact published mathematical source `c31de0f66d3680311482e5cd8785bac2849f8537` adds the ordinary proof of `3C_2=sum T_ij tensor T_ij+k(k+1)I`, independent literal-transposition entry controls, and an interpretation of the existing eight-site row model. The constructor and original rank certificate remain credited to the bounded-spin lane. The checker verifies 198 single-copy class-sum entries and 104 second-coefficient controls, then reads the published polynomial model to label its blocks; that step does not rebuild the dense rank certificate.
+
+`make verify-bounded-spin-second`, whitespace checks, and the full `make verify` passed before integration, with this additive patch on base `e8787861611aea3a43c1238fa0276b81eb964f41` (521 Markdown files, 59 unit tests and five crossing tests). Subsequent integration replay is limited to the focused checker and documentation gate. The latter initially found a newly introduced reference to the absent `smooth-set-fourier-norm.md`; removed the broken reference without claiming to have reviewed the pre-existing class-number bound. The final focused and documentation replays passed. No new Lean build, independent mathematical acceptance, favorable all-length cut-rank theorem, or factoring exponent above `1/2` is claimed. The owner requested wrap-up; this session's arithmetic and additive spin-lemma scopes are released in Discussions #53 and #51.
+
+## 2026-11-01: Joint-energy conjugations and polynomial dressing reduction
+
+Exact mathematical sources `795825c`, `c5701ff` and `74dde47` supply a one-place-isospectral joint-pair construction, its complete 1,296-member F4 leading-coefficient-preserving orbit at the five-letter reference's natural heights, a formal leading-rank-one factorization, and an all-field/all-degree reduction for a square-zero polynomial sector. A unipotence argument extends the latter to every rank-one scalar-polynomial energy generator under the stated pole and leading-rank conditions. The Gaussian reference and its authorship remain credited. These are scoped construction/rigidity results; the complete factoring exponent stays `1/2`.
+
+The full orbit replay recomputed 1,298 profiles with fraction-free polynomial arithmetic, checked every endpoint and all integer prefix inequalities, regenerated a 16-dimensional bimodule orbit, and proved completeness by the exact unit counts 186,624/144. The fast companion checkers independently computed the 16-dimensional tangent identity, all 180 quadratic identities and both symbolic leading minors. All focused checks passed. Full `make verify` passed on integration tree `8f7984459fdf01c9a1e21f1a6ed3e75a9822cdb0`; subsequent concurrent integrations retained the exact research source fingerprints and used the documentation and focused gates. This is author computation and an ordinary proof, without independent mathematical review or new Lean work.
+
+Integration repairs: `645fad8` replaces a then-absent Fourier-note citation in `smooth-band-density.md` with the published quadratic-order class-number bound of Adzaga et al., Lemma 4.3, and the explicit comparison to the stated bit-length estimate. Two 124-bit replay files missing from main were restored byte-for-byte from its ancestor `11fc0aa`; the restored checker replayed all 942 supplied norms and recovered factor `2305843009213693951`, with unchanged evidence bytes. This restoration adds no new arithmetic theorem or search-cost claim.
+
+## 2026-11-01: PR #27 conservation checkpoint integration
+
+Exact source head `b49b9e19480c65d139ef15beecacb92064c1a960`; original source attribution and AI disclosures retained. Integrated the missing implementations, evidence and 28 research notes, with current main's half-rate/general-transfer evidence wording preserved. Restored all 30 source default commands, a focused `verify-pr27` target, and the optional native width-five target.
+
+The full-conservation theorem permits every binary conservation kernel in characteristic two on the full cube. The elementary code-span theorem permits arbitrary code pairs and coefficient fields but a narrower kernel space. A related-scope section now records this distinction and the earlier PR #27 full-cube result; neither theorem is treated as superseding the other or as a factoring lower bound.
+
+Full `make verify` passed on the integration tree: 552 Markdown files, 59 unit tests, five crossing tests, all 30 restored source commands and all other default gates. The conservation replay includes 65,812 exhaustive binary function-degree controls and 336 extension-field controls. Optional `verify-code-width5` regeneration and Lean targets were not newly run. Integration is not independent mathematical acceptance, a PR approval review, or an improved complete factoring exponent.
+
+## 2026-11-01: All-rank dressings, formal polynomial rigidity and discrete lattices
+
+Mathematical source `22b977f` removes the rank assumption on scalar-polynomial square-zero energy generators. Its quadratic/Frobenius elimination starts from all 69 variables, treats degrees 1 through 17 exactly, and has a separate argument for every higher degree over every characteristic-two field. The checker regenerates every linear and pure-square consequence and independently controls 58,125 entries with dense F4 products. It does not specialize squares to binary coordinates or depend on the exploratory SAT solver.
+
+Source `7ea5f7d` proves two direct-sum identities, with rank triples `(59,6,65)` and `(53,6,59)`. They classify polynomial tangents of every degree and give the ordinary nonlinear lifting proof for every identity-based formal polynomial gauge retaining the reference pole and leading rank. Such a gauge changes the tensor only by a constant conjugation. Separate components and transformations relaxing the hypotheses remain open.
+
+The discrete-lattice companion classifies every integer coordinate charge preserving polynomiality and the original pole, modulo two neutral support-component shifts. It replays all 12 effective tensors and both complete profiles, 26 fraction-free profiles including the reference. Both profile prefix comparisons hold for every candidate; no numerical optimization is needed for the all-scale conclusion. The noncoordinate idempotent interface is supplied as an open construction target, not an existence result.
+
+Full `make verify` passed for source `08bb5b71c7b6cfc987ed6c773ca4fe8b6cd2b6d5`: 598 Markdown files, 63 unit tests, five crossing tests, and the default research gates. This includes repair of a then-unavailable smooth-power link in incoming arithmetic work. Later main integrations substantially expanded the default suite; that expanded whole suite was not newly rerun. The research dependencies retained their exact fingerprints and the new focused Riccati, formal-tangent, monomial-lattice and documentation checks passed after integration (686 Markdown files). These are author calculations and ordinary proofs, without new Lean, independent review, or a factoring exponent above `1/2`.
+
+The subsequent projector checkpoint closes arbitrary energy-block idempotents and every positive lattice depth. The one-step pole/rank system has exact all-field dimension chain `69 -> 13 -> 2`; for depth at least two the first two cold/infinity jets alone give `69 -> 33 -> 10 -> 3 -> 2`, without a leading-rank condition. The terminal space consists of the two neutral support-component projections, so idempotence gives exactly four solutions and every transformed tensor is unchanged. The standard-library checker regenerates all formal polynomial row spaces and Frobenius-root consequences and controls 20,000 entries against independent dense F4 multiplication. This is a new focused replay and ordinary proof, not a rerun of the expanded whole suite, a finite-field census, or a factoring lower bound. Other finite places and interacting projection flags remain open.
+
+## 2026-11-01: Single-bit weight-one coefficient decoder and session handoff
+
+Exact sources `546637a` and `4c2f733` give the ordinary precision reductions and the binary decoder in [the weight-one note](../research/weight-one-divisor-coefficients.md), Section 4.1. For every odd prime level, one bit per cyclotomic coordinate suffices; the full algebra modulo two retains essential nilpotent information. The proof establishes injectivity by cyclotomic root multiplicities, and the implementation uses polynomial-time binary Gaussian elimination. Full integral normalization needs only modulus four. The paired CRT reconstruction credit to Discussion reply 19324705 and the Garg--Schost interpolation attribution are retained.
+
+The new finite controls check 520 binary conversions from 910 supplied coefficient vectors at eight prime levels. Existing exact and division-based conversions and the separate paired support reconstruction remain checked. The finite coefficient provider enumerates known divisors; no faster composite-index coefficient engine or factoring exponent above `1/2` is supplied.
+
+Full `make verify` passed on integration head `0c4777558d85490376ada8b2e737e82820ed0c26`: 530 Markdown files, 59 unit tests, five crossing tests and the default research gates. The tested source fingerprints matched after completion. Subsequent concurrent integration preserved the coefficient decoder, checker and reconstruction dependencies byte-for-byte; final focused and documentation gates passed. The final tree includes additional concurrently integrated default checks that were not rerun as a complete suite by this session. For the class-number citation conflict, retained the concurrent published-reference repair `645fad8` rather than duplicating the local derivation from `62b1aaa`.
+
+The owner requested wrap-up and paused the campaign. The coefficient scope and the unfinished Kronecker/Fay exploration are released in Discussion #51. The latter has no new repository theorem or fast binary-index extraction algorithm. No new Lean build or independent mathematical review is claimed. The complete factoring score remains `1/2`.
+
+## 2026-11-01: PR #29 Ward and crossing checkpoint integration
+
+Exact source head `7154cec09b982b54a0fcc0bb7a303318fc1f90da`, retaining original source attribution and AI disclosures. Restored 434 missing files and indexed 83 research notes. Preserved main's current result/evidence wording. The [source README](https://github.com/1337isnot1337/integer-factoring/blob/7154cec09b982b54a0fcc0bb7a303318fc1f90da/README.md) retains its original detailed inventory. Polynomial entry algorithms, conditional endpoint transfers and construction-specific barriers are not represented as a new numerical factoring bound.
+
+Restored the 53-command `verify-constructions` default dependency, the optional `verify-native-crossings` target, and 25 additional optional post-half commands under `verify-pr29-extended`, preserving the previous post-half checks. Full `make verify` passed on the integration tree: 678 Markdown files, 63 unit tests, five crossing tests, all 53 new default construction commands and all existing default gates.
+
+Not newly run: the larger native and optional extended screens or Lean targets. The source implementations and evidence for those remain available without a fresh-run claim. Ordinary `git diff --check` reports 21 source-inherited blank-at-EOF warnings; those bytes were preserved to retain source fingerprints. The same whitespace check with only blank-at-EOF warnings disabled passed. No other whitespace errors were ignored. Integration is not independent mathematical acceptance or a PR approval review; the complete time exponent remains `1/2`.
+
+<!-- beyond-half-review-20261101:start -->
+## November 1: smooth-norm processing and constructive selector checkpoint
+
+The [research guide](../research/beyond-half-research-checkpoint.md) connects the
+ordinary arithmetic reductions, constructed power selector, adaptive 144-bit
+factorization, exact channel improvements, and eight-letter nonorthogonal
+crossing. The complete factoring exponent remains 1/2. No new Lean formalization
+or Lean rebuild is claimed.
+
+The [verification record](../evidence/beyond-half-verification-20261101.json)
+records the 195-command baseline suite at d7913c7, all 30 verification additions
+at d42e464, focused core replays, source hashes, and later integration checks.
+The full 144-bit search was repeated, including both its exhausted first phase
+and 154,884-query continuation. Independent agents reviewed the scope and replayed
+the accepted norms, exact relations, partial extraction, and both crossing cuts.
+
+Uniform generation and represented-norm existence use the pinned Cureton--Thorner
+all-number-field finite-order Hecke strip. A fast deterministic norm selector,
+a uniform short power-window bound, and a fast dynamic prime-closure bound remain
+unproved. Small experimental bases are not presented as satisfying the enormous
+uniform analytic cutoff. Partial failure is not a primality certificate, and
+passing finite controls is not a proof of a stronger worst-case exponent.
+<!-- beyond-half-review-20261101:end -->

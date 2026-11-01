@@ -1,6 +1,6 @@
 .PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-arithmetic-sieve verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all
 
-verify: verify-docs verify-frontier verify-arithmetic verify-further
+verify: verify-docs verify-frontier verify-arithmetic verify-further verify-constructions
 	python3 -m unittest discover -s tests -v
 	python3 -m unittest tools.check_crossing -v
 	python3 tools/check_coefficient_basis.py
@@ -141,6 +141,34 @@ verify-subgroup-return:
 verify-ordered-charge-area:
 	python3 tools/check_ordered_charge_area.py
 
+.PHONY: verify-joint-energy-conjugations
+verify-joint-energy-conjugations:
+	python3 tools/check_joint_energy_conjugations.py
+
+.PHONY: verify-joint-leading-tangent
+verify-joint-leading-tangent:
+	python3 tools/check_joint_leading_tangent.py
+
+.PHONY: verify-joint-energy-dressings
+verify-joint-energy-dressings:
+	python3 tools/check_joint_energy_dressings.py
+
+.PHONY: verify-joint-energy-riccati
+verify-joint-energy-riccati:
+	python3 tools/check_joint_energy_riccati.py
+
+.PHONY: verify-joint-polynomial-tangent
+verify-joint-polynomial-tangent:
+	python3 tools/check_joint_polynomial_tangent.py
+
+.PHONY: verify-joint-monomial-lattices
+verify-joint-monomial-lattices:
+	python3 tools/check_joint_monomial_lattices.py
+
+.PHONY: verify-joint-projector-lattices
+verify-joint-projector-lattices:
+	python3 tools/check_joint_projector_lattices.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
@@ -172,6 +200,10 @@ verify-joint-determinant:
 .PHONY: verify-bounded-spin
 verify-bounded-spin:
 	python3 tools/check_bounded_spin_crossing.py
+
+.PHONY: verify-bounded-spin-second
+verify-bounded-spin-second:
+	python3 tools/check_bounded_spin_second.py
 
 .PHONY: verify-bounded-spin-algebra
 verify-bounded-spin-algebra:
@@ -508,7 +540,7 @@ verify-polynomial-native:
 verify-nine-letter-all:
 	python3 tools/check_nine_letter_level_catalogue.py
 
-verify-post-half:
+verify-post-half: verify-pr29-extended
 	python3 tools/check_half_piece_ranks.py --full
 	python3 tools/check_half_projection.py
 	python3 tools/check_half_restricted_labels.py
@@ -592,6 +624,36 @@ verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments ve
 	python3 tools/check_arithmetic_class_groups.py
 	python3 tools/check_arithmetic_density_lift.py
 	python3 tools/check_bounded_smooth_norm.py
+	python3 tools/check_weighted_cut_rank_budget.py
+	python3 tools/check_weighted_cut_residual_budget.py
+	python3 tools/check_weighted_cut_dual_certificate.py
+	python3 tools/check_two_product_complement.py
+	python3 tools/check_two_product_seed_cutoff.py
+	python3 tools/check_flagged_cut_rank_budget.py
+	python3 tools/check_geometric_subspace_compression.py
+	python3 tools/check_geometric_cut_rank_budget.py
+	python3 tools/check_weighted_cut_relaxation_limit.py
+	python3 tools/check_geometric_cut_relaxation_limit.py
+	python3 tools/check_weighted_cut_border_stability.py
+	python3 tools/check_geometric_border_cutoff.py
+	python3 tools/check_rank_one_formal_cutoff.py
+	python3 tools/check_quadratic_crossing.py
+	python3 tools/check_word_restriction_barrier.py
+	python3 tools/check_code_sections.py
+	python3 tools/check_frame_filtration.py
+	python3 tools/check_feistel_filtration.py
+	python3 tools/check_diagonal_word_rank_sum.py
+	python3 tools/check_incidence_kernel_rank_sum.py
+	python3 tools/check_full_conservation_rank_sum.py
+	python3 tools/check_p_group_convolution_degree.py
+	python3 tools/check_bi_exterior_crossing_algebra.py
+	python3 tools/check_bi_exterior_degree_budget.py
+	python3 tools/check_nonlinear_layer_probe.py
+	python3 tools/check_pauli_walsh_dictionary.py
+	python3 tools/check_pauli_walsh_pairs.py
+	python3 tools/check_growing_number_field_transfer.py
+	python3 tools/check_rank_sum_global_transfer.py
+	python3 tools/check_characteristic_independent_recovery.py
 	python3 tools/check_piece_transfer.py
 	python3 tools/check_boson_truncation.py
 	python3 tools/check_graded_space.py
@@ -1209,3 +1271,219 @@ verify-weyl-orbit:
 
 verify-witt-full:
 	python3 tools/witt_artin_hasse.py --h 32 --gram
+
+.PHONY: verify-pr27 verify-code-width5
+verify-pr27:
+	python3 tools/check_weighted_cut_rank_budget.py
+	python3 tools/check_weighted_cut_residual_budget.py
+	python3 tools/check_weighted_cut_dual_certificate.py
+	python3 tools/check_two_product_complement.py
+	python3 tools/check_two_product_seed_cutoff.py
+	python3 tools/check_flagged_cut_rank_budget.py
+	python3 tools/check_geometric_subspace_compression.py
+	python3 tools/check_geometric_cut_rank_budget.py
+	python3 tools/check_weighted_cut_relaxation_limit.py
+	python3 tools/check_geometric_cut_relaxation_limit.py
+	python3 tools/check_weighted_cut_border_stability.py
+	python3 tools/check_geometric_border_cutoff.py
+	python3 tools/check_rank_one_formal_cutoff.py
+	python3 tools/check_quadratic_crossing.py
+	python3 tools/check_word_restriction_barrier.py
+	python3 tools/check_code_sections.py
+	python3 tools/check_frame_filtration.py
+	python3 tools/check_feistel_filtration.py
+	python3 tools/check_diagonal_word_rank_sum.py
+	python3 tools/check_incidence_kernel_rank_sum.py
+	python3 tools/check_full_conservation_rank_sum.py
+	python3 tools/check_p_group_convolution_degree.py
+	python3 tools/check_bi_exterior_crossing_algebra.py
+	python3 tools/check_bi_exterior_degree_budget.py
+	python3 tools/check_nonlinear_layer_probe.py
+	python3 tools/check_pauli_walsh_dictionary.py
+	python3 tools/check_pauli_walsh_pairs.py
+	python3 tools/check_growing_number_field_transfer.py
+	python3 tools/check_rank_sum_global_transfer.py
+	python3 tools/check_characteristic_independent_recovery.py
+
+verify-code-width5:
+	g++ -O3 -std=c++20 -fopenmp tools/check_code_kernel_width5.cpp -o /tmp/integer-factoring-code-width5
+	/tmp/integer-factoring-code-width5 0 64 4 /tmp/integer-factoring-code-width5
+	python3 tools/check_code_sections.py --full-classifier --native-prefix /tmp/integer-factoring-code-width5
+
+# beyond-half-checks:start
+.PHONY: verify-beyond-half verify-norm-processing verify-adaptive-channels verify-crossing-pressure-certificates verify-protected-scalar-pressure verify-reflection-codes-full
+
+# Core exact replays; exhaustive coordinate-code classification has its own target.
+verify-beyond-half: verify-norm-processing verify-adaptive-channels verify-crossing-pressure-certificates verify-protected-scalar-pressure
+
+verify-norm-processing:
+	python3 tools/check_prime_form_bias.py
+	python3 tools/check_prime_form_cutoffs.py
+	python3 tools/check_direct_discriminant_short_norms.py
+	python3 tools/check_early_ambiguous_factor.py
+	python3 tools/check_factored_norm_representation.py
+	python3 tools/check_prime_form_factor_base.py
+	python3 tools/check_smooth_band_density.py
+	python3 tools/check_powered_prime_norm_parameters.py
+	python3 tools/check_powered_prime_norm_witnesses.py
+	python3 tools/check_quasipolynomial_norm_parameters.py
+	python3 tools/check_relation_two_saturation.py
+	python3 tools/check_weighted_norm_relations.py
+	python3 tools/check_arbitrary_norm_representation.py
+	python3 tools/check_selected_norm_factoring.py
+	python3 tools/check_selected_norm_factoring_124_bit.py
+	python3 tools/check_arbitrary_selected_norm_factoring.py
+	python3 tools/check_dynamic_leading_norm_relations.py
+	python3 tools/check_leading_power_smooth_relations.py
+	python3 tools/check_fresh_leading_power_control.py
+	python3 tools/check_odd_pivot_two_primary_elimination.py
+	python3 tools/check_adaptive_leading_power_windows.py
+
+verify-adaptive-channels:
+	python3 tools/check_adaptive_smith_lattices.py
+	python3 tools/check_matroid_smith_channels.py
+	python3 tools/check_dvr_smith_channels.py
+	python3 tools/check_subspace_smith_channels.py
+	python3 tools/check_channel_pressure_separation.py
+	python3 tools/check_block_subspace_channels.py
+
+verify-crossing-pressure-certificates:
+	python3 tools/check_direct_type_elementary_floor.py
+	python3 tools/check_arbitrary_binary_code_pressure.py
+	python3 tools/check_integer_shared_minor_floor.py
+	python3 tools/check_adjugate_seven_letter_floor.py
+	python3 tools/check_bounded_order_smith_floor.py
+	python3 tools/check_clifford_compression.py
+	python3 tools/check_clifford_threshold_sharpness.py
+	python3 tools/check_homogeneous_restriction_floor.py
+	python3 tools/check_joint_height_conjugations.py
+	python3 tools/check_eight_letter_reflection_retraction.py
+	python3 tools/check_eight_letter_pressure_factorization.py
+	python3 tools/check_polynomial_joint_height_rigidity.py
+
+verify-protected-scalar-pressure:
+	python3 tools/check_triangular_auxiliary_row_fiber.py
+	python3 tools/check_protected_subtensor_pressure.py
+	python3 tools/check_scalar_terminal_projections.py
+
+verify-reflection-codes-full:
+	python3 tools/check_reflection_coordinate_codes.py --full --progress --output evidence/reflection-coordinate-codes.json
+
+.PHONY: verify-adaptive-power-full
+verify-adaptive-power-full:
+	python3 tools/check_adaptive_leading_power_windows.py --full
+
+# beyond-half-checks:end
+
+.PHONY: verify-constructions
+verify-constructions:
+	python3 tools/check_simultaneous_seed_endpoint.py
+	python3 tools/check_homogeneous_central_symbols.py --central 16
+	python3 tools/check_angle_pfaffian.py
+	python3 tools/check_homogeneous_central_selection.py
+	python3 tools/check_noncommutative_crossing_orbit.py
+	python3 tools/check_bosonic_hermite_profile.py
+	python3 tools/check_noncommutative_crossing_coded.py
+	python3 tools/check_homogeneous_central_eighth_jet.py
+	python3 tools/check_binary_quadratic_charge_shells.py
+	python3 tools/check_noncommutative_crossing_hopf.py
+	python3 tools/check_residue_folded_channels.py
+	python3 tools/check_noncommutative_crossing_pfaffian_boundaries.py
+	python3 tools/check_noncommutative_crossing_pfaffian_isotropic.py
+	python3 tools/check_noncommutative_crossing_optimal_retracts.py
+	python3 tools/check_noncommutative_crossing_finite_gates.py
+	python3 tools/check_noncommutative_crossing_abelian_midpoints.py
+	python3 tools/check_noncommutative_crossing_involution_support.py
+	python3 tools/check_noncommutative_crossing_symplectic_radicals.py
+	python3 tools/check_noncommutative_crossing_radical_ward.py
+	python3 tools/check_noncommutative_crossing_ward_rank_descent.py
+	python3 tools/check_noncommutative_crossing_ward_rectangles.py
+	python3 tools/check_noncommutative_crossing_ward_euler.py
+	python3 tools/check_pfaffian_charge_gauges.py
+	python3 tools/check_ward_charge_filtration.py
+	python3 tools/check_ward_dual_incidence.py
+	python3 tools/check_ward_code_charge_entropy.py
+	python3 tools/check_ward_rectangular_envelope.py
+	python3 tools/check_ward_stable_operators.py --output /tmp/integer-factoring-ward-stable-operators.json
+	python3 tools/check_ward_form_operator_transport.py --output /tmp/integer-factoring-ward-form-operator-transport.json
+	python3 tools/check_ward_disjoint_transport.py --output /tmp/integer-factoring-ward-disjoint-transport.json
+	python3 tools/check_ward_interval_transport.py --output /tmp/integer-factoring-ward-interval-transport.json
+	python3 tools/check_ward_fan_family.py --output /tmp/integer-factoring-ward-fan-family.json
+	python3 tools/check_ward_pfaffian_queries.py --output /tmp/integer-factoring-ward-pfaffian-queries.json
+	python3 tools/check_ward_fan_entry_queries.py --output /tmp/integer-factoring-ward-fan-entry-queries.json
+	python3 tools/check_ward_fan_leading_block.py --output /tmp/integer-factoring-ward-fan-leading-block.json
+	python3 tools/check_ward_fan_jet_probe.py --output /tmp/integer-factoring-ward-fan-jet-probe.json
+	python3 tools/check_ward_operator_types.py --output /tmp/integer-factoring-ward-operator-types-check.json
+	python3 tools/check_overlapping_symplectic_profiles.py
+	python3 tools/check_cubic_radical_output_maps.py
+	python3 tools/check_cubic_cyclic_fourier_bound.py --output /tmp/integer-factoring-cubic-cyclic-fourier-bound.json
+	python3 tools/check_cubic_jordan_filtration.py --output /tmp/integer-factoring-cubic-jordan-filtration.json
+	python3 tools/check_cubic_fixed_image_rank_one.py --output /tmp/integer-factoring-cubic-fixed-image-rank-one.json
+	python3 tools/check_cubic_coordinate_image_mixtures.py --output /tmp/integer-factoring-cubic-coordinate-image-mixtures.json
+	python3 tools/check_cubic_varying_image_escape.py --output /tmp/integer-factoring-cubic-varying-image-escape.json
+	python3 tools/check_cubic_balanced_peels.py --output /tmp/integer-factoring-cubic-balanced-peels.json
+	python3 tools/check_mixed_common_functional_barrier.py --output /tmp/integer-factoring-mixed-common-functional-barrier.json
+	python3 tools/check_noncommutative_crossing_seed_algebra_audit.py
+	python3 tools/check_symplectic_seed_tensor_modules.py
+	python3 tools/symplectic_seed_weighted_modules.py --output /tmp/integer-factoring-weighted-modules.json
+	python3 tools/check_noncommutative_crossing_character_compression.py --output /tmp/integer-factoring-character-compression.json
+	python3 tools/check_symplectic_seed_coefficient_barrier.py --output /tmp/integer-factoring-seed-coefficient-barrier.json
+	python3 tools/check_double_endpoint_retracts.py --cases full:3:3
+	python3 tools/check_noncommutative_crossing_group_degeneration.py
+
+
+.PHONY: verify-native-crossings
+verify-native-crossings:
+	mkdir -p build/native
+	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/explore_group_correction_rank.cpp -o build/native/group-correction-screen
+	python3 tools/check_noncommutative_crossing_native.py --binary $(CURDIR)/build/native/group-correction-screen --lookup-summary evidence/noncommutative-crossing-lookup-complete.json
+	python3 tools/check_homogeneous_central_profiles.py
+	python3 tools/check_complement_shell_crossings.py
+	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/explore_graded_hopf_crossings.cpp -o build/native/graded-hopf-screen
+	python3 tools/check_graded_hopf_crossings.py --binary $(CURDIR)/build/native/graded-hopf-screen
+	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/explore_graded_hopf_gauges.cpp -o build/native/graded-hopf-gauges
+	python3 tools/check_graded_hopf_gauges.py --binary $(CURDIR)/build/native/graded-hopf-gauges
+	$(CXX) -O3 -std=c++17 -Wall -Wextra -Werror tools/screen_pfaffian_span_f4.cpp -o build/native/pfaffian-span-screen
+	python3 tools/export_pfaffian_span_native.py evidence/pfaffian-basis-all_P2_L2.json --output build/native/pfaffian-span-input.txt
+	build/native/pfaffian-span-screen < build/native/pfaffian-span-input.txt > build/native/pfaffian-span-F4.jsonl
+	python3 tools/check_pfaffian_span_f4.py --basis evidence/pfaffian-basis-all_P2_L2.json --screen build/native/pfaffian-span-F4.jsonl --output build/native/pfaffian-span-audit.json
+	$(CXX) -O3 -std=c++20 -Wall -Wextra -Werror tools/screen_weighted_pfaffian_span.cpp -o build/native/weighted-pfaffian-screen
+	python3 tools/check_uniform_f4_two_even_sections.py --native $(CURDIR)/build/native/weighted-pfaffian-screen --screen-output build/native/uniform-f4-section-lift.jsonl --output build/native/uniform-f4-section.json
+	python3 tools/check_symplectic_seed_tensor_fields.py --types evidence/symplectic-seed-tensor-modules-certificate.json --power 2 --native $(CURDIR)/build/native/weighted-pfaffian-screen --compare-binary evidence/symplectic-seed-tensor-modules.json --export-dir build/native/seed-power-2 --output build/native/seed-power-2-audit.json
+	python3 tools/check_symplectic_mixed_grade_codes.py --native $(CURDIR)/build/native/pfaffian-span-screen --field4 --export-dir build/native/mixed-grade --output build/native/mixed-grade-audit.json
+	$(CXX) -O3 -std=c++20 -Wall -Wextra -Werror tools/screen_cubic_gf8.cpp -o build/native/cubic-gf8-screen
+	python3 tools/explore_cubic_complement_gf8.py --replay evidence/cubic-complement-F8.json --output build/native/cubic-complement-F8-replay.json
+	python3 tools/check_cubic_complement_gf8.py --input evidence/cubic-complement-F8.json --native $(CURDIR)/build/native/cubic-gf8-screen --output build/native/cubic-complement-F8-audit.json
+	python3 tools/explore_cubic_mixed_gf8.py --replay evidence/cubic-mixed-F8.json --output build/native/cubic-mixed-F8-replay.json
+	python3 tools/check_cubic_mixed_gf8.py --native $(CURDIR)/build/native/cubic-gf8-screen --output build/native/cubic-mixed-F8-audit.json
+	$(CXX) -O3 -std=c++20 -Wall -Wextra -Werror tools/search_cubic_pairing_regroupings.cpp -o build/native/cubic-pairing-regroupings
+	python3 tools/explore_cubic_pairing_regroupings.py --native $(CURDIR)/build/native/cubic-pairing-regroupings --replay evidence/cubic-pairing-regroupings.json --output build/native/cubic-pairing-regroupings-audit.json
+
+
+.PHONY: verify-pr29-extended
+verify-pr29-extended:
+	python3 tools/check_common_character_compressions.py --output /tmp/integer-factoring-common-compressions.json
+	python3 tools/check_two_even_site_sections.py --scope graphs --work-dir /tmp/integer-factoring-two-even-sections --output /tmp/integer-factoring-two-even-sections.json
+	python3 tools/assemble_two_even_site_cores.py --pairs 6 --screen evidence/two-even-site-core-P6-F2.jsonl --output /tmp/integer-factoring-two-even-P6.json
+	python3 tools/check_two_even_site_compressions.py --output /tmp/integer-factoring-two-even-P6-compressions.json
+	python3 tools/check_two_even_site_jordan_compressions.py --output /tmp/integer-factoring-two-even-P7-compressions.json
+	python3 tools/check_two_even_site_P8_compressions.py --output /tmp/integer-factoring-two-even-P8-compressions.json
+	python3 tools/check_two_even_site_row_corners.py --output /tmp/integer-factoring-two-even-row-corners.json
+	python3 tools/check_two_even_site_frobenius_probe.py --output /tmp/integer-factoring-two-even-P10-frobenius.json
+	python3 tools/check_ward_fan_boundary.py --output /tmp/integer-factoring-ward-fan-boundary.json
+	python3 tools/check_complement_shell_ranks.py
+	python3 tools/check_noncommutative_crossing_pbw.py
+	python3 tools/check_folded_gram_channels.py
+	python3 tools/check_folded_gram_aggregate.py
+	python3 tools/check_pfaffian_p6_boundary_orbit.py
+	python3 tools/check_unequal_grade_gram.py
+	python3 tools/check_pfaffian_particle_hole.py
+	python3 tools/check_stable_pfaffian_bounds.py
+	python3 tools/check_stable_boundary_envelope.py --maximum-pairs 128
+	python3 tools/check_stable_pfaffian_coordinates.py
+	python3 tools/check_additional_crossing_screens.py
+	python3 tools/explore_symplectic_boundary_codes.py --cases 4:4 --optimize
+	python3 tools/explore_cubic_off_syndrome_outputs.py --output /tmp/integer-factoring-cubic-output-corrections.json
+	python3 tools/check_cubic_output_identity.py --multirow evidence/cubic-multirow-outputs.json --output /tmp/integer-factoring-cubic-output-identity.json
+	python3 tools/check_cubic_complement_outputs.py --binary evidence/cubic-complement-outputs.json --field4 evidence/cubic-complement-fields.json --output /tmp/integer-factoring-cubic-complement-audit.json
+	python3 tools/check_cubic_affordable_pool.py --input evidence/cubic-multirow-outputs.json --output /tmp/integer-factoring-cubic-affordable-pool.json

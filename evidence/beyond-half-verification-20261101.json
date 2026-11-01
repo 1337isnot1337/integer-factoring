@@ -1,0 +1,1799 @@
+{
+  "recorded_at_utc": "2026-11-01T01:58:38.384442+00:00",
+  "status": "pass",
+  "scope": "Ordinary proofs and exact executable evidence. Complete factoring score remains one half. The constructed smooth-leading-power selector factors the recorded finite inputs, including the fresh 144-bit input, but a uniform successful-window bound remains open.",
+  "complete_factoring_score": 0.5,
+  "baseline_commit": "d7913c726311dbe0fe3543c9f56b468b9a8bc2f2",
+  "integration_checkpoint": "d42e464938e9a8faf40f44fb7923a645b25c117b",
+  "external_analytic_input": {
+    "repository": "https://github.com/AxiomMath/DedekindZetaZeroFree",
+    "commit": "09afbb4ce6570c1615d58509dc197fc9f0956b7d",
+    "scope": "Pinned all-number-field finite-order Hecke zero-free strip Re(s)>31/32; used by uniform generation and smooth-norm existence.",
+    "lean_rebuilt_in_this_session": false,
+    "finite_algebraic_replays_require_analytic_input": false
+  },
+  "baseline_verification": {
+    "command": "make verify",
+    "exit_code": 0,
+    "recipe_commands": 195,
+    "makefile_snapshot": "d7913c726311dbe0fe3543c9f56b468b9a8bc2f2"
+  },
+  "incremental_verification": {
+    "reason": "The earlier integration checkpoint added 30 default verification recipes without modifying the existing executable sources. Those 30 commands were run separately after the baseline suite.",
+    "default_recipe_count_at_checkpoint": 225,
+    "runs": [
+      {
+        "command": "python3 tools/check_weighted_cut_rank_budget.py",
+        "exit_code": 0,
+        "seconds": 0.799,
+        "checker_sha256": "a369e633f974a5c013de3fc998908d61946ccf3741c42b63e4508df56048ea82"
+      },
+      {
+        "command": "python3 tools/check_weighted_cut_residual_budget.py",
+        "exit_code": 0,
+        "seconds": 1.145,
+        "checker_sha256": "6aa95409f1c19b4b1bd6a1cdfc277617d5cd37a168795f5116d989ac20d24136"
+      },
+      {
+        "command": "python3 tools/check_weighted_cut_dual_certificate.py",
+        "exit_code": 0,
+        "seconds": 0.809,
+        "checker_sha256": "6330234653e3e5acf87f8a9d40697ca159ce7c88315ea020be266be16bbd67f0"
+      },
+      {
+        "command": "python3 tools/check_two_product_complement.py",
+        "exit_code": 0,
+        "seconds": 2.866,
+        "checker_sha256": "47498508e1bdea42cd61d88df700c6e7d5475f9c25fd293fc1e7cc304c9c5be0"
+      },
+      {
+        "command": "python3 tools/check_two_product_seed_cutoff.py",
+        "exit_code": 0,
+        "seconds": 0.534,
+        "checker_sha256": "6fcdb6c7080a326c824dd328ccca69493ed4d6ef8ad07039396789b153350377"
+      },
+      {
+        "command": "python3 tools/check_flagged_cut_rank_budget.py",
+        "exit_code": 0,
+        "seconds": 3.478,
+        "checker_sha256": "2e0434d09f995d821d51b80d8768564d9c6c3c86bc075b3896dfa61cff6401a5"
+      },
+      {
+        "command": "python3 tools/check_geometric_subspace_compression.py",
+        "exit_code": 0,
+        "seconds": 0.342,
+        "checker_sha256": "a93a180170661a0ef11ccb52ca0087ff2d7263b799f9b0182ec12b5e1433bd4b"
+      },
+      {
+        "command": "python3 tools/check_geometric_cut_rank_budget.py",
+        "exit_code": 0,
+        "seconds": 11.449,
+        "checker_sha256": "e48089f9ff94def6c9a994a5fbcd5be82aa723218870f9e93bb0dec8a095e1c2"
+      },
+      {
+        "command": "python3 tools/check_weighted_cut_relaxation_limit.py",
+        "exit_code": 0,
+        "seconds": 2.038,
+        "checker_sha256": "48e2ad351a71d871bd9d47858d74e474645d102841c830650118751774ee8eea"
+      },
+      {
+        "command": "python3 tools/check_geometric_cut_relaxation_limit.py",
+        "exit_code": 0,
+        "seconds": 4.382,
+        "checker_sha256": "11d8bf664adb424d10486530c96c77136ca170d8975d1449deb3f0343b232508"
+      },
+      {
+        "command": "python3 tools/check_weighted_cut_border_stability.py",
+        "exit_code": 0,
+        "seconds": 0.356,
+        "checker_sha256": "cd3b87bf36c1d7e157f230f51438ea1cf3b3ea5d8b0c0bc8536ea366b6b2d930"
+      },
+      {
+        "command": "python3 tools/check_geometric_border_cutoff.py",
+        "exit_code": 0,
+        "seconds": 1.132,
+        "checker_sha256": "836fe3c449642ecd69e6970be9462cc55c5a28bb8a3c94b334e77ca765a86cd3"
+      },
+      {
+        "command": "python3 tools/check_rank_one_formal_cutoff.py",
+        "exit_code": 0,
+        "seconds": 5.824,
+        "checker_sha256": "be7a408a12761944f82fb29d85397ddc72386cd20dc842cfed1979d51317c7b1"
+      },
+      {
+        "command": "python3 tools/check_quadratic_crossing.py",
+        "exit_code": 0,
+        "seconds": 2.285,
+        "checker_sha256": "6bac96b9beee64791590a5e48a72e0b3a37864b02cac1cbf218c11d3c2248f7f"
+      },
+      {
+        "command": "python3 tools/check_word_restriction_barrier.py",
+        "exit_code": 0,
+        "seconds": 0.859,
+        "checker_sha256": "2a73280279a62b296a987da9ab65e2a97efd2a4c241a215488c6fa6ee6c16415"
+      },
+      {
+        "command": "python3 tools/check_code_sections.py",
+        "exit_code": 0,
+        "seconds": 8.423,
+        "checker_sha256": "264976a2211ef4d7a3c4d4c8dd5a01852902384e5035a5837318e5544fcc5dad"
+      },
+      {
+        "command": "python3 tools/check_frame_filtration.py",
+        "exit_code": 0,
+        "seconds": 2.158,
+        "checker_sha256": "86311b613b7b324b877e96a290530f7fd9d1fc098b72bd74329cc465c77e9433"
+      },
+      {
+        "command": "python3 tools/check_feistel_filtration.py",
+        "exit_code": 0,
+        "seconds": 4.843,
+        "checker_sha256": "f7d467e4bccf88e7f8197caba991b1a87d2073805b139616a305dec79f71e02d"
+      },
+      {
+        "command": "python3 tools/check_diagonal_word_rank_sum.py",
+        "exit_code": 0,
+        "seconds": 3.861,
+        "checker_sha256": "225b7a2a11654fef10fbd2fa3afbb71e27ad3ff4e2391811a9b62b97b7a9145e"
+      },
+      {
+        "command": "python3 tools/check_incidence_kernel_rank_sum.py",
+        "exit_code": 0,
+        "seconds": 0.466,
+        "checker_sha256": "c1190d2045aa2e94dd72eed2cfb1d5ccb97d6456d630568838fa37093cf0f34e"
+      },
+      {
+        "command": "python3 tools/check_full_conservation_rank_sum.py",
+        "exit_code": 0,
+        "seconds": 1.119,
+        "checker_sha256": "a6abd29ff3fc2260ca27c144bdb6fc8aa97f3ac13db08ac364fc65ddb6fcc99a"
+      },
+      {
+        "command": "python3 tools/check_p_group_convolution_degree.py",
+        "exit_code": 0,
+        "seconds": 2.112,
+        "checker_sha256": "7838c616feaf7e8a25ae5ccc0c1f21ec28f9098ff2e80a530cc2391b93627849"
+      },
+      {
+        "command": "python3 tools/check_bi_exterior_crossing_algebra.py",
+        "exit_code": 0,
+        "seconds": 1.107,
+        "checker_sha256": "467c1d419d382ffc10b5eac0391306909f389e873558739b1dd33b494fc2f52e"
+      },
+      {
+        "command": "python3 tools/check_bi_exterior_degree_budget.py",
+        "exit_code": 0,
+        "seconds": 1.039,
+        "checker_sha256": "6b8e0816b94645c34dbf5503587cb64d0c839dbede99af6b3527370712f6ac9d"
+      },
+      {
+        "command": "python3 tools/check_nonlinear_layer_probe.py",
+        "exit_code": 0,
+        "seconds": 0.603,
+        "checker_sha256": "3696337ea35286518ef9450788eb7f38a08e368e452ee89d95f0b229a7505bd5"
+      },
+      {
+        "command": "python3 tools/check_pauli_walsh_dictionary.py",
+        "exit_code": 0,
+        "seconds": 0.659,
+        "checker_sha256": "5c9ae0ae54e6577f899e04078bae2e179de0995c2fd417ff6cf1aa1fd6e7cd48"
+      },
+      {
+        "command": "python3 tools/check_pauli_walsh_pairs.py",
+        "exit_code": 0,
+        "seconds": 3.913,
+        "checker_sha256": "998c63c019d68b2d875be659aa870955baf3988e17b80e160139f63d0bd0c51d"
+      },
+      {
+        "command": "python3 tools/check_growing_number_field_transfer.py",
+        "exit_code": 0,
+        "seconds": 1.659,
+        "checker_sha256": "2bf80296d1076884b73ae0c34ce3f1c435d2fc621039ca1750c0bd6d91233595"
+      },
+      {
+        "command": "python3 tools/check_rank_sum_global_transfer.py",
+        "exit_code": 0,
+        "seconds": 0.489,
+        "checker_sha256": "9a4ac30854d67b3ec2fd7ccd6b416f8889258d007f308208b61486f96edc7930"
+      },
+      {
+        "command": "python3 tools/check_characteristic_independent_recovery.py",
+        "exit_code": 0,
+        "seconds": 3.528,
+        "checker_sha256": "8998a50584d1967d35aae4cf8669b5e776ad61de8a70df083f56c6d54962fa42"
+      }
+    ]
+  },
+  "new_core_verification": {
+    "command": "make verify-beyond-half",
+    "exit_code": 0,
+    "recipe_commands": 42,
+    "makefile_sha256": "d40449ea75e9420ae5fdec0093e384caa36dd4982494c43f2b44a9d0e79bcc3b",
+    "integration_checkpoint": "28240bd4cda7d44960cfab8d3d69543773e92d24",
+    "checks": [
+      {
+        "command": "python3 tools/check_prime_form_bias.py",
+        "checker_sha256": "e7ded1cc8a1d6ecc89523ce2b1ecfe2b66bbbc7c928bb5ccc82100a3821ba340"
+      },
+      {
+        "command": "python3 tools/check_prime_form_cutoffs.py",
+        "checker_sha256": "9846b77b73f8bdc3083460d283e3ff35d6d832f18b9f2bc54514da19bf90a8da"
+      },
+      {
+        "command": "python3 tools/check_direct_discriminant_short_norms.py",
+        "checker_sha256": "8ecae19f0c41c08b34a1ee4e5e4dd41af26fa5ee91af43e0fda5e35a1312011b"
+      },
+      {
+        "command": "python3 tools/check_early_ambiguous_factor.py",
+        "checker_sha256": "e1d7bf021bb27558c142630cbfe5c6ffc71f60e2f84070081086d81e7364254d"
+      },
+      {
+        "command": "python3 tools/check_factored_norm_representation.py",
+        "checker_sha256": "c4584581741e5ecf6b5f6d0c528e3e722a6f91833445408de9a7484a0d9ed984"
+      },
+      {
+        "command": "python3 tools/check_prime_form_factor_base.py",
+        "checker_sha256": "ae77f8d3549cdc04abe8acc6c75deb2d8dac3a66206470c0df5efc25dd4ec09e"
+      },
+      {
+        "command": "python3 tools/check_smooth_band_density.py",
+        "checker_sha256": "a986c2a1712c4e4c314dabc50daba234a544da42c6646e86c7f5ba0eb1c5eb36"
+      },
+      {
+        "command": "python3 tools/check_powered_prime_norm_parameters.py",
+        "checker_sha256": "6e43a094535946106e72cd2f299f52ab5020f780866f6b0f04e3cffba8c44d57"
+      },
+      {
+        "command": "python3 tools/check_powered_prime_norm_witnesses.py",
+        "checker_sha256": "93465fe4671e3e0560aef8aa99bb810953fb2d3b8cb3e31e3adbd976a48f041f"
+      },
+      {
+        "command": "python3 tools/check_quasipolynomial_norm_parameters.py",
+        "checker_sha256": "78ff0c7c63dedf59166ba1054333fafb5b048abc5fb39d343ceee0c860fbaf85"
+      },
+      {
+        "command": "python3 tools/check_relation_two_saturation.py",
+        "checker_sha256": "0f988f1e3fc06e8d19743493605415b4c80c34f9acb223f8166905e3fd90ca5e"
+      },
+      {
+        "command": "python3 tools/check_weighted_norm_relations.py",
+        "checker_sha256": "06565d4bd93e275d4f93c0fee33d0d951a73ef6dc786355db886724ce8fc8173"
+      },
+      {
+        "command": "python3 tools/check_arbitrary_norm_representation.py",
+        "checker_sha256": "9105473363f494260b22ac6bd0516c0b9c77274f9cb9ba0a0ea2d351f81feb6d"
+      },
+      {
+        "command": "python3 tools/check_selected_norm_factoring.py",
+        "checker_sha256": "5ad586b0d86ce074465d4f14105f6ef55ded234e6d189c7d3b4ddd38e5e187b1"
+      },
+      {
+        "command": "python3 tools/check_selected_norm_factoring_124_bit.py",
+        "checker_sha256": "e7985ce2df60d6d68fc0c934f534ba47df7c37cebc90f6cf530d17086f092ee0"
+      },
+      {
+        "command": "python3 tools/check_arbitrary_selected_norm_factoring.py",
+        "checker_sha256": "cccbf15d2b7b2b25a2827c24ea388599fadda78a109d9a645c0f5caf273caf2e"
+      },
+      {
+        "command": "python3 tools/check_dynamic_leading_norm_relations.py",
+        "checker_sha256": "05f4ab8662d41dda48698f39b62f3afdc3644c87317b0fde552bc3b991299f2c"
+      },
+      {
+        "command": "python3 tools/check_leading_power_smooth_relations.py",
+        "checker_sha256": "60e4912e3cfa663f7eeededdb9a17b6e7e17890ac7468997cb5f5818e7bc475f"
+      },
+      {
+        "command": "python3 tools/check_fresh_leading_power_control.py",
+        "checker_sha256": "32e08892466ec26dd293e0c88737094bbf3c7643ed807d887f806f0c69b75f9c"
+      },
+      {
+        "command": "python3 tools/check_odd_pivot_two_primary_elimination.py",
+        "checker_sha256": "0caa5412faa9f58b0d60b02d14577466b97f44ec8f08b85a7d1e6a5f56a857d3"
+      },
+      {
+        "command": "python3 tools/check_adaptive_leading_power_windows.py",
+        "checker_sha256": "dd849b152587306dd1d6e637c28243f37c79ef6901c9cc4135302e3b516af153"
+      },
+      {
+        "command": "python3 tools/check_adaptive_smith_lattices.py",
+        "checker_sha256": "6ade6d5a5b3f2eb28ca1e0351f2c6f8c8b7d6b9e569b343ec90ea014c7cf9b8d"
+      },
+      {
+        "command": "python3 tools/check_matroid_smith_channels.py",
+        "checker_sha256": "153baaa65528f054f7e43fe138df4c9919d13a0da49a34e77629b648a89c85aa"
+      },
+      {
+        "command": "python3 tools/check_dvr_smith_channels.py",
+        "checker_sha256": "463411e5f917288844ce6c4956d5f351877caefe87d8a2f16c354b2d43167b00"
+      },
+      {
+        "command": "python3 tools/check_subspace_smith_channels.py",
+        "checker_sha256": "9f09e129f985d22f13ffce4832ced61d64997d294e31c0e26d24f6fefe212bb7"
+      },
+      {
+        "command": "python3 tools/check_channel_pressure_separation.py",
+        "checker_sha256": "3d30bf9a05bbf336b35a1d7a5f0cabc42a20402d498816727e76876bc530388f"
+      },
+      {
+        "command": "python3 tools/check_block_subspace_channels.py",
+        "checker_sha256": "aaa8709d49746d05cd9f8ea2f77c439dbf1d096f5f1c29a25f2604e45e0b25b3"
+      },
+      {
+        "command": "python3 tools/check_direct_type_elementary_floor.py",
+        "checker_sha256": "ce3f5b24d76f48d4c5cbfef17aabf671062c0891845a40333c065df87c3b9b21"
+      },
+      {
+        "command": "python3 tools/check_arbitrary_binary_code_pressure.py",
+        "checker_sha256": "0b9027146493abce419dcadfe972e89f23fa99559c3c94d13f208de91d0c822e"
+      },
+      {
+        "command": "python3 tools/check_integer_shared_minor_floor.py",
+        "checker_sha256": "0062c4e7bd0a2784cd158ee34da4113e6b981e61c21b17e3f707c19e512c300c"
+      },
+      {
+        "command": "python3 tools/check_adjugate_seven_letter_floor.py",
+        "checker_sha256": "c7e6d4158427bf990d3daf0740fb3b8f87fef265bdb5a63949e05d4b8bc0a67f"
+      },
+      {
+        "command": "python3 tools/check_bounded_order_smith_floor.py",
+        "checker_sha256": "8eddaec5e046fa8e104698c5623d4851826d38a3d79d72cc54486fb5855bc901"
+      },
+      {
+        "command": "python3 tools/check_clifford_compression.py",
+        "checker_sha256": "99272bef80f2ff8dd32ceee69c9c2a08ae874245c3cf4578e62a36cfefe3c11a"
+      },
+      {
+        "command": "python3 tools/check_clifford_threshold_sharpness.py",
+        "checker_sha256": "df30dc43929b277cadbcca23e194c206473dec12fd21bbdcbdf1892ba7839fb4"
+      },
+      {
+        "command": "python3 tools/check_homogeneous_restriction_floor.py",
+        "checker_sha256": "68faaf6ffeb8ea173a38457459fa359d0883940b05c46f3005a501c6e996d559"
+      },
+      {
+        "command": "python3 tools/check_joint_height_conjugations.py",
+        "checker_sha256": "362c2800597a28f7736b731dbde89bb18bc4362c9090527d9e62e2369cbd419c"
+      },
+      {
+        "command": "python3 tools/check_eight_letter_reflection_retraction.py",
+        "checker_sha256": "f3081bb63ef7cf47e1fda0c08038d5270de5e9ffa8ef90b34ee74ec8d07f0317"
+      },
+      {
+        "command": "python3 tools/check_eight_letter_pressure_factorization.py",
+        "checker_sha256": "70095a87a18bedf478e581bc4ce63d0d9af9c737a8b6ba4fd0e9edf9b171d457"
+      },
+      {
+        "command": "python3 tools/check_polynomial_joint_height_rigidity.py",
+        "checker_sha256": "5fdd334e1a5bf9745c950d543d56dbbade681d32a584a04fbf8a7a6f15211e27"
+      },
+      {
+        "command": "python3 tools/check_triangular_auxiliary_row_fiber.py",
+        "checker_sha256": "513495f8321a042813c39275d60f7d8b9f480485d208a5566d4e828ce7360ad9"
+      },
+      {
+        "command": "python3 tools/check_protected_subtensor_pressure.py",
+        "checker_sha256": "325e999286cf98e241e7ed60177cc06d7475fb48050e7b6736c5c7525b9a03b3"
+      },
+      {
+        "command": "python3 tools/check_scalar_terminal_projections.py",
+        "checker_sha256": "9141ffb29d26651d8a83617d72383971dae966f4db1045ebd4d45ff46af5abd5"
+      }
+    ]
+  },
+  "additional_focused_replays": [
+    {
+      "command": [
+        "python3",
+        "tools/check_prime_form_cutoffs.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.057,
+      "checker_sha256": "9846b77b73f8bdc3083460d283e3ff35d6d832f18b9f2bc54514da19bf90a8da"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_powered_prime_norm_parameters.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.303,
+      "checker_sha256": "6e43a094535946106e72cd2f299f52ab5020f780866f6b0f04e3cffba8c44d57"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_quasipolynomial_norm_parameters.py"
+      ],
+      "exit_code": 0,
+      "seconds": 0.03,
+      "checker_sha256": "78ff0c7c63dedf59166ba1054333fafb5b048abc5fb39d343ceee0c860fbaf85"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_arbitrary_norm_representation.py",
+        "--output",
+        "/tmp/root-arbitrary-norm-representation.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.739,
+      "checker_sha256": "9105473363f494260b22ac6bd0516c0b9c77274f9cb9ba0a0ea2d351f81feb6d"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_selected_norm_factoring_124_bit.py",
+        "--output",
+        "/tmp/root-selected-norm-124.json"
+      ],
+      "exit_code": 0,
+      "seconds": 9.946,
+      "checker_sha256": "e7985ce2df60d6d68fc0c934f534ba47df7c37cebc90f6cf530d17086f092ee0"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_arbitrary_selected_norm_factoring.py",
+        "--output",
+        "/tmp/root-arbitrary-selected-norm.json"
+      ],
+      "exit_code": 0,
+      "seconds": 1.467,
+      "checker_sha256": "cccbf15d2b7b2b25a2827c24ea388599fadda78a109d9a645c0f5caf273caf2e"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_subspace_smith_channels.py",
+        "--output",
+        "/tmp/root-subspace-smith.json"
+      ],
+      "exit_code": 0,
+      "seconds": 2.259,
+      "checker_sha256": "9f09e129f985d22f13ffce4832ced61d64997d294e31c0e26d24f6fefe212bb7"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_adjugate_seven_letter_floor.py",
+        "--output",
+        "/tmp/root-seven-letter-floor.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.265,
+      "checker_sha256": "c7e6d4158427bf990d3daf0740fb3b8f87fef265bdb5a63949e05d4b8bc0a67f"
+    },
+    {
+      "command": [
+        "python3",
+        "tools/check_bounded_order_smith_floor.py",
+        "--output",
+        "/tmp/root-bounded-order-floor.json"
+      ],
+      "exit_code": 0,
+      "seconds": 0.429,
+      "checker_sha256": "8eddaec5e046fa8e104698c5623d4851826d38a3d79d72cc54486fb5855bc901"
+    }
+  ],
+  "documentation": {
+    "command": "make verify-docs",
+    "exit_code": 0,
+    "markdown_files": 687,
+    "scope": "Tracked documentation in the final integrated local checkout."
+  },
+  "whitespace": {
+    "command": "git diff --cached --check",
+    "exit_code": 0
+  },
+  "formalization": {
+    "new_lean_formalization": false,
+    "lean_builds_run": false
+  },
+  "research_packets": 54,
+  "packet_files": 197,
+  "packet_source_sha256": {
+    "evidence/adaptive-height-norm-factoring.json": "1d204f9131b6ae344a2cc928863bfd315304b3f0c7b47bfac6747da990bec801",
+    "evidence/adaptive-leading-power-windows.json": "75a1b8d9233cf2bd524bb2051ac02574294b122fc841227357df7298c0671928",
+    "evidence/adaptive-smith-lattices.json": "0a10cb3b3e9a7860bb4b0e48629aaf262a3911c9695eb373395702424fa418ca",
+    "evidence/adjugate-seven-letter-floor.json": "a65aedc7d2802edf0353111686108531eaa45126c7610636b961c18a30186a36",
+    "evidence/arbitrary-binary-code-pressure.json": "58d4d7da3efa387891401a8b7e06e18ae9795dc6faa49390468aba37429434d8",
+    "evidence/arbitrary-norm-representation.json": "6b5b5880e6bec4498113fa4769dcf47ac984eb71205a9ccc1d51924f16b9e43c",
+    "evidence/arbitrary-selected-norm-factoring.json": "04baee240fda9a357fe0b431c281fb663cb05a756554244a17f5fa95d66e0817",
+    "evidence/block-subspace-channels.json": "3eb5b8ad2549852ef60119456e633180ff48f5d838f0c2c74e6c71d0b01f59ac",
+    "evidence/bounded-order-smith-floor.json": "0d7b063dad42af8bda6775d8f08684542446a90c10d7e13742f44e70bff3009e",
+    "evidence/channel-pressure-separation.json": "d3ecce74422132cebfe64b0e456ae74c35c7974831b77945dad1953e37f1b543",
+    "evidence/clifford-compression.json": "598e44475d5492910b6b12c84d663bc2cdbc549230755a0aecfe337e496fdc8d",
+    "evidence/clifford-threshold-sharpness.json": "2656cfc8d5b97a122ed4724444af7ed8d47c71f8436ac3c881384e29909502a2",
+    "evidence/codimension-one-crossings.json": "f38c97032101ca995967985ff5547ae67ad48ed63e8d7ebda1248993304bca63",
+    "evidence/direct-discriminant-short-norms.json": "b0991d67d381429a5e88e871db15d208b2acbd39b9fb3925d2ca9a814e9fb045",
+    "evidence/direct-type-elementary-floor.json": "892b5e1734c18b81259bedf1122c476f98dbdd02d48939092c4387e9791fb229",
+    "evidence/dvr-smith-channels.json": "d50cc3b30266ddea15cd4e15b22ea6aa97f77d175ae5c8f8b045da54f7d23669",
+    "evidence/dynamic-leading-norm-relations.json": "66931571b2bd7afdad412e38081347edecc93e5a2315c11ccd4395085d350ded",
+    "evidence/early-ambiguous-factor.json": "3fc3e56c1607baf5882459981898b9e83f2e92f61e750de9f254d154a6fb2380",
+    "evidence/eight-letter-pressure-gain-factorization.json": "8ebf4aa23febfcfd961cbef5e360d3bf2a2efe81576de312750e7d83d54ec173",
+    "evidence/eight-letter-reflection-retraction.json": "8098948261c9da660900a8d82e976f8db2fde7bddab2e37a4f65bda459b5f332",
+    "evidence/factored-norm-representation.json": "a5379b48db1987aa3b5de7639da1be9d514aa706655f2ad782f6c183a1a67733",
+    "evidence/fresh-leading-power-control.json": "c8f1672b605fe7546750bfae32bb2e63880bc054ee520fb1e103dea9ae43cb3f",
+    "evidence/height-selected-norm-factoring.json": "b6cbae0f4eb25e89a75a43b7183b21660d86f1de3cb91f3edd1439adcdc1696e",
+    "evidence/homogeneous-restriction-pressure-floor.json": "943d8eeaa4ceb5d0db3ff6300e0ff97132a59cdbac4598db017772019932bad4",
+    "evidence/integer-shared-minor-floor.json": "07c1d34ed0c1ddaa34c2b8ac6526c1ea65fffe2d5a2b295aa2148d6da682bfa8",
+    "evidence/joint-height-conjugations.json": "2b3398b4329384503d615a7c3660820683f62eb9a6a593c97472f21dd6707f2d",
+    "evidence/leading-power-smooth-relations.json": "0a563fc367d3020fc44618131a0d96c93680bc6fbac7731e834abfdddd31a623",
+    "evidence/matroid-smith-channels.json": "f89ead21b4f117af293e6e591e5a83ccec6e3ecdb2350b3347b757e0967ff19c",
+    "evidence/modular-spin-crossings.json": "3a3a40ba3603f583cec03c3ea40c8a582176fe3cb994678eb3e1006780870400",
+    "evidence/odd-pivot-two-primary-elimination.json": "a71b6a9dce24a4bbbb243c514246fa0b87d6b0f7d7f7096e39b77f0e0c32d9ab",
+    "evidence/partial-norm-factoring-certificates.json": "b4ebe4b0df964d6a0e7275c4f7d49e3af2bc1034710bdd7f748a05b0698a8fd4",
+    "evidence/partial-norm-factoring.json": "fc50f0760fd27f395a2e3d423dcfa949ef7c4d048dd9628ec5ea896bf848a0ec",
+    "evidence/polynomial-joint-height-rigidity.json": "9f5707f2fbc052ce4ea6b31bb62509296fdd6ba8d5529df6a3a5a00721e44726",
+    "evidence/powered-prime-norm-parameters.json": "20fae5fa5937aee626314278d41beaf3ef857a62f16ead3ada01a4846abc9cea",
+    "evidence/powered-prime-norm-witnesses.json": "f0f6d2d6dff48740b7c4d8c8df4f6047afcb54fa4fe019126710cfbca5eb0942",
+    "evidence/prime-form-bias.json": "49f9f0794be7c9125f0a294cf9cc07a2b97bb91b2ce86aee9dd934b5dd4c1a81",
+    "evidence/prime-form-cutoffs.json": "77fd1f1eebf939c55c1cb05aad00f178b3ae0724abef44a78da8313eb1c9502b",
+    "evidence/prime-form-factor-base.json": "de513959154a202319fc0ef989cb813639dbb463911c9c98e646d0ff10e104d1",
+    "evidence/prime-translate-obstruction.json": "4b3cd0139164e3302e493923c4e7bbcf267e01556ca06d16896f8484dc9ee763",
+    "evidence/protected-subtensor-pressure.json": "85deed1f80eefa462f59f0d8053da8a6204d37314cb2a897d6929f0a047794d3",
+    "evidence/quasipolynomial-norm-parameters.json": "b30486aa91f1f45944ad036c4a3f8361b3ed9a69000ce1ac12c6678f1cdbf6c8",
+    "evidence/reflection-coordinate-codes.json": "ef990a86eb36fc0ca1e0f64a529b8886d99946ed468322b8347b2ae15dd84fc0",
+    "evidence/reflection-homogeneous-restrictions.json": "8820468c980697f9a22b2338d794117306f3962fe6af940fc9fb4d22ba2363ae",
+    "evidence/relation-two-saturation.json": "bd1f39691fd4eafc18b4b0719ae0e20d7c1d27bd2046ace1cfe882b672d3f2ab",
+    "evidence/scalar-terminal-projections.json": "edcd512d1ba3ee28e990191c8aef2e1fcbb44731ceb75994d4150ac519b18cbf",
+    "evidence/selected-norm-factoring-124-bit.json": "ce4c63b1125a918b127b6346779297022e4752d8e28976ec9656d9dfff46edf6",
+    "evidence/selected-norm-factoring.json": "582e4375f006e6d81fe511c640b25c17b35f6ec1866ee8e0a9f00f308987460b",
+    "evidence/short-norm-factoring-certificates.json": "0c98d9b3b3cf2d801ac9cdf15c8442b695c454983f262440899e44f5b8fd50ac",
+    "evidence/smooth-band-density.json": "97ff0cff3291ba6858cdcda8865fb517ad7a062b257def312e47427652bd2744",
+    "evidence/smooth-norm-sieve.json": "401ff29b30fbfa64365313827e693f9f8f8026ebf2cf38bbf77ecea1cbf73a64",
+    "evidence/smooth-norm-words.json": "83984742d8aa9541cfc28c17aba216d81cc24686a5db140839ac7856b3285532",
+    "evidence/subspace-smith-channels.json": "ec0117fa27d69850aff16c9856b2375ed97039a10ca246061d3b3f58b55b557e",
+    "evidence/triangular-auxiliary-row-fiber.json": "b335e9b5670dd9de7b0345b304b2a64cb0285ebee6252ca0ca59da2bec7df52a",
+    "evidence/weighted-norm-relations.json": "0fcf147cba3a66b3681a98b803b48e6a3a3642c7a2ac058545ba6de4dc578a92",
+    "research/adaptive-height-norm-selection.md": "b3385b4fc97310db958c4a87c11008785ded17d787652560dd34f678a65bb3fa",
+    "research/adaptive-power-window-selection.md": "013c216871acbf68a0e051d88075e9a043dadd3dae24cb9ccc5b9cad8921f23b",
+    "research/adjugate-seven-letter-pressure-floor.md": "8b51a16b136660a646bfde54f7fc9c0cca4cf0d14f0b432ff92df4f76506bfdc",
+    "research/arbitrary-binary-code-pressure-floor.md": "187e24b4f3d807e1049919fb112514fd673c1958a86320a0c7e2d539df5da167",
+    "research/arbitrary-factored-norm-representation.md": "4cac79ebf3f886c62adf189853a57c89924fbe3e3ba1d882bc1a247f8d8d4910",
+    "research/block-subspace-channel-hierarchy.md": "843d7e8ae2a867f8dec12e33edb11736f594d761f69743f91c0305fe4e8317d4",
+    "research/boundary-extracted-scalar-pressure.md": "b95310ff1638266c07ccca13ac91274176dbde7f1e47387a1e5c26f30bee3924",
+    "research/bounded-order-smith-pressure-floor.md": "3c4412b9d881935fab2f1a5f4a2b19fe5c597bc23d78ad40a3c93d28cc93b67e",
+    "research/channel-pressure-separation.md": "6a4fd922d6cf3a729a0a4d24015ec84b19ee50d90055d76246da9b71a27db683",
+    "research/clifford-compression-pressure-floor.md": "84055d13b0f34783ce5b0dad46c4781f01c2dc9ddbeac3a8f1a1736515c07f3f",
+    "research/clifford-threshold-sharpness.md": "15aeb56701fb19025853911edb2be43fe29d14052d4c72c857add7ff5b508659",
+    "research/complete-smooth-norm-sieve.md": "99e24372a76ad65e5c0e75b550c5b9dfb802adc03c9dd1a88e9eca6656266755",
+    "research/determinant-free-ambiguous-extraction.md": "5f14e266b4fb15e498aba78b052a201121b089bfe8255b6944752adad4eed8a8",
+    "research/direct-discriminant-short-norms.md": "e25ff245db4231f8c7662bbd126472bb56272149ef45fc2e2c919baa5c78a794",
+    "research/direct-type-elementary-pressure-floor.md": "e96a685efdfbf225a5385f92d71a657d0bdca4c086c4c884e6881217d771c47b",
+    "research/dvr-adaptive-smith-channels.md": "37e0e233c985bbb37723b3f23e8ce36a9b028334f41a6dc6ab43bb53389525b2",
+    "research/dynamic-leading-norm-closure.md": "a784a4f74478b63117ecab57e3cfe7aa97b4ec1eb4a244852d4447fa8e6ceacd",
+    "research/eight-letter-pressure-gain-factorization.md": "c103ab5faef8aeccdb309c9eefe94533abf7e9243858d2e3974523d51906ccc6",
+    "research/eight-letter-reflection-retraction.md": "2800c92498269813f181b743500d2b6e22ea1e2004b1fa300cf18cc8085067a4",
+    "research/explicit-prime-form-cutoffs.md": "2aa9572062cb63608c02052e1ee99757f9e6f8b9d4ff4ede678062d03a922027",
+    "research/factored-norm-orientation-search.md": "2ea848576e75f86cd229c2b0bf8fe882255f2a0935c4a6dcac8b8449b49fa3b9",
+    "research/fresh-leading-power-control.md": "71a1ec42fb0058204f5b5a11a06da41939af22a2e67d6e8af38026036cdc7e39",
+    "research/height-only-selected-integers.md": "f28e44401d06d745e17912c4bbaa18c43052200c5bf1a9f397209f06ab423343",
+    "research/height-only-smooth-norm-relations.md": "f271cd4758c44746229726e64abd92ac3420ecd972bdf911032eafffd9b1c166",
+    "research/homogeneous-restriction-pressure-floor.md": "47db75633a2559c5fef79389ae218260e0cc6c1d07e62d2967818a5b16620e45",
+    "research/integer-shared-minor-pressure-floor.md": "a7a75a9c0694ad23b64f935f8fd14ca890d6083e0c4124f1eaff79b9110cffb7",
+    "research/joint-height-conjugation-floor.md": "1c5771fcd36a1a384373f980337bcaaceffaf47ff616837f5cd22fbdbc4cc77b",
+    "research/linear-physical-restriction-crossings.md": "b29abc9476077c08b77ff925cbb4282015bd1ae4ed09688406531a7c57557874",
+    "research/matroid-adaptive-smith-channels.md": "75fc490d47d6746699401cd79ddc52f98769055aa951e0e7ba89d6076c5c2cba",
+    "research/modular-spin-crossings.md": "2c08c5f19c3a5036029104a63ba14ddfb80c45d01ecaff41e870f9fd4f4af1e1",
+    "research/norm-selector-coverage.md": "c6f5495a32e96cdbb1fc21b49bbb9f3eb337f46b4d17e6bc1a43e0fe83a3529c",
+    "research/odd-pivot-two-primary-elimination.md": "d1bb7fa287d454c51b100796fb9be2a0d2f7f274810e7ab72c42828730faf139",
+    "research/partial-norm-search.md": "ad94c07d4e783658614855568d5845190963b530487634e3f5f5f58185de0387",
+    "research/polylog-prime-form-generators.md": "f33ec7fe0c093156f3904e9705e8f472a2ecc333a0619b6875041e4cd985a81b",
+    "research/polynomial-ambiguous-extraction.md": "4ac7491b0441227ecd4b2fb1981c80cf17b8ad8c94610edec8f1ed50f962a0c7",
+    "research/polynomial-joint-height-rigidity.md": "ea26a4a5e15b9c24809222716c13edd13444b76556152519364e770bcf432468",
+    "research/powered-prime-finite-replay.md": "6d06ba8e9c5318b9667971f1f8bb4adef1661b4d89da51751a45b8b724328d60",
+    "research/powered-prime-smooth-norms.md": "c8346d129aaf4000899ea873b8746c5bb61f6d680aae7f61a6a2ae8f74cb9be0",
+    "research/prime-form-root-construction.md": "a667352bb9d1e7cddb23090b69834afa6499f963820279fc8a8fc51ac6ad8d72",
+    "research/prime-translates-miss-smooth-forms.md": "c7ddb4996aac4ba0f868e29cd491175bfdab57a12e9da8923b283df591c76501",
+    "research/protected-subtensor-pressure.md": "4063a403db578ef2a98f67101639e6ededd4da253658ccc325b290ed2807c6f8",
+    "research/quasipolynomial-base-norm-processing.md": "80db9395b15be177afa10168d799f39e804ca06e1d55101393efcd9a0f1e24cf",
+    "research/reflection-coordinate-code-pressure-floor.md": "63e8b52734241d1bffa159c740f0413c81819fb2575d8e5318b922088239c0ef",
+    "research/reflection-homogeneous-restrictions.md": "291e52ac3d081d1a37dbefbfcb94572baaaad2b2cc5ea35c7500d9256204dca5",
+    "research/rigorous-ideal-sampling-scope.md": "96c1135512ebdfc412d03760335342b193dbf5713786439eeb4878fcc52cc616",
+    "research/selected-norm-factoring-interface.md": "a6287c7bdd8ded0798006015e61849d72df7894b87a04be763fc587708977949",
+    "research/smooth-band-density.md": "ec33348b74673f380c657886d2d45ce0d489d1bc14370cc80066dd175715e5b1",
+    "research/smooth-leading-power-selection.md": "53aa94582bc99258f148994581d06ec7a40ed23543bf2c3e1d949f482e38332b",
+    "research/smooth-norm-short-words.md": "617a454b97891eea32eeab237abd4d884265dd7fd6e05cde7dfdbd7668abdb76",
+    "research/smooth-set-fourier-norm.md": "ede9db39a2700d421d6b4b1ec03714b24c01bd7fdba8c914d5dee6be923c8716",
+    "research/state-adaptive-smith-channels.md": "22e2c71d0d0f3d3a9b37b9bda010851f2ec5c8980f1c3b8deb1b624870fc145a",
+    "research/subspace-smith-channel-oracle.md": "d1d379bd2c5e2cf1a29409d665d7227c09a7fc36d89bcf087443d4a725ce82be",
+    "research/triangular-auxiliary-row-fiber.md": "26a6a2e4234a3b63d9e2e55d0ec520f035aef9d391ff722048d60adeae1b7dad",
+    "tools/adaptive_height_norm_factor.py": "2453bc7659cf570cdb2904681a9f7c141064672a93f9269de90c8d51e414b64d",
+    "tools/adaptive_leading_power_windows.py": "10c24263d6701f237555fb9dc6dd8d1c03cf5e836a791c82f28dd6f88dc95786",
+    "tools/adaptive_smith_lattices.py": "62d0ab4cc9239403b7b246d950165a99ad01eeed0cad30ead3d871a0ab3f1b13",
+    "tools/arbitrary_norm_representation.py": "1b7f203e32c90432327e7629c7aeb624d1f973d7636e708810a60534acac7b6e",
+    "tools/arbitrary_selected_norm_factoring.py": "36f99bbd9e21d19b8656efd5ae24dde15fd1d19e201f6e48ced2edf782b594e0",
+    "tools/arithmetic_partial_norm_factor.py": "77ca06eb5daf176c6ef7ba414989166a1257ea29bd117ae80d8d38354c1e0f3e",
+    "tools/arithmetic_short_norm_factor.py": "4044f42d30e7ec122135be4bb2eb075d7ddd49544b3c08390c3e05f26f597ea3",
+    "tools/block_subspace_channels.py": "4f86ebd051cb1b2d5173b50d843b44250dc9fb6962447570e79ea4cb0662b6c4",
+    "tools/certified_small_factor.py": "9dd321ac2ae19bb49a5ffb9033ed58b746c57d3bc78f4ed89c3fd2e74a552cc9",
+    "tools/channel_pressure_separation.py": "dffc861fcacbbc44773ea5cff71389afa983bc96430983bdadf7db8745a76478",
+    "tools/check_adaptive_height_norm_factor.py": "da2dacd52a19aad014637bcdba73f43aad5b1c0cdc940bbebf8f7ba3a7d1c615",
+    "tools/check_adaptive_leading_power_windows.py": "dd849b152587306dd1d6e637c28243f37c79ef6901c9cc4135302e3b516af153",
+    "tools/check_adaptive_smith_lattices.py": "6ade6d5a5b3f2eb28ca1e0351f2c6f8c8b7d6b9e569b343ec90ea014c7cf9b8d",
+    "tools/check_adjugate_seven_letter_floor.py": "c7e6d4158427bf990d3daf0740fb3b8f87fef265bdb5a63949e05d4b8bc0a67f",
+    "tools/check_arbitrary_binary_code_pressure.py": "0b9027146493abce419dcadfe972e89f23fa99559c3c94d13f208de91d0c822e",
+    "tools/check_arbitrary_norm_representation.py": "9105473363f494260b22ac6bd0516c0b9c77274f9cb9ba0a0ea2d351f81feb6d",
+    "tools/check_arbitrary_selected_norm_factoring.py": "cccbf15d2b7b2b25a2827c24ea388599fadda78a109d9a645c0f5caf273caf2e",
+    "tools/check_block_subspace_channels.py": "aaa8709d49746d05cd9f8ea2f77c439dbf1d096f5f1c29a25f2604e45e0b25b3",
+    "tools/check_bounded_order_smith_floor.py": "8eddaec5e046fa8e104698c5623d4851826d38a3d79d72cc54486fb5855bc901",
+    "tools/check_channel_pressure_separation.py": "3d30bf9a05bbf336b35a1d7a5f0cabc42a20402d498816727e76876bc530388f",
+    "tools/check_clifford_compression.py": "99272bef80f2ff8dd32ceee69c9c2a08ae874245c3cf4578e62a36cfefe3c11a",
+    "tools/check_clifford_threshold_sharpness.py": "df30dc43929b277cadbcca23e194c206473dec12fd21bbdcbdf1892ba7839fb4",
+    "tools/check_codimension_one_crossings.py": "00a069be4e83681211dbd7f0e27a38bc42214943566dddac0fe10d635fa441a3",
+    "tools/check_direct_discriminant_short_norms.py": "8ecae19f0c41c08b34a1ee4e5e4dd41af26fa5ee91af43e0fda5e35a1312011b",
+    "tools/check_direct_type_elementary_floor.py": "ce3f5b24d76f48d4c5cbfef17aabf671062c0891845a40333c065df87c3b9b21",
+    "tools/check_dvr_smith_channels.py": "463411e5f917288844ce6c4956d5f351877caefe87d8a2f16c354b2d43167b00",
+    "tools/check_dynamic_leading_norm_relations.py": "05f4ab8662d41dda48698f39b62f3afdc3644c87317b0fde552bc3b991299f2c",
+    "tools/check_early_ambiguous_factor.py": "e1d7bf021bb27558c142630cbfe5c6ffc71f60e2f84070081086d81e7364254d",
+    "tools/check_eight_letter_pressure_factorization.py": "70095a87a18bedf478e581bc4ce63d0d9af9c737a8b6ba4fd0e9edf9b171d457",
+    "tools/check_eight_letter_reflection_retraction.py": "f3081bb63ef7cf47e1fda0c08038d5270de5e9ffa8ef90b34ee74ec8d07f0317",
+    "tools/check_factored_norm_representation.py": "c4584581741e5ecf6b5f6d0c528e3e722a6f91833445408de9a7484a0d9ed984",
+    "tools/check_fresh_leading_power_control.py": "32e08892466ec26dd293e0c88737094bbf3c7643ed807d887f806f0c69b75f9c",
+    "tools/check_height_selected_norm_factoring.py": "fc92082aa1fed25aed07a91a04f5c5d5997cdb2e89ec55a82eb5d5f10670366e",
+    "tools/check_homogeneous_restriction_floor.py": "68faaf6ffeb8ea173a38457459fa359d0883940b05c46f3005a501c6e996d559",
+    "tools/check_integer_shared_minor_floor.py": "0062c4e7bd0a2784cd158ee34da4113e6b981e61c21b17e3f707c19e512c300c",
+    "tools/check_joint_height_conjugations.py": "362c2800597a28f7736b731dbde89bb18bc4362c9090527d9e62e2369cbd419c",
+    "tools/check_leading_power_smooth_relations.py": "60e4912e3cfa663f7eeededdb9a17b6e7e17890ac7468997cb5f5818e7bc475f",
+    "tools/check_matroid_smith_channels.py": "153baaa65528f054f7e43fe138df4c9919d13a0da49a34e77629b648a89c85aa",
+    "tools/check_modular_spin_crossings.py": "e2aebde93d739f16e2e76495d93173b8576fadc107264ed8e4f2ea353af25aa5",
+    "tools/check_odd_pivot_two_primary_elimination.py": "0caa5412faa9f58b0d60b02d14577466b97f44ec8f08b85a7d1e6a5f56a857d3",
+    "tools/check_partial_norm_factoring.py": "f886f29fcd9b1f2b332a9c146df48bdb51625ff675ba9d71c1a606af4cebefbf",
+    "tools/check_polynomial_joint_height_rigidity.py": "5fdd334e1a5bf9745c950d543d56dbbade681d32a584a04fbf8a7a6f15211e27",
+    "tools/check_powered_prime_norm_parameters.py": "6e43a094535946106e72cd2f299f52ab5020f780866f6b0f04e3cffba8c44d57",
+    "tools/check_powered_prime_norm_witnesses.py": "93465fe4671e3e0560aef8aa99bb810953fb2d3b8cb3e31e3adbd976a48f041f",
+    "tools/check_prime_form_bias.py": "e7ded1cc8a1d6ecc89523ce2b1ecfe2b66bbbc7c928bb5ccc82100a3821ba340",
+    "tools/check_prime_form_cutoffs.py": "9846b77b73f8bdc3083460d283e3ff35d6d832f18b9f2bc54514da19bf90a8da",
+    "tools/check_prime_form_factor_base.py": "ae77f8d3549cdc04abe8acc6c75deb2d8dac3a66206470c0df5efc25dd4ec09e",
+    "tools/check_prime_translate_obstruction.py": "654bdf46ddbc36e420608b7aca4f837e0865060c8cf8933d079a65758aac8584",
+    "tools/check_protected_subtensor_pressure.py": "325e999286cf98e241e7ed60177cc06d7475fb48050e7b6736c5c7525b9a03b3",
+    "tools/check_quasipolynomial_norm_parameters.py": "78ff0c7c63dedf59166ba1054333fafb5b048abc5fb39d343ceee0c860fbaf85",
+    "tools/check_reflection_coordinate_codes.py": "3eb1eb9ac3dc9787e180421082c88dcce4d92fd25cc5325e4a1c808c633e5c6a",
+    "tools/check_reflection_homogeneous_restrictions.py": "178a7a1bc882fe0ce6fe3589805cb31fe6948442a7374b2cc153ba7e04fc922f",
+    "tools/check_relation_two_saturation.py": "0f988f1e3fc06e8d19743493605415b4c80c34f9acb223f8166905e3fd90ca5e",
+    "tools/check_scalar_terminal_projections.py": "9141ffb29d26651d8a83617d72383971dae966f4db1045ebd4d45ff46af5abd5",
+    "tools/check_selected_norm_factoring.py": "5ad586b0d86ce074465d4f14105f6ef55ded234e6d189c7d3b4ddd38e5e187b1",
+    "tools/check_selected_norm_factoring_124_bit.py": "e7985ce2df60d6d68fc0c934f534ba47df7c37cebc90f6cf530d17086f092ee0",
+    "tools/check_short_norm_certificates.py": "74e248840981b473f8869a4259718325c3245cfe37ad472607d3a7e677235c95",
+    "tools/check_smooth_band_density.py": "a986c2a1712c4e4c314dabc50daba234a544da42c6646e86c7f5ba0eb1c5eb36",
+    "tools/check_smooth_norm_sieve.py": "1d7ad996f0bcdd64ca5d2c3b38ff0c033c6566ca4559ba53af8981dfc6ee3444",
+    "tools/check_smooth_norm_words.py": "53ca55765978f910b13c322e7fee9aaa2e5953eaef3a28f294f4310943a705da",
+    "tools/check_subspace_smith_channels.py": "9f09e129f985d22f13ffce4832ced61d64997d294e31c0e26d24f6fefe212bb7",
+    "tools/check_triangular_auxiliary_row_fiber.py": "513495f8321a042813c39275d60f7d8b9f480485d208a5566d4e828ce7360ad9",
+    "tools/check_weighted_norm_relations.py": "06565d4bd93e275d4f93c0fee33d0d951a73ef6dc786355db886724ce8fc8173",
+    "tools/clifford_compression.py": "989d895bcd06f2ab68c53e7660a471e02a1a3468066ac494fb47e65e79b911bb",
+    "tools/dvr_smith_channels.py": "386e26413615342ecb059a1f7f3b7b55ad4ac869307d79d29b65f055c8b8a7c0",
+    "tools/dynamic_leading_norm_relations.py": "e77ce17e43a9e518e2ae2beb2223605aa83152eae5cb2fd1f0e76a0334d5ac66",
+    "tools/early_ambiguous_factor.py": "9cc4addd8311eccd665bb437d1e5f14134f7e7b30a4f00537c5acd923370a329",
+    "tools/eight_letter_reflection_retraction.py": "0fead4af19b1770fc45e6307297a421a30d044ebc1b9771d070d89986398cd82",
+    "tools/factored_norm_representation.py": "ed97229794f97751ebf29e95b2c8160950efddf7a5af54ad39ba02300ac17432",
+    "tools/height_selected_norm_factoring.py": "2a91a61dac6aee22319572c25ca6797077fb40237dbe2f17167c371390ae6119",
+    "tools/joint_height_conjugations.py": "95e2a94d7d4620065c5fe46bf5626021fc3d5f38fbd456b0b1427927864591e6",
+    "tools/leading_power_smooth_relations.py": "05315306edc025ead95ec9227182268cc395fd67493e5274724af72627a7bd91",
+    "tools/linear_physical_restriction.py": "f66b9d3a99d99911d5d17c6e9dc21a22f9c21c7f7ff060eea755018f119dde5a",
+    "tools/matroid_smith_channels.py": "96d7bfc9f30fada6100038beacf2b796491d0ef53b4aa8fb9a4ee7ce9ffa620d",
+    "tools/odd_relation_presentation.py": "b99458f482060c49027664b208c6b11fffd035da5fb34b4776b350da8eb4b89c",
+    "tools/powered_prime_norm_parameters.py": "6c9080990f7081efb5ae7aa0625714d34a4daab9616b9f00b661c0d602a5e2db",
+    "tools/prime_form_bias.py": "3d5744ca1e3a273d3ab7e66ed8986d46c335f42c244d8d6ae60ce57583c08cfd",
+    "tools/prime_form_cutoffs.py": "2bf7352a10250bc1909e865d3ee883af1c8972537ceffe6c032e1ab4893c6db9",
+    "tools/prime_form_factor_base.py": "65854b9187c89ed851761b335ff1a2a2244b2a1e8ab5436e3ca5a887a9bccaa9",
+    "tools/quadratic_ideal_hnf.py": "41ee985788598d589d3ddf683a2ae2bb333d4a99d9559d3dbaab723ebd8c3692",
+    "tools/quasipolynomial_norm_parameters.py": "e5bf37db252abeb74df22312b649d806f3caf8a5c58ec718fca7982758fd2efc",
+    "tools/reflection_homogeneous_restrictions.py": "1bb46d9d0a109746e132e0cd848f413ea95777b40d24f647ba9457fddc0fbff1",
+    "tools/relation_two_saturation.py": "c5adfb285a694d10c964ac516ea2f646c2b1effc0a8f47871d11a80593aee6b9",
+    "tools/scalar_terminal_projection.py": "4fe534ade1f7f17b3ea140f018a3f0b1530a63e172d452660ad7ed84f1cb1356",
+    "tools/selected_norm_factoring.py": "794ef00d8405cb9ef033139a74f06ae4df6556800eed48ae26ef61240bd5a66c",
+    "tools/smooth_band_density.py": "d7b7c6eee5951eb262562592b62a6147710be2e54949dd637096a46edee6c116",
+    "tools/smooth_norm_sieve.py": "7ebea6c1dc4c9e5e39a43095ed4391a9c0a5f11e95f53e49f83a5dddd6decc93",
+    "tools/smooth_norm_words.py": "86b00c1038daf439b9a61127ac080b9e1e5e7427b4aae19fc077b51b518fa717",
+    "tools/subspace_smith_channels.py": "3a3bcc27631c63a63d63c84611d4430b1e7470d46e2486c3f203a295642300c4",
+    "tools/weighted_norm_relations.py": "1dcd593faae11a63f49b62e7ca0e191df792f8f35fe5ce52895198bca7043bcb"
+  },
+  "published_commits": [
+    {
+      "sha": "fd3f3fb527a3a58158089607e568fce6dd03e422",
+      "parent": "f5529920e64178785b4835b7d0aafe27d78455af",
+      "title": "Derive polynomial prime-form generators and exact biased samples",
+      "files": [
+        "research/polylog-prime-form-generators.md",
+        "tools/prime_form_bias.py",
+        "tools/check_prime_form_bias.py",
+        "evidence/prime-form-bias.json"
+      ]
+    },
+    {
+      "sha": "3409ea4795a4a8028cc59e046fc5f8fa3d34de7c",
+      "parent": "4e439f02a03c8bb01eed1307226db9076d73586b",
+      "title": "Make prime-form generator and bias cutoffs explicit",
+      "files": [
+        "research/explicit-prime-form-cutoffs.md",
+        "tools/prime_form_cutoffs.py",
+        "tools/check_prime_form_cutoffs.py",
+        "evidence/prime-form-cutoffs.json"
+      ]
+    },
+    {
+      "sha": "ad4784ae6b11d7859c2ba4f9bcdcaf973a9092fc",
+      "parent": "3409ea4795a4a8028cc59e046fc5f8fa3d34de7c",
+      "title": "Direct supplied smooth norms give signed short prime words",
+      "files": [
+        "research/smooth-norm-short-words.md",
+        "tools/smooth_norm_words.py",
+        "tools/check_smooth_norm_words.py",
+        "evidence/smooth-norm-words.json"
+      ]
+    },
+    {
+      "sha": "e8787861611aea3a43c1238fa0276b81eb964f41",
+      "parent": "ad4784ae6b11d7859c2ba4f9bcdcaf973a9092fc",
+      "title": "Polynomial ideal HNF and uniform Delta=-4N extraction structure",
+      "files": [
+        "research/direct-discriminant-short-norms.md",
+        "tools/quadratic_ideal_hnf.py",
+        "tools/check_direct_discriminant_short_norms.py",
+        "evidence/direct-discriminant-short-norms.json"
+      ]
+    },
+    {
+      "sha": "87123e196d10c250efe88eeef4ec295f9cc4686b",
+      "parent": "9631fd2d49745b4ccabc60089eb54b01cdb35c80",
+      "title": "Extract useful ambiguous forms in polynomial time from an annihilator",
+      "files": [
+        "research/polynomial-ambiguous-extraction.md",
+        "tools/early_ambiguous_factor.py",
+        "tools/check_early_ambiguous_factor.py",
+        "evidence/early-ambiguous-factor.json"
+      ]
+    },
+    {
+      "sha": "5a23ab4b1a5da3be6d5387d563b8c8ef789f7d0c",
+      "parent": "87123e196d10c250efe88eeef4ec295f9cc4686b",
+      "title": "Decode primitive factored norms by exact orientation matching",
+      "files": [
+        "research/factored-norm-orientation-search.md",
+        "tools/factored_norm_representation.py",
+        "tools/check_factored_norm_representation.py",
+        "evidence/factored-norm-representation.json"
+      ]
+    },
+    {
+      "sha": "6729a02f2cf014b5f35f0d050bf87f37f6b4e4bd",
+      "parent": "5a23ab4b1a5da3be6d5387d563b8c8ef789f7d0c",
+      "title": "Prove explicit multiband smooth-ideal density",
+      "files": [
+        "research/smooth-band-density.md",
+        "tools/smooth_band_density.py",
+        "tools/check_smooth_band_density.py",
+        "evidence/smooth-band-density.json"
+      ]
+    },
+    {
+      "sha": "7fa3329da01dccb6e94fe37c1d7db738c1ce1a65",
+      "parent": "6729a02f2cf014b5f35f0d050bf87f37f6b4e4bd",
+      "title": "Construct the prime-form base deterministically",
+      "files": [
+        "research/prime-form-root-construction.md",
+        "tools/prime_form_factor_base.py",
+        "tools/check_prime_form_factor_base.py",
+        "evidence/prime-form-factor-base.json"
+      ]
+    },
+    {
+      "sha": "8ebf2ee7c484f95f12bacf9b57f582eb90c91d9a",
+      "parent": "7fa3329da01dccb6e94fe37c1d7db738c1ce1a65",
+      "title": "Amplify prime bias to obtain short smooth norms in every class",
+      "files": [
+        "research/powered-prime-smooth-norms.md",
+        "tools/powered_prime_norm_parameters.py",
+        "tools/check_powered_prime_norm_parameters.py",
+        "evidence/powered-prime-norm-parameters.json"
+      ]
+    },
+    {
+      "sha": "81f5b188645e682648feef800c6b64fdaa076eba",
+      "parent": "8ebf2ee7c484f95f12bacf9b57f582eb90c91d9a",
+      "title": "Replay powered-prime smooth-norm existence on finite class groups",
+      "files": [
+        "research/powered-prime-finite-replay.md",
+        "tools/check_powered_prime_norm_witnesses.py",
+        "evidence/powered-prime-norm-witnesses.json"
+      ]
+    },
+    {
+      "sha": "492cd6a588efcc2b027899678b31297dc34922ba",
+      "parent": "81f5b188645e682648feef800c6b64fdaa076eba",
+      "title": "Complete finite norm sieve and original 60/92-bit factoring certificates",
+      "files": [
+        "research/complete-smooth-norm-sieve.md",
+        "tools/smooth_norm_sieve.py",
+        "tools/arithmetic_short_norm_factor.py",
+        "tools/check_smooth_norm_sieve.py",
+        "tools/check_short_norm_certificates.py",
+        "evidence/smooth-norm-sieve.json",
+        "evidence/short-norm-factoring-certificates.json"
+      ]
+    },
+    {
+      "sha": "db178892473ae5194979bad7945dcb14705f72fd",
+      "parent": "73a38942114780b9e4faeb1bf8c543ff5e1040e8",
+      "title": "Determinant-free full and partial relation halving",
+      "files": [
+        "research/determinant-free-ambiguous-extraction.md",
+        "tools/relation_two_saturation.py",
+        "tools/check_relation_two_saturation.py",
+        "evidence/relation-two-saturation.json"
+      ]
+    },
+    {
+      "sha": "5abc32ec3a4fd9394aa7f05110c5abfba6c501e4",
+      "parent": "db178892473ae5194979bad7945dcb14705f72fd",
+      "title": "Finite partial norm search and 124-bit certificate",
+      "files": [
+        "research/partial-norm-search.md",
+        "tools/arithmetic_partial_norm_factor.py",
+        "tools/check_partial_norm_factoring.py",
+        "evidence/partial-norm-factoring.json",
+        "evidence/partial-norm-factoring-certificates.json"
+      ]
+    },
+    {
+      "sha": "6cbbe3f7df17ab89c12666596020d0b883b64b41",
+      "parent": "5abc32ec3a4fd9394aa7f05110c5abfba6c501e4",
+      "title": "Complete the selected-integer factoring consumer",
+      "files": [
+        "research/selected-norm-factoring-interface.md",
+        "tools/selected_norm_factoring.py",
+        "tools/check_selected_norm_factoring.py",
+        "evidence/selected-norm-factoring.json"
+      ]
+    },
+    {
+      "sha": "11fc0aac9f2f7ed2ffc460237513fb725f78af85",
+      "parent": "6cbbe3f7df17ab89c12666596020d0b883b64b41",
+      "title": "Extend unsigned-norm replay to the 124-bit searched fixture",
+      "files": [
+        "tools/check_selected_norm_factoring_124_bit.py",
+        "evidence/selected-norm-factoring-124-bit.json"
+      ]
+    },
+    {
+      "sha": "1dfef27b073f921c3fb84afc60245ee33f46ba6d",
+      "parent": "11fc0aac9f2f7ed2ffc460237513fb725f78af85",
+      "title": "Height-only norms and logarithm-weighted relation independence",
+      "files": [
+        "research/height-only-smooth-norm-relations.md",
+        "tools/weighted_norm_relations.py",
+        "tools/check_weighted_norm_relations.py",
+        "evidence/weighted-norm-relations.json"
+      ]
+    },
+    {
+      "sha": "9503ceceb9bc47e81d7a38abb6a42225970b26d8",
+      "parent": "1dfef27b073f921c3fb84afc60245ee33f46ba6d",
+      "title": "Remove the multiplicity promise from the unsigned consumer",
+      "files": [
+        "research/height-only-selected-integers.md",
+        "tools/height_selected_norm_factoring.py",
+        "tools/check_height_selected_norm_factoring.py",
+        "evidence/height-selected-norm-factoring.json"
+      ]
+    },
+    {
+      "sha": "3c0ab5e0db1cb5bf299b7daaef76f48fb80684dc",
+      "parent": "9503ceceb9bc47e81d7a38abb6a42225970b26d8",
+      "title": "Decode arbitrary factored norms and minimize primitive content",
+      "files": [
+        "research/arbitrary-factored-norm-representation.md",
+        "tools/arbitrary_norm_representation.py",
+        "tools/check_arbitrary_norm_representation.py",
+        "evidence/arbitrary-norm-representation.json"
+      ]
+    },
+    {
+      "sha": "22f258e751b53490c6ba93896aef6593ff11ba78",
+      "parent": "3c0ab5e0db1cb5bf299b7daaef76f48fb80684dc",
+      "title": "Consume arbitrary unsigned norms through primitive reduction",
+      "files": [
+        "tools/arbitrary_selected_norm_factoring.py",
+        "tools/check_arbitrary_selected_norm_factoring.py",
+        "evidence/arbitrary-selected-norm-factoring.json"
+      ]
+    },
+    {
+      "sha": "df4b2f7d440c4c0ac84ac588854d2397ae270b8b",
+      "parent": "22f258e751b53490c6ba93896aef6593ff11ba78",
+      "title": "Adaptive target exponents improve the finite height search",
+      "files": [
+        "research/adaptive-height-norm-selection.md",
+        "tools/adaptive_height_norm_factor.py",
+        "tools/check_adaptive_height_norm_factor.py",
+        "evidence/adaptive-height-norm-factoring.json"
+      ]
+    },
+    {
+      "sha": "6cef0f64b83d5f9404b671e83e0fccd19288c9e9",
+      "parent": "df4b2f7d440c4c0ac84ac588854d2397ae270b8b",
+      "title": "Bound coverage of one target-independent norm list",
+      "files": [
+        "research/norm-selector-coverage.md"
+      ]
+    },
+    {
+      "sha": "150e65e83024e11097cdf006ce8b8abe6db7c383",
+      "parent": "6cef0f64b83d5f9404b671e83e0fccd19288c9e9",
+      "title": "Pin the scope of the recent rigorous ideal sampler",
+      "files": [
+        "research/rigorous-ideal-sampling-scope.md"
+      ]
+    },
+    {
+      "sha": "05cabf313a7680755fd3fd3547b933640bb7321a",
+      "parent": "150e65e83024e11097cdf006ce8b8abe6db7c383",
+      "title": "Record prime-translation and smooth-set Fourier obstructions",
+      "files": [
+        "research/prime-translates-miss-smooth-forms.md",
+        "research/smooth-set-fourier-norm.md",
+        "tools/check_prime_translate_obstruction.py",
+        "evidence/prime-translate-obstruction.json"
+      ]
+    },
+    {
+      "sha": "9aef3bfe6b59c63caebcc74b8822fcc4f5a0dcce",
+      "parent": "05cabf313a7680755fd3fd3547b933640bb7321a",
+      "title": "State-adaptive physical Smith channels",
+      "files": [
+        "research/state-adaptive-smith-channels.md",
+        "tools/adaptive_smith_lattices.py",
+        "tools/check_adaptive_smith_lattices.py",
+        "evidence/adaptive-smith-lattices.json"
+      ]
+    },
+    {
+      "sha": "d41be4ca34c13142534dd3107736513d5591870f",
+      "parent": "7a3514276203ea76fee1b086303e22e377c6f3fa",
+      "title": "Matroid optimization within equal-order channel blocks",
+      "files": [
+        "research/matroid-adaptive-smith-channels.md",
+        "tools/matroid_smith_channels.py",
+        "tools/check_matroid_smith_channels.py",
+        "evidence/matroid-smith-channels.json"
+      ]
+    },
+    {
+      "sha": "7b006459b0b07492b45f8e85af0985113c235512",
+      "parent": "d41be4ca34c13142534dd3107736513d5591870f",
+      "title": "Complete regular channel bases through finite jets",
+      "files": [
+        "research/dvr-adaptive-smith-channels.md",
+        "tools/dvr_smith_channels.py",
+        "tools/check_dvr_smith_channels.py",
+        "evidence/dvr-smith-channels.json"
+      ]
+    },
+    {
+      "sha": "c00e77e132c1c61c057811ab2d0f20ddc3116386",
+      "parent": "7b006459b0b07492b45f8e85af0985113c235512",
+      "title": "Polynomial-size complete subspace Smith-channel oracle",
+      "files": [
+        "research/subspace-smith-channel-oracle.md",
+        "tools/subspace_smith_channels.py",
+        "tools/check_subspace_smith_channels.py",
+        "evidence/subspace-smith-channels.json"
+      ]
+    },
+    {
+      "sha": "29394065251a89107a2df02b266a6f13ff30256e",
+      "parent": "c00e77e132c1c61c057811ab2d0f20ddc3116386",
+      "title": "Exact all-state channel-pressure separation",
+      "files": [
+        "research/channel-pressure-separation.md",
+        "tools/channel_pressure_separation.py",
+        "tools/check_channel_pressure_separation.py",
+        "evidence/channel-pressure-separation.json"
+      ]
+    },
+    {
+      "sha": "d7913c726311dbe0fe3543c9f56b468b9a8bc2f2",
+      "parent": "29394065251a89107a2df02b266a6f13ff30256e",
+      "title": "Exact block and precision hierarchy for complete subspace channels",
+      "files": [
+        "research/block-subspace-channel-hierarchy.md",
+        "tools/block_subspace_channels.py",
+        "tools/check_block_subspace_channels.py",
+        "evidence/block-subspace-channels.json"
+      ]
+    },
+    {
+      "sha": "b6a91fbb36f3c5f6143031b1c59d8ff8eed755b2",
+      "parent": "d7913c726311dbe0fe3543c9f56b468b9a8bc2f2",
+      "title": "Prove the elementary crossing floor after all binary type restrictions",
+      "files": [
+        "research/direct-type-elementary-pressure-floor.md",
+        "tools/check_direct_type_elementary_floor.py",
+        "evidence/direct-type-elementary-floor.json"
+      ]
+    },
+    {
+      "sha": "476b09483ea4754206428155cce7ec67dd75ad98",
+      "parent": "b6a91fbb36f3c5f6143031b1c59d8ff8eed755b2",
+      "title": "Complete triangular auxiliary row fiber and word obstruction",
+      "files": [
+        "research/triangular-auxiliary-row-fiber.md",
+        "tools/check_triangular_auxiliary_row_fiber.py",
+        "evidence/triangular-auxiliary-row-fiber.json"
+      ]
+    },
+    {
+      "sha": "eeed604558e1e59243a9e78af56e83cee93225cf",
+      "parent": "476b09483ea4754206428155cce7ec67dd75ad98",
+      "title": "Protected scalar subtensors and bounded boundary extraction",
+      "files": [
+        "research/protected-subtensor-pressure.md",
+        "tools/check_protected_subtensor_pressure.py",
+        "evidence/protected-subtensor-pressure.json",
+        "research/boundary-extracted-scalar-pressure.md",
+        "tools/scalar_terminal_projection.py",
+        "tools/check_scalar_terminal_projections.py",
+        "evidence/scalar-terminal-projections.json"
+      ]
+    },
+    {
+      "sha": "28a9237d2ca5ca052b2d4e7c6415c59cf74dda27",
+      "parent": "eeed604558e1e59243a9e78af56e83cee93225cf",
+      "title": "All binary code embeddings with arbitrary diagonal gauges",
+      "files": [
+        "research/arbitrary-binary-code-pressure-floor.md",
+        "tools/check_arbitrary_binary_code_pressure.py",
+        "evidence/arbitrary-binary-code-pressure.json"
+      ]
+    },
+    {
+      "sha": "5f0873e1f564b1fda96487192951af8a36793d79",
+      "parent": "28a9237d2ca5ca052b2d4e7c6415c59cf74dda27",
+      "title": "Integer shared-minor floors and the universal affine exclusion",
+      "files": [
+        "research/integer-shared-minor-pressure-floor.md",
+        "tools/check_integer_shared_minor_floor.py",
+        "evidence/integer-shared-minor-floor.json"
+      ]
+    },
+    {
+      "sha": "3279bc9324f892062ad158b550992d51e636d9ed",
+      "parent": "5f0873e1f564b1fda96487192951af8a36793d79",
+      "title": "All-degree seven-letter adjugate floor and capped jets",
+      "files": [
+        "research/adjugate-seven-letter-pressure-floor.md",
+        "tools/check_adjugate_seven_letter_floor.py",
+        "evidence/adjugate-seven-letter-floor.json"
+      ]
+    },
+    {
+      "sha": "eb7c258c1fd7e761360585d3c98c15463552aaf1",
+      "parent": "3279bc9324f892062ad158b550992d51e636d9ed",
+      "title": "Classify all rank-seven constant restrictions of three elementary sites",
+      "files": [
+        "research/linear-physical-restriction-crossings.md",
+        "tools/linear_physical_restriction.py",
+        "tools/check_codimension_one_crossings.py",
+        "evidence/codimension-one-crossings.json"
+      ]
+    },
+    {
+      "sha": "8b918555e0891dd82c018e472f7ce65a3ce8670d",
+      "parent": "eb7c258c1fd7e761360585d3c98c15463552aaf1",
+      "title": "Prove Clifford compression layers and near-full pressure floors",
+      "files": [
+        "research/clifford-compression-pressure-floor.md",
+        "tools/clifford_compression.py",
+        "tools/check_clifford_compression.py",
+        "evidence/clifford-compression.json"
+      ]
+    },
+    {
+      "sha": "5f491b53dbdbe4ba8fe0a5961625985780f11fab",
+      "parent": "8b918555e0891dd82c018e472f7ce65a3ce8670d",
+      "title": "Show the row-frame threshold is sharp and exhibit the cubic induction obstruction",
+      "files": [
+        "research/clifford-threshold-sharpness.md",
+        "tools/check_clifford_threshold_sharpness.py",
+        "evidence/clifford-threshold-sharpness.json"
+      ]
+    },
+    {
+      "sha": "1cc93a95f84fc2cc204bb09aec6f9be4ae319d77",
+      "parent": "5f491b53dbdbe4ba8fe0a5961625985780f11fab",
+      "title": "Exact modular higher-spin crossing exclusions",
+      "files": [
+        "research/modular-spin-crossings.md",
+        "tools/check_modular_spin_crossings.py",
+        "evidence/modular-spin-crossings.json"
+      ]
+    },
+    {
+      "sha": "cf92840113224e01de8cc874116b84cda1bd50a1",
+      "parent": "1cc93a95f84fc2cc204bb09aec6f9be4ae319d77",
+      "title": "Exact homogeneous physical restrictions of the two-site reflection seed",
+      "files": [
+        "research/reflection-homogeneous-restrictions.md",
+        "tools/reflection_homogeneous_restrictions.py",
+        "tools/check_reflection_homogeneous_restrictions.py",
+        "evidence/reflection-homogeneous-restrictions.json"
+      ]
+    },
+    {
+      "sha": "d78ae59cf188a29c0c1f5dc1b187137cc0f3f2f3",
+      "parent": "cf92840113224e01de8cc874116b84cda1bd50a1",
+      "title": "All-scale 5/7 floor for every homogeneous middle-fiber restriction",
+      "files": [
+        "research/homogeneous-restriction-pressure-floor.md",
+        "tools/check_homogeneous_restriction_floor.py",
+        "evidence/homogeneous-restriction-pressure-floor.json"
+      ]
+    },
+    {
+      "sha": "d4039a8ed4bd1cb50b697044e352e869b4d8c8ba",
+      "parent": "af325014d7966018c6143e61e26dc6f4c274c0d6",
+      "title": "All coordinate codes of two reflection sites have an exact pressure floor",
+      "files": [
+        "research/reflection-coordinate-code-pressure-floor.md",
+        "tools/check_reflection_coordinate_codes.py",
+        "evidence/reflection-coordinate-codes.json"
+      ]
+    },
+    {
+      "sha": "6d9300c5fcc8a79e3fbc719a23804fd4884ef7a7",
+      "parent": "d4039a8ed4bd1cb50b697044e352e869b4d8c8ba",
+      "title": "Smith orders bounded by degree close alphabets through ten",
+      "files": [
+        "research/bounded-order-smith-pressure-floor.md",
+        "tools/check_bounded_order_smith_floor.py",
+        "evidence/bounded-order-smith-floor.json"
+      ]
+    },
+    {
+      "sha": "13ddf173a4ec99437ffaeb36c71b13e11c9389c4",
+      "parent": "6d9300c5fcc8a79e3fbc719a23804fd4884ef7a7",
+      "title": "Sharpen supplied-norm processing to a uniform one-half leading coefficient",
+      "files": [
+        "research/quasipolynomial-base-norm-processing.md",
+        "tools/quasipolynomial_norm_parameters.py",
+        "tools/check_quasipolynomial_norm_parameters.py",
+        "evidence/quasipolynomial-norm-parameters.json"
+      ]
+    },
+    {
+      "sha": "7a940238f977df5c5aeb4703545c21bcf9257eaf",
+      "parent": "8693b5c28a0bd423802ae467e7ba9119f22cad17",
+      "title": "Complete joint physical conjugations cannot improve the four-letter reflection seed",
+      "files": [
+        "research/joint-height-conjugation-floor.md",
+        "tools/joint_height_conjugations.py",
+        "tools/check_joint_height_conjugations.py",
+        "evidence/joint-height-conjugations.json"
+      ]
+    },
+    {
+      "sha": "ada2ec4617b7c30a69592301c2a67f571b2900e3",
+      "parent": "7a940238f977df5c5aeb4703545c21bcf9257eaf",
+      "title": "Connect the beyond-half arithmetic and tensor research checkpoints",
+      "files": [
+        "research/beyond-half-research-checkpoint.md"
+      ]
+    },
+    {
+      "sha": "d42e464938e9a8faf40f44fb7923a645b25c117b",
+      "parent": "ada2ec4617b7c30a69592301c2a67f571b2900e3",
+      "title": "Index the completed norm-processing stack and new tensor certificates",
+      "files": [
+        "README.md",
+        "research/INDEX.md",
+        "Makefile"
+      ]
+    },
+    {
+      "sha": "4f690502cf3e3c421b00074bc9699187a84f2539",
+      "parent": "d8560e9e853628f9927f022c8a55e8b89d714d47",
+      "title": "Record integrated Python verification for the beyond-half checkpoint",
+      "files": [
+        "evidence/beyond-half-verification-20261101.json"
+      ]
+    },
+    {
+      "sha": "2d38fe074892745a06b661d453c5b8e111fe71d2",
+      "parent": "4f690502cf3e3c421b00074bc9699187a84f2539",
+      "title": "Construct dynamic half-size leading norms with certified fresh-unit elimination",
+      "files": [
+        "research/dynamic-leading-norm-closure.md",
+        "tools/certified_small_factor.py",
+        "tools/dynamic_leading_norm_relations.py",
+        "tools/check_dynamic_leading_norm_relations.py",
+        "evidence/dynamic-leading-norm-relations.json"
+      ]
+    },
+    {
+      "sha": "8e228a62852278ff6b910d4b75c2d67b0e06d625",
+      "parent": "2d38fe074892745a06b661d453c5b8e111fe71d2",
+      "title": "An explicit eight-letter nonorthogonal reflection crossing",
+      "files": [
+        "research/eight-letter-reflection-retraction.md",
+        "tools/eight_letter_reflection_retraction.py",
+        "tools/check_eight_letter_reflection_retraction.py",
+        "evidence/eight-letter-reflection-retraction.json"
+      ]
+    },
+    {
+      "sha": "192c7b14c488e93d3b7703190368c2584798199d",
+      "parent": "8e228a62852278ff6b910d4b75c2d67b0e06d625",
+      "title": "Fresh odd pivots preserve exact identities and the presented two-primary torsion",
+      "files": [
+        "research/odd-pivot-two-primary-elimination.md",
+        "tools/odd_relation_presentation.py",
+        "tools/check_odd_pivot_two_primary_elimination.py",
+        "evidence/odd-pivot-two-primary-elimination.json"
+      ]
+    },
+    {
+      "sha": "84993ac468079e1f4165d5ea43acf567cc68c657",
+      "parent": "933de522cb5108d14fbddc9fde54898e7cb42ca7",
+      "title": "Search fixed prime-form power windows and factor 92-bit and 124-bit controls",
+      "files": [
+        "research/smooth-leading-power-selection.md",
+        "tools/leading_power_smooth_relations.py",
+        "tools/check_leading_power_smooth_relations.py",
+        "evidence/leading-power-smooth-relations.json"
+      ]
+    },
+    {
+      "sha": "ccc0a7272203bba5c65d72f68ea93140ed4a53e2",
+      "parent": "84993ac468079e1f4165d5ea43acf567cc68c657",
+      "title": "Replay an unrelated fixed-seed 124-bit smooth-power factorization",
+      "files": [
+        "research/fresh-leading-power-control.md",
+        "tools/check_fresh_leading_power_control.py",
+        "evidence/fresh-leading-power-control.json"
+      ]
+    },
+    {
+      "sha": "19a63ee9df7ce392e2e688e2455916aa98f7e5a4",
+      "parent": "b632253b8b270259bfc6f8fb54fedbfa95c27646",
+      "title": "Check odd-pivot compression on a genuine cubic-prime norm",
+      "files": [
+        "research/odd-pivot-two-primary-elimination.md",
+        "tools/check_odd_pivot_two_primary_elimination.py",
+        "evidence/odd-pivot-two-primary-elimination.json"
+      ]
+    },
+    {
+      "sha": "d8e7814fc2e3d6a895b529bf74eb651283bb0622",
+      "parent": "19a63ee9df7ce392e2e688e2455916aa98f7e5a4",
+      "title": "All-degree binary nilpotent joint frames of the four-letter reflection seed are rigid",
+      "files": [
+        "research/polynomial-joint-height-rigidity.md",
+        "tools/check_polynomial_joint_height_rigidity.py",
+        "evidence/polynomial-joint-height-rigidity.json"
+      ]
+    },
+    {
+      "sha": "7d3c1033e15204a05fdc512174d5fde88dd9bc56",
+      "parent": "1ca42b7f68c1b73f73c91ee2326ce5c69c8cbd52",
+      "title": "Resume unfinished power windows and certify a fresh 144-bit factorization",
+      "files": [
+        "research/adaptive-power-window-selection.md",
+        "tools/adaptive_leading_power_windows.py",
+        "tools/check_adaptive_leading_power_windows.py",
+        "evidence/adaptive-leading-power-windows.json"
+      ]
+    },
+    {
+      "sha": "1ad215a2ff4c193ccd96782942a181f677948938",
+      "parent": "7d3c1033e15204a05fdc512174d5fde88dd9bc56",
+      "title": "Update the research guide with constructed selectors and the eight-letter crossing",
+      "files": [
+        "research/beyond-half-research-checkpoint.md"
+      ]
+    },
+    {
+      "sha": "acf8450877824761cd1f68d688294195a3ba854a",
+      "parent": "1ad215a2ff4c193ccd96782942a181f677948938",
+      "title": "Widen the eight-letter pressure gain to every scale at least ten ninths",
+      "files": [
+        "research/eight-letter-pressure-gain-factorization.md",
+        "tools/check_eight_letter_pressure_factorization.py",
+        "evidence/eight-letter-pressure-gain-factorization.json"
+      ]
+    },
+    {
+      "sha": "28240bd4cda7d44960cfab8d3d69543773e92d24",
+      "parent": "acf8450877824761cd1f68d688294195a3ba854a",
+      "title": "Integrate the adaptive 144-bit selector and final research verification targets",
+      "files": [
+        "README.md",
+        "research/INDEX.md",
+        "Makefile",
+        "docs/REVIEW_LEDGER.md",
+        "research/beyond-half-research-checkpoint.md",
+        "research/adaptive-power-window-selection.md"
+      ]
+    }
+  ],
+  "review_scope": "Three agents cross-reviewed the ordinary arguments and replayed exact controls. The first-hit bound, unsigned decoding, odd-pivot identities, 144-bit state continuation, both crossing cuts, and widened pressure-gain interval received independent review. These checks are not a new Lean proof or a proof of uniform norm-selection complexity.",
+  "final_integration_checkpoint": "28240bd4cda7d44960cfab8d3d69543773e92d24",
+  "verification_coverage": "The full 195-recipe baseline suite passed at the recorded baseline. The 30 additional default recipes at d42e464 were run separately, covering that 225-recipe checkpoint. The final 42-command research suite passed against the source hashes here. This does not claim that every later concurrent main-branch addition was included in the earlier baseline or incremental suites.",
+  "earlier_core_verification": {
+    "command": "make verify-beyond-half",
+    "exit_code": 0,
+    "recipe_commands": 34,
+    "checks": [
+      {
+        "command": "python3 tools/check_prime_form_bias.py",
+        "checker_sha256": "e7ded1cc8a1d6ecc89523ce2b1ecfe2b66bbbc7c928bb5ccc82100a3821ba340"
+      },
+      {
+        "command": "python3 tools/check_prime_form_cutoffs.py",
+        "checker_sha256": "9846b77b73f8bdc3083460d283e3ff35d6d832f18b9f2bc54514da19bf90a8da"
+      },
+      {
+        "command": "python3 tools/check_direct_discriminant_short_norms.py",
+        "checker_sha256": "8ecae19f0c41c08b34a1ee4e5e4dd41af26fa5ee91af43e0fda5e35a1312011b"
+      },
+      {
+        "command": "python3 tools/check_early_ambiguous_factor.py",
+        "checker_sha256": "e1d7bf021bb27558c142630cbfe5c6ffc71f60e2f84070081086d81e7364254d"
+      },
+      {
+        "command": "python3 tools/check_factored_norm_representation.py",
+        "checker_sha256": "c4584581741e5ecf6b5f6d0c528e3e722a6f91833445408de9a7484a0d9ed984"
+      },
+      {
+        "command": "python3 tools/check_prime_form_factor_base.py",
+        "checker_sha256": "ae77f8d3549cdc04abe8acc6c75deb2d8dac3a66206470c0df5efc25dd4ec09e"
+      },
+      {
+        "command": "python3 tools/check_smooth_band_density.py",
+        "checker_sha256": "a986c2a1712c4e4c314dabc50daba234a544da42c6646e86c7f5ba0eb1c5eb36"
+      },
+      {
+        "command": "python3 tools/check_powered_prime_norm_parameters.py",
+        "checker_sha256": "6e43a094535946106e72cd2f299f52ab5020f780866f6b0f04e3cffba8c44d57"
+      },
+      {
+        "command": "python3 tools/check_powered_prime_norm_witnesses.py",
+        "checker_sha256": "93465fe4671e3e0560aef8aa99bb810953fb2d3b8cb3e31e3adbd976a48f041f"
+      },
+      {
+        "command": "python3 tools/check_quasipolynomial_norm_parameters.py",
+        "checker_sha256": "78ff0c7c63dedf59166ba1054333fafb5b048abc5fb39d343ceee0c860fbaf85"
+      },
+      {
+        "command": "python3 tools/check_relation_two_saturation.py",
+        "checker_sha256": "0f988f1e3fc06e8d19743493605415b4c80c34f9acb223f8166905e3fd90ca5e"
+      },
+      {
+        "command": "python3 tools/check_weighted_norm_relations.py",
+        "checker_sha256": "06565d4bd93e275d4f93c0fee33d0d951a73ef6dc786355db886724ce8fc8173"
+      },
+      {
+        "command": "python3 tools/check_arbitrary_norm_representation.py",
+        "checker_sha256": "9105473363f494260b22ac6bd0516c0b9c77274f9cb9ba0a0ea2d351f81feb6d"
+      },
+      {
+        "command": "python3 tools/check_selected_norm_factoring.py",
+        "checker_sha256": "5ad586b0d86ce074465d4f14105f6ef55ded234e6d189c7d3b4ddd38e5e187b1"
+      },
+      {
+        "command": "python3 tools/check_selected_norm_factoring_124_bit.py",
+        "checker_sha256": "e7985ce2df60d6d68fc0c934f534ba47df7c37cebc90f6cf530d17086f092ee0"
+      },
+      {
+        "command": "python3 tools/check_arbitrary_selected_norm_factoring.py",
+        "checker_sha256": "cccbf15d2b7b2b25a2827c24ea388599fadda78a109d9a645c0f5caf273caf2e"
+      },
+      {
+        "command": "python3 tools/check_adaptive_smith_lattices.py",
+        "checker_sha256": "6ade6d5a5b3f2eb28ca1e0351f2c6f8c8b7d6b9e569b343ec90ea014c7cf9b8d"
+      },
+      {
+        "command": "python3 tools/check_matroid_smith_channels.py",
+        "checker_sha256": "153baaa65528f054f7e43fe138df4c9919d13a0da49a34e77629b648a89c85aa"
+      },
+      {
+        "command": "python3 tools/check_dvr_smith_channels.py",
+        "checker_sha256": "463411e5f917288844ce6c4956d5f351877caefe87d8a2f16c354b2d43167b00"
+      },
+      {
+        "command": "python3 tools/check_subspace_smith_channels.py",
+        "checker_sha256": "9f09e129f985d22f13ffce4832ced61d64997d294e31c0e26d24f6fefe212bb7"
+      },
+      {
+        "command": "python3 tools/check_channel_pressure_separation.py",
+        "checker_sha256": "3d30bf9a05bbf336b35a1d7a5f0cabc42a20402d498816727e76876bc530388f"
+      },
+      {
+        "command": "python3 tools/check_block_subspace_channels.py",
+        "checker_sha256": "aaa8709d49746d05cd9f8ea2f77c439dbf1d096f5f1c29a25f2604e45e0b25b3"
+      },
+      {
+        "command": "python3 tools/check_direct_type_elementary_floor.py",
+        "checker_sha256": "ce3f5b24d76f48d4c5cbfef17aabf671062c0891845a40333c065df87c3b9b21"
+      },
+      {
+        "command": "python3 tools/check_arbitrary_binary_code_pressure.py",
+        "checker_sha256": "0b9027146493abce419dcadfe972e89f23fa99559c3c94d13f208de91d0c822e"
+      },
+      {
+        "command": "python3 tools/check_integer_shared_minor_floor.py",
+        "checker_sha256": "0062c4e7bd0a2784cd158ee34da4113e6b981e61c21b17e3f707c19e512c300c"
+      },
+      {
+        "command": "python3 tools/check_adjugate_seven_letter_floor.py",
+        "checker_sha256": "c7e6d4158427bf990d3daf0740fb3b8f87fef265bdb5a63949e05d4b8bc0a67f"
+      },
+      {
+        "command": "python3 tools/check_bounded_order_smith_floor.py",
+        "checker_sha256": "8eddaec5e046fa8e104698c5623d4851826d38a3d79d72cc54486fb5855bc901"
+      },
+      {
+        "command": "python3 tools/check_clifford_compression.py",
+        "checker_sha256": "99272bef80f2ff8dd32ceee69c9c2a08ae874245c3cf4578e62a36cfefe3c11a"
+      },
+      {
+        "command": "python3 tools/check_clifford_threshold_sharpness.py",
+        "checker_sha256": "df30dc43929b277cadbcca23e194c206473dec12fd21bbdcbdf1892ba7839fb4"
+      },
+      {
+        "command": "python3 tools/check_homogeneous_restriction_floor.py",
+        "checker_sha256": "68faaf6ffeb8ea173a38457459fa359d0883940b05c46f3005a501c6e996d559"
+      },
+      {
+        "command": "python3 tools/check_joint_height_conjugations.py",
+        "checker_sha256": "362c2800597a28f7736b731dbde89bb18bc4362c9090527d9e62e2369cbd419c"
+      },
+      {
+        "command": "python3 tools/check_triangular_auxiliary_row_fiber.py",
+        "checker_sha256": "513495f8321a042813c39275d60f7d8b9f480485d208a5566d4e828ce7360ad9"
+      },
+      {
+        "command": "python3 tools/check_protected_subtensor_pressure.py",
+        "checker_sha256": "325e999286cf98e241e7ed60177cc06d7475fb48050e7b6736c5c7525b9a03b3"
+      },
+      {
+        "command": "python3 tools/check_scalar_terminal_projections.py",
+        "checker_sha256": "9141ffb29d26651d8a83617d72383971dae966f4db1045ebd4d45ff46af5abd5"
+      }
+    ]
+  },
+  "earlier_documentation": {
+    "command": "make verify-docs",
+    "exit_code": 0,
+    "markdown_files": 595
+  },
+  "final_owned_whitespace": {
+    "command": "git diff --cached --check -- <owned research and integration files>",
+    "exit_code": 0,
+    "paths": 203,
+    "scope": "Other concurrent main-branch additions are outside this scoped check."
+  },
+  "late_full_replays": {
+    "adaptive_144_bit": {
+      "command": "python3 tools/check_adaptive_leading_power_windows.py --full",
+      "exit_code": 0,
+      "result": {
+        "status": "pass",
+        "input_bits": 144,
+        "factor": 4108225714090758818561,
+        "total_norm_queries": 8232730,
+        "resumed_norm_queries": 154884,
+        "accepted_relations": 499,
+        "base_size": 513,
+        "input_prime_certificates": 29,
+        "first_phase_search_repeated": true,
+        "small_controls": {
+          "records": [
+            {
+              "integer": 77,
+              "factor": 7,
+              "base_size": 2,
+              "relation_rank": 2,
+              "norm_queries": 2
+            },
+            {
+              "integer": 97,
+              "factor": null,
+              "base_size": 2,
+              "relation_rank": 2,
+              "norm_queries": 2
+            },
+            {
+              "integer": 103,
+              "factor": null,
+              "base_size": 2,
+              "relation_rank": 2,
+              "norm_queries": 2
+            },
+            {
+              "integer": 211,
+              "factor": null,
+              "base_size": 1,
+              "relation_rank": 1,
+              "norm_queries": 1
+            },
+            {
+              "integer": 307,
+              "factor": null,
+              "base_size": 2,
+              "relation_rank": 2,
+              "norm_queries": 2
+            },
+            {
+              "integer": 1009,
+              "factor": null,
+              "base_size": 3,
+              "relation_rank": 3,
+              "norm_queries": 5
+            },
+            {
+              "integer": 10007,
+              "factor": null,
+              "base_size": 4,
+              "relation_rank": 4,
+              "norm_queries": 5
+            },
+            {
+              "integer": 10807,
+              "factor": 101,
+              "base_size": 3,
+              "relation_rank": 2,
+              "norm_queries": 3
+            },
+            {
+              "integer": 1022117,
+              "factor": 1009,
+              "base_size": 3,
+              "relation_rank": 3,
+              "norm_queries": 20
+            },
+            {
+              "integer": 1000036000099,
+              "factor": null,
+              "base_size": 3,
+              "relation_rank": 0,
+              "norm_queries": 48
+            }
+          ],
+          "resumed_phases": 6,
+          "independent_hnf_prefix_candidates": 41,
+          "invalid_input_rejections": 7
+        }
+      },
+      "scope": "Repeats all rejected and accepted candidates in both phases."
+    },
+    "adaptive_144_bit_default": {
+      "command": "python3 tools/check_adaptive_leading_power_windows.py",
+      "exit_code": 0,
+      "result": {
+        "status": "pass",
+        "input_bits": 144,
+        "factor": 4108225714090758818561,
+        "total_norm_queries": 8232730,
+        "resumed_norm_queries": 154884,
+        "accepted_relations": 499,
+        "base_size": 513,
+        "input_prime_certificates": 29,
+        "first_phase_search_repeated": false,
+        "small_controls": {
+          "records": [
+            {
+              "integer": 77,
+              "factor": 7,
+              "base_size": 2,
+              "relation_rank": 2,
+              "norm_queries": 2
+            },
+            {
+              "integer": 97,
+              "factor": null,
+              "base_size": 2,
+              "relation_rank": 2,
+              "norm_queries": 2
+            },
+            {
+              "integer": 103,
+              "factor": null,
+              "base_size": 2,
+              "relation_rank": 2,
+              "norm_queries": 2
+            },
+            {
+              "integer": 211,
+              "factor": null,
+              "base_size": 1,
+              "relation_rank": 1,
+              "norm_queries": 1
+            },
+            {
+              "integer": 307,
+              "factor": null,
+              "base_size": 2,
+              "relation_rank": 2,
+              "norm_queries": 2
+            },
+            {
+              "integer": 1009,
+              "factor": null,
+              "base_size": 3,
+              "relation_rank": 3,
+              "norm_queries": 5
+            },
+            {
+              "integer": 10007,
+              "factor": null,
+              "base_size": 4,
+              "relation_rank": 4,
+              "norm_queries": 5
+            },
+            {
+              "integer": 10807,
+              "factor": 101,
+              "base_size": 3,
+              "relation_rank": 2,
+              "norm_queries": 3
+            },
+            {
+              "integer": 1022117,
+              "factor": 1009,
+              "base_size": 3,
+              "relation_rank": 3,
+              "norm_queries": 20
+            },
+            {
+              "integer": 1000036000099,
+              "factor": null,
+              "base_size": 3,
+              "relation_rank": 0,
+              "norm_queries": 48
+            }
+          ],
+          "resumed_phases": 6,
+          "independent_hnf_prefix_candidates": 41,
+          "invalid_input_rejections": 7
+        }
+      },
+      "scope": "Verifies accepted first-phase witnesses and reruns the continuation; does not repeat rejected first-phase candidates."
+    },
+    "fresh_124_bit": {
+      "command": "python3 tools/check_fresh_leading_power_control.py",
+      "exit_code": 0,
+      "result": {
+        "status": "passed",
+        "verified_input_prime_certificates": 26,
+        "rejected_input_candidates": 39,
+        "search": {
+          "integer": 16690589162031198237853308486068400277,
+          "factor": 3701143448763469987,
+          "base_size": 262,
+          "relation_rank": 248,
+          "norm_queries": 2301916,
+          "modular_smoothness_tests": 2301916,
+          "trial_divisions": 48870,
+          "maximum_leading_bits": 63
+        }
+      }
+    },
+    "independent_adaptive_review": {
+      "resumed_phases": 31,
+      "matching_target_witnesses": 41,
+      "scope": "Differential comparison of resumed schedules and fresh wider-window runs; also independently replayed the 154884-candidate continuation."
+    }
+  },
+  "finite_selector_results": [
+    {
+      "bits": 60,
+      "base_generators": 18,
+      "rows": 18,
+      "norm_queries": 2610,
+      "known_prime_divisions": 404
+    },
+    {
+      "bits": 92,
+      "base_generators": 85,
+      "rows": 82,
+      "norm_queries": 218738,
+      "known_prime_divisions": 5433
+    },
+    {
+      "bits": 124,
+      "label": "original",
+      "base_generators": 283,
+      "rows": 274,
+      "norm_queries": 3650183,
+      "known_prime_divisions": 56571
+    },
+    {
+      "bits": 124,
+      "label": "fresh fixed-seed",
+      "base_generators": 262,
+      "rows": 248,
+      "norm_queries": 2301916,
+      "known_prime_divisions": 48870
+    },
+    {
+      "bits": 144,
+      "label": "fresh fixed-seed adaptive",
+      "base_generators": 513,
+      "rows": 499,
+      "norm_queries": 8232730,
+      "known_prime_divisions": 182539
+    }
+  ],
+  "final_proof_refinements": {
+    "adaptive_candidate_bound": "At most sum_p w_p <= m W_* candidate tests using retained first hits. Doubling requires at most 1+ceil(log_2 W_*) phases; setup and state validation are charged separately.",
+    "eight_letter_crossing": "Characteristic two, actual degree 32, rational-type rate rho<18/25. Strict pressure gain over the matched coordinate control for every finite s>=10/9. The certified trial value 18/25 remains above 1/sqrt(2); no lower bound on the unknown optimized rate is asserted.",
+    "dynamic_norm_calls": "2208 leading-norm factorization calls on 2201 distinct integers of at most 30 bits in the 60-bit control; this is not a count of internal helper certification calls."
+  },
+  "packet_titles": [
+    "Prove polynomial-size prime-form generation and exact biased samples",
+    "Make prime-form generator and bias cutoffs explicit",
+    "Record prime-translation and smooth-set Fourier obstructions",
+    "Extract useful ambiguous forms in polynomial time from an annihilator",
+    "Decode primitive factored norms by exact orientation matching",
+    "Prove explicit multiband smooth-ideal density",
+    "Construct the prime-form base deterministically",
+    "Amplify prime bias to obtain short smooth norms in every class",
+    "Replay powered-prime smooth-norm existence on finite class groups",
+    "Complete the selected-integer factoring consumer",
+    "Extend unsigned-norm replay to the 124-bit searched fixture",
+    "Remove the multiplicity promise from the unsigned consumer",
+    "Decode arbitrary factored norms and minimize primitive content",
+    "Consume arbitrary unsigned norms through primitive reduction",
+    "Bound coverage of one target-independent norm list",
+    "Prove the elementary crossing floor after all binary type restrictions",
+    "Classify all rank-seven constant restrictions of three elementary sites",
+    "Prove Clifford compression layers and near-full pressure floors",
+    "Pin the scope of the recent rigorous ideal sampler",
+    "Show the row-frame threshold is sharp and exhibit the cubic induction obstruction",
+    "Sharpen supplied-norm processing to a uniform one-half leading coefficient",
+    "Construct dynamic half-size leading norms with certified fresh-unit elimination",
+    "Search fixed prime-form power windows and factor 92-bit and 124-bit controls",
+    "Replay an unrelated fixed-seed 124-bit smooth-power factorization",
+    "Direct supplied smooth norms give signed short prime words",
+    "Polynomial ideal HNF and uniform Delta=-4N extraction structure",
+    "Complete finite norm sieve and original 60/92-bit factoring certificates",
+    "Determinant-free full and partial relation halving",
+    "Finite partial norm search and 124-bit certificate",
+    "Height-only norms and logarithm-weighted relation independence",
+    "Adaptive target exponents improve the finite height search",
+    "Polynomial-size complete subspace Smith-channel oracle",
+    "Exact all-state channel-pressure separation",
+    "Exact block and precision hierarchy for complete subspace channels",
+    "Exact modular higher-spin crossing exclusions",
+    "Exact homogeneous physical restrictions of the two-site reflection seed",
+    "All-scale 5/7 floor for every homogeneous middle-fiber restriction",
+    "Complete joint physical conjugations cannot improve the four-letter reflection seed",
+    "Fresh odd pivots preserve exact identities and the presented two-primary torsion",
+    "All-degree binary nilpotent joint frames of the four-letter reflection seed are rigid",
+    "State-adaptive physical Smith channels",
+    "Matroid optimization within equal-order channel blocks",
+    "Complete regular channel bases through finite jets",
+    "Complete triangular auxiliary row fiber and word obstruction",
+    "Protected subtensor and maximal regular left projection",
+    "Bounded boundary extraction of protected scalar lines",
+    "All binary code embeddings with arbitrary diagonal gauges",
+    "Integer shared-minor floors and the universal affine exclusion",
+    "All-degree seven-letter adjugate floor and capped jets",
+    "All coordinate codes of two reflection sites have an exact pressure floor",
+    "Smith orders bounded by degree close alphabets through ten",
+    "An explicit eight-letter nonorthogonal reflection crossing",
+    "Widen the eight-letter pressure gain to every scale at least ten ninths",
+    "Resume unfinished power windows and certify a fresh 144-bit factorization"
+  ],
+  "integration_source_sha256": {
+    "README.md": "79ba329144ca4ad7914b191724d63f77a9d0ce7865ef99e291d420623dfa3ae8",
+    "research/INDEX.md": "d4aaec31d7e7adbeb0d67e75b0cf6ea305298d5156cbc0e14d3f44b1d8208ddf",
+    "Makefile": "d40449ea75e9420ae5fdec0093e384caa36dd4982494c43f2b44a9d0e79bcc3b",
+    "docs/REVIEW_LEDGER.md": "e4d4a59f60a67accc7429239d9391b738a7058e8b9bfbbb2a90e571213c2eb47",
+    "research/beyond-half-research-checkpoint.md": "e4f0b04c18b29b9ffe3e28d10503f98d56c295a3763d6e8143f22233d09b0da5"
+  },
+  "publication_scope": "The commit list records the 59 successful publications before the final verification-record commit; it cannot include its own future commit hash."
+}

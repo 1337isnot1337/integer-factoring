@@ -1,0 +1,76 @@
+{
+  "status": "PASS",
+  "scope": "Fixed-target elementary-pencil Feistel coefficient spans only.",
+  "local_column_augmentation_columns": [
+    14,
+    14,
+    14,
+    0
+  ],
+  "local_column_symbol_columns": [
+    0,
+    6,
+    6,
+    0
+  ],
+  "structural_arbitrary_truth_table_models": 120,
+  "dense_two_pencil_models": 12,
+  "dense_three_pencil_models": 4,
+  "individual_cut_rank_comparisons": 2560,
+  "width7_elementary_rank_profiles": [
+    [
+      16384,
+      1
+    ],
+    [
+      8128,
+      16
+    ],
+    [
+      4928,
+      120
+    ],
+    [
+      1820,
+      576
+    ],
+    [
+      576,
+      1820
+    ],
+    [
+      120,
+      4928
+    ],
+    [
+      16,
+      8128
+    ],
+    [
+      1,
+      16384
+    ]
+  ],
+  "width7_forced_piece_rank_product": 1048320,
+  "different_target_negative_symbol_witness": [
+    6,
+    5
+  ],
+  "different_target_negative_rank_quotient": {
+    "combination": "B_0+B_1+B_1^pi",
+    "actual_ranks": [
+      254,
+      18
+    ],
+    "proposed_elementary_quotient_ranks": [
+      256,
+      1
+    ]
+  },
+  "sha256": {
+    "tools/check_feistel_filtration.py": "f7d467e4bccf88e7f8197caba991b1a87d2073805b139616a305dec79f71e02d",
+    "research/fixed-target-feistel-barrier.md": "28c390b9b7fe493085cece4f904c2ccdaea30165af8b138fa5c493a87dc18493",
+    "tools/check_frame_filtration.py": "86311b613b7b324b877e96a290530f7fd9d1fc098b72bd74329cc465c77e9433"
+  },
+  "seconds": 6.997148571000253
+}

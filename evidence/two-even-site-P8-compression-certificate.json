@@ -1,0 +1,1497 @@
+{
+  "character": [
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "coefficient_directions": 14,
+  "cost_exponent": {
+    "denominator": 70,
+    "numerator": 99
+  },
+  "discovery": {
+    "algorithm": "tagged coordinate-subspace search",
+    "seed": 0
+  },
+  "labels": 1792,
+  "pairs": 8,
+  "rank_dimensions": [
+    769060,
+    2106
+  ],
+  "rank_product": 1619640360,
+  "row_source_certificate_sha256": "660592bf565c92c99e1cd8f3c126054e2942a41920ae856462ed0d23cefcd078",
+  "three_anchor_restrictions": [
+    {
+      "column": {
+        "anchors": [
+          2,
+          3,
+          4
+        ],
+        "compression": 8,
+        "core_syndrome": 3
+      },
+      "row": {
+        "anchors": [
+          2,
+          3,
+          4
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        0,
+        1
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          1,
+          3,
+          4
+        ],
+        "compression": 44,
+        "core_syndrome": 5
+      },
+      "row": {
+        "anchors": [
+          3,
+          4,
+          5
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        0,
+        2
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          1,
+          2,
+          4
+        ],
+        "compression": 46,
+        "core_syndrome": 9
+      },
+      "row": {
+        "anchors": [
+          4,
+          5,
+          6
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        0,
+        3
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          1,
+          2,
+          5
+        ],
+        "compression": 46,
+        "core_syndrome": 9
+      },
+      "row": {
+        "anchors": [
+          5,
+          6,
+          7
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        0,
+        4
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          1,
+          2,
+          6
+        ],
+        "compression": 46,
+        "core_syndrome": 9
+      },
+      "row": {
+        "anchors": [
+          1,
+          6,
+          7
+        ],
+        "compression": 5788,
+        "core_syndrome": 5
+      },
+      "syndrome_sites": [
+        0,
+        5
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          1,
+          2,
+          7
+        ],
+        "compression": 46,
+        "core_syndrome": 9
+      },
+      "row": {
+        "anchors": [
+          1,
+          2,
+          7
+        ],
+        "compression": 5140,
+        "core_syndrome": 9
+      },
+      "syndrome_sites": [
+        0,
+        6
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          1,
+          2,
+          3
+        ],
+        "compression": 8,
+        "core_syndrome": 17
+      },
+      "row": {
+        "anchors": [
+          1,
+          2,
+          3
+        ],
+        "compression": 4652,
+        "core_syndrome": 17
+      },
+      "syndrome_sites": [
+        0,
+        7
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          3,
+          4
+        ],
+        "compression": 8,
+        "core_syndrome": 6
+      },
+      "row": {
+        "anchors": [
+          3,
+          4,
+          5
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        1,
+        2
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          2,
+          4
+        ],
+        "compression": 44,
+        "core_syndrome": 10
+      },
+      "row": {
+        "anchors": [
+          4,
+          5,
+          6
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        1,
+        3
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          2,
+          3
+        ],
+        "compression": 46,
+        "core_syndrome": 18
+      },
+      "row": {
+        "anchors": [
+          5,
+          6,
+          7
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        1,
+        4
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          2,
+          3
+        ],
+        "compression": 46,
+        "core_syndrome": 18
+      },
+      "row": {
+        "anchors": [
+          0,
+          6,
+          7
+        ],
+        "compression": 5944,
+        "core_syndrome": 6
+      },
+      "syndrome_sites": [
+        1,
+        5
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          2,
+          3
+        ],
+        "compression": 46,
+        "core_syndrome": 18
+      },
+      "row": {
+        "anchors": [
+          0,
+          2,
+          7
+        ],
+        "compression": 5320,
+        "core_syndrome": 10
+      },
+      "syndrome_sites": [
+        1,
+        6
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          2,
+          3
+        ],
+        "compression": 46,
+        "core_syndrome": 18
+      },
+      "row": {
+        "anchors": [
+          0,
+          2,
+          3
+        ],
+        "compression": 4956,
+        "core_syndrome": 18
+      },
+      "syndrome_sites": [
+        1,
+        7
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          4
+        ],
+        "compression": 8,
+        "core_syndrome": 12
+      },
+      "row": {
+        "anchors": [
+          4,
+          5,
+          6
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        2,
+        3
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          3
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          5,
+          6,
+          7
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        2,
+        4
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          3
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          6
+        ],
+        "compression": 5960,
+        "core_syndrome": 12
+      },
+      "syndrome_sites": [
+        2,
+        5
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          3
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          7
+        ],
+        "compression": 5960,
+        "core_syndrome": 12
+      },
+      "syndrome_sites": [
+        2,
+        6
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          3
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          3
+        ],
+        "compression": 5860,
+        "core_syndrome": 20
+      },
+      "syndrome_sites": [
+        2,
+        7
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 8,
+        "core_syndrome": 24
+      },
+      "row": {
+        "anchors": [
+          5,
+          6,
+          7
+        ],
+        "compression": 7044,
+        "core_syndrome": 3
+      },
+      "syndrome_sites": [
+        3,
+        4
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          4
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 6968,
+        "core_syndrome": 24
+      },
+      "syndrome_sites": [
+        3,
+        5
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          4
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 6968,
+        "core_syndrome": 24
+      },
+      "syndrome_sites": [
+        3,
+        6
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          4
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 6968,
+        "core_syndrome": 24
+      },
+      "syndrome_sites": [
+        3,
+        7
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 8,
+        "core_syndrome": 24
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 6968,
+        "core_syndrome": 24
+      },
+      "syndrome_sites": [
+        4,
+        5
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          5
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 6968,
+        "core_syndrome": 24
+      },
+      "syndrome_sites": [
+        4,
+        6
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          5
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 6968,
+        "core_syndrome": 24
+      },
+      "syndrome_sites": [
+        4,
+        7
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 8,
+        "core_syndrome": 24
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 6968,
+        "core_syndrome": 24
+      },
+      "syndrome_sites": [
+        5,
+        6
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          6
+        ],
+        "compression": 46,
+        "core_syndrome": 20
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 6968,
+        "core_syndrome": 24
+      },
+      "syndrome_sites": [
+        5,
+        7
+      ]
+    },
+    {
+      "column": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 8,
+        "core_syndrome": 24
+      },
+      "row": {
+        "anchors": [
+          0,
+          1,
+          2
+        ],
+        "compression": 6968,
+        "core_syndrome": 24
+      },
+      "syndrome_sites": [
+        6,
+        7
+      ]
+    }
+  ],
+  "types": [
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 16,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 96
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 32,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 192
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 24,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 4,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 176,
+            "compression": 16,
+            "coordinate_indices": [
+              15,
+              1167,
+              543,
+              527,
+              1439,
+              559,
+              63,
+              287,
+              863,
+              351,
+              1295,
+              591,
+              1487,
+              399,
+              383,
+              1519
+            ],
+            "size": 1536
+          }
+        }
+      ],
+      "core_pairs": 4,
+      "core_syndrome": 15,
+      "weighted_column_compression": 16
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 640
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 1280
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 2560
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 70,
+            "compression": 6,
+            "coordinate_indices": [
+              3879,
+              3583,
+              1543,
+              2999,
+              2415,
+              1247
+            ],
+            "size": 5120
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 0,
+      "weighted_column_compression": 6
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 92,
+            "compression": 8,
+            "coordinate_indices": [
+              623,
+              879,
+              2967,
+              1319,
+              2231,
+              2271,
+              591,
+              263
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 3,
+      "weighted_column_compression": 8
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 44,
+            "compression": 4,
+            "coordinate_indices": [
+              359,
+              1427,
+              91,
+              259
+            ],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 220,
+            "compression": 20,
+            "coordinate_indices": [
+              2523,
+              2707,
+              87,
+              2086,
+              231,
+              959,
+              750,
+              1911,
+              1607,
+              2063,
+              2375,
+              2839,
+              831,
+              2439,
+              2239,
+              2471,
+              2119,
+              2319,
+              2583,
+              1823
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 5,
+      "weighted_column_compression": 44
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 92,
+            "compression": 8,
+            "coordinate_indices": [
+              1959,
+              1007,
+              879,
+              1319,
+              1847,
+              2231,
+              2271,
+              1535
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 6,
+      "weighted_column_compression": 8
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 44,
+            "compression": 4,
+            "coordinate_indices": [
+              359,
+              259,
+              1299,
+              515
+            ],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 244,
+            "compression": 22,
+            "coordinate_indices": [
+              2523,
+              653,
+              87,
+              2086,
+              231,
+              1663,
+              1151,
+              623,
+              1007,
+              2071,
+              2439,
+              1319,
+              1847,
+              767,
+              911,
+              223,
+              1103,
+              2727,
+              591,
+              1687,
+              1999,
+              335
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 9,
+      "weighted_column_compression": 46
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 44,
+            "compression": 4,
+            "coordinate_indices": [
+              359,
+              259,
+              1299,
+              515
+            ],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 220,
+            "compression": 20,
+            "coordinate_indices": [
+              806,
+              1315,
+              1870,
+              1151,
+              1333,
+              1607,
+              2023,
+              2063,
+              2663,
+              2439,
+              1343,
+              2479,
+              175,
+              767,
+              911,
+              3007,
+              615,
+              263,
+              2119,
+              927
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 10,
+      "weighted_column_compression": 44
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 92,
+            "compression": 8,
+            "coordinate_indices": [
+              1959,
+              959,
+              1447,
+              2071,
+              879,
+              1319,
+              223,
+              1535
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 12,
+      "weighted_column_compression": 8
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 92,
+            "compression": 8,
+            "coordinate_indices": [
+              87,
+              1607,
+              2663,
+              1447,
+              2839,
+              175,
+              767,
+              2055
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 17,
+      "weighted_column_compression": 8
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 44,
+            "compression": 4,
+            "coordinate_indices": [
+              259,
+              1299,
+              1451,
+              71
+            ],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 244,
+            "compression": 22,
+            "coordinate_indices": [
+              806,
+              653,
+              1959,
+              1151,
+              959,
+              1607,
+              2070,
+              2023,
+              1007,
+              1447,
+              831,
+              879,
+              1319,
+              311,
+              2127,
+              1687,
+              2119,
+              535,
+              2583,
+              1751,
+              1095,
+              2535
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 18,
+      "weighted_column_compression": 46
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 44,
+            "compression": 4,
+            "coordinate_indices": [
+              1427,
+              259,
+              559,
+              35
+            ],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 244,
+            "compression": 22,
+            "coordinate_indices": [
+              366,
+              806,
+              87,
+              1959,
+              1151,
+              1607,
+              2715,
+              2023,
+              2375,
+              1447,
+              2839,
+              1847,
+              2239,
+              767,
+              911,
+              103,
+              263,
+              311,
+              2119,
+              863,
+              423,
+              631
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 20,
+      "weighted_column_compression": 46
+    },
+    {
+      "column": [
+        {
+          "j": 0,
+          "multiplicity": 8,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 384
+          }
+        },
+        {
+          "j": 1,
+          "multiplicity": 12,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 768
+          }
+        },
+        {
+          "j": 2,
+          "multiplicity": 6,
+          "witness": {
+            "annihilated_span": 0,
+            "compression": 0,
+            "coordinate_indices": [],
+            "size": 1536
+          }
+        },
+        {
+          "j": 3,
+          "multiplicity": 1,
+          "witness": {
+            "annihilated_span": 92,
+            "compression": 8,
+            "coordinate_indices": [
+              959,
+              1607,
+              879,
+              1319,
+              3007,
+              2271,
+              223,
+              2119
+            ],
+            "size": 3072
+          }
+        }
+      ],
+      "core_pairs": 5,
+      "core_syndrome": 24,
+      "weighted_column_compression": 8
+    }
+  ],
+  "zero_restriction_sites": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ]
+}

@@ -1,0 +1,1591 @@
+{
+  "status": "pass",
+  "scope": "All constant rank-seven retractions of the three-site binary elementary tensor, without additional gauges.",
+  "projectors_checked": 32640,
+  "symmetry_orbits": 60,
+  "local_symmetry_generators_checked_on_full_tensor": 8,
+  "projector_symmetry_actions_checked": 261120,
+  "independent_toeplitz_rank_controls": 22,
+  "profile_types": 2,
+  "type_projector_counts": {
+    "0": 25920,
+    "1": 6720
+  },
+  "type_orbit_counts": {
+    "0": 51,
+    "1": 9
+  },
+  "uniform_pressure_lower_bound": 686,
+  "rho_lower_bound_exact": "log(686)/(4 log(7))",
+  "rho_lower_bound_display_only": 0.8390517967770055,
+  "bernstein_polynomial": [
+    1,
+    12,
+    63,
+    -493,
+    386,
+    537,
+    543,
+    405,
+    207,
+    54
+  ],
+  "bernstein_degree": 48,
+  "scaled_bernstein_coefficients": [
+    1,
+    60,
+    1755,
+    32673,
+    432566,
+    4338475,
+    34352555,
+    221003221,
+    1179340730,
+    5299181172,
+    20266088375,
+    66442952329,
+    187493311304,
+    455779734881,
+    952180372531,
+    1700392570409,
+    2581931123953,
+    3369764221160,
+    4134333423734,
+    6213470946770,
+    13506472949428,
+    33139310137454,
+    74128218534822,
+    143327089385610,
+    239846447916660,
+    351161772347256,
+    454379986006950,
+    523599843948010,
+    540285570155448,
+    501072569425986,
+    418634525786190,
+    315454278166970,
+    214433593251211,
+    131404929015260,
+    72482970819247,
+    35903712701165,
+    15918411697734,
+    6289994450519,
+    2202933931471,
+    679085548961,
+    182632228514,
+    42368523028,
+    8354532515,
+    1372981549,
+    182983760,
+    19001453,
+    1442399,
+    71197,
+    1715
+  ],
+  "floating_arithmetic_used_for_certification": false,
+  "factoring_exponent_improved": false,
+  "records": [
+    {
+      "representative": [
+        1,
+        1
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        1,
+        7
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        1,
+        23
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        1,
+        25
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        1,
+        27
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        1,
+        41
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        1,
+        107
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        1,
+        127
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        2
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        11
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        18
+      ],
+      "orbit_size": 1296,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        26
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        27
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        36
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        37
+      ],
+      "orbit_size": 1296,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        43
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        107
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        6,
+        122
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        2
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        3
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        11
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        22
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        23
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        24
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        25
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        30
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        31
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        42
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        43
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        44
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        62
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        107
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        126
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        22,
+        127
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        8
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        9
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        10
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        11
+      ],
+      "orbit_size": 1296,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        14
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        15
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        22
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        23
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        44
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 1,
+      "row_infinity_counts": [
+        1,
+        6,
+        15,
+        7,
+        14,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        45
+      ],
+      "orbit_size": 1296,
+      "quadratic_invariant_product": 1,
+      "row_infinity_counts": [
+        1,
+        6,
+        15,
+        7,
+        14,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        46
+      ],
+      "orbit_size": 1296,
+      "quadratic_invariant_product": 1,
+      "row_infinity_counts": [
+        1,
+        6,
+        15,
+        7,
+        14,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        47
+      ],
+      "orbit_size": 1296,
+      "quadratic_invariant_product": 1,
+      "row_infinity_counts": [
+        1,
+        6,
+        15,
+        7,
+        14,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        105
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        107
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 1,
+      "row_infinity_counts": [
+        1,
+        6,
+        15,
+        7,
+        14,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        110
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        111
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        113
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        115
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 1,
+      "row_infinity_counts": [
+        1,
+        6,
+        15,
+        7,
+        14,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        119
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        24,
+        239
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 1,
+      "row_infinity_counts": [
+        1,
+        6,
+        15,
+        7,
+        14,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        107,
+        1
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        107,
+        6
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        107,
+        22
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        107,
+        24
+      ],
+      "orbit_size": 648,
+      "quadratic_invariant_product": 1,
+      "row_infinity_counts": [
+        1,
+        6,
+        15,
+        7,
+        14,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        107,
+        61
+      ],
+      "orbit_size": 216,
+      "quadratic_invariant_product": 0,
+      "row_infinity_counts": [
+        1,
+        6,
+        12,
+        13,
+        11,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    },
+    {
+      "representative": [
+        107,
+        107
+      ],
+      "orbit_size": 24,
+      "quadratic_invariant_product": 1,
+      "row_infinity_counts": [
+        1,
+        6,
+        15,
+        7,
+        14,
+        6
+      ],
+      "column_zero_counts": [
+        1,
+        6,
+        15,
+        18,
+        9
+      ],
+      "row_precision": 8,
+      "column_precision": 8
+    }
+  ],
+  "engine_sha256": "f66b9d3a99d99911d5d17c6e9dc21a22f9c21c7f7ff060eea755018f119dde5a",
+  "checker_sha256": "00a069be4e83681211dbd7f0e27a38bc42214943566dddac0fe10d635fa441a3"
+}

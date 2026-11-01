@@ -1,0 +1,148 @@
+{
+  "status": "pass",
+  "scope": "Exact odd-pivot compression; no fast relation-selection claim",
+  "product_group_presentations": 288,
+  "extractor_replays": 2304,
+  "negative_odd_pivots": 151,
+  "nonunit_odd_pivots": 211,
+  "rectangular_presentations": 216,
+  "order_six_counterexample": "genuine row 6g=0; naive row 2g=0 rejected",
+  "deep_odd_pivots": 128,
+  "deep_scale_bits": 317,
+  "multiple_fresh_label_control": 1,
+  "dynamic_histories": 12,
+  "dynamic_raw_rows": 426,
+  "dynamic_unit_pivots": 407,
+  "records": [
+    {
+      "integer": 35,
+      "raw_rows": 0,
+      "active_labels": 1,
+      "retained_rows": 0
+    },
+    {
+      "integer": 15,
+      "raw_rows": 0,
+      "active_labels": 1,
+      "retained_rows": 0
+    },
+    {
+      "integer": 77,
+      "raw_rows": 1,
+      "active_labels": 2,
+      "retained_rows": 1
+    },
+    {
+      "integer": 539,
+      "raw_rows": 0,
+      "active_labels": 1,
+      "retained_rows": 0
+    },
+    {
+      "integer": 847,
+      "raw_rows": 0,
+      "active_labels": 1,
+      "retained_rows": 0
+    },
+    {
+      "integer": 49,
+      "raw_rows": 1,
+      "active_labels": 1,
+      "retained_rows": 1
+    },
+    {
+      "integer": 97,
+      "raw_rows": 1,
+      "active_labels": 1,
+      "retained_rows": 1
+    },
+    {
+      "integer": 21,
+      "raw_rows": 1,
+      "active_labels": 1,
+      "retained_rows": 1
+    },
+    {
+      "integer": 1022117,
+      "raw_rows": 5,
+      "active_labels": 3,
+      "retained_rows": 3
+    },
+    {
+      "integer": 1000036000099,
+      "raw_rows": 61,
+      "active_labels": 3,
+      "retained_rows": 3
+    },
+    {
+      "integer": 1000000016000000063,
+      "raw_rows": 276,
+      "active_labels": 8,
+      "retained_rows": 8
+    },
+    {
+      "integer": 4951760154835678088235319297,
+      "raw_rows": 80,
+      "active_labels": 16,
+      "retained_rows": 1
+    }
+  ],
+  "fixture_sha256": "66931571b2bd7afdad412e38081347edecc93e5a2315c11ccd4395085d350ded",
+  "cubic_prime_class_control": {
+    "integer": 6743,
+    "discriminant": -6743,
+    "raw_relations": [
+      [
+        6,
+        3
+      ],
+      [
+        -4,
+        7
+      ]
+    ],
+    "fresh_odd_pivot": 3,
+    "selected_leading_norms": [
+      27,
+      16
+    ],
+    "common_odd_scale": 3,
+    "compressed_relation": [
+      -54
+    ],
+    "odd_error_form": [
+      12,
+      -11,
+      143
+    ],
+    "odd_error_order": 3,
+    "factor": 11,
+    "top": [
+      11,
+      11,
+      156
+    ],
+    "extractor_stats": {
+      "relation_dimension": 1,
+      "relation_rows": 1,
+      "relation_deficiency": 0,
+      "initial_relations_verified": 1,
+      "determinant_computed": false,
+      "annihilator_supplied": false,
+      "saturation_bound": 6,
+      "saturations": 0,
+      "kernel_passes": 1,
+      "tops_evaluated": 1,
+      "identity_tops": 0,
+      "rejected_nonidentity_tops": 0,
+      "paired_bad_top_updates": 0,
+      "group_multiplications": 14,
+      "group_inversions": 1,
+      "maximum_entry_bits": 6,
+      "termination": "useful involution"
+    }
+  },
+  "malformed_inputs_rejected": 6,
+  "engine_sha256": "b99458f482060c49027664b208c6b11fffd035da5fb34b4776b350da8eb4b89c",
+  "checker_sha256": "0caa5412faa9f58b0d60b02d14577466b97f44ec8f08b85a7d1e6a5f56a857d3"
+}

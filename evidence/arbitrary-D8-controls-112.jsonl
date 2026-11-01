@@ -1,0 +1,3 @@
+{"event":"start","labels":8,"weights":[1,1,2],"dimension":5,"basis_indices":[0,1,2,3,4],"target":31,"row_ranks":[0,64,28,64,18,64,32,64,6,64,28,64,18,64,32,64,1,64,28,64,18,64,32,64,6,64,28,64,18,64,32,64]}
+{"event":"improvement","index":0,"cost":50.332020977033451,"integer_lower":50,"control_word_permutation":[0,1,2,3,4,5,6,7],"pieces":[15,16]}
+{"event":"complete","permutations_tested":40320,"best_cost":50.332020977033451,"global_integer_lower":50,"best_control_word_permutation":[0,1,2,3,4,5,6,7],"best_column_ranks":[0,5,14,14,24,24,24,24,28,28,28,28,28,28,28,28,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64,64],"best_pieces":[15,16],"integer_lower_histogram":[[50,40320]],"digest_fnv64":"15962297301824253107","milliseconds":6440}

@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "scope": "Quantitative conditional transfer; no new exponent",
+  "independently_enumerated_channels": 25038,
+  "type_tensors": 6,
+  "individual_factorization_entries": 786432,
+  "crossing_entries": 65536,
+  "raw_ranks": [
+    3,
+    5,
+    8
+  ],
+  "exact_amplified_rank_sum": 256,
+  "prematurely_padded_raw_rank_sum": 20,
+  "multinomial_rank_sum_classes": 494,
+  "integer_global_entropy_classes": 20,
+  "checker_sha256": "9a4ac30854d67b3ec2fd7ccd6b416f8889258d007f308208b61486f96edc7930"
+}
