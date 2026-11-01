@@ -1726,6 +1726,10 @@ expresses odd-index signed divisor coefficients as coefficients of
 trace of the original composition has a square-test formula. Extracting the
 remaining trace-zero coordinates at the original index is still open.
 Run `make verify-tate-coordinate`.
+At [phase five](research/q5-quadratic-coefficients.md), the remaining bit
+reduces to four binary quadratic-form parity counts. The explicit evaluator
+still costs `O(sqrt(N) poly(log N))`; it supplies no faster unrestricted bound.
+Run `make verify-q5-quadratic`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric

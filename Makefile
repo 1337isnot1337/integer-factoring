@@ -65,6 +65,12 @@ verify-tate-coordinate:
 
 verify-frontier: verify-tate-coordinate
 
+.PHONY: verify-q5-quadratic
+verify-q5-quadratic:
+	python3 tools/check_q5_trace_zero.py
+
+verify-frontier: verify-q5-quadratic
+
 verify-odd-character-residues: verify-cyclotomic-decoder
 	python3 tools/check_odd_character_residues.py
 

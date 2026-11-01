@@ -1,0 +1,154 @@
+{
+  "scope": "Exact level-five remaining coordinate; unrestricted tau-mod-four engine is not implemented",
+  "literal_odd_indices": 8192,
+  "square_cases_without_queries": 93,
+  "nonsquare_residue_cases_without_queries": 4004,
+  "supplied_small_tau_queries": 4095,
+  "quadratic_form_coefficients": 8192,
+  "charged_quadratic_enumeration_steps": 1414130,
+  "squarefree_promise_controls": 6919,
+  "tate_delta_prefix_controls": 64,
+  "distinct_squarefree_semiprime_controls": 946,
+  "large_cheap_controls": [
+    {
+      "bits": 166,
+      "case": "square after removing fives",
+      "value": 3
+    },
+    {
+      "bits": 170,
+      "case": "nonsquare quadratic residue",
+      "value": 0
+    },
+    {
+      "bits": 168,
+      "case": "square after removing fives",
+      "value": 2
+    },
+    {
+      "bits": 172,
+      "case": "nonsquare quadratic residue",
+      "value": 0
+    },
+    {
+      "bits": 550,
+      "case": "square after removing fives",
+      "value": 3
+    },
+    {
+      "bits": 554,
+      "case": "nonsquare quadratic residue",
+      "value": 0
+    },
+    {
+      "bits": 552,
+      "case": "square after removing fives",
+      "value": 2
+    },
+    {
+      "bits": 556,
+      "case": "nonsquare quadratic residue",
+      "value": 0
+    },
+    {
+      "bits": 1062,
+      "case": "square after removing fives",
+      "value": 3
+    },
+    {
+      "bits": 1066,
+      "case": "nonsquare quadratic residue",
+      "value": 0
+    },
+    {
+      "bits": 1064,
+      "case": "square after removing fives",
+      "value": 2
+    },
+    {
+      "bits": 1068,
+      "case": "nonsquare quadratic residue",
+      "value": 0
+    }
+  ],
+  "large_supplied_factor_controls": [
+    {
+      "bits": 1119,
+      "odd_prime": 3,
+      "odd_prime_exponent": 1,
+      "supplied_tau_mod_four": 2,
+      "value": 1
+    },
+    {
+      "bits": 1122,
+      "odd_prime": 3,
+      "odd_prime_exponent": 3,
+      "supplied_tau_mod_four": 0,
+      "value": 0
+    },
+    {
+      "bits": 1125,
+      "odd_prime": 3,
+      "odd_prime_exponent": 5,
+      "supplied_tau_mod_four": 2,
+      "value": 1
+    },
+    {
+      "bits": 1128,
+      "odd_prime": 3,
+      "odd_prime_exponent": 7,
+      "supplied_tau_mod_four": 0,
+      "value": 0
+    },
+    {
+      "bits": 1120,
+      "odd_prime": 7,
+      "odd_prime_exponent": 1,
+      "supplied_tau_mod_four": 2,
+      "value": 1
+    },
+    {
+      "bits": 1126,
+      "odd_prime": 7,
+      "odd_prime_exponent": 3,
+      "supplied_tau_mod_four": 0,
+      "value": 0
+    },
+    {
+      "bits": 1131,
+      "odd_prime": 7,
+      "odd_prime_exponent": 5,
+      "supplied_tau_mod_four": 2,
+      "value": 1
+    },
+    {
+      "bits": 1137,
+      "odd_prime": 7,
+      "odd_prime_exponent": 7,
+      "supplied_tau_mod_four": 0,
+      "value": 0
+    }
+  ],
+  "same_small_metadata_contrast": [
+    {
+      "integer": 33,
+      "residue_mod_5": 3,
+      "is_prime": false,
+      "is_square": false,
+      "tau_mod_four": 0,
+      "value": 0
+    },
+    {
+      "integer": 363,
+      "residue_mod_5": 3,
+      "is_prime": false,
+      "is_square": false,
+      "tau_mod_four": 2,
+      "value": 1
+    }
+  ],
+  "source_sha256": {
+    "tools/check_q5_trace_zero.py": "109b465510ac90382f03e1e51021c1559b40ce2f4cd07bd868f98f4bc0de556a",
+    "tools/tate_coordinate_compiler.py": "4abb1d071debcd045b110780c8472d215fe44d89103f0033474250e6cb4c37d1"
+  }
+}

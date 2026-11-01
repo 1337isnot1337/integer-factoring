@@ -28,6 +28,12 @@ and do not spawn subagents without an explicit user request.
   `[t^N] X_q(Delta(t))`. This composition is not solved. Its scalar algebra
   trace has the cheap identity `T^2+T=Delta(t)+Delta(t^q)`; the remaining
   coefficient space has trace zero and dimension (q-3)/2.
+- [Phase five](q5-quadratic-coefficients.md): the group law gives
+  `X^2+B X+B^3=0` and `X=B(c+V)`, where
+  `V=sum_(n>=1)(t^(n^2)+t^(5n^2))` and `B=1+V+V^2`.
+  Four positive binary quadratic-form parities give the full odd-index
+  value in sqrt(N) poly(log N) time. The alternative tau-mod-four query is
+  explicitly charged; squarefree/semiprime conclusions are promises only.
 
 ## Active next construction
 
@@ -38,10 +44,15 @@ basis, or merely compute more internal coefficients in v.
 The current positive model is the uniform scalar trace, with an explicit
 trace-one eta and decomposition `X=eta*Tr(X)+(X-eta*Tr(X))`. At q=3 this
 solves everything; at q=5 one binary coordinate remains, and at q=7 two.
-First concrete target: derive the q=5 trace-zero scalar's exact equations
-and test whether it has a cheap arithmetic predicate, a useful promise
-case, or an explicit remaining convolution cost. Keep the unrestricted
-engine goal separate from squarefree or semiprime promises.
+The q=5 scalar is now reduced to four binary quadratic predicates with its
+cost charged. Do not repeat that derivation or replace its divisor-count
+query with an unproved squarefree-part oracle.
+
+Next concrete target: phase seven. Check a cubic parametrization of its
+canonical kernel and test finite polynomial expressions using several
+unary-square residue series. Use the known q3/q5 identities as controls,
+hold out larger prefixes, and require an ordinary proof before asserting
+any identity at all indices. A finite prefix fit is only a candidate.
 
 Other useful representation to examine: weighted algebraic coefficient
 automata composed with odd-square theta series, using parameterized
