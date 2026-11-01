@@ -150,18 +150,28 @@ variant is polynomial in the original input length because
 `T^2=Theta(ell)`. These gate-count bounds do not bound the treewidth of the
 full composition.
 
-## The global separator is still the question
+## The generic bit-circuit separator floor and remaining evaluator question
 
 The previous
 [dense-table analysis](sanftenberg-transform-treewidth-floor.md) gives a
 `Q_d` clique-blow-up minor and a width floor
 `Omega(ell/sqrt(log ell))` for extensional four-word butterfly tables.
 The circuits above change that local representation: add/subtract use carry
-chains and the root-four twiddle is a signed rotation. But the complete
-arithmetic network also connects `T` variable pointwise products, both forward
-transforms, the inverse transform, and the coefficient/carry recovery. A
-local `O(T)`-width product gadget does not by itself give a sub-`ell/sqrt(log
-ell)` separator for this connected network.
+chains and the root-four twiddle is a signed rotation. For a complete
+bit-variable network with explicit operand and product bits, however, the
+generic multiplier theorem in
+[`multiplier-treewidth-and-relation-cycles.md`](multiplier-treewidth-and-relation-cycles.md)
+gives linear treewidth regardless of the internal circuit. The source audit
+in [`riemann-gaussian-semiprime-source-audit.md`](riemann-gaussian-semiprime-source-audit.md)
+checks this application for the current D1 network: its target digits enter
+only in local carry tables of arity `O(sqrt(ell))`, so pinning them to `N`
+does not evade the lower bound.
+
+This closes the dense-elimination question for the explicit-input D1
+representation. The open opportunity is to exploit structure inside the
+arithmetic tables, or find a representation where operands are not exposed as
+bit variables. Treewidth of the primal graph does not bound such structured
+evaluators.
 
 ### The ideal twisted-fiber model has a sharp half-rate floor
 

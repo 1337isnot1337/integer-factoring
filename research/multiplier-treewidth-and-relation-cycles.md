@@ -168,10 +168,26 @@ negative answer for an underlying whole-bit-circuit separator only after
 its visible-input, Boolean-variable and output-graph hypotheses are checked.
 They do not settle every specialized factoring encoding.
 
-The upstream circuit sources were not independently audited here. If x or y
+The original PR did not audit the upstream circuit sources. The later ordinary source inspection below checks the relevant declared scopes without rebuilding Lean. If x or y
 exist only in transform coordinates, or the instance is rewritten after
 N is fixed, a new argument is required. Recoverability of binary inputs by
 some local constraints alone is not proved sufficient in this note.
+
+### Later source-specific application to RiemannGaussian D1
+
+A separate source audit at the pinned upstream commit
+[`f5fd3ddb407972f9ca65298fbe9be3225fe06635`](https://github.com/dbsanfte/RiemannGaussian/tree/f5fd3ddb407972f9ca65298fbe9be3225fe06635)
+checks the output-deletion structure for the literal D1 declared-scope graph. Its two operands are explicit
+input digit words; the target digits of `N` occur only in separate local carry
+factors. The uniform arithmetic-network equivalence exposes those target
+digits as product variables, and each such bit is simplicial in a factor of
+arity `O(sqrt(ell))`. Since the operand width is `ell` and the target provides
+at least `2*ell` product bits, T1.1 gives `Omega(ell)` treewidth after these
+local output bits are pinned and only those fresh output vertices are deleted. The remaining declared carry scopes are retained; further propagation or refactorization is not covered. The exact source mapping and its limitations are
+recorded in
+[`riemann-gaussian-semiprime-source-audit.md`](riemann-gaussian-semiprime-source-audit.md).
+This is a treewidth statement about the D1 representation, not a factoring
+lower bound and not an obstruction to structured contraction.
 
 ### Upper bound and growth (PROVEN / VERIFIED)
 

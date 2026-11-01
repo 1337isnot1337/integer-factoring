@@ -1049,3 +1049,30 @@ source check and does not cover this consolidation. The short README and
 concurrent separator work from `ebfd7e5` are retained. No stronger score
 or independent mathematical review is inferred.
 
+
+## PR #73: multiplier-network treewidth and relation cycles
+
+Integrated exact PR head `ab0dc947a4ad1d6fa9fa13aa459cc4cc779da332` at
+merge commit `f05a1919c28fa86110ab1d2f39b09f6a45bf09e2`. The ordinary note,
+finite checker scripts, and saved outputs are retained byte for byte. All
+hosted PR checks passed at that exact head; no local checker or Lean build was
+run during this integration. The separator/fooling-set proof is the author's
+hand proof and has not received independent mathematical review.
+
+A follow-up source audit maps the theorem's hard-wired-output corollary to
+RiemannGaussian D1: target digits occur only in local carry tables whose
+unspecialized scopes are `O(sqrt(ell))`, while the operands are explicit input
+bits. This closes the linear-treewidth applicability question for that
+representation only. It is a barrier to dense elimination, not a factoring
+lower bound, and it does not exclude the structured boundary contractor. The
+source mapping is ordinary prose; no upstream Lean was imported or rebuilt,
+and no stronger factoring score is claimed.
+
+
+During the subsequent merge, pinned upstream `localTable` carry scopes,
+`arithmetic_network_iff` and the public transform parameter formulas were
+read directly from the source. The D1 application is retained for the
+declared factor graph after deleting only the fresh product vertices. It
+does not identify arbitrary propagation with that deletion. The abstract
+arithmetic theorem itself distinguishes the Boolean compiler interface;
+this integration performs an ordinary source mapping, not a Lean replay.
