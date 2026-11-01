@@ -1,0 +1,69 @@
+{
+  "scope": "Uniform C2 formula controls and polynomial labels of the existing eight-site row certificate; no uniform rank bound.",
+  "seed": 20261103,
+  "entry_controls": [
+    {
+      "length": 4,
+      "path_count": 2,
+      "literal_single_copy_class_sum_controls": 4,
+      "constructor_C2_entry_controls": 16
+    },
+    {
+      "length": 6,
+      "path_count": 5,
+      "literal_single_copy_class_sum_controls": 25,
+      "constructor_C2_entry_controls": 64
+    },
+    {
+      "length": 8,
+      "path_count": 13,
+      "literal_single_copy_class_sum_controls": 169,
+      "constructor_C2_entry_controls": 24
+    }
+  ],
+  "eight_site_row_primary_labels": [
+    {
+      "dimension": 20,
+      "replica_swap": 1,
+      "diagonal_transposition_sum": 4,
+      "class_sum_derivative": null,
+      "primary_exponent": 1,
+      "nilpotent_rank": 0
+    },
+    {
+      "dimension": 1,
+      "replica_swap": 1,
+      "diagonal_transposition_sum": 3,
+      "class_sum_derivative": null,
+      "primary_exponent": 1,
+      "nilpotent_rank": 0
+    },
+    {
+      "dimension": 43,
+      "replica_swap": 4,
+      "diagonal_transposition_sum": 3,
+      "class_sum_derivative": null,
+      "primary_exponent": 1,
+      "nilpotent_rank": 0
+    },
+    {
+      "dimension": 70,
+      "replica_swap": 1,
+      "diagonal_transposition_sum": 2,
+      "class_sum_derivative": 4,
+      "primary_exponent": 2,
+      "nilpotent_rank": 13
+    },
+    {
+      "dimension": 35,
+      "replica_swap": 4,
+      "diagonal_transposition_sum": 4,
+      "class_sum_derivative": null,
+      "primary_exponent": 1,
+      "nilpotent_rank": 0
+    }
+  ],
+  "joint_generators_cover_row_model": true,
+  "constructor_sha256": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+  "rank_model_sha256": "2c915fa48b498fa2bab8f5c2de80886cec1e9385b7cc7f5a7381aa8235bbe6ee"
+}

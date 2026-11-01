@@ -309,6 +309,11 @@ exact ranks over every characteristic-five extension and minmax rank
 product 2304; that finite block cannot improve the rate. Run
 `make verify-bounded-spin` and the optional NumPy target
 `make verify-bounded-spin-algebra`.
+The [second-coefficient formula](research/bounded-spin-second-coefficient.md)
+expresses `3C_2` as a compressed diagonal transposition sum plus
+`k(k+1)I` at every length `n=2k`. At eight sites this sum and the replica
+swap generate the certified row algebra, including its nilpotent part.
+Run `make verify-bounded-spin-second` for independent entry controls.
 The [spin-zero jet identities](research/bounded-spin-three-jets.md)
 hold at every length and bound the coefficient span by `n-2` for even
 `n>=6`; ordinary cut-rank growth remains open.
