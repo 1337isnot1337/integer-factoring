@@ -108,7 +108,7 @@ The Anthropic engine's α = 1 − γ comes from partition-type √E growth. The 
 - Sign-rank / k-Hamming-distance literature (arXiv:2506.12022): related support-pattern rank questions with a different measure. Not this result.
 - Repo greps at 4c3d135 for `r^{2Q}`, `Bin(Q`, measurement tuple, replacement row, `rank(I`, `I-M_0`, routing, quantum functional, asymptotic spectrum: no prior analysis of the preprint's partial-swap routing.
 
-"Not found" ≠ new. Theorem A is an elementary free-set argument and may be folklore. Approximate-degree lower bounds for symmetric functions (Paturi; Nisan–Szegedy) are the natural one-dimensional analogue and were not searched exhaustively.
+"Not found" ≠ new. **Correction (follow-up):** Theorem A is the standard minrank ≥ MAIS (maximum acyclic induced subgraph) lower bound from index coding (Bar-Yossef, Birk, Jayram, Kol, FOCS 2006 / IEEE Trans. IT 2011), applied to the routing digraph. It is KNOWN; what is specific here is the choice of potential and the Gaussian tail estimate. See [generic-engine-routing-rank-graphs.md](generic-engine-routing-rank-graphs.md). Approximate-degree lower bounds for symmetric functions (Paturi; Nisan–Szegedy) are the natural one-dimensional analogue and were not searched exhaustively.
 
 ## Checkers (exact arithmetic: integers, Fractions, GF(p), p = 1000003)
 
