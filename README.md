@@ -1691,6 +1691,13 @@ inversion and exact nilpotent divisions, avoiding a stored Gaussian system.
 Run `make verify-odd-character-residues` for both decoders and the component
 checks, or `make verify-cyclotomic-decoder` for the new construction alone.
 
+The [theta-section engine](research/lambert-theta-sections.md) computes the
+signed divisor coefficients without enumerating divisors, but its current
+state cost is exponential in the input length. A uniform rank argument
+excludes polynomial-size common linear section spaces even at phase order
+three, where a direct square test is cheap. This is a restriction on that
+representation, not a factoring lower bound. Run `make verify-lambert-theta`.
+
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight

@@ -53,6 +53,12 @@ verify-sparse-divisor-residues:
 verify-cyclotomic-decoder:
 	python3 tools/check_cyclotomic_character_decoder.py
 
+.PHONY: verify-lambert-theta
+verify-lambert-theta:
+	python3 tools/check_lambert_theta_sections.py
+
+verify-frontier: verify-lambert-theta
+
 verify-odd-character-residues: verify-cyclotomic-decoder
 	python3 tools/check_odd_character_residues.py
 
