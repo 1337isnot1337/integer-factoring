@@ -225,6 +225,10 @@ verify-bounded-spin-support:
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py
 
+.PHONY: verify-paired-paths
+verify-paired-paths:
+	python3 tools/check_paired_path_crossing.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py

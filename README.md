@@ -395,6 +395,12 @@ original coefficient span has sharp minmax product `225^2`. A small
 twelve-site certificate rules out the simpler linear pencil-plus-vertex
 formula. Uniform algebra containment and two-cut lifting remain open.
 The optional `make verify-bounded-spin-growth` requires FLINT.
+The [paired-path construction](research/paired-path-crossings.md) replaces
+the classical spin formulas with arbitrary invertible local splittings
+and their inverse duals. An explicit F16 family retains Fibonacci label
+growth, polynomial-time entries and both strict endpoints. Exact small
+checks cover all twelve valid field parameters; favorable uniform
+two-cut ranks remain open. Run `make verify-paired-paths`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
