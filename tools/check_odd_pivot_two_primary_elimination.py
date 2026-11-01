@@ -251,6 +251,43 @@ def dynamic_history_controls():
             'fixture_sha256': sha256(source.read_bytes()).hexdigest()}
 
 
+def cubic_prime_class_control():
+    from arithmetic_two_group import power
+    from binary_quadratic_forms import ambiguous_factor, inverse_form
+    from quadratic_ideal_hnf import compose_forms_hnf
+    integer = 6743
+    identity = (1, 1, 1686)
+    g2, g3 = (2, 1, 843), (3, 1, 562)
+    cube_target = power(g2, 6, identity, compose_forms_hnf)
+    second_target = power(g3, 7, identity, compose_forms_hnf)
+    assert cube_target == (27, -13, 64)
+    assert second_target == (16, 13, 108)
+    assert power(inverse_form(g3), 3, identity, compose_forms_hnf) == cube_target
+    assert power(g2, 4, identity, compose_forms_hnf) == second_target
+    # The discarded generator really has a nonzero odd-order error if one
+    # incorrectly treats the rational expression as a full-group identity.
+    odd_error = compose_forms_hnf(g3, power(g2, 2, identity, compose_forms_hnf))
+    assert odd_error == (12, -11, 143) and odd_error != identity
+    assert power(odd_error, 3, identity, compose_forms_hnf) == identity
+    assert power(g2, 18, identity, compose_forms_hnf) != identity
+    engine = OddRelationPresentation((2,))
+    engine.add_relation({2: 6, 3: 3})
+    engine.add_relation({2: -4, 3: 7})
+    assert engine.scale == 3 and engine.retained_matrix() == [[-54]]
+    top, factor, stats = first_useful_relation_top(
+        [g2], engine.retained_matrix(), identity, compose_forms_hnf,
+        inverse_form, lambda form: ambiguous_factor(form, integer))
+    assert factor == 11 and integer == 11 * 613
+    assert top != identity and compose_forms_hnf(top, top) == identity
+    return {'cubic_prime_class_control': {
+        'integer': integer, 'discriminant': -integer,
+        'raw_relations': [[6, 3], [-4, 7]], 'fresh_odd_pivot': 3,
+        'selected_leading_norms': [27, 16], 'common_odd_scale': 3,
+        'compressed_relation': [-54], 'odd_error_form': odd_error,
+        'odd_error_order': 3, 'factor': factor, 'top': top,
+        'extractor_stats': stats}}
+
+
 def rejection_controls():
     rejected = 0
     for callback in (lambda: OddRelationPresentation((2,2)),
@@ -275,7 +312,8 @@ def main():
     result = {'status': 'pass',
               'scope': 'Exact odd-pivot compression; no fast relation-selection claim',
               **test_product_groups(), **counterexample_and_deep_controls(),
-              **dynamic_history_controls(), 'malformed_inputs_rejected': rejection_controls(),
+              **dynamic_history_controls(), **cubic_prime_class_control(),
+              'malformed_inputs_rejected': rejection_controls(),
               'engine_sha256': sha256((ROOT/'tools/odd_relation_presentation.py').read_bytes()).hexdigest(),
               'checker_sha256': sha256(Path(__file__).read_bytes()).hexdigest()}
     if args.output:
