@@ -1,5 +1,7 @@
 # Research index
 
+- [Normalize the angle scale of the support gap](normalized-support-gap-search.md): sign-preserving heuristic on actual twelve-letter graph tensors, 54 independent derivative comparisons and separate fixed-balanced/free-angle timed tracks. It changes the search landscape, not the critical threshold or score.
+
 - [Arbitrary twelve-letter reflection graphs](q12-reflection-graph-search.md): 192 independent F4 image/readout coordinates in the full sixteen-letter source, literal endpoints and independent contraction controls, with separate quick and full untruncated replay levels. Two timed free-height tracks are registered; no favorable tensor or score improvement is claimed.
 
 - [Fixed-type bundles for complete asymmetric pressure](asymmetric-profile-bundle-search.md): a raw-height adapter of the existing proximal method, 99 derivative and 168 held-out plane controls, and a registered three-tensor comparison. Root gradients are not used as convex planes; no bound improvement.

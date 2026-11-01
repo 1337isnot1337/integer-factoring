@@ -2979,3 +2979,7 @@ verify-q12-reflection-graphs:
 	python3 tools/check_q12_reflection_graphs.py
 verify-q12-reflection-graphs-independent:
 	python3 tools/check_q12_reflection_graphs.py --full-independent
+
+.PHONY: verify-normalized-support-gap
+verify-normalized-support-gap:
+	python3 tools/check_normalized_support_gap.py
