@@ -594,7 +594,7 @@ verify-post-half: verify-pr29-extended
 verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
-verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues verify-pr31-frontier
+verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues verify-pr31-frontier verify-f4-hyperoval
 	python3 tools/check_direct_sublinear_counts.py
 	python3 tools/check_rational_simultaneous_transfer.py
 	python3 tools/check_minimum_cut_rank_budget.py
@@ -1964,3 +1964,8 @@ verify-coherent-graded-quotients:
 	python3 tools/check_coherent_graded_quotients.py --output /tmp/integer-factoring-coherent-graded-quotients.json
 verify-coherent-shared-gauges:
 	python3 tools/check_coherent_shared_gauges.py --output /tmp/integer-factoring-coherent-shared-gauges.json
+
+.PHONY: verify-f4-hyperoval
+verify-f4-hyperoval:
+	python3 tools/check_coherent_hot_f4_hyperoval_entries.py
+	python3 tools/certify_coherent_hot_f4_hyperoval.py

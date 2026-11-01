@@ -333,6 +333,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [F4 hyperoval crossing](research/f4-hyperoval-crossing-bound.md): exact rho < 0.710005861, slightly improving the pinned coordinate 96-letter bound. Both complete cuts and an explicit type with denominator 2^36 are certified. This remains above 1/sqrt(2), so the complete factoring exponent stays 1/2.
+
 - [Exact 96-letter pressure certificate](research/exact-natural-pressure-intervals.md): the complete saved profile certifies rho < 0.710005874881191, still above the required 1/sqrt(2). [Width-sensitive Boolean constructors](research/width-sensitive-prime-constructor.md) reduce preparation cost without supplying the missing crossing improvement. See the [session record](research/escape-half-session-20261031.md) for scope and replay costs.
 
 - [Fixed-prime scalar transfer](research/fixed-prime-factor-transfer.md): polynomially many scalar clique-count queries suffice under the stated evaluator hypothesis. [Certified divisor preprocessing](research/certified-divisor-oracle.md) concerns the maximum divisor count below a bound. These interfaces and the accompanying finite construction controls do not improve the complete 1/2 exponent. The parallel [fixed-characteristic recovery proof](research/fixed-characteristic-factor-recovery.md) is retained; the two notes share the power-tuple and cyclic-orbit mechanism.

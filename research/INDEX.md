@@ -1054,3 +1054,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 - [Coherent quotient codes and an exact zero-cut invariant](coherent-graded-quotients.md)
 - [Shared letter gauges for coherent physical maps](coherent-shared-letter-gauges.md)
+
+## F4 hyperoval and coherent weights
+
+- [Stronger F4 hyperoval crossing bound](f4-hyperoval-crossing-bound.md): exact rho < 0.710005861 with both complete profiles and an explicit positive type; no stronger factoring exponent.
+- [Coherent deletion-operator weight cone](weighted-coherent-hot-f4.md): a sufficient cone for both weighted cuts of non-coordinate physical retracts.
