@@ -1,0 +1,70 @@
+{
+  "scope": "Integer point of all compiled necessary inequalities; no realizing tensor.",
+  "deficit": 6,
+  "energies": [
+    0,
+    0,
+    12,
+    16,
+    18,
+    24
+  ],
+  "target": [
+    0,
+    6,
+    7,
+    11,
+    14,
+    15,
+    21,
+    22,
+    22,
+    22,
+    22,
+    22,
+    24,
+    24,
+    24,
+    24,
+    30,
+    30,
+    30,
+    30,
+    30,
+    34,
+    34,
+    36,
+    36,
+    38,
+    40,
+    40,
+    42,
+    42,
+    42,
+    46,
+    46,
+    47,
+    49,
+    49
+  ],
+  "scale": [
+    1,
+    6
+  ],
+  "pressure_interval": [
+    -5931902252931679769912978610,
+    -5931902252931679769912977716
+  ],
+  "pressure_precision": 100,
+  "numerical_pressure": -0.004679445780929825,
+  "minimum_cap_slack": "0",
+  "solver_message": "Optimization terminated successfully. (HiGHS Status 7: Optimal)",
+  "seconds": 0.07646865200513275,
+  "max_order": 80,
+  "source_sha256": {
+    "search_integer_hereditary_q6.py": "3d3c0427507547db7afd5e84cc40490f5bfc463410af3a30eafa6307344f590b",
+    "hereditary_adjugate_caps.py": "5e7f5b43bbd39e267629d2ef624d721228e46951bccbaac3fa4a56cca13d47fe",
+    "check_cell_minor_caps.py": "92856996bc0fb7e213e5228e1697d2f1cfb5727e10a9e572c764731114e2f6bc",
+    "charged_gaussian_floor.py": "5321193eda456b922ae947f55a492de675de2d08a90ccb2a87a0fd89a60805cc"
+  }
+}

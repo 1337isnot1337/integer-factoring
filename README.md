@@ -2449,3 +2449,140 @@ The [declared compact-witness 128-bit policy](evidence/compact-witness-oriented-
 The [auxiliary-mode Clifford theorem](research/tensor-affine-clifford-profiles.md) recovers complete Smith profiles for Gaussian circuits interleaved with arbitrary invertible one-mode maps over characteristic-two fields. One auxiliary mode gives a matrix of order 2n+2, with scalar valuations and both cut clearings retained. The 18-row implementation matches all 131072 prior binary orders and independent original F4 kernels. A completed 1792-case F4 degree census finds no pressure improvement.
 
 The [Jensen tail-degree extension](research/jensen-tail-protected-core-floor.md) gives complementary all-field protected-core floors: retaining all 81 states below height24 forces natural rho >= 17/24 through height37, or >=29/41 through height38. All hot modes, separate paired alphabets/types and homogeneous high splits without deletion closure are allowed. These are method-specific barriers, not a stronger factoring exponent.
+
+The [joint pair-compression construction](research/joint-grid-compressions.md)
+allows a rectangular split on two legs followed by a new Cartesian alphabet.
+All 1,232 declared vacuum-containing 2-by-3 coordinate grids have exact
+balanced `rho >= 3/4` certificates. All 1,152 full 4-by-4 grids are dominated
+by the original source at every scale and supporting weights. A separate
+native replay checks 51,648 orders and 339,264 endpoint entries. Field-valued
+joint projections remain open; the complete score stays **1/2**. Run
+`make verify-joint-grid-compressions` for both complete coordinate families.
+The [full-suite receipt](evidence/joint-grid-full-verification.json) pins
+the successful clean default and focused replay to `decce64` (342 Python
+command blocks, 66 unit tests, five crossing tests and 976 Markdown files).
+
+[Joint-split rank guards](research/joint-split-jet-guards.md) further prove
+a balanced `rho >= 5/7` floor when the declared protected core and degree
+budget hold but either cut loses its rank-one leading or first residual
+pattern. At the coordinate split, fixing both first matrix jets at both
+cuts gives formal rigidity; a separate two-parameter fiber has an exact
+all-field `rho >= 3/4` obstruction away from its zero parameter. Different
+jet factors and asymmetric weights remain open. Run
+`make verify-joint-split-jet-guards` for the new focused certificates;
+this follow-up is outside the earlier full-suite pin.
+
+[Finite-field rank-flag queries](research/joint-split-finite-flags.md)
+allow the low-rank factors to vary across the full declared homogeneous
+protected split family. Recorded Z3 results over F2/F4/F8 leave only
+physical phases of the coordinate crossing. Together with the exact guards
+and a degree-905 integer Bernstein certificate, this gives a solver-trusted
+balanced natural `rho >= 5/7` floor for those fields. F16 remains unresolved
+after a timeout; no all-field or asymmetric conclusion follows. Run
+`make verify-joint-split-flags` for independent positive jet controls and
+receipt replay; this does not independently certify the solver's UNSAT
+claims. These additions postdate the full-suite source pin, and the
+factoring score remains **1/2**.
+
+[Moving joint retractions](research/joint-moving-retractions.md) permit
+one-sided row or column updates through discarded source coordinates,
+including Laurent poles and unequal energies. All 14,400 declared F4
+monomial updates have exact balanced natural `rho >= 3/4` certificates.
+Every case is reconstructed independently before native profile replay;
+all 1,745 distinct classes also agree with separate Python elimination
+on 55,840 complete orders. Combinations and asymmetric charges remain
+open. Run `make verify-joint-moving-retractions`; these focused additions
+are outside the earlier full-suite pin and leave the score at **1/2**.
+
+The [complete five-to-four rational row module](research/joint-small-rational-retractions.md)
+permits arbitrary internal poles. A degree-seven polynomial right inverse
+certifies its full polynomial output space. Freezing the first two raw
+matrix jets and excluding order two leaves six second-jet directions;
+an exact symbolic 3-by-3 minor forces the third zero-cut order to stay
+three over every characteristic-two field. Earlier jets, other embeddings
+and later orders remain open. Run `make verify-joint-small-rational`.
+The [new full-suite receipt](evidence/joint-moving-full-verification.json)
+pins a successful clean replay of defaults and three joint focused targets
+to `f2a16c0` (344 Python command blocks, 66+5 tests, 979 Markdown files).
+The rational-module additions postdate that full-suite source.
+
+A [six-to-five Laurent compression](research/joint-six-to-five-retractions.md)
+now targets the different paired energy shape `(0,0,12,16,18)` and a
+positive deficit of six. Its eleven discarded rows span a rank-nine
+module with a degree-five polynomial right inverse, covering all strict
+Laurent outputs of the rational retraction. The checker compares 70
+bounded spaces, 63 earlier-space regressions and 400 independently
+computed complete orders, with every pole charged. This is a constructive
+search interface; no favorable crossing or score increase is claimed.
+Run `make verify-joint-six-to-five` for the new focused controls.
+
+For this particular target, the [zero-energy parity-core argument](research/zero-energy-parity-core.md)
+proves an additional all-field obstruction: opposite parities on the two
+zero-energy labels are incompatible with a parity-preserving core and
+the prescribed two profile sectors. The rational family admits explicit
+parity-mixing corrections. This elementary argument does not exclude other
+profile shapes. Run `make verify-zero-energy-parity-core` for the exact
+core and literal tensor controls; the factoring score stays **1/2**.
+
+The stronger [hereditary adjugate cap](research/zero-energy-hereditary-adjugate.md)
+now excludes the retained five-letter target **regardless of parity**.
+Applying the existing graded adjugate theorem to a two-zero-energy-label
+restriction gives `4 S3(r)+3 S2(s)<=12d` and its reverse. The target demands
+`78<=72`. This also excludes its dominating averaged-prefix sector and
+any local-frame choice implying those bounds. Other profiles and energy
+shapes remain open. Run `make verify-zero-energy-hereditary`; the exact
+rational construction interfaces remain available, and the score is **1/2**.
+
+[Hereditary adjugate caps for every smaller alphabet](research/hereditary-adjugate-caps.md)
+extend the restriction argument to all subalphabet sizes. Exact rational
+constraints reduce to the smallest paired energies. A 36-order integer
+six-letter point passes these square constraints and has relaxed pressure
+below `-1/250`, but the later credited rectangular cofactor-jet theorem
+**excludes that point**: its `2x6` restriction demands `2472<=2332`.
+Run `make verify-hereditary-adjugate verify-hereditary-q6-rejection` for
+the historical relaxation and the exact rejection. No realizing tensor or
+stronger factoring algorithm is supplied.
+
+The [multichannel rectangular cofactor bound](research/multichannel-rectangular-cofactors.md)
+also charges third and later Smith channels when forming a cofactor.
+An exact eight-letter negative-pressure point passes the preceding
+square and rectangular-jet caps but violates these new constraints.
+Literal cofactors attain the new entry bound. Run
+`make verify-multichannel-cofactors`; the factoring score remains **1/2**.
+
+[Eight-row entropy witnesses](research/multichannel-bare-eleven-letter-floor.md)
+extend the all-field, all-degree, all-scale scalar bare obstruction through
+**eleven letters**: `rho>71/100` on ten and `rho>177/250` on eleven.
+Both exceed `1/sqrt(2)`. Independently gauged energies remain outside this
+obstruction. Run `make verify-multichannel-bare-entropy` for the exact
+rational probabilities and 100-bit outward entropy comparisons.
+
+[Inherited nonlinear second-jet checks](research/inherited-second-jet-caps.md)
+extend the existing adjugate theorem to independent gradings and square
+physical restrictions. An exact twelve-letter point passes the linear
+constraints but fails these nonlinear checks. The implementation evaluates
+the two actual profiles; concavity prevents substituting their average.
+Run `make verify-inherited-second-jet`; twelve letters remain unresolved.
+
+A [twelve-letter relaxation point](research/inherited-second-jet-caps.md#5-a-successor-point-survives-the-declared-nonlinear-checks)
+passes the linear and inherited second-jet conditions, with exact pressure
+below `-1/100`. The later [higher-jet word theorem](research/higher-jet-word-caps.md)
+excludes it: ordered Smith-channel products force 258 violated cofactor
+caps, including `96841739<=96597072`. The all-field identity includes
+singular channels and extends the old second-jet bound. Run
+`make verify-q12-second-jet-target verify-higher-jet-words` for the historical
+relaxation and its rejection. No stronger factoring bound is established.
+
+[Integer twelve-letter points of degrees 22 and 24](research/q12-integer-word-target.md)
+survive every declared cofactor and higher-word constraint. At rational
+scales `57/46` and `17/14`, direct integer arithmetic proves formal bare
+rates below `7071/10000` and `707/1000`, both below `1/sqrt(2)`.
+No polynomial tensor realizing either point is known. Run
+`make verify-q12-integer-word-target`; the factoring score remains **1/2**.
+
+The [latest full verification receipt](evidence/higher-words-full-verification.json)
+pins a successful clean default replay and fifteen named joint/cofactor
+targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,
+five crossing tests and 988 Markdown files. Later main integration and
+integer-degree point packages have separate focused passes, outside that
+full-source pin. These checks supply no realizing tensor or independent review.

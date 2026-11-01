@@ -1,0 +1,489 @@
+{
+  "schema_version": 1,
+  "scope": "Finite field, constant energy-homogeneous 25-to-16 joint splits with the full declared two-letter tensor core fixed; solver-trusted UNSAT, not all-field proof.",
+  "phase_classified_fields": [
+    2,
+    4,
+    8
+  ],
+  "queries": [
+    {
+      "result": "unsat",
+      "field": 2,
+      "modulus": 3,
+      "field_variables": 86,
+      "protected_joint_heights_below": null,
+      "tensor_core_only": true,
+      "query": "zero-anchor",
+      "excluded_physical_phase_orbit": false,
+      "fixed_phase_controls": [
+        {
+          "phase": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        }
+      ],
+      "multiplication_table_controls": 4,
+      "z3_version": "5.3.3",
+      "timeout_ms": 180000,
+      "build_seconds": 1.0404095869962475,
+      "total_seconds": 1.0433486990004894,
+      "smt2_sha256": "10de4faacfddd6f8a0a02bcc3dc3bad0a07c8837fa484c4e77c73310287a040b",
+      "scope": "Finite-field solver query for the declared protected splits; unsat requires trusting this solver run, and is not an all-field proof.",
+      "source_sha256": {
+        "probe_joint_split_rank_flags.py": "f5391220d4d12e87ef32d771db1e348df998a048f7c70e437ee5fadc6d98acf7",
+        "joint_five_letter_splits.py": "e161098591d88096e9b6144c89833e8a3e6f67473e899e8e817443c1cf92b81f",
+        "joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+        "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+        "search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+        "search_joint_grid_compressions.py": "8fec5826772354113185a58e303e283513651bff654327f3fbf72705bc00db36",
+        "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+        "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+        "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+        "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+      }
+    },
+    {
+      "result": "unsat",
+      "field": 2,
+      "modulus": 3,
+      "field_variables": 86,
+      "protected_joint_heights_below": null,
+      "tensor_core_only": true,
+      "query": "normalized",
+      "excluded_physical_phase_orbit": false,
+      "fixed_phase_controls": [
+        {
+          "phase": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        }
+      ],
+      "multiplication_table_controls": 4,
+      "z3_version": "5.3.3",
+      "timeout_ms": 180000,
+      "build_seconds": 0.5160946940013673,
+      "total_seconds": 0.5457589520010515,
+      "smt2_sha256": "fa9dd6d25d7dc338982c2acde90d85c9452614d65e7f1a0b27526f64ee5548b5",
+      "scope": "Finite-field solver query for the declared protected splits; unsat requires trusting this solver run, and is not an all-field proof.",
+      "source_sha256": {
+        "probe_joint_split_rank_flags.py": "f5391220d4d12e87ef32d771db1e348df998a048f7c70e437ee5fadc6d98acf7",
+        "joint_five_letter_splits.py": "e161098591d88096e9b6144c89833e8a3e6f67473e899e8e817443c1cf92b81f",
+        "joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+        "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+        "search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+        "search_joint_grid_compressions.py": "8fec5826772354113185a58e303e283513651bff654327f3fbf72705bc00db36",
+        "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+        "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+        "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+        "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+      }
+    },
+    {
+      "result": "unsat",
+      "field": 4,
+      "modulus": 7,
+      "field_variables": 86,
+      "protected_joint_heights_below": null,
+      "tensor_core_only": true,
+      "query": "zero-anchor",
+      "excluded_physical_phase_orbit": false,
+      "fixed_phase_controls": [
+        {
+          "phase": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            3,
+            3,
+            2
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        }
+      ],
+      "multiplication_table_controls": 16,
+      "z3_version": "5.3.3",
+      "timeout_ms": 180000,
+      "build_seconds": 1.3568302869971376,
+      "total_seconds": 1.4110680109952227,
+      "smt2_sha256": "4e831123744d022a6a500a80bc79f75e96314ff7dd098cb71cabe2f79e48de2c",
+      "scope": "Finite-field solver query for the declared protected splits; unsat requires trusting this solver run, and is not an all-field proof.",
+      "source_sha256": {
+        "probe_joint_split_rank_flags.py": "f5391220d4d12e87ef32d771db1e348df998a048f7c70e437ee5fadc6d98acf7",
+        "joint_five_letter_splits.py": "e161098591d88096e9b6144c89833e8a3e6f67473e899e8e817443c1cf92b81f",
+        "joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+        "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+        "search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+        "search_joint_grid_compressions.py": "8fec5826772354113185a58e303e283513651bff654327f3fbf72705bc00db36",
+        "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+        "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+        "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+        "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+      }
+    },
+    {
+      "result": "unsat",
+      "field": 4,
+      "modulus": 7,
+      "field_variables": 86,
+      "protected_joint_heights_below": null,
+      "tensor_core_only": true,
+      "query": "normalized",
+      "excluded_physical_phase_orbit": false,
+      "fixed_phase_controls": [
+        {
+          "phase": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            3,
+            3,
+            2
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        }
+      ],
+      "multiplication_table_controls": 16,
+      "z3_version": "5.3.3",
+      "timeout_ms": 180000,
+      "build_seconds": 1.6331044670005213,
+      "total_seconds": 2.7746475690000807,
+      "smt2_sha256": "8f43f57041c50e563f705e09b3700fedd645eb58837868367f3900648db106a3",
+      "scope": "Finite-field solver query for the declared protected splits; unsat requires trusting this solver run, and is not an all-field proof.",
+      "source_sha256": {
+        "probe_joint_split_rank_flags.py": "f5391220d4d12e87ef32d771db1e348df998a048f7c70e437ee5fadc6d98acf7",
+        "joint_five_letter_splits.py": "e161098591d88096e9b6144c89833e8a3e6f67473e899e8e817443c1cf92b81f",
+        "joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+        "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+        "search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+        "search_joint_grid_compressions.py": "8fec5826772354113185a58e303e283513651bff654327f3fbf72705bc00db36",
+        "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+        "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+        "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+        "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+      }
+    },
+    {
+      "result": "unsat",
+      "field": 8,
+      "modulus": 11,
+      "field_variables": 86,
+      "protected_joint_heights_below": null,
+      "tensor_core_only": true,
+      "query": "zero-anchor",
+      "excluded_physical_phase_orbit": false,
+      "fixed_phase_controls": [
+        {
+          "phase": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            7,
+            7,
+            2
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        }
+      ],
+      "multiplication_table_controls": 64,
+      "z3_version": "5.3.3",
+      "timeout_ms": 180000,
+      "build_seconds": 1.7997755559990765,
+      "total_seconds": 2.979664660997514,
+      "smt2_sha256": "a8a38b2de9b50c278e1d06b9b490ecc8b4bbfc4e4fd51940034210819db866bf",
+      "scope": "Finite-field solver query for the declared protected splits; unsat requires trusting this solver run, and is not an all-field proof.",
+      "source_sha256": {
+        "probe_joint_split_rank_flags.py": "f5391220d4d12e87ef32d771db1e348df998a048f7c70e437ee5fadc6d98acf7",
+        "joint_five_letter_splits.py": "e161098591d88096e9b6144c89833e8a3e6f67473e899e8e817443c1cf92b81f",
+        "joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+        "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+        "search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+        "search_joint_grid_compressions.py": "8fec5826772354113185a58e303e283513651bff654327f3fbf72705bc00db36",
+        "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+        "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+        "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+        "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+      }
+    },
+    {
+      "result": "unsat",
+      "field": 8,
+      "modulus": 11,
+      "field_variables": 86,
+      "protected_joint_heights_below": null,
+      "tensor_core_only": true,
+      "query": "normalized",
+      "excluded_physical_phase_orbit": false,
+      "fixed_phase_controls": [
+        {
+          "phase": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            7,
+            7,
+            2
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        }
+      ],
+      "multiplication_table_controls": 64,
+      "z3_version": "5.3.3",
+      "timeout_ms": 180000,
+      "build_seconds": 1.850724985000852,
+      "total_seconds": 44.084690536998096,
+      "smt2_sha256": "7f268b541fcd068faa84c8f463f95d29fd2716170352d092a3342cd536079c3c",
+      "scope": "Finite-field solver query for the declared protected splits; unsat requires trusting this solver run, and is not an all-field proof.",
+      "source_sha256": {
+        "probe_joint_split_rank_flags.py": "f5391220d4d12e87ef32d771db1e348df998a048f7c70e437ee5fadc6d98acf7",
+        "joint_five_letter_splits.py": "e161098591d88096e9b6144c89833e8a3e6f67473e899e8e817443c1cf92b81f",
+        "joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+        "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+        "search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+        "search_joint_grid_compressions.py": "8fec5826772354113185a58e303e283513651bff654327f3fbf72705bc00db36",
+        "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+        "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+        "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+        "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+      }
+    },
+    {
+      "result": "unsat",
+      "field": 16,
+      "modulus": 19,
+      "field_variables": 86,
+      "protected_joint_heights_below": null,
+      "tensor_core_only": true,
+      "query": "zero-anchor",
+      "excluded_physical_phase_orbit": false,
+      "fixed_phase_controls": [
+        {
+          "phase": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            15,
+            15,
+            2
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        }
+      ],
+      "multiplication_table_controls": 256,
+      "z3_version": "5.3.3",
+      "timeout_ms": 180000,
+      "build_seconds": 3.442449319998559,
+      "total_seconds": 15.928668907996325,
+      "smt2_sha256": "8b2ccef0ef0729d2f5b643bd09ee5be81acccb4182ad5210c1c5d74368e95d7a",
+      "scope": "Finite-field solver query for the declared protected splits; unsat requires trusting this solver run, and is not an all-field proof.",
+      "source_sha256": {
+        "probe_joint_split_rank_flags.py": "f5391220d4d12e87ef32d771db1e348df998a048f7c70e437ee5fadc6d98acf7",
+        "joint_five_letter_splits.py": "e161098591d88096e9b6144c89833e8a3e6f67473e899e8e817443c1cf92b81f",
+        "joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+        "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+        "search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+        "search_joint_grid_compressions.py": "8fec5826772354113185a58e303e283513651bff654327f3fbf72705bc00db36",
+        "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+        "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+        "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+        "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+      }
+    },
+    {
+      "result": "unknown",
+      "field": 16,
+      "modulus": 19,
+      "field_variables": 86,
+      "protected_joint_heights_below": null,
+      "tensor_core_only": true,
+      "query": "normalized",
+      "excluded_physical_phase_orbit": false,
+      "fixed_phase_controls": [
+        {
+          "phase": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        },
+        {
+          "phase": [
+            2,
+            15,
+            15,
+            2
+          ],
+          "feasible": "sat",
+          "phase_exclusion": "unsat"
+        }
+      ],
+      "multiplication_table_controls": 256,
+      "z3_version": "5.3.3",
+      "timeout_ms": 180000,
+      "build_seconds": 3.079743795002287,
+      "total_seconds": 183.08059697000135,
+      "smt2_sha256": "07e47a1ab0eb482999c241c23c660771763edd1086973702cf5f3474adb8186e",
+      "scope": "Finite-field solver query for the declared protected splits; unsat requires trusting this solver run, and is not an all-field proof.",
+      "reason_unknown": "timeout",
+      "source_sha256": {
+        "probe_joint_split_rank_flags.py": "f5391220d4d12e87ef32d771db1e348df998a048f7c70e437ee5fadc6d98acf7",
+        "joint_five_letter_splits.py": "e161098591d88096e9b6144c89833e8a3e6f67473e899e8e817443c1cf92b81f",
+        "joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+        "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+        "search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+        "search_joint_grid_compressions.py": "8fec5826772354113185a58e303e283513651bff654327f3fbf72705bc00db36",
+        "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+        "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+        "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+        "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac"
+      }
+    }
+  ],
+  "baseline_orders": [
+    0,
+    1,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    15,
+    16
+  ],
+  "baseline_with_optimistic_other_cut_certificate": {
+    "rho_floor": [
+      5,
+      7
+    ],
+    "monomial_order": 5,
+    "polynomial_degree": 905,
+    "Bernstein_degree": 905,
+    "minimum_integer_coefficient": 14,
+    "coefficient_sha256": "d3850402acc64292eed575097bcea8d69050e80f6de359f59e580ccd457f891c"
+  }
+}
