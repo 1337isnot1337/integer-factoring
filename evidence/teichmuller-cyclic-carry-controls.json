@@ -1,0 +1,260 @@
+{
+  "scope": "Polynomial Teichmuller sums and precision-linear residue-root indicators; inverse-factor compilation and integer word encoding remain open.",
+  "seed": 202611017,
+  "models": [
+    {
+      "degree": 1,
+      "precision": 1,
+      "polynomial": [
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        0
+      ]
+    },
+    {
+      "degree": 2,
+      "precision": 1,
+      "polynomial": [
+        1,
+        1,
+        1
+      ],
+      "frobenius_generator": [
+        1,
+        1
+      ]
+    },
+    {
+      "degree": 3,
+      "precision": 1,
+      "polynomial": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "precision": 1,
+      "polynomial": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        0,
+        0,
+        1,
+        0
+      ]
+    },
+    {
+      "degree": 1,
+      "precision": 2,
+      "polynomial": [
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        0
+      ]
+    },
+    {
+      "degree": 2,
+      "precision": 2,
+      "polynomial": [
+        1,
+        1,
+        1
+      ],
+      "frobenius_generator": [
+        3,
+        3
+      ]
+    },
+    {
+      "degree": 3,
+      "precision": 2,
+      "polynomial": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        2,
+        0,
+        1
+      ]
+    },
+    {
+      "degree": 4,
+      "precision": 2,
+      "polynomial": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        2,
+        2,
+        3,
+        0
+      ]
+    },
+    {
+      "degree": 1,
+      "precision": 3,
+      "polynomial": [
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        0
+      ]
+    },
+    {
+      "degree": 2,
+      "precision": 3,
+      "polynomial": [
+        1,
+        1,
+        1
+      ],
+      "frobenius_generator": [
+        7,
+        7
+      ]
+    },
+    {
+      "degree": 3,
+      "precision": 3,
+      "polynomial": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        6,
+        4,
+        5
+      ]
+    },
+    {
+      "degree": 4,
+      "precision": 3,
+      "polynomial": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        6,
+        6,
+        7,
+        0
+      ]
+    },
+    {
+      "degree": 1,
+      "precision": 4,
+      "polynomial": [
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        0
+      ]
+    },
+    {
+      "degree": 2,
+      "precision": 4,
+      "polynomial": [
+        1,
+        1,
+        1
+      ],
+      "frobenius_generator": [
+        15,
+        15
+      ]
+    },
+    {
+      "degree": 3,
+      "precision": 4,
+      "polynomial": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        14,
+        12,
+        13
+      ]
+    },
+    {
+      "degree": 4,
+      "precision": 4,
+      "polynomial": [
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "frobenius_generator": [
+        14,
+        14,
+        15,
+        8
+      ]
+    }
+  ],
+  "counts": {
+    "polynomial_queries": 384,
+    "direct_assignments": 7060,
+    "field_reductions": 96,
+    "ring_homomorphism_checks": 384,
+    "teichmuller_moments": 256,
+    "norm_queries": 6,
+    "parity_polynomials": 12,
+    "residue_root_queries": 13,
+    "system_root_queries": 8
+  },
+  "query_sha256": "cd05892149b7c9fe8170071fdbbb79bf91e15ff1bff3582e82f68b1632a5b416",
+  "boundary_controls": {
+    "full_constant": 4,
+    "punctured_constant": 3
+  },
+  "non_root_indicator_control": {
+    "precision": 6,
+    "constant": 3,
+    "true_roots": 0,
+    "naive_lifted_sum": 32,
+    "corrected_root_count": 0
+  },
+  "source_sha256": {
+    "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1",
+    "tools/check_teichmuller_cyclic_carries.py": "fd2dbc89319864dbf7de4b38bf38633bb4e8fe2ee0af1cef0515b3c1f07c648b",
+    "tools/joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8",
+    "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763"
+  },
+  "factoring_exponent": "1/2; unchanged"
+}

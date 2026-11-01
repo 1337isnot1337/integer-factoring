@@ -3088,6 +3088,12 @@ verify-elliptic-word-costs:
 
 verify-arithmetic: verify-elliptic-word-costs
 
+.PHONY: verify-teichmuller-carries
+verify-teichmuller-carries:
+	python3 tools/check_teichmuller_cyclic_carries.py
+
+verify-arithmetic: verify-teichmuller-carries
+
 .PHONY: verify-multiaxis-face-rank
 verify-multiaxis-face-rank:
 	python3 tools/check_multiaxis_face_rank_floor.py
