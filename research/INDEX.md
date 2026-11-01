@@ -1240,3 +1240,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Exact rectangular Bézout denominators](rectangular-bezout-denominator.md): unequal isometric prefixes, a two-variable proof, exact binary scale computation, and complete shifted polynomial supports of at most `p+defect` coefficients.
 
 - [Complete rectangular modular Bézout pairs](rectangular-bezout-modular.md): a polynomial-time compiler for both entire normalized polynomials on independently sized arithmetic domains, with exact tail bounds and all precision costs charged.
+
+- [Weighted Pascal flags](weighted-pascal-flag-crossings.md): arbitrary integer coordinate weights, independent zero and infinity energies, constant flag changes, and exact unrestricted-gauge Clifford profiles.

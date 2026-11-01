@@ -2221,3 +2221,7 @@ verify-rectangular-bezout-denominator:
 .PHONY: verify-rectangular-bezout-modular
 verify-rectangular-bezout-modular:
 	python3 tools/check_rectangular_bezout_modular.py --output /tmp/rectangular-bezout-modular.json
+
+.PHONY: verify-weighted-pascal-flags
+verify-weighted-pascal-flags:
+	python3 tools/check_weighted_pascal_flags.py --output /tmp/weighted-pascal-flags.json
