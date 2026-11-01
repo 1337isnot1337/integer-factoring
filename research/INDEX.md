@@ -1043,3 +1043,9 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 - [Prime-cofactor saturation with exact integer elimination](prime-cofactor-saturation.md)
 - [Cyclic-subgroup lower-tail moments force every shifted window to hit](cofactor-orbit-moment-criterion.md)
+
+## Regular resolvents and copied-register profile budgets
+
+- [A determinant budget for every regular nilpotent resolvent](regular-resolvent-determinant-budget.md)
+- [Complete binary four-label normalized rank-two search](binary-rank-two-channels.md)
+- [A sharper copied-wire obstruction from one truncated multiplication map](shift-register-toeplitz-budget.md)

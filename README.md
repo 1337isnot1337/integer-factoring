@@ -1639,3 +1639,16 @@ proof status, reproduction commands, and remaining gaps. The
 superseded work as well as incorporated results.
 
 The source factoring reduction and counting infrastructure are credited to Rudich and Rousseau. The Appendix B evaluator is credited to Anthropic. This repository's new integration and proof files used substantial OpenAI assistant support. The source-compatible license is [Apache-2.0](LICENSE).
+
+## Further exact profile restrictions
+
+The [regular-resolvent determinant budget](research/regular-resolvent-determinant-budget.md)
+excludes the bare Smith criterion at every alphabet size from 2 through 18,
+and also 21, over every field and at every leading rank. Endpoint-preserving
+fractional-linear moves remain in this family. Leading rank at most two is
+excluded at every size. A separate [complete binary four-label census](research/binary-rank-two-channels.md)
+checks 117,532,800 normalized rank-two parameters and proves at least eleven
+order-one pivots in every regular case. The [truncated multiplication argument](research/shift-register-toeplitz-budget.md)
+improves the copied-register bound from a division by `J^3` to `J`, reducing
+its complete even-register cutoff from 576 to 380. These results constrain
+the declared profile methods; they do not change the factoring score.

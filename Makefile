@@ -1950,3 +1950,11 @@ verify-bell-walsh:
 verify-isotonic-retiming:
 	python3 tools/check_isotonic_coefficient_retiming.py
 
+
+.PHONY: verify-resolvent-determinant-budget verify-register-toeplitz-budget verify-binary-rank-two-channels
+verify-resolvent-determinant-budget:
+	python3 tools/check_regular_resolvent_determinant_budget.py
+verify-register-toeplitz-budget:
+	python3 tools/check_shift_register_toeplitz_budget.py --output /tmp/integer-factoring-shift-register-toeplitz-budget.json
+verify-binary-rank-two-channels:
+	python3 tools/check_binary_rank_two_channels.py
