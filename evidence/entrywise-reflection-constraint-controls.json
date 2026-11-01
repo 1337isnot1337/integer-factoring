@@ -1,0 +1,452 @@
+{
+  "status": "passed",
+  "scope": "Complete exact local solution spaces and full endpoint, derivative, paired-trace and Hasse constraints; no pressure certificate.",
+  "exhaustive_local_systems": 36,
+  "brute_force_assignments": 12240,
+  "local_systems": [
+    {
+      "trial": 0,
+      "width": 2,
+      "equations": 1,
+      "solution_count": 4
+    },
+    {
+      "trial": 1,
+      "width": 3,
+      "equations": 2,
+      "solution_count": 4
+    },
+    {
+      "trial": 2,
+      "width": 4,
+      "equations": 3,
+      "solution_count": 4
+    },
+    {
+      "trial": 3,
+      "width": 5,
+      "equations": 4,
+      "solution_count": 4
+    },
+    {
+      "trial": 4,
+      "width": 2,
+      "equations": 5,
+      "solution_count": 0
+    },
+    {
+      "trial": 5,
+      "width": 3,
+      "equations": 6,
+      "solution_count": 0
+    },
+    {
+      "trial": 6,
+      "width": 4,
+      "equations": 7,
+      "solution_count": 0
+    },
+    {
+      "trial": 7,
+      "width": 5,
+      "equations": 1,
+      "solution_count": 256
+    },
+    {
+      "trial": 8,
+      "width": 2,
+      "equations": 2,
+      "solution_count": 0
+    },
+    {
+      "trial": 9,
+      "width": 3,
+      "equations": 3,
+      "solution_count": 1
+    },
+    {
+      "trial": 10,
+      "width": 4,
+      "equations": 4,
+      "solution_count": 1
+    },
+    {
+      "trial": 11,
+      "width": 5,
+      "equations": 5,
+      "solution_count": 0
+    },
+    {
+      "trial": 12,
+      "width": 2,
+      "equations": 6,
+      "solution_count": 0
+    },
+    {
+      "trial": 13,
+      "width": 3,
+      "equations": 7,
+      "solution_count": 0
+    },
+    {
+      "trial": 14,
+      "width": 4,
+      "equations": 1,
+      "solution_count": 64
+    },
+    {
+      "trial": 15,
+      "width": 5,
+      "equations": 2,
+      "solution_count": 64
+    },
+    {
+      "trial": 16,
+      "width": 2,
+      "equations": 3,
+      "solution_count": 0
+    },
+    {
+      "trial": 17,
+      "width": 3,
+      "equations": 4,
+      "solution_count": 0
+    },
+    {
+      "trial": 18,
+      "width": 4,
+      "equations": 5,
+      "solution_count": 0
+    },
+    {
+      "trial": 19,
+      "width": 5,
+      "equations": 6,
+      "solution_count": 1
+    },
+    {
+      "trial": 20,
+      "width": 2,
+      "equations": 7,
+      "solution_count": 0
+    },
+    {
+      "trial": 21,
+      "width": 3,
+      "equations": 1,
+      "solution_count": 16
+    },
+    {
+      "trial": 22,
+      "width": 4,
+      "equations": 2,
+      "solution_count": 16
+    },
+    {
+      "trial": 23,
+      "width": 5,
+      "equations": 3,
+      "solution_count": 16
+    },
+    {
+      "trial": 24,
+      "width": 2,
+      "equations": 4,
+      "solution_count": 0
+    },
+    {
+      "trial": 25,
+      "width": 3,
+      "equations": 5,
+      "solution_count": 0
+    },
+    {
+      "trial": 26,
+      "width": 4,
+      "equations": 6,
+      "solution_count": 0
+    },
+    {
+      "trial": 27,
+      "width": 5,
+      "equations": 7,
+      "solution_count": 0
+    },
+    {
+      "trial": 28,
+      "width": 2,
+      "equations": 1,
+      "solution_count": 4
+    },
+    {
+      "trial": 29,
+      "width": 3,
+      "equations": 2,
+      "solution_count": 4
+    },
+    {
+      "trial": 30,
+      "width": 4,
+      "equations": 3,
+      "solution_count": 4
+    },
+    {
+      "trial": 31,
+      "width": 5,
+      "equations": 4,
+      "solution_count": 4
+    },
+    {
+      "trial": 32,
+      "width": 2,
+      "equations": 5,
+      "solution_count": 0
+    },
+    {
+      "trial": 33,
+      "width": 3,
+      "equations": 6,
+      "solution_count": 0
+    },
+    {
+      "trial": 34,
+      "width": 4,
+      "equations": 7,
+      "solution_count": 0
+    },
+    {
+      "trial": 35,
+      "width": 5,
+      "equations": 1,
+      "solution_count": 256
+    }
+  ],
+  "full_tensor_cases": [
+    {
+      "cap": 24,
+      "zero_cutoff": 100,
+      "infinity_cutoff": 0,
+      "mode": "exact",
+      "rectangle_conditions": [],
+      "prescribed_orders": [],
+      "feasible": true,
+      "protected_equations": 6400,
+      "finite_equations": 0,
+      "local_free_parameters": 0,
+      "trace_coupled_parameters": 0,
+      "trace_constraint_rank": 0,
+      "affine_solution_dimension": 0,
+      "actual_degree": 24,
+      "seed_sha256": "c0a850cf9561d4e4ad5fe697507f746fcc091cf7f8caeb8355fab726cba4e494",
+      "endpoint_entries": 256,
+      "derivative_entries": 256,
+      "paired_trace_entries": 32,
+      "finite_ranks": [
+        [
+          16,
+          16
+        ],
+        [
+          16,
+          16
+        ]
+      ]
+    },
+    {
+      "cap": 16,
+      "zero_cutoff": 100,
+      "infinity_cutoff": 0,
+      "mode": "exact",
+      "rectangle_conditions": [],
+      "prescribed_orders": [],
+      "feasible": false,
+      "reason": "An entrywise polynomial system is inconsistent.",
+      "first_inconsistent_entry": 90,
+      "protected_equations": 2275,
+      "finite_equations": 0
+    },
+    {
+      "cap": 24,
+      "zero_cutoff": 8,
+      "infinity_cutoff": 16,
+      "mode": "exact",
+      "rectangle_conditions": [
+        [
+          2,
+          0,
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          2
+        ],
+        [
+          3,
+          1,
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          2
+        ]
+      ],
+      "prescribed_orders": [],
+      "feasible": true,
+      "protected_equations": 2496,
+      "finite_equations": 784,
+      "local_free_parameters": 2618,
+      "trace_coupled_parameters": 1156,
+      "trace_constraint_rank": 537,
+      "affine_solution_dimension": 2081,
+      "actual_degree": 16,
+      "seed_sha256": "eb29e3e05b8857c5e5c549dbd60b59acf08bbd875dbf18e8f673e3379ac3f32d",
+      "endpoint_entries": 256,
+      "derivative_entries": 256,
+      "paired_trace_entries": 32,
+      "finite_ranks": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "cap": 16,
+      "zero_cutoff": 0,
+      "infinity_cutoff": 0,
+      "mode": "exact",
+      "rectangle_conditions": [
+        [
+          2,
+          0,
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          8
+        ],
+        [
+          3,
+          1,
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            3
+          ],
+          8
+        ]
+      ],
+      "prescribed_orders": [],
+      "feasible": true,
+      "protected_equations": 0,
+      "finite_equations": 3136,
+      "local_free_parameters": 856,
+      "trace_coupled_parameters": 408,
+      "trace_constraint_rank": 292,
+      "affine_solution_dimension": 564,
+      "actual_degree": 16,
+      "seed_sha256": "45de7ee7420eb66a07271e516cc29f41aa046a4e6d056bcca36a91b323793475",
+      "endpoint_entries": 256,
+      "derivative_entries": 256,
+      "paired_trace_entries": 32,
+      "finite_ranks": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          4
+        ]
+      ]
+    },
+    {
+      "cap": 16,
+      "zero_cutoff": 0,
+      "infinity_cutoff": 0,
+      "mode": "exact",
+      "rectangle_conditions": [],
+      "prescribed_orders": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          6
+        ]
+      ],
+      "feasible": true,
+      "protected_equations": 0,
+      "finite_equations": 3072,
+      "local_free_parameters": 768,
+      "trace_coupled_parameters": 336,
+      "trace_constraint_rank": 93,
+      "affine_solution_dimension": 675,
+      "actual_degree": 16,
+      "seed_sha256": "a137ce9c8e40b6e8d0fd1807e3d3904cfdc33fea88946d5337e21374fcd37568",
+      "endpoint_entries": 256,
+      "derivative_entries": 256,
+      "paired_trace_entries": 32,
+      "finite_ranks": [
+        [
+          1,
+          16
+        ],
+        [
+          16,
+          1
+        ]
+      ]
+    },
+    {
+      "cap": 24,
+      "zero_cutoff": 8,
+      "infinity_cutoff": 16,
+      "mode": "zero-pattern",
+      "rectangle_conditions": [],
+      "prescribed_orders": [
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "feasible": false,
+      "reason": "An entrywise polynomial system is inconsistent.",
+      "first_inconsistent_entry": 0,
+      "protected_equations": 24,
+      "finite_equations": 2048
+    }
+  ],
+  "source_sha256": {
+    "check_entrywise_reflection_constraints.py": "f6a600eb00f2a2fc358631ed52bddc5aa2d1c48beac41c68715b4b464b9630f5",
+    "entrywise_reflection_constraints.py": "279580457967dae06c02f87dac199c935834f8c8b869fa9fb3c7037a75337e6b",
+    "search_entrywise_reflection_jets.py": "79ff0cd52ee9999153cba7c93043b909f0b0787ae77f73e7658e5f040bd73e59",
+    "solve_companion_affine_degree.py": "646d8333e47515d4aad46391f777f2d5d2978ece7b0992a04e45a4eb8424e156",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+    "screen_affine_finite_places.py": "041c5b4176d3c090f0c9ad0724ef71a99b57dc75256bfb2d203096898959d5d8"
+  }
+}

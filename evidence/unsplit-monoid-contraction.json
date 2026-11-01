@@ -1,0 +1,257 @@
+{
+  "MID_models": [
+    {
+      "A": 2,
+      "CP_terms": 64,
+      "M": 5,
+      "bundle_dimension": 25,
+      "input_setting_count": 625,
+      "k1": 0
+    },
+    {
+      "A": 2,
+      "CP_terms": 64,
+      "M": 5,
+      "bundle_dimension": 25,
+      "input_setting_count": 625,
+      "k1": 1
+    }
+  ],
+  "counts": {
+    "affine_subspace_evaluation_and_interpolation": 35,
+    "binary_basis_products": 3233,
+    "complete_MID_bundle_CP_coefficients": 31250,
+    "complete_fast_monoid_convolutions": 20,
+    "full_binary_change_of_basis_inversions": 33,
+    "fully_charged_subspace_products": 2380,
+    "genuinely_unsplit_models": 3,
+    "literal_scalar_CP_coefficients": 1224,
+    "unsplit_complete_Fourier_transforms": 40
+  },
+  "models": [
+    {
+      "binary_defining_polynomial": "0b111",
+      "block_shapes": [
+        [],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "field_degree": 2,
+      "modulus": 3,
+      "odd_characters_not_all_in_the_field": false,
+      "optimal_grid_bilinear_products": 4,
+      "power_of_two_grid_products": 5
+    },
+    {
+      "binary_defining_polynomial": "0b10011",
+      "block_shapes": [
+        [],
+        [
+          1,
+          4,
+          1
+        ]
+      ],
+      "field_degree": 4,
+      "modulus": 5,
+      "odd_characters_not_all_in_the_field": false,
+      "optimal_grid_bilinear_products": 8,
+      "power_of_two_grid_products": 9
+    },
+    {
+      "binary_defining_polynomial": "0b1011",
+      "block_shapes": [
+        [],
+        [
+          3,
+          2,
+          1
+        ]
+      ],
+      "field_degree": 3,
+      "modulus": 7,
+      "odd_characters_not_all_in_the_field": true,
+      "optimal_grid_bilinear_products": 16,
+      "power_of_two_grid_products": 33
+    },
+    {
+      "binary_defining_polynomial": "0b1000011",
+      "block_shapes": [
+        [],
+        [
+          1,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          1
+        ]
+      ],
+      "field_degree": 6,
+      "modulus": 9,
+      "odd_characters_not_all_in_the_field": false,
+      "optimal_grid_bilinear_products": 19,
+      "power_of_two_grid_products": 33
+    },
+    {
+      "binary_defining_polynomial": "0b10011",
+      "block_shapes": [
+        [],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          2,
+          1
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          4,
+          1
+        ]
+      ],
+      "field_degree": 4,
+      "modulus": 15,
+      "odd_characters_not_all_in_the_field": false,
+      "optimal_grid_bilinear_products": 32,
+      "power_of_two_grid_products": 45
+    },
+    {
+      "binary_defining_polynomial": "0b100000000101",
+      "block_shapes": [
+        [],
+        [
+          11,
+          2,
+          1
+        ]
+      ],
+      "field_degree": 11,
+      "modulus": 23,
+      "odd_characters_not_all_in_the_field": true,
+      "optimal_grid_bilinear_products": 64,
+      "power_of_two_grid_products": 129
+    },
+    {
+      "binary_defining_polynomial": "0b100000000000000001001",
+      "block_shapes": [
+        [],
+        [
+          1,
+          4,
+          2
+        ],
+        [
+          4,
+          4,
+          1
+        ]
+      ],
+      "field_degree": 20,
+      "modulus": 25,
+      "odd_characters_not_all_in_the_field": false,
+      "optimal_grid_bilinear_products": 71,
+      "power_of_two_grid_products": 97
+    },
+    {
+      "binary_defining_polynomial": "0b1000000000000001001",
+      "block_shapes": [
+        [],
+        [
+          1,
+          2,
+          3
+        ],
+        [
+          2,
+          2,
+          2
+        ],
+        [
+          6,
+          2,
+          1
+        ]
+      ],
+      "field_degree": 18,
+      "modulus": 27,
+      "odd_characters_not_all_in_the_field": false,
+      "optimal_grid_bilinear_products": 76,
+      "power_of_two_grid_products": 161
+    },
+    {
+      "binary_defining_polynomial": "0b10000000000000000000000000011",
+      "block_shapes": [
+        [],
+        [
+          7,
+          4,
+          1
+        ]
+      ],
+      "field_degree": 28,
+      "modulus": 29,
+      "odd_characters_not_all_in_the_field": true,
+      "optimal_grid_bilinear_products": 92,
+      "power_of_two_grid_products": 129
+    },
+    {
+      "binary_defining_polynomial": "0b1000000001001",
+      "block_shapes": [
+        [],
+        [
+          3,
+          4,
+          1
+        ],
+        [
+          1,
+          4,
+          1
+        ],
+        [
+          1,
+          4,
+          1,
+          3,
+          4,
+          1
+        ]
+      ],
+      "field_degree": 12,
+      "modulus": 65,
+      "odd_characters_not_all_in_the_field": false,
+      "optimal_grid_bilinear_products": 288,
+      "power_of_two_grid_products": 585
+    },
+    {
+      "binary_defining_polynomial": "0b10000000000101011",
+      "block_shapes": [
+        [],
+        [
+          1,
+          256,
+          1
+        ]
+      ],
+      "field_degree": 16,
+      "modulus": 257,
+      "odd_characters_not_all_in_the_field": false,
+      "optimal_grid_bilinear_products": 512,
+      "power_of_two_grid_products": 513
+    }
+  ],
+  "scope": "original-field monoid blocks, complete subspace multiplication, descended Fourier, and three-bundle MID decomposition; no stronger factoring exponent",
+  "status": "all exact checks passed"
+}

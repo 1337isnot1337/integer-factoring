@@ -1,0 +1,382 @@
+{
+  "scope": "Exact affine crossing and complete singular-place catalogue; no optimized pressure or factoring claim.",
+  "word": [
+    [
+      19,
+      3
+    ],
+    [
+      89,
+      2
+    ]
+  ],
+  "frame_metadata": [
+    {
+      "target": 0,
+      "source": 3,
+      "scalar": 2,
+      "pole": 4
+    },
+    {
+      "target": 3,
+      "source": 0,
+      "scalar": 3,
+      "pole": 8
+    }
+  ],
+  "tensor_sha256": "dd9490bc487c838a1f29363522a9f56ab06f83becdbc4124a85265198da2ef9c",
+  "degree": 24,
+  "common_factor": {
+    "0": 1
+  },
+  "determinants": [
+    {
+      "cut": 0,
+      "degree": 256,
+      "zero_order": 160,
+      "complete_zero_orders": [
+        0,
+        0,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        16,
+        16,
+        16,
+        16,
+        16,
+        16
+      ],
+      "complete_homogeneous_infinity_orders": [
+        0,
+        2,
+        2,
+        4,
+        6,
+        6,
+        8,
+        8,
+        8,
+        8,
+        10,
+        10,
+        12,
+        14,
+        14,
+        16
+      ],
+      "quadratic_factors": [
+        {
+          "representative": 6,
+          "polynomial": {
+            "0": 3,
+            "1": 1,
+            "2": 1
+          },
+          "multiplicity": 24
+        },
+        {
+          "representative": 9,
+          "polynomial": {
+            "0": 2,
+            "1": 2,
+            "2": 1
+          },
+          "multiplicity": 24
+        }
+      ],
+      "determinant": {
+        "160": 1,
+        "176": 1,
+        "192": 3,
+        "168": 2,
+        "184": 3,
+        "208": 1,
+        "224": 3,
+        "232": 3,
+        "240": 1,
+        "248": 2,
+        "256": 1
+      }
+    },
+    {
+      "cut": 1,
+      "degree": 96,
+      "zero_order": 0,
+      "complete_zero_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "complete_homogeneous_infinity_orders": [
+        0,
+        8,
+        10,
+        10,
+        14,
+        14,
+        18,
+        18,
+        20,
+        22,
+        22,
+        24,
+        24,
+        28,
+        28,
+        28
+      ],
+      "quadratic_factors": [
+        {
+          "representative": 4,
+          "polynomial": {
+            "0": 2,
+            "1": 1,
+            "2": 1
+          },
+          "multiplicity": 24
+        },
+        {
+          "representative": 12,
+          "polynomial": {
+            "0": 3,
+            "1": 3,
+            "2": 1
+          },
+          "multiplicity": 24
+        }
+      ],
+      "determinant": {
+        "0": 1,
+        "16": 1,
+        "32": 2,
+        "8": 3,
+        "24": 2,
+        "48": 1,
+        "64": 2,
+        "72": 2,
+        "80": 1,
+        "88": 3,
+        "96": 1
+      }
+    }
+  ],
+  "quadratic_place_profiles": [
+    {
+      "conjugates": [
+        4,
+        5
+      ],
+      "cut": 1,
+      "complete_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        8
+      ],
+      "toeplitz_ranks": [
+        [
+          1,
+          11
+        ],
+        [
+          4,
+          44
+        ],
+        [
+          5,
+          59
+        ],
+        [
+          8,
+          104
+        ],
+        [
+          9,
+          120
+        ]
+      ]
+    },
+    {
+      "conjugates": [
+        6,
+        7
+      ],
+      "cut": 0,
+      "complete_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        8
+      ],
+      "toeplitz_ranks": [
+        [
+          1,
+          11
+        ],
+        [
+          4,
+          44
+        ],
+        [
+          5,
+          59
+        ],
+        [
+          8,
+          104
+        ],
+        [
+          9,
+          120
+        ]
+      ]
+    },
+    {
+      "conjugates": [
+        9,
+        11
+      ],
+      "cut": 0,
+      "complete_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        8
+      ],
+      "toeplitz_ranks": [
+        [
+          1,
+          11
+        ],
+        [
+          4,
+          44
+        ],
+        [
+          5,
+          59
+        ],
+        [
+          8,
+          104
+        ],
+        [
+          9,
+          120
+        ]
+      ]
+    },
+    {
+      "conjugates": [
+        12,
+        15
+      ],
+      "cut": 1,
+      "complete_orders": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        4,
+        4,
+        4,
+        8
+      ],
+      "toeplitz_ranks": [
+        [
+          1,
+          11
+        ],
+        [
+          4,
+          44
+        ],
+        [
+          5,
+          59
+        ],
+        [
+          8,
+          104
+        ],
+        [
+          9,
+          120
+        ]
+      ]
+    }
+  ],
+  "independent_block_Toeplitz_ranks": 20,
+  "independent_source_place_ranks": 8,
+  "source_sha256": {
+    "check_affine_quadratic_witness.py": "8489068d50cd3defb708848ca819aca04b45d4ba7e869a599c32640bfd5e19cd",
+    "affine_place_profile_oracle.py": "4d65e6ac7adc6d6d2cb5935b5f89d5b39b4ce2c09150f1f90ac814561d5eff90",
+    "search_affine_coupled_reflection_frames.py": "bf4d360a7da1554e03858f1876d231fcb25f7e78f3abb5629e623d64d87481c6",
+    "f16_weighted_local_oracle.py": "f31a7f9a73a7d7002a2dc61db83695f665b7fc67bc488c6b6f23c2b8bc4d3322",
+    "check_fused_multipoint_profiles.py": "c163e3fa6bdc32efbb1a027aa78a1c1fbf405f0c3b15a0327ca3e0aed65b3ce6",
+    "fused_six_vertex_crossings.py": "90b016b84e57b2b6d1134c61016c2de5183edc2b2f2943ef9964d5d82dbaf109"
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "scope": "Literal larger fused endpoint and invariant-subspace checks only; no profile or score claim.",
+  "source_sha256": {
+    "fused_six_vertex_crossings.py": "90b016b84e57b2b6d1134c61016c2de5183edc2b2f2943ef9964d5d82dbaf109",
+    "f16_identity_operator_profiles.py": "3095c293971c4fff43f2a71052e49c526ded05aa9d087531124d246a05c67c8b",
+    "f4_lattice_linear.py": "fc27ccbcf4a82cb3c2643eac6a8a53fb7e08ced4700a30c0b5abca1a3f3aab8e"
+  },
+  "cases": [
+    {
+      "m": 6,
+      "theta": 4,
+      "alphabet": 7,
+      "valid": true,
+      "invariant": true,
+      "endpoint_identity": true,
+      "degree": 6,
+      "cancelled_common_degree": 30,
+      "endpoint_entries": 2401,
+      "tensor_sha256": "1608b6b1688c051b0c93b5eeef5a068d6c571a77acea514455348ca9451221ce",
+      "elapsed_seconds": 7.21126748100005
+    },
+    {
+      "m": 7,
+      "theta": 4,
+      "alphabet": 8,
+      "valid": true,
+      "invariant": true,
+      "endpoint_identity": true,
+      "degree": 7,
+      "cancelled_common_degree": 42,
+      "endpoint_entries": 4096,
+      "tensor_sha256": "c33859c7a9f902566fbbf7f44ae10c891abad7652b8d77431301d4f39a7b85bf",
+      "elapsed_seconds": 61.24484667300021
+    }
+  ]
+}

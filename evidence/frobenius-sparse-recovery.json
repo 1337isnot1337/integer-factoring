@@ -1,0 +1,436 @@
+{
+  "status": "all exact controls passed",
+  "claim": "Punctured sparse recovery and everywhere-unit weighted Frobenius boxes",
+  "score_improvement_claimed": false,
+  "summary": {
+    "anchor_collision_divisibilities": 20,
+    "bivariate_prefix_queries": 56,
+    "complete_prefix_factorizations": 12,
+    "coprime_character_and_weight_orders": 512,
+    "degree_dependent_coefficient_supports": 50,
+    "degree_dependent_grid_values": 106,
+    "deliberate_whole_field_cancellations": 1,
+    "dyadic_interval_unit_formulas": 1512,
+    "exact_width_and_modulus_roundings": 126,
+    "excluded_unit_weight_negative_controls": 3,
+    "explicit_mixed_character_inverses": 308,
+    "explicit_tensor_zero_divisors": 1,
+    "full_box_coboundaries": 308,
+    "nonbinary_sparse_polynomials": 230,
+    "position_independent_digit_weights": 88,
+    "prefix_field_evaluations": 152554,
+    "prime_degree_product_certificates": 56,
+    "punctured_grid_values": 8514,
+    "punctured_interpolation_equivalences": 457,
+    "roughness_and_capacity_parameters": 18,
+    "strict_sparsity_boundary_controls": 1,
+    "tensor_frobenius_actions": 24
+  },
+  "prime_degree_family_samples": [
+    {
+      "n": 1,
+      "K": 1,
+      "degrees": [
+        3
+      ],
+      "proved_cutoff": 256,
+      "product_bit_length": 3
+    },
+    {
+      "n": 1,
+      "K": 3,
+      "degrees": [
+        3
+      ],
+      "proved_cutoff": 384,
+      "product_bit_length": 3
+    },
+    {
+      "n": 1,
+      "K": 16,
+      "degrees": [
+        7,
+        11
+      ],
+      "proved_cutoff": 3072,
+      "product_bit_length": 18
+    },
+    {
+      "n": 8,
+      "K": 1,
+      "degrees": [
+        3
+      ],
+      "proved_cutoff": 256,
+      "product_bit_length": 3
+    },
+    {
+      "n": 8,
+      "K": 3,
+      "degrees": [
+        3,
+        5,
+        7,
+        11
+      ],
+      "proved_cutoff": 3072,
+      "product_bit_length": 26
+    },
+    {
+      "n": 8,
+      "K": 16,
+      "degrees": [
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31
+      ],
+      "proved_cutoff": 8192,
+      "product_bit_length": 150
+    },
+    {
+      "n": 64,
+      "K": 1,
+      "degrees": [
+        3
+      ],
+      "proved_cutoff": 256,
+      "product_bit_length": 3
+    },
+    {
+      "n": 64,
+      "K": 3,
+      "degrees": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31
+      ],
+      "proved_cutoff": 9216,
+      "product_bit_length": 158
+    },
+    {
+      "n": 64,
+      "K": 16,
+      "degrees": [
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97
+      ],
+      "proved_cutoff": 22528,
+      "product_bit_length": 1050
+    }
+  ],
+  "prefix_factorization_samples": [
+    {
+      "N": 2,
+      "recovered_primes": [
+        2
+      ]
+    },
+    {
+      "N": 3,
+      "recovered_primes": [
+        3
+      ]
+    },
+    {
+      "N": 4,
+      "recovered_primes": [
+        2,
+        2
+      ]
+    },
+    {
+      "N": 5,
+      "recovered_primes": [
+        5
+      ]
+    },
+    {
+      "N": 6,
+      "recovered_primes": [
+        2,
+        3
+      ]
+    },
+    {
+      "N": 7,
+      "recovered_primes": [
+        7
+      ]
+    },
+    {
+      "N": 9,
+      "recovered_primes": [
+        3,
+        3
+      ]
+    },
+    {
+      "N": 11,
+      "recovered_primes": [
+        11
+      ]
+    },
+    {
+      "N": 13,
+      "recovered_primes": [
+        13
+      ]
+    },
+    {
+      "N": 17,
+      "recovered_primes": [
+        17
+      ]
+    },
+    {
+      "N": 25,
+      "recovered_primes": [
+        5,
+        5
+      ]
+    },
+    {
+      "N": 49,
+      "recovered_primes": [
+        7,
+        7
+      ]
+    }
+  ],
+  "tensor_algebras": [
+    {
+      "m": 8,
+      "M": 257,
+      "field_degree": 16,
+      "irreducible_polynomial_binary": "0b10000000000101011",
+      "irreducible_candidates_tested": 22,
+      "prime_divisors_of_M": [
+        257
+      ],
+      "root_search_candidate": 2,
+      "primitive_root_binary": "0b10100001111000",
+      "weight_degree": 3,
+      "weight_polynomial_binary": "0b1011",
+      "digit_width": 3,
+      "tested_frequencies": [
+        0,
+        1,
+        2,
+        3,
+        14,
+        24,
+        85,
+        128,
+        190,
+        227,
+        232,
+        241,
+        255,
+        256
+      ],
+      "tested_nontrivial_weights": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "tensor_binary_dimension": 48,
+      "zero_divisor_witness": null
+    },
+    {
+      "m": 12,
+      "M": 4097,
+      "field_degree": 24,
+      "irreducible_polynomial_binary": "0b1000000000000000000011011",
+      "irreducible_candidates_tested": 14,
+      "prime_divisors_of_M": [
+        17,
+        241
+      ],
+      "root_search_candidate": 2,
+      "primitive_root_binary": "0b110100001000010000101101",
+      "weight_degree": 3,
+      "weight_polynomial_binary": "0b1011",
+      "digit_width": 3,
+      "tested_frequencies": [
+        0,
+        1,
+        2,
+        3,
+        1276,
+        1755,
+        2048,
+        2498,
+        3063,
+        3971,
+        4037,
+        4075,
+        4095,
+        4096
+      ],
+      "tested_nontrivial_weights": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "tensor_binary_dimension": 72,
+      "zero_divisor_witness": {
+        "linear_factor": [
+          279372,
+          1,
+          0
+        ],
+        "nonzero_annihilator": [
+          303585,
+          279372,
+          1
+        ]
+      }
+    },
+    {
+      "m": 12,
+      "M": 4097,
+      "field_degree": 24,
+      "irreducible_polynomial_binary": "0b1000000000000000000011011",
+      "irreducible_candidates_tested": 14,
+      "prime_divisors_of_M": [
+        17,
+        241
+      ],
+      "root_search_candidate": 2,
+      "primitive_root_binary": "0b110100001000010000101101",
+      "weight_degree": 5,
+      "weight_polynomial_binary": "0b100101",
+      "digit_width": 5,
+      "tested_frequencies": [
+        0,
+        1,
+        2,
+        3,
+        337,
+        438,
+        656,
+        658,
+        2048,
+        3099,
+        3609,
+        3636,
+        4095,
+        4096
+      ],
+      "tested_nontrivial_weights": [
+        2,
+        3,
+        31,
+        21,
+        11,
+        5,
+        16,
+        28,
+        14,
+        20
+      ],
+      "tensor_binary_dimension": 120,
+      "zero_divisor_witness": null
+    }
+  ],
+  "integer_parameter_samples": [
+    {
+      "log2_n": 128,
+      "pretest_width_bit_length": 128,
+      "K": 2,
+      "degree_cutoff_bit_length": 79,
+      "log2_P": 3,
+      "log2_D": 55,
+      "DL_bit_length": 134,
+      "capacity_check_DL_at_most_n_over_16": false
+    },
+    {
+      "log2_n": 256,
+      "pretest_width_bit_length": 255,
+      "K": 4,
+      "degree_cutoff_bit_length": 144,
+      "log2_P": 6,
+      "log2_D": 109,
+      "DL_bit_length": 253,
+      "capacity_check_DL_at_most_n_over_16": false
+    },
+    {
+      "log2_n": 512,
+      "pretest_width_bit_length": 510,
+      "K": 32,
+      "degree_cutoff_bit_length": 275,
+      "log2_P": 12,
+      "log2_D": 217,
+      "DL_bit_length": 492,
+      "capacity_check_DL_at_most_n_over_16": true
+    },
+    {
+      "log2_n": 1024,
+      "pretest_width_bit_length": 1021,
+      "K": 1024,
+      "degree_cutoff_bit_length": 534,
+      "log2_P": 25,
+      "log2_D": 451,
+      "DL_bit_length": 985,
+      "capacity_check_DL_at_most_n_over_16": true
+    },
+    {
+      "log2_n": 2048,
+      "pretest_width_bit_length": 2044,
+      "K": 1048576,
+      "degree_cutoff_bit_length": 1052,
+      "log2_P": 51,
+      "log2_D": 919,
+      "DL_bit_length": 1971,
+      "capacity_check_DL_at_most_n_over_16": true
+    },
+    {
+      "log2_n": 4096,
+      "pretest_width_bit_length": 4091,
+      "K": 1099511627776,
+      "degree_cutoff_bit_length": 2087,
+      "log2_P": 102,
+      "log2_D": 1837,
+      "DL_bit_length": 3924,
+      "capacity_check_DL_at_most_n_over_16": true
+    }
+  ]
+}

@@ -1,0 +1,1969 @@
+{
+  "schema_version": 1,
+  "status": "pass",
+  "claim": "Exact adaptive flags, original-tensor crossing controls, content accounting, and a uniform rational interval example; factoring score unchanged.",
+  "source_sha256": {
+    "check_adaptive_mixed_place.py": "8dc4e8c75b1619735e788dcf15d2f88d680a335972d3e2ab787738d77f2b94a3",
+    "adaptive_mixed_place.py": "5fd35064a2d79e72cf993cd4d251cd95d931295bc2108e9c37fd6400425f7e4f"
+  },
+  "count_controls": {
+    "word_cases": 40,
+    "enumerated_words": 3287,
+    "larger_convolution_cases": 16,
+    "cumulative_coefficients_checked": 1728
+  },
+  "greedy_optimality_controls": {
+    "flags": 168,
+    "prefixes": 756,
+    "initial_segment_allocations": 5886
+  },
+  "reconstruction_cases": [
+    {
+      "name": "binary affine",
+      "prime": 2,
+      "alphabet": 2,
+      "seed_degree_bound": 1,
+      "copies": 3,
+      "row_profiles": [
+        {
+          "point": null,
+          "orders": [
+            0,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "column_profiles": [
+        {
+          "point": 0,
+          "orders": [
+            0,
+            1,
+            1,
+            2
+          ]
+        }
+      ],
+      "row_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 1,
+          "prefix_cost": 1,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 14,
+          "prefix_cost": 15,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 66,
+          "prefix_cost": 64,
+          "point": null,
+          "vector": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 3,
+          "cost": 168,
+          "prefix_cost": 64,
+          "point": null,
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "column_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 1,
+          "prefix_cost": 1,
+          "point": 0,
+          "vector": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 14,
+          "prefix_cost": 15,
+          "point": 0,
+          "vector": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 66,
+          "prefix_cost": 64,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 3,
+          "cost": 168,
+          "prefix_cost": 64,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 1,
+          "ranks": [
+            1,
+            64
+          ],
+          "adaptive_prefix_bounds": [
+            1,
+            64
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 1,
+          "ranks": [
+            8,
+            28
+          ],
+          "adaptive_prefix_bounds": [
+            15,
+            64
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 1,
+          "ranks": [
+            28,
+            8
+          ],
+          "adaptive_prefix_bounds": [
+            64,
+            15
+          ]
+        },
+        {
+          "index": 3,
+          "weight": 1,
+          "ranks": [
+            64,
+            1
+          ],
+          "adaptive_prefix_bounds": [
+            64,
+            1
+          ]
+        }
+      ],
+      "complete_endpoint_entries": 4096,
+      "representation_entries": 1728,
+      "flag_dimension_checks": 25,
+      "exact_rank_checks": 8
+    },
+    {
+      "name": "ternary",
+      "prime": 3,
+      "alphabet": 3,
+      "seed_degree_bound": 2,
+      "copies": 1,
+      "row_profiles": [
+        {
+          "point": 2,
+          "orders": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "point": null,
+          "orders": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "column_profiles": [
+        {
+          "point": 0,
+          "orders": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            4,
+            4,
+            4
+          ]
+        }
+      ],
+      "row_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 3,
+          "prefix_cost": 3,
+          "point": 2,
+          "vector": [
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 0,
+          "cost": 3,
+          "prefix_cost": 6,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 12,
+          "prefix_cost": 9,
+          "point": 2,
+          "vector": [
+            0,
+            1,
+            1
+          ]
+        }
+      ],
+      "column_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 1,
+          "prefix_cost": 1,
+          "point": 0,
+          "vector": [
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 10,
+          "prefix_cost": 9,
+          "point": 0,
+          "vector": [
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 18,
+          "prefix_cost": 9,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 1,
+          "ranks": [
+            3,
+            9
+          ],
+          "adaptive_prefix_bounds": [
+            3,
+            9
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 1,
+          "ranks": [
+            6,
+            5
+          ],
+          "adaptive_prefix_bounds": [
+            6,
+            9
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 2,
+          "ranks": [
+            9,
+            1
+          ],
+          "adaptive_prefix_bounds": [
+            9,
+            1
+          ]
+        }
+      ],
+      "complete_endpoint_entries": 81,
+      "representation_entries": 126,
+      "flag_dimension_checks": 16,
+      "exact_rank_checks": 6
+    },
+    {
+      "name": "ternary tensor square",
+      "prime": 3,
+      "alphabet": 3,
+      "seed_degree_bound": 2,
+      "copies": 2,
+      "row_profiles": [
+        {
+          "point": 2,
+          "orders": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "point": null,
+          "orders": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "column_profiles": [
+        {
+          "point": 0,
+          "orders": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            4,
+            4,
+            4
+          ]
+        }
+      ],
+      "row_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 9,
+          "prefix_cost": 9,
+          "point": 2,
+          "vector": [
+            1,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 0,
+          "cost": 9,
+          "prefix_cost": 18,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 54,
+          "prefix_cost": 72,
+          "point": 2,
+          "vector": [
+            0,
+            1,
+            1,
+            0,
+            2
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 1,
+          "cost": 54,
+          "prefix_cost": 81,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 162,
+          "prefix_cost": 81,
+          "point": 2,
+          "vector": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "column_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 1,
+          "prefix_cost": 1,
+          "point": 0,
+          "vector": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 18,
+          "prefix_cost": 19,
+          "point": 0,
+          "vector": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 81,
+          "prefix_cost": 81,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 3,
+          "cost": 140,
+          "prefix_cost": 81,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 4,
+          "cost": 210,
+          "prefix_cost": 81,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 1,
+          "ranks": [
+            9,
+            81
+          ],
+          "adaptive_prefix_bounds": [
+            9,
+            81
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 1,
+          "ranks": [
+            18,
+            52
+          ],
+          "adaptive_prefix_bounds": [
+            18,
+            81
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 2,
+          "ranks": [
+            27,
+            32
+          ],
+          "adaptive_prefix_bounds": [
+            72,
+            81
+          ]
+        },
+        {
+          "index": 3,
+          "weight": 1,
+          "ranks": [
+            54,
+            9
+          ],
+          "adaptive_prefix_bounds": [
+            81,
+            19
+          ]
+        },
+        {
+          "index": 4,
+          "weight": 1,
+          "ranks": [
+            81,
+            1
+          ],
+          "adaptive_prefix_bounds": [
+            81,
+            1
+          ]
+        }
+      ],
+      "complete_endpoint_entries": 6561,
+      "representation_entries": 4410,
+      "flag_dimension_checks": 36,
+      "exact_rank_checks": 10
+    },
+    {
+      "name": "ternary scalar content",
+      "prime": 3,
+      "alphabet": 3,
+      "seed_degree_bound": 3,
+      "copies": 2,
+      "row_profiles": [
+        {
+          "point": 2,
+          "orders": [
+            1,
+            1,
+            1,
+            2,
+            2,
+            2,
+            3,
+            3,
+            3
+          ]
+        },
+        {
+          "point": null,
+          "orders": [
+            0,
+            0,
+            0,
+            1,
+            1,
+            1,
+            2,
+            2,
+            2
+          ]
+        }
+      ],
+      "column_profiles": [
+        {
+          "point": 0,
+          "orders": [
+            0,
+            1,
+            1,
+            1,
+            1,
+            2,
+            4,
+            4,
+            4
+          ]
+        }
+      ],
+      "row_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 0,
+          "prefix_cost": 0,
+          "point": 2,
+          "vector": [
+            1,
+            2,
+            1,
+            2,
+            1,
+            2,
+            1
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 0,
+          "prefix_cost": 0,
+          "point": 2,
+          "vector": [
+            0,
+            1,
+            1,
+            0,
+            2,
+            2,
+            0
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 0,
+          "cost": 9,
+          "prefix_cost": 9,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 27,
+          "prefix_cost": 36,
+          "point": 2,
+          "vector": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            2,
+            0
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 1,
+          "cost": 54,
+          "prefix_cost": 81,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 3,
+          "cost": 108,
+          "prefix_cost": 81,
+          "point": 2,
+          "vector": [
+            0,
+            0,
+            0,
+            1,
+            2,
+            1,
+            1
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 2,
+          "cost": 162,
+          "prefix_cost": 81,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "column_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 1,
+          "prefix_cost": 1,
+          "point": 0,
+          "vector": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 18,
+          "prefix_cost": 19,
+          "point": 0,
+          "vector": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 81,
+          "prefix_cost": 81,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 3,
+          "cost": 140,
+          "prefix_cost": 81,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 4,
+          "cost": 210,
+          "prefix_cost": 81,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 5,
+          "cost": 396,
+          "prefix_cost": 81,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 6,
+          "cost": 504,
+          "prefix_cost": 81,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "adaptive_prefix_bounds": [
+            0,
+            81
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "adaptive_prefix_bounds": [
+            0,
+            81
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 2,
+          "ranks": [
+            9,
+            81
+          ],
+          "adaptive_prefix_bounds": [
+            9,
+            81
+          ]
+        },
+        {
+          "index": 3,
+          "weight": 2,
+          "ranks": [
+            18,
+            52
+          ],
+          "adaptive_prefix_bounds": [
+            36,
+            81
+          ]
+        },
+        {
+          "index": 4,
+          "weight": 2,
+          "ranks": [
+            27,
+            32
+          ],
+          "adaptive_prefix_bounds": [
+            81,
+            81
+          ]
+        },
+        {
+          "index": 5,
+          "weight": 1,
+          "ranks": [
+            54,
+            9
+          ],
+          "adaptive_prefix_bounds": [
+            81,
+            19
+          ]
+        },
+        {
+          "index": 6,
+          "weight": 1,
+          "ranks": [
+            81,
+            1
+          ],
+          "adaptive_prefix_bounds": [
+            81,
+            1
+          ]
+        }
+      ],
+      "complete_endpoint_entries": 6561,
+      "representation_entries": 6174,
+      "flag_dimension_checks": 64,
+      "exact_rank_checks": 14
+    },
+    {
+      "name": "affine scalar content",
+      "prime": 5,
+      "alphabet": 2,
+      "seed_degree_bound": 2,
+      "copies": 2,
+      "row_profiles": [
+        {
+          "point": 0,
+          "orders": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "point": 2,
+          "orders": [
+            1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "column_profiles": [
+        {
+          "point": null,
+          "orders": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "point": 3,
+          "orders": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "row_flag": [
+        {
+          "place_index": 1,
+          "order": 0,
+          "cost": 0,
+          "prefix_cost": 0,
+          "point": 2,
+          "vector": [
+            1,
+            2,
+            4,
+            3,
+            1
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 1,
+          "cost": 0,
+          "prefix_cost": 0,
+          "point": 2,
+          "vector": [
+            0,
+            1,
+            4,
+            2,
+            2
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 16,
+          "prefix_cost": 16,
+          "point": 0,
+          "vector": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 32,
+          "prefix_cost": 16,
+          "point": 0,
+          "vector": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 48,
+          "prefix_cost": 16,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "column_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 16,
+          "prefix_cost": 16,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 0,
+          "cost": 16,
+          "prefix_cost": 16,
+          "point": 3,
+          "vector": [
+            1,
+            3,
+            4,
+            2,
+            1
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 32,
+          "prefix_cost": 16,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 1,
+          "cost": 32,
+          "prefix_cost": 16,
+          "point": 3,
+          "vector": [
+            0,
+            1,
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 48,
+          "prefix_cost": 16,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 4,
+          "ranks": [
+            0,
+            0
+          ],
+          "adaptive_prefix_bounds": [
+            0,
+            16
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "adaptive_prefix_bounds": [
+            0,
+            16
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 4,
+          "ranks": [
+            16,
+            1
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            16
+          ]
+        },
+        {
+          "index": 3,
+          "weight": 2,
+          "ranks": [
+            10,
+            7
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            16
+          ]
+        },
+        {
+          "index": 4,
+          "weight": 1,
+          "ranks": [
+            1,
+            16
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            16
+          ]
+        }
+      ],
+      "complete_endpoint_entries": 256,
+      "representation_entries": 360,
+      "flag_dimension_checks": 36,
+      "exact_rank_checks": 10
+    },
+    {
+      "name": "surplus degree at infinity",
+      "prime": 5,
+      "alphabet": 2,
+      "seed_degree_bound": 3,
+      "copies": 2,
+      "row_profiles": [
+        {
+          "point": 0,
+          "orders": [
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "point": 2,
+          "orders": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "column_profiles": [
+        {
+          "point": null,
+          "orders": [
+            2,
+            2,
+            2,
+            2
+          ]
+        },
+        {
+          "point": 3,
+          "orders": [
+            0,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "row_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 16,
+          "prefix_cost": 16,
+          "point": 0,
+          "vector": [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 0,
+          "cost": 16,
+          "prefix_cost": 16,
+          "point": 2,
+          "vector": [
+            1,
+            2,
+            4,
+            3,
+            1,
+            2,
+            4
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 32,
+          "prefix_cost": 16,
+          "point": 0,
+          "vector": [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 1,
+          "cost": 32,
+          "prefix_cost": 16,
+          "point": 2,
+          "vector": [
+            0,
+            1,
+            4,
+            2,
+            2,
+            0,
+            2
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 48,
+          "prefix_cost": 16,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 2,
+          "cost": 48,
+          "prefix_cost": 16,
+          "point": 2,
+          "vector": [
+            0,
+            0,
+            1,
+            1,
+            4,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 3,
+          "cost": 64,
+          "prefix_cost": 16,
+          "point": 0,
+          "vector": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "column_flag": [
+        {
+          "place_index": 0,
+          "order": 0,
+          "cost": 0,
+          "prefix_cost": 0,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 1,
+          "cost": 0,
+          "prefix_cost": 0,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 2,
+          "cost": 0,
+          "prefix_cost": 0,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 0,
+          "order": 3,
+          "cost": 0,
+          "prefix_cost": 0,
+          "point": null,
+          "vector": [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 0,
+          "cost": 16,
+          "prefix_cost": 16,
+          "point": 3,
+          "vector": [
+            1,
+            3,
+            4,
+            2,
+            1,
+            3,
+            4
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 1,
+          "cost": 32,
+          "prefix_cost": 16,
+          "point": 3,
+          "vector": [
+            0,
+            1,
+            1,
+            2,
+            3,
+            0,
+            3
+          ]
+        },
+        {
+          "place_index": 1,
+          "order": 2,
+          "cost": 48,
+          "prefix_cost": 16,
+          "point": 3,
+          "vector": [
+            0,
+            0,
+            1,
+            4,
+            4,
+            0,
+            0
+          ]
+        }
+      ],
+      "pieces": [
+        {
+          "index": 0,
+          "weight": 1,
+          "ranks": [
+            16,
+            1
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            16
+          ]
+        },
+        {
+          "index": 1,
+          "weight": 2,
+          "ranks": [
+            15,
+            10
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            16
+          ]
+        },
+        {
+          "index": 2,
+          "weight": 3,
+          "ranks": [
+            9,
+            16
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            16
+          ]
+        },
+        {
+          "index": 3,
+          "weight": 4,
+          "ranks": [
+            0,
+            0
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            0
+          ]
+        },
+        {
+          "index": 4,
+          "weight": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            0
+          ]
+        },
+        {
+          "index": 5,
+          "weight": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            0
+          ]
+        },
+        {
+          "index": 6,
+          "weight": 4,
+          "ranks": [
+            0,
+            0
+          ],
+          "adaptive_prefix_bounds": [
+            16,
+            0
+          ]
+        }
+      ],
+      "complete_endpoint_entries": 256,
+      "representation_entries": 504,
+      "flag_dimension_checks": 64,
+      "exact_rank_checks": 14
+    }
+  ],
+  "scalar_content_controls": [
+    {
+      "copies": 1,
+      "local_content_orders": [
+        1,
+        0
+      ],
+      "added_zero_jets": 1,
+      "prefix_comparisons": 3,
+      "cost_factor_bound": 2
+    },
+    {
+      "copies": 2,
+      "local_content_orders": [
+        1,
+        0
+      ],
+      "added_zero_jets": 2,
+      "prefix_comparisons": 5,
+      "cost_factor_bound": 3
+    },
+    {
+      "copies": 5,
+      "local_content_orders": [
+        1,
+        0
+      ],
+      "added_zero_jets": 5,
+      "prefix_comparisons": 11,
+      "cost_factor_bound": 6
+    },
+    {
+      "copies": 13,
+      "local_content_orders": [
+        1,
+        0
+      ],
+      "added_zero_jets": 13,
+      "prefix_comparisons": 27,
+      "cost_factor_bound": 14
+    },
+    {
+      "copies": 1,
+      "local_content_orders": [
+        0,
+        2
+      ],
+      "added_zero_jets": 2,
+      "prefix_comparisons": 3,
+      "cost_factor_bound": 3
+    },
+    {
+      "copies": 2,
+      "local_content_orders": [
+        0,
+        2
+      ],
+      "added_zero_jets": 4,
+      "prefix_comparisons": 5,
+      "cost_factor_bound": 5
+    },
+    {
+      "copies": 5,
+      "local_content_orders": [
+        0,
+        2
+      ],
+      "added_zero_jets": 10,
+      "prefix_comparisons": 11,
+      "cost_factor_bound": 11
+    },
+    {
+      "copies": 13,
+      "local_content_orders": [
+        0,
+        2
+      ],
+      "added_zero_jets": 26,
+      "prefix_comparisons": 27,
+      "cost_factor_bound": 27
+    },
+    {
+      "copies": 1,
+      "local_content_orders": [
+        1,
+        2
+      ],
+      "added_zero_jets": 3,
+      "prefix_comparisons": 3,
+      "cost_factor_bound": 3
+    },
+    {
+      "copies": 2,
+      "local_content_orders": [
+        1,
+        2
+      ],
+      "added_zero_jets": 6,
+      "prefix_comparisons": 5,
+      "cost_factor_bound": 5
+    },
+    {
+      "copies": 5,
+      "local_content_orders": [
+        1,
+        2
+      ],
+      "added_zero_jets": 15,
+      "prefix_comparisons": 11,
+      "cost_factor_bound": 11
+    },
+    {
+      "copies": 13,
+      "local_content_orders": [
+        1,
+        2
+      ],
+      "added_zero_jets": 39,
+      "prefix_comparisons": 27,
+      "cost_factor_bound": 27
+    }
+  ],
+  "rational_interval_control": {
+    "certificate": {
+      "alphabet": 3,
+      "degree": 2,
+      "rho": "99/100",
+      "row_profiles": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2
+        ]
+      ],
+      "column_profiles": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          2,
+          4,
+          4,
+          4
+        ]
+      ],
+      "intervals": [
+        {
+          "left": "0",
+          "right": "1/2",
+          "row": [
+            [
+              0,
+              "1/2",
+              "2"
+            ]
+          ],
+          "column": [
+            [
+              0,
+              "2",
+              "1"
+            ]
+          ]
+        },
+        {
+          "left": "1/2",
+          "right": "1",
+          "row": [
+            [
+              1,
+              "1",
+              "1"
+            ]
+          ],
+          "column": [
+            [
+              0,
+              "3/2",
+              "5/4"
+            ]
+          ]
+        },
+        {
+          "left": "1",
+          "right": "3/2",
+          "row": [
+            [
+              0,
+              "3/4",
+              "4/3"
+            ],
+            [
+              1,
+              "3/4",
+              "4/3"
+            ]
+          ],
+          "column": [
+            [
+              0,
+              "1",
+              "3/2"
+            ]
+          ]
+        },
+        {
+          "left": "3/2",
+          "right": "2",
+          "row": [
+            [
+              0,
+              "1",
+              "1"
+            ],
+            [
+              1,
+              "1",
+              "1"
+            ]
+          ],
+          "column": [
+            [
+              0,
+              "1/2",
+              "2"
+            ]
+          ]
+        }
+      ]
+    },
+    "exact_local_pair_comparisons": 6,
+    "powered_inequalities": [
+      [
+        {
+          "row_place": 0,
+          "column_place": 0,
+          "common_power": 50,
+          "left_numerator": "665411356517751042157731877977525068572636220950927790162076830849050895635468267844079910727308965252398846813001",
+          "right_after_clearing_denominator": "1114956976398881602908043820897753694132319077240351993018888780608642011124056455264964061825662883860119908046077952"
+        }
+      ],
+      [
+        {
+          "row_place": 1,
+          "column_place": 0,
+          "common_power": 50,
+          "left_numerator": "45842427530145364056402075925882717371669822518509441658150366333290606760231078395873347580495912406763514033390383430605155732743215522240296171396381463045216009362260251310382469105752129107631829201527493014825454067899249",
+          "right_after_clearing_denominator": "99028072533158848758820253701329656171409883324261613159479436473077563640648475674851530732359961804800000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+        }
+      ],
+      [
+        {
+          "row_place": 0,
+          "column_place": 0,
+          "common_power": 100,
+          "left_numerator": "15868815188800207933830707928135549313845368898056179612462009404683690838759388315762197243286637598770897522722845770516180157816131349373461266873939871564309198731138410621223723921600309521426774881749210112738713361193453549572337358925348297627181230589797465995540139718336072495700710702095687349511434252237006890851946688688293300670028954601398452745030001",
+          "right_after_clearing_denominator": "626231526088674082854099194006615333655328041907603526848221733322510630837881179658079580602768218019853678193571427827722246097966746510006610869188817457110804242831858615842847663021777373646601776576716532345230567782674906687322410359894465629958501499579196261961337259486722185726334673689103909767541327350655102286827155839229091375883678292495275157917768393401827328"
+        },
+        {
+          "row_place": 1,
+          "column_place": 0,
+          "common_power": 100,
+          "left_numerator": "15868815188800207933830707928135549313845368898056179612462009404683690838759388315762197243286637598770897522722845770516180157816131349373461266873939871564309198731138410621223723921600309521426774881749210112738713361193453549572337358925348297627181230589797465995540139718336072495700710702095687349511434252237006890851946688688293300670028954601398452745030001",
+          "right_after_clearing_denominator": "626231526088674082854099194006615333655328041907603526848221733322510630837881179658079580602768218019853678193571427827722246097966746510006610869188817457110804242831858615842847663021777373646601776576716532345230567782674906687322410359894465629958501499579196261961337259486722185726334673689103909767541327350655102286827155839229091375883678292495275157917768393401827328"
+        }
+      ],
+      [
+        {
+          "row_place": 0,
+          "column_place": 0,
+          "common_power": 50,
+          "left_numerator": "537353332619205171070504405872508200531988289836408679253887163669204898614117215232391747506945467538486127523356117308139801025390625",
+          "right_after_clearing_denominator": "1413375880360694066673434083722610382050238534326319659734696411209347941973539653814740112558858584353701324816134670810416225726464043863561469952"
+        },
+        {
+          "row_place": 1,
+          "column_place": 0,
+          "common_power": 50,
+          "left_numerator": "537353332619205171070504405872508200531988289836408679253887163669204898614117215232391747506945467538486127523356117308139801025390625",
+          "right_after_clearing_denominator": "1413375880360694066673434083722610382050238534326319659734696411209347941973539653814740112558858584353701324816134670810416225726464043863561469952"
+        }
+      ]
+    ],
+    "nonnested_allocation_accepted": true,
+    "underfunded_complementary_budget_rejected": true
+  },
+  "totals": {
+    "complete_endpoint_entries": 17811,
+    "representation_entries": 13302,
+    "flag_dimension_checks": 241,
+    "exact_rank_checks": 62
+  },
+  "exported_certificate_audit": {
+    "status": "pass",
+    "certificate_sha256": "0254a2aa4479ec1920a3a0fd4de10a5e8ae821cc72d7e5ed9b31b9e88960207d",
+    "source_profiles_sha256": "e47ebb7b14e5caca20bfacd68185d76a37beefa9588aa89d2fe3bf22ad3a1ef8",
+    "seed": {
+      "m": 3,
+      "theta": 4,
+      "alphabet": 4,
+      "degree": 3
+    },
+    "rho": "31/32",
+    "intervals": 256,
+    "powered_local_bounds": 2832,
+    "implied_local_pair_comparisons": 6616,
+    "largest_integer_bits": 368904,
+    "comparison_allocations_are_nonnested": true,
+    "scope": "Exact interval and source-binding audit; the source checker establishes the local profiles."
+  }
+}

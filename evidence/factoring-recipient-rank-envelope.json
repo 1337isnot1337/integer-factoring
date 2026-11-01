@@ -1,0 +1,1275 @@
+{
+  "theorem": "primitive-recipient rank envelope",
+  "scope": "local original fan-out and declared independent layer interfaces; no new factoring exponent",
+  "images": [
+    {
+      "h": 2,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [],
+      "image_size": 1,
+      "maximum_fiber": 4,
+      "cardinality_cap": "1",
+      "integer_envelope_factor": 9,
+      "integer_separation_lower_bound": "1"
+    },
+    {
+      "h": 2,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1
+      ],
+      "image_size": 4,
+      "maximum_fiber": 1,
+      "cardinality_cap": "4",
+      "integer_envelope_factor": 9,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 2,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        3
+      ],
+      "image_size": 4,
+      "maximum_fiber": 1,
+      "cardinality_cap": "4",
+      "integer_envelope_factor": 9,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 2,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3
+      ],
+      "image_size": 4,
+      "maximum_fiber": 1,
+      "cardinality_cap": "4",
+      "integer_envelope_factor": 9,
+      "integer_separation_lower_bound": "17"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [],
+      "image_size": 1,
+      "maximum_fiber": 16,
+      "cardinality_cap": "1",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "1"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "2"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        3
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "2"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        5
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "2"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        7
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "2"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        5
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        7
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        3,
+        5
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        3,
+        7
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        5,
+        7
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3,
+        5
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "8"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3,
+        7
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "8"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        5,
+        7
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "8"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        3,
+        5,
+        7
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "8"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "image_size": 16,
+      "maximum_fiber": 1,
+      "cardinality_cap": "16",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "17"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [],
+      "image_size": 1,
+      "maximum_fiber": 256,
+      "cardinality_cap": "1",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "1"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        3
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        5
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        7
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "16"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        5
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "16"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        7
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "16"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        3,
+        5
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "16"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        3,
+        7
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "16"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        5,
+        7
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "16"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3,
+        5
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "64"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3,
+        7
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "64"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        5,
+        7
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "64"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        3,
+        5,
+        7
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "64"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "image_size": 256,
+      "maximum_fiber": 1,
+      "cardinality_cap": "256",
+      "integer_envelope_factor": 81,
+      "integer_separation_lower_bound": "257"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [],
+      "image_size": 1,
+      "maximum_fiber": 65536,
+      "cardinality_cap": "1",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "1"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1
+      ],
+      "image_size": 257,
+      "maximum_fiber": 256,
+      "cardinality_cap": "257",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "2"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        3
+      ],
+      "image_size": 257,
+      "maximum_fiber": 256,
+      "cardinality_cap": "257",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "2"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3
+      ],
+      "image_size": 55104,
+      "maximum_fiber": 3,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        7
+      ],
+      "image_size": 35840,
+      "maximum_fiber": 6,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        9
+      ],
+      "image_size": 65536,
+      "maximum_fiber": 1,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "4"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3,
+        7
+      ],
+      "image_size": 65536,
+      "maximum_fiber": 1,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "8"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "image_size": 65536,
+      "maximum_fiber": 1,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "16"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        5,
+        9,
+        13
+      ],
+      "image_size": 65536,
+      "maximum_fiber": 1,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "16"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "source_parameters": false,
+      "recipients": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "image_size": 65536,
+      "maximum_fiber": 1,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 65536,
+      "integer_separation_lower_bound": "257"
+    },
+    {
+      "h": 2,
+      "digit_bits": 8,
+      "source_parameters": true,
+      "recipients": [],
+      "image_size": 1,
+      "maximum_fiber": 65536,
+      "cardinality_cap": "1",
+      "integer_envelope_factor": 9,
+      "integer_separation_lower_bound": "1"
+    },
+    {
+      "h": 2,
+      "digit_bits": 8,
+      "source_parameters": true,
+      "recipients": [
+        1
+      ],
+      "image_size": 65536,
+      "maximum_fiber": 1,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 9,
+      "integer_separation_lower_bound": "65536"
+    },
+    {
+      "h": 2,
+      "digit_bits": 8,
+      "source_parameters": true,
+      "recipients": [
+        3
+      ],
+      "image_size": 65536,
+      "maximum_fiber": 1,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 9,
+      "integer_separation_lower_bound": "65536"
+    },
+    {
+      "h": 2,
+      "digit_bits": 8,
+      "source_parameters": true,
+      "recipients": [
+        1,
+        3
+      ],
+      "image_size": 65536,
+      "maximum_fiber": 1,
+      "cardinality_cap": "65536",
+      "integer_envelope_factor": 9,
+      "integer_separation_lower_bound": "4294967297"
+    }
+  ],
+  "orbit_controls": [
+    {
+      "h": 2,
+      "digit_bits": 1,
+      "recipients": [
+        1
+      ],
+      "kernel_index": "17",
+      "vectors_checked": 3,
+      "largest_orbit_sublattice_index": "17"
+    },
+    {
+      "h": 2,
+      "digit_bits": 1,
+      "recipients": [
+        3
+      ],
+      "kernel_index": "17",
+      "vectors_checked": 3,
+      "largest_orbit_sublattice_index": "17"
+    },
+    {
+      "h": 2,
+      "digit_bits": 1,
+      "recipients": [
+        1,
+        3
+      ],
+      "kernel_index": "289",
+      "vectors_checked": 3,
+      "largest_orbit_sublattice_index": "5"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        1
+      ],
+      "kernel_index": "17",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "4913"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        3
+      ],
+      "kernel_index": "17",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "345764"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        5
+      ],
+      "kernel_index": "17",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "10769"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        7
+      ],
+      "kernel_index": "17",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "4913"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        1,
+        3
+      ],
+      "kernel_index": "289",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "7753"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        1,
+        5
+      ],
+      "kernel_index": "289",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "222049"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        1,
+        7
+      ],
+      "kernel_index": "289",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "152497"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        3,
+        5
+      ],
+      "kernel_index": "289",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "62962"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        3,
+        7
+      ],
+      "kernel_index": "289",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "23716"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        5,
+        7
+      ],
+      "kernel_index": "289",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "1636"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        1,
+        3,
+        5
+      ],
+      "kernel_index": "4913",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "16388"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        1,
+        3,
+        7
+      ],
+      "kernel_index": "4913",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "1028"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        1,
+        5,
+        7
+      ],
+      "kernel_index": "4913",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "10116"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        3,
+        5,
+        7
+      ],
+      "kernel_index": "4913",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "3204"
+    },
+    {
+      "h": 4,
+      "digit_bits": 1,
+      "recipients": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "kernel_index": "83521",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "388"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        1
+      ],
+      "kernel_index": "257",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "30702521"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        3
+      ],
+      "kernel_index": "257",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "5553485636"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        5
+      ],
+      "kernel_index": "257",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "1022731169"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        7
+      ],
+      "kernel_index": "257",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "16974593"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        3
+      ],
+      "kernel_index": "66049",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "83794"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        5
+      ],
+      "kernel_index": "66049",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "86170081"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        7
+      ],
+      "kernel_index": "66049",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "52937473"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        3,
+        5
+      ],
+      "kernel_index": "66049",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "12174082"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        3,
+        7
+      ],
+      "kernel_index": "66049",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "1815556"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        5,
+        7
+      ],
+      "kernel_index": "66049",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "5044612"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        3,
+        5
+      ],
+      "kernel_index": "16974593",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "300676"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        3,
+        7
+      ],
+      "kernel_index": "16974593",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "3076"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        5,
+        7
+      ],
+      "kernel_index": "16974593",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "223108"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        3,
+        5,
+        7
+      ],
+      "kernel_index": "16974593",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "25348"
+    },
+    {
+      "h": 4,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "kernel_index": "4362470401",
+      "vectors_checked": 5,
+      "largest_orbit_sublattice_index": "388"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "recipients": [
+        1
+      ],
+      "kernel_index": "257",
+      "vectors_checked": 9,
+      "largest_orbit_sublattice_index": "389019731154593153"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "recipients": [
+        3
+      ],
+      "kernel_index": "257",
+      "vectors_checked": 9,
+      "largest_orbit_sublattice_index": "1965072043736854592"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        3
+      ],
+      "kernel_index": "66049",
+      "vectors_checked": 9,
+      "largest_orbit_sublattice_index": "94014184983875478592"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        7
+      ],
+      "kernel_index": "66049",
+      "vectors_checked": 9,
+      "largest_orbit_sublattice_index": "427242249638787281"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        9
+      ],
+      "kernel_index": "66049",
+      "vectors_checked": 9,
+      "largest_orbit_sublattice_index": "3019543255874279665723169"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        3,
+        7
+      ],
+      "kernel_index": "16974593",
+      "vectors_checked": 9,
+      "largest_orbit_sublattice_index": "732381743442005249"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "kernel_index": "4362470401",
+      "vectors_checked": 9,
+      "largest_orbit_sublattice_index": "126348556455536513"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        5,
+        9,
+        13
+      ],
+      "kernel_index": "4362470401",
+      "vectors_checked": 9,
+      "largest_orbit_sublattice_index": "2032641681012749188"
+    },
+    {
+      "h": 8,
+      "digit_bits": 2,
+      "recipients": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "kernel_index": "19031147999601100801",
+      "vectors_checked": 9,
+      "largest_orbit_sublattice_index": "29194304"
+    }
+  ],
+  "source_threshold_collision": {
+    "h": 8,
+    "digit_bits": 128,
+    "source_parameters": true,
+    "recipients": [
+      1,
+      7
+    ],
+    "first_input": [
+      "0",
+      "0",
+      "18446744073709551616",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "second_input": [
+      "18446744073709551616",
+      "340282366920938463463374607431768211455",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "common_messages": [
+      "6277101735386680763835789423207666416102355444464034512896",
+      "13407807929942597098847186273910239236930042012704388843369920083034445969792056777621235010053505504363840807472722485292991361205680392012899047377469441"
+    ],
+    "kernel_vector": [
+      "-18446744073709551616",
+      "-340282366920938463463374607431768211455",
+      "18446744073709551616",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "orbit_determinant_equals_kernel_index": true,
+    "norm_squared": "115792089237316195423570985008687907853269984665640564039457584007913129639937"
+  },
+  "grouping_controls": [
+    {
+      "h": 2,
+      "groups": 2,
+      "least_integer_slack": 0
+    },
+    {
+      "h": 2,
+      "groups": 3,
+      "least_integer_slack": 0
+    },
+    {
+      "h": 2,
+      "groups": 4,
+      "least_integer_slack": 0
+    },
+    {
+      "h": 4,
+      "groups": 2,
+      "least_integer_slack": 0
+    },
+    {
+      "h": 4,
+      "groups": 3,
+      "least_integer_slack": 0
+    },
+    {
+      "h": 4,
+      "groups": 4,
+      "least_integer_slack": 0
+    },
+    {
+      "h": 8,
+      "groups": 2,
+      "least_integer_slack": 0
+    },
+    {
+      "h": 8,
+      "groups": 3,
+      "least_integer_slack": 0
+    },
+    {
+      "h": 8,
+      "groups": 4,
+      "least_integer_slack": 0
+    }
+  ],
+  "summary": {
+    "actual_source_boundary_collisions": 1,
+    "enumerated_input_projections": 921872,
+    "exhaustive_images": 50,
+    "group_count_assignments": 173873,
+    "orbit_determinants": 241,
+    "source_error_budget_controls": 2036
+  }
+}

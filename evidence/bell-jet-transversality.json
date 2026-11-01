@@ -1,0 +1,108 @@
+{
+  "complete_hasse_entries": 13824,
+  "jet_controls": [
+    {
+      "case": "four-letter identity",
+      "degree": 16,
+      "eighth_schur_ranks": [
+        6,
+        6
+      ]
+    },
+    {
+      "case": "four-letter alternating",
+      "degree": 16,
+      "eighth_schur_ranks": [
+        4,
+        4
+      ]
+    },
+    {
+      "case": "four-letter nonsymmetric",
+      "degree": 16,
+      "eighth_schur_ranks": [
+        6,
+        6
+      ]
+    }
+  ],
+  "scalar_controls": [
+    {
+      "normalized_seventh_coefficients": {
+        "column": 3,
+        "endpoint": 1,
+        "kernel": 1,
+        "row": 2
+      },
+      "point": 2
+    },
+    {
+      "normalized_seventh_coefficients": {
+        "column": 3,
+        "endpoint": 1,
+        "kernel": 1,
+        "row": 2
+      },
+      "point": 3
+    }
+  ],
+  "scope": "exact tangent intersections and normalized seventh jets; complete eighth-order controls at three relative Bell forms",
+  "source_sha256": {
+    "bell_jet_crt_crossings.py": "837b5bd9c5e2fe41cf3b242b42019ea97ff90405d9c9401aeb54f618d08a9b16",
+    "check_bell_jet_transversality.py": "e0e35059e004559b6d3ed266eaa8f4f799551c67e8efcd894e4548fefeb59de7",
+    "entrywise_reflection_constraints.py": "279580457967dae06c02f87dac199c935834f8c8b869fa9fb3c7037a75337e6b",
+    "search_entrywise_reflection_jets.py": "79ff0cd52ee9999153cba7c93043b909f0b0787ae77f73e7658e5f040bd73e59"
+  },
+  "status": "passed",
+  "tangent_cases": [
+    {
+      "alphabet": 2,
+      "case": "two-letter boundary",
+      "equations": 18,
+      "intersection_dimension": 3,
+      "rank": 13
+    },
+    {
+      "alphabet": 3,
+      "case": "three-letter identity",
+      "equations": 128,
+      "intersection_dimension": 0,
+      "rank": 81
+    },
+    {
+      "alphabet": 3,
+      "case": "three-letter nonsymmetric",
+      "equations": 128,
+      "intersection_dimension": 0,
+      "rank": 81
+    },
+    {
+      "alphabet": 4,
+      "case": "four-letter identity",
+      "equations": 450,
+      "intersection_dimension": 0,
+      "rank": 256
+    },
+    {
+      "alphabet": 4,
+      "case": "four-letter alternating",
+      "equations": 450,
+      "intersection_dimension": 0,
+      "rank": 256
+    },
+    {
+      "alphabet": 4,
+      "case": "four-letter nonsymmetric",
+      "equations": 450,
+      "intersection_dimension": 0,
+      "rank": 256
+    },
+    {
+      "alphabet": 5,
+      "case": "five-letter nonsymmetric",
+      "equations": 1152,
+      "intersection_dimension": 0,
+      "rank": 625
+    }
+  ]
+}

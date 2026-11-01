@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "scope": "exact archive/catalogue/source binding and fresh numerical winner replays; no rate certificate",
+  "archive_sha256": "93b8a934d9a321e50360cdcb5a50a43da859b46f896afb94072a8a5d6d012512",
+  "historical_input_catalogue_sha256": "1ecf137146da4013ab8aedf7c7278f97e81e82d193e0596e1f63ed13499cbd58",
+  "published_catalogue_sha256": "1e6b46b06c86500f0d9ed061383e02722d707f7e5f95c243c3ea340b1db6c09c",
+  "identical_generator_candidate_records_sha256": "d2eda7e67ec68ef0b24ad95c25fcdd1bdc5b96d23c014279275646a7df9baeec",
+  "screen_records_bound": 7176,
+  "refinements_bound": 64,
+  "all_recorded_search_source_hashes_match_current": true,
+  "search_source_sha256": {
+    "search_dense_coupled_reflection_frames.py": "525d26e6f931834d8cb661f506f48698e94da1e3b0c1301f8d0a26d36df3f776",
+    "dense_coupled_reflection_frames.py": "ce0b2dcc390a4c7f1a7fdaf88016132b0f6fca70b7b96406b92792420aeeebe0",
+    "reflection_laurent_physical_frames.py": "e4396ed1a78303893adce6a4f931d8a1866f79ae09fc9f8b0ac6aea164352563",
+    "asymmetric_crossing_pressure.py": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42",
+    "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  },
+  "fresh_winner_replays": [
+    {
+      "mode": "balanced",
+      "generator_index": 4287,
+      "pole": 2,
+      "reported_value": 0.7546022266939059,
+      "replayed_value": 0.7546022266939063,
+      "absolute_difference": 4.440892098500626e-16
+    },
+    {
+      "mode": "asymmetric",
+      "generator_index": 4287,
+      "pole": 3,
+      "reported_value": 1.0019637815762032,
+      "replayed_value": 1.0019637815762032,
+      "absolute_difference": 0.0
+    }
+  ],
+  "checker_sha256": "f959525ff27651b7f0c9edfc6f1cc6870b115a487f11bdc762aea33495e3bf38"
+}

@@ -1,0 +1,143 @@
+{
+  "status": "passed",
+  "scope": "complete exact companion reconstruction and independent Laurent controls; numerical winner replay only",
+  "archive_sha256": "9c6bd43db6085c140ba3cb67a76931b840eb8db2711348caf5c3dbf37f4c88c9",
+  "catalogue_sha256": "1e6b46b06c86500f0d9ed061383e02722d707f7e5f95c243c3ea340b1db6c09c",
+  "all_recorded_search_source_hashes_match_current": true,
+  "complete_tensor_hashes_reconstructed": 21528,
+  "screen_records_bound": 21528,
+  "refinement_records_bound": 80,
+  "independent_translation_controls": [
+    {
+      "generator_index": 0,
+      "pole": 4,
+      "constant": 1
+    },
+    {
+      "generator_index": 0,
+      "pole": 4,
+      "constant": 2
+    },
+    {
+      "generator_index": 0,
+      "pole": 4,
+      "constant": 3
+    },
+    {
+      "generator_index": 100,
+      "pole": 2,
+      "constant": 1
+    },
+    {
+      "generator_index": 100,
+      "pole": 2,
+      "constant": 2
+    },
+    {
+      "generator_index": 100,
+      "pole": 2,
+      "constant": 3
+    },
+    {
+      "generator_index": 900,
+      "pole": 2,
+      "constant": 1
+    },
+    {
+      "generator_index": 900,
+      "pole": 2,
+      "constant": 2
+    },
+    {
+      "generator_index": 900,
+      "pole": 2,
+      "constant": 3
+    },
+    {
+      "generator_index": 2715,
+      "pole": 1,
+      "constant": 1
+    },
+    {
+      "generator_index": 2715,
+      "pole": 1,
+      "constant": 2
+    },
+    {
+      "generator_index": 2715,
+      "pole": 1,
+      "constant": 3
+    },
+    {
+      "generator_index": 4000,
+      "pole": 1,
+      "constant": 1
+    },
+    {
+      "generator_index": 4000,
+      "pole": 1,
+      "constant": 2
+    },
+    {
+      "generator_index": 4000,
+      "pole": 1,
+      "constant": 3
+    },
+    {
+      "generator_index": 5354,
+      "pole": 2,
+      "constant": 1
+    },
+    {
+      "generator_index": 5354,
+      "pole": 2,
+      "constant": 2
+    },
+    {
+      "generator_index": 5354,
+      "pole": 2,
+      "constant": 3
+    },
+    {
+      "generator_index": 63,
+      "pole": 8,
+      "constant": 1
+    },
+    {
+      "generator_index": 63,
+      "pole": 8,
+      "constant": 2
+    },
+    {
+      "generator_index": 63,
+      "pole": 8,
+      "constant": 3
+    }
+  ],
+  "independent_laurent_tensor_entries": 5376,
+  "fresh_winner_replays": [
+    {
+      "mode": "balanced",
+      "generator_index": 4035,
+      "pole": 4,
+      "constant": 1,
+      "reported_value": 0.7311040937260398,
+      "replayed_value": 0.7311040937261724,
+      "absolute_difference": 1.325606291402437e-13
+    },
+    {
+      "mode": "asymmetric",
+      "generator_index": 4035,
+      "pole": 4,
+      "constant": 1,
+      "reported_value": 1.0014360027905598,
+      "replayed_value": 1.0014360027905598,
+      "absolute_difference": 0.0
+    }
+  ],
+  "elapsed_seconds": 58.78106271700017,
+  "source_sha256": {
+    "check_dense_coupled_companions.py": "0156ec99e074a8e4dcf572d387cd8cd1b5ef2a7bf52845210b407115d470da2f",
+    "check_dense_coupled_reflection_frames.py": "3ca7c1117cc7c5a36b3da9db567194c29e82d22a0cf7c6fad49bbc220151b178"
+  }
+}

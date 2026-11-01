@@ -251,6 +251,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Exact 96-letter pressure certificate](research/exact-natural-pressure-intervals.md): the complete saved profile certifies rho < 0.710005874881191, still above the required 1/sqrt(2). [Width-sensitive Boolean constructors](research/width-sensitive-prime-constructor.md) reduce preparation cost without supplying the missing crossing improvement. See the [session record](research/escape-half-session-20261031.md) for scope and replay costs.
+
 - [Fixed-prime scalar transfer](research/fixed-prime-factor-transfer.md): polynomially many scalar clique-count queries suffice under the stated evaluator hypothesis. [Certified divisor preprocessing](research/certified-divisor-oracle.md) concerns the maximum divisor count below a bound. These interfaces and the accompanying finite construction controls do not improve the complete 1/2 exponent. The parallel [fixed-characteristic recovery proof](research/fixed-characteristic-factor-recovery.md) is retained; the two notes share the power-tuple and cyclic-orbit mechanism.
 
 - [PR #30 recovery and Smith checkpoint](research/INDEX.md#retained-pr-30-recovery-and-smith-checkpoint), including a [parallel integral Schur derivation](research/integral-schur-crossing-pr30.md): fixed-characteristic recovery interfaces, exact constructions and scoped Smith/gauge controls. Both Schur notes and their attributions are retained. No exponent above `1/2` or new Lean result is claimed.

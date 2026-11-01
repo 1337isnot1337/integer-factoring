@@ -1,0 +1,347 @@
+{
+  "scope": "Exact rational F16 profiles versus native restriction of scalars after complete physical basis changes; floating gradients are controls, not an asymptotic certificate.",
+  "source_sha256": {
+    "check_fused_physical_bases.py": "f0b41117d62e1d865e102e479048b717ed383413633fb1c1e294e9e5386f8af6",
+    "fused_physical_basis_oracle.py": "24f2593f5a368d41db18b3757369506741d7f1ae9c7de97454c98f295838b69b",
+    "compressed_fused_six_vertex.py": "5c17d1371b5e5e48ec9b141e0b45aa3650092207e03b412209c9fee66b91bb3e",
+    "f16_weighted_local_oracle.py": "f31a7f9a73a7d7002a2dc61db83695f665b7fc67bc488c6b6f23c2b8bc4d3322",
+    "fused_six_vertex_crossings.py": "90b016b84e57b2b6d1134c61016c2de5183edc2b2f2943ef9964d5d82dbaf109",
+    "f16_identity_operator_profiles.py": "3095c293971c4fff43f2a71052e49c526ded05aa9d087531124d246a05c67c8b",
+    "f4_lattice_linear.py": "fc27ccbcf4a82cb3c2643eac6a8a53fb7e08ced4700a30c0b5abca1a3f3aab8e",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "native_weighted_smith_f4.py": "8bb117a1284edc0e11d6e4dbc5ba05537701e00f5e0e2aa88cd23e466d319abb"
+  },
+  "cases": [
+    {
+      "m": 2,
+      "theta": 2,
+      "alphabet": 3,
+      "basis_name": "quantum_pascal_evaluation",
+      "first_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          1
+        ]
+      ],
+      "second_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "complete_exact_profile_comparisons": 6,
+      "largest_profile_error": 8.881784197001252e-16,
+      "gradient_coordinates": 13,
+      "largest_gradient_error": 3.006160875784758e-10,
+      "endpoint_entries": 81
+    },
+    {
+      "m": 2,
+      "theta": 2,
+      "alphabet": 3,
+      "basis_name": "evaluation_common",
+      "first_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "second_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3
+        ]
+      ],
+      "complete_exact_profile_comparisons": 6,
+      "largest_profile_error": 8.881784197001252e-16,
+      "gradient_coordinates": 13,
+      "largest_gradient_error": 2.5663238201190097e-10,
+      "endpoint_entries": 81
+    },
+    {
+      "m": 2,
+      "theta": 2,
+      "alphabet": 3,
+      "basis_name": "pascal_common",
+      "first_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "second_basis": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          0,
+          1
+        ]
+      ],
+      "complete_exact_profile_comparisons": 6,
+      "largest_profile_error": 8.881784197001252e-16,
+      "gradient_coordinates": 13,
+      "largest_gradient_error": 3.6315347951010324e-10,
+      "endpoint_entries": 81
+    },
+    {
+      "m": 3,
+      "theta": 4,
+      "alphabet": 4,
+      "basis_name": "quantum_pascal_evaluation",
+      "first_basis": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          7,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          2,
+          1
+        ]
+      ],
+      "second_basis": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          3,
+          2,
+          1
+        ]
+      ],
+      "complete_exact_profile_comparisons": 6,
+      "largest_profile_error": 8.881784197001252e-16,
+      "gradient_coordinates": 17,
+      "largest_gradient_error": 1.9853069882502794e-10,
+      "endpoint_entries": 256
+    },
+    {
+      "m": 3,
+      "theta": 4,
+      "alphabet": 4,
+      "basis_name": "evaluation_common",
+      "first_basis": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          3,
+          2,
+          1
+        ]
+      ],
+      "second_basis": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          3,
+          1
+        ],
+        [
+          1,
+          3,
+          2,
+          1
+        ]
+      ],
+      "complete_exact_profile_comparisons": 6,
+      "largest_profile_error": 8.881784197001252e-16,
+      "gradient_coordinates": 17,
+      "largest_gradient_error": 3.3342278937809056e-10,
+      "endpoint_entries": 256
+    },
+    {
+      "m": 3,
+      "theta": 4,
+      "alphabet": 4,
+      "basis_name": "pascal_common",
+      "first_basis": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "second_basis": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "complete_exact_profile_comparisons": 6,
+      "largest_profile_error": 8.881784197001252e-16,
+      "gradient_coordinates": 17,
+      "largest_gradient_error": 2.5260421532280475e-10,
+      "endpoint_entries": 256
+    }
+  ],
+  "totals": {
+    "complete_exact_profile_comparisons": 36,
+    "gradient_coordinates": 90,
+    "endpoint_entries": 1011
+  }
+}

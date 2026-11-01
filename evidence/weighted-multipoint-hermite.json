@@ -1,0 +1,352 @@
+{
+  "schema_version": 1,
+  "claim": "Finite controls for weighted same-place Hermite estimates; no score improvement.",
+  "checker_sha256": "8ae62959bdda71f00ea4ac520bad9f24fcf6465eb0aafd30b33c8ae98bcf6da8",
+  "cases": [
+    {
+      "prime": 2,
+      "alphabet": 2,
+      "copies": 2,
+      "xcounts": [
+        1,
+        1
+      ],
+      "ycounts": [
+        1,
+        1
+      ],
+      "dimensions": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "complete_endpoint_entries": 16,
+      "local_gauged_profiles": 12,
+      "rational_comparisons": 36,
+      "negative_order_channels": 12,
+      "profiles": [
+        {
+          "point": 0,
+          "typed_profiles": [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              2,
+              2,
+              4
+            ]
+          ]
+        },
+        {
+          "point": null,
+          "typed_profiles": [
+            [
+              0,
+              2,
+              2,
+              4
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "prime": 3,
+      "alphabet": 2,
+      "copies": 3,
+      "xcounts": [
+        1,
+        2
+      ],
+      "ycounts": [
+        2,
+        1
+      ],
+      "dimensions": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "complete_endpoint_entries": 81,
+      "local_gauged_profiles": 18,
+      "rational_comparisons": 54,
+      "negative_order_channels": 19,
+      "profiles": [
+        {
+          "point": 0,
+          "typed_profiles": [
+            [
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1,
+              1
+            ],
+            [
+              1,
+              1,
+              1,
+              2,
+              2,
+              2,
+              3,
+              3,
+              3
+            ]
+          ]
+        },
+        {
+          "point": 2,
+          "typed_profiles": [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "point": null,
+          "typed_profiles": [
+            [
+              0,
+              1,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "prime": 5,
+      "alphabet": 2,
+      "copies": 2,
+      "xcounts": [
+        2,
+        0
+      ],
+      "ycounts": [
+        1,
+        1
+      ],
+      "dimensions": [
+        1,
+        2,
+        2,
+        1
+      ],
+      "complete_endpoint_entries": 4,
+      "local_gauged_profiles": 30,
+      "rational_comparisons": 90,
+      "negative_order_channels": 33,
+      "profiles": [
+        {
+          "point": 0,
+          "typed_profiles": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        },
+        {
+          "point": 2,
+          "typed_profiles": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "point": 3,
+          "typed_profiles": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "point": 4,
+          "typed_profiles": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        },
+        {
+          "point": null,
+          "typed_profiles": [
+            [
+              1,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "prime": 3,
+      "alphabet": 3,
+      "copies": 2,
+      "xcounts": [
+        1,
+        1,
+        0
+      ],
+      "ycounts": [
+        0,
+        1,
+        1
+      ],
+      "dimensions": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "complete_endpoint_entries": 16,
+      "local_gauged_profiles": 18,
+      "rational_comparisons": 54,
+      "negative_order_channels": 39,
+      "profiles": [
+        {
+          "point": 0,
+          "typed_profiles": [
+            [
+              1,
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "point": 2,
+          "typed_profiles": [
+            [
+              1,
+              1,
+              2,
+              2
+            ],
+            [
+              1,
+              1,
+              2,
+              2
+            ]
+          ]
+        },
+        {
+          "point": null,
+          "typed_profiles": [
+            [
+              0,
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              2,
+              2
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "negative_control": {
+    "actual_sum": "4",
+    "incorrect_unshifted_bound": "1/65536",
+    "corrected_bound": "16",
+    "missing_shift_rejected": true
+  },
+  "totals": {
+    "complete_endpoint_entries": 117,
+    "local_gauged_profiles": 78,
+    "rational_comparisons": 234,
+    "negative_order_channels": 103
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "status": "passed",
+  "scope": "complete retained polynomial-tensor and archive/source binding; fresh numerical winner replay only",
+  "archive_sha256": "40e970a4d528990b2c57ed97a115cd5159ea3a3e20a110353d0e03ff8b0c950d",
+  "all_recorded_search_source_hashes_match_current": true,
+  "declared_affine_parameter_choices": 1386,
+  "distinct_complete_tensors_reconstructed": 211,
+  "complete_polynomial_entries_reconstructed": 13828096,
+  "refinement_records_bound": 24,
+  "winner_replays": [
+    {
+      "mode": "balanced",
+      "direction": 0,
+      "pole": 1,
+      "parameters": [
+        0,
+        0,
+        1
+      ],
+      "seed_sha256": "f24556bed6d9c77d869f27f416d2fec12f9a3661c7b8ba96687428fc05c067cd",
+      "reported_support": 1.0135013251119154,
+      "replayed_support": 1.0135013251119154,
+      "balanced_rho": 0.7166536597281871,
+      "is_original_seed": true,
+      "absolute_difference": 0.0
+    },
+    {
+      "mode": "asymmetric",
+      "direction": 0,
+      "pole": 1,
+      "parameters": [
+        1,
+        1,
+        0
+      ],
+      "seed_sha256": "8d851135d6b1917b6243b109bfaf05ae030eba66f5c4ccfff8a0ec26d5c15bbd",
+      "reported_support": 1.0024570646034154,
+      "replayed_support": 1.0024570646034154,
+      "balanced_rho": null,
+      "is_original_seed": false,
+      "absolute_difference": 0.0
+    }
+  ],
+  "elapsed_seconds": 87.00101762899976,
+  "source_sha256": {
+    "check_filtered_reflection16_affine_search.py": "d55d1f68aa8f7f9b938e4c1bf93d9ac1525c8696ddcc24bd322bbf6fbf1c0347"
+  }
+}

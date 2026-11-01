@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "Complete exact tensors/profiles and retained rational tests; numerical scale optima are not exclusions.",
+  "input_sha256": "5487c5e8f23e52b4732b61961cc53e6d2797ed3f755ca0caf018e410f4c9a7e8",
+  "source_sha256": "5362d496730c7788e7b2011cf6bbc03c1c77ce0ccef0b2d22180eafafe3f40e2",
+  "tensors": 18,
+  "endpoints": 1037568,
+  "integer_profile_channels": 8064,
+  "numerical_costs": 108,
+  "exact_rational_comparisons": 18,
+  "strict_tests_passed": 0,
+  "seconds": 27.86147798300044
+}

@@ -1,0 +1,76 @@
+{
+  "schema_version": 1,
+  "claim": "Exact all-letter weighted fused profiles and bookkeeping controls; no improved factoring score.",
+  "source_sha256": {
+    "fused_weighted_place_profiles.py": "58208d277fbc8c892f6ea430a8e3ff84ad5d7b4a3a5ebb25542ac126dd1684af",
+    "check_fused_weighted_places.py": "92cbb9b7be3cbadbba7403797a0ceba79ec252d5bedca217e01c6c6346b2dab5",
+    "check_fused_closed_profiles.py": "601ef47f8ea7cae609eeffdbefdb278b29d85c654fd132ad7c33fb9709e35460",
+    "check_fused_multipoint_profiles.py": "c163e3fa6bdc32efbb1a027aa78a1c1fbf405f0c3b15a0327ca3e0aed65b3ce6",
+    "fused_six_vertex_crossings.py": "90b016b84e57b2b6d1134c61016c2de5183edc2b2f2943ef9964d5d82dbaf109",
+    "f16_identity_operator_profiles.py": "3095c293971c4fff43f2a71052e49c526ded05aa9d087531124d246a05c67c8b",
+    "f4_lattice_linear.py": "fc27ccbcf4a82cb3c2643eac6a8a53fb7e08ced4700a30c0b5abca1a3f3aab8e"
+  },
+  "cases": [
+    {
+      "m": 2,
+      "theta": 2,
+      "alphabet": 3,
+      "closed_places_including_infinity": 4,
+      "exact_weighted_profiles": 48,
+      "floating_api_exact_controls": 48,
+      "constant_shift_controls": 48,
+      "rational_ramification_controls": 48,
+      "conserved_charge_controls": 8,
+      "active_minor_subgradient_controls": 32,
+      "independent_weighted_quotient_ranks": 22
+    },
+    {
+      "m": 3,
+      "theta": 4,
+      "alphabet": 4,
+      "closed_places_including_infinity": 11,
+      "exact_weighted_profiles": 132,
+      "floating_api_exact_controls": 132,
+      "constant_shift_controls": 132,
+      "rational_ramification_controls": 132,
+      "conserved_charge_controls": 22,
+      "active_minor_subgradient_controls": 88,
+      "independent_weighted_quotient_ranks": 36
+    },
+    {
+      "m": 4,
+      "theta": 4,
+      "alphabet": 5,
+      "closed_places_including_infinity": 13,
+      "exact_weighted_profiles": 156,
+      "floating_api_exact_controls": 156,
+      "constant_shift_controls": 156,
+      "rational_ramification_controls": 156,
+      "conserved_charge_controls": 26,
+      "active_minor_subgradient_controls": 104,
+      "independent_weighted_quotient_ranks": 0
+    },
+    {
+      "m": 5,
+      "theta": 4,
+      "alphabet": 6,
+      "closed_places_including_infinity": 22,
+      "exact_weighted_profiles": 264,
+      "floating_api_exact_controls": 264,
+      "constant_shift_controls": 264,
+      "rational_ramification_controls": 264,
+      "conserved_charge_controls": 44,
+      "active_minor_subgradient_controls": 176,
+      "independent_weighted_quotient_ranks": 0
+    }
+  ],
+  "totals": {
+    "exact_weighted_profiles": 600,
+    "floating_api_exact_controls": 600,
+    "constant_shift_controls": 600,
+    "rational_ramification_controls": 600,
+    "conserved_charge_controls": 100,
+    "active_minor_subgradient_controls": 400,
+    "independent_weighted_quotient_ranks": 58
+  }
+}

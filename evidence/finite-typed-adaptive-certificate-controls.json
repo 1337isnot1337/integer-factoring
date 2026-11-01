@@ -1,0 +1,2508 @@
+{
+  "scope": "Exact finite typed adaptive arithmetic and real tensor reconstruction controls; no threshold-crossing block is claimed.",
+  "status": "pass",
+  "source_sha256": {
+    "check_finite_typed_adaptive_certificate.py": "5f2387538877600c04995ecd4a3a655826989d32ef137119848158f9ea598ae2",
+    "finite_typed_adaptive_certificate.py": "1f1e03bc1f7de4a17e57658ff6ba432a9cd07132fe4b331aeef4cdfa72ca0b1c",
+    "weighted_adaptive_mixed_place.py": "87abd3a7a1486754f54f6b9347e62d9459b0139f9f27633ba21a1bb5150aab6a",
+    "adaptive_mixed_place.py": "5fd35064a2d79e72cf993cd4d251cd95d931295bc2108e9c37fd6400425f7e4f",
+    "check_ternary_basis_mixed.py": "d9c20891419652d9e5bfd3ccd855cb490e9037734dc91a0e8824634eaf3f2090",
+    "check_weighted_multipoint_hermite.py": "8ae62959bdda71f00ea4ac520bad9f24fcf6465eb0aafd30b33c8ae98bcf6da8",
+    "check_weighted_adaptive_catalogues.py": "9fbd6812c6a9b64bcd89fcc56712c9c253d0c9ba8d280995ec24213041d51fa8",
+    "check_multipoint_hermite_crossings.py": "1d3422c882a0e17bd8613065242d6765e74bac2219200d5b1cbab9e6dcaa9fed",
+    "check_mixed_place_hermite.py": "c36c22464da1fda8c3b0016fba21e6e5fd673df17ad3db6bf67d4677ad02cb8c"
+  },
+  "square_root_upper_bound_controls": 4004,
+  "invalid_inputs_rejected": 4,
+  "synthetic_rank_table_arithmetic_control": {
+    "active_piece_upper_bound": 2,
+    "zero_piece_bounds": 1,
+    "maximum_rank_product": 100,
+    "coarse_base": 400,
+    "square_root_sum_upper_numerator": 202914184810805067776,
+    "square_root_sum_upper_denominator": 18446744073709551616,
+    "rational_sqrt2_lower_bound": [
+      140,
+      99
+    ],
+    "exponent_square_test": true,
+    "coarse_gate_passed": false,
+    "rank_sum_gate_passed": true,
+    "certified_rho_strict_upper_bound_if_passed": [
+      140,
+      198
+    ]
+  },
+  "totals": {
+    "complete_local_profiles": 24,
+    "local_channels": 180,
+    "typed_jet_ranks": 78,
+    "reconstructed_piece_ranks": 52,
+    "endpoint_entries": 1960,
+    "equal_alphabet_agreements": 2
+  },
+  "typed_cases": [
+    {
+      "physical_dimensions": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "typed_dimensions": [
+        2,
+        2,
+        2,
+        2
+      ],
+      "local_profiles": [
+        {
+          "point": 2,
+          "cut": 0,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                0,
+                0,
+                2,
+                2,
+                2,
+                4,
+                4,
+                4
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                2,
+                3,
+                3,
+                4,
+                4,
+                4,
+                5,
+                5,
+                6
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "2"
+            }
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                0,
+                0,
+                2,
+                2,
+                2,
+                4,
+                4,
+                4
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                -2,
+                -1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                2
+              ],
+              "heights": [
+                [
+                  0,
+                  -1,
+                  -2
+                ],
+                [
+                  0,
+                  -1,
+                  -2
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "-2"
+            }
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                2,
+                2,
+                2,
+                2,
+                4,
+                8,
+                8,
+                8
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                0,
+                2,
+                2,
+                4,
+                4,
+                4,
+                6,
+                6,
+                8
+              ],
+              "heights": [
+                [
+                  0,
+                  -2,
+                  -4
+                ],
+                [
+                  0,
+                  -2,
+                  -4
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            }
+          ]
+        }
+      ],
+      "jet_controls": [
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 0,
+          "rank": 1,
+          "bound": 1
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 1,
+          "rank": 4,
+          "bound": 4
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 2,
+          "rank": 3,
+          "bound": 4
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 3,
+          "rank": 4,
+          "bound": 4
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 4,
+          "rank": 1,
+          "bound": 4
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 0,
+          "rank": 1,
+          "bound": 1
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 1,
+          "rank": 3,
+          "bound": 4
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 2,
+          "rank": 3,
+          "bound": 4
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 3,
+          "rank": 0,
+          "bound": 4
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 4,
+          "rank": 0,
+          "bound": 4
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 0,
+          "rank": 0,
+          "bound": 1
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 1,
+          "rank": 0,
+          "bound": 4
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 2,
+          "rank": 3,
+          "bound": 4
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 3,
+          "rank": 3,
+          "bound": 4
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 4,
+          "rank": 4,
+          "bound": 4
+        }
+      ],
+      "piece_controls": [
+        {
+          "index": 0,
+          "ranks": [
+            1,
+            4
+          ],
+          "bounds": [
+            1,
+            4
+          ]
+        },
+        {
+          "index": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            2,
+            4
+          ]
+        },
+        {
+          "index": 2,
+          "ranks": [
+            3,
+            3
+          ],
+          "bounds": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 3,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            4,
+            4
+          ]
+        },
+        {
+          "index": 4,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            4,
+            1
+          ]
+        }
+      ],
+      "finite_certificate": {
+        "copies": 2,
+        "seed_degree": 2,
+        "tensor_degree": 4,
+        "type_counts_x": [
+          1,
+          1,
+          0
+        ],
+        "type_counts_y": [
+          0,
+          1,
+          1
+        ],
+        "external_label_counts": [
+          2,
+          2
+        ],
+        "cut_dimension": 4,
+        "critical_index": 2,
+        "rank_pairs": [
+          [
+            1,
+            4
+          ],
+          [
+            2,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            4
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "amplification": {
+          "active_piece_upper_bound": 5,
+          "zero_piece_bounds": 0,
+          "maximum_rank_product": 16,
+          "coarse_base": 400,
+          "square_root_sum_upper_numerator": 273536200185845748242,
+          "square_root_sum_upper_denominator": 18446744073709551616,
+          "rational_sqrt2_lower_bound": [
+            140,
+            99
+          ],
+          "exponent_square_test": true,
+          "coarse_gate_passed": false,
+          "rank_sum_gate_passed": false,
+          "certified_rho_strict_upper_bound_if_passed": [
+            140,
+            198
+          ]
+        },
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 1,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 2
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 21,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 1,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 21,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 102,
+            "prefix_cost": 4
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 7,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 27,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 73,
+            "prefix_cost": 4
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 1,
+            "cost": 154,
+            "prefix_cost": 4
+          }
+        ]
+      }
+    },
+    {
+      "physical_dimensions": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "typed_dimensions": [
+        6,
+        6,
+        6,
+        6
+      ],
+      "local_profiles": [
+        {
+          "point": 2,
+          "cut": 0,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                0,
+                0,
+                2,
+                2,
+                2,
+                4,
+                4,
+                4
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                2,
+                3,
+                3,
+                4,
+                4,
+                4,
+                5,
+                5,
+                6
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "2"
+            }
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                0,
+                0,
+                2,
+                2,
+                2,
+                4,
+                4,
+                4
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                -2,
+                -1,
+                -1,
+                0,
+                0,
+                0,
+                1,
+                1,
+                2
+              ],
+              "heights": [
+                [
+                  0,
+                  -1,
+                  -2
+                ],
+                [
+                  0,
+                  -1,
+                  -2
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "-2"
+            }
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                2,
+                2,
+                2,
+                2,
+                4,
+                8,
+                8,
+                8
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                0,
+                2,
+                2,
+                4,
+                4,
+                4,
+                6,
+                6,
+                8
+              ],
+              "heights": [
+                [
+                  0,
+                  -2,
+                  -4
+                ],
+                [
+                  0,
+                  -2,
+                  -4
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            }
+          ]
+        }
+      ],
+      "jet_controls": [
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 0,
+          "rank": 1,
+          "bound": 1
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 1,
+          "rank": 7,
+          "bound": 36
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 2,
+          "rank": 21,
+          "bound": 36
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 3,
+          "rank": 9,
+          "bound": 36
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 4,
+          "rank": 21,
+          "bound": 36
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 5,
+          "rank": 7,
+          "bound": 36
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 6,
+          "rank": 1,
+          "bound": 36
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 0,
+          "rank": 1,
+          "bound": 1
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 1,
+          "rank": 7,
+          "bound": 36
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 2,
+          "rank": 28,
+          "bound": 36
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 3,
+          "rank": 36,
+          "bound": 36
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 4,
+          "rank": 28,
+          "bound": 36
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 5,
+          "rank": 0,
+          "bound": 36
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 6,
+          "rank": 36,
+          "bound": 36
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 0,
+          "rank": 1,
+          "bound": 1
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 1,
+          "rank": 0,
+          "bound": 9
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 2,
+          "rank": 7,
+          "bound": 36
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 3,
+          "rank": 8,
+          "bound": 36
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 4,
+          "rank": 28,
+          "bound": 36
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 5,
+          "rank": 28,
+          "bound": 36
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 6,
+          "rank": 36,
+          "bound": 36
+        }
+      ],
+      "piece_controls": [
+        {
+          "index": 0,
+          "ranks": [
+            1,
+            36
+          ],
+          "bounds": [
+            1,
+            36
+          ]
+        },
+        {
+          "index": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            2,
+            36
+          ]
+        },
+        {
+          "index": 2,
+          "ranks": [
+            7,
+            28
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 3,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 4,
+          "ranks": [
+            28,
+            7
+          ],
+          "bounds": [
+            36,
+            36
+          ]
+        },
+        {
+          "index": 5,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            36,
+            10
+          ]
+        },
+        {
+          "index": 6,
+          "ranks": [
+            36,
+            1
+          ],
+          "bounds": [
+            36,
+            1
+          ]
+        }
+      ],
+      "finite_certificate": {
+        "copies": 3,
+        "seed_degree": 2,
+        "tensor_degree": 6,
+        "type_counts_x": [
+          1,
+          1,
+          1
+        ],
+        "type_counts_y": [
+          1,
+          1,
+          1
+        ],
+        "external_label_counts": [
+          6,
+          6
+        ],
+        "cut_dimension": 36,
+        "critical_index": 2,
+        "rank_pairs": [
+          [
+            1,
+            36
+          ],
+          [
+            2,
+            36
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            36,
+            36
+          ],
+          [
+            36,
+            10
+          ],
+          [
+            36,
+            1
+          ]
+        ],
+        "amplification": {
+          "active_piece_upper_bound": 7,
+          "zero_piece_bounds": 0,
+          "maximum_rank_product": 1296,
+          "coarse_base": 63504,
+          "square_root_sum_upper_numerator": 2720137462871950533561,
+          "square_root_sum_upper_denominator": 18446744073709551616,
+          "rational_sqrt2_lower_bound": [
+            140,
+            99
+          ],
+          "exponent_square_test": true,
+          "coarse_gate_passed": false,
+          "rank_sum_gate_passed": false,
+          "certified_rho_strict_upper_bound_if_passed": [
+            140,
+            198
+          ]
+        },
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 1,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 2
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 1,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 36,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 282,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 1,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 282,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 1011,
+            "prefix_cost": 36
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 9,
+            "prefix_cost": 10
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 44,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 150,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 1,
+            "cost": 396,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 1,
+            "cost": 858,
+            "prefix_cost": 36
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 1,
+            "cost": 1587,
+            "prefix_cost": 36
+          }
+        ]
+      }
+    },
+    {
+      "physical_dimensions": [
+        2,
+        3,
+        3,
+        2
+      ],
+      "typed_dimensions": [
+        3,
+        6,
+        6,
+        3
+      ],
+      "local_profiles": [
+        {
+          "point": 2,
+          "cut": 0,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                0,
+                2,
+                2,
+                4,
+                4
+              ],
+              "heights": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                2,
+                3,
+                3,
+                4,
+                4,
+                5
+              ],
+              "heights": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "4/3"
+            }
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                0,
+                0,
+                2,
+                2,
+                2
+              ],
+              "heights": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                -2,
+                -1,
+                -1,
+                0,
+                0,
+                1
+              ],
+              "heights": [
+                [
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  -1,
+                  -2
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "-4/3"
+            }
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                2,
+                2,
+                2,
+                6,
+                6
+              ],
+              "heights": [
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                0,
+                2,
+                2,
+                4,
+                4,
+                6
+              ],
+              "heights": [
+                [
+                  0,
+                  -2
+                ],
+                [
+                  0,
+                  -2,
+                  -4
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ],
+                [
+                  0,
+                  2
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            }
+          ]
+        }
+      ],
+      "jet_controls": [
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 0,
+          "rank": 0,
+          "bound": 0
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 1,
+          "rank": 0,
+          "bound": 1
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 2,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 3,
+          "rank": 18,
+          "bound": 18
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 4,
+          "rank": 15,
+          "bound": 18
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 5,
+          "rank": 18,
+          "bound": 18
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 6,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 0,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 1,
+          "rank": 18,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 2,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 3,
+          "rank": 0,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 4,
+          "rank": 15,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 5,
+          "rank": 0,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 6,
+          "rank": 0,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 0,
+          "rank": 0,
+          "bound": 1
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 1,
+          "rank": 0,
+          "bound": 9
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 2,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 3,
+          "rank": 0,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 4,
+          "rank": 15,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 5,
+          "rank": 18,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 6,
+          "rank": 15,
+          "bound": 18
+        }
+      ],
+      "piece_controls": [
+        {
+          "index": 0,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            0,
+            18
+          ]
+        },
+        {
+          "index": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            1,
+            18
+          ]
+        },
+        {
+          "index": 2,
+          "ranks": [
+            6,
+            15
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 3,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 4,
+          "ranks": [
+            15,
+            6
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 5,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            10
+          ]
+        },
+        {
+          "index": 6,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            1
+          ]
+        }
+      ],
+      "finite_certificate": {
+        "copies": 3,
+        "seed_degree": 2,
+        "tensor_degree": 6,
+        "type_counts_x": [
+          2,
+          1
+        ],
+        "type_counts_y": [
+          1,
+          1,
+          1
+        ],
+        "external_label_counts": [
+          3,
+          6
+        ],
+        "cut_dimension": 18,
+        "critical_index": 2,
+        "rank_pairs": [
+          [
+            0,
+            18
+          ],
+          [
+            1,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            10
+          ],
+          [
+            18,
+            1
+          ]
+        ],
+        "amplification": {
+          "active_piece_upper_bound": 6,
+          "zero_piece_bounds": 1,
+          "maximum_rank_product": 324,
+          "coarse_base": 11664,
+          "square_root_sum_upper_numerator": 1400139036158444865342,
+          "square_root_sum_upper_denominator": 18446744073709551616,
+          "rational_sqrt2_lower_bound": [
+            140,
+            99
+          ],
+          "exponent_square_test": true,
+          "coarse_gate_passed": false,
+          "rank_sum_gate_passed": false,
+          "certified_rho_strict_upper_bound_if_passed": [
+            140,
+            198
+          ]
+        },
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 0,
+            "prefix_cost": 0
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 1,
+            "order": 0,
+            "gauge_index": 0,
+            "cost": 27,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 33,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 1,
+            "order": 1,
+            "gauge_index": 0,
+            "cost": 162,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 201,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 1,
+            "order": 2,
+            "gauge_index": 0,
+            "cost": 459,
+            "prefix_cost": 18
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 9,
+            "prefix_cost": 10
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 41,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 126,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 1,
+            "cost": 294,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 1,
+            "cost": 558,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 1,
+            "cost": 905,
+            "prefix_cost": 18
+          }
+        ]
+      }
+    },
+    {
+      "physical_dimensions": [
+        3,
+        2,
+        2,
+        3
+      ],
+      "typed_dimensions": [
+        6,
+        3,
+        3,
+        6
+      ],
+      "local_profiles": [
+        {
+          "point": 2,
+          "cut": 0,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                0,
+                2,
+                2,
+                4,
+                4
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                2,
+                3,
+                3,
+                4,
+                4,
+                5
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  1
+                ],
+                [
+                  0,
+                  1,
+                  2
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "4/3"
+            }
+          ]
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                0,
+                0,
+                2,
+                2,
+                2
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                -2,
+                -1,
+                -1,
+                0,
+                0,
+                1
+              ],
+              "heights": [
+                [
+                  0,
+                  -1,
+                  -2
+                ],
+                [
+                  0,
+                  -1
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "-4/3"
+            }
+          ]
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "gauges": [
+            {
+              "orders": [
+                0,
+                2,
+                2,
+                2,
+                6,
+                6
+              ],
+              "heights": [
+                [
+                  0,
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0
+                ],
+                [
+                  0,
+                  0,
+                  0
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            },
+            {
+              "orders": [
+                0,
+                2,
+                2,
+                4,
+                4,
+                6
+              ],
+              "heights": [
+                [
+                  0,
+                  -2,
+                  -4
+                ],
+                [
+                  0,
+                  -2
+                ],
+                [
+                  0,
+                  2
+                ],
+                [
+                  0,
+                  2,
+                  4
+                ]
+              ],
+              "ramification": 2,
+              "mean_shift": "0"
+            }
+          ]
+        }
+      ],
+      "jet_controls": [
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 0,
+          "rank": 0,
+          "bound": 0
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 1,
+          "rank": 0,
+          "bound": 1
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 2,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 3,
+          "rank": 18,
+          "bound": 18
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 4,
+          "rank": 15,
+          "bound": 18
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 5,
+          "rank": 18,
+          "bound": 18
+        },
+        {
+          "point": 2,
+          "cut": 0,
+          "order": 6,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 0,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 1,
+          "rank": 18,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 2,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 3,
+          "rank": 0,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 4,
+          "rank": 15,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 5,
+          "rank": 0,
+          "bound": 18
+        },
+        {
+          "point": null,
+          "cut": 0,
+          "order": 6,
+          "rank": 0,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 0,
+          "rank": 0,
+          "bound": 1
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 1,
+          "rank": 0,
+          "bound": 9
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 2,
+          "rank": 6,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 3,
+          "rank": 0,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 4,
+          "rank": 15,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 5,
+          "rank": 18,
+          "bound": 18
+        },
+        {
+          "point": 0,
+          "cut": 1,
+          "order": 6,
+          "rank": 15,
+          "bound": 18
+        }
+      ],
+      "piece_controls": [
+        {
+          "index": 0,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            0,
+            18
+          ]
+        },
+        {
+          "index": 1,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            1,
+            18
+          ]
+        },
+        {
+          "index": 2,
+          "ranks": [
+            6,
+            15
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 3,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 4,
+          "ranks": [
+            15,
+            6
+          ],
+          "bounds": [
+            18,
+            18
+          ]
+        },
+        {
+          "index": 5,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            10
+          ]
+        },
+        {
+          "index": 6,
+          "ranks": [
+            0,
+            0
+          ],
+          "bounds": [
+            18,
+            1
+          ]
+        }
+      ],
+      "finite_certificate": {
+        "copies": 3,
+        "seed_degree": 2,
+        "tensor_degree": 6,
+        "type_counts_x": [
+          1,
+          1,
+          1
+        ],
+        "type_counts_y": [
+          2,
+          1
+        ],
+        "external_label_counts": [
+          6,
+          3
+        ],
+        "cut_dimension": 18,
+        "critical_index": 2,
+        "rank_pairs": [
+          [
+            0,
+            18
+          ],
+          [
+            1,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            18
+          ],
+          [
+            18,
+            10
+          ],
+          [
+            18,
+            1
+          ]
+        ],
+        "amplification": {
+          "active_piece_upper_bound": 6,
+          "zero_piece_bounds": 1,
+          "maximum_rank_product": 324,
+          "coarse_base": 11664,
+          "square_root_sum_upper_numerator": 1400139036158444865342,
+          "square_root_sum_upper_denominator": 18446744073709551616,
+          "rational_sqrt2_lower_bound": [
+            140,
+            99
+          ],
+          "exponent_square_test": true,
+          "coarse_gate_passed": false,
+          "rank_sum_gate_passed": false,
+          "certified_rho_strict_upper_bound_if_passed": [
+            140,
+            198
+          ]
+        },
+        "row_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 1,
+            "cost": 0,
+            "prefix_cost": 0
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 1,
+            "order": 0,
+            "gauge_index": 0,
+            "cost": 27,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 33,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 1,
+            "order": 1,
+            "gauge_index": 0,
+            "cost": 162,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 201,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 1,
+            "order": 2,
+            "gauge_index": 0,
+            "cost": 459,
+            "prefix_cost": 18
+          }
+        ],
+        "column_flag": [
+          {
+            "place_index": 0,
+            "order": 0,
+            "gauge_index": 0,
+            "cost": 1,
+            "prefix_cost": 1
+          },
+          {
+            "place_index": 0,
+            "order": 1,
+            "gauge_index": 1,
+            "cost": 9,
+            "prefix_cost": 10
+          },
+          {
+            "place_index": 0,
+            "order": 2,
+            "gauge_index": 1,
+            "cost": 41,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 3,
+            "gauge_index": 1,
+            "cost": 126,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 4,
+            "gauge_index": 1,
+            "cost": 294,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 5,
+            "gauge_index": 1,
+            "cost": 558,
+            "prefix_cost": 18
+          },
+          {
+            "place_index": 0,
+            "order": 6,
+            "gauge_index": 1,
+            "cost": 905,
+            "prefix_cost": 18
+          }
+        ]
+      }
+    }
+  ]
+}

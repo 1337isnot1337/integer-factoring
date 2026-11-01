@@ -1,0 +1,24 @@
+{
+  "claim": "exact adaptive prime-constructor ceilings and volume",
+  "counts": {
+    "below_hypothesis_empty_prime_interval_controls": 1,
+    "exact_input_boundary_controls": 1698,
+    "exact_parameter_stage_controls": 10752,
+    "small_exact_dyadic_prime_and_root_controls": 6
+  },
+  "parameters": {
+    "epsilon_values": [
+      "1",
+      "1/2",
+      "1/4",
+      "1/16",
+      "1/64",
+      "3/7"
+    ],
+    "largest_observed_digit_capacity_excess_divided_by_epsilon": "9/2048",
+    "largest_observed_volume_excess_divided_by_epsilon": "20005/109568",
+    "uniform_proved_epsilon_margin": "245731/787200"
+  },
+  "scope": "Analytic prime-distribution constants are proved symbolically, not numerically estimated.",
+  "status": "passed"
+}

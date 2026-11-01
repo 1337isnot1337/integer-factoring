@@ -1,0 +1,84 @@
+{
+  "scope": "Exact cached fraction-free local Smith profiles versus exhaustive nonzero minors, with negative rational physical weights and nonlinear places.",
+  "source_sha256": {
+    "check_f16_weighted_local_oracle.py": "0c343f3344b6a14021e4cabcac68bdc340a0a1c79abe771e46255c82eb607202",
+    "f16_weighted_local_oracle.py": "f31a7f9a73a7d7002a2dc61db83695f665b7fc67bc488c6b6f23c2b8bc4d3322",
+    "fused_weighted_place_profiles.py": "58208d277fbc8c892f6ea430a8e3ff84ad5d7b4a3a5ebb25542ac126dd1684af",
+    "check_fused_closed_profiles.py": "601ef47f8ea7cae609eeffdbefdb278b29d85c654fd132ad7c33fb9709e35460",
+    "check_fused_multipoint_profiles.py": "c163e3fa6bdc32efbb1a027aa78a1c1fbf405f0c3b15a0327ca3e0aed65b3ce6",
+    "fused_six_vertex_crossings.py": "90b016b84e57b2b6d1134c61016c2de5183edc2b2f2943ef9964d5d82dbaf109",
+    "f16_identity_operator_profiles.py": "3095c293971c4fff43f2a71052e49c526ded05aa9d087531124d246a05c67c8b",
+    "f4_lattice_linear.py": "fc27ccbcf4a82cb3c2643eac6a8a53fb7e08ced4700a30c0b5abca1a3f3aab8e"
+  },
+  "seed": 311715,
+  "cases": [
+    {
+      "m": 2,
+      "theta": 2,
+      "alphabet": 3,
+      "places": [
+        [
+          0,
+          1
+        ],
+        null
+      ],
+      "full_weighted_profile_comparisons": 12
+    },
+    {
+      "m": 3,
+      "theta": 4,
+      "alphabet": 4,
+      "places": [
+        [
+          0,
+          1
+        ],
+        null,
+        [
+          9,
+          2,
+          1
+        ]
+      ],
+      "full_weighted_profile_comparisons": 18
+    },
+    {
+      "m": 4,
+      "theta": 4,
+      "alphabet": 5,
+      "places": [
+        [
+          0,
+          1
+        ],
+        null,
+        [
+          9,
+          12,
+          1
+        ]
+      ],
+      "full_weighted_profile_comparisons": 18
+    },
+    {
+      "m": 5,
+      "theta": 4,
+      "alphabet": 6,
+      "places": [
+        [
+          0,
+          1
+        ],
+        null,
+        [
+          9,
+          4,
+          1
+        ]
+      ],
+      "full_weighted_profile_comparisons": 18
+    }
+  ],
+  "total_full_weighted_profile_comparisons": 66
+}
