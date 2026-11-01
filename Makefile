@@ -151,6 +151,10 @@ verify-bounded-spin:
 verify-bounded-spin-algebra:
 	python3 tools/check_bounded_spin_rank_algebra.py
 
+.PHONY: verify-bounded-spin-six-vertex
+verify-bounded-spin-six-vertex:
+	python3 tools/check_bounded_spin_six_vertex.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py

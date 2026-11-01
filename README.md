@@ -293,6 +293,12 @@ product 2304; that finite block cannot improve the rate. Run
 The [spin-zero jet identities](research/bounded-spin-three-jets.md)
 hold at every length and bound the coefficient span by `n-2` for even
 `n>=6`; ordinary cut-rank growth remains open.
+An [enlarged six-vertex construction](research/bounded-spin-six-vertex.md)
+exposes the complete monomial span with degree `O(n^2)` and the same
+strict endpoint. At eight sites it adds a seventh tensor direction;
+the noncommuting cut operators have invariant commutator modules of
+dimension 28. Uniform favorable ranks remain open. Run the optional
+`make verify-bounded-spin-six-vertex`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

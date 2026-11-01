@@ -1,0 +1,63 @@
+{
+  "status": "pass",
+  "prime": 5,
+  "cases": [
+    {
+      "length": 4,
+      "labels": 2,
+      "monomials": 6,
+      "coefficient_span_dimension": 3,
+      "univariate_degree_bound": 10
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "monomials": 10,
+      "coefficient_span_dimension": 4,
+      "univariate_degree_bound": 21
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "monomials": 15,
+      "coefficient_span_dimension": 7,
+      "univariate_degree_bound": 36
+    }
+  ],
+  "independent_magnetic_entry_controls": 40,
+  "integral_entry_controls": 16,
+  "old_pencil_recovered_exactly": true,
+  "invariant_commutator_modules": [
+    {
+      "dimension": 28,
+      "ambient_dimension": 169,
+      "commutator_ranks": [
+        0,
+        28,
+        26,
+        20,
+        28,
+        20
+      ]
+    },
+    {
+      "dimension": 28,
+      "ambient_dimension": 169,
+      "commutator_ranks": [
+        2,
+        20,
+        20,
+        26,
+        28,
+        28
+      ]
+    }
+  ],
+  "scope": "Uniform enlarged coherent crossing and exact finite span/module controls; no favorable uniform rank theorem or improved factoring bound.",
+  "source_sha256": {
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_six_vertex.py": "fba0658d6ad3dd1b308f61420ca6e3d17533a8e2eace2f66dbe5a9e5bbe907f8",
+    "tools/check_bounded_spin_six_vertex.py": "ea464a6441e74f3e2212d7b38d1a1809b7616d1629b193aaf69e8039633b2971",
+    "tools/check_bounded_spin_rank_algebra.py": "67fe2140c08db6ebf482c7380343d1ab9db4e09a16647d8d030eb7ccd9a37a16"
+  }
+}
