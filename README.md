@@ -2678,6 +2678,15 @@ Smith-prefix bounds. A separate exact module counterexample shows why
 those quotient bounds alone are insufficient for the full pressure target.
 The remaining proof must retain the complete crossing endpoint.
 
+The [generic axis-face floor](research/multiaxis-face-rank-floor.md)
+combines complementary Smith pairs with average face-rank fraction `c`
+to force pressure above `min(1/2,c+1/d)`. For symmetric subset-local
+Cayley kernels in every dimension `d>=4`, a winning kernel must therefore
+have all pair and triple coefficients divisible by all their variables.
+A degree-eight endpoint fixture has a generic quarter-rank face hidden
+by the all-one specialization. This is a necessary condition for this
+profile route; it supplies no stronger complete factoring bound.
+
 A [routing-rank argument](research/generic-engine-routing-rank-nogo.md)
 limits matrices with the generic engine's stated Step-2 support on its
 schedule-pair array. Under that engine's accounting it retains the half-rate

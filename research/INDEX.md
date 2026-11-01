@@ -1,5 +1,7 @@
 # Research index
 
+- [A global floor from generic axis-face ranks](multiaxis-face-rank-floor.md): complementary Smith pairing and average face-rank fraction c force common-scale pressure above min(1/2,c+1/d). Every symmetric winning Cayley kernel in d>=4 must have pair/triple coefficients divisible by all their variables. A full endpoint fixture shows why the all-one specialization can hide this obstruction.
+
 - [Global homogeneous axis alignment and its quotient limits](global-axis-alignment-obstruction.md): all-field characteristic-two locality/endpoint forces transverse coefficients and quotient prefixes at depths D/4,D/6,D/8. An exact exterior-module counterexample shows those quotient bounds alone do not lift to the needed full prefix; the crossing endpoint remains essential.
 
 - [Frobenius residues in the higher axis flags](high-axis-frobenius-residues.md): degree-64 endpoint coefficients reduce generic quartic rank from 46 to 28; independent Toeplitz ranks 840/960 give 120 orders of total 2520, excluding this explicit nine-axis kernel at every scale and common occupied frequency.

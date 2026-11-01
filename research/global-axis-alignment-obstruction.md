@@ -115,6 +115,14 @@ compatibility. No universal high-axis pressure floor or stronger factoring
 exponent is claimed. No further coefficient sampling is registered. The
 score remains `1/2`.
 
+The later [generic face-rank lemma](multiaxis-face-rank-floor.md) gives
+a complementary global restriction: a symmetric kernel with any pair or
+triple coefficient surviving on a coordinate face already fails the
+half-score criterion in every dimension at least four. Setting all other
+variables to one can annihilate these generic face minors. That lemma
+does not settle the strictly positive low jets of the earlier degree-64
+examples or lift the quotient bounds in (2).
+
 ## The quotient bounds alone do not lift to the required prefix
 
 There is an exact exterior-module counterexample to that proposed

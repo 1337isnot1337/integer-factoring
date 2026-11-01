@@ -812,3 +812,22 @@ new frozen default suite are the next integrity gate; the previous full
 `3709a9e` receipt predates these sources. No Lean or score gain is claimed.
 PR69 retains Grok Bot / Alkindus Arifuddin credit; PR68 retains its author
 and predecessor disclosures.
+
+## Global generic face-rank floor
+
+The [ordinary proof](../research/multiaxis-face-rank-floor.md) pools
+fractional low-half channels across all axes. Complementary Smith pairing
+and average face-rank fraction c give the exact pressure floor
+`min(1/2,c+1/d)`. The supported-monomial triangular minor makes nonvanishing
+pair/triple faces an obstruction in every symmetric Cayley dimension
+at least four. This is independent of coefficient degree and field size;
+strictly positive low jets, other physical types and non-Cayley kernels
+remain outside the new conclusion. The
+[receipt](../evidence/multiaxis-face-rank-controls.json) retains 56 unequal
+paired-profile budget controls, exact threshold comparisons, a literal
+64-by-64 F4 minor and scalar-restricted face rank 64. Four untruncated
+small-block profiles, 44 orders, reconstruct all 256 specialized orders;
+their first 86 sum to 258 while the generic floor is 13/36. These controls
+illustrate the ordinary theorem and the limit of the all-one specialization.
+No independent mathematical review, Lean or stronger factoring score
+is claimed. The frozen default run at `5c2e66d` predates this delta.
