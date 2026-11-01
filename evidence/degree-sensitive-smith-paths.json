@@ -1,0 +1,637 @@
+{
+  "base_checker_sha256": "d939fc8e01e6e152041871358ce839999732d1d28306a6cf88832801fa7b46fb",
+  "cases": [
+    {
+      "auxiliary_dimension": 1,
+      "best_sampled_certificate": {
+        "B_path": "256/27",
+        "infinity": {
+          "beta": "16/3",
+          "data": {
+            "cut": 0,
+            "deltas": [
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              1,
+              0,
+              0,
+              -1
+            ],
+            "heights": [
+              0
+            ],
+            "infinity": true,
+            "precision": 5,
+            "side": 0
+          },
+          "matrix": [
+            [
+              "16/3"
+            ]
+          ],
+          "potential": [
+            "1"
+          ]
+        },
+        "s": "3",
+        "zero": {
+          "beta": "16/9",
+          "data": {
+            "cut": 1,
+            "deltas": [
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ],
+              [
+                [
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              0,
+              -1,
+              -1,
+              -2
+            ],
+            "heights": [
+              0
+            ],
+            "infinity": false,
+            "precision": 5,
+            "side": 0
+          },
+          "matrix": [
+            [
+              "16/9"
+            ]
+          ],
+          "potential": [
+            "1"
+          ]
+        }
+      },
+      "coefficient_rank_checks": 288,
+      "exact_zeros": 176,
+      "jet_checks": 256,
+      "minor_checks": 240,
+      "name": "scalar elementary",
+      "ordered_endpoint_entries": 4368,
+      "polynomial_degree": 1,
+      "rational_path_and_potential_checks": 864
+    },
+    {
+      "auxiliary_dimension": 2,
+      "best_sampled_certificate": {
+        "B_path": "256/27",
+        "infinity": {
+          "beta": "16/3",
+          "data": {
+            "cut": 0,
+            "deltas": [
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              1,
+              0,
+              0,
+              -1
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": true,
+            "precision": 5,
+            "side": 0
+          },
+          "matrix": [
+            [
+              "16/3",
+              "0"
+            ],
+            [
+              "0",
+              "16/3"
+            ]
+          ],
+          "potential": [
+            "1",
+            "1/9"
+          ]
+        },
+        "s": "3",
+        "zero": {
+          "beta": "16/9",
+          "data": {
+            "cut": 1,
+            "deltas": [
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              0,
+              -1,
+              -1,
+              -2
+            ],
+            "heights": [
+              0,
+              0
+            ],
+            "infinity": false,
+            "precision": 5,
+            "side": 0
+          },
+          "matrix": [
+            [
+              "16/9",
+              "0"
+            ],
+            [
+              "0",
+              "16/9"
+            ]
+          ],
+          "potential": [
+            "1",
+            "1/9"
+          ]
+        }
+      },
+      "coefficient_rank_checks": 1152,
+      "exact_zeros": 2080,
+      "jet_checks": 2560,
+      "minor_checks": 4800,
+      "name": "auxiliary elementary",
+      "ordered_endpoint_entries": 4368,
+      "polynomial_degree": 1,
+      "rational_path_and_potential_checks": 3456
+    },
+    {
+      "auxiliary_dimension": 2,
+      "best_sampled_certificate": {
+        "B_path": "36",
+        "infinity": {
+          "beta": "6",
+          "data": {
+            "cut": 0,
+            "deltas": [
+              [
+                [
+                  1,
+                  4
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                [
+                  1,
+                  4
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              3,
+              3,
+              2,
+              2
+            ],
+            "heights": [
+              1,
+              -1
+            ],
+            "infinity": true,
+            "precision": 21,
+            "side": 0
+          },
+          "matrix": [
+            [
+              "4",
+              "2"
+            ],
+            [
+              "2",
+              "4"
+            ]
+          ],
+          "potential": [
+            "1",
+            "1"
+          ]
+        },
+        "s": "1",
+        "zero": {
+          "beta": "6",
+          "data": {
+            "cut": 1,
+            "deltas": [
+              [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  1
+                ]
+              ],
+              [
+                [
+                  1,
+                  0
+                ],
+                [
+                  2,
+                  1
+                ]
+              ],
+              [
+                [
+                  1,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  1,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              1,
+              1,
+              0,
+              0
+            ],
+            "heights": [
+              0,
+              1
+            ],
+            "infinity": false,
+            "precision": 13,
+            "side": 0
+          },
+          "matrix": [
+            [
+              "4",
+              "2"
+            ],
+            [
+              "2",
+              "4"
+            ]
+          ],
+          "potential": [
+            "1",
+            "1"
+          ]
+        }
+      },
+      "coefficient_rank_checks": 1920,
+      "exact_zeros": 1556,
+      "jet_checks": 2560,
+      "minor_checks": 4800,
+      "name": "ordered pairing",
+      "ordered_endpoint_entries": 4368,
+      "polynomial_degree": 2,
+      "rational_path_and_potential_checks": 5760
+    },
+    {
+      "auxiliary_dimension": 2,
+      "best_sampled_certificate": {
+        "B_path": "55/2",
+        "infinity": {
+          "beta": "11/2",
+          "data": {
+            "cut": 1,
+            "deltas": [
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  2
+                ]
+              ],
+              [
+                [
+                  0,
+                  0
+                ],
+                [
+                  null,
+                  2
+                ]
+              ],
+              [
+                [
+                  1,
+                  null
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                [
+                  1,
+                  null
+                ],
+                [
+                  0,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              3,
+              3,
+              2,
+              2
+            ],
+            "heights": [
+              0,
+              1
+            ],
+            "infinity": true,
+            "precision": 13,
+            "side": 0
+          },
+          "matrix": [
+            [
+              "4",
+              "1"
+            ],
+            [
+              "2",
+              "4"
+            ]
+          ],
+          "potential": [
+            "1",
+            "3/2"
+          ]
+        },
+        "s": "1",
+        "zero": {
+          "beta": "5",
+          "data": {
+            "cut": 0,
+            "deltas": [
+              [
+                [
+                  1,
+                  null
+                ],
+                [
+                  0,
+                  1
+                ]
+              ],
+              [
+                [
+                  0,
+                  3
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ],
+              [
+                [
+                  0,
+                  null
+                ],
+                [
+                  null,
+                  0
+                ]
+              ]
+            ],
+            "exponents": [
+              1,
+              0,
+              0,
+              0
+            ],
+            "heights": [
+              1,
+              -1
+            ],
+            "infinity": false,
+            "precision": 21,
+            "side": 0
+          },
+          "matrix": [
+            [
+              "4",
+              "1"
+            ],
+            [
+              "1",
+              "4"
+            ]
+          ],
+          "potential": [
+            "1",
+            "1"
+          ]
+        }
+      },
+      "coefficient_rank_checks": 2688,
+      "exact_zeros": 1682,
+      "jet_checks": 2560,
+      "minor_checks": 4800,
+      "name": "mixed nilpotent loop",
+      "ordered_endpoint_entries": 4368,
+      "polynomial_degree": 3,
+      "rational_path_and_potential_checks": 8064
+    }
+  ],
+  "checker_sha256": "2ee866cdc4ad6b1ad7bd1cb60e9548faaf06535419833623362a21f994ed59c4",
+  "field": 2,
+  "independent_native_crosscheck": {
+    "additional_bordered_minor_checks": 21600,
+    "native_edge_orders_compared": 2304,
+    "native_factors_compared": 144,
+    "native_model_gauge_instances": 18
+  },
+  "maximum_word": 3,
+  "negative_controls": {
+    "boundary_poles_require_restoration": true,
+    "pivot_precision_loss": {
+      "input_precision": 9,
+      "pivot_order": 4,
+      "valid_quotient_precision": 5
+    },
+    "positive_potential_may_need_strict_perron_slack": true,
+    "uncertified_degree_invalidates_exact_zero": true,
+    "zero_jet_not_zero_series": {
+      "denominator": 9,
+      "jet_precision": 7,
+      "numerator": 128
+    }
+  },
+  "scope": "Exact rational-function, jet, bordered-minor, path, and finite-rank checks; no improving seed.",
+  "status": "pass"
+}

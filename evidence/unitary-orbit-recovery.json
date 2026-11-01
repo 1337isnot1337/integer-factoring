@@ -1,0 +1,206 @@
+{
+  "characteristics": [
+    {
+      "canonical_representatives": 11976,
+      "characteristic": 0,
+      "integers": 4095,
+      "inverse_equations": 23952,
+      "maximum_factorization_queries": 91,
+      "maximum_power_nodes": 3,
+      "ordinary_tuples": 34719,
+      "perfect_power_inputs": 81,
+      "prime_inputs": 564,
+      "tuple_length": 2,
+      "unitary_orbit_inputs": 3450,
+      "unitary_tuples": 23952
+    },
+    {
+      "canonical_representatives": 11976,
+      "characteristic": 2,
+      "integers": 4095,
+      "inverse_equations": 23952,
+      "maximum_factorization_queries": 65,
+      "maximum_power_nodes": 3,
+      "ordinary_tuples": 34719,
+      "perfect_power_inputs": 81,
+      "prime_inputs": 564,
+      "tuple_length": 2,
+      "unitary_orbit_inputs": 3450,
+      "unitary_tuples": 23952
+    },
+    {
+      "canonical_representatives": 1487,
+      "characteristic": 3,
+      "integers": 383,
+      "inverse_equations": 8922,
+      "maximum_factorization_queries": 73,
+      "maximum_power_nodes": 3,
+      "ordinary_tuples": 8703,
+      "perfect_power_inputs": 26,
+      "prime_inputs": 76,
+      "tuple_length": 3,
+      "unitary_orbit_inputs": 281,
+      "unitary_tuples": 4461
+    },
+    {
+      "canonical_representatives": 2327,
+      "characteristic": 4,
+      "integers": 383,
+      "inverse_equations": 27924,
+      "maximum_factorization_queries": 83,
+      "maximum_power_nodes": 3,
+      "ordinary_tuples": 24951,
+      "perfect_power_inputs": 26,
+      "prime_inputs": 76,
+      "tuple_length": 4,
+      "unitary_orbit_inputs": 281,
+      "unitary_tuples": 9308
+    },
+    {
+      "canonical_representatives": 3375,
+      "characteristic": 5,
+      "integers": 383,
+      "inverse_equations": 67500,
+      "maximum_factorization_queries": 102,
+      "maximum_power_nodes": 3,
+      "ordinary_tuples": 60852,
+      "perfect_power_inputs": 26,
+      "prime_inputs": 76,
+      "tuple_length": 5,
+      "unitary_orbit_inputs": 281,
+      "unitary_tuples": 16875
+    },
+    {
+      "canonical_representatives": 4643,
+      "characteristic": 6,
+      "integers": 383,
+      "inverse_equations": 139290,
+      "maximum_factorization_queries": 121,
+      "maximum_power_nodes": 3,
+      "ordinary_tuples": 132471,
+      "perfect_power_inputs": 26,
+      "prime_inputs": 76,
+      "tuple_length": 6,
+      "unitary_orbit_inputs": 281,
+      "unitary_tuples": 27858
+    },
+    {
+      "canonical_representatives": 6143,
+      "characteristic": 7,
+      "integers": 383,
+      "inverse_equations": 258006,
+      "maximum_factorization_queries": 140,
+      "maximum_power_nodes": 3,
+      "ordinary_tuples": 264846,
+      "perfect_power_inputs": 26,
+      "prime_inputs": 76,
+      "tuple_length": 7,
+      "unitary_orbit_inputs": 281,
+      "unitary_tuples": 43001
+    },
+    {
+      "canonical_representatives": 7887,
+      "characteristic": 8,
+      "integers": 383,
+      "inverse_equations": 441672,
+      "maximum_factorization_queries": 175,
+      "maximum_power_nodes": 3,
+      "ordinary_tuples": 495363,
+      "perfect_power_inputs": 26,
+      "prime_inputs": 76,
+      "tuple_length": 8,
+      "unitary_orbit_inputs": 281,
+      "unitary_tuples": 63096
+    },
+    {
+      "canonical_representatives": 9887,
+      "characteristic": 9,
+      "integers": 383,
+      "inverse_equations": 711864,
+      "maximum_factorization_queries": 205,
+      "maximum_power_nodes": 3,
+      "ordinary_tuples": 877950,
+      "perfect_power_inputs": 26,
+      "prime_inputs": 76,
+      "tuple_length": 9,
+      "unitary_orbit_inputs": 281,
+      "unitary_tuples": 88983
+    }
+  ],
+  "checker_sha256": "3df3b64c5b9cda3f3565bc8335a8238ed23e4c9337fd615ec88521533f35d732",
+  "local_witnesses": {
+    "addition_traces": 2044,
+    "comparison_traces": 21844,
+    "literal_inverse_pairs": 2304,
+    "overflow_negative_cases": 9,
+    "unit_argument_pairs": 95
+  },
+  "negative_controls": {
+    "omitting_coprimality": {
+      "N": 12,
+      "ordinary_proper_pairs": [
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "unitary_pairs": [
+        [
+          3,
+          4
+        ]
+      ]
+    },
+    "omitting_coprimality_with_composite_length": {
+      "orbit_size": 2,
+      "tuple": [
+        2,
+        3,
+        2,
+        3
+      ]
+    },
+    "omitting_inverse_bound": {
+      "a": 2,
+      "b": 3,
+      "distinct_witnesses": [
+        [
+          2,
+          1
+        ],
+        [
+          5,
+          3
+        ]
+      ]
+    },
+    "omitting_perfect_power_test": {
+      "N": 8,
+      "unitary_nontrivial_count": 0
+    },
+    "omitting_unit_guard": {
+      "a": 5,
+      "b": 1,
+      "valid_witness": [
+        0,
+        0
+      ]
+    },
+    "trivial_orbit_must_be_removed": {
+      "N": 7,
+      "canonical_unitary_orbits": 1
+    },
+    "wrong_tuple_length_for_characteristic": {
+      "N": 30,
+      "characteristic": 3,
+      "length2_residue": 0,
+      "length3_residue": 2
+    }
+  },
+  "scope": "Exact finite transcription checks, not an asymptotic runtime measurement",
+  "status": "PASS"
+}

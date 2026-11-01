@@ -1,0 +1,168 @@
+{
+  "status": "passed",
+  "field_cardinality": 2,
+  "enumeration": {
+    "maximum_depth": 6,
+    "classes_by_depth": [
+      1,
+      3,
+      6,
+      12,
+      24,
+      48,
+      96
+    ],
+    "total_classes": 190,
+    "finite_lattice_membership_checks": 778240,
+    "bidirectional_neighbor_checks": 570
+  },
+  "unit_and_scalar_invariance": {
+    "spectral_invariance_comparisons": 576,
+    "full_precision_and_toeplitz_checks": 288
+  },
+  "convexity_and_certificates": {
+    "partial_sum_convexity_checks": 2112,
+    "exact_rational_path_convexity_checks": 1584,
+    "neighbor_certificates": [
+      {
+        "profile_index": 0,
+        "s": "3",
+        "gauge": [
+          0,
+          0,
+          0
+        ],
+        "value": "4",
+        "neighbor_values": [
+          "4",
+          "4",
+          "4"
+        ],
+        "strict_descent_steps": 0
+      },
+      {
+        "profile_index": 1,
+        "s": "3",
+        "gauge": [
+          0,
+          0,
+          0
+        ],
+        "value": "112/3",
+        "neighbor_values": [
+          "166/3",
+          "274/3",
+          "274/3"
+        ],
+        "strict_descent_steps": 0
+      },
+      {
+        "profile_index": 2,
+        "s": "3",
+        "gauge": [
+          0,
+          0,
+          0
+        ],
+        "value": "4",
+        "neighbor_values": [
+          "4",
+          "4",
+          "4"
+        ],
+        "strict_descent_steps": 0
+      },
+      {
+        "profile_index": 3,
+        "s": "3",
+        "gauge": [
+          0,
+          1,
+          0
+        ],
+        "value": "40",
+        "neighbor_values": [
+          "94",
+          "94",
+          "58"
+        ],
+        "strict_descent_steps": 1
+      },
+      {
+        "profile_index": 4,
+        "s": "3",
+        "gauge": [
+          0,
+          0,
+          0
+        ],
+        "value": "2",
+        "neighbor_values": [
+          "8/3",
+          "8/3",
+          "8/3"
+        ],
+        "strict_descent_steps": 0
+      },
+      {
+        "profile_index": 5,
+        "s": "3",
+        "gauge": [
+          0,
+          1,
+          0
+        ],
+        "value": "72",
+        "neighbor_values": [
+          "120",
+          "180",
+          "108"
+        ],
+        "strict_descent_steps": 1
+      },
+      {
+        "profile_index": 6,
+        "s": "3",
+        "gauge": [
+          0,
+          0,
+          0
+        ],
+        "value": "2",
+        "neighbor_values": [
+          "8/3",
+          "8/3",
+          "8/3"
+        ],
+        "strict_descent_steps": 0
+      },
+      {
+        "profile_index": 7,
+        "s": "3",
+        "gauge": [
+          0,
+          0,
+          0
+        ],
+        "value": "60",
+        "neighbor_values": [
+          "60",
+          "168",
+          "168"
+        ],
+        "strict_descent_steps": 0
+      }
+    ],
+    "larger_depth_comparison_checks": 1520,
+    "distinct_gauges_evaluated": 190
+  },
+  "common_scalar_projections": {
+    "componentwise_smith_projection_checks": 128,
+    "rational_laurent_sum_comparisons": 32,
+    "nonconstant_gauge_trace_invariance_checks": 32,
+    "characteristic_dividing_dimension_negative_control": true
+  },
+  "checker_sha256": "fdb4b07f5bb38ffb74d94aa38fa147135365077ae61fe1c30228dd1193c7b1f4",
+  "base_smith_checker_sha256": "d939fc8e01e6e152041871358ce839999732d1d28306a6cf88832801fa7b46fb",
+  "scope": "Exact finite controls for lattice-gauge enumeration and fixed-s neighbor certificates; no termination, ramified-gauge exclusion, or improved factoring bound."
+}

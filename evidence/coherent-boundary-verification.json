@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "native_sha256": "6799e8e980bc230340ed287e93547ec26137cd741bc09504240aebd8b53fe191",
+  "direct_cut_rank_comparisons": 2860,
+  "common_projection_entry_checks": 4096,
+  "projection_negative_control_changes": 1518,
+  "triangular_union_rank_checks": 2200,
+  "screen": {
+    "width": 4,
+    "labels": 16,
+    "normalized_boundaries": 128,
+    "nonzero_coefficient_functionals_per_boundary": 31,
+    "rank_pairs": 3968,
+    "binary_span_optimum_for_every_boundary": 256,
+    "lower_cost_denominator": 65536,
+    "scope": "F2 coefficient span, finite width only; no extension-field or asymptotic exclusion"
+  }
+}

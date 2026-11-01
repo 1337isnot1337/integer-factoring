@@ -1,0 +1,8 @@
+#pragma once
+#include "f3_smith_core.hpp"
+using GM=std::vector<T>;
+GM gmul(GM const&A,GM const&B,int D){GM C(D*D);for(int i=0;i<D;i++)for(int j=0;j<D;j++)for(int k=0;k<D;k++)C[D*i+j]=add(C[D*i+j],pmul(A[D*i+k],B[D*k+j]));return C;}
+std::vector<GM> resolvent_block(int q,int b,int&d){d=1;for(int j=0;j<b;j++)d*=q;int D=q;std::vector<GM>local(q*q*q*q,GM(D*D));T PA{7,0},PB{4,2},PE{4,0};for(int u=0;u<q;u++)for(int v=0;v<q;v++)for(int c=0;c<D;c++){int x=c,y=v,a=u;auto&i=local[((x*q+y)*q+u)*q+v][D*a+c];i=add(i,PA);x=u;y=c;a=v;auto&j=local[((x*q+y)*q+u)*q+v][D*a+c];j=add(j,PB);x=v;y=u;a=c;auto&k=local[((x*q+y)*q+u)*q+v][D*a+c];k=add(k,PE);}
+for(int x=0;x<q;x++)for(int y=0;y<q;y++)for(int u=0;u<q;u++)for(int v=0;v<q;v++)for(int a=0;a<D;a++)for(int c=0;c<D;c++){T f=local[((x*q+y)*q+u)*q+v][D*a+c];if((std::popcount(f.a)+2*std::popcount(f.b))%3!=(x==v&&y==u&&a==c))throw std::runtime_error("endpoint");}
+std::vector<GM>all(d*d*d*d,GM(D*D));for(int x=0;x<d;x++)for(int y=0;y<d;y++)for(int u=0;u<d;u++)for(int v=0;v<d;v++){int xx=x,yy=y,uu=u,vv=v;GM M(D*D);for(int a=0;a<D;a++)M[D*a+a]={1,0};for(int j=0;j<b;j++){M=gmul(M,local[((xx%q*q+yy%q)*q+uu%q)*q+vv%q],D);xx/=q;yy/=q;uu/=q;vv/=q;}all[((x*d+y)*d+u)*d+v]=std::move(M);}return all;}
+PolyMatrix gflatten(std::vector<GM>const&K,int d,int D,int cut,int side,int degree,bool reverse){int n=d*d;PolyMatrix A(D*D*n,std::vector<T>(n));for(int x=0;x<d;x++)for(int y=0;y<d;y++)for(int u=0;u<d;u++)for(int v=0;v<d;v++){int r=cut?x*d+u:x*d+y,c=cut?y*d+v:u*d+v;if(side)std::swap(r,c);auto&M=K[((x*d+y)*d+u)*d+v];for(int a=0;a<D;a++)for(int b=0;b<D;b++)A[D*D*r+D*a+b][c]=reverse?reversep(M[D*a+b],degree):M[D*a+b];}return A;}
