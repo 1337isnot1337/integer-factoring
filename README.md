@@ -1682,6 +1682,8 @@ remain constructive routes; no stronger factoring score follows here.
 
 The [rough-length Fourier constructor](research/rough-length-fourier-constructor.md) removes small prime factors and branches on the exact two operand lengths. Its carry-column width satisfies `P^2 lambda <= (12+o(1))n`, improving the earlier constant 24, with the full preprocessing and factor recovery costs included. The complete factoring score remains `1/2`.
 
+The [moment-quotient localization analysis](research/pole-cauchy-localization-obstruction.md) proves why directly inverting the factor-count pole in the small polynomial quotient fails at polynomial precision. An exact proper-factor example also defeats common-factor cancellation followed by canonical rational coefficient lifting. The result scopes these reconstruction strategies; a different scalar extraction method remains open.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

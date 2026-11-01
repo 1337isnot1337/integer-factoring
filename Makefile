@@ -2024,3 +2024,7 @@ verify-pole-cauchy-batched-poles:
 .PHONY: verify-rough-length-fourier
 verify-rough-length-fourier:
 	python3 tools/check_rough_length_fourier_constructor.py --output /tmp/integer-factoring-rough-length-fourier-constructor.json
+
+.PHONY: verify-pole-cauchy-localization
+verify-pole-cauchy-localization:
+	python3 tools/check_pole_cauchy_localization.py --output /tmp/integer-factoring-pole-cauchy-localization.json

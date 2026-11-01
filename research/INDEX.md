@@ -1090,3 +1090,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## A shorter Fourier constructor with charged small-prime removal
 
 - [A shorter Fourier constructor with charged small-prime removal](rough-length-fourier-constructor.md)
+
+
+## Limits of rational extraction from compressed polynomial moments
+
+- [Limits of rational extraction from compressed polynomial moments](pole-cauchy-localization-obstruction.md)
