@@ -74,3 +74,25 @@ it can support a stronger crossing or factoring claim.
 
 Substantial OpenAI assistant support was used. No new Lean formalization or
 improved complete factoring score is included; that score remains **1/2**.
+
+## Completed eight starts and two one-hour follow-ons
+
+The frozen `9897729` [complete campaign archive](../evidence/f4-pascal-coordinate-campaign-complete.json.xz)
+contains all eight inherited starts, their 16,384 complete orders, the
+registered selection, both one-hour reports, source texts and stdout.
+The identity start remains best at numerical rho `0.7216933250053`.
+The best inherited nonidentity flag is `omega-2-3`, at `0.7891550557581`.
+
+| One-hour whole-symbol follow-on | Successful full-profile queries | Lowest observed rho |
+| --- | ---: | ---: |
+| Identity control | 978 | 0.7216933250053 |
+| Selected nonidentity flag | 648 | 0.7467005105918 |
+
+Both exhausted the time budget with zero rejected queries. Neither
+completed its first optimizer restart within the hour; the restart and
+iteration ceilings were not exhausted. Search times were 3,601.98 and
+3,603.75 seconds, with initialization recorded separately. The nonidentity
+case improves substantially within its own search but remains weaker than
+the identity control and above the critical threshold. The archive retains
+best states and counters, not every intermediate query. No exact stronger
+pressure bound or global optimality claim follows.
