@@ -2015,6 +2015,8 @@ changes the binary-linear successor assumption but charges multiplication:
 direct charts have an exponential count/degree tradeoff, and direct graph
 equations need degree at least order `2^(w/3)`. Auxiliary finite-field fibre
 selection remains open; the audit supplies no stronger factoring bound.
+Its [full code replay receipt](evidence/elliptic-word-full-verification.json)
+pins the successful default-plus-focused run at `956d971`.
 
 For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
 extends the existing permutation calculation to dependent and noncommuting
