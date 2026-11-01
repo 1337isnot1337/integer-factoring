@@ -1707,6 +1707,13 @@ excludes polynomial-size common linear section spaces even at phase order
 three, where a direct square test is cheap. This is a restriction on that
 representation, not a factoring lower bound. Run `make verify-lambert-theta`.
 
+The [Tate-coordinate compiler](research/tate-coordinate-coefficients.md)
+expresses odd-index signed divisor coefficients as coefficients of
+`X_q(Delta(t))`. The inner algebraic coefficients are cheap, and one scalar
+trace of the original composition has a square-test formula. Extracting the
+remaining trace-zero coordinates at the original index is still open.
+Run `make verify-tate-coordinate`.
+
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight

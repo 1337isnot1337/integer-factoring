@@ -59,6 +59,12 @@ verify-lambert-theta:
 
 verify-frontier: verify-lambert-theta
 
+.PHONY: verify-tate-coordinate
+verify-tate-coordinate:
+	python3 tools/check_tate_coordinate_compiler.py
+
+verify-frontier: verify-tate-coordinate
+
 verify-odd-character-residues: verify-cyclotomic-decoder
 	python3 tools/check_odd_character_residues.py
 
