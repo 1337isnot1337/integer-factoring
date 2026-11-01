@@ -2416,6 +2416,12 @@ verify-natural-five-letter-floor:
 
 verify-frontier: verify-natural-five-letter-floor
 
+.PHONY: verify-graded-adjugate-caps
+verify-graded-adjugate-caps:
+	python3 tools/check_graded_adjugate_caps.py --output /tmp/graded-adjugate-caps.json
+
+verify-frontier: verify-graded-adjugate-caps
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py

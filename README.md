@@ -55,6 +55,10 @@ now excludes the balanced criterion for every scalar Laurent-polynomial
 kernel over any field with the reference five-letter paired-energy shape.
 Its exact compact certificate and unbounded tails give `rho >= 5/7`;
 changed energy shapes and asymmetric criteria remain open.
+New [graded adjugate constraints](research/graded-adjugate-caps.md) apply
+at independent physical heights. They rule out the older negative
+cell-cap profile optimizers, while leaving a nearby exact negative
+integer target that still needs a realizing tensor.
 
 ## Arithmetic construction and space bounds
 

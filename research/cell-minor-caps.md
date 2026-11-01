@@ -1,5 +1,12 @@
 # Cell-set minor caps for the gauged two-place relaxation
 
+**Later compatibility update.** The [graded adjugate inequalities](graded-adjugate-caps.md)
+exclude the particular negative five- and six-letter profile optimizers
+retained below. Their older relaxed pressure computations remain valid;
+the new obstruction uses additional necessary relations. A nearby
+integer negative profile satisfies all the new relations, so the broader
+construction problem remains open.
+
 ## Result and scope
 
 This note adds a new family of necessary prefix inequalities to the

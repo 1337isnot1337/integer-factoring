@@ -1,5 +1,11 @@
 # Larger-alphabet targets left open by the shared-minor inequalities
 
+The later [graded adjugate constraints](graded-adjugate-caps.md) exclude
+the specified five-letter negative optimizer after adding cell-set caps.
+They leave a nearby explicit integer negative target. These updates
+concern realizability under stronger necessary conditions; the pressure
+computations in this older relaxation are retained as historical results.
+
 ## Result and scope
 
 The shared minors that prove the universal binary Smith floor also give
