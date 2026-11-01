@@ -2032,3 +2032,9 @@ verify-pole-cauchy-localization:
 .PHONY: verify-coherent-protected-height25
 verify-coherent-protected-height25:
 	python3 tools/check_coherent_protected_height25.py --recompute-profiles --output /tmp/integer-factoring-coherent-protected-height25.json
+
+
+.PHONY: verify-prime-cofactor-fresh-160
+verify-prime-cofactor-fresh-160:
+	python3 tools/check_fresh_prime_cofactor_control.py --bits 160 --replay evidence/prime-cofactor-fresh-160-fixed.json.gz
+	python3 tools/check_fresh_prime_cofactor_control.py --bits 160 --replay evidence/prime-cofactor-fresh-160-selective.json.gz

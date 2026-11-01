@@ -90,6 +90,13 @@ states a precise sufficient uniform lower-tail hypothesis for the remaining
 window-hitting problem. The finite moment controls do not prove that hypothesis.
 Run `make verify-prime-cofactor-saturation`.
 
+
+[Fresh certified 160-bit controls](research/prime-cofactor-fresh-controls.md)
+complete both fixed-base and selective-promotion factoring runs with exact
+integer-graph replay. Selective promotion reduces norm queries from
+**7,792,462 to 5,453,561** (30.01%), but increases recorded time from
+221 to 357 seconds. Complete compressed certificates retain both results;
+these are finite controls and do not strengthen the uniform exponent.
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->

@@ -1100,3 +1100,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Protected lower states through height 25
 
 - [Protected lower states through height 25](coherent-protected-height25.md)
+
+
+## Fresh certified prime-cofactor controls
+
+- [Matched fresh 160-bit factoring runs and exact replays](prime-cofactor-fresh-controls.md)
