@@ -532,3 +532,27 @@ These ordinary proofs and finite controls were integrated from [exact PR #23 sou
 - [A swap/product rank bound and the finite rank-sum cutoff](swap-product-rank-sum.md)
 - [A sharp rate barrier for symmetric three-matching pieces](symmetric-three-matching-barrier.md)
 - [Two pieces cannot pass the finite rank-sum criterion](two-piece-rank-sum-obstruction.md)
+
+## Retained PR #24 effective-family and finite-rank checkpoint
+
+Integrated from [exact PR #24 source](https://github.com/1337isnot1337/integer-factoring/tree/05d9c1b8aed4f8494ce230f0869f9048ef879474), preserving its attribution and scope. Conditional transfers and finite barriers do not establish an exponent above `1/2`; integration is not independent mathematical acceptance.
+
+- [Binary code restrictions: an affine-code obstruction](affine-code-barrier.md)
+- [The full three-pairing type route is obstructed over every field](all-field-pairing-barrier.md)
+- [Current crossing frontier and resolved shortcuts](frontier-search-ledger.md)
+- [Exact finite cutoff 25 for the joint antipodal-sector span](hamming-joint-optimum.md)
+- [Polynomial crossing profiles with bounded bit weights](hamming-pfaffian.md)
+- [Exact cutoff four in the relabeled width-two span](hamming-relabeling-optimum.md)
+- [Joint label relabelings and a product-sixteen seed](hamming-relabeling.md)
+- [Crossing sectors on several antipodal pairs](hamming-sectors.md)
+- [Local tensor powers and weight symmetry of the crossing deformation](hamming-tensor-power.md)
+- [Complete central ranks from the small kernels of the two factors](modular-central-rank.md)
+- [The exact half endpoint for the normalized modular family](modular-half-endpoint.md)
+- [A reflected particle-hole identity for the complete modular profile](modular-particle-hole.md)
+- [Effective recombinations of the complete modular pieces](modular-recombination.md)
+- [Closing the small characteristic-two pairing seeds](pairing-small-seeds.md)
+- [A characteristic-two barrier for the full pairing type span](pairing-word-barrier.md)
+- [From rational-function crossings to one fixed prime field](rational-family-transfer.md)
+- [Polynomial-size rank blocks and an exactly analyzed reciprocal pencil](sl2-coefficient-ranks.md)
+- [Crossing families from a sparse sequence of widths](sparse-width-interpolation.md)
+- [A rank barrier for position-invariant word families](word-symmetry-barrier.md)

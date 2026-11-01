@@ -1,0 +1,1596 @@
+{
+  "status": "source operators leak above every fixed finite core; no general rank bound",
+  "cases": [
+    {
+      "operator_parts": [
+        3,
+        5
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        19,
+        37
+      ],
+      "weight_shift": 56,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        5
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        19,
+        37
+      ],
+      "weight_shift": 56,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        5
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        67,
+        133
+      ],
+      "weight_shift": 200,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        13
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        35,
+        77
+      ],
+      "weight_shift": 112,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        13
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        35,
+        77
+      ],
+      "weight_shift": 112,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        13
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        67,
+        141
+      ],
+      "weight_shift": 208,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        5,
+        11
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        37,
+        75
+      ],
+      "weight_shift": 112,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        5,
+        11
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        37,
+        75
+      ],
+      "weight_shift": 112,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        5,
+        11
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        69,
+        139
+      ],
+      "weight_shift": 208,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        7,
+        9
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        39,
+        73
+      ],
+      "weight_shift": 112,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        7,
+        9
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        39,
+        73
+      ],
+      "weight_shift": 112,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        7,
+        9
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        71,
+        137
+      ],
+      "weight_shift": 208,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        29
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        67,
+        157
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        29
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        67,
+        157
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        29
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        67,
+        157
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        5,
+        27
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        69,
+        155
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        5,
+        27
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        69,
+        155
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        5,
+        27
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        69,
+        155
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        7,
+        25
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        71,
+        153
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        7,
+        25
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        71,
+        153
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        7,
+        25
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        71,
+        153
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        9,
+        23
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        73,
+        151
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        9,
+        23
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        73,
+        151
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        9,
+        23
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        73,
+        151
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        11,
+        21
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        75,
+        149
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        11,
+        21
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        75,
+        149
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        11,
+        21
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        75,
+        149
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        13,
+        19
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        77,
+        147
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        13,
+        19
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        77,
+        147
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        13,
+        19
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        77,
+        147
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        15,
+        17
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        79,
+        145
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        15,
+        17
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        79,
+        145
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        15,
+        17
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        79,
+        145
+      ],
+      "weight_shift": 224,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        61
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        131,
+        317
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        61
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        131,
+        317
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        3,
+        61
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        131,
+        317
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        5,
+        59
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        133,
+        315
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        5,
+        59
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        133,
+        315
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        5,
+        59
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        133,
+        315
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        7,
+        57
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        135,
+        313
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        7,
+        57
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        135,
+        313
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        7,
+        57
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        135,
+        313
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        9,
+        55
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        137,
+        311
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        9,
+        55
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        137,
+        311
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        9,
+        55
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        137,
+        311
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        11,
+        53
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        139,
+        309
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        11,
+        53
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        139,
+        309
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        11,
+        53
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        139,
+        309
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        13,
+        51
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        141,
+        307
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        13,
+        51
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        141,
+        307
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        13,
+        51
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        141,
+        307
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        15,
+        49
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        143,
+        305
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        15,
+        49
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        143,
+        305
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        15,
+        49
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        143,
+        305
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        17,
+        47
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        145,
+        303
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        17,
+        47
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        145,
+        303
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        17,
+        47
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        145,
+        303
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        19,
+        45
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        147,
+        301
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        19,
+        45
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        147,
+        301
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        19,
+        45
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        147,
+        301
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        21,
+        43
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        149,
+        299
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        21,
+        43
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        149,
+        299
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        21,
+        43
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        149,
+        299
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        23,
+        41
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        151,
+        297
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        23,
+        41
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        151,
+        297
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        23,
+        41
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        151,
+        297
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        25,
+        39
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        153,
+        295
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        25,
+        39
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        153,
+        295
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        25,
+        39
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        153,
+        295
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        27,
+        37
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        155,
+        293
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        27,
+        37
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        155,
+        293
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        27,
+        37
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        155,
+        293
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        29,
+        35
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        157,
+        291
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        29,
+        35
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        157,
+        291
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        29,
+        35
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        157,
+        291
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        31,
+        33
+      ],
+      "frozen_state": [],
+      "created_modes": [
+        159,
+        289
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        31,
+        33
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7
+      ],
+      "created_modes": [
+        159,
+        289
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    },
+    {
+      "operator_parts": [
+        31,
+        33
+      ],
+      "frozen_state": [
+        1,
+        3,
+        5,
+        7,
+        9,
+        11,
+        13,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "created_modes": [
+        159,
+        289
+      ],
+      "weight_shift": 448,
+      "coefficient": 1
+    }
+  ],
+  "source_recursion_comparisons": 78,
+  "sha256": {
+    "check_frozen_core_leak.py": "7e3e83dd50f7a652a2de59dc6274e7f226f751e0e2820bb869938e807aae0dfd",
+    "check_modular_crossing.py": "3422aa9dba53f475551943df76c7a2419c1eefa0b37cc67562a56c4b812cacae"
+  }
+}

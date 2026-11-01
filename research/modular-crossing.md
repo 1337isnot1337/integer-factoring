@@ -19,6 +19,10 @@ An elementary generating-function argument gives, for every fixed
 not a bound beyond exponent `1/2`. The smaller state space still has
 square-root entropy. A separate actual-rank theorem would be needed for
 a smaller `rho`.
+The [quantitative refinement](modular-half-endpoint.md) sharpens the error to
+`O(sqrt(lambda))`. Together with the wider-slack transfer pinned there, this
+reaches the exact modular half endpoint, while preserving the current overall
+best exponent `1/2`.
 
 There is also a homogeneous variant at prime-power energies. When
 `h=p^r`, its pairing is invertible in the quotient. At `p=2`, only two
