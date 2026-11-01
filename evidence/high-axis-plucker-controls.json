@@ -1,0 +1,222 @@
+{
+  "status": "pass",
+  "degree_and_endpoint_checks": [
+    {
+      "subset_size": 1,
+      "exponent": 64,
+      "remainder": 0,
+      "endpoint_binomial": 1
+    },
+    {
+      "subset_size": 2,
+      "exponent": 32,
+      "remainder": 0,
+      "endpoint_binomial": 1
+    },
+    {
+      "subset_size": 3,
+      "exponent": 21,
+      "remainder": 1,
+      "endpoint_binomial": 3
+    },
+    {
+      "subset_size": 4,
+      "exponent": 16,
+      "remainder": 0,
+      "endpoint_binomial": 1
+    },
+    {
+      "subset_size": 5,
+      "exponent": 12,
+      "remainder": 4,
+      "endpoint_binomial": 5
+    },
+    {
+      "subset_size": 6,
+      "exponent": 10,
+      "remainder": 4,
+      "endpoint_binomial": 15
+    },
+    {
+      "subset_size": 7,
+      "exponent": 9,
+      "remainder": 1,
+      "endpoint_binomial": 7
+    },
+    {
+      "subset_size": 8,
+      "exponent": 8,
+      "remainder": 0,
+      "endpoint_binomial": 1
+    },
+    {
+      "subset_size": 9,
+      "exponent": 7,
+      "remainder": 1,
+      "endpoint_binomial": 9
+    }
+  ],
+  "independent_nonzero_pattern_entries": 6561,
+  "toeplitz_ranks_precisions_1_through_26": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    2,
+    4,
+    18,
+    32,
+    64,
+    96,
+    140,
+    184,
+    230,
+    276,
+    322,
+    368,
+    428,
+    488,
+    568,
+    648,
+    742,
+    836
+  ],
+  "toeplitz_dimensions": [
+    6400,
+    6656
+  ],
+  "prefix_channels": 94,
+  "generic_prefix_upper_bound": 1608,
+  "decomposable_quadratic_multiplication_rank": 64,
+  "independent_untruncated_small_orders": 56,
+  "small_controls": [
+    {
+      "dimension": 3,
+      "other_values": [
+        1,
+        1
+      ],
+      "orders": [
+        22,
+        42,
+        86,
+        106
+      ]
+    },
+    {
+      "dimension": 3,
+      "other_values": [
+        1,
+        2
+      ],
+      "orders": [
+        21,
+        43,
+        85,
+        107
+      ]
+    },
+    {
+      "dimension": 4,
+      "other_values": [
+        1,
+        1,
+        1
+      ],
+      "orders": [
+        16,
+        28,
+        32,
+        32,
+        96,
+        96,
+        100,
+        112
+      ]
+    },
+    {
+      "dimension": 4,
+      "other_values": [
+        1,
+        2,
+        3
+      ],
+      "orders": [
+        16,
+        26,
+        32,
+        32,
+        96,
+        96,
+        102,
+        112
+      ]
+    },
+    {
+      "dimension": 5,
+      "other_values": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "orders": [
+        12,
+        20,
+        22,
+        22,
+        24,
+        32,
+        42,
+        42,
+        86,
+        86,
+        96,
+        104,
+        106,
+        106,
+        108,
+        116
+      ]
+    },
+    {
+      "dimension": 5,
+      "other_values": [
+        1,
+        2,
+        3,
+        1
+      ],
+      "orders": [
+        12,
+        20,
+        21,
+        21,
+        24,
+        30,
+        42,
+        42,
+        86,
+        86,
+        98,
+        104,
+        107,
+        107,
+        108,
+        116
+      ]
+    }
+  ],
+  "seconds": 0.07988395495340228,
+  "pressure_floor": "1/3 at every common scale and physical frequency",
+  "source_sha256": {
+    "high_axis_plucker.py": "1d8a26623dbdd46fe9400aafc9dd50daa85a306115aeec5913b3bd78eec557f8",
+    "check_high_axis_plucker.py": "abe8603a36979dacbd70cce23d2285b81c12a5ae4ca8c9e721f1874dc5146e43",
+    "weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+  },
+  "scope": "Exact explicit-kernel obstruction from a binary truncated multiplication map and a proved generic rank, not a floor for other high-axis kernels or actual coefficient ranks. No stronger factoring bound."
+}

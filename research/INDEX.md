@@ -1,5 +1,7 @@
 # Research index
 
+- [A decomposable high-axis quadratic flag](high-axis-plucker-kernel.md): degree-64 homogeneous coefficients reduce the offending quadratic rank from 120 to 64 while preserving the endpoint. An independent binary Toeplitz certificate shows 94 channels of total order 1,608, still forcing rho at least 1/3 at every common scale and frequency.
+
 - [Realizing a high-axis Cayley profile](high-axis-cayley-realization.md): the explicit balanced monomial nine-axis kernel is excluded at every common scale and frequency by a rank-120 quadratic augmentation minor, giving rho at least 1/3 over every characteristic-two field. The relaxed target remains unrealized.
 
 - [Collective CSS Pauli compression](collective-css-pauli-compression.md): exact full contraction detects every one-site Pauli error but reproduces a Frobenius/relabelled two-cell source at parameter z^2. All 6,561 polynomial entries and 324 independent orders are checked; even unrestricted physical heights give no new support family.

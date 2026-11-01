@@ -3023,3 +3023,7 @@ verify-collective-css-pauli:
 .PHONY: verify-high-axis-cayley
 verify-high-axis-cayley:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_high_axis_cayley.py
+
+.PHONY: verify-high-axis-plucker
+verify-high-axis-plucker:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_high_axis_plucker.py
