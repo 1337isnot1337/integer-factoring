@@ -2145,3 +2145,9 @@ verify-routed-rectangular-fourier:
 .PHONY: verify-symmetric-exterior
 verify-symmetric-exterior:
 	python3 tools/check_cube_symmetric_exterior_blocks.py --output /tmp/integer-factoring-cube-symmetric-exterior-blocks.json
+
+.PHONY: verify-interval-bezout verify-balanced-bezout
+verify-interval-bezout:
+	python3 tools/check_interval_bezout_precision.py --output /tmp/integer-factoring-interval-bezout-precision.json
+verify-balanced-bezout:
+	python3 tools/check_balanced_bezout_denominator.py --output /tmp/integer-factoring-balanced-bezout-denominator.json
