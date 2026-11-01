@@ -1,0 +1,60 @@
+{
+  "scope": "Consolidated completed exact larger-bound checkpoints with a decimal-guard CLI regression; no large independent search is repeated, and timings are not proof evidence.",
+  "cases": [
+    {
+      "input_bits": 16384,
+      "maximum_divisors": 4396057599419351852068245856364725189835606530970514052872994671447107001346855105311393999499833644496092635457020703108744576910031535683550205939149252847134253365585788325116047274231183308887964004167336464333969742859593352151035441082661636525905212807666079312072602127991357632635928403097814662533256932892615473481488725401503524880177353175645147442217305056280715015286206007616674848855918098284911001600000,
+      "divisor_parameter_bits": 1398,
+      "support_size": 1354,
+      "least_witness_decimal_digits": 4933,
+      "visited_feasible_profiles": 5825,
+      "total_search_nodes": 261598,
+      "independent_terminal_profiles": 38707,
+      "certificate_comparisons": 2709,
+      "independent_replay": "Imported completed exact prime-order replay; not rerun by this CLI regression.",
+      "cli_control": {
+        "applicable": true,
+        "input_decimal_digits": 4933,
+        "unguarded_exit_code": 2,
+        "guarded_exit_code": 0,
+        "unguarded_bits_exit_code": 1,
+        "guarded_bits_exit_code": 0,
+        "full_result_matches_verified_checkpoint": true,
+        "solver_reused_verified_checkpoint": true
+      },
+      "result_file": "divisor-maximum-16384.json",
+      "result_sha256": "3c286d62757e36f52d6f044f434ae769d146ebf9a69305a53818e2db435c9398",
+      "audit_file": "divisor-audit-16384.json",
+      "audit_sha256": "4356b8ca602c7cf75ae0ea00bd04a6163484e07c5030e029e9d0f87c4c695b90"
+    },
+    {
+      "input_bits": 32768,
+      "maximum_divisors": 65114990471696222681172838567584092051013477262512493013837624439002120645734400164575870653069432839590127355260922600628863874546178368137831850427301124587584388023982026515471443026581091178651212850752788910294729643094593032476243810242297076195983797715981915273140301471925872826654672038127557871297762125357408413959922392696438181163243485314896330272106965735996234876393990560505430006761821344386755492164927405268487165605628580307690613576210946378949147242293582592722333147154447543901566994212377479186014094896632276337568178812901938435501202659162362078362543334074913830243198509535109044510138764666544984861577399163786193595345250599637876949559451664415737555917032010069777914455849321852590548494109966128890539411679712932699728753977196544000,
+      "divisor_parameter_bits": 2568,
+      "support_size": 2511,
+      "least_witness_decimal_digits": 9865,
+      "visited_feasible_profiles": 11109,
+      "total_search_nodes": 528359,
+      "independent_terminal_profiles": 199393,
+      "certificate_comparisons": 5021,
+      "independent_replay": "Imported completed exact prime-order replay; not rerun by this CLI regression.",
+      "cli_control": {
+        "applicable": true,
+        "input_decimal_digits": 9865,
+        "unguarded_exit_code": 2,
+        "guarded_exit_code": 0,
+        "unguarded_bits_exit_code": 1,
+        "guarded_bits_exit_code": 0,
+        "full_result_matches_verified_checkpoint": true,
+        "solver_reused_verified_checkpoint": true
+      },
+      "result_file": "divisor-maximum-32768.json",
+      "result_sha256": "2d74cf50fd6a538a89b2e919849aa88641dad0229b8177ebd15efc736fa0659f",
+      "audit_file": "divisor-audit-32768.json",
+      "audit_sha256": "ce3cede93a476766b267c39fc6a1be8c93c53e243f52553abaf8bbd3decdb740"
+    }
+  ],
+  "checker_sha256": "ebe2a4868585e10b2d41b4c1425dd2681823f2b388f5157b78fdcfbead7540a7",
+  "guarded_oracle_source_sha256": "508717a9bdce250e1f22fb6ceabb804caaa6fdc8a1dd0706697975ae75cac0b7",
+  "patch_sha256": "0e8c2a9f1ea49427d25a762cf6aeab3506f71fa45cfb4870e1e3c30db78e6ad9"
+}

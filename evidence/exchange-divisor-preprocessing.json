@@ -1,0 +1,390 @@
+{
+  "status": "pass",
+  "scope": "Exact next-prime exchange and implementation audit; TC0 arithmetic is a cited theorem, not run here; no factoring-score improvement.",
+  "divisor_sieve_integers": 65535,
+  "power_two_maxima_compared": 16,
+  "strict_record_maxima_checked": 28,
+  "record_exponent_inequalities": 88,
+  "literal_replacement_witnesses": 3100,
+  "height_profiles_checked": 3929,
+  "height_cap_checks": 15779,
+  "elementary_streamed_ranges": 6,
+  "invalid_inputs_rejected": 8,
+  "comparison_table": [
+    {
+      "input_bits": 16,
+      "least_witness": 55440,
+      "maximum_divisors": 120,
+      "restricted_patterns": 52,
+      "unrestricted_patterns": 144,
+      "largest_visited_exponent": 6
+    },
+    {
+      "input_bits": 32,
+      "least_witness": 3491888400,
+      "maximum_divisors": 1920,
+      "restricted_patterns": 282,
+      "unrestricted_patterns": 1680,
+      "largest_visited_exponent": 8
+    },
+    {
+      "input_bits": 64,
+      "least_witness": 18401055938125660800,
+      "maximum_divisors": 184320,
+      "restricted_patterns": 1910,
+      "unrestricted_patterns": 47616,
+      "largest_visited_exponent": 10
+    },
+    {
+      "input_bits": 128,
+      "least_witness": 278282512406132373381723386382308832000,
+      "maximum_divisors": 318504960,
+      "restricted_patterns": 14956,
+      "unrestricted_patterns": 4333170,
+      "largest_visited_exponent": 12
+    }
+  ],
+  "small_maxima": [
+    {
+      "input_bits": 1,
+      "least_witness": 1,
+      "maximum_divisors": 1,
+      "restricted_patterns": 1,
+      "unrestricted_patterns": 1
+    },
+    {
+      "input_bits": 2,
+      "least_witness": 2,
+      "maximum_divisors": 2,
+      "restricted_patterns": 2,
+      "unrestricted_patterns": 2
+    },
+    {
+      "input_bits": 3,
+      "least_witness": 6,
+      "maximum_divisors": 4,
+      "restricted_patterns": 4,
+      "unrestricted_patterns": 4
+    },
+    {
+      "input_bits": 4,
+      "least_witness": 12,
+      "maximum_divisors": 6,
+      "restricted_patterns": 5,
+      "unrestricted_patterns": 6
+    },
+    {
+      "input_bits": 5,
+      "least_witness": 24,
+      "maximum_divisors": 8,
+      "restricted_patterns": 7,
+      "unrestricted_patterns": 9
+    },
+    {
+      "input_bits": 6,
+      "least_witness": 60,
+      "maximum_divisors": 12,
+      "restricted_patterns": 10,
+      "unrestricted_patterns": 13
+    },
+    {
+      "input_bits": 7,
+      "least_witness": 120,
+      "maximum_divisors": 16,
+      "restricted_patterns": 12,
+      "unrestricted_patterns": 17
+    },
+    {
+      "input_bits": 8,
+      "least_witness": 240,
+      "maximum_divisors": 20,
+      "restricted_patterns": 16,
+      "unrestricted_patterns": 24
+    },
+    {
+      "input_bits": 9,
+      "least_witness": 360,
+      "maximum_divisors": 24,
+      "restricted_patterns": 18,
+      "unrestricted_patterns": 31
+    },
+    {
+      "input_bits": 10,
+      "least_witness": 840,
+      "maximum_divisors": 32,
+      "restricted_patterns": 21,
+      "unrestricted_patterns": 39
+    },
+    {
+      "input_bits": 11,
+      "least_witness": 1680,
+      "maximum_divisors": 40,
+      "restricted_patterns": 24,
+      "unrestricted_patterns": 50
+    },
+    {
+      "input_bits": 12,
+      "least_witness": 2520,
+      "maximum_divisors": 48,
+      "restricted_patterns": 28,
+      "unrestricted_patterns": 62
+    },
+    {
+      "input_bits": 13,
+      "least_witness": 7560,
+      "maximum_divisors": 64,
+      "restricted_patterns": 33,
+      "unrestricted_patterns": 79
+    },
+    {
+      "input_bits": 14,
+      "least_witness": 15120,
+      "maximum_divisors": 80,
+      "restricted_patterns": 38,
+      "unrestricted_patterns": 97
+    },
+    {
+      "input_bits": 15,
+      "least_witness": 27720,
+      "maximum_divisors": 96,
+      "restricted_patterns": 44,
+      "unrestricted_patterns": 118
+    },
+    {
+      "input_bits": 16,
+      "least_witness": 55440,
+      "maximum_divisors": 120,
+      "restricted_patterns": 52,
+      "unrestricted_patterns": 144
+    }
+  ],
+  "record_maxima": [
+    {
+      "integer": 1,
+      "divisors": 1,
+      "next_prime": 2
+    },
+    {
+      "integer": 2,
+      "divisors": 2,
+      "next_prime": 3
+    },
+    {
+      "integer": 4,
+      "divisors": 3,
+      "next_prime": 3
+    },
+    {
+      "integer": 6,
+      "divisors": 4,
+      "next_prime": 5
+    },
+    {
+      "integer": 12,
+      "divisors": 6,
+      "next_prime": 5
+    },
+    {
+      "integer": 24,
+      "divisors": 8,
+      "next_prime": 5
+    },
+    {
+      "integer": 36,
+      "divisors": 9,
+      "next_prime": 5
+    },
+    {
+      "integer": 48,
+      "divisors": 10,
+      "next_prime": 5
+    },
+    {
+      "integer": 60,
+      "divisors": 12,
+      "next_prime": 7
+    },
+    {
+      "integer": 120,
+      "divisors": 16,
+      "next_prime": 7
+    },
+    {
+      "integer": 180,
+      "divisors": 18,
+      "next_prime": 7
+    },
+    {
+      "integer": 240,
+      "divisors": 20,
+      "next_prime": 7
+    },
+    {
+      "integer": 360,
+      "divisors": 24,
+      "next_prime": 7
+    },
+    {
+      "integer": 720,
+      "divisors": 30,
+      "next_prime": 7
+    },
+    {
+      "integer": 840,
+      "divisors": 32,
+      "next_prime": 11
+    },
+    {
+      "integer": 1260,
+      "divisors": 36,
+      "next_prime": 11
+    },
+    {
+      "integer": 1680,
+      "divisors": 40,
+      "next_prime": 11
+    },
+    {
+      "integer": 2520,
+      "divisors": 48,
+      "next_prime": 11
+    },
+    {
+      "integer": 5040,
+      "divisors": 60,
+      "next_prime": 11
+    },
+    {
+      "integer": 7560,
+      "divisors": 64,
+      "next_prime": 11
+    },
+    {
+      "integer": 10080,
+      "divisors": 72,
+      "next_prime": 11
+    },
+    {
+      "integer": 15120,
+      "divisors": 80,
+      "next_prime": 11
+    },
+    {
+      "integer": 20160,
+      "divisors": 84,
+      "next_prime": 11
+    },
+    {
+      "integer": 25200,
+      "divisors": 90,
+      "next_prime": 11
+    },
+    {
+      "integer": 27720,
+      "divisors": 96,
+      "next_prime": 13
+    },
+    {
+      "integer": 45360,
+      "divisors": 100,
+      "next_prime": 11
+    },
+    {
+      "integer": 50400,
+      "divisors": 108,
+      "next_prime": 11
+    },
+    {
+      "integer": 55440,
+      "divisors": 120,
+      "next_prime": 13
+    }
+  ],
+  "streamed_results": [
+    {
+      "input_bits": 1,
+      "descriptor": [],
+      "candidates_checked": 1,
+      "feasible_candidates": 1,
+      "maximum_height_depth": 0
+    },
+    {
+      "input_bits": 2,
+      "descriptor": [
+        [
+          1,
+          1
+        ]
+      ],
+      "candidates_checked": 2,
+      "feasible_candidates": 2,
+      "maximum_height_depth": 1
+    },
+    {
+      "input_bits": 3,
+      "descriptor": [
+        [
+          2,
+          1
+        ]
+      ],
+      "candidates_checked": 4,
+      "feasible_candidates": 4,
+      "maximum_height_depth": 2
+    },
+    {
+      "input_bits": 4,
+      "descriptor": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "candidates_checked": 6,
+      "feasible_candidates": 5,
+      "maximum_height_depth": 2
+    },
+    {
+      "input_bits": 5,
+      "descriptor": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "candidates_checked": 10,
+      "feasible_candidates": 7,
+      "maximum_height_depth": 3
+    },
+    {
+      "input_bits": 6,
+      "descriptor": [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "candidates_checked": 16,
+      "feasible_candidates": 10,
+      "maximum_height_depth": 4
+    }
+  ],
+  "source_sha256": {
+    "check_exchange_divisor_preprocessing.py": "283b15d8f0c781b300c2ae8842919ce12ee5b9afc963c6345aa0e42009c2fe14",
+    "exchange_divisor_preprocessing.py": "c1a5cb5c9d07c4b1e9bc89695efc207d1e51088f8eed411fe5e1cc6cfffd3b6e",
+    "primorial_weighted_preprocessing.py": "1f92bdbe1a2c88ec15128d96d27906e81d61bff0784dd858b0ec3e8b85ba48ec"
+  },
+  "seconds": 10.459
+}

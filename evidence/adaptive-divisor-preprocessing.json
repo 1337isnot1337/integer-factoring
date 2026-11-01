@@ -1,0 +1,581 @@
+{
+  "scope": "Exact oracle comparisons and independent rational-interval certificates; no timing measurement certifies the asymptotic bound.",
+  "input_cases": 41,
+  "superior_marginal_checks": 1402,
+  "exact_power_comparison_checks": 686,
+  "divisor_sieve_integers": 65535,
+  "comparisons": [
+    {
+      "input_bits": 1,
+      "least_witness": 1,
+      "maximum_divisors": 1,
+      "adaptive_feasible_profiles": 1,
+      "adaptive_search_nodes": 1,
+      "independent_terminal_profiles": 1,
+      "exchange_feasible_profiles": 1,
+      "benefit_stages": 0,
+      "terminal_radius": null
+    },
+    {
+      "input_bits": 2,
+      "least_witness": 2,
+      "maximum_divisors": 2,
+      "adaptive_feasible_profiles": 4,
+      "adaptive_search_nodes": 6,
+      "independent_terminal_profiles": 2,
+      "exchange_feasible_profiles": 2,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        4
+      ]
+    },
+    {
+      "input_bits": 3,
+      "least_witness": 6,
+      "maximum_divisors": 4,
+      "adaptive_feasible_profiles": 6,
+      "adaptive_search_nodes": 12,
+      "independent_terminal_profiles": 3,
+      "exchange_feasible_profiles": 4,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        8
+      ]
+    },
+    {
+      "input_bits": 4,
+      "least_witness": 12,
+      "maximum_divisors": 6,
+      "adaptive_feasible_profiles": 6,
+      "adaptive_search_nodes": 17,
+      "independent_terminal_profiles": 4,
+      "exchange_feasible_profiles": 5,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        8
+      ]
+    },
+    {
+      "input_bits": 5,
+      "least_witness": 24,
+      "maximum_divisors": 8,
+      "adaptive_feasible_profiles": 10,
+      "adaptive_search_nodes": 35,
+      "independent_terminal_profiles": 6,
+      "exchange_feasible_profiles": 7,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        8
+      ]
+    },
+    {
+      "input_bits": 6,
+      "least_witness": 60,
+      "maximum_divisors": 12,
+      "adaptive_feasible_profiles": 7,
+      "adaptive_search_nodes": 28,
+      "independent_terminal_profiles": 7,
+      "exchange_feasible_profiles": 10,
+      "benefit_stages": 1,
+      "terminal_radius": [
+        1,
+        8
+      ]
+    },
+    {
+      "input_bits": 7,
+      "least_witness": 120,
+      "maximum_divisors": 16,
+      "adaptive_feasible_profiles": 2,
+      "adaptive_search_nodes": 11,
+      "independent_terminal_profiles": 2,
+      "exchange_feasible_profiles": 12,
+      "benefit_stages": 1,
+      "terminal_radius": [
+        1,
+        16
+      ]
+    },
+    {
+      "input_bits": 8,
+      "least_witness": 240,
+      "maximum_divisors": 20,
+      "adaptive_feasible_profiles": 4,
+      "adaptive_search_nodes": 24,
+      "independent_terminal_profiles": 4,
+      "exchange_feasible_profiles": 16,
+      "benefit_stages": 1,
+      "terminal_radius": [
+        1,
+        16
+      ]
+    },
+    {
+      "input_bits": 9,
+      "least_witness": 360,
+      "maximum_divisors": 24,
+      "adaptive_feasible_profiles": 33,
+      "adaptive_search_nodes": 218,
+      "independent_terminal_profiles": 15,
+      "exchange_feasible_profiles": 18,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        16
+      ]
+    },
+    {
+      "input_bits": 10,
+      "least_witness": 840,
+      "maximum_divisors": 32,
+      "adaptive_feasible_profiles": 22,
+      "adaptive_search_nodes": 163,
+      "independent_terminal_profiles": 14,
+      "exchange_feasible_profiles": 21,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        16
+      ]
+    },
+    {
+      "input_bits": 11,
+      "least_witness": 1680,
+      "maximum_divisors": 40,
+      "adaptive_feasible_profiles": 26,
+      "adaptive_search_nodes": 217,
+      "independent_terminal_profiles": 16,
+      "exchange_feasible_profiles": 24,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        16
+      ]
+    },
+    {
+      "input_bits": 12,
+      "least_witness": 2520,
+      "maximum_divisors": 48,
+      "adaptive_feasible_profiles": 48,
+      "adaptive_search_nodes": 445,
+      "independent_terminal_profiles": 21,
+      "exchange_feasible_profiles": 28,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        16
+      ]
+    },
+    {
+      "input_bits": 13,
+      "least_witness": 7560,
+      "maximum_divisors": 64,
+      "adaptive_feasible_profiles": 23,
+      "adaptive_search_nodes": 234,
+      "independent_terminal_profiles": 14,
+      "exchange_feasible_profiles": 33,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        16
+      ]
+    },
+    {
+      "input_bits": 14,
+      "least_witness": 15120,
+      "maximum_divisors": 80,
+      "adaptive_feasible_profiles": 5,
+      "adaptive_search_nodes": 56,
+      "independent_terminal_profiles": 5,
+      "exchange_feasible_profiles": 38,
+      "benefit_stages": 1,
+      "terminal_radius": [
+        1,
+        16
+      ]
+    },
+    {
+      "input_bits": 15,
+      "least_witness": 27720,
+      "maximum_divisors": 96,
+      "adaptive_feasible_profiles": 33,
+      "adaptive_search_nodes": 387,
+      "independent_terminal_profiles": 17,
+      "exchange_feasible_profiles": 44,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        32
+      ]
+    },
+    {
+      "input_bits": 16,
+      "least_witness": 55440,
+      "maximum_divisors": 120,
+      "adaptive_feasible_profiles": 15,
+      "adaptive_search_nodes": 190,
+      "independent_terminal_profiles": 12,
+      "exchange_feasible_profiles": 52,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        32
+      ]
+    },
+    {
+      "input_bits": 17,
+      "least_witness": 110880,
+      "maximum_divisors": 144,
+      "adaptive_feasible_profiles": 20,
+      "adaptive_search_nodes": 269,
+      "independent_terminal_profiles": 15,
+      "exchange_feasible_profiles": 61,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        32
+      ]
+    },
+    {
+      "input_bits": 18,
+      "least_witness": 221760,
+      "maximum_divisors": 168,
+      "adaptive_feasible_profiles": 72,
+      "adaptive_search_nodes": 1028,
+      "independent_terminal_profiles": 30,
+      "exchange_feasible_profiles": 70,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        32
+      ]
+    },
+    {
+      "input_bits": 19,
+      "least_witness": 498960,
+      "maximum_divisors": 200,
+      "adaptive_feasible_profiles": 89,
+      "adaptive_search_nodes": 1354,
+      "independent_terminal_profiles": 38,
+      "exchange_feasible_profiles": 82,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        32
+      ]
+    },
+    {
+      "input_bits": 20,
+      "least_witness": 720720,
+      "maximum_divisors": 240,
+      "adaptive_feasible_profiles": 111,
+      "adaptive_search_nodes": 1788,
+      "independent_terminal_profiles": 45,
+      "exchange_feasible_profiles": 94,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        32
+      ]
+    },
+    {
+      "input_bits": 21,
+      "least_witness": 1441440,
+      "maximum_divisors": 288,
+      "adaptive_feasible_profiles": 114,
+      "adaptive_search_nodes": 1944,
+      "independent_terminal_profiles": 56,
+      "exchange_feasible_profiles": 105,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        32
+      ]
+    },
+    {
+      "input_bits": 22,
+      "least_witness": 3603600,
+      "maximum_divisors": 360,
+      "adaptive_feasible_profiles": 41,
+      "adaptive_search_nodes": 697,
+      "independent_terminal_profiles": 24,
+      "exchange_feasible_profiles": 117,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        32
+      ]
+    },
+    {
+      "input_bits": 23,
+      "least_witness": 7207200,
+      "maximum_divisors": 432,
+      "adaptive_feasible_profiles": 42,
+      "adaptive_search_nodes": 798,
+      "independent_terminal_profiles": 28,
+      "exchange_feasible_profiles": 130,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        32
+      ]
+    },
+    {
+      "input_bits": 24,
+      "least_witness": 14414400,
+      "maximum_divisors": 504,
+      "adaptive_feasible_profiles": 147,
+      "adaptive_search_nodes": 2761,
+      "independent_terminal_profiles": 74,
+      "exchange_feasible_profiles": 143,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        32
+      ]
+    },
+    {
+      "input_bits": 25,
+      "least_witness": 32432400,
+      "maximum_divisors": 600,
+      "adaptive_feasible_profiles": 146,
+      "adaptive_search_nodes": 2736,
+      "independent_terminal_profiles": 85,
+      "exchange_feasible_profiles": 158,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        32
+      ]
+    },
+    {
+      "input_bits": 26,
+      "least_witness": 61261200,
+      "maximum_divisors": 720,
+      "adaptive_feasible_profiles": 53,
+      "adaptive_search_nodes": 981,
+      "independent_terminal_profiles": 20,
+      "exchange_feasible_profiles": 174,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        32
+      ]
+    },
+    {
+      "input_bits": 27,
+      "least_witness": 122522400,
+      "maximum_divisors": 864,
+      "adaptive_feasible_profiles": 64,
+      "adaptive_search_nodes": 1178,
+      "independent_terminal_profiles": 24,
+      "exchange_feasible_profiles": 191,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        32
+      ]
+    },
+    {
+      "input_bits": 28,
+      "least_witness": 245044800,
+      "maximum_divisors": 1008,
+      "adaptive_feasible_profiles": 76,
+      "adaptive_search_nodes": 1386,
+      "independent_terminal_profiles": 28,
+      "exchange_feasible_profiles": 208,
+      "benefit_stages": 2,
+      "terminal_radius": [
+        2,
+        32
+      ]
+    },
+    {
+      "input_bits": 29,
+      "least_witness": 367567200,
+      "maximum_divisors": 1152,
+      "adaptive_feasible_profiles": 224,
+      "adaptive_search_nodes": 4076,
+      "independent_terminal_profiles": 94,
+      "exchange_feasible_profiles": 225,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        32
+      ]
+    },
+    {
+      "input_bits": 30,
+      "least_witness": 735134400,
+      "maximum_divisors": 1344,
+      "adaptive_feasible_profiles": 251,
+      "adaptive_search_nodes": 4548,
+      "independent_terminal_profiles": 105,
+      "exchange_feasible_profiles": 243,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        32
+      ]
+    },
+    {
+      "input_bits": 31,
+      "least_witness": 2095133040,
+      "maximum_divisors": 1600,
+      "adaptive_feasible_profiles": 283,
+      "adaptive_search_nodes": 5121,
+      "independent_terminal_profiles": 114,
+      "exchange_feasible_profiles": 263,
+      "benefit_stages": 4,
+      "terminal_radius": [
+        8,
+        64
+      ]
+    },
+    {
+      "input_bits": 32,
+      "least_witness": 3491888400,
+      "maximum_divisors": 1920,
+      "adaptive_feasible_profiles": 312,
+      "adaptive_search_nodes": 5630,
+      "independent_terminal_profiles": 123,
+      "exchange_feasible_profiles": 282,
+      "benefit_stages": 4,
+      "terminal_radius": [
+        8,
+        64
+      ]
+    },
+    {
+      "input_bits": 48,
+      "least_witness": 260858031033600,
+      "maximum_divisors": 20736,
+      "adaptive_feasible_profiles": 167,
+      "adaptive_search_nodes": 3587,
+      "independent_terminal_profiles": 75,
+      "exchange_feasible_profiles": 757,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        64
+      ]
+    },
+    {
+      "input_bits": 64,
+      "least_witness": 18401055938125660800,
+      "maximum_divisors": 184320,
+      "adaptive_feasible_profiles": 2,
+      "adaptive_search_nodes": 50,
+      "independent_terminal_profiles": 2,
+      "exchange_feasible_profiles": 1910,
+      "benefit_stages": 1,
+      "terminal_radius": [
+        1,
+        128
+      ]
+    },
+    {
+      "input_bits": 96,
+      "least_witness": 70936013046169336050681696000,
+      "maximum_divisors": 8847360,
+      "adaptive_feasible_profiles": 302,
+      "adaptive_search_nodes": 7184,
+      "independent_terminal_profiles": 99,
+      "exchange_feasible_profiles": 6281,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        128
+      ]
+    },
+    {
+      "input_bits": 128,
+      "least_witness": 278282512406132373381723386382308832000,
+      "maximum_divisors": 318504960,
+      "adaptive_feasible_profiles": 4466,
+      "adaptive_search_nodes": 102133,
+      "independent_terminal_profiles": 958,
+      "exchange_feasible_profiles": 14956,
+      "benefit_stages": 5,
+      "terminal_radius": [
+        16,
+        256
+      ]
+    },
+    {
+      "input_bits": 192,
+      "least_witness": 5855884915116754690394910241682564201000589746006526912000,
+      "maximum_divisors": 253671505920,
+      "adaptive_feasible_profiles": 82,
+      "adaptive_search_nodes": 2289,
+      "independent_terminal_profiles": 29,
+      "exchange_feasible_profiles": 48081,
+      "benefit_stages": 3,
+      "terminal_radius": [
+        4,
+        256
+      ]
+    },
+    {
+      "input_bits": 256,
+      "least_witness": 101479190649824100340611059993260460929126049759626819437757925590093652160000,
+      "maximum_divisors": 121762322841600,
+      "adaptive_feasible_profiles": 3321,
+      "adaptive_search_nodes": 82835,
+      "independent_terminal_profiles": 584,
+      "exchange_feasible_profiles": 137450,
+      "benefit_stages": 5,
+      "terminal_radius": [
+        16,
+        512
+      ]
+    },
+    {
+      "input_bits": 512,
+      "least_witness": 13347355611219136306160440226578187475217394696224671366286710229916873145339304115656077470552856738041556133833678825143220192709231742022729961916160000,
+      "maximum_divisors": 627558233387598945976320,
+      "adaptive_feasible_profiles": 3077,
+      "adaptive_search_nodes": 86898,
+      "independent_terminal_profiles": 508,
+      "exchange_feasible_profiles": null,
+      "benefit_stages": 5,
+      "terminal_radius": [
+        16,
+        1024
+      ]
+    },
+    {
+      "input_bits": 1024,
+      "least_witness": 165221803247649262630603097324988417840762789633387662615458590468685903308688181327851525963506349682694546151192119723747259647483727261050804862627265395030883228351165906198722754447598307014160638692167047235986562669607961562133934621073979555926470094244623975077559972824244978910618371877114956800000,
+      "maximum_divisors": 100155979485210191968118444063078366576640,
+      "adaptive_feasible_profiles": 298964,
+      "adaptive_search_nodes": 8872996,
+      "independent_terminal_profiles": 8425,
+      "exchange_feasible_profiles": null,
+      "benefit_stages": 7,
+      "terminal_radius": [
+        64,
+        2048
+      ]
+    },
+    {
+      "input_bits": 2048,
+      "least_witness": 31459545283549418645137006981913133742732155737457670834739344547222815093550744946162416087493408128324764613460877101429401955004657235962463944863905072753402289662576183762594067883662368623178604790063702646665433163871700512784840188729024001986893306520773848809471778268134674535473558677670058378422447286619761870716804100164125734500461731924179150323632132741307878654545304522725383569867594970131449128540520874996248770336033832501311238388281350146975845869773501934911016791105255364086098004135951564092938950573870912705995872760317124742666797370545262594079562641355909651061541369887363328000000,
+      "maximum_divisors": 860824703268474387432490243326406833004178097868672576842881751318528000,
+      "adaptive_feasible_profiles": 176133,
+      "adaptive_search_nodes": 5718090,
+      "independent_terminal_profiles": 9621,
+      "exchange_feasible_profiles": null,
+      "benefit_stages": 7,
+      "terminal_radius": [
+        64,
+        4096
+      ]
+    }
+  ],
+  "oracle_sha256": "1195efdb0095e8a7afb9331129254e3e76bac06e414b0b112327c5b0649911a4"
+}

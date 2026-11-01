@@ -1,0 +1,399 @@
+{
+  "scope": "Exact 0/1 rank-one state witnesses for the proposed exterior lift; no claim for the original Boolean lift or divisor predicates.",
+  "counts": {
+    "majority_discrepancy_controls": 100,
+    "direct_cauchy_content_controls": 366,
+    "active_jet_content_controls": 5496,
+    "permutation_determinant_controls": 5,
+    "expanded_local_polynomial_controls": 40,
+    "repeated_packet_controls": 12
+  },
+  "cases": [
+    {
+      "packet_length": 2,
+      "active_cutoff": 1,
+      "majority_bits": 1,
+      "occupied_slots": 1,
+      "polynomial_degree": 3,
+      "minimum_normalized_content": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "smallest_content": 2
+    },
+    {
+      "packet_length": 4,
+      "active_cutoff": 1,
+      "majority_bits": 1,
+      "occupied_slots": 2,
+      "polynomial_degree": 12,
+      "minimum_normalized_content": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "smallest_content": 8
+    },
+    {
+      "packet_length": 8,
+      "active_cutoff": 1,
+      "majority_bits": 1,
+      "occupied_slots": 4,
+      "polynomial_degree": 48,
+      "minimum_normalized_content": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "smallest_content": 32
+    },
+    {
+      "packet_length": 8,
+      "active_cutoff": 2,
+      "majority_bits": 3,
+      "occupied_slots": 4,
+      "polynomial_degree": 48,
+      "minimum_normalized_content": {
+        "numerator": 11,
+        "denominator": 32
+      },
+      "smallest_content": 6
+    },
+    {
+      "packet_length": 8,
+      "active_cutoff": 3,
+      "majority_bits": 3,
+      "occupied_slots": 4,
+      "polynomial_degree": 48,
+      "minimum_normalized_content": {
+        "numerator": 33,
+        "denominator": 64
+      },
+      "smallest_content": 5
+    },
+    {
+      "packet_length": 16,
+      "active_cutoff": 1,
+      "majority_bits": 1,
+      "occupied_slots": 8,
+      "polynomial_degree": 192,
+      "minimum_normalized_content": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "smallest_content": 128
+    },
+    {
+      "packet_length": 16,
+      "active_cutoff": 2,
+      "majority_bits": 3,
+      "occupied_slots": 8,
+      "polynomial_degree": 192,
+      "minimum_normalized_content": {
+        "numerator": 11,
+        "denominator": 32
+      },
+      "smallest_content": 24
+    },
+    {
+      "packet_length": 16,
+      "active_cutoff": 3,
+      "majority_bits": 3,
+      "occupied_slots": 8,
+      "polynomial_degree": 192,
+      "minimum_normalized_content": {
+        "numerator": 33,
+        "denominator": 64
+      },
+      "smallest_content": 17
+    },
+    {
+      "packet_length": 32,
+      "active_cutoff": 1,
+      "majority_bits": 1,
+      "occupied_slots": 16,
+      "polynomial_degree": 768,
+      "minimum_normalized_content": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "smallest_content": 512
+    },
+    {
+      "packet_length": 32,
+      "active_cutoff": 2,
+      "majority_bits": 3,
+      "occupied_slots": 16,
+      "polynomial_degree": 768,
+      "minimum_normalized_content": {
+        "numerator": 11,
+        "denominator": 32
+      },
+      "smallest_content": 96
+    },
+    {
+      "packet_length": 32,
+      "active_cutoff": 3,
+      "majority_bits": 3,
+      "occupied_slots": 16,
+      "polynomial_degree": 768,
+      "minimum_normalized_content": {
+        "numerator": 33,
+        "denominator": 64
+      },
+      "smallest_content": 65
+    },
+    {
+      "packet_length": 32,
+      "active_cutoff": 4,
+      "majority_bits": 5,
+      "occupied_slots": 16,
+      "polynomial_degree": 768,
+      "minimum_normalized_content": {
+        "numerator": 49,
+        "denominator": 128
+      },
+      "smallest_content": 19
+    },
+    {
+      "packet_length": 32,
+      "active_cutoff": 5,
+      "majority_bits": 5,
+      "occupied_slots": 16,
+      "polynomial_degree": 768,
+      "minimum_normalized_content": {
+        "numerator": 245,
+        "denominator": 512
+      },
+      "smallest_content": 17
+    },
+    {
+      "packet_length": 64,
+      "active_cutoff": 1,
+      "majority_bits": 1,
+      "occupied_slots": 32,
+      "polynomial_degree": 3072,
+      "minimum_normalized_content": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "smallest_content": 2048
+    },
+    {
+      "packet_length": 64,
+      "active_cutoff": 2,
+      "majority_bits": 3,
+      "occupied_slots": 32,
+      "polynomial_degree": 3072,
+      "minimum_normalized_content": {
+        "numerator": 11,
+        "denominator": 32
+      },
+      "smallest_content": 384
+    },
+    {
+      "packet_length": 64,
+      "active_cutoff": 3,
+      "majority_bits": 3,
+      "occupied_slots": 32,
+      "polynomial_degree": 3072,
+      "minimum_normalized_content": {
+        "numerator": 33,
+        "denominator": 64
+      },
+      "smallest_content": 257
+    },
+    {
+      "packet_length": 64,
+      "active_cutoff": 4,
+      "majority_bits": 5,
+      "occupied_slots": 32,
+      "polynomial_degree": 3072,
+      "minimum_normalized_content": {
+        "numerator": 49,
+        "denominator": 128
+      },
+      "smallest_content": 73
+    },
+    {
+      "packet_length": 64,
+      "active_cutoff": 5,
+      "majority_bits": 5,
+      "occupied_slots": 32,
+      "polynomial_degree": 3072,
+      "minimum_normalized_content": {
+        "numerator": 245,
+        "denominator": 512
+      },
+      "smallest_content": 53
+    },
+    {
+      "packet_length": 128,
+      "active_cutoff": 1,
+      "majority_bits": 1,
+      "occupied_slots": 64,
+      "polynomial_degree": 12288,
+      "minimum_normalized_content": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "smallest_content": 8192
+    },
+    {
+      "packet_length": 128,
+      "active_cutoff": 2,
+      "majority_bits": 3,
+      "occupied_slots": 64,
+      "polynomial_degree": 12288,
+      "minimum_normalized_content": {
+        "numerator": 11,
+        "denominator": 32
+      },
+      "smallest_content": 1536
+    },
+    {
+      "packet_length": 128,
+      "active_cutoff": 3,
+      "majority_bits": 3,
+      "occupied_slots": 64,
+      "polynomial_degree": 12288,
+      "minimum_normalized_content": {
+        "numerator": 33,
+        "denominator": 64
+      },
+      "smallest_content": 1025
+    },
+    {
+      "packet_length": 128,
+      "active_cutoff": 4,
+      "majority_bits": 5,
+      "occupied_slots": 64,
+      "polynomial_degree": 12288,
+      "minimum_normalized_content": {
+        "numerator": 49,
+        "denominator": 128
+      },
+      "smallest_content": 289
+    },
+    {
+      "packet_length": 128,
+      "active_cutoff": 5,
+      "majority_bits": 5,
+      "occupied_slots": 64,
+      "polynomial_degree": 12288,
+      "minimum_normalized_content": {
+        "numerator": 245,
+        "denominator": 512
+      },
+      "smallest_content": 197
+    },
+    {
+      "packet_length": 128,
+      "active_cutoff": 6,
+      "majority_bits": 7,
+      "occupied_slots": 64,
+      "polynomial_degree": 12288,
+      "minimum_normalized_content": {
+        "numerator": 3201,
+        "denominator": 8192
+      },
+      "smallest_content": 66
+    },
+    {
+      "packet_length": 128,
+      "active_cutoff": 7,
+      "majority_bits": 7,
+      "occupied_slots": 64,
+      "polynomial_degree": 12288,
+      "minimum_normalized_content": {
+        "numerator": 7469,
+        "denominator": 16384
+      },
+      "smallest_content": 62
+    },
+    {
+      "packet_length": 256,
+      "active_cutoff": 1,
+      "majority_bits": 1,
+      "occupied_slots": 128,
+      "polynomial_degree": 49152,
+      "minimum_normalized_content": {
+        "numerator": 1,
+        "denominator": 2
+      },
+      "smallest_content": 32768
+    },
+    {
+      "packet_length": 256,
+      "active_cutoff": 2,
+      "majority_bits": 3,
+      "occupied_slots": 128,
+      "polynomial_degree": 49152,
+      "minimum_normalized_content": {
+        "numerator": 11,
+        "denominator": 32
+      },
+      "smallest_content": 6144
+    },
+    {
+      "packet_length": 256,
+      "active_cutoff": 3,
+      "majority_bits": 3,
+      "occupied_slots": 128,
+      "polynomial_degree": 49152,
+      "minimum_normalized_content": {
+        "numerator": 33,
+        "denominator": 64
+      },
+      "smallest_content": 4097
+    },
+    {
+      "packet_length": 256,
+      "active_cutoff": 4,
+      "majority_bits": 5,
+      "occupied_slots": 128,
+      "polynomial_degree": 49152,
+      "minimum_normalized_content": {
+        "numerator": 49,
+        "denominator": 128
+      },
+      "smallest_content": 1153
+    },
+    {
+      "packet_length": 256,
+      "active_cutoff": 5,
+      "majority_bits": 5,
+      "occupied_slots": 128,
+      "polynomial_degree": 49152,
+      "minimum_normalized_content": {
+        "numerator": 245,
+        "denominator": 512
+      },
+      "smallest_content": 773
+    },
+    {
+      "packet_length": 256,
+      "active_cutoff": 6,
+      "majority_bits": 7,
+      "occupied_slots": 128,
+      "polynomial_degree": 49152,
+      "minimum_normalized_content": {
+        "numerator": 3201,
+        "denominator": 8192
+      },
+      "smallest_content": 246
+    },
+    {
+      "packet_length": 256,
+      "active_cutoff": 7,
+      "majority_bits": 7,
+      "occupied_slots": 128,
+      "polynomial_degree": 49152,
+      "minimum_normalized_content": {
+        "numerator": 7469,
+        "denominator": 16384
+      },
+      "smallest_content": 182
+    }
+  ],
+  "source_revision": "4eaee87548250b2682affda7d05d947c05554bae",
+  "checker_sha256": "eeed1a8b04a732f7cfd93a2a24b7725ab44f0a2a3300b6905f7c1423752b005c"
+}

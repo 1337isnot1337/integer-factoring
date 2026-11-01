@@ -1,0 +1,503 @@
+{
+  "scope": "Finite exact controls for linear-scale scalar transfer in each fixed prime characteristic; tuple enumeration is a reference oracle.",
+  "characteristics": [
+    2,
+    3,
+    5,
+    7
+  ],
+  "counts": {
+    "cyclic_completeness": 222560,
+    "completeness_cases": 262136,
+    "power_completeness": 39576,
+    "factor_calls": 19524,
+    "cyclic_queries": 18406,
+    "complete_factorizations": 4092,
+    "power_queries": 28825,
+    "prefix_queries": 290536,
+    "power_successes": 1118,
+    "cyclic_successes": 6598,
+    "cyclic_count_controls": 2044,
+    "power_count_controls": 2635,
+    "cyclic_mass_controls": 7996,
+    "power_mass_controls": 41683,
+    "constructor_schedule_controls": 248,
+    "comparison_trace_controls": 5460
+  },
+  "samples": [
+    {
+      "integer": 4,
+      "characteristic": 2,
+      "cyclic_witnesses": 0,
+      "cyclic_residue": 0,
+      "factors": [
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 8,
+      "characteristic": 2,
+      "cyclic_witnesses": 1,
+      "cyclic_residue": 1,
+      "factors": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 12,
+      "characteristic": 2,
+      "cyclic_witnesses": 2,
+      "cyclic_residue": 0,
+      "factors": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "integer": 16,
+      "characteristic": 2,
+      "cyclic_witnesses": 1,
+      "cyclic_residue": 1,
+      "factors": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 27,
+      "characteristic": 2,
+      "cyclic_witnesses": 1,
+      "cyclic_residue": 1,
+      "factors": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 36,
+      "characteristic": 2,
+      "cyclic_witnesses": 3,
+      "cyclic_residue": 1,
+      "factors": [
+        2,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 64,
+      "characteristic": 2,
+      "cyclic_witnesses": 2,
+      "cyclic_residue": 0,
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 81,
+      "characteristic": 2,
+      "cyclic_witnesses": 1,
+      "cyclic_residue": 1,
+      "factors": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 128,
+      "characteristic": 2,
+      "cyclic_witnesses": 3,
+      "cyclic_residue": 1,
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 221,
+      "characteristic": 2,
+      "cyclic_witnesses": 1,
+      "cyclic_residue": 1,
+      "factors": [
+        13,
+        17
+      ]
+    },
+    {
+      "integer": 4,
+      "characteristic": 3,
+      "cyclic_witnesses": 1,
+      "cyclic_residue": 1,
+      "factors": [
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 8,
+      "characteristic": 3,
+      "cyclic_witnesses": 2,
+      "cyclic_residue": 2,
+      "factors": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 12,
+      "characteristic": 3,
+      "cyclic_witnesses": 5,
+      "cyclic_residue": 2,
+      "factors": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "integer": 16,
+      "characteristic": 3,
+      "cyclic_witnesses": 4,
+      "cyclic_residue": 1,
+      "factors": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 27,
+      "characteristic": 3,
+      "cyclic_witnesses": 2,
+      "cyclic_residue": 2,
+      "factors": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 36,
+      "characteristic": 3,
+      "cyclic_witnesses": 11,
+      "cyclic_residue": 2,
+      "factors": [
+        2,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 64,
+      "characteristic": 3,
+      "cyclic_witnesses": 8,
+      "cyclic_residue": 2,
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 81,
+      "characteristic": 3,
+      "cyclic_witnesses": 4,
+      "cyclic_residue": 1,
+      "factors": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 128,
+      "characteristic": 3,
+      "cyclic_witnesses": 11,
+      "cyclic_residue": 2,
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 221,
+      "characteristic": 3,
+      "cyclic_witnesses": 2,
+      "cyclic_residue": 2,
+      "factors": [
+        13,
+        17
+      ]
+    },
+    {
+      "integer": 4,
+      "characteristic": 5,
+      "cyclic_witnesses": 2,
+      "cyclic_residue": 2,
+      "factors": [
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 8,
+      "characteristic": 5,
+      "cyclic_witnesses": 6,
+      "cyclic_residue": 1,
+      "factors": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 12,
+      "characteristic": 5,
+      "cyclic_witnesses": 14,
+      "cyclic_residue": 4,
+      "factors": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "integer": 16,
+      "characteristic": 5,
+      "cyclic_witnesses": 13,
+      "cyclic_residue": 3,
+      "factors": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 27,
+      "characteristic": 5,
+      "cyclic_witnesses": 6,
+      "cyclic_residue": 1,
+      "factors": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 36,
+      "characteristic": 5,
+      "cyclic_witnesses": 44,
+      "cyclic_residue": 4,
+      "factors": [
+        2,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 64,
+      "characteristic": 5,
+      "cyclic_witnesses": 41,
+      "cyclic_residue": 1,
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 81,
+      "characteristic": 5,
+      "cyclic_witnesses": 13,
+      "cyclic_residue": 3,
+      "factors": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 128,
+      "characteristic": 5,
+      "cyclic_witnesses": 65,
+      "cyclic_residue": 0,
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 221,
+      "characteristic": 5,
+      "cyclic_witnesses": 4,
+      "cyclic_residue": 4,
+      "factors": [
+        13,
+        17
+      ]
+    },
+    {
+      "integer": 4,
+      "characteristic": 7,
+      "cyclic_witnesses": 3,
+      "cyclic_residue": 3,
+      "factors": [
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 8,
+      "characteristic": 7,
+      "cyclic_witnesses": 11,
+      "cyclic_residue": 4,
+      "factors": [
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 12,
+      "characteristic": 7,
+      "cyclic_witnesses": 27,
+      "cyclic_residue": 6,
+      "factors": [
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "integer": 16,
+      "characteristic": 7,
+      "cyclic_witnesses": 29,
+      "cyclic_residue": 1,
+      "factors": [
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 27,
+      "characteristic": 7,
+      "cyclic_witnesses": 11,
+      "cyclic_residue": 4,
+      "factors": [
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 36,
+      "characteristic": 7,
+      "cyclic_witnesses": 111,
+      "cyclic_residue": 6,
+      "factors": [
+        2,
+        2,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 64,
+      "characteristic": 7,
+      "cyclic_witnesses": 131,
+      "cyclic_residue": 5,
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 81,
+      "characteristic": 7,
+      "cyclic_witnesses": 29,
+      "cyclic_residue": 1,
+      "factors": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    {
+      "integer": 128,
+      "characteristic": 7,
+      "cyclic_witnesses": 244,
+      "cyclic_residue": 6,
+      "factors": [
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ]
+    },
+    {
+      "integer": 221,
+      "characteristic": 7,
+      "cyclic_witnesses": 6,
+      "cyclic_residue": 6,
+      "factors": [
+        13,
+        17
+      ]
+    }
+  ],
+  "checker_sha256": "e1c49201238caad9f7c2664ecb6d9117f9beee0f72854473bf4e7b0d16f771c6",
+  "parity_checker_sha256": "ec1b7e496cdd51bf52885366b9b0d41d33a57afa0a843218c990a5f0425e5b5c"
+}

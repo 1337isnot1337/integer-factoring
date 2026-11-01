@@ -568,7 +568,7 @@ verify-post-half: verify-pr29-extended
 verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
-verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues
+verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments verify-sparse-divisor-residues verify-odd-character-residues verify-pr31-frontier
 	python3 tools/check_direct_sublinear_counts.py
 	python3 tools/check_rational_simultaneous_transfer.py
 	python3 tools/check_minimum_cut_rank_budget.py
@@ -1396,7 +1396,7 @@ verify-adaptive-power-full:
 # beyond-half-checks:end
 
 .PHONY: verify-constructions
-verify-constructions:
+verify-constructions: verify-pr31-constructions
 	python3 tools/check_simultaneous_seed_endpoint.py
 	python3 tools/check_homogeneous_central_symbols.py --central 16
 	python3 tools/check_angle_pfaffian.py
@@ -1584,3 +1584,42 @@ verify-cube-transfer:
 .PHONY: verify-cube-gaussian
 verify-cube-gaussian:
 	python3 tools/check_cube_homogeneous_gaussian.py --output /tmp/cube-homogeneous-gaussian.json
+
+.PHONY: verify-pr31-constructions
+verify-pr31-constructions:
+	python3 tools/check_interior_jacobian_budget.py --output /tmp/integer-factoring-interior-jacobian-budget.json
+	python3 tools/check_rational_cut_mesh_budget.py --output /tmp/integer-factoring-rational-cut-mesh-budget.json
+	python3 tools/check_compatible_compression_budget.py --cores evidence/compatible-compression-cores.json --output /tmp/integer-factoring-compatible-compression-budget.json
+	python3 tools/check_compatible_formal_cutoff.py --cores evidence/compatible-compression-cores.json --output /tmp/integer-factoring-compatible-formal-cutoff.json
+	python3 tools/check_carry_swap_circuits.py --witnesses evidence/carry-swap-finite-minors.json --output /tmp/integer-factoring-carry-swap-circuit-audit.json
+	python3 tools/check_low_choi_cycle_searches.py --output /tmp/integer-factoring-low-choi-cycle-searches.json
+	python3 tools/check_modified_transpose_roots.py --output /tmp/integer-factoring-modified-transpose-roots.json
+	python3 tools/check_rank_two_channel_normal_form.py --output /tmp/integer-factoring-rank-two-channel-normal-form.json
+	python3 tools/check_rank_one_fixed_pairs.py --output /tmp/integer-factoring-rank-one-fixed-pairs.json
+	python3 tools/check_partial_transpose_rank.py --output /tmp/integer-factoring-partial-transpose-rank.json
+	python3 tools/check_cnot_crossing_modules.py --output /tmp/integer-factoring-cnot-crossing-modules.json
+	python3 tools/cnot_full_span.py --output /tmp/integer-factoring-cnot-full-span-audit.json
+	python3 tools/check_cnot_cut_budgets.py --output /tmp/integer-factoring-cnot-cut-budgets.json
+	python3 tools/check_geometric_transpose_crossings.py --polynomial-screen --output /tmp/integer-factoring-geometric-transpose-audit.json
+	python3 tools/check_geometric_row_inverses.py --output /tmp/integer-factoring-geometric-row-inverse-audit.json
+	python3 tools/check_nicolas_threshold_centers.py --output /tmp/integer-factoring-nicolas-threshold-centers.json
+	python3 tools/check_adaptive_divisor_preprocessing.py --output /tmp/integer-factoring-adaptive-divisor-preprocessing.json
+	python3 tools/check_certified_divisor_oracle.py --output /tmp/integer-factoring-certified-divisor-oracle.json
+	python3 tools/check_large_divisor_checkpoint.py --source-dir evidence --output-dir /tmp/integer-factoring-large-divisor/evidence
+	python3 tools/check_quantum_crossing.py --output /tmp/integer-factoring-quantum-crossing-audit.json
+	python3 tools/check_nilpotent_flag_crossings.py --output /tmp/integer-factoring-nilpotent-flag-crossings.json
+	python3 tools/check_cauchy_two_adic_smith.py --output /tmp/integer-factoring-cauchy-two-adic-smith.json
+	python3 tools/check_tapered_hermite_precision.py --output /tmp/integer-factoring-tapered-hermite-precision.json
+	python3 tools/check_exterior_precision_witness.py --output /tmp/integer-factoring-exterior-precision-witness.json
+	python3 tools/check_arithmetic_crossing.py --output /tmp/integer-factoring-arithmetic-crossing-audit.json
+	python3 tools/check_primorial_weighted_preprocessing.py
+	python3 tools/check_exchange_divisor_preprocessing.py
+
+.PHONY: verify-pr31-frontier
+verify-pr31-frontier:
+	python3 tools/check_strict_mixed_cut_gate.py --output /tmp/integer-factoring-strict-mixed-cut-gate.json
+	python3 tools/check_cnot_sixteen_span.py --output /tmp/integer-factoring-cnot-sixteen-span.json
+	python3 tools/check_fixed_prime_factor_transfer.py --output /tmp/integer-factoring-fixed-prime-factor-transfer.json
+	python3 tools/check_mixed_cut_rank_budget.py --output /tmp/integer-factoring-mixed-cut-rank-budget.json
+	python3 tools/check_parity_factor_transfer.py --output /tmp/integer-factoring-parity-factor-transfer.json
+	python3 tools/check_rough_sparse_transfer.py --output /tmp/integer-factoring-rough-sparse-transfer.json

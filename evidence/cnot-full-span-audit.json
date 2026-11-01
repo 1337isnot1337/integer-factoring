@@ -1,0 +1,366 @@
+{
+  "row_basis": "a=C0+C2, b=C2, c=C1, d=C3",
+  "local_row_matrices": [
+    [
+      1,
+      14,
+      14,
+      14
+    ],
+    [
+      0,
+      12,
+      10,
+      6
+    ],
+    [
+      0,
+      0,
+      12,
+      12
+    ],
+    [
+      0,
+      10,
+      0,
+      10
+    ]
+  ],
+  "local_column_normal_matrices": [
+    [
+      11,
+      12,
+      8,
+      8
+    ],
+    [
+      11,
+      8,
+      8,
+      8
+    ],
+    [
+      0,
+      12,
+      12,
+      0
+    ],
+    [
+      2,
+      2,
+      0,
+      0
+    ]
+  ],
+  "binary_direct_checks": [
+    {
+      "tensor_exponent": 1,
+      "binary_checks": 16
+    },
+    {
+      "tensor_exponent": 2,
+      "binary_checks": 512
+    },
+    {
+      "tensor_exponent": 3,
+      "binary_checks": 128
+    }
+  ],
+  "extension_field_checks": [
+    {
+      "tensor_exponent": 1,
+      "F4_checks": 256
+    },
+    {
+      "tensor_exponent": 2,
+      "F4_checks": 64
+    },
+    {
+      "tensor_exponent": 3,
+      "F4_checks": 8
+    }
+  ],
+  "rank_one_product_controls": [
+    {
+      "tensor_exponent": 1,
+      "rank_one_pieces_in_each_cut": 3
+    },
+    {
+      "tensor_exponent": 2,
+      "rank_one_pieces_in_each_cut": 9
+    },
+    {
+      "tensor_exponent": 3,
+      "rank_one_pieces_in_each_cut": 27
+    },
+    {
+      "tensor_exponent": 4,
+      "rank_one_pieces_in_each_cut": 81
+    }
+  ],
+  "local_F4_rank_one_counts": {
+    "row": 15,
+    "column": 9
+  },
+  "all_active_two_sided_column_forms_u_b_c_d": [
+    [
+      0,
+      7,
+      7,
+      7
+    ],
+    [
+      0,
+      2,
+      4,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      8
+    ]
+  ],
+  "column_arrow_left": [
+    2,
+    1,
+    10,
+    6
+  ],
+  "column_arrow_right": [
+    2,
+    8,
+    11,
+    4
+  ],
+  "column_arrow_forms_u_b_c_d": [
+    [
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      8,
+      0,
+      8,
+      3
+    ],
+    [
+      0,
+      2,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      4,
+      0
+    ]
+  ],
+  "complete_binary_square_low_column_rank_counts": {
+    "1": 9,
+    "2": 42
+  },
+  "column_rank_two_product_profiles": [
+    {
+      "tensor_exponent": 1,
+      "row_rank_histogram": {
+        "4": 2,
+        "2": 2
+      },
+      "column_rank": 2
+    },
+    {
+      "tensor_exponent": 2,
+      "row_rank_histogram": {
+        "16": 8,
+        "8": 4,
+        "6": 4,
+        "4": 8,
+        "5": 8,
+        "2": 10
+      },
+      "column_rank": 2
+    },
+    {
+      "tensor_exponent": 3,
+      "row_rank_histogram": {
+        "64": 26,
+        "32": 6,
+        "24": 12,
+        "16": 48,
+        "20": 24,
+        "8": 54,
+        "18": 24,
+        "6": 24,
+        "17": 24,
+        "4": 24,
+        "5": 72,
+        "2": 40
+      },
+      "column_rank": 2
+    },
+    {
+      "tensor_exponent": 4,
+      "row_rank_histogram": {
+        "256": 80,
+        "128": 8,
+        "96": 24,
+        "64": 208,
+        "80": 48,
+        "32": 156,
+        "72": 96,
+        "24": 96,
+        "68": 96,
+        "16": 192,
+        "20": 480,
+        "8": 448,
+        "66": 64,
+        "30": 48,
+        "18": 192,
+        "6": 96,
+        "65": 64,
+        "17": 288,
+        "4": 64,
+        "5": 448,
+        "2": 152
+      },
+      "column_rank": 2
+    }
+  ],
+  "rank_one_conic_coefficient_profiles": [
+    {
+      "tensor_exponent": 1,
+      "coefficient_rank_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "tensor_exponent": 2,
+      "coefficient_rank_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          3,
+          6
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "tensor_exponent": 3,
+      "coefficient_rank_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          4,
+          20
+        ],
+        [
+          3,
+          15
+        ],
+        [
+          2,
+          6
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "tensor_exponent": 4,
+      "coefficient_rank_pairs": [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          3,
+          28
+        ],
+        [
+          4,
+          56
+        ],
+        [
+          5,
+          70
+        ],
+        [
+          4,
+          56
+        ],
+        [
+          3,
+          28
+        ],
+        [
+          2,
+          8
+        ],
+        [
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "q8_shifted_flip_ranks_F4": [
+    64,
+    28,
+    64,
+    64
+  ],
+  "q8_full_span_cost_theorem": "S>19>8^(99/70)>8^sqrt(2) over every characteristic-two field",
+  "scope": "exact rank engine and all-field structural theorems; no exponent improvement"
+}

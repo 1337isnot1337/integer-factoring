@@ -243,6 +243,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Fixed-prime scalar transfer](research/fixed-prime-factor-transfer.md): polynomially many scalar clique-count queries suffice under the stated evaluator hypothesis. [Certified divisor preprocessing](research/certified-divisor-oracle.md) concerns the maximum divisor count below a bound. These interfaces and the accompanying finite construction controls do not improve the complete 1/2 exponent. The parallel [fixed-characteristic recovery proof](research/fixed-characteristic-factor-recovery.md) is retained; the two notes share the power-tuple and cyclic-orbit mechanism.
+
 - [PR #30 recovery and Smith checkpoint](research/INDEX.md#retained-pr-30-recovery-and-smith-checkpoint), including a [parallel integral Schur derivation](research/integral-schur-crossing-pr30.md): fixed-characteristic recovery interfaces, exact constructions and scoped Smith/gauge controls. Both Schur notes and their attributions are retained. No exponent above `1/2` or new Lean result is claimed.
 
 - [Ward/Pfaffian entry queries](research/ward-pfaffian-entry-queries.md), [simultaneous seed endpoint](research/simultaneous-seed-endpoint.md), and the [PR #29 checkpoint](research/INDEX.md#retained-pr-29-ward-and-crossing-checkpoint): exact entry constructions, effective interfaces and scoped crossing barriers. Entry evaluation alone is not a favorable rank bound. `verify-constructions` is in the default gate; larger native/extended screens remain separate. No stronger complete factoring exponent is claimed.

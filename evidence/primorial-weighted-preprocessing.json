@@ -1,0 +1,510 @@
+{
+  "status": "pass",
+  "scope": "Exact finite enumeration, arithmetic, and lower-weight checks; no factoring-score improvement.",
+  "primorial_weight_cases": 512,
+  "trial_prime_comparisons": 64,
+  "weighted_descriptors_checked": 24757,
+  "weighted_count_ranges": 24,
+  "support_budget_checks": 24757,
+  "divisor_sieve_integers": 65535,
+  "divisor_sieve_ranges": 16,
+  "streamed_complete_ranges": 6,
+  "descriptor_product_bits_checked": 257,
+  "invalid_inputs_rejected": 8,
+  "pattern_count_table": [
+    {
+      "input_bits": 1,
+      "surrogate_patterns": 1,
+      "feasible_patterns": 1,
+      "maximum_support": 0
+    },
+    {
+      "input_bits": 4,
+      "surrogate_patterns": 7,
+      "feasible_patterns": 6,
+      "maximum_support": 2
+    },
+    {
+      "input_bits": 8,
+      "surrogate_patterns": 45,
+      "feasible_patterns": 24,
+      "maximum_support": 3
+    },
+    {
+      "input_bits": 12,
+      "surrogate_patterns": 195,
+      "feasible_patterns": 62,
+      "maximum_support": 4
+    },
+    {
+      "input_bits": 16,
+      "surrogate_patterns": 684,
+      "feasible_patterns": 144,
+      "maximum_support": 5
+    },
+    {
+      "input_bits": 20,
+      "surrogate_patterns": 2087,
+      "feasible_patterns": 291,
+      "maximum_support": 5
+    },
+    {
+      "input_bits": 24,
+      "surrogate_patterns": 5763,
+      "feasible_patterns": 551,
+      "maximum_support": 6
+    }
+  ],
+  "ordinary_prefix_count_table": [
+    {
+      "input_bits": 16,
+      "canonical_patterns": 144,
+      "surrogate_patterns": 684,
+      "least_witness": 55440,
+      "maximum_divisors": 120
+    },
+    {
+      "input_bits": 32,
+      "canonical_patterns": 1680,
+      "surrogate_patterns": 35470,
+      "least_witness": 3491888400,
+      "maximum_divisors": 1920
+    },
+    {
+      "input_bits": 64,
+      "canonical_patterns": 47616,
+      "surrogate_patterns": 10380589,
+      "least_witness": 18401055938125660800,
+      "maximum_divisors": 184320
+    }
+  ],
+  "maxima": [
+    {
+      "input_bits": 1,
+      "descriptor": [],
+      "surrogate_patterns_checked": 1,
+      "feasible_patterns_checked": 1,
+      "maximum_support": 0,
+      "least_witness": 1,
+      "maximum_divisors": 1
+    },
+    {
+      "input_bits": 2,
+      "descriptor": [
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 2,
+      "feasible_patterns_checked": 2,
+      "maximum_support": 1,
+      "least_witness": 2,
+      "maximum_divisors": 2
+    },
+    {
+      "input_bits": 3,
+      "descriptor": [
+        [
+          2,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 4,
+      "feasible_patterns_checked": 4,
+      "maximum_support": 1,
+      "least_witness": 6,
+      "maximum_divisors": 4
+    },
+    {
+      "input_bits": 4,
+      "descriptor": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 7,
+      "feasible_patterns_checked": 6,
+      "maximum_support": 2,
+      "least_witness": 12,
+      "maximum_divisors": 6
+    },
+    {
+      "input_bits": 5,
+      "descriptor": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "surrogate_patterns_checked": 12,
+      "feasible_patterns_checked": 9,
+      "maximum_support": 2,
+      "least_witness": 24,
+      "maximum_divisors": 8
+    },
+    {
+      "input_bits": 6,
+      "descriptor": [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 19,
+      "feasible_patterns_checked": 13,
+      "maximum_support": 2,
+      "least_witness": 60,
+      "maximum_divisors": 12
+    },
+    {
+      "input_bits": 7,
+      "descriptor": [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "surrogate_patterns_checked": 30,
+      "feasible_patterns_checked": 17,
+      "maximum_support": 3,
+      "least_witness": 120,
+      "maximum_divisors": 16
+    },
+    {
+      "input_bits": 8,
+      "descriptor": [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "surrogate_patterns_checked": 45,
+      "feasible_patterns_checked": 24,
+      "maximum_support": 3,
+      "least_witness": 240,
+      "maximum_divisors": 20
+    },
+    {
+      "input_bits": 9,
+      "descriptor": [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 67,
+      "feasible_patterns_checked": 31,
+      "maximum_support": 3,
+      "least_witness": 360,
+      "maximum_divisors": 24
+    },
+    {
+      "input_bits": 10,
+      "descriptor": [
+        [
+          4,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "surrogate_patterns_checked": 97,
+      "feasible_patterns_checked": 39,
+      "maximum_support": 3,
+      "least_witness": 840,
+      "maximum_divisors": 32
+    },
+    {
+      "input_bits": 11,
+      "descriptor": [
+        [
+          4,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "surrogate_patterns_checked": 139,
+      "feasible_patterns_checked": 50,
+      "maximum_support": 4,
+      "least_witness": 1680,
+      "maximum_divisors": 40
+    },
+    {
+      "input_bits": 12,
+      "descriptor": [
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 195,
+      "feasible_patterns_checked": 62,
+      "maximum_support": 4,
+      "least_witness": 2520,
+      "maximum_divisors": 48
+    },
+    {
+      "input_bits": 13,
+      "descriptor": [
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          2
+        ]
+      ],
+      "surrogate_patterns_checked": 272,
+      "feasible_patterns_checked": 79,
+      "maximum_support": 4,
+      "least_witness": 7560,
+      "maximum_divisors": 64
+    },
+    {
+      "input_bits": 14,
+      "descriptor": [
+        [
+          4,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 373,
+      "feasible_patterns_checked": 97,
+      "maximum_support": 4,
+      "least_witness": 15120,
+      "maximum_divisors": 80
+    },
+    {
+      "input_bits": 15,
+      "descriptor": [
+        [
+          5,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 508,
+      "feasible_patterns_checked": 118,
+      "maximum_support": 4,
+      "least_witness": 27720,
+      "maximum_divisors": 96
+    },
+    {
+      "input_bits": 16,
+      "descriptor": [
+        [
+          5,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "surrogate_patterns_checked": 684,
+      "feasible_patterns_checked": 144,
+      "maximum_support": 5,
+      "least_witness": 55440,
+      "maximum_divisors": 120
+    }
+  ],
+  "streamed_maxima": [
+    {
+      "input_bits": 1,
+      "descriptor": [],
+      "surrogate_patterns_checked": 1,
+      "feasible_patterns_checked": 1,
+      "maximum_support": 0,
+      "least_witness": 1,
+      "maximum_divisors": 1
+    },
+    {
+      "input_bits": 2,
+      "descriptor": [
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 2,
+      "feasible_patterns_checked": 2,
+      "maximum_support": 1,
+      "least_witness": 2,
+      "maximum_divisors": 2
+    },
+    {
+      "input_bits": 3,
+      "descriptor": [
+        [
+          2,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 4,
+      "feasible_patterns_checked": 4,
+      "maximum_support": 1,
+      "least_witness": 6,
+      "maximum_divisors": 4
+    },
+    {
+      "input_bits": 4,
+      "descriptor": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 7,
+      "feasible_patterns_checked": 6,
+      "maximum_support": 2,
+      "least_witness": 12,
+      "maximum_divisors": 6
+    },
+    {
+      "input_bits": 5,
+      "descriptor": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "surrogate_patterns_checked": 12,
+      "feasible_patterns_checked": 9,
+      "maximum_support": 2,
+      "least_witness": 24,
+      "maximum_divisors": 8
+    },
+    {
+      "input_bits": 6,
+      "descriptor": [
+        [
+          3,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "surrogate_patterns_checked": 19,
+      "feasible_patterns_checked": 13,
+      "maximum_support": 2,
+      "least_witness": 60,
+      "maximum_divisors": 12
+    }
+  ],
+  "lower_bound_families": [
+    {
+      "input_bits": 32,
+      "support_limit": 1,
+      "distinct_feasible_patterns": 2,
+      "largest_product_bits": 2
+    },
+    {
+      "input_bits": 64,
+      "support_limit": 1,
+      "distinct_feasible_patterns": 2,
+      "largest_product_bits": 2
+    },
+    {
+      "input_bits": 128,
+      "support_limit": 1,
+      "distinct_feasible_patterns": 2,
+      "largest_product_bits": 2
+    },
+    {
+      "input_bits": 512,
+      "support_limit": 3,
+      "distinct_feasible_patterns": 8,
+      "largest_product_bits": 9
+    },
+    {
+      "input_bits": 1024,
+      "support_limit": 4,
+      "distinct_feasible_patterns": 16,
+      "largest_product_bits": 17
+    },
+    {
+      "input_bits": 4096,
+      "support_limit": 8,
+      "distinct_feasible_patterns": 256,
+      "largest_product_bits": 85
+    }
+  ],
+  "source_sha256": {
+    "check_primorial_weighted_preprocessing.py": "ed56a25b26d437b7d7cf96245c9274a8a6fe9f9deebf3aced0c9ccedfb6f9701",
+    "primorial_weighted_preprocessing.py": "1f92bdbe1a2c88ec15128d96d27906e81d61bff0784dd858b0ec3e8b85ba48ec"
+  },
+  "seconds": 10.191
+}

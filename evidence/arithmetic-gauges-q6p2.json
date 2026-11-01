@@ -1,0 +1,157 @@
+{
+  "q": 6,
+  "p": 2,
+  "iterations": 2000,
+  "seed": 18931,
+  "unique_initial_forms": 813,
+  "degree_counts": {
+    "1": 813
+  },
+  "slope_counts": {
+    "2": 6,
+    "3": 65,
+    "4": 219,
+    "6": 107,
+    "5": 301,
+    "9": 14,
+    "7": 61,
+    "8": 38,
+    "10": 2
+  },
+  "improvements": [
+    {
+      "q": 6,
+      "prime": 2,
+      "degree": 1,
+      "infinity_point": 1,
+      "zero_point": "infinity",
+      "first_cut": 0,
+      "degree_profile": {
+        "-1": 12,
+        "0": 12,
+        "1": 12
+      },
+      "column_orders": {
+        "0": 12,
+        "1": 16,
+        "2": 8
+      },
+      "B_float": 917.2863846028085,
+      "s_float": 2.2695308630284607,
+      "rho_float": 0.9517767098000681,
+      "certificate": {
+        "integer_lower_bound": 834,
+        "exceeds_half_target": true
+      },
+      "parameter_pairs_checked": 4,
+      "parameter_pairs_excluded_exactly": 4,
+      "slope": "2",
+      "hx": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "hy": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "iteration": 0
+    },
+    {
+      "q": 6,
+      "prime": 2,
+      "degree": 1,
+      "infinity_point": "infinity",
+      "zero_point": 1,
+      "first_cut": 1,
+      "degree_profile": {
+        "0": 32,
+        "1": 4
+      },
+      "column_orders": {
+        "0": 12,
+        "1": 12,
+        "2": 12
+      },
+      "B_float": 754.3787946230985,
+      "s_float": 3.657178838048965,
+      "rho_float": 0.9244955497359082,
+      "certificate": {
+        "integer_lower_bound": 720,
+        "exceeds_half_target": true
+      },
+      "parameter_pairs_checked": 4,
+      "parameter_pairs_excluded_exactly": 4,
+      "slope": "2",
+      "hx": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "hy": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1
+      ],
+      "iteration": 678
+    }
+  ],
+  "best": {
+    "q": 6,
+    "prime": 2,
+    "degree": 1,
+    "infinity_point": "infinity",
+    "zero_point": 1,
+    "first_cut": 1,
+    "degree_profile": {
+      "0": 32,
+      "1": 4
+    },
+    "column_orders": {
+      "0": 12,
+      "1": 12,
+      "2": 12
+    },
+    "B_float": 754.3787946230985,
+    "s_float": 3.657178838048965,
+    "rho_float": 0.9244955497359082,
+    "certificate": {
+      "integer_lower_bound": 720,
+      "exceeds_half_target": true
+    },
+    "parameter_pairs_checked": 4,
+    "parameter_pairs_excluded_exactly": 4,
+    "slope": "2",
+    "hx": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "hy": [
+      0,
+      0,
+      0,
+      0,
+      1,
+      1
+    ],
+    "iteration": 678
+  },
+  "scope": "finite exploratory screen; floating objective used only for ranking; no improved exponent claimed"
+}

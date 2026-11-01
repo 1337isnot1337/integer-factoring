@@ -1,0 +1,275 @@
+{
+  "scope": "Exact ordinary-proof certificates for the zero-basepoint Smith criterion; no factoring exponent improvement.",
+  "source_sha256": "b81417e3a4d41f08e158f162819c98f5fb70696214344603ca47fe7c73835842",
+  "certificates": [
+    {
+      "t": 4,
+      "q": 16,
+      "degree": 12,
+      "T": 2600,
+      "multiplier_power": 11,
+      "positive_polynomial_degree": 48,
+      "smallest_coefficient": 1,
+      "positive_coefficients_sha256": "58c002b7f370ec02903ab2f161e039ab65bda8112b85fa1988bf1ed4f7fb49a6",
+      "column_cut_bounds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        36,
+        120,
+        120
+      ],
+      "complement_constraints": [
+        {
+          "k": 7,
+          "row_tail_bound": 30,
+          "column_prefix_bound": 1,
+          "geometric_witness": {
+            "A": 30,
+            "B": 30,
+            "s": 1,
+            "u": 1
+          }
+        },
+        {
+          "k": 8,
+          "row_tail_bound": 21,
+          "column_prefix_bound": 2,
+          "geometric_witness": {
+            "A": 14,
+            "B": 28,
+            "s": 1,
+            "u": 2
+          }
+        },
+        {
+          "k": 9,
+          "row_tail_bound": 12,
+          "column_prefix_bound": 6,
+          "geometric_witness": {
+            "A": 4,
+            "B": 20,
+            "s": 1,
+            "u": 6
+          }
+        },
+        {
+          "k": 10,
+          "row_tail_bound": 3,
+          "column_prefix_bound": 36,
+          "geometric_witness": {
+            "A": 3,
+            "B": 3,
+            "s": 6,
+            "u": 6
+          }
+        },
+        {
+          "k": 11,
+          "row_tail_bound": 2,
+          "column_prefix_bound": 120,
+          "geometric_witness": null
+        },
+        {
+          "k": 12,
+          "row_tail_bound": 1,
+          "column_prefix_bound": 120,
+          "geometric_witness": null
+        }
+      ],
+      "target_comparison_verified": true
+    },
+    {
+      "t": 5,
+      "q": 32,
+      "degree": 15,
+      "T": 19000,
+      "multiplier_power": 73,
+      "positive_polynomial_degree": 119,
+      "smallest_coefficient": 1,
+      "positive_coefficients_sha256": "e33cd4752efdb3ff618060de9bb678c53ff98e426c69d93c75e63e6804a8d7bc",
+      "column_cut_bounds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        20,
+        156,
+        496,
+        496
+      ],
+      "complement_constraints": [
+        {
+          "k": 10,
+          "row_tail_bound": 36,
+          "column_prefix_bound": 3,
+          "geometric_witness": {
+            "A": 14,
+            "B": 58,
+            "s": 1,
+            "u": 3
+          }
+        },
+        {
+          "k": 11,
+          "row_tail_bound": 25,
+          "column_prefix_bound": 10,
+          "geometric_witness": {
+            "A": 6,
+            "B": 44,
+            "s": 1,
+            "u": 10
+          }
+        },
+        {
+          "k": 12,
+          "row_tail_bound": 14,
+          "column_prefix_bound": 20,
+          "geometric_witness": {
+            "A": 6,
+            "B": 22,
+            "s": 2,
+            "u": 10
+          }
+        },
+        {
+          "k": 13,
+          "row_tail_bound": 3,
+          "column_prefix_bound": 156,
+          "geometric_witness": {
+            "A": 3,
+            "B": 3,
+            "s": 12,
+            "u": 13
+          }
+        },
+        {
+          "k": 14,
+          "row_tail_bound": 2,
+          "column_prefix_bound": 496,
+          "geometric_witness": null
+        },
+        {
+          "k": 15,
+          "row_tail_bound": 1,
+          "column_prefix_bound": 496,
+          "geometric_witness": null
+        }
+      ],
+      "target_comparison_verified": true
+    },
+    {
+      "t": 6,
+      "q": 64,
+      "degree": 18,
+      "T": 130000,
+      "multiplier_power": 250,
+      "positive_polynomial_degree": 305,
+      "smallest_coefficient": 1,
+      "positive_coefficients_sha256": "0ef584481eb96e10a973ba460e3b057bdafb4ba0056b3305ad3d7584c85d57ab",
+      "column_cut_bounds": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        24,
+        36,
+        70,
+        650,
+        2016,
+        2016
+      ],
+      "complement_constraints": [
+        {
+          "k": 12,
+          "row_tail_bound": 121,
+          "column_prefix_bound": 1,
+          "geometric_witness": {
+            "A": 116,
+            "B": 126,
+            "s": 1,
+            "u": 1
+          }
+        },
+        {
+          "k": 13,
+          "row_tail_bound": 42,
+          "column_prefix_bound": 24,
+          "geometric_witness": {
+            "A": 4,
+            "B": 80,
+            "s": 1,
+            "u": 24
+          }
+        },
+        {
+          "k": 14,
+          "row_tail_bound": 29,
+          "column_prefix_bound": 36,
+          "geometric_witness": {
+            "A": 2,
+            "B": 56,
+            "s": 1,
+            "u": 36
+          }
+        },
+        {
+          "k": 15,
+          "row_tail_bound": 16,
+          "column_prefix_bound": 70,
+          "geometric_witness": {
+            "A": 3,
+            "B": 29,
+            "s": 2,
+            "u": 35
+          }
+        },
+        {
+          "k": 16,
+          "row_tail_bound": 3,
+          "column_prefix_bound": 650,
+          "geometric_witness": {
+            "A": 3,
+            "B": 3,
+            "s": 25,
+            "u": 26
+          }
+        },
+        {
+          "k": 17,
+          "row_tail_bound": 2,
+          "column_prefix_bound": 2016,
+          "geometric_witness": null
+        },
+        {
+          "k": 18,
+          "row_tail_bound": 1,
+          "column_prefix_bound": 2016,
+          "geometric_witness": null
+        }
+      ],
+      "target_comparison_verified": true
+    }
+  ]
+}

@@ -1,0 +1,144 @@
+{
+  "scope": "Finite exact controls for a conditional transfer; divisor enumeration is a reference oracle, not the assumed fast circuit evaluator.",
+  "counts": {
+    "trial_calls": 9356,
+    "trial_successes": 7252,
+    "least_factor_cases": 6141,
+    "rough_calls": 2104,
+    "rough_support_checks": 2104,
+    "cyclic_reductions": 523072,
+    "prefix_queries": 18099,
+    "tradeoff_cases": 1801,
+    "complete_factorizations": 511,
+    "schedule_checks": 99999
+  },
+  "samples": [
+    {
+      "integer": 97,
+      "characteristic": 2,
+      "sieve_exponent": 3,
+      "least_factor": 97,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 221,
+      "characteristic": 2,
+      "sieve_exponent": 3,
+      "least_factor": 13,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 899,
+      "characteristic": 2,
+      "sieve_exponent": 4,
+      "least_factor": 29,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 1763,
+      "characteristic": 2,
+      "sieve_exponent": 4,
+      "least_factor": 41,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 2021,
+      "characteristic": 2,
+      "sieve_exponent": 4,
+      "least_factor": 43,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 2047,
+      "characteristic": 2,
+      "sieve_exponent": 4,
+      "least_factor": 23,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 97,
+      "characteristic": 3,
+      "sieve_exponent": 3,
+      "least_factor": 97,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 221,
+      "characteristic": 3,
+      "sieve_exponent": 3,
+      "least_factor": 13,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 899,
+      "characteristic": 3,
+      "sieve_exponent": 4,
+      "least_factor": 29,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 1763,
+      "characteristic": 3,
+      "sieve_exponent": 4,
+      "least_factor": 41,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 2021,
+      "characteristic": 3,
+      "sieve_exponent": 4,
+      "least_factor": 43,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 2047,
+      "characteristic": 3,
+      "sieve_exponent": 4,
+      "least_factor": 23,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 97,
+      "characteristic": 5,
+      "sieve_exponent": 3,
+      "least_factor": 97,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 221,
+      "characteristic": 5,
+      "sieve_exponent": 3,
+      "least_factor": 13,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 899,
+      "characteristic": 5,
+      "sieve_exponent": 4,
+      "least_factor": 29,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 1763,
+      "characteristic": 5,
+      "sieve_exponent": 4,
+      "least_factor": 41,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 2021,
+      "characteristic": 5,
+      "sieve_exponent": 4,
+      "least_factor": 43,
+      "support_bound_if_rough": 4
+    },
+    {
+      "integer": 2047,
+      "characteristic": 5,
+      "sieve_exponent": 4,
+      "least_factor": 23,
+      "support_bound_if_rough": 4
+    }
+  ],
+  "checker_sha256": "45389b252e9bbd3d8c3ce86c896b2af5e3543a2139c18682a84ce89afee5433a"
+}
