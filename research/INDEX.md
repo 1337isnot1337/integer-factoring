@@ -1,5 +1,7 @@
 # Research index
 
+- [A uniform lazy-potential tail proof](lazy-potential-tail-proof.md): conditioning and exponential tilting prove PR70's probability input for all allowed walk lengths and laziness parameters, with a stronger constant. The graph/accounting hypotheses remain explicit; integer probability controls replace reliance on a floating finite grid.
+
 - [Linear-precision residue indicators and total unit inverses](precision-efficient-residue-indicators.md): implemented collected inverse and packed-system compilers use L+1 polynomial carry queries. Packing m equations into a degree-m*w coefficient extension retains v summation variables and precision L, with charged degree and embedding acquisition. A complete factoring representation remains open.
 
 - [A global floor from generic axis-face ranks](multiaxis-face-rank-floor.md): complementary Smith pairing and average face-rank fraction c force common-scale pressure above min(1/2,c+1/d). Every symmetric winning Cayley kernel in d>=4 must have pair/triple coefficients divisible by all their variables. A full endpoint fixture shows why the all-one specialization can hide this obstruction.

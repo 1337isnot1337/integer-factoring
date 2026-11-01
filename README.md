@@ -2703,6 +2703,17 @@ factoring-specific algorithms are outside the conclusion. The contribution
 is integrated with ordinary proofs and finite controls, without independent
 mathematical acceptance.
 
+The [variable-level graph extension](research/generic-engine-routing-rank-graphs.md)
+retains the preprint's support and measurement accounting, bounded occurrence
+and expanding-instance hypotheses. Its
+[lazy-walk probability input](research/lazy-potential-tail-proof.md) now has
+an ordinary proof for every allowed parameter, with a stronger constant;
+the earlier finite grid is separate evidence. Point-dependent measurements
+and the sparse large-Q case remain open. The
+[class-group graph follow-up](research/leading-power-window-graphs.md)
+gives ball-image inclusions under an unramified split-base hypothesis;
+it supplies no exact ball equivalence or uniform window theorem.
+
 The [clean default integration receipt](evidence/verify-pr65-67-default-3709a9e.json)
 pins a successful `make verify` replay and elliptic, graded-box and higher-axis
 Frobenius focused checks to exact `3709a9e`, tree `a9ece4ec6b6d0147e817eaa88511af1abf383dc8`.

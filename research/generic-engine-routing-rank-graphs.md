@@ -7,7 +7,7 @@ Labels: **PROVEN** (proof here or in `pathA/note.md`), **VERIFIED** (exact compu
 
 | Angle | Verdict |
 |---|---|
-| 1. Host graphs and minrank | Theorem A **is** the maximum-acyclic-induced-subgraph (MAIS) lower bound on minrank (KNOWN, Bar-Yossef–Birk–Jayram–Kol). The graph lens yields a stronger theorem, A′ (PROVEN): it covers every label set, every placement or merging of variables, and every support-respecting M_0. Door (c) closes, and door (b) closes whenever the number of evaluation points is Q = O(log n). θ, Haemers and orthogonal rank are upper-bound tools on capacity, so they cannot strengthen a rank lower bound. No host graph inside the preprint beats the √Q width: the accounting forces the Hamming metric on schedules, and product potentials are universal there. Only one door is left: (b′) sparse label sets with Q ≫ log n (CONJECTURE/open). |
+| 1. Host graphs and minrank | Theorem A **is** the maximum-acyclic-induced-subgraph (MAIS) lower bound on minrank (KNOWN, Bar-Yossef–Birk–Jayram–Kol). The graph lens yields a stronger theorem, A′ (PROVEN): it covers every label set, every placement or merging of variables, and every support-respecting M_0. Door (c) closes, and door (b) closes whenever the number of evaluation points is Q = O(log n). θ, Haemers and orthogonal rank are upper-bound tools on capacity, so they cannot strengthen a rank lower bound. No host graph inside the preprint beats the √Q width: the accounting forces the Hamming metric on schedules, and product potentials are universal there. Among these geometry variants, (b′) sparse label sets with Q ≫ log n remains open. Point-dependent measurements, door (a), are outside this argument. |
 | 2. Crossing lane | Every monotone or support-based graph parameter gives ρ = 1. That covers rectangle covers, Boolean rank, Körner graph entropy, Hansel/Fredman–Komlós and fractional covers (PROVEN: cancellation-free pieces give ρ = 1). No known graph theorem gives 1/√2 optimality or breaks it. The graded window (γ > 1/2, L < 4) has graph realizations of the growth: Fibonacci-type differential posets and the repo's own Fibonacci and Catalan path families. Whether any of them reaches energy range L ≤ 2^{1/γ} is open. |
 
 ## 1. Dictionary: routing rank is minrank of a digraph
@@ -24,9 +24,9 @@ Labels: **PROVEN** (proof here or in `pathA/note.md`), **VERIFIED** (exact compu
   - The universal *lower* bounds are α (undirected) and MAIS (directed).
   - The fooling-set bound rank ≥ √(size) (KNOWN, Dietzfelbinger–Hromkovič–Schnitger 1996) is the only other pattern-only bound found. It gives rank ≳ √D, which is useless against the design budget rank ≤ εD.
   - Field dependence of minrank (KNOWN, e.g. Lubetzky–Stav) is irrelevant, because MAIS is field-free.
-- **VERIFIED (part A of the checker): exact MAIS vs. the PR's bounds vs. the construction** (full array):
+- **Finite controls (part A): HiGHS-reported MAIS optima, checked acyclic witnesses, and comparisons with the source bounds/construction values** (full array):
 
-| r,Q,k | D | best product potential | PR #67 score_LB | **exact MAIS** | construction rank S·g(W_0) |
+| r,Q,k | D | best product potential | PR #67 score_LB | **MAIS (HiGHS)** | construction rank S·g(W_0) |
 |---|---|---|---|---|---|
 | 2,2,0 | 16 | 5 | 6 | 6 | 6 |
 | 2,3,1 | 64 | 7 | 8 | 8 | 10 |
@@ -66,21 +66,21 @@ Labels: **PROVEN** (proof here or in `pathA/note.md`), **VERIFIED** (exact compu
 - Z_w is a sum of w iid steps: ±1 each with probability p_r = ⌊r/2⌋⌈r/2⌉/(r(r−1)) ≥ 1/4, and 0 otherwise.
 - The bound holds for **every** code X = {a_v} ∪ {d_e}, whatever its intrinsic geometry. This universality is the graph-theoretic content: product potentials are 1-Lipschitz on any subset of the Hamming graph.
 
-**Corollary C′ (PROVEN, given one standard input and one verified lemma).**
+**Corollary C′ (ordinary consequence under the stated expansion and accounting inputs).**
 - Inputs:
   - The instance family has an expanding primal graph. Then, at every t, balanced groups (parts ≤ n/2) cut ≥ c_0 n occurrences.
     - KNOWN for random 3-CNF at constant density, up to a negligible non-giant part. An ETH algorithm must handle such instances.
     - Constants are not computed.
   - Lemma B′: Pr[Z_w > k] ≥ ½ exp(−9(k+1)²/(2w) − 72) for w ≥ 64 and k+1 ≤ w/4.
-    - VERIFIED exactly for r ∈ {2,3,4,5,16}, w ∈ {64,100,256}, all k (part F, min log-margin 71.96).
-    - The general-w proof should follow Lemma B's binomial argument. It is not written here, so for general w it is CONJECTURE-level.
+    - Integer distribution counts with a floating log comparison for r ∈ {2,3,4,5,16}, w ∈ {64,100,256}, all k (part F, reported min log-margin 71.96).
+    - The [uniform companion proof](lazy-potential-tail-proof.md) now establishes this for all w>=64 and every real p in [1/4,1/2], with the stronger constant -70. The finite grid is not its general justification.
 - Argument: Σ_o w(o) ≥ c_0 nQ. So ≥ c_0 n/2 occurrences have w(o) ≥ W := c_0 Q/(2C_1), where C_1 n bounds the number of occurrences. With the design budget Σ_h c_{t,h} ≤ 2τn:
 
   (k+1)² ≥ (2W/9)(ln(1/τ) − O(1)),  hence δ ≥ R/Q ≥ Ω(√(ln(Q/δ)/Q)).
 
 - With Q = O(log n), this is exactly Corollary C's wall, δ = Ω(√(log log n / log n)), i.e. α ≤ 1/2. It now holds for **any label set and any merging**, not just the full product array.
-- **Door (c) is closed** up to constants.
-- **Door (b) is closed for Q = O(log n).** Corollary C's branch (i) already forces Q = O(log n) for the full array.
+- **Under these hypotheses, door (c) is closed** up to constants.
+- **Under these hypotheses, door (b) is closed for Q = O(log n).** Corollary C's branch (i) already forces Q = O(log n) for the full array.
 
 **VERIFIED (part B):** 60 random instances (r ∈ {2,3}, Q ∈ {3,4,5}, k ∈ {0,1,2}, random formulas, random M_0 on the allowed support at three densities). For every t and every product potential, the exact GF(p) value of Σ_h c_{t,h} is at least the bound. The bound is attained in 3/60 instances, so it is valid but not tight.
 
@@ -171,3 +171,14 @@ python tools/routing_rank_nogo/check_graph_minrank.py   # ~40 s, ends "ALL CHECK
 ## 8. Disclosure
 
 Written by an AI research assistant (Grok Bot) for Alkindus Arifuddin. Nothing was posted. The proofs are short and were checked only by the computations listed; there is no independent human review.
+
+## Integration precision and scope
+
+The MAIS selections are checked for acyclicity, and HiGHS must report an
+optimal status. Its floating MILP optimality is not exported as an exact
+independently checked upper-bound certificate. Part F computes integer
+probability numerators but compares their logarithms numerically. The
+separate uniform lazy-walk proof supplies the all-parameter lemma.
+The corollary still assumes expanding primal instances, bounded occurrence,
+balanced groups and the preprint's measurement accounting. It does not
+exclude factoring-specific inputs or algorithms outside that interface.

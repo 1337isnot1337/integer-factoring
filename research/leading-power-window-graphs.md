@@ -1,15 +1,15 @@
 # Path C, graph view: does a known graph theorem settle WL(Y, W)?
 
-Box-only research note, follow-up to the window-lemma note in PR #69
+Integrated research checkpoint, follow-up to the window-lemma note in PR #69
 (https://github.com/1337isnot1337/integer-factoring/pull/69). Repo checkout
 `ab5f29b01e3a3dba1bbc3e1ebb74f49091b195d5`. The repo tools used here
 (`binary_quadratic_forms.reduce_form`, `prime_form_factor_base`,
 `weighted_norm_relations.least_power_above`) are byte-identical to `4c3d135`, the
 commit Path C was measured on. Written 2026-11-01 (America/Chicago). Drafted with AI
-assistance. Nothing was posted.
+assistance. The original source and finite data are retained with the scope repairs below.
 
-Labels: **PROVEN** = proved here, with the proof given. **VERIFIED** = checked
-exactly by the scripts in this directory. **KNOWN** = in the literature, with a
+Labels: **PROVEN** = proved here, with the proof given. **VERIFIED** = finite computation in the scripts, with exact class enumeration
+and floating spectral/FFT summaries distinguished. **KNOWN** = in the literature, with a
 reference. **CONJECTURE** = believed but not proved.
 
 ## 0. Short answer
@@ -21,9 +21,9 @@ problem (circuit lower bounds for E). The rewrite does produce three facts that 
 small but useful, and that PR #69 does not yet contain:
 
 1. **Ball sandwich (PROVEN).** S lies between the injective image of a weighted-ℓ¹
-   ball of radius ln(√|Δ|/2) and the image of the ball of radius ln H. The two radii
-   differ by only ln(2/√3) ≈ 0.144. So S is "a ball in the relation-lattice torus"
-   Z^m/Λ, not a random-looking set. This one fact explains the small-p clustering and
+   ball of radius ln(√|Δ|/2) and the image of the ball of radius ln H. Their asymptotic radius separation is ln(2/√3) ≈ 0.144, with
+   the explicit integer floor in H retained. Thus S is bracketed by two ball images in the relation-lattice quotient;
+   it is not asserted to be exactly one ball image. This one fact explains the small-p clustering and
    the Fourier bias below, and it shows why the flatness and covering theorems are
    vacuous.
 2. **Fourier bias (VERIFIED).** At every size tested, max_{χ≠1}|Ŝ(χ)| is 2.4–24×
@@ -38,6 +38,14 @@ small but useful, and that PR #69 does not yet contain:
 
 ## 1. The graph and the lattice
 
+For the lattice lemmas, use only primitive invertible **unramified split**
+prime ideals. A ramified generator can have a short relation such as
+`2 e_p`, so the stated lower bound is false if those generators are
+included without quotienting their known relations. In particular the
+selector's possible ramified prime 2 at discriminant `-4N` is outside
+this lemma as written. The retained experiments use fundamental `-N`
+and the unramified split base.
+
 Notation as in PR #69: Δ, H = isqrt(|Δ|/3), base B_Y (split p ≤ Y, m = |B_Y|), S =
 the classes whose reduced leading coefficient A is B_Y-smooth, δ = |S|/h, and
 K_p = min{k : p^k > H}.
@@ -46,8 +54,10 @@ K_p = min{k : p^k > H}.
   for p asks that the walk x_j = g_p^{K_p+j} (a geodesic of the single-generator
   cycle graph) enters S within W steps.
 - **Lattice (KNOWN viewpoint).** This is the relation lattice of Hafner–McCurley and
-  Buchmann. Let φ: Z^m → Cl, v ↦ ∏ g_p^{v_p}. Then Λ = ker φ has index h, and
-  G_Y = Cay(Z^m/Λ, ±e_p) is the quotient of the grid Z^m by Λ. Write
+  Buchmann. Let φ: Z^m → Cl, v ↦ ∏ g_p^{v_p}. Let H_0=image φ. Then Λ = ker φ has index |H_0|.
+  The grid quotient Cay(Z^m/Λ, ±e_p) is the H_0 component; the Cayley
+  graph on all of Cl is its union of coset translates. The index equals
+  h only when the base generates Cl. Write
   ‖v‖ = Σ|v_p| ln p and R = ln(√|Δ|/2).
 - **Lemma 1 (PROVEN).**
   - (i) Every nonzero λ ∈ Λ has ‖λ‖ ≥ ln(|Δ|/4) = 2R.
@@ -63,10 +73,12 @@ K_p = min{k : p^k > H}.
     get c ≥ |Δ|/(4a) > a, so the form is reduced with A = N𝔞_v, which is smooth.
     Conversely, a smooth reduced A ≤ H factors as a norm of some 𝔞_v with
     ‖v‖ = ln A ≤ ln H. ∎
-- **Reformulation (PROVEN, up to the 0.144 slack in the radius).** WL(Y, W) holds for
-  p iff the tube T_W = {(K_p + s)e_p : 0 ≤ s < W} + B_r contains a point of Λ, for
-  some r ∈ [R, ln H]. In words: does a rational line in the torus Z^m/Λ come within
-  the packing radius of the lattice within W steps.
+- **Sufficient and necessary tube tests (PROVEN).** Put
+  T_W = {(K_p+s)e_p : 0<=s<W}. If (T_W+B_R) meets Λ, the orbit hits S.
+  If the orbit hits S, (T_W+Bbar_(ln H)) meets Λ. The balls and S are
+  invariant under negation/inversion. The sandwich does not imply an exact
+  equivalence for some intermediate radius; points in the thin outer shell
+  can behave differently by direction.
 
 ## 2. Verdict per angle
 
@@ -80,10 +92,10 @@ K_p = min{k : p^k > H}.
 | Bohr sets / Bogolyubov | Sanders, Bogolyubov–Ruzsa (KNOWN, arXiv:1011.0107) | **Reduces to B3 and is quantitatively worse.** Bogolyubov puts a Bohr set inside 2S−2S, which gives g_p^k ∈ S⁴ within exp(polylog(1/δ)·log(1/ε)) steps. But membership in S⁴ cannot be tested from the leading coefficient, and the step count is worse than trivial for subexponential δ. The new point (VERIFIED, Lemma 1): S itself correlates with a Bohr set (the biased character has small phases on all g_p). This hurts B1 (M ≫ √\|S\|), but it suggests a major/minor-arc split along the orbit. That idea is CONJECTURE only, not carried out. |
 | Freiman / doubling | Freiman–Ruzsa (KNOWN) | **No structure to use.** \|SS\| is close to h, so the doubling is ~1/δ, which is useless. Lemma 1 gives the true structure: a ball image, which is a "GAP-like" set of rank m. |
 | Flatness / covering minima on the tube T_W | Khinchine flatness; Kannan–Lovász covering minima (KNOWN) | **Vacuous (PROVEN).** T_W has width 2r/ln q along the integral dual vectors e_q, q ≠ p, and 2r/ln q ≤ Flt(m) once m ≳ ln\|Δ\|. A lattice-free T_W is therefore always "flat" and the theorem gives nothing. Covering-minima bounds need the body to be long in m directions, but T_W is long in one. |
-| Small-prime clustering | — | **Explained (PROVEN, VERIFIED).** Corollary of Lemma 1, the cusp lemma: if s ∈ S and 2pA(s) < √\|Δ\|, then g_p^{±1}s ∈ S. There were 0 violations, and P(g_p s ∈ S \| s ∈ S) ≥ the cusp fraction in 47/47. The hits are chords of a ball along e_p, of length ≈ 2(r − dist)/ln p, which are longer for small p. Measured: P(next \| hit)/δ ≈ 7 for p ≤ 3 and 1.5 for p ≥ 30. The uniform window is 3.8× the random-model max gap for p = 2 and 1.1× for p ≥ 30. The mean forward hit ≈ 0.76·(cluster size)/δ (VERIFIED). So the effective event rate is δ/c_p. Short cycles: by Lemma 1(i) the only cycles shorter than weighted length 2R are commutator 4-cycles. The graph is locally the grid Z^m (PROVEN). |
+| Small-prime clustering | — | **Explained (PROVEN, VERIFIED).** Corollary of Lemma 1, the cusp lemma: if s ∈ S and 2pA(s) < √\|Δ\|, then g_p^{±1}s ∈ S. There were 0 violations, and P(g_p s ∈ S \| s ∈ S) ≥ the cusp fraction in 47/47. The hits are chords of a ball along e_p, of length ≈ 2(r − dist)/ln p, which are longer for small p. Measured: P(next \| hit)/δ ≈ 7 for p ≤ 3 and 1.5 for p ≥ 30. The uniform window is 3.8× the random-model max gap for p = 2 and 1.1× for p ≥ 30. The mean forward hit ≈ 0.76·(cluster size)/δ (VERIFIED). So the effective event rate is δ/c_p. Short relations: by Lemma 1(i), every closed walk of weighted length below 2R has zero exponent displacement. Ordinary grid walks can still close, including commutator 4-cycles and longer cycles (PROVEN under the unramified-base hypothesis). |
 | Multi-generator gap needed vs known | JMV under GRH (KNOWN) | **Reduces to B1.** Even optimal Ramanujan-type λ ≈ 2√(d−1) gives a deterministic BFS ball ≈ 4h/(dδ). Beating B1 needs d ≫ h^{1/2}, i.e. Y beyond the base the method can afford. Deterministic progress needs control of S along specific paths (B3), not a better gap. |
 
-## 3. Experiment (VERIFIED, exact)
+## 3. Experiment (exact class enumeration, numerical spectral summaries)
 
 `cayley_small.py` uses 16 seeded semiprimes N ≡ 3 mod 4 of 30, 34, 38 and 42 bits
 with cyclic Cl(−N), h up to 9.4·10⁵, and three values of Y each (u ≈ 2.5, 3, 3.5).
@@ -113,8 +125,8 @@ Limits:
 ## 4. What this adds to PR #69
 
 - Lemma 1 (the ball sandwich, PROVEN) and its corollaries: the cusp lemma, clustering
-  as chords, and local grid structure.
-- The Fourier-bias measurement, which weakens B1's hypothesis.
+  as chords, and the restriction on short relations.
+- The Fourier-bias measurement, which cautions against random-set estimates for the character bound. B1 itself allows arbitrary uniform bounds and is not invalidated.
 - The pigeonhole 1/δ floor for start-uniform arguments.
 - One table recording that the EML, hitting-time, Bogolyubov and flatness routes
   reduce to B1/B3 or are randomized-only.

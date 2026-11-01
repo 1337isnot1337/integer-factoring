@@ -10,7 +10,9 @@
 (D) Potential-obstruction width on several host graphs (illustration only).
 (E) Random sparse codes with Q >> log n: fraction of occurrences with no
     variable schedule within distance k of the clause schedule (unroutable).
-Exact integer / GF(p) arithmetic throughout, except (D) which is counting.
+Ranks, acyclicity and walk counts use integers; MILP optimality is reported
+by HiGHS and the tail-log comparisons use floating arithmetic. No exact
+solver optimality certificate is exported.
 """
 import itertools, random, sys
 import pulp, networkx as nx
@@ -55,8 +57,11 @@ def mais(nodes, succ, selfloop):
     it = 0
     while True:
         it += 1
-        prob.solve(pulp.HiGHS(msg=False))
+        status=prob.solve(pulp.HiGHS(msg=False,threads=1))
+        if status!=pulp.LpStatusOptimal:
+            raise RuntimeError(f'HiGHS did not report an optimum: {pulp.LpStatus[status]}')
         S = [u for u in nodes if x[u].value() > 0.5]
+        assert all(not selfloop[u] for u in S)
         Sset = set(S)
         G = nx.DiGraph(); G.add_nodes_from(S)
         G.add_edges_from((u, w) for u in S for w in succ[u] if w in Sset and w != u)
@@ -100,7 +105,7 @@ def score_bound(r, Q, k, lab):
 CONSTR = {(2,1,0):1,(2,2,0):6,(2,2,1):1,(2,3,1):10,(3,2,1):9,(2,4,2):13,(2,4,1):94,(4,2,1):36}
 
 def part_A():
-    print("== (A) exact MAIS of routing digraph (full array) ==")
+    print("== (A) MAIS of routing digraph (HiGHS optimum; acyclicity checked) ==")
     print("   MAIS <= minrank(I-M) over every field <= construction rank")
     ok = True
     for (r, Q, k) in [(2,1,0),(2,2,0),(2,2,1),(2,3,1),(3,2,1),(2,4,2),(4,2,1),(2,4,1)]:
@@ -240,7 +245,8 @@ def part_E(seed=4):
 def part_F():
     """Z_w = sum of w iid increments in {-1,0,+1}, +-1 each w.p. p_r =
     floor(r/2)ceil(r/2)/(r(r-1)) (random half-set H_t, one cut coordinate).
-    Check exactly: Pr[Z_w >= k+1] >= 1/2 exp(-9(k+1)^2/(2w) - 72) for k+1 <= w/4."""
+    Integer counts, followed by a floating logarithm comparison, for the
+    stated tail. The uniform proof is in lazy-potential-tail-proof.md."""
     import math
     print("== (F) Lemma B' for Z_w: Pr[Z_w > k] >= 1/2 exp(-9(k+1)^2/(2w)-72), k+1 <= w/4 ==")
     ok = True; worst = float("inf")

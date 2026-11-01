@@ -901,3 +901,30 @@ domains, relative-column rotation, subfield coefficients and exact-count
 precision are included. The inherited additive-character compiler is
 preserved. The complete integer arithmetic representation and a stronger
 factoring score remain open. No Lean is included.
+
+## Graph follow-up integration and the uniform probability input
+
+PR70 head `e5133d81dcf3ca92a7f0decaf48a33ee1c430ccd` is retained in
+`9c77369`; PR72 head `a4274425ae7dfde4439f8e0fc892a74228cfad75` in
+`aead326`. The additive index conflict preserves both sources. PR70 now
+credits MAIS, and its checker requires HiGHS optimal status. Exact ranks
+and acyclicity are distinguished from floating MILP optimality and log
+comparisons; no independent solver upper-bound certificate is claimed.
+The [uniform companion](../research/lazy-potential-tail-proof.md) proves
+the previously finite-only lazy-walk input for all allowed w and p, with
+constant -70 instead of -72. Its [receipt](../evidence/lazy-potential-tail-controls.json)
+contains two rational exponential-series certificates, the completed square,
+32,896 exact Rademacher comparisons and 525 exact lazy-walk comparisons.
+The general statement follows from the written proof, not the grid.
+
+PR72's lattice lemma now explicitly excludes ramified generators; the
+relation lattice has index equal to the generated subgroup's size, which
+is h only when the base generates the full class group. The ball sandwich
+gives sufficient and necessary tube tests, not an exact intermediate-ball
+equivalence. Short zero-displacement grid walks include more than just
+four-cycles. Both committed data hashes pass and source syntax is checked;
+the numerical PARI/FFT scan is not rerun because cypari2 is unavailable in
+the system and task interpreters. The full `2a1daeb` replay predates these
+follow-ups. A focused graph replay uses an isolated interpreter with PuLP
+2.9.0, HiGHS 1.15.1 and NetworkX 3.7; its result is recorded separately.
+No arbitrary-algorithm lower bound, Lean or stronger factoring score follows.
