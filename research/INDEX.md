@@ -89,6 +89,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Exact homogeneous physical restrictions of the two-site reflection seed](reflection-homogeneous-restrictions.md).
 - [All-scale 5/7 floor for every homogeneous middle-fiber restriction](homogeneous-restriction-pressure-floor.md).
 - [Complete joint physical conjugations cannot improve the four-letter reflection seed](joint-height-conjugation-floor.md).
+- [Joint pair compression and a new physical grid](joint-grid-compressions.md): rectangular joint splits preserve the literal endpoint; all 1,232 declared 2-by-3 coordinate maps have balanced `rho >= 3/4`, and all 1,152 full 4-by-4 maps are dominated by the original source at every scale and supporting weights.
 - [Fresh odd pivots preserve exact identities and the presented two-primary torsion](odd-pivot-two-primary-elimination.md).
 - [All-degree binary nilpotent joint frames of the four-letter reflection seed are rigid](polynomial-joint-height-rigidity.md).
 - [State-adaptive physical Smith channels](state-adaptive-smith-channels.md).

@@ -1971,3 +1971,12 @@ independent binary-polynomial Smith implementation. This closes boundary-only
 natural-pressure searches in that family; changes to lower states and other
 gauges remain open. The factoring score stays `1/2`. Run
 `make verify-moving-boundary` for the construction and all-scale certificates.
+
+The [joint pair-compression construction](research/joint-grid-compressions.md)
+allows a rectangular split on two legs followed by a new Cartesian alphabet.
+All 1,232 declared vacuum-containing 2-by-3 coordinate grids have exact
+balanced `rho >= 3/4` certificates. All 1,152 full 4-by-4 grids are dominated
+by the original source at every scale and supporting weights. A separate
+native replay checks 51,648 orders and 339,264 endpoint entries. Field-valued
+joint projections remain open; the complete score stays **1/2**. Run
+`make verify-joint-grid-compressions` for both complete coordinate families.
