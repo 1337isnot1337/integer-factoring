@@ -122,3 +122,34 @@ A [separate two-by-three smoke receipt](../evidence/rectangular-pascal-driver-sm
 checks the screen/selection/search pipeline with an explicitly shortened
 one-second budget and two-restart ceiling. It is a driver control, not part
 of the nineteen-case screen or its one-hour follow-on.
+
+## Completed nineteen-case screen
+
+The frozen `b04ca4c` screen completed all nineteen cases in 466.92 seconds.
+The [full archive](../evidence/rectangular-pascal-coordinate-screen-complete.json.xz)
+retains **34,304 complete orders**, both physical type vectors, all fitted
+parameters, stdout and as-run source texts. All 57 supporting-line fits
+reported local success. These status flags are numerical, not proofs of
+global optimality. The [coverage receipt](../evidence/rectangular-pascal-coordinate-screen-controls.json)
+checks dimensions, registration agreement and source-text hashes; it does
+not independently reconstruct all larger native profiles.
+
+| Restriction, with both pair orientations tested | Best inherited numerical rho |
+| --- | ---: |
+| Equal 32-letter control | 0.7216933250053 |
+| 24 by 48 lowest-excitation words | 0.7218724642968 |
+| 16 by 64 lowest-excitation words | 0.7249020226556 |
+| 8 by 64 lowest-excitation words | 0.7356440245148 |
+| 32 even words by 32 odd words | 0.7867432427894 |
+| 24 even words by 48 unrestricted words | 0.8186209971961 |
+| 24 odd words by 48 unrestricted words | 0.8201486375873 |
+| 32 occupation-four words by 32 unrestricted words | 0.8578975618474 |
+| 16 occupation-four words by 32 unrestricted words | 0.8613599937479 |
+| 16 occupation-three words by 32 unrestricted words | 0.9031303929582 |
+
+The lowest supporting-line value is `1.0001056729915`, still above one.
+The registered rule selects `full-24-by-48-swapped`, of sizes 48 and 24,
+for the one-hour whole-symbol follow-on. Its last-bit advantage over the
+unswapped case is numerical roundoff, not evidence of a structural
+orientation advantage. The follow-on is running separately from this
+completed screen. No exact stronger crossing or factoring bound follows.

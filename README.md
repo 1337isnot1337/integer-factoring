@@ -90,7 +90,8 @@ pilot is slower than the legacy evaluator; no search speedup is claimed.
 The [rectangular coordinate extension](research/rectangular-pascal-coordinate-alphabets.md)
 allows different alphabets on the two matched physical pairs, including
 one-pair occupation restrictions, with complete original Fock profiles.
-Its nineteen-case constructive screen is registered; no new bound is asserted.
+Its nineteen-case screen completed 34,304 channel orders without passing the
+threshold; the selected unequal-alphabet whole-symbol follow-on is running.
 
 ## Arithmetic construction and space bounds
 
