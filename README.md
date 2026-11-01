@@ -113,6 +113,16 @@ also completes a **176-bit** selective-promotion run in **23,998,215 norm
 queries**, reaching full rank in a 1,776-prime base. Its complete 51,902-identity
 certificate is retained in XZ form and independently replayed, including all
 50,126 residual-prime certificates and 1,776 integer graph eliminations.
+
+[Gcd-free oriented refinement](research/oriented-coprime-basis.md) replaces
+supplied composite residual ideals by pairwise coprime atoms with consistent
+quadratic-root orientations. It preserves the evaluated torsion image and
+can expose additional factors without factoring the residual norms.
+An exact four-witness example has no equal or conjugate residual keys,
+yet its refined cycle extracts 1009 from 1022117. The proof includes literal
+integral-ideal identities and polynomial bit cost for the supplied-witness
+transformation. Witness search remains charged separately.
+Run `make verify-oriented-coprime-basis`.
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- tensor-orthogonal-checkpoint:start -->

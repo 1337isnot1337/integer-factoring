@@ -2418,3 +2418,8 @@ verify-tensor-orthogonal-comparisons:
 	python3 -c 'import pathlib, shutil, subprocess, tempfile; d=tempfile.TemporaryDirectory(prefix="factoring-tensor-"); p=pathlib.Path(d.name)/"certificate.json"; shutil.copyfile("evidence/tensor-orthogonal-pressure-dominance.json",p); subprocess.run(["python3","tools/check_tensor_orthogonal_pressure_dominance.py","--output",str(p)],check=True)'
 	python3 tools/check_tensor_f4_five_pair_dominance.py --output /tmp/integer-factoring-tensor-five-pair-check.json
 	python3 tools/check_tensor_coupled_quadratic_dominance.py --output /tmp/integer-factoring-tensor-coupled-check.json
+
+.PHONY: verify-oriented-coprime-basis
+
+verify-oriented-coprime-basis:
+	python3 tools/check_oriented_coprime_basis.py

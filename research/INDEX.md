@@ -37,6 +37,8 @@
 
 ## Composite-cofactor relations
 
+- [Oriented coprime residual atoms](oriented-coprime-basis.md): polynomial gcd and root refinement, literal HNF identities, torsion-image preservation, and a strict four-cycle factor gain without an old residual-key collision.
+
 - [Batched exact smooth-part filtering](batch-smooth-filtering.md): classical remainder trees integrated with charged first-success selection, a size-balanced amortized bound, and matched 124-/144-bit timings; no new score.
 
 - [Composite-ideal closure and integral elimination](cofactor-ideal-closure.md): fixed norm weights certify all augmented rows; a definition forest removes every residual generator over the integers, avoiding rational-rank selection; complete controls reach 144 bits.
