@@ -1,0 +1,2075 @@
+{
+  "status": "passed",
+  "records": [
+    {
+      "jet": 8,
+      "zero_rankone_image_dimension": 406,
+      "infinity_image_rank": 403,
+      "anchor_dimension": 14,
+      "anchor_kernel_dimension": 389,
+      "constraint_output_dimension": 60,
+      "linear": [
+        1,
+        3,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048,
+        4096,
+        8192
+      ],
+      "quadratic": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          16384
+        ],
+        [
+          0,
+          3,
+          32768
+        ],
+        [
+          0,
+          4,
+          65536
+        ],
+        [
+          0,
+          5,
+          65536
+        ],
+        [
+          0,
+          6,
+          131072
+        ],
+        [
+          0,
+          7,
+          262144
+        ],
+        [
+          0,
+          8,
+          524288
+        ],
+        [
+          0,
+          9,
+          1048576
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          11,
+          0
+        ],
+        [
+          0,
+          12,
+          0
+        ],
+        [
+          0,
+          13,
+          0
+        ],
+        [
+          1,
+          2,
+          2097152
+        ],
+        [
+          1,
+          3,
+          4194304
+        ],
+        [
+          1,
+          4,
+          8388608
+        ],
+        [
+          1,
+          5,
+          8388608
+        ],
+        [
+          1,
+          6,
+          16777216
+        ],
+        [
+          1,
+          7,
+          33554432
+        ],
+        [
+          1,
+          8,
+          67633152
+        ],
+        [
+          1,
+          9,
+          135266304
+        ],
+        [
+          1,
+          10,
+          0
+        ],
+        [
+          1,
+          11,
+          0
+        ],
+        [
+          1,
+          12,
+          0
+        ],
+        [
+          1,
+          13,
+          0
+        ],
+        [
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          4,
+          268435456
+        ],
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          2,
+          6,
+          0
+        ],
+        [
+          2,
+          7,
+          0
+        ],
+        [
+          2,
+          8,
+          0
+        ],
+        [
+          2,
+          9,
+          0
+        ],
+        [
+          2,
+          10,
+          536870912
+        ],
+        [
+          2,
+          11,
+          1073741824
+        ],
+        [
+          2,
+          12,
+          2147483648
+        ],
+        [
+          2,
+          13,
+          4294967296
+        ],
+        [
+          3,
+          4,
+          8589934592
+        ],
+        [
+          3,
+          5,
+          0
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          3,
+          7,
+          0
+        ],
+        [
+          3,
+          8,
+          0
+        ],
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          3,
+          10,
+          17179869184
+        ],
+        [
+          3,
+          11,
+          34359738368
+        ],
+        [
+          3,
+          12,
+          68719476736
+        ],
+        [
+          3,
+          13,
+          137438953472
+        ],
+        [
+          4,
+          5,
+          274877906944
+        ],
+        [
+          4,
+          6,
+          549755813888
+        ],
+        [
+          4,
+          7,
+          1099511627776
+        ],
+        [
+          4,
+          8,
+          2199023255552
+        ],
+        [
+          4,
+          9,
+          4398046511104
+        ],
+        [
+          4,
+          10,
+          8796093022208
+        ],
+        [
+          4,
+          11,
+          17592186044416
+        ],
+        [
+          4,
+          12,
+          35184372088832
+        ],
+        [
+          4,
+          13,
+          70368744177664
+        ],
+        [
+          5,
+          6,
+          0
+        ],
+        [
+          5,
+          7,
+          0
+        ],
+        [
+          5,
+          8,
+          0
+        ],
+        [
+          5,
+          9,
+          0
+        ],
+        [
+          5,
+          10,
+          8796093022208
+        ],
+        [
+          5,
+          11,
+          17592186044416
+        ],
+        [
+          5,
+          12,
+          35184372088832
+        ],
+        [
+          5,
+          13,
+          70368744177664
+        ],
+        [
+          6,
+          7,
+          0
+        ],
+        [
+          6,
+          8,
+          0
+        ],
+        [
+          6,
+          9,
+          0
+        ],
+        [
+          6,
+          10,
+          140737488355328
+        ],
+        [
+          6,
+          11,
+          281474976710656
+        ],
+        [
+          6,
+          12,
+          562949953421312
+        ],
+        [
+          6,
+          13,
+          1125899906842624
+        ],
+        [
+          7,
+          8,
+          0
+        ],
+        [
+          7,
+          9,
+          0
+        ],
+        [
+          7,
+          10,
+          2251799813685248
+        ],
+        [
+          7,
+          11,
+          4503599627370496
+        ],
+        [
+          7,
+          12,
+          9007199254740992
+        ],
+        [
+          7,
+          13,
+          18014398509481984
+        ],
+        [
+          8,
+          9,
+          0
+        ],
+        [
+          8,
+          10,
+          36028797018963968
+        ],
+        [
+          8,
+          11,
+          72057594037927936
+        ],
+        [
+          8,
+          12,
+          144115188075855872
+        ],
+        [
+          8,
+          13,
+          0
+        ],
+        [
+          9,
+          10,
+          288230376151711744
+        ],
+        [
+          9,
+          11,
+          576460752303423488
+        ],
+        [
+          9,
+          12,
+          0
+        ],
+        [
+          9,
+          13,
+          0
+        ],
+        [
+          10,
+          11,
+          0
+        ],
+        [
+          10,
+          12,
+          0
+        ],
+        [
+          10,
+          13,
+          0
+        ],
+        [
+          11,
+          12,
+          0
+        ],
+        [
+          11,
+          13,
+          0
+        ],
+        [
+          12,
+          13,
+          0
+        ]
+      ],
+      "squares": [
+        0,
+        0,
+        0,
+        0,
+        274877906944,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "quadratic_output_rank": 46,
+      "linear_rank_mod_quadratics": 14,
+      "du": [
+        0,
+        0,
+        274882101248,
+        824646303744,
+        1099528404992,
+        1099528404992,
+        2199056809984,
+        4398113619968,
+        8796227239936,
+        17592454479872,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dv": [
+        274882101248,
+        549764202496,
+        0,
+        0,
+        1099528404992,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2199056809984,
+        4398113619968,
+        8796227239936,
+        17592454479872
+      ]
+    },
+    {
+      "jet": 10,
+      "zero_rankone_image_dimension": 257,
+      "infinity_image_rank": 251,
+      "anchor_dimension": 12,
+      "anchor_kernel_dimension": 239,
+      "constraint_output_dimension": 48,
+      "linear": [
+        1,
+        2,
+        4,
+        8,
+        20,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048
+      ],
+      "quadratic": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          4096
+        ],
+        [
+          0,
+          3,
+          8192
+        ],
+        [
+          0,
+          4,
+          16384
+        ],
+        [
+          0,
+          5,
+          16384
+        ],
+        [
+          0,
+          6,
+          32768
+        ],
+        [
+          0,
+          7,
+          65536
+        ],
+        [
+          0,
+          8,
+          131072
+        ],
+        [
+          0,
+          9,
+          0
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          11,
+          0
+        ],
+        [
+          1,
+          2,
+          262144
+        ],
+        [
+          1,
+          3,
+          524288
+        ],
+        [
+          1,
+          4,
+          1048576
+        ],
+        [
+          1,
+          5,
+          1048576
+        ],
+        [
+          1,
+          6,
+          2097152
+        ],
+        [
+          1,
+          7,
+          4194304
+        ],
+        [
+          1,
+          8,
+          8388608
+        ],
+        [
+          1,
+          9,
+          0
+        ],
+        [
+          1,
+          10,
+          0
+        ],
+        [
+          1,
+          11,
+          0
+        ],
+        [
+          2,
+          3,
+          0
+        ],
+        [
+          2,
+          4,
+          16777216
+        ],
+        [
+          2,
+          5,
+          0
+        ],
+        [
+          2,
+          6,
+          0
+        ],
+        [
+          2,
+          7,
+          0
+        ],
+        [
+          2,
+          8,
+          0
+        ],
+        [
+          2,
+          9,
+          33554432
+        ],
+        [
+          2,
+          10,
+          67108864
+        ],
+        [
+          2,
+          11,
+          134217728
+        ],
+        [
+          3,
+          4,
+          268435456
+        ],
+        [
+          3,
+          5,
+          0
+        ],
+        [
+          3,
+          6,
+          0
+        ],
+        [
+          3,
+          7,
+          0
+        ],
+        [
+          3,
+          8,
+          0
+        ],
+        [
+          3,
+          9,
+          536870912
+        ],
+        [
+          3,
+          10,
+          1073741824
+        ],
+        [
+          3,
+          11,
+          2147483648
+        ],
+        [
+          4,
+          5,
+          4294967296
+        ],
+        [
+          4,
+          6,
+          8589934592
+        ],
+        [
+          4,
+          7,
+          17179869184
+        ],
+        [
+          4,
+          8,
+          34359738368
+        ],
+        [
+          4,
+          9,
+          68719476736
+        ],
+        [
+          4,
+          10,
+          137438953472
+        ],
+        [
+          4,
+          11,
+          274877906944
+        ],
+        [
+          5,
+          6,
+          0
+        ],
+        [
+          5,
+          7,
+          0
+        ],
+        [
+          5,
+          8,
+          0
+        ],
+        [
+          5,
+          9,
+          68719476736
+        ],
+        [
+          5,
+          10,
+          137438953472
+        ],
+        [
+          5,
+          11,
+          274877906944
+        ],
+        [
+          6,
+          7,
+          0
+        ],
+        [
+          6,
+          8,
+          0
+        ],
+        [
+          6,
+          9,
+          549755813888
+        ],
+        [
+          6,
+          10,
+          1099511627776
+        ],
+        [
+          6,
+          11,
+          2199023255552
+        ],
+        [
+          7,
+          8,
+          0
+        ],
+        [
+          7,
+          9,
+          4398046511104
+        ],
+        [
+          7,
+          10,
+          8796093022208
+        ],
+        [
+          7,
+          11,
+          17592186046464
+        ],
+        [
+          8,
+          9,
+          35184372088832
+        ],
+        [
+          8,
+          10,
+          70368744177664
+        ],
+        [
+          8,
+          11,
+          140737488355328
+        ],
+        [
+          9,
+          10,
+          0
+        ],
+        [
+          9,
+          11,
+          0
+        ],
+        [
+          10,
+          11,
+          0
+        ]
+      ],
+      "squares": [
+        0,
+        0,
+        0,
+        0,
+        4294967296,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "quadratic_output_rank": 36,
+      "linear_rank_mod_quadratics": 12,
+      "du": [
+        0,
+        0,
+        274882101248,
+        549764202496,
+        1099528404992,
+        1099528404992,
+        2199056809984,
+        4398113619968,
+        8796227239936,
+        0,
+        0,
+        0
+      ],
+      "dv": [
+        274882101248,
+        549764202496,
+        0,
+        0,
+        1099528404992,
+        0,
+        0,
+        0,
+        0,
+        2199056809984,
+        4398113619968,
+        8796227239936
+      ]
+    },
+    {
+      "jet": 12,
+      "zero_rankone_image_dimension": 149,
+      "infinity_image_rank": 134,
+      "anchor_dimension": 12,
+      "anchor_kernel_dimension": 122,
+      "constraint_output_dimension": 48,
+      "linear": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512,
+        1024,
+        2048
+      ],
+      "quadratic": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          3,
+          4096
+        ],
+        [
+          0,
+          4,
+          8192
+        ],
+        [
+          0,
+          5,
+          16384
+        ],
+        [
+          0,
+          6,
+          32768
+        ],
+        [
+          0,
+          7,
+          32768
+        ],
+        [
+          0,
+          8,
+          65536
+        ],
+        [
+          0,
+          9,
+          131073
+        ],
+        [
+          0,
+          10,
+          0
+        ],
+        [
+          0,
+          11,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          3,
+          262144
+        ],
+        [
+          1,
+          4,
+          524288
+        ],
+        [
+          1,
+          5,
+          1048576
+        ],
+        [
+          1,
+          6,
+          2097152
+        ],
+        [
+          1,
+          7,
+          2097152
+        ],
+        [
+          1,
+          8,
+          4194304
+        ],
+        [
+          1,
+          9,
+          8388610
+        ],
+        [
+          1,
+          10,
+          0
+        ],
+        [
+          1,
+          11,
+          0
+        ],
+        [
+          2,
+          3,
+          16777216
+        ],
+        [
+          2,
+          4,
+          33554432
+        ],
+        [
+          2,
+          5,
+          67108864
+        ],
+        [
+          2,
+          6,
+          134217728
+        ],
+        [
+          2,
+          7,
+          134217728
+        ],
+        [
+          2,
+          8,
+          268435456
+        ],
+        [
+          2,
+          9,
+          537001988
+        ],
+        [
+          2,
+          10,
+          0
+        ],
+        [
+          2,
+          11,
+          0
+        ],
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          3,
+          5,
+          0
+        ],
+        [
+          3,
+          6,
+          1073741824
+        ],
+        [
+          3,
+          7,
+          0
+        ],
+        [
+          3,
+          8,
+          0
+        ],
+        [
+          3,
+          9,
+          0
+        ],
+        [
+          3,
+          10,
+          2147483648
+        ],
+        [
+          3,
+          11,
+          4294967296
+        ],
+        [
+          4,
+          5,
+          0
+        ],
+        [
+          4,
+          6,
+          8589934592
+        ],
+        [
+          4,
+          7,
+          0
+        ],
+        [
+          4,
+          8,
+          0
+        ],
+        [
+          4,
+          9,
+          0
+        ],
+        [
+          4,
+          10,
+          17179869184
+        ],
+        [
+          4,
+          11,
+          34359738384
+        ],
+        [
+          5,
+          6,
+          68719476736
+        ],
+        [
+          5,
+          7,
+          0
+        ],
+        [
+          5,
+          8,
+          0
+        ],
+        [
+          5,
+          9,
+          0
+        ],
+        [
+          5,
+          10,
+          137438953472
+        ],
+        [
+          5,
+          11,
+          274877906944
+        ],
+        [
+          6,
+          7,
+          549755813888
+        ],
+        [
+          6,
+          8,
+          1099511627776
+        ],
+        [
+          6,
+          9,
+          2199023255616
+        ],
+        [
+          6,
+          10,
+          4398046511104
+        ],
+        [
+          6,
+          11,
+          10995116277760
+        ],
+        [
+          7,
+          8,
+          0
+        ],
+        [
+          7,
+          9,
+          0
+        ],
+        [
+          7,
+          10,
+          4398046511104
+        ],
+        [
+          7,
+          11,
+          10995116277760
+        ],
+        [
+          8,
+          9,
+          0
+        ],
+        [
+          8,
+          10,
+          17592186044416
+        ],
+        [
+          8,
+          11,
+          35184372088832
+        ],
+        [
+          9,
+          10,
+          70368744178688
+        ],
+        [
+          9,
+          11,
+          140737488357376
+        ],
+        [
+          10,
+          11,
+          0
+        ]
+      ],
+      "squares": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        549755813888,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "quadratic_output_rank": 36,
+      "linear_rank_mod_quadratics": 12,
+      "du": [
+        0,
+        0,
+        0,
+        137441050624,
+        274882101248,
+        687205253120,
+        1099528404992,
+        1099528404992,
+        2199056809984,
+        4398113619968,
+        0,
+        0
+      ],
+      "dv": [
+        137441050624,
+        274882101248,
+        549764202496,
+        0,
+        0,
+        0,
+        1099528404992,
+        0,
+        0,
+        0,
+        2199056809984,
+        4398113619968
+      ]
+    },
+    {
+      "jet": 14,
+      "zero_rankone_image_dimension": 57,
+      "infinity_image_rank": 57,
+      "anchor_dimension": 10,
+      "anchor_kernel_dimension": 47,
+      "constraint_output_dimension": 35,
+      "linear": [
+        1,
+        2,
+        4,
+        8,
+        16,
+        32,
+        64,
+        128,
+        256,
+        512
+      ],
+      "quadratic": [
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          0
+        ],
+        [
+          0,
+          3,
+          1024
+        ],
+        [
+          0,
+          4,
+          2048
+        ],
+        [
+          0,
+          5,
+          4096
+        ],
+        [
+          0,
+          6,
+          8192
+        ],
+        [
+          0,
+          7,
+          8192
+        ],
+        [
+          0,
+          8,
+          16384
+        ],
+        [
+          0,
+          9,
+          0
+        ],
+        [
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          3,
+          32768
+        ],
+        [
+          1,
+          4,
+          65536
+        ],
+        [
+          1,
+          5,
+          131072
+        ],
+        [
+          1,
+          6,
+          262144
+        ],
+        [
+          1,
+          7,
+          262144
+        ],
+        [
+          1,
+          8,
+          524288
+        ],
+        [
+          1,
+          9,
+          0
+        ],
+        [
+          2,
+          3,
+          1048576
+        ],
+        [
+          2,
+          4,
+          2097152
+        ],
+        [
+          2,
+          5,
+          4194304
+        ],
+        [
+          2,
+          6,
+          8388608
+        ],
+        [
+          2,
+          7,
+          8388608
+        ],
+        [
+          2,
+          8,
+          16777216
+        ],
+        [
+          2,
+          9,
+          0
+        ],
+        [
+          3,
+          4,
+          0
+        ],
+        [
+          3,
+          5,
+          0
+        ],
+        [
+          3,
+          6,
+          33554432
+        ],
+        [
+          3,
+          7,
+          0
+        ],
+        [
+          3,
+          8,
+          0
+        ],
+        [
+          3,
+          9,
+          67108864
+        ],
+        [
+          4,
+          5,
+          0
+        ],
+        [
+          4,
+          6,
+          134217728
+        ],
+        [
+          4,
+          7,
+          0
+        ],
+        [
+          4,
+          8,
+          0
+        ],
+        [
+          4,
+          9,
+          268435456
+        ],
+        [
+          5,
+          6,
+          536870912
+        ],
+        [
+          5,
+          7,
+          0
+        ],
+        [
+          5,
+          8,
+          0
+        ],
+        [
+          5,
+          9,
+          1090519040
+        ],
+        [
+          6,
+          7,
+          2147483648
+        ],
+        [
+          6,
+          8,
+          4294967328
+        ],
+        [
+          6,
+          9,
+          8589934592
+        ],
+        [
+          7,
+          8,
+          0
+        ],
+        [
+          7,
+          9,
+          8589934592
+        ],
+        [
+          8,
+          9,
+          17179869184
+        ]
+      ],
+      "squares": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2147483648,
+        0,
+        0,
+        0
+      ],
+      "quadratic_output_rank": 25,
+      "linear_rank_mod_quadratics": 10,
+      "du": [
+        0,
+        0,
+        0,
+        137441050624,
+        274882101248,
+        549764202496,
+        1099528404992,
+        1099528404992,
+        2199056809984,
+        0
+      ],
+      "dv": [
+        137441050624,
+        274882101248,
+        549764202496,
+        0,
+        0,
+        0,
+        1099528404992,
+        0,
+        0,
+        2199056809984
+      ]
+    }
+  ],
+  "literal_controls": [
+    {
+      "jet": 8,
+      "trial": 0,
+      "cut": "zero",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 8,
+      "trial": 0,
+      "cut": "infinity",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 8,
+      "trial": 1,
+      "cut": "zero",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 2
+    },
+    {
+      "jet": 8,
+      "trial": 1,
+      "cut": "infinity",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 8,
+      "trial": 2,
+      "cut": "zero",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 1
+    },
+    {
+      "jet": 8,
+      "trial": 2,
+      "cut": "infinity",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 8,
+      "trial": 3,
+      "cut": "zero",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 2
+    },
+    {
+      "jet": 8,
+      "trial": 3,
+      "cut": "infinity",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 6
+    },
+    {
+      "jet": 8,
+      "trial": 4,
+      "cut": "zero",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 8,
+      "trial": 4,
+      "cut": "infinity",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 8,
+      "trial": 5,
+      "cut": "zero",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 2
+    },
+    {
+      "jet": 8,
+      "trial": 5,
+      "cut": "infinity",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 6
+    },
+    {
+      "jet": 8,
+      "trial": 6,
+      "cut": "zero",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 8,
+      "trial": 6,
+      "cut": "infinity",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 7
+    },
+    {
+      "jet": 8,
+      "trial": 7,
+      "cut": "zero",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 1
+    },
+    {
+      "jet": 8,
+      "trial": 7,
+      "cut": "infinity",
+      "earlier_order_count": 3,
+      "predicted_first_rank": 6
+    },
+    {
+      "jet": 10,
+      "trial": 0,
+      "cut": "zero",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 10,
+      "trial": 0,
+      "cut": "infinity",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 10,
+      "trial": 1,
+      "cut": "zero",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 10,
+      "trial": 1,
+      "cut": "infinity",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 2
+    },
+    {
+      "jet": 10,
+      "trial": 2,
+      "cut": "zero",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 10,
+      "trial": 2,
+      "cut": "infinity",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 10,
+      "trial": 3,
+      "cut": "zero",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 10,
+      "trial": 3,
+      "cut": "infinity",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 10,
+      "trial": 4,
+      "cut": "zero",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 2
+    },
+    {
+      "jet": 10,
+      "trial": 4,
+      "cut": "infinity",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 10,
+      "trial": 5,
+      "cut": "zero",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 10,
+      "trial": 5,
+      "cut": "infinity",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 10,
+      "trial": 6,
+      "cut": "zero",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 10,
+      "trial": 6,
+      "cut": "infinity",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 10,
+      "trial": 7,
+      "cut": "zero",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 10,
+      "trial": 7,
+      "cut": "infinity",
+      "earlier_order_count": 4,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 12,
+      "trial": 0,
+      "cut": "zero",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 12,
+      "trial": 0,
+      "cut": "infinity",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 12,
+      "trial": 1,
+      "cut": "zero",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 12,
+      "trial": 1,
+      "cut": "infinity",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 12,
+      "trial": 2,
+      "cut": "zero",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 2
+    },
+    {
+      "jet": 12,
+      "trial": 2,
+      "cut": "infinity",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 6
+    },
+    {
+      "jet": 12,
+      "trial": 3,
+      "cut": "zero",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 12,
+      "trial": 3,
+      "cut": "infinity",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 12,
+      "trial": 4,
+      "cut": "zero",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 12,
+      "trial": 4,
+      "cut": "infinity",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 12,
+      "trial": 5,
+      "cut": "zero",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 12,
+      "trial": 5,
+      "cut": "infinity",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 12,
+      "trial": 6,
+      "cut": "zero",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 2
+    },
+    {
+      "jet": 12,
+      "trial": 6,
+      "cut": "infinity",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 7
+    },
+    {
+      "jet": 12,
+      "trial": 7,
+      "cut": "zero",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 12,
+      "trial": 7,
+      "cut": "infinity",
+      "earlier_order_count": 5,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 14,
+      "trial": 0,
+      "cut": "zero",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 14,
+      "trial": 0,
+      "cut": "infinity",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 14,
+      "trial": 1,
+      "cut": "zero",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 14,
+      "trial": 1,
+      "cut": "infinity",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 6
+    },
+    {
+      "jet": 14,
+      "trial": 2,
+      "cut": "zero",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 14,
+      "trial": 2,
+      "cut": "infinity",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 14,
+      "trial": 3,
+      "cut": "zero",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 3
+    },
+    {
+      "jet": 14,
+      "trial": 3,
+      "cut": "infinity",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 6
+    },
+    {
+      "jet": 14,
+      "trial": 4,
+      "cut": "zero",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 5
+    },
+    {
+      "jet": 14,
+      "trial": 4,
+      "cut": "infinity",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 1
+    },
+    {
+      "jet": 14,
+      "trial": 5,
+      "cut": "zero",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 14,
+      "trial": 5,
+      "cut": "infinity",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 14,
+      "trial": 6,
+      "cut": "zero",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 4
+    },
+    {
+      "jet": 14,
+      "trial": 6,
+      "cut": "infinity",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 6
+    },
+    {
+      "jet": 14,
+      "trial": 7,
+      "cut": "zero",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 1
+    },
+    {
+      "jet": 14,
+      "trial": 7,
+      "cut": "infinity",
+      "earlier_order_count": 6,
+      "predicted_first_rank": 3
+    }
+  ],
+  "source_sha256": {
+    "check_joint_hot_jet_rankone.py": "e1f912ef8b7c4acbc32f6181643e167c977ec4517a0f1f241151dd37eef1a45a",
+    "joint_hot_jet_rankone.py": "fd21fca604ef4c6313557ef189d7cf1ffb40111ae33a8e911a10040ab7cf2123",
+    "joint_hot_retraction_module.py": "417a27579dda957564e70bef5c6c4a2458dbe2b4b35b025a1782fb8ae9367c90",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330"
+  },
+  "scope": "All-field first-residual rigidity under simultaneous raw-jet protection for the fixed coordinate embedding; not full-profile or factoring rigidity."
+}

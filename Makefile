@@ -65,6 +65,12 @@ verify-tate-coordinate:
 
 verify-frontier: verify-tate-coordinate
 
+.PHONY: verify-theta-programs
+verify-theta-programs:
+	python3 tools/check_theta_coordinate_program.py
+
+verify-frontier: verify-theta-programs
+
 .PHONY: verify-q7-parameter
 verify-q7-parameter:
 	python3 tools/check_q7_cubic_parameter.py
@@ -2325,3 +2331,20 @@ verify-linear-pascal-matroid:
 .PHONY: verify-permuted-pascal-kernels
 verify-permuted-pascal-kernels:
 	python3 tools/check_permuted_pascal_kernels.py --output /tmp/permuted-pascal-zero-spectra.json
+
+.PHONY: verify-joint-hot-jet-rankone
+verify-joint-hot-jet-rankone:
+	python3 tools/check_joint_hot_jet_rankone.py
+
+
+.PHONY: verify-permuted-pascal-dominance
+verify-permuted-pascal-dominance:
+	python3 tools/check_permuted_pascal_dominance.py --output /tmp/permuted-pascal-cone-dominance.json
+
+.PHONY: verify-permuted-pascal-free-gauges
+verify-permuted-pascal-free-gauges:
+	python3 tools/check_permuted_pascal_free_gauges.py --output /tmp/permuted-pascal-free-gauges.json
+
+.PHONY: verify-coherent-f4-partial
+verify-coherent-f4-partial:
+	python3 tools/check_coherent_hot_f4_partial.py

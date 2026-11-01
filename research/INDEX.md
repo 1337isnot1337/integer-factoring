@@ -1,5 +1,7 @@
 # Research index
 
+- [Free physical gauges for arbitrary Pascal exponent permutations](permuted-pascal-free-gauges.md): a constructive search outside the explicit infinity cone, with 2,144 independently reconstructed original-Fock orders and optional native-profile comparisons; no improved factoring exponent.
+
 ## A three-axis crossing interface
 
 - [An actual common three-cut Gaussian family](cube-homogeneous-gaussian.md): one homogeneous multivariate endpoint, exact three-cut Smith factors, a rational `rho=5/8` certificate, and an all-scale floor for its declared Cayley method; no score improvement.
@@ -180,6 +182,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Explicit polynomial character decoder](cyclotomic-character-decoder.md): Galois substitutions, an odd-order Fourier transform and exact nilpotent divisions invert the same one-bit map without a stored Gaussian system; each sampled character order is necessary for arbitrary paired binary vectors. The faster coefficient engine remains open.
 - [Exact Lambert/theta section engine](lambert-theta-sections.md): a divisor-free binary coefficient recurrence with charged exponential cost; level three has a polynomial-time square test but exponentially large common linear section spaces, so that compression architecture cannot supply the faster engine.
 - [Tate coordinates and quadratic composition](tate-coordinate-coefficients.md): uniform nodal algebras and rational-diagonal compilers make coefficients in the algebraic variable cheap; the original Delta composition remains open, with one scalar trace uniformly reduced to a square test.
+- [Partial theta-program compiler](theta-coordinate-programs.md): a uniform modular/Sturm certification rule proves all-index odd-coordinate programs at six listed phases and exact bounded-module exclusions at three others. It rejects an overfit phase-31 program; the enumerative query cost remains exponential.
 - [Phase-seven cubic parameter and theta engine](q7-cubic-parameter.md): an exact parameter identifies seven-regular partition parities; the actual odd-index coefficients have a degree-four theta identity, proved by integral modular lifts and a finite Sturm certificate. The charged ternary-count evaluator remains exponential in the input length.
 - [Nonlinear phase-five quadratic engine](q5-quadratic-coefficients.md): the order-five group law gives four positive binary quadratic parity counts and an explicitly charged square-root-time evaluator; an alternative exact description isolates one divisor-count-mod-four query, and squarefree promises remain separate.
 - [Polynomial divisor-gap extraction](smooth-norm-gap.md): integer multiplicative trimming converts promised inner-radius balanced norms at a specified outer radius, without enumerating all divisors.
@@ -1295,3 +1298,14 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Complete Pascal profiles for arbitrary exponent permutations](permuted-pascal-zero-spectra.md): a coefficientwise-product valuation inequality, explicit zero spectra without monotonicity assumptions, and a compatible infinity cone with both physical charges.
+
+## Rational row-module first-residual rigidity
+
+[All-field first-residual theorem](joint-hot-first-residual-rigidity.md) classifies the simultaneous rank-one residual images at four protected raw jets. A quadratic-output quotient and64literal Smith controls support the scoped result; higher profiles remain open.
+
+
+- [All-scale dominance of the explicit permutation cone](permuted-pascal-cone-dominance.md): an all-size filtration and rearrangement proof, with exact rational checks of both physical charges; its conclusion is restricted to the stated common-scale gauges.
+
+## Certified low-order coherent profiles
+
+[Truncated profiles and tail bounds](coherent-hot-low-order-certificates.md) compute exact low Smith orders and bound every unknown channel contribution. The original full engine stays unchanged; no new numerical factoring bound is claimed.

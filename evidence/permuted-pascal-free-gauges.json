@@ -1,0 +1,641 @@
+{
+  "cases": [
+    {
+      "constant_flag_shear": false,
+      "cuts": [
+        {
+          "clifford_orders": [
+            -7,
+            -5,
+            -5,
+            0,
+            0,
+            5,
+            5,
+            7
+          ],
+          "complete_fock_orders_compared": 16,
+          "heights": [
+            -3,
+            2,
+            -3,
+            -3,
+            3,
+            1,
+            0,
+            0
+          ],
+          "maximum_order": 11,
+          "minimum_order": -6,
+          "native_orders_compared": 8,
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -6,
+            -6,
+            -4,
+            -4,
+            4,
+            4,
+            6,
+            6
+          ],
+          "complete_fock_orders_compared": 16,
+          "heights": [
+            -1,
+            -1,
+            5,
+            3,
+            -2,
+            -2,
+            0,
+            -2
+          ],
+          "maximum_order": 10,
+          "minimum_order": -10,
+          "native_orders_compared": 8,
+          "place": 1
+        }
+      ],
+      "images": [
+        0,
+        1
+      ],
+      "perturbation": 1,
+      "zero_energies": [
+        1,
+        3
+      ]
+    },
+    {
+      "constant_flag_shear": false,
+      "cuts": [
+        {
+          "clifford_orders": [
+            -11,
+            -9,
+            -9,
+            -3,
+            3,
+            9,
+            9,
+            11
+          ],
+          "complete_fock_orders_compared": 16,
+          "heights": [
+            -6,
+            4,
+            -3,
+            -5,
+            6,
+            2,
+            -1,
+            -3
+          ],
+          "maximum_order": 17,
+          "minimum_order": -15,
+          "native_orders_compared": 8,
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -13,
+            -13,
+            -3,
+            -3,
+            3,
+            3,
+            13,
+            13
+          ],
+          "complete_fock_orders_compared": 16,
+          "heights": [
+            1,
+            -5,
+            8,
+            4,
+            -1,
+            -7,
+            2,
+            -2
+          ],
+          "maximum_order": 16,
+          "minimum_order": -16,
+          "native_orders_compared": 8,
+          "place": 1
+        }
+      ],
+      "images": [
+        1,
+        0
+      ],
+      "perturbation": 2,
+      "zero_energies": [
+        1,
+        3
+      ]
+    },
+    {
+      "constant_flag_shear": true,
+      "cuts": [
+        {
+          "clifford_orders": [
+            -7,
+            -5,
+            -5,
+            0,
+            0,
+            5,
+            5,
+            7
+          ],
+          "complete_fock_orders_compared": 16,
+          "heights": [
+            -3,
+            2,
+            -3,
+            -3,
+            3,
+            1,
+            0,
+            0
+          ],
+          "maximum_order": 11,
+          "minimum_order": -6,
+          "native_orders_compared": 8,
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -8,
+            -8,
+            -2,
+            -2,
+            2,
+            2,
+            8,
+            8
+          ],
+          "complete_fock_orders_compared": 16,
+          "heights": [
+            1,
+            -3,
+            5,
+            3,
+            0,
+            -4,
+            0,
+            -2
+          ],
+          "maximum_order": 10,
+          "minimum_order": -10,
+          "native_orders_compared": 8,
+          "place": 1
+        }
+      ],
+      "images": [
+        1,
+        0
+      ],
+      "perturbation": 1,
+      "zero_energies": [
+        1,
+        3
+      ]
+    },
+    {
+      "constant_flag_shear": false,
+      "cuts": [
+        {
+          "clifford_orders": [
+            -11,
+            -9,
+            -9,
+            -6,
+            -6,
+            -6,
+            -4,
+            -2,
+            2,
+            4,
+            6,
+            6,
+            6,
+            9,
+            9,
+            11
+          ],
+          "complete_fock_orders_compared": 256,
+          "heights": [
+            -3,
+            2,
+            0,
+            -2,
+            -4,
+            -4,
+            -4,
+            -4,
+            2,
+            0,
+            -2,
+            3,
+            2,
+            2,
+            2,
+            9
+          ],
+          "maximum_order": 42,
+          "minimum_order": -11,
+          "native_orders_compared": 16,
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -11,
+            -10,
+            -9,
+            -7,
+            -6,
+            -5,
+            -5,
+            -3,
+            3,
+            5,
+            5,
+            6,
+            7,
+            9,
+            10,
+            11
+          ],
+          "complete_fock_orders_compared": 256,
+          "heights": [
+            -3,
+            -3,
+            4,
+            4,
+            3,
+            1,
+            6,
+            4,
+            -5,
+            2,
+            2,
+            2,
+            -7,
+            -2,
+            -4,
+            -6
+          ],
+          "maximum_order": 27,
+          "minimum_order": -29,
+          "native_orders_compared": 16,
+          "place": 1
+        }
+      ],
+      "images": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "perturbation": 1,
+      "zero_energies": [
+        1,
+        3,
+        5,
+        7
+      ]
+    },
+    {
+      "constant_flag_shear": false,
+      "cuts": [
+        {
+          "clifford_orders": [
+            -11,
+            -9,
+            -9,
+            -6,
+            -6,
+            -4,
+            -4,
+            0,
+            0,
+            4,
+            4,
+            6,
+            6,
+            9,
+            9,
+            11
+          ],
+          "complete_fock_orders_compared": 256,
+          "heights": [
+            -3,
+            2,
+            0,
+            -2,
+            -4,
+            -2,
+            -4,
+            -4,
+            2,
+            0,
+            -2,
+            3,
+            2,
+            4,
+            2,
+            9
+          ],
+          "maximum_order": 42,
+          "minimum_order": -7,
+          "native_orders_compared": 16,
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -11,
+            -11,
+            -10,
+            -8,
+            -7,
+            -6,
+            -3,
+            -2,
+            2,
+            3,
+            6,
+            7,
+            8,
+            10,
+            11,
+            11
+          ],
+          "complete_fock_orders_compared": 256,
+          "heights": [
+            -3,
+            -3,
+            6,
+            2,
+            3,
+            1,
+            6,
+            4,
+            -5,
+            2,
+            4,
+            0,
+            -7,
+            -2,
+            -4,
+            -6
+          ],
+          "maximum_order": 28,
+          "minimum_order": -30,
+          "native_orders_compared": 16,
+          "place": 1
+        }
+      ],
+      "images": [
+        0,
+        1,
+        3,
+        2
+      ],
+      "perturbation": 1,
+      "zero_energies": [
+        1,
+        5,
+        5,
+        7
+      ]
+    },
+    {
+      "constant_flag_shear": false,
+      "cuts": [
+        {
+          "clifford_orders": [
+            -15,
+            -15,
+            -13,
+            -11,
+            -11,
+            -5,
+            -5,
+            -1,
+            1,
+            5,
+            5,
+            11,
+            11,
+            13,
+            15,
+            15
+          ],
+          "complete_fock_orders_compared": 256,
+          "heights": [
+            -6,
+            4,
+            0,
+            -4,
+            -1,
+            -1,
+            -5,
+            -7,
+            4,
+            0,
+            -4,
+            6,
+            3,
+            3,
+            -1,
+            11
+          ],
+          "maximum_order": 55,
+          "minimum_order": -21,
+          "native_orders_compared": 16,
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -15,
+            -13,
+            -13,
+            -11,
+            -9,
+            -9,
+            -5,
+            -5,
+            5,
+            5,
+            9,
+            9,
+            11,
+            13,
+            13,
+            15
+          ],
+          "complete_fock_orders_compared": 256,
+          "heights": [
+            -3,
+            -1,
+            5,
+            3,
+            2,
+            -2,
+            8,
+            4,
+            -7,
+            9,
+            1,
+            -1,
+            -10,
+            0,
+            -4,
+            -8
+          ],
+          "maximum_order": 38,
+          "minimum_order": -42,
+          "native_orders_compared": 16,
+          "place": 1
+        }
+      ],
+      "images": [
+        0,
+        3,
+        1,
+        2
+      ],
+      "perturbation": 2,
+      "zero_energies": [
+        1,
+        5,
+        5,
+        7
+      ]
+    },
+    {
+      "constant_flag_shear": true,
+      "cuts": [
+        {
+          "clifford_orders": [
+            -11,
+            -11,
+            -9,
+            -8,
+            -8,
+            -4,
+            -4,
+            -2,
+            2,
+            4,
+            4,
+            8,
+            8,
+            9,
+            11,
+            11
+          ],
+          "complete_fock_orders_compared": 256,
+          "heights": [
+            -3,
+            2,
+            0,
+            -2,
+            -4,
+            -2,
+            -6,
+            -4,
+            2,
+            0,
+            -2,
+            3,
+            2,
+            4,
+            0,
+            9
+          ],
+          "maximum_order": 44,
+          "minimum_order": -13,
+          "native_orders_compared": 16,
+          "place": 0
+        },
+        {
+          "clifford_orders": [
+            -13,
+            -11,
+            -11,
+            -9,
+            -8,
+            -7,
+            -5,
+            -4,
+            4,
+            5,
+            7,
+            8,
+            9,
+            11,
+            11,
+            13
+          ],
+          "complete_fock_orders_compared": 256,
+          "heights": [
+            1,
+            -5,
+            6,
+            0,
+            3,
+            1,
+            6,
+            4,
+            -1,
+            0,
+            4,
+            -2,
+            -7,
+            -2,
+            -4,
+            -6
+          ],
+          "maximum_order": 33,
+          "minimum_order": -35,
+          "native_orders_compared": 16,
+          "place": 1
+        }
+      ],
+      "images": [
+        2,
+        0,
+        3,
+        1
+      ],
+      "perturbation": 1,
+      "zero_energies": [
+        1,
+        5,
+        3,
+        7
+      ]
+    }
+  ],
+  "complete_fock_orders_compared": 2144,
+  "native_comparison_requested": true,
+  "scope": "Complete finite original-polynomial controls for arbitrary exponent permutations, independent physical gauges and one flag shear. No pressure improvement or universal exclusion is claimed.",
+  "source_sha256": {
+    "tools/check_permuted_pascal_free_gauges.py": "43a57129428f0fea6dd55cd69418977b9a86097dcf5f55b16950dc8a90cbc504",
+    "tools/check_weighted_pascal_flags.py": "730b5cf7a71e02ba2d71e716262315da2662eacb99a4b169684d8712968913d1",
+    "tools/cube_symmetric_exterior_blocks.py": "7388274447f4eb7e22639e23fa2b8a7e92b08520cafee0dd2d89c4711599bc22",
+    "tools/native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "tools/native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "tools/native_weighted_smith_f4.py": "8bb117a1284edc0e11d6e4dbc5ba05537701e00f5e0e2aa88cd23e466d319abb",
+    "tools/permuted_pascal_kernels.py": "5ce6d3b45b56e51aba33bdaab0a7e2f9059adf2e52dbbd811e2514fb5d215039",
+    "tools/search_weighted_pascal_flags.py": "928ed4f93e800255e17440f8b580dcaadedae5578e14e97891f186c7e26115e8",
+    "tools/tensor_pascal_box_crossings.py": "3cd6bcd473cac20647cf87d96bb4ccd17a5cf46d9339a1be33e69cfddddb4fce",
+    "tools/weighted_pascal_flags.py": "47944dd96fe1b9aea6bfe56706cb9038490e6c344e97716d360b9afce420efb4"
+  },
+  "status": "pass"
+}

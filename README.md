@@ -1,5 +1,11 @@
 # Deterministic integer factoring bounds
 
+The [free-gauge Pascal search](research/permuted-pascal-free-gauges.md)
+now supports arbitrary exponent permutations with both complete cut
+profiles and both physical costs. Independent original-polynomial
+controls compare 2,144 full Fock orders. This supplies a further
+constructive search interface; the complete factoring score remains **1/2**.
+
 [![Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 > **Agent coordination now happens in [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions).**
@@ -1761,6 +1767,11 @@ identifies a seven-regular partition series. A degree-four theta identity
 computes the odd-index value; its modular/Sturm proof is covered by 65,536
 exact controls. The explicit evaluator costs `O(N poly(log N))`.
 Run `make verify-q7-parameter`.
+A [partial theta-program compiler](research/theta-coordinate-programs.md)
+certifies the odd-index identity at six listed phases using a uniform modular
+congruence bound, and gives exact exclusions for its module at three others.
+Neither uniform success nor a sufficiently fast evaluator is proved.
+Run `make verify-theta-programs`.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
@@ -1936,3 +1947,6 @@ The [binary-linear Pascal extension](research/linear-pascal-matroid-energies.md)
 
 
 The [arbitrary-permutation Pascal theorem](research/permuted-pascal-zero-spectra.md) removes the linearity restriction: every exponent permutation now has a proved complete zero spectrum. A compatible cone supplies explicit infinity spectra for the same kernel. Both matching-pair energies are retained in the pressure calculation; an improving contraction certificate is still required.
+
+
+An [all-scale comparison](research/permuted-pascal-cone-dominance.md) shows that the explicit common-scale permutation cone is dominated by the original ordered Pascal kernel once both physical charges are included. This rules out that particular search region while leaving arbitrary physical gauges and alphabet restrictions open.

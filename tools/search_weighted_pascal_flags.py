@@ -19,6 +19,7 @@ from scipy.optimize import brentq, minimize, minimize_scalar
 from scipy.special import expit
 
 from native_matrix_smith_f4 import MatrixOracle
+from permuted_pascal_kernels import permuted_pascal_kernel
 from weighted_pascal_flags import change_flag, clifford_data, natural_heights, weighted_kernel
 
 
@@ -100,8 +101,12 @@ class WeightedPascalPressure:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--weights", type=int, nargs="+", required=True)
-    parser.add_argument("--outer", type=int, required=True)
+    family = parser.add_mutually_exclusive_group(required=True)
+    family.add_argument("--weights", type=int, nargs="+")
+    family.add_argument("--images", type=int, nargs="+",
+                        help="Images of an arbitrary power-of-two exponent permutation.")
+    parser.add_argument("--outer", type=int,
+                        help="Required with --weights; equals the permutation length with --images.")
     parser.add_argument("--restarts", type=int, default=8)
     parser.add_argument("--iterations", type=int, default=600)
     parser.add_argument("--seconds", type=float, default=1800)
@@ -112,8 +117,16 @@ def main():
     args = parser.parse_args()
     if min(args.restarts, args.iterations, args.seconds) <= 0 or args.flag_shears < 0:
         raise ValueError("Use positive search budgets and a nonnegative flag-shear count.")
+    if args.images is None:
+        if args.outer is None:
+            parser.error("--weights requires --outer")
+        seed = weighted_kernel(args.weights, args.outer)
+    else:
+        if args.outer is not None and args.outer != len(args.images):
+            parser.error("--outer must equal the permutation length when supplied with --images")
+        seed = permuted_pascal_kernel(args.images)
+        args.outer = seed["outer"]
     rng = np.random.default_rng(args.seed)
-    seed = weighted_kernel(args.weights, args.outer)
     if args.flag_shears:
         constant = np.eye(seed["n"], dtype=np.uint8)
         for _ in range(args.flag_shears):
@@ -144,7 +157,10 @@ def main():
     root = Path(__file__).resolve().parent.parent
     sources = ["tools/weighted_pascal_flags.py", "tools/search_weighted_pascal_flags.py",
                "research/weighted-pascal-flag-crossings.md"]
+    if args.images is not None:
+        sources += ["tools/permuted_pascal_kernels.py", "research/permuted-pascal-zero-spectra.md"]
     report = {"status": "exploratory floating search", "weights": args.weights,
+              "exponent_images": args.images,
               "outer": args.outer, "constant_flag": seed.get("constant_flag"),
               "random_seed": args.seed, "baseline": baseline, "best": best, "runs": runs,
               "gradient_max_error": gradient_error, "rejected_queries": 0,
@@ -161,7 +177,7 @@ def main():
         temporary.replace(args.output)
 
     save()
-    print(json.dumps({"weights": args.weights, "outer": args.outer,
+    print(json.dumps({"weights": args.weights, "exponent_images": args.images, "outer": args.outer,
                       "baseline_rho": baseline["rho"], "gradient_error": gradient_error}), flush=True)
     for trial in range(args.restarts):
         if time.monotonic() >= deadline:

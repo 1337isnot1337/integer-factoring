@@ -51,6 +51,14 @@ and do not spawn subagents without an explicit user request.
   predicates use at most three positive variables each. The explicit
   evaluator costs O(N poly(log N)) time, so no stronger bound follows.
 
+- [Partial theta-program compiler](theta-coordinate-programs.md): a sound
+  general rule uses the weight-two subgroup Gamma_0(16q^2) intersect
+  Gamma_1(q), with bound 4q(q^2-1). Full programs pass at 3,7,11,19,23,31;
+  short covectors exclude native coordinate zero at 5,13,17 in the specified
+  module. A deliberate q31 underfit fails immediately beyond training.
+  Native embedding inversion is polynomial-sized and preserves all factors
+  of the etale algebra. Query enumeration remains exponential.
+
 ## Active next construction
 
 Seek a nonlinear representation of the trace-zero Delta composition. Do not
@@ -64,13 +72,16 @@ The q=5 scalar is now reduced to four binary quadratic predicates with its
 cost charged. Do not repeat that derivation or replace its divisor-count
 query with an unproved squarefree-part oracle.
 
-Next concrete target: determine whether the phase-seven theta construction
-extends to a uniform phase family, with the full construction and coefficient
-cost charged. Rank-four coset theta forms provide a polynomial-sized
-candidate module at general q, and the integral torsion differences have
-weight two. Construct the actual map or identify the first missing phase;
-do not infer a uniform identity merely from q3/q5/q7. A sufficiently fast
-original-index representation-count evaluator is still needed.
+Next concrete target: refine the unary-square residues by parity at the
+missing phases. The original variables identify positive integers with
+residues +a,-a modulo q, so integers of different parity can share one
+variable and cancel after Frobenius. Variables modulo 2q retain that
+information and still have rank-four coset modular lifts. Check the new
+subgroup and bound before any uniform claim. A q-nome rescaling pilot
+substantially shortens the successful programs but retains the same missing
+coordinate at q=1 mod4; it is not a solution to that gap. Paul Monsky's 2013
+MO question on level-p characteristic-two forms is a relevant prior lead
+for the theta ring and rescaling; cite his actual statements and caveats.
 
 Other useful representation to examine: weighted algebraic coefficient
 automata composed with odd-square theta series, using parameterized
