@@ -225,6 +225,20 @@ over more than `2^204` points. Singular normalization remains open, and
 the complete factoring score remains **1/2**.
 Run `make verify-circuit-box-products`.
 
+## Batched exact smooth-part filtering
+
+The [batched selector implementation](research/batch-smooth-filtering.md) applies
+Bernstein's product/remainder-tree method to the existing prime-form searches.
+The opt-in path preserves the scalar first-success witnesses and charges all
+candidates generated ahead. Its geometric schedule generates fewer than twice
+the scalar inspected count; size-balanced batches give filtering cost
+`soft-O(sum R_j + Q b)` for frozen per-search product lengths `R_j` and `Q`
+inspected `b`-bit norms. This bounds filtering, not the unresolved search length.
+A matched fully promoted 144-bit run took 129.70 seconds versus 198.18 seconds,
+with identical factors and all 513 relation rows. This is a same-policy speedup,
+not an overall best-policy timing record. The complete score remains **1/2**.
+Run `make verify-batch-smooth`.
+
 ## Results and evidence
 
 | Claim | Status | Details |

@@ -2379,3 +2379,7 @@ verify-orthogonal-pair-core-floor:
 .PHONY: verify-circuit-box-products
 verify-circuit-box-products:
 	python3 tools/check_circuit_box_products.py
+
+.PHONY: verify-batch-smooth
+verify-batch-smooth:
+	python3 tools/batch_smooth_check.py

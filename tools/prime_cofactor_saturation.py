@@ -71,6 +71,7 @@ def factor_with_prime_cofactor_saturation(integer: int, cutoff: int, window: int
                                           promotion_cutoff: int | None = None,
                                           verify_candidates: bool = False,
                                           include_relations: bool = True,
+                                          smooth_batch_size: int = 1,
                                           progress=None) -> dict:
     if not isinstance(integer, int) or integer < 3 or integer % 2 == 0:
         raise ValueError("Require an odd integer of at least three")
@@ -86,6 +87,8 @@ def factor_with_prime_cofactor_saturation(integer: int, cutoff: int, window: int
         raise ValueError("The promotion cutoff must be a nonnegative integer")
     if not isinstance(promote_residuals, bool) or not isinstance(include_relations, bool):
         raise ValueError("Promotion and relation-storage options must be boolean")
+    if not isinstance(smooth_batch_size, int) or smooth_batch_size < 1:
+        raise ValueError("The smoothness batch size must be a positive integer")
     for name, value in (("max_generators", max_generators), ("max_queries", max_queries)):
         if value is not None and (not isinstance(value, int) or value < 0):
             raise ValueError(f"{name} must be nonnegative")
@@ -115,6 +118,36 @@ def factor_with_prime_cofactor_saturation(integer: int, cutoff: int, window: int
                 "elimination_vertices": 0, "maximum_elimination_coefficient_bits": 0,
                 "maximum_relation_entry_bits": 0, "partial_identities_verified": 0,
                 "maximum_saturation_product_bits": prime_product.bit_length()}
+    if smooth_batch_size > 1:
+        from batch_smooth_parts import smooth_sequence_batches, smoothness_exponent
+        batch_exponent = smoothness_exponent(height.bit_length())
+        counters.update({"scanned_norm_queries": 0, "smooth_batches": 0})
+
+    def candidates(item, first, target, limit):
+        if smooth_batch_size == 1:
+            for offset in range(limit):
+                yield offset, target, None
+                if offset + 1 < limit:
+                    target = compose_with_prime_form(target, item["norm"],
+                                                     item["root"], item["form"])
+                    counters["successive_power_compositions"] += 1
+            return
+        successor = lambda form: compose_with_prime_form(
+            form, item["norm"], item["root"], item["form"])
+        for offset, block, parts in smooth_sequence_batches(
+                target, successor, limit, prime_product, smooth_batch_size,
+                norm=lambda form: form[0], exponent=batch_exponent):
+            before = counters["norm_queries"]
+            counters["norm_queries"] += len(block)
+            counters["smooth_batches"] += 1
+            counters["successive_power_compositions"] += len(block) - int(offset == 0)
+            counters["maximum_exponent_tested"] = max(
+                counters["maximum_exponent_tested"], first + offset + len(block) - 1)
+            if progress is not None and counters["norm_queries"] // 1000 > before // 1000:
+                progress({"generator_count": len(generators), "relation_rank": len(fixed_rows),
+                          "augmented_relation_rank": len(rows), "current_generator": current, **counters})
+            for index, (form, smooth_part) in enumerate(zip(block, parts)):
+                yield offset + index, form, smooth_part
 
     def extract():
         nonlocal last_extraction, last_extraction_rows
@@ -148,6 +181,12 @@ def factor_with_prime_cofactor_saturation(integer: int, cutoff: int, window: int
                   **counters}
         if include_relations:
             result["sparse_fixed_relation_matrix"] = [sorted(row.items()) for row in fixed_rows]
+        if smooth_batch_size > 1:
+            result.update({"smooth_batch_size": smooth_batch_size,
+                           "smoothness_exponent": batch_exponent,
+                           "modular_smoothness_tests": counters["norm_queries"],
+                           "generated_ahead_norms": counters["norm_queries"] - counters["scanned_norm_queries"],
+                           "norm_queries_policy": "FIFO generators; bounded geometric batches; first admissible power from the norm threshold"})
         return result
 
     def stop(method, terminal=None):
@@ -171,12 +210,20 @@ def factor_with_prime_cofactor_saturation(integer: int, cutoff: int, window: int
         target = power(item["form"], first, identity, compose_forms_hnf)
         counters["initial_power_computations"] += 1
         selected = False
-        for offset in range(window):
-            if max_queries is not None and counters["norm_queries"] >= max_queries:
+        limit = window
+        if smooth_batch_size > 1 and max_queries is not None:
+            limit = min(window, max_queries - counters["norm_queries"])
+        for offset, target, batched_smooth in candidates(item, first, target, limit):
+            if (smooth_batch_size == 1 and max_queries is not None
+                    and counters["norm_queries"] >= max_queries):
                 return stop("query cap exhausted")
             exponent = first + offset
-            counters["norm_queries"] += 1
-            if progress is not None and counters["norm_queries"] % 1000 == 0:
+            if smooth_batch_size == 1:
+                counters["norm_queries"] += 1
+            else:
+                counters["scanned_norm_queries"] += 1
+            if (smooth_batch_size == 1 and progress is not None
+                    and counters["norm_queries"] % 1000 == 0):
                 progress({"generator_count": len(generators), "relation_rank": len(fixed_rows),
                           "augmented_relation_rank": len(rows), "current_generator": current, **counters})
             counters["maximum_exponent_tested"] = max(counters["maximum_exponent_tested"], exponent)
@@ -190,7 +237,8 @@ def factor_with_prime_cofactor_saturation(integer: int, cutoff: int, window: int
                 return finish(factor, "leading-norm gcd", terminal)
             if factor != 1 or not 1 <= target[0] <= height:
                 raise ArithmeticError("The reduced leading-norm invariant failed")
-            smooth = gcd(target[0], pow(prime_product, target[0].bit_length(), target[0]))
+            smooth = (batched_smooth if smooth_batch_size > 1 else
+                      gcd(target[0], pow(prime_product, target[0].bit_length(), target[0])))
             residual = target[0] // smooth
             if residual > max_cofactor:
                 counters["cofactor_rejections"] += 1
@@ -272,11 +320,11 @@ def factor_with_prime_cofactor_saturation(integer: int, cutoff: int, window: int
                             return finish(factor, "prime-cofactor relation halving")
                 selected = True
                 break
-            if offset + 1 < window:
-                target = compose_with_prime_form(target, item["norm"], item["root"], item["form"])
-                counters["successive_power_compositions"] += 1
         if not selected:
+            if limit < window:
+                return stop("query cap exhausted")
             return stop("power window exhausted", {"generator_index": current,
                                                     "start_exponent": first, "window": window})
         current += 1
     return stop("closed prime-cofactor presentation")
+

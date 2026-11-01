@@ -1,0 +1,26 @@
+{
+  "scope": "Exact arithmetic and finite matched traversals; no uniform window or score improvement.",
+  "algorithm_source": "D. J. Bernstein, How to find smooth parts of integers (2004), Algorithm 2.1",
+  "kernel_controls": {
+    "simultaneous_remainders": 2152,
+    "smooth_parts_and_flags": 6020,
+    "invalid_inputs_rejected": 6,
+    "sequence_controls": 250,
+    "geometric_first_stop_bounds": 6125
+  },
+  "selector_controls": {
+    "matched_first_success_runs": 80,
+    "strict_query_budget_runs": 100
+  },
+  "source_sha256": {
+    "tools/batch_smooth_parts.py": "cda74765dbe776b94113fcf538fe4749c123c694097fccd45ede6a186dd59333",
+    "tools/batch_smooth_check.py": "70b9c1dce2925518dcdc725581c6211bde63e2e9153f2e8f03592527a89636f9",
+    "tools/leading_power_smooth_relations.py": "ab10b90877e39b8174164c1d201d5e1da35472b7079453acf741166142543791",
+    "tools/prime_cofactor_saturation.py": "7af1f32dc9426575bc62f900c0ed4ee2bfd25802f97e245822c77f34affac6e4"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "system": "Linux"
+  }
+}
