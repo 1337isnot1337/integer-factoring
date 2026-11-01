@@ -1120,3 +1120,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Shared-minor budgets for graded cube alphabets](cube-graded-minor-budget.md)
 - [A uniform floor for scalar Gaussian color clones](cube-scalar-color-clone-floor.md)
 - [A Gaussian cube floor for every equally weighted Fock alphabet](cube-equal-height-fock-floor.md)
+
+
+## Fixed physical codes with a full Gaussian tail
+
+- [A fixed physical code with a full Gaussian tail](coherent-full-tail-core.md)

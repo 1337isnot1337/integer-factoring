@@ -2053,3 +2053,7 @@ verify-cube-shared-budgets:
 	python3 tools/check_cube_graded_minor_budget.py --output /tmp/integer-factoring-cube-graded-minor-budget.json
 	python3 tools/check_cube_scalar_color_clone_floor.py --output /tmp/integer-factoring-cube-scalar-color-clone-floor.json
 	python3 tools/check_cube_equal_height_fock_floor.py --output /tmp/integer-factoring-cube-equal-height-fock-floor.json
+
+.PHONY: verify-coherent-full-tail
+verify-coherent-full-tail:
+	python3 tools/check_coherent_full_tail_core.py --evidence evidence/coherent-full-tail-core.json --output /tmp/integer-factoring-coherent-full-tail-controls.json

@@ -1717,6 +1717,8 @@ The [moment-quotient localization analysis](research/pole-cauchy-localization-ob
 
 The [height-25 protected-state theorem](research/coherent-protected-height25.md) gives the exact natural-pressure floor `17/24 > 1/sqrt(2)` for every constant height-homogeneous split that retains the 28 states below height 16 and uses only states through height 25. It covers separate paired alphabets and types over every characteristic-two field, including the 96-letter hyperoval family. Changing the protected lower states or the stated gauge assumptions remains outside the theorem.
 
+The [full-tail active-core reduction](research/coherent-full-tail-core.md) replaces an exponentially large compressed compound calculation by a fixed `4k`-mode core and explicit Gaussian spectators. Under the stated height and deletion hypotheses it computes the actual reflection profiles. The complete forbidden-pair example is checked through 512 physical modes and gives no gain over the unmodified Gaussian; all physical entropy and degree costs remain charged.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and
