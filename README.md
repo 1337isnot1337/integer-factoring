@@ -2386,8 +2386,10 @@ floor of `Omega(ell/sqrt(log ell))`, matching the half-rate scale. At bit
 level the root-four twiddles become signed rotations and each butterfly has
 an `O(T)`-gate circuit. A redundant signed base-four representation removes
 intermediate transform carries, but direct digit convolution retains an
-order-`T` local multiplier-width obstruction; the full separator remains
-open ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md),
+order-`T` local multiplier-width obstruction. In the ideal clique-fiber
+bundle over the radix-2 butterfly cube, arbitrary matching twists still force
+treewidth `Theta(ell/sqrt(log ell))`; embedding the complete bit circuit as
+that minor remains open ([treewidth analysis](research/sanftenberg-transform-treewidth-floor.md),
 [bit-circuit and redundant-digit analysis](research/sanftenberg-root-four-bit-circuits.md)).
 
 ## Sparse oriented power prefixes
