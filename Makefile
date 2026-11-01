@@ -2188,3 +2188,7 @@ verify-cube-flat-low-order:
 .PHONY: verify-matched-progression-bezout
 verify-matched-progression-bezout:
 	python3 tools/check_matched_progression_bezout.py --output /tmp/matched-progression-bezout.json
+
+.PHONY: verify-tensor-pascal-boxes
+verify-tensor-pascal-boxes:
+	python3 tools/check_tensor_pascal_box_crossings.py --output /tmp/tensor-pascal-box-crossings.json
