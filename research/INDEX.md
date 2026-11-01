@@ -1,5 +1,7 @@
 # Research index
 
+- [Independent coordinate alphabets on the two physical pairs](rectangular-pascal-coordinate-alphabets.md): complete original Fock blocks with separate physical costs, independent nonbinary controls and a registered nineteen-case rectangular screen. No stronger crossing or factoring bound is asserted.
+
 - [Adaptive regular LDU chambers for complete profile queries](adaptive-smith-chambers.md): explicit coefficient knowledge, exact cone signs, diagonal reordering and certified prefix reuse; 1,848 independent orders and an actual q32 comparison. Repeats are fast but the measured moving trajectory is slower, so the backend is optional.
 
 - [Uniform-marginal transport closes both fixed-gauge endpoint escapes](pencil-uniform-transport-endpoints.md): full all-field pencil entry optima `14/5,-66/5`, exact determinant means and endpoint gaps `-8/25,-16/25`, plus the completed 469-trial asymmetric search. Interior angles and other generators remain open.

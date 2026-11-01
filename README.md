@@ -87,6 +87,10 @@ with independent original-entry controls and a registered larger constructive se
 An [optional regular-LDU chamber cache](research/adaptive-smith-chambers.md)
 reuses complete profiles under checked conditions. Its larger moving-trajectory
 pilot is slower than the legacy evaluator; no search speedup is claimed.
+The [rectangular coordinate extension](research/rectangular-pascal-coordinate-alphabets.md)
+allows different alphabets on the two matched physical pairs, including
+one-pair occupation restrictions, with complete original Fock profiles.
+Its nineteen-case constructive screen is registered; no new bound is asserted.
 
 ## Arithmetic construction and space bounds
 
