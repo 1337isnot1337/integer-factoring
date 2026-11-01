@@ -1449,3 +1449,5 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 ## Three-row Hecke path crossings over F8
 
 [Construction and complete finite checks](three-row-hecke-crossings.md) gives strict five- and nine-letter tensors outside the Temperley–Lieb quotient. Uniform local relations, finite endpoints, confluent coefficient verification and complete profiles are separated. The bare zero/infinity profile infimum is exactly one; no factoring improvement is claimed.
+
+- [Proper norm stencil overlap](circuit-box-stencil-overlap.md): exact conjugate-overlap identity, maximal rational content, and prime-power/HNF controls; no supply or factoring-exponent claim.

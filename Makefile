@@ -2701,3 +2701,7 @@ verify-compact-oriented-basis:
 .PHONY: verify-tensor-affine-clifford
 verify-tensor-affine-clifford:
 	python3 tools/check_tensor_affine_clifford_profiles.py --output /tmp/tensor-affine-clifford-replay.json
+
+.PHONY: check-stencil-overlap
+check-stencil-overlap:
+	python3 tools/check_circuit_box_stencil_overlap.py
