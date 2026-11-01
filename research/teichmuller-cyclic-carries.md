@@ -210,9 +210,9 @@ separate graph-degree and auxiliary-fibre limits.
 
 The field inverse-value identity cannot be copied to arbitrary ring inputs.
 For example, `3` has inverse `11 mod 16`; a field exponent-one rule would
-return `3`. Nonunits need not have any inverse. Only units needed to
-acquire the coefficient-ring model are inverted here, by explicit Hensel
-steps. No uncharged inverse-factor compiler is claimed.
+return `3`. Nonunits need not have any inverse. The model's Hensel steps
+invert acquired units, and (7) additionally inverts the known odd scalar
+`b-1`. These charged operations do not supply an inverse-factor compiler.
 
 ## 6. Reproduction and credit
 
