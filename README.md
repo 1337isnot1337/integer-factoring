@@ -76,6 +76,8 @@ original low-coefficient systems. Its
 [coupled F4 extension](research/windowed-f4-affine-frames.md) has independently
 checked nonbinary references and complete affine equations. Neither supplies
 a new contraction.
+The [coordinate Pascal constructor now also accepts nonbinary F4 flags](research/f4-pascal-coordinate-flags.md),
+with independent original-entry controls and a registered larger constructive search.
 
 ## Arithmetic construction and space bounds
 

@@ -1,5 +1,7 @@
 # Research index
 
+- [Nonbinary flags with complete coordinate Fock profiles](f4-pascal-coordinate-flags.md): original F4 minors and occupation sectors with arbitrary whole-symbol potentials; 4,977 entry/endpoint controls, 210 independent nonbinary orders, and a registered eight-case thirty-two-letter screen with two one-hour follow-ons.
+
 - [Rectangular cofactors close the bare interface through nine letters](subalphabet-bare-nine-letter-floor.md): all-field, all-degree, all-scale floors `719/1000`, `713/1000` and `17/24` at seven, eight and nine letters, from short exact rational entropy witnesses. Independent physical gauges and factoring improvements remain open.
 
 - [Physical subalphabets strengthen graded adjugate compatibility](subalphabet-adjugate-caps.md): all-field square restrictions and rectangular cofactor gaps exclude the last integer target and give exact positive pressure certificates at three formerly negative parameter points; no global energy floor or score improvement.

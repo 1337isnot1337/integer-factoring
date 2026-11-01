@@ -2454,6 +2454,10 @@ verify-subalphabet-bare-entropy:
 
 verify-frontier: verify-subalphabet-bare-entropy
 
+.PHONY: verify-f4-pascal-coordinate-sectors
+verify-f4-pascal-coordinate-sectors:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_pascal_coordinate_sectors.py --output /tmp/f4-pascal-coordinate-sectors.json
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
