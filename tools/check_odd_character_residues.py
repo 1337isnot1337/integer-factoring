@@ -5,8 +5,8 @@ import json
 
 from check_divisor_moment_recovery import divisors
 from odd_character_residues import (
-    cyclotomic_polynomial, multiply_cyclotomic, primitive_generator,
-    root_of_unity_powers, signed_residue_from_odd_characters,
+    character_bit_decoder, cyclotomic_polynomial, multiply_cyclotomic, primitive_generator,
+    root_of_unity_powers, signed_residue_from_character_bits, signed_residue_from_odd_characters,
 )
 from sparse_divisor_residues import recover_from_global_residues
 
@@ -14,6 +14,7 @@ from sparse_divisor_residues import recover_from_global_residues
 def check_character_conversion():
     cases = zero = queries = 0
     modular_cases = modular_queries = 0
+    binary_cases = binary_queries = 0
     precision_bits = set()
     inputs = [(n, divisors(n)) for n in range(2, 65)]
     for p, q in ((1000000007, 1000000009), (824633708473, 1099511627689)):
@@ -58,6 +59,15 @@ def check_character_conversion():
             assert low_precision == tuple(value % 2 for value in direct)
             modular_cases += 1
             modular_queries += queries-before
+            before = queries
+
+            def coefficient_bits(supplied_generator, index):
+                return tuple(value & 1 for value in coefficient(supplied_generator, index))
+
+            binary = signed_residue_from_character_bits(prime, coefficient_bits)
+            assert binary == tuple(value % 2 for value in direct)
+            binary_cases += 1
+            binary_queries += queries-before
         # Independent character multiplication and odd parity controls.
         for left in range(1, prime):
             for right in range(1, prime):
@@ -66,11 +76,15 @@ def check_character_conversion():
         assert powers[order//2][0] == -1 and not any(powers[order//2][1:])
     return {"prime_levels": [3, 5, 7, 11, 13, 17, 19, 23],
             "conversion_cases": cases, "supplied_weight_one_coefficients": queries,
-            "exact_coefficient_queries": queries-modular_queries,
+            "exact_coefficient_queries": queries-modular_queries-binary_queries,
             "completely_zero_signed_residues": zero,
             "finite_precision_cases": modular_cases,
             "finite_precision_coefficient_queries": modular_queries,
-            "two_adic_precisions_tested": sorted(precision_bits)}
+            "two_adic_precisions_tested": sorted(precision_bits),
+            "single_bit_cases": binary_cases,
+            "single_bit_coefficient_queries": binary_queries,
+            "single_bit_decoder_ranks": [[q, len(character_bit_decoder(q)[3])]
+                                         for q in (3, 5, 7, 11, 13, 17, 19, 23)]}
 
 
 def check_signed_recovery():

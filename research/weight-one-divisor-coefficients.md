@@ -2,8 +2,9 @@
 
 The global sparse-residue interface has a modular-form realization with
 **weight fixed at one**. Odd Dirichlet-character coefficients determine
-the signed divisor residue polynomial by exact Fourier inversion. Only
-logarithmic 2-adic coefficient precision is needed. Its support has at
+the signed divisor residue polynomial. **One bit per cyclotomic coordinate
+suffices at every prime level**, using the full algebra modulo two and
+retaining its nilpotents. Its support has at
 most twice as many terms as the original divisor set, so
 the same trial-budget transfer recovers the smallest prime factor.
 
@@ -138,9 +139,9 @@ Only inputs that pass the chosen small-factor trial phase need this
 engine. It may use the certified promise that every prime factor of N
 exceeds 2^t; the divisor and level bounds above already exploit that promise.
 
-The same conclusion follows from coefficient residues at the small
-precision in Section 4.1; full exact coefficients are a stronger input
-than the recovery needs.
+The same conclusion follows from the single-bit coefficient vectors in
+Section 4.1; full exact coefficients are a stronger input than the
+recovery needs.
 
 ## 4. Encoding and arithmetic are charged
 
@@ -183,7 +184,69 @@ character values. See the [pinned source, lines 3150--3192](https://github.com/s
 enumeration remains part of the cost here. This is a scoped source
 inspection, not an audit of every available modular-form algorithm.
 
-### 4.1 Only v2(q-1) coefficient bits are needed
+### 4.1 One bit per coordinate suffices at every level
+
+Write m=q-1=2^v u with u odd, v>=1, and r=2^(v-1). The target vector
+is encoded by
+
+```math
+h(X)=\sum_{e=0}^{m/2-1}(c_{g^e}+c_{-g^e})X^e
+       \quad\text{in }\mathbb F_2[X],\qquad \deg h<m/2.
+```
+
+For odd j, the opposite character values differ by a sign over the
+integers and coincide modulo two. Thus the coordinate vector of M_j(N)
+modulo two is precisely
+
+```math
+h(T^j)\quad\text{in }A_m=\mathbb F_2[T]/(\Phi_m(T)).
+```
+
+It is enough to request j dividing u. To prove injectivity, suppose
+all these observations vanish. In characteristic two,
+
+```math
+\Phi_m(T)=\Phi_u(T)^r,
+```
+
+where Phi_u is separable because u is odd. For each divisor d of u,
+take j=u/d. Raising primitive u-th roots to the j-th power runs through
+all primitive d-th roots. The derivative of T^j is nonzero at each of
+these nonzero roots, so substitution preserves root multiplicity.
+Consequently Phi_d(X)^r divides h(X). These factors are pairwise
+coprime as d varies, and their product is
+
+```math
+\prod_{d\mid u}\Phi_d(X)^r=(X^u-1)^r=X^{m/2}-1.
+```
+
+The degree bound forces h=0. This proves injectivity for every odd
+prime q, with no restriction on v2(q-1).
+
+The decoder constructs this binary linear map explicitly from the
+standard power-basis coordinates of T^(je), then uses Gaussian
+elimination over F_2 to recover the m/2 coefficients of h. Copy each
+coefficient to its two opposite residue positions and set position
+zero to zero. This gives (4). There are at most q queried characters,
+each with at most q coordinate bits; constructing the map and solving
+the system take polynomial time in q. The construction does not
+enumerate divisors of N.
+
+Keeping the full algebra A_m is essential. At q=5 it is
+F_2[T]/((T+1)^2); the two vectors 1 and T distinguish the two opposite
+residue pairs. Passing to the reduced quotient sets T=1 and loses
+that distinction. The nilpotent coordinates retain information that
+division-based Fourier inversion appears to require extra bits to recover.
+
+For a coefficient engine requiring an integral constant term too, use
+G_j=2q E_(1,1,chi_j). Since q B_(1,chi_j)=sum_(a=1)^(q-1) a chi_j(a)
+is integral, every coefficient of G_j lies in Z[zeta_m]. Its N-th
+coefficient modulo four gives M_j(N) modulo two by dividing its even
+coordinate residues by two and inverting the odd q modulo two.
+Thus a fixed modulus four for the full integral form suffices,
+independently of q and N. A faster engine for either version remains open.
+
+### 4.2 A division-based precision control
 
 Write m=q-1=2^v u with u odd and v>=1. For one residue position let
 
@@ -237,7 +300,8 @@ python3 tools/check_odd_character_residues.py > evidence/odd-character-residues.
 ```
 
 The [conversion](../tools/odd_character_residues.py) implements cyclotomic
-arithmetic and the full odd-character inverse transform. The
+arithmetic, the full odd-character inverse transform and the injective
+binary decoder from Section 4.1. The
 [checker](../tools/check_odd_character_residues.py) supplies coefficients
 by summing characters over explicit divisor lists and compares the
 result with an independent signed integer residue count. Character
@@ -259,6 +323,9 @@ The receipt records 1,040 exact character conversions, 5,850 supplied exact
 coefficients and 184 completely zero signed images. An additional 520
 finite-precision conversions use 2,925 coefficient residues at precisions
 one, two and four bits and agree with independent integer residue counts.
+The stronger decoder checks another 520 conversions using only 910
+single-bit coefficient vectors. Its ranks equal (q-1)/2 at all eight
+tested levels, including levels with nontrivial nilpotent coordinates.
 The separate signed
 recovery controls check ten full support polynomials, including the
 60-bit case through 2,207 supplied cyclic queries of degree at most 19,463.

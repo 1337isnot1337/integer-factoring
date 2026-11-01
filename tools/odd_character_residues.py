@@ -113,3 +113,70 @@ def signed_residue_from_odd_characters(prime, coefficient, characteristic=2, coe
             output[residue] = total[0]//divisor % 2
         residue = residue*generator % prime
     return tuple(output)
+
+
+@lru_cache(None)
+def character_bit_decoder(prime):
+    """Precompute the injective confluent character map over F_2.
+
+    The full, possibly nonreduced cyclotomic algebra is essential. Only
+    character indices dividing the odd part of q-1 are needed.
+    """
+    order = prime-1
+    pair_count = order//2
+    odd_part = order//(order & -order)
+    indices = tuple(index for index in range(1, odd_part+1) if odd_part % index == 0)
+    modulus, powers = root_of_unity_powers(order)
+    basis = {}
+    for exponent in range(pair_count):
+        column, position, mask = 0, 0, 1 << exponent
+        for index in indices:
+            for value in powers[index*exponent % order]:
+                column |= (value & 1) << position
+                position += 1
+        while column:
+            pivot = column.bit_length()-1
+            if pivot in basis:
+                vector, relation = basis[pivot]
+                column, mask = column ^ vector, mask ^ relation
+            else:
+                basis[pivot] = column, mask
+                break
+        if not column:
+            raise ValueError("the full cyclotomic character map lost injectivity")
+    rows = tuple((pivot, *basis[pivot]) for pivot in sorted(basis, reverse=True))
+    assert len(rows) == pair_count
+    return primitive_generator(prime), indices, len(modulus)-1, rows
+
+
+def signed_residue_from_character_bits(prime, coefficient):
+    """Recover the signed residue from ONE bit per cyclotomic coordinate.
+
+    coefficient(g,j) supplies M_j mod 2 in F_2[T]/Phi_(q-1), keeping all
+    nilpotents. Replacing this algebra by its reduced quotient is invalid.
+    """
+    if prime == 2:
+        return (0, 0)
+    if prime < 3:
+        raise ValueError("an odd prime level is required")
+    generator, indices, dimension, rows = character_bit_decoder(prime)
+    observations, position = 0, 0
+    for index in indices:
+        values = tuple(coefficient(generator, index))
+        if len(values) != dimension or any(value not in (0, 1) for value in values):
+            raise ValueError("canonical binary cyclotomic coordinate vectors are required")
+        for value in values:
+            observations |= value << position
+            position += 1
+    solution = 0
+    for pivot, vector, relation in rows:
+        if observations >> pivot & 1:
+            observations, solution = observations ^ vector, solution ^ relation
+    if observations:
+        raise ValueError("inconsistent character coefficient bits")
+    pair_count = (prime-1)//2
+    output, residue = [0]*prime, 1
+    for exponent in range(prime-1):
+        output[residue] = solution >> (exponent % pair_count) & 1
+        residue = residue*generator % prime
+    return tuple(output)
