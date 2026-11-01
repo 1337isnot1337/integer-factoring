@@ -2,8 +2,9 @@
 
 The global sparse-residue interface has a modular-form realization with
 **weight fixed at one**. Odd Dirichlet-character coefficients determine
-the signed divisor residue polynomial by exact Fourier inversion. Its
-support has at most twice as many terms as the original divisor set, so
+the signed divisor residue polynomial by exact Fourier inversion. Only
+logarithmic 2-adic coefficient precision is needed. Its support has at
+most twice as many terms as the original divisor set, so
 the same trial-budget transfer recovers the smallest prime factor.
 
 This supplies a second coefficient target alongside the
@@ -133,6 +134,14 @@ For larger fixed beta, their total overhead is still absorbed into
 the target bound. No stronger factoring exponent is proved without
 the coefficient algorithm in this hypothesis.
 
+Only inputs that pass the chosen small-factor trial phase need this
+engine. It may use the certified promise that every prime factor of N
+exceeds 2^t; the divisor and level bounds above already exploit that promise.
+
+The same conclusion follows from coefficient residues at the small
+precision in Section 4.1; full exact coefficients are a stronger input
+than the recovery needs.
+
 ## 4. Encoding and arithmetic are charged
 
 The character input is (q,g,j), and output is an exact integer
@@ -174,6 +183,51 @@ character values. See the [pinned source, lines 3150--3192](https://github.com/s
 enumeration remains part of the cost here. This is a scoped source
 inspection, not an audit of every available modular-form algorithm.
 
+### 4.1 Only v2(q-1) coefficient bits are needed
+
+Write m=q-1=2^v u with u odd and v>=1. For one residue position let
+
+```math
+T_e=\sum_{j\text{ odd}}M_j(N)\zeta_m^{-je}.
+```
+
+Equation (3) says exactly T_e=2^(v-1) u b_(g^e). In the standard
+cyclotomic power basis this is an ordinary integer, so all its
+nonconstant coordinates are zero. Therefore
+
+```math
+b_{g^e}\bmod2
+ =\left(\frac{T_e\bmod2^v}{2^{v-1}}\right)\bmod2.       \tag{8}
+```
+
+The odd factor u reduces to one modulo two. Thus residues of the
+M_j coefficients modulo 2^v suffice: polynomial multiplication and
+monic reduction modulo Phi_m commute with coefficient reduction. The
+quotient ring may have nilpotents; its free power basis still gives
+canonical coordinates, and no nonconstant element is inverted. The
+division by 2^(v-1) is performed on the constant coordinate, whose
+required divisibility follows from (3).
+
+Consequently the engine in (7) may supply only coefficient vectors in
+
+```math
+(\mathbb Z/2^v\mathbb Z)[T]/(\Phi_{q-1}(T)),
+\qquad v=v_2(q-1)\le\log_2q.
+```
+
+Their encoded length is O(q log q), independent of the large coefficient
+index except for the time to compute them. When q=3 mod 4, even precision
+modulo two suffices. No restriction to primes in that progression is
+needed by the transfer.
+
+For a coefficient engine requiring an integral modular form at the
+constant term too, use G_j=2q E_(1,1,chi_j). For the nontrivial character,
+q B_(1,chi_j)=sum_(a=1)^(q-1) a chi_j(a) is integral, so every coefficient
+of G_j lies in Z[zeta_m]. Its N-th coefficient modulo 2^(v+1) determines
+M_j(N) modulo 2^v by division by two and inversion of the odd q. Thus
+full-form normalization costs one additional precision bit. Both versions
+retain the same conditional runtime; neither coefficient engine is supplied.
+
 ## 5. Exact controls
 
 Run `make verify-odd-character-residues`, or
@@ -201,8 +255,11 @@ Exact counts and source scope are in the
 checks of the reduction; no fast weight-one coefficient provider or
 new uniform factoring bound is implemented.
 
-The receipt records 1,040 character conversions, 5,850 supplied
-coefficients and 184 completely zero signed images. The separate signed
+The receipt records 1,040 exact character conversions, 5,850 supplied exact
+coefficients and 184 completely zero signed images. An additional 520
+finite-precision conversions use 2,925 coefficient residues at precisions
+one, two and four bits and agree with independent integer residue counts.
+The separate signed
 recovery controls check ten full support polynomials, including the
 60-bit case through 2,207 supplied cyclic queries of degree at most 19,463.
 

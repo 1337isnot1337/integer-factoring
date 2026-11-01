@@ -72,12 +72,14 @@ def primitive_generator(prime):
                 if all(pow(value, (prime-1)//factor, prime) != 1 for factor in factors))
 
 
-def signed_residue_from_odd_characters(prime, coefficient, characteristic=2):
+def signed_residue_from_odd_characters(prime, coefficient, characteristic=2, coefficient_modulus=None):
     """Convert c_j=sum_(d|N) chi_j(d) for odd j to c_a-c_-a.
 
     Characters are extended by zero on multiples of the prime. coefficient(g,j)
     returns an integer vector in Q[zeta_(q-1)]'s standard power basis. q=2 has the
     zero signed image. A primitive generator is found by small trial work.
+    For output modulo two, inputs modulo 2^v2(q-1) already suffice; supply
+    that integer as coefficient_modulus to use the finite-precision path.
     """
     if prime == 2:
         return (0, 0)
@@ -85,6 +87,9 @@ def signed_residue_from_odd_characters(prime, coefficient, characteristic=2):
         raise ValueError("an odd prime level and characteristic>=2 are required")
     generator = primitive_generator(prime)
     order = prime-1
+    if coefficient_modulus is not None and (
+            characteristic != 2 or coefficient_modulus != (order & -order)):
+        raise ValueError("the binary output needs coefficient modulus 2^v2(q-1)")
     modulus, powers = root_of_unity_powers(order)
     values = {index: tuple(coefficient(generator, index)) for index in range(1, order, 2)}
     if any(len(value) != len(modulus)-1 or any(not isinstance(x, int) for x in value)
@@ -96,8 +101,15 @@ def signed_residue_from_odd_characters(prime, coefficient, characteristic=2):
         for index, value in values.items():
             summand = multiply_cyclotomic(value, powers[-index*exponent % order], modulus)
             total = [left+right for left, right in zip(total, summand)]
-        if any(total[1:]) or (2*total[0]) % order:
-            raise ValueError("the odd-character inverse transform is not an integer residue count")
-        output[residue] = (2*total[0]//order) % characteristic
+        if coefficient_modulus is None:
+            if any(total[1:]) or (2*total[0]) % order:
+                raise ValueError("the odd-character inverse transform is not an integer residue count")
+            output[residue] = (2*total[0]//order) % characteristic
+        else:
+            total = [value % coefficient_modulus for value in total]
+            divisor = coefficient_modulus//2
+            if any(total[1:]) or total[0] % divisor:
+                raise ValueError("the finite-precision inverse transform is inconsistent")
+            output[residue] = total[0]//divisor % 2
         residue = residue*generator % prime
     return tuple(output)

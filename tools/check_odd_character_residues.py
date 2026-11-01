@@ -13,6 +13,8 @@ from sparse_divisor_residues import recover_from_global_residues
 
 def check_character_conversion():
     cases = zero = queries = 0
+    modular_cases = modular_queries = 0
+    precision_bits = set()
     inputs = [(n, divisors(n)) for n in range(2, 65)]
     for p, q in ((1000000007, 1000000009), (824633708473, 1099511627689)):
         inputs.append((p*q, [1, p, q, p*q]))
@@ -43,6 +45,19 @@ def check_character_conversion():
                 assert recovered == tuple(value % characteristic for value in direct)
                 cases += 1
                 zero += not any(recovered)
+            coefficient_modulus = order & -order
+            precision_bits.add(coefficient_modulus.bit_length()-1)
+            before = queries
+
+            def modular_coefficient(supplied_generator, index):
+                return tuple(value % coefficient_modulus
+                             for value in coefficient(supplied_generator, index))
+
+            low_precision = signed_residue_from_odd_characters(
+                prime, modular_coefficient, coefficient_modulus=coefficient_modulus)
+            assert low_precision == tuple(value % 2 for value in direct)
+            modular_cases += 1
+            modular_queries += queries-before
         # Independent character multiplication and odd parity controls.
         for left in range(1, prime):
             for right in range(1, prime):
@@ -51,7 +66,11 @@ def check_character_conversion():
         assert powers[order//2][0] == -1 and not any(powers[order//2][1:])
     return {"prime_levels": [3, 5, 7, 11, 13, 17, 19, 23],
             "conversion_cases": cases, "supplied_weight_one_coefficients": queries,
-            "completely_zero_signed_residues": zero}
+            "exact_coefficient_queries": queries-modular_queries,
+            "completely_zero_signed_residues": zero,
+            "finite_precision_cases": modular_cases,
+            "finite_precision_coefficient_queries": modular_queries,
+            "two_adic_precisions_tested": sorted(precision_bits)}
 
 
 def check_signed_recovery():

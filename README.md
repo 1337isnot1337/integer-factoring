@@ -1227,7 +1227,8 @@ weighted evaluator remains unproved. Run `make verify-sparse-divisor-residues`.
 A [fixed weight-one alternative](research/weight-one-divisor-coefficients.md)
 uses odd-character Eisenstein coefficients at small prime levels. Exact
 Fourier inversion gives signed divisor residues, and the same sparse
-reconstruction recovers factors. The coefficient at the original composite
+reconstruction recovers factors. Only `O(log q)` bits of 2-adic coefficient
+precision are needed at level `q`. The coefficient at the original composite
 index remains the unresolved engine; no improvement follows from prime-index
 formulas. Run `make verify-odd-character-residues` for the component checks.
 

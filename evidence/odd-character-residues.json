@@ -13,8 +13,16 @@
       23
     ],
     "conversion_cases": 1040,
-    "supplied_weight_one_coefficients": 5850,
-    "completely_zero_signed_residues": 184
+    "supplied_weight_one_coefficients": 8775,
+    "exact_coefficient_queries": 5850,
+    "completely_zero_signed_residues": 184,
+    "finite_precision_cases": 520,
+    "finite_precision_coefficient_queries": 2925,
+    "two_adic_precisions_tested": [
+      1,
+      2,
+      4
+    ]
   },
   "signed_recovery": {
     "recoveries": 10,
