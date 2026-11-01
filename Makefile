@@ -348,6 +348,10 @@ verify-braid-fusion-seam:
 verify-braid-graded-seam:
 	python3 tools/check_quantum_braid_graded_seam.py
 
+.PHONY: verify-braid-spectral-fusion
+verify-braid-spectral-fusion:
+	python3 tools/check_quantum_braid_spectral_fusion.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py

@@ -750,6 +750,13 @@ where k strands are left free. Its uniform row-exponent range is0..2,
 with the same vacuum-interface column factors and an explicit integer
 cost filter. The unfiltered prefix family still misses the five- and
 thirteen-label crossings. Run `make verify-braid-graded-seam` (NumPy).
+An [exact fused spectral slide](research/fused-spectral-transport.md)
+transports the three-strand projector with compatible shifted parameters.
+The ambient identity retains a nonzero negligible height-four residual;
+in the vacuum quotient the transport is a scalar times the constant braid.
+Exact polynomial normalization gives two-term transport factors at lengths
+`5*2^s`. A global kernel, spanning identity and favorable complete rank sum
+remain open. Run `make verify-braid-spectral-fusion` (NumPy).
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
