@@ -1,0 +1,83 @@
+{
+  "claim_scope": "Global modular products and unit traces; no singular normalization or factoring exponent improvement.",
+  "full_polynomial_coefficient_checks": 76,
+  "independent_normalized_moment_checks": 396,
+  "large_box_control": {
+    "circuit_sha256": "c893e632a0b68acfcc75ed10e3cbccc61ad6c0f72e51a1c37f856da07252de2a",
+    "formal_degree_bound": 2417851639229258349412369,
+    "input_circuit_nodes": 161,
+    "input_degree": 25711008708143844408671393477562548989573962711447415027662939,
+    "intervals": [
+      [
+        3,
+        2535301200456458802993406410762
+      ],
+      [
+        5,
+        10141204801825835211973625643026
+      ]
+    ],
+    "output_circuit_nodes": 448,
+    "packets": [
+      {
+        "coefficients": [
+          1,
+          0,
+          0,
+          0
+        ],
+        "count": 6427752177035961102167848369387468120892920104358111998902290,
+        "parity": 0,
+        "retained_degree": 3
+      },
+      {
+        "coefficients": [
+          1,
+          6,
+          8,
+          0
+        ],
+        "count": 19283256531107883306503545108175080868681042607089303028760649,
+        "parity": 1,
+        "retained_degree": 3
+      }
+    ],
+    "precision": 4,
+    "quotient_degree": 4,
+    "quotient_dimension": 16,
+    "reference_residue_pairs_enumerated": 256,
+    "working_precision": 3
+  },
+  "literal_quadratic_unit_trace_checks": 76,
+  "modular_newton_checks": 216,
+  "null_polynomial_integer_checks": 2000,
+  "quotient_product_point_checks": 216,
+  "singular_center_rejected": true,
+  "small_examples": [
+    {
+      "formal_degree_bound": 45089,
+      "input_nodes": 37,
+      "output_nodes": 15,
+      "precision": 4,
+      "product_degree": 3,
+      "variables": 1
+    },
+    {
+      "formal_degree_bound": 2883617,
+      "input_nodes": 45,
+      "output_nodes": 9,
+      "precision": 4,
+      "product_degree": 1,
+      "variables": 2
+    },
+    {
+      "formal_degree_bound": 720929,
+      "input_nodes": 45,
+      "output_nodes": 29,
+      "precision": 3,
+      "product_degree": 9,
+      "variables": 3
+    }
+  ],
+  "weighted_packet_newton_checks": 216
+}

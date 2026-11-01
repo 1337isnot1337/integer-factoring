@@ -36,6 +36,8 @@
 
 ## Exact pole-Cauchy algorithms
 
+- [Global products of unrestricted-degree circuit values](circuit-box-products.md): fixed-dimensional boxes, polynomial-time generation, `O(p+log(M+1))` output nodes, and sharp `p-1` normalized moment precision; singular normalization remains open.
+
 - [Unrestricted-degree circuit inverse moments](pole-cauchy-circuit-moments.md): a small quotient algebra evaluates every division-free polynomial circuit weight; a sharp finite-difference bound explains the denominator cost of entrywise factor interpolation.
 - [Normalized rational inverse resolvents](pole-cauchy-rational-resolvents.md): four affine products evaluate complete rational contractions at polynomial absolute precision, without a rectangle-separation assumption; the final factoring scalar remains open.
 - [Complete bilinear pole-product packets](bilinear-pole-packets.md): global polynomial circuits modulo `2^p` with `O(n+p)` arithmetic nodes, polynomial generation, and full unit traces; singular factor-count normalization remains open.

@@ -2373,3 +2373,7 @@ verify-coherent-f4-partial:
 .PHONY: verify-orthogonal-pair-core-floor
 verify-orthogonal-pair-core-floor:
 	python3 tools/check_orthogonal_pair_core_floor.py
+
+.PHONY: verify-circuit-box-products
+verify-circuit-box-products:
+	python3 tools/check_circuit_box_products.py

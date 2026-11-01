@@ -212,6 +212,19 @@ uses degree 128, rejects larger budgets, and is checked against 96 known profile
 and 12,869 independently enumerated minors.
 <!-- cube-transfer-checkpoint:end -->
 
+## Unrestricted-degree modular products
+
+The [circuit-box product theorem](research/circuit-box-products.md) constructs
+`product (Z-q(a)) mod 2^p` over any fixed-dimensional integer box when `q`
+is a division-free circuit of unrestricted formal degree. Generation is
+polynomial in the written circuit, endpoint bit lengths, and precision;
+the output uses `O(p+log(M+1))` arithmetic nodes for `M` box points.
+Only `p-1` normalized moment bits are needed for positive packet coefficients.
+Exact coefficient checks include a 161-node input of degree above `2^81`
+over more than `2^204` points. Singular normalization remains open, and
+the complete factoring score remains **1/2**.
+Run `make verify-circuit-box-products`.
+
 ## Results and evidence
 
 | Claim | Status | Details |
