@@ -2187,6 +2187,10 @@ verify-joint-split-flags:
 verify-joint-moving-retractions:
 	python3 tools/check_joint_moving_retractions.py
 
+.PHONY: verify-joint-small-rational
+verify-joint-small-rational:
+	python3 tools/check_joint_small_rational_retractions.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

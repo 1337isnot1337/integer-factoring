@@ -2015,3 +2015,15 @@ all 1,745 distinct classes also agree with separate Python elimination
 on 55,840 complete orders. Combinations and asymmetric charges remain
 open. Run `make verify-joint-moving-retractions`; these focused additions
 are outside the earlier full-suite pin and leave the score at **1/2**.
+
+The [complete five-to-four rational row module](research/joint-small-rational-retractions.md)
+permits arbitrary internal poles. A degree-seven polynomial right inverse
+certifies its full polynomial output space. Freezing the first two raw
+matrix jets and excluding order two leaves six second-jet directions;
+an exact symbolic 3-by-3 minor forces the third zero-cut order to stay
+three over every characteristic-two field. Earlier jets, other embeddings
+and later orders remain open. Run `make verify-joint-small-rational`.
+The [new full-suite receipt](evidence/joint-moving-full-verification.json)
+pins a successful clean replay of defaults and three joint focused targets
+to `f2a16c0` (344 Python command blocks, 66+5 tests, 979 Markdown files).
+The rational-module additions postdate that full-suite source.
