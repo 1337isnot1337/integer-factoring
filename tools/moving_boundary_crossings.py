@@ -56,16 +56,13 @@ def multiply_arrays(planes, scalar):
     return result
 
 
-def compress(seed, low, a, b):
-    """Apply L,L,P^T,P^T to a seed with a two-dimensional final boundary.
-
-    Maps act in the seed's variable. In particular, a polynomial in w
-    acts on the original reflection tensor, not on a deflated compound.
-    """
+def compress_split(seed, low, left, right):
+    """Apply a polynomial split to the two final coordinates of all legs."""
     ambient = low + 2
     if seed['dimensions'] != [ambient] * 4:
         raise ValueError('Supply a square seed with exactly two final boundary letters.')
-    left, right = paired_maps(a, b)
+    if len(left) != 2 or len(right) != 2 or add(multiply(left[0], right[0]), multiply(left[1], right[1])) != ONE:
+        raise ValueError('Supply two polynomial vectors whose pairing is exactly one.')
     dimensions = [ambient] * 4
     planes = [np.asarray([v[p] for v in seed['values']], dtype=object)
               .reshape(dimensions, order='F') for p in (0, 1)]
@@ -88,3 +85,19 @@ def compress(seed, low, a, b):
     return {'values': values, 'dimensions': dimensions, 'q_x': q, 'q_u': q,
             'degree': max(part.bit_length() - 1 for value in values for part in value),
             'strict_endpoint': True}
+
+
+def compress(seed, low, a, b):
+    """Use L=(1,a), P=(1+ab,b)^T in the seed's original variable."""
+    return compress_split(seed, low, *paired_maps(a, b))
+
+
+def reorder(seed, order):
+    """Relabel all four physical alphabets by the same permutation."""
+    q = seed['q_x']
+    if seed['dimensions'] != [q] * 4 or sorted(order) != list(range(q)):
+        raise ValueError('Supply a permutation of one square physical alphabet.')
+    selector = np.ix_(order, order, order, order)
+    planes = [np.asarray([value[p] for value in seed['values']], dtype=object)
+              .reshape([q] * 4, order='F')[selector] for p in (0, 1)]
+    return {**seed, 'values': list(zip(*(map(int, plane.ravel(order='F')) for plane in planes)))}

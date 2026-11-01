@@ -189,3 +189,144 @@ python3 tools/search_moving_boundary_crossings.py \
 The mathematical obstruction is an ordinary proof supported by exact
 finite certificates. It is not a stronger factoring bound, a Lean theorem,
 or an independent mathematical review.
+
+The [exact-source verification receipt](../evidence/moving-map-verification/receipt.json)
+records a completed default `make verify` at
+`410e3e2cda3b416dffe358be67fc8e1413ee66a9`: 341 Python command blocks,
+66 unit tests, five crossing tests, and links in 973 Markdown files. The
+frozen worktree remained clean. The
+[complete compressed log](../evidence/moving-map-verification/full-410e3e2.log.gz)
+is retained. The same receipt records all four focused moving-map checks
+at the later frame source `1dba7bad8628b7ce3b3448da76bb79361c316cb5`, with
+their [focused log](../evidence/moving-map-verification/focused-1dba7ba.log).
+Later integrations and the separate full frame search are outside the
+default-gate source pin. No Lean replay is claimed by these ordinary checks.
+
+## Moving lower states and complete interior-pair controls
+
+The boundary obstruction motivates a different search: move any pair of
+the nine physical states, including the vacuum and unequal-height pairs.
+The [interior driver](../tools/search_moving_interior_crossings.py) relabels
+the literal ambient tensor before applying the polynomial maps. It
+computes both complete weighted cuts directly. There is no assumption that
+the maps preserve height, occupation number, or a Gaussian factorization.
+
+A complete binary affine screen covers all 36 physical pairs and all 16
+a,b choices per pair. For unequal-height pairs the assigned physical
+weight is tested at both original heights and their midpoint. The unique
+equal-height pair needs only one weight. This gives exactly **1,696**
+full two-profile evaluations. The
+[complete archive](../evidence/moving-interior-binary-affine.json.gz) records
+the declared parameters and every complete profile. Its best numerical
+pressure remains approximately `0.7199753178555385`, attained by the old
+constant map on the height-eight pair. No all-family theorem follows from
+these finite fits.
+
+For low-entropy Gibbs roots, the implementation first cancels exact scalar
+shifts of the two spectra and the physical weights, then evaluates the
+remaining positive sums with `log1p`. This avoids losing small positive
+terms to floating cancellation. The original unnormalized numerical
+routine failed on a pilot launch; that launch is not counted as the
+completed screen. The successful screen was rerun with the normalized
+routine. Its [independent controls](../evidence/moving-interior-controls.json)
+check 19,683 literal relabeling entries, 12,288 complete polynomial entries,
+and root invariance under opposite cut shifts of 100,000 and a common
+physical shift of 300. These numerical root checks are separate from the
+exact tensor and profile checks.
+
+## Codimension-one frames with no protected lower coordinate core
+
+For q-vectors a(w),b(w), define polynomial physical maps
+
+```math
+L=[I_q,a],\qquad
+P=\begin{bmatrix}I_q+a b^{\mathsf T}\\b^{\mathsf T}\end{bmatrix}.
+```
+
+Characteristic two gives `LP=I_q`. Applying L,L,P-transposed,P-transposed
+therefore supplies the exact q-letter endpoint as before. Unlike a single
+boundary cell, these maps can change all retained physical states. The
+seven-letter protected-corner theorem applies only if the resulting
+tensor actually retains that corner.
+
+The [frame constructor](../tools/moving_physical_frames.py) applies these
+maps by rank-one updates, without materializing dense polynomial maps.
+On a left leg its ith output is `input_i+a_i input_last`. On a right leg
+its jth output is
+
+```math
+input_j+b_j\left(input_{last}+\sum_i a_i input_i\right).
+```
+
+These identities are purely polynomial. No matrix rank estimate is
+inferred from the low-rank form of a physical map.
+
+### Reciprocal Laurent flows
+
+The maps also admit monomial denominators. Write
+`a_i=w^(s_i) A_i(w)` and `b_j=w^(t_j) B_j(w)`, where A_i,B_j are
+polynomials. Choose
+
+```math
+m_L=\max(0,\max_{A_i\ne0}(-s_i)),\qquad
+m_P=\max(0,\max_{B_j\ne0}(m_L-t_j)).
+```
+
+Then `w^m_L L` and `w^m_P P` are polynomial maps, and their product is
+`w^(m_L+m_P) I`. Applying the four cleared maps multiplies the Laurent
+crossing by exactly `w^(2(m_L+m_P))`. At w=1 the endpoint is unchanged.
+This common monomial only reindexes the finitely many coefficient
+tensors; it does not change their ranks. In the two-place counting
+functions it adds a common shift to one spectrum and the opposite shift
+to the other, so their product is unchanged. The assigned physical
+weights and their full entropy cost are still included.
+
+Every fixed set of Laurent shifts therefore yields an effective
+polynomial crossing after clearing. This argument removes only a common
+monomial. It does not discard a nonmonomial denominator or an uncharged
+physical cost.
+
+The [dense checker](../tools/check_moving_physical_frames.py) independently
+constructs the cleared maps, verifies their exact scaled split identity,
+and contracts all four legs by coefficientwise F4 convolution. It checks
+24 dense frames with positive and negative shifts on three ambient
+letters, comprising 384 complete entries. Three reflection specializations
+compare all 12,288 entries with the separate boundary constructor. The
+[receipt](../evidence/moving-physical-frame-controls.json) distinguishes
+these dense small controls from full eight-letter endpoint checks.
+
+### Declared pilot cells and next search
+
+The [pilot archive](../evidence/moving-physical-frame-pilots.json.gz) contains
+nine complete 16-case cells. In each cell, A and B range independently over
+the masks `0,1,128,255`. Uniform flows use `a=w^c A,b=w^(-c) B` for
+`c=-2,-1,0,1,2`. Height flows instead use
+
+```math
+a_i=A_iw^{c(8-h_i)},\qquad b_i=B_iw^{-c(8-h_i)},
+\qquad c=-2,-1,1,2,
+```
+
+on physical heights `0,1,3,4,5,6,7,8`. All 144 candidate tensors have
+complete cut profiles. Their best numerical pressure remains the
+constant boundary control; these small cells are not an exclusion of
+the full frame family.
+
+The [full driver](../tools/search_moving_physical_frames.py) exposes both
+flow families and an affine polynomial family. Without restricted mask
+lists it covers all 65,536 binary pairs in a deterministic recorded order.
+It writes each completed case to a separate JSON-lines record and saves
+progress without overwriting another run. Source hashes, both profiles,
+tensor digests, and the clearing power are retained. A live partial run
+must not be described as an exhausted search.
+
+```sh
+python3 tools/search_moving_physical_frames.py --height-flow 1 \
+  --output /tmp/moving-physical-frames.json \
+  --records /tmp/moving-physical-frames.jsonl
+```
+
+A numerical pressure below `1/sqrt(2)` would trigger an exact candidate
+audit and uniform-transfer accounting. None is established by the
+completed controls above. The next positive task is a realizing frame,
+tensor, or coefficient decomposition with a complete strict bound.

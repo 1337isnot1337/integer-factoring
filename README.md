@@ -34,6 +34,10 @@ The Pascal search now supports [arbitrary exponent permutations](research/permut
 [constant F4 flags](research/f4-pascal-flags.md). Both complete cut profiles
 and physical costs are retained. The focused exact controls and registered
 finite searches do not establish a stronger factoring exponent.
+An [all-field determinant classification](research/two-place-determinant-target.md)
+now isolates a sufficient asymmetric target and excludes that particular
+escape for the retained pencil. A [registered full F4 census](research/two-place-f4-census.md)
+continues to test its other asymmetric profile possibilities.
 
 ## Arithmetic construction and space bounds
 
@@ -113,7 +117,73 @@ also completes a **176-bit** selective-promotion run in **23,998,215 norm
 queries**, reaching full rank in a 1,776-prime base. Its complete 51,902-identity
 certificate is retained in XZ form and independently replayed, including all
 50,126 residual-prime certificates and 1,776 integer graph eliminations.
+
+[Gcd-free oriented refinement](research/oriented-coprime-basis.md) replaces
+supplied composite residual ideals by pairwise coprime atoms with consistent
+quadratic-root orientations. It preserves the evaluated torsion image and
+can expose additional factors without factoring the residual norms.
+Matched 16-, 64-, and 320-query prefixes now extract factors where the
+original exact-key selector returns none. The largest control factors
+1000036000099 as 1000003 times 1000033, with all 320 supplied witnesses
+and integer row-combination certificates retained.
+
+[Signed residual graph elimination](research/signed-residual-graph-elimination.md)
+compresses that complete 320-row, 252-generator presentation to five rows
+on five generators; two later unit pivots reduce it to three rows on the
+original three base generators. Dense and sparse input produce identical
+certificates. Explicit integer maps preserve the full presentation
+before unused free summands are removed. Unbalanced components retain
+their necessary double-root relations, and larger residual words are
+transported without loss. These are finite search and supplied-witness
+improvements; the uniform search bound remains open.
+Run `make verify-oriented-refinement`.
+
+The [matched batch-policy controls](research/batch-smooth-filtering.md#matched-existing-cofactor-policies)
+also test the faster existing 144-bit policies. Selective promotion takes
+60.848 versus 51.755 seconds with scalar versus batch-32 filtering;
+the unpromoted pair is essentially tied at 53.327 versus 53.064 seconds.
+Both comparisons preserve complete mathematical payloads and charge all
+generated-ahead candidates. A separate bounded 192-bit search driver retains
+its policy and streams a compressed, independently replayed certificate on
+completion; no 192-bit success is claimed here.
 <!-- cofactor-collision-checkpoint:end -->
+
+<!-- tensor-orthogonal-checkpoint:start -->
+## Effective orthogonal tensor constructions
+
+The [all-subset scaling theorem](research/tensor-orthogonal-scaling.md)
+constructs the required column scalings in deterministic polynomial time.
+For coefficient rank `R` and `m` columns, a single minimum-basis argument
+reduces the extension-degree budget to `O((m-R)^2+1)`, without enumerating
+column subsets. Corank one requires only a quadratic extension.
+
+The [capacity theorem](research/tensor-orthogonal-capacity.md) bounds the
+number of nonzero columns by
+`floor(fr(1+q^-1+...+q^(1-r)))` over `q=2^f`.
+It determines every binary rank and every rank-two capacity exactly.
+Complete F4 catalogues, hyperoval scaling obstructions, and
+[all-scale four-pair comparisons](research/tensor-orthogonal-pressure-dominance.md)
+make the remaining finite searches explicit.
+The [coupled quadratic screen](research/tensor-coupled-quadratic-dominance.md)
+also has exact integer dominance certificates for all 31 completed maps.
+
+These results construct and delimit physical-code families. None gives a
+crossing contraction below `1/sqrt(2)`; the complete factoring score remains
+**1/2**. Run `make verify-tensor-orthogonal` for the focused theorem controls,
+finite catalogues, and saved-profile certificates. Full native profile
+reconstruction is available separately and is not part of that quick target.
+
+The [F16 profile engine](research/tensor-f16-coherent-profiles.md) adds explicit
+three-/four-pair orthogonal constructions and a hyperoval scaling that
+escapes the F4-only obstruction. Independent literal entries and binary
+Toeplitz ranks validate its complete and capped Smith orders.
+A [common-core proof](research/tensor-coupled-quadratic-field-floor.md)
+gives `rho >= 5/7` for the entire specified height-8/12 coefficient family
+over every characteristic-two field. Its exact integer certificate stopped
+the F16 pilot after 24 of 851 classes; the catalogue is explicitly incomplete.
+Search continues in different lower-core families.
+Run `make verify-tensor-f16`.
+<!-- tensor-orthogonal-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
 ## Coherent crossing profiles
@@ -211,6 +281,54 @@ whose degree exceeds the complete minor-degree budget. Its F2 implementation
 uses degree 128, rejects larger budgets, and is checked against 96 known profiles
 and 12,869 independently enumerated minors.
 <!-- cube-transfer-checkpoint:end -->
+
+## Circuit products, normalized averages, and one-variable poles
+
+The [circuit-box product theorem](research/circuit-box-products.md) constructs
+`product (Z-q(a)) mod 2^p` over any fixed-dimensional integer box when `q`
+is a division-free circuit of unrestricted formal degree. Generation is
+polynomial in the written circuit, endpoint bit lengths, and precision;
+the output uses `O(p+log(M+1))` arithmetic nodes for `M` box points.
+Only `p-1` normalized moment bits are needed for positive packet coefficients.
+Exact coefficient checks include a 161-node input of degree above `2^81`
+over more than `2^204` points. Singular normalization remains open, and
+the complete factoring score remains **1/2**.
+Run `make verify-circuit-box-products`.
+
+The [normalized-average theorem](research/circuit-box-averages.md) computes
+`(2^d/|B|) sum q(a)` for fixed-dimensional boxes at `p` coefficient bits,
+independent of the count valuation, including globally odd-unit rational
+circuits. Applied to [complete normalized Bezout pairs](research/circuit-box-bezout.md),
+it gives [fewer than `2p` coefficient bits](research/circuit-box-bezout-averages.md)
+for certified separated isometric domains. A six-bit `2^80`-node example
+now uses ten bits instead of 86. The [one-variable pole-trace compiler](research/circuit-box-pole-trace.md)
+also handles singular centers by a polynomial-size valuation partition and
+returns exact congruence-root counts. The two-variable factor rectangle
+remains outside these proved algorithms; no higher factoring score is claimed.
+Run `make verify-circuit-box-normalization` for all four new exact suites.
+
+
+[Factorial normalization of a factor row](research/circuit-box-inverse-windows.md)
+removes its exponentially large known valuation baseline. The remaining
+capped valuation is an explicit sum of inverse-window indicators, and its
+final increment equals the exact factor count. Aggregating that increment
+over a long row interval remains open. An empty-semiprime rectangle family
+forces `Omega(2^(n/2))` states under the stated dyadic corner-pruning rules,
+so the one-variable result alone does not control that continuation.
+
+## Batched exact smooth-part filtering
+
+The [batched selector implementation](research/batch-smooth-filtering.md) applies
+Bernstein's product/remainder-tree method to the existing prime-form searches.
+The opt-in path preserves the scalar first-success witnesses and charges all
+candidates generated ahead. Its geometric schedule generates fewer than twice
+the scalar inspected count; size-balanced batches give filtering cost
+`soft-O(sum R_j + Q b)` for frozen per-search product lengths `R_j` and `Q`
+inspected `b`-bit norms. This bounds filtering, not the unresolved search length.
+A matched fully promoted 144-bit run took 129.70 seconds versus 198.18 seconds,
+with identical factors and all 513 relation rows. This is a same-policy speedup,
+not an overall best-policy timing record. The complete score remains **1/2**.
+Run `make verify-batch-smooth`.
 
 ## Results and evidence
 
@@ -1975,3 +2093,17 @@ independent binary-polynomial Smith implementation. This closes boundary-only
 natural-pressure searches in that family; changes to lower states and other
 gauges remain open. The factoring score stays `1/2`. Run
 `make verify-moving-boundary` for the construction and all-scale certificates.
+
+The same [moving-map note](research/moving-boundary-crossings.md#codimension-one-frames-with-no-protected-lower-coordinate-core)
+now gives polynomial and Laurent physical frames that can move all eight
+states. Common monomial clearing preserves the coefficient ranks and
+opposite-cut product pressure. A complete 1,696-evaluation interior-pair
+screen and 144 declared frame pilot cases give no improved bound. Dense
+Laurent contraction checks and all complete finite profiles are retained;
+the larger frame search remains open.
+
+An [exact-source receipt](evidence/moving-map-verification/receipt.json)
+retains the full default pass at `410e3e2` (341 Python command blocks,
+66 unit tests, five crossing tests, 973 Markdown files) and four focused
+moving-map checks at `1dba7ba`. These are source-specific ordinary checks;
+later integrations and the full frame search have separate status.
