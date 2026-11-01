@@ -47,6 +47,14 @@ def counter_controls():
         weights = central_weights(length)
         assert all(v >= 0 for v in weights)
         assert max(a for a, v in enumerate(weights) if v) == 2 * length - length // 4
+        top = 2 * length - length // 4
+        for gap in range(min(4, top) + 1):
+            bound = (
+                (gap + 1)
+                * (length + 1) ** (5 * gap + 3)
+                * vacuum_dimension(length // 4 + gap)
+            )
+            assert weights[top - gap] <= bound
     return {
         "literal_ternary_words": words,
         "admissible_words": accepted,
@@ -67,8 +75,8 @@ def rational_certificates():
     assert sum(w) == Fraction(2055, 64)
     inequalities = {
         "middle_row": (24000**28 * 5**35, 256**48 * 8**35),
-        "middle_column": (28 * 8**8 * 5**10, 7**8 * 8**10),
-        "shoulder_column": (20 * 6**6 * 5**3, 8**9),
+        "middle_column": (147 * 5**9, 64 * 7**8),
+        "shoulder_column": (105 * 6**6 * 5**2, 8**9),
     }
     assert all(lhs < rhs for lhs, rhs in inequalities.values())
     # Rational bounds on phi, proved by squaring positive numbers.
@@ -89,8 +97,8 @@ def rational_certificates():
         "rate_inequalities": {
             name: {"lhs": lhs, "rhs": rhs} for name, (lhs, rhs) in inequalities.items()
         },
-        "middle_window": "a>=ceil(12*n/7), b<=floor(n/8): both ranks <= L^(5/4+o(1))",
-        "shoulder_window": "a=2*n-floor(n/4), b<=floor(n/6): ranks <= (L^(1/2+o(1)),L^(3/2+o(1)))",
+        "middle_window": "a>=ceil(12*n/7), b<=floor(n/8): ranks <= (L^(5/4+o(1)),L^(9/8+o(1)))",
+        "shoulder_window": "a=2*n-floor(n/4), b<=floor(n/6): ranks <= (L^(1/2+o(1)),L^(4/3+o(1)))",
     }
 
 
@@ -171,6 +179,7 @@ def check():
     sources = (
         "research/nilpotent-seam-rank-envelope.md",
         "research/nilpotent-seam-crossings.md",
+        "research/fusion-projector-seams.md",
         "tools/nilpotent_seam_rank_bounds.py",
         "tools/check_nilpotent_seam_rank_bounds.py",
         "tools/quantum_braid_nilpotent_seam.py",

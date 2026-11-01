@@ -7,8 +7,8 @@ the exact residual vacuum dimension. It is polynomial time and uses no
 floating-point rank or asymptotic extrapolation.
 
 The bounds give, in particular, a uniform rectangle of coefficients
-with **both ranks at most `L^(5/4+o(1))`**. Another family has the bounds
-`(L^(1/2+o(1)),L^(3/2+o(1)))`. These are candidate pieces for a graded
+with ranks at most **`(L^(5/4+o(1)),L^(9/8+o(1)))`**. Another family has the bounds
+`(L^(1/2+o(1)),L^(4/3+o(1)))`. These are candidate pieces for a graded
 decomposition. Their simultaneous upper bounds do not prove that they
 are nonzero or supply the rank mass needed to span the crossing.
 No stronger complete factoring exponent is established.
@@ -51,7 +51,8 @@ The combined physical/auxiliary operator therefore has rank at most
 and extracting the outer y-degree b gives
 
 ```math
-\boxed{\quad r(G_{a,b})\le4(b+1)W_{n,a}.\quad}  \tag{2}
+\boxed{\quad r(G_{a,b})\le4h_{n,b}W_{n,a},\qquad
+h_{n,b}=\min(b+1,n-b+1).\quad}                  \tag{2}
 ```
 
 This uses the actual F4 path quotient, so no extension-degree multiplier
@@ -78,29 +79,53 @@ nonnegative sums of vacuum dimensions.
 At the maximal allowed degree `a_*=2n-floor(n/4)`, the weights for
 n=4,6,8 are respectively4,2,20. The exact counter generally gives a
 much smaller finite bound than the earlier stars-and-bars estimate.
-For example the eight-site row bound is `80(b+1)` before the `L^2`
-cap. Actual coefficients can have substantially smaller ranks.
+For example the eight-site row bound is `80h_(n,b)` before the `L^2`
+cap. Each outer half has y-degree at most n/2; counting its coefficient
+convolutions gives the sharper h_(n,b), including near b=n.
+Actual coefficients can have substantially smaller ranks.
+
+### Fixed-width near-leading bands
+
+The half-power row exponent also holds a fixed number g of degrees
+below `a_*`, even if that top allowed coefficient vanishes. Write
+`n=4m+s`, `0<=s<4`. A pattern of degree `a_*-g` with z zeros has
+`m+g-2z` ones and `n-m-g+z` twos. The bound on the number of twos
+implies z<=g. The runs of twos have total slack
+`3-s+4g-7z<=4g+3` from their maximum length three.
+
+For each z there are at most `(n+1)^(4g+3)` possible run-length
+patterns and at most `(n+1)^g` ways to insert the zeros. There are
+at most m+g free pairs. Consequently
+
+```math
+W_{n,a_*-g}\le(g+1)(n+1)^{5g+3}v_{m+g}.         \tag{2a}
+```
+
+For any fixed g this gives `r<=L^(1/2+o(1))`, uniformly over b.
+This is a new bound for the lower degrees; it does not silently
+reuse the leading-degree estimate when the leading coefficient is zero.
 
 ## 2. Opposite-cut factors at every boundary degree
 
 In degree b, choose the b gates of the boundary seam that supply a
-physical e instead of Q. There are `binom(n,b)` choices. Each chosen
-physical e has operator-Schmidt rank four across the two blocks.
-After choosing its four product channels, every remaining physical
-gate outside the central seam acts within a block.
+physical e instead of Q. There are `binom(n,b)` choices. The
+[vacuum-interface factorization](fusion-projector-seams.md#1-vacuum-interfaces-instead-of-physical-bit-channels)
+compresses their joint interface to the 2b-strand vacuum space of
+dimension v_b. This replaces the looser physical4^b channel count.
 
 Diagonalize Q over F16. The fixed auxiliary input and output use one
 regular two-dimensional copy, giving two incoming and two outgoing
 eigenchannels. On the central seam the first-block gates precede the
 second-block gates; splitting there leaves four auxiliary states.
-Thus there are at most `2*2*4=16` auxiliary channels. In each channel
-the physical operator is a product of two block polynomials in x.
+Thus there are at most `2*2*4=16` auxiliary channels. After also
+fixing one of the v_b vacuum-interface paths, the physical operator
+is a product of two block polynomials in x.
 The degree-a coefficient is a convolution of at most a+1 products.
 Consequently
 
 ```math
 \boxed{\quad c(G_{a,b})
- \le16(a+1)\binom nb4^b.\quad}                  \tag{3}
+ \le16(a+1)\binom nbv_b.\quad}                  \tag{3}
 ```
 
 The factorization can be taken over F16, but the final tensor has F4
@@ -114,7 +139,8 @@ computes them using integers only.
 
 ## 3. An exactly certified middle window
 
-The following window has both ranks at most `L^(5/4+o(1))`:
+The following window has row rank at most `L^(5/4+o(1))` and column
+rank at most `L^(9/8+o(1))`:
 
 ```math
 \left\lceil\frac{12n}{7}\right\rceil\le a\le a_*,
@@ -152,41 +178,41 @@ proves `24000/256^(12/7)<(8/5)^(5/4)<phi^(5/4)`.
 Together with (2), this is the asserted row exponent in (4), with
 only polynomial prefactors.
 
-For the column bound, the binomial generating function at `t=1/28`
+For the column bound use `v_b<=(21/8)^b`. The binomial generating function at `t=8/147`
 gives
 
 ```math
-\binom nb4^b\le(8/7)^n28^b
- \le\bigl((8/7)28^{1/8}\bigr)^n.
+\binom nbv_b\le(8/7)^n(147/8)^b
+ \le\bigl((8/7)(147/8)^{1/8}\bigr)^n.
 ```
 
 The other exact integer inequality
 
 ```math
-28\,8^8 5^{10}<7^8 8^{10}
+147\,5^9<64\,7^8
 ```
 
-shows that this base is also less than `(8/5)^(5/4)`.
+shows that this base is less than `(8/5)^(9/8)`.
 Finally `L=Theta(phi^n)` at the least admissible path length, and
 `phi>8/5`. This proves (4) uniformly after any common binary restriction.
 The window has a central width growing as n/28 and a boundary width
 growing as n/8; it contains middle bidegrees, not just the extreme edge.
 
 For a shoulder example, combine the earlier highest-degree row bound
-`L^(1/2+o(1))` with (3) for `b<=n/6`. The choice `t=1/20` gives
-the base `(6/5)20^(1/6)`, and
+`L^(1/2+o(1))` with (3) for `b<=n/6`. The choice `t=8/105` gives
+the base `(6/5)(105/8)^(1/6)`, and
 
 ```math
-20\,6^6 5^3<8^9
+105\,6^6 5^2<8^9
 ```
 
-certifies the column exponent at most3/2. Thus this family has the
-rank bounds `(L^(1/2+o(1)),L^(3/2+o(1)))`.
+certifies the column exponent at most4/3. Thus this family has the
+rank bounds `(L^(1/2+o(1)),L^(4/3+o(1)))`.
 
 ## 4. Rank windows are pieces, not a complete crossing
 
 The middle window has polynomially many pieces and rank cost
-`sum sqrt(rc)<=L^(5/4+o(1))<L^sqrt(2)`. It must still participate
+`sum sqrt(rc)<=L^(19/16+o(1))<L^sqrt(2)`. It must still participate
 in an exact decomposition. A collection of pieces with a favorable
 upper budget alone supplies no spanning theorem or factoring algorithm.
 

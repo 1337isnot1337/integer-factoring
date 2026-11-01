@@ -166,16 +166,16 @@
         "rhs": 1598335257761788022467377781654101148543282249044465229239888363328190330275719997501596724768507889233831388734160190922469363547795602076820570112
       },
       "middle_column": {
-        "lhs": 4587520000000000,
-        "rhs": 6189907940737024
+        "lhs": 287109375,
+        "rhs": 368947264
       },
       "shoulder_column": {
-        "lhs": 116640000,
+        "lhs": 122472000,
         "rhs": 134217728
       }
     },
-    "middle_window": "a>=ceil(12*n/7), b<=floor(n/8): both ranks <= L^(5/4+o(1))",
-    "shoulder_window": "a=2*n-floor(n/4), b<=floor(n/6): ranks <= (L^(1/2+o(1)),L^(3/2+o(1)))"
+    "middle_window": "a>=ceil(12*n/7), b<=floor(n/8): ranks <= (L^(5/4+o(1)),L^(9/8+o(1)))",
+    "shoulder_window": "a=2*n-floor(n/4), b<=floor(n/6): ranks <= (L^(1/2+o(1)),L^(4/3+o(1)))"
   },
   "independent_reflection_and_rank_controls": 12,
   "complete_coefficient_rank_pairs_checked": 259,
@@ -923,7 +923,7 @@
       "central_degree": 55,
       "boundary_degree": 4,
       "row_upper_bound": 295516000,
-      "column_upper_bound": 8248360960,
+      "column_upper_bound": 418862080,
       "scope": "Exact uncapped bounds with polynomial prefactors; not measured tensor ranks."
     },
     {
@@ -931,7 +931,7 @@
       "central_degree": 110,
       "boundary_degree": 8,
       "row_upper_bound": 8573606829204336,
-      "column_upper_bound": 515169956237672448,
+      "column_upper_bound": 4795130513076480,
       "scope": "Exact uncapped bounds with polynomial prefactors; not measured tensor ranks."
     },
     {
@@ -939,7 +939,7 @@
       "central_degree": 220,
       "boundary_degree": 16,
       "row_upper_bound": 3679515209462519840396471195560,
-      "column_upper_bound": 1417600869833688105182397097574400,
+      "column_upper_bound": 444350788702752779162442441600,
       "scope": "Exact uncapped bounds with polynomial prefactors; not measured tensor ranks."
     },
     {
@@ -947,16 +947,17 @@
       "central_degree": 439,
       "boundary_degree": 32,
       "row_upper_bound": 84002248008674282854996054669917366612363095129965157784058944,
-      "column_upper_bound": 7563938762929691623996363429441436982735498060501921111736320000,
+      "column_upper_bound": 2688837864331007867762691993868834728199285736654019840000,
       "scope": "Exact uncapped bounds with polynomial prefactors; not measured tensor ranks."
     }
   ],
   "scope": "All-degree uniform rank envelopes and certified candidate windows; no favorable complete spanning identity, rank-sum optimum or stronger factoring score.",
   "source_sha256": {
-    "research/nilpotent-seam-rank-envelope.md": "b1ba68faa267b0e66b2a45f595bbfcb99b41e6fb8316c1b2d7864a8364cc6c1b",
+    "research/nilpotent-seam-rank-envelope.md": "8c520389edab4f0037508df075a8b119186356b89607d2c3d5dd7c5522849870",
     "research/nilpotent-seam-crossings.md": "f7446975fd8894ee252602461d8efb13b05a8b45c648a1331805a04fb6ec6844",
-    "tools/nilpotent_seam_rank_bounds.py": "414435c158adfc974746a22c2592054ad93052cc70d8bfa87f34133f98294040",
-    "tools/check_nilpotent_seam_rank_bounds.py": "b59843fc964cfa1f67465d9c3aabaa6d3cb104e6d27a2ef8852cb0d69bd97ebe",
+    "research/fusion-projector-seams.md": "42812e6f1bf1e3b8501f9fbf6e2bdfff8b355350ea9213158cf03c2dbb63c3e3",
+    "tools/nilpotent_seam_rank_bounds.py": "c64d9e75143e0ec61600d7d587d0e5e335b8759bb424070c08791edb7095d159",
+    "tools/check_nilpotent_seam_rank_bounds.py": "93694401e52f6e695983a163c94b4a34279d4ce102621dbb3fb861f89e6fec71",
     "tools/quantum_braid_nilpotent_seam.py": "d1b32af8841288e739d9b089f2439c03f34502d933f4c377f29dca10bc3363d6",
     "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
     "tools/check_quantum_braid_path_profiles.py": "edbc7f1ed7ff0ca35da5ff5603a08cfd528b549b7cf4e9d3ca828c7f447e0af7",
