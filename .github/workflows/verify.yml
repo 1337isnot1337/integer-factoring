@@ -11,7 +11,9 @@ permissions:
 
 concurrency:
   group: verify-${{ github.event_name }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+  # Let a main checkpoint finish even while research commits keep arriving.
+  # PR updates still replace obsolete checks; main keeps the latest pending run.
+  cancel-in-progress: ${{ github.event_name == 'pull_request' }}
 
 jobs:
   exact-certificates:
