@@ -1941,3 +1941,12 @@ verify-output-space-transfer:
 verify-small-word-fourier:
 	python3 tools/check_small_word_fourier_constructor.py
 
+
+.PHONY: verify-bell-walsh
+verify-bell-walsh:
+	python3 tools/check_bell_walsh_constructions.py evidence/bell-walsh-energy-search-d8x1.json evidence/bell-walsh-energy-search-d8x3.json evidence/bell-walsh-energy-search-d16x1.json evidence/bell-walsh-energy-search-d16x3.json
+
+.PHONY: verify-isotonic-retiming
+verify-isotonic-retiming:
+	python3 tools/check_isotonic_coefficient_retiming.py
+

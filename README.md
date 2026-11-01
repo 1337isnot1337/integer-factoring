@@ -111,6 +111,21 @@ Run `make verify-coherent-retractions` for focused exact controls and
 `make verify-coherent-q32-catalogue` to recompute the complete catalogue proof.
 <!-- coherent-compound-checkpoint:end -->
 
+The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
+allows arbitrary admissible energy tables and proves the exact full-radial
+obstruction `rho >= H_2(1/4)`. Reciprocal coefficient retiming strictly
+improves every fixed folded seed of dimension at least eight; the retained
+16-letter example has `rho_new < 64/75 < rho_old`.
+The [monotone retiming theorem](research/isotonic-coefficient-retiming.md)
+optimizes every constant-basis diagonal profile by exact adjacent pooling.
+A literal counterexample shows why arbitrary Smith profiles require a fresh
+physical calculation; all thirty retained one-pair perturbations of the
+eight-letter seed are strictly worse at every scale. These results do not
+improve the factoring exponent. Run
+`make verify-bell-walsh verify-isotonic-retiming`.
+
+
+
 <!-- cube-transfer-checkpoint:start -->
 The [three-axis cube transfer](research/cube-crossing-transfer.md) gives
 `alpha = log_3(1/rho)` from a uniform common eight-leg crossing family.

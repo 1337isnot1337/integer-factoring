@@ -13,8 +13,9 @@ G_{N,I,J}(X)=
 in time polynomial in the binary input length and the output degree
 `D=deg G`. Under exactly that proposed bound, deterministic factoring
 would be **polynomial-time**. The earlier `exp(O(sqrt(n)))` implication is
-valid but weaker than necessary: a bounded simulation removes the need
-to compute a large nonempty output.
+valid but weaker than necessary: a standard bounded simulation removes the
+need to compute a large nonempty output. The source discussion below cites
+the same fixed-output deadline principle in the sparse-gcd literature.
 
 This is a strengthened conditional implication. No such orbit-gcd
 algorithm is supplied, and the achieved factoring exponent remains `1/2`.
@@ -131,6 +132,15 @@ that one-sided bound remains open. The deadline argument supplies no way
 to obtain it from the existing modular packet circuits or unit jets.
 
 ## Scope and source
+
+The deadline principle itself is established prior work. Cao, Feng, Gao,
+Huang, and Qiu use the fixed gcd-one output to set a polynomial simulation
+deadline in Lemma 11 and Theorem 13 of
+[Sparse Polynomial GCD Cannot Be Computed in Fixed-output Polynomial Time](https://arxiv.org/html/2606.12144v2)
+(version 2, 16 October 2026, Section 2.5). The present application combines
+that principle with the restricted interval-root characterization and
+binary interval search. Their hardness results for general sparse
+polynomials do not imply hardness for this restricted interval family.
 
 This proof uses the exact root characterization and the degree-zero
 runtime requirement in [interval-orbit-gcd.md](interval-orbit-gcd.md).
