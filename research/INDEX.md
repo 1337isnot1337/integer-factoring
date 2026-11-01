@@ -30,7 +30,7 @@
 
 - [Certified 192-bit batched selective promotion](batch-smooth-fresh-192.md): complete saved-artifact replay, charged generated-ahead work, checked archive reconstruction, and the gated 208-bit follow-on.
 
-- [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact full-matrix controls, completed 484-point and 61,440-point finite families, and two registered large scans in a specified 18-dimensional subspace; no completed large-scan or stronger factoring claim.
+- [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact controls and a completed 17,179,869,184-position affine-zero census in a specified 18-dimensional subspace, with independently reconstructed coverage counts; the affine-one half is still incomplete and no stronger factoring bound follows.
 
 - [Two classical passes for all supplied orientations](circuit-box-orientation-batch.md): normalized root differences, sparse incidence signs, and essentially linear integer-data construction.
 
@@ -1468,3 +1468,5 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 ## Global orthogonal joint-energy rigidity
 
 [All-field two-parameter normal form](orthogonal-joint-global-rigidity.md) proves that constant orthogonal energy-preserving gauges retaining rank-one leading realignment fix that coefficient globally. The remaining tensor orbit has two parameters. Finite F4/F8/F16 profile controls do not establish an all-field dominance theorem.
+
+The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-field-classification-of-the-natural-profiles) now gives all five natural-profile strata over every characteristic-two field. Every stratum is prefix-dominated by the reference; this is not an arbitrary-weight or nonorthogonal exclusion.

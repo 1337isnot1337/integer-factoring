@@ -50,6 +50,10 @@ the zero prefix to 8,10,10, but its actual opposite profile is worse.
 The [ordered fused envelope now has an exact F4 interface](research/fused-f4-envelope.md),
 with complete finite controls and registered larger subspace scans.
 These registrations do not establish a stronger bound.
+The [affine-zero F4 half](research/fused-f4-envelope.md) has completed
+all 17,179,869,184 registered positions and excludes rank product below
+56 on its specified functional kernel. Every chunk's normalization counts
+have an independent exact replay; the other half remains incomplete.
 A [global natural-energy floor](research/natural-five-letter-pressure-floor.md)
 now excludes the balanced criterion for every scalar Laurent-polynomial
 kernel over any field with the reference five-letter paired-energy shape.
