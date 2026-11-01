@@ -2851,3 +2851,18 @@ verify-rectangular-pascal-coordinates:
 .PHONY: verify-jensen-core-floors
 verify-jensen-core-floors:
 	python3 tools/check_jensen_tail_core_floor.py
+
+.PHONY: verify-coherent-inverse-f4 verify-coherent-gram-f4
+verify-coherent-inverse-f4:
+	python3 tools/check_coherent_inverse_systems_f4.py
+
+verify-coherent-gram-f4:
+	python3 tools/check_coherent_gram_f4.py
+
+.PHONY: verify-coherent-divided-powers
+verify-coherent-divided-powers:
+	python3 tools/check_coherent_divided_powers.py
+
+.PHONY: verify-coherent-divided-probes
+verify-coherent-divided-probes:
+	python3 tools/check_coherent_divided_probes.py

@@ -306,6 +306,27 @@ positive small-scale entropy deficit, so its determinant gain alone does not
 prove a better exponent. [Independent cut gauges](research/coherent-asymmetric-letter-gauges.md)
 are also implemented with both physical costs charged; six exact literal profiles
 validate them, while the retained 317-evaluation q32 search found no improvement.
+
+[F4 derivative inverse systems and bilinear dual codes](research/coherent-inverse-f4-pairings.md)
+allow field-valued relations at every occupied height and an independently
+chosen dual physical space. A nondegenerate self-pairing gives equal complete
+profiles at the two cuts. An explicit quartic family has a proved Hilbert-function
+jump on `ab=1`; all sixteen F4 members and four Gram-paired probes retain
+complete profiles. The numerical fits give no improvement in this finite
+family. Run `make verify-coherent-inverse-f4 verify-coherent-gram-f4` for the
+exact small controls and symbolic catalecticant calculation.
+The [complete default-suite receipt](evidence/coherent-inverse-f4-verification.json)
+pins the successful clean replay, including both new targets, to `47d6533`.
+For [growing divided-power codes](research/coherent-divided-power-families.md),
+a subset-incidence formula computes the entire physical type distribution
+without enumerating a basis, and a protected coordinate band fixes both
+low Smith segments. Full cut profiles and an improving pressure remain
+separate obligations. Run `make verify-coherent-divided-powers` for the
+exact graded, symplectic and unequal-alphabet controls.
+The [larger native probes](research/coherent-divided-power-families.md)
+retain nine complete paired codes, including a 66-letter numerical
+`rho` of about `0.7155596412`; all 48 specified rational asymmetric tests
+fail the strict threshold. These finite results give no score improvement.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
