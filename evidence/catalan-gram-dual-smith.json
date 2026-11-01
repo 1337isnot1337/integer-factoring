@@ -1,0 +1,205 @@
+{
+  "status": "pass",
+  "physical_loop_gram_entries_checked_over_F16": 226,
+  "unrestricted_q_path_basis_controls_over_F16": [
+    {
+      "length": 2,
+      "labels": 1,
+      "path_word_entries": 4,
+      "orthogonal_nonzero_norms": 1,
+      "regular_cup_coordinates": true
+    },
+    {
+      "length": 4,
+      "labels": 2,
+      "path_word_entries": 32,
+      "orthogonal_nonzero_norms": 2,
+      "regular_cup_coordinates": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "path_word_entries": 320,
+      "orthogonal_nonzero_norms": 5,
+      "regular_cup_coordinates": true
+    },
+    {
+      "length": 8,
+      "labels": 14,
+      "path_word_entries": 3584,
+      "orthogonal_nonzero_norms": 14,
+      "regular_cup_coordinates": true
+    }
+  ],
+  "truncated_toeplitz_profiles": [
+    {
+      "length": 2,
+      "dimension": 1,
+      "precision": 8,
+      "kernel_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gram_exponent_counts": {
+        "1": 1
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 4,
+      "dimension": 2,
+      "precision": 8,
+      "kernel_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gram_exponent_counts": {
+        "1": 2
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 6,
+      "dimension": 5,
+      "precision": 8,
+      "kernel_dimensions": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "gram_exponent_counts": {
+        "1": 4,
+        "3": 1
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 8,
+      "dimension": 14,
+      "precision": 8,
+      "kernel_dimensions": [
+        6,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "gram_exponent_counts": {
+        "1": 8,
+        "3": 6
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 10,
+      "dimension": 42,
+      "precision": 8,
+      "kernel_dimensions": [
+        26,
+        52,
+        52,
+        52,
+        52,
+        52,
+        52,
+        52
+      ],
+      "gram_exponent_counts": {
+        "1": 16,
+        "3": 26
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 12,
+      "dimension": 132,
+      "precision": 8,
+      "kernel_dimensions": [
+        100,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "gram_exponent_counts": {
+        "1": 32,
+        "3": 100
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 14,
+      "dimension": 429,
+      "precision": 8,
+      "kernel_dimensions": [
+        365,
+        730,
+        731,
+        732,
+        733,
+        734,
+        734,
+        734
+      ],
+      "gram_exponent_counts": {
+        "1": 64,
+        "3": 364,
+        "7": 1
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 16,
+      "dimension": 1430,
+      "precision": 8,
+      "kernel_dimensions": [
+        1302,
+        2604,
+        2618,
+        2632,
+        2646,
+        2660,
+        2660,
+        2660
+      ],
+      "gram_exponent_counts": {
+        "1": 128,
+        "3": 1288,
+        "7": 14
+      },
+      "unresolved_at_least": 0
+    }
+  ],
+  "scope": "Exact Smith valuations through 16 strands and unrestricted path controls through 8 strands; no favorable rank sum or factoring gain.",
+  "source_sha256": {
+    "research/catalan-gram-dual-smith.md": "3f4542980c6ed4e3c128e6312405ba6cd9cdd2c85f72cd3e1603bff6eee44fe6",
+    "tools/catalan_gram_smith.py": "301bc48a5cd43a19c852ce92a14867d3887b772208717dec67fe8ed2167c590f",
+    "tools/check_catalan_gram_smith.py": "6f828cdf458b2aed2c4b6de11cbf79d97736c0c82aa385f3f53a2720fafe0053",
+    "tools/catalan_cup_crossing.py": "b11d03f25f201700e02fb117bf2fec9d17cec4156ee7370dba1f11bccad7fe05",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/quantum_braid_spectral_fusion.py": "fbfb582940bbffce5ad943ad5645ff0344a95f7e1b19d81b19c8f57c3b513eb6"
+  }
+}
