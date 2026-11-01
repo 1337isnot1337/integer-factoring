@@ -164,6 +164,13 @@ that timing excludes the earlier profile construction. Every bound above
 remains larger than `1/sqrt(2)`. None establishes a post-half factoring
 exponent.
 
+An [exact type-rounding refinement](hot96-small-denominator-type.md)
+retains the same fine bound with positive common counts summing to
+`2^36=68,719,476,736`. Its smallest count is 2,813,121. A rational
+chi-square upper bound controls the relative-entropy loss and leaves
+a strictly positive certificate margin. This improves the explicit
+finite-type data; it does not change rho or the factoring score.
+
 ### Coherent boundary maps and full-letter gauges
 
 The coherent construction permits arbitrary paired maps K,J on one
@@ -260,6 +267,12 @@ explicit polynomial-size division-free circuit. A fresh replay checks
 144 joint sums against 9,504 points, including the characteristic-two
 boundary case, zero tags, and the correction when a pole meets the torus.
 This is a positive closure result for the stated matching domains.
+A [twenty-term phase counterexample](cauchy-bilinear-phase-counterexample.md)
+then checks the tempting unrestricted extension directly. Trace-coordinate
+encoding of the actual integer phase has degree `w*2^(w-1)`; width two
+already violates the required strict degree bound. Omitting its polynomial
+part changes the exact joint sum. This identifies a failed representation,
+not a lower bound on all possible arithmetic contractions.
 
 These results do not yet close the full multiplication network. Its
 jointly varying bilinear multiplication phase and the representation
@@ -333,6 +346,14 @@ The final default `make verify` replay passed all 50 main unit tests,
 all five crossing unit tests, and its exact baseline certificates.
 The documentation gate and direct Python module-dependency checks pass
 at the integrated checkpoints. No Lean gate was run for this session.
+The final archive, unequal-coherent replay, and fine pressure certificate
+also passed in a clean copy containing only tracked tools and evidence.
+That run reconstructed all 111 entrywise and 168 finite-frame retained
+tensors, checked 182,016 associated endpoint entries, and replayed the
+separate 18 unequal tensors with 1,037,568 endpoint entries. The original
+untracked reports and historical absolute input paths were unavailable
+to this copy. The explicit `2^36` type, restricted two-elimination
+circuit, and actual-phase counterexample received fresh exact replays.
 
 Fresh main-worker replays also passed the full 64-letter profile and
 integer certificate, 94 independent complete determinant controls,

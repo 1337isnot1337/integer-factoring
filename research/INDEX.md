@@ -16,6 +16,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Explicit small-denominator 96-letter type](hot96-small-denominator-type.md): positive common counts of denominator `2^36` retain the exact `0.710005874881191` bound, using a fully rational entropy-loss certificate.
+- [Actual-phase Cauchy counterexample](cauchy-bilinear-phase-counterexample.md): twenty exact terms expose the polynomial part lost by inserting an unreduced integer Fourier phase; width two is the first degree violation in the stated encoding.
+
 - [Two eliminations for a Cauchy interaction](bilinear-cauchy-two-stage-closure.md): a bounded-degree subfield input and a matching norm-one torus admit a fixed polynomial-size circuit, with exact exceptional-point and zero-tag corrections; the integer multiplication phase remains open.
 
 - [Final entrywise, finite-frame, and hot-code archive](algorithm-final-search-checkpoint.md): complete target lists, 279 reconstructed retained tensors, mixed/adaptive winners, full hot-search budgets, and the large natural profiles are preserved with portable inputs.

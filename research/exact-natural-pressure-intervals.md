@@ -163,6 +163,9 @@ in that arithmetic timing.
 The rational parameters were proposed from a numerical search. Their
 acceptance and the stated bound depend only on the exact test above.
 No global minimum of the physical-code family is asserted.
+The [small-denominator type refinement](hot96-small-denominator-type.md)
+preserves this same strict bound with 96 explicit positive integer counts
+whose sum is `2^36`, instead of the much larger exact Gibbs denominator.
 
 ```sh
 python3 tools/certify_natural_pressure_interval.py \

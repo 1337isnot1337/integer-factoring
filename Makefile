@@ -891,4 +891,10 @@ verify-final-searches:
 
 verify-bilinear-cauchy:
 	python3 tools/check_bilinear_cauchy_closure.py --output /tmp/integer-factoring-bilinear-cauchy-closure.json
+	python3 tools/check_cauchy_bilinear_phase_counterexample.py --output /tmp/integer-factoring-cauchy-phase-counterexample.json
+
+.PHONY: verify-hot96-type
+
+verify-hot96-type:
+	python3 tools/certify_hot_rational_type_rounding.py --output /tmp/integer-factoring-hot96-small-type.json
 

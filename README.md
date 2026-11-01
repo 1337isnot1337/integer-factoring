@@ -227,6 +227,8 @@ using 9,216 channels and outward rational intervals. Separate
 [large-integer comparisons](research/hot96-rational-pressure.md) prove
 `rho < 49/69` and `rho < 27/38` for the same code. These remain above
 `1/sqrt(2)`, so the factoring score is unchanged.
+The fine bound also has an [explicit positive common type](research/hot96-small-denominator-type.md)
+with denominator `2^36`, certified by an exact entropy-loss estimate.
 An [explicit integrality cone](research/weighted-hot-compound-profiles.md)
 also permits complete full-letter weighted profiles through the same blocks.
 At a fixed energy boundary, [coherent paired compressions](research/coherent-hot-boundary-crossings.md)
@@ -277,6 +279,9 @@ and its matching norm-one torus. Its fixed division-free circuit keeps
 one factorized star and at most one point correction. The field-size,
 degree, and matching-domain conditions are charged explicitly; the
 integer multiplication phase remains outside this theorem.
+An [exact twenty-term counterexample](research/cauchy-bilinear-phase-counterexample.md)
+shows why inserting the unreduced integer phase into that formula fails:
+the encoded polynomial already reaches the forbidden degree at width two.
 
 For two fixed ternary bases with uniform paired types, an
 [exact minor certificate](research/ternary-uniform-gauge-majorization.md)
@@ -328,6 +333,7 @@ make verify-finite-crossing-certificates # Exact finite block to all-width ampli
 make verify-stable-hot-codes # Exact restrictions, natural duality, charge blocks, and weighted-cone controls
 make verify-hot64-certificate # Reconstruct all 4096 channels and the exact rho < 32/45 comparison
 make verify-hot96-pressure # Fast exact interval certificate on the frozen complete 9216-channel profile
+make verify-hot96-type # Rebuild explicit positive type counts of denominator 2^36
 make verify-hot96-profile # Reconstruct all q96 blocks and the separate integer certificate; about 25 minutes
 make verify-paired-affine-space # Saturate the exact 5175-dimensional paired-trace space
 make verify-bell-jets # Entrywise jets, Bell CRT, transversality, and ramified minors
