@@ -124,6 +124,41 @@ the cited two-axis theorem applies verbatim.  This proves (5).  The
 recursion schedule of the cited note with `d=2` gives
 `alpha=log_2(1/rho)`.  `square`
 
+For completeness, here is the width accounting behind (5). With
+`d=2`, `B=binom(g,2)^2`, and `V=g^4 lambda'`, let `S<=2 rho lambda' B`
+be the total charged row width. The oriented volume satisfies
+
+\[
+U\le 2S+2\binom g2 g\lambda'
+  \le 4\rho\lambda'B+g^2(g-1)\lambda',
+\tag{7}
+\]
+
+because `2 binom(g,2)=g(g-1)`. Hence
+
+\[
+\frac UV
+ \le \rho\left(1-\frac1g\right)^2
+     +\frac1g-\frac1{g^2}
+ \le \rho+\frac1g.
+\tag{8}
+\]
+
+For one plane pair, at most `binom(g,2)` cubes meet both planes, and
+there are `g` nongeneric edges. The separate cap gives the exact
+maximum child-edge width
+
+\[
+w_{uv}\le 2\lambda'\binom g2+g\lambda'
+      =g^2\lambda'=\frac V{g^2}.
+\tag{9}
+\]
+
+The equitable grouping lemma of the cited two-axis transfer uses only
+(8), (9), and `V`; it partitions the `g` planes into `K` groups and
+gives `K^2L<=(rho+zeta+O(1/g)+O(log(lambda'+2)/lambda'))V+K^2`.
+This is the child-volume contraction used in the recursion.
+
 Two points about the hypothesis are important.
 
 - The lemma does **not** assert a per-piece bound
