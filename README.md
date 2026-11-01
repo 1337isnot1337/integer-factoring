@@ -569,6 +569,12 @@ calculation over F4. A period-five weighting gives a strict crossing
 of degree at most `n^2`, omits one residue class of coefficients and
 preserves both ranks of every retained piece. A favorable uniform rank
 bound remains open. Run `make verify-braid-path`.
+The optional `make verify-braid-path-profiles` compares all four- and
+six-site coefficients with the ambient constructor and computes the
+complete eight-site profile. The strict F4 span has dimension 51 at
+eight sites; its retained central coefficient has full rank in both
+cuts. This remains a structural checkpoint, without a favorable
+recombination. The optional batch replay needs NumPy.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

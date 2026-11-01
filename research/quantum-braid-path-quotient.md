@@ -189,5 +189,32 @@ the ambient coefficient algorithm, and independently computed phase
 coordinates. The all-length comparison follows from the ideal and
 fusion-resolution argument above, rather than from extending a finite
 numerical match. Favorable two-cut rank growth is not established.
+
+The optional NumPy replay `make verify-braid-path-profiles` gives the
+[complete finite profiles](../evidence/quantum-braid-path-profiles.json):
+
+| Sites | Labels | Intermediate paths | Unprojected span | Strict F4 span | Central rank pair |
+| --- | --- | --- | --- | --- | --- |
+| 4 | 2 | 13 | 5 | 5 | (4,4) |
+| 6 | 5 | 89 | 33 | 29 | (24,24) |
+| 8 | 13 | 610 | 62 | 51 | (169,169) |
+
+All 641 four- and six-site entries are compared coefficientwise with
+the ambient algorithm, for 24,038 coefficient controls. Complete
+endpoints and both coefficient-cut profiles are checked through
+eight sites, with packed F4 ranks controlled against a separate
+elementary field implementation.
+
+The central coefficient always has weight `b_(D/2)=1`. At eight sites
+it is full rank in both cuts, which is a bottleneck for that explicit
+finite coefficient list. The projector evaluation `A(alpha^-1)` has
+rank pair `(5,24)` at six sites and `(13,168)` at eight sites; the
+reciprocal evaluation exchanges the cuts. These are further finite
+structural observations, not uniform formulas or an optimized span
+decomposition. As with the earlier probes, all these alphabet sizes
+fall below the universal 95-label strict rank-sum exclusion. The
+remaining useful targets are effective recombinations and weighted
+constructions, with the actual asymptotic rank obligations intact.
+
 The complete factoring score stays `1/2`. These arguments and tools
 used substantial Codex AI assistance.
