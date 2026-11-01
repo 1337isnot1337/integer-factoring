@@ -1,5 +1,7 @@
 # Research index
 
+- [Uniform orthogonal graph codes from a cubic differential](tensor-cubic-graph-orthogonality.md): an exact Gram criterion at every cutoff, mixed-occupation native profiles, independent literal and Toeplitz checks, and completed F4/F16 51-letter controls; no frontier gain.
+
 - [Exact interval-weighted Kloosterman blocks](circuit-box-kloosterman-blocks.md): polynomial-bit summation of complete unit-frequency and ratio-progression blocks, a positive ratio-filtered factor count, and a fully charged outer inversion; no exponent gain.
 
 - [Larger power-prefix gains from sparse oriented residuals](sparse-oriented-power-prefixes.md): complete certified 64-bit and 80-bit searches, 1.94 and 3.79 times fewer relation queries, exact presentation maps and full original-traversal comparisons; baseline wall time is slower and no exponent improves.

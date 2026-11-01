@@ -2504,3 +2504,10 @@ verify-circuit-box-normalization: verify-circuit-box-kloosterman-blocks
 
 verify-circuit-box-kloosterman-blocks:
 	python3 tools/check_circuit_box_kloosterman_blocks.py --output /tmp/integer-factoring-kloosterman-blocks.json
+
+.PHONY: verify-tensor-cubic-graph
+
+verify-tensor-f16: verify-tensor-cubic-graph
+
+verify-tensor-cubic-graph:
+	python3 tools/check_tensor_hot_compounds_f16_mixed.py --output /tmp/integer-factoring-tensor-cubic-graph.json

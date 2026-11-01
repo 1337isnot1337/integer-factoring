@@ -2148,3 +2148,10 @@ both ordinary interval weights. At conductor `2^1024`, the retained control
 aggregates `2^1535` frequency pairs with at most eight roots and sixteen affine
 counts. In the no-wrap range it is a positive factor-count query for one ratio
 class. The full outer sum still costs `2^(m/2)*poly(m)`, so no score improves.
+
+A [cubic graph construction](research/tensor-cubic-graph-orthogonality.md)
+provides coherent orthogonal maps at every inherited-height cutoff precisely
+when `1` is outside the binary span of three field coefficients. Its explicit
+Gram determinant proof works in every characteristic-two field. Exact mixed
+constructors and two completed 51-letter profiles are retained. These pilots
+do not improve the pressure frontier or the factoring exponent.
