@@ -1932,3 +1932,6 @@ The [binary-linear Pascal extension](research/linear-pascal-matroid-energies.md)
 
 
 The [arbitrary-permutation Pascal theorem](research/permuted-pascal-zero-spectra.md) removes the linearity restriction: every exponent permutation now has a proved complete zero spectrum. A compatible cone supplies explicit infinity spectra for the same kernel. Both matching-pair energies are retained in the pressure calculation; an improving contraction certificate is still required.
+
+
+An [all-scale comparison](research/permuted-pascal-cone-dominance.md) shows that the explicit common-scale permutation cone is dominated by the original ordered Pascal kernel once both physical charges are included. This rules out that particular search region while leaving arbitrary physical gauges and alphabet restrictions open.
