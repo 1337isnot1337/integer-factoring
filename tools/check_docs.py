@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Find missing local Markdown link targets in the tracked repository docs.
 
-This check is offline. It ignores external URLs and fragments within files.
+This check is offline. It ignores external URLs, file fragments, code fences
+and display-math blocks delimited by \\[ ... \\] or double dollar signs.
 """
 
 import argparse
@@ -40,7 +41,14 @@ def link_targets(document: str, text: str, files: set[str]) -> list[str]:
     missing = []
     fence_char = None
     fence_width = 0
+    math_end = None
     for line_number, line in enumerate(text.splitlines(), 1):
+        if math_end is not None:
+            stripped = line.lstrip()
+            if not stripped.startswith(math_end):
+                continue
+            line = stripped[len(math_end):]
+            math_end = None
         marker = FENCE.match(line)
         if marker:
             fence = marker.group(1)
@@ -50,6 +58,9 @@ def link_targets(document: str, text: str, files: set[str]) -> list[str]:
                 fence_char = None
             continue
         if fence_char is not None:
+            continue
+        if line.strip() in (r"\[", "$$"):
+            math_end = r"\]" if line.strip() == r"\[" else "$$"
             continue
         urls = [m.group(1) for m in INLINE_LINK.finditer(line)]
         ref = REFERENCE_LINK.match(line)
