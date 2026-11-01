@@ -2438,6 +2438,10 @@ verify-windowed-smith-frames:
 verify-fused-f4-zero-census:
 	python3 tools/check_fused_f4_zero_census.py --output /tmp/fused-f4-zero-census-controls.json
 
+.PHONY: verify-windowed-f4-affine
+verify-windowed-f4-affine:
+	python3 tools/check_windowed_f4_affine.py --output /tmp/windowed-f4-affine.json
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py

@@ -1,5 +1,7 @@
 # Research index
 
+- [Complete affine equations in F4 reference frames](windowed-f4-affine-frames.md): coupled field equations, independent binary equivalence and nonbinary frame controls, an actual degree-42 five-letter pilot, and the completed four-frame binary predecessor.
+
 - [Exact finite windows for adaptive Smith frames](windowed-smith-frames.md): proven coefficient adequacy, complete affine-system equivalence controls, and a 7.66-second dense five-letter construction; the unfinished untruncated baseline and all mathematical limits are retained.
 
 - [Graded adjugate compatibility at independent physical heights](graded-adjugate-caps.md): two all-field upper-tail families exclude the previous negative five- and six-letter cell-cap profiles; a nearby certified negative integer profile satisfies the stronger constraints but has no realizing tensor.

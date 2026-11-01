@@ -64,8 +64,11 @@ at independent physical heights. They rule out the older negative
 cell-cap profile optimizers, while leaving a nearby exact negative
 integer target that still needs a realizing tensor.
 An [exact finite-window frame backend](research/windowed-smith-frames.md)
-now makes repeated affine-frame construction practical while preserving
-the original low-coefficient systems. It supplies no new contraction.
+makes repeated affine-frame construction practical while preserving the
+original low-coefficient systems. Its
+[coupled F4 extension](research/windowed-f4-affine-frames.md) has independently
+checked nonbinary references and complete affine equations. Neither supplies
+a new contraction.
 
 ## Arithmetic construction and space bounds
 
