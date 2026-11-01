@@ -1,8 +1,10 @@
 # Research index
 
-- [Exact equivalent-norm stencils](equivalent-norm-stencils.md): unreduced decoding, independent full presentation replay, and24 equal-budget comparisons with no observed advantage.
+- [Compact reconstructible power witnesses](compact-reconstructible-power-witnesses.md): unchanged query syntax, independent reconstruction, complete 64/80 comparisons, and earlier checkpoint release.
 
-- [Full-rank affine full-tail maps](tensor-full-tail-affine-search.md): endpoint-only maps, explicit Laurent clearings, literal controls, and all256 binary pairs at M=16.
+- [Exact equivalent-norm stencils](equivalent-norm-stencils.md): unreduced decoding, independent full presentation replay, and 24 equal-budget comparisons with no observed advantage.
+
+- [Full-rank affine full-tail maps](tensor-full-tail-affine-search.md): endpoint-only maps, explicit Laurent clearings, literal controls, and all 256 binary pairs at M=16.
 
 - [Literal Laurent frames and completed searches](tensor-weighted-laurent-frame-search.md): complete binary/F16 censuses, larger finished profiles, explicit clearing costs, and independent raw-tensor controls.
 

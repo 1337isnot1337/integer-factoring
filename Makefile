@@ -2679,3 +2679,7 @@ verify-tensor-affine-full-tail:
 .PHONY: verify-equivalent-norm-stencils
 verify-equivalent-norm-stencils:
 	python3 tools/check_equivalent_norm_stencils.py --output /tmp/equivalent-norm-stencils-replay.json
+
+.PHONY: verify-compact-power-witnesses
+verify-compact-power-witnesses:
+	python3 tools/check_compact_witness_oriented_power_search.py --replay evidence/compact-witness-oriented-power-search.json
