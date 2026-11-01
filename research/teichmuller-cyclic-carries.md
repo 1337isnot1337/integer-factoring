@@ -125,7 +125,10 @@ most `delta`. Let `sigma` be the lifted Frobenius. On Teichmuller inputs,
 N_f(U)=product_(r=0)^(d-1) sigma^r(f)(U_1^(2^r),...,U_v^(2^r))
 ```
 
-is the unramified norm of `f(U)`, lying in `Z/(2^h)`. Its parity is zero
+is the unramified norm of `f(U)`, lying in `Z/(2^h)`: the product is fixed
+by Frobenius, whose fixed ring is identified by the unique Teichmuller digit
+expansion. No division by the possibly even extension degree is used.
+Its parity is zero
 exactly when the residue polynomial vanishes. It is generally not itself
 a zero/one value in higher precision.
 
