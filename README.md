@@ -753,6 +753,12 @@ instead of `4^b` physical channels. A certified range has column rank
 The proposed mixed list still misses the five- and thirteen-label crossings.
 A uniform mixed spanning identity remains open. Run the NumPy replay
 `make verify-braid-fusion-seam`.
+The [invertible three-strand projector](research/invertible-fusion-graded-seams.md)
+extends this to graded central ranks `F_(k-1)` (rank one when k=0),
+where k strands are left free. Its uniform row-exponent range is0..2,
+with the same vacuum-interface column factors and an explicit integer
+cost filter. The unfiltered prefix family still misses the five- and
+thirteen-label crossings. Run `make verify-braid-graded-seam` (NumPy).
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

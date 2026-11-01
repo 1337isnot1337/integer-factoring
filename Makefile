@@ -344,6 +344,10 @@ verify-braid-rank-envelope:
 verify-braid-fusion-seam:
 	python3 tools/check_quantum_braid_fusion_seam.py
 
+.PHONY: verify-braid-graded-seam
+verify-braid-graded-seam:
+	python3 tools/check_quantum_braid_graded_seam.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
