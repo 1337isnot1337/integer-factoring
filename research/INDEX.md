@@ -1,5 +1,7 @@
 # Research index
 
+- [Executable classical coprime construction](classical-oriented-basis-engine.md): complete integer engine, sparse norm words, oriented ideal verification, and full 64/80/96 controls.
+
 - [Certified 192-bit batched selective promotion](batch-smooth-fresh-192.md): complete saved-artifact replay, charged generated-ahead work, checked archive reconstruction, and the gated 208-bit follow-on.
 
 - [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact full-matrix controls, completed 484-point and 61,440-point finite families, and two registered large scans in a specified 18-dimensional subspace; no completed large-scan or stronger factoring claim.

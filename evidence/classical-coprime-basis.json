@@ -1,0 +1,411 @@
+{
+  "scope": "Classical supplied-integer coprime construction and oriented ideal output; no new factoring exponent.",
+  "pairs": {
+    "two_integer_pairs": 10000,
+    "maximum_pair_depth": 6
+  },
+  "families": {
+    "integer_families": 246,
+    "complete_sparse_words": 3233,
+    "maximum_input_bits": 113,
+    "malformed_or_insufficient_inputs_rejected": 6
+  },
+  "power_ladders": [
+    {
+      "maximum_input_bits": 20,
+      "pair_depth": 6,
+      "gcd_calls": 147,
+      "gcd_operand_bits": 1362,
+      "norm_words": [
+        [
+          [
+            0,
+            8
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            1,
+            4
+          ]
+        ]
+      ]
+    },
+    {
+      "maximum_input_bits": 82,
+      "pair_depth": 8,
+      "gcd_calls": 267,
+      "gcd_operand_bits": 6703,
+      "norm_words": [
+        [
+          [
+            0,
+            32
+          ],
+          [
+            1,
+            31
+          ]
+        ],
+        [
+          [
+            0,
+            31
+          ],
+          [
+            1,
+            16
+          ]
+        ]
+      ]
+    },
+    {
+      "maximum_input_bits": 330,
+      "pair_depth": 10,
+      "gcd_calls": 427,
+      "gcd_operand_bits": 32634,
+      "norm_words": [
+        [
+          [
+            0,
+            128
+          ],
+          [
+            1,
+            127
+          ]
+        ],
+        [
+          [
+            0,
+            127
+          ],
+          [
+            1,
+            64
+          ]
+        ]
+      ]
+    },
+    {
+      "maximum_input_bits": 1322,
+      "pair_depth": 12,
+      "gcd_calls": 627,
+      "gcd_operand_bits": 154737,
+      "norm_words": [
+        [
+          [
+            0,
+            512
+          ],
+          [
+            1,
+            511
+          ]
+        ],
+        [
+          [
+            0,
+            511
+          ],
+          [
+            1,
+            256
+          ]
+        ]
+      ]
+    },
+    {
+      "maximum_input_bits": 5293,
+      "pair_depth": 14,
+      "gcd_calls": 867,
+      "gcd_operand_bits": 716682,
+      "norm_words": [
+        [
+          [
+            0,
+            2048
+          ],
+          [
+            1,
+            2047
+          ]
+        ],
+        [
+          [
+            0,
+            2047
+          ],
+          [
+            1,
+            1024
+          ]
+        ]
+      ]
+    },
+    {
+      "maximum_input_bits": 21175,
+      "pair_depth": 16,
+      "gcd_calls": 1147,
+      "gcd_operand_bits": 3257976,
+      "norm_words": [
+        [
+          [
+            0,
+            8192
+          ],
+          [
+            1,
+            8191
+          ]
+        ],
+        [
+          [
+            0,
+            8191
+          ],
+          [
+            1,
+            4096
+          ]
+        ]
+      ]
+    }
+  ],
+  "ideals": [
+    {
+      "discriminant": -4,
+      "keys": 39,
+      "atoms": 14,
+      "orientation_splits": 0,
+      "verification": {
+        "literal_ideal_identities": 39,
+        "pairwise_coprime_atoms": 14,
+        "sparse_usage_entries": 46,
+        "coprime_check": {
+          "norms": 14,
+          "product_bits": 77,
+          "batch_gcds": 14
+        }
+      }
+    },
+    {
+      "discriminant": -23,
+      "keys": 43,
+      "atoms": 10,
+      "orientation_splits": 0,
+      "verification": {
+        "literal_ideal_identities": 43,
+        "pairwise_coprime_atoms": 10,
+        "sparse_usage_entries": 58,
+        "coprime_check": {
+          "norms": 10,
+          "product_bits": 51,
+          "batch_gcds": 10
+        }
+      }
+    },
+    {
+      "discriminant": -84,
+      "keys": 47,
+      "atoms": 14,
+      "orientation_splits": 0,
+      "verification": {
+        "literal_ideal_identities": 47,
+        "pairwise_coprime_atoms": 14,
+        "sparse_usage_entries": 62,
+        "coprime_check": {
+          "norms": 14,
+          "product_bits": 74,
+          "batch_gcds": 14
+        }
+      }
+    },
+    {
+      "discriminant": -260,
+      "keys": 67,
+      "atoms": 16,
+      "orientation_splits": 0,
+      "verification": {
+        "literal_ideal_identities": 67,
+        "pairwise_coprime_atoms": 16,
+        "sparse_usage_entries": 94,
+        "coprime_check": {
+          "norms": 16,
+          "product_bits": 86,
+          "batch_gcds": 16
+        }
+      }
+    },
+    {
+      "discriminant": -575,
+      "keys": 43,
+      "atoms": 10,
+      "orientation_splits": 0,
+      "verification": {
+        "literal_ideal_identities": 43,
+        "pairwise_coprime_atoms": 10,
+        "sparse_usage_entries": 58,
+        "coprime_check": {
+          "norms": 10,
+          "product_bits": 51,
+          "batch_gcds": 10
+        }
+      }
+    }
+  ],
+  "fixtures": [
+    {
+      "bits": 64,
+      "input_path": "evidence/sparse-oriented-power-64.json.xz",
+      "input_sha256": "228bce17adc8f29243f4f3d393c67ced0932dbb724e0666767dfca16015cf97b",
+      "prefix": null,
+      "keys": 1806,
+      "atoms": 1854,
+      "same_retained_complete_basis": true,
+      "wall_seconds": 1.981143023003824,
+      "cpu_seconds": 1.981063554,
+      "norm_construction": {
+        "algorithm": "Bernstein 2005 natural coprime basis and sparse factoring",
+        "statistics": {
+          "gcd_calls": 930928,
+          "gcd_operand_bits": 110568054,
+          "multiplications": 1379640,
+          "multiplication_operand_bits": 227657916,
+          "exact_divisions": 518072,
+          "division_operand_bits": 47644327,
+          "maximum_operand_bits": 46533,
+          "pair_calls": 184830,
+          "maximum_pair_depth": 3,
+          "support_splits": 369185,
+          "comparison_splits": 73088,
+          "basis_extensions": 1060,
+          "basis_merges": 1804,
+          "coprime_merge_shortcuts": 1688,
+          "family_factor_calls": 3609,
+          "single_factor_calls": 3519,
+          "power_reductions": 5324
+        },
+        "distinct_norms": 1805
+      },
+      "orientation_gcd_calls": 2664,
+      "verification": {
+        "literal_ideal_identities": 1806,
+        "pairwise_coprime_atoms": 1854,
+        "sparse_usage_entries": 2664,
+        "coprime_check": {
+          "norms": 1854,
+          "product_bits": 39082,
+          "batch_gcds": 1854
+        }
+      }
+    },
+    {
+      "bits": 80,
+      "input_path": "evidence/sparse-oriented-power-80.json.xz",
+      "input_sha256": "f55879f2bcd0c8077c715fa1675e547e669cf9e8bfb25fe510efc5c310ebe2b7",
+      "prefix": null,
+      "keys": 9776,
+      "atoms": 10079,
+      "same_retained_complete_basis": true,
+      "wall_seconds": 27.27354058999481,
+      "cpu_seconds": 27.208620994999997,
+      "norm_construction": {
+        "algorithm": "Bernstein 2005 natural coprime basis and sparse factoring",
+        "statistics": {
+          "gcd_calls": 7761493,
+          "gcd_operand_bits": 1372679732,
+          "multiplications": 13780500,
+          "multiplication_operand_bits": 3473425595,
+          "exact_divisions": 4333958,
+          "division_operand_bits": 575614421,
+          "maximum_operand_bits": 325582,
+          "pair_calls": 1630309,
+          "maximum_pair_depth": 3,
+          "support_splits": 3077311,
+          "comparison_splits": 620732,
+          "basis_extensions": 4656,
+          "basis_merges": 9775,
+          "coprime_merge_shortcuts": 9367,
+          "family_factor_calls": 19551,
+          "single_factor_calls": 20314,
+          "power_reductions": 30090
+        },
+        "distinct_norms": 9776
+      },
+      "orientation_gcd_calls": 15045,
+      "verification": {
+        "literal_ideal_identities": 9776,
+        "pairwise_coprime_atoms": 10079,
+        "sparse_usage_entries": 15045,
+        "coprime_check": {
+          "norms": 10079,
+          "product_bits": 271098,
+          "batch_gcds": 10079
+        }
+      }
+    },
+    {
+      "bits": 96,
+      "input_path": "evidence/optimized-oriented-power-96.json.xz",
+      "input_sha256": "46ec21d6af643d6c9a9fddd759e854910efc9425ceba8e02c674f9e88b841a9b",
+      "prefix": null,
+      "keys": 19705,
+      "atoms": 20402,
+      "same_retained_complete_basis": true,
+      "wall_seconds": 105.21463394100283,
+      "cpu_seconds": 100.607929704,
+      "norm_construction": {
+        "algorithm": "Bernstein 2005 natural coprime basis and sparse factoring",
+        "statistics": {
+          "gcd_calls": 15893787,
+          "gcd_operand_bits": 3716108786,
+          "multiplications": 31445298,
+          "multiplication_operand_bits": 10181224801,
+          "exact_divisions": 8808521,
+          "division_operand_bits": 1556147141,
+          "maximum_operand_bits": 723130,
+          "pair_calls": 3331061,
+          "maximum_pair_depth": 3,
+          "support_splits": 6420297,
+          "comparison_splits": 1180200,
+          "basis_extensions": 5418,
+          "basis_merges": 19704,
+          "coprime_merge_shortcuts": 19298,
+          "family_factor_calls": 39409,
+          "single_factor_calls": 35463,
+          "power_reductions": 55168
+        },
+        "distinct_norms": 19705
+      },
+      "orientation_gcd_calls": 27584,
+      "verification": {
+        "literal_ideal_identities": 19705,
+        "pairwise_coprime_atoms": 20402,
+        "sparse_usage_entries": 27584,
+        "coprime_check": {
+          "norms": 20402,
+          "product_bits": 633029,
+          "batch_gcds": 20402
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "tools/classical_coprime_basis.py": "77526b169bf842af224f0d6300387708f6488b19159836ffa30a00049be60d1d",
+    "tools/check_classical_coprime_basis.py": "64e0c50a485c2541fecb0e49dc92d57cdc4b12dd01aa6e402bc4d33cca46e28a",
+    "tools/oriented_norm_basis_lift.py": "66118511f12e40e4a97dfc1bb0627fb551782971f7def3dc6e00414f22fcbc8a",
+    "tools/oriented_coprime_basis.py": "dba31b12ce2a93b7de9a79f69e4ffb2a8f0aec8218f3ab6082ad25817117571d",
+    "tools/binary_quadratic_forms.py": "cb8136aca2df9015c5433771ecce9f1855e179c7be316ae56deabdfc65870af8",
+    "tools/quadratic_ideal_hnf.py": "fd9c4217f1c751c1d2f20485a35ae36ae749c24980d90a6aae13fbc471634a74"
+  },
+  "seconds": 138.19282614700205
+}

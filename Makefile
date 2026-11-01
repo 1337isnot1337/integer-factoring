@@ -2649,3 +2649,7 @@ verify-circuit-box-ratio-small-roots:
 verify-batch-smooth-fresh-192:
 	python3 tools/assemble_factoring_certificate.py evidence/batch-smooth-fresh-192-selective.json.xz.manifest.json
 	python3 tools/check_fresh_prime_cofactor_control.py --bits 192 --replay evidence/batch-smooth-fresh-192-selective.json.xz
+
+.PHONY: verify-classical-oriented-basis
+verify-classical-oriented-basis:
+	python3 tools/check_classical_coprime_basis.py
