@@ -259,3 +259,10 @@ and its ordinary argument were developed with OpenAI assistant support;
 finite controls are not independent mathematical acceptance. The next
 research step must obtain or evaluate actual integer arithmetic within
 the charged budget, rather than enlarge this generic character panel.
+
+The later [selection-budget analysis](trace-selection-weil-budget.md)
+implements sparse formal Artin--Schreier reduction and valid nonlinear
+constraint elimination before a caller acquires these factors. Its rank
+is the binary rank of formal classes, not every finite-field function
+relation. The same note bounds the degree/rank parameter of thin
+pointwise selectors; it does not exclude weighted cancellation formulas.

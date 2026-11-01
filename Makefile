@@ -3174,3 +3174,7 @@ verify-fixed-cube-projection:
 .PHONY: verify-block-gaussian-floor
 verify-block-gaussian-floor:
 	python3 tools/check_block_gaussian_profile_floor.py
+
+.PHONY: verify-trace-selection-weil
+verify-trace-selection-weil:
+	python3 tools/check_trace_selection_weil.py

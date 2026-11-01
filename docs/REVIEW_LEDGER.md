@@ -1356,3 +1356,48 @@ predates this extension. Unequal or weighted types, rational poles,
 actual-rank/joint-support improvements, non-Gaussian tensors and other
 evaluators remain outside this proof. No new Lean or independent
 mathematical acceptance is claimed.
+
+## Formal AS preprocessing and a correct pointwise-selection budget
+
+The [ordinary proof](../research/trace-selection-weil-budget.md) replaces
+the withdrawn ANF argument with integer Fourier projection, canonical
+formal Artin--Schreier classes, a nonzero exceptional-fibre polynomial of
+degree at most D^2, and the classical univariate Weil bound. A nonempty
+trace-selected set of density at most 2^-h, h<=w/2, satisfies
+`r+log2(D(D+1))>=h`. The sparse
+[preprocessor](../tools/trace_artin_schreier.py) performs valid nonlinear
+row reduction, charging the rank of formal AS classes rather than claiming
+the full function rank on a small finite field. Constant trace bits stay
+outside the trace at even widths.
+
+For the specified native Witt factor query at w=4b+1, Hasse--Weil bounds
+on its fibres and the elementary divisor bound give h=3b/2-3. The AH
+sublinear degree/rank parameter criterion therefore fails for this
+pointwise selector, including further full-field auxiliaries with no
+false projected factor pairs. Separately, the full native fibre rectangles
+force degree greater than 2^(3b) for some nonzero ordinary field equation
+in an exact auxiliary-free system. These are acquisition/interface
+restrictions, not algorithmic runtime or factoring lower bounds.
+Weighted cancellation, other maps/domains and the admitted native
+exact-division circuit family remain outside the claims.
+
+The [receipt](../evidence/trace-selection-weil-controls.json) retains
+25 character cases, 5,808 literal reduction checks, 436 fibres, 12 systems,
+480 pointwise equivalences, eight integer Fourier identities, three invalid
+inputs and 4,672 subthreshold rectangle polynomials. The F4 exceptional
+polynomial that vanishes at every field point and the earlier false-ANF
+counterexample are mandatory controls. All comparisons avoid floating
+square roots. Focused checks and docs are the local gate; no new Lean or
+independent mathematical acceptance is claimed.
+
+## Exact full projection and adaptive-identity replay at dd7a36d
+
+Clean frozen source `dd7a36d3c11bcb7ff2001420ffbb8cae081bc075`, tree
+`316c724d4b4bca47bf0a77eef2d2214cbb2491ca`, passed the default suite plus
+normal-basis AND, fixed projection and both regrouping audits in 795.50
+seconds. The [receipt](../evidence/verify-projection-adaptive-dd7a36d.json)
+and [complete compressed log](../evidence/verify-projection-adaptive-dd7a36d.stdout.txt.xz)
+retain exact commands and clean pre/post status. This includes the actual
+22-piece, 72-of-256 adaptive-pairing counterexample, but predates the
+arbitrary-block Gaussian floor and AS/Weil selection analysis. Their
+focused checks remain separately scoped. The complete score is unchanged.

@@ -1,0 +1,34 @@
+{
+  "source_commit": "dd7a36d3c11bcb7ff2001420ffbb8cae081bc075",
+  "source_tree": "316c724d4b4bca47bf0a77eef2d2214cbb2491ca",
+  "started_utc": "2026-11-01T20:47:45.120882+00:00",
+  "commands": [
+    [
+      "make",
+      "verify",
+      "verify-normal-basis-and",
+      "verify-fixed-cube-projection",
+      "verify-two-axis-global-pairing",
+      "verify-two-axis-cube-regrouping"
+    ]
+  ],
+  "pre_status": "",
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify",
+        "verify-normal-basis-and",
+        "verify-fixed-cube-projection",
+        "verify-two-axis-global-pairing",
+        "verify-two-axis-cube-regrouping"
+      ],
+      "returncode": 0,
+      "seconds": 795.4957857057452
+    }
+  ],
+  "seconds": 795.4960456220433,
+  "finished_utc": "2026-11-01T21:01:00.745513+00:00",
+  "post_status": ""
+}

@@ -238,3 +238,10 @@ contributors' credit and Rabinoff's Witt-vector reference. The contribution
 here is the explicit surjective word interface, charged precision circuit
 and conditional complete factoring transfer. Substantial OpenAI assistant
 support was used. These are ordinary arguments and finite controls.
+
+The later [pointwise-selection analysis](trace-selection-weil-budget.md)
+bounds the degree/rank budget of an exact polynomial binary-trace
+selector for this native query. Its full fibre rectangles also obstruct
+direct low-degree ordinary equations without auxiliaries. These are
+restrictions on those acquisition interfaces, not a lower bound for
+the admitted exact-division circuit family or a structured contractor.
