@@ -1,5 +1,7 @@
 # Research index
 
+- [All-block global-orientation functional profile](cube-global-functional-profile.md): a product-support lemma and all 66 actual oriented functional values exclude every scalar reweighting of globally favorable common-orientation products of the fixed two-word base family, for every block count. Larger native alphabets/new recombinations remain outside scope.
+
 - [Scalar reweighting of favorable cube orientations](cube-favorable-reweighting.md): all 30 tied favorable generators of the actual single-block audit family lie in an eight-dimensional span excluding the endpoint, certified by two entries over every characteristic-two extension. Global coupled-block selection is outside this finite certificate.
 
 - [A fixed non-Gaussian four-fermion interaction panel](quartic-interaction-panel.md): six endpoint-preserving interactions couple two mode copies and violate the Gaussian Pfaffian relation. All 14 complete profiles and independent Toeplitz checks resolve; 1,536 paired-prefix inequalities prove all-scale domination by the baseline and a 3/4 floor for the tested common-type envelope. Other interactions/types/rank estimates are outside the conclusion.

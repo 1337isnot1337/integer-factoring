@@ -50,7 +50,7 @@ Run `make verify-cube-favorable-reweighting`. The explicit two-entry
 functional checks the negative conclusion directly, independently of
 the rank of the span. No pressure optimization or new Lean is involved.
 
-## Exact limitation: the functional does not tensorize under global selection
+## Exact limitation: global selection needs a stronger support premise
 
 The favorable condition above is per block. For products, the global
 width rule hides an axis maximizing the **sum** of block widths. That
@@ -64,3 +64,10 @@ be promoted to a coupled-block exclusion by tensoring the statement.
 Whether a global coupled span can restore the endpoint requires its own
 identity test and, if successful, a uniform construction and full rank
 and recursion accounting.
+
+The [companion functional-profile proof](cube-global-functional-profile.md)
+now resolves this global-product question for the **same fixed base
+family**, using a stronger premise checked on all 66 orientations. Its
+product functional differs from the naive two-entry repeated-assignment
+test discussed above. Larger native alphabets and new recombinations
+remain outside both results.

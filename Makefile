@@ -3194,3 +3194,7 @@ verify-quartic-weighted-run:
 .PHONY: verify-cube-favorable-reweighting
 verify-cube-favorable-reweighting:
 	python3 tools/check_cube_favorable_reweighting.py
+
+.PHONY: verify-cube-global-functional-profile
+verify-cube-global-functional-profile:
+	python3 tools/check_cube_global_functional_profile.py

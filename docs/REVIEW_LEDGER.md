@@ -1,5 +1,22 @@
 # Contribution review and disposition ledger
 
+## Global common-orientation products at every block count
+
+The [functional-profile proof](../research/cube-global-functional-profile.md)
+extends the fixed base-family audit to all block counts B. It checks the
+functional on every orientation, including unfavorable ones: for each
+hidden axis its support is a single extreme piece with rank16 on a
+retained axis and rank1 on the other two. The product functional can be
+nonzero only on its repeated extreme, where the hidden axis cannot
+maximize either additive widths or exact product cut ranks. This excludes
+all scalar combinations of globally favorable literal products of the
+fixed base family over every characteristic-two extension. It does not
+cover larger native alphabets or new recombinations before orientation.
+Independent two-block elimination checks all1452 cases:624 favorable
+generators have dimension110 and miss the endpoint. The all-B theorem
+uses the written support lemma, not extrapolation. Focused reconstruction
+and docs are the local gate; complete score1/2 remains unchanged.
+
 ## Scalar reweighting of the actual favorable cube pieces
 
 The [single-block diagnostic](../research/cube-favorable-reweighting.md)

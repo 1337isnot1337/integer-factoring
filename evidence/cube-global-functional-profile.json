@@ -1,0 +1,196 @@
+{
+  "endpoint_functional_value": 1,
+  "factoring_exponent_improved": false,
+  "functional_masks": [
+    240,
+    255
+  ],
+  "orientation_supports": [
+    {
+      "all_22_values": [
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": [
+        0,
+        24,
+        0
+      ],
+      "hidden_axis": 0,
+      "ranks": [
+        1,
+        16,
+        1
+      ],
+      "retained_axis": 1,
+      "unique_piece": 4,
+      "widths": [
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "all_22_values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": [
+        0,
+        0,
+        24
+      ],
+      "hidden_axis": 1,
+      "ranks": [
+        16,
+        1,
+        1
+      ],
+      "retained_axis": 0,
+      "unique_piece": 0,
+      "widths": [
+        4,
+        0,
+        0
+      ]
+    },
+    {
+      "all_22_values": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "exponent": [
+        0,
+        0,
+        24
+      ],
+      "hidden_axis": 2,
+      "ranks": [
+        16,
+        1,
+        1
+      ],
+      "retained_axis": 0,
+      "unique_piece": 0,
+      "widths": [
+        4,
+        0,
+        0
+      ]
+    }
+  ],
+  "scope": "An all-B ordinary proof uses these exact single-block support data. Fixed m5/weight1/two-word base family, common orientation, literal products, maximum hidden cut width/rank. Larger native alphabets and recombined products are not covered.",
+  "source_sha256": {
+    "evidence/cube-favorable-reweighting.json": "3bf232a8258fb2907e7384f2a81b61d9ec2ce710ae6af202e46418ce57842bdc",
+    "tools/check_cube_favorable_reweighting.py": "7a8e113b82e6e38b8cfa9c52b83b2a70e242888bcdf8686c4456ea8ec5a99eec",
+    "tools/check_cube_global_functional_profile.py": "62769af0a46ffc936bf77bc251483900eef9ffe22403bac6888e813fc6142cbe",
+    "tools/check_two_axis_global_pairing.py": "4dbbcb8ac8cacd440138724301e42f5bfa05d6af60b8c0273d5b2fbd7eb56114",
+    "tools/cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  },
+  "two_block": {
+    "all_orientations": 1452,
+    "endpoint_functional_value": 1,
+    "endpoint_in_favorable_span": false,
+    "favorable_generators": 624,
+    "favorable_span_dimension": 110,
+    "nonzero_functional_cases": [
+      {
+        "hidden_axis": 1,
+        "pieces": [
+          0,
+          0
+        ],
+        "widths": [
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "hidden_axis": 2,
+        "pieces": [
+          0,
+          0
+        ],
+        "widths": [
+          8,
+          0,
+          0
+        ]
+      },
+      {
+        "hidden_axis": 0,
+        "pieces": [
+          4,
+          4
+        ],
+        "widths": [
+          0,
+          8,
+          0
+        ]
+      }
+    ],
+    "unrestricted_endpoint_identities": 3
+  }
+}

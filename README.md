@@ -35,6 +35,8 @@ This is an asymptotic worst-case bound, not a practical factoring speedup.
 
 **Tensor and crossing route.** This work seeks a complete crossing below the required pressure threshold or a different valid transfer. The proposed two-axis cube regroupings fail their adaptive relabeling steps: the [per-cube audit](research/two-axis-cube-regrouping.md) and [global-pairing audit](research/two-axis-global-pairing-repair.md) retain exact counterexamples, including coefficients of the actual Gaussian family. The local Gaussian profiles remain valid; no stronger complete exponent follows. See [directions beyond the half-rate result](research/post-half-directions.md).
 
+For the fixed two-word audit family, an [all-block functional profile](research/cube-global-functional-profile.md) also excludes repairing globally favorable common-orientation products by scalar reweighting. Larger native alphabets and new recombinations remain outside this result.
+
 An [exact residue-system backend](research/precision-efficient-residue-indicators.md#5-implemented-compilers-and-the-system-count-bound) retains counts at growing 2-adic precision and handles collected unit inverses. A complete integer factoring query within that polynomial interface remains open.
 
 A [Witt-trace word interface](research/witt-trace-native-word-circuits.md) gives a complete two-input factor/prefix predicate using explicitly charged exact divisions. Fast contraction of that extended circuit family remains open; the polynomial carry backend does not supply it.
