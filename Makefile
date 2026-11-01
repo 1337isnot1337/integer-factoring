@@ -2227,6 +2227,10 @@ verify-inherited-second-jet:
 verify-q12-second-jet-target:
 	python3 tools/check_q12_second_jet_target.py
 
+.PHONY: verify-higher-jet-words
+verify-higher-jet-words:
+	python3 tools/check_higher_jet_word_caps.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

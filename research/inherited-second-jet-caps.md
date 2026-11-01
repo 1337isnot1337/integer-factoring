@@ -110,6 +110,10 @@ factoring algorithm is claimed. Substantial OpenAI assistant support was used.
 
 ## 5. A successor point survives the declared nonlinear checks
 
+**Later update:** the [higher-jet word constraints](higher-jet-word-caps.md)
+exclude this point. Its earlier relaxation and exact pressure replay remain
+valid within the declared constraint list below.
+
 A balanced cutoff-four search gives a different
 [exact twelve-letter point](../evidence/q12-second-jet-target.json).
 Its integer deficit is `4691`, its paired energies are all zero, its two
@@ -131,4 +135,6 @@ crossing or an optimality theorem. The discovery searched one balanced
 sector; it says nothing about the optimal asymmetric profile pair. In the
 bare integer convention a proposed realization would have degree `4691`,
 so feasibility and a useful construction remain substantial open tasks.
-Run `make verify-q12-second-jet-target`. The factoring score remains `1/2`.
+Run `make verify-q12-second-jet-target` for that historical relaxation and
+`make verify-higher-jet-words` for the subsequent rejection. The factoring
+score remains `1/2`.

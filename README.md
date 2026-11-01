@@ -2086,11 +2086,14 @@ constraints but fails these nonlinear checks. The implementation evaluates
 the two actual profiles; concavity prevents substituting their average.
 Run `make verify-inherited-second-jet`; twelve letters remain unresolved.
 
-A [successor twelve-letter point](research/inherited-second-jet-caps.md#5-a-successor-point-survives-the-declared-nonlinear-checks)
-passes every declared linear and inherited second-jet condition, with exact
-pressure below `-1/100`. It supplies a further rational construction target,
-without a realizing tensor or stronger factoring bound. Run
-`make verify-q12-second-jet-target`.
+A [twelve-letter relaxation point](research/inherited-second-jet-caps.md#5-a-successor-point-survives-the-declared-nonlinear-checks)
+passes the linear and inherited second-jet conditions, with exact pressure
+below `-1/100`. The later [higher-jet word theorem](research/higher-jet-word-caps.md)
+excludes it: ordered Smith-channel products force 258 violated cofactor
+caps, including `96841739<=96597072`. The all-field identity includes
+singular channels and extends the old second-jet bound. Run
+`make verify-q12-second-jet-target verify-higher-jet-words` for the historical
+relaxation and its rejection. No stronger factoring bound is established.
 
 The [latest full verification receipt](evidence/multichannel-full-verification.json)
 pins a successful clean default replay and eleven named joint/cofactor
