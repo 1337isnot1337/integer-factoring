@@ -26,14 +26,14 @@ This is an asymptotic worst-case bound, not a practical factoring speedup.
 | Claim | Status | Reference |
 | --- | --- | --- |
 | Saving exponent `1/2` | **Lean-verified; accepted by Big O Speedrun** | [Theorem](formal-appendix/HalfTheorem.lean) |
-| Saving exponent above `1/2` | **Not established** | [Research index](research/INDEX.md) |
+| Saving exponent above `1/2` | **Claimed by an ordinary proof; not independently reviewed** | [Two-axis regrouping](research/two-axis-cube-regrouping.md) |
 | Finite factorization experiments | Evidence for the stated inputs only; no uniform bound follows | [Latest checkpoint](research/beyond-half-research-checkpoint.md) |
 
 ## Current research frontier
 
 **Arithmetic route.** The project has deterministic prime-form generation, smooth-norm existence results, relation recovery, and determinant-free factor extraction. An adaptive selector factored a fresh 144-bit semiprime after 8,232,730 norm tests. The open step is a uniform bound on the number of candidate powers needed. Without that bound, the finite result does not improve the worst-case exponent. See the [research checkpoint](research/beyond-half-research-checkpoint.md) and [adaptive selector report](research/adaptive-power-window-selection.md).
 
-**Tensor and crossing route.** This work searches for a complete crossing with pressure `rho < 1/sqrt(2)`, the threshold needed to improve the current transfer. Some relaxed profiles meet the numerical target, but no admissible construction has established the required crossing. See [directions beyond the half-rate result](research/post-half-directions.md).
+**Tensor and crossing route.** A new ordinary-proof regrouping uses the existing three-axis Gaussian cube family at growth base two: pair its eight legs into four super-legs and charge, per cube, the smallest of its three cut factorizations. The certified `rho < 5/8` (and the sharper `0.6247...`) then give `alpha >= log_2(8/5) > 1/2`. The one-cut regrouping lemma, its checks, and the inherited inputs are in [the two-axis regrouping note](research/two-axis-cube-regrouping.md). This claim has not been independently reviewed. Earlier searches for a crossing at `rho < 1/sqrt(2)` are summarized in [directions beyond the half-rate result](research/post-half-directions.md).
 
 An [exact residue-system backend](research/precision-efficient-residue-indicators.md#5-implemented-compilers-and-the-system-count-bound) retains counts at growing 2-adic precision and handles collected unit inverses. A low-cost representation of the complete integer factoring query remains open.
 

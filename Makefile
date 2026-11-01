@@ -1736,6 +1736,10 @@ verify-cube-transfer:
 verify-cube-gaussian:
 	python3 tools/check_cube_homogeneous_gaussian.py --output /tmp/cube-homogeneous-gaussian.json
 
+.PHONY: verify-two-axis-cube-regrouping
+verify-two-axis-cube-regrouping:
+	PYTHONPATH=tools python3 tools/check_two_axis_cube_regrouping.py
+
 .PHONY: verify-pr31-constructions
 verify-pr31-constructions:
 	python3 tools/check_interior_jacobian_budget.py --output /tmp/integer-factoring-interior-jacobian-budget.json
