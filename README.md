@@ -2086,9 +2086,9 @@ constraints but fails these nonlinear checks. The implementation evaluates
 the two actual profiles; concavity prevents substituting their average.
 Run `make verify-inherited-second-jet`; twelve letters remain unresolved.
 
-The [latest full verification receipt](evidence/hereditary-full-verification.json)
-pins a successful clean default replay and all nine named joint/hereditary
-targets to exact `d31ffec`: 350 Python command blocks, 66 unit tests,
-five crossing tests and 984 Markdown files. It verifies the retained
-sources and certificates, without supplying a realizing tensor or
-independent mathematical review.
+The [latest full verification receipt](evidence/multichannel-full-verification.json)
+pins a successful clean default replay and eleven named joint/cofactor
+targets to exact `7e1c1d8`: 352 Python command blocks, 66 unit tests,
+five crossing tests and 985 Markdown files. The later entropy and inherited
+second-jet packages have separate focused passes, outside that full-source
+pin. These checks supply no realizing tensor or independent mathematical review.

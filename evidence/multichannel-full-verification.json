@@ -1,0 +1,30 @@
+{
+  "source": "7e1c1d8e6e38239eb4c71655fb619f54accb199a",
+  "command": [
+    "make",
+    "-j2",
+    "--output-sync=target",
+    "verify",
+    "verify-joint-grid-compressions",
+    "verify-joint-split-jet-guards",
+    "verify-joint-split-flags",
+    "verify-joint-moving-retractions",
+    "verify-joint-small-rational",
+    "verify-joint-six-to-five",
+    "verify-zero-energy-parity-core",
+    "verify-zero-energy-hereditary",
+    "verify-hereditary-adjugate",
+    "verify-hereditary-q6-rejection",
+    "verify-multichannel-cofactors"
+  ],
+  "exit_code": 0,
+  "seconds": 794.4609431490026,
+  "clean_after": true,
+  "log_sha256": "91c84812357fa0efe737760be2e64b0976e7b5202e97e5aab6ec2b186dba52a6",
+  "python_command_blocks": 352,
+  "unit_tests": 66,
+  "crossing_tests": 5,
+  "markdown_files": 985,
+  "scope": "Clean frozen defaults and eleven named joint/cofactor targets at exact7e1c1d8. Includes multichannel cofactor theorem controls and q6/q8 target rejections. Later entropy and inherited-second-jet packages have separate focused passes, outside this full-source pin.",
+  "factoring_exponent": "1/2; unchanged"
+}

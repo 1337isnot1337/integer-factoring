@@ -140,6 +140,9 @@ earlier proof. The new theorem is the integral capacity argument and its
 graded transfer, not a replacement for the earlier cofactor work.
 
 These are necessary scalar constraints. They do not exclude every energy
-shape or supply a useful tensor. The earlier clean full-suite receipt at
-`d31ffec` predates this package. No new Lean work or independent mathematical
-review is claimed. Substantial OpenAI assistant support was used.
+shape or supply a useful tensor. A [clean full replay](../evidence/multichannel-full-verification.json)
+at exact `7e1c1d8` passed defaults and eleven named joint/cofactor targets:
+352 Python command blocks, 66 unit tests, five crossing tests and 985
+Markdown files. Later entropy and inherited-second-jet work is outside that
+full-source pin. No new Lean work or independent mathematical review is
+claimed. Substantial OpenAI assistant support was used.
