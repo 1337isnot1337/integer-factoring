@@ -956,8 +956,12 @@ rules out improving zero orders `(8,9)` to `(8,10)` with any square-zero
 simple-pole energy gauge over any characteristic-two field. Exact affine
 and Frobenius elimination allows the leading rank-one coefficient to
 change. The same note constructs an eleven-parameter polynomial pencil
-coupling modifications at zero and one; its first finite profiles remain
-uncompetitive. Run `make verify-joint-zero-prefix`.
+coupling modifications at zero and one. The
+[complete pencil obstruction](research/joint-two-place-obstruction.md)
+proves typed `rho>=8/11` for every nonzero member over every
+characteristic-two field, at the inherited heights. Symbolic minor bounds
+and eleven exact integer pressure certificates cover every coefficient
+choice. Run `make verify-joint-zero-prefix verify-joint-two-place-obstruction`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

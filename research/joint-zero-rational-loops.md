@@ -7,8 +7,11 @@ uses exact affine and Frobenius consequences, with no finite-field
 exhaustion or solver assumption.
 
 A separate identity supplies an eleven-parameter strict polynomial family
-coupling the zero and one places. Its first finite controls remain
-uncompetitive. Neither result improves the factoring score `1/2`.
+coupling the zero and one places. The
+[complete pencil obstruction](joint-two-place-obstruction.md) subsequently
+proves typed `rho>=8/11` for every nonzero member over every
+characteristic-two field, at the inherited heights. Neither result
+improves the factoring score `1/2`.
 
 ## 1. Necessary equations for a simple pole
 
