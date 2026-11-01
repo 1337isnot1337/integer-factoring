@@ -2836,3 +2836,7 @@ verify-rectangular-pascal-coordinates:
 .PHONY: verify-jensen-core-floors
 verify-jensen-core-floors:
 	python3 tools/check_jensen_tail_core_floor.py
+
+.PHONY: verify-hecke-q5-determinants
+verify-hecke-q5-determinants:
+	python3 tools/check_hecke_q5_determinants.py
