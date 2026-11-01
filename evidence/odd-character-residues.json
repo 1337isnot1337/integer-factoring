@@ -1,0 +1,41 @@
+{
+  "scope": "Exact weight-one character conversion and supplied signed residues; no fast coefficient engine",
+  "finite_provider": "explicit divisor lists; character coefficients computed from them",
+  "character_conversion": {
+    "prime_levels": [
+      3,
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      23
+    ],
+    "conversion_cases": 1040,
+    "supplied_weight_one_coefficients": 5850,
+    "completely_zero_signed_residues": 184
+  },
+  "signed_recovery": {
+    "recoveries": 10,
+    "supplied_signed_residue_queries": 6092,
+    "completely_zero_residues": 24,
+    "large_control": [
+      {
+        "integer": 1000000016000000063,
+        "smallest_prime_factor": 1000000007,
+        "divisor_count": 4,
+        "signed_exponents": true,
+        "query_count": 2207,
+        "largest_cyclic_degree": 19463,
+        "retained_prime_count": 70,
+        "crt_modulus_bits": 505,
+        "residue_support_histogram": {
+          "0": 7,
+          "4": 2,
+          "8": 2198
+        }
+      }
+    ]
+  }
+}

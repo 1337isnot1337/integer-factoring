@@ -148,6 +148,11 @@ algorithm on unwritten tables must still pay their constructor, encoding
 and scalar-ring costs, as specified in the original notes. The present
 postprocessing does not establish such an algorithm.
 
+The [weight-one coefficient realization](weight-one-divisor-coefficients.md)
+constructs signed cyclic images from odd Dirichlet-character coefficients.
+Its signed interpolation uses exponent bit bound b+1 and sparsity cap 2D,
+with the same complete cost conclusion.
+
 ## 4. Executable controls and limits
 
 Run `make verify-sparse-divisor-residues`, or

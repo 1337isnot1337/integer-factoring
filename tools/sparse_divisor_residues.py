@@ -19,15 +19,17 @@ def support_polynomial(support, modulus):
     return polynomial
 
 
-def recover_from_global_residues(integer, characteristic, divisor_bound, oracle):
+def recover_from_global_residues(integer, characteristic, divisor_bound, oracle, signed=False):
     """Use A_q=sum_(d|N) Z^(d mod q) over F_p for small prime q.
 
     The callback returns the dense q-coefficient representative.  Its exact
     evaluation cost must be supplied separately.  D>=tau(N) is a promise.
+    With signed=True the target is sum(Z^d-Z^-d), with 2*tau(N) terms.
     """
     if integer < 2 or characteristic < 2 or divisor_bound < 2:
         raise ValueError("N>=2, a fixed prime characteristic and D>=tau(N) are required")
-    bits, bound = integer.bit_length(), divisor_bound
+    bits = integer.bit_length()+int(signed)
+    bound = divisor_bound*(2 if signed else 1)
     bad_bound = bits*bound*(bound-1)//2
     query_count = bad_bound+bound*(bits+1)+3
     primes = first_primes(query_count)
@@ -59,6 +61,8 @@ def recover_from_global_residues(integer, characteristic, divisor_bound, oracle)
     if rank < 2 or modulus <= reconstruction_threshold:
         raise ValueError("insufficient collision-free residue information")
     polynomial = [value if 2*value <= modulus else value-modulus for value in coefficients]+[1]
+    if signed and (rank % 2 or any(polynomial[1::2])):
+        raise ValueError("the signed support polynomial must have paired opposite roots")
     quotient = [0]*rank
     quotient[-1] = 1
     for index in range(rank-2, -1, -1):
@@ -68,7 +72,8 @@ def recover_from_global_residues(integer, characteristic, divisor_bound, oracle)
     factor = smallest_integer_root(quotient, integer)
     if integer % factor:
         raise ValueError("the recovered least node is not a divisor")
-    return {"smallest_prime_factor": factor, "divisor_count": rank,
+    return {"smallest_prime_factor": factor, "divisor_count": rank//2 if signed else rank,
+            "signed_exponents": signed,
             "divisor_polynomial": polynomial, "query_count": query_count,
             "largest_cyclic_degree": primes[-1], "retained_prime_count": retained,
             "crt_modulus_bits": modulus.bit_length(),

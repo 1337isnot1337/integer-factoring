@@ -1208,6 +1208,13 @@ score one. The refined transfer preserves every fixed positive saving
 exponent, removing the earlier cap from the transfer overhead. Its faster
 weighted evaluator remains unproved. Run `make verify-sparse-divisor-residues`.
 
+A [fixed weight-one alternative](research/weight-one-divisor-coefficients.md)
+uses odd-character Eisenstein coefficients at small prime levels. Exact
+Fourier inversion gives signed divisor residues, and the same sparse
+reconstruction recovers factors. The coefficient at the original composite
+index remains the unresolved engine; no improvement follows from prime-index
+formulas. Run `make verify-odd-character-residues` for the component checks.
+
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight

@@ -226,6 +226,11 @@ family. The [Cauchy pole-count lane](pole-cauchy-content.md) targets a
 different global counting primitive, determinant valuations on factor
 intervals. Both remain unresolved computational interfaces.
 
+The [fixed weight-one alternative](weight-one-divisor-coefficients.md)
+instead varies a small prime level. Odd-character Fourier inversion and
+signed sparse reconstruction give another exact coefficient contract,
+with its faster composite-index engine likewise unproved.
+
 ## 5. Exact implementation and evidence
 
 Run `make verify-divisor-moments`, or
