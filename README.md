@@ -567,9 +567,12 @@ The [polynomial dressing reduction](research/joint-energy-polynomial-dressings.m
 also handles arbitrary polynomial degrees in its four-dimensional
 nilpotent sector: retaining the original worst pole and rank-one leading
 coefficient reduces the seed to a constant conjugate, over every
-characteristic-two field. A unipotence argument also closes every
-rank-one scalar-polynomial energy dressing with those constraints.
-Run `make verify-joint-energy-dressings`.
+characteristic-two field. Exact quadratic elimination with Frobenius
+roots also closes every square-zero scalar-polynomial energy generator,
+of arbitrary rank: the pole bound forces it into that sector, and the
+leading rank condition makes the transformation trivial.
+Run `make verify-joint-energy-dressings` and
+`make verify-joint-energy-riccati`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

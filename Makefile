@@ -153,6 +153,10 @@ verify-joint-leading-tangent:
 verify-joint-energy-dressings:
 	python3 tools/check_joint_energy_dressings.py
 
+.PHONY: verify-joint-energy-riccati
+verify-joint-energy-riccati:
+	python3 tools/check_joint_energy_riccati.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
