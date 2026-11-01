@@ -62,6 +62,10 @@ def main():
                          'compressed_bytes': len(compressed), 'uncompressed_bytes': len(content)})
     endpoint_count, channel_count, basis_replays = 0, 0, []
     for key, winner in sorted(basis['winners'].items()):
+        competitors = [row for row in basis['records']
+                       if row['source_index'] == winner['source_index'] and row['mode'] == winner['mode']]
+        assert competitors and winner in competitors
+        assert winner['best']['value'] == min(row['best']['value'] for row in competitors)
         source = basis_sources['cases'][winner['source_index']]['seed']
         seed = change_basis(source, winner['basis_x'], winner['basis_y'])
         assert digest(seed['values']) == winner['tensor_sha256'] and seed['degree'] == winner['degree']
@@ -70,7 +74,10 @@ def main():
         parameters = np.asarray(winner['best']['parameters'])
         value, _, details = balanced(engine, parameters) if winner['mode'] == 'balanced' else engine.evaluate(parameters)
         assert abs(value - winner['best']['value']) < 2e-10
-        assert np.max(np.abs(np.asarray(details['scaled_orders']) - winner['best']['type_details']['scaled_orders'])) < 1e-9
+        saved_orders = np.asarray(winner['best']['type_details']['scaled_orders'])
+        restored_orders = np.asarray(details['scaled_orders'])
+        assert saved_orders.shape == restored_orders.shape == (2, 16)
+        assert np.max(np.abs(restored_orders - saved_orders)) < 1e-9
         channel_count += sum(map(len, details['scaled_orders']))
         basis_replays.append({'key': key, 'tensor_sha256': winner['tensor_sha256'], 'mode': winner['mode'],
                               'value': value, 'degree': seed['degree'], 'scaled_orders': details['scaled_orders']})

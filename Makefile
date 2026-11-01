@@ -881,3 +881,9 @@ verify-hot96-pressure:
 verify-hot96-profile:
 	OPENBLAS_NUM_THREADS=1 python3 tools/certify_hot_charge_pressure.py --size 96 --modes 12 --base 768 769 --support 98 69 --output /tmp/integer-factoring-hot96-full-replay.json
 
+.PHONY: verify-final-searches
+
+verify-final-searches:
+	OPENBLAS_NUM_THREADS=1 python3 tools/checkpoint_algorithm_final_searches.py --output /tmp/integer-factoring-final-searches.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_unequal_coherent_hot_codes.py --output /tmp/integer-factoring-unequal-coherent-codes.json
+

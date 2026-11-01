@@ -16,6 +16,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Final entrywise, finite-frame, and hot-code archive](algorithm-final-search-checkpoint.md): complete target lists, 279 reconstructed retained tensors, mixed/adaptive winners, full hot-search budgets, and the large natural profiles are preserved with portable inputs.
+- [Unequal coherent paired codes](unequal-coherent-hot-codes.md): 18 complete tensors, 108 numerical asymmetric costs, and 18 exact rational threshold tests retain all full-channel costs; none passes the strict post-half gate.
+
 - [Exact natural-pressure intervals](exact-natural-pressure-intervals.md): outward integer powers and rational logarithm tails certify `rho < 0.710005874881191` for the complete 96-letter code without computing enormous final powers.
 - [Complete 96-letter profile and integer certificates](hot96-rational-pressure.md): all 9,216 channels, a largest block of 2,738, and independent exact `49/69` and `27/38` scalar comparisons.
 

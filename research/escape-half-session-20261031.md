@@ -301,6 +301,8 @@ timeouts; neither is counted as a valid profile or a negative theorem.
 | [Weighted closed-place refinements](restricted-closed-place-search.md) | 1,978 partitions, 402 full refinements | Some weak seeds improve, but no competitive bound |
 | [Finite-fiber basis and iteration](finite-fiber-search-checkpoint.md) | Two thirty-minute budgets | Full winners and forty retained fiber witnesses replayed |
 | [Resumed physical families and targets](root-worker-search-checkpoint.md) | 6,722 saved candidate outcomes plus seven target/search records | No gain; explicit interruption and continuation lineage |
+| [Final target and hot-search archive](algorithm-final-search-checkpoint.md) | 5,760 entrywise targets, 702 finite-frame targets, 2,521 downset proposals, 3,041 weighted queries | 111 entrywise and 168 finite-frame witnesses reconstructed; bounded q24 searches retain their baselines |
+| [Unequal coherent boundary codes](unequal-coherent-hot-codes.md) | 18 complete tensors, 108 numerical searches, 18 exact rational tests | No strict asymmetric threshold pass |
 
 The interrupted physical workers retain immutable prefixes and new
 declared continuation streams. Lost in-memory random states are not

@@ -237,6 +237,11 @@ The [resumed physical-frame checkpoint](research/root-worker-search-checkpoint.m
 preserves all 6,722 saved candidate outcomes, the declared continuation
 budgets, complete family winners, and separate exact replays of the
 independent-charge, dense-target, and truncated-affine results.
+The [final search archive](research/algorithm-final-search-checkpoint.md)
+also preserves all entrywise and finite-frame target lists, mixed and
+adaptive refinements, and the completed hot-code searches. A separate
+[unequal coherent screen](research/unequal-coherent-hot-codes.md) charges
+both physical types and both complete profiles in the asymmetric test.
 
 The [multiplicative-monoid decomposition](research/multiplicative-monoid-blocks.md)
 retains the characteristic-two nilpotent coordinates and decomposes every
@@ -326,6 +331,7 @@ make verify-filtered-affine-search # Reconstruct complete sixteen-letter search 
 make verify-laurent-search # Replay the complete 65536-word Laurent screen
 make verify-coherent-boundary # Exact small-code certificate and complete finite boundary grid
 make verify-root-worker-searches # Replay saved physical winners, target systems, and continuations
+make verify-final-searches # Portable final archive and exact unequal-coherent winner replay
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
