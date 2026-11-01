@@ -1768,6 +1768,8 @@ The [physical full-tail reduction](research/coherent-physical-tail-low-band.md) 
 
 The [encoded-cube specialization control](research/cube-pair-encoding-specialization.md) gives a concrete tensor whose diagonal specializations appear to beat the cube target, while independent coordinates expose lower generic orders and reject it. Its exact integer pressure certificate and direct sixteen-mode Pfaffian replay provide a search control against this false positive; every nonzero diagonal specialization remains misleading even over larger fields.
 
+The [complete Gaussian coefficient fibers](research/cube-complete-coefficient-fibers.md) parameterize all 12,672 even homogeneous binary coefficients with the required endpoint. A loss of at most three in every fixed-frame row floor leaves only the seed, over every characteristic-two field. The complete 22-dimensional binary fiber at loss four has 4,194,304 checked points, all dominated by the seed at every scale. The accompanying engine returns exact generic polynomial row certificates for further weighted searches.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

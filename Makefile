@@ -2121,3 +2121,10 @@ verify-coherent-tail-injectivity:
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py
+
+
+.PHONY: verify-cube-coefficient-fibers verify-cube-coefficient-fibers-full
+verify-cube-coefficient-fibers:
+	python3 tools/check_cube_coefficient_fibers.py --output /tmp/integer-factoring-cube-coefficient-fibers.json
+verify-cube-coefficient-fibers-full:
+	python3 tools/check_cube_coefficient_fibers.py --recompute-census --census /tmp/integer-factoring-cube-coefficient-census.json --output /tmp/integer-factoring-cube-coefficient-fibers-full.json
