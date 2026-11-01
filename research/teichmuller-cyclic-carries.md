@@ -239,6 +239,12 @@ pins the seed, sources, quotient models and query digest. Regenerate with:
 python3 tools/check_teichmuller_cyclic_carries.py --generate
 ```
 
+The [clean full replay](../evidence/teichmuller-carry-full-verification.json)
+pins the default and 35 focused targets at exact `b9cd96f`, with 384 Python
+command blocks, 66 unit tests, five crossing tests and 1,129 Markdown files.
+It predates the collected-unit-inverse implementation and the companion
+precision-indicator addition; those later checks have separate scope.
+
 The negative control over precision six is substantive: the constant
 polynomial `3` has no residue roots, but the naive sum of `1-N_f` is
 `32 mod 64`. The acquired polynomial (5) returns zero as required.

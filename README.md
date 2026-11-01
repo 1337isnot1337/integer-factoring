@@ -2026,6 +2026,9 @@ low-cost representation of the complete integer query is still missing.
 Its [collected unit-inverse interface](research/precision-efficient-residue-indicators.md#acquired-collected-denominator-carry-interface)
 handles all denominator factors in at most `h+1` carry queries, with their
 total degree charged inside the state budget and zero assigned to nonunits.
+The [full carry replay receipt](evidence/teichmuller-carry-full-verification.json)
+pins the preceding polynomial/root-count backend at `b9cd96f`; the inverse
+extension is outside that older source pin.
 
 For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
 extends the existing permutation calculation to dependent and noncommuting

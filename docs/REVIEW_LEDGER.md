@@ -879,3 +879,27 @@ denominators and two packed binary predicates are included. Source hashes,
 expanded coefficients and explicit input budgets are retained. The
 earlier full `5c2e66d` replay predates this source. No Lean, independent
 mathematical review or stronger factoring score is claimed.
+
+## Precision carry replay and acquired collected inverses
+
+The [full receipt](../evidence/teichmuller-carry-full-verification.json)
+records an exit-zero default-plus-35-focused run at clean frozen
+`b9cd96f1f767cd71c8bad123fdb9e1d450bd5f92`, tree
+`d722e7d4e16cb00674ddbf919e92813f8f698237`, in 710.09 seconds.
+The log has 384 Python command blocks, 66 unit tests, five crossing tests
+and 1,129 Markdown files. This verifies code at the PR71 source, which
+was subsequently integrated at `3d20c83`; it predates the interpolation
+companion and acquired inverse extension.
+
+At `c6e7b68661e0d40e0872f5e64622d8eb1ebb169e`, the
+[collected-unit-inverse implementation](../research/precision-efficient-residue-indicators.md#acquired-collected-denominator-carry-interface)
+passed `make verify-teichmuller-inverses verify-precision-indicators`,
+with the direct-sum, conjugation, query-count and degree-budget controls
+recorded in its separate receipt. The existing companion supplies the
+collected identity and smaller inverse polynomial; this extension acquires
+their actual carry queries. Current main `d4c3fad` was integrated without
+conflict at `ed83f94`, and `make verify-docs` passed for 1,130 Markdown
+files. A new full run at clean frozen `ed83f94` is in progress; no full
+PASS is claimed for it here. These are author implementation checks and
+ordinary proofs, with no independent mathematical review, new Lean work,
+integer-word compiler or stronger factoring bound.
