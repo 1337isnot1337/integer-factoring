@@ -1,0 +1,61 @@
+{
+  "status": "pass",
+  "field": "F4; independent entry controls over F256",
+  "diagram_lengths_checked": 64,
+  "leading_tensor_entries_checked": 29202,
+  "independent_scalar_evaluations": 384,
+  "independent_complete_polynomial_entries": 6,
+  "profiles": [
+    {
+      "length": 4,
+      "labels": 2,
+      "degree": 24,
+      "coefficient_span_dimension": 16,
+      "leading_cut_ranks": [
+        2,
+        2
+      ],
+      "leading_nonzero_entries": 4,
+      "strict_endpoints": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "degree": 54,
+      "coefficient_span_dimension": 55,
+      "leading_cut_ranks": [
+        5,
+        5
+      ],
+      "leading_nonzero_entries": 20,
+      "strict_endpoints": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "degree": 96,
+      "coefficient_span_dimension": 97,
+      "leading_cut_ranks": [
+        13,
+        13
+      ],
+      "leading_nonzero_entries": 104,
+      "strict_endpoints": true
+    }
+  ],
+  "scope": "Uniform auxiliary construction and leading factorization; finite spans only; no favorable whole-family rank sum or factoring improvement.",
+  "source_sha256": {
+    "research/quantum-braid-matrix-auxiliary.md": "84db6c034a2323ffbbaa7d9ff973990b6480b4d131ffa01325a419e606760721",
+    "tools/check_quantum_braid_matrix_aux.py": "b83ccd0d851c7347a0d317d1351421faac04ab49670eca104b8c4505dfeeb55f",
+    "tools/quantum_braid_matrix_aux.py": "3dca905f7d717a74923ba399e1b9d9ae246cfa00a339c47845a703a2df5714c2",
+    "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9",
+    "tools/check_quantum_braid_path_profiles.py": "edbc7f1ed7ff0ca35da5ff5603a08cfd528b549b7cf4e9d3ca828c7f447e0af7",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/search_auxiliary_extension_span.py": "b819f76b73a6b15509af27de5784b1488c0affe077d4677064291c61ab7c574b"
+  }
+}

@@ -695,6 +695,13 @@ rank-one operator square-zero at every binary width. Polynomial
 conjugations preserve both endpoints; exact small examples cancel
 leading degrees without establishing a stronger pressure bound.
 Run the NumPy check `make verify-braid-reversal`.
+The [noncommuting matrix auxiliary](research/quantum-braid-matrix-auxiliary.md)
+preserves the strict F4 crossing and gives an explicit identity channel
+as its leading coefficient. Both cut ranks of this piece are exactly
+`L` at every length on a common alphabet containing the zigzag path.
+The whole polynomial has degree `3n^2/2`; its remaining coefficients
+still need a favorable decomposition. Complete small spans have
+dimensions16,55,97. Run the NumPy check `make verify-braid-matrix-aux`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
