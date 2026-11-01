@@ -56,7 +56,7 @@ def multiply(first, second):
 
 def certificate():
     _, operators = coefficient_matrices()
-    vectors = [v for _, basis in COMPONENTS for v in basis]
+    vectors = [list(v) for _, basis in COMPONENTS for v in basis]
     change = [list(row) for row in zip(*vectors)]
     identity = [[int(i == j) for j in range(9)] for i in range(9)]
     reduced, pivots = eliminate([a+b for a, b in zip(change, identity)])
