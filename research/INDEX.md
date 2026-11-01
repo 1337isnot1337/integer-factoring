@@ -1,5 +1,7 @@
 # Research index
 
+- [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact full-matrix controls, completed 484-point and 61,440-point finite families, and two registered large scans in a specified 18-dimensional subspace; no completed large-scan or stronger factoring claim.
+
 - [Completed larger F16 profiles](tensor-f16-capped-search.md#5-completed-larger-profiles-and-nearby-controls): full capped 108-label runs and nearby coordinate controls.
 - [Literal retraction pressure gate and F4 census](tensor-literal-low-cell-retractions.md#6-a-complete-pressure-gate-for-the-first-55-letter-family): an all-field 27/38 floor and exact low-cell split enumeration.
 

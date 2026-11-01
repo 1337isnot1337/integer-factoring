@@ -41,6 +41,9 @@ has completed all 4,194,304 registered cases with zero unresolved cases
 and 67 complete profile classes; its numerical fits give no stronger bound.
 A [constructive graded lattice](research/graded-zero-lattice.md) improves
 the zero prefix to 8,10,10, but its actual opposite profile is worse.
+The [ordered fused envelope now has an exact F4 interface](research/fused-f4-envelope.md),
+with complete finite controls and registered larger subspace scans.
+These registrations do not establish a stronger bound.
 
 ## Arithmetic construction and space bounds
 

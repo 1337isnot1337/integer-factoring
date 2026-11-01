@@ -2401,6 +2401,15 @@ verify-two-place-f4-census-complete:
 
 verify-frontier: verify-graded-zero-lattice
 
+.PHONY: verify-fused-f4-envelope verify-fused-f4-finite-controls
+verify-fused-f4-envelope:
+	$(CXX) -O3 -std=c++17 tools/search_fused_f4_envelope.cpp -o /tmp/integer-factoring-fused-f4-search-check
+	$(CXX) -O3 -std=c++17 tools/scan_fused_f4_subspace.cpp -o /tmp/integer-factoring-fused-f4-scan-check
+	python3 tools/check_fused_f4_envelope.py --binary /tmp/integer-factoring-fused-f4-search-check --scanner /tmp/integer-factoring-fused-f4-scan-check --output /tmp/fused-f4-envelope-controls.json
+
+verify-fused-f4-finite-controls:
+	python3 tools/check_fused_f4_finite_controls.py --output /tmp/fused-f4-finite-controls.json
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
