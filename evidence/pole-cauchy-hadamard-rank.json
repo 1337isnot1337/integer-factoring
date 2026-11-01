@@ -1,0 +1,1901 @@
+{
+  "arithmetic": "Exact Q[w]/(w^2+w+1), integer modular inverse controls",
+  "cases": [
+    {
+      "base_row_orders": [
+        5
+      ],
+      "columns": [
+        7
+      ],
+      "h": 5,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          14
+        ],
+        "k": 8,
+        "kernel_precision": 8,
+        "minimum_separation_rank": 0
+      },
+      "k": 6,
+      "matching_columns": [
+        0
+      ],
+      "minimum_trace_separation_rank": 0,
+      "n": 3,
+      "p": 1,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            5
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            10
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            15
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            25
+          ]
+        }
+      ],
+      "rows": [
+        3
+      ],
+      "trace_overlap_level": 4,
+      "trace_precision": 6
+    },
+    {
+      "base_row_orders": [
+        0
+      ],
+      "columns": [
+        5
+      ],
+      "h": 1,
+      "higher_padding": {
+        "factor_count": 1,
+        "hadamard_square_orders": [
+          0
+        ],
+        "k": 3,
+        "kernel_precision": 4,
+        "minimum_separation_rank": 1
+      },
+      "k": 3,
+      "matching_columns": [
+        0
+      ],
+      "minimum_trace_separation_rank": 1,
+      "n": 5,
+      "p": 2,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            0
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            0
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            0
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            0
+          ]
+        }
+      ],
+      "rows": [
+        1
+      ],
+      "trace_overlap_level": 2,
+      "trace_precision": 4
+    },
+    {
+      "base_row_orders": [
+        5
+      ],
+      "columns": [
+        7
+      ],
+      "h": 6,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          16
+        ],
+        "k": 12,
+        "kernel_precision": 14,
+        "minimum_separation_rank": 0
+      },
+      "k": 9,
+      "matching_columns": [
+        0
+      ],
+      "minimum_trace_separation_rank": 1,
+      "n": 55,
+      "p": 3,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            5
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            10
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            15
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            25
+          ]
+        }
+      ],
+      "rows": [
+        1
+      ],
+      "trace_overlap_level": 4,
+      "trace_precision": 11
+    },
+    {
+      "base_row_orders": [
+        0
+      ],
+      "columns": [
+        1
+      ],
+      "h": 1,
+      "higher_padding": {
+        "factor_count": 1,
+        "hadamard_square_orders": [
+          0
+        ],
+        "k": 2,
+        "kernel_precision": 2,
+        "minimum_separation_rank": 1
+      },
+      "k": 2,
+      "matching_columns": [
+        0
+      ],
+      "minimum_trace_separation_rank": 1,
+      "n": 3,
+      "p": 1,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            0
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            0
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            0
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            0
+          ]
+        }
+      ],
+      "rows": [
+        3
+      ],
+      "trace_overlap_level": 2,
+      "trace_precision": 2
+    },
+    {
+      "base_row_orders": [
+        8
+      ],
+      "columns": [
+        1
+      ],
+      "h": 8,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          26
+        ],
+        "k": 15,
+        "kernel_precision": 16,
+        "minimum_separation_rank": 0
+      },
+      "k": 10,
+      "matching_columns": [
+        0
+      ],
+      "minimum_trace_separation_rank": 0,
+      "n": 257,
+      "p": 2,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            8
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            16
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            24
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            40
+          ]
+        }
+      ],
+      "rows": [
+        5
+      ],
+      "trace_overlap_level": 5,
+      "trace_precision": 11
+    },
+    {
+      "base_row_orders": [
+        6,
+        6
+      ],
+      "columns": [
+        1,
+        15
+      ],
+      "h": 8,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          20,
+          20
+        ],
+        "k": 13,
+        "kernel_precision": 12,
+        "minimum_separation_rank": 0
+      },
+      "k": 9,
+      "matching_columns": [
+        1,
+        0
+      ],
+      "minimum_trace_separation_rank": 0,
+      "n": 23,
+      "p": 1,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            6,
+            6
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            12,
+            12
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            18,
+            18
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            30,
+            30
+          ]
+        }
+      ],
+      "rows": [
+        1,
+        15
+      ],
+      "trace_overlap_level": 6,
+      "trace_precision": 8
+    },
+    {
+      "base_row_orders": [
+        6,
+        0
+      ],
+      "columns": [
+        5,
+        15
+      ],
+      "h": 7,
+      "higher_padding": {
+        "factor_count": 1,
+        "hadamard_square_orders": [
+          0,
+          18
+        ],
+        "k": 12,
+        "kernel_precision": 12,
+        "minimum_separation_rank": 1
+      },
+      "k": 9,
+      "matching_columns": [
+        1,
+        0
+      ],
+      "minimum_trace_separation_rank": 1,
+      "n": 55,
+      "p": 2,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            0,
+            6
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            0,
+            12
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            0,
+            18
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            0,
+            30
+          ]
+        }
+      ],
+      "rows": [
+        1,
+        11
+      ],
+      "trace_overlap_level": 5,
+      "trace_precision": 9
+    },
+    {
+      "base_row_orders": [
+        9,
+        9
+      ],
+      "columns": [
+        9,
+        3
+      ],
+      "h": 8,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          26,
+          26
+        ],
+        "k": 15,
+        "kernel_precision": 16,
+        "minimum_separation_rank": 0
+      },
+      "k": 11,
+      "matching_columns": [
+        0,
+        1
+      ],
+      "minimum_trace_separation_rank": 0,
+      "n": 253,
+      "p": 3,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            9,
+            9
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            18,
+            18
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            27,
+            27
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            45,
+            45
+          ]
+        }
+      ],
+      "rows": [
+        9,
+        11
+      ],
+      "trace_overlap_level": 6,
+      "trace_precision": 12
+    },
+    {
+      "base_row_orders": [
+        5,
+        0
+      ],
+      "columns": [
+        1,
+        11
+      ],
+      "h": 7,
+      "higher_padding": {
+        "factor_count": 1,
+        "hadamard_square_orders": [
+          0,
+          16
+        ],
+        "k": 11,
+        "kernel_precision": 10,
+        "minimum_separation_rank": 1
+      },
+      "k": 8,
+      "matching_columns": [
+        1,
+        0
+      ],
+      "minimum_trace_separation_rank": 1,
+      "n": 11,
+      "p": 1,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            0,
+            5
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            0,
+            10
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            0,
+            15
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            0,
+            25
+          ]
+        }
+      ],
+      "rows": [
+        9,
+        11
+      ],
+      "trace_overlap_level": 5,
+      "trace_precision": 7
+    },
+    {
+      "base_row_orders": [
+        7,
+        8
+      ],
+      "columns": [
+        9,
+        11
+      ],
+      "h": 8,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          22,
+          24
+        ],
+        "k": 14,
+        "kernel_precision": 14,
+        "minimum_separation_rank": 0
+      },
+      "k": 10,
+      "matching_columns": [
+        0,
+        1
+      ],
+      "minimum_trace_separation_rank": 0,
+      "n": 17,
+      "p": 2,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            7,
+            8
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            14,
+            16
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            21,
+            24
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            35,
+            40
+          ]
+        }
+      ],
+      "rows": [
+        1,
+        15
+      ],
+      "trace_overlap_level": 6,
+      "trace_precision": 10
+    },
+    {
+      "base_row_orders": [
+        0,
+        8,
+        8,
+        6
+      ],
+      "columns": [
+        1,
+        11,
+        29,
+        31
+      ],
+      "h": 10,
+      "higher_padding": {
+        "factor_count": 1,
+        "hadamard_square_orders": [
+          0,
+          22,
+          26,
+          26
+        ],
+        "k": 16,
+        "kernel_precision": 14,
+        "minimum_separation_rank": 1
+      },
+      "k": 11,
+      "matching_columns": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "minimum_trace_separation_rank": 1,
+      "n": 99,
+      "p": 1,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            0,
+            6,
+            8,
+            8
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            0,
+            12,
+            16,
+            16
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            0,
+            18,
+            24,
+            24
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            0,
+            30,
+            40,
+            40
+          ]
+        }
+      ],
+      "rows": [
+        9,
+        27,
+        5,
+        31
+      ],
+      "trace_overlap_level": 7,
+      "trace_precision": 9
+    },
+    {
+      "base_row_orders": [
+        9,
+        0,
+        9,
+        9
+      ],
+      "columns": [
+        1,
+        27,
+        13,
+        7
+      ],
+      "h": 10,
+      "higher_padding": {
+        "factor_count": 1,
+        "hadamard_square_orders": [
+          0,
+          28,
+          28,
+          28
+        ],
+        "k": 17,
+        "kernel_precision": 16,
+        "minimum_separation_rank": 1
+      },
+      "k": 12,
+      "matching_columns": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "minimum_trace_separation_rank": 1,
+      "n": 39,
+      "p": 2,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            0,
+            9,
+            9,
+            9
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            0,
+            18,
+            18,
+            18
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            0,
+            27,
+            27,
+            27
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            0,
+            45,
+            45,
+            45
+          ]
+        }
+      ],
+      "rows": [
+        25,
+        3,
+        13,
+        15
+      ],
+      "trace_overlap_level": 7,
+      "trace_precision": 11
+    },
+    {
+      "base_row_orders": [
+        8,
+        9,
+        8,
+        9
+      ],
+      "columns": [
+        17,
+        19,
+        5,
+        7
+      ],
+      "h": 9,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          24,
+          24,
+          26,
+          26
+        ],
+        "k": 16,
+        "kernel_precision": 16,
+        "minimum_separation_rank": 0
+      },
+      "k": 12,
+      "matching_columns": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "minimum_trace_separation_rank": 0,
+      "n": 75,
+      "p": 3,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            8,
+            8,
+            9,
+            9
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            16,
+            16,
+            18,
+            18
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            24,
+            24,
+            27,
+            27
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            40,
+            40,
+            45,
+            45
+          ]
+        }
+      ],
+      "rows": [
+        25,
+        3,
+        13,
+        7
+      ],
+      "trace_overlap_level": 7,
+      "trace_precision": 12
+    },
+    {
+      "base_row_orders": [
+        7,
+        7,
+        5,
+        0
+      ],
+      "columns": [
+        17,
+        19,
+        29,
+        23
+      ],
+      "h": 9,
+      "higher_padding": {
+        "factor_count": 1,
+        "hadamard_square_orders": [
+          0,
+          18,
+          22,
+          22
+        ],
+        "k": 14,
+        "kernel_precision": 12,
+        "minimum_separation_rank": 1
+      },
+      "k": 10,
+      "matching_columns": [
+        3,
+        2,
+        1,
+        0
+      ],
+      "minimum_trace_separation_rank": 1,
+      "n": 391,
+      "p": 1,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            0,
+            5,
+            7,
+            7
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            0,
+            10,
+            14,
+            14
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            0,
+            15,
+            21,
+            21
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            0,
+            25,
+            35,
+            35
+          ]
+        }
+      ],
+      "rows": [
+        9,
+        27,
+        29,
+        23
+      ],
+      "trace_overlap_level": 7,
+      "trace_precision": 8
+    },
+    {
+      "base_row_orders": [
+        8,
+        9,
+        9,
+        8
+      ],
+      "columns": [
+        25,
+        3,
+        29,
+        23
+      ],
+      "h": 10,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          26,
+          26,
+          28,
+          28
+        ],
+        "k": 17,
+        "kernel_precision": 16,
+        "minimum_separation_rank": 0
+      },
+      "k": 12,
+      "matching_columns": [
+        1,
+        0,
+        3,
+        2
+      ],
+      "minimum_trace_separation_rank": 0,
+      "n": 35,
+      "p": 2,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            8,
+            8,
+            9,
+            9
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            16,
+            16,
+            18,
+            18
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            24,
+            24,
+            27,
+            27
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            40,
+            40,
+            45,
+            45
+          ]
+        }
+      ],
+      "rows": [
+        17,
+        19,
+        29,
+        15
+      ],
+      "trace_overlap_level": 7,
+      "trace_precision": 11
+    },
+    {
+      "base_row_orders": [
+        9,
+        8,
+        6,
+        8,
+        9,
+        9,
+        8,
+        7
+      ],
+      "columns": [
+        33,
+        19,
+        5,
+        7,
+        9,
+        43,
+        45,
+        63
+      ],
+      "h": 12,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          24,
+          26,
+          28,
+          28,
+          28,
+          30,
+          30,
+          30
+        ],
+        "k": 19,
+        "kernel_precision": 16,
+        "minimum_separation_rank": 0
+      },
+      "k": 13,
+      "matching_columns": [
+        3,
+        6,
+        5,
+        0,
+        7,
+        2,
+        1,
+        4
+      ],
+      "minimum_trace_separation_rank": 0,
+      "n": 87,
+      "p": 1,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            6,
+            7,
+            8,
+            8,
+            8,
+            9,
+            9,
+            9
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            12,
+            14,
+            16,
+            16,
+            16,
+            18,
+            18,
+            18
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            18,
+            21,
+            24,
+            24,
+            24,
+            27,
+            27,
+            27
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            30,
+            35,
+            40,
+            40,
+            40,
+            45,
+            45,
+            45
+          ]
+        }
+      ],
+      "rows": [
+        33,
+        51,
+        5,
+        23,
+        57,
+        59,
+        13,
+        31
+      ],
+      "trace_overlap_level": 9,
+      "trace_precision": 10
+    },
+    {
+      "base_row_orders": [
+        10,
+        0,
+        9,
+        0,
+        9,
+        9,
+        8,
+        10
+      ],
+      "columns": [
+        17,
+        19,
+        5,
+        55,
+        25,
+        27,
+        45,
+        15
+      ],
+      "h": 12,
+      "higher_padding": {
+        "factor_count": 2,
+        "hadamard_square_orders": [
+          0,
+          0,
+          28,
+          30,
+          30,
+          30,
+          32,
+          32
+        ],
+        "k": 20,
+        "kernel_precision": 18,
+        "minimum_separation_rank": 2
+      },
+      "k": 14,
+      "matching_columns": [
+        7,
+        2,
+        1,
+        4,
+        3,
+        6,
+        5,
+        0
+      ],
+      "minimum_trace_separation_rank": 2,
+      "n": 175,
+      "p": 2,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            0,
+            0,
+            8,
+            9,
+            9,
+            9,
+            10,
+            10
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            0,
+            0,
+            16,
+            18,
+            18,
+            18,
+            20,
+            20
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            0,
+            0,
+            24,
+            27,
+            27,
+            27,
+            30,
+            30
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            0,
+            0,
+            40,
+            45,
+            45,
+            45,
+            50,
+            50
+          ]
+        }
+      ],
+      "rows": [
+        49,
+        35,
+        21,
+        7,
+        41,
+        43,
+        61,
+        15
+      ],
+      "trace_overlap_level": 9,
+      "trace_precision": 12
+    },
+    {
+      "base_row_orders": [
+        8,
+        11,
+        9,
+        11,
+        11,
+        10,
+        9,
+        11
+      ],
+      "columns": [
+        1,
+        19,
+        21,
+        39,
+        57,
+        11,
+        29,
+        47
+      ],
+      "h": 12,
+      "higher_padding": {
+        "factor_count": 0,
+        "hadamard_square_orders": [
+          28,
+          30,
+          30,
+          32,
+          34,
+          34,
+          34,
+          34
+        ],
+        "k": 21,
+        "kernel_precision": 20,
+        "minimum_separation_rank": 0
+      },
+      "k": 15,
+      "matching_columns": [
+        5,
+        4,
+        7,
+        6,
+        1,
+        0,
+        3,
+        2
+      ],
+      "minimum_trace_separation_rank": 0,
+      "n": 155,
+      "p": 3,
+      "power_profiles": [
+        {
+          "entrywise_power": 1,
+          "smith_orders": [
+            8,
+            9,
+            9,
+            10,
+            11,
+            11,
+            11,
+            11
+          ]
+        },
+        {
+          "entrywise_power": 2,
+          "smith_orders": [
+            16,
+            18,
+            18,
+            20,
+            22,
+            22,
+            22,
+            22
+          ]
+        },
+        {
+          "entrywise_power": 3,
+          "smith_orders": [
+            24,
+            27,
+            27,
+            30,
+            33,
+            33,
+            33,
+            33
+          ]
+        },
+        {
+          "entrywise_power": 5,
+          "smith_orders": [
+            40,
+            45,
+            45,
+            50,
+            55,
+            55,
+            55,
+            55
+          ]
+        }
+      ],
+      "rows": [
+        49,
+        3,
+        21,
+        7,
+        9,
+        59,
+        45,
+        31
+      ],
+      "trace_overlap_level": 9,
+      "trace_precision": 14
+    }
+  ],
+  "explicit_exponential_families": [
+    {
+      "certified_nonfactor_rows": 7,
+      "dimension": 4096,
+      "input_bits": 26,
+      "literal_factor_count": 0,
+      "literal_overlap": 39,
+      "literal_overlap_enumerated": true,
+      "n": 33562625,
+      "overlap_level": 20,
+      "pointwise_witness_samples": 7,
+      "precision_controls": [
+        {
+          "inverse_scale": 14,
+          "k": 27,
+          "kernel_precision": 15,
+          "overlap_level": 20,
+          "p": 1
+        },
+        {
+          "inverse_scale": 21,
+          "k": 34,
+          "kernel_precision": 29,
+          "overlap_level": 20,
+          "p": 8
+        },
+        {
+          "inverse_scale": 26,
+          "k": 39,
+          "kernel_precision": 39,
+          "overlap_level": 20,
+          "p": 13
+        },
+        {
+          "inverse_scale": 56,
+          "k": 69,
+          "kernel_precision": 99,
+          "overlap_level": 20,
+          "p": 43
+        }
+      ],
+      "s": 12,
+      "witness_step_bits": 10,
+      "zero_factor_incidence_from_corners": false
+    },
+    {
+      "certified_nonfactor_rows": 15,
+      "dimension": 65536,
+      "input_bits": 34,
+      "literal_overlap_enumerated": false,
+      "n": 8590065665,
+      "overlap_level": 26,
+      "pointwise_witness_samples": 9,
+      "precision_controls": [
+        {
+          "inverse_scale": 18,
+          "k": 35,
+          "kernel_precision": 19,
+          "overlap_level": 26,
+          "p": 1
+        },
+        {
+          "inverse_scale": 25,
+          "k": 42,
+          "kernel_precision": 33,
+          "overlap_level": 26,
+          "p": 8
+        },
+        {
+          "inverse_scale": 34,
+          "k": 51,
+          "kernel_precision": 51,
+          "overlap_level": 26,
+          "p": 17
+        },
+        {
+          "inverse_scale": 72,
+          "k": 89,
+          "kernel_precision": 127,
+          "overlap_level": 26,
+          "p": 55
+        }
+      ],
+      "s": 16,
+      "witness_step_bits": 13,
+      "zero_factor_incidence_from_corners": false
+    },
+    {
+      "certified_nonfactor_rows": 255,
+      "dimension": 4294967296,
+      "input_bits": 66,
+      "literal_overlap_enumerated": false,
+      "n": 36893488156009037825,
+      "overlap_level": 50,
+      "pointwise_witness_samples": 17,
+      "precision_controls": [
+        {
+          "inverse_scale": 34,
+          "k": 67,
+          "kernel_precision": 35,
+          "overlap_level": 50,
+          "p": 1
+        },
+        {
+          "inverse_scale": 41,
+          "k": 74,
+          "kernel_precision": 49,
+          "overlap_level": 50,
+          "p": 8
+        },
+        {
+          "inverse_scale": 66,
+          "k": 99,
+          "kernel_precision": 99,
+          "overlap_level": 50,
+          "p": 33
+        },
+        {
+          "inverse_scale": 136,
+          "k": 169,
+          "kernel_precision": 239,
+          "overlap_level": 50,
+          "p": 103
+        }
+      ],
+      "s": 32,
+      "witness_step_bits": 25,
+      "zero_factor_incidence_from_corners": false
+    },
+    {
+      "certified_nonfactor_rows": 1048575,
+      "dimension": 1208925819614629174706176,
+      "input_bits": 162,
+      "literal_overlap_enumerated": false,
+      "n": 2923003274661805836407372083284205268570214498305,
+      "overlap_level": 122,
+      "pointwise_witness_samples": 41,
+      "precision_controls": [
+        {
+          "inverse_scale": 82,
+          "k": 163,
+          "kernel_precision": 83,
+          "overlap_level": 122,
+          "p": 1
+        },
+        {
+          "inverse_scale": 89,
+          "k": 170,
+          "kernel_precision": 97,
+          "overlap_level": 122,
+          "p": 8
+        },
+        {
+          "inverse_scale": 162,
+          "k": 243,
+          "kernel_precision": 243,
+          "overlap_level": 122,
+          "p": 81
+        },
+        {
+          "inverse_scale": 328,
+          "k": 409,
+          "kernel_precision": 575,
+          "overlap_level": 122,
+          "p": 247
+        }
+      ],
+      "s": 80,
+      "witness_step_bits": 61,
+      "zero_factor_incidence_from_corners": false
+    },
+    {
+      "certified_nonfactor_rows": 1125899906842623,
+      "dimension": 1606938044258990275541962092341162602522202993782792835301376,
+      "input_bits": 402,
+      "literal_overlap_enumerated": false,
+      "n": 5164499756173817179311838344006023748659411585658447025661321926957383762014233473183475388885480707277793909531165589505,
+      "overlap_level": 302,
+      "pointwise_witness_samples": 101,
+      "precision_controls": [
+        {
+          "inverse_scale": 202,
+          "k": 403,
+          "kernel_precision": 203,
+          "overlap_level": 302,
+          "p": 1
+        },
+        {
+          "inverse_scale": 209,
+          "k": 410,
+          "kernel_precision": 217,
+          "overlap_level": 302,
+          "p": 8
+        },
+        {
+          "inverse_scale": 402,
+          "k": 603,
+          "kernel_precision": 603,
+          "overlap_level": 302,
+          "p": 201
+        },
+        {
+          "inverse_scale": 808,
+          "k": 1009,
+          "kernel_precision": 1415,
+          "overlap_level": 302,
+          "p": 607
+        }
+      ],
+      "s": 200,
+      "witness_step_bits": 151,
+      "zero_factor_incidence_from_corners": false
+    },
+    {
+      "certified_nonfactor_rows": 1267650600228229401496703205375,
+      "dimension": 2582249878086908589655919172003011874329705792829223512830659356540647622016841194629645353280137831435903171972747493376,
+      "input_bits": 802,
+      "literal_overlap_enumerated": false,
+      "n": 13336028865759708548159703581442515594289516644631816320792515623528074475635264143042864401743108581485859821186866480896942103064412547340038550448667683840849726744686476142587475284904923293491612421531063910523657158946759266527822741505,
+      "overlap_level": 602,
+      "pointwise_witness_samples": 201,
+      "precision_controls": [
+        {
+          "inverse_scale": 402,
+          "k": 803,
+          "kernel_precision": 403,
+          "overlap_level": 602,
+          "p": 1
+        },
+        {
+          "inverse_scale": 409,
+          "k": 810,
+          "kernel_precision": 417,
+          "overlap_level": 602,
+          "p": 8
+        },
+        {
+          "inverse_scale": 802,
+          "k": 1203,
+          "kernel_precision": 1203,
+          "overlap_level": 602,
+          "p": 401
+        },
+        {
+          "inverse_scale": 1608,
+          "k": 2009,
+          "kernel_precision": 2815,
+          "overlap_level": 602,
+          "p": 1207
+        }
+      ],
+      "s": 400,
+      "witness_step_bits": 301,
+      "zero_factor_incidence_from_corners": false
+    },
+    {
+      "certified_nonfactor_rows": 3,
+      "dimension": 4096,
+      "input_bits": 29,
+      "literal_factor_count": 0,
+      "literal_overlap": 13,
+      "literal_overlap_enumerated": true,
+      "n": 285220865,
+      "overlap_level": 22,
+      "pointwise_witness_samples": 3,
+      "precision_controls": [
+        {
+          "inverse_scale": 17,
+          "k": 30,
+          "kernel_precision": 18,
+          "overlap_level": 22,
+          "p": 1
+        },
+        {
+          "inverse_scale": 24,
+          "k": 37,
+          "kernel_precision": 32,
+          "overlap_level": 22,
+          "p": 8
+        },
+        {
+          "inverse_scale": 29,
+          "k": 42,
+          "kernel_precision": 42,
+          "overlap_level": 22,
+          "p": 13
+        },
+        {
+          "inverse_scale": 59,
+          "k": 72,
+          "kernel_precision": 102,
+          "overlap_level": 22,
+          "p": 43
+        }
+      ],
+      "s": 12,
+      "witness_step_bits": 11,
+      "zero_factor_incidence_from_corners": true
+    },
+    {
+      "certified_nonfactor_rows": 7,
+      "dimension": 65536,
+      "input_bits": 37,
+      "literal_overlap_enumerated": false,
+      "n": 73014575105,
+      "overlap_level": 28,
+      "pointwise_witness_samples": 7,
+      "precision_controls": [
+        {
+          "inverse_scale": 21,
+          "k": 38,
+          "kernel_precision": 22,
+          "overlap_level": 28,
+          "p": 1
+        },
+        {
+          "inverse_scale": 28,
+          "k": 45,
+          "kernel_precision": 36,
+          "overlap_level": 28,
+          "p": 8
+        },
+        {
+          "inverse_scale": 37,
+          "k": 54,
+          "kernel_precision": 54,
+          "overlap_level": 28,
+          "p": 17
+        },
+        {
+          "inverse_scale": 75,
+          "k": 92,
+          "kernel_precision": 130,
+          "overlap_level": 28,
+          "p": 55
+        }
+      ],
+      "s": 16,
+      "witness_step_bits": 14,
+      "zero_factor_incidence_from_corners": true
+    },
+    {
+      "certified_nonfactor_rows": 127,
+      "dimension": 4294967296,
+      "input_bits": 69,
+      "literal_overlap_enumerated": false,
+      "n": 313594649261652312065,
+      "overlap_level": 52,
+      "pointwise_witness_samples": 15,
+      "precision_controls": [
+        {
+          "inverse_scale": 37,
+          "k": 70,
+          "kernel_precision": 38,
+          "overlap_level": 52,
+          "p": 1
+        },
+        {
+          "inverse_scale": 44,
+          "k": 77,
+          "kernel_precision": 52,
+          "overlap_level": 52,
+          "p": 8
+        },
+        {
+          "inverse_scale": 69,
+          "k": 102,
+          "kernel_precision": 102,
+          "overlap_level": 52,
+          "p": 33
+        },
+        {
+          "inverse_scale": 139,
+          "k": 172,
+          "kernel_precision": 242,
+          "overlap_level": 52,
+          "p": 103
+        }
+      ],
+      "s": 32,
+      "witness_step_bits": 26,
+      "zero_factor_incidence_from_corners": true
+    },
+    {
+      "certified_nonfactor_rows": 524287,
+      "dimension": 1208925819614629174706176,
+      "input_bits": 165,
+      "literal_overlap_enumerated": false,
+      "n": 24845527834625349609462644574028450563409202642945,
+      "overlap_level": 124,
+      "pointwise_witness_samples": 39,
+      "precision_controls": [
+        {
+          "inverse_scale": 85,
+          "k": 166,
+          "kernel_precision": 86,
+          "overlap_level": 124,
+          "p": 1
+        },
+        {
+          "inverse_scale": 92,
+          "k": 173,
+          "kernel_precision": 100,
+          "overlap_level": 124,
+          "p": 8
+        },
+        {
+          "inverse_scale": 165,
+          "k": 246,
+          "kernel_precision": 246,
+          "overlap_level": 124,
+          "p": 81
+        },
+        {
+          "inverse_scale": 331,
+          "k": 412,
+          "kernel_precision": 578,
+          "overlap_level": 124,
+          "p": 247
+        }
+      ],
+      "s": 80,
+      "witness_step_bits": 62,
+      "zero_factor_incidence_from_corners": true
+    },
+    {
+      "certified_nonfactor_rows": 562949953421311,
+      "dimension": 1606938044258990275541962092341162602522202993782792835301376,
+      "input_bits": 405,
+      "literal_overlap_enumerated": false,
+      "n": 43898247927477446024150625924051201863604998478096799718121212275067098092266851392628155688087548178816341489122377990145,
+      "overlap_level": 304,
+      "pointwise_witness_samples": 99,
+      "precision_controls": [
+        {
+          "inverse_scale": 205,
+          "k": 406,
+          "kernel_precision": 206,
+          "overlap_level": 304,
+          "p": 1
+        },
+        {
+          "inverse_scale": 212,
+          "k": 413,
+          "kernel_precision": 220,
+          "overlap_level": 304,
+          "p": 8
+        },
+        {
+          "inverse_scale": 405,
+          "k": 606,
+          "kernel_precision": 606,
+          "overlap_level": 304,
+          "p": 201
+        },
+        {
+          "inverse_scale": 811,
+          "k": 1012,
+          "kernel_precision": 1418,
+          "overlap_level": 304,
+          "p": 607
+        }
+      ],
+      "s": 200,
+      "witness_step_bits": 152,
+      "zero_factor_incidence_from_corners": true
+    },
+    {
+      "certified_nonfactor_rows": 633825300114114700748351602687,
+      "dimension": 2582249878086908589655919172003011874329705792829223512830659356540647622016841194629645353280137831435903171972747493376,
+      "input_bits": 805,
+      "literal_overlap_enumerated": false,
+      "n": 113356245358957522659357480442261382551460891479370438726736382799988633042899745215864347414816422942629808480088365087585274127876203023545488891233630134532277090437396694519533649573582133664426087663569362940249018379508906185895280902145,
+      "overlap_level": 604,
+      "pointwise_witness_samples": 199,
+      "precision_controls": [
+        {
+          "inverse_scale": 405,
+          "k": 806,
+          "kernel_precision": 406,
+          "overlap_level": 604,
+          "p": 1
+        },
+        {
+          "inverse_scale": 412,
+          "k": 813,
+          "kernel_precision": 420,
+          "overlap_level": 604,
+          "p": 8
+        },
+        {
+          "inverse_scale": 805,
+          "k": 1206,
+          "kernel_precision": 1206,
+          "overlap_level": 604,
+          "p": 401
+        },
+        {
+          "inverse_scale": 1611,
+          "k": 2012,
+          "kernel_precision": 2818,
+          "overlap_level": 604,
+          "p": 1207
+        }
+      ],
+      "s": 400,
+      "witness_step_bits": 302,
+      "zero_factor_incidence_from_corners": true
+    }
+  ],
+  "higher_padding_entry_controls": 297,
+  "higher_padding_rank_controls": 18,
+  "higher_padding_trace_controls": 36,
+  "matrix_cases": 18,
+  "off_diagonal_ratio_controls": 952,
+  "optimal_approximation_controls": 278,
+  "scope": "Whole-kernel separated approximation lower bound. Large families use proved symmetric witnesses, not global enumeration. No factoring lower bound or improved score.",
+  "smith_profiles": 72,
+  "theorem": "Exact finite-precision separation ranks of entrywise Cauchy powers"
+}

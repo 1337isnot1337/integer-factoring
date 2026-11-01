@@ -1242,3 +1242,5 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Complete rectangular modular Bézout pairs](rectangular-bezout-modular.md): a polynomial-time compiler for both entire normalized polynomials on independently sized arithmetic domains, with exact tail bounds and all precision costs charged.
 
 - [Weighted Pascal flags](weighted-pascal-flag-crossings.md): arbitrary integer coordinate weights, independent zero and infinity energies, constant flag changes, and exact unrestricted-gauge Clifford profiles.
+
+- [Exact separation ranks of Cauchy powers](pole-cauchy-hadamard-rank.md): all positive Hadamard powers, precision-dependent overlap thresholds, an exponential standard-padding example, and a larger-padding rank-equals-factor-count corollary.

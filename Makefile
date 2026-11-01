@@ -2225,3 +2225,7 @@ verify-rectangular-bezout-modular:
 .PHONY: verify-weighted-pascal-flags
 verify-weighted-pascal-flags:
 	python3 tools/check_weighted_pascal_flags.py --output /tmp/weighted-pascal-flags.json
+
+.PHONY: verify-pole-cauchy-hadamard-rank
+verify-pole-cauchy-hadamard-rank:
+	python3 tools/check_pole_cauchy_hadamard_rank.py --output /tmp/pole-cauchy-hadamard-rank.json
