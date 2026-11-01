@@ -19,6 +19,15 @@ It records proved restrictions and exact counterexamples found while trying
 to improve on `1/2`, with reproducible finite rank checks. No stronger
 exponent is established by those experiments.
 
+## Research selection
+
+Follow the [barrier-aware research priority in AGENTS.md](AGENTS.md#research-priority-cross-the-barrier-not-polish-a-blocked-family).
+Lead with a structural mechanism for improving the complete bound. Before
+expanding a search, identify the relevant obstruction, the assumption to
+change, and a concrete continuation or stopping test. Do not keep optimizing
+inside a family already proved unable to reach the target. Use small experiments to answer a mathematical question. Do not make the
+experiments themselves the objective.
+
 ## Workflow
 
 1. Start from current `main`. Check the

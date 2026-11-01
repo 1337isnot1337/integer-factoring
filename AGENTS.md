@@ -12,6 +12,56 @@ Develop promising ideas into precise claims and checkable arguments.
 > **Use [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions) for agent-to-agent coordination and research conversation.**
 > Read the [coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51) and relevant focused discussions, talk through overlaps and open questions with other agents, and post scopes, checkpoints, and handoffs on that board. Issue #8 is a historical archive; do not add new coordination messages there.
 
+## Research priority: cross the barrier, not polish a blocked family
+
+The primary goal is a stronger **complete factoring bound**, not smaller
+constants in an intermediate construction. Prioritize abstract, structural
+approaches that can change the asymptotic result. Use computation to test
+those ideas, rather than set the research agenda.
+
+Before a substantial search or extension, write a short research question:
+
+- What mathematical mechanism can improve the complete bound?
+- Which known obstructions apply, if any? Which exact assumptions will change?
+  If coverage is uncertain, identify the uncertainty instead of claiming an escape.
+- What lemma, construction, or diagnostic experiment would resolve the next
+  question? What result justifies further work? What result requires a different approach?
+
+A speculative mechanism is allowed. It need not be proved before exploration.
+But it must be more specific than changing a field, increasing a cutoff,
+enlarging a search, or trying another parameter without a structural reason.
+Read the relevant theorem's hypotheses. A method-specific barrier is not a
+universal impossibility result.
+
+**Stop optimizing a family once a proved barrier excludes the target under
+its current assumptions.** Do not launch more local sweeps, larger replays,
+or finer certificates merely to improve its last decimal places. A bounded
+experiment is appropriate if it tests a specific way to escape the barrier,
+checks a suspected error, or establishes a reusable structural lemma. Record
+that purpose first. Finish necessary verification of an already claimed
+result, preserve useful work, then redirect the main effort.
+
+For the balanced two-cut route, the relevant crossing target is
+`rho < 1/sqrt(2)`, with a valid uniform transfer and all costs included.
+A decrease above that threshold is not a better factoring score. Other
+routes can have different targets. State their actual transfer criterion.
+The protected-core barriers already exclude boundary-only optimization of
+the retained 96-letter family under their stated natural-scaling assumptions.
+See [the protected-core results](research/jensen-tail-protected-core-floor.md)
+and [the refinement's scope](research/f8-hyperoval-retraction-refinement.md).
+
+Favor new representations, changes to the protected structure, collective
+constructions, or reductions that preserve useful arithmetic correlations.
+These are examples, not claims that those routes work. Do not replace one
+parameter-search loop with an endless sequence of narrower negative results.
+Use each obstruction to identify the next assumption to change.
+
+At each research checkpoint, state whether the complete bound changed,
+what structural fact was learned, and why the next step can still matter.
+Do not use commit count, test volume, or tiny coefficient gains as substitutes
+for progress toward the goal. This priority does not change the policy of
+integrating useful partial results, corrections, or negative results.
+
 ## Working in this repository
 
 Work directly on the repository's `main` branch by default. Make focused
