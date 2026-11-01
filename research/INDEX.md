@@ -1,6 +1,8 @@
 # Research index
 
-- [Cyclic Pauli crossings with unrestricted physical types](cyclic-pauli-crossing-diagnostic.md): a three-gate F4 qutrit cell has two nondegenerate leading rank-one cuts; coupled degree-two loops retain the structure and exact charge blocks. All 1,458 orders of a q27 fixture are independently replayed. Bare obstructions gate a registered typed diagnostic; no stronger score is claimed.
+- [Collective CSS Pauli compression](collective-css-pauli-compression.md): exact full contraction detects every one-site Pauli error but reproduces a Frobenius/relabelled two-cell source at parameter z^2. All 6,561 polynomial entries and 324 independent orders are checked; even unrestricted physical heights give no new support family.
+
+- [Cyclic Pauli crossings with unrestricted physical types](cyclic-pauli-crossing-diagnostic.md): a three-gate F4 qutrit cell has two nondegenerate leading rank-one cuts; coupled degree-two loops retain the structure and exact charge blocks. All 1,458 orders of a q27 fixture are independently replayed. Bare obstructions gate the completed nine-trial typed diagnostic, whose best support is 1.412832752, above one; this local loop search stops.
 
 - [Sparse binary constraints outside synchronized products](trace-constraint-contraction.md): binary row reduction and row-packet expansion give cost `t^r (S+r+2)^O(vw/t)` for constrained joint field sums. This escapes the global trace synchronization limitation for small rank `r`; a complete factoring representation is still missing.
 
@@ -14,7 +16,7 @@
 
 - [Fixed-type bundles for complete asymmetric pressure](asymmetric-profile-bundle-search.md): a raw-height adapter of the existing proximal method, 99 derivative and 168 held-out plane controls, and a registered three-tensor comparison. Root gradients are not used as convex planes; no bound improvement.
 
-- [Mixed occupation and height in six-to-five split graphs](mixed-graph-retractions.md): literal F4 compression with independent images on the matched pairs; 1,295 determinant identities, 1,875 direct contraction entries and 150 independent complete orders. A sparse screen and timed free-height walk are registered; no stronger bound is claimed.
+- [Mixed occupation and height in six-to-five split graphs](mixed-graph-retractions.md): literal F4 compression with independent images on the matched pairs; 1,295 determinant identities, 1,875 direct contraction entries and 150 independent complete orders. The completed two-hour walk retained 19,059 proposals and 86 rejections, with best support 1.009745055 above one; no stronger bound is claimed.
 
 - [Fixed physical heights exclude both supporting axes at every scale](polynomial-crossing-axis-obstruction.md): all-field strict Laurent-polynomial endpoint majorization and a positive saturated variance floor imply a scale-uniform axis neighborhood for each fixed gauge. Interior angles and moving heights remain open; 496 independent orders and every recorded principal prefix are checked.
 
