@@ -2667,6 +2667,14 @@ kernel. An independent 120-channel prefix still excludes its desired rate
 at every scale and common occupied frequency. This kernel stops; the
 result does not exclude every high-axis construction.
 
+A [routing-rank argument](research/generic-engine-routing-rank-nogo.md)
+limits matrices with the generic engine's stated Step-2 support on its
+schedule-pair array. Under that engine's accounting it retains the half-rate
+frontier; other arrays, substitution savings, measurement interfaces and
+factoring-specific algorithms are outside the conclusion. The contribution
+is integrated with ordinary proofs and finite controls, without independent
+mathematical acceptance.
+
 The [latest full verification receipt](evidence/higher-words-full-verification.json)
 pins a successful clean default replay and fifteen named joint/cofactor
 targets to exact `269efb8`: 356 Python command blocks, 66 unit tests,

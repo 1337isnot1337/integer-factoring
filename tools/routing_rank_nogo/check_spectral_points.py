@@ -45,3 +45,4 @@ for m in (1, 2):
     print(f"m={m} N={N}: free={free} marginals_maximally_mixed={marg_ok} cut1_rank={r1} cut2_rank={r2}")
     ok &= free and marg_ok and r1 == N * N and r2 == N * N
 print("ALL CHECKS PASS" if ok else "SOME CHECK FAILED")
+raise SystemExit(0 if ok else 1)

@@ -27,3 +27,4 @@ for r in (2, 3, 4, 5, 16):
         print(f"r={r} Q={Q}: checked R=1..{Q//4}")
 print(f"min log-margin = {worst:.2f}")
 print("ALL CHECKS PASS" if ok else "SOME CHECK FAILED")
+raise SystemExit(0 if ok else 1)
