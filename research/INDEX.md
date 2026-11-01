@@ -1,5 +1,7 @@
 # Research index
 
+- [A fixed non-Gaussian four-fermion interaction panel](quartic-interaction-panel.md): six endpoint-preserving interactions couple two mode copies and violate the Gaussian Pfaffian relation. All 14 complete profiles and independent Toeplitz checks resolve; 1,536 paired-prefix inequalities prove all-scale domination by the baseline and a 3/4 floor for the tested common-type envelope. Other interactions/types/rank estimates are outside the conclusion.
+
 - [Polynomial carries with opposite Frobenius directions](mixed-direction-frobenius-carries.md): forward and reverse carry transitions process the same cycle, retaining one relative column and the charged polynomial degree/state bound. The fixed F16 normal-basis AND panel admits degree four instead of the aligned minimum five; no asymptotic family, inverse/projector closure or complete arithmetic query is claimed.
 
 - [Weil bounds and the native-word pointwise-selection budget](trace-selection-weil-budget.md): formal AS reduction and exceptional-fibre control give r+log2(D(D+1))>=h for a nonempty trace-selected set of density<=2^-h, h<=w/2. Native Witt factor sets force a linear degree/rank parameter; their full fibre rectangles also obstruct low-degree ordinary equations without auxiliaries. Weighted cancellation and other representations/evaluators remain open.

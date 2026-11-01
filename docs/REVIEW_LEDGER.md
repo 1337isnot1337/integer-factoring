@@ -1423,3 +1423,25 @@ minimum five. This finite acquisition benefit is not an asymptotic family,
 a free sum-to-product conversion or a complete factoring query. Focused
 checks and docs are its local gate. No new Lean, score improvement or
 independent mathematical acceptance is claimed.
+
+## Fixed non-Gaussian four-fermion interaction panel
+
+The [registered diagnostic](../research/quartic-interaction-panel.md)
+changes the Gaussian tensor class with one homogeneous quartic Grassmann
+interaction coupling the two mode copies. Both specified supports and all
+three specified endpoint-vanishing coefficients are acquired as actual
+256-entry tensors. Their endpoint and occupied-bit homogeneity survive;
+vacuum/two-mode entries stay fixed but the quartic Pfaffian relation fails.
+
+The [receipt](../evidence/quartic-interaction-panel.json) records the
+baseline and six perturbations: 1,792 endpoint/homogeneity entries,
+14 complete 16-channel profiles and 131 independent Toeplitz hinge checks.
+All 1,536 paired-profile prefix gaps are nonnegative in the domination
+direction. The hinge generating identity proves every candidate's
+partition product is at least the baseline's at all 0<t<1. Reusing the
+exact partition certificate gives the tested common-type envelope floor
+rho>=3/4 for all physical frequencies and scales, without a numerical
+optimizer. The registered panel is stopped. This is not a theorem about
+all non-Gaussian tensors, other types or actual coefficient-rank estimates.
+Focused checks and docs are its local gate; no new Lean, score improvement
+or independent mathematical acceptance is claimed.

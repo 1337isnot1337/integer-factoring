@@ -3182,3 +3182,7 @@ verify-trace-selection-weil:
 .PHONY: verify-mixed-direction-carries
 verify-mixed-direction-carries:
 	python3 tools/check_mixed_direction_carries.py
+
+.PHONY: verify-quartic-interactions
+verify-quartic-interactions:
+	python3 tools/check_quartic_interaction_panel.py
