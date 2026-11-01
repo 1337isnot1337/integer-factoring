@@ -1,0 +1,113 @@
+{
+  "status": "passed",
+  "field": 2,
+  "cases": [
+    {
+      "name": "scalar pencil with auxiliary identity",
+      "degree": 1,
+      "toeplitz_checks": 72,
+      "telescoping_matrix_entries": 9600,
+      "entries_requiring_boundary_shift": 0,
+      "original_crossing_endpoint_entries": 4368,
+      "coefficient_rank_checks": 3888,
+      "rational_count_and_product_checks": 5832,
+      "best_sampled_bound": {
+        "B": "256/27",
+        "s": "3",
+        "infinity_cut": 0,
+        "infinity_side": 0,
+        "infinity_height": -2,
+        "zero_side": 0,
+        "zero_height": -2,
+        "degrees": [
+          1,
+          0,
+          0,
+          -1
+        ],
+        "orders": [
+          0,
+          1,
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "name": "ordered pairing",
+      "degree": 2,
+      "toeplitz_checks": 96,
+      "telescoping_matrix_entries": 9600,
+      "entries_requiring_boundary_shift": 625,
+      "original_crossing_endpoint_entries": 4368,
+      "coefficient_rank_checks": 6480,
+      "rational_count_and_product_checks": 9720,
+      "best_sampled_bound": {
+        "B": "16",
+        "s": "1",
+        "infinity_cut": 0,
+        "infinity_side": 0,
+        "infinity_height": -2,
+        "zero_side": 0,
+        "zero_height": -2,
+        "degrees": [
+          3,
+          3,
+          2,
+          2
+        ],
+        "orders": [
+          -2,
+          -2,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "name": "noncommuting nilpotent loop",
+      "degree": 3,
+      "toeplitz_checks": 96,
+      "telescoping_matrix_entries": 9600,
+      "entries_requiring_boundary_shift": 303,
+      "original_crossing_endpoint_entries": 4368,
+      "coefficient_rank_checks": 9072,
+      "rational_count_and_product_checks": 13608,
+      "best_sampled_bound": {
+        "B": "16",
+        "s": "1",
+        "infinity_cut": 0,
+        "infinity_side": 0,
+        "infinity_height": -2,
+        "zero_side": 0,
+        "zero_height": -2,
+        "degrees": [
+          5,
+          2,
+          0,
+          -1
+        ],
+        "orders": [
+          -1,
+          0,
+          0,
+          1
+        ]
+      }
+    }
+  ],
+  "negative_controls": {
+    "restored_negative_orders": [
+      -3,
+      -1
+    ],
+    "unrestored_orders_would_be_wrong": [
+      0,
+      2
+    ],
+    "nonpotential_cycle_changes_boundary_entry": true
+  },
+  "checker_sha256": "366c5b0c9348f1359ffd8747cf64e83ef938e0156930509f4b37ce61acc27862",
+  "base_smith_checker_sha256": "d939fc8e01e6e152041871358ce839999732d1d28306a6cf88832801fa7b46fb",
+  "scope": "Exact finite gauge, Smith normalization, and upper-bound checks; no improving crossing certificate."
+}

@@ -582,3 +582,7 @@ settles the rank bound.
 The construction, proof, and exact checks used substantial OpenAI
 assistant support. They retain the source attribution and repository
 license. No new Lean formalization is claimed or required here.
+
+## Parallel PR #30 derivation
+
+The [PR #30 integral-lattice derivation](integral-schur-crossing-pr30.md) is retained as a companion with its original normalization and implementation references. It does not replace the present prime-power block-composition result. Both derive integral forms of the pinned Appendix B operators; integration does not constitute independent mathematical acceptance.

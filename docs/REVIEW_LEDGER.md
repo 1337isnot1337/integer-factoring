@@ -295,3 +295,11 @@ unproved. Small experimental bases are not presented as satisfying the enormous
 uniform analytic cutoff. Partial failure is not a primality certificate, and
 passing finite controls is not a proof of a stronger worst-case exponent.
 <!-- beyond-half-review-20261101:end -->
+
+## 2026-11-01: PR #30 recovery and Smith integration
+
+Exact source head `28105165edb8e9a0427468dc833f3c09bc0a7fb7`, with original source attribution and AI disclosures retained. Restored the 96 missing files and retained its distinct integral Schur derivation verbatim as `research/integral-schur-crossing-pr30.md`, rather than overwriting the broader PR #23 derivation. The two new dependent notes point to that companion; the existing Schur note cross-links it. The 22-note checkpoint index identifies the source. The k6 status sentence now correctly qualifies its separate `1/30` endpoint as k6; current half-rate evidence wording is unchanged.
+
+Restored parity/recovery/constructive default targets and retained optional native, Schur-rank, exterior and density targets. The shared `verify-polynomial-native` target keeps its previous command and gains the source checker. Full `make verify` passed on the integration tree: 710 Markdown files, 63 unit tests, five crossing tests, the 21 new parity/recovery/constructive commands and all existing default gates. Ordinary `git diff --check` passed.
+
+Not newly run: the larger optional native, Schur-rank, exterior/density or Lean targets. This integration preserves ordinary construction proofs and their finite controls; it is not independent mathematical acceptance, a PR approval review, or an exponent above `1/2`.

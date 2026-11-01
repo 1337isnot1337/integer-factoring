@@ -1,0 +1,87 @@
+{
+  "checker_sha256": "dfe024b6ee8a428f9d4682a92ed789e0be19ef4ca51b517612905da7df3c8d91",
+  "factoring": {
+    "consecutive_inputs": 4095,
+    "large_example_N": 255255,
+    "large_example_count": 31,
+    "large_example_prime": 29,
+    "large_example_queries": 61,
+    "maximum_factorization_queries": 35
+  },
+  "negative_controls": {
+    "arbitrary_characteristic_cancels": {
+      "N": 105,
+      "prime": 3,
+      "root_count": 3
+    },
+    "forbidden_prime_avoided": {
+      "forbidden": 31,
+      "selected": 29
+    },
+    "prime_larger_than_bitlength_is_insufficient": {
+      "N": 255255,
+      "n": 18,
+      "order": 5,
+      "prime": 31,
+      "root_count": 31
+    }
+  },
+  "primorial": {
+    "binomial_divisibility_cases": 9296,
+    "lcm_sizes": 1024,
+    "primorial_lower_bound_cases": 769
+  },
+  "scope": "Exact finite checks, not a new factoring exponent",
+  "selection": {
+    "certified_modular_powers": 103344,
+    "literal_product_cases": 32,
+    "maximum_search_bound": 132088,
+    "maximum_selected_prime": 269,
+    "sample_selections": [
+      {
+        "bound": 256,
+        "n": 1,
+        "order": 2,
+        "prime": 3
+      },
+      {
+        "bound": 256,
+        "n": 2,
+        "order": 4,
+        "prime": 5
+      },
+      {
+        "bound": 256,
+        "n": 8,
+        "order": 10,
+        "prime": 11
+      },
+      {
+        "bound": 2124,
+        "n": 32,
+        "order": 36,
+        "prime": 37
+      },
+      {
+        "bound": 8332,
+        "n": 64,
+        "order": 66,
+        "prime": 67
+      },
+      {
+        "bound": 33036,
+        "n": 128,
+        "order": 130,
+        "prime": 131
+      },
+      {
+        "bound": 131596,
+        "n": 256,
+        "order": 268,
+        "prime": 269
+      }
+    ],
+    "selection_cases": 864
+  },
+  "status": "PASS"
+}

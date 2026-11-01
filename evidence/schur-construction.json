@@ -1,0 +1,76 @@
+{
+  "status": "passed",
+  "checks": {
+    "character_integrality": 919,
+    "schur_polynomials": 67,
+    "hall_pairings": 919,
+    "weighted_truncation_control": 1
+  },
+  "weights": [
+    {
+      "weight": 0,
+      "partition_dimension": 1,
+      "ring_multiplications": 0,
+      "coefficient_products": 0,
+      "maximum_rational_bits": 1
+    },
+    {
+      "weight": 1,
+      "partition_dimension": 1,
+      "ring_multiplications": 1,
+      "coefficient_products": 1,
+      "maximum_rational_bits": 1
+    },
+    {
+      "weight": 2,
+      "partition_dimension": 2,
+      "ring_multiplications": 6,
+      "coefficient_products": 9,
+      "maximum_rational_bits": 2
+    },
+    {
+      "weight": 3,
+      "partition_dimension": 3,
+      "ring_multiplications": 25,
+      "coefficient_products": 41,
+      "maximum_rational_bits": 3
+    },
+    {
+      "weight": 4,
+      "partition_dimension": 5,
+      "ring_multiplications": 86,
+      "coefficient_products": 155,
+      "maximum_rational_bits": 5
+    },
+    {
+      "weight": 5,
+      "partition_dimension": 7,
+      "ring_multiplications": 240,
+      "coefficient_products": 461,
+      "maximum_rational_bits": 7
+    },
+    {
+      "weight": 6,
+      "partition_dimension": 11,
+      "ring_multiplications": 601,
+      "coefficient_products": 1343,
+      "maximum_rational_bits": 10
+    },
+    {
+      "weight": 7,
+      "partition_dimension": 15,
+      "ring_multiplications": 1336,
+      "coefficient_products": 3544,
+      "maximum_rational_bits": 14
+    },
+    {
+      "weight": 8,
+      "partition_dimension": 22,
+      "ring_multiplications": 2792,
+      "coefficient_products": 9412,
+      "maximum_rational_bits": 18
+    }
+  ],
+  "scope": "Finite independent determinant and lattice controls. Uniform operation and bit bounds are proved in the accompanying construction note.",
+  "checker_sha256": "580a1712597cfcc1ebba095ca456c181733bf3dba40b2609b5b7c660c73dcb06"
+}

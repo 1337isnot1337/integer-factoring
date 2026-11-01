@@ -517,6 +517,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Spin-family modular interface](bounded-spin-modular-interface.md): the existing fixed-characteristic transfer applies without rational rank lifts; dense factorization has the permitted cost, while automatic coefficient selection is proved for the original linear-size span and remains an obligation for arbitrary enlarged-space recombinations.
 - [Constant-state spin projectors and cut reciprocity](bounded-spin-projector.md): exact thirty-state full and sixty-state binary-selected projectors preserve both ambient cut ranks; swapping the two balanced-product exponents identifies the normalized cut operators at every length.
 - [Bounded physical support and uniform rank factors](bounded-spin-support-ranks.md): the shared extreme tensor has explicit channels growing as `(2+sqrt(2))^(n/2)`; near-corner coefficients have uniform combinatorial factors, while sublinear corner bands alone cannot span the crossing.
+- [Pencil algebras and correction modules](bounded-spin-correction-modules.md): a general rank-correction lemma, a two-generator ten-site algebra with sharp all-extension minmax `225^2`, and a twelve-site certificate separating linear span from the open algebra-containment target.
+- [Paired path encoders beyond classical spin](paired-path-crossings.md): arbitrary local invertible splittings and inverse duals give uniform Fibonacci-size crossings; explicit F16 splittings, polynomial-time entries and independent word-kernel controls leave simultaneous rank savings open.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
@@ -821,3 +823,30 @@ Integrated from [exact PR #29 source](https://github.com/1337isnot1337/integer-f
 - [Polynomial-time physical Ward entry queries](ward-pfaffian-entry-queries.md)
 - [An asymptotic floor for the computed Ward rectangular bound](ward-rectangular-bound-envelope.md)
 - [An eight-dimensional interface for the actual Ward operators](ward-stable-operator-interface.md)
+
+## Retained PR #30 recovery and Smith checkpoint
+
+Integrated from [exact PR #30 source](https://github.com/1337isnot1337/integer-factoring/tree/28105165edb8e9a0427468dc833f3c09bc0a7fb7), retaining original credits and scope. Its parallel integral Schur derivation is preserved separately from the broader PR #23 note. No stronger complete factoring exponent is claimed.
+
+- [Auxiliary rational gauges for polynomial crossing certificates](auxiliary-gauge-smith-transfer.md)
+- [Exhaustive auxiliary lattice gauges and finite minimum certificates](auxiliary-lattice-gauge-search.md)
+- [Balanced label types and independent physical degree gauges](balanced-physical-gauge-transfer.md)
+- [Coherent exterior boundaries and a common marginal projection](coherent-exterior-boundary-reduction.md)
+- [Degree-sensitive auxiliary paths in Smith crossing factorizations](degree-sensitive-smith-paths.md)
+- [Uniform construction of the integral Schur crossing](effective-integral-schur-transfer.md)
+- [Explicit entanglers and the distinction between two scalarization tests](explicit-entanglers-and-density-scalarization.md)
+- [Factor recovery in every fixed prime characteristic](fixed-characteristic-factor-recovery.md)
+- [Fixed-precision count lifting and local nilpotent corrections](fixed-precision-count-lifting.md)
+- [Complete recombination screens for the weight-four Schur pieces](full-schur-span-recombination.md)
+- [A polynomial-size characteristic for quadratic factor recovery](high-order-characteristic-selection.md)
+- [Factoring by characteristic-two parity and power-divisor queries](parity-power-divisor-recovery.md)
+- [Factoring from parity counts of one quadratic congruence](quadratic-congruence-factor-recovery.md)
+- [A counterexample to whole-root-interval parity recovery](root-threshold-parity-counterexample.md)
+- [A finite Smith-profile certificate for polynomial crossing families](smith-profile-crossing-transfer.md)
+- [A Smith-certificate floor for sum-preserving pair conjugations](sum-preserving-conjugation-smith-barrier.md)
+- [Exact ternary nilpotent resolvents for ordered crossings](ternary-nilpotent-resolvents.md)
+- [General-characteristic trace-shear parameter and its two cut ranks](trace-shear-general-characteristic.md)
+- [Counting Smith channel words by a finite min-plus automaton](tropical-smith-channel-words.md)
+- [Factoring from unitary orbit counts in every fixed characteristic](unitary-orbit-factor-recovery.md)
+- [A top-clique compiler for weighted deterministic gate networks](weighted-network-top-compiler.md)
+- [The complete partition crossing over the integral Schur lattice](integral-schur-crossing-pr30.md)

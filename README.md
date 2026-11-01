@@ -167,6 +167,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [PR #30 recovery and Smith checkpoint](research/INDEX.md#retained-pr-30-recovery-and-smith-checkpoint), including a [parallel integral Schur derivation](research/integral-schur-crossing-pr30.md): fixed-characteristic recovery interfaces, exact constructions and scoped Smith/gauge controls. Both Schur notes and their attributions are retained. No exponent above `1/2` or new Lean result is claimed.
+
 - [Ward/Pfaffian entry queries](research/ward-pfaffian-entry-queries.md), [simultaneous seed endpoint](research/simultaneous-seed-endpoint.md), and the [PR #29 checkpoint](research/INDEX.md#retained-pr-29-ward-and-crossing-checkpoint): exact entry constructions, effective interfaces and scoped crossing barriers. Entry evaluation alone is not a favorable rank bound. `verify-constructions` is in the default gate; larger native/extended screens remain separate. No stronger complete factoring exponent is claimed.
 
 - [Full binary conservation-kernel barrier](research/full-conservation-rank-sum-barrier.md) and [PR #27 checkpoint](research/INDEX.md#retained-pr-27-conservation-and-crossing-checkpoint): ordinary rank-sum theorems, transfers and exact finite controls. The all-kernel characteristic-two theorem and the [elementary all-code bound](research/difference-support-rank-floor.md) have distinct scopes. No general factoring lower bound, new Lean result, or exponent above `1/2` is claimed.
@@ -386,6 +388,19 @@ give explicit `O(L^(4/3))` channels for the shared extreme coefficient,
 below the post-half scale for that piece. Sublinear corner bands still
 cannot span the crossing; a complete favorable decomposition remains
 open. Run `make verify-bounded-spin-support`.
+The [correction-module analysis](research/bounded-spin-correction-modules.md)
+gives the next algebraic target and an exact ten-site replay: two F5
+generators are needed, the vertex module has dimension 170, and the
+original coefficient span has sharp minmax product `225^2`. A small
+twelve-site certificate rules out the simpler linear pencil-plus-vertex
+formula. Uniform algebra containment and two-cut lifting remain open.
+The optional `make verify-bounded-spin-growth` requires FLINT.
+The [paired-path construction](research/paired-path-crossings.md) replaces
+the classical spin formulas with arbitrary invertible local splittings
+and their inverse duals. An explicit F16 family retains Fibonacci label
+growth, polynomial-time entries and both strict endpoints. Exact small
+checks cover all twelve valid field parameters; favorable uniform
+two-cut ranks remain open. Run `make verify-paired-paths`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

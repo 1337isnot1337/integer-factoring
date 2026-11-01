@@ -1,0 +1,41 @@
+{
+  "auxiliary_checker_sha256": "366c5b0c9348f1359ffd8747cf64e83ef938e0156930509f4b37ce61acc27862",
+  "base_smith_sha256": "d939fc8e01e6e152041871358ce839999732d1d28306a6cf88832801fa7b46fb",
+  "cases": [
+    {
+      "balanced_endpoint_entries": 1312,
+      "block_toeplitz_checks": 144,
+      "coefficient_rank_checks": 3200,
+      "exact_rational_bound_checks": 14400,
+      "name": "scalar elementary",
+      "shifted_ordered_product_entries": 13120
+    },
+    {
+      "balanced_endpoint_entries": 1312,
+      "block_toeplitz_checks": 160,
+      "coefficient_rank_checks": 5600,
+      "exact_rational_bound_checks": 25200,
+      "name": "ordered auxiliary pairing",
+      "shifted_ordered_product_entries": 13120
+    },
+    {
+      "balanced_endpoint_entries": 1312,
+      "block_toeplitz_checks": 160,
+      "coefficient_rank_checks": 8000,
+      "exact_rational_bound_checks": 36000,
+      "name": "noncommuting auxiliary loop",
+      "shifted_ordered_product_entries": 13120
+    }
+  ],
+  "checker_sha256": "821182dba0ff478e032de4e221aee254b5d4191711f82cb03627f7b76626b41a",
+  "field": 2,
+  "negative_controls": {
+    "balanced_word_shift": 2,
+    "exact_balanced_cardinality_checks": 32,
+    "omitted_mean_changes_base_from": 16,
+    "omitted_mean_false_base": "16/5",
+    "unbalanced_word_shift": 0
+  },
+  "scope": "Finite exact checks of the balanced-label transfer; no improving crossing certificate.",
+  "status": "passed"
+}

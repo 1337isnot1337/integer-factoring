@@ -1,0 +1,187 @@
+{
+  "N": 1368960876177490538878515064474553061781,
+  "checker_sha256": "e258a073be174d48d8df3a8e35546db45300d2bb7c6f75fec6be728a9fc7fc2e",
+  "divisor_bin_certificate": [
+    {
+      "divisor": 61,
+      "maximum_power": 21
+    },
+    {
+      "divisor": 71,
+      "maximum_power": 21
+    },
+    {
+      "divisor": 4331,
+      "maximum_power": 10
+    },
+    {
+      "divisor": 5041,
+      "maximum_power": 10
+    },
+    {
+      "divisor": 307501,
+      "maximum_power": 7
+    },
+    {
+      "divisor": 380117,
+      "maximum_power": 7
+    },
+    {
+      "divisor": 23187137,
+      "maximum_power": 5
+    },
+    {
+      "divisor": 26988307,
+      "maximum_power": 5
+    },
+    {
+      "divisor": 1646286727,
+      "maximum_power": 4
+    },
+    {
+      "divisor": 1916169797,
+      "maximum_power": 4
+    },
+    {
+      "divisor": 116886357617,
+      "maximum_power": 3
+    },
+    {
+      "divisor": 144488933689,
+      "maximum_power": 3
+    },
+    {
+      "divisor": 175531457527,
+      "maximum_power": 3
+    },
+    {
+      "divisor": 8813824955029,
+      "maximum_power": 3
+    },
+    {
+      "divisor": 10258714291919,
+      "maximum_power": 3
+    },
+    {
+      "divisor": 10707418909147,
+      "maximum_power": 3
+    },
+    {
+      "divisor": 12462733484417,
+      "maximum_power": 2
+    },
+    {
+      "divisor": 625781571807059,
+      "maximum_power": 2
+    },
+    {
+      "divisor": 728368714726249,
+      "maximum_power": 2
+    },
+    {
+      "divisor": 760226742549437,
+      "maximum_power": 2
+    },
+    {
+      "divisor": 884854077393607,
+      "maximum_power": 2
+    },
+    {
+      "divisor": 44430491598301189,
+      "maximum_power": 2
+    },
+    {
+      "divisor": 53976098721010027,
+      "maximum_power": 2
+    },
+    {
+      "divisor": 66722491040790659,
+      "maximum_power": 2
+    },
+    {
+      "divisor": 4070071953488230199,
+      "maximum_power": 2
+    },
+    {
+      "divisor": 4737296863896136789,
+      "maximum_power": 2
+    }
+  ],
+  "divisor_count": 54,
+  "factorization": [
+    [
+      61,
+      1
+    ],
+    [
+      71,
+      2
+    ],
+    [
+      380117,
+      2
+    ],
+    [
+      175531457527,
+      2
+    ]
+  ],
+  "input_bits": 131,
+  "maximum_power_histogram": {
+    "2": 10,
+    "3": 6,
+    "4": 2,
+    "5": 2,
+    "7": 2,
+    "10": 2,
+    "21": 2
+  },
+  "primality_certification": [
+    {
+      "prime": 61,
+      "tested_through": 7,
+      "trial_divisions": 4
+    },
+    {
+      "prime": 71,
+      "tested_through": 8,
+      "trial_divisions": 4
+    },
+    {
+      "prime": 380117,
+      "tested_through": 616,
+      "trial_divisions": 206
+    },
+    {
+      "prime": 175531457527,
+      "tested_through": 418964,
+      "trial_divisions": 139656
+    }
+  ],
+  "root_interval_counts": {
+    "10": 4,
+    "11": 2,
+    "12": 2,
+    "13": 2,
+    "14": 2,
+    "15": 2,
+    "16": 2,
+    "17": 2,
+    "18": 2,
+    "19": 2,
+    "2": 26,
+    "20": 2,
+    "21": 2,
+    "22": 0,
+    "3": 16,
+    "4": 10,
+    "5": 8,
+    "6": 6,
+    "7": 6,
+    "8": 4,
+    "9": 4
+  },
+  "scope": "A finite counterexample for whole-root-interval parity; arbitrary prefix algorithms are not excluded.",
+  "square_divisor_bases_excluding_one": 7,
+  "status": "PASS"
+}

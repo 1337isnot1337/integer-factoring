@@ -1,6 +1,6 @@
 .PHONY: verify verify-docs verify-frontier verify-arithmetic verify-arithmetic-framework verify-post-half verify-formal verify-k6 verify-half-appendix verify-bell help verify-schur-fermion verify-schur-central verify-schur-gaussian verify-schur-sparse verify-fixed-modes verify-cancellation-modules verify-minimal-modules verify-exact-modules verify-cancellation-crossing verify-block-smith verify-linear-smith verify-type-pressure verify-crossing-interpolation verify-smith-oracle verify-controlled-smith verify-sparse-holonomy verify-charge-pruning verify-cubic-full-images verify-arithmetic-sieve verify-polynomial-crossings verify-polynomial-native verify-nine-letter-all
 
-verify: verify-docs verify-frontier verify-arithmetic verify-further verify-constructions
+verify: verify-docs verify-frontier verify-arithmetic verify-further verify-constructions verify-recovery verify-constructive
 	python3 -m unittest discover -s tests -v
 	python3 -m unittest tools.check_crossing -v
 	python3 tools/check_coefficient_basis.py
@@ -224,6 +224,14 @@ verify-bounded-spin-projector:
 .PHONY: verify-bounded-spin-support
 verify-bounded-spin-support:
 	python3 tools/check_bounded_spin_support.py
+
+.PHONY: verify-bounded-spin-growth
+verify-bounded-spin-growth:
+	python3 tools/check_bounded_spin_growth.py
+
+.PHONY: verify-paired-paths
+verify-paired-paths:
+	python3 tools/check_paired_path_crossing.py
 
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
@@ -535,6 +543,7 @@ verify-polynomial-crossings:
 	python3 tools/check_extended_binary_crossings.py
 
 verify-polynomial-native:
+	python3 tools/check_native_polynomial_certificates.py
 	python3 tools/check_polynomial_local_smith.py --nine-letter
 
 verify-nine-letter-all:
@@ -1487,3 +1496,49 @@ verify-pr29-extended:
 	python3 tools/check_cubic_output_identity.py --multirow evidence/cubic-multirow-outputs.json --output /tmp/integer-factoring-cubic-output-identity.json
 	python3 tools/check_cubic_complement_outputs.py --binary evidence/cubic-complement-outputs.json --field4 evidence/cubic-complement-fields.json --output /tmp/integer-factoring-cubic-complement-audit.json
 	python3 tools/check_cubic_affordable_pool.py --input evidence/cubic-multirow-outputs.json --output /tmp/integer-factoring-cubic-affordable-pool.json
+
+.PHONY: verify-parity
+verify-parity:
+	python3 tools/check_parity_power_divisor_recovery.py
+	python3 tools/check_weighted_network_ports.py
+
+.PHONY: verify-recovery
+verify-recovery: verify-parity
+	python3 tools/check_fixed_characteristic_recovery.py
+	python3 tools/check_root_threshold_counterexample.py
+	python3 tools/check_unitary_orbit_recovery.py
+	python3 tools/check_quadratic_congruence_recovery.py
+	python3 tools/check_high_order_characteristic.py
+	python3 tools/check_fixed_precision_count_lifting.py
+
+.PHONY: verify-constructive
+verify-constructive:
+	python3 tools/check_explicit_entanglers.py
+	python3 tools/check_explicit_entanglers.py --control evidence/binary-entangler-extension-control.json
+	python3 tools/check_smith_profile_transfer.py
+	python3 tools/check_degree_sensitive_smith_paths.py
+	python3 tools/check_tropical_smith_channel_words.py
+	python3 tools/check_integral_schur_modes.py
+	python3 tools/check_schur_construction.py
+	python3 tools/check_ternary_resolvent_probe.py
+	python3 tools/check_trace_shear_general.py
+	python3 tools/check_auxiliary_gauge_smith.py
+	python3 tools/check_auxiliary_lattice_gauges.py
+	python3 tools/check_balanced_physical_gauge.py
+	python3 tools/check_sum_preserving_smith_barrier.py
+
+.PHONY: verify-native
+verify-native: verify-exterior verify-entangler-density verify-polynomial-native
+
+.PHONY: verify-schur-ranks
+verify-schur-ranks:
+	python3 tools/full_schur_crossing.py --weights 1 2 3 4 5 --prime 2 --output /tmp/full-schur-f2.json
+	python3 tools/homogeneous_full_schur.py --weights 2 4 8 --output /tmp/homogeneous-full-schur-f2.json
+
+.PHONY: verify-exterior
+verify-exterior:
+	python3 tools/check_coherent_exterior_boundaries.py
+
+.PHONY: verify-entangler-density
+verify-entangler-density:
+	python3 tools/check_density16_certificate.py

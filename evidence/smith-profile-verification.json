@@ -1,0 +1,345 @@
+{
+  "status": "passed",
+  "block_toeplitz_smith_checks": 464,
+  "coefficient_rank_upper_bound_checks": 1536,
+  "ordered_mpo_endpoint_entries": 26208,
+  "exact_rational_count_and_product_checks": 6912,
+  "elementary_minimum": {
+    "numerator": 256,
+    "denominator": 27,
+    "s": 3
+  },
+  "degree_budget_rational_checks": 644,
+  "exact_alphabet_exclusions": [
+    2,
+    3,
+    4
+  ],
+  "cases": [
+    {
+      "name": "scalar elementary",
+      "degree": 1,
+      "spectra": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "auxiliary elementary",
+      "degree": 1,
+      "spectra": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "ordered pairing",
+      "degree": 2,
+      "spectra": [
+        [
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "higher degree pairing",
+      "degree": 3,
+      "spectra": [
+        [
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          1,
+          2,
+          2
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          2,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          2,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "nilpotent loop",
+      "degree": 3,
+      "spectra": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ]
+      ]
+    },
+    {
+      "name": "mixed nilpotent loop",
+      "degree": 3,
+      "spectra": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          2,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          3,
+          3,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          3,
+          3,
+          1,
+          1
+        ]
+      ]
+    }
+  ],
+  "scope": "verifies the implementations and finite instances; the all-length bound is proved in the accompanying note"
+}
