@@ -39,6 +39,8 @@ def main():
         mode = json.loads(args.mode_start.read_text())
         if mode['exponent_images'] != args.images:
             parser.error('The mode-start record belongs to a different exponent permutation.')
+        if mode.get('flag_field', 2) != 2:
+            parser.error('The original-Fock letter backends currently accept binary flags only.')
         if mode['constant_flag'] is not None:
             seed = change_flag(seed, mode['constant_flag'])
     if args.backend == 'sectors':
@@ -59,11 +61,19 @@ def main():
     control[:-1] += rng.normal(size=len(control) - 1) * .0001
     _, derivative = pressure.evaluate(control, True)
     error = 0.
+    gradient_controls = []
     for coordinate in (0, 1, pressure.q, 4 * pressure.q, 8 * pressure.q):
+        # The scale multiplies polynomial orders. Normalize its probe by the
+        # mode-degree scale, as in the mode-gauge driver's gradient control.
+        step = 1e-7 / (seed['outer'] * seed['n']) if coordinate == 8 * pressure.q else 1e-7
         delta = np.zeros_like(control)
-        delta[coordinate] = 1e-7
-        finite = (pressure.evaluate(control + delta) - pressure.evaluate(control - delta)) / 2e-7
-        error = max(error, abs(float(finite - derivative[coordinate])))
+        delta[coordinate] = step
+        finite = (pressure.evaluate(control + delta) - pressure.evaluate(control - delta)) / (2 * step)
+        difference = abs(float(finite - derivative[coordinate]))
+        error = max(error, difference)
+        gradient_controls.append({'coordinate': coordinate, 'step': step,
+                                  'analytic': float(derivative[coordinate]),
+                                  'finite_difference': float(finite), 'error': difference})
     if error > 1e-4:
         raise ArithmeticError('The independent letter gradient control failed: ' + str(error))
     root = Path(__file__).resolve().parents[1]
@@ -79,6 +89,7 @@ def main():
               'backend': args.backend, 'precision': args.precision,
               'random_seed': args.seed, 'baseline': baseline, 'best': best, 'runs': [],
               'gradient_max_error': error, 'rejected_queries': 0, 'budget_exhausted': False,
+              'gradient_controls': gradient_controls,
               'scope': 'Finite numerical optimization of complete original-polynomial profiles '
               'with arbitrary symbol potentials and both physical pair costs. No exact pressure '
               'certificate, universal exclusion, or stronger factoring exponent is claimed.',

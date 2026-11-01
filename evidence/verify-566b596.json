@@ -1,0 +1,16 @@
+{
+  "command": "make verify",
+  "compressed_stdout_sha256": "dcedb8795f276b8312de40021cf4cc6b8fc799fca47798db8d3af14df2e0a8bc",
+  "exit_code": 0,
+  "logged_python_command_blocks": 341,
+  "scope": "Default verification from the frozen clean 566b596 checkout only. This is not a full-suite result for later commits, new Lean verification, independent mathematical review, or a stronger factoring bound.",
+  "source_commit": "566b596782afef3db6aba97c39678849e6446566",
+  "source_tree": "63bab50efffe27c2066130a62904813d96a34117",
+  "status": "pass",
+  "stdout_path": "evidence/verify-566b596.stdout.txt.xz",
+  "stdout_sha256": "09f0f19163059b900c20ecb2187ff9cb3c7fdf7635d6e7e6f8ec1495c59130f1",
+  "unittest_suites_reported": [
+    66,
+    5
+  ]
+}

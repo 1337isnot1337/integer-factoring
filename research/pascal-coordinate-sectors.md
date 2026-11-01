@@ -88,19 +88,19 @@ For the ordered eight-mode kernel, the filled reference is word 15.
 The excitation costs are `14,10,6,2,2,6,10,14`. Select the lowest-cost
 words relative to this reference, with deterministic integer tie breaks.
 The [registered packet](../evidence/pascal-fermi-coordinate-starts.json.xz)
-contains the full candidate list and complete profiles for its first
-three completed cases:
+contains the full candidate list and complete profiles for all four
+completed cases:
 
 | Selected letters | Inherited numerical pressure |
 |---:|---:|
 | 16 | 0.728681631882 |
 | 24 | 0.723799386492 |
 | 32 | 0.721693325006 |
+| 48 | 0.719078623231 |
 
 These values are exploratory common-scale fits. They remain above
 `1/sqrt(2)` and do not improve the strongest existing crossing
-certificate. The larger fourth case is explicitly pending in this
-checkpoint. Arbitrary symbol-potential optimization, different flags,
+certificate. Arbitrary symbol-potential optimization, different flags,
 and changes to the physical maps remain constructive next questions.
 
 This work retains the preceding Pascal, original-Fock, paired-type,

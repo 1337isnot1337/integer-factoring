@@ -31,15 +31,49 @@ class WeightedPascalPressure:
         self.cuts = []
         if precision is None:
             precision = max(512, 1 << (16 * self.outer - 1).bit_length())
+        data = clifford_data
+        if seed.get('coefficient_field') == 4:
+            from f4_pascal_flags import clifford_data as data
         for place in (0, 1):
-            matrix, shifts, rows, columns = clifford_data(seed, place)
-            oracle = MatrixOracle([[(value, 0) for value in row] for row in matrix],
+            matrix, shifts, rows, columns = data(seed, place)
+            oracle = MatrixOracle([[value if isinstance(value, tuple) else (value, 0)
+                                    for value in row] for row in matrix],
                                   4 * self.n, shifts, precision)
             self.cuts.append((oracle, np.asarray(rows), np.asarray(columns)))
 
     def natural(self, scale):
         return np.asarray([scale * height for place in natural_heights(self.seed)
                            for height in place] + [scale])
+
+    def fitted_natural_start(self):
+        unit = self.natural(1.)
+        self.evaluate(unit)
+        orders = [np.asarray(cut['orders']) for cut in self.last['clifford_profiles']]
+        prefactor = -float(self.outer * self.n) - unit[:-1].sum() / 2
+        heights = unit[:-1].reshape(2, 4, self.n)
+        physical = np.asarray([heights[:, 0, :].sum(axis=0) + heights[:, 3, :].sum(axis=0),
+                               heights[:, 1, :].sum(axis=0) + heights[:, 2, :].sum(axis=0)])
+
+        def value(log_scale):
+            scale = math.exp(log_scale)
+            log_b = scale * prefactor + sum(
+                .5 * np.logaddexp(scale * profile / 2, -scale * profile / 2).sum()
+                for profile in orders)
+
+            def equation(rate):
+                return float(log_b - rate * np.logaddexp(0, -scale * physical / rate).sum())
+
+            if equation(1e-8) <= 0:
+                raise ArithmeticError('The common-scale Gibbs root is unresolved.')
+            high = 4.
+            while equation(high) > 0:
+                high *= 2
+                if high > 1e8:
+                    raise ArithmeticError('The common-scale Gibbs root was not bracketed.')
+            return brentq(equation, 1e-8, high, xtol=1e-13) / 2
+
+        fit = minimize_scalar(value, bounds=(-8., math.log(2.)), method='bounded')
+        return unit * math.exp(fit.x)
 
     def evaluate(self, parameters, gradient=False):
         parameters = np.asarray(parameters, dtype=float)
@@ -112,6 +146,8 @@ def main():
     parser.add_argument("--seconds", type=float, default=1800)
     parser.add_argument("--seed", type=int, default=20261101)
     parser.add_argument("--flag-shears", type=int, default=0)
+    parser.add_argument("--flag-field", type=int, choices=(2, 4), default=2,
+                        help="Coefficient field for the constant invertible flag.")
     parser.add_argument("--precision", type=int)
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
@@ -131,13 +167,21 @@ def main():
         constant = np.eye(seed["n"], dtype=np.uint8)
         for _ in range(args.flag_shears):
             row, source = rng.choice(seed["n"], size=2, replace=False)
-            constant[row] ^= constant[source]
-        seed = change_flag(seed, constant.tolist())
+            coefficient = int(rng.integers(1, 4)) if args.flag_field == 4 else 1
+            if args.flag_field == 4:
+                from cube_f4_bivariate_smith import F4_MUL
+                constant[row] ^= np.asarray([F4_MUL[coefficient][int(value)]
+                                            for value in constant[source]], dtype=np.uint8)
+            else:
+                constant[row] ^= constant[source]
+        if args.flag_field == 4:
+            from f4_pascal_flags import change_flag as change_f4_flag
+            seed = change_f4_flag(seed, constant.tolist())
+        else:
+            seed = change_flag(seed, constant.tolist())
     pressure = WeightedPascalPressure(seed, args.precision)
-    fitted_scale = minimize_scalar(lambda x: pressure.evaluate(pressure.natural(math.exp(x))),
-                                  bounds=(-8., math.log(2.)), method="bounded")
-    scale = math.exp(fitted_scale.x)
-    natural = pressure.natural(scale)
+    natural = pressure.fitted_natural_start()
+    scale = natural[-1]
     pressure.evaluate(natural)
     baseline, best = pressure.last.copy(), pressure.last.copy()
     control = natural + rng.normal(size=len(natural)) * .00003
@@ -159,8 +203,11 @@ def main():
                "research/weighted-pascal-flag-crossings.md"]
     if args.images is not None:
         sources += ["tools/permuted_pascal_kernels.py", "research/permuted-pascal-zero-spectra.md"]
+    if args.flag_field == 4:
+        sources += ["tools/f4_pascal_flags.py", "tools/cube_f4_bivariate_smith.py"]
     report = {"status": "exploratory floating search", "weights": args.weights,
               "exponent_images": args.images,
+              "flag_field": args.flag_field,
               "outer": args.outer, "constant_flag": seed.get("constant_flag"),
               "random_seed": args.seed, "baseline": baseline, "best": best, "runs": runs,
               "gradient_max_error": gradient_error, "rejected_queries": 0,
