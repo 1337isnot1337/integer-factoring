@@ -5,14 +5,20 @@ from __future__ import annotations
 
 import argparse
 from functools import lru_cache
+from fractions import Fraction
 from hashlib import sha256
 import json
+from math import comb
 from pathlib import Path
 
 import numpy as np
 
 from catalan_cup_crossing import cup_basis, cup_frame, triangular_dual
-from catalan_gram_smith import loop_count, smith_valuation_profile
+from catalan_gram_smith import (
+    dyck_path_valuation_distribution,
+    loop_count,
+    smith_valuation_profile,
+)
 from paired_path_crossing import power
 from quantum_braid_spectral_fusion import FIELD, matrix_product
 
@@ -169,9 +175,44 @@ def unrestricted_path_controls():
     return controls
 
 
+def path_valuation_distribution_controls():
+    controls = []
+    for semilength in (1, 2, 4, 8, 16, 24, 32):
+        distribution = dyck_path_valuation_distribution(semilength)
+        total = sum(distribution.values())
+        catalan = comb(2 * semilength, semilength) // (semilength + 1)
+        maximum = max(distribution)
+        bound = semilength * (semilength + 1) // 2
+        assert total == catalan
+        assert min(distribution) == semilength
+        assert maximum <= bound
+        mean = Fraction(
+            sum(valuation * count for valuation, count in distribution.items()),
+            total,
+        )
+        controls.append(
+            {
+                "semilength": semilength,
+                "dyck_paths": total,
+                "valuation_levels": len(distribution),
+                "minimum_delta_order": min(distribution),
+                "maximum_delta_order": maximum,
+                "uniform_delta_order_bound": bound,
+                "mean_delta_order": str(mean),
+                "paths_at_or_below_2r": sum(
+                    count
+                    for valuation, count in distribution.items()
+                    if valuation <= 2 * semilength
+                ),
+            }
+        )
+    return controls
+
+
 def check():
     physical_entries = physical_gram_controls()
     path_controls = unrestricted_path_controls()
+    valuation_controls = path_valuation_distribution_controls()
     profiles = []
     for length, expected in EXPECTED.items():
         profile = smith_valuation_profile(length, precision=8)
@@ -190,10 +231,12 @@ def check():
         "status": "pass",
         "physical_loop_gram_entries_checked_over_F16": physical_entries,
         "unrestricted_q_path_basis_controls_over_F16": path_controls,
+        "path_norm_valuation_distribution_controls": valuation_controls,
         "truncated_toeplitz_profiles": profiles,
         "scope": (
             "Exact Smith valuations through 16 strands and unrestricted path "
-            "controls through 8 strands; no favorable rank sum or factoring gain."
+            "controls through 8 strands; exact path-norm valuation distributions "
+            "through semilength 32; no favorable rank sum or factoring gain."
         ),
         "source_sha256": {
             path: sha256((ROOT / path).read_bytes()).hexdigest()

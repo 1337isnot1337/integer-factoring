@@ -145,22 +145,32 @@ v_\delta([k]_q)=2^{v_2(k)}-1.                          \tag{9}
 \]
 
 The identity follows from `[2m]_q=delta[m]_q^2` and the fact that odd
-quantum integers are units at `delta=0`. A Dyck path of semilength `r` has
-`r` down-steps. At each one, exactly one of `h,h+1` is even; it is at most
-`r+1`, so its valuation is at most `r`. Therefore
+quantum integers are units at `delta=0`. At a down-step from height `h`,
+exactly one of `h,h+1` is even. If that even index is `k`, then
+`2^(v_2(k))-1 <= k-1 <= h`. On the `j`th down-step, at most `r` up-steps
+and exactly `j-1` down-steps have occurred, so `h <= r-j+1`. Summing these
+height-sensitive bounds yields
 
 \[
-v_\delta(\nu_P)\le r^2,
-\qquad \operatorname{pole}_u(D^{\rm G})\le 2r^2,
-\qquad \operatorname{pole}_u(D^{\rm G}\otimes D^{\rm G})\le4r^2.
+v_\delta(\nu_P)\le\sum_{j=1}^r(r-j+1)=\frac{r(r+1)}2,
+\qquad \operatorname{pole}_u(D^{\rm G})\le r(r+1),
+\qquad \operatorname{pole}_u(D^{\rm G}\otimes D^{\rm G})\le2r(r+1).
                                                                \tag{10}
 \]
 
-Here `delta=u^2/(1+u)`. The braid word and crossing normalization are
-regular at `q=1`; hence the full strict crossing has no Laurent powers below
-`u^(-4r^2)`. Every nonzero Laurent grade other than zero vanishes at both
-strict endpoints. This gives an effective polynomial-size jet window for
-rank recombination. It does not bound the two-cut ranks of the pieces.
+Here `delta=u^2/(1+u)`. This sharpens the immediate per-step estimate
+`v_delta(nu_P)<=r^2` by using the order of the down-steps. The checker also
+computes the exact valuation distribution over Dyck paths by a height/step
+dynamic program; through semilength 32 it confirms the Catalan path counts
+and the uniform bound (10). The maximum observed valuation is 304 at
+semilength 32, below the bound 528; this finite profile is not an
+all-length maximum formula.
+
+The braid word and crossing normalization are regular at `q=1`; hence the
+full strict crossing has no Laurent powers below `u^(-2r(r+1))`. Every
+nonzero Laurent grade other than zero vanishes at both strict endpoints.
+This gives an effective polynomial-size jet window for rank recombination.
+It does not bound the two-cut ranks of the pieces.
 
 The checker verifies the unrestricted path vectors, their nonzero
 orthogonal norms, and their coordinates in the full cup frame through eight

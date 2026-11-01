@@ -984,11 +984,12 @@ Run `make verify-catalan-cup-jets`.
 
 The [Laurent Gram dual](research/catalan-gram-dual-smith.md) is another
 decoder for the full Catalan cup frame. An unrestricted orthogonal spin-path
-basis bounds its pole by `2r^2` at `q=1+u`, so its paired crossing has a
-polynomial-size Laurent window. Exact truncated-series Smith profiles pass
-through sixteen physical strands, with valuation jumps from three to seven
-at fourteen strands. This opens a larger coefficient-recombination space;
-its two-cut rank sum remains unresolved. Run
+basis bounds its pole by `r(r+1)` at `q=1+u`, so its paired crossing has
+pole order at most `2r(r+1)`. An exact Dyck-path valuation dynamic program
+checks distributions through semilength 32; exact truncated-series Smith
+profiles pass through sixteen physical strands, with valuation jumps from
+three to seven at fourteen strands. This opens a larger coefficient
+recombination space; its two-cut rank sum remains unresolved. Run
 `make verify-catalan-gram-smith`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
