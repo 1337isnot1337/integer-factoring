@@ -1306,3 +1306,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [All-scale dominance of the explicit permutation cone](permuted-pascal-cone-dominance.md): an all-size filtration and rearrangement proof, with exact rational checks of both physical charges; its conclusion is restricted to the stated common-scale gauges.
+
+## Certified low-order coherent profiles
+
+[Truncated profiles and tail bounds](coherent-hot-low-order-certificates.md) compute exact low Smith orders and bound every unknown channel contribution. The original full engine stays unchanged; no new numerical factoring bound is claimed.

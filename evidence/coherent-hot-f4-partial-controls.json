@@ -1,0 +1,224 @@
+{
+  "status": "passed",
+  "cases": [
+    {
+      "modes": 4,
+      "q": 10,
+      "cutoff": 0,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 1,
+          "tail_count": 99
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 1,
+          "tail_count": 99
+        }
+      ]
+    },
+    {
+      "modes": 4,
+      "q": 10,
+      "cutoff": 7,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 7,
+          "tail_count": 93
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 7,
+          "tail_count": 93
+        }
+      ]
+    },
+    {
+      "modes": 4,
+      "q": 10,
+      "cutoff": 20,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 51,
+          "tail_count": 49
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 51,
+          "tail_count": 49
+        }
+      ]
+    },
+    {
+      "modes": 4,
+      "q": 10,
+      "cutoff": 40,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 96,
+          "tail_count": 4
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 96,
+          "tail_count": 4
+        }
+      ]
+    },
+    {
+      "modes": 4,
+      "q": 10,
+      "cutoff": 0,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 1,
+          "tail_count": 99
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 1,
+          "tail_count": 99
+        }
+      ]
+    },
+    {
+      "modes": 4,
+      "q": 10,
+      "cutoff": 7,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 7,
+          "tail_count": 93
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 7,
+          "tail_count": 93
+        }
+      ]
+    },
+    {
+      "modes": 4,
+      "q": 10,
+      "cutoff": 20,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 51,
+          "tail_count": 49
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 51,
+          "tail_count": 49
+        }
+      ]
+    },
+    {
+      "modes": 4,
+      "q": 10,
+      "cutoff": 40,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 96,
+          "tail_count": 4
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 96,
+          "tail_count": 4
+        }
+      ]
+    },
+    {
+      "modes": 8,
+      "q": 43,
+      "cutoff": 0,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 1,
+          "tail_count": 1848
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 1,
+          "tail_count": 1848
+        }
+      ]
+    },
+    {
+      "modes": 8,
+      "q": 43,
+      "cutoff": 7,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 7,
+          "tail_count": 1842
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 7,
+          "tail_count": 1842
+        }
+      ]
+    },
+    {
+      "modes": 8,
+      "q": 43,
+      "cutoff": 20,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 56,
+          "tail_count": 1793
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 56,
+          "tail_count": 1793
+        }
+      ]
+    },
+    {
+      "modes": 8,
+      "q": 43,
+      "cutoff": 40,
+      "cuts": [
+        {
+          "cut": "zero",
+          "retained_count": 479,
+          "tail_count": 1370
+        },
+        {
+          "cut": "infinity",
+          "retained_count": 479,
+          "tail_count": 1370
+        }
+      ]
+    }
+  ],
+  "complete_reference_constructions": 3,
+  "cut_comparisons": 24,
+  "rational_partition_comparisons": 48,
+  "invalid_cutoffs_rejected": 6,
+  "source_sha256": {
+    "check_coherent_hot_f4_partial.py": "dcf1c98d4b02428022c1de91a07af127773c955fb2085fc91a351d892cc2d236",
+    "coherent_hot_f4_partial.py": "c8b9c13bf697d5964f36fd1a44d14c5f7fe4d123cddcce255e5672af917ae62f",
+    "coherent_hot_f4_partial.cpp": "77146cdf79f2b88be37de6d1d958c13ab444d6074c8ac96aa0c6ba5eb9e47e36",
+    "coherent_hot_compounds_f4.py": "1a8798f6b9a038413ce1f8d27d435c7a642e84affc9ffb4461298c64d2708d76",
+    "coherent_hot_compounds_f4.cpp": "d1790e5034fd77f17b4ef9c4e9f98db03f6b4133da403ddba2994d2207df6810",
+    "selected_gaussian_coefficients.cpp": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "orthogonal_differential_pairs_f4.py": "c135e9b2d4b44fb4bd8d0c387d5050994d17029df0437c9a7ec3fe9f9f0a3829"
+  },
+  "scope": "Exact orders through the chosen cutoff and rigorous channel-sum envelopes; omitted orders are not claimed known."
+}
