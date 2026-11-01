@@ -948,6 +948,9 @@ At the old order-five parameter it retains nonzero radical channels,
 so quotient-only formulas require their ambient residuals. Complete
 small profiles and independent physical evolution pass; a favorable
 uniform two-cut rank sum remains open. Run `make verify-catalan-cup-crossing`.
+The [pinned full replay](evidence/catalan-frontier-verification.json) records
+successful default verification at `3670b7d` and separately scoped focused
+receipts; later integrations are outside that full-suite source pin.
 Its [nilpotent parameter jets](research/catalan-cup-jets.md) deform the entire
 primal/decoder/braid system over `F2[u]/u^s`, retaining every intermediate
 coefficient. Positive jets have zero endpoints and enlarge the scalar F2

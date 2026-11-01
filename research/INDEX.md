@@ -727,6 +727,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Verification and proof artifacts
 
+- [Catalan frontier replay](../evidence/catalan-frontier-verification.json): full default verification at exact source `3670b7d`, archived output, and separately pinned focused cup/jet receipts. This records verification scope, without a stronger factoring-bound claim.
+
 - [`../formal-appendix/README.md`](../formal-appendix/README.md) maps the Lean `1/2` proof.
 - [`../variants/k6/FactoringK6/Certified.lean`](../variants/k6/FactoringK6/Certified.lean) gives the Lean `1/30` theorem.
 - [`../evidence/`](../evidence/) stores finite certificates, source audits, and recorded CI output.
