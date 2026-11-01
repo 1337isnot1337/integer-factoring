@@ -3143,3 +3143,14 @@ verify-witt-trace-words:
 	python3 tools/check_witt_trace_word_circuits.py
 
 verify-arithmetic: verify-witt-trace-words
+.PHONY: verify-divided-power-traces
+verify-divided-power-traces:
+	python3 tools/check_divided_power_trace_carries.py
+
+verify-arithmetic: verify-divided-power-traces
+
+.PHONY: verify-artin-hasse-traces
+verify-artin-hasse-traces:
+	python3 tools/check_artin_hasse_trace_carries.py
+
+verify-arithmetic: verify-artin-hasse-traces

@@ -1,5 +1,9 @@
 # Research index
 
+- [Exact trace projection with classical Artin--Hasse characters](artin-hasse-trace-projection.md): monomialwise splitting and binary Fourier projection replace the growing-precision algebra cost by 2^r scalar queries, spending r additional precision bits. Full Frobenius orbits sharpen the carry bound; native integer digit evaluation and a stronger factoring score remain open.
+
+- [Trace-constrained exact counts at growing precision](divided-power-trace-lifting.md): a divided-power coefficient algebra of charged dimension (2H)^r retains the Hermite moments of r polynomial trace predicates. The compiler preserves v*w/t carry dimensions, handles scalar unit inverses, and recovers exact counts at H>v*w; no complete integer arithmetic representation is supplied.
+
 - [A uniform lazy-potential tail proof](lazy-potential-tail-proof.md): conditioning and exponential tilting prove PR70's probability input for all allowed walk lengths and laziness parameters, with a stronger constant. The graph/accounting hypotheses remain explicit; integer probability controls replace reliance on a floating finite grid.
 
 - [Linear-precision residue indicators and total unit inverses](precision-efficient-residue-indicators.md): implemented collected inverse and packed-system compilers use L+1 polynomial carry queries. Packing m equations into a degree-m*w coefficient extension retains v summation variables and precision L, with charged degree and embedding acquisition. A complete factoring representation remains open.

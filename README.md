@@ -39,6 +39,8 @@ An [exact residue-system backend](research/precision-efficient-residue-indicator
 
 A [Witt-trace word interface](research/witt-trace-native-word-circuits.md) gives a complete two-input factor/prefix predicate using explicitly charged exact divisions. Fast contraction of that extended circuit family remains open; the polynomial carry backend does not supply it.
 
+A [divided-power extension](research/divided-power-trace-lifting.md) handles polynomial trace constraints at growing precision, with its coefficient-algebra size charged explicitly. An [Artin--Hasse alternative](research/artin-hasse-trace-projection.md) uses classical binary characters and charges extra precision for Fourier projection. Both provide exact counts for their represented input class; a complete factoring representation remains open.
+
 **Semiprime transform route.** Sanftenberg's D1 work offers a deterministic boundary contractor and a packed factor-moment scalar as candidate evaluator components. Its stated runtime target is also `alpha = 1/2`, and the hand-proved, not independently reviewed multiplier theorem in PR #73 maps D1's output-pinned bit graph to linear treewidth. Dense elimination is therefore blocked under that theorem; structured contraction and the full primitive-machine cost remain open. See the [source audit](research/riemann-gaussian-semiprime-source-audit.md) and [multiplier treewidth result](research/multiplier-treewidth-and-relation-cycles.md).
 
 The [research index](research/INDEX.md) is the full catalogue of proofs, constructions, finite searches, obstructions, and open questions. It contains the detailed research log; this README is only a summary.

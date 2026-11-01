@@ -1,0 +1,1711 @@
+{
+  "affine": [
+    {
+      "invoice": {
+        "acquisition_terms": [
+          3,
+          2
+        ],
+        "actual_backend": {
+          "coefficient_degree": 2,
+          "max_degree_budget": 2,
+          "queries": 1,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "algebra_dimension": 2,
+        "coefficient_degree": 2,
+        "divided_power_limit": 1,
+        "inconsistent": false,
+        "max_degree_budget": 2,
+        "precision": 1,
+        "predicates": 1,
+        "rank": 1,
+        "relative_columns": 1,
+        "row_modulus": 2,
+        "trace_degree_budget": 2,
+        "trace_degrees": [
+          1
+        ],
+        "variables": 1,
+        "width": 2
+      },
+      "precision": 1,
+      "result": 0,
+      "rows": [
+        [
+          [
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0
+          ],
+          0
+        ]
+      ]
+    },
+    {
+      "invoice": {
+        "acquisition_terms": [
+          2,
+          2,
+          3,
+          2
+        ],
+        "actual_backend": {
+          "coefficient_degree": 2,
+          "max_degree_budget": 4,
+          "queries": 1,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "algebra_dimension": 4,
+        "coefficient_degree": 2,
+        "divided_power_limit": 1,
+        "inconsistent": false,
+        "max_degree_budget": 4,
+        "precision": 1,
+        "predicates": 2,
+        "rank": 2,
+        "relative_columns": 1,
+        "row_modulus": 2,
+        "trace_degree_budget": 4,
+        "trace_degrees": [
+          1,
+          1
+        ],
+        "variables": 1,
+        "width": 2
+      },
+      "precision": 1,
+      "result": 1,
+      "rows": [
+        [
+          [
+            1
+          ],
+          0
+        ],
+        [
+          [
+            2
+          ],
+          1
+        ]
+      ]
+    },
+    {
+      "invoice": {
+        "inconsistent": true,
+        "queries": 0,
+        "rank": null
+      },
+      "precision": 1,
+      "result": 0,
+      "rows": [
+        [
+          [
+            1
+          ],
+          0
+        ],
+        [
+          [
+            1
+          ],
+          1
+        ]
+      ]
+    },
+    {
+      "invoice": {
+        "acquisition_terms": [
+          21,
+          6
+        ],
+        "actual_backend": {
+          "coefficient_degree": 2,
+          "max_degree_budget": 10,
+          "queries": 1,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "algebra_dimension": 6,
+        "coefficient_degree": 2,
+        "divided_power_limit": 5,
+        "inconsistent": false,
+        "max_degree_budget": 10,
+        "precision": 3,
+        "predicates": 1,
+        "rank": 1,
+        "relative_columns": 1,
+        "row_modulus": 2,
+        "trace_degree_budget": 10,
+        "trace_degrees": [
+          1
+        ],
+        "variables": 1,
+        "width": 2
+      },
+      "precision": 3,
+      "result": 2,
+      "rows": [
+        [
+          [
+            1
+          ],
+          1
+        ],
+        [
+          [
+            1
+          ],
+          1
+        ],
+        [
+          [
+            0
+          ],
+          0
+        ]
+      ]
+    },
+    {
+      "invoice": {
+        "acquisition_terms": [
+          6,
+          6,
+          21,
+          6
+        ],
+        "actual_backend": {
+          "coefficient_degree": 2,
+          "max_degree_budget": 20,
+          "queries": 1,
+          "relative_columns": 1,
+          "summation_width": 2
+        },
+        "algebra_dimension": 36,
+        "coefficient_degree": 2,
+        "divided_power_limit": 5,
+        "inconsistent": false,
+        "max_degree_budget": 20,
+        "precision": 3,
+        "predicates": 2,
+        "rank": 2,
+        "relative_columns": 1,
+        "row_modulus": 2,
+        "trace_degree_budget": 20,
+        "trace_degrees": [
+          1,
+          1
+        ],
+        "variables": 1,
+        "width": 2
+      },
+      "precision": 3,
+      "result": 1,
+      "rows": [
+        [
+          [
+            1
+          ],
+          0
+        ],
+        [
+          [
+            8
+          ],
+          1
+        ]
+      ]
+    },
+    {
+      "invoice": {
+        "inconsistent": true,
+        "queries": 0,
+        "rank": null
+      },
+      "precision": 3,
+      "result": 0,
+      "rows": [
+        [
+          [
+            1
+          ],
+          0
+        ],
+        [
+          [
+            1
+          ],
+          1
+        ]
+      ]
+    }
+  ],
+  "algebra": {
+    "associativity_basis_triples": 4160,
+    "divided_square_coefficient": 2,
+    "exponential_identities": 256,
+    "general_nilpotent_inverse_rejected": true,
+    "lifted_frobenius_is_not_squaring": true
+  },
+  "contractions": {
+    "cases": [
+      {
+        "direct_accepted_count": 4,
+        "exact_count_recovered": true,
+        "input": {
+          "H": 3,
+          "d": 2,
+          "denominators": [],
+          "mask": false,
+          "name": "empty domain count",
+          "numerators": [],
+          "predicates": [],
+          "t": 2,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [],
+          "actual_backend": {
+            "coefficient_degree": 2,
+            "max_degree_budget": 0,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 1,
+          "coefficient_degree": 2,
+          "divided_power_limit": 5,
+          "max_degree_budget": 0,
+          "precision": 3,
+          "predicates": 0,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 0,
+          "trace_degrees": [],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": true,
+            "point": [
+              0
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              1
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              8
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              63
+            ],
+            "weighted_value": 1
+          }
+        ],
+        "result": 4
+      },
+      {
+        "direct_accepted_count": 2,
+        "exact_count_recovered": false,
+        "input": {
+          "H": 1,
+          "d": 2,
+          "denominators": [],
+          "mask": false,
+          "name": "precision-one trace",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    1
+                  ]
+                ]
+              ],
+              1
+            ]
+          ],
+          "t": 2,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            3,
+            2
+          ],
+          "actual_backend": {
+            "coefficient_degree": 2,
+            "max_degree_budget": 2,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 2,
+          "coefficient_degree": 2,
+          "divided_power_limit": 1,
+          "max_degree_budget": 2,
+          "precision": 1,
+          "predicates": 1,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 2,
+          "trace_degrees": [
+            1
+          ],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": false,
+            "point": [
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              2
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              3
+            ],
+            "weighted_value": 1
+          }
+        ],
+        "result": 0
+      },
+      {
+        "direct_accepted_count": 2,
+        "exact_count_recovered": false,
+        "input": {
+          "H": 2,
+          "d": 2,
+          "denominators": [],
+          "mask": false,
+          "name": "two relative columns",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    1
+                  ]
+                ]
+              ],
+              1
+            ]
+          ],
+          "t": 1,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            20
+          ],
+          "actual_backend": {
+            "coefficient_degree": 2,
+            "max_degree_budget": 3,
+            "queries": 1,
+            "relative_columns": 2,
+            "summation_width": 2
+          },
+          "algebra_dimension": 4,
+          "coefficient_degree": 2,
+          "divided_power_limit": 3,
+          "max_degree_budget": 3,
+          "precision": 2,
+          "predicates": 1,
+          "relative_columns": 2,
+          "row_modulus": 1,
+          "trace_degree_budget": 3,
+          "trace_degrees": [
+            1
+          ],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": false,
+            "point": [
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              4
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              15
+            ],
+            "weighted_value": 1
+          }
+        ],
+        "result": 2
+      },
+      {
+        "direct_accepted_count": 2,
+        "exact_count_recovered": true,
+        "input": {
+          "H": 3,
+          "d": 2,
+          "denominators": [],
+          "mask": false,
+          "name": "exact one-word count",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    1
+                  ]
+                ]
+              ],
+              1
+            ]
+          ],
+          "t": 2,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            21,
+            6
+          ],
+          "actual_backend": {
+            "coefficient_degree": 2,
+            "max_degree_budget": 10,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 6,
+          "coefficient_degree": 2,
+          "divided_power_limit": 5,
+          "max_degree_budget": 10,
+          "precision": 3,
+          "predicates": 1,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 10,
+          "trace_degrees": [
+            1
+          ],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": false,
+            "point": [
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              8
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              63
+            ],
+            "weighted_value": 1
+          }
+        ],
+        "result": 2
+      },
+      {
+        "direct_accepted_count": 2,
+        "exact_count_recovered": true,
+        "input": {
+          "H": 3,
+          "d": 2,
+          "denominators": [],
+          "mask": false,
+          "name": "two predicates one word",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    1
+                  ]
+                ]
+              ],
+              0
+            ],
+            [
+              [
+                [
+                  1,
+                  [
+                    2
+                  ]
+                ],
+                [
+                  8,
+                  [
+                    0
+                  ]
+                ]
+              ],
+              1
+            ]
+          ],
+          "t": 2,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            6,
+            6,
+            21,
+            21
+          ],
+          "actual_backend": {
+            "coefficient_degree": 2,
+            "max_degree_budget": 30,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 36,
+          "coefficient_degree": 2,
+          "divided_power_limit": 5,
+          "max_degree_budget": 30,
+          "precision": 3,
+          "predicates": 2,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 30,
+          "trace_degrees": [
+            1,
+            2
+          ],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": true,
+            "point": [
+              0
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              1
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": false,
+            "point": [
+              8
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              63
+            ],
+            "weighted_value": 0
+          }
+        ],
+        "result": 2
+      },
+      {
+        "direct_accepted_count": 4,
+        "exact_count_recovered": false,
+        "input": {
+          "H": 2,
+          "d": 2,
+          "denominators": [],
+          "mask": false,
+          "name": "coupled trace polynomials",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                [
+                  4,
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              ],
+              1
+            ],
+            [
+              [
+                [
+                  1,
+                  [
+                    1,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0,
+                    2
+                  ]
+                ]
+              ],
+              0
+            ]
+          ],
+          "t": 2,
+          "v": 2,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            20,
+            10,
+            10,
+            10
+          ],
+          "actual_backend": {
+            "coefficient_degree": 2,
+            "max_degree_budget": 24,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 16,
+          "coefficient_degree": 2,
+          "divided_power_limit": 3,
+          "max_degree_budget": 24,
+          "precision": 2,
+          "predicates": 2,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 24,
+          "trace_degrees": [
+            2,
+            2
+          ],
+          "variables": 2,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": false,
+            "point": [
+              0,
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              0,
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              0,
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              0,
+              15
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              1,
+              0
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              1,
+              1
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": false,
+            "point": [
+              1,
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              1,
+              15
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              4,
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              4,
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              4,
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              4,
+              15
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": false,
+            "point": [
+              15,
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              15,
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              15,
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              15,
+              15
+            ],
+            "weighted_value": 1
+          }
+        ],
+        "result": 0
+      },
+      {
+        "direct_accepted_count": 4,
+        "exact_count_recovered": false,
+        "input": {
+          "H": 2,
+          "d": 2,
+          "denominators": [],
+          "mask": [
+            true,
+            false
+          ],
+          "name": "mixed punctured domains",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    1,
+                    1
+                  ]
+                ],
+                [
+                  4,
+                  [
+                    1,
+                    0
+                  ]
+                ]
+              ],
+              1
+            ],
+            [
+              [
+                [
+                  1,
+                  [
+                    1,
+                    0
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0,
+                    2
+                  ]
+                ]
+              ],
+              0
+            ]
+          ],
+          "t": 2,
+          "v": 2,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            20,
+            10,
+            10,
+            10
+          ],
+          "actual_backend": {
+            "coefficient_degree": 2,
+            "max_degree_budget": 24,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 16,
+          "coefficient_degree": 2,
+          "divided_power_limit": 3,
+          "max_degree_budget": 24,
+          "precision": 2,
+          "predicates": 2,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 24,
+          "trace_degrees": [
+            2,
+            2
+          ],
+          "variables": 2,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": true,
+            "point": [
+              1,
+              0
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              1,
+              1
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": false,
+            "point": [
+              1,
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              1,
+              15
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              4,
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              4,
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              4,
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              4,
+              15
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": false,
+            "point": [
+              15,
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              15,
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              15,
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              15,
+              15
+            ],
+            "weighted_value": 1
+          }
+        ],
+        "result": 0
+      },
+      {
+        "direct_accepted_count": 2,
+        "exact_count_recovered": false,
+        "input": {
+          "H": 2,
+          "d": 4,
+          "denominators": [],
+          "mask": false,
+          "name": "higher digits outside subring",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  188,
+                  [
+                    1
+                  ]
+                ]
+              ],
+              1
+            ]
+          ],
+          "t": 2,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            10,
+            4
+          ],
+          "actual_backend": {
+            "coefficient_degree": 4,
+            "max_degree_budget": 6,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 4,
+          "coefficient_degree": 4,
+          "divided_power_limit": 3,
+          "max_degree_budget": 6,
+          "precision": 2,
+          "predicates": 1,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 6,
+          "trace_degrees": [
+            1
+          ],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": false,
+            "point": [
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              1
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              180
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": false,
+            "point": [
+              159
+            ],
+            "weighted_value": 0
+          }
+        ],
+        "result": 2
+      },
+      {
+        "direct_accepted_count": 4,
+        "exact_count_recovered": true,
+        "input": {
+          "H": 4,
+          "d": 3,
+          "denominators": [],
+          "mask": false,
+          "name": "nonlinear cubic trace",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    3
+                  ]
+                ]
+              ],
+              0
+            ]
+          ],
+          "t": 3,
+          "v": 1,
+          "w": 3
+        },
+        "invoice": {
+          "acquisition_terms": [
+            8,
+            8,
+            8
+          ],
+          "actual_backend": {
+            "coefficient_degree": 3,
+            "max_degree_budget": 63,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 3
+          },
+          "algebra_dimension": 8,
+          "coefficient_degree": 3,
+          "divided_power_limit": 7,
+          "max_degree_budget": 63,
+          "precision": 4,
+          "predicates": 1,
+          "relative_columns": 1,
+          "row_modulus": 3,
+          "trace_degree_budget": 63,
+          "trace_degrees": [
+            3
+          ],
+          "variables": 1,
+          "width": 3
+        },
+        "points": [
+          {
+            "accepted": true,
+            "point": [
+              0
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": false,
+            "point": [
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              222
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              2675
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": false,
+            "point": [
+              2500
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              2477
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": false,
+            "point": [
+              1912
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              3573
+            ],
+            "weighted_value": 1
+          }
+        ],
+        "result": 4
+      },
+      {
+        "direct_accepted_count": 2,
+        "exact_count_recovered": false,
+        "input": {
+          "H": 2,
+          "d": 2,
+          "denominators": [
+            [
+              0,
+              [
+                [
+                  1,
+                  [
+                    1
+                  ]
+                ],
+                [
+                  1,
+                  [
+                    0
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "mask": false,
+          "name": "selected scalar pole",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    1
+                  ]
+                ]
+              ],
+              0
+            ]
+          ],
+          "t": 2,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            4,
+            4
+          ],
+          "actual_backend": {
+            "adjugate_factors": 1,
+            "coefficient_degree": 2,
+            "denominator_factors": 1,
+            "max_degree_budget": 15,
+            "norm_factors": 2,
+            "queries": 3,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 4,
+          "coefficient_degree": 2,
+          "divided_power_limit": 3,
+          "max_degree_budget": 15,
+          "precision": 2,
+          "predicates": 1,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 6,
+          "trace_degrees": [
+            1
+          ],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": true,
+            "point": [
+              0
+            ],
+            "weighted_value": 1
+          },
+          {
+            "accepted": true,
+            "point": [
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              15
+            ],
+            "weighted_value": 0
+          }
+        ],
+        "result": 1
+      },
+      {
+        "direct_accepted_count": 2,
+        "exact_count_recovered": false,
+        "input": {
+          "H": 2,
+          "d": 2,
+          "denominators": [
+            [
+              0,
+              [
+                [
+                  2,
+                  [
+                    0
+                  ]
+                ]
+              ]
+            ]
+          ],
+          "mask": false,
+          "name": "constant nonunit denominator",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    1
+                  ]
+                ]
+              ],
+              0
+            ]
+          ],
+          "t": 2,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            4,
+            4
+          ],
+          "actual_backend": {
+            "adjugate_factors": 1,
+            "coefficient_degree": 2,
+            "denominator_factors": 1,
+            "max_degree_budget": 6,
+            "norm_factors": 2,
+            "queries": 3,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 4,
+          "coefficient_degree": 2,
+          "divided_power_limit": 3,
+          "max_degree_budget": 6,
+          "precision": 2,
+          "predicates": 1,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 6,
+          "trace_degrees": [
+            1
+          ],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": true,
+            "point": [
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": true,
+            "point": [
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              15
+            ],
+            "weighted_value": 0
+          }
+        ],
+        "result": 0
+      },
+      {
+        "direct_accepted_count": 0,
+        "exact_count_recovered": false,
+        "input": {
+          "H": 2,
+          "d": 2,
+          "denominators": [],
+          "mask": false,
+          "name": "inconsistent polynomial predicates",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    1
+                  ]
+                ]
+              ],
+              0
+            ],
+            [
+              [
+                [
+                  1,
+                  [
+                    1
+                  ]
+                ]
+              ],
+              1
+            ]
+          ],
+          "t": 2,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            4,
+            4,
+            10,
+            4
+          ],
+          "actual_backend": {
+            "coefficient_degree": 2,
+            "max_degree_budget": 12,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 16,
+          "coefficient_degree": 2,
+          "divided_power_limit": 3,
+          "max_degree_budget": 12,
+          "precision": 2,
+          "predicates": 2,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 12,
+          "trace_degrees": [
+            1,
+            1
+          ],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": false,
+            "point": [
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              4
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              15
+            ],
+            "weighted_value": 0
+          }
+        ],
+        "result": 0
+      },
+      {
+        "direct_accepted_count": 0,
+        "exact_count_recovered": true,
+        "input": {
+          "H": 3,
+          "d": 2,
+          "denominators": [],
+          "mask": false,
+          "name": "even-width target constant",
+          "numerators": [],
+          "predicates": [
+            [
+              [
+                [
+                  1,
+                  [
+                    0
+                  ]
+                ]
+              ],
+              1
+            ]
+          ],
+          "t": 2,
+          "v": 1,
+          "w": 2
+        },
+        "invoice": {
+          "acquisition_terms": [
+            1,
+            6
+          ],
+          "actual_backend": {
+            "coefficient_degree": 2,
+            "max_degree_budget": 0,
+            "queries": 1,
+            "relative_columns": 1,
+            "summation_width": 2
+          },
+          "algebra_dimension": 6,
+          "coefficient_degree": 2,
+          "divided_power_limit": 5,
+          "max_degree_budget": 0,
+          "precision": 3,
+          "predicates": 1,
+          "relative_columns": 1,
+          "row_modulus": 2,
+          "trace_degree_budget": 0,
+          "trace_degrees": [
+            0
+          ],
+          "variables": 1,
+          "width": 2
+        },
+        "points": [
+          {
+            "accepted": false,
+            "point": [
+              0
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              1
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              8
+            ],
+            "weighted_value": 0
+          },
+          {
+            "accepted": false,
+            "point": [
+              63
+            ],
+            "weighted_value": 0
+          }
+        ],
+        "result": 0
+      }
+    ],
+    "direct_assignments": 76,
+    "pointwise_indicator_controls": 76,
+    "queries": 13
+  },
+  "scope": "Growing-precision polynomial trace predicates through a charged divided-power algebra; exact finite point counts, no integer arithmetic representation or factoring improvement.",
+  "source_sha256": {
+    "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
+    "tools/check_divided_power_trace_carries.py": "46679521a18a43bb1eb5ad8d06cb27da6809502b9385ac41a0a2c322ed24b700",
+    "tools/check_teichmuller_cyclic_carries.py": "fd2dbc89319864dbf7de4b38bf38633bb4e8fe2ee0af1cef0515b3c1f07c648b",
+    "tools/divided_power_trace_carries.py": "3e32a5f44d6111275149ce5a6a35740111d3680ca5854e296c45b54d262fd166",
+    "tools/precision_rational_carries.py": "22df4587179495c8f5079ef16c7aaa41c5d574ae2e509d4c0da64868ca747580",
+    "tools/square_zero_trace_contraction.py": "d7485cce135c988fcf4a661b1e3a84593a28aab371dee6bb72436db62f450387",
+    "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1",
+    "tools/trace_constraint_contraction.py": "cbd50816a984c5cbe7048e2aa849612d6c8b071893f62281e2c4b398c9c0e21a"
+  }
+}
