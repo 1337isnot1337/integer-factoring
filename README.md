@@ -1782,6 +1782,8 @@ The [flat-tensor parity theorem](research/cube-flat-parity-floor.md) proves the 
 
 The [moving-pair construction](research/coherent-moving-pair-core.md) constrains physical modes `0` and `M-1` while keeping the middle interval free. A uniform eight-mode core and explicit spectators give complete natural profiles beyond the fixed-support hypotheses. The exact core profiles are replayed through `M=512`; their numerical pressures remain slightly worse than the corresponding full Gaussian. Parameter-dependent maps and larger moving supports remain constructive directions.
 
+The [generic F4 frame engine](research/cube-f4-generic-frames.md) computes complete sixteen-by-sixteen flat-cube profiles with arbitrary physical parity. It returns exact polynomial row certificates and verifies their two unit determinants over `F4(y)`, so no finite-field point substitution is used. This supports nonbinary coefficient searches and rational-frame coefficient transfer; it does not supply a stronger factoring score.
+
 ## Contribution and attribution
 
 Start with the [contributor quickstart](docs/START_HERE.md) and

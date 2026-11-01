@@ -1205,3 +1205,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Complete profiles with a moving physical constraint
 
 - [A moving physical pair with an eight-mode active core](coherent-moving-pair-core.md)
+
+
+## Full generic cube frames over F4
+
+- [Exact polynomial row certificates without a parity restriction](cube-f4-generic-frames.md)

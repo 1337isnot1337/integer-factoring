@@ -2169,3 +2169,8 @@ verify-balanced-bezout-modular:
 .PHONY: verify-coherent-moving-pair
 verify-coherent-moving-pair:
 	python3 tools/check_coherent_moving_pair_core.py --evidence evidence/coherent-moving-pair-core.json --output /tmp/integer-factoring-coherent-moving-pair.json
+
+
+.PHONY: verify-cube-f4-generic-frames
+verify-cube-f4-generic-frames:
+	python3 tools/check_cube_f4_bivariate_smith.py --output /tmp/integer-factoring-cube-f4-generic-frames.json
