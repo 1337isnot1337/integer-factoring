@@ -1,0 +1,115 @@
+{
+  "claim": "Matched cofactor-policy batch comparisons",
+  "scope": "Finite completed traversals; no uniform complexity or timing claim.",
+  "source_sha256": {
+    "tools/batch_smooth_parts.py": "cda74765dbe776b94113fcf538fe4749c123c694097fccd45ede6a186dd59333",
+    "tools/batch_smooth_check.py": "70b9c1dce2925518dcdc725581c6211bde63e2e9153f2e8f03592527a89636f9",
+    "tools/leading_power_smooth_relations.py": "ab10b90877e39b8174164c1d201d5e1da35472b7079453acf741166142543791",
+    "tools/prime_cofactor_saturation.py": "7af1f32dc9426575bc62f900c0ed4ee2bfd25802f97e245822c77f34affac6e4",
+    "tools/batch_smooth_policy_check.py": "5e33f0e14617d1d5469b61f6812c646f9041d1df8cde0a2c791e47353a0b5a70",
+    "tools/check_prime_cofactor_saturation.py": "1a9341b715786f09d235e142b77bdd0282c1315e76491729df37cde107718653"
+  },
+  "environment": {
+    "python": "3.12.14",
+    "machine": "x86_64",
+    "system": "Linux"
+  },
+  "policies": [
+    {
+      "policy": "unpromoted",
+      "options": {
+        "promote_residuals": false,
+        "promotion_cutoff": 131056
+      },
+      "runs": [
+        {
+          "input_bits": 144,
+          "policy": "unpromoted",
+          "batch_size": 1,
+          "seconds": 53.32700093499443,
+          "cpu_seconds": 53.207587892999996,
+          "factor": 4108225714090758818561,
+          "norm_queries": 3395784,
+          "scanned_norm_queries": 3395784,
+          "generated_ahead_norms": 0,
+          "relation_rank": 510,
+          "prime_product_bits": 5794,
+          "full_mathematical_payload_sha256": "0f3feef0c870c2a1e68f33507793b03b9f725ea49e926cf41fdd71ca73cd30ac",
+          "matches_reference_witnesses_and_relations": true
+        },
+        {
+          "input_bits": 144,
+          "policy": "unpromoted",
+          "batch_size": 32,
+          "seconds": 53.06436059399857,
+          "cpu_seconds": 53.037486447000006,
+          "factor": 4108225714090758818561,
+          "norm_queries": 3545710,
+          "scanned_norm_queries": 3395784,
+          "generated_ahead_norms": 149926,
+          "relation_rank": 510,
+          "prime_product_bits": 5794,
+          "full_mathematical_payload_sha256": "0f3feef0c870c2a1e68f33507793b03b9f725ea49e926cf41fdd71ca73cd30ac",
+          "matches_reference_witnesses_and_relations": true
+        }
+      ],
+      "reference_verification": {
+        "partial_identity_checks": 10242,
+        "prime_residual_certificates": 9732,
+        "weighted_dominance_checks": 10242,
+        "integer_dag_eliminations": 510,
+        "negative_residual_orientations": 5030,
+        "multiple_noninitial_dependencies": 0,
+        "promoted_prime_occurrences": 0
+      }
+    },
+    {
+      "policy": "selective",
+      "options": {
+        "promote_residuals": true,
+        "promotion_cutoff": 131056
+      },
+      "runs": [
+        {
+          "input_bits": 144,
+          "policy": "selective",
+          "batch_size": 1,
+          "seconds": 60.848489703996165,
+          "cpu_seconds": 60.73493471800002,
+          "factor": 4108225714090758818561,
+          "norm_queries": 2305811,
+          "scanned_norm_queries": 2305811,
+          "generated_ahead_norms": 0,
+          "relation_rank": 512,
+          "prime_product_bits": 28932,
+          "full_mathematical_payload_sha256": "da683a30548b58484099d468c77f52e582e4c273a22c029467c7d0273f6ea1f8",
+          "matches_reference_witnesses_and_relations": true
+        },
+        {
+          "input_bits": 144,
+          "policy": "selective",
+          "batch_size": 32,
+          "seconds": 51.75546513700101,
+          "cpu_seconds": 51.744747578000016,
+          "factor": 4108225714090758818561,
+          "norm_queries": 2469491,
+          "scanned_norm_queries": 2305811,
+          "generated_ahead_norms": 163680,
+          "relation_rank": 512,
+          "prime_product_bits": 28932,
+          "full_mathematical_payload_sha256": "da683a30548b58484099d468c77f52e582e4c273a22c029467c7d0273f6ea1f8",
+          "matches_reference_witnesses_and_relations": true
+        }
+      ],
+      "reference_verification": {
+        "partial_identity_checks": 11601,
+        "prime_residual_certificates": 11089,
+        "weighted_dominance_checks": 11601,
+        "integer_dag_eliminations": 512,
+        "negative_residual_orientations": 5559,
+        "multiple_noninitial_dependencies": 4585,
+        "promoted_prime_occurrences": 5924
+      }
+    }
+  ]
+}

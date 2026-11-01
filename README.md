@@ -117,7 +117,63 @@ also completes a **176-bit** selective-promotion run in **23,998,215 norm
 queries**, reaching full rank in a 1,776-prime base. Its complete 51,902-identity
 certificate is retained in XZ form and independently replayed, including all
 50,126 residual-prime certificates and 1,776 integer graph eliminations.
+
+[Gcd-free oriented refinement](research/oriented-coprime-basis.md) replaces
+supplied composite residual ideals by pairwise coprime atoms with consistent
+quadratic-root orientations. It preserves the evaluated torsion image and
+can expose additional factors without factoring the residual norms.
+An exact four-witness example has no equal or conjugate residual keys,
+yet its refined cycle extracts 1009 from 1022117. The proof includes literal
+integral-ideal identities and polynomial bit cost for the supplied-witness
+transformation. Witness search remains charged separately.
+Run `make verify-oriented-coprime-basis`.
+
+The [matched batch-policy controls](research/batch-smooth-filtering.md#matched-existing-cofactor-policies)
+also test the faster existing 144-bit policies. Selective promotion takes
+60.848 versus 51.755 seconds with scalar versus batch-32 filtering;
+the unpromoted pair is essentially tied at 53.327 versus 53.064 seconds.
+Both comparisons preserve complete mathematical payloads and charge all
+generated-ahead candidates. A separate bounded 192-bit search driver retains
+its policy and streams a compressed, independently replayed certificate on
+completion; no 192-bit success is claimed here.
 <!-- cofactor-collision-checkpoint:end -->
+
+<!-- tensor-orthogonal-checkpoint:start -->
+## Effective orthogonal tensor constructions
+
+The [all-subset scaling theorem](research/tensor-orthogonal-scaling.md)
+constructs the required column scalings in deterministic polynomial time.
+For coefficient rank `R` and `m` columns, a single minimum-basis argument
+reduces the extension-degree budget to `O((m-R)^2+1)`, without enumerating
+column subsets. Corank one requires only a quadratic extension.
+
+The [capacity theorem](research/tensor-orthogonal-capacity.md) bounds the
+number of nonzero columns by
+`floor(fr(1+q^-1+...+q^(1-r)))` over `q=2^f`.
+It determines every binary rank and every rank-two capacity exactly.
+Complete F4 catalogues, hyperoval scaling obstructions, and
+[all-scale four-pair comparisons](research/tensor-orthogonal-pressure-dominance.md)
+make the remaining finite searches explicit.
+The [coupled quadratic screen](research/tensor-coupled-quadratic-dominance.md)
+also has exact integer dominance certificates for all 31 completed maps.
+
+These results construct and delimit physical-code families. None gives a
+crossing contraction below `1/sqrt(2)`; the complete factoring score remains
+**1/2**. Run `make verify-tensor-orthogonal` for the focused theorem controls,
+finite catalogues, and saved-profile certificates. Full native profile
+reconstruction is available separately and is not part of that quick target.
+
+The [F16 profile engine](research/tensor-f16-coherent-profiles.md) adds explicit
+three-/four-pair orthogonal constructions and a hyperoval scaling that
+escapes the F4-only obstruction. Independent literal entries and binary
+Toeplitz ranks validate its complete and capped Smith orders.
+A [common-core proof](research/tensor-coupled-quadratic-field-floor.md)
+gives `rho >= 5/7` for the entire specified height-8/12 coefficient family
+over every characteristic-two field. Its exact integer certificate stopped
+the F16 pilot after 24 of 851 classes; the catalogue is explicitly incomplete.
+Search continues in different lower-core families.
+Run `make verify-tensor-f16`.
+<!-- tensor-orthogonal-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
 ## Coherent crossing profiles
@@ -215,6 +271,45 @@ whose degree exceeds the complete minor-degree budget. Its F2 implementation
 uses degree 128, rejects larger budgets, and is checked against 96 known profiles
 and 12,869 independently enumerated minors.
 <!-- cube-transfer-checkpoint:end -->
+
+## Circuit products, normalized averages, and one-variable poles
+
+The [circuit-box product theorem](research/circuit-box-products.md) constructs
+`product (Z-q(a)) mod 2^p` over any fixed-dimensional integer box when `q`
+is a division-free circuit of unrestricted formal degree. Generation is
+polynomial in the written circuit, endpoint bit lengths, and precision;
+the output uses `O(p+log(M+1))` arithmetic nodes for `M` box points.
+Only `p-1` normalized moment bits are needed for positive packet coefficients.
+Exact coefficient checks include a 161-node input of degree above `2^81`
+over more than `2^204` points. Singular normalization remains open, and
+the complete factoring score remains **1/2**.
+Run `make verify-circuit-box-products`.
+
+The [normalized-average theorem](research/circuit-box-averages.md) computes
+`(2^d/|B|) sum q(a)` for fixed-dimensional boxes at `p` coefficient bits,
+independent of the count valuation, including globally odd-unit rational
+circuits. Applied to [complete normalized Bezout pairs](research/circuit-box-bezout.md),
+it gives [fewer than `2p` coefficient bits](research/circuit-box-bezout-averages.md)
+for certified separated isometric domains. A six-bit `2^80`-node example
+now uses ten bits instead of 86. The [one-variable pole-trace compiler](research/circuit-box-pole-trace.md)
+also handles singular centers by a polynomial-size valuation partition and
+returns exact congruence-root counts. The two-variable factor rectangle
+remains outside these proved algorithms; no higher factoring score is claimed.
+Run `make verify-circuit-box-normalization` for all four new exact suites.
+
+## Batched exact smooth-part filtering
+
+The [batched selector implementation](research/batch-smooth-filtering.md) applies
+Bernstein's product/remainder-tree method to the existing prime-form searches.
+The opt-in path preserves the scalar first-success witnesses and charges all
+candidates generated ahead. Its geometric schedule generates fewer than twice
+the scalar inspected count; size-balanced batches give filtering cost
+`soft-O(sum R_j + Q b)` for frozen per-search product lengths `R_j` and `Q`
+inspected `b`-bit norms. This bounds filtering, not the unresolved search length.
+A matched fully promoted 144-bit run took 129.70 seconds versus 198.18 seconds,
+with identical factors and all 513 relation rows. This is a same-policy speedup,
+not an overall best-policy timing record. The complete score remains **1/2**.
+Run `make verify-batch-smooth`.
 
 ## Results and evidence
 
@@ -748,6 +843,12 @@ instead of `4^b` physical channels. A certified range has column rank
 The proposed mixed list still misses the five- and thirteen-label crossings.
 A uniform mixed spanning identity remains open. Run the NumPy replay
 `make verify-braid-fusion-seam`.
+The [invertible three-strand projector](research/invertible-fusion-graded-seams.md)
+extends this to graded central ranks `F_(k-1)` (rank one when k=0),
+where k strands are left free. Its uniform row-exponent range is0..2,
+with the same vacuum-interface column factors and an explicit integer
+cost filter. The unfiltered prefix family still misses the five- and
+thirteen-label crossings. Run `make verify-braid-graded-seam` (NumPy).
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -1966,3 +2067,17 @@ independent binary-polynomial Smith implementation. This closes boundary-only
 natural-pressure searches in that family; changes to lower states and other
 gauges remain open. The factoring score stays `1/2`. Run
 `make verify-moving-boundary` for the construction and all-scale certificates.
+
+The same [moving-map note](research/moving-boundary-crossings.md#codimension-one-frames-with-no-protected-lower-coordinate-core)
+now gives polynomial and Laurent physical frames that can move all eight
+states. Common monomial clearing preserves the coefficient ranks and
+opposite-cut product pressure. A complete 1,696-evaluation interior-pair
+screen and 144 declared frame pilot cases give no improved bound. Dense
+Laurent contraction checks and all complete finite profiles are retained;
+the larger frame search remains open.
+
+An [exact-source receipt](evidence/moving-map-verification/receipt.json)
+retains the full default pass at `410e3e2` (341 Python command blocks,
+66 unit tests, five crossing tests, 973 Markdown files) and four focused
+moving-map checks at `1dba7ba`. These are source-specific ordinary checks;
+later integrations and the full frame search have separate status.

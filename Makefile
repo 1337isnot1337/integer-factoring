@@ -24,6 +24,8 @@ verify-docs:
 verify-moving-boundary:
 	python3 tools/check_moving_boundary_crossings.py --output /tmp/moving-boundary-controls.json
 	python3 tools/check_moving_boundary_core_floor.py --output /tmp/moving-boundary-core-floor.json
+	python3 tools/check_moving_interior_crossings.py --output /tmp/moving-interior-controls.json
+	python3 tools/check_moving_physical_frames.py --output /tmp/moving-physical-frame-controls.json
 
 .PHONY: verify-pole-smith verify-joint-top-boundary
 verify-pole-smith:
@@ -343,6 +345,10 @@ verify-braid-rank-envelope:
 .PHONY: verify-braid-fusion-seam
 verify-braid-fusion-seam:
 	python3 tools/check_quantum_braid_fusion_seam.py
+
+.PHONY: verify-braid-graded-seam
+verify-braid-graded-seam:
+	python3 tools/check_quantum_braid_graded_seam.py
 
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
@@ -2379,3 +2385,68 @@ verify-coherent-f4-partial:
 .PHONY: verify-orthogonal-pair-core-floor
 verify-orthogonal-pair-core-floor:
 	python3 tools/check_orthogonal_pair_core_floor.py
+
+.PHONY: verify-circuit-box-products
+verify-circuit-box-products:
+	python3 tools/check_circuit_box_products.py
+
+.PHONY: verify-batch-smooth
+verify-batch-smooth:
+	python3 tools/batch_smooth_check.py
+
+.PHONY: verify-circuit-box-normalization verify-circuit-box-bezout verify-circuit-box-averages verify-circuit-box-bezout-averages verify-circuit-box-pole-trace
+verify-circuit-box-normalization: verify-circuit-box-bezout verify-circuit-box-averages verify-circuit-box-bezout-averages verify-circuit-box-pole-trace
+
+verify-circuit-box-bezout:
+	python3 tools/check_circuit_box_bezout.py
+
+verify-circuit-box-averages:
+	python3 tools/check_circuit_box_averages.py
+
+verify-circuit-box-bezout-averages:
+	python3 tools/check_circuit_box_bezout_averages.py
+
+verify-circuit-box-pole-trace:
+	python3 tools/check_circuit_box_pole_trace.py
+
+.PHONY: verify-tensor-orthogonal verify-tensor-orthogonal-scaling verify-tensor-orthogonal-capacity verify-tensor-f4-catalogues verify-tensor-orthogonal-comparisons
+
+verify-tensor-orthogonal: verify-tensor-orthogonal-scaling verify-tensor-orthogonal-capacity verify-tensor-f4-catalogues verify-tensor-orthogonal-comparisons
+
+verify-tensor-orthogonal-scaling:
+	python3 tools/check_tensor_orthogonal_scaling.py --output /tmp/integer-factoring-tensor-scaling-check.json
+
+verify-tensor-orthogonal-capacity:
+	python3 tools/check_tensor_orthogonal_capacity.py --output /tmp/integer-factoring-tensor-capacity-check.json
+
+verify-tensor-f4-catalogues:
+	python3 tools/check_tensor_f4_rank_two.py --output /tmp/integer-factoring-tensor-rank-two-check.json
+	python3 tools/tensor_f4_rank_three_catalogue.py --output /tmp/integer-factoring-tensor-rank-three-check.json
+	python3 tools/check_tensor_f4_hyperoval_obstruction.py --output /tmp/integer-factoring-tensor-hyperoval-check.json
+
+verify-tensor-orthogonal-comparisons:
+	python3 -c 'import pathlib, shutil, subprocess, tempfile; d=tempfile.TemporaryDirectory(prefix="factoring-tensor-"); p=pathlib.Path(d.name)/"certificate.json"; shutil.copyfile("evidence/tensor-orthogonal-pressure-dominance.json",p); subprocess.run(["python3","tools/check_tensor_orthogonal_pressure_dominance.py","--output",str(p)],check=True)'
+	python3 tools/check_tensor_f4_five_pair_dominance.py --output /tmp/integer-factoring-tensor-five-pair-check.json
+	python3 tools/check_tensor_coupled_quadratic_dominance.py --output /tmp/integer-factoring-tensor-coupled-check.json
+
+.PHONY: verify-oriented-coprime-basis
+
+verify-oriented-coprime-basis:
+	python3 tools/check_oriented_coprime_basis.py
+
+.PHONY: benchmark-batch-cofactor-policies
+
+benchmark-batch-cofactor-policies:
+	python3 tools/batch_smooth_policy_check.py --output /tmp/integer-factoring-batch-cofactor-policies.json
+
+.PHONY: verify-paired-mds-low-core
+verify-paired-mds-low-core:
+	python3 tools/check_paired_mds_low_core_floor.py
+
+.PHONY: verify-tensor-f16
+
+verify-tensor-orthogonal: verify-tensor-f16
+
+verify-tensor-f16:
+	python3 tools/check_tensor_hot_compounds_f16.py --output /tmp/integer-factoring-tensor-f16-check.json
+	python3 tools/check_tensor_coupled_quadratic_core_floor.py --recompute-profiles --output /tmp/integer-factoring-tensor-field-floor-check.json
