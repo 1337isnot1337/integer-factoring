@@ -136,6 +136,14 @@ before unused free summands are removed. Unbalanced components retain
 their necessary double-root relations, and larger residual words are
 transported without loss. These are finite search and supplied-witness
 improvements; the uniform search bound remains open.
+[Incremental sparse refinement](research/incremental-oriented-coprime-basis.md)
+finds only overlapping atoms through a product tree. On the same 250-key
+control it uses 2,719 decision gcds versus 406,191 for one complete rebuild,
+and stores 361 signed exponents instead of 62,250 dense entries.
+Seven matched component runs give a retained median of 5.392 versus
+54.79 milliseconds. Product arithmetic, rewritten usages, and the
+independent witness-search cost remain charged; this is a component
+improvement, not an end-to-end timing or exponent claim.
 Run `make verify-oriented-refinement`.
 
 The [matched batch-policy controls](research/batch-smooth-filtering.md#matched-existing-cofactor-policies)

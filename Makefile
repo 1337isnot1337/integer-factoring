@@ -2467,3 +2467,10 @@ verify-circuit-box-normalization: verify-circuit-box-inverse-windows
 
 verify-circuit-box-inverse-windows:
 	python3 tools/check_circuit_box_inverse_windows.py --output /tmp/integer-factoring-inverse-window-check.json
+
+.PHONY: verify-incremental-oriented-basis
+
+verify-oriented-refinement: verify-incremental-oriented-basis
+
+verify-incremental-oriented-basis:
+	python3 tools/check_incremental_oriented_coprime_basis.py
