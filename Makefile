@@ -2183,6 +2183,10 @@ verify-joint-split-jet-guards:
 verify-joint-split-flags:
 	python3 tools/check_joint_split_flag_queries.py
 
+.PHONY: verify-joint-moving-retractions
+verify-joint-moving-retractions:
+	python3 tools/check_joint_moving_retractions.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

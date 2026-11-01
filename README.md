@@ -2005,3 +2005,13 @@ after a timeout; no all-field or asymmetric conclusion follows. Run
 receipt replay; this does not independently certify the solver's UNSAT
 claims. These additions postdate the full-suite source pin, and the
 factoring score remains **1/2**.
+
+[Moving joint retractions](research/joint-moving-retractions.md) permit
+one-sided row or column updates through discarded source coordinates,
+including Laurent poles and unequal energies. All 14,400 declared F4
+monomial updates have exact balanced natural `rho >= 3/4` certificates.
+Every case is reconstructed independently before native profile replay;
+all 1,745 distinct classes also agree with separate Python elimination
+on 55,840 complete orders. Combinations and asymmetric charges remain
+open. Run `make verify-joint-moving-retractions`; these focused additions
+are outside the earlier full-suite pin and leave the score at **1/2**.
