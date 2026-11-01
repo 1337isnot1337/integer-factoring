@@ -124,13 +124,12 @@ def main():
     assert counts['nonzero_answers'] > 10 and counts['all_fixed'] > 0
     root = Path(__file__).resolve().parents[1]
     sources = ['tools/frobenius_prefix_contraction.py', 'tools/check_frobenius_prefix_contraction.py',
-               'tools/trace_constraint_contraction.py', 'tools/joint_frobenius_carries.py']
-    # The final checker is installed under tools/ before producing the receipt.
-    if (root / sources[0]).exists():
-        receipt = {'scope': 'Exact encoded-word prefix controls; arithmetic phase representation remains open',
-                   'counts': counts,
-                   'sha256': {p: sha256((root / p).read_bytes()).hexdigest() for p in sources}}
-        (root / 'evidence/frobenius-prefix-contraction.json').write_text(json.dumps(receipt, indent=2) + '\n')
+               'tools/trace_constraint_contraction.py', 'tools/joint_frobenius_carries.py',
+               'tools/square_zero_trace_contraction.py']
+    receipt = {'scope': 'Exact encoded-word prefix controls; arithmetic phase representation remains open',
+               'counts': counts,
+               'sha256': {p: sha256((root / p).read_bytes()).hexdigest() for p in sources}}
+    (root / 'evidence/frobenius-prefix-contraction.json').write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps(counts, indent=2))
 
 

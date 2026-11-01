@@ -1,7 +1,7 @@
 """Binary operand prefixes with fixed words substituted before contraction."""
 from itertools import product
 
-from trace_constraint_contraction import constrained_trace
+from square_zero_trace_contraction import square_zero_constrained_trace
 
 
 def trace_bit(field, width, value):
@@ -110,8 +110,8 @@ def prefix_trace(field, width, t, groups, basis, numerators, denominators, nonze
         coefficients = [0] * len(active)
         coefficients[positions[old]] = dual[bit_position]
         constraints.append((tuple(coefficients), bit))
-    answer, stats = constrained_trace(field, width, t, len(active), nums, dens,
-                                      constraints, [mask[i] for i in active])
+    answer, stats = square_zero_constrained_trace(field, width, t, len(active), nums, dens,
+                                                  constraints, [mask[i] for i in active])
     stats['active_variables'] = len(active)
     stats['fixed_words'] = len(fixed)
     return answer, stats

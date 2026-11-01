@@ -350,6 +350,14 @@ trace factors jointly without charging `D=w`.
 
 ## Background and attribution
 
+The [affine trace interface](trace-constraint-contraction.md) and its
+[square-zero aggregation](square-zero-trace-contraction.md) give a scoped
+escape from the retained-single-factor limitation above: keep the trace
+constraints outside the base product and charge their binary rank.
+[Fixed-word substitution](frobenius-prefix-contraction.md) further reduces
+prefix restrictions to at most one partial word per operand. These results
+still do not represent the complete integer phases.
+
 Finite-field coefficient selection and trace operators have a substantial
 prior literature. In particular, Beukers and Vlasenko's
 [*Dwork crystals I*, Appendix A](https://arxiv.org/html/1903.11155v4)

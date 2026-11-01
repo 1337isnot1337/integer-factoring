@@ -539,3 +539,20 @@ does not claim to cover this later delta or concurrently integrated sources.
 These are author-checked ordinary results and exact finite controls, not
 independent mathematical review or a complete factoring improvement. The
 score remains 1/2. Substantial OpenAI Codex assistance.
+
+## 2026-11-01: Share trace-row choices in a square-zero algebra
+
+The [ordinary argument](../research/square-zero-trace-contraction.md) replaces
+`t^r` packet enumeration by one synchronized contraction over an explicit
+`2^r`-dimensional coefficient algebra, with cost
+`2^O(r) (S+rt+2)^O(vw/t)`. Only original scalar-valued denominators use the
+field inverse identity; no inverse or field Frobenius period is assumed
+for the nilpotent coefficients. The prefix implementation now uses this
+backend. Full arithmetic phase representation is still missing.
+
+The [focused algebra receipt](../evidence/square-zero-trace-contraction.json)
+and [updated prefix receipt](../evidence/frobenius-prefix-contraction.json)
+record literal comparisons and source hashes. The earlier full-suite run
+at `318c748` remains the full baseline, not a full run of this later delta.
+No Lean, independent mathematical review, or complete factoring exponent
+above 1/2 is claimed. Substantial OpenAI Codex assistance.

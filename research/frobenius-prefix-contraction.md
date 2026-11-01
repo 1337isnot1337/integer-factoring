@@ -80,16 +80,17 @@ r=\sum_{a=1}^h(k_a\bmod w)\le h(w-1)
 
 independent binary equations. Independence holds because they are distinct
 coordinates within each partial word, and different operands use different
-word variables. The preceding contraction theorem gives total cost
+word variables. The [square-zero aggregation](square-zero-trace-contraction.md)
+of these constraints gives total cost
 
 ```math
-t^r(S+r+2)^{O(v'w/t)}\operatorname{poly}(L,d,w,v,h).
+2^{O(r)}(S+rt+2)^{O(v'w/t)}\operatorname{poly}(L,d,w,v,h).
 ```
 
 At t=w a uniform upper bound for every prefix query is therefore
 
 ```math
-2^{O(hw\log(w+1)+v\log(S+hw+2))}\operatorname{poly}(L,d,w,v,h).
+2^{O(hw+v\log(S+hw^2+2))}\operatorname{poly}(L,d,w,v,h).
 ```
 
 In particular, a long known prefix does not require a proportional number
@@ -123,10 +124,10 @@ For h=2, t=w, v=O(n/w), and S polynomial in n, prefix and interval
 queries cost
 
 ```math
-2^{O(w\log(w+1)+(n/w)\log n)}\operatorname{poly}(L,d,n).
+2^{O(w+(n/w)\log n)}\operatorname{poly}(L,d,n).
 ```
 
-For example w=Theta(sqrt(n)) makes this 2^O(sqrt(n) log n), provided
+For example w=Theta(sqrt(n log n)) makes this 2^O(sqrt(n log n)), provided
 the base representation genuinely has t=w and polynomial written size
 and field degree. Constructing the field by exhaustive irreducible search
 at degree d=O(w) also fits 2^O(w) times polynomial overhead. More general

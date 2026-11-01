@@ -11,9 +11,10 @@
     "interval_queries": 200
   },
   "sha256": {
-    "tools/frobenius_prefix_contraction.py": "dd8c54543759d13f5dc5e0847533441d1c8cc0f340cd8f1aebb58d14f1090f60",
-    "tools/check_frobenius_prefix_contraction.py": "134f11b839e3578922bb37b04c6f270672f080db043fa33ec55d15d7f2488a0d",
+    "tools/frobenius_prefix_contraction.py": "07d607659ad137da705f7f9d2eefe014d63ac6b21c1644ad61bcf84705e395dd",
+    "tools/check_frobenius_prefix_contraction.py": "0e2e972ad8d880fe0677dbfa3828dfaf55223e0af5f51441c79a31593a7285fd",
     "tools/trace_constraint_contraction.py": "cbd50816a984c5cbe7048e2aa849612d6c8b071893f62281e2c4b398c9c0e21a",
-    "tools/joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8"
+    "tools/joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8",
+    "tools/square_zero_trace_contraction.py": "d7485cce135c988fcf4a661b1e3a84593a28aab371dee6bb72436db62f450387"
   }
 }

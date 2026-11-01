@@ -1572,3 +1572,5 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 - [Joint Frobenius product contraction](joint-frobenius-product-contraction.md): a simultaneous cyclic-carry algorithm sums synchronized multivariate products in `(S+2)^O(vD)` field operations. A cycle-residual gcd finds the largest admissible row modulus. Weighted geometric-box networks give a concrete global application without repeated-star closure. The complete arithmetic-query representation remains open; the factoring exponent stays `1/2`.
 
 - [Prefix and interval closure for synchronized word sums](frobenius-prefix-contraction.md): substitute fully fixed words, retain only one partial word per operand, and decompose integer intervals into disjoint prefixes. The integer phase representation remains open.
+
+- [Square-zero aggregation of trace constraints](square-zero-trace-contraction.md): one carry contraction over an explicit subset algebra gives `2^O(r) (S+rt+2)^O(vw/t)` cost, retaining scalar-only denominator inversion. The prefix implementation uses this sharper bound; the complete arithmetic phase representation remains open.

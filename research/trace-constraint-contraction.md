@@ -10,6 +10,11 @@ an exact parameterized algorithm. It changes the representation assumption
 behind that limitation, without supplying a complete factoring reduction.
 The complete factoring score remains **1/2**.
 
+The later [square-zero aggregation](square-zero-trace-contraction.md)
+strengthens the bound below to `2^O(r) (S+rt+2)^O(vw/t)` by sharing the
+row choices in a coefficient algebra. The packet implementation here
+remains a separate exact comparison.
+
 This is an ordinary argument and implementation developed with OpenAI Codex
 assistance. It uses the preceding cyclic-carry theorem, elementary binary
 linear algebra, and finite-field trace duality; no novelty claim is made

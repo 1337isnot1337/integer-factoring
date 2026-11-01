@@ -115,6 +115,10 @@ The [prefix and interval extension](research/frobenius-prefix-contraction.md)
 substitutes fully fixed operand words first, leaving at most one partially
 fixed word per operand. It preserves exact bounded domains under the same
 explicit representation hypothesis.
+The [square-zero coefficient construction](research/square-zero-trace-contraction.md)
+shares the trace-row choices in one contraction, replacing the `t^r`
+expansion by `2^O(r)` algebra cost. The prefix implementation uses this
+stronger interface; it still supplies no complete factoring improvement.
 
 The [output-sensitive space transfer](research/output-sensitive-space-transfer.md)
 recovers a complete factorization from a scalar phase evaluator in time

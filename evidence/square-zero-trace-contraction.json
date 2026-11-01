@@ -1,0 +1,18 @@
+{
+  "scope": "Exact square-zero aggregation controls; no factoring score improvement",
+  "counts": {
+    "queries": 288,
+    "packet_comparisons": 288,
+    "direct_assignments": 10344,
+    "nonzero_answers": 57,
+    "inconsistent": 40,
+    "maximum_rank": 4,
+    "nilpotent_controls": 35
+  },
+  "sha256": {
+    "tools/square_zero_trace_contraction.py": "d7485cce135c988fcf4a661b1e3a84593a28aab371dee6bb72436db62f450387",
+    "tools/check_square_zero_trace_contraction.py": "1f529c501637f47f82ff82a79b1600582c7baf7cb25dd8e753981b2ec82a445d",
+    "tools/joint_frobenius_carries.py": "a383d3db131fce1e932b23dddde55c2c747c5bb117823d2e6c686e26135c75b8",
+    "tools/trace_constraint_contraction.py": "cbd50816a984c5cbe7048e2aa849612d6c8b071893f62281e2c4b398c9c0e21a"
+  }
+}
