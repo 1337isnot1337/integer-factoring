@@ -1,0 +1,20 @@
+{
+  "binary_sha256": "eec021b785f27f72bed052ee96ae2cd17ba1f78fc87a66bad2beeb5f34c7671d",
+  "construction_source_commit": "8a3ea3e6aeacba7d0a53764de5579e3707bb2ca7",
+  "coverage": "An odd affine permutation modulo 2^22 is bijective; every coefficient vector occurs exactly once.",
+  "created_utc": "2026-11-01T06:57:59.299310+00:00",
+  "family": "q=(1+t)r, r=sum_(j=0)^10 c_j t^j, c_j in F4",
+  "input_sha256": "7a67c5054f1b628e0a2798e3dc9d1da9535a0dbbf79bc4b617296f69fa75e009",
+  "multiplier": 3448601,
+  "offset": 3290852,
+  "os_random_seed": 14284518028918429265,
+  "scope": "Complete finite F4 family at inherited integer heights. Numerical asymmetric fits are separate; no all-field or factoring-exponent claim.",
+  "source_sha256": {
+    "tools/check_joint_energy_conjugations.py": "66d44df5e6be905f902819540795dfb4d9ad3ea7876bacb4bd5bc1104d9d66b7",
+    "tools/native_weighted_smith_f4.cpp": "c5a0a488a75ee1c79d214b7c9553050ecbb1f4d94170d886036ac1cacbc49a67",
+    "tools/run_two_place_f4_census.py": "85f826ec0e90d1657931c6c798de20a9ee22be4e38819ff9fa69351470092848",
+    "tools/scan_two_place_f4_pencil.cpp": "e273af758957cc429ae2d765e5965a87855e118b2f544e372e17c157c0fd9b65",
+    "tools/weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+  },
+  "total_registered": 4194304
+}

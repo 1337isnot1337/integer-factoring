@@ -34,6 +34,10 @@ The Pascal search now supports [arbitrary exponent permutations](research/permut
 [constant F4 flags](research/f4-pascal-flags.md). Both complete cut profiles
 and physical costs are retained. The focused exact controls and registered
 finite searches do not establish a stronger factoring exponent.
+An [all-field determinant classification](research/two-place-determinant-target.md)
+now isolates a sufficient asymmetric target and excludes that particular
+escape for the retained pencil. A [registered full F4 census](research/two-place-f4-census.md)
+continues to test its other asymmetric profile possibilities.
 
 ## Arithmetic construction and space bounds
 

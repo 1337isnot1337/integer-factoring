@@ -1,5 +1,8 @@
 # Research index
 
+- [An asymmetric determinant target and an all-field pencil ceiling](two-place-determinant-target.md): determinant degree below 70 would suffice at the retained heights; the full eleven-parameter pencil has exact minimum degree 78 over every characteristic-two field, with a fresh whole-determinant replay.
+- [Registered full F4 two-place census](two-place-f4-census.md): all 4,194,304 coefficient vectors registered, exact endpoint and complete integer profiles, independent class replays, and separate numerical asymmetric fits; the full run is in progress and no score improvement is claimed.
+
 - [Constant F4 Pascal flags](f4-pascal-flags.md): exact constant-field extension, all 180 invertible two-by-two flags, 448 independent original-Fock orders, a scale-gradient guard repair, and pinned default verification at 566b596; no score improvement.
 
 - [Selected-entry Pascal occupation sectors](pascal-coordinate-sectors.md): complete coordinate crossings without ambient Fock expansion, independent selected-minor checks, 1,782 full-profile comparisons, and filled-sea starts through thirty-two letters; no score improvement.

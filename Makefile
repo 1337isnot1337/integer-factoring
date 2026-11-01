@@ -2362,6 +2362,16 @@ verify-pascal-coordinate-sectors:
 verify-f4-pascal-flags:
 	python3 tools/check_f4_pascal_flags.py --output /tmp/f4-pascal-flag-controls.json
 
+.PHONY: verify-two-place-determinant verify-two-place-f4-census
+verify-two-place-determinant:
+	python3 tools/check_two_place_determinant.py --output /tmp/two-place-determinant.json
+
+verify-two-place-f4-census:
+	$(CXX) -O3 -std=c++17 tools/scan_two_place_f4_pencil.cpp -o /tmp/integer-factoring-two-place-f4-census-check
+	python3 tools/check_two_place_f4_census.py --binary /tmp/integer-factoring-two-place-f4-census-check --output /tmp/two-place-f4-census-controls.json
+
+verify-frontier: verify-two-place-determinant
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
