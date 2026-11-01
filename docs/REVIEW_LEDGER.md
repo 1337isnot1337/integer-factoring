@@ -1049,6 +1049,53 @@ source check and does not cover this consolidation. The short README and
 concurrent separator work from `ebfd7e5` are retained. No stronger score
 or independent mathematical review is inferred.
 
+## Refined packed-system acquisition and residue coefficients
+
+PR76's final scope extends the canonical compiler rather than retaining a
+second implementation. A coefficient need only have its residue in the
+summation subfield; its higher digits may lie outside the corresponding
+subring. The field-basis packing proof uses precisely that residue condition.
+The implementation checks it and retains the existing basic-irreducible
+representation and coefficient-embedding assumptions.
+
+For degree D, summation width w and relative degree a=D/w, each norm
+moment has row degree and initial carry at most a*j*delta. The existing
+carry evaluator already computes that rotated bound. The canonical
+compiler now reports the resulting `max_initial_carry`, and the ordinary
+invoice is `(h*a*delta+2)^O(v)` times the stated polynomial bit overhead.
+No variables or precision are hidden in the coefficient extension.
+
+The [additional receipt](../evidence/teichmuller-packed-system-controls.json)
+records 92 systems against 501 direct assignments, 274 acquired carry
+queries, 248 tag combinations and 34 queries at enough precision for
+integer recovery. Five invalid-interface controls are rejected. These
+controls inspect actual row tables and carry budgets, including mixed
+punctured domains and non-subfield higher coefficient digits. The older
+compiler and inverse-control receipts were regenerated against the same
+canonical source. The old full run at `777b48d` was deliberately interrupted
+for consolidation; no full PASS follows from it. Earlier full pins remain
+historical checks. No native integer-query representation, stronger score,
+new Lean or independent mathematical review is supplied.
+
+The [exact full receipt](../evidence/teichmuller-packed-full-verification.json)
+records the exit-zero default-plus-39-focused run at clean frozen
+`10d761083651d1d5a78366a00e73ba9c986b5fa9`, tree
+`e1fef4e84aeb90964b33d34b9f3460cc244d758e`, in 697.46 seconds.
+It has 388 Python command blocks, 66 unit tests, five crossing tests and
+1,131 Markdown files. Clean pre/post status and both raw/compressed log
+hashes are retained with the
+[complete compressed log](../evidence/teichmuller-packed-full-verification.stdout.txt.xz).
+This pin includes canonical consolidation and the refined packing interface;
+later receipt/docs changes and main integration deltas have separate scope.
+
+After integrating main `80835e8`, the canonical compiler, original carry
+backend and all three compiler checkers are byte-identical to the full
+`10d7610` pin. The new main integration passed
+`make verify-lazy-potential-tail verify-window-graph-data
+verify-multiplier-treewidth-controls verify-docs`, including 1,135 Markdown
+files. Concurrent graph proofs, their scope repairs, D1 source mapping and
+archived verification are retained. This does not claim a fresh full run
+of all later main changes or independent review of their mathematics.
 
 ## PR #73: multiplier-network treewidth and relation cycles
 
