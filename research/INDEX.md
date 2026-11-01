@@ -101,6 +101,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Output-sensitive orbit-gcd deadline transfer](output-sensitive-gcd-deadline.md): the existing polynomial zero-degree runtime target already implies polynomial-time factoring by bounded simulation and interval bisection; the primitive remains unproved.
+
 - [Weighted fixed-characteristic transfer](fixed-characteristic-transfer.md): uniform factoring from a modular evaluator.
 
 - [Weighted prefix constructor](weighted-prefix-constructor.md): exact weighted tables and their construction cost.

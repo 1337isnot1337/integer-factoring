@@ -45,11 +45,15 @@ in `(n+D+1)^C` bit operations, for one absolute constant `C`. The cost
 must include all generation, zero testing, normalization, scalars,
 and coefficient output. It must work for degree zero as well.
 
-If this primitive existed, it would imply unconditional deterministic
-factoring in `exp(O(sqrt(n)))` bit operations. This is a conditional
-transfer theorem, not an implementation or an improved bound.
+If this primitive existed, it would imply **polynomial-time deterministic
+factoring**. The [proved deadline reduction](output-sensitive-gcd-deadline.md)
+simulates the primitive only for its polynomial degree-zero runtime bound.
+A timeout certifies a positive-degree gcd; a completed answer is inspected
+exactly. Polynomially many interval-bisection queries then recover the least
+prime factor. This remains a conditional theorem: the primitive is unproved.
 
-To prove the implication, trial-divide up to `2^b`, stopping on a
+For comparison, the original sparsity argument gives the weaker bound
+`exp(O(sqrt(n)))`. Trial-divide up to `2^b`, stopping on a
 divisor. If none exists, every prime factor exceeds `2^b`, so the
 number of prime factors with multiplicity is at most `n/b`. Hence
 
@@ -63,13 +67,13 @@ polynomially many calls to the primitive; over `Q`, their exactness
 also follows directly from (1). Thus the total cost would be
 
 ```math
-2^b\operatorname{poly}(n)+
- \operatorname{poly}(n,2^{n/b})=
+2^b\mathrm{poly}(n)+
+ \mathrm{poly}(n,2^{n/b})=
 \exp(O(b+n/b+\log n)).                            \tag{2}
 ```
 
 Choose the integer `b=ceil(sqrt(n))`, using trial division alone for
-the finitely many small boundary cases. Equation (2) gives the claim.
+the finitely many small boundary cases. Equation (2) gives that weaker bound.
 For every fixed scoring exponent `alpha`, `sqrt(n)` is eventually
 smaller than `n/(log n)^alpha`. Consequently a proof of this primitive
 would go far beyond a small improvement on `1/2`. There is currently

@@ -110,6 +110,10 @@ and [global modular input circuits](research/interval-packet-circuits.md)
 with `O(n+p)` arithmetic nodes and polynomial generation cost.
 Recovering the genuine rational common factor within the desired time
 bound remains open; these results do not improve the factoring score.
+The [deadline reduction](research/output-sensitive-gcd-deadline.md) sharpens
+the conditional consequence: the proposed output-sensitive rational gcd
+primitive would imply polynomial-time factoring. It is enough to prove a
+fast termination bound on coprime inputs; that bound is also unresolved.
 [Normalized integer-center jets](research/normalized-interval-jets.md)
 also separate huge local powers of two from polynomial-cost unit data.
 The [global pole trace](research/interval-pole-trace.md) gives an exact
