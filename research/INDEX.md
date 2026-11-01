@@ -1,5 +1,7 @@
 # Research index
 
+- [Full-rank affine full-tail maps](tensor-full-tail-affine-search.md): endpoint-only maps, explicit Laurent clearings, literal controls, and all256 binary pairs at M=16.
+
 - [Literal Laurent frames and completed searches](tensor-weighted-laurent-frame-search.md): complete binary/F16 censuses, larger finished profiles, explicit clearing costs, and independent raw-tensor controls.
 
 - [Executable two-pass oriented construction](circuit-box-oriented-batch-controls.md): unitary preprocessing, raw-difference comparison, sparse output charges, and independent ideal controls.

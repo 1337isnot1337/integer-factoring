@@ -2671,3 +2671,7 @@ verify-two-pass-oriented-basis:
 .PHONY: verify-tensor-literal-moving-frames
 verify-tensor-literal-moving-frames:
 	python3 tools/check_tensor_literal_moving_frames.py --output /tmp/tensor-moving-frame-replay.json
+
+.PHONY: verify-tensor-affine-full-tail
+verify-tensor-affine-full-tail:
+	python3 tools/check_tensor_literal_full_tail_affine_frames.py --output /tmp/tensor-affine-full-tail-replay.json
