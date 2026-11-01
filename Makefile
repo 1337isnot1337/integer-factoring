@@ -2132,3 +2132,7 @@ verify-cube-coefficient-fibers-full:
 .PHONY: verify-multiaxis-types
 verify-multiaxis-types:
 	python3 tools/check_multiaxis_type_amplification.py
+
+.PHONY: verify-product-power-weights
+verify-product-power-weights:
+	python3 tools/check_pole_cauchy_product_power_weights.py
