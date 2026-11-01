@@ -8,6 +8,9 @@ crossing endpoint `T(1)=[x=v][y=u]`. Fix rational physical heights on all
 four legs at each of zero and infinity. Put `n=AB`. The two complete
 complementary-cut profiles at unit scale are `r,s`, and the restored paired
 energy vectors are `G_X,G_Y`. Choose `r` as the strong channel.
+The scalar `t` multiplies these unit-scale orders and energy vectors; the
+fixed gauge refers to their monomial exponents, rather than oracle weights
+held numerically constant while `t` changes.
 
 There is an `epsilon>0`, depending on this fixed tensor and these fixed
 heights, such that for **every scale `t>0`** and every unit positive
@@ -79,6 +82,13 @@ The entry/degree argument applies to Laurent tensors after the stated
 normalization. It also applies to a triangular endpoint whenever all the
 matched principal minors used in (1) are separately proved nonzero.
 The mere existence of a typed crossing endpoint does not supply that fact.
+
+For the coordinate Pascal endpoint `[b=y]*det(P[v,x])`, matching the
+columns produces `I_B tensor Q` or its transpose, where `Q` is a principal
+restriction of the compound Pascal matrix. It is unit triangular on each
+occupation block, so every principal minor is one. Thus the proof also
+covers the current [coordinate Pascal constructors](rectangular-pascal-coordinate-alphabets.md),
+including the constant nonbinary flags that preserve this endpoint.
 
 ## A global positive second-moment floor on the saturated locus
 

@@ -151,8 +151,15 @@ The lowest supporting-line value is `1.0001056729915`, still above one.
 The registered rule selects `full-24-by-48-swapped`, of sizes 48 and 24,
 for the one-hour whole-symbol follow-on. Its last-bit advantage over the
 unswapped case is numerical roundoff, not evidence of a structural
-orientation advantage. The follow-on is running separately from this
-completed screen. No exact stronger crossing or factoring bound follows.
+orientation advantage. No exact stronger crossing or factoring bound follows.
+
+The frozen `426bb2a` [one-hour follow-on](../evidence/rectangular-pascal-coordinate-search-complete.json.xz)
+is now complete: 805 successful full-profile queries, zero rejections,
+and 3,604.79 search seconds after 79.10 seconds of initialization. Its
+lowest numerical rho remains `0.7218724642968`. The first optimizer
+restart was still partial at the time stop; no restart-exhaustion or
+global optimality claim is made. Best complete profiles, physical types,
+parameters, counters, source texts and stdout are retained.
 
 Full default verification plus six named focused gates passed in a clean
 checkout at exact `7dd1903`; the [receipt](../evidence/verify-7dd1903.json)
