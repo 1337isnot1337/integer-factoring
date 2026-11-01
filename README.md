@@ -286,6 +286,9 @@ exact ranks over every characteristic-five extension and minmax rank
 product 2304; that finite block cannot improve the rate. Run
 `make verify-bounded-spin` and the optional NumPy target
 `make verify-bounded-spin-algebra`.
+The [spin-zero jet identities](research/bounded-spin-three-jets.md)
+hold at every length and bound the coefficient span by `n-2` for even
+`n>=6`; ordinary cut-rank growth remains open.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
