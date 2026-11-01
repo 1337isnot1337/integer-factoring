@@ -122,11 +122,19 @@ certificate is retained in XZ form and independently replayed, including all
 supplied composite residual ideals by pairwise coprime atoms with consistent
 quadratic-root orientations. It preserves the evaluated torsion image and
 can expose additional factors without factoring the residual norms.
-An exact four-witness example has no equal or conjugate residual keys,
-yet its refined cycle extracts 1009 from 1022117. The proof includes literal
-integral-ideal identities and polynomial bit cost for the supplied-witness
-transformation. Witness search remains charged separately.
-Run `make verify-oriented-coprime-basis`.
+Matched 16-, 64-, and 320-query prefixes now extract factors where the
+original exact-key selector returns none. The largest control factors
+1000036000099 as 1000003 times 1000033, with all 320 supplied witnesses
+and integer row-combination certificates retained.
+
+[Signed residual graph elimination](research/signed-residual-graph-elimination.md)
+compresses that complete 320-row, 252-generator presentation to five rows
+on five generators. Explicit integer maps preserve the full presentation
+before unused free summands are removed. Unbalanced components retain
+their necessary double-root relations, and larger residual words are
+transported without loss. These are finite search and supplied-witness
+improvements; the uniform search bound remains open.
+Run `make verify-oriented-refinement`.
 
 The [matched batch-policy controls](research/batch-smooth-filtering.md#matched-existing-cofactor-policies)
 also test the faster existing 144-bit policies. Selective promotion takes

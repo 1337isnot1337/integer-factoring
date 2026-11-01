@@ -2450,3 +2450,13 @@ verify-tensor-orthogonal: verify-tensor-f16
 verify-tensor-f16:
 	python3 tools/check_tensor_hot_compounds_f16.py --output /tmp/integer-factoring-tensor-f16-check.json
 	python3 tools/check_tensor_coupled_quadratic_core_floor.py --recompute-profiles --output /tmp/integer-factoring-tensor-field-floor-check.json
+
+.PHONY: verify-oriented-refinement verify-oriented-cofactor-prefixes verify-signed-residual-graph
+
+verify-oriented-refinement: verify-oriented-coprime-basis verify-oriented-cofactor-prefixes verify-signed-residual-graph
+
+verify-oriented-cofactor-prefixes:
+	python3 tools/check_oriented_cofactor_prefixes.py
+
+verify-signed-residual-graph:
+	python3 tools/check_signed_residual_graph.py --prefix evidence/oriented-cofactor-prefixes.json
