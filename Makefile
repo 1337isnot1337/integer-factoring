@@ -1890,3 +1890,8 @@ verify-hot96-type:
 .PHONY: verify-bilinear-pole-packets
 verify-bilinear-pole-packets:
 	python3 tools/check_bilinear_pole_packets.py
+
+.PHONY: verify-cube-profile-pressure
+verify-cube-profile-pressure:
+	python3 tools/check_cube_gaussian_profile_budget.py --output /tmp/integer-factoring-cube-gaussian-profile-budget.json
+	python3 tools/check_cube_gaussian_tight_pressure.py --output /tmp/integer-factoring-cube-gaussian-tight-pressure.json

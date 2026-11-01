@@ -80,13 +80,14 @@ Run `make verify-coherent-retractions` for focused exact controls and
 The [three-axis cube transfer](research/cube-crossing-transfer.md) gives
 `alpha = log_3(1/rho)` from a uniform common eight-leg crossing family.
 An [explicit homogeneous Gaussian family](research/cube-homogeneous-gaussian.md)
-now meets this interface with **`rho = 5/8`**, using one three-variable
-coefficient decomposition at all three cuts. Its exact rational certificate,
-complete Laurent-polynomial factorizations, and full evaluation costs are retained.
-This gives `alpha = log_3(8/5)`, below the existing **1/2**.
-The same note proves an all-scale `rho > 3/5` floor for its specified
-homogeneous Cayley/common-profile method; crossing the target
-`1/sqrt(3)` needs a different construction or stronger rank estimate.
+meets this interface with the [sharper exact certificate](research/cube-gaussian-tight-pressure.md)
+**`rho = 278/445`**, improving `5/8` for the same kernel.
+Complete Laurent-polynomial factorizations, the common coefficient decomposition,
+and evaluation costs are retained. Its exponent `log_3(445/278)` remains below **1/2**.
+A [shared endpoint-minor argument](research/cube-gaussian-profile-budget.md)
+proves `rho > 3/5` for every homogeneous eight-by-eight Gaussian kernel
+under the common-scale, unweighted Smith-profile method. Multiple physical modes
+and stronger coefficient-rank estimates remain outside that obstruction.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence

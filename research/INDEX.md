@@ -1018,3 +1018,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Weighted hot-code profile and search interfaces](weighted-hot-compound-search.md)
 - [Physical types in same-place Hermite reconstruction](weighted-multipoint-hermite-crossings.md)
 - [A width-sensitive evaluator and a faster prime-constructor schedule](width-sensitive-prime-constructor.md)
+
+## Cube profile and pressure checkpoints
+
+- [Endpoint-minor budgets beyond the Cayley kernel class](cube-gaussian-profile-budget.md)
+- [A sharper rational certificate for the common cube family](cube-gaussian-tight-pressure.md)
