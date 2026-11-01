@@ -2029,6 +2029,8 @@ total degree charged inside the state budget and zero assigned to nonunits.
 The [full carry replay receipt](evidence/teichmuller-carry-full-verification.json)
 pins the preceding polynomial/root-count backend at `b9cd96f`; the inverse
 extension is outside that older source pin.
+The [full inverse replay](evidence/teichmuller-inverse-full-verification.json)
+separately passed the default and 37 focused targets at `ed83f94`.
 
 For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
 extends the existing permutation calculation to dependent and noncommuting

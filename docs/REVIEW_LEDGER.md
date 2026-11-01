@@ -899,7 +899,12 @@ recorded in its separate receipt. The existing companion supplies the
 collected identity and smaller inverse polynomial; this extension acquires
 their actual carry queries. Current main `d4c3fad` was integrated without
 conflict at `ed83f94`, and `make verify-docs` passed for 1,130 Markdown
-files. A new full run at clean frozen `ed83f94` is in progress; no full
-PASS is claimed for it here. These are author implementation checks and
+files. The [full inverse receipt](../evidence/teichmuller-inverse-full-verification.json)
+now records an exit-zero default-plus-37-focused run at clean frozen
+`ed83f945d4defec3dcf17c0b8dfd60854492ed09`, tree
+`d28bc45b823eb985472e377c9dfb85cebe67e7b3`, in 823.66 seconds.
+It retains 386 Python command blocks, 66 unit tests, five crossing tests
+and 1,130 Markdown files. Later receipt/docs changes and the packed-system
+implementation are outside that exact pin. These are author implementation checks and
 ordinary proofs, with no independent mathematical review, new Lean work,
 integer-word compiler or stronger factoring bound.

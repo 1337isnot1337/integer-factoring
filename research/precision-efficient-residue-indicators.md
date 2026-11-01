@@ -254,6 +254,10 @@ assignments, 60 precision-one reductions to the field evaluator, and
 per-query count and degree invoice. The identity, smaller inverse polynomial
 and collection invoice above retain this note's preceding credit; this
 extension implements their interface to the separate carry backend.
+The [full inverse replay receipt](../evidence/teichmuller-inverse-full-verification.json)
+pins the clean default-plus-37-focused pass at `ed83f94`, including this
+implementation and the companion controls. Later packed-system additions
+are outside that source pin.
 
 ## Exact controls
 
