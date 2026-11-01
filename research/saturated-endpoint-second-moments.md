@@ -10,8 +10,8 @@ second-moment witness.
 
 ## Sufficient condition
 
-Fix an admissible crossing with paired alphabet sizes `A,B`, `n=AB`,
-complete unit-scale order lists `r,s` in the two cuts, and restored paired
+Fix an admissible crossing with paired alphabet sizes `A,B>=2`, `n=AB`,
+complete unit-scale order lists `r,s` of length `n` in both cuts, and restored paired
 energies `G_X,G_Y`. All means and variances below are uniform averages
 over their respective lists. Let `m=min(s)`, and define
 
@@ -90,3 +90,12 @@ OPENBLAS_NUM_THREADS=1 python3 tools/search_pencil_endpoint_moments.py \
 ```
 
 No new Lean formalization or factoring improvement is claimed.
+
+The frozen `1ff76b4` [search archive](../evidence/pencil-endpoint-moments-search-complete.json.xz)
+now contains all **200** completed optimizer calls, all with local success,
+and **46,224** successful complete-profile queries with zero rejections.
+It exhausted the registered restart lists in 19.84 seconds, before either
+time ceiling. The lowest observed variance difference is **one at both
+axes**, attained at the independently checked natural point. No nonpositive
+witness was found. These local searches do not prove that one is a global
+minimum, so the sufficient condition remains unfulfilled for this face.
