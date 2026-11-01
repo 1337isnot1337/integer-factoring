@@ -2307,3 +2307,8 @@ verify-bezout-count-values:
 .PHONY: verify-orthogonal-differential-pairs
 verify-orthogonal-differential-pairs:
 	python3 tools/check_orthogonal_differential_pairs_f4.py
+
+
+.PHONY: verify-linear-pascal-matroid
+verify-linear-pascal-matroid:
+	python3 tools/check_linear_pascal_matroid.py --output /tmp/linear-pascal-matroid-energies.json

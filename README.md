@@ -1913,3 +1913,6 @@ Repeating the symplectic reduction gives [polynomial-size blocks for symmetric e
 
 
 The [fixed-field count-value refinement](research/bezout-count-values.md) reduces the precision requirement to `O(log n)` bits: differences of two normalized inverse values detect prime divisors in certified windows. It also implements an exact precision-one provider for intervals with a small symmetric difference, including implicit large singular examples. The general value provider remains open, and its full cost is included in every conditional bound.
+
+
+The [binary-linear Pascal extension](research/linear-pascal-matroid-energies.md) computes complete zero-cut spectra from minimum-weight projected row bases. It supplies actual kernels outside the earlier filtered class and charges their changed physical energies. The other cut remains part of the required contraction calculation.

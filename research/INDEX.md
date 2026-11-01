@@ -1287,3 +1287,6 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Orthogonal paired differential retractions
 
 [Subset Gram criterion and construction](orthogonal-differential-pair-codes.md) gives orthogonal, deletion-closed interior maps and identical natural cut profiles. Exact F4 controls find18valid column scalings among81. No new pressure or factoring claim.
+
+
+- [Pascal zero spectra from binary linear maps](linear-pascal-matroid-energies.md): exact Boolean-subcube orders, a supermodular projected-basis weight, explicit polynomial kernels, and complete zero profiles with their physical charges.
