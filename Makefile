@@ -2283,3 +2283,8 @@ verify-prime-bezout-counting:
 .PHONY: verify-cube-optimized-type
 verify-cube-optimized-type:
 	python3 tools/certify_cube_optimized_type.py
+
+
+.PHONY: verify-one-prime-bezout-recovery
+verify-one-prime-bezout-recovery:
+	python3 tools/check_one_prime_bezout_recovery.py --output /tmp/one-prime-bezout-recovery.json

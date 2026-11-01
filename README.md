@@ -1900,3 +1900,6 @@ The [filtered Pascal exponent classification](research/filtered-pascal-exponents
 
 
 A [prime-adic precision-one refinement](research/prime-bezout-counting.md) turns each normalized leading coefficient into a rectangle factor count modulo a small prime. Polynomially bounded primes and disjoint residue rectangles yield a uniform conditional factoring reduction with only logarithmically many output bits per query. Exact rational controls verify the normalization; computing the global coefficient remains unresolved.
+
+
+The [one-prime recovery refinement](research/one-prime-bezout-recovery.md) uses a chosen field and an explicit trial budget. Counts become exact on certified prime-only intervals, so a single characteristic suffices even when the total divisor count vanishes modulo that prime. The resulting conditional cost is exponential only in the charged trial budget and the still-missing coefficient provider.

@@ -1,0 +1,126 @@
+{
+  "cancellation_and_square_controls": [
+    {
+      "coefficient_queries": 48,
+      "n": 46189,
+      "ordinary_proper_divisor_count_mod_prime": 0,
+      "prime": 7,
+      "prime_intervals": [
+        {
+          "exact_prime_divisor_count": 4,
+          "lower": 8,
+          "upper": 64
+        }
+      ],
+      "smallest_prime_factor": 11
+    },
+    {
+      "coefficient_queries": 192,
+      "n": 10403,
+      "ordinary_proper_divisor_count_mod_prime": 2,
+      "prime": 17,
+      "prime_intervals": [
+        {
+          "exact_prime_divisor_count": 0,
+          "lower": 2,
+          "upper": 4
+        },
+        {
+          "exact_prime_divisor_count": 0,
+          "lower": 4,
+          "upper": 16
+        },
+        {
+          "exact_prime_divisor_count": 2,
+          "lower": 16,
+          "upper": 256
+        }
+      ],
+      "smallest_prime_factor": 101
+    },
+    {
+      "coefficient_queries": 192,
+      "n": 10201,
+      "ordinary_proper_divisor_count_mod_prime": 1,
+      "prime": 17,
+      "prime_intervals": [
+        {
+          "exact_prime_divisor_count": 0,
+          "lower": 2,
+          "upper": 4
+        },
+        {
+          "exact_prime_divisor_count": 0,
+          "lower": 4,
+          "upper": 16
+        },
+        {
+          "exact_prime_divisor_count": 1,
+          "lower": 16,
+          "upper": 256
+        }
+      ],
+      "smallest_prime_factor": 101
+    },
+    {
+      "coefficient_queries": 120,
+      "n": 1329900201629,
+      "ordinary_proper_divisor_count_mod_prime": 10,
+      "prime": 13,
+      "prime_intervals": [
+        {
+          "exact_prime_divisor_count": 6,
+          "lower": 16,
+          "upper": 256
+        }
+      ],
+      "smallest_prime_factor": 97
+    },
+    {
+      "coefficient_queries": 40,
+      "n": 1009,
+      "ordinary_proper_divisor_count_mod_prime": 0,
+      "prime": 11,
+      "prime_intervals": [
+        {
+          "exact_prime_divisor_count": 0,
+          "lower": 2,
+          "upper": 4
+        },
+        {
+          "exact_prime_divisor_count": 0,
+          "lower": 4,
+          "upper": 16
+        },
+        {
+          "exact_prime_divisor_count": 0,
+          "lower": 16,
+          "upper": 256
+        }
+      ],
+      "smallest_prime_factor": 1009
+    }
+  ],
+  "cases_using_supplied_provider": 219,
+  "certified_prime_interval_controls": 291,
+  "finite_known_divisor_coefficient_queries": 4226,
+  "finite_wrapper_cases": 1541,
+  "invalid_contracts_rejected": 4,
+  "large_contract_only": {
+    "default_input_bits": 401,
+    "default_prime": 409,
+    "factor_multiplicity_bound": 100,
+    "input_bits": 1001,
+    "prime": 101,
+    "scope": "Binary parameter construction only; no large coefficient supplied or evaluated",
+    "trial_bits": 10
+  },
+  "prime_selection_controls": 128,
+  "scope": "The global normalized coefficient provider remains an explicit hypothesis; no improved factoring score is claimed.",
+  "source_sha256": {
+    "tools/check_one_prime_bezout_recovery.py": "2603c9553addbcaab94f07cad018e126e79c15efcbf88aa904bbf7176f71f7c5",
+    "tools/one_prime_bezout_recovery.py": "25154681bb337037cea3d5593d458e910cf0ffea201e8c2eba9f00301ca17451",
+    "tools/prime_bezout_counting.py": "67d8f58f131e200cc5461bae08a72f640d5697b94da69cd84f2246303603b321"
+  },
+  "theorem": "One prime field and certified prime-only intervals recover the smallest prime"
+}
