@@ -2578,3 +2578,9 @@ verify-oriented-refinement: verify-primitive-integer-row-basis
 
 verify-primitive-integer-row-basis:
 	python3 tools/check_primitive_integer_row_basis.py --repetitions 1
+
+.PHONY: verify-batched-coprime-bucket-basis
+verify-batched-coprime-bucket-basis:
+	python3 tools/check_batched_coprime_bucket_basis.py --output /tmp/batched-coprime-bucket-basis-verify.json
+
+verify-oriented-coprime-basis: verify-batched-coprime-bucket-basis

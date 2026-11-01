@@ -1,5 +1,7 @@
 # Research index
 
+- [Prepared bucket remainders](batched-coprime-bucket-basis.md): exact mutable delta correction, complete oriented-word equality, and charged matched 80/96-bit measurements.
+
 - [Primitive temporary rows for exact relation selection](primitive-integer-row-selection.md): an all-matrix equivalence proof, charged coefficient bounds, 17,000 matched decisions and measured 96-bit core selection; original relations remain intact.
 
 - [A lattice terminal for exact ratio-class factors](circuit-box-ratio-lattice.md): weighted two-dimensional reduction, a uniform twenty-line local bound, exact quadratic recovery and fully charged `2^(n/3)*poly(n)` smallest-factor search; representation-specific scope.

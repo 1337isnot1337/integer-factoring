@@ -2241,3 +2241,5 @@ integer relations. Only temporary test vectors are divided by their content.
 On the 96-bit core, five paired runs reduce median selection CPU time from
 0.606 to 0.141 seconds; 17,000 finite acceptance decisions agree with the
 reference. This changes component cost without weakening torsion information.
+
+The [prepared bucket basis](research/batched-coprime-bucket-basis.md) preserves complete oriented ideal words while sharing frozen remainders across supplied batches. Full 80/96-bit fixture replays pass; matched 96-bit basis CPU falls from 4.8112 to 1.7320 seconds. This is a supplied-basis implementation improvement, with no new uniform relation-supply or factoring exponent claim.
