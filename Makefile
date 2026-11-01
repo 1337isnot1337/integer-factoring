@@ -1982,3 +1982,10 @@ verify-weighted-four-axis-floor:
 verify-multiaxis-floor:
 	python3 tools/check_multiaxis_gaussian_profile_floor.py
 
+
+.PHONY: verify-pole-cauchy-rational-blocks
+verify-pole-cauchy-rational-blocks:
+	python3 tools/check_pole_cauchy_rational_poles.py --small-only --output /tmp/integer-factoring-pole-cauchy-rational-poles.json
+	python3 tools/check_pole_cauchy_repeated_poles.py --output /tmp/integer-factoring-pole-cauchy-repeated-poles.json
+	python3 tools/check_pole_cauchy_quadratic_selectors.py --output /tmp/integer-factoring-pole-cauchy-quadratic-selectors.json
+	python3 tools/check_pole_cauchy_residue_blocks.py --output /tmp/integer-factoring-pole-cauchy-residue-blocks.json

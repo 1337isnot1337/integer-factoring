@@ -1065,3 +1065,10 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 - [Stronger F4 hyperoval crossing bound](f4-hyperoval-crossing-bound.md): exact rho < 0.710005861 with both complete profiles and an explicit positive type; no stronger factoring exponent.
 - [Coherent deletion-operator weight cone](weighted-coherent-hot-f4.md): a sufficient cone for both weighted cuts of non-coordinate physical retracts.
+
+## Rational poles and full-precision inverse residue blocks
+
+- [Implicit inverse contractions with external rational poles](pole-cauchy-rational-poles.md)
+- [Higher external poles with explicit precision costs](pole-cauchy-repeated-poles.md)
+- [Quadratic poles give inverse residue-block sums](pole-cauchy-quadratic-selectors.md)
+- [Inverse residue-block sums at arbitrary precision](pole-cauchy-residue-blocks.md)

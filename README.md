@@ -229,6 +229,15 @@ and the complete factoring score remains **1/2**.
 also admit polynomial precision: for `c_A,c_B` component intervals the
 inverse loss is at most `(k-1)(2c_A+2c_B-3)`, with a sharper exact residue sweep.
 This extends the implicit joint-contraction algorithm beyond balanced domains.
+[External rational poles](research/pole-cauchy-rational-poles.md) and
+[higher pole orders](research/pole-cauchy-repeated-poles.md) are now evaluable
+with all denominator losses charged. [Quadratic poles](research/pole-cauchy-quadratic-selectors.md)
+give exact dyadic residue selectors outside the regular unit-inverse circuit
+model. A [polynomial selector lift](research/pole-cauchy-residue-blocks.md)
+computes complete residue-block sums of `2^L M^-1` modulo `2^p`, in time
+polynomial in the encoded domains and numerical precision parameters.
+The missing step is a sufficiently compressed rank or Smith-count algorithm;
+inverse block sums do not by themselves count factor pairs.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
