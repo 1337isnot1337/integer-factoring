@@ -2192,3 +2192,11 @@ On the 80-bit fixture, the additional unit certificate shrinks from 3,113,278
 to 21,638 JSON bytes while sharing the complete graph certificate. The final
 rows, retained generators and torsion image agree with the expanded maps.
 The full relation-search and factoring exponents remain unchanged.
+
+The [optimized oriented selector](research/optimized-oriented-power-search.md)
+reuses the unchanged search body with the two exact component replacements.
+Its complete 80-bit result matches the baseline while reducing the retained
+search time from 67.006 to 9.694 seconds. A new certified 96-bit input factors
+after 20,480 queries versus 35,106 for the original exact-key selector. Full
+witnesses, both integer presentation maps and the original comparison replay;
+the original selector remains faster in total time, and the score is unchanged.

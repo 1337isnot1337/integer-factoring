@@ -2541,3 +2541,11 @@ verify-oriented-refinement: verify-unit-presentation-trace
 
 verify-unit-presentation-trace:
 	python3 tools/check_unit_presentation_trace.py
+
+.PHONY: verify-optimized-oriented-power
+
+verify-oriented-refinement: verify-optimized-oriented-power
+
+verify-optimized-oriented-power:
+	python3 tools/check_optimized_oriented_power_search.py --replay evidence/optimized-oriented-power-search.json
+	python3 tools/check_optimized_oriented_fresh_run.py --replay evidence/optimized-oriented-power-96.json.xz

@@ -1,5 +1,7 @@
 # Research index
 
+- [Exact component acceleration and a certified 96-bit prefix](optimized-oriented-power-search.md): frozen-body 64/80-bit equivalence, independently replayed 96-bit factoring after 20,480 queries, and an exact 35,106-query original comparison; timings and query gains are separated.
+
 - [Compact traces for integer presentation isomorphisms](unit-presentation-traces.md): composable unit isomorphisms, independent local replay, 432 finite comparisons and eight rejection checks, with complete compact 64/80-bit certificates and charged component timings.
 
 - [Positive ratio lookahead and complete adaptive factoring](circuit-box-ratio-lookahead.md): exact positive counts, a fully charged `2^(n/3+O(n/log n))` smallest-prime-factor algorithm with polynomial space, and complete checks through the declared 51-bit empty rectangles; a representation-specific advance, not a scoring improvement.
