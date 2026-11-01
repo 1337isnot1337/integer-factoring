@@ -305,6 +305,15 @@ returns exact congruence-root counts. The two-variable factor rectangle
 remains outside these proved algorithms; no higher factoring score is claimed.
 Run `make verify-circuit-box-normalization` for all four new exact suites.
 
+
+[Factorial normalization of a factor row](research/circuit-box-inverse-windows.md)
+removes its exponentially large known valuation baseline. The remaining
+capped valuation is an explicit sum of inverse-window indicators, and its
+final increment equals the exact factor count. Aggregating that increment
+over a long row interval remains open. An empty-semiprime rectangle family
+forces `Omega(2^(n/2))` states under the stated dyadic corner-pruning rules,
+so the one-variable result alone does not control that continuation.
+
 ## Batched exact smooth-part filtering
 
 The [batched selector implementation](research/batch-smooth-filtering.md) applies

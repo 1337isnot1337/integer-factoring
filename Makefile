@@ -2460,3 +2460,10 @@ verify-oriented-cofactor-prefixes:
 
 verify-signed-residual-graph:
 	python3 tools/check_signed_residual_graph.py --prefix evidence/oriented-cofactor-prefixes.json
+
+.PHONY: verify-circuit-box-inverse-windows
+
+verify-circuit-box-normalization: verify-circuit-box-inverse-windows
+
+verify-circuit-box-inverse-windows:
+	python3 tools/check_circuit_box_inverse_windows.py --output /tmp/integer-factoring-inverse-window-check.json

@@ -1,0 +1,287 @@
+{
+  "exact_binomial_baseline_checks": 400,
+  "huge_single_row_controls": [
+    {
+      "baseline": 2658455991569831745807614120560689183,
+      "cap": 122,
+      "count": 1329227995784915872903807060280344593,
+      "factor_count": 1,
+      "first_b": 5,
+      "number": 9304595970494411110326649421962412193,
+      "residual_at_cap": 116,
+      "residual_at_next_cap": 117,
+      "row": 7
+    },
+    {
+      "baseline": 2658455991569831745807614120560689183,
+      "cap": 122,
+      "count": 1329227995784915872903807060280344593,
+      "factor_count": 0,
+      "first_b": 5,
+      "number": 9304595970494411110326649421962412195,
+      "residual_at_cap": 6,
+      "residual_at_next_cap": 6,
+      "row": 7
+    }
+  ],
+  "literal_capped_valuation_checks": 3171,
+  "literal_unpruned_state_checks": 8178,
+  "nonzero_residual_height_checks": 389,
+  "rectangle_factor_slope_checks": 400,
+  "rough_semiprime_width_controls": [
+    {
+      "column_interval": [
+        48,
+        144
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 1,
+      "last_unpruned_depth": 1,
+      "number": 1441,
+      "number_bits": 11,
+      "prime_factors": [
+        11,
+        131
+      ],
+      "row_interval": [
+        16,
+        48
+      ],
+      "scale": 16,
+      "verified_unpruned_states": 1
+    },
+    {
+      "column_interval": [
+        96,
+        288
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 2,
+      "last_unpruned_depth": 2,
+      "number": 4369,
+      "number_bits": 13,
+      "prime_factors": [
+        17,
+        257
+      ],
+      "row_interval": [
+        32,
+        96
+      ],
+      "scale": 32,
+      "verified_unpruned_states": 3
+    },
+    {
+      "column_interval": [
+        192,
+        576
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 4,
+      "last_unpruned_depth": 3,
+      "number": 19277,
+      "number_bits": 15,
+      "prime_factors": [
+        37,
+        521
+      ],
+      "row_interval": [
+        64,
+        192
+      ],
+      "scale": 64,
+      "verified_unpruned_states": 7
+    },
+    {
+      "column_interval": [
+        384,
+        1152
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 8,
+      "last_unpruned_depth": 4,
+      "number": 69077,
+      "number_bits": 17,
+      "prime_factors": [
+        67,
+        1031
+      ],
+      "row_interval": [
+        128,
+        384
+      ],
+      "scale": 128,
+      "verified_unpruned_states": 15
+    },
+    {
+      "column_interval": [
+        768,
+        2304
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 16,
+      "last_unpruned_depth": 5,
+      "number": 268943,
+      "number_bits": 19,
+      "prime_factors": [
+        131,
+        2053
+      ],
+      "row_interval": [
+        256,
+        768
+      ],
+      "scale": 256,
+      "verified_unpruned_states": 31
+    },
+    {
+      "column_interval": [
+        1536,
+        4608
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 32,
+      "last_unpruned_depth": 6,
+      "number": 1053443,
+      "number_bits": 21,
+      "prime_factors": [
+        257,
+        4099
+      ],
+      "row_interval": [
+        512,
+        1536
+      ],
+      "scale": 512,
+      "verified_unpruned_states": 63
+    },
+    {
+      "column_interval": [
+        3072,
+        9216
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 64,
+      "last_unpruned_depth": 7,
+      "number": 4276889,
+      "number_bits": 23,
+      "prime_factors": [
+        521,
+        8209
+      ],
+      "row_interval": [
+        1024,
+        3072
+      ],
+      "scale": 1024,
+      "verified_unpruned_states": 127
+    },
+    {
+      "column_interval": [
+        6144,
+        18432
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 128,
+      "last_unpruned_depth": 8,
+      "number": 16919741,
+      "number_bits": 25,
+      "prime_factors": [
+        1031,
+        16411
+      ],
+      "row_interval": [
+        2048,
+        6144
+      ],
+      "scale": 2048,
+      "verified_unpruned_states": 255
+    },
+    {
+      "column_interval": [
+        12288,
+        36864
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 256,
+      "last_unpruned_depth": 9,
+      "number": 67278863,
+      "number_bits": 27,
+      "prime_factors": [
+        2053,
+        32771
+      ],
+      "row_interval": [
+        4096,
+        12288
+      ],
+      "scale": 4096,
+      "verified_unpruned_states": 511
+    },
+    {
+      "column_interval": [
+        24576,
+        73728
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 512,
+      "last_unpruned_depth": 10,
+      "number": 268636163,
+      "number_bits": 29,
+      "prime_factors": [
+        4099,
+        65537
+      ],
+      "row_interval": [
+        8192,
+        24576
+      ],
+      "scale": 8192,
+      "verified_unpruned_states": 1023
+    },
+    {
+      "column_interval": [
+        49152,
+        147456
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 1024,
+      "last_unpruned_depth": 11,
+      "number": 1076208109,
+      "number_bits": 31,
+      "prime_factors": [
+        8209,
+        131101
+      ],
+      "row_interval": [
+        16384,
+        49152
+      ],
+      "scale": 16384,
+      "verified_unpruned_states": 2047
+    },
+    {
+      "column_interval": [
+        98304,
+        294912
+      ],
+      "factor_count_in_rectangle": 0,
+      "last_level_live_states": 2048,
+      "last_unpruned_depth": 12,
+      "number": 4302094417,
+      "number_bits": 33,
+      "prime_factors": [
+        16411,
+        262147
+      ],
+      "row_interval": [
+        32768,
+        98304
+      ],
+      "scale": 32768,
+      "verified_unpruned_states": 4095
+    }
+  ],
+  "scope": "Exact factorial-baseline and inverse-window bridge; exponential width for the stated dyadic corner-pruning strategy, not a factoring lower bound.",
+  "single_row_factor_slope_checks": 400
+}

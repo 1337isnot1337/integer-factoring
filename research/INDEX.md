@@ -58,6 +58,8 @@
 
 ## Exact pole-Cauchy algorithms
 
+- [Factorial normalization and inverse windows](circuit-box-inverse-windows.md): exact short residual valuations and factor-count slopes; an empty rough-semiprime family exposes exponential width in the stated two-variable continuation.
+
 - [Known-count normalized circuit averages](circuit-box-averages.md): unrestricted degree and globally odd inverses, with `p` coefficient bits independent of the count valuation.
 - [Complete circuit-isometric Bezout pairs](circuit-box-bezout.md) and [count-independent precision](circuit-box-bezout-averages.md): exact optimal normalization on certified separated domains, fewer than `4p` stored coefficients and fewer than `2p` coefficient bits.
 - [Complete one-variable singular pole traces](circuit-box-pole-trace.md): polynomial-time circuit compression, valuation partition, normalized trace and exact congruence-root counts; no two-variable factor-box algorithm.
