@@ -15,7 +15,8 @@ The exact 60-bit control factors
   1000000016000000063=1000000007\cdot1000000009
 \]
 
-using 2,208 factorizations of integers of at most 30 bits. Its 276 original
+using 2,208 leading-norm factorization calls on 2,201 distinct integers,
+all of at most 30 bits. Its 276 original
 prime-form relations reduce to eight active generators and eight retained
 relations. It performs no coordinate or ellipse search.
 
