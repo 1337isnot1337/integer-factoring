@@ -2814,3 +2814,7 @@ verify-hecke-all-places:
 	python3 tools/check_hecke_all_algebraic_places.py --alphabet 5
 verify-hecke-all-places-full:
 	python3 tools/check_hecke_all_algebraic_places.py --alphabet 9
+
+.PHONY: verify-jensen-core-floors
+verify-jensen-core-floors:
+	python3 tools/check_jensen_tail_core_floor.py
