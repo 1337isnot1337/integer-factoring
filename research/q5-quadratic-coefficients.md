@@ -115,6 +115,14 @@ not improve the accepted asymptotic factoring algorithm.
 
 ## 4. The same remaining bit isolates a divisor-count residue
 
+An independent divisor-class calculation was contributed in
+[Discussion #51, reply 19327344](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19327344).
+That calculation uses alpha=1+c and the nonresidue-divisor count; the
+description below uses c and the residue-divisor count. Adding the known
+trace converts between the two bases. The contributor also reported a
+separate larger literal replay; this note's receipt records only the checks
+run for the present source.
+
 There is an alternative description that identifies the arithmetic hidden
 by the parity counts. Assume N is odd and put M=N/5^(v_5(N)). In the
 embedding above, 1 is the sum of the two opposite residue pairs, while c

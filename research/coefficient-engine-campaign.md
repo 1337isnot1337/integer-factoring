@@ -28,12 +28,18 @@ and do not spawn subagents without an explicit user request.
   `[t^N] X_q(Delta(t))`. This composition is not solved. Its scalar algebra
   trace has the cheap identity `T^2+T=Delta(t)+Delta(t^q)`; the remaining
   coefficient space has trace zero and dimension (q-3)/2.
+  The complete default suite passed at `c87e49f`: 338 Python command blocks,
+  66 unit tests, five crossing tests and 939 Markdown files; see the
+  [frozen receipt](../evidence/tate-coordinate-verification.json).
 - [Phase five](q5-quadratic-coefficients.md): the group law gives
   `X^2+B X+B^3=0` and `X=B(c+V)`, where
   `V=sum_(n>=1)(t^(n^2)+t^(5n^2))` and `B=1+V+V^2`.
   Four positive binary quadratic-form parities give the full odd-index
   value in sqrt(N) poly(log N) time. The alternative tau-mod-four query is
   explicitly charged; squarefree/semiprime conclusions are promises only.
+  Source `60c0cd9`; an independent parallel divisor-class calculation is
+  credited in Discussion #51, reply 19327344. The polynomial-in-unary-squares
+  identity follows here from the order-five group law.
 
 ## Active next construction
 
