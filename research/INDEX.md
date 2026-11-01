@@ -1407,3 +1407,7 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 ## Binary-extension local Smith profiles
 
 [Scalar restriction and exact checks](binary-extension-smith-restriction.md) computes local profiles over binary extension fields with explicit d-fold matrix enlargement. Independent Toeplitz and determinant controls cover F2, F4, F8 and F16; no new factoring bound is asserted.
+
+## Three-row Hecke path crossings over F8
+
+[Construction and complete finite checks](three-row-hecke-crossings.md) gives strict five- and nine-letter tensors outside the Temperley–Lieb quotient. Uniform local relations, finite endpoints, confluent coefficient verification and complete profiles are separated. The bare zero/infinity profile infimum is exactly one; no factoring improvement is claimed.

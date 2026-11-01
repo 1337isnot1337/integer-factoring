@@ -2621,3 +2621,9 @@ verify-oriented-basis-linear-charges:
 	python3 tools/check_oriented_norm_basis_lift.py --output /tmp/oriented-norm-basis-lift-verify.json
 
 verify-oriented-coprime-basis: verify-oriented-basis-linear-charges
+
+.PHONY: verify-three-row-hecke verify-three-row-hecke-full
+verify-three-row-hecke:
+	python3 tools/check_three_row_hecke_crossing.py --alphabet 5
+verify-three-row-hecke-full:
+	python3 tools/check_three_row_hecke_crossing.py --alphabet 9
