@@ -1,0 +1,29 @@
+{
+  "status": "pass",
+  "full_default": {
+    "source_commit": "3670b7df8db2bca84bc1dc1ea492c7044fa93e60",
+    "command": "make verify",
+    "exit_code": 0,
+    "collected_session_id": 59084,
+    "markdown_files": 1048,
+    "unit_tests": 66,
+    "crossing_tests": 5,
+    "stdout_archive": "evidence/catalan-frontier-verify-3670b7d.stdout.txt.xz",
+    "stdout_sha256": "2783a034c9f07ec865a9a2f2f0b29ce8b41b48eda4e6c95f943fd05c731cd2e5",
+    "archive_sha256": "1e3ca68bc9320b4eeb3297027313de3b83893fc9659fbc67a716b84b9375feea"
+  },
+  "focused": [
+    {
+      "receipt": "evidence/catalan-cup-crossings.json",
+      "sha256": "57b612a1a71a6a7f9fadb6fbea59fb3ace8e619a1e31beb693a6875496b52fe5",
+      "source_manifests_match_at_commit": "301b8439ac4b3d5a25b2454c2ec12a02e8b1186e"
+    },
+    {
+      "receipt": "evidence/catalan-cup-jets.json",
+      "sha256": "cc87c3a01e70e9545b96f624374ecfee3170283208759c2bbb3380ccb8da407e",
+      "source_manifests_match_at_commit": "301b8439ac4b3d5a25b2454c2ec12a02e8b1186e"
+    }
+  ],
+  "lean_rebuilt": false,
+  "scope": "Source-pinned default Python suite and focused Catalan replay receipts; later integrations outside the full-suite pin are not reported as fully replayed; no stronger factoring bound."
+}

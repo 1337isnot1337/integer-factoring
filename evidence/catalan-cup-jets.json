@@ -1,5 +1,22 @@
 {
   "status": "pass",
+  "gaussian_limit_controls": {
+    "local_split_entries": 3840,
+    "truncated_ring_defects": [
+      {
+        "jet_order": 2,
+        "parity_determinant_defect_t_coefficient": 0
+      },
+      {
+        "jet_order": 4,
+        "parity_determinant_defect_t_coefficient": 4
+      },
+      {
+        "jet_order": 8,
+        "parity_determinant_defect_t_coefficient": 4
+      }
+    ]
+  },
   "independent_physical_binary_jet_entries": 59920,
   "inverse_series_coefficients_checked": 32,
   "complete_coefficient_rank_pairs_checked": 1000,
@@ -4176,9 +4193,9 @@
   ],
   "scope": "Uniform effective Hasse-jet enlargement of a strict F2 crossing; no favorable complete decomposition or stronger factoring bound.",
   "source_sha256": {
-    "research/catalan-cup-jets.md": "1db80697c44685b40d41eb1efb3734e6f32fc59add36f8ab42d34542563ca2d2",
+    "research/catalan-cup-jets.md": "4c262c61f724fb63d59cd38ca4e0cc77acf77ca866c56adcdb631198a0657c40",
     "tools/catalan_cup_jets.py": "500978246d5cd1f796b37c980052e4d4159212112c9d87f09bf2d0264e2ecbef",
-    "tools/check_catalan_cup_jets.py": "da3f1b981db7ad0eb46d8736aa1b995580ed95065655a4152d10e136c17b70bc",
+    "tools/check_catalan_cup_jets.py": "da11c679c7f9b21336dbf538482ab1757350482bde37f4ac118428d886dfed04",
     "tools/catalan_cup_crossing.py": "b11d03f25f201700e02fb117bf2fec9d17cec4156ee7370dba1f11bccad7fe05",
     "tools/check_catalan_cup_crossing.py": "ac1feb042dc6fc518296ad0fee2b5e6f7f5ad697c4eea28d162487ff6581de44",
     "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
