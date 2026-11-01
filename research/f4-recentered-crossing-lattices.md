@@ -263,6 +263,28 @@ literal witness with `--initial-record` and `--witness-index`. This is a new
 schedule from a saved tensor, not a claim to resume the exact earlier
 iteration state.
 
+### Restarts from the complete allowed row floor
+
+The driver accepts `--restart-every K`. At every positive multiple of `K`,
+it begins the greedy row search from all of the declared floor targets at
+once. The default `K=0` retains the earlier local walk. This releases a
+possible search bottleneck: lowering only a subset of the current rows can
+repeatedly recover the same reference even when other parts of the allowed
+fiber are feasible. A restart still stays within the exact common-floor
+fiber, the same endpoint equations, and the same degree bound. Its counter
+is retained for each reference. This is a search change, not a claim of
+exhaustiveness or an improved pressure bound.
+
+A focused two-reference control uses the degree-two five-symbol Brauer
+fiber, eight steps per reference, and a restart every two steps. It completes
+six global restarts and thirteen complete profile queries, including a
+nonbinary reference. The [saved control](../evidence/f4-global-restart-controls-search.json)
+and [independent replay](../evidence/f4-global-restart-controls-replay.json)
+certify thirty complete profiles, twenty-six untruncated target products,
+and 9,375 literal endpoint entries. Run `make verify-f4-global-restarts`.
+The numerical source-family ratio is still above 0.99 and supplies no
+factoring improvement.
+
 ## 6. Independent controls
 
 Run:

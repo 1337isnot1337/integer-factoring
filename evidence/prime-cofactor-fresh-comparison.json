@@ -1,0 +1,69 @@
+{
+  "status": "pass",
+  "scope": "Fresh finite deterministic controls, not a uniform factoring bound.",
+  "runs": [
+    {
+      "bits": 160,
+      "mode": "fixed",
+      "integer": 1179574670119658454958945004503742038025773331723,
+      "factor": 1042206554168995786239631,
+      "cofactor": 1131805077794960945876933,
+      "norm_queries": 7792462,
+      "initial_base_size": 911,
+      "relation_rank": 911,
+      "generator_count": 20870,
+      "elapsed_seconds": 221.25848021899947,
+      "verification": {
+        "integer_dag_eliminations": 911,
+        "multiple_noninitial_dependencies": 0,
+        "negative_residual_orientations": 10359,
+        "partial_identity_checks": 20870,
+        "prime_residual_certificates": 19959,
+        "promoted_prime_occurrences": 0,
+        "weighted_dominance_checks": 20870
+      },
+      "evidence": "prime-cofactor-fresh-160-fixed.json.gz",
+      "uncompressed_sha256": "f0c7baea5dcc71a3fcb1bd59ccbc29bc0033fbef7a8c0b1c574351ab060d89ac",
+      "compressed_sha256": "a8bf4514c67e8d9e6bdebb6a0fbd4d65c9ffc3cbef1ac2bc45adde6bb3880c86",
+      "source_sha256": {
+        "tools/certified_small_factor.py": "9dd321ac2ae19bb49a5ffb9033ed58b746c57d3bc78f4ed89c3fd2e74a552cc9",
+        "tools/check_fresh_prime_cofactor_control.py": "df096835a69d06e16f32c72ee6b034f2906c505c1e9b0afe359828efa89f5b89",
+        "tools/check_prime_cofactor_saturation.py": "a4754f0860e0d204f48ccaa948f8d729523af8d8812666f096d096f3cbf402a3",
+        "tools/prime_cofactor_saturation.py": "576c5885ffdbad32c015973ce7ad3f883e4aeb9882dbae16801f05b8bff7463a"
+      }
+    },
+    {
+      "bits": 160,
+      "mode": "selective",
+      "integer": 1179574670119658454958945004503742038025773331723,
+      "factor": 1042206554168995786239631,
+      "cofactor": 1131805077794960945876933,
+      "norm_queries": 5453561,
+      "initial_base_size": 911,
+      "relation_rank": 911,
+      "generator_count": 23462,
+      "elapsed_seconds": 356.7074712899994,
+      "verification": {
+        "integer_dag_eliminations": 911,
+        "multiple_noninitial_dependencies": 8715,
+        "negative_residual_orientations": 11404,
+        "partial_identity_checks": 23462,
+        "prime_residual_certificates": 22551,
+        "promoted_prime_occurrences": 11147,
+        "weighted_dominance_checks": 23462
+      },
+      "evidence": "prime-cofactor-fresh-160-selective.json.gz",
+      "uncompressed_sha256": "ff3f40ad5e8193ab5e60df94c55ec55791e50560dd85c9bacbec262f3a426672",
+      "compressed_sha256": "7b8ccaad0b00df0c976dca0918bdacf54a8fd01f153e1433b3ef90fff900dea8",
+      "source_sha256": {
+        "tools/certified_small_factor.py": "9dd321ac2ae19bb49a5ffb9033ed58b746c57d3bc78f4ed89c3fd2e74a552cc9",
+        "tools/check_fresh_prime_cofactor_control.py": "df096835a69d06e16f32c72ee6b034f2906c505c1e9b0afe359828efa89f5b89",
+        "tools/check_prime_cofactor_saturation.py": "a4754f0860e0d204f48ccaa948f8d729523af8d8812666f096d096f3cbf402a3",
+        "tools/prime_cofactor_saturation.py": "576c5885ffdbad32c015973ce7ad3f883e4aeb9882dbae16801f05b8bff7463a"
+      }
+    }
+  ],
+  "query_reduction": 0.3001491698002505,
+  "recorded_time_ratio": 1.6121753658297473,
+  "factoring_exponent_improved": false
+}

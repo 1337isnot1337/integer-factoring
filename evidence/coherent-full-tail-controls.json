@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "factoring_exponent_improved": false,
+  "concentration": {
+    "matrix_inverse_entries": 5568,
+    "weighted_regular_entries": 5568,
+    "transported_operator_entries": 5696,
+    "canonical_pairings": 1808
+  },
+  "one_particle_factorization_entries": 1008,
+  "literal_control": {
+    "literal_endpoint_entries": 20736,
+    "independent_python_smith_orders": 144,
+    "original_compound_orders": 288,
+    "active_core_orders": 144
+  },
+  "complete_profile_replay": {
+    "intervals": 8,
+    "recomputed_active_orders": 1152,
+    "finite_pressure_values_are_numerical": true
+  }
+}

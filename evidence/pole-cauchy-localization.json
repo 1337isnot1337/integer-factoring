@@ -1,0 +1,381 @@
+{
+  "cancellation_control": {
+    "precision": 12,
+    "product": [
+      2,
+      0
+    ],
+    "reduced_pole": [
+      822,
+      3280
+    ],
+    "scaled_inverse": [
+      2515,
+      3736
+    ],
+    "scope": "Exact algebraic cancellation control, not an interval instance",
+    "z": [
+      7,
+      8
+    ]
+  },
+  "canonical_lift_failure": {
+    "actual_trace_residue_mod_4": [
+      1,
+      0
+    ],
+    "balanced_F_coefficients": [
+      -4863,
+      21684,
+      -22462,
+      44004,
+      -22545,
+      -56728,
+      -5220,
+      -34712,
+      16111,
+      27876,
+      -49086,
+      -12364,
+      1
+    ],
+    "balanced_G_coefficients": [
+      17409,
+      -57932,
+      -55998,
+      -284,
+      56815,
+      -21400,
+      -19044,
+      52840,
+      25071,
+      -5660,
+      18754,
+      22196,
+      1
+    ],
+    "cancelled_common_power": 4,
+    "displacement": 15,
+    "exact_lifts_coprime": true,
+    "exact_lifts_squarefree": true,
+    "matrix_dimension": 64,
+    "normalized_actual_trace_residue_mod_2power_P": [
+      32768,
+      0
+    ],
+    "normalized_virtual_trace_residue_mod_2power_P": [
+      0,
+      0
+    ],
+    "number": 13837,
+    "polynomial_moment_agreement_precision": 17,
+    "precision": 17,
+    "virtual_dimension": 12,
+    "virtual_trace_coefficient_denominator": 210931526610747294728550895089720540989500093909,
+    "virtual_trace_coefficient_numerator": 2274178272512455570345056001700682549607049910138,
+    "virtual_trace_residue_mod_4": [
+      0,
+      0
+    ],
+    "virtual_trace_valuation": 16
+  },
+  "claim": "Direct scaled inversion is obstructed in the stated moment quotient",
+  "controls_sha256": "928109c2bf1d853ffe77db4e6a2c89e4c70372c1554bbb2602db0d8364e928b7",
+  "factoring_exponent_improvement": false,
+  "finite_controls": [
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 6,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 1,
+      "first_row": 1,
+      "matrix_dimension": 4,
+      "number": 9,
+      "precision": 2,
+      "quotient_degree": 1,
+      "s": 2
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 9,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 5,
+      "first_row": 3,
+      "matrix_dimension": 8,
+      "number": 45,
+      "precision": 3,
+      "quotient_degree": 2,
+      "s": 3
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 8,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 1,
+      "first_row": 7,
+      "matrix_dimension": 8,
+      "number": 105,
+      "precision": 4,
+      "quotient_degree": 3,
+      "s": 3
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 10,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 9,
+      "first_row": 1,
+      "matrix_dimension": 16,
+      "number": 225,
+      "precision": 5,
+      "quotient_degree": 4,
+      "s": 4
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 10,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 3,
+      "first_row": 5,
+      "matrix_dimension": 16,
+      "number": 399,
+      "precision": 8,
+      "quotient_degree": 7,
+      "s": 4
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 12,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 1,
+      "first_row": 1,
+      "matrix_dimension": 32,
+      "number": 105,
+      "precision": 12,
+      "quotient_degree": 11,
+      "s": 5
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 13,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 7,
+      "first_row": 11,
+      "matrix_dimension": 32,
+      "number": 729,
+      "precision": 16,
+      "quotient_degree": 15,
+      "s": 5
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 14,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 1,
+      "first_row": 1,
+      "matrix_dimension": 64,
+      "number": 10201,
+      "precision": 2,
+      "quotient_degree": 1,
+      "s": 6
+    },
+    {
+      "common_packet_power_lower_bound": 2,
+      "displacement": 15,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 131,
+      "first_row": 3,
+      "matrix_dimension": 64,
+      "number": 13837,
+      "precision": 3,
+      "quotient_degree": 2,
+      "s": 6
+    },
+    {
+      "common_packet_power_lower_bound": 2,
+      "displacement": 14,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "factor_pairs": [
+        [
+          101,
+          101
+        ]
+      ],
+      "first_column": 1,
+      "first_row": 1,
+      "matrix_dimension": 64,
+      "number": 10201,
+      "physical_trace_absolute_precision": 2,
+      "physical_trace_residue": [
+        1,
+        0
+      ],
+      "precision": 16,
+      "quotient_degree": 15,
+      "s": 6,
+      "zero_polynomial_passes_squared_residual": true
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 15,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "factor_pairs": [
+        [
+          101,
+          137
+        ]
+      ],
+      "first_column": 131,
+      "first_row": 3,
+      "matrix_dimension": 64,
+      "number": 13837,
+      "physical_trace_absolute_precision": 2,
+      "physical_trace_residue": [
+        1,
+        0
+      ],
+      "precision": 17,
+      "quotient_degree": 16,
+      "s": 6,
+      "zero_polynomial_passes_squared_residual": true
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 14,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 9,
+      "first_row": 5,
+      "matrix_dimension": 64,
+      "number": 6553,
+      "precision": 30,
+      "quotient_degree": 29,
+      "s": 6
+    },
+    {
+      "common_packet_power_lower_bound": 2,
+      "displacement": 16,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 1,
+      "first_row": 1,
+      "matrix_dimension": 128,
+      "number": 15,
+      "precision": 30,
+      "quotient_degree": 29,
+      "s": 7
+    },
+    {
+      "common_packet_power_lower_bound": 1,
+      "displacement": 16,
+      "evaluation_certificate": [
+        0,
+        0
+      ],
+      "first_column": 3,
+      "first_row": 13,
+      "matrix_dimension": 128,
+      "number": 10201,
+      "precision": 50,
+      "quotient_degree": 49,
+      "s": 7
+    }
+  ],
+  "invisible_functional_controls": [
+    {
+      "invisible_precision": 4,
+      "literal_monomial_checks": 9,
+      "matrix_dimension": 4,
+      "pole_selector_parities": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "invisible_precision": 11,
+      "literal_monomial_checks": 17,
+      "matrix_dimension": 8,
+      "pole_selector_parities": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "invisible_precision": 26,
+      "literal_monomial_checks": 33,
+      "matrix_dimension": 16,
+      "pole_selector_parities": [
+        1,
+        1,
+        1
+      ]
+    },
+    {
+      "invisible_precision": 57,
+      "literal_monomial_checks": 65,
+      "matrix_dimension": 32,
+      "pole_selector_parities": [
+        1,
+        1,
+        1
+      ]
+    }
+  ],
+  "large_compressed_control": {
+    "displacement": 82,
+    "enumerated_nodes": 0,
+    "evaluation_certificate": [
+      0,
+      0
+    ],
+    "matrix_dimension": 1099511627776,
+    "number": 1208925819608032104939529,
+    "precision": 84,
+    "quotient_degree": 83,
+    "s": 40,
+    "scope": "Compressed execution; the complete-residue theorem supplies its certificate"
+  },
+  "literal_newton_valuation_checks": 368,
+  "literal_packet_coefficient_comparisons": 396,
+  "scalar_only_saturation_status": "Not ruled out and not constructed",
+  "schema": "pole-cauchy-localization-v1"
+}

@@ -1,0 +1,386 @@
+{
+  "actual_parameter_policy": {
+    "actual_metadata_cases": 6,
+    "input_lengths": 65409,
+    "metadata": [
+      {
+        "A": 2,
+        "column_clique_volume": 2520,
+        "digit_bits": 33,
+        "input_bits": 128,
+        "largest_crt_prime": 109,
+        "number_of_crt_primes": 13,
+        "prime_candidates_tested": 27,
+        "residue_bits": 70,
+        "space_efficient_grouping": false,
+        "threshold_exponent": 66,
+        "transform_word_volume": 280,
+        "vertices": 2
+      },
+      {
+        "A": 2,
+        "column_clique_volume": 4932,
+        "digit_bits": 65,
+        "input_bits": 256,
+        "largest_crt_prime": 229,
+        "number_of_crt_primes": 22,
+        "prime_candidates_tested": 57,
+        "residue_bits": 137,
+        "space_efficient_grouping": false,
+        "threshold_exponent": 130,
+        "transform_word_volume": 548,
+        "vertices": 2
+      },
+      {
+        "A": 4,
+        "column_clique_volume": 17484,
+        "digit_bits": 65,
+        "input_bits": 1024,
+        "largest_crt_prime": 881,
+        "number_of_crt_primes": 17,
+        "prime_candidates_tested": 55,
+        "residue_bits": 141,
+        "space_efficient_grouping": true,
+        "threshold_exponent": 520,
+        "transform_word_volume": 2256,
+        "vertices": 2
+      },
+      {
+        "A": 8,
+        "column_clique_volume": 62160,
+        "digit_bits": 65,
+        "input_bits": 4096,
+        "largest_crt_prime": 3137,
+        "number_of_crt_primes": 14,
+        "prime_candidates_tested": 49,
+        "residue_bits": 140,
+        "space_efficient_grouping": true,
+        "threshold_exponent": 2080,
+        "transform_word_volume": 8960,
+        "vertices": 2
+      },
+      {
+        "A": 16,
+        "column_clique_volume": 868180,
+        "digit_bits": 257,
+        "input_bits": 65536,
+        "largest_crt_prime": 49409,
+        "number_of_crt_primes": 37,
+        "prime_candidates_tested": 193,
+        "residue_bits": 523,
+        "space_efficient_grouping": true,
+        "threshold_exponent": 32896,
+        "transform_word_volume": 133888,
+        "vertices": 2
+      },
+      {
+        "A": 64,
+        "column_clique_volume": 13445024,
+        "digit_bits": 257,
+        "input_bits": 1048576,
+        "largest_crt_prime": 675841,
+        "number_of_crt_primes": 30,
+        "prime_candidates_tested": 165,
+        "residue_bits": 536,
+        "space_efficient_grouping": true,
+        "threshold_exponent": 526336,
+        "transform_word_volume": 2195456,
+        "vertices": 2
+      }
+    ],
+    "scope": "Metadata samples only; the constant twelve is an asymptotic proof, not a finite measured bound.",
+    "threshold_groupings": 241155
+  },
+  "arithmetic_helpers_sha256": "bb3bd0f85ffac5afadb772267a71effd29bb93565f261c737b940c947b51f1c0",
+  "carry_pair_bijection": {
+    "accepted_proper_pairs": 11,
+    "candidate_pair_target_cases": 4608,
+    "cases": [
+      {
+        "proper_pairs": [
+          [
+            17,
+            19
+          ],
+          [
+            19,
+            17
+          ]
+        ],
+        "target": 323
+      },
+      {
+        "proper_pairs": [
+          [
+            19,
+            19
+          ]
+        ],
+        "target": 361
+      },
+      {
+        "proper_pairs": [
+          [
+            19,
+            23
+          ],
+          [
+            23,
+            19
+          ]
+        ],
+        "target": 437
+      },
+      {
+        "proper_pairs": [
+          [
+            17,
+            37
+          ],
+          [
+            37,
+            17
+          ]
+        ],
+        "target": 629
+      },
+      {
+        "proper_pairs": [
+          [
+            23,
+            29
+          ],
+          [
+            29,
+            23
+          ]
+        ],
+        "target": 667
+      },
+      {
+        "proper_pairs": [
+          [
+            29,
+            31
+          ],
+          [
+            31,
+            29
+          ]
+        ],
+        "target": 899
+      }
+    ]
+  },
+  "checker_sha256": "086219f4ad0b3ae39dbebd75bf191cc91bace66ccd869eb8b9478a1fa60c231a",
+  "length_capacities": {
+    "branches_with_input_longer_than_old_half_capacity": 142978,
+    "exact_length_branches": 521211,
+    "padded_length_parameter_cases": 43464
+  },
+  "missing_capacity_negative_control": {
+    "A": 2,
+    "digit_bits": 2,
+    "first_digit_word": [
+      0,
+      0,
+      2
+    ],
+    "reason": "Two input-row coefficients but only one prescribed external output.",
+    "same_exact_factor_bit_length": 6,
+    "same_external_message": 63,
+    "second_digit_word": [
+      1,
+      0,
+      3
+    ],
+    "vertices": 2
+  },
+  "rough_cofactor_coverage": {
+    "composite_rough_cofactors": 459,
+    "inputs": 4099,
+    "proper_factor_pairs": 867,
+    "selected_cases": [
+      {
+        "input": 66049,
+        "proper_pairs": [
+          [
+            257,
+            257
+          ]
+        ],
+        "removed_prime_factors": [],
+        "rough_cofactor": 66049,
+        "threshold_exponent": 8
+      },
+      {
+        "input": 67591,
+        "proper_pairs": [
+          [
+            257,
+            263
+          ],
+          [
+            263,
+            257
+          ]
+        ],
+        "removed_prime_factors": [],
+        "rough_cofactor": 67591,
+        "threshold_exponent": 8
+      },
+      {
+        "input": 257000771,
+        "proper_pairs": [
+          [
+            257,
+            1000003
+          ],
+          [
+            1000003,
+            257
+          ]
+        ],
+        "removed_prime_factors": [],
+        "rough_cofactor": 257000771,
+        "threshold_exponent": 8
+      },
+      {
+        "input": 771002313,
+        "proper_pairs": [
+          [
+            257,
+            1000003
+          ],
+          [
+            1000003,
+            257
+          ]
+        ],
+        "removed_prime_factors": [
+          3
+        ],
+        "rough_cofactor": 257000771,
+        "threshold_exponent": 8
+      }
+    ]
+  },
+  "scope": "Exact constructor controls; factoring score remains one half.",
+  "status": "passed",
+  "transforms_and_interpolation": {
+    "cases": [
+      {
+        "A": 4,
+        "arithmetic_modulus": "1649",
+        "crt_primes": [
+          17,
+          97
+        ],
+        "digit_bits": 2,
+        "length_pairs": [
+          [
+            9,
+            19
+          ],
+          [
+            13,
+            14
+          ],
+          [
+            19,
+            9
+          ]
+        ],
+        "padded_input_bits": 27,
+        "threshold_exponent": 8,
+        "transform_pairs": 9,
+        "vertices": 4
+      },
+      {
+        "A": 8,
+        "arithmetic_modulus": "49601",
+        "crt_primes": [
+          193,
+          257
+        ],
+        "digit_bits": 2,
+        "length_pairs": [
+          [
+            33,
+            88
+          ],
+          [
+            60,
+            60
+          ],
+          [
+            88,
+            33
+          ]
+        ],
+        "padded_input_bits": 120,
+        "threshold_exponent": 32,
+        "transform_pairs": 9,
+        "vertices": 4
+      },
+      {
+        "A": 8,
+        "arithmetic_modulus": "49601",
+        "crt_primes": [
+          193,
+          257
+        ],
+        "digit_bits": 2,
+        "length_pairs": [
+          [
+            17,
+            104
+          ],
+          [
+            60,
+            60
+          ],
+          [
+            104,
+            17
+          ]
+        ],
+        "padded_input_bits": 120,
+        "threshold_exponent": 16,
+        "transform_pairs": 9,
+        "vertices": 8
+      },
+      {
+        "A": 16,
+        "arithmetic_modulus": "197633",
+        "crt_primes": [
+          257,
+          769
+        ],
+        "digit_bits": 2,
+        "length_pairs": [
+          [
+            129,
+            372
+          ],
+          [
+            250,
+            250
+          ],
+          [
+            372,
+            129
+          ]
+        ],
+        "padded_input_bits": 500,
+        "threshold_exponent": 128,
+        "transform_pairs": 9,
+        "vertices": 4
+      }
+    ],
+    "empty_row_controls": 2,
+    "recovered_input_rows": 648,
+    "recovered_rows_longer_than_old_half_row": 204,
+    "transform_pairs": 36
+  }
+}

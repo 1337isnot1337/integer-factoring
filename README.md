@@ -90,6 +90,13 @@ states a precise sufficient uniform lower-tail hypothesis for the remaining
 window-hitting problem. The finite moment controls do not prove that hypothesis.
 Run `make verify-prime-cofactor-saturation`.
 
+
+[Fresh certified 160-bit controls](research/prime-cofactor-fresh-controls.md)
+complete both fixed-base and selective-promotion factoring runs with exact
+integer-graph replay. Selective promotion reduces norm queries from
+**7,792,462 to 5,453,561** (30.01%), but increases recorded time from
+221 to 357 seconds. Complete compressed certificates retain both results;
+these are finite controls and do not strengthen the uniform exponent.
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
@@ -119,6 +126,15 @@ above `1/sqrt(2)`; the complete factoring score remains **1/2**.
 Run `make verify-coherent-q96-pressure verify-coherent-mixed-catalogue`
 for the exact saved-profile certificates. The checkers expose
 `--recompute-profiles` for full native profile reconstruction.
+
+A [free-tail reduction](research/coherent-free-tail-reduction.md) preserves both complete
+Smith profiles while replacing every dyadic extension of a fixed core by a fixed
+active matrix and explicit spectator factors. It gives finite limiting profile
+polynomials and an explicit tail-error bound. A proper fixed core retains a
+positive small-scale entropy deficit, so its determinant gain alone does not
+prove a better exponent. [Independent cut gauges](research/coherent-asymmetric-letter-gauges.md)
+are also implemented with both physical costs charged; six exact literal profiles
+validate them, while the retained 317-evaluation q32 search found no improvement.
 <!-- coherent-compound-checkpoint:end -->
 
 The [quadratic-parity Walsh construction](research/bell-walsh-constructions.md)
@@ -160,6 +176,24 @@ exclude the common-scale unweighted degree-cap criterion through eight axes.
 At nine axes an explicit integer profile satisfies these budgets and has
 pressure below `1/3`; constructing a realizing kernel remains open.
 Run `make verify-four-axis-floor verify-weighted-four-axis-floor verify-multiaxis-floor`.
+
+[Shared endpoint minors](research/cube-homogeneous-profile-budget.md) now
+prove `rho > 3/5` for every homogeneous binary cube tensor under the common
+unweighted profile estimate, without a Gaussian assumption. The same floor
+holds for [arbitrarily many equally weighted full-Fock modes](research/cube-equal-height-fock-floor.md)
+with arbitrary Gaussian color mixing.
+[Graded prefix budgets](research/cube-graded-minor-budget.md) exclude the
+four-letter grading `0,1,3,4`, but admit a 256-letter **abstract profile**
+below `72/125 < 1/sqrt(3)`; no tensor realizing it is claimed.
+[Scalar color clones](research/cube-scalar-color-clone-floor.md) cannot
+realize that target: for at least 33 colors their profile pressure exceeds
+`3/4`. Proper interacting codes remain a constructive direction.
+
+The [generic specialization engine](research/cube-generic-smith-specialization.md)
+preserves every homogeneous minor valuation by evaluating in an extension field
+whose degree exceeds the complete minor-degree budget. Its F2 implementation
+uses degree 128, rejects larger budgets, and is checked against 96 known profiles
+and 12,869 independently enumerated minors.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence
@@ -248,6 +282,18 @@ coefficient arrays using just two product jets. It incorporates coefficient
 divisibility before choosing precision and replaces the `p^2` termwise
 residue-block calls by one contraction. Exact dense checks and nonzero
 402-bit-domain controls through nine output bits are retained.
+
+The [general rational-weight compiler](research/pole-cauchy-rational-weights.md)
+now handles every explicitly written separated pair `A(a)/P(a), B(b)/Q(b)`
+with no domain poles. A valuation tree has polynomially many leaves even
+for repeated roots; quadratic selectors turn each local quotient into
+proper pole arrays. [Regular joint kernels can also be restricted to
+residue blocks](research/pole-cauchy-restricted-kernels.md).
+A separate [representation theorem](research/rational-interval-selector-bound.md)
+proves `2^K <= 4 D_* H` for a single rational upper-half selector, where
+`D_*` and `H` measure its explicit denominator. This distinguishes low-bit
+selection from ordinary interval selection without asserting a factoring
+lower bound.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
@@ -1686,6 +1732,14 @@ certificate in the 31-path native schedule.
 These results restrict the stated certificates. Independent gauges,
 coefficient recombinations, cancellation refinements, and larger alphabets
 remain constructive routes; no stronger factoring score follows here.
+
+The [rough-length Fourier constructor](research/rough-length-fourier-constructor.md) removes small prime factors and branches on the exact two operand lengths. Its carry-column width satisfies `P^2 lambda <= (12+o(1))n`, improving the earlier constant 24, with the full preprocessing and factor recovery costs included. The complete factoring score remains `1/2`.
+
+The [moment-quotient localization analysis](research/pole-cauchy-localization-obstruction.md) proves why directly inverting the factor-count pole in the small polynomial quotient fails at polynomial precision. An exact proper-factor example also defeats common-factor cancellation followed by canonical rational coefficient lifting. The result scopes these reconstruction strategies; a different scalar extraction method remains open.
+
+The [height-25 protected-state theorem](research/coherent-protected-height25.md) gives the exact natural-pressure floor `17/24 > 1/sqrt(2)` for every constant height-homogeneous split that retains the 28 states below height 16 and uses only states through height 25. It covers separate paired alphabets and types over every characteristic-two field, including the 96-letter hyperoval family. Changing the protected lower states or the stated gauge assumptions remains outside the theorem.
+
+The [full-tail active-core reduction](research/coherent-full-tail-core.md) replaces an exponentially large compressed compound calculation by a fixed `4k`-mode core and explicit Gaussian spectators. Under the stated height and deletion hypotheses it computes the actual reflection profiles. The complete forbidden-pair example is checked through 512 physical modes and gives no gain over the unmodified Gaussian; all physical entropy and degree costs remain charged.
 
 ## Contribution and attribution
 

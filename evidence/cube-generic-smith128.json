@@ -1,0 +1,1100 @@
+{
+  "schema": "cube-generic-smith128-v1",
+  "field_controls": {
+    "rabin_squarings": 128,
+    "rabin_prime_divisor_gcds": 1,
+    "independent_field_products": 1000
+  },
+  "known_profiles": [
+    {
+      "order": 1,
+      "sample": 0,
+      "degree": 5,
+      "orders": [
+        5
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 1,
+      "degree": 5,
+      "orders": [
+        5
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 2,
+      "degree": 5,
+      "orders": [
+        5
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 3,
+      "degree": 5,
+      "orders": [
+        5
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 4,
+      "degree": 0,
+      "orders": [
+        0
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 5,
+      "degree": 4,
+      "orders": [
+        4
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 6,
+      "degree": 2,
+      "orders": [
+        2
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 7,
+      "degree": 2,
+      "orders": [
+        2
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 8,
+      "degree": 2,
+      "orders": [
+        2
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 9,
+      "degree": 2,
+      "orders": [
+        2
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 10,
+      "degree": 1,
+      "orders": [
+        1
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 11,
+      "degree": 0,
+      "orders": [
+        0
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 12,
+      "degree": 1,
+      "orders": [
+        1
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 13,
+      "degree": 4,
+      "orders": [
+        4
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 14,
+      "degree": 3,
+      "orders": [
+        3
+      ]
+    },
+    {
+      "order": 1,
+      "sample": 15,
+      "degree": 1,
+      "orders": [
+        1
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 0,
+      "degree": 5,
+      "orders": [
+        3,
+        4
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 1,
+      "degree": 4,
+      "orders": [
+        0,
+        2
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 2,
+      "degree": 6,
+      "orders": [
+        0,
+        4
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 3,
+      "degree": 6,
+      "orders": [
+        1,
+        1
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 4,
+      "degree": 8,
+      "orders": [
+        2,
+        5
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 5,
+      "degree": 5,
+      "orders": [
+        3,
+        5
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 6,
+      "degree": 8,
+      "orders": [
+        5,
+        5
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 7,
+      "degree": 3,
+      "orders": [
+        2,
+        3
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 8,
+      "degree": 4,
+      "orders": [
+        3,
+        4
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 9,
+      "degree": 2,
+      "orders": [
+        2,
+        2
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 10,
+      "degree": 10,
+      "orders": [
+        2,
+        5
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 11,
+      "degree": 7,
+      "orders": [
+        4,
+        5
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 12,
+      "degree": 7,
+      "orders": [
+        2,
+        4
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 13,
+      "degree": 5,
+      "orders": [
+        5,
+        5
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 14,
+      "degree": 6,
+      "orders": [
+        1,
+        2
+      ]
+    },
+    {
+      "order": 2,
+      "sample": 15,
+      "degree": 8,
+      "orders": [
+        5,
+        5
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 0,
+      "degree": 5,
+      "orders": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 1,
+      "degree": 11,
+      "orders": [
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 2,
+      "degree": 8,
+      "orders": [
+        3,
+        5,
+        5
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 3,
+      "degree": 11,
+      "orders": [
+        2,
+        5,
+        5
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 4,
+      "degree": 6,
+      "orders": [
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 5,
+      "degree": 7,
+      "orders": [
+        0,
+        1,
+        3
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 6,
+      "degree": 8,
+      "orders": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 7,
+      "degree": 7,
+      "orders": [
+        0,
+        2,
+        4
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 8,
+      "degree": 6,
+      "orders": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 9,
+      "degree": 8,
+      "orders": [
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 10,
+      "degree": 9,
+      "orders": [
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 11,
+      "degree": 11,
+      "orders": [
+        1,
+        3,
+        4
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 12,
+      "degree": 6,
+      "orders": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 13,
+      "degree": 8,
+      "orders": [
+        0,
+        2,
+        5
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 14,
+      "degree": 7,
+      "orders": [
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 3,
+      "sample": 15,
+      "degree": 8,
+      "orders": [
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 0,
+      "degree": 10,
+      "orders": [
+        0,
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 1,
+      "degree": 9,
+      "orders": [
+        2,
+        3,
+        5,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 2,
+      "degree": 8,
+      "orders": [
+        0,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 3,
+      "degree": 10,
+      "orders": [
+        0,
+        0,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 4,
+      "degree": 9,
+      "orders": [
+        1,
+        1,
+        2,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 5,
+      "degree": 10,
+      "orders": [
+        3,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 6,
+      "degree": 9,
+      "orders": [
+        1,
+        1,
+        4,
+        4
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 7,
+      "degree": 6,
+      "orders": [
+        0,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 8,
+      "degree": 9,
+      "orders": [
+        5,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 9,
+      "degree": 9,
+      "orders": [
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 10,
+      "degree": 10,
+      "orders": [
+        0,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 11,
+      "degree": 10,
+      "orders": [
+        1,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 12,
+      "degree": 10,
+      "orders": [
+        2,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 13,
+      "degree": 11,
+      "orders": [
+        0,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 14,
+      "degree": 11,
+      "orders": [
+        0,
+        2,
+        2,
+        4
+      ]
+    },
+    {
+      "order": 4,
+      "sample": 15,
+      "degree": 11,
+      "orders": [
+        2,
+        3,
+        5,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 0,
+      "degree": 12,
+      "orders": [
+        0,
+        0,
+        3,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 1,
+      "degree": 6,
+      "orders": [
+        0,
+        0,
+        0,
+        1,
+        4
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 2,
+      "degree": 10,
+      "orders": [
+        0,
+        1,
+        2,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 3,
+      "degree": 7,
+      "orders": [
+        0,
+        0,
+        0,
+        1,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 4,
+      "degree": 9,
+      "orders": [
+        0,
+        1,
+        2,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 5,
+      "degree": 12,
+      "orders": [
+        0,
+        2,
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 6,
+      "degree": 11,
+      "orders": [
+        1,
+        2,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 7,
+      "degree": 7,
+      "orders": [
+        0,
+        1,
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 8,
+      "degree": 10,
+      "orders": [
+        0,
+        2,
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 9,
+      "degree": 7,
+      "orders": [
+        0,
+        1,
+        1,
+        2,
+        2
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 10,
+      "degree": 12,
+      "orders": [
+        1,
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 11,
+      "degree": 11,
+      "orders": [
+        0,
+        0,
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 12,
+      "degree": 10,
+      "orders": [
+        1,
+        3,
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 13,
+      "degree": 8,
+      "orders": [
+        0,
+        1,
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 14,
+      "degree": 12,
+      "orders": [
+        0,
+        1,
+        1,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 5,
+      "sample": 15,
+      "degree": 9,
+      "orders": [
+        1,
+        1,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 0,
+      "degree": 11,
+      "orders": [
+        0,
+        2,
+        2,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 1,
+      "degree": 10,
+      "orders": [
+        1,
+        1,
+        2,
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 2,
+      "degree": 11,
+      "orders": [
+        1,
+        2,
+        2,
+        4,
+        4,
+        5
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 3,
+      "degree": 11,
+      "orders": [
+        0,
+        0,
+        2,
+        3,
+        3,
+        4
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 4,
+      "degree": 12,
+      "orders": [
+        0,
+        1,
+        2,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 5,
+      "degree": 12,
+      "orders": [
+        0,
+        1,
+        1,
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 6,
+      "degree": 12,
+      "orders": [
+        0,
+        0,
+        2,
+        2,
+        3,
+        4
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 7,
+      "degree": 11,
+      "orders": [
+        0,
+        0,
+        1,
+        2,
+        4,
+        4
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 8,
+      "degree": 9,
+      "orders": [
+        0,
+        0,
+        2,
+        3,
+        4,
+        4
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 9,
+      "degree": 10,
+      "orders": [
+        0,
+        1,
+        1,
+        2,
+        2,
+        3
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 10,
+      "degree": 12,
+      "orders": [
+        0,
+        3,
+        4,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 11,
+      "degree": 10,
+      "orders": [
+        0,
+        0,
+        0,
+        4,
+        5,
+        5
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 12,
+      "degree": 9,
+      "orders": [
+        0,
+        1,
+        3,
+        4,
+        4,
+        4
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 13,
+      "degree": 11,
+      "orders": [
+        1,
+        1,
+        3,
+        3,
+        3,
+        5
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 14,
+      "degree": 11,
+      "orders": [
+        1,
+        3,
+        4,
+        5,
+        5,
+        5
+      ]
+    },
+    {
+      "order": 6,
+      "sample": 15,
+      "degree": 12,
+      "orders": [
+        0,
+        1,
+        1,
+        3,
+        5,
+        5
+      ]
+    }
+  ],
+  "scalar_three_cut_frames": [
+    {
+      "orders": [
+        2,
+        4,
+        8,
+        10
+      ],
+      "axis": 0,
+      "field_degree": 128,
+      "complete_minor_degree_bound": 24,
+      "absolute_series_precision": 25,
+      "scope": "Exact generic orders over F_2 in the remaining two variables."
+    },
+    {
+      "orders": [
+        2,
+        4,
+        8,
+        10
+      ],
+      "axis": 1,
+      "field_degree": 128,
+      "complete_minor_degree_bound": 24,
+      "absolute_series_precision": 25,
+      "scope": "Exact generic orders over F_2 in the remaining two variables."
+    },
+    {
+      "orders": [
+        2,
+        4,
+        8,
+        10
+      ],
+      "axis": 2,
+      "field_degree": 128,
+      "complete_minor_degree_bound": 24,
+      "absolute_series_precision": 25,
+      "scope": "Exact generic orders over F_2 in the remaining two variables."
+    }
+  ],
+  "coupled_generic_profile": {
+    "orders": [
+      2,
+      4,
+      5,
+      5,
+      12,
+      12,
+      26,
+      30
+    ],
+    "axis": 0,
+    "field_degree": 128,
+    "complete_minor_degree_bound": 96,
+    "absolute_series_precision": 97,
+    "scope": "Exact generic orders over F_2 in the remaining two variables."
+  },
+  "independent_complete_minors": 12869,
+  "specialization_cancellation_control": {
+    "generic_order": 0,
+    "both_variables_one_order": 1
+  },
+  "last_supported_order": {
+    "orders": [
+      127
+    ],
+    "axis": 0,
+    "field_degree": 128,
+    "complete_minor_degree_bound": 127,
+    "absolute_series_precision": 128,
+    "scope": "Exact generic orders over F_2 in the remaining two variables."
+  },
+  "unsupported_input_rejections": 2,
+  "new_factoring_score": false,
+  "source_sha256": {
+    "check_cube_generic_smith128.py": "9008997f405444947e20af221aecd7bba8e33ed798a7505dd7084052cc91fc56",
+    "cube_generic_smith128.py": "8f3a7c97ad54225c5bd9cc62d4d7220ebda083ae06eaa8c41d3e07d2815f8e75",
+    "cube_generic_smith128.cpp": "e5b1f2331c7525d755096cb931d7eb224b365167f444cdbb6a9f0c0435e6b82a",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  },
+  "elapsed_seconds": 0.08950963999814121
+}

@@ -2024,3 +2024,56 @@ verify-coherent-mixed-catalogue:
 .PHONY: verify-pole-cauchy-batched-poles
 verify-pole-cauchy-batched-poles:
 	python3 tools/check_pole_cauchy_pole_polynomials.py --output /tmp/integer-factoring-pole-cauchy-pole-polynomials.json
+
+.PHONY: verify-rough-length-fourier
+verify-rough-length-fourier:
+	python3 tools/check_rough_length_fourier_constructor.py --output /tmp/integer-factoring-rough-length-fourier-constructor.json
+
+.PHONY: verify-pole-cauchy-localization
+verify-pole-cauchy-localization:
+	python3 tools/check_pole_cauchy_localization.py --output /tmp/integer-factoring-pole-cauchy-localization.json
+
+.PHONY: verify-coherent-protected-height25
+verify-coherent-protected-height25:
+	python3 tools/check_coherent_protected_height25.py --recompute-profiles --output /tmp/integer-factoring-coherent-protected-height25.json
+
+
+.PHONY: verify-prime-cofactor-fresh-160
+verify-prime-cofactor-fresh-160:
+	python3 tools/check_fresh_prime_cofactor_control.py --bits 160 --replay evidence/prime-cofactor-fresh-160-fixed.json.gz
+	python3 tools/check_fresh_prime_cofactor_control.py --bits 160 --replay evidence/prime-cofactor-fresh-160-selective.json.gz
+
+
+.PHONY: verify-pole-cauchy-general-weights
+verify-pole-cauchy-general-weights:
+	python3 tools/check_pole_cauchy_rational_weights.py --output /tmp/integer-factoring-pole-cauchy-rational-weights.json
+	python3 tools/check_pole_cauchy_restricted_kernels.py --output /tmp/integer-factoring-pole-cauchy-restricted-kernels.json
+	python3 tools/check_rational_interval_selector_bound.py --output /tmp/integer-factoring-rational-interval-selector-bound.json
+
+
+.PHONY: verify-cube-shared-budgets
+verify-cube-shared-budgets:
+	python3 tools/check_cube_homogeneous_profile_budget.py --output /tmp/integer-factoring-cube-homogeneous-profile-budget.json
+	python3 tools/check_cube_graded_minor_budget.py --output /tmp/integer-factoring-cube-graded-minor-budget.json
+	python3 tools/check_cube_scalar_color_clone_floor.py --output /tmp/integer-factoring-cube-scalar-color-clone-floor.json
+	python3 tools/check_cube_equal_height_fock_floor.py --output /tmp/integer-factoring-cube-equal-height-fock-floor.json
+
+.PHONY: verify-coherent-full-tail
+verify-coherent-full-tail:
+	python3 tools/check_coherent_full_tail_core.py --evidence evidence/coherent-full-tail-core.json --output /tmp/integer-factoring-coherent-full-tail-controls.json
+
+
+.PHONY: verify-coherent-free-tail verify-coherent-asymmetric-gauges
+verify-coherent-free-tail:
+	python3 tools/check_coherent_free_tail.py --output /tmp/integer-factoring-coherent-free-tail-controls.json
+verify-coherent-asymmetric-gauges:
+	python3 tools/check_coherent_asymmetric_gauges.py --output /tmp/integer-factoring-coherent-asymmetric-gauge-controls.json
+
+
+.PHONY: verify-cube-generic-smith
+verify-cube-generic-smith:
+	python3 tools/check_cube_generic_smith128.py --output /tmp/integer-factoring-cube-generic-smith128.json
+
+.PHONY: verify-f4-global-restarts
+verify-f4-global-restarts:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_recentered_walks.py evidence/f4-global-restart-controls-search.json --output /tmp/integer-factoring-f4-global-restart-controls.json

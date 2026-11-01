@@ -1,0 +1,193 @@
+{
+  "claim": "An ordinary upper-half parity selector requires 2^K <=4 max(1,degree P) H in an explicit rational representation",
+  "controls": {
+    "integer_valued_polynomial_parity_patterns": 4088,
+    "actual_step_patterns": 326,
+    "primitive_degree_budget_depth_controls": 141,
+    "explicit_upper_half_selector_values": 510,
+    "upper_half_selector_families": [
+      {
+        "selector_bit": 1,
+        "numerator_degree": 1,
+        "denominator_degree": 0,
+        "denominator_power_of_two": 1,
+        "denominator_value_bit_bound": 2,
+        "leaf_residue_bits": 1,
+        "leaf_valuation": 1
+      },
+      {
+        "selector_bit": 2,
+        "numerator_degree": 2,
+        "denominator_degree": 0,
+        "denominator_power_of_two": 3,
+        "denominator_value_bit_bound": 4,
+        "leaf_residue_bits": 1,
+        "leaf_valuation": 3
+      },
+      {
+        "selector_bit": 3,
+        "numerator_degree": 4,
+        "denominator_degree": 0,
+        "denominator_power_of_two": 7,
+        "denominator_value_bit_bound": 8,
+        "leaf_residue_bits": 1,
+        "leaf_valuation": 7
+      },
+      {
+        "selector_bit": 4,
+        "numerator_degree": 8,
+        "denominator_degree": 0,
+        "denominator_power_of_two": 15,
+        "denominator_value_bit_bound": 16,
+        "leaf_residue_bits": 1,
+        "leaf_valuation": 15
+      },
+      {
+        "selector_bit": 5,
+        "numerator_degree": 16,
+        "denominator_degree": 0,
+        "denominator_power_of_two": 31,
+        "denominator_value_bit_bound": 32,
+        "leaf_residue_bits": 1,
+        "leaf_valuation": 31
+      },
+      {
+        "selector_bit": 6,
+        "numerator_degree": 32,
+        "denominator_degree": 0,
+        "denominator_power_of_two": 63,
+        "denominator_value_bit_bound": 64,
+        "leaf_residue_bits": 1,
+        "leaf_valuation": 63
+      },
+      {
+        "selector_bit": 7,
+        "numerator_degree": 64,
+        "denominator_degree": 0,
+        "denominator_power_of_two": 127,
+        "denominator_value_bit_bound": 128,
+        "leaf_residue_bits": 1,
+        "leaf_valuation": 127
+      },
+      {
+        "selector_bit": 8,
+        "numerator_degree": 128,
+        "denominator_degree": 0,
+        "denominator_power_of_two": 255,
+        "denominator_value_bit_bound": 256,
+        "leaf_residue_bits": 1,
+        "leaf_valuation": 255
+      }
+    ],
+    "denominator_only_obstruction_examples": [
+      {
+        "selector_bit": 7,
+        "denominator": [
+          -3,
+          -5,
+          7,
+          -7,
+          5
+        ],
+        "residue": 1,
+        "residue_bits": 1,
+        "denominator_valuation": 0,
+        "required_local_polynomial_degree": 64,
+        "scope": "No integer-polynomial numerator can give the upper-half parity indicator with this denominator."
+      },
+      {
+        "selector_bit": 3,
+        "denominator": [
+          -1,
+          -2,
+          4,
+          -5,
+          -6,
+          8
+        ],
+        "residue": 1,
+        "residue_bits": 2,
+        "denominator_valuation": 1,
+        "required_local_polynomial_degree": 2,
+        "scope": "No integer-polynomial numerator can give the upper-half parity indicator with this denominator."
+      },
+      {
+        "selector_bit": 8,
+        "denominator": [
+          0,
+          2
+        ],
+        "residue": 1,
+        "residue_bits": 1,
+        "denominator_valuation": 1,
+        "required_local_polynomial_degree": 128,
+        "scope": "No integer-polynomial numerator can give the upper-half parity indicator with this denominator."
+      },
+      {
+        "selector_bit": 6,
+        "denominator": [
+          2,
+          6
+        ],
+        "residue": 3,
+        "residue_bits": 2,
+        "denominator_valuation": 2,
+        "required_local_polynomial_degree": 16,
+        "scope": "No integer-polynomial numerator can give the upper-half parity indicator with this denominator."
+      },
+      {
+        "selector_bit": 6,
+        "denominator": [
+          7,
+          -6
+        ],
+        "residue": 1,
+        "residue_bits": 1,
+        "denominator_valuation": 0,
+        "required_local_polynomial_degree": 32,
+        "scope": "No integer-polynomial numerator can give the upper-half parity indicator with this denominator."
+      },
+      {
+        "selector_bit": 6,
+        "denominator": [
+          2,
+          -4
+        ],
+        "residue": 1,
+        "residue_bits": 1,
+        "denominator_valuation": 1,
+        "required_local_polynomial_degree": 32,
+        "scope": "No integer-polynomial numerator can give the upper-half parity indicator with this denominator."
+      },
+      {
+        "selector_bit": 4,
+        "denominator": [
+          -1
+        ],
+        "residue": 1,
+        "residue_bits": 1,
+        "denominator_valuation": 0,
+        "required_local_polynomial_degree": 8,
+        "scope": "No integer-polynomial numerator can give the upper-half parity indicator with this denominator."
+      },
+      {
+        "selector_bit": 2,
+        "denominator": [
+          -2,
+          0
+        ],
+        "residue": 1,
+        "residue_bits": 1,
+        "denominator_valuation": 1,
+        "required_local_polynomial_degree": 2,
+        "scope": "No integer-polynomial numerator can give the upper-half parity indicator with this denominator."
+      }
+    ]
+  },
+  "factoring_lower_bound": false,
+  "source_sha256": {
+    "check_rational_interval_selector_bound.py": "22b3af60ae6902a63eeb7eade341b724b64e53b6395b17663a89217504e13991",
+    "rational_weight_valuation_partition.py": "a1d91beeb99e1f6b0f8e4dc183c1e008f05ca4db7c9cf7d0d69b3125090c61ff"
+  },
+  "scope": "A bound on a single explicitly written rational weight, not on factoring or arbitrary oracle algorithms."
+}

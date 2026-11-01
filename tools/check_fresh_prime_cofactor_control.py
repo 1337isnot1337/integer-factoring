@@ -6,6 +6,7 @@ Lucas certificates prove both input primes; the search receives only N.
 """
 
 import argparse
+import gzip
 from hashlib import sha256
 import json
 from math import prod
@@ -89,7 +90,9 @@ def main():
     input_verification = verify_input(data)
     hashes = {name: sha256((ROOT/name).read_bytes()).hexdigest() for name in SOURCES}
     if args.replay:
-        report = json.loads(args.replay.read_text())
+        encoded = (gzip.decompress(args.replay.read_bytes()).decode()
+                   if args.replay.suffix == '.gz' else args.replay.read_text())
+        report = json.loads(encoded)
         assert report['input_file'] == input_path.name
         assert report['input_sha256'] == sha256(input_path.read_bytes()).hexdigest()
         result = normalize_record(report['result'])
@@ -129,7 +132,11 @@ def main():
               'input_verification': input_verification, 'elapsed_seconds': elapsed,
               'result': result, 'verification': verification, 'source_sha256': hashes,
               'scope': 'Finite deterministic traversal; no uniform complexity improvement.'}
-    args.output.write_text(json.dumps(report, sort_keys=True, separators=(',', ':'))+'\n')
+    encoded = json.dumps(report, sort_keys=True, separators=(',', ':'))+'\n'
+    if args.output.suffix == '.gz':
+        args.output.write_bytes(gzip.compress(encoded.encode(), mtime=0))
+    else:
+        args.output.write_text(encoded)
     print(json.dumps({'mode': args.mode, 'elapsed_seconds': elapsed,
                       'summary': summary(result), 'verification': verification}), flush=True)
 

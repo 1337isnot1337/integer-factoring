@@ -1086,3 +1086,54 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [The complete 496-map boundary optimum](coherent-q32-complete-boundary-optimum.md)
 
 - [Batched proper rational weights and normalized inverse blocks](pole-cauchy-pole-polynomials.md)
+
+
+## A shorter Fourier constructor with charged small-prime removal
+
+- [A shorter Fourier constructor with charged small-prime removal](rough-length-fourier-constructor.md)
+
+
+## Limits of rational extraction from compressed polynomial moments
+
+- [Limits of rational extraction from compressed polynomial moments](pole-cauchy-localization-obstruction.md)
+
+
+## Protected lower states through height 25
+
+- [Protected lower states through height 25](coherent-protected-height25.md)
+
+
+## Fresh certified prime-cofactor controls
+
+- [Matched fresh 160-bit factoring runs and exact replays](prime-cofactor-fresh-controls.md)
+
+
+## General rational weights and a representation boundary
+
+- [All explicit separated rational weights](pole-cauchy-rational-weights.md)
+- [Regular joint kernels inside inverse residue blocks](pole-cauchy-restricted-kernels.md)
+- [Ordinary interval selectors require a large explicit rational representation](rational-interval-selector-bound.md)
+
+
+## Shared cube minors and larger-alphabet targets
+
+- [A profile floor for every homogeneous binary cube tensor](cube-homogeneous-profile-budget.md)
+- [Shared-minor budgets for graded cube alphabets](cube-graded-minor-budget.md)
+- [A uniform floor for scalar Gaussian color clones](cube-scalar-color-clone-floor.md)
+- [A Gaussian cube floor for every equally weighted Fock alphabet](cube-equal-height-fock-floor.md)
+
+
+## Fixed physical codes with a full Gaussian tail
+
+- [A fixed physical code with a full Gaussian tail](coherent-full-tail-core.md)
+
+
+## Free tails and independent coherent gauges
+
+- [A fixed active matrix for an arbitrarily long free tail](coherent-free-tail-reduction.md)
+- [Independent letter gauges at the two crossing cuts](coherent-asymmetric-letter-gauges.md)
+
+
+## Exact generic cube profile computation
+
+- [Generic Smith profiles from homogeneous finite-field specialization](cube-generic-smith-specialization.md)

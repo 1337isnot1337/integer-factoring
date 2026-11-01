@@ -1,0 +1,784 @@
+{
+  "schema": "cube-equal-height-fock-floor-v1",
+  "scope": "All equally weighted full Fock alphabets; common unweighted profiles only.",
+  "generic_shared_minors": 68,
+  "entry_endpoint_and_degree_controls": 5696,
+  "shared_cut_orientations": 102,
+  "kernels": [
+    {
+      "modes": 1,
+      "degree": 1,
+      "sample": 0,
+      "common_minor_orders": [
+        0,
+        1,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 3
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 3
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            2
+          ],
+          "determinant_monomials": 1
+        }
+      ]
+    },
+    {
+      "modes": 1,
+      "degree": 1,
+      "sample": 1,
+      "common_minor_orders": [
+        0,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            1,
+            0
+          ],
+          "determinant_monomials": 3
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 3
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 3
+        }
+      ]
+    },
+    {
+      "modes": 1,
+      "degree": 1,
+      "sample": 2,
+      "common_minor_orders": [
+        0,
+        0,
+        1
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 3
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 5
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            1
+          ],
+          "determinant_monomials": 1
+        }
+      ]
+    },
+    {
+      "modes": 1,
+      "degree": 3,
+      "sample": 0,
+      "common_minor_orders": [
+        0,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 17
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 13
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 13
+        }
+      ]
+    },
+    {
+      "modes": 1,
+      "degree": 3,
+      "sample": 1,
+      "common_minor_orders": [
+        0,
+        0,
+        1
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 11
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 9
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 13
+        }
+      ]
+    },
+    {
+      "modes": 1,
+      "degree": 3,
+      "sample": 2,
+      "common_minor_orders": [
+        0,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 9
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 11
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 17
+        }
+      ]
+    },
+    {
+      "modes": 2,
+      "degree": 1,
+      "sample": 0,
+      "common_minor_orders": [
+        0,
+        1,
+        1
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 7
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 5
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 3
+        }
+      ]
+    },
+    {
+      "modes": 2,
+      "degree": 1,
+      "sample": 1,
+      "common_minor_orders": [
+        0,
+        1,
+        1
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 7
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            1
+          ],
+          "determinant_monomials": 5
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 9
+        }
+      ]
+    },
+    {
+      "modes": 2,
+      "degree": 1,
+      "sample": 2,
+      "common_minor_orders": [
+        1,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 7
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 9
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 11
+        }
+      ]
+    },
+    {
+      "modes": 2,
+      "degree": 2,
+      "sample": 0,
+      "common_minor_orders": [
+        0,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 19
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 19
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 25
+        }
+      ]
+    },
+    {
+      "modes": 2,
+      "degree": 2,
+      "sample": 1,
+      "common_minor_orders": [
+        0,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 29
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 19
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 21
+        }
+      ]
+    },
+    {
+      "modes": 2,
+      "degree": 2,
+      "sample": 2,
+      "common_minor_orders": [
+        0,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 23
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 23
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 25
+        }
+      ]
+    },
+    {
+      "modes": 3,
+      "degree": 1,
+      "sample": 0,
+      "common_minor_orders": [
+        0,
+        1,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 11
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 11
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 11
+        }
+      ]
+    },
+    {
+      "modes": 3,
+      "degree": 1,
+      "sample": 1,
+      "common_minor_orders": [
+        0,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 13
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 13
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 15
+        }
+      ]
+    },
+    {
+      "modes": 3,
+      "degree": 1,
+      "sample": 2,
+      "common_minor_orders": [
+        0,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 11
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 13
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            1,
+            0
+          ],
+          "determinant_monomials": 9
+        }
+      ]
+    },
+    {
+      "modes": 4,
+      "degree": 1,
+      "sample": 0,
+      "common_minor_orders": [
+        1,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 23
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 23
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 23
+        }
+      ]
+    },
+    {
+      "modes": 4,
+      "degree": 1,
+      "sample": 1,
+      "common_minor_orders": [
+        1,
+        0,
+        0
+      ],
+      "pair_minors": [
+        {
+          "axes": [
+            1,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 15
+        },
+        {
+          "axes": [
+            0,
+            2
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 19
+        },
+        {
+          "axes": [
+            0,
+            1
+          ],
+          "orders": [
+            0,
+            0
+          ],
+          "determinant_monomials": 23
+        }
+      ]
+    }
+  ],
+  "all_modes_profile_floor": "3/5",
+  "positive_coefficients": 355,
+  "minimum_positive_coefficient": 5,
+  "new_factoring_score": false,
+  "source_sha256": {
+    "check_cube_equal_height_fock_floor.py": "31bd0842e3b2ad1f0bd39ceca8058f0e835d952f331b81dd48899ea243af36bb",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
+    "check_cube_gaussian_profile_budget.py": "c23fea63352e185b9d338a8aa2fb3351b912aa1f1c9cdf1717dfac31e6f46c7f"
+  },
+  "elapsed_seconds": 0.19677853400207823
+}

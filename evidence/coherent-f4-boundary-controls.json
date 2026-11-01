@@ -1661,12 +1661,12 @@
   },
   "catalogue_readback": {
     "complete": false,
-    "checked_orbits": 18,
-    "covered_projectors": 37,
-    "distinct_profile_pairs": 18,
+    "checked_orbits": 153,
+    "covered_projectors": 530,
+    "distinct_profile_pairs": 153,
     "exact_comparisons": {
       "equal": 1,
-      "strictly positive on 0 < r < 1": 17
+      "strictly positive on 0 < r < 1": 152
     }
   }
 }
