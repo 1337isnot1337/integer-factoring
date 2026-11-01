@@ -2243,3 +2243,8 @@ verify-pole-cauchy-hadamard-rank:
 .PHONY: verify-quadratic-coalescence-bezout
 verify-quadratic-coalescence-bezout:
 	python3 tools/check_quadratic_coalescence_bezout.py --output /tmp/quadratic-coalescence-bezout.json
+
+
+.PHONY: verify-canonical-affine-codes
+verify-canonical-affine-codes:
+	python3 tools/check_canonical_affine_codes.py --full --output /tmp/canonical-affine-codes.json

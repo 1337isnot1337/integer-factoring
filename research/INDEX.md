@@ -1248,3 +1248,6 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Exact separation ranks of Cauchy powers](pole-cauchy-hadamard-rank.md): all positive Hadamard powers, precision-dependent overlap thresholds, an exponential standard-padding example, and a larger-padding rank-equals-factor-count corollary.
 
 - [Quadratic coalescence and two-depth Bézout pairs](quadratic-coalescence-bezout.md): an exact weighted-moment valuation, a binary-size quadratic trace unit, and complete primitive residues in a nonuniform matching testbed.
+
+
+- [Exact eight-wire signed affine-code visibility](canonical-affine-code-visibility.md): complete enumeration of 2,013,762,304 pairs, exact necessary projections, original-polynomial controls, and the matching 31-bit lower example.
