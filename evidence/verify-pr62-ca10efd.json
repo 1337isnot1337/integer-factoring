@@ -1,0 +1,49 @@
+{
+  "source_commit": "ca10efd19f5684efb5d07770bddcbaff2af5e0df",
+  "source_tree": "adb1ae379ccdc51a824156c4bf88c28090f182bf",
+  "started_utc": "2026-11-01T15:53:34.498779+00:00",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-fused-q12-endpoints",
+      "verify-collective-css-pauli",
+      "verify-high-axis-cayley",
+      "verify-high-axis-plucker",
+      "verify-frobenius-prefix",
+      "verify-square-zero-traces",
+      "verify-catalan-spherical-ranks"
+    ]
+  ],
+  "status": "pass",
+  "results": [
+    {
+      "command": [
+        "make",
+        "verify"
+      ],
+      "returncode": 0,
+      "seconds": 726.7615307872184
+    },
+    {
+      "command": [
+        "make",
+        "verify-fused-q12-endpoints",
+        "verify-collective-css-pauli",
+        "verify-high-axis-cayley",
+        "verify-high-axis-plucker",
+        "verify-frobenius-prefix",
+        "verify-square-zero-traces",
+        "verify-catalan-spherical-ranks"
+      ],
+      "returncode": 0,
+      "seconds": 51.810018725227565
+    }
+  ],
+  "seconds": 778.5749047468416,
+  "finished_utc": "2026-11-01T16:06:33.070817+00:00",
+  "post_status": ""
+}

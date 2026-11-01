@@ -1,0 +1,4557 @@
+{
+  "status": "pass",
+  "independent_untruncated_orders": 408,
+  "shared_gap_controls": 48,
+  "saturated_ground_cases": 18,
+  "floating_lower_bound_controls": 768,
+  "exact_rational_cold_certificates": 184,
+  "certificates": [
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "13/2",
+      "exponent": "13/7",
+      "exponential_target": "20/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "20/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "95/6",
+      "exponent": "285/119",
+      "exponential_target": "404/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "404/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 2,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9935/66",
+      "exponent": "29805/10199",
+      "exponential_target": "40004/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40004/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "23/2",
+      "exponent": "23/7",
+      "exponential_target": "30/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "30/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "487/18",
+      "exponent": "487/119",
+      "exponential_target": "606/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "606/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 2,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "49807/198",
+      "exponent": "49807/10199",
+      "exponential_target": "60006/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60006/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "33/2",
+      "exponent": "33/7",
+      "exponential_target": "40/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "40/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "689/18",
+      "exponent": "689/119",
+      "exponential_target": "808/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "808/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 3,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "69809/198",
+      "exponent": "69809/10199",
+      "exponential_target": "80008/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "80008/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "3/5",
+      "b": "4/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "4/5",
+      "b": "3/5",
+      "scaled_physical_gap": "53/2",
+      "exponent": "53/7",
+      "exponential_target": "60/7",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "60/7",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "99/101",
+      "b": "20/101",
+      "scaled_physical_gap": "1093/18",
+      "exponent": "1093/119",
+      "exponential_target": "1212/119",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "1212/119",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    },
+    {
+      "status": "certified_positive_margin",
+      "alphabet_x": 3,
+      "alphabet_y": 5,
+      "a": "9999/10001",
+      "b": "200/10001",
+      "scaled_physical_gap": "9983/18",
+      "exponent": "109813/10199",
+      "exponential_target": "120012/10199",
+      "Taylor_degree": 1,
+      "Taylor_lower_bound": "120012/10199",
+      "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+    }
+  ],
+  "distinct_rational_certificate_parameters": 16,
+  "cases": [
+    {
+      "kind": "constant_crossing",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        2,
+        2
+      ],
+      "heights": [
+        [
+          [
+            0,
+            -3
+          ],
+          [
+            0,
+            -4
+          ],
+          [
+            0,
+            -2
+          ],
+          [
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            -1
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -9,
+          -6,
+          -3,
+          0
+        ],
+        [
+          0,
+          1,
+          7,
+          8
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          4
+        ],
+        [
+          -5,
+          0
+        ]
+      ],
+      "first_physical_pair_gap": 4
+    },
+    {
+      "kind": "constant_crossing",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        2,
+        2
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          0,
+          2000,
+          2000,
+          4000
+        ],
+        [
+          0,
+          14,
+          14,
+          28
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014
+        ],
+        [
+          0,
+          2014
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "nonbinary_brauer",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        2,
+        2
+      ],
+      "heights": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            -4
+          ],
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            -3
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            -2
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -8,
+          -4,
+          0,
+          4
+        ],
+        [
+          -2,
+          2,
+          4,
+          8
+        ]
+      ],
+      "physical_energies": [
+        [
+          -3,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "first_physical_pair_gap": 1
+    },
+    {
+      "kind": "nonbinary_brauer",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        2,
+        2
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          0,
+          1996,
+          2004,
+          4000
+        ],
+        [
+          0,
+          16,
+          16,
+          32
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014
+        ],
+        [
+          0,
+          2014
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "random_strict",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        2,
+        2
+      ],
+      "heights": [
+        [
+          [
+            0,
+            -4
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            -4
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            -3
+          ],
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -12,
+          -8,
+          -5,
+          -1
+        ],
+        [
+          -2,
+          -2,
+          1,
+          2
+        ]
+      ],
+      "physical_energies": [
+        [
+          -3,
+          0
+        ],
+        [
+          -3,
+          0
+        ]
+      ],
+      "first_physical_pair_gap": 3
+    },
+    {
+      "kind": "random_strict",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        2,
+        2
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -4,
+          1996,
+          1997,
+          3995
+        ],
+        [
+          1,
+          14,
+          14,
+          28
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014
+        ],
+        [
+          0,
+          2014
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "constant_crossing",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        2,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            0,
+            3,
+            3
+          ],
+          [
+            0,
+            -3,
+            0
+          ],
+          [
+            0,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -3
+          ],
+          [
+            0,
+            4,
+            1
+          ],
+          [
+            0,
+            -3,
+            -4
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -3,
+          -3,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          -5,
+          -3,
+          -2,
+          -1,
+          0,
+          1
+        ]
+      ],
+      "physical_energies": [
+        [
+          -5,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "first_physical_pair_gap": 0
+    },
+    {
+      "kind": "constant_crossing",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        2,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          0,
+          2000,
+          2000,
+          4000,
+          4000,
+          6000
+        ],
+        [
+          0,
+          14,
+          14,
+          28,
+          28,
+          42
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014
+        ],
+        [
+          0,
+          2014,
+          4028
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "nonbinary_brauer",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        2,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            3
+          ],
+          [
+            0,
+            3,
+            2
+          ],
+          [
+            0,
+            1,
+            -3
+          ],
+          [
+            0,
+            3
+          ]
+        ],
+        [
+          [
+            0,
+            -4
+          ],
+          [
+            0,
+            0,
+            -1
+          ],
+          [
+            0,
+            3,
+            4
+          ],
+          [
+            0,
+            3
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -5,
+          0,
+          0,
+          1,
+          10,
+          10
+        ],
+        [
+          -4,
+          1,
+          4,
+          5,
+          5,
+          10
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          5
+        ],
+        [
+          0,
+          2,
+          7
+        ]
+      ],
+      "first_physical_pair_gap": 2
+    },
+    {
+      "kind": "nonbinary_brauer",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        2,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          0,
+          1996,
+          2004,
+          3996,
+          4000,
+          5996
+        ],
+        [
+          0,
+          16,
+          16,
+          30,
+          32,
+          44
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014
+        ],
+        [
+          0,
+          2014,
+          4028
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "random_strict",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        2,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            -3
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            3,
+            1
+          ],
+          [
+            0,
+            -3
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            0,
+            -2,
+            4
+          ],
+          [
+            0,
+            -3,
+            2
+          ],
+          [
+            0,
+            1
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -10,
+          -8,
+          -4,
+          -4,
+          -2,
+          2
+        ],
+        [
+          -5,
+          -2,
+          2,
+          5,
+          6,
+          11
+        ]
+      ],
+      "physical_energies": [
+        [
+          -1,
+          0
+        ],
+        [
+          0,
+          1,
+          8
+        ]
+      ],
+      "first_physical_pair_gap": 1
+    },
+    {
+      "kind": "random_strict",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        2,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000
+          ]
+        ],
+        [
+          [
+            0,
+            7
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -4,
+          1996,
+          1998,
+          3994,
+          3996,
+          5996
+        ],
+        [
+          0,
+          14,
+          14,
+          28,
+          28,
+          42
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014
+        ],
+        [
+          0,
+          2014,
+          4028
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "constant_crossing",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        3,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            2,
+            -3
+          ],
+          [
+            0,
+            -3,
+            2
+          ],
+          [
+            0,
+            -3,
+            4
+          ],
+          [
+            0,
+            4,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            4,
+            2
+          ],
+          [
+            0,
+            -2,
+            3
+          ],
+          [
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            -1,
+            -2
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -9,
+          -6,
+          -3,
+          0,
+          0,
+          3,
+          6,
+          6,
+          12
+        ],
+        [
+          -2,
+          -2,
+          0,
+          0,
+          1,
+          3,
+          7,
+          7,
+          10
+        ]
+      ],
+      "physical_energies": [
+        [
+          -3,
+          0,
+          9
+        ],
+        [
+          -8,
+          0,
+          13
+        ]
+      ],
+      "first_physical_pair_gap": 3
+    },
+    {
+      "kind": "constant_crossing",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        3,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ]
+        ],
+        [
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          0,
+          2000,
+          2000,
+          4000,
+          4000,
+          4000,
+          6000,
+          6000,
+          8000
+        ],
+        [
+          0,
+          14,
+          14,
+          28,
+          28,
+          28,
+          42,
+          42,
+          56
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014,
+          4028
+        ],
+        [
+          0,
+          2014,
+          4028
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "nonbinary_brauer",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        3,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            0,
+            -2,
+            0
+          ],
+          [
+            0,
+            1,
+            -4
+          ],
+          [
+            0,
+            -2,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            -2,
+            -1
+          ],
+          [
+            0,
+            4,
+            -4
+          ],
+          [
+            0,
+            2,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -9,
+          -8,
+          -5,
+          -2,
+          -1,
+          0,
+          3,
+          6,
+          7
+        ],
+        [
+          -5,
+          -4,
+          -2,
+          0,
+          2,
+          4,
+          5,
+          8,
+          8
+        ]
+      ],
+      "physical_energies": [
+        [
+          -3,
+          0,
+          3
+        ],
+        [
+          -8,
+          0,
+          5
+        ]
+      ],
+      "first_physical_pair_gap": 3
+    },
+    {
+      "kind": "nonbinary_brauer",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        3,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ]
+        ],
+        [
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          0,
+          1996,
+          2004,
+          3996,
+          4000,
+          4004,
+          5996,
+          6004,
+          8000
+        ],
+        [
+          0,
+          16,
+          16,
+          30,
+          30,
+          32,
+          44,
+          44,
+          56
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014,
+          4028
+        ],
+        [
+          0,
+          2014,
+          4028
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "random_strict",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        3,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            -2,
+            3
+          ],
+          [
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            2,
+            1
+          ],
+          [
+            0,
+            -3,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            -2,
+            -3
+          ],
+          [
+            0,
+            4,
+            -3
+          ],
+          [
+            0,
+            -3,
+            0
+          ],
+          [
+            0,
+            2,
+            1
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -9,
+          -8,
+          -6,
+          -4,
+          -3,
+          0,
+          0,
+          3,
+          3
+        ],
+        [
+          -9,
+          -7,
+          -4,
+          -3,
+          -2,
+          1,
+          2,
+          4,
+          6
+        ]
+      ],
+      "physical_energies": [
+        [
+          -5,
+          0,
+          3
+        ],
+        [
+          -1,
+          0,
+          3
+        ]
+      ],
+      "first_physical_pair_gap": 1
+    },
+    {
+      "kind": "random_strict",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        3,
+        3
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ]
+        ],
+        [
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -3,
+          1995,
+          1996,
+          3996,
+          3996,
+          3996,
+          5996,
+          5996,
+          7996
+        ],
+        [
+          0,
+          14,
+          14,
+          28,
+          28,
+          30,
+          40,
+          44,
+          54
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014,
+          4028
+        ],
+        [
+          0,
+          2014,
+          4028
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "constant_crossing",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        3,
+        5
+      ],
+      "heights": [
+        [
+          [
+            0,
+            3,
+            0
+          ],
+          [
+            0,
+            4,
+            3,
+            -3,
+            0
+          ],
+          [
+            0,
+            3,
+            -3,
+            1,
+            -4
+          ],
+          [
+            0,
+            1,
+            -3
+          ]
+        ],
+        [
+          [
+            0,
+            1,
+            3
+          ],
+          [
+            0,
+            -3,
+            2,
+            4,
+            3
+          ],
+          [
+            0,
+            3,
+            -4,
+            -2,
+            3
+          ],
+          [
+            0,
+            3,
+            2
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -7,
+          -5,
+          -4,
+          -3,
+          -3,
+          -2,
+          0,
+          0,
+          0,
+          2,
+          4,
+          4,
+          4,
+          7,
+          11
+        ],
+        [
+          -2,
+          0,
+          0,
+          2,
+          2,
+          3,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          7,
+          10,
+          11
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2,
+          8
+        ],
+        [
+          -2,
+          0,
+          0,
+          2,
+          7
+        ]
+      ],
+      "first_physical_pair_gap": 2
+    },
+    {
+      "kind": "constant_crossing",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        3,
+        5
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000,
+            3000,
+            4000
+          ],
+          [
+            0,
+            1000,
+            2000,
+            3000,
+            4000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ]
+        ],
+        [
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14,
+            21,
+            28
+          ],
+          [
+            0,
+            7,
+            14,
+            21,
+            28
+          ],
+          [
+            0,
+            7,
+            14
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          0,
+          2000,
+          2000,
+          4000,
+          4000,
+          4000,
+          6000,
+          6000,
+          6000,
+          8000,
+          8000,
+          8000,
+          10000,
+          10000,
+          12000
+        ],
+        [
+          0,
+          14,
+          14,
+          28,
+          28,
+          28,
+          42,
+          42,
+          42,
+          56,
+          56,
+          56,
+          70,
+          70,
+          84
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014,
+          4028
+        ],
+        [
+          0,
+          2014,
+          4028,
+          6042,
+          8056
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "nonbinary_brauer",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        3,
+        5
+      ],
+      "heights": [
+        [
+          [
+            0,
+            -1,
+            -4
+          ],
+          [
+            0,
+            -4,
+            -2,
+            -1,
+            -1
+          ],
+          [
+            0,
+            -2,
+            -4,
+            -4,
+            -2
+          ],
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            2,
+            -2
+          ],
+          [
+            0,
+            -3,
+            0,
+            -1,
+            4
+          ],
+          [
+            0,
+            4,
+            0,
+            -3,
+            4
+          ],
+          [
+            0,
+            3,
+            1
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -12,
+          -11,
+          -10,
+          -10,
+          -9,
+          -9,
+          -9,
+          -8,
+          -7,
+          -7,
+          -6,
+          -2,
+          0,
+          2,
+          4
+        ],
+        [
+          -3,
+          -2,
+          -2,
+          1,
+          2,
+          2,
+          2,
+          3,
+          3,
+          7,
+          7,
+          9,
+          9,
+          10,
+          15
+        ]
+      ],
+      "physical_energies": [
+        [
+          -3,
+          0,
+          5
+        ],
+        [
+          -9,
+          -6,
+          -5,
+          0,
+          5
+        ]
+      ],
+      "first_physical_pair_gap": 3
+    },
+    {
+      "kind": "nonbinary_brauer",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        3,
+        5
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000,
+            3000,
+            4000
+          ],
+          [
+            0,
+            1000,
+            2000,
+            3000,
+            4000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ]
+        ],
+        [
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14,
+            21,
+            28
+          ],
+          [
+            0,
+            7,
+            14,
+            21,
+            28
+          ],
+          [
+            0,
+            7,
+            14
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          0,
+          1996,
+          2004,
+          3996,
+          4000,
+          4004,
+          5996,
+          5996,
+          6004,
+          7996,
+          7996,
+          8000,
+          9996,
+          9996,
+          11996
+        ],
+        [
+          0,
+          16,
+          16,
+          30,
+          30,
+          32,
+          44,
+          44,
+          44,
+          56,
+          58,
+          58,
+          72,
+          72,
+          86
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014,
+          4028
+        ],
+        [
+          0,
+          2014,
+          4028,
+          6042,
+          8056
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    },
+    {
+      "kind": "random_strict",
+      "height_mode": "random_both_places",
+      "alphabets": [
+        3,
+        5
+      ],
+      "heights": [
+        [
+          [
+            0,
+            -2,
+            -3
+          ],
+          [
+            0,
+            -2,
+            -4,
+            0,
+            -4
+          ],
+          [
+            0,
+            -2,
+            4,
+            -2,
+            -1
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            -3,
+            3
+          ],
+          [
+            0,
+            -2,
+            1,
+            4,
+            -3
+          ],
+          [
+            0,
+            2,
+            1,
+            2,
+            2
+          ],
+          [
+            0,
+            4,
+            -3
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -13,
+          -13,
+          -12,
+          -12,
+          -11,
+          -10,
+          -9,
+          -8,
+          -7,
+          -6,
+          -5,
+          -4,
+          -3,
+          -1,
+          1
+        ],
+        [
+          -9,
+          -7,
+          -4,
+          -4,
+          -3,
+          -1,
+          0,
+          2,
+          3,
+          3,
+          5,
+          8,
+          10,
+          10,
+          13
+        ]
+      ],
+      "physical_energies": [
+        [
+          -3,
+          0,
+          0
+        ],
+        [
+          -6,
+          -4,
+          0,
+          2,
+          4
+        ]
+      ],
+      "first_physical_pair_gap": 2
+    },
+    {
+      "kind": "random_strict",
+      "height_mode": "cold_moving",
+      "alphabets": [
+        3,
+        5
+      ],
+      "heights": [
+        [
+          [
+            0,
+            1000,
+            2000
+          ],
+          [
+            0,
+            1000,
+            2000,
+            3000,
+            4000
+          ],
+          [
+            0,
+            1000,
+            2000,
+            3000,
+            4000
+          ],
+          [
+            0,
+            1000,
+            2000
+          ]
+        ],
+        [
+          [
+            0,
+            7,
+            14
+          ],
+          [
+            0,
+            7,
+            14,
+            21,
+            28
+          ],
+          [
+            0,
+            7,
+            14,
+            21,
+            28
+          ],
+          [
+            0,
+            7,
+            14
+          ]
+        ]
+      ],
+      "profiles": [
+        [
+          -4,
+          1996,
+          1998,
+          3994,
+          3996,
+          3996,
+          5996,
+          5996,
+          5996,
+          7996,
+          7996,
+          7996,
+          9996,
+          9997,
+          11995
+        ],
+        [
+          0,
+          14,
+          15,
+          27,
+          28,
+          28,
+          42,
+          42,
+          42,
+          56,
+          56,
+          56,
+          70,
+          71,
+          83
+        ]
+      ],
+      "physical_energies": [
+        [
+          0,
+          2014,
+          4028
+        ],
+        [
+          0,
+          2014,
+          4028,
+          6042,
+          8056
+        ]
+      ],
+      "first_physical_pair_gap": 2014
+    }
+  ],
+  "invalid_prefix_negative_margin": -9.07977984337293e-05,
+  "inconclusive_certificate_control": {
+    "status": "not_certified",
+    "alphabet_x": 2,
+    "alphabet_y": 2,
+    "a": "3/5",
+    "b": "4/5",
+    "scaled_physical_gap": "1/100",
+    "exponent": "1/350",
+    "exponential_target": "20/7",
+    "Taylor_degree": 2,
+    "Taylor_lower_bound": "245701/245000",
+    "scope": "Strict polynomial crossing and a unique physical ground pair are required. This excludes this cold parameter point; it is not a global bound improvement."
+  },
+  "seconds": 0.15149758011102676,
+  "source_sha256": {
+    "cold_gap_bound.py": "be8e3855d897a5c02a3c6e9c84e25dd355db8eeef5dc175a59302198c11a6f3d",
+    "check_cold_gap_bound.py": "74856331b0082f1d11dc49aef90e82df6a064c24b44fd23e2dab38bf5f9d3e0b",
+    "check_polynomial_crossing_axis.py": "cd47dae401258c09b84d8c5dfa5f955733afc0e739a476cb08bafd7e9bf31387",
+    "weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+  },
+  "scope": "Finite controls of the ordinary all-field proof and rational threshold arithmetic. Numerical comparisons are not a uniform proof. No interior or complete moving-gauge exclusion, new crossing, or score improvement."
+}

@@ -3023,6 +3023,12 @@ verify-square-zero-traces:
 verify-collective-css-pauli:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_collective_css_pauli.py
 
+.PHONY: verify-integral-spin-annihilators
+verify-integral-spin-annihilators:
+	python3 tools/check_integral_spin_annihilators.py
+
+verify-constructions: verify-integral-spin-annihilators
+
 .PHONY: verify-high-axis-cayley
 verify-high-axis-cayley:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_high_axis_cayley.py
@@ -3030,3 +3036,11 @@ verify-high-axis-cayley:
 .PHONY: verify-high-axis-plucker
 verify-high-axis-plucker:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_high_axis_plucker.py
+
+.PHONY: verify-cold-gap
+verify-cold-gap:
+	python3 tools/check_cold_gap_bound.py
+
+.PHONY: verify-uniform-axis-window
+verify-uniform-axis-window:
+	python3 tools/check_uniform_axis_window.py

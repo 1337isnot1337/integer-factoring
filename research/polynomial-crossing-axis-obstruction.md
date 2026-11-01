@@ -1,5 +1,11 @@
 # Fixed physical heights exclude both supporting axes at every scale
 
+The later [uniform axis theorem](uniform-polynomial-axis-window.md) removes
+this note's fixed-gauge restriction: an explicit neighborhood depending
+only on alphabet size now excludes arbitrary moving gauges and tensors
+in the same strict Laurent-polynomial pressure framework. The original
+proof and controls below retain their historical scope.
+
 ## Statement and scope
 
 Let `T(z)` be a finite Laurent-polynomial tensor over any field, with
