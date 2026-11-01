@@ -1105,3 +1105,10 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Fresh certified prime-cofactor controls
 
 - [Matched fresh 160-bit factoring runs and exact replays](prime-cofactor-fresh-controls.md)
+
+
+## General rational weights and a representation boundary
+
+- [All explicit separated rational weights](pole-cauchy-rational-weights.md)
+- [Regular joint kernels inside inverse residue blocks](pole-cauchy-restricted-kernels.md)
+- [Ordinary interval selectors require a large explicit rational representation](rational-interval-selector-bound.md)

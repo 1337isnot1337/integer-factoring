@@ -2038,3 +2038,10 @@ verify-coherent-protected-height25:
 verify-prime-cofactor-fresh-160:
 	python3 tools/check_fresh_prime_cofactor_control.py --bits 160 --replay evidence/prime-cofactor-fresh-160-fixed.json.gz
 	python3 tools/check_fresh_prime_cofactor_control.py --bits 160 --replay evidence/prime-cofactor-fresh-160-selective.json.gz
+
+
+.PHONY: verify-pole-cauchy-general-weights
+verify-pole-cauchy-general-weights:
+	python3 tools/check_pole_cauchy_rational_weights.py --output /tmp/integer-factoring-pole-cauchy-rational-weights.json
+	python3 tools/check_pole_cauchy_restricted_kernels.py --output /tmp/integer-factoring-pole-cauchy-restricted-kernels.json
+	python3 tools/check_rational_interval_selector_bound.py --output /tmp/integer-factoring-rational-interval-selector-bound.json

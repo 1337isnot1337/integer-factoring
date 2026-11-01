@@ -255,6 +255,18 @@ coefficient arrays using just two product jets. It incorporates coefficient
 divisibility before choosing precision and replaces the `p^2` termwise
 residue-block calls by one contraction. Exact dense checks and nonzero
 402-bit-domain controls through nine output bits are retained.
+
+The [general rational-weight compiler](research/pole-cauchy-rational-weights.md)
+now handles every explicitly written separated pair `A(a)/P(a), B(b)/Q(b)`
+with no domain poles. A valuation tree has polynomially many leaves even
+for repeated roots; quadratic selectors turn each local quotient into
+proper pole arrays. [Regular joint kernels can also be restricted to
+residue blocks](research/pole-cauchy-restricted-kernels.md).
+A separate [representation theorem](research/rational-interval-selector-bound.md)
+proves `2^K <= 4 D_* H` for a single rational upper-half selector, where
+`D_*` and `H` measure its explicit denominator. This distinguishes low-bit
+selection from ordinary interval selection without asserting a factoring
+lower bound.
 <!-- pole-implicit-checkpoint:end -->
 
 The [research index](research/INDEX.md) links proofs, exact evidence, and replay commands.
