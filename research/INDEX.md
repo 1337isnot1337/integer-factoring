@@ -1210,3 +1210,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Full generic cube frames over F4
 
 - [Exact polynomial row certificates without a parity restriction](cube-f4-generic-frames.md)
+
+
+## Low-order tests for parity-breaking flat cubes
+
+- [Rank-one faces and a necessary average second-order gain](cube-flat-low-order-floors.md)

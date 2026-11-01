@@ -1,0 +1,158 @@
+{
+  "entropy_certificates": [
+    {
+      "difference_sha256": "fe5226aff06b2f2836c307ecbcae7aa0ff66093a02a08e5aa15633dc80032e9e",
+      "left_bits": 7587,
+      "name": "a_face_of_rank_at_least_two",
+      "positive_difference_bits": 7587,
+      "right_bits": 7571,
+      "strict_integer_comparison": true
+    },
+    {
+      "difference_sha256": "47b7076f20a1e8849a875e747c2c742e08a8c85cb1953e9eba1f5a137a7b3c09",
+      "left_bits": 8677,
+      "name": "small_average_second_order",
+      "positive_difference_bits": 8677,
+      "right_bits": 8660,
+      "strict_integer_comparison": true
+    }
+  ],
+  "face_rank_weights": {
+    "A_numerators": [
+      50,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "B_numerators": [
+      33,
+      33,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "denominator": 80
+  },
+  "floating_point_used_for_certificate": false,
+  "generic_smith_profiles_computed_by_this_checker": false,
+  "interface_controls": {
+    "common_scalar_factor": {
+      "certified_floor": "rho > 29/50 > 1/sqrt(3)",
+      "common_coordinate_factor": [
+        2,
+        1,
+        0
+      ],
+      "face_rank_at_least_two_axes": [],
+      "normalized_second_order_sum": 6,
+      "residual_degree": 6,
+      "small_average_second_order": true
+    },
+    "constant_endpoint": {
+      "common_coordinate_factor": [
+        2,
+        3,
+        1
+      ],
+      "constant_endpoint": true,
+      "pressure": "1",
+      "residual_degree": 0
+    },
+    "even_seed": {
+      "certified_floor": "rho > 29/50 > 1/sqrt(3)",
+      "common_coordinate_factor": [
+        0,
+        0,
+        0
+      ],
+      "face_rank_at_least_two_axes": [],
+      "normalized_second_order_sum": 6,
+      "residual_degree": 6,
+      "small_average_second_order": true
+    },
+    "odd_seed": {
+      "certified_floor": "rho > 29/50 > 1/sqrt(3)",
+      "common_coordinate_factor": [
+        0,
+        0,
+        0
+      ],
+      "face_rank_at_least_two_axes": [],
+      "normalized_second_order_sum": 6,
+      "residual_degree": 6,
+      "small_average_second_order": true
+    },
+    "one_rank_two_face": {
+      "certified_floor": "rho > 29/50 > 1/sqrt(3)",
+      "common_coordinate_factor": [
+        0,
+        0,
+        0
+      ],
+      "face_rank_at_least_two_axes": [
+        2
+      ],
+      "normalized_second_order_sum": 8,
+      "residual_degree": 6,
+      "small_average_second_order": false
+    },
+    "unexcluded_relaxation": {
+      "certified_floor": null,
+      "common_coordinate_factor": [
+        0,
+        0,
+        0
+      ],
+      "face_rank_at_least_two_axes": [],
+      "normalized_second_order_sum": 12,
+      "residual_degree": 6,
+      "small_average_second_order": false
+    }
+  },
+  "proved_floor_under_either_condition": "rho > 29/50 > 1/sqrt(3)",
+  "scope": "Certified generic profiles of arbitrary homogeneous flat binary cube tensors; odd coefficients allowed.",
+  "second_order_weights": {
+    "denominator": 59,
+    "numerators": [
+      33,
+      12,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  }
+}
