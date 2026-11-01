@@ -2693,3 +2693,7 @@ verify-compact-power-witnesses:
 .PHONY: verify-compact-oriented-basis
 verify-compact-oriented-basis:
 	python3 tools/check_compact_oriented_basis.py --output /tmp/compact-oriented-basis-replay.json
+
+.PHONY: verify-tensor-affine-clifford
+verify-tensor-affine-clifford:
+	python3 tools/check_tensor_affine_clifford_profiles.py --output /tmp/tensor-affine-clifford-replay.json
