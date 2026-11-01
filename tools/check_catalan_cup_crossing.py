@@ -12,6 +12,7 @@ import numpy as np
 
 from catalan_cup_crossing import (
     binary_length,
+    binary_product,
     cup_action,
     cup_basis,
     cup_frame,
@@ -165,7 +166,17 @@ def retained_wall():
 
 def check():
     frame_controls, profiles = [], []
+    selected_controls = []
     local_entries = polynomial_entries = rank_pairs = 0
+    random = np.random.default_rng(742019)
+    for inner in (1, 2, 7, 64, 65, 129):
+        a = random.integers(0, 2, size=(19, inner), dtype=np.uint8)
+        b = random.integers(0, 2, size=(inner, 11), dtype=np.uint8)
+        assert np.array_equal(binary_product(a, b), (a @ b) & 1)
+    long_word = (1 << 35) - 1
+    assert cup_frame(
+        (tuple(range(69, -1, -1)),), (long_word, long_word ^ 1 ^ (1 << 69)), 8
+    ).tolist() == [[1], [8]]
     for q in (1, 8):
         for n in (2, 4, 6, 8, 10):
             mates, words = cup_basis(n)
@@ -234,6 +245,24 @@ def check():
                     "complete_coefficient_rank_pairs": pairs,
                 }
             )
+            if n == 6 or (q == 1 and n == 8):
+                selected = (0, 1, 3, 4) if n == 6 else tuple(range(8))
+                restricted = crossing_tensor(n, q, selected)
+                expected = tensor[
+                    np.ix_(
+                        np.arange(len(tensor)), selected, selected, selected, selected
+                    )
+                ]
+                assert np.array_equal(restricted, expected[: len(restricted)])
+                assert not np.any(expected[len(restricted) :])
+                selected_controls.append(
+                    {
+                        "q": q,
+                        "length": n,
+                        "selected": selected,
+                        "complete_coefficients_equal_full_restriction": True,
+                    }
+                )
     lengths = [binary_length(width) for width in range(25)]
     for width, n in enumerate(lengths):
         assert 1 << width <= label_count(n) < 4 * (1 << width)
@@ -257,6 +286,8 @@ def check():
     )
     return {
         "status": "pass",
+        "packed_binary_product_controls": 6,
+        "selected_alphabet_controls": selected_controls,
         "frame_controls": frame_controls,
         "independent_physical_local_action_entries": local_entries,
         "independent_physical_polynomial_entries": polynomial_entries,

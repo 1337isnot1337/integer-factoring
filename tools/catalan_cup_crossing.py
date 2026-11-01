@@ -62,7 +62,8 @@ def cup_basis(length):
 def cup_frame(mates, words, q=1):
     """Rows are physical words, columns are cup tensors; no Gram inversion."""
     assert q
-    words = np.array(words, dtype=object)
+    words = tuple(words)
+    words = np.array(words, dtype=np.uint64 if max(words) < 1 << 64 else object)
     frame = np.zeros((len(words), len(mates)), dtype=np.uint8)
     powers = np.array(
         [power(q, k) for k in range(len(mates[0]) // 2 + 1)], dtype=np.uint8
@@ -97,10 +98,31 @@ def field_kronecker(a, b):
     )
 
 
+def binary_product(a, b):
+    """Packed binary dot products, with bounded temporary storage."""
+
+    def pack(rows):
+        packed = np.packbits(rows, axis=1, bitorder="little")
+        padding = -packed.shape[1] % 8
+        if padding:
+            packed = np.pad(packed, ((0, 0), (0, padding)))
+        return np.ascontiguousarray(packed).view(np.uint64)
+
+    left, right = pack(a), pack(b.T)
+    result = np.zeros((len(a), b.shape[1]), dtype=np.uint8)
+    for start in range(0, len(a), 16):
+        overlap = np.bitwise_xor.reduce(
+            left[start : start + 16, None, :] & right[None, :, :], axis=2
+        )
+        for shift in (32, 16, 8, 4, 2, 1):
+            overlap ^= overlap >> shift
+        result[start : start + 16] = overlap & 1
+    return result
+
+
 def multiply(a, b, q):
-    # Modulo-256 overflow preserves parity for binary matrices.
     if q == 1:
-        return (a @ b) & 1
+        return binary_product(a, b)
     return matrix_product(a, b)
 
 
@@ -115,18 +137,25 @@ def cup_action(mate, site, q=1):
 
 
 @lru_cache(maxsize=1)
-def crossing_layout(length, q=1):
+def crossing_layout(length, q=1, selected=None):
     mates, words = cup_basis(length)
     global_mates, _ = cup_basis(2 * length)
-    dimension = len(mates)
+    labels = tuple(range(len(mates))) if selected is None else selected
+    dimension = len(labels)
     inverse = triangular_dual(cup_frame(mates, words, q))
     index = {p: i for i, p in enumerate(global_mates)}
     boundary = np.array(
-        [index[p + tuple(i + length for i in r)] for p in mates for r in mates]
+        [
+            index[mates[p] + tuple(i + length for i in mates[r])]
+            for p in labels
+            for r in labels
+        ]
     )
-    selected = [p | (r << length) for p in words for r in words]
+    physical_words = [p | (r << length) for p in words for r in words]
     output = multiply(
-        field_kronecker(inverse, inverse), cup_frame(global_mates, selected, q), q
+        field_kronecker(inverse[list(labels)], inverse[list(labels)]),
+        cup_frame(global_mates, physical_words, q),
+        q,
     )
     routes = []
     for site in range(2 * length - 1):
@@ -138,9 +167,11 @@ def crossing_layout(length, q=1):
     return dimension, len(global_mates), boundary, output, routes
 
 
-def crossing_tensor(length, q=1):
+def crossing_tensor(length, q=1, selected=None):
     """Axes degree,P,Q,R,S; strict identity/crossing endpoints, over F2 at q=1."""
-    dimension, states_count, boundary, output, routes = crossing_layout(length, q)
+    dimension, states_count, boundary, output, routes = crossing_layout(
+        length, q, selected
+    )
     states = np.zeros((states_count, dimension * dimension, 1), dtype=np.uint8)
     states[boundary, np.arange(dimension * dimension), 0] = 1
     for site in braid_word(length, length):

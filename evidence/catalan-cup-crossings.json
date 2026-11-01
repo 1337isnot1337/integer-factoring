@@ -1,5 +1,45 @@
 {
   "status": "pass",
+  "packed_binary_product_controls": 6,
+  "selected_alphabet_controls": [
+    {
+      "q": 1,
+      "length": 6,
+      "selected": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "complete_coefficients_equal_full_restriction": true
+    },
+    {
+      "q": 1,
+      "length": 8,
+      "selected": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "complete_coefficients_equal_full_restriction": true
+    },
+    {
+      "q": 8,
+      "length": 6,
+      "selected": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "complete_coefficients_equal_full_restriction": true
+    }
+  ],
   "frame_controls": [
     {
       "q": 1,
@@ -1027,8 +1067,8 @@
   "scope": "Uniform Catalan primal frames and coordinate duals with strict crossings; no favorable complete rank sum or stronger factoring score.",
   "source_sha256": {
     "research/catalan-cup-crossings.md": "fd6b024a14b5e9b9c9ae519177f39a5e4e1500b1609de2fc956f43bf3085c5d7",
-    "tools/catalan_cup_crossing.py": "c38ced210a16bdc666fa5fb1405bb9c6ada16dbd96a0dc922c938ab1bef5ee2e",
-    "tools/check_catalan_cup_crossing.py": "7102b72c42295d75b2fa61628ad434867d50a775675400ea089631e5a50fbcb5",
+    "tools/catalan_cup_crossing.py": "b11d03f25f201700e02fb117bf2fec9d17cec4156ee7370dba1f11bccad7fe05",
+    "tools/check_catalan_cup_crossing.py": "ac1feb042dc6fc518296ad0fee2b5e6f7f5ad697c4eea28d162487ff6581de44",
     "tools/quantum_braid_spectral_fusion.py": "fbfb582940bbffce5ad943ad5645ff0344a95f7e1b19d81b19c8f57c3b513eb6",
     "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
     "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
