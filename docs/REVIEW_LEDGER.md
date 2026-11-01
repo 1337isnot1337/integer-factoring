@@ -399,6 +399,10 @@ Phase-five source `60c0cd9` proves `X=B(c+V)`, `B=1+V+V^2`, with V the sum of th
 
 The independent q=5 divisor-class derivation in [Discussion reply 19327344](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19327344) is credited, with its alternative coefficient basis made explicit. Its reported larger replay is not counted as a new local check. No new Lean build, independent acceptance of a factoring improvement, or exponent above 1/2.
 
+## 2026-11-01: Catalan path-mean pole checkpoint
+
+At base `9e8fe181ff1e8101aa71f4b4aa08fcda4e6b0d60`, the Catalan Gram-dual note adds an exact marked-tree formula for the mean spin-path valuation and proves it is `Theta(r log r)`, compared with the quadratic worst-path bound. The focused `make verify-catalan-gram-smith` check matches the formula against exact Dyck-path distributions through semilength 32 and records exact means through 512. Full `make verify` exited 0 on the same source tree: 1,062 Markdown files, 66 unit tests, five crossing tests, and registered default commands. `make verify-docs` passed after the ledger entry. This is an authored ordinary proof and finite replay, not independent review or a complete two-cut rank bound; the factoring score remains `1/2`.
+
 ## 2026-11-01: Rectangular joint compression with a new physical grid
 
 At base `68589bf6e4bc4d6710a57ca345665a35a1837267`, the [joint-split proof](../research/joint-grid-compressions.md) compresses the operator in `(X,Y)|(V,U)` order and then re-encodes its basis as a new Cartesian alphabet. It requires the actual opposite reshuffle, rather than treating a joint multiplication as a unit operation there. Exact factorial injection counts cover 1,232 vacuum-containing coordinate maps on 58 height pairs at 2-by-3, and 1,152 full maps on three height pairs at 4-by-4. All 214 classes in the first family have balanced `rho >= 3/4` integer Bernstein certificates, of degree at most 216. All 23 classes in the second have unchanged zero profiles, weakly dominated opposite prefixes and unchanged physical partition products, excluding improvement over the source for every scale and supporting weights.

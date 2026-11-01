@@ -1,0 +1,989 @@
+{
+  "complete_factorings": [
+    {
+      "affine_pair_queries": 1109,
+      "factor": 1031,
+      "input_bits": 21,
+      "number": 1124821,
+      "prime_factors": [
+        1031,
+        1091
+      ],
+      "rectangle_queries": 16,
+      "visited_nodes": 638
+    },
+    {
+      "affine_pair_queries": 5200,
+      "factor": 8209,
+      "input_bits": 27,
+      "number": 68077237,
+      "prime_factors": [
+        8209,
+        8293
+      ],
+      "rectangle_queries": 19,
+      "visited_nodes": 2465
+    },
+    {
+      "affine_pair_queries": 23545,
+      "factor": 65537,
+      "input_bits": 33,
+      "number": 4297850923,
+      "prime_factors": [
+        65537,
+        65579
+      ],
+      "rectangle_queries": 20,
+      "visited_nodes": 10017
+    }
+  ],
+  "counts": {
+    "exact_level_profiles": 859,
+    "huge_interval_affine_counts": 4,
+    "literal_adaptive_factor_rectangles": 400,
+    "literal_ratio_lookahead_counts": 800,
+    "positive_child_nesting_checks": 800,
+    "positive_product_divisor_bounds": 859,
+    "smallest_prime_factor_controls": 1198
+  },
+  "empty_semiprime_rectangles": [
+    {
+      "affine_pair_queries": 663,
+      "count": 0,
+      "earlier_corner_tree_states_certified_through_depth_s_minus_3": 127,
+      "first_interval": [
+        1024,
+        3072
+      ],
+      "fixed_terminal_ratio_classes": 4096,
+      "input_bits": 23,
+      "levels": [
+        {
+          "congruence_pairs": 1572864,
+          "live": 1,
+          "ratio_precision": 1,
+          "visited": 1
+        },
+        {
+          "congruence_pairs": 393216,
+          "live": 1,
+          "ratio_precision": 2,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 98304,
+          "live": 1,
+          "ratio_precision": 3,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 24576,
+          "live": 2,
+          "ratio_precision": 4,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 6144,
+          "live": 4,
+          "ratio_precision": 5,
+          "visited": 4
+        },
+        {
+          "congruence_pairs": 1530,
+          "live": 8,
+          "ratio_precision": 6,
+          "visited": 8
+        },
+        {
+          "congruence_pairs": 372,
+          "live": 15,
+          "ratio_precision": 7,
+          "visited": 16
+        },
+        {
+          "congruence_pairs": 91,
+          "live": 30,
+          "ratio_precision": 8,
+          "visited": 30
+        },
+        {
+          "congruence_pairs": 23,
+          "live": 20,
+          "ratio_precision": 9,
+          "visited": 60
+        },
+        {
+          "congruence_pairs": 2,
+          "live": 2,
+          "ratio_precision": 10,
+          "visited": 40
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 11,
+          "visited": 4
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 12,
+          "visited": 0
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 13,
+          "visited": 0
+        }
+      ],
+      "live_nodes": 84,
+      "maximum_difference": 24022376,
+      "maximum_product": 28299265,
+      "maximum_stack_size": 8,
+      "minimum_product": 3145728,
+      "number": 4276889,
+      "primality_certificate": "complete deterministic trial division through each integer square root",
+      "prime_factors": [
+        521,
+        8209
+      ],
+      "scale_exponent": 10,
+      "second_interval": [
+        3072,
+        9216
+      ],
+      "terminal_ratio_precision": 13,
+      "visited_nodes": 169
+    },
+    {
+      "affine_pair_queries": 2015,
+      "count": 0,
+      "earlier_corner_tree_states_certified_through_depth_s_minus_3": 511,
+      "first_interval": [
+        4096,
+        12288
+      ],
+      "fixed_terminal_ratio_classes": 16384,
+      "input_bits": 27,
+      "levels": [
+        {
+          "congruence_pairs": 25165824,
+          "live": 1,
+          "ratio_precision": 1,
+          "visited": 1
+        },
+        {
+          "congruence_pairs": 6291456,
+          "live": 1,
+          "ratio_precision": 2,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 1572864,
+          "live": 1,
+          "ratio_precision": 3,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 393216,
+          "live": 2,
+          "ratio_precision": 4,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 98304,
+          "live": 4,
+          "ratio_precision": 5,
+          "visited": 4
+        },
+        {
+          "congruence_pairs": 24576,
+          "live": 8,
+          "ratio_precision": 6,
+          "visited": 8
+        },
+        {
+          "congruence_pairs": 6026,
+          "live": 16,
+          "ratio_precision": 7,
+          "visited": 16
+        },
+        {
+          "congruence_pairs": 1560,
+          "live": 32,
+          "ratio_precision": 8,
+          "visited": 32
+        },
+        {
+          "congruence_pairs": 409,
+          "live": 63,
+          "ratio_precision": 9,
+          "visited": 64
+        },
+        {
+          "congruence_pairs": 108,
+          "live": 80,
+          "ratio_precision": 10,
+          "visited": 126
+        },
+        {
+          "congruence_pairs": 31,
+          "live": 30,
+          "ratio_precision": 11,
+          "visited": 160
+        },
+        {
+          "congruence_pairs": 14,
+          "live": 13,
+          "ratio_precision": 12,
+          "visited": 60
+        },
+        {
+          "congruence_pairs": 3,
+          "live": 3,
+          "ratio_precision": 13,
+          "visited": 26
+        },
+        {
+          "congruence_pairs": 2,
+          "live": 2,
+          "ratio_precision": 14,
+          "visited": 6
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 15,
+          "visited": 4
+        }
+      ],
+      "live_nodes": 256,
+      "maximum_difference": 385656818,
+      "maximum_product": 452935681,
+      "maximum_stack_size": 10,
+      "minimum_product": 50331648,
+      "number": 67278863,
+      "primality_certificate": "complete deterministic trial division through each integer square root",
+      "prime_factors": [
+        2053,
+        32771
+      ],
+      "scale_exponent": 12,
+      "second_interval": [
+        12288,
+        36864
+      ],
+      "terminal_ratio_precision": 15,
+      "visited_nodes": 513
+    },
+    {
+      "affine_pair_queries": 7647,
+      "count": 0,
+      "earlier_corner_tree_states_certified_through_depth_s_minus_3": 4095,
+      "first_interval": [
+        32768,
+        98304
+      ],
+      "fixed_terminal_ratio_classes": 131072,
+      "input_bits": 33,
+      "levels": [
+        {
+          "congruence_pairs": 1610612736,
+          "live": 1,
+          "ratio_precision": 1,
+          "visited": 1
+        },
+        {
+          "congruence_pairs": 402653184,
+          "live": 1,
+          "ratio_precision": 2,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 100663296,
+          "live": 1,
+          "ratio_precision": 3,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 25165824,
+          "live": 2,
+          "ratio_precision": 4,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 6291456,
+          "live": 4,
+          "ratio_precision": 5,
+          "visited": 4
+        },
+        {
+          "congruence_pairs": 1572864,
+          "live": 8,
+          "ratio_precision": 6,
+          "visited": 8
+        },
+        {
+          "congruence_pairs": 393216,
+          "live": 16,
+          "ratio_precision": 7,
+          "visited": 16
+        },
+        {
+          "congruence_pairs": 98304,
+          "live": 32,
+          "ratio_precision": 8,
+          "visited": 32
+        },
+        {
+          "congruence_pairs": 24818,
+          "live": 64,
+          "ratio_precision": 9,
+          "visited": 64
+        },
+        {
+          "congruence_pairs": 6130,
+          "live": 127,
+          "ratio_precision": 10,
+          "visited": 128
+        },
+        {
+          "congruence_pairs": 1600,
+          "live": 250,
+          "ratio_precision": 11,
+          "visited": 254
+        },
+        {
+          "congruence_pairs": 416,
+          "live": 293,
+          "ratio_precision": 12,
+          "visited": 500
+        },
+        {
+          "congruence_pairs": 116,
+          "live": 112,
+          "ratio_precision": 13,
+          "visited": 586
+        },
+        {
+          "congruence_pairs": 33,
+          "live": 33,
+          "ratio_precision": 14,
+          "visited": 224
+        },
+        {
+          "congruence_pairs": 12,
+          "live": 12,
+          "ratio_precision": 15,
+          "visited": 66
+        },
+        {
+          "congruence_pairs": 2,
+          "live": 2,
+          "ratio_precision": 16,
+          "visited": 24
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 17,
+          "visited": 4
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 18,
+          "visited": 0
+        }
+      ],
+      "live_nodes": 958,
+      "maximum_difference": 24688541616,
+      "maximum_product": 28990636033,
+      "maximum_stack_size": 14,
+      "minimum_product": 3221225472,
+      "number": 4302094417,
+      "primality_certificate": "complete deterministic trial division through each integer square root",
+      "prime_factors": [
+        16411,
+        262147
+      ],
+      "scale_exponent": 15,
+      "second_interval": [
+        98304,
+        294912
+      ],
+      "terminal_ratio_precision": 18,
+      "visited_nodes": 1917
+    },
+    {
+      "affine_pair_queries": 28631,
+      "count": 0,
+      "earlier_corner_tree_states_certified_through_depth_s_minus_3": 32767,
+      "first_interval": [
+        262144,
+        786432
+      ],
+      "fixed_terminal_ratio_classes": 1048576,
+      "input_bits": 39,
+      "levels": [
+        {
+          "congruence_pairs": 103079215104,
+          "live": 1,
+          "ratio_precision": 1,
+          "visited": 1
+        },
+        {
+          "congruence_pairs": 25769803776,
+          "live": 1,
+          "ratio_precision": 2,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 6442450944,
+          "live": 1,
+          "ratio_precision": 3,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 1610612736,
+          "live": 2,
+          "ratio_precision": 4,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 402653184,
+          "live": 4,
+          "ratio_precision": 5,
+          "visited": 4
+        },
+        {
+          "congruence_pairs": 100663296,
+          "live": 8,
+          "ratio_precision": 6,
+          "visited": 8
+        },
+        {
+          "congruence_pairs": 25165824,
+          "live": 16,
+          "ratio_precision": 7,
+          "visited": 16
+        },
+        {
+          "congruence_pairs": 6291456,
+          "live": 32,
+          "ratio_precision": 8,
+          "visited": 32
+        },
+        {
+          "congruence_pairs": 1572864,
+          "live": 64,
+          "ratio_precision": 9,
+          "visited": 64
+        },
+        {
+          "congruence_pairs": 392864,
+          "live": 128,
+          "ratio_precision": 10,
+          "visited": 128
+        },
+        {
+          "congruence_pairs": 98208,
+          "live": 256,
+          "ratio_precision": 11,
+          "visited": 256
+        },
+        {
+          "congruence_pairs": 24498,
+          "live": 506,
+          "ratio_precision": 12,
+          "visited": 512
+        },
+        {
+          "congruence_pairs": 6222,
+          "live": 984,
+          "ratio_precision": 13,
+          "visited": 1012
+        },
+        {
+          "congruence_pairs": 1555,
+          "live": 1119,
+          "ratio_precision": 14,
+          "visited": 1968
+        },
+        {
+          "congruence_pairs": 359,
+          "live": 342,
+          "ratio_precision": 15,
+          "visited": 2238
+        },
+        {
+          "congruence_pairs": 88,
+          "live": 86,
+          "ratio_precision": 16,
+          "visited": 684
+        },
+        {
+          "congruence_pairs": 25,
+          "live": 25,
+          "ratio_precision": 17,
+          "visited": 172
+        },
+        {
+          "congruence_pairs": 5,
+          "live": 5,
+          "ratio_precision": 18,
+          "visited": 50
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 19,
+          "visited": 10
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 20,
+          "visited": 0
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 21,
+          "visited": 0
+        }
+      ],
+      "live_nodes": 3580,
+      "maximum_difference": 1580481773076,
+      "maximum_product": 1855422726145,
+      "maximum_stack_size": 15,
+      "minimum_product": 206158430208,
+      "number": 274940953069,
+      "primality_certificate": "complete deterministic trial division through each integer square root",
+      "prime_factors": [
+        131101,
+        2097169
+      ],
+      "scale_exponent": 18,
+      "second_interval": [
+        786432,
+        2359296
+      ],
+      "terminal_ratio_precision": 21,
+      "visited_nodes": 7161
+    },
+    {
+      "affine_pair_queries": 116183,
+      "count": 0,
+      "earlier_corner_tree_states_certified_through_depth_s_minus_3": 262143,
+      "first_interval": [
+        2097152,
+        6291456
+      ],
+      "fixed_terminal_ratio_classes": 8388608,
+      "input_bits": 45,
+      "levels": [
+        {
+          "congruence_pairs": 6597069766656,
+          "live": 1,
+          "ratio_precision": 1,
+          "visited": 1
+        },
+        {
+          "congruence_pairs": 1649267441664,
+          "live": 1,
+          "ratio_precision": 2,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 412316860416,
+          "live": 1,
+          "ratio_precision": 3,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 103079215104,
+          "live": 2,
+          "ratio_precision": 4,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 25769803776,
+          "live": 4,
+          "ratio_precision": 5,
+          "visited": 4
+        },
+        {
+          "congruence_pairs": 6442450944,
+          "live": 8,
+          "ratio_precision": 6,
+          "visited": 8
+        },
+        {
+          "congruence_pairs": 1610612736,
+          "live": 16,
+          "ratio_precision": 7,
+          "visited": 16
+        },
+        {
+          "congruence_pairs": 402653184,
+          "live": 32,
+          "ratio_precision": 8,
+          "visited": 32
+        },
+        {
+          "congruence_pairs": 100663296,
+          "live": 64,
+          "ratio_precision": 9,
+          "visited": 64
+        },
+        {
+          "congruence_pairs": 25165824,
+          "live": 128,
+          "ratio_precision": 10,
+          "visited": 128
+        },
+        {
+          "congruence_pairs": 6291456,
+          "live": 256,
+          "ratio_precision": 11,
+          "visited": 256
+        },
+        {
+          "congruence_pairs": 1572892,
+          "live": 512,
+          "ratio_precision": 12,
+          "visited": 512
+        },
+        {
+          "congruence_pairs": 393504,
+          "live": 1022,
+          "ratio_precision": 13,
+          "visited": 1024
+        },
+        {
+          "congruence_pairs": 98415,
+          "live": 2036,
+          "ratio_precision": 14,
+          "visited": 2044
+        },
+        {
+          "congruence_pairs": 24503,
+          "live": 3945,
+          "ratio_precision": 15,
+          "visited": 4072
+        },
+        {
+          "congruence_pairs": 6124,
+          "live": 4402,
+          "ratio_precision": 16,
+          "visited": 7890
+        },
+        {
+          "congruence_pairs": 1612,
+          "live": 1548,
+          "ratio_precision": 17,
+          "visited": 8804
+        },
+        {
+          "congruence_pairs": 411,
+          "live": 406,
+          "ratio_precision": 18,
+          "visited": 3096
+        },
+        {
+          "congruence_pairs": 108,
+          "live": 108,
+          "ratio_precision": 19,
+          "visited": 812
+        },
+        {
+          "congruence_pairs": 28,
+          "live": 28,
+          "ratio_precision": 20,
+          "visited": 216
+        },
+        {
+          "congruence_pairs": 4,
+          "live": 4,
+          "ratio_precision": 21,
+          "visited": 56
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 22,
+          "visited": 8
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 23,
+          "visited": 0
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 24,
+          "visited": 0
+        }
+      ],
+      "live_nodes": 14524,
+      "maximum_difference": 101154882059988,
+      "maximum_product": 118747230633985,
+      "maximum_stack_size": 16,
+      "minimum_product": 13194139533312,
+      "number": 17592348573997,
+      "primality_certificate": "complete deterministic trial division through each integer square root",
+      "prime_factors": [
+        1048583,
+        16777259
+      ],
+      "scale_exponent": 21,
+      "second_interval": [
+        6291456,
+        18874368
+      ],
+      "terminal_ratio_precision": 24,
+      "visited_nodes": 29049
+    },
+    {
+      "affine_pair_queries": 463699,
+      "count": 0,
+      "earlier_corner_tree_states_certified_through_depth_s_minus_3": 2097151,
+      "first_interval": [
+        16777216,
+        50331648
+      ],
+      "fixed_terminal_ratio_classes": 67108864,
+      "input_bits": 51,
+      "levels": [
+        {
+          "congruence_pairs": 422212465065984,
+          "live": 1,
+          "ratio_precision": 1,
+          "visited": 1
+        },
+        {
+          "congruence_pairs": 105553116266496,
+          "live": 1,
+          "ratio_precision": 2,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 26388279066624,
+          "live": 1,
+          "ratio_precision": 3,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 6597069766656,
+          "live": 2,
+          "ratio_precision": 4,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 1649267441664,
+          "live": 4,
+          "ratio_precision": 5,
+          "visited": 4
+        },
+        {
+          "congruence_pairs": 412316860416,
+          "live": 8,
+          "ratio_precision": 6,
+          "visited": 8
+        },
+        {
+          "congruence_pairs": 103079215104,
+          "live": 16,
+          "ratio_precision": 7,
+          "visited": 16
+        },
+        {
+          "congruence_pairs": 25769803776,
+          "live": 32,
+          "ratio_precision": 8,
+          "visited": 32
+        },
+        {
+          "congruence_pairs": 6442450944,
+          "live": 64,
+          "ratio_precision": 9,
+          "visited": 64
+        },
+        {
+          "congruence_pairs": 1610612736,
+          "live": 128,
+          "ratio_precision": 10,
+          "visited": 128
+        },
+        {
+          "congruence_pairs": 402653184,
+          "live": 256,
+          "ratio_precision": 11,
+          "visited": 256
+        },
+        {
+          "congruence_pairs": 100663296,
+          "live": 512,
+          "ratio_precision": 12,
+          "visited": 512
+        },
+        {
+          "congruence_pairs": 25167116,
+          "live": 1024,
+          "ratio_precision": 13,
+          "visited": 1024
+        },
+        {
+          "congruence_pairs": 6294198,
+          "live": 2048,
+          "ratio_precision": 14,
+          "visited": 2048
+        },
+        {
+          "congruence_pairs": 1575860,
+          "live": 4094,
+          "ratio_precision": 15,
+          "visited": 4096
+        },
+        {
+          "congruence_pairs": 394604,
+          "live": 8165,
+          "ratio_precision": 16,
+          "visited": 8188
+        },
+        {
+          "congruence_pairs": 98212,
+          "live": 15836,
+          "ratio_precision": 17,
+          "visited": 16330
+        },
+        {
+          "congruence_pairs": 24600,
+          "live": 17768,
+          "ratio_precision": 18,
+          "visited": 31672
+        },
+        {
+          "congruence_pairs": 6100,
+          "live": 5845,
+          "ratio_precision": 19,
+          "visited": 35536
+        },
+        {
+          "congruence_pairs": 1633,
+          "live": 1615,
+          "ratio_precision": 20,
+          "visited": 11690
+        },
+        {
+          "congruence_pairs": 413,
+          "live": 412,
+          "ratio_precision": 21,
+          "visited": 3230
+        },
+        {
+          "congruence_pairs": 111,
+          "live": 111,
+          "ratio_precision": 22,
+          "visited": 824
+        },
+        {
+          "congruence_pairs": 14,
+          "live": 14,
+          "ratio_precision": 23,
+          "visited": 222
+        },
+        {
+          "congruence_pairs": 6,
+          "live": 6,
+          "ratio_precision": 24,
+          "visited": 28
+        },
+        {
+          "congruence_pairs": 1,
+          "live": 1,
+          "ratio_precision": 25,
+          "visited": 12
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 26,
+          "visited": 2
+        },
+        {
+          "congruence_pairs": 0,
+          "live": 0,
+          "ratio_precision": 27,
+          "visited": 0
+        }
+      ],
+      "live_nodes": 57964,
+      "maximum_difference": 6473922811789052,
+      "maximum_product": 7599824169861121,
+      "maximum_stack_size": 18,
+      "minimum_product": 844424930131968,
+      "number": 1125901358072069,
+      "primality_certificate": "complete deterministic trial division through each integer square root",
+      "prime_factors": [
+        8388617,
+        134217757
+      ],
+      "scale_exponent": 24,
+      "second_interval": [
+        50331648,
+        150994944
+      ],
+      "terminal_ratio_precision": 27,
+      "visited_nodes": 115929
+    }
+  ],
+  "global_comparison": "Weaker than the repository's exp(O(n/sqrt(log n))) complete factoring theorem; score remains 1/2.",
+  "huge_interval_controls": [
+    {
+      "affine_pair_queries": 4,
+      "column_length_bits": 142,
+      "control": "four low roots; R affine solutions among R^2 high-bit pairs per full product period",
+      "count": 14134776518227074636666380005971224090019506352769852262505029509014618112,
+      "ratio_precision": 20,
+      "row_length_bits": 161
+    },
+    {
+      "affine_pair_queries": 4,
+      "column_length_bits": 262,
+      "control": "four low roots; R affine solutions among R^2 high-bit pairs per full product period",
+      "count": 16296287810675888690147565507307164086076819935619661847536275498565450414008966189062029312,
+      "ratio_precision": 80,
+      "row_length_bits": 281
+    },
+    {
+      "affine_pair_queries": 4,
+      "column_length_bits": 502,
+      "control": "four low roots; R affine solutions among R^2 high-bit pairs per full product period",
+      "count": 21661481985318866090456360813660561222704446285049133498085459287765275205569364099913728620652875389057965020583473165172211712,
+      "ratio_precision": 200,
+      "row_length_bits": 521
+    },
+    {
+      "affine_pair_queries": 4,
+      "column_length_bits": 1126,
+      "control": "four low roots; R affine solutions among R^2 high-bit pairs per full product period",
+      "count": 180736893357325919804742965901452624335652362843234434905036801468070062885169567978887388876221049584134337235081016245724276066343320686594954324779737343544115542927188392239952257366954532119834076904238645646408548352,
+      "ratio_precision": 512,
+      "row_length_bits": 1145
+    }
+  ],
+  "large_controls_included": true,
+  "proved_search_cost": "2**(n/3 + O(n/log(n+2))) time, polynomial bit space, on positive rectangles with products at most C*N for fixed C",
+  "seed": 2026110148801,
+  "source_sha256": {
+    "tools/check_circuit_box_ratio_lookahead.py": "96de87b776796b77e0f174c7ee172057bb8b8e660b90c7009f78cb72be9a760b",
+    "tools/circuit_box_kloosterman_blocks.py": "3fbdda39cd6264249d9b949672e50a0bc7a6eb2b7a2bbcd1f44a365e1a098821",
+    "tools/circuit_box_ratio_lookahead.py": "13e85cbb8e65cc70c770dc48a09036f85e25ced7f60b85eb7c3b07ccf3f81d90"
+  },
+  "status": "passed"
+}

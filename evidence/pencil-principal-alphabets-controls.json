@@ -1,0 +1,263 @@
+{
+  "status": "pass",
+  "selected_literal_entries_and_endpoints": 209,
+  "independent_untruncated_orders": 50,
+  "records": [
+    {
+      "case_index": 0,
+      "alphabet_x": [
+        0,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "parameters": [
+        -2,
+        -3,
+        1,
+        -3,
+        2,
+        3,
+        -1,
+        1,
+        4,
+        8,
+        4,
+        -1,
+        3,
+        -1,
+        -2,
+        1,
+        1
+      ],
+      "independent_orders": [
+        -18,
+        -9,
+        -9,
+        -9,
+        -8,
+        -5,
+        0,
+        4,
+        5,
+        8,
+        10,
+        11,
+        13,
+        16,
+        27,
+        32
+      ]
+    },
+    {
+      "case_index": 33,
+      "alphabet_x": [
+        1,
+        2,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        3
+      ],
+      "parameters": [
+        -2,
+        -3,
+        2,
+        3,
+        0,
+        4,
+        -3,
+        -4,
+        -4,
+        -3,
+        2,
+        3,
+        -3,
+        -3,
+        1,
+        -3,
+        1
+      ],
+      "independent_orders": [
+        -17,
+        -15,
+        -14,
+        -12,
+        -11,
+        -8,
+        -5,
+        -5,
+        4,
+        -3,
+        -2,
+        -1,
+        0,
+        0,
+        2,
+        8,
+        13,
+        15
+      ]
+    },
+    {
+      "case_index": 66,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "alphabet_y": [
+        1,
+        3
+      ],
+      "parameters": [
+        2,
+        -2,
+        -3,
+        1,
+        -3,
+        7,
+        6,
+        5,
+        4,
+        0,
+        2,
+        -2,
+        -1,
+        -1,
+        -1,
+        3,
+        1
+      ],
+      "independent_orders": [
+        -14,
+        -12,
+        -10,
+        -8,
+        -5,
+        0,
+        3,
+        6,
+        -2,
+        1,
+        4,
+        8,
+        9,
+        13,
+        18,
+        25
+      ]
+    }
+  ],
+  "finite_asymmetric_derivatives": 18,
+  "derivatives": [
+    {
+      "case_index": 0,
+      "coordinate": 0,
+      "error": 1.7171934187099058e-10
+    },
+    {
+      "case_index": 0,
+      "coordinate": 1,
+      "error": 3.475607258593416e-11
+    },
+    {
+      "case_index": 0,
+      "coordinate": 9,
+      "error": 1.1109052913682582e-11
+    },
+    {
+      "case_index": 0,
+      "coordinate": 15,
+      "error": 8.095991065049102e-11
+    },
+    {
+      "case_index": 0,
+      "coordinate": 16,
+      "error": 5.487930943015584e-11
+    },
+    {
+      "case_index": 0,
+      "coordinate": 17,
+      "error": 4.616847182337125e-11
+    },
+    {
+      "case_index": 33,
+      "coordinate": 0,
+      "error": 2.0447764358458298e-10
+    },
+    {
+      "case_index": 33,
+      "coordinate": 2,
+      "error": 1.483580073027846e-10
+    },
+    {
+      "case_index": 33,
+      "coordinate": 9,
+      "error": 3.870189975788141e-11
+    },
+    {
+      "case_index": 33,
+      "coordinate": 15,
+      "error": 2.2678903893735836e-11
+    },
+    {
+      "case_index": 33,
+      "coordinate": 16,
+      "error": 1.7451168288218355e-10
+    },
+    {
+      "case_index": 33,
+      "coordinate": 17,
+      "error": 3.449234786678801e-10
+    },
+    {
+      "case_index": 66,
+      "coordinate": 0,
+      "error": 8.959151866563819e-11
+    },
+    {
+      "case_index": 66,
+      "coordinate": 3,
+      "error": 7.689571895896918e-11
+    },
+    {
+      "case_index": 66,
+      "coordinate": 9,
+      "error": 1.9921861035832045e-10
+    },
+    {
+      "case_index": 66,
+      "coordinate": 15,
+      "error": 1.7275749450776368e-10
+    },
+    {
+      "case_index": 66,
+      "coordinate": 16,
+      "error": 3.4979441565496927e-10
+    },
+    {
+      "case_index": 66,
+      "coordinate": 17,
+      "error": 1.8604327800542109e-10
+    }
+  ],
+  "source_sha256": {
+    "tools/pencil_principal_alphabets.py": "e421d68a335111edd9910dd6025c4a313f6e7ff227638407343bcd254b1fe784",
+    "tools/check_pencil_principal_alphabets.py": "45553be9d14112cd6ee754f83cb9e0e4955be94d00805d9554d3c0d923a72b3b",
+    "tools/check_scaled_asymmetric_pressure.py": "96112746f65f8ad573330ea9398c2c507739eb3deb042342be9e18c6b42d03da",
+    "tools/weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572",
+    "tools/native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "tools/scaled_asymmetric_crossing_pressure.py": "50231d3a2de45fea2a86c5019a9aada8c88d08966e413efee1f8c7f566108a77",
+    "tools/asymmetric_crossing_pressure.py": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42"
+  },
+  "scope": "Exact unequal principal restrictions, endpoints and new-gauge full profiles. No improving pressure or all-gauge exclusion."
+}

@@ -1,0 +1,12 @@
+{
+  "status": "pass",
+  "source_commit": "b04ca4c5925a1217f528a075c44def1bb1dbb601",
+  "registered_cases": 19,
+  "resolved_complete_orders": 34304,
+  "successful_support_fits": 57,
+  "best_unequal_label": "full-24-by-48-swapped",
+  "best_unequal_numerical_rho": 0.7218724642967949,
+  "best_numerical_support_value": 1.0001056729915012,
+  "archive_sha256": "ed16adf9dec452decc0ab782bd72ad4c6a1c7fea8518bce67bb9df17385c08df",
+  "scope": "Coverage, complete profile dimensions, source-text hashes and fit status validated; large native profiles are not independently reconstructed by this archive check. No exact new crossing bound."
+}

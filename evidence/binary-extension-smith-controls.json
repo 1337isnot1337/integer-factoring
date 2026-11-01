@@ -1,0 +1,1000 @@
+{
+  "status": "passed",
+  "field_product_controls": 340,
+  "matrix_cases": 64,
+  "rank_deficient_controls": [
+    {
+      "modulus": 3,
+      "matrix_order": 4,
+      "generic_rank": 2
+    },
+    {
+      "modulus": 7,
+      "matrix_order": 4,
+      "generic_rank": 2
+    },
+    {
+      "modulus": 11,
+      "matrix_order": 4,
+      "generic_rank": 2
+    },
+    {
+      "modulus": 19,
+      "matrix_order": 4,
+      "generic_rank": 2
+    }
+  ],
+  "toeplitz_rank_controls": 640,
+  "determinant_controls": 128,
+  "invalid_controls_rejected": 8,
+  "records": [
+    {
+      "modulus": 3,
+      "n": 1,
+      "trial": 0,
+      "zero_orders": [
+        0
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 3,
+      "n": 1,
+      "trial": 1,
+      "zero_orders": [
+        2
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 2
+    },
+    {
+      "modulus": 3,
+      "n": 1,
+      "trial": 2,
+      "zero_orders": [
+        1
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 3,
+      "n": 1,
+      "trial": 3,
+      "zero_orders": [
+        0
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 3,
+      "n": 2,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        5
+      ],
+      "regular_infinity_orders": [
+        0,
+        1
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 3,
+      "n": 2,
+      "trial": 1,
+      "zero_orders": [
+        1,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 3,
+      "n": 2,
+      "trial": 2,
+      "zero_orders": [
+        2,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        1
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 3,
+      "n": 2,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        5
+      ],
+      "regular_infinity_orders": [
+        0,
+        1
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 3,
+      "n": 3,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0,
+        3
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        4
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 3,
+      "n": 3,
+      "trial": 1,
+      "zero_orders": [
+        1,
+        1,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        2
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 3,
+      "n": 3,
+      "trial": 2,
+      "zero_orders": [
+        1,
+        2,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        2
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 3,
+      "n": 3,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        1
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 3,
+      "n": 4,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 3,
+      "n": 4,
+      "trial": 1,
+      "zero_orders": [
+        1,
+        1,
+        1,
+        4
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 3,
+      "n": 4,
+      "trial": 2,
+      "zero_orders": [
+        1,
+        2,
+        3,
+        8
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 3,
+      "n": 4,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 7,
+      "n": 1,
+      "trial": 0,
+      "zero_orders": [
+        0
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 7,
+      "n": 1,
+      "trial": 1,
+      "zero_orders": [
+        1
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 7,
+      "n": 1,
+      "trial": 2,
+      "zero_orders": [
+        2
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 7,
+      "n": 1,
+      "trial": 3,
+      "zero_orders": [
+        1
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 7,
+      "n": 2,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 7,
+      "n": 2,
+      "trial": 1,
+      "zero_orders": [
+        0,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 7,
+      "n": 2,
+      "trial": 2,
+      "zero_orders": [
+        0,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        1
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 7,
+      "n": 2,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 7,
+      "n": 3,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 7,
+      "n": 3,
+      "trial": 1,
+      "zero_orders": [
+        0,
+        1,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        1
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 7,
+      "n": 3,
+      "trial": 2,
+      "zero_orders": [
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 7,
+      "n": 3,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        1
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 7,
+      "n": 4,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 7,
+      "n": 4,
+      "trial": 1,
+      "zero_orders": [
+        1,
+        1,
+        1,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 7,
+      "n": 4,
+      "trial": 2,
+      "zero_orders": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 7,
+      "n": 4,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 11,
+      "n": 1,
+      "trial": 0,
+      "zero_orders": [
+        0
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 11,
+      "n": 1,
+      "trial": 1,
+      "zero_orders": [
+        2
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 11,
+      "n": 1,
+      "trial": 2,
+      "zero_orders": [
+        1
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 11,
+      "n": 1,
+      "trial": 3,
+      "zero_orders": [
+        0
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 11,
+      "n": 2,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 11,
+      "n": 2,
+      "trial": 1,
+      "zero_orders": [
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 11,
+      "n": 2,
+      "trial": 2,
+      "zero_orders": [
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 11,
+      "n": 2,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 11,
+      "n": 3,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        2
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 11,
+      "n": 3,
+      "trial": 1,
+      "zero_orders": [
+        0,
+        1,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 11,
+      "n": 3,
+      "trial": 2,
+      "zero_orders": [
+        2,
+        2,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 11,
+      "n": 3,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 11,
+      "n": 4,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 11,
+      "n": 4,
+      "trial": 1,
+      "zero_orders": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 11,
+      "n": 4,
+      "trial": 2,
+      "zero_orders": [
+        0,
+        1,
+        2,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 11,
+      "n": 4,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 19,
+      "n": 1,
+      "trial": 0,
+      "zero_orders": [
+        0
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 19,
+      "n": 1,
+      "trial": 1,
+      "zero_orders": [
+        1
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 19,
+      "n": 1,
+      "trial": 2,
+      "zero_orders": [
+        0
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 19,
+      "n": 1,
+      "trial": 3,
+      "zero_orders": [
+        0
+      ],
+      "regular_infinity_orders": [
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 19,
+      "n": 2,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 19,
+      "n": 2,
+      "trial": 1,
+      "zero_orders": [
+        1,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 19,
+      "n": 2,
+      "trial": 2,
+      "zero_orders": [
+        0,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 19,
+      "n": 2,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 19,
+      "n": 3,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 19,
+      "n": 3,
+      "trial": 1,
+      "zero_orders": [
+        0,
+        1,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 19,
+      "n": 3,
+      "trial": 2,
+      "zero_orders": [
+        2,
+        2,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 19,
+      "n": 3,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 19,
+      "n": 4,
+      "trial": 0,
+      "zero_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 3
+    },
+    {
+      "modulus": 19,
+      "n": 4,
+      "trial": 1,
+      "zero_orders": [
+        0,
+        1,
+        1,
+        1
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 4
+    },
+    {
+      "modulus": 19,
+      "n": 4,
+      "trial": 2,
+      "zero_orders": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 5
+    },
+    {
+      "modulus": 19,
+      "n": 4,
+      "trial": 3,
+      "zero_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "regular_infinity_orders": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "degree_bound": 3
+    }
+  ],
+  "source_sha256": {
+    "check_binary_extension_smith.py": "909414493cf03dd767d2bb9a458b4eb9c92adb7f91cc939322993379e25d37d0",
+    "binary_extension_smith.py": "17b5ce294e56d9e6cfd4e532721e31b5d3bfe5e7449e6de4269fa91446eeab5f",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  },
+  "scope": "Exact unweighted local orders at zero/infinity over supplied binary extensions; generic rank is charged as an external promise."
+}

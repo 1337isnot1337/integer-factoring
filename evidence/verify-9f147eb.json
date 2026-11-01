@@ -1,0 +1,16 @@
+{
+  "command": "make verify verify-windowed-f4-affine verify-f4-pascal-coordinate-sectors verify-scaled-asymmetric-pressure",
+  "compressed_stdout_sha256": "bd4e824cf9d68bcfc4c0a83222192d52db3451fcae700a455ce628907c9a9548",
+  "exit_code": 0,
+  "logged_python_command_blocks": 351,
+  "scope": "Complete defaults plus the three named focused gates at exact clean 9f147eb, including subalphabet caps, all-scale bare entropy, rectangular first jets and their binary counterexample. Predates the completed free-asymmetric archive and all-field transport theorem; their focused checks are separate. No new Lean or score improvement.",
+  "source_commit": "9f147eb7c1f713f90ede9649faa4f924ef0dba01",
+  "source_tree": "4423bf563377e5798b566424c047a12497152fc8",
+  "status": "pass",
+  "stdout_path": "evidence/verify-9f147eb.stdout.txt.xz",
+  "stdout_sha256": "b4524808c8120f630d8f9fba726d62f57a872805f6b6b614b5f108f7f578f316",
+  "unittest_suites_reported": [
+    66,
+    5
+  ]
+}

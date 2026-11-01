@@ -1,0 +1,8 @@
+python3 tools/check_moving_boundary_crossings.py --output /tmp/moving-boundary-controls.json
+{"scope": "Exact polynomial contraction and complete natural-profile controls; no improved factoring bound.", "independent_arithmetic_and_split_controls": 500, "constant_specialization_entries": 65536, "independent_full_polynomial_entries": 12288, "separately_checked_endpoint_entries": 12288}
+python3 tools/check_moving_boundary_core_floor.py --output /tmp/moving-boundary-core-floor.json
+{"status": "passed", "rho_floor": [5, 7], "derivative_degree": 191, "mobius_sign_variations": 2, "profile_order_comparisons": 98}
+python3 tools/check_moving_interior_crossings.py --output /tmp/moving-interior-controls.json
+{"literal_relabeling_entries": 19683, "independent_polynomial_entries": 12288, "stable_root_control": {"rho": 0.4999999999999875, "scale": 0.3643275612319984, "completed": true, "queries": 37}}
+python3 tools/check_moving_physical_frames.py --output /tmp/moving-physical-frame-controls.json
+{"scope": "Literal dense F4 polynomial contractions and exact scaled split identities for Laurent moving frames; no improved factoring bound.", "dense_laurent_polynomial_entries": 384, "full_reflection_specialization_entries": 12288, "random_dense_frames": 24}

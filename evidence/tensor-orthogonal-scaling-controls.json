@@ -1,0 +1,2529 @@
+{
+  "scope": "Exact independent-minor checks for deterministic orthogonal scalings.",
+  "passed": true,
+  "complete_binary_2_by_4_matrices": 256,
+  "coefficient_matrices": 306,
+  "all_subset_gram_checks": 5176,
+  "independent_formal_cauchy_binet_checks": 5176,
+  "unique_minimum_basis_checks": 5176,
+  "independent_tower_multiplication_checks": 596,
+  "tower_checks": [
+    {
+      "level": 0,
+      "absolute_degree": 1,
+      "trace_one_element": 1,
+      "field_samples": 2
+    },
+    {
+      "level": 1,
+      "absolute_degree": 2,
+      "trace_one_element": 2,
+      "field_samples": 4
+    },
+    {
+      "level": 2,
+      "absolute_degree": 4,
+      "trace_one_element": 8,
+      "field_samples": 16
+    },
+    {
+      "level": 3,
+      "absolute_degree": 8,
+      "trace_one_element": 128,
+      "field_samples": 32
+    },
+    {
+      "level": 4,
+      "absolute_degree": 16,
+      "trace_one_element": 32768,
+      "field_samples": 32
+    }
+  ],
+  "rank_one_controls": [
+    {
+      "columns": 1,
+      "absolute_field_degree": 1,
+      "independent_binary_vectors": 1
+    },
+    {
+      "columns": 2,
+      "absolute_field_degree": 2,
+      "independent_binary_vectors": 2
+    },
+    {
+      "columns": 3,
+      "absolute_field_degree": 4,
+      "independent_binary_vectors": 3
+    },
+    {
+      "columns": 4,
+      "absolute_field_degree": 4,
+      "independent_binary_vectors": 4
+    },
+    {
+      "columns": 5,
+      "absolute_field_degree": 8,
+      "independent_binary_vectors": 5
+    },
+    {
+      "columns": 6,
+      "absolute_field_degree": 8,
+      "independent_binary_vectors": 6
+    },
+    {
+      "columns": 7,
+      "absolute_field_degree": 8,
+      "independent_binary_vectors": 7
+    },
+    {
+      "columns": 8,
+      "absolute_field_degree": 8,
+      "independent_binary_vectors": 8
+    },
+    {
+      "columns": 9,
+      "absolute_field_degree": 16,
+      "independent_binary_vectors": 9
+    }
+  ],
+  "corank_one_controls": [
+    {
+      "matrix": [
+        [
+          1,
+          1
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 1,
+        "coefficient_rank": 1,
+        "corank": 1,
+        "column_basis": [
+          0
+        ],
+        "weights": [
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          1
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 1,
+        "coefficient_rank": 1,
+        "corank": 1,
+        "column_basis": [
+          0
+        ],
+        "weights": [
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 1,
+        "coefficient_rank": 1,
+        "corank": 1,
+        "column_basis": [
+          0
+        ],
+        "weights": [
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 2,
+        "coefficient_rank": 2,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1
+        ],
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            0,
+            1,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 2,
+        "coefficient_rank": 2,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1
+        ],
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            12
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 2,
+        "coefficient_rank": 2,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1
+        ],
+        "weights": [
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            12
+          ],
+          [
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 4,
+        "coefficient_rank": 3,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 4,
+        "coefficient_rank": 3,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            1,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 4,
+        "coefficient_rank": 3,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 6,
+        "coefficient_rank": 4,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 6,
+        "coefficient_rank": 4,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 6,
+        "coefficient_rank": 4,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 9,
+        "coefficient_rank": 5,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 9,
+        "coefficient_rank": 5,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            12
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 9,
+        "coefficient_rank": 5,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 12,
+        "coefficient_rank": 6,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 12,
+        "coefficient_rank": 6,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 12,
+        "coefficient_rank": 6,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            8
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 16,
+        "coefficient_rank": 7,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            4
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 16,
+        "coefficient_rank": 7,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "matrix": [
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 2,
+        "degree_bound": 1,
+        "old_index_degree_bound": 16,
+        "coefficient_rank": 7,
+        "corank": 1,
+        "column_basis": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          4
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            0,
+            12
+          ],
+          [
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0,
+            8
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            1,
+            12
+          ]
+        ]
+      }
+    }
+  ],
+  "corank_one_subset_gram_checks": 1524,
+  "full_column_rank_controls": [
+    {
+      "rank": 1,
+      "relative_degree": 1
+    },
+    {
+      "rank": 2,
+      "relative_degree": 1
+    },
+    {
+      "rank": 3,
+      "relative_degree": 1
+    },
+    {
+      "rank": 4,
+      "relative_degree": 1
+    },
+    {
+      "rank": 5,
+      "relative_degree": 1
+    },
+    {
+      "rank": 6,
+      "relative_degree": 1
+    },
+    {
+      "rank": 7,
+      "relative_degree": 1
+    }
+  ],
+  "maximum_absolute_extension_degree": 16,
+  "examples": [
+    {
+      "coefficient_matrix": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "construction": {
+        "base_level": 0,
+        "base_bits": 1,
+        "extension_level": 0,
+        "extension_bits": 1,
+        "relative_degree": 1,
+        "degree_bound": 0,
+        "old_index_degree_bound": 0,
+        "coefficient_rank": 0,
+        "corank": 4,
+        "column_basis": [],
+        "weights": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "theta": 1,
+        "scales": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "scaled_matrix": [
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      }
+    },
+    {
+      "coefficient_matrix": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1
+        ]
+      ],
+      "construction": {
+        "base_level": 0,
+        "base_bits": 1,
+        "extension_level": 2,
+        "extension_bits": 4,
+        "relative_degree": 4,
+        "degree_bound": 3,
+        "old_index_degree_bound": 3,
+        "coefficient_rank": 1,
+        "corank": 3,
+        "column_basis": [
+          0
+        ],
+        "weights": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "theta": 4,
+        "scales": [
+          1,
+          4,
+          6,
+          14
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            4,
+            6,
+            14
+          ],
+          [
+            1,
+            4,
+            6,
+            14
+          ]
+        ]
+      }
+    },
+    {
+      "coefficient_matrix": [
+        [
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          2,
+          3,
+          1
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 3,
+        "extension_bits": 8,
+        "relative_degree": 4,
+        "degree_bound": 3,
+        "old_index_degree_bound": 4,
+        "coefficient_rank": 2,
+        "corank": 2,
+        "column_basis": [
+          0,
+          1
+        ],
+        "weights": [
+          0,
+          0,
+          1,
+          2
+        ],
+        "theta": 16,
+        "scales": [
+          1,
+          1,
+          16,
+          24
+        ],
+        "scaled_matrix": [
+          [
+            1,
+            1,
+            16,
+            0
+          ],
+          [
+            1,
+            2,
+            48,
+            24
+          ]
+        ]
+      }
+    },
+    {
+      "coefficient_matrix": [
+        [
+          3,
+          3,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          3,
+          3,
+          0,
+          3,
+          3,
+          1
+        ],
+        [
+          0,
+          2,
+          1,
+          2,
+          2,
+          3
+        ]
+      ],
+      "construction": {
+        "base_level": 1,
+        "base_bits": 2,
+        "extension_level": 4,
+        "extension_bits": 16,
+        "relative_degree": 8,
+        "degree_bound": 6,
+        "old_index_degree_bound": 9,
+        "coefficient_rank": 3,
+        "corank": 3,
+        "column_basis": [
+          0,
+          1,
+          2
+        ],
+        "weights": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          3
+        ],
+        "theta": 256,
+        "scales": [
+          1,
+          1,
+          1,
+          256,
+          384,
+          33152
+        ],
+        "scaled_matrix": [
+          [
+            3,
+            3,
+            1,
+            256,
+            384,
+            0
+          ],
+          [
+            3,
+            3,
+            0,
+            768,
+            832,
+            33152
+          ],
+          [
+            0,
+            2,
+            1,
+            512,
+            704,
+            17216
+          ]
+        ]
+      }
+    }
+  ],
+  "source_sha256": {
+    "check_tensor_orthogonal_scaling.py": "323dc1bcd8ffa6815f536c223d5b64b98fa61ff3999f863454db521ff63af691",
+    "tensor_orthogonal_scaling.py": "054307a7d1056add9ccc4f21f9259f6b6d83e6d27dc8ba330a015f3e488e21e7"
+  },
+  "seconds": 1.2036106220039073
+}

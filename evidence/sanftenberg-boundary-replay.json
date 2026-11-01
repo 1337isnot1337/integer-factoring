@@ -1,0 +1,55 @@
+{
+  "status": "pass",
+  "upstream_repository": "dbsanfte/RiemannGaussian",
+  "upstream_commit": "f5fd3ddb407972f9ca65298fbe9be3225fe06635",
+  "command": "python test_boundary_hybrid.py",
+  "exit_code": 0,
+  "exact_source_files": [
+    {
+      "path": "boundary_hybrid.py",
+      "source_path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/source-note/boundary_hybrid.py",
+      "git_blob_sha": "195a03cb1d971730c689a77639cb38ce4e787f9d",
+      "sha256": "491499753701ac7c04a14ea48108427468189421a60a0be1126a3576fd58dffb",
+      "url": "https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/docs/research-evidence/semiprime-boundary-hybrid-20261029/source-note/boundary_hybrid.py"
+    },
+    {
+      "path": "test_boundary_hybrid.py",
+      "source_path": "docs/research-evidence/semiprime-boundary-hybrid-20261029/source-note/test_boundary_hybrid.py",
+      "git_blob_sha": "141bb1894d69d7878456106951a8cc5c99968c67",
+      "sha256": "0719b88c380c3491cf9b69e0aa433948ebd3a41b37c3a419596ae4e53afad4f5",
+      "url": "https://github.com/dbsanfte/RiemannGaussian/blob/f5fd3ddb407972f9ca65298fbe9be3225fe06635/docs/research-evidence/semiprime-boundary-hybrid-20261029/source-note/test_boundary_hybrid.py"
+    }
+  ],
+  "replay": {
+    "status": "passed",
+    "exact_semantic_comparisons": 48,
+    "exhaustive_conditional_expectation_checks": 16,
+    "arbitrary_colourings_checked": 35,
+    "isolated_scalar_checks": 2,
+    "packed_count_first_moment": [
+      2,
+      15
+    ],
+    "intermediate_jet_cross_terms": "passed",
+    "invalid_graphs_rejected": 2,
+    "auto_colour_cycle36": {
+      "k": 3,
+      "width": 24,
+      "colour_steps": 36
+    },
+    "scope": "finite prototype validation; general exponent is proved in RESEARCH.txt"
+  },
+  "case_graphs": [
+    "bipartite3x4",
+    "complete4",
+    "cycle12",
+    "disconnected",
+    "empty",
+    "isolated_only",
+    "parallel_and_isolated",
+    "star10"
+  ],
+  "full_validation_sha256": "80a7afba5db967c17d25c7dbe1b017131f082d5a09848bb763ad193fad01b73c",
+  "lean_rebuilt": false,
+  "scope": "Exact-source finite Python replay and mathematical relevance intake; no stronger factoring score, independent Lean replay, or full primitive-machine runtime claim."
+}

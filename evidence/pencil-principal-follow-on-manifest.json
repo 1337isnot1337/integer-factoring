@@ -1,0 +1,35 @@
+{
+  "selection": "Twenty lowest inherited balanced numerical rates among proper restrictions, with duplicate (A,B,literal-valuehash) tensors omitted. Order ties by sourcecase,subsetX,subsetY.",
+  "selected_ceiling": 20,
+  "proper_means": "Atleastone paired alphabet has fewer than five letters.",
+  "restart_angles": [
+    0.7853981633974483,
+    0.2,
+    1.3707963267948966,
+    0.01,
+    1.5607963267948965,
+    0.0005,
+    1.5702963267948966
+  ],
+  "per_trial_seconds": 15,
+  "global_seconds": 1800,
+  "iteration_ceiling": 1000,
+  "seed": 1061842,
+  "screen_manifest_sha256": "3e32caebe17598c2191ebd4bb01890e1d4b9b0de40fade4f4d138c6b0d45cadb",
+  "bounds": {
+    "H": [
+      -32,
+      32
+    ],
+    "log_t": [
+      -9,
+      1.3862943611198906
+    ],
+    "log_tan": [
+      -8,
+      8
+    ]
+  },
+  "status": "registered_incomplete",
+  "scope": "Exact selection policy of the complete principal screen, with explicit free-height bounds before evaluation. These local trials do not prove a global exclusion."
+}

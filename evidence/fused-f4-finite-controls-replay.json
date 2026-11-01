@@ -1,0 +1,10 @@
+{
+  "archive_sha256": "e3808480eac79a6d5f08093b7f60064775cbc64a5b6af384db291c17a27c5ca6",
+  "complete_affine_coset_points": 61440,
+  "coset_rank_classes": 696,
+  "independent_full_matrix_ranks": 1392,
+  "line_and_complement_block_ranks": 3872,
+  "projective_line_points": 484,
+  "scope": "Checks both finite coverage ledgers, all line/complement ranks and every coset rank-class representative with independent full dense elimination. Does not repeat every native coset rank or certify the full F4 envelope. Score remains 1/2.",
+  "status": "pass"
+}

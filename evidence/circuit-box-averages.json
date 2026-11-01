@@ -1,0 +1,317 @@
+{
+  "exact_universal_thresholds": [
+    {
+      "degree": 4,
+      "minimality_witness_order": 0,
+      "precision": 1
+    },
+    {
+      "degree": 4,
+      "minimality_witness_order": 0,
+      "precision": 2
+    },
+    {
+      "degree": 8,
+      "minimality_witness_order": 2,
+      "precision": 3
+    },
+    {
+      "degree": 8,
+      "minimality_witness_order": 2,
+      "precision": 4
+    },
+    {
+      "degree": 8,
+      "minimality_witness_order": 2,
+      "precision": 5
+    },
+    {
+      "degree": 8,
+      "minimality_witness_order": 2,
+      "precision": 6
+    },
+    {
+      "degree": 8,
+      "minimality_witness_order": 2,
+      "precision": 7
+    },
+    {
+      "degree": 12,
+      "minimality_witness_order": 7,
+      "precision": 8
+    },
+    {
+      "degree": 16,
+      "minimality_witness_order": 8,
+      "precision": 9
+    },
+    {
+      "degree": 16,
+      "minimality_witness_order": 8,
+      "precision": 10
+    },
+    {
+      "degree": 16,
+      "minimality_witness_order": 8,
+      "precision": 11
+    },
+    {
+      "degree": 16,
+      "minimality_witness_order": 8,
+      "precision": 12
+    },
+    {
+      "degree": 16,
+      "minimality_witness_order": 8,
+      "precision": 13
+    },
+    {
+      "degree": 16,
+      "minimality_witness_order": 8,
+      "precision": 14
+    },
+    {
+      "degree": 16,
+      "minimality_witness_order": 8,
+      "precision": 15
+    },
+    {
+      "degree": 20,
+      "minimality_witness_order": 15,
+      "precision": 16
+    },
+    {
+      "degree": 20,
+      "minimality_witness_order": 15,
+      "precision": 17
+    },
+    {
+      "degree": 24,
+      "minimality_witness_order": 17,
+      "precision": 18
+    },
+    {
+      "degree": 24,
+      "minimality_witness_order": 17,
+      "precision": 19
+    },
+    {
+      "degree": 24,
+      "minimality_witness_order": 17,
+      "precision": 20
+    },
+    {
+      "degree": 24,
+      "minimality_witness_order": 17,
+      "precision": 21
+    },
+    {
+      "degree": 24,
+      "minimality_witness_order": 17,
+      "precision": 22
+    },
+    {
+      "degree": 32,
+      "minimality_witness_order": 22,
+      "precision": 23
+    },
+    {
+      "degree": 32,
+      "minimality_witness_order": 22,
+      "precision": 24
+    },
+    {
+      "degree": 32,
+      "minimality_witness_order": 22,
+      "precision": 25
+    },
+    {
+      "degree": 32,
+      "minimality_witness_order": 22,
+      "precision": 26
+    },
+    {
+      "degree": 32,
+      "minimality_witness_order": 22,
+      "precision": 27
+    },
+    {
+      "degree": 32,
+      "minimality_witness_order": 22,
+      "precision": 28
+    },
+    {
+      "degree": 32,
+      "minimality_witness_order": 22,
+      "precision": 29
+    },
+    {
+      "degree": 32,
+      "minimality_witness_order": 22,
+      "precision": 30
+    },
+    {
+      "degree": 32,
+      "minimality_witness_order": 22,
+      "precision": 31
+    },
+    {
+      "degree": 36,
+      "minimality_witness_order": 31,
+      "precision": 32
+    },
+    {
+      "degree": 36,
+      "minimality_witness_order": 31,
+      "precision": 33
+    },
+    {
+      "degree": 40,
+      "minimality_witness_order": 33,
+      "precision": 34
+    },
+    {
+      "degree": 40,
+      "minimality_witness_order": 33,
+      "precision": 35
+    },
+    {
+      "degree": 40,
+      "minimality_witness_order": 33,
+      "precision": 36
+    },
+    {
+      "degree": 40,
+      "minimality_witness_order": 33,
+      "precision": 37
+    },
+    {
+      "degree": 40,
+      "minimality_witness_order": 33,
+      "precision": 38
+    },
+    {
+      "degree": 44,
+      "minimality_witness_order": 38,
+      "precision": 39
+    },
+    {
+      "degree": 48,
+      "minimality_witness_order": 39,
+      "precision": 40
+    },
+    {
+      "degree": 48,
+      "minimality_witness_order": 39,
+      "precision": 41
+    },
+    {
+      "degree": 48,
+      "minimality_witness_order": 39,
+      "precision": 42
+    },
+    {
+      "degree": 48,
+      "minimality_witness_order": 39,
+      "precision": 43
+    },
+    {
+      "degree": 48,
+      "minimality_witness_order": 39,
+      "precision": 44
+    },
+    {
+      "degree": 48,
+      "minimality_witness_order": 39,
+      "precision": 45
+    },
+    {
+      "degree": 48,
+      "minimality_witness_order": 39,
+      "precision": 46
+    },
+    {
+      "degree": 52,
+      "minimality_witness_order": 46,
+      "precision": 47
+    },
+    {
+      "degree": 52,
+      "minimality_witness_order": 46,
+      "precision": 48
+    }
+  ],
+  "large_coupled_control": {
+    "box_cardinality": 27138770914995983302399449611411228403110152656009507196747871251854639759360,
+    "dimensions": 2,
+    "discarded_numerical_valuation": 250,
+    "formal_denominator_degree_bound": 0,
+    "formal_numerator_degree_bound": 2037035976334486086268445688409378161051468393665936250636140449354381299763336706183397376,
+    "input_circuit_nodes": 303,
+    "input_has_unit_inverses": false,
+    "intervals": [
+      [
+        -7,
+        3802951800684688204490109616121
+      ],
+      [
+        5,
+        7136238463529799405291429847247475681913733125
+      ]
+    ],
+    "normalizer_numerator": 4,
+    "precision": 8,
+    "quotient_degree": 12,
+    "quotient_dimension": 144,
+    "scaled_average_residue": 2,
+    "scope": "Known-length normalized regular-circuit average; no singular rational denominator or factor-count oracle."
+  },
+  "large_regular_rational_control": {
+    "box_cardinality": 7746749634260725768967757516009035622989117378487670538491978069621942866050523583888936059840413494307709515918242480128,
+    "dimensions": 1,
+    "discarded_numerical_valuation": 400,
+    "formal_denominator_degree_bound": 3273390607896141870013189696827599152216642046043064789483291368096133796404674554883270092325904157150886684127560071009217256545885393053328527589376,
+    "formal_numerator_degree_bound": 0,
+    "input_circuit_nodes": 506,
+    "input_has_unit_inverses": true,
+    "intervals": [
+      [
+        7,
+        7746749634260725768967757516009035622989117378487670538491978069621942866050523583888936059840413494307709515918242480135
+      ]
+    ],
+    "normalizer_numerator": 2,
+    "precision": 16,
+    "quotient_degree": 20,
+    "quotient_dimension": 20,
+    "scaled_average_residue": 43692,
+    "scope": "Known-length normalized regular-circuit average; no singular rational denominator or factor-count oracle."
+  },
+  "large_single_variable_control": {
+    "box_cardinality": 7746749634260725768967757516009035622989117378487670538491978069621942866050523583888936059840413494307709515918242480128,
+    "dimensions": 1,
+    "discarded_numerical_valuation": 400,
+    "formal_denominator_degree_bound": 0,
+    "formal_numerator_degree_bound": 3273390607896141870013189696827599152216642046043064789483291368096133796404674554883270092325904157150886684127560071009217256545885393053328527589376,
+    "input_circuit_nodes": 501,
+    "input_has_unit_inverses": false,
+    "intervals": [
+      [
+        7,
+        7746749634260725768967757516009035622989117378487670538491978069621942866050523583888936059840413494307709515918242480135
+      ]
+    ],
+    "normalizer_numerator": 2,
+    "precision": 16,
+    "quotient_degree": 20,
+    "quotient_dimension": 20,
+    "scaled_average_residue": 1,
+    "scope": "Known-length normalized regular-circuit average; no singular rational denominator or factor-count oracle."
+  },
+  "literal_ideal_annihilation_checks": 48,
+  "literal_normalized_circuit_checks": 88,
+  "literal_regular_rational_checks": 100,
+  "nonglobal_unit_rejected": true,
+  "scope": "Normalized regular-circuit averages with sharp universal falling-factorial degrees; no singular factor-count evaluator.",
+  "sharp_degree_witnesses": 48
+}

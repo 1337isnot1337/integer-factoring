@@ -1,0 +1,1087 @@
+{
+  "status": "pass",
+  "field": "F16; order-five height-three vacuum quotient",
+  "independent_fusion_multiplicity_controls": 791,
+  "global_projector_controls": [
+    {
+      "length": 4,
+      "free_left": 1,
+      "free_right": 1,
+      "exact_rank": 1,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 4,
+      "free_left": 1,
+      "free_right": 4,
+      "exact_rank": 3,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 4,
+      "free_left": 4,
+      "free_right": 1,
+      "exact_rank": 3,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 4,
+      "free_left": 4,
+      "free_right": 4,
+      "exact_rank": 13,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 6,
+      "free_left": 0,
+      "free_right": 0,
+      "exact_rank": 1,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 6,
+      "free_left": 0,
+      "free_right": 3,
+      "exact_rank": 1,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 6,
+      "free_left": 0,
+      "free_right": 6,
+      "exact_rank": 5,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 6,
+      "free_left": 3,
+      "free_right": 0,
+      "exact_rank": 1,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 6,
+      "free_left": 3,
+      "free_right": 3,
+      "exact_rank": 5,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 6,
+      "free_left": 3,
+      "free_right": 6,
+      "exact_rank": 21,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 6,
+      "free_left": 6,
+      "free_right": 0,
+      "exact_rank": 5,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 6,
+      "free_left": 6,
+      "free_right": 3,
+      "exact_rank": 21,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 6,
+      "free_left": 6,
+      "free_right": 6,
+      "exact_rank": 89,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 8,
+      "free_left": 2,
+      "free_right": 2,
+      "exact_rank": 2,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 8,
+      "free_left": 2,
+      "free_right": 5,
+      "exact_rank": 8,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 8,
+      "free_left": 2,
+      "free_right": 8,
+      "exact_rank": 34,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 8,
+      "free_left": 5,
+      "free_right": 2,
+      "exact_rank": 8,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 8,
+      "free_left": 5,
+      "free_right": 5,
+      "exact_rank": 34,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 8,
+      "free_left": 5,
+      "free_right": 8,
+      "exact_rank": 144,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 8,
+      "free_left": 8,
+      "free_right": 2,
+      "exact_rank": 34,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 8,
+      "free_left": 8,
+      "free_right": 5,
+      "exact_rank": 144,
+      "both_internal_annihilations": true
+    },
+    {
+      "length": 8,
+      "free_left": 8,
+      "free_right": 8,
+      "exact_rank": 610,
+      "both_internal_annihilations": true
+    }
+  ],
+  "complete_coefficient_rank_pairs_checked": 164,
+  "independent_scalar_evaluations": 224,
+  "independent_complete_sampled_polynomials": 14,
+  "profiles": [
+    {
+      "length": 4,
+      "labels": 2,
+      "free_left": 1,
+      "free_right": 1,
+      "central_rank": 1,
+      "rank_pairs_by_b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 4,
+      "labels": 2,
+      "free_left": 1,
+      "free_right": 4,
+      "central_rank": 3,
+      "rank_pairs_by_b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          4
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          4
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 4,
+      "labels": 2,
+      "free_left": 4,
+      "free_right": 1,
+      "central_rank": 3,
+      "rank_pairs_by_b": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 4,
+      "labels": 2,
+      "free_left": 4,
+      "free_right": 4,
+      "central_rank": 13,
+      "rank_pairs_by_b": [
+        [
+          4,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          4
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "free_left": 0,
+      "free_right": 0,
+      "central_rank": 1,
+      "rank_pairs_by_b": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "free_left": 0,
+      "free_right": 3,
+      "central_rank": 1,
+      "rank_pairs_by_b": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "free_left": 0,
+      "free_right": 6,
+      "central_rank": 5,
+      "rank_pairs_by_b": [
+        [
+          5,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "free_left": 3,
+      "free_right": 0,
+      "central_rank": 1,
+      "rank_pairs_by_b": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          9
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          1,
+          9
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "free_left": 3,
+      "free_right": 3,
+      "central_rank": 5,
+      "rank_pairs_by_b": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          6,
+          6
+        ],
+        [
+          10,
+          6
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          10,
+          8
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "free_left": 3,
+      "free_right": 6,
+      "central_rank": 21,
+      "rank_pairs_by_b": [
+        [
+          5,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          21,
+          11
+        ],
+        [
+          20,
+          13
+        ],
+        [
+          21,
+          25
+        ],
+        [
+          20,
+          19
+        ],
+        [
+          21,
+          25
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "free_left": 6,
+      "free_right": 0,
+      "central_rank": 5,
+      "rank_pairs_by_b": [
+        [
+          5,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          10,
+          2
+        ],
+        [
+          13,
+          9
+        ],
+        [
+          10,
+          5
+        ],
+        [
+          5,
+          9
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "free_left": 6,
+      "free_right": 3,
+      "central_rank": 21,
+      "rank_pairs_by_b": [
+        [
+          5,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          15,
+          4
+        ],
+        [
+          14,
+          6
+        ],
+        [
+          15,
+          8
+        ],
+        [
+          14,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "free_left": 6,
+      "free_right": 6,
+      "central_rank": 89,
+      "rank_pairs_by_b": [
+        [
+          25,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          25,
+          7
+        ],
+        [
+          22,
+          8
+        ],
+        [
+          25,
+          22
+        ],
+        [
+          22,
+          16
+        ],
+        [
+          23,
+          23
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "free_left": 2,
+      "free_right": 2,
+      "central_rank": 2,
+      "rank_pairs_by_b": [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          3,
+          16
+        ],
+        [
+          4,
+          27
+        ],
+        [
+          6,
+          52
+        ],
+        [
+          6,
+          53
+        ],
+        [
+          6,
+          63
+        ],
+        [
+          4,
+          54
+        ],
+        [
+          2,
+          64
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "free_left": 2,
+      "free_right": 5,
+      "central_rank": 8,
+      "rank_pairs_by_b": [
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          11,
+          13
+        ],
+        [
+          16,
+          20
+        ],
+        [
+          24,
+          44
+        ],
+        [
+          26,
+          50
+        ],
+        [
+          24,
+          55
+        ],
+        [
+          16,
+          50
+        ],
+        [
+          8,
+          34
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "free_left": 2,
+      "free_right": 8,
+      "central_rank": 34,
+      "rank_pairs_by_b": [
+        [
+          13,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          47,
+          18
+        ],
+        [
+          68,
+          30
+        ],
+        [
+          84,
+          56
+        ],
+        [
+          84,
+          59
+        ],
+        [
+          84,
+          64
+        ],
+        [
+          68,
+          60
+        ],
+        [
+          34,
+          64
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "free_left": 5,
+      "free_right": 2,
+      "central_rank": 8,
+      "rank_pairs_by_b": [
+        [
+          3,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          11,
+          20
+        ],
+        [
+          16,
+          33
+        ],
+        [
+          24,
+          56
+        ],
+        [
+          26,
+          59
+        ],
+        [
+          24,
+          64
+        ],
+        [
+          16,
+          60
+        ],
+        [
+          8,
+          64
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "free_left": 5,
+      "free_right": 5,
+      "central_rank": 34,
+      "rank_pairs_by_b": [
+        [
+          9,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          43,
+          16
+        ],
+        [
+          68,
+          28
+        ],
+        [
+          89,
+          56
+        ],
+        [
+          88,
+          62
+        ],
+        [
+          89,
+          64
+        ],
+        [
+          68,
+          63
+        ],
+        [
+          34,
+          64
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "free_left": 5,
+      "free_right": 8,
+      "central_rank": 144,
+      "rank_pairs_by_b": [
+        [
+          39,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          142,
+          22
+        ],
+        [
+          142,
+          40
+        ],
+        [
+          144,
+          121
+        ],
+        [
+          144,
+          117
+        ],
+        [
+          144,
+          162
+        ],
+        [
+          144,
+          142
+        ],
+        [
+          144,
+          169
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "free_left": 8,
+      "free_right": 2,
+      "central_rank": 34,
+      "rank_pairs_by_b": [
+        [
+          13,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          47,
+          14
+        ],
+        [
+          68,
+          25
+        ],
+        [
+          84,
+          44
+        ],
+        [
+          84,
+          45
+        ],
+        [
+          60,
+          64
+        ],
+        [
+          26,
+          51
+        ],
+        [
+          13,
+          64
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "free_left": 8,
+      "free_right": 5,
+      "central_rank": 144,
+      "rank_pairs_by_b": [
+        [
+          39,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          104,
+          11
+        ],
+        [
+          104,
+          19
+        ],
+        [
+          104,
+          44
+        ],
+        [
+          104,
+          52
+        ],
+        [
+          104,
+          64
+        ],
+        [
+          104,
+          63
+        ],
+        [
+          55,
+          64
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "free_left": 8,
+      "free_right": 8,
+      "central_rank": 610,
+      "rank_pairs_by_b": [
+        [
+          169,
+          1
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          164,
+          16
+        ],
+        [
+          166,
+          26
+        ],
+        [
+          169,
+          87
+        ],
+        [
+          166,
+          78
+        ],
+        [
+          169,
+          168
+        ],
+        [
+          166,
+          114
+        ],
+        [
+          169,
+          169
+        ]
+      ],
+      "all_joint_bounds_pass": true
+    }
+  ],
+  "unfiltered_span_controls": [
+    {
+      "length": 4,
+      "labels": 2,
+      "projector_pairs": 4,
+      "listed_nonzero_pieces": 26,
+      "span_dimension": 13,
+      "crossing_in_unfiltered_span": true,
+      "scope": "All prefix choices and degrees, both cut orientations and the two pairings; no asymptotic extrapolation."
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "projector_pairs": 9,
+      "listed_nonzero_pieces": 110,
+      "span_dimension": 80,
+      "crossing_in_unfiltered_span": false,
+      "scope": "All prefix choices and degrees, both cut orientations and the two pairings; no asymptotic extrapolation."
+    },
+    {
+      "length": 8,
+      "labels": 13,
+      "projector_pairs": 9,
+      "listed_nonzero_pieces": 146,
+      "span_dimension": 146,
+      "crossing_in_unfiltered_span": false,
+      "scope": "All prefix choices and degrees, both cut orientations and the two pairings; no asymptotic extrapolation."
+    }
+  ],
+  "scope": "Uniform programmable central rank factors and exact small controls; current prefix spans miss5/13labels; no stronger complete factoring rate.",
+  "source_sha256": {
+    "research/invertible-fusion-graded-seams.md": "a20989676bb055e719d4e02ea5eebf8c17c83417b6fef4c10b81a30ec415fa4f",
+    "tools/quantum_braid_graded_seam.py": "c9637b420f84b4dce7c4c0bfc626e00847a5d4342372c8c70c85412bca7a27c3",
+    "tools/check_quantum_braid_graded_seam.py": "0c15038829b71eb46674fc910fa852e9cba1c4a5b1007a4de51f382af47cac6c",
+    "tools/quantum_braid_fusion_seam.py": "5061f4a0eb82cb6b319650d552790f16d7ab18b392cc64ea5e3e4b328b6399bb",
+    "tools/check_quantum_braid_fusion_seam.py": "bc31dda9402bf41bf09230693e60d44d1f6d3264b7ec8ed86e324fc6977eda14",
+    "tools/quantum_braid_nilpotent_seam.py": "d1b32af8841288e739d9b089f2439c03f34502d933f4c377f29dca10bc3363d6",
+    "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fourier_multiplication_gates.py": "b094e9101f867d624aafa7bd851cb00b1ea411d1dc69cb700e742e609f94efc9"
+  }
+}

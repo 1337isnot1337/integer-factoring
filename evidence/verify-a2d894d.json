@@ -1,0 +1,16 @@
+{
+  "command": "OPENBLAS_NUM_THREADS=1 make verify",
+  "compressed_stdout_sha256": "10dac826abac8c662607dd0d3e74cc2c026cb6c5ad6e8a8662905cc14ed87b1c",
+  "exit_code": 0,
+  "logged_python_command_blocks": 343,
+  "scope": "Full default pass at clean frozen a2d894d only; includes the graded-zero default gate and predates the global natural-energy certificate. No new Lean or stronger factoring bound.",
+  "source_commit": "a2d894d3b0c3a8d726c26f2b44ddfad96c2b5a0e",
+  "source_tree": "24253b98e1f6db8c5115e44c7c1df72b0b5f6f68",
+  "status": "pass",
+  "stdout_path": "evidence/verify-a2d894d.stdout.txt.xz",
+  "stdout_sha256": "9fcf101f3fa67161f68cff58f9c8aca02733671f1aa168cbc56af8bb8a1edb7e",
+  "unittest_suites_reported": [
+    66,
+    5
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "completed": true,
+  "full_entries": 16884,
+  "profile_blocks": 70,
+  "independent_binary_determinants": 1676,
+  "partial_cutoffs": [
+    8,
+    16,
+    24
+  ],
+  "field_products": 64,
+  "frobenius_profile_comparisons": 70,
+  "invalid_inputs_rejected": 9,
+  "source_sha256": {
+    "check_coherent_hot_f8.py": "263b074e89ea318bbce902ad332e8798e39b5c9305098eba5a660d334e86bc7f",
+    "coherent_f8_maps.py": "8311c760387befd0d7ca709397063d4498dbbfb9a66c74f882c9e924f4c2cfa4",
+    "coherent_hot_compounds_f8.py": "6194da70ba852a0251d26efe1ce509f5b834d6c44b9585847f6040d3c456cc4a",
+    "coherent_hot_compounds_f8.cpp": "f7dd6ae710456b7430e898144dca9d0118fa9a5e9ac0df9966b8663a75262f73",
+    "selected_gaussian_coefficients.cpp": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "binary_extension_smith.py": "17b5ce294e56d9e6cfd4e532721e31b5d3bfe5e7449e6de4269fa91446eeab5f",
+    "native_matrix_smith_f4.py": "c08da20f1938a371b438e32fbc6a8f6766b48c2cfee5bcd1c956ce137dc70203",
+    "native_matrix_smith_f4.cpp": "5ec995cd04563c2fa99b69afd71bf476d5ca885f1f90377490c30e5a1a55f330",
+    "coherent_hot_compounds.py": "43971c67f7fb938a836863ddf13794df4bc772ff20e043a5190174552231554a",
+    "check_coherent_hot_f4_hyperoval_entries.py": "4120241ad38593c5d8b38b388e9853c302e81df78cf7d487c7dfd82043216c2e"
+  }
+}

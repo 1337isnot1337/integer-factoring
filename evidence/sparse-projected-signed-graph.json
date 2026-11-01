@@ -1,0 +1,68 @@
+{
+  "claim": "The complete integer graph certificate is unchanged by a sparse projected view",
+  "small_controls": {
+    "exhaustive_graph_controls": {
+      "complete_three_vertex_graphs": 1728,
+      "independent_character_counts": 3456,
+      "canonical_result_sha256": "2e28aa236f5d21e8ecc0366694801ee0c8136842bf68bac1c224e5781f5d53ab"
+    },
+    "mixed_row_controls": {
+      "mixed_base_and_extra_row_cases": 420,
+      "dense_sparse_certificate_equalities": 420,
+      "unit_pivots_replayed": 137,
+      "independent_character_counts": 140,
+      "canonical_result_sha256": "626a05b6612dfadd55aade8a92c9c85c0f6c2fbfb885a5b7785ce01e981e0485"
+    },
+    "ideal_controls": {
+      "factor_controls": 2
+    },
+    "rejections": {
+      "invalid_contracts_rejected": 9,
+      "corrupted_certificates_rejected": 4
+    },
+    "complete_reference_equalities": 2570
+  },
+  "projection_corruptions_rejected": 4,
+  "wide_control": {
+    "input_rows": 1024,
+    "intermediate_columns": 1027,
+    "dense_projection_cells": 1051648,
+    "sparse_projection_entries": 3950,
+    "complete_graph_and_unit_outputs_match": true,
+    "unit_verification": {
+      "unit_isomorphisms": 1024,
+      "row_substitutions": 138783,
+      "complete_original_graph_checked": true,
+      "full_integer_presentation_preserved": true,
+      "expanded_composite_maps_materialized": false
+    }
+  },
+  "fixtures": [
+    {
+      "bits": 64,
+      "source_file": "evidence/sparse-oriented-power-64.json.xz",
+      "source_sha256": "228bce17adc8f29243f4f3d393c67ced0932dbb724e0666767dfca16015cf97b",
+      "rows": 2048,
+      "dense_projection_cells": 26786,
+      "sparse_projection_entries": 1289,
+      "complete_graph_certificate_equal": true
+    },
+    {
+      "bits": 80,
+      "source_file": "evidence/sparse-oriented-power-80.json.xz",
+      "source_sha256": "f55879f2bcd0c8077c715fa1675e547e669cf9e8bfb25fe510efc5c310ebe2b7",
+      "rows": 10240,
+      "dense_projection_cells": 722680,
+      "sparse_projection_entries": 6689,
+      "complete_graph_certificate_equal": true
+    }
+  ],
+  "source_sha256": {
+    "tools/sparse_projected_signed_graph.py": "e971c856b9bf681a92d3f61e2ac203d414d863b706d4d822595d60a06ac18e27",
+    "tools/check_sparse_projected_signed_graph.py": "f29c3214528583eedf9b5d9cda873582f69de79d39d21fd4c03055e6f9a709ff",
+    "tools/signed_residual_graph.py": "f7374233f0b6d2284316b5ddd7a5d9c32e24f7d2f9e81b2121ce77d8f142d025",
+    "tools/check_signed_residual_graph.py": "bbdc7a156fc554a5dfe0d8d1539b222e74b241b73fe2b83237b2db5e96a9a700",
+    "tools/unit_presentation_trace.py": "066380b2726abd5d5a4bbd3c963fb40bdbfce82dd50321f6d25a4a1e8ce88829"
+  },
+  "scope": "Supplied presentation processing; no relation-supply or factoring-exponent claim."
+}

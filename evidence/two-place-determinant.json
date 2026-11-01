@@ -1,0 +1,166 @@
+{
+  "all_field_infinity_order_sum_cases": [
+    {
+      "infinity_order_sum": 44,
+      "q": "zero or degree one"
+    },
+    {
+      "infinity_order_sum": 44,
+      "q": "degree two with leading coefficient a != 1"
+    },
+    {
+      "infinity_order_sum": 48,
+      "q": "t^2+b*t+(1+b), b != 1"
+    },
+    {
+      "infinity_order_sum": 52,
+      "q": "t^2+t"
+    },
+    {
+      "infinity_order_sum": 40,
+      "q_degree": 3
+    },
+    {
+      "infinity_order_sum": 36,
+      "q_degree": 4
+    },
+    {
+      "infinity_order_sum": 32,
+      "q_degree": 5
+    },
+    {
+      "infinity_order_sum": 28,
+      "q_degree": 6
+    },
+    {
+      "infinity_order_sum": 24,
+      "q_degree": 7
+    },
+    {
+      "infinity_order_sum": 20,
+      "q_degree": 8
+    },
+    {
+      "infinity_order_sum": 16,
+      "q_degree": 9
+    },
+    {
+      "infinity_order_sum": 12,
+      "q_degree": 10
+    },
+    {
+      "infinity_order_sum": 8,
+      "q_degree": 11
+    }
+  ],
+  "construction": {
+    "coefficient_family": "q=(1+t)r, deg(r)<=10 over F4",
+    "commutator_factor": "t^8*(t+1)^4*(K+t^4*L)",
+    "commutes_with_physical_energy": true,
+    "equivalent_determinant_degree_target": "strictly less than 70",
+    "exact_number_of_coefficient_vectors": 4194304,
+    "generator_square_zero": true,
+    "input_sha256": "7a67c5054f1b628e0a2798e3dc9d1da9535a0dbbf79bc4b617296f69fa75e009",
+    "nonzero_commutator_degrees": [
+      8,
+      12,
+      16
+    ],
+    "opposite_cut_total_height": 130,
+    "pencil": "A_q=A+q(t)(K+t^4*L), deg(q)<=11, q(1)=0",
+    "physical_pair_energies": [
+      [
+        0,
+        10,
+        6,
+        2,
+        8
+      ],
+      [
+        0,
+        10,
+        6,
+        2,
+        8
+      ]
+    ],
+    "predecessor_commit": "8a3ea3e6aeacba7d0a53764de5579e3707bb2ca7",
+    "predecessor_pr": 57,
+    "sandwich_coefficients_checked": 19,
+    "sufficient_infinity_sum_for_asymmetric_improvement": "strictly greater than 60",
+    "uniform_zero_minimum_order": 8
+  },
+  "determinant_coefficients": [
+    {
+      "g_degree": 0,
+      "z_polynomial": 2462871730088921938842023384995580864278499593275212788008199261805029240078336
+    },
+    {
+      "g_degree": 4,
+      "z_polynomial": 540892183243505025054562173700637604600971764011796303826143288492032
+    }
+  ],
+  "fresh_fraction_free_determinants": 1,
+  "kronecker_stride": 512,
+  "maximum_infinity_order_sum": 52,
+  "minimum_opposite_determinant_degree": 78,
+  "proved_maximum_coefficient_degree": 425,
+  "quadratic_formal_low_coefficients_in_basis_1_a4_b4": {
+    "0": [
+      1,
+      1,
+      0
+    ],
+    "1": [
+      0,
+      0,
+      0
+    ],
+    "2": [
+      0,
+      0,
+      0
+    ],
+    "3": [
+      0,
+      0,
+      0
+    ],
+    "4": [
+      1,
+      0,
+      1
+    ],
+    "5": [
+      0,
+      0,
+      0
+    ],
+    "6": [
+      1,
+      1,
+      0
+    ],
+    "7": [
+      0,
+      0,
+      0
+    ],
+    "8": [
+      0,
+      0,
+      1
+    ]
+  },
+  "scope": "An exact polynomial determinant identity and ordinary all-characteristic-two-field classification for this complete pencil. It excludes the sufficient determinant-mean escape, not every asymmetric pressure or every factoring algorithm.",
+  "seconds": 0.04774379590526223,
+  "source_sha256": {
+    "tools/check_joint_endpoint_loops.py": "35307398f5a859eb894eb1a373538224dc7fbde29e8143ab3dac28849e41d78b",
+    "tools/check_two_place_determinant.py": "9bbac7a25b786d7c7b718ccfcdeac376d1f4f078cd98947b7675e8bc75833d92",
+    "tools/joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+    "tools/search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+    "tools/tensor_pascal_box_crossings.py": "3cd6bcd473cac20647cf87d96bb4ccd17a5cf46d9339a1be33e69cfddddb4fce",
+    "tools/two_place_f4_census.py": "141f066a09f7c68c55ce13af3ad646d50db3d9351b5ba52c09dc36d655f878f0"
+  },
+  "status": "pass"
+}

@@ -1,0 +1,2856 @@
+{
+  "all_two_by_two_f4_matrices": 256,
+  "complete_small_gray_scan_controls": [
+    {
+      "affine_value": 1,
+      "retained": [
+        {
+          "coordinates": [
+            107212310,
+            384665
+          ],
+          "position": 0,
+          "ranks": [
+            20,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107212070,
+            384665
+          ],
+          "position": 1,
+          "ranks": [
+            20,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            106955571,
+            384665
+          ],
+          "position": 2,
+          "ranks": [
+            20,
+            61
+          ]
+        },
+        {
+          "coordinates": [
+            106954755,
+            384665
+          ],
+          "position": 3,
+          "ranks": [
+            20,
+            61
+          ]
+        },
+        {
+          "coordinates": [
+            107339178,
+            384665
+          ],
+          "position": 4,
+          "ranks": [
+            20,
+            61
+          ]
+        },
+        {
+          "coordinates": [
+            107339418,
+            384665
+          ],
+          "position": 5,
+          "ranks": [
+            20,
+            61
+          ]
+        },
+        {
+          "coordinates": [
+            107360399,
+            384665
+          ],
+          "position": 6,
+          "ranks": [
+            20,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107361215,
+            384665
+          ],
+          "position": 7,
+          "ranks": [
+            20,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107361215,
+            384425
+          ],
+          "position": 8,
+          "ranks": [
+            13,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107360399,
+            384425
+          ],
+          "position": 9,
+          "ranks": [
+            13,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107339418,
+            384425
+          ],
+          "position": 10,
+          "ranks": [
+            13,
+            61
+          ]
+        },
+        {
+          "coordinates": [
+            107339178,
+            384425
+          ],
+          "position": 11,
+          "ranks": [
+            13,
+            61
+          ]
+        },
+        {
+          "coordinates": [
+            106954755,
+            384425
+          ],
+          "position": 12,
+          "ranks": [
+            13,
+            61
+          ]
+        },
+        {
+          "coordinates": [
+            106955571,
+            384425
+          ],
+          "position": 13,
+          "ranks": [
+            13,
+            61
+          ]
+        },
+        {
+          "coordinates": [
+            107212070,
+            384425
+          ],
+          "position": 14,
+          "ranks": [
+            13,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107212310,
+            384425
+          ],
+          "position": 15,
+          "ranks": [
+            13,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107212310,
+            406460
+          ],
+          "position": 16,
+          "ranks": [
+            13,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107212070,
+            406460
+          ],
+          "position": 17,
+          "ranks": [
+            13,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            106955571,
+            406460
+          ],
+          "position": 18,
+          "ranks": [
+            13,
+            47
+          ]
+        },
+        {
+          "coordinates": [
+            106954755,
+            406460
+          ],
+          "position": 19,
+          "ranks": [
+            13,
+            47
+          ]
+        },
+        {
+          "coordinates": [
+            107339178,
+            406460
+          ],
+          "position": 20,
+          "ranks": [
+            13,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107339418,
+            406460
+          ],
+          "position": 21,
+          "ranks": [
+            13,
+            66
+          ]
+        },
+        {
+          "coordinates": [
+            107360399,
+            406460
+          ],
+          "position": 22,
+          "ranks": [
+            13,
+            47
+          ]
+        },
+        {
+          "coordinates": [
+            107361215,
+            406460
+          ],
+          "position": 23,
+          "ranks": [
+            13,
+            47
+          ]
+        },
+        {
+          "coordinates": [
+            107361215,
+            405644
+          ],
+          "position": 24,
+          "ranks": [
+            19,
+            45
+          ]
+        },
+        {
+          "coordinates": [
+            107360399,
+            405644
+          ],
+          "position": 25,
+          "ranks": [
+            19,
+            45
+          ]
+        },
+        {
+          "coordinates": [
+            107339418,
+            405644
+          ],
+          "position": 26,
+          "ranks": [
+            20,
+            62
+          ]
+        },
+        {
+          "coordinates": [
+            107339178,
+            405644
+          ],
+          "position": 27,
+          "ranks": [
+            20,
+            62
+          ]
+        },
+        {
+          "coordinates": [
+            106954755,
+            405644
+          ],
+          "position": 28,
+          "ranks": [
+            19,
+            45
+          ]
+        },
+        {
+          "coordinates": [
+            106955571,
+            405644
+          ],
+          "position": 29,
+          "ranks": [
+            19,
+            45
+          ]
+        },
+        {
+          "coordinates": [
+            107212070,
+            405644
+          ],
+          "position": 30,
+          "ranks": [
+            20,
+            62
+          ]
+        },
+        {
+          "coordinates": [
+            107212310,
+            405644
+          ],
+          "position": 31,
+          "ranks": [
+            20,
+            62
+          ]
+        },
+        {
+          "coordinates": [
+            107212310,
+            257317
+          ],
+          "position": 32,
+          "ranks": [
+            19,
+            52
+          ]
+        },
+        {
+          "coordinates": [
+            107212070,
+            257317
+          ],
+          "position": 33,
+          "ranks": [
+            19,
+            52
+          ]
+        },
+        {
+          "coordinates": [
+            106955571,
+            257317
+          ],
+          "position": 34,
+          "ranks": [
+            19,
+            52
+          ]
+        },
+        {
+          "coordinates": [
+            106954755,
+            257317
+          ],
+          "position": 35,
+          "ranks": [
+            19,
+            52
+          ]
+        },
+        {
+          "coordinates": [
+            107339178,
+            257317
+          ],
+          "position": 36,
+          "ranks": [
+            20,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            107339418,
+            257317
+          ],
+          "position": 37,
+          "ranks": [
+            20,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            107360399,
+            257317
+          ],
+          "position": 38,
+          "ranks": [
+            20,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            107361215,
+            257317
+          ],
+          "position": 39,
+          "ranks": [
+            20,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            107361215,
+            257557
+          ],
+          "position": 40,
+          "ranks": [
+            13,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            107360399,
+            257557
+          ],
+          "position": 41,
+          "ranks": [
+            13,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            107339418,
+            257557
+          ],
+          "position": 42,
+          "ranks": [
+            13,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            107339178,
+            257557
+          ],
+          "position": 43,
+          "ranks": [
+            13,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            106954755,
+            257557
+          ],
+          "position": 44,
+          "ranks": [
+            13,
+            48
+          ]
+        },
+        {
+          "coordinates": [
+            106955571,
+            257557
+          ],
+          "position": 45,
+          "ranks": [
+            13,
+            48
+          ]
+        },
+        {
+          "coordinates": [
+            107212070,
+            257557
+          ],
+          "position": 46,
+          "ranks": [
+            13,
+            48
+          ]
+        },
+        {
+          "coordinates": [
+            107212310,
+            257557
+          ],
+          "position": 47,
+          "ranks": [
+            13,
+            48
+          ]
+        },
+        {
+          "coordinates": [
+            107212310,
+            0
+          ],
+          "position": 48,
+          "ranks": [
+            13,
+            44
+          ]
+        },
+        {
+          "coordinates": [
+            107212070,
+            0
+          ],
+          "position": 49,
+          "ranks": [
+            13,
+            44
+          ]
+        },
+        {
+          "coordinates": [
+            106955571,
+            0
+          ],
+          "position": 50,
+          "ranks": [
+            9,
+            18
+          ]
+        },
+        {
+          "coordinates": [
+            106954755,
+            0
+          ],
+          "position": 51,
+          "ranks": [
+            9,
+            18
+          ]
+        },
+        {
+          "coordinates": [
+            107339178,
+            0
+          ],
+          "position": 52,
+          "ranks": [
+            13,
+            54
+          ]
+        },
+        {
+          "coordinates": [
+            107339418,
+            0
+          ],
+          "position": 53,
+          "ranks": [
+            13,
+            54
+          ]
+        },
+        {
+          "coordinates": [
+            107360399,
+            0
+          ],
+          "position": 54,
+          "ranks": [
+            13,
+            40
+          ]
+        },
+        {
+          "coordinates": [
+            107361215,
+            0
+          ],
+          "position": 55,
+          "ranks": [
+            13,
+            40
+          ]
+        },
+        {
+          "coordinates": [
+            107361215,
+            816
+          ],
+          "position": 56,
+          "ranks": [
+            19,
+            50
+          ]
+        },
+        {
+          "coordinates": [
+            107360399,
+            816
+          ],
+          "position": 57,
+          "ranks": [
+            19,
+            50
+          ]
+        },
+        {
+          "coordinates": [
+            107339418,
+            816
+          ],
+          "position": 58,
+          "ranks": [
+            20,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            107339178,
+            816
+          ],
+          "position": 59,
+          "ranks": [
+            20,
+            65
+          ]
+        },
+        {
+          "coordinates": [
+            106954755,
+            816
+          ],
+          "position": 60,
+          "ranks": [
+            17,
+            31
+          ]
+        },
+        {
+          "coordinates": [
+            106955571,
+            816
+          ],
+          "position": 61,
+          "ranks": [
+            17,
+            31
+          ]
+        },
+        {
+          "coordinates": [
+            107212070,
+            816
+          ],
+          "position": 62,
+          "ranks": [
+            19,
+            52
+          ]
+        },
+        {
+          "coordinates": [
+            107212310,
+            816
+          ],
+          "position": 63,
+          "ranks": [
+            19,
+            52
+          ]
+        }
+      ],
+      "summary": {
+        "minimum_retained_product": 162,
+        "rejected": 0,
+        "retained": 64,
+        "scalar_orbit_skips": 0,
+        "seconds": 0.000139403,
+        "start": 0,
+        "status": "complete",
+        "stop": 64,
+        "visited": 64,
+        "zeros": 0
+      },
+      "threshold": 6561
+    },
+    {
+      "affine_value": 1,
+      "retained": [
+        {
+          "coordinates": [
+            106955571,
+            0
+          ],
+          "position": 50,
+          "ranks": [
+            9,
+            18
+          ]
+        },
+        {
+          "coordinates": [
+            106954755,
+            0
+          ],
+          "position": 51,
+          "ranks": [
+            9,
+            18
+          ]
+        }
+      ],
+      "summary": {
+        "minimum_retained_product": 162,
+        "rejected": 62,
+        "retained": 2,
+        "scalar_orbit_skips": 0,
+        "seconds": 0.000110924,
+        "start": 0,
+        "status": "complete",
+        "stop": 64,
+        "visited": 64,
+        "zeros": 0
+      },
+      "threshold": 501
+    },
+    {
+      "affine_value": 0,
+      "retained": [],
+      "summary": {
+        "minimum_retained_product": 100000,
+        "rejected": 21,
+        "retained": 0,
+        "scalar_orbit_skips": 42,
+        "seconds": 2.708e-05,
+        "start": 0,
+        "status": "complete",
+        "stop": 64,
+        "visited": 64,
+        "zeros": 1
+      },
+      "threshold": 55
+    }
+  ],
+  "exact_nonbinary_points": 64,
+  "field_projection_decompositions": [
+    {
+      "complete_decomposition_ranks": [
+        [
+          64,
+          35
+        ],
+        [
+          77,
+          32
+        ],
+        [
+          70,
+          31
+        ],
+        [
+          77,
+          32
+        ],
+        [
+          81,
+          28
+        ],
+        [
+          68,
+          31
+        ],
+        [
+          70,
+          31
+        ],
+        [
+          68,
+          31
+        ],
+        [
+          79,
+          36
+        ]
+      ],
+      "pieces": [
+        [
+          1,
+          2
+        ],
+        [
+          2097152,
+          4194304
+        ],
+        [
+          33554432,
+          67108864
+        ],
+        [
+          2097168,
+          4194336
+        ],
+        [
+          4096,
+          8192
+        ],
+        [
+          536870912,
+          1073741824
+        ],
+        [
+          33554688,
+          67109376
+        ],
+        [
+          536936448,
+          1073872896
+        ],
+        [
+          1048576,
+          139810
+        ]
+      ],
+      "scalar": 1
+    },
+    {
+      "complete_decomposition_ranks": [
+        [
+          77,
+          28
+        ],
+        [
+          72,
+          27
+        ],
+        [
+          79,
+          28
+        ],
+        [
+          72,
+          27
+        ],
+        [
+          71,
+          29
+        ],
+        [
+          80,
+          33
+        ],
+        [
+          79,
+          28
+        ],
+        [
+          80,
+          33
+        ],
+        [
+          69,
+          36
+        ]
+      ],
+      "pieces": [
+        [
+          5,
+          10
+        ],
+        [
+          10485760,
+          20971520
+        ],
+        [
+          167772160,
+          335544320
+        ],
+        [
+          10485840,
+          20971680
+        ],
+        [
+          20480,
+          40960
+        ],
+        [
+          2684354560,
+          5368709120
+        ],
+        [
+          167773440,
+          335546880
+        ],
+        [
+          2684682240,
+          5369364480
+        ],
+        [
+          1328196,
+          699050
+        ]
+      ],
+      "scalar": 5
+    },
+    {
+      "complete_decomposition_ranks": [
+        [
+          71,
+          32
+        ],
+        [
+          81,
+          31
+        ],
+        [
+          62,
+          33
+        ],
+        [
+          81,
+          31
+        ],
+        [
+          80,
+          33
+        ],
+        [
+          75,
+          34
+        ],
+        [
+          62,
+          33
+        ],
+        [
+          75,
+          34
+        ],
+        [
+          71,
+          31
+        ]
+      ],
+      "pieces": [
+        [
+          9,
+          14
+        ],
+        [
+          18874368,
+          29360128
+        ],
+        [
+          301989888,
+          469762048
+        ],
+        [
+          18874512,
+          29360352
+        ],
+        [
+          36864,
+          57344
+        ],
+        [
+          4831838208,
+          7516192768
+        ],
+        [
+          301992192,
+          469765632
+        ],
+        [
+          4832428032,
+          7517110272
+        ],
+        [
+          1607816,
+          978670
+        ]
+      ],
+      "scalar": 9
+    },
+    {
+      "complete_decomposition_ranks": [
+        [
+          69,
+          31
+        ],
+        [
+          69,
+          31
+        ],
+        [
+          79,
+          32
+        ],
+        [
+          69,
+          31
+        ],
+        [
+          81,
+          29
+        ],
+        [
+          74,
+          27
+        ],
+        [
+          79,
+          32
+        ],
+        [
+          74,
+          27
+        ],
+        [
+          77,
+          24
+        ]
+      ],
+      "pieces": [
+        [
+          13,
+          6
+        ],
+        [
+          27262976,
+          12582912
+        ],
+        [
+          436207616,
+          201326592
+        ],
+        [
+          27263184,
+          12583008
+        ],
+        [
+          53248,
+          24576
+        ],
+        [
+          6979321856,
+          3221225472
+        ],
+        [
+          436210944,
+          201328128
+        ],
+        [
+          6980173824,
+          3221618688
+        ],
+        [
+          1887436,
+          419430
+        ]
+      ],
+      "scalar": 13
+    }
+  ],
+  "independent_full_81_by_81_ranks": 162,
+  "native_controls": [
+    {
+      "coordinates": [
+        1118481,
+        0
+      ],
+      "ranks": [
+        81,
+        81
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3895899821,
+        4501618991
+      ],
+      "ranks": [
+        73,
+        73
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        8497950303,
+        727976729
+      ],
+      "ranks": [
+        77,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1675713902,
+        350209641
+      ],
+      "ranks": [
+        77,
+        69
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1308371726,
+        4396997515
+      ],
+      "ranks": [
+        68,
+        74
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        4041806929,
+        8349080457
+      ],
+      "ranks": [
+        69,
+        69
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        7622488493,
+        1929313660
+      ],
+      "ranks": [
+        64,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5457165863,
+        6209083787
+      ],
+      "ranks": [
+        78,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5315645412,
+        3433695190
+      ],
+      "ranks": [
+        76,
+        70
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        2676823025,
+        5338201598
+      ],
+      "ranks": [
+        81,
+        70
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        7770096742,
+        5868734974
+      ],
+      "ranks": [
+        72,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3586574118,
+        5752530273
+      ],
+      "ranks": [
+        79,
+        69
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        7984054846,
+        269591930
+      ],
+      "ranks": [
+        73,
+        70
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1109012415,
+        5779532092
+      ],
+      "ranks": [
+        76,
+        68
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3005086751,
+        7472019108
+      ],
+      "ranks": [
+        76,
+        66
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        6403198269,
+        2741631299
+      ],
+      "ranks": [
+        65,
+        68
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1136518286,
+        6682800010
+      ],
+      "ranks": [
+        70,
+        69
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1951749804,
+        3980438121
+      ],
+      "ranks": [
+        74,
+        67
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        362744930,
+        1832762332
+      ],
+      "ranks": [
+        77,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        4078651703,
+        7038311056
+      ],
+      "ranks": [
+        81,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        6234055261,
+        3115425547
+      ],
+      "ranks": [
+        70,
+        76
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3670084951,
+        3375894833
+      ],
+      "ranks": [
+        77,
+        78
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1403439011,
+        4689636937
+      ],
+      "ranks": [
+        75,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5889261974,
+        3924510226
+      ],
+      "ranks": [
+        73,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        7866007882,
+        8338155985
+      ],
+      "ranks": [
+        65,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        8013534555,
+        1564512413
+      ],
+      "ranks": [
+        69,
+        73
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        7482729699,
+        3969734517
+      ],
+      "ranks": [
+        77,
+        78
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1173493468,
+        6260203661
+      ],
+      "ranks": [
+        67,
+        70
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        4877955131,
+        5464266271
+      ],
+      "ranks": [
+        72,
+        70
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        8476947278,
+        2539481829
+      ],
+      "ranks": [
+        79,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3269955774,
+        78275422
+      ],
+      "ranks": [
+        73,
+        73
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        2158872725,
+        1228334839
+      ],
+      "ranks": [
+        78,
+        75
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3275512894,
+        2949242911
+      ],
+      "ranks": [
+        79,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        7190615971,
+        6952749430
+      ],
+      "ranks": [
+        77,
+        73
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        7534697882,
+        6798532208
+      ],
+      "ranks": [
+        76,
+        70
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        381390291,
+        8066438991
+      ],
+      "ranks": [
+        76,
+        75
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        891459002,
+        4272939610
+      ],
+      "ranks": [
+        79,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        4974674619,
+        3386093743
+      ],
+      "ranks": [
+        67,
+        67
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        2307560916,
+        2782200502
+      ],
+      "ranks": [
+        77,
+        75
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3909667512,
+        7858252053
+      ],
+      "ranks": [
+        71,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        6096214271,
+        4370453948
+      ],
+      "ranks": [
+        71,
+        77
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3258412420,
+        2205921416
+      ],
+      "ranks": [
+        70,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        7447914521,
+        4868576954
+      ],
+      "ranks": [
+        70,
+        69
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1896962280,
+        8496606938
+      ],
+      "ranks": [
+        71,
+        68
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        2628494957,
+        8260108518
+      ],
+      "ranks": [
+        78,
+        73
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        6959028489,
+        2315578528
+      ],
+      "ranks": [
+        70,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1491414567,
+        5663837515
+      ],
+      "ranks": [
+        75,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        493921549,
+        6184189701
+      ],
+      "ranks": [
+        79,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        2795040502,
+        1980158017
+      ],
+      "ranks": [
+        75,
+        66
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1105825800,
+        2353431453
+      ],
+      "ranks": [
+        76,
+        68
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3252213918,
+        6690357320
+      ],
+      "ranks": [
+        72,
+        73
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        4403809230,
+        2643628450
+      ],
+      "ranks": [
+        76,
+        69
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        6338830820,
+        19359081
+      ],
+      "ranks": [
+        75,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        6316516747,
+        7800138298
+      ],
+      "ranks": [
+        79,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3287924863,
+        6341870121
+      ],
+      "ranks": [
+        71,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1965635980,
+        5586048363
+      ],
+      "ranks": [
+        77,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        6095557493,
+        6153852794
+      ],
+      "ranks": [
+        71,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        2185552058,
+        4556535423
+      ],
+      "ranks": [
+        64,
+        70
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        2800460264,
+        5676458011
+      ],
+      "ranks": [
+        76,
+        74
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5983825104,
+        7047445462
+      ],
+      "ranks": [
+        68,
+        66
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        6621423776,
+        3975243294
+      ],
+      "ranks": [
+        77,
+        72
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        7427238748,
+        7513709957
+      ],
+      "ranks": [
+        75,
+        68
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5899455846,
+        486351484
+      ],
+      "ranks": [
+        76,
+        66
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5777499371,
+        1902975666
+      ],
+      "ranks": [
+        76,
+        63
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        4177926379,
+        4258880852
+      ],
+      "ranks": [
+        80,
+        71
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3581036620,
+        0
+      ],
+      "ranks": [
+        61,
+        61
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3860385266,
+        0
+      ],
+      "ranks": [
+        53,
+        59
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        901447374,
+        0
+      ],
+      "ranks": [
+        57,
+        56
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5279285256,
+        0
+      ],
+      "ranks": [
+        61,
+        57
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5709013093,
+        0
+      ],
+      "ranks": [
+        66,
+        58
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        4391073906,
+        0
+      ],
+      "ranks": [
+        66,
+        62
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3807723616,
+        0
+      ],
+      "ranks": [
+        64,
+        58
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3860445718,
+        0
+      ],
+      "ranks": [
+        71,
+        60
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5035104630,
+        0
+      ],
+      "ranks": [
+        58,
+        58
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        3185967083,
+        0
+      ],
+      "ranks": [
+        67,
+        54
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        364366165,
+        0
+      ],
+      "ranks": [
+        68,
+        60
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1414151868,
+        0
+      ],
+      "ranks": [
+        50,
+        62
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5738848185,
+        0
+      ],
+      "ranks": [
+        67,
+        62
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        1245174781,
+        0
+      ],
+      "ranks": [
+        68,
+        55
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5599155298,
+        0
+      ],
+      "ranks": [
+        66,
+        60
+      ],
+      "status": "seed_control"
+    },
+    {
+      "coordinates": [
+        5742142710,
+        0
+      ],
+      "ranks": [
+        67,
+        55
+      ],
+      "status": "seed_control"
+    },
+    {
+      "accepted": 0,
+      "coordinates": [
+        1118481,
+        0
+      ],
+      "iterations": 0,
+      "product": 6561,
+      "queries": 82,
+      "ranks": [
+        81,
+        81
+      ],
+      "restarts": 0,
+      "seconds": 0.000322176,
+      "status": "initial"
+    },
+    {
+      "accepted": 0,
+      "coordinates": [
+        1118481,
+        0
+      ],
+      "iterations": 0,
+      "product": 6561,
+      "queries": 82,
+      "ranks": [
+        81,
+        81
+      ],
+      "restarts": 0,
+      "seconds": 0.000339089,
+      "status": "complete"
+    }
+  ],
+  "records": [
+    {
+      "coordinates": [
+        1118481,
+        0
+      ],
+      "ranks": [
+        81,
+        81
+      ]
+    },
+    {
+      "coordinates": [
+        3895899821,
+        4501618991
+      ],
+      "ranks": [
+        73,
+        73
+      ]
+    },
+    {
+      "coordinates": [
+        8497950303,
+        727976729
+      ],
+      "ranks": [
+        77,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        1675713902,
+        350209641
+      ],
+      "ranks": [
+        77,
+        69
+      ]
+    },
+    {
+      "coordinates": [
+        1308371726,
+        4396997515
+      ],
+      "ranks": [
+        68,
+        74
+      ]
+    },
+    {
+      "coordinates": [
+        4041806929,
+        8349080457
+      ],
+      "ranks": [
+        69,
+        69
+      ]
+    },
+    {
+      "coordinates": [
+        7622488493,
+        1929313660
+      ],
+      "ranks": [
+        64,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        5457165863,
+        6209083787
+      ],
+      "ranks": [
+        78,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        5315645412,
+        3433695190
+      ],
+      "ranks": [
+        76,
+        70
+      ]
+    },
+    {
+      "coordinates": [
+        2676823025,
+        5338201598
+      ],
+      "ranks": [
+        81,
+        70
+      ]
+    },
+    {
+      "coordinates": [
+        7770096742,
+        5868734974
+      ],
+      "ranks": [
+        72,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        3586574118,
+        5752530273
+      ],
+      "ranks": [
+        79,
+        69
+      ]
+    },
+    {
+      "coordinates": [
+        7984054846,
+        269591930
+      ],
+      "ranks": [
+        73,
+        70
+      ]
+    },
+    {
+      "coordinates": [
+        1109012415,
+        5779532092
+      ],
+      "ranks": [
+        76,
+        68
+      ]
+    },
+    {
+      "coordinates": [
+        3005086751,
+        7472019108
+      ],
+      "ranks": [
+        76,
+        66
+      ]
+    },
+    {
+      "coordinates": [
+        6403198269,
+        2741631299
+      ],
+      "ranks": [
+        65,
+        68
+      ]
+    },
+    {
+      "coordinates": [
+        1136518286,
+        6682800010
+      ],
+      "ranks": [
+        70,
+        69
+      ]
+    },
+    {
+      "coordinates": [
+        1951749804,
+        3980438121
+      ],
+      "ranks": [
+        74,
+        67
+      ]
+    },
+    {
+      "coordinates": [
+        362744930,
+        1832762332
+      ],
+      "ranks": [
+        77,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        4078651703,
+        7038311056
+      ],
+      "ranks": [
+        81,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        6234055261,
+        3115425547
+      ],
+      "ranks": [
+        70,
+        76
+      ]
+    },
+    {
+      "coordinates": [
+        3670084951,
+        3375894833
+      ],
+      "ranks": [
+        77,
+        78
+      ]
+    },
+    {
+      "coordinates": [
+        1403439011,
+        4689636937
+      ],
+      "ranks": [
+        75,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        5889261974,
+        3924510226
+      ],
+      "ranks": [
+        73,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        7866007882,
+        8338155985
+      ],
+      "ranks": [
+        65,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        8013534555,
+        1564512413
+      ],
+      "ranks": [
+        69,
+        73
+      ]
+    },
+    {
+      "coordinates": [
+        7482729699,
+        3969734517
+      ],
+      "ranks": [
+        77,
+        78
+      ]
+    },
+    {
+      "coordinates": [
+        1173493468,
+        6260203661
+      ],
+      "ranks": [
+        67,
+        70
+      ]
+    },
+    {
+      "coordinates": [
+        4877955131,
+        5464266271
+      ],
+      "ranks": [
+        72,
+        70
+      ]
+    },
+    {
+      "coordinates": [
+        8476947278,
+        2539481829
+      ],
+      "ranks": [
+        79,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        3269955774,
+        78275422
+      ],
+      "ranks": [
+        73,
+        73
+      ]
+    },
+    {
+      "coordinates": [
+        2158872725,
+        1228334839
+      ],
+      "ranks": [
+        78,
+        75
+      ]
+    },
+    {
+      "coordinates": [
+        3275512894,
+        2949242911
+      ],
+      "ranks": [
+        79,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        7190615971,
+        6952749430
+      ],
+      "ranks": [
+        77,
+        73
+      ]
+    },
+    {
+      "coordinates": [
+        7534697882,
+        6798532208
+      ],
+      "ranks": [
+        76,
+        70
+      ]
+    },
+    {
+      "coordinates": [
+        381390291,
+        8066438991
+      ],
+      "ranks": [
+        76,
+        75
+      ]
+    },
+    {
+      "coordinates": [
+        891459002,
+        4272939610
+      ],
+      "ranks": [
+        79,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        4974674619,
+        3386093743
+      ],
+      "ranks": [
+        67,
+        67
+      ]
+    },
+    {
+      "coordinates": [
+        2307560916,
+        2782200502
+      ],
+      "ranks": [
+        77,
+        75
+      ]
+    },
+    {
+      "coordinates": [
+        3909667512,
+        7858252053
+      ],
+      "ranks": [
+        71,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        6096214271,
+        4370453948
+      ],
+      "ranks": [
+        71,
+        77
+      ]
+    },
+    {
+      "coordinates": [
+        3258412420,
+        2205921416
+      ],
+      "ranks": [
+        70,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        7447914521,
+        4868576954
+      ],
+      "ranks": [
+        70,
+        69
+      ]
+    },
+    {
+      "coordinates": [
+        1896962280,
+        8496606938
+      ],
+      "ranks": [
+        71,
+        68
+      ]
+    },
+    {
+      "coordinates": [
+        2628494957,
+        8260108518
+      ],
+      "ranks": [
+        78,
+        73
+      ]
+    },
+    {
+      "coordinates": [
+        6959028489,
+        2315578528
+      ],
+      "ranks": [
+        70,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        1491414567,
+        5663837515
+      ],
+      "ranks": [
+        75,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        493921549,
+        6184189701
+      ],
+      "ranks": [
+        79,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        2795040502,
+        1980158017
+      ],
+      "ranks": [
+        75,
+        66
+      ]
+    },
+    {
+      "coordinates": [
+        1105825800,
+        2353431453
+      ],
+      "ranks": [
+        76,
+        68
+      ]
+    },
+    {
+      "coordinates": [
+        3252213918,
+        6690357320
+      ],
+      "ranks": [
+        72,
+        73
+      ]
+    },
+    {
+      "coordinates": [
+        4403809230,
+        2643628450
+      ],
+      "ranks": [
+        76,
+        69
+      ]
+    },
+    {
+      "coordinates": [
+        6338830820,
+        19359081
+      ],
+      "ranks": [
+        75,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        6316516747,
+        7800138298
+      ],
+      "ranks": [
+        79,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        3287924863,
+        6341870121
+      ],
+      "ranks": [
+        71,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        1965635980,
+        5586048363
+      ],
+      "ranks": [
+        77,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        6095557493,
+        6153852794
+      ],
+      "ranks": [
+        71,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        2185552058,
+        4556535423
+      ],
+      "ranks": [
+        64,
+        70
+      ]
+    },
+    {
+      "coordinates": [
+        2800460264,
+        5676458011
+      ],
+      "ranks": [
+        76,
+        74
+      ]
+    },
+    {
+      "coordinates": [
+        5983825104,
+        7047445462
+      ],
+      "ranks": [
+        68,
+        66
+      ]
+    },
+    {
+      "coordinates": [
+        6621423776,
+        3975243294
+      ],
+      "ranks": [
+        77,
+        72
+      ]
+    },
+    {
+      "coordinates": [
+        7427238748,
+        7513709957
+      ],
+      "ranks": [
+        75,
+        68
+      ]
+    },
+    {
+      "coordinates": [
+        5899455846,
+        486351484
+      ],
+      "ranks": [
+        76,
+        66
+      ]
+    },
+    {
+      "coordinates": [
+        5777499371,
+        1902975666
+      ],
+      "ranks": [
+        76,
+        63
+      ]
+    },
+    {
+      "coordinates": [
+        4177926379,
+        4258880852
+      ],
+      "ranks": [
+        80,
+        71
+      ]
+    },
+    {
+      "coordinates": [
+        3581036620,
+        0
+      ],
+      "ranks": [
+        61,
+        61
+      ]
+    },
+    {
+      "coordinates": [
+        3860385266,
+        0
+      ],
+      "ranks": [
+        53,
+        59
+      ]
+    },
+    {
+      "coordinates": [
+        901447374,
+        0
+      ],
+      "ranks": [
+        57,
+        56
+      ]
+    },
+    {
+      "coordinates": [
+        5279285256,
+        0
+      ],
+      "ranks": [
+        61,
+        57
+      ]
+    },
+    {
+      "coordinates": [
+        5709013093,
+        0
+      ],
+      "ranks": [
+        66,
+        58
+      ]
+    },
+    {
+      "coordinates": [
+        4391073906,
+        0
+      ],
+      "ranks": [
+        66,
+        62
+      ]
+    },
+    {
+      "coordinates": [
+        3807723616,
+        0
+      ],
+      "ranks": [
+        64,
+        58
+      ]
+    },
+    {
+      "coordinates": [
+        3860445718,
+        0
+      ],
+      "ranks": [
+        71,
+        60
+      ]
+    },
+    {
+      "coordinates": [
+        5035104630,
+        0
+      ],
+      "ranks": [
+        58,
+        58
+      ]
+    },
+    {
+      "coordinates": [
+        3185967083,
+        0
+      ],
+      "ranks": [
+        67,
+        54
+      ]
+    },
+    {
+      "coordinates": [
+        364366165,
+        0
+      ],
+      "ranks": [
+        68,
+        60
+      ]
+    },
+    {
+      "coordinates": [
+        1414151868,
+        0
+      ],
+      "ranks": [
+        50,
+        62
+      ]
+    },
+    {
+      "coordinates": [
+        5738848185,
+        0
+      ],
+      "ranks": [
+        67,
+        62
+      ]
+    },
+    {
+      "coordinates": [
+        1245174781,
+        0
+      ],
+      "ranks": [
+        68,
+        55
+      ]
+    },
+    {
+      "coordinates": [
+        5599155298,
+        0
+      ],
+      "ranks": [
+        66,
+        60
+      ]
+    },
+    {
+      "coordinates": [
+        5742142710,
+        0
+      ],
+      "ranks": [
+        67,
+        55
+      ]
+    }
+  ],
+  "registered_subspace_dimension": 18,
+  "registered_vectors_per_affine_value": 17179869184,
+  "scope": "Representation, rank and literal decomposition controls only. No exhaustive F4 envelope exclusion or improved factoring exponent.",
+  "source_sha256": {
+    "tools/check_fused_f4_envelope.py": "853a93e88d6d7aec6b71dc01f96a1d05fa8a652b4f39156fe8cb3ec7b163ea2b",
+    "tools/check_fused_scalar_projection.py": "00b3bde87abee09c5724c85a662edd90248ee756151643cc7911f2493af86a9d",
+    "tools/f4_lattice_linear.py": "fc27ccbcf4a82cb3c2643eac6a8a53fb7e08ced4700a30c0b5abca1a3f3aab8e",
+    "tools/fused_f4_envelope.py": "5ffe96064e0b32a02fa35492fe161f180967eb39e5d65efc040f620e1257495c",
+    "tools/joint_energy_conjugations.py": "929ba0d8e745fc2a4692367f10bf1e898884d58598c97a2617193ac8cf20bf1d",
+    "tools/scan_fused_f4_subspace.cpp": "4f6b73373331c8675e3c64be485076daf066e9f75d7025bc2868422f6ac24065",
+    "tools/search_fused_f4_envelope.cpp": "f1c670da54f47efb37cbec876b2fa986b205531e7a8d3f40118b2d4cb9ede5de"
+  },
+  "status": "pass"
+}

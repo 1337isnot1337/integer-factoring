@@ -1,0 +1,597 @@
+{
+  "status": "pass",
+  "registered_cases": 45292,
+  "proper_restrictions": 45225,
+  "resolved_native_orders": 753750,
+  "exact_inherited_scalar_curve_classes": 6490,
+  "independent_profile_samples": 16,
+  "independent_untruncated_orders": 262,
+  "independent_controls": [
+    {
+      "record_index": 2664,
+      "source_case_index": 3,
+      "alphabet_x": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "alphabet_y": [
+        1,
+        4
+      ],
+      "independent_profiles": [
+        [
+          -18.0,
+          -17.0,
+          -15.0,
+          -13.0,
+          -12.0,
+          -10.0,
+          -6,
+          -5.0
+        ],
+        [
+          -2.0,
+          -1.0,
+          1.0,
+          3.0,
+          4.0,
+          6.0,
+          10,
+          11.0
+        ]
+      ]
+    },
+    {
+      "record_index": 5328,
+      "source_case_index": 7,
+      "alphabet_x": [
+        2,
+        3,
+        4
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "independent_profiles": [
+        [
+          -16,
+          -15.0,
+          -13.0,
+          -12.0,
+          -11.0,
+          -10.0,
+          -9.0,
+          -8.0,
+          -8.0,
+          -7.0,
+          -7.0,
+          -3.0
+        ],
+        [
+          0,
+          1.0,
+          2.0,
+          2.0,
+          3.0,
+          4.0,
+          5.0,
+          6.0,
+          7.0,
+          10.0,
+          13.0,
+          22.0
+        ]
+      ]
+    },
+    {
+      "record_index": 7992,
+      "source_case_index": 11,
+      "alphabet_x": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "independent_profiles": [
+        [
+          -8,
+          -7.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          0.0,
+          0.0,
+          1.0,
+          1.0,
+          2.0,
+          2.0,
+          4.0,
+          5.0,
+          5.0
+        ],
+        [
+          8,
+          8.0,
+          8.0,
+          9.0,
+          11.0,
+          12.0,
+          13.0,
+          14.0,
+          15.0,
+          17.0,
+          17.0,
+          18.0,
+          18.0,
+          20.0,
+          21.0,
+          21.0
+        ]
+      ]
+    },
+    {
+      "record_index": 10656,
+      "source_case_index": 15,
+      "alphabet_x": [
+        0,
+        3,
+        4
+      ],
+      "alphabet_y": [
+        2,
+        3,
+        4
+      ],
+      "independent_profiles": [
+        [
+          -11.0,
+          -10.0,
+          -8,
+          -7.0,
+          -6.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0
+        ],
+        [
+          5.0,
+          6.0,
+          8,
+          9.0,
+          10.0,
+          11.0,
+          12.0,
+          13.0,
+          14.0
+        ]
+      ]
+    },
+    {
+      "record_index": 13321,
+      "source_case_index": 19,
+      "alphabet_x": [
+        3,
+        4
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        3
+      ],
+      "independent_profiles": [
+        [
+          -14,
+          -13.0,
+          -11.0,
+          -10.0,
+          -8.0,
+          -1.0
+        ],
+        [
+          2,
+          3.0,
+          5.0,
+          6.0,
+          8.0,
+          15.0
+        ]
+      ]
+    },
+    {
+      "record_index": 15985,
+      "source_case_index": 23,
+      "alphabet_x": [
+        1,
+        2,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "independent_profiles": [
+        [
+          -13.0,
+          -12.0,
+          -10.0,
+          -9.0,
+          -8,
+          -7.0,
+          -7.0,
+          -7.0,
+          -6.0,
+          -4.0,
+          -1.0,
+          0.0
+        ],
+        [
+          3.0,
+          4.0,
+          6.0,
+          6.0,
+          6.0,
+          7.0,
+          8,
+          9.0,
+          10.0,
+          12.0,
+          15.0,
+          16.0
+        ]
+      ]
+    },
+    {
+      "record_index": 18649,
+      "source_case_index": 27,
+      "alphabet_x": [
+        0,
+        2,
+        4
+      ],
+      "alphabet_y": [
+        2,
+        3
+      ],
+      "independent_profiles": [
+        [
+          -11.0,
+          -10.0,
+          -8,
+          -6.0,
+          -4.0,
+          -1.0
+        ],
+        [
+          5.0,
+          6.0,
+          8,
+          10.0,
+          12.0,
+          15.0
+        ]
+      ]
+    },
+    {
+      "record_index": 21313,
+      "source_case_index": 31,
+      "alphabet_x": [
+        0,
+        1,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        3,
+        4
+      ],
+      "independent_profiles": [
+        [
+          -8,
+          -7.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          2.0,
+          4.0
+        ],
+        [
+          8,
+          9.0,
+          11.0,
+          12.0,
+          13.0,
+          14.0,
+          15.0,
+          18.0,
+          20.0
+        ]
+      ]
+    },
+    {
+      "record_index": 23978,
+      "source_case_index": 35,
+      "alphabet_x": [
+        1,
+        4
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        3
+      ],
+      "independent_profiles": [
+        [
+          -13.0,
+          -12.0,
+          -9.0,
+          -8,
+          -1.0,
+          0.0
+        ],
+        [
+          3.0,
+          4.0,
+          7.0,
+          8,
+          15.0,
+          16.0
+        ]
+      ]
+    },
+    {
+      "record_index": 26642,
+      "source_case_index": 39,
+      "alphabet_x": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        3,
+        4
+      ],
+      "independent_profiles": [
+        [
+          -9.0,
+          -8,
+          -6.0,
+          -5.0,
+          -3.0,
+          0.0,
+          1.0,
+          4.0
+        ],
+        [
+          7.0,
+          8,
+          10.0,
+          11.0,
+          13.0,
+          16.0,
+          17.0,
+          20.0
+        ]
+      ]
+    },
+    {
+      "record_index": 29306,
+      "source_case_index": 43,
+      "alphabet_x": [
+        1,
+        2,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        3
+      ],
+      "independent_profiles": [
+        [
+          -13.0,
+          -12.0,
+          -10.0,
+          -9.0,
+          -8,
+          -7.0
+        ],
+        [
+          3.0,
+          4.0,
+          6.0,
+          7.0,
+          8,
+          9.0
+        ]
+      ]
+    },
+    {
+      "record_index": 31970,
+      "source_case_index": 47,
+      "alphabet_x": [
+        2,
+        3
+      ],
+      "alphabet_y": [
+        1,
+        2,
+        4
+      ],
+      "independent_profiles": [
+        [
+          -16,
+          -15.0,
+          -13.0,
+          -13.0,
+          -13.0,
+          -12.0
+        ],
+        [
+          0,
+          1.0,
+          3.0,
+          4.0,
+          6.0,
+          12.0
+        ]
+      ]
+    },
+    {
+      "record_index": 34635,
+      "source_case_index": 51,
+      "alphabet_x": [
+        0,
+        1,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        2
+      ],
+      "independent_profiles": [
+        [
+          -8,
+          -7.0,
+          -6.0,
+          -6.0,
+          -5.0,
+          -3.0,
+          -2.0,
+          -1.0,
+          4.0
+        ],
+        [
+          8,
+          9.0,
+          10.0,
+          10.0,
+          11.0,
+          13.0,
+          14.0,
+          15.0,
+          20.0
+        ]
+      ]
+    },
+    {
+      "record_index": 37299,
+      "source_case_index": 55,
+      "alphabet_x": [
+        0,
+        3
+      ],
+      "alphabet_y": [
+        0,
+        2,
+        4
+      ],
+      "independent_profiles": [
+        [
+          -8,
+          -7.0,
+          -5.0,
+          -4.0,
+          -3.0,
+          0.0
+        ],
+        [
+          8,
+          9.0,
+          11.0,
+          12.0,
+          13.0,
+          16.0
+        ]
+      ]
+    },
+    {
+      "record_index": 39963,
+      "source_case_index": 59,
+      "alphabet_x": [
+        0,
+        1,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        2
+      ],
+      "independent_profiles": [
+        [
+          -8,
+          -5.0,
+          -3.0,
+          -3.0,
+          0.0,
+          0.0
+        ],
+        [
+          8,
+          11.0,
+          13.0,
+          13.0,
+          16.0,
+          16.0
+        ]
+      ]
+    },
+    {
+      "record_index": 42627,
+      "source_case_index": 63,
+      "alphabet_x": [
+        0,
+        2
+      ],
+      "alphabet_y": [
+        0,
+        1,
+        4
+      ],
+      "independent_profiles": [
+        [
+          -8,
+          -5.0,
+          -4.0,
+          -3.0,
+          -1.0,
+          0.0
+        ],
+        [
+          8,
+          11.0,
+          12.0,
+          13.0,
+          15.0,
+          16.0
+        ]
+      ]
+    }
+  ],
+  "archive_sha256": "1b4b3f5612656ddb7b9e8a92ddac20087c79cb088bc7c88feadf625e8a4f8610",
+  "source_sha256": {
+    "tools/check_pencil_principal_screen.py": "ec2e3e0ffbed44cfaeab95173ed6ebef5465dfd4b0bce231390eadd58c48efbc",
+    "tools/pencil_principal_alphabets.py": "e421d68a335111edd9910dd6025c4a313f6e7ff227638407343bcd254b1fe784",
+    "tools/check_joint_energy_conjugations.py": "66d44df5e6be905f902819540795dfb4d9ad3ea7876bacb4bd5bc1104d9d66b7",
+    "tools/weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572"
+  },
+  "scope": "Checks all coverage identities, literal-input hashes, restored parameters and exact scalar-curve cache keys. Sixteen profiles in both cuts are independently reconstructed; the remaining native orders are not. No global numerical optimality or improved factoring bound."
+}

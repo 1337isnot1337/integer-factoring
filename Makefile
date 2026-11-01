@@ -24,6 +24,10 @@ verify-docs:
 verify-moving-boundary:
 	python3 tools/check_moving_boundary_crossings.py --output /tmp/moving-boundary-controls.json
 	python3 tools/check_moving_boundary_core_floor.py --output /tmp/moving-boundary-core-floor.json
+	python3 tools/check_moving_interior_crossings.py --output /tmp/moving-interior-controls.json
+	python3 tools/check_moving_physical_frames.py --output /tmp/moving-physical-frame-controls.json
+	python3 tools/check_moving_five_core_floor.py --output /tmp/moving-five-core-floor.json
+	python3 tools/check_moving_frame_prefix.py --output /tmp/moving-frame-height1-prefix16384-floor.json
 
 .PHONY: verify-pole-smith verify-joint-top-boundary
 verify-pole-smith:
@@ -343,6 +347,34 @@ verify-braid-rank-envelope:
 .PHONY: verify-braid-fusion-seam
 verify-braid-fusion-seam:
 	python3 tools/check_quantum_braid_fusion_seam.py
+
+.PHONY: verify-braid-graded-seam
+verify-braid-graded-seam:
+	python3 tools/check_quantum_braid_graded_seam.py
+
+.PHONY: verify-braid-spectral-fusion
+verify-braid-spectral-fusion:
+	python3 tools/check_quantum_braid_spectral_fusion.py
+
+.PHONY: verify-braid-fusion-occupancy
+verify-braid-fusion-occupancy:
+	python3 tools/check_quantum_braid_fusion_occupancy.py
+
+.PHONY: verify-braid-leading-automaton
+verify-braid-leading-automaton:
+	python3 tools/check_nilpotent_seam_top_rank.py
+
+.PHONY: verify-catalan-cup-crossing
+verify-catalan-cup-crossing:
+	python3 tools/check_catalan_cup_crossing.py
+
+.PHONY: verify-catalan-cup-jets
+verify-catalan-cup-jets:
+	python3 tools/check_catalan_cup_jets.py
+
+.PHONY: verify-catalan-gram-smith
+verify-catalan-gram-smith:
+	python3 tools/check_catalan_gram_smith.py --output evidence/catalan-gram-dual-smith.json
 
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
@@ -2418,6 +2450,100 @@ verify-pascal-letter-gauges:
 verify-pascal-coordinate-sectors:
 	python3 tools/check_pascal_coordinate_sectors.py --output /tmp/pascal-coordinate-sectors-controls.json
 
+.PHONY: verify-f4-pascal-flags
+verify-f4-pascal-flags:
+	python3 tools/check_f4_pascal_flags.py --output /tmp/f4-pascal-flag-controls.json
+
+.PHONY: verify-two-place-determinant verify-two-place-f4-census
+verify-two-place-determinant:
+	python3 tools/check_two_place_determinant.py --output /tmp/two-place-determinant.json
+
+verify-two-place-f4-census:
+	$(CXX) -O3 -std=c++17 tools/scan_two_place_f4_pencil.cpp -o /tmp/integer-factoring-two-place-f4-census-check
+	python3 tools/check_two_place_f4_census.py --binary /tmp/integer-factoring-two-place-f4-census-check --output /tmp/two-place-f4-census-controls.json
+
+verify-frontier: verify-two-place-determinant
+
+.PHONY: verify-graded-zero-lattice verify-two-place-f4-census-complete
+verify-graded-zero-lattice:
+	python3 tools/check_graded_zero_lattice.py --output /tmp/graded-zero-lattice.json
+
+verify-two-place-f4-census-complete:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_two_place_census_complete.py --output /tmp/two-place-census-complete-controls.json
+
+verify-frontier: verify-graded-zero-lattice
+
+.PHONY: verify-fused-f4-envelope verify-fused-f4-finite-controls
+verify-fused-f4-envelope:
+	$(CXX) -O3 -std=c++17 tools/search_fused_f4_envelope.cpp -o /tmp/integer-factoring-fused-f4-search-check
+	$(CXX) -O3 -std=c++17 tools/scan_fused_f4_subspace.cpp -o /tmp/integer-factoring-fused-f4-scan-check
+	python3 tools/check_fused_f4_envelope.py --binary /tmp/integer-factoring-fused-f4-search-check --scanner /tmp/integer-factoring-fused-f4-scan-check --output /tmp/fused-f4-envelope-controls.json
+
+verify-fused-f4-finite-controls:
+	python3 tools/check_fused_f4_finite_controls.py --output /tmp/fused-f4-finite-controls.json
+
+.PHONY: verify-natural-five-letter-floor
+verify-natural-five-letter-floor:
+	python3 tools/check_natural_five_letter_floor.py --replay evidence/natural-five-letter-floor.json.xz
+
+verify-frontier: verify-natural-five-letter-floor
+
+.PHONY: verify-graded-adjugate-caps
+verify-graded-adjugate-caps:
+	python3 tools/check_graded_adjugate_caps.py --output /tmp/graded-adjugate-caps.json
+
+verify-frontier: verify-graded-adjugate-caps
+
+.PHONY: verify-windowed-smith-frames
+verify-windowed-smith-frames:
+	python3 tools/check_windowed_binary_smith.py --output /tmp/windowed-binary-smith.json
+
+.PHONY: verify-fused-f4-zero-census
+verify-fused-f4-zero-census:
+	python3 tools/check_fused_f4_zero_census.py --output /tmp/fused-f4-zero-census-controls.json
+
+.PHONY: verify-windowed-f4-affine
+verify-windowed-f4-affine:
+	python3 tools/check_windowed_f4_affine.py --output /tmp/windowed-f4-affine.json
+
+.PHONY: verify-subalphabet-adjugate-caps
+verify-subalphabet-adjugate-caps:
+	python3 tools/check_subalphabet_adjugate_caps.py --output /tmp/subalphabet-adjugate-caps.json
+
+verify-frontier: verify-subalphabet-adjugate-caps
+
+.PHONY: verify-subalphabet-bare-entropy
+verify-subalphabet-bare-entropy:
+	python3 tools/check_subalphabet_bare_entropy.py --output /tmp/subalphabet-bare-entropy.json
+
+verify-frontier: verify-subalphabet-bare-entropy
+
+.PHONY: verify-f4-pascal-coordinate-sectors
+verify-f4-pascal-coordinate-sectors:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_pascal_coordinate_sectors.py --output /tmp/f4-pascal-coordinate-sectors.json
+
+.PHONY: verify-rectangular-adjugate-jets
+verify-rectangular-adjugate-jets:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_rectangular_adjugate_jets.py --output /tmp/rectangular-adjugate-jets.json
+
+verify-frontier: verify-rectangular-adjugate-jets
+
+.PHONY: verify-scaled-asymmetric-pressure
+verify-scaled-asymmetric-pressure:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_scaled_asymmetric_pressure.py --output /tmp/scaled-asymmetric-pressure.json
+
+.PHONY: verify-pencil-uniform-transport
+verify-pencil-uniform-transport:
+	python3 tools/check_pencil_uniform_transport.py --output /tmp/pencil-uniform-transport.json
+
+verify-frontier: verify-pencil-uniform-transport
+
+.PHONY: verify-smith-chambers-f4
+verify-smith-chambers-f4:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_smith_chambers_f4.py --output /tmp/smith-chambers-f4.json
+
+verify-frontier: verify-smith-chambers-f4
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
@@ -2425,3 +2551,360 @@ verify-coherent-f4-partial:
 .PHONY: verify-orthogonal-pair-core-floor
 verify-orthogonal-pair-core-floor:
 	python3 tools/check_orthogonal_pair_core_floor.py
+
+.PHONY: verify-circuit-box-products
+verify-circuit-box-products:
+	python3 tools/check_circuit_box_products.py
+
+.PHONY: verify-batch-smooth
+verify-batch-smooth:
+	python3 tools/batch_smooth_check.py
+
+.PHONY: verify-circuit-box-normalization verify-circuit-box-bezout verify-circuit-box-averages verify-circuit-box-bezout-averages verify-circuit-box-pole-trace
+verify-circuit-box-normalization: verify-circuit-box-bezout verify-circuit-box-averages verify-circuit-box-bezout-averages verify-circuit-box-pole-trace
+
+verify-circuit-box-bezout:
+	python3 tools/check_circuit_box_bezout.py
+
+verify-circuit-box-averages:
+	python3 tools/check_circuit_box_averages.py
+
+verify-circuit-box-bezout-averages:
+	python3 tools/check_circuit_box_bezout_averages.py
+
+verify-circuit-box-pole-trace:
+	python3 tools/check_circuit_box_pole_trace.py
+
+.PHONY: verify-tensor-orthogonal verify-tensor-orthogonal-scaling verify-tensor-orthogonal-capacity verify-tensor-f4-catalogues verify-tensor-orthogonal-comparisons
+
+verify-tensor-orthogonal: verify-tensor-orthogonal-scaling verify-tensor-orthogonal-capacity verify-tensor-f4-catalogues verify-tensor-orthogonal-comparisons
+
+verify-tensor-orthogonal-scaling:
+	python3 tools/check_tensor_orthogonal_scaling.py --output /tmp/integer-factoring-tensor-scaling-check.json
+
+verify-tensor-orthogonal-capacity:
+	python3 tools/check_tensor_orthogonal_capacity.py --output /tmp/integer-factoring-tensor-capacity-check.json
+
+verify-tensor-f4-catalogues:
+	python3 tools/check_tensor_f4_rank_two.py --output /tmp/integer-factoring-tensor-rank-two-check.json
+	python3 tools/tensor_f4_rank_three_catalogue.py --output /tmp/integer-factoring-tensor-rank-three-check.json
+	python3 tools/check_tensor_f4_hyperoval_obstruction.py --output /tmp/integer-factoring-tensor-hyperoval-check.json
+
+verify-tensor-orthogonal-comparisons:
+	python3 -c 'import pathlib, shutil, subprocess, tempfile; d=tempfile.TemporaryDirectory(prefix="factoring-tensor-"); p=pathlib.Path(d.name)/"certificate.json"; shutil.copyfile("evidence/tensor-orthogonal-pressure-dominance.json",p); subprocess.run(["python3","tools/check_tensor_orthogonal_pressure_dominance.py","--output",str(p)],check=True)'
+	python3 tools/check_tensor_f4_five_pair_dominance.py --output /tmp/integer-factoring-tensor-five-pair-check.json
+	python3 tools/check_tensor_coupled_quadratic_dominance.py --output /tmp/integer-factoring-tensor-coupled-check.json
+
+.PHONY: verify-oriented-coprime-basis
+
+verify-oriented-coprime-basis:
+	python3 tools/check_oriented_coprime_basis.py
+
+.PHONY: benchmark-batch-cofactor-policies
+
+benchmark-batch-cofactor-policies:
+	python3 tools/batch_smooth_policy_check.py --output /tmp/integer-factoring-batch-cofactor-policies.json
+
+.PHONY: verify-paired-mds-low-core
+verify-paired-mds-low-core:
+	python3 tools/check_paired_mds_low_core_floor.py
+
+.PHONY: verify-tensor-f16
+
+verify-tensor-orthogonal: verify-tensor-f16
+
+verify-tensor-f16:
+	python3 tools/check_tensor_hot_compounds_f16.py --output /tmp/integer-factoring-tensor-f16-check.json
+	python3 tools/check_tensor_coupled_quadratic_core_floor.py --recompute-profiles --output /tmp/integer-factoring-tensor-field-floor-check.json
+
+.PHONY: verify-oriented-refinement verify-oriented-cofactor-prefixes verify-signed-residual-graph
+
+verify-oriented-refinement: verify-oriented-coprime-basis verify-oriented-cofactor-prefixes verify-signed-residual-graph
+
+verify-oriented-cofactor-prefixes:
+	python3 tools/check_oriented_cofactor_prefixes.py
+
+verify-signed-residual-graph:
+	python3 tools/check_signed_residual_graph.py --prefix evidence/oriented-cofactor-prefixes.json
+
+.PHONY: verify-circuit-box-inverse-windows
+
+verify-circuit-box-normalization: verify-circuit-box-inverse-windows
+
+verify-circuit-box-inverse-windows:
+	python3 tools/check_circuit_box_inverse_windows.py --output /tmp/integer-factoring-inverse-window-check.json
+
+.PHONY: verify-incremental-oriented-basis
+
+verify-oriented-refinement: verify-incremental-oriented-basis
+
+verify-incremental-oriented-basis:
+	python3 tools/check_incremental_oriented_coprime_basis.py
+
+.PHONY: verify-tensor-f16-fast
+
+verify-tensor-f16: verify-tensor-f16-fast
+
+verify-tensor-f16-fast:
+	python3 tools/check_tensor_hot_compounds_f16_fast.py --output /tmp/integer-factoring-tensor-f16-fast-check.json
+
+.PHONY: verify-sparse-oriented-power
+
+verify-oriented-refinement: verify-sparse-oriented-power
+
+verify-sparse-oriented-power:
+	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-64.json.xz
+	python3 tools/check_sparse_oriented_power_search.py --replay evidence/sparse-oriented-power-80.json.xz
+
+.PHONY: verify-binary-extension-smith
+verify-binary-extension-smith:
+	python3 tools/check_binary_extension_smith.py
+
+.PHONY: verify-circuit-box-kloosterman-blocks
+
+verify-circuit-box-normalization: verify-circuit-box-kloosterman-blocks
+
+verify-circuit-box-kloosterman-blocks:
+	python3 tools/check_circuit_box_kloosterman_blocks.py --output /tmp/integer-factoring-kloosterman-blocks.json
+
+.PHONY: verify-tensor-cubic-graph
+
+verify-tensor-f16: verify-tensor-cubic-graph
+
+verify-tensor-cubic-graph:
+	python3 tools/check_tensor_hot_compounds_f16_mixed.py --output /tmp/integer-factoring-tensor-cubic-graph.json
+
+.PHONY: verify-sparse-unit-presentation
+
+verify-oriented-refinement: verify-sparse-unit-presentation
+
+verify-sparse-unit-presentation:
+	python3 tools/check_sparse_unit_presentation.py
+
+.PHONY: verify-quotient-update-oriented-basis
+
+verify-oriented-refinement: verify-quotient-update-oriented-basis
+
+verify-quotient-update-oriented-basis:
+	python3 tools/check_quotient_update_oriented_basis.py --repetitions 1
+
+.PHONY: verify-circuit-box-ratio-lookahead
+
+verify-circuit-box-normalization: verify-circuit-box-ratio-lookahead
+
+verify-circuit-box-ratio-lookahead:
+	python3 tools/check_circuit_box_ratio_lookahead.py --output /tmp/integer-factoring-ratio-lookahead.json
+
+.PHONY: verify-unit-presentation-trace
+
+verify-oriented-refinement: verify-unit-presentation-trace
+
+verify-unit-presentation-trace:
+	python3 tools/check_unit_presentation_trace.py
+
+.PHONY: verify-optimized-oriented-power
+
+verify-oriented-refinement: verify-optimized-oriented-power
+
+verify-optimized-oriented-power:
+	python3 tools/check_optimized_oriented_power_search.py --replay evidence/optimized-oriented-power-search.json
+	python3 tools/check_optimized_oriented_fresh_run.py --replay evidence/optimized-oriented-power-96.json.xz
+
+.PHONY: verify-tensor-literal-hot
+
+verify-tensor-f16: verify-tensor-literal-hot
+
+verify-tensor-literal-hot:
+	python3 tools/check_tensor_literal_hot_pfaffians_f16.py --output /tmp/integer-factoring-tensor-literal-hot.json
+
+.PHONY: verify-circuit-box-ratio-lattice
+
+verify-circuit-box-normalization: verify-circuit-box-ratio-lattice
+
+verify-circuit-box-ratio-lattice:
+	python3 tools/check_circuit_box_ratio_lattice.py --output /tmp/integer-factoring-ratio-lattice.json
+
+.PHONY: verify-primitive-integer-row-basis
+
+verify-oriented-refinement: verify-primitive-integer-row-basis
+
+verify-primitive-integer-row-basis:
+	python3 tools/check_primitive_integer_row_basis.py --repetitions 1
+
+.PHONY: verify-batched-coprime-bucket-basis
+verify-batched-coprime-bucket-basis:
+	python3 tools/check_batched_coprime_bucket_basis.py --output /tmp/batched-coprime-bucket-basis-verify.json
+
+verify-oriented-coprime-basis: verify-batched-coprime-bucket-basis
+
+.PHONY: verify-compact-oriented-power-search
+verify-compact-oriented-power-search:
+	python3 tools/check_compact_oriented_power_search.py --replay evidence/compact-oriented-power-search.json
+
+verify-oriented-coprime-basis: verify-compact-oriented-power-search
+
+.PHONY: verify-tensor-literal-height15-gate verify-tensor-literal-rank-one-cells
+verify-tensor-literal-height15-gate:
+	python3 tools/check_tensor_literal_height15_pressure_gate.py --recompute-profiles --output /tmp/tensor-literal-height15-gate-verify.json
+
+verify-tensor-literal-rank-one-cells:
+	python3 tools/check_tensor_literal_rank_one_cells.py --output /tmp/tensor-literal-rank-one-cells-verify.json
+
+.PHONY: verify-small-pivot-integer-rows verify-prepared-oriented-power-search
+verify-small-pivot-integer-rows:
+	python3 tools/check_small_pivot_integer_row_basis.py --controls-only --output /tmp/small-pivot-integer-row-verify.json
+
+verify-prepared-oriented-power-search:
+	python3 tools/check_prepared_oriented_power_search.py --replay evidence/prepared-oriented-power-search.json
+
+verify-oriented-coprime-basis: verify-small-pivot-integer-rows verify-prepared-oriented-power-search
+
+.PHONY: verify-oriented-basis-linear-charges
+verify-oriented-basis-linear-charges:
+	python3 tools/check_oriented_norm_basis_lift.py --output /tmp/oriented-norm-basis-lift-verify.json
+
+verify-oriented-coprime-basis: verify-oriented-basis-linear-charges
+
+.PHONY: verify-three-row-hecke verify-three-row-hecke-full
+verify-three-row-hecke:
+	python3 tools/check_three_row_hecke_crossing.py --alphabet 5
+verify-three-row-hecke-full:
+	python3 tools/check_three_row_hecke_crossing.py --alphabet 9
+
+.PHONY: verify-oriented-power-112
+verify-oriented-power-112:
+	python3 tools/check_optimized_oriented_fresh_run.py --replay evidence/optimized-oriented-power-112.json.xz
+
+.PHONY: verify-circuit-box-ratio-small-roots
+verify-circuit-box-ratio-small-roots:
+	python3 tools/check_circuit_box_ratio_small_roots.py --output /tmp/circuit-box-ratio-small-roots-verify.json
+
+.PHONY: verify-batch-smooth-fresh-192
+verify-batch-smooth-fresh-192:
+	python3 tools/assemble_factoring_certificate.py evidence/batch-smooth-fresh-192-selective.json.xz.manifest.json
+	python3 tools/check_fresh_prime_cofactor_control.py --bits 192 --replay evidence/batch-smooth-fresh-192-selective.json.xz
+
+.PHONY: verify-classical-oriented-basis
+verify-classical-oriented-basis:
+	python3 tools/check_classical_coprime_basis.py
+
+.PHONY: verify-tensor-literal-full-tail
+verify-tensor-literal-full-tail:
+	python3 tools/check_tensor_literal_full_tail_core.py --output /tmp/tensor-full-tail-replay.json
+	python3 tools/check_tensor_literal_full_tail_rank_one.py --output /tmp/tensor-full-tail-rank-one-replay.json
+
+.PHONY: verify-sparse-projected-graph
+verify-sparse-projected-graph:
+	python3 tools/check_sparse_projected_signed_graph.py
+	python3 tools/check_projected_oriented_power_search.py --replay evidence/projected-oriented-power-search.json
+
+.PHONY: verify-two-pass-oriented-basis
+verify-two-pass-oriented-basis:
+	python3 tools/check_circuit_box_oriented_batch.py --output /tmp/two-pass-oriented-replay.json
+
+.PHONY: verify-tensor-literal-moving-frames
+verify-tensor-literal-moving-frames:
+	python3 tools/check_tensor_literal_moving_frames.py --output /tmp/tensor-moving-frame-replay.json
+
+.PHONY: verify-tensor-affine-full-tail
+verify-tensor-affine-full-tail:
+	python3 tools/check_tensor_literal_full_tail_affine_frames.py --output /tmp/tensor-affine-full-tail-replay.json
+
+.PHONY: verify-equivalent-norm-stencils
+verify-equivalent-norm-stencils:
+	python3 tools/check_equivalent_norm_stencils.py --output /tmp/equivalent-norm-stencils-replay.json
+
+.PHONY: verify-compact-power-witnesses
+verify-compact-power-witnesses:
+	python3 tools/check_compact_witness_oriented_power_search.py --replay evidence/compact-witness-oriented-power-search.json
+
+.PHONY: verify-compact-oriented-basis
+verify-compact-oriented-basis:
+	python3 tools/check_compact_oriented_basis.py --output /tmp/compact-oriented-basis-replay.json
+
+.PHONY: verify-tensor-affine-clifford
+verify-tensor-affine-clifford:
+	python3 tools/check_tensor_affine_clifford_profiles.py --output /tmp/tensor-affine-clifford-replay.json
+
+.PHONY: check-stencil-overlap
+check-stencil-overlap:
+	python3 tools/check_circuit_box_stencil_overlap.py
+
+.PHONY: check-direct-unit-presentation check-direct-unit-search
+check-direct-unit-presentation:
+	python3 tools/check_direct_unit_presentation.py --replay evidence/direct-unit-presentation.json
+check-direct-unit-search:
+	python3 tools/check_direct_unit_oriented_power_search.py --replay evidence/direct-unit-oriented-power-search.json.xz
+
+.PHONY: check-centered-windows
+check-centered-windows:
+	python3 tools/check_circuit_box_centered_windows.py
+
+.PHONY: check-cached-lll
+check-cached-lll:
+	python3 tools/check_circuit_box_cached_lll.py
+
+.PHONY: check-singular-affine-clifford
+check-singular-affine-clifford:
+	python3 tools/check_tensor_singular_affine_clifford.py
+
+.PHONY: verify-orthogonal-joint-global
+verify-orthogonal-joint-global:
+	python3 tools/check_orthogonal_joint_global_rigidity.py
+	python3 tools/check_orthogonal_joint_finite_profiles.py
+
+.PHONY: verify-orthogonal-joint-symbolic
+verify-orthogonal-joint-symbolic:
+	python3 tools/check_orthogonal_joint_symbolic_profiles.py
+
+.PHONY: verify-height36-core-floor verify-height36-core-replay
+verify-height36-core-floor:
+	python3 tools/check_height36_core_floor.py
+verify-height36-core-replay:
+	python3 tools/check_height36_core_floor.py --replay-core
+
+.PHONY: verify-coherent-f8
+verify-coherent-f8:
+	python3 tools/check_coherent_hot_f8.py
+
+.PHONY: verify-f8-hyperoval verify-f8-hyperoval-full
+verify-f8-hyperoval:
+	python3 tools/replay_f8_hyperoval_q96.py
+	python3 tools/certify_f8_hyperoval_q96.py
+verify-f8-hyperoval-full:
+	python3 tools/replay_f8_hyperoval_q96.py --full
+	python3 tools/certify_f8_hyperoval_q96.py
+
+.PHONY: verify-hecke-all-places verify-hecke-all-places-full
+verify-hecke-all-places:
+	python3 tools/check_hecke_all_algebraic_places.py --alphabet 5
+verify-hecke-all-places-full:
+	python3 tools/check_hecke_all_algebraic_places.py --alphabet 9
+
+.PHONY: verify-pencil-endpoint-moments
+verify-pencil-endpoint-moments:
+	python3 tools/check_pencil_endpoint_moments.py
+
+.PHONY: verify-pencil-principal-alphabets
+verify-pencil-principal-alphabets:
+	python3 tools/check_pencil_principal_alphabets.py
+
+.PHONY: verify-pencil-principal-screen
+verify-pencil-principal-screen:
+	python3 tools/check_pencil_principal_screen.py
+
+.PHONY: verify-pascal-coordinate-bundle
+verify-pascal-coordinate-bundle:
+	python3 tools/check_pascal_coordinate_bundle.py
+
+.PHONY: verify-rectangular-pascal-coordinates
+verify-rectangular-pascal-coordinates:
+	python3 tools/check_rectangular_pascal_sectors.py
+
+.PHONY: verify-jensen-core-floors
+verify-jensen-core-floors:
+	python3 tools/check_jensen_tail_core_floor.py
+
+.PHONY: verify-hecke-q5-determinants
+verify-hecke-q5-determinants:
+	python3 tools/check_hecke_q5_determinants.py

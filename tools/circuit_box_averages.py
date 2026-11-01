@@ -1,0 +1,189 @@
+#!/usr/bin/env python3
+"""Normalized box averages of unrestricted-degree integer circuits.
+
+Return 2^d / |box| times the complete sum modulo 2^p. This scalar is
+dyadically integral for every integer polynomial and every circuit with
+globally odd-unit inverses. The quotient precision does not grow with
+v2(|box|), and no numerical interval is enumerated.
+"""
+
+from __future__ import annotations
+
+from itertools import product
+from math import prod
+
+from circuit_box_products import (
+    IntegerFunctionQuotient, factorial_valuation, prefix_power_sums,
+    validate_circuit,
+)
+
+
+def valuation_two(value):
+    if value <= 0:
+        raise ValueError("Require a positive valuation argument")
+    return (value & -value).bit_length() - 1
+
+
+def average_order(index):
+    """v2(2*t!/(t+1)), the exact universal falling-factorial average order."""
+    return 1 + factorial_valuation(index) - valuation_two(index + 1)
+
+
+def universal_average_degree(precision):
+    """Least D whose falling-factorial ideal annihilates every average.
+
+    For t>=8p, 1+t-2*log2(t+1)>=p. Thus the last failing t is below
+    8p, and the finite scan determines the exact all-length threshold.
+    """
+    if precision < 1:
+        raise ValueError("Require positive precision")
+    last_bad = max(index for index in range(8 * precision)
+                   if average_order(index) < precision)
+    return last_bad + 1
+
+
+def validate_regular_circuit(circuit, variables):
+    """Require each inverse input to be odd on every integer parity tuple."""
+    if not any(instruction[0] == "inv" for instruction in circuit["nodes"]):
+        return validate_circuit(circuit, variables), 0
+    if variables < 1:
+        raise ValueError("Require at least one variable")
+    degrees = []
+    for index, instruction in enumerate(circuit["nodes"]):
+        operation = instruction[0]
+        if operation == "var" and len(instruction) == 2:
+            if not isinstance(instruction[1], int) or not 0 <= instruction[1] < variables:
+                raise ValueError("Variable outside the supplied dimension")
+            degrees.append((1, 0))
+        elif operation == "const" and len(instruction) == 2 and isinstance(instruction[1], int):
+            degrees.append((0, 0))
+        elif operation in ("add", "mul") and len(instruction) == 3:
+            if not all(isinstance(i, int) and 0 <= i < index for i in instruction[1:]):
+                raise ValueError("Circuit inputs must precede their node")
+            a, b = degrees[instruction[1]]
+            c, d = degrees[instruction[2]]
+            degrees.append((max(a + d, c + b), b + d) if operation == "add" else (a + c, b + d))
+        elif operation == "inv" and len(instruction) == 2:
+            if not isinstance(instruction[1], int) or not 0 <= instruction[1] < index:
+                raise ValueError("Inverse input must precede its node")
+            a, b = degrees[instruction[1]]
+            degrees.append((b, a))
+        else:
+            raise ValueError("Unsupported regular circuit node")
+    if not isinstance(circuit["output"], int) or not 0 <= circuit["output"] < len(degrees):
+        raise ValueError("Invalid circuit output")
+    for parity in product((0, 1), repeat=variables):
+        values = []
+        for index, instruction in enumerate(circuit["nodes"]):
+            operation = instruction[0]
+            if operation == "var":
+                value = parity[instruction[1]]
+            elif operation == "const":
+                value = instruction[1] % 2
+            elif operation == "add":
+                value = (values[instruction[1]] + values[instruction[2]]) % 2
+            elif operation == "mul":
+                value = values[instruction[1]] * values[instruction[2]]
+            else:
+                if not values[instruction[1]]:
+                    raise ValueError(f"Inverse node {index} is not a unit at parity {parity}")
+                value = 1
+            values.append(value)
+    return degrees[circuit["output"]]
+
+
+class AverageQuotient(IntegerFunctionQuotient):
+    """Use the universal normalized-average ideal, not a pointwise test."""
+
+    def __init__(self, variables, precision):
+        super().__init__(variables, precision)
+        self.degree = universal_average_degree(precision)
+        polynomial = [1]
+        for root in range(self.degree):
+            following = [0] * (len(polynomial) + 1)
+            for index, coefficient in enumerate(polynomial):
+                following[index] -= root * coefficient
+                following[index + 1] += coefficient
+            polynomial = [value % self.modulus for value in following]
+        self.null_polynomial = tuple(polynomial)
+        self.nonzero_reduction = tuple((index, coefficient) for index, coefficient in
+                                       enumerate(polynomial[:-1]) if coefficient)
+
+    def inverse(self, value):
+        # Modulo two, the nilradical is generated by X_i(X_i-1).
+        # A 2^r power kills it once 2^r >= D. Further squarings lift
+        # the resulting unit one modulo 2 to one modulo 2^precision.
+        nilpotent_bits = (self.degree - 1).bit_length()
+        exponent = (1 << (nilpotent_bits + self.precision)) - 1
+        result = self.constant(1)
+        while exponent:
+            if exponent & 1:
+                result = self.multiply(result, value)
+            exponent >>= 1
+            if exponent:
+                value = self.multiply(value, value)
+        return result
+
+    def evaluate(self, circuit, starts):
+        values = []
+        for instruction in circuit["nodes"]:
+            operation = instruction[0]
+            if operation == "var":
+                axis = instruction[1]
+                value = self.add(self.constant(starts[axis]), self.variable(axis))
+            elif operation == "const":
+                value = self.constant(instruction[1])
+            elif operation == "add":
+                value = self.add(values[instruction[1]], values[instruction[2]])
+            elif operation == "inv":
+                value = self.inverse(values[instruction[1]])
+            else:
+                assert operation == "mul"
+                value = self.multiply(values[instruction[1]], values[instruction[2]])
+            values.append(value)
+        return values[circuit["output"]]
+
+
+def normalized_box_average(circuit, intervals, precision):
+    """Compute 2^d/|B| sum_(a in B) q(a) modulo 2^precision.
+
+    The return value is an integral dyadic residue. Dividing it by 2^d
+    gives the ordinary average to absolute precision precision-d.
+    Empty intervals are rejected because their averages are undefined.
+    """
+    intervals = tuple(tuple(interval) for interval in intervals)
+    variables = len(intervals)
+    numerator_degree, denominator_degree = validate_regular_circuit(circuit, variables)
+    if any(not isinstance(value, int) for interval in intervals for value in interval):
+        raise ValueError("Interval endpoints must be integers")
+    if any(len(interval) != 2 or interval[0] >= interval[1] for interval in intervals):
+        raise ValueError("Require nonempty half-open intervals")
+    ring = AverageQuotient(variables, precision)
+    lengths = [upper - lower for lower, upper in intervals]
+    starts = [lower for lower, _ in intervals]
+    axis_functionals = []
+    for length in lengths:
+        sums = prefix_power_sums(length, ring.degree - 1)
+        loss = valuation_two(length)
+        inverse_odd = pow(length >> loss, -1, ring.modulus)
+        functional = []
+        for power_sum in sums:
+            numerator = 2 * power_sum
+            assert numerator % (1 << loss) == 0
+            functional.append((numerator >> loss) * inverse_odd % ring.modulus)
+        axis_functionals.append(functional)
+    reduced = ring.evaluate(circuit, starts)
+    result = sum(coefficient * prod(axis_functionals[axis][exponent]
+                                    for axis, exponent in enumerate(key))
+                 for key, coefficient in reduced.items()) % ring.modulus
+    return {"intervals": [list(interval) for interval in intervals],
+            "precision": precision, "dimensions": variables,
+            "box_cardinality": prod(lengths), "normalizer_numerator": 1 << variables,
+            "scaled_average_residue": result,
+            "quotient_degree": ring.degree, "quotient_dimension": ring.degree ** variables,
+            "input_circuit_nodes": len(circuit["nodes"]),
+            "formal_numerator_degree_bound": numerator_degree,
+            "formal_denominator_degree_bound": denominator_degree,
+            "input_has_unit_inverses": any(node[0] == "inv" for node in circuit["nodes"]),
+            "discarded_numerical_valuation": sum(valuation_two(length) for length in lengths),
+            "scope": "Known-length normalized regular-circuit average; no singular rational denominator or factor-count oracle."}

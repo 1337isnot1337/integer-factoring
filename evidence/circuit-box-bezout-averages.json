@@ -1,0 +1,806 @@
+{
+  "huge_order_affine_control": {
+    "average_boundary_queries": 0,
+    "closed_form_reference": "5^(-k) modulo 256 for z_i=5i+6",
+    "count_independent_precision_bound": 13,
+    "method": "known-count normalized averages",
+    "order": 1044388881413152506691752710716624382579964249047383780384233483283953907971557456848826811934997558340890106714439262837987573438185793607263236087851365277945956976543709998340361590134383718314428070011855946226376318839397712745672334684344586617496807908705803704071284048740118609114467977783598029006686938976881787785946905630190260940599579453432823469303026696443059025015972399867714215541693835559885291486318237914434496734087811872639496475100189041349008417061675093668333850551032972088269550769983616369411933015213796825837188091833656751221318492846368125550225998300412344784862595674492194617023806505913245610825731835380087608622102834270197698202313169017678006675195485079921636419370285375124784014907159135459982790513399611551794271106831134090584272884279791554849782954323534517065223269061394905987693002122963395687782878948440616007412945674919823050571642377154816321380631045902916136926708342856440730447899971901781465763473223850267253059899795996090799469201774624817718449867455659250178329070473119433165550807568221846571746373296884912819520317457002440926616910874148385078411929804522981857338977648103126085903001302413467189726673216491511131602920781738033436090243804708340403154190335,
+    "order_bit_length": 4096,
+    "precision": 8,
+    "previous_working_precision": 4103,
+    "short_ratio_certificates": [
+      {
+        "absorbed_count_valuation": 4096,
+        "average_precision": 9,
+        "degree": 1,
+        "moment_precision": 7,
+        "numerator_precision": 8,
+        "remaining_denominator_valuation": 0,
+        "selected_offset": 0,
+        "weighted_contribution": 8
+      },
+      {
+        "absorbed_count_valuation": 4096,
+        "average_precision": 9,
+        "degree": 2,
+        "moment_precision": 7,
+        "numerator_precision": 8,
+        "remaining_denominator_valuation": 0,
+        "selected_offset": 0,
+        "weighted_contribution": 20
+      },
+      {
+        "absorbed_count_valuation": 4096,
+        "average_precision": 10,
+        "degree": 3,
+        "moment_precision": 8,
+        "numerator_precision": 9,
+        "remaining_denominator_valuation": 1,
+        "selected_offset": 0,
+        "weighted_contribution": 8
+      },
+      {
+        "absorbed_count_valuation": 4096,
+        "average_precision": 10,
+        "degree": 4,
+        "moment_precision": 8,
+        "numerator_precision": 9,
+        "remaining_denominator_valuation": 1,
+        "selected_offset": 0,
+        "weighted_contribution": 32
+      },
+      {
+        "absorbed_count_valuation": 4096,
+        "average_precision": 12,
+        "degree": 5,
+        "moment_precision": 10,
+        "numerator_precision": 11,
+        "remaining_denominator_valuation": 3,
+        "selected_offset": 0,
+        "weighted_contribution": 224
+      },
+      {
+        "absorbed_count_valuation": 4096,
+        "average_precision": 12,
+        "degree": 6,
+        "moment_precision": 10,
+        "numerator_precision": 11,
+        "remaining_denominator_valuation": 3,
+        "selected_offset": 0,
+        "weighted_contribution": 64
+      },
+      {
+        "absorbed_count_valuation": 4096,
+        "average_precision": 13,
+        "degree": 7,
+        "moment_precision": 11,
+        "numerator_precision": 12,
+        "remaining_denominator_valuation": 4,
+        "selected_offset": 0,
+        "weighted_contribution": 128
+      }
+    ],
+    "unit": 5,
+    "working_precision": 13
+  },
+  "large_complete_pair_controls": [
+    {
+      "average_boundary_queries": 14,
+      "basis_center": 1,
+      "bezout_exponent": 2417851639229258349412383,
+      "direct_boundary_queries": 3,
+      "independent_unit_point_checks": [
+        {
+          "p": [
+            31,
+            30
+          ],
+          "point": [
+            0,
+            1
+          ],
+          "q": [
+            37,
+            44
+          ],
+          "u": [
+            29,
+            48
+          ],
+          "v": [
+            33,
+            46
+          ]
+        },
+        {
+          "p": [
+            33,
+            32
+          ],
+          "point": [
+            1,
+            1
+          ],
+          "q": [
+            25,
+            30
+          ],
+          "u": [
+            19,
+            10
+          ],
+          "v": [
+            21,
+            32
+          ]
+        }
+      ],
+      "input_circuit_nodes": [
+        202,
+        202
+      ],
+      "maximum_working_precision": 9,
+      "parameters": {
+        "count": 1208925819614629174706193,
+        "first_a": 1,
+        "first_b": 5,
+        "height": 1,
+        "number": 7,
+        "precision": 6,
+        "step_a": 4,
+        "step_b": 12
+      },
+      "perturbation_degree_bounds": [
+        1606938044258990275541962092341162602522202993782792835301377,
+        1606938044258990275541962092341162602522202993782792835301377
+      ],
+      "polynomial_degree": 1208925819614629174706192,
+      "previous_working_precision": 6,
+      "retained_newton_coefficients": [
+        {
+          "average_boundary_queries": 6,
+          "count_independent_precision_bound": 10,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412385,
+          "precision": 6,
+          "scaled_newton_coefficient": 45,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 1,
+              "average_precision": 7,
+              "degree": 1,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 44
+            },
+            {
+              "absorbed_count_valuation": 1,
+              "average_precision": 7,
+              "degree": 2,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 24
+            },
+            {
+              "absorbed_count_valuation": 2,
+              "average_precision": 8,
+              "degree": 3,
+              "moment_precision": 6,
+              "numerator_precision": 7,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 2,
+              "weighted_contribution": 56
+            },
+            {
+              "absorbed_count_valuation": 2,
+              "average_precision": 8,
+              "degree": 4,
+              "moment_precision": 6,
+              "numerator_precision": 7,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 2,
+              "weighted_contribution": 48
+            },
+            {
+              "absorbed_count_valuation": 2,
+              "average_precision": 9,
+              "degree": 5,
+              "moment_precision": 7,
+              "numerator_precision": 8,
+              "remaining_denominator_valuation": 2,
+              "selected_offset": 2,
+              "weighted_contribution": 0
+            }
+          ],
+          "unit": 37,
+          "valuation_gap": 0,
+          "working_precision": 9
+        },
+        {
+          "average_boundary_queries": 8,
+          "count_independent_precision_bound": 10,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412384,
+          "precision": 6,
+          "scaled_newton_coefficient": 55,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 0,
+              "average_precision": 7,
+              "degree": 1,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 0
+            },
+            {
+              "absorbed_count_valuation": 1,
+              "average_precision": 7,
+              "degree": 2,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 1,
+              "weighted_contribution": 0
+            },
+            {
+              "absorbed_count_valuation": 1,
+              "average_precision": 7,
+              "degree": 3,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 1,
+              "weighted_contribution": 0
+            },
+            {
+              "absorbed_count_valuation": 2,
+              "average_precision": 8,
+              "degree": 4,
+              "moment_precision": 6,
+              "numerator_precision": 7,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 3,
+              "weighted_contribution": 0
+            },
+            {
+              "absorbed_count_valuation": 2,
+              "average_precision": 8,
+              "degree": 5,
+              "moment_precision": 6,
+              "numerator_precision": 7,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 3,
+              "weighted_contribution": 0
+            }
+          ],
+          "unit": 1,
+          "valuation_gap": 0,
+          "working_precision": 8
+        },
+        {
+          "average_boundary_queries": 0,
+          "count_independent_precision_bound": 2,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412383,
+          "precision": 1,
+          "scaled_newton_coefficient": 32,
+          "short_ratio_certificates": [],
+          "unit": 1,
+          "valuation_gap": 5,
+          "working_precision": 1
+        },
+        {
+          "average_boundary_queries": 0,
+          "count_independent_precision_bound": 2,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412382,
+          "precision": 1,
+          "scaled_newton_coefficient": 32,
+          "short_ratio_certificates": [],
+          "unit": 1,
+          "valuation_gap": 5,
+          "working_precision": 1
+        }
+      ],
+      "scope": "Complete globally normalized Bezout pairs on certified circuit-isometric separated domains, with count-independent coefficient precision; no arbitrary factor-root search.",
+      "u_reversed_coefficients": [
+        45,
+        55,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "v_reversed_coefficients": [
+        41,
+        53,
+        34,
+        20,
+        8,
+        16,
+        32,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "average_boundary_queries": 14,
+      "basis_center": 1,
+      "bezout_exponent": 2417851639229258349412271,
+      "direct_boundary_queries": 7,
+      "independent_unit_point_checks": [
+        {
+          "p": [
+            63,
+            63
+          ],
+          "point": [
+            0,
+            1
+          ],
+          "q": [
+            63,
+            63
+          ],
+          "u": [
+            29,
+            19
+          ],
+          "v": [
+            35,
+            45
+          ]
+        },
+        {
+          "p": [
+            0,
+            1
+          ],
+          "point": [
+            1,
+            1
+          ],
+          "q": [
+            0,
+            1
+          ],
+          "u": [
+            58,
+            15
+          ],
+          "v": [
+            6,
+            49
+          ]
+        }
+      ],
+      "input_circuit_nodes": [
+        202,
+        202
+      ],
+      "maximum_working_precision": 10,
+      "parameters": {
+        "count": 1208925819614629174706176,
+        "first_a": 1,
+        "first_b": 5,
+        "height": 1,
+        "number": 7,
+        "precision": 6,
+        "step_a": 4,
+        "step_b": 12
+      },
+      "perturbation_degree_bounds": [
+        1606938044258990275541962092341162602522202993782792835301377,
+        1606938044258990275541962092341162602522202993782792835301377
+      ],
+      "polynomial_degree": 1208925819614629174706175,
+      "previous_working_precision": 86,
+      "retained_newton_coefficients": [
+        {
+          "average_boundary_queries": 0,
+          "count_independent_precision_bound": 10,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412351,
+          "precision": 6,
+          "scaled_newton_coefficient": 45,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 7,
+              "degree": 1,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 46
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 7,
+              "degree": 2,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 52
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 8,
+              "degree": 3,
+              "moment_precision": 6,
+              "numerator_precision": 7,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 0,
+              "weighted_contribution": 8
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 8,
+              "degree": 4,
+              "moment_precision": 6,
+              "numerator_precision": 7,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 0,
+              "weighted_contribution": 16
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 10,
+              "degree": 5,
+              "moment_precision": 8,
+              "numerator_precision": 9,
+              "remaining_denominator_valuation": 3,
+              "selected_offset": 0,
+              "weighted_contribution": 32
+            }
+          ],
+          "unit": 47,
+          "valuation_gap": 0,
+          "working_precision": 10
+        },
+        {
+          "average_boundary_queries": 4,
+          "count_independent_precision_bound": 10,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412350,
+          "precision": 6,
+          "scaled_newton_coefficient": 43,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 0,
+              "average_precision": 7,
+              "degree": 1,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 40
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 7,
+              "degree": 2,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 1,
+              "weighted_contribution": 32
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 7,
+              "degree": 3,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 1,
+              "weighted_contribution": 0
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 8,
+              "degree": 4,
+              "moment_precision": 6,
+              "numerator_precision": 7,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 1,
+              "weighted_contribution": 32
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 8,
+              "degree": 5,
+              "moment_precision": 6,
+              "numerator_precision": 7,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 1,
+              "weighted_contribution": 0
+            }
+          ],
+          "unit": 25,
+          "valuation_gap": 0,
+          "working_precision": 8
+        },
+        {
+          "average_boundary_queries": 4,
+          "count_independent_precision_bound": 7,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412349,
+          "precision": 5,
+          "scaled_newton_coefficient": 54,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 1,
+              "average_precision": 6,
+              "degree": 1,
+              "moment_precision": 4,
+              "numerator_precision": 5,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 16
+            },
+            {
+              "absorbed_count_valuation": 1,
+              "average_precision": 6,
+              "degree": 2,
+              "moment_precision": 4,
+              "numerator_precision": 5,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 24
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 7,
+              "degree": 3,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 2,
+              "weighted_contribution": 0
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 7,
+              "degree": 4,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 2,
+              "weighted_contribution": 0
+            }
+          ],
+          "unit": 9,
+          "valuation_gap": 1,
+          "working_precision": 7
+        },
+        {
+          "average_boundary_queries": 5,
+          "count_independent_precision_bound": 7,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412348,
+          "precision": 5,
+          "scaled_newton_coefficient": 50,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 0,
+              "average_precision": 6,
+              "degree": 1,
+              "moment_precision": 4,
+              "numerator_precision": 5,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 24
+            },
+            {
+              "absorbed_count_valuation": 1,
+              "average_precision": 6,
+              "degree": 2,
+              "moment_precision": 4,
+              "numerator_precision": 5,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 1,
+              "weighted_contribution": 8
+            },
+            {
+              "absorbed_count_valuation": 1,
+              "average_precision": 6,
+              "degree": 3,
+              "moment_precision": 4,
+              "numerator_precision": 5,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 1,
+              "weighted_contribution": 0
+            },
+            {
+              "absorbed_count_valuation": 81,
+              "average_precision": 7,
+              "degree": 4,
+              "moment_precision": 5,
+              "numerator_precision": 6,
+              "remaining_denominator_valuation": 1,
+              "selected_offset": 3,
+              "weighted_contribution": 0
+            }
+          ],
+          "unit": 17,
+          "valuation_gap": 1,
+          "working_precision": 7
+        },
+        {
+          "average_boundary_queries": 0,
+          "count_independent_precision_bound": 4,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412347,
+          "precision": 3,
+          "scaled_newton_coefficient": 56,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 2,
+              "average_precision": 4,
+              "degree": 1,
+              "moment_precision": 2,
+              "numerator_precision": 3,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 2
+            },
+            {
+              "absorbed_count_valuation": 2,
+              "average_precision": 4,
+              "degree": 2,
+              "moment_precision": 2,
+              "numerator_precision": 3,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 0
+            }
+          ],
+          "unit": 7,
+          "valuation_gap": 3,
+          "working_precision": 4
+        },
+        {
+          "average_boundary_queries": 1,
+          "count_independent_precision_bound": 4,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412346,
+          "precision": 3,
+          "scaled_newton_coefficient": 8,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 0,
+              "average_precision": 4,
+              "degree": 1,
+              "moment_precision": 2,
+              "numerator_precision": 3,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 0
+            },
+            {
+              "absorbed_count_valuation": 2,
+              "average_precision": 4,
+              "degree": 2,
+              "moment_precision": 2,
+              "numerator_precision": 3,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 1,
+              "weighted_contribution": 4
+            }
+          ],
+          "unit": 5,
+          "valuation_gap": 3,
+          "working_precision": 4
+        },
+        {
+          "average_boundary_queries": 0,
+          "count_independent_precision_bound": 3,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412345,
+          "precision": 2,
+          "scaled_newton_coefficient": 48,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 1,
+              "average_precision": 3,
+              "degree": 1,
+              "moment_precision": 1,
+              "numerator_precision": 2,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 0
+            }
+          ],
+          "unit": 1,
+          "valuation_gap": 4,
+          "working_precision": 3
+        },
+        {
+          "average_boundary_queries": 0,
+          "count_independent_precision_bound": 3,
+          "method": "known-count normalized averages",
+          "order": 2417851639229258349412344,
+          "precision": 2,
+          "scaled_newton_coefficient": 16,
+          "short_ratio_certificates": [
+            {
+              "absorbed_count_valuation": 0,
+              "average_precision": 3,
+              "degree": 1,
+              "moment_precision": 1,
+              "numerator_precision": 2,
+              "remaining_denominator_valuation": 0,
+              "selected_offset": 0,
+              "weighted_contribution": 0
+            }
+          ],
+          "unit": 1,
+          "valuation_gap": 4,
+          "working_precision": 3
+        }
+      ],
+      "scope": "Complete globally normalized Bezout pairs on certified circuit-isometric separated domains, with count-independent coefficient precision; no arbitrary factor-root search.",
+      "u_reversed_coefficients": [
+        45,
+        25,
+        40,
+        54,
+        32,
+        16,
+        0,
+        48,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "v_reversed_coefficients": [
+        19,
+        39,
+        24,
+        10,
+        32,
+        48,
+        0,
+        16,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    }
+  ],
+  "literal_complete_pair_checks": 48,
+  "literal_divided_difference_checks": 108,
+  "literal_pair_coefficients_checked": 288,
+  "literal_weighted_ratio_checks": 216,
+  "normalized_moment_checks": 672,
+  "scope": "Count-independent coefficient precision on certified isometric domains; no arbitrary factor-root oracle."
+}

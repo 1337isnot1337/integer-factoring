@@ -1,5 +1,10 @@
 # Adjugate compatibility closes the bare seven-letter interface
 
+**Later extension:** [rectangular subalphabet entropy witnesses](subalphabet-bare-nine-letter-floor.md)
+improve the seven-letter floor to `719/1000` and establish bare floors above
+the half-rate threshold at eight and nine letters over every field and degree.
+The proof and seven-letter certificate below remain valid.
+
 ## Result and scope
 
 Every polynomial crossing on seven physical letters, over every field,

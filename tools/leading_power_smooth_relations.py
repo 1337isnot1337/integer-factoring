@@ -30,12 +30,17 @@ def compose_with_prime_form(form, prime, root, reduced_prime_form):
                         (new_middle * new_middle - delta) // (4 * new_leading)))
 
 
-def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=True):
+def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=True,
+                                    smooth_batch_size=1):
     if not isinstance(integer, int) or integer < 3 or integer % 2 == 0:
         raise ValueError('An odd integer of at least three is required.')
     if (not isinstance(cutoff, int) or cutoff < 2
             or not isinstance(window, int) or window < 1):
         raise ValueError('The cutoff must be at least two and the window positive.')
+    if not isinstance(smooth_batch_size, int) or smooth_batch_size < 1:
+        raise ValueError('The smoothness batch size must be a positive integer.')
+    if smooth_batch_size > 1 and not use_primorial:
+        raise ValueError('Batched smoothness requires the primorial filter.')
     delta = -integer if integer % 4 == 3 else -4 * integer
     parity = delta % 2
     identity = (1, parity, (parity - delta) // 4)
@@ -51,8 +56,43 @@ def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=
     rows, witnesses, attempts, parity_pivots = [], [], [], {}
     queries = trial_divisions = maximum_leading_bits = maximum_exponent = 0
     modular_smoothness_tests = 0
+    generated_norms = 0
+    smooth_batches = 0
+    if smooth_batch_size > 1:
+        from batch_smooth_parts import smooth_flags
+        from batch_smooth_parts import smoothness_exponent as rounded_exponent
+        batch_exponent = rounded_exponent(height.bit_length())
     last_extraction = None
     last_extraction_rows = -1
+
+    def candidates(prime, first, target):
+        """Keep first-success order; charge all ahead work in an optional batch."""
+        nonlocal generated_norms, smooth_batches, maximum_leading_bits
+        nonlocal maximum_exponent
+        if smooth_batch_size == 1:
+            for offset in range(window):
+                yield offset, target, None
+                if offset + 1 < window:
+                    target = compose_with_prime_form(target, prime, *records[prime])
+            return
+        for block_start in range(0, window, smooth_batch_size):
+            count = min(smooth_batch_size, window - block_start)
+            block = []
+            for local_index in range(count):
+                block.append(target)
+                if local_index + 1 < count:
+                    target = compose_with_prime_form(target, prime, *records[prime])
+            generated_norms += count
+            smooth_batches += 1
+            maximum_leading_bits = max(maximum_leading_bits,
+                                       max(form[0].bit_length() for form in block))
+            maximum_exponent = max(maximum_exponent, first + block_start + count - 1)
+            flags = smooth_flags([form[0] for form in block], prime_product,
+                                 exponent=batch_exponent)
+            for local_index, (form, flag) in enumerate(zip(block, flags)):
+                yield block_start + local_index, form, flag
+            if block_start + count < window:
+                target = compose_with_prime_form(target, prime, *records[prime])
 
     def extract():
         nonlocal last_extraction, last_extraction_rows
@@ -64,7 +104,7 @@ def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=
         return factor
 
     def finish(factor, method, terminal=None):
-        return {
+        result = {
             'integer': integer, 'input_bits': integer.bit_length(),
             'discriminant': delta, 'height_bound': height,
             'cutoff': cutoff, 'window': window, 'factor': factor, 'method': method,
@@ -80,6 +120,18 @@ def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=
             'attempts': attempts, 'witnesses': witnesses, 'relation_matrix': rows,
             'last_extraction': last_extraction, 'terminal_witness': terminal,
         }
+        if smooth_batch_size > 1:
+            result.update({
+                'norm_queries': generated_norms,
+                'scanned_norm_queries': queries,
+                'generated_ahead_norms': generated_norms - queries,
+                'modular_smoothness_tests': generated_norms,
+                'smoothness_method': 'batched primorial remainders',
+                'smooth_batch_size': smooth_batch_size,
+                'smooth_batches': smooth_batches,
+                'smoothness_exponent': batch_exponent,
+            })
+        return result
 
     for prime in base['excluded_primes']:
         divisor = gcd(prime, integer)
@@ -90,7 +142,18 @@ def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=
         first = least_power_above(prime, height)
         target = power(records[prime][1], first, identity, compose_forms_hnf)
         selected = None
-        for offset in range(window):
+        generated_before = generated_norms
+
+        def record_attempt(scanned, selected_exponent, terminal_gcd=False):
+            attempt = {'prime': prime, 'queries': scanned,
+                       'selected_exponent': selected_exponent,
+                       'terminal_gcd': terminal_gcd}
+            if smooth_batch_size > 1:
+                attempt['queries'] = generated_norms - generated_before
+                attempt['scanned_queries'] = scanned
+            attempts.append(attempt)
+
+        for offset, target, batch_flag in candidates(prime, first, target):
             exponent = first + offset
             queries += 1
             maximum_exponent = max(maximum_exponent, exponent)
@@ -98,8 +161,7 @@ def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=
             maximum_leading_bits = max(maximum_leading_bits, leading.bit_length())
             divisor = gcd(leading, integer)
             if 1 < divisor < integer:
-                attempts.append({'prime': prime, 'queries': offset + 1,
-                                 'selected_exponent': None, 'terminal_gcd': True})
+                record_attempt(offset + 1, None, True)
                 return finish(divisor, 'leading-norm gcd', {
                     'prime': prime, 'exponent': exponent, 'target': target})
             if divisor != 1 or not 1 <= leading <= height:
@@ -107,7 +169,8 @@ def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=
             remaining, parts = leading, []
             if use_primorial:
                 modular_smoothness_tests += 1
-            smooth_candidate = (not use_primorial or
+            smooth_candidate = (batch_flag if smooth_batch_size > 1 else
+                                not use_primorial or
                                 pow(prime_product, smoothness_exponent, leading) == 0)
             if smooth_candidate:
                 for divisor_prime in primes:
@@ -134,8 +197,7 @@ def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=
                 selected = exponent
                 witnesses.append({'prime': prime, 'exponent': exponent,
                                   'target': target, 'factors': parts, 'word': terms})
-                attempts.append({'prime': prime, 'queries': offset + 1,
-                                 'selected_exponent': exponent, 'terminal_gcd': False})
+                record_attempt(offset + 1, exponent)
                 # This is only a cheap trigger for trying extraction early.
                 # A final extraction is also made, so identity half-relations
                 # cannot hide a useful top behind an unchanged raw kernel.
@@ -151,14 +213,12 @@ def factor_with_smooth_leading_powers(integer, cutoff, window, *, use_primorial=
                     if factor is not None:
                         return finish(factor, 'smooth-power relation halving')
                 break
-            if offset + 1 < window:
-                target = compose_with_prime_form(target, prime, *records[prime])
         if selected is None:
-            attempts.append({'prime': prime, 'queries': window,
-                             'selected_exponent': None, 'terminal_gcd': False})
+            record_attempt(window, None)
     if rows and last_extraction_rows != len(rows):
         factor = extract()
         if factor is not None:
             return finish(factor, 'smooth-power relation halving')
     return finish(None, 'complete fixed-base presentation' if len(rows) == len(primes)
                   else 'power window exhausted')
+

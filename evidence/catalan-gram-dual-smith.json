@@ -1,0 +1,335 @@
+{
+  "status": "pass",
+  "physical_loop_gram_entries_checked_over_F16": 226,
+  "unrestricted_q_path_basis_controls_over_F16": [
+    {
+      "length": 2,
+      "labels": 1,
+      "path_word_entries": 4,
+      "orthogonal_nonzero_norms": 1,
+      "regular_cup_coordinates": true
+    },
+    {
+      "length": 4,
+      "labels": 2,
+      "path_word_entries": 32,
+      "orthogonal_nonzero_norms": 2,
+      "regular_cup_coordinates": true
+    },
+    {
+      "length": 6,
+      "labels": 5,
+      "path_word_entries": 320,
+      "orthogonal_nonzero_norms": 5,
+      "regular_cup_coordinates": true
+    },
+    {
+      "length": 8,
+      "labels": 14,
+      "path_word_entries": 3584,
+      "orthogonal_nonzero_norms": 14,
+      "regular_cup_coordinates": true
+    }
+  ],
+  "path_norm_valuation_distribution_controls": [
+    {
+      "semilength": 1,
+      "dyck_paths": 1,
+      "valuation_levels": 1,
+      "minimum_delta_order": 1,
+      "maximum_delta_order": 1,
+      "closed_form_maximum_delta_order": 1,
+      "uniform_delta_order_bound": 1,
+      "mean_delta_order": "1",
+      "mean_matches_marked_tree_formula": true,
+      "paths_at_or_below_2r": 1
+    },
+    {
+      "semilength": 2,
+      "dyck_paths": 2,
+      "valuation_levels": 1,
+      "minimum_delta_order": 2,
+      "maximum_delta_order": 2,
+      "closed_form_maximum_delta_order": 2,
+      "uniform_delta_order_bound": 3,
+      "mean_delta_order": "2",
+      "mean_matches_marked_tree_formula": true,
+      "paths_at_or_below_2r": 2
+    },
+    {
+      "semilength": 4,
+      "dyck_paths": 14,
+      "valuation_levels": 3,
+      "minimum_delta_order": 4,
+      "maximum_delta_order": 8,
+      "closed_form_maximum_delta_order": 8,
+      "uniform_delta_order_bound": 10,
+      "mean_delta_order": "36/7",
+      "mean_matches_marked_tree_formula": true,
+      "paths_at_or_below_2r": 14
+    },
+    {
+      "semilength": 8,
+      "dyck_paths": 1430,
+      "valuation_levels": 8,
+      "minimum_delta_order": 8,
+      "maximum_delta_order": 24,
+      "closed_form_maximum_delta_order": 24,
+      "uniform_delta_order_bound": 36,
+      "mean_delta_order": "9576/715",
+      "mean_matches_marked_tree_formula": true,
+      "paths_at_or_below_2r": 1256
+    },
+    {
+      "semilength": 16,
+      "dyck_paths": 35357670,
+      "valuation_levels": 32,
+      "minimum_delta_order": 16,
+      "maximum_delta_order": 80,
+      "closed_form_maximum_delta_order": 80,
+      "uniform_delta_order_bound": 136,
+      "mean_delta_order": "25019824/768645",
+      "mean_matches_marked_tree_formula": true,
+      "paths_at_or_below_2r": 21442176
+    },
+    {
+      "semilength": 24,
+      "dyck_paths": 1289904147324,
+      "valuation_levels": 76,
+      "minimum_delta_order": 24,
+      "maximum_delta_order": 184,
+      "closed_form_maximum_delta_order": 184,
+      "uniform_delta_order_bound": 300,
+      "mean_delta_order": "437637615128/7865269191",
+      "mean_matches_marked_tree_formula": true,
+      "paths_at_or_below_2r": 449862776832
+    },
+    {
+      "semilength": 32,
+      "dyck_paths": 55534064877048198,
+      "valuation_levels": 132,
+      "minimum_delta_order": 32,
+      "maximum_delta_order": 304,
+      "closed_form_maximum_delta_order": 304,
+      "uniform_delta_order_bound": 528,
+      "mean_delta_order": "2234617328785128352/27767032438524099",
+      "mean_matches_marked_tree_formula": true,
+      "paths_at_or_below_2r": 10194648368971776
+    }
+  ],
+  "mean_path_norm_valuation_controls": {
+    "selected_semilengths": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      128,
+      256,
+      512
+    ],
+    "selected_exact_means": {
+      "1": "1",
+      "2": "2",
+      "4": "36/7",
+      "8": "9576/715",
+      "16": "25019824/768645",
+      "32": "2234617328785128352/27767032438524099",
+      "64": "2041722302845628284674102090544657216/10837622643406372337617913020986675",
+      "128": "3299748037770887707649995324786300620148684741141107678081574369303492710272/7453047575515770462648253692328536030672108142086772651948884453830127585",
+      "256": "13746200636832250381813283132717436483935243033380574829593111872653972989285774977516096350261732837296515587696633750045070008477355031133479482777344/13721856761570501335414494745664277527098284326688015639042013448910101351314423045608057948604862070092846022662000550564091256944756073736810110113",
+      "512": "9931097128138518868929819503767077387502761506193785591116969942909907515316709677125523306002018413323376254668043320372409249853953452472412032964343923205815833967122849505444077446510248279574167426321921347291308066181108765732766271482077885433017248891917214794948433330668428785263307053046464100864/4367694495223168430822772758753736042899910194023135472140436549127459753032592246385072261279643333670730442513273492010728559134869879979239643258895337292857383870863130703728225473100478127707435206730243430911208944490984504813364137361163399086274306476134160589992879629905778169799092362530773795"
+    },
+    "formula_matches_independent_path_distribution_through_32": true,
+    "scope": "Exact marked-tree mean formula; distribution cross-checks at the recorded sizes through 32."
+  },
+  "closed_form_maximum_path_valuation_controls": {
+    "semilength_range": [
+      1,
+      512
+    ],
+    "closed_form_matches_independent_max_plus_dp": true,
+    "selected_maxima": {
+      "32": 304,
+      "64": 1152,
+      "96": 2400,
+      "128": 4416,
+      "192": 9024,
+      "256": 17152,
+      "512": 67328
+    }
+  },
+  "truncated_toeplitz_profiles": [
+    {
+      "length": 2,
+      "dimension": 1,
+      "precision": 8,
+      "kernel_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gram_exponent_counts": {
+        "1": 1
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 4,
+      "dimension": 2,
+      "precision": 8,
+      "kernel_dimensions": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "gram_exponent_counts": {
+        "1": 2
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 6,
+      "dimension": 5,
+      "precision": 8,
+      "kernel_dimensions": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "gram_exponent_counts": {
+        "1": 4,
+        "3": 1
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 8,
+      "dimension": 14,
+      "precision": 8,
+      "kernel_dimensions": [
+        6,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "gram_exponent_counts": {
+        "1": 8,
+        "3": 6
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 10,
+      "dimension": 42,
+      "precision": 8,
+      "kernel_dimensions": [
+        26,
+        52,
+        52,
+        52,
+        52,
+        52,
+        52,
+        52
+      ],
+      "gram_exponent_counts": {
+        "1": 16,
+        "3": 26
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 12,
+      "dimension": 132,
+      "precision": 8,
+      "kernel_dimensions": [
+        100,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200,
+        200
+      ],
+      "gram_exponent_counts": {
+        "1": 32,
+        "3": 100
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 14,
+      "dimension": 429,
+      "precision": 8,
+      "kernel_dimensions": [
+        365,
+        730,
+        731,
+        732,
+        733,
+        734,
+        734,
+        734
+      ],
+      "gram_exponent_counts": {
+        "1": 64,
+        "3": 364,
+        "7": 1
+      },
+      "unresolved_at_least": 0
+    },
+    {
+      "length": 16,
+      "dimension": 1430,
+      "precision": 8,
+      "kernel_dimensions": [
+        1302,
+        2604,
+        2618,
+        2632,
+        2646,
+        2660,
+        2660,
+        2660
+      ],
+      "gram_exponent_counts": {
+        "1": 128,
+        "3": 1288,
+        "7": 14
+      },
+      "unresolved_at_least": 0
+    }
+  ],
+  "scope": "Exact Smith valuations through 16 strands and unrestricted path controls through 8 strands; exact path-norm valuation distributions at the recorded semilengths through 32; the marked-tree mean formula matches those distributions and selected exact means are recorded through semilength 512; the closed-form maximum agrees with an independent max-plus recurrence through semilength 512; no favorable rank sum or factoring gain.",
+  "source_sha256": {
+    "research/catalan-gram-dual-smith.md": "b19559bc8496dfcd51a62d2ded47702f8cab5a6092f1ef6607b98c8bebceaf20",
+    "tools/catalan_gram_smith.py": "7e717898c2568522de077a2cc34069b798326c8b4356f603e8b826fa7710ecd1",
+    "tools/check_catalan_gram_smith.py": "56d459f6665c4821429f453428deff74ed37d00f1c6dc32092ef08d92712558e",
+    "tools/catalan_cup_crossing.py": "b11d03f25f201700e02fb117bf2fec9d17cec4156ee7370dba1f11bccad7fe05",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/quantum_braid_spectral_fusion.py": "fbfb582940bbffce5ad943ad5645ff0344a95f7e1b19d81b19c8f57c3b513eb6"
+  }
+}

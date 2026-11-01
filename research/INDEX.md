@@ -1,5 +1,107 @@
 # Research index
 
+- [A second-moment test at a saturated supporting endpoint](saturated-endpoint-second-moments.md): a simple weak minimum, zero mean gap and nonpositive variance difference suffice for a coupled angle/scale improvement. The four-letter reference has exact variance gap one; a registered search tests free strong-place heights, without claiming a new bound.
+
+- [Principal paired alphabets on the retained five-letter pencil](pencil-principal-alphabets.md): exact physical restrictions explore the boundary outside the previous bounded-height run; fifty independent orders and a registered 45,292-case screen with explicit follow-on selection. No new contraction.
+
+- [Fixed-type bundle steps on complete coordinate crossings](pascal-coordinate-bundle-search.md): adapt the existing proximal method to unequal Fock alphabets, retain and cross-check all supporting planes, and register two thirty-minute comparisons. Numerical stops are not global certificates.
+
+- [Independent coordinate alphabets on the two physical pairs](rectangular-pascal-coordinate-alphabets.md): complete original Fock blocks with separate physical costs, independent nonbinary controls and a registered nineteen-case rectangular screen. No stronger crossing or factoring bound is asserted.
+
+- [Adaptive regular LDU chambers for complete profile queries](adaptive-smith-chambers.md): explicit coefficient knowledge, exact cone signs, diagonal reordering and certified prefix reuse; 1,848 independent orders and an actual q32 comparison. Repeats are fast but the measured moving trajectory is slower, so the backend is optional.
+
+- [Uniform-marginal transport closes both fixed-gauge endpoint escapes](pencil-uniform-transport-endpoints.md): full all-field pencil entry optima `14/5,-66/5`, exact determinant means and endpoint gaps `-8/25,-16/25`, plus the completed 469-trial asymmetric search. Interior angles and other generators remain open.
+
+- [Free physical heights and supporting angles on the retained F4 pencil](two-place-free-gauge-asymmetric-search.md): 67 fixed-profile representatives, 469 registered free-height asymmetric trials, 150 independently reconstructed new-gauge orders and 204 derivative controls; registration supplies no new contraction.
+
+- [The first possible rectangular cofactor jet has bounded crossed rank](rectangular-adjugate-first-jet.md): stronger all-field adjugate prefixes and a nine-letter bare floor `709/1000`, with 416 interpolated cofactors, 6,168 lifted checks and an explicit binary counterexample to a stronger tail.
+
+- [Nonbinary flags with complete coordinate Fock profiles](f4-pascal-coordinate-flags.md): original F4 minors and occupation sectors with arbitrary whole-symbol potentials; 4,977 entry/endpoint controls, 210 independent nonbinary orders, and a registered eight-case thirty-two-letter screen with two one-hour follow-ons.
+
+- [Rectangular cofactors close the bare interface through nine letters](subalphabet-bare-nine-letter-floor.md): all-field, all-degree, all-scale floors `719/1000`, `713/1000` and `17/24` at seven, eight and nine letters, from short exact rational entropy witnesses. Independent physical gauges and factoring improvements remain open.
+
+- [Physical subalphabets strengthen graded adjugate compatibility](subalphabet-adjugate-caps.md): all-field square restrictions and rectangular cofactor gaps exclude the last integer target and give exact positive pressure certificates at three formerly negative parameter points; no global energy floor or score improvement.
+
+- [Complete affine equations in F4 reference frames](windowed-f4-affine-frames.md): coupled field equations, independent binary equivalence and nonbinary frame controls, an actual degree-42 five-letter pilot, and the completed four-frame binary predecessor.
+
+- [Exact finite windows for adaptive Smith frames](windowed-smith-frames.md): proven coefficient adequacy, complete affine-system equivalence controls, and a 7.66-second dense five-letter construction; the unfinished untruncated baseline and all mathematical limits are retained.
+
+- [Graded adjugate compatibility at independent physical heights](graded-adjugate-caps.md): two all-field upper-tail families exclude the previous negative five- and six-letter cell-cap profiles; the nearby negative integer profile passes these whole-alphabet caps but is excluded by the later subalphabet extension.
+
+- [Gaussian circuits with arbitrary one-mode factors](tensor-affine-clifford-profiles.md): integral auxiliary permutation, complete profile theorem, determinant mean, 18-row evaluator, and F4 census.
+
+- [Essentially linear compact oriented ideals](compact-oriented-basis-input-bound.md): total-input bit bound, batch discriminant checks, complete arithmetic verification, and independent HNF controls.
+
+- [Global balanced floor for the natural five-letter energy shape](natural-five-letter-pressure-floor.md): every scalar Laurent-polynomial kernel over any field at this paired-energy ray has rho at least 5/7; all 2,456 compact boxes and analytic tails are certified, with changed energy shapes and asymmetric criteria left open.
+
+- [Compact reconstructible power witnesses](compact-reconstructible-power-witnesses.md): unchanged query syntax, independent reconstruction, complete 64/80 comparisons, and earlier checkpoint release.
+
+- [Exact equivalent-norm stencils](equivalent-norm-stencils.md): unreduced decoding, independent full presentation replay, and 24 equal-budget comparisons with no observed advantage.
+
+- [Full-rank affine full-tail maps](tensor-full-tail-affine-search.md): endpoint-only maps, explicit Laurent clearings, literal controls, and all 256 binary pairs at M=16.
+
+- [Literal Laurent frames and completed searches](tensor-weighted-laurent-frame-search.md): complete binary/F16 censuses, larger finished profiles, explicit clearing costs, and independent raw-tensor controls.
+
+- [Executable two-pass oriented construction](circuit-box-oriented-batch-controls.md): unitary preprocessing, raw-difference comparison, sparse output charges, and independent ideal controls.
+
+- [Small internal pivots](small-pivot-integer-row-selection.md): arbitrary pivot-column exactness, retained original relations, and paired 96/112 component measurements.
+
+- [Sparse graph projections and bounded 128-bit attempts](sparse-projected-signed-graph.md): identical full integer maps, independently replayed integration, explicit failure costs, and a declared larger retry.
+
+- [Uniform literal full-tail core](tensor-literal-full-tail-core.md): weighted operator transport, both cut gauges, complete rank-one applications, and independent endpoint/Smith controls.
+
+- [Executable classical coprime construction](classical-oriented-basis-engine.md): complete integer engine, sparse norm words, oriented ideal verification, and full 64/80/96 controls.
+
+- [Certified 192-bit batched selective promotion](batch-smooth-fresh-192.md): complete saved-artifact replay, charged generated-ahead work, checked archive reconstruction, and the gated 208-bit follow-on.
+
+- [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact controls and a completed 17,179,869,184-position affine-zero census in a specified 18-dimensional subspace, with independently reconstructed coverage counts; the affine-one half is still incomplete and no stronger factoring bound follows.
+
+- [Two classical passes for all supplied orientations](circuit-box-orientation-batch.md): normalized root differences, sparse incidence signs, and essentially linear integer-data construction.
+
+- [Classical quarter-bit residue terminal](circuit-box-ratio-small-roots.md): charged complete small-root recovery with exact LLL and Sturm certificates and honest outer-enumeration cost.
+
+- [Complete 112-bit oriented prefix](oriented-power-112-prefix.md): 73,728 queries, all ideal and integer-presentation identities replayed, and the complete 96,752-query original comparison.
+
+- [Linear oriented supplied-data charges](oriented-basis-linear-charges.md): a constructive norm-to-orientation transfer, batch coprimality validation, and a global amortized bound for sparse usage rewrites.
+
+- [Prepared oriented selector controls](../evidence/prepared-oriented-power-search.json) and [declared 128-bit policy](../evidence/prepared-oriented-fresh-128-policy.json): exact component substitutions and bounded fresh-run provenance.
+
+- [Completed larger F16 profiles](tensor-f16-capped-search.md#5-completed-larger-profiles-and-nearby-controls): full capped 108-label runs and nearby coordinate controls.
+- [Literal retraction pressure gate and F4 census](tensor-literal-low-cell-retractions.md#6-a-complete-pressure-gate-for-the-first-55-letter-family): an all-field 27/38 floor and exact low-cell split enumeration.
+
+- [Compact oriented power search](compact-oriented-power-search.md): unchanged complete 80-bit mathematical result with smaller unit proofs and exact original-row selection.
+
+- [Prepared bucket remainders](batched-coprime-bucket-basis.md): exact mutable delta correction, complete oriented-word equality, and charged matched 80/96-bit measurements.
+
+- [Primitive temporary rows for exact relation selection](primitive-integer-row-selection.md): an all-matrix equivalence proof, charged coefficient bounds, 17,000 matched decisions and measured 96-bit core selection; original relations remain intact.
+
+- [A lattice terminal for exact ratio-class factors](circuit-box-ratio-lattice.md): weighted two-dimensional reduction, a uniform twenty-line local bound, exact quadratic recovery and fully charged `2^(n/3)*poly(n)` smallest-factor search; representation-specific scope.
+- [Reusable semiprime work in RiemannGaussian](riemann-gaussian-semiprime-source-audit.md): exact-source audit of deterministic boundary contraction, factor moments, semiprime count recovery and coefficient-ring compatibility; no imported score improvement or independent Lean rebuild.
+
+- [Literal hot tensors for low-cell retractions](tensor-literal-low-cell-retractions.md): original Gaussian/Pfaffian evaluation without deletion closure, a proved cache bound, complete independent kernel controls and a retained 55-label capped pilot; no frontier gain.
+
+- [Exact component acceleration and a certified 96-bit prefix](optimized-oriented-power-search.md): frozen-body 64/80-bit equivalence, independently replayed 96-bit factoring after 20,480 queries, and an exact 35,106-query original comparison; timings and query gains are separated.
+
+- [Compact traces for integer presentation isomorphisms](unit-presentation-traces.md): composable unit isomorphisms, independent local replay, 432 finite comparisons and eight rejection checks, with complete compact 64/80-bit certificates and charged component timings.
+
+- [Positive ratio lookahead and complete adaptive factoring](circuit-box-ratio-lookahead.md): exact positive counts, a fully charged `2^(n/3+O(n/log n))` smallest-prime-factor algorithm with polynomial space, and complete checks through the declared 51-bit empty rectangles; a representation-specific advance, not a scoring improvement.
+
+- [Exact quotient updates for oriented product trees](quotient-update-oriented-basis.md): identical products and overlap decisions, charged unequal-operand arithmetic, 9,776 literal ideal replays, and matched component timings.
+
+- [Sparse unit elimination with complete integer certificates](sparse-unit-presentation.md): identical deterministic pivots and all four presentation maps, 606 small controls, complete 64/80-bit replays and matched component timings.
+
+- [Uniform orthogonal graph codes from a cubic differential](tensor-cubic-graph-orthogonality.md): an exact Gram criterion at every cutoff, mixed-occupation native profiles, independent literal and Toeplitz checks, and completed F4/F16 51-letter controls; no frontier gain.
+
+- [Exact interval-weighted Kloosterman blocks](circuit-box-kloosterman-blocks.md): polynomial-bit summation of complete unit-frequency and ratio-progression blocks, a positive ratio-filtered factor count, and a fully charged outer inversion; no exponent gain.
+
+- [Larger power-prefix gains from sparse oriented residuals](sparse-oriented-power-prefixes.md): complete certified 64-bit and 80-bit searches, 1.94 and 3.79 times fewer relation queries, exact presentation maps and full original-traversal comparisons; baseline wall time is slower and no exponent improves.
+
+- [An asymmetric determinant target and an all-field pencil ceiling](two-place-determinant-target.md): determinant degree below 70 would suffice at the retained heights; the full eleven-parameter pencil has exact minimum degree 78 over every characteristic-two field, with a fresh whole-determinant replay.
+- [Completed full F4 two-place census](two-place-f4-census.md): all 4,194,304 registered coefficient vectors, zero unresolved cases, 67 complete profile classes and 3,350 independent representative orders; bounded numerical fits give no score improvement.
+- [A constructive graded zero lattice](graded-zero-lattice.md): an explicit degree-38 kernel with normalized zero prefix 8,10,10, complete paired profiles and a zero-preserving polynomial-unit family; its opposite cost is worse and no stronger factoring bound follows.
+
+- [Constant F4 Pascal flags](f4-pascal-flags.md): exact constant-field extension, all 180 invertible two-by-two flags, 448 independent original-Fock orders, a scale-gradient guard repair, and pinned default verification at 566b596; no score improvement.
+
 - [Selected-entry Pascal occupation sectors](pascal-coordinate-sectors.md): complete coordinate crossings without ambient Fock expansion, independent selected-minor checks, 1,782 full-profile comparisons, and filled-sea starts through thirty-two letters; no score improvement.
 
 - [Correlated symbol potentials and coordinate Pascal alphabets](pascal-symbol-potentials.md): arbitrary whole-symbol gauges with the complete original-polynomial profiles, a typed endpoint proof for every coordinate restriction, 740 independent integer orders, and a registered 339-case numerical screen; no score improvement.
@@ -19,6 +121,18 @@
 
 ## Coherent physical crossing spaces
 
+- [Accelerated capped F16 profiles](tensor-f16-capped-search.md): exact binary subset minors, conservative one-word jets, a completed twelve-profile pilot, and the inherited-height label-count pruning rule.
+
+- [Exact F16 coherent profiles](tensor-f16-coherent-profiles.md): explicit extension-field codes, independent literal/Toeplitz controls, and conservative capped-order pressure bounds.
+- [An all-field coupled-quadratic floor](tensor-coupled-quadratic-field-floor.md): a 21-state coordinate core and 124 integer intervals prove `rho >= 5/7` for the specified height-8/12 retractions.
+
+- [Deterministic all-subset Gram scalings](tensor-orthogonal-scaling.md): unique minimum-weight bases and an explicit quadratic tower give polynomial construction cost with a corank-dependent degree budget.
+- [All-subset coefficient capacity](tensor-orthogonal-capacity.md): a linear rank bound, exact binary classification, and exact rank-two capacities over every characteristic-two finite field.
+- [Complete F4 rank-two catalogue](tensor-f4-rank-two-limit.md) and [rank-three catalogue](tensor-f4-rank-three-catalogue.md): exact maximal sets, physical kernel dimensions, and complete five-pair ordering comparisons.
+- [F4 hyperoval scaling obstruction](tensor-f4-hyperoval-orthogonal-obstruction.md): every scaling has an isotropic four-column dependence; extension fields remain outside the obstruction.
+- [Four-pair pressure dominance](tensor-orthogonal-pressure-dominance.md): all six completed orthogonal maps are strictly worse than their coordinate control at every scale.
+- [Coupled quadratic pressure dominance](tensor-coupled-quadratic-dominance.md): complete profiles and integer polynomial certificates for the height-8/12 F4 family.
+
 - [Protected lower-space boundary floor](coherent-boundary-protected-floor.md): `rho >= 17/24` for every natural-scale boundary retraction retaining the 28 lower coordinates, over every characteristic-two field and common physical type.
 - [Exact F4 boundary retractions](coherent-f4-boundary.md): full field-valued constructors, literal controls, and a certified prefix of 153 orbits covering 530 projectors; the structural floor stopped the incomplete catalogue.
 - [Quadratic-parity Walsh paths and the full radial obstruction](bell-walsh-constructions.md): arbitrary positive energy tables, an exact radial optimum `H_2(1/4)`, and strict reciprocal retiming improvements for fixed folded seeds.
@@ -28,11 +142,34 @@
 
 ## Composite-cofactor relations
 
+- [Predeclared 208-bit follow-on policy](../evidence/batch-smooth-fresh-208-policy.json): a separately certified fresh input, fixed resource/query limits, source hashes, and a start gate after the 192-bit certificate; no completed run yet.
+
+- [Sparse incremental oriented atoms](incremental-oriented-coprime-basis.md): exact local replacements, product-tree overlap discovery, a charged sparse-space bound, and matched component improvements with literal HNF replay.
+
+- [Sparse graph input and certified unit pivots](signed-residual-graph-elimination.md#additional-unit-pivots): the same integer maps support sparse rows and further residual elimination; 420 dense/sparse comparisons and 137 additional unit pivots are replayed.
+
+- [Matched oriented-atom prefixes](oriented-coprime-basis.md#8-more-emitted-rows-on-actual-selector-prefixes): 416 independently replayed powers, exact integer combinations, and three strict factor gains against the original selector at equal query caps.
+- [Integer signed residual graph elimination](signed-residual-graph-elimination.md): inverse presentation maps, retained unbalanced-root torsion, transport of larger words, and a 252-to-5 generator reduction on the retained 40-bit control.
+
+- [Batch filtering and matched policy timings](batch-smooth-filtering.md): exact first-success preservation, a size-balanced amortized filtering bound, and separate scalar/batched comparisons for unpromoted and selective 144-bit policies.
+
+- [Oriented coprime residual atoms](oriented-coprime-basis.md): polynomial gcd and root refinement, literal HNF identities, torsion-image preservation, and a strict four-cycle factor gain without an old residual-key collision.
+
+- [Batched exact smooth-part filtering](batch-smooth-filtering.md): classical remainder trees integrated with charged first-success selection, a size-balanced amortized bound, and matched 124-/144-bit timings; no new score.
+
 - [Composite-ideal closure and integral elimination](cofactor-ideal-closure.md): fixed norm weights certify all augmented rows; a definition forest removes every residual generator over the integers, avoiding rational-rank selection; complete controls reach 144 bits.
 - [Exact composite-cofactor selection](cofactor-collision-selection.md): signed residual-ideal keys, fixed-base collision rows, exact rational-span retention, and matched 92-bit/124-bit finite controls.
 - [An explicit admissible quota](cofactor-collision-quota.md): a finite key count and weighted dominance force full relation rank; the uniform time to collect admissible hits remains open.
 
 ## Exact pole-Cauchy algorithms
+
+- [Factorial normalization and inverse windows](circuit-box-inverse-windows.md): exact short residual valuations and factor-count slopes; an empty rough-semiprime family exposes exponential width in the stated two-variable continuation.
+
+- [Known-count normalized circuit averages](circuit-box-averages.md): unrestricted degree and globally odd inverses, with `p` coefficient bits independent of the count valuation.
+- [Complete circuit-isometric Bezout pairs](circuit-box-bezout.md) and [count-independent precision](circuit-box-bezout-averages.md): exact optimal normalization on certified separated domains, fewer than `4p` stored coefficients and fewer than `2p` coefficient bits.
+- [Complete one-variable singular pole traces](circuit-box-pole-trace.md): polynomial-time circuit compression, valuation partition, normalized trace and exact congruence-root counts; no two-variable factor-box algorithm.
+
+- [Global products of unrestricted-degree circuit values](circuit-box-products.md): fixed-dimensional boxes, polynomial-time generation, `O(p+log(M+1))` output nodes, and sharp `p-1` normalized moment precision; singular normalization remains open.
 
 - [Unrestricted-degree circuit inverse moments](pole-cauchy-circuit-moments.md): a small quotient algebra evaluates every division-free polynomial circuit weight; a sharp finite-difference bound explains the denominator cost of entrywise factor interpolation.
 - [Normalized rational inverse resolvents](pole-cauchy-rational-resolvents.md): four affine products evaluate complete rational contractions at polynomial absolute precision, without a rectangle-separation assumption; the final factoring scalar remains open.
@@ -128,6 +265,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Baseline audit](baseline-audit.md): source recurrence and the unchanged reference's machine-cost analysis.
 
 ## Transfers and proposed stronger evaluators
+
+- [Sanftenberg semiprime source intake](sanftenberg-semiprime-intake.md): pinned boundary-contraction and packed-moment interfaces, exact-source Python replay, and a cost comparison with the current braid and arithmetic routes. The external target has the same saving exponent; full primitive-machine runtime remains open.
 
 - [Output-sensitive space transfer](output-sensitive-space-transfer.md): streamed rough cofactors and scalar isolation give factorization recovery in time `A(n) exp(O(s+n/s+log n))` and space `S(n)+O(s+n/s+log n)`; output-sensitive divisor listing is charged separately.
 - [Small-word Fourier construction](small-word-fourier-constructor.md): logarithmic arithmetic words, linear total label mass, an explicit CRT constructor, and carry-column grouping with volume constant `24+o(1)` in the stated regime.
@@ -598,6 +737,13 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Nilpotent seam crossings and complementary asymmetric channels](nilpotent-seam-crossings.md): a central four-state auxiliary and cup-image quotient ranks give a uniform `L^(1/2+o(1))` row-rank edge and a polynomial column-rank edge. The minimum-cut budget rules out edge-only completion; compatible balanced middle pieces are required for a mixed decomposition.
 - [All-degree nilpotent-seam rank envelopes](nilpotent-seam-rank-envelope.md): an exact eight-counter vacuum-weighted recurrence and vacuum-interface compression bound every coefficient; rational certificates give middle bounds `(L^(5/4+o(1)),L^(9/8+o(1)))`, shoulder windows and half-power fixed-width near-leading bands. A graded decomposition remains open.
 - [Fusion-projector seams and vacuum interfaces](fusion-projector-seams.md): the triplet specialization has central rank exactly the Fibonacci label count; its boundary coefficients have row bound `h_(n,b)M_n` and column bound `binom(n,b)v_b`. They supply explicit middle candidates for a mixed construction, whose spanning obligation remains open.
+- [Invertible fusion and graded seam channels](invertible-fusion-graded-seams.md): three-strand projectors and free strands give exact central rank `F_(k-1)` (rank one at k=0), row exponents0..2 and the same vacuum-interface column factors. A uniform cost-filtered spanning construction remains open; even the unfiltered prefix family misses five and thirteen labels.
+- [Exact spectral transport through invertible fusion](fused-spectral-transport.md): a faithful local TL identity keeps the nonzero negligible residual and gives compatible three-by-one transport at every length. Exact normalization and fifth-root Frobenius cycles produce sparse scalar strings; the global fused-kernel and complete crossing rank budget remain open.
+- [Complete crossing resolution by fusion occupancy](fusion-occupancy-resolution.md): grouping all vacuum/triplet placements gives `n+1` orthogonal sectors of exact rank `binom(n,k)F_(k-1)` (rank one at k=0). The full two-parameter family has an exact scale-one crossing sum and explicit two-cut bounds; favorable cancellation of its costly middle sectors remains open.
+- [Exact leading ranks from a fusion automaton](nilpotent-leading-rank-automaton.md): five four-letter generators close on22 projective matrices. Exact44-counter identities prove rational generating functions for every even length and refine the leading central auxiliary rank bound; boundary contractions and the complete favorable crossing sum remain separate.
+- [Full Catalan cup codes with coordinate duals](catalan-cup-crossings.md): a unitriangular physical minor retains every noncrossing cup, including the Gram radical, with a strict F2 crossing and `n=lambda+O(log(lambda+2))`. Independent full physical coefficients and both small cut profiles pass; favorable uniform ranks remain open.
+- [Nilpotent parameter jets of the Catalan crossing](catalan-cup-jets.md): simultaneous primal, decoder and braid deformation over `F2[u]/u^s` exposes additional zero-endpoint F2 directions without a Gram inverse. An effective series compiler and complete small controls enlarge the space; a favorable uniform recombination remains open.
+- [Laurent Gram-dual pole budget](catalan-gram-dual-smith.md): a plane-tree level-profile argument gives the exact dyadic maximum path-norm valuation `M_r`, paired pole bound `4M_r <= r^2+4(r+1)log_2(r+1)`, and exact mean `Theta(r log r)` with a marked-tree binomial formula; exact Dyck-path distributions match through semilength 32. Toeplitz Smith profiles expose jumps `1,3,7` through 16 strands; path-stratified support is smaller, but the two-cut rank sum remains open.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
@@ -614,6 +760,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Grid-level validation](grid-level-validation.md): exact small-grid tests.
 
 ## Verification and proof artifacts
+
+- [Catalan frontier replay](../evidence/catalan-frontier-verification.json): full default verification at exact source `3670b7d`, archived output, and separately pinned focused cup/jet receipts. This records verification scope, without a stronger factoring-bound claim.
 
 - [`../formal-appendix/README.md`](../formal-appendix/README.md) maps the Lean `1/2` proof.
 - [`../variants/k6/FactoringK6/Certified.lean`](../variants/k6/FactoringK6/Certified.lean) gives the Lean `1/30` theorem.
@@ -1304,7 +1452,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 ## Orthogonal paired differential retractions
 
-[Subset Gram criterion and construction](orthogonal-differential-pair-codes.md) gives orthogonal, deletion-closed interior maps and identical natural cut profiles. Exact F4 controls find18valid column scalings among81. No new pressure or factoring claim.
+[Subset Gram criterion and construction](orthogonal-differential-pair-codes.md) gives orthogonal, deletion-closed interior maps and identical natural cut profiles. Exact F4 controls find 18 valid column scalings among 81. No new pressure or factoring claim.
 
 
 - [Pascal zero spectra from binary linear maps](linear-pascal-matroid-energies.md): exact Boolean-subcube orders, a supermodular projected-basis weight, explicit polynomial kernels, and complete zero profiles with their physical charges.
@@ -1314,7 +1462,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 ## Rational row-module first-residual rigidity
 
-[All-field first-residual theorem](joint-hot-first-residual-rigidity.md) classifies the simultaneous rank-one residual images at four protected raw jets. A quadratic-output quotient and64literal Smith controls support the scoped result; higher profiles remain open.
+[All-field first-residual theorem](joint-hot-first-residual-rigidity.md) classifies the simultaneous rank-one residual images at four protected raw jets. A quadratic-output quotient and 64 literal Smith controls support the scoped result; higher profiles remain open.
 
 
 - [All-scale dominance of the explicit permutation cone](permuted-pascal-cone-dominance.md): an all-size filtration and rearrangement proof, with exact rational checks of both physical charges; its conclusion is restricted to the stated common-scale gauges.
@@ -1323,11 +1471,65 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 [Truncated profiles and tail bounds](coherent-hot-low-order-certificates.md) compute exact low Smith orders and bound every unknown channel contribution. The original full engine stays unchanged; no new numerical factoring bound is claimed.
 
-- [Moving physical maps and a seven-letter core obstruction](moving-boundary-crossings.md): explicit polynomial paired maps, a complete 256-pair affine F4 screen, and an exact all-degree natural-pressure floor `rho >= 5/7` for every tensor retaining the specified lower subtensor.
+- [Moving physical maps and protected-core obstructions](moving-boundary-crossings.md): explicit polynomial paired maps, a complete 256-pair affine F4 screen, and an exact all-degree natural-pressure floor `rho >= 5/7` for every tensor retaining just the specified five lower letters. The earlier seven-letter certificate is retained.
+
+- [Interior moving frames and reciprocal Laurent flows](moving-boundary-crossings.md#codimension-one-frames-with-no-protected-lower-coordinate-core): codimension-one physical maps with an exact split identity, monomial-clearing invariance, a complete 1,696-evaluation interior screen, and 144 finite frame controls. The full positive-construction target remains open.
+
+- [Endpoint-only frames and a quarter-prefix certificate](moving-boundary-crossings.md#only-the-endpoint-split-is-necessary): intermediate split rank loss, 100 complete finite controls, and an exact all-scale natural-pressure exclusion for 16,384 frozen frames. The larger search and unrestricted gauge optimization remain open.
 
 ## First orthogonal candidate: exact natural-pressure floor
 
-[Low-core exclusion](orthogonal-pair-core-floor.md) proves balanced natural rho >= 32/45 for the specified92-letter candidate without completing its full profile. Other gauges, asymmetric criteria and low-core changes remain outside this result.
+[Low-core exclusion](orthogonal-pair-core-floor.md) proves balanced natural rho >= 32/45 for the specified 92-letter candidate without completing its full profile. Other gauges, asymmetric criteria and low-core changes remain outside this result.
+
+The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all-field-consequence-from-only-28-coordinate-states) gives the same 32/45 floor from a binary 28-label core and a symbolic 92-label height inventory, over every characteristic-two field.
+
+## Binary-extension local Smith profiles
+
+[Scalar restriction and exact checks](binary-extension-smith-restriction.md) computes local profiles over binary extension fields with explicit d-fold matrix enlargement. Independent Toeplitz and determinant controls cover F2, F4, F8 and F16; no new factoring bound is asserted.
+
+## Three-row Hecke path crossings over F8
+
+[Construction and complete finite checks](three-row-hecke-crossings.md) gives strict five- and nine-letter tensors outside the Temperley–Lieb quotient. Uniform local relations, finite endpoints, confluent coefficient verification and complete profiles are separated. The bare zero/infinity profile infimum is exactly one; no factoring improvement is claimed.
+
+- [Proper norm stencil overlap](circuit-box-stencil-overlap.md): exact conjugate-overlap identity, maximal rational content, and prime-power/HNF controls; no supply or factoring-exponent claim.
+
+- [Direct unit-presentation traces](direct-unit-presentation-traces.md): original sparse relation matrices, independently indexed integer-isomorphism replay, explicit free summands, and complete matched 64/80-bit power-prefix results.
+
+- [Centered unknown-divisor windows](circuit-box-centered-windows.md): signed root intervals remove two guard bits and aggregate shorter windows; complete exact LLL/Sturm controls, with the classical quarter-bit scope retained.
+
+- [Exact cached LLL](circuit-box-cached-lll.md): derived rational cache updates, identical complete small-root/window receipts, and a dimension-19 control reducing full Gram–Schmidt computations from 3,370 to one.
+
+- [Singular affine Clifford profiles](tensor-singular-affine-clifford.md): lexicographic regularization proves power-of-two rank and complete nonzero subset-sum profiles; exact bounded substitution and independent Fock controls, including compact 32-mode examples.
+
+## Global orthogonal joint-energy rigidity
+
+[All-field two-parameter normal form](orthogonal-joint-global-rigidity.md) proves that constant orthogonal energy-preserving gauges retaining rank-one leading realignment fix that coefficient globally. The remaining tensor orbit has two parameters. Finite F4/F8/F16 profile controls do not establish an all-field dominance theorem.
+
+The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-field-classification-of-the-natural-profiles) now gives all five natural-profile strata over every characteristic-two field. Every stratum is prefix-dominated by the reference; this is not an arbitrary-weight or nonorthogonal exclusion.
+
+## Protected low core through height 36
+
+[All-field balanced natural floor](height36-protected-core-floor.md): twelve-mode coherent retractions retaining all 81 coordinate labels below height 24 and supported through height 36 satisfy rho >= 17/24. The proof uses only 3,359 exact low core orders per cut and retains 3,202 unknown orders explicitly. Arbitrary weights and asymmetric criteria are outside scope.
+
+## F8 coherent retraction engine
+
+[Three-plane construction and independent controls](coherent-hot-f8-retractions.md) extends the coherent code interface to F8, with exact low orders and explicit unresolved tails. The check covers 16,884 complete polynomial entries and 70 independent full block profiles. No factoring improvement follows from the engine alone.
+
+## Ten-point F8 hyperoval crossing
+
+[Exact 96-letter bound rho < 0.710005835](f8-hyperoval-crossing-bound.md) improves both complete natural profiles over the F4 code at every positive scale. The source-pinned clean replay resolves all 18,432 channel orders, with an explicit rational physical type and independent polynomial-entry controls. The factoring exponent remains 1/2.
+
+## All-algebraic two-point Hecke barrier
+
+[Determinant and Frobenius-orbit budgets](hecke-all-algebraic-place-barrier.md) exclude every two-geometric-point shift of the retained five-/nine-letter Hecke tensors over algebraic extensions, at every unweighted supporting angle. All rational-place profiles have independent Toeplitz determinant-order controls. Physical gauges and mixed-place groupings remain outside scope.
+
+## Jensen bounds for unresolved core orders
+
+[All-mode protected-core floors](jensen-tail-protected-core-floor.md) use a determinant-degree bound on 3,202 unresolved orders, rather than assigning individual values. Retaining the height-below-24 core forces rho >= 17/24 through height37, and >=29/41 through height38, over all characteristic-two fields. Separate alphabets/types and arbitrary homogeneous high splits are allowed; unequal cut scales and other gauges are not excluded.
+
+## Exact Hecke determinant factors and closed places
+
+[Complete F8 determinant factorizations](hecke-q5-closed-place-factorization.md) exclude the unweighted supporting criterion with one irreducible closed place per cut for the five-letter tensor, including conjugate-orbit degree weights. All 33 factors have exact reconstruction and Rabin certificates. General mixed-place allocations and physical gauges remain open.
 
 ## Multichannel rectangular cofactor checkpoint
 

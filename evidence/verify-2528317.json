@@ -1,0 +1,16 @@
+{
+  "command": "make verify",
+  "compressed_stdout_sha256": "897f9250cc644267d727338bb61bf20422ecf52fa32f37bd490d3bfebffc5803",
+  "exit_code": 0,
+  "logged_python_command_blocks": 342,
+  "scope": "Complete default verification at clean frozen2528317 only. It includes the determinant proof gate; it predates the graded-lattice additions. No new Lean or stronger factoring bound is claimed.",
+  "source_commit": "25283176360ac8f0a9103f4759483f1cb0ce6240",
+  "source_tree": "b2ecb54d7eea77004303151fc048a4cc69fe86c3",
+  "status": "pass",
+  "stdout_path": "evidence/verify-2528317.stdout.txt.xz",
+  "stdout_sha256": "f36cfdf6ae84d7b94c2af596d2a9b4af1d514255efd0c49f0bbd36fb94c80915",
+  "unittest_suites_reported": [
+    66,
+    5
+  ]
+}

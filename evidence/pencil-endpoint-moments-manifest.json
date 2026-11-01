@@ -1,0 +1,21 @@
+{
+  "status": "registered_incomplete",
+  "source": "unperturbed five_letter_source restricted to{0,2,3,4}onbothpairs",
+  "strong_places": [
+    0,
+    1
+  ],
+  "weak_heights": "Inherited natural heights, fixed at the other place. The scalar scale is1 for the moment calculation.",
+  "restarts_ceiling": 100,
+  "iterations_ceiling": 1000,
+  "seconds_per_axis": 180,
+  "height_bound": 32,
+  "perturbation_sigmas": [
+    0.25,
+    2,
+    8
+  ],
+  "seed": 1061901,
+  "candidate_band": 1e-08,
+  "scope": "Numerical second-moment search only. A nonpositive witness must have exact profiles, mean gap and variance replayed before invoking the analytic sufficient condition; positive results are not global exclusions."
+}

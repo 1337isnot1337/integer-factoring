@@ -88,20 +88,33 @@ For the ordered eight-mode kernel, the filled reference is word 15.
 The excitation costs are `14,10,6,2,2,6,10,14`. Select the lowest-cost
 words relative to this reference, with deterministic integer tie breaks.
 The [registered packet](../evidence/pascal-fermi-coordinate-starts.json.xz)
-contains the full candidate list and complete profiles for its first
-three completed cases:
+contains the full candidate list and complete profiles for all four
+completed cases:
 
 | Selected letters | Inherited numerical pressure |
 |---:|---:|
 | 16 | 0.728681631882 |
 | 24 | 0.723799386492 |
 | 32 | 0.721693325006 |
+| 48 | 0.719078623231 |
 
 These values are exploratory common-scale fits. They remain above
 `1/sqrt(2)` and do not improve the strongest existing crossing
-certificate. The larger fourth case is explicitly pending in this
-checkpoint. Arbitrary symbol-potential optimization, different flags,
+certificate. Arbitrary symbol-potential optimization, different flags,
 and changes to the physical maps remain constructive next questions.
+
+The registered two-hour whole-symbol search on the 24-letter filled-sea
+alphabet has now finished its requested time budget from frozen `a3b2a8a`.
+It made 11,647 successful complete-profile evaluations, recorded two
+rejected queries, and completed four restarts before its budget expired
+during the following restart. The numerical rate moved from
+`0.7237993864917117` to `0.7237868887538473`, still above `1/sqrt(2)`.
+This is a small local numerical change, not an exact contraction certificate
+or improved factoring exponent. The
+[packet](../evidence/pascal-q24-two-hour-symbol-search.json.xz) retains
+the command, exact source pin and texts, complete result, both physical
+costs, gradient controls and full log, including its warnings. The
+process exited successfully; the twelve-restart ceiling was not exhausted.
 
 This work retains the preceding Pascal, original-Fock, paired-type,
 and native Smith provenance. Substantial OpenAI assistant support was

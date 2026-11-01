@@ -1,0 +1,693 @@
+{
+  "status": "pass",
+  "independent_complete_orders": 192,
+  "rational_moment_checks": 6,
+  "finite_derivatives": 24,
+  "controls": [
+    {
+      "strong_place": 0,
+      "trial": 0,
+      "data": {
+        "parameters": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "strong_place": 0,
+        "profiles": [
+          [
+            -8.0,
+            -7.0,
+            -5.0,
+            -4.0,
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            7.0,
+            8.0
+          ],
+          [
+            8.0,
+            9.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            23.0,
+            24.0
+          ]
+        ],
+        "physical_energies": [
+          [
+            0.0,
+            6.0,
+            2.0,
+            8.0
+          ],
+          [
+            0.0,
+            6.0,
+            2.0,
+            8.0
+          ]
+        ],
+        "first_order_gap": 0.0,
+        "weak_minimum_multiplicity": 1,
+        "variance_difference": 1.0,
+        "weak_order_gap": 1.0
+      },
+      "exact_variance_difference": "1",
+      "exact_first_order_gap": "0"
+    },
+    {
+      "strong_place": 0,
+      "trial": 1,
+      "data": {
+        "parameters": [
+          2.0,
+          2.0,
+          -1.0,
+          2.0,
+          0.0,
+          -1.0,
+          5.0,
+          -1.0,
+          6.0,
+          3.0,
+          3.0,
+          6.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "strong_place": 0,
+        "profiles": [
+          [
+            -10.0,
+            -8.0,
+            -6.0,
+            -5.0,
+            -3.0,
+            0.0,
+            1.0,
+            1.0,
+            1.0,
+            4.0,
+            7.0,
+            8.0,
+            8.0,
+            11.0,
+            15.0,
+            16.0
+          ],
+          [
+            8.0,
+            9.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            23.0,
+            24.0
+          ]
+        ],
+        "physical_energies": [
+          [
+            0.0,
+            8.0,
+            6.0,
+            9.0
+          ],
+          [
+            0.0,
+            10.0,
+            0.0,
+            9.0
+          ]
+        ],
+        "first_order_gap": 0.0,
+        "weak_minimum_multiplicity": 1,
+        "variance_difference": 23.375,
+        "weak_order_gap": 1.0
+      },
+      "exact_variance_difference": "187/8",
+      "exact_first_order_gap": "0"
+    },
+    {
+      "strong_place": 0,
+      "trial": 2,
+      "data": {
+        "parameters": [
+          1.0,
+          -2.0,
+          1.0,
+          0.0,
+          0.0,
+          -2.0,
+          1.0,
+          1.0,
+          6.0,
+          5.0,
+          2.0,
+          2.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "strong_place": 0,
+        "profiles": [
+          [
+            -16.0,
+            -11.0,
+            -9.0,
+            -6.0,
+            -4.0,
+            -3.0,
+            -2.0,
+            -1.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            6.0,
+            7.0,
+            12.0,
+            13.0
+          ],
+          [
+            8.0,
+            9.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            23.0,
+            24.0
+          ]
+        ],
+        "physical_energies": [
+          [
+            0.0,
+            9.0,
+            1.0,
+            7.0
+          ],
+          [
+            0.0,
+            4.0,
+            2.0,
+            8.0
+          ]
+        ],
+        "first_order_gap": 0.0,
+        "weak_minimum_multiplicity": 1,
+        "variance_difference": 36.0,
+        "weak_order_gap": 1.0
+      },
+      "exact_variance_difference": "36",
+      "exact_first_order_gap": "0"
+    },
+    {
+      "strong_place": 1,
+      "trial": 0,
+      "data": {
+        "parameters": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ],
+        "strong_place": 1,
+        "profiles": [
+          [
+            -8.0,
+            -7.0,
+            -5.0,
+            -4.0,
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            7.0,
+            8.0
+          ],
+          [
+            8.0,
+            9.0,
+            11.0,
+            12.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            16.0,
+            17.0,
+            18.0,
+            19.0,
+            20.0,
+            21.0,
+            23.0,
+            24.0
+          ]
+        ],
+        "physical_energies": [
+          [
+            0.0,
+            6.0,
+            2.0,
+            8.0
+          ],
+          [
+            0.0,
+            6.0,
+            2.0,
+            8.0
+          ]
+        ],
+        "first_order_gap": 0.0,
+        "weak_minimum_multiplicity": 1,
+        "variance_difference": 1.0,
+        "weak_order_gap": 1.0
+      },
+      "exact_variance_difference": "1",
+      "exact_first_order_gap": "0"
+    },
+    {
+      "strong_place": 1,
+      "trial": 1,
+      "data": {
+        "parameters": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          4.0,
+          1.0,
+          5.0,
+          5.0,
+          0.0,
+          3.0,
+          0.0,
+          0.0,
+          -2.0,
+          -2.0,
+          0.0,
+          1.0,
+          1.0
+        ],
+        "strong_place": 1,
+        "profiles": [
+          [
+            -8.0,
+            -7.0,
+            -5.0,
+            -4.0,
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            7.0,
+            8.0
+          ],
+          [
+            5.0,
+            6.0,
+            6.0,
+            9.0,
+            13.0,
+            13.0,
+            14.0,
+            15.0,
+            16.0,
+            17.0,
+            18.0,
+            21.0,
+            22.0,
+            23.0,
+            27.0,
+            27.0
+          ]
+        ],
+        "physical_energies": [
+          [
+            0.0,
+            5.0,
+            2.0,
+            10.0
+          ],
+          [
+            0.0,
+            8.0,
+            1.0,
+            5.0
+          ]
+        ],
+        "first_order_gap": 0.0,
+        "weak_minimum_multiplicity": 1,
+        "variance_difference": 22.375,
+        "weak_order_gap": 1.0
+      },
+      "exact_variance_difference": "179/8",
+      "exact_first_order_gap": "0"
+    },
+    {
+      "strong_place": 1,
+      "trial": 2,
+      "data": {
+        "parameters": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          3.0,
+          1.0,
+          4.0,
+          3.0,
+          1.0,
+          4.0,
+          5.0,
+          -1.0,
+          3.0,
+          4.0,
+          1.0,
+          2.0,
+          -2.0,
+          1.0,
+          2.0,
+          1.0,
+          1.0,
+          1.0,
+          1.0
+        ],
+        "strong_place": 1,
+        "profiles": [
+          [
+            -8.0,
+            -7.0,
+            -5.0,
+            -4.0,
+            -3.0,
+            -2.0,
+            -1.0,
+            0.0,
+            0.0,
+            1.0,
+            2.0,
+            3.0,
+            4.0,
+            5.0,
+            7.0,
+            8.0
+          ],
+          [
+            4.0,
+            5.0,
+            9.0,
+            10.0,
+            12.0,
+            14.0,
+            14.0,
+            16.0,
+            16.0,
+            19.0,
+            20.0,
+            20.0,
+            22.0,
+            25.0,
+            28.0,
+            30.0
+          ]
+        ],
+        "physical_energies": [
+          [
+            0.0,
+            9.0,
+            1.0,
+            8.0
+          ],
+          [
+            0.0,
+            5.0,
+            3.0,
+            8.0
+          ]
+        ],
+        "first_order_gap": 0.0,
+        "weak_minimum_multiplicity": 1,
+        "variance_difference": 29.5,
+        "weak_order_gap": 1.0
+      },
+      "exact_variance_difference": "59/2",
+      "exact_first_order_gap": "0"
+    }
+  ],
+  "derivatives": [
+    {
+      "strong_place": 0,
+      "coordinate": 0,
+      "error": 2.0107788767376178e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 1,
+      "error": 3.038735485461075e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 2,
+      "error": 1.0279561646342472e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 3,
+      "error": 2.2903350327396765e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 4,
+      "error": 2.4301132217630084e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 5,
+      "error": 1.077467004506616e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 6,
+      "error": 2.2903350327396765e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 7,
+      "error": 2.4301132217630084e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 8,
+      "error": 1.077467004506616e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 9,
+      "error": 1.1226004570374926e-09
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 10,
+      "error": 5.139781933394261e-10
+    },
+    {
+      "strong_place": 0,
+      "coordinate": 11,
+      "error": 2.8043130040344977e-09
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 0,
+      "error": 1.4422658622947893e-09
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 1,
+      "error": 6.162084176253302e-10
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 2,
+      "error": 1.7340759939088457e-09
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 3,
+      "error": 2.93316038124658e-09
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 4,
+      "error": 9.917520138458258e-10
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 5,
+      "error": 3.27981375392028e-09
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 6,
+      "error": 3.618074728706233e-09
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 7,
+      "error": 1.300942908954994e-09
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 8,
+      "error": 2.2598851678878873e-09
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 9,
+      "error": 3.130791625949314e-09
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 10,
+      "error": 8.361435988035737e-10
+    },
+    {
+      "strong_place": 1,
+      "coordinate": 11,
+      "error": 2.6673820929801195e-09
+    }
+  ],
+  "source_sha256": {
+    "tools/pencil_endpoint_moments.py": "c7a91ecefb8d107f78071b7311a1d0453cf8dc793a6411f3b120c76423229704",
+    "tools/check_pencil_endpoint_moments.py": "88df99b9dca8180731c41081baa1be6847a135122cfc6d102b1f27f534dcc73b",
+    "tools/pencil_principal_alphabets.py": "e421d68a335111edd9910dd6025c4a313f6e7ff227638407343bcd254b1fe784",
+    "tools/search_f4_recentered_crossings.py": "aaa200699ed3630f941bf694af79d0465a277b3dc570e5cc3a4a5c5703c284cd",
+    "tools/native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "tools/weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572",
+    "tools/check_joint_energy_conjugations.py": "66d44df5e6be905f902819540795dfb4d9ad3ea7876bacb4bd5bc1104d9d66b7"
+  },
+  "scope": "Checks the saturated simple-minimum locus and second moments/gradients. The positive natural delta1 is not a global minimum or a factoring bound."
+}
