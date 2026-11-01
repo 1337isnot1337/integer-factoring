@@ -1,0 +1,852 @@
+{
+  "scope": "All-field proof applies to the stated opposite-parity zero-energy core and both target prefix sectors; controls do not exclude other favorable profiles or same-parity zero labels.",
+  "deficit": 6,
+  "target_prefixes": [
+    0,
+    6,
+    15,
+    24
+  ],
+  "forced_core_profiles": [
+    [
+      0,
+      6,
+      9,
+      9
+    ]
+  ],
+  "block_determinant_valuation": 12,
+  "parity_block_profile_allocations": 49,
+  "formal_charge_identities": [
+    [
+      0,
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      0,
+      0
+    ],
+    [
+      0,
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      0,
+      0
+    ],
+    [
+      0,
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      0,
+      0
+    ],
+    [
+      0,
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      0,
+      0
+    ],
+    [
+      1,
+      [
+        0,
+        3
+      ],
+      [
+        0,
+        1
+      ],
+      0,
+      0
+    ],
+    [
+      1,
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        0
+      ],
+      0,
+      0
+    ],
+    [
+      1,
+      [
+        1,
+        2
+      ],
+      [
+        0,
+        1
+      ],
+      0,
+      0
+    ],
+    [
+      1,
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        0
+      ],
+      0,
+      0
+    ]
+  ],
+  "literal_two_letter_tensors": 24,
+  "independent_four_order_profiles": 48,
+  "independent_orders": 192,
+  "block_determinant_controls": 96,
+  "endpoint_entries": 768,
+  "source_joint_parity_entries": 1296,
+  "escape_assignments": [
+    [
+      0,
+      57,
+      2
+    ]
+  ],
+  "parity_breaking_escape_entries": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      4
+    ],
+    [
+      0,
+      8
+    ],
+    [
+      0,
+      13
+    ],
+    [
+      0,
+      20
+    ],
+    [
+      0,
+      23
+    ]
+  ],
+  "controls": [
+    {
+      "degree": 1,
+      "case": 0,
+      "profiles": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "block_determinants": [
+        16,
+        41
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 0,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        35,
+        56
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 1,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        4,
+        38
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 1,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        55,
+        21
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 2,
+      "profiles": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "block_determinants": [
+        16,
+        31
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 2,
+      "profiles": [
+        0,
+        0,
+        1,
+        2
+      ],
+      "block_determinants": [
+        16,
+        44
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 3,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        14,
+        61
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 3,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        31,
+        44
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 4,
+      "profiles": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "block_determinants": [
+        4,
+        4
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 4,
+      "profiles": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "block_determinants": [
+        4,
+        4
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 5,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        61,
+        44
+      ]
+    },
+    {
+      "degree": 1,
+      "case": 5,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        44,
+        61
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 0,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        770,
+        391
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 0,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        885,
+        575
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 1,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        796,
+        827
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 1,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        391,
+        743
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 2,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        935,
+        913
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 2,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        194,
+        690
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 3,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        541,
+        31
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 3,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        916,
+        406
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 4,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        565,
+        731
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 4,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        234,
+        518
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 5,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        391,
+        484
+      ]
+    },
+    {
+      "degree": 2,
+      "case": 5,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        271,
+        555
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 0,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        7279,
+        12621
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 0,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        3251,
+        11949
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 1,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        5116,
+        9338
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 1,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        11551,
+        2472
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 2,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        14661,
+        5211
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 2,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        4483,
+        15517
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 3,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        14,
+        7642
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 3,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        11451,
+        10598
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 4,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        6076,
+        8813
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 4,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        15162,
+        10989
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 5,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        3537,
+        15730
+      ]
+    },
+    {
+      "degree": 3,
+      "case": 5,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        9045,
+        4566
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 0,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        1815,
+        200346
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 0,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        205295,
+        190572
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 1,
+      "profiles": [
+        0,
+        0,
+        0,
+        3
+      ],
+      "block_determinants": [
+        128064,
+        162558
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 1,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        12284,
+        185655
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 2,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        6631,
+        90324
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 2,
+      "profiles": [
+        0,
+        0,
+        0,
+        2
+      ],
+      "block_determinants": [
+        113168,
+        166821
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 3,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        174118,
+        2972
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 3,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        87512,
+        257778
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 4,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        107187,
+        62741
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 4,
+      "profiles": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "block_determinants": [
+        216361,
+        75388
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 5,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        70207,
+        168974
+      ]
+    },
+    {
+      "degree": 4,
+      "case": 5,
+      "profiles": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "block_determinants": [
+        107570,
+        38521
+      ]
+    }
+  ],
+  "parity_breaking_core_entries": [
+    [
+      0,
+      1
+    ]
+  ],
+  "source_sha256": {
+    "check_zero_energy_parity_core.py": "015e070561c85c65d0cebd31ba925231ddcc15da0ad5d92037581e88cc599b92",
+    "check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "weighted_smith_oracle_f4.py": "d277f46caa98dab48d243af64c18e42e09e917bf1e862057a55cb35f74a6d572",
+    "joint_six_to_five_retractions.py": "1cc35d7f1ce7ff65a826377c63dbb394e413a5fb974c60183a66b58568adea10",
+    "polynomial_retraction_spaces.py": "3238807ca40b1c238cff6177c82f702baabce94fc381937afae60b9856a0a000"
+  }
+}

@@ -2037,3 +2037,12 @@ bounded spaces, 63 earlier-space regressions and 400 independently
 computed complete orders, with every pole charged. This is a constructive
 search interface; no favorable crossing or score increase is claimed.
 Run `make verify-joint-six-to-five` for the new focused controls.
+
+For this particular target, the [zero-energy parity-core argument](research/zero-energy-parity-core.md)
+proves an additional all-field obstruction: opposite parities on the two
+zero-energy labels are incompatible with a parity-preserving core and
+the prescribed two profile sectors. The rational family admits explicit
+parity-mixing corrections; placing the zero energies on same-parity
+labels is another open option. This does not exclude other favorable
+profile shapes. Run `make verify-zero-energy-parity-core` for the exact
+core and literal tensor controls; the factoring score stays **1/2**.

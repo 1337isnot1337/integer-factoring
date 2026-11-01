@@ -2195,6 +2195,10 @@ verify-joint-small-rational:
 verify-joint-six-to-five:
 	python3 tools/check_joint_six_to_five_retractions.py
 
+.PHONY: verify-zero-energy-parity-core
+verify-zero-energy-parity-core:
+	python3 tools/check_zero_energy_parity_core.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py
