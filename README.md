@@ -116,6 +116,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 
 ## Current research frontier
 
+- [Coarsened grid check](research/coarsened-grid-validation.md): a finite signed network-to-padded-clique check, including internal edges and grouping.
+
 The [auxiliary extension](research/auxiliary-binary-gauge-floor.md) carries
 the same floor to matrix-valued binary seeds of every fixed auxiliary
 dimension, including independent rational auxiliary gauges at the two
@@ -288,6 +290,9 @@ exact ranks over every characteristic-five extension and minmax rank
 product 2304; that finite block cannot improve the rate. Run
 `make verify-bounded-spin` and the optional NumPy target
 `make verify-bounded-spin-algebra`.
+The [spin-zero jet identities](research/bounded-spin-three-jets.md)
+hold at every length and bound the coefficient span by `n-2` for even
+`n>=6`; ordinary cut-rank growth remains open.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -439,8 +444,12 @@ The [ordered Weyl construction](research/weyl-ordered-boundaries.md) writes
 the auxiliary word as an explicit quadratic phase. A Fourier argument
 classifies boundaries retaining the rank-one zero cut at every length.
 All 4,096 normalized F4 choices fail the two-position bare criterion by
-an exact four-jet floor `738>9^3`; longer ordered words remain open.
-Run `make verify-weyl-ordered-boundaries` for the standard-library replay.
+an exact four-jet floor `738>9^3`. Beyond bare profiles, complete F4
+middle-coefficient tests reject the entire coefficient spans at two
+selected boundaries, with rank-product floors 576 and 1950. These tests
+leave other boundaries and longer ordered words open. Run
+`make verify-weyl-ordered-boundaries` and
+`make verify-weyl-middle-coefficients` for the standard-library replays.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

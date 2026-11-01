@@ -115,6 +115,10 @@ verify-ordered-steiner-gauges:
 verify-weyl-ordered-boundaries:
 	python3 tools/check_weyl_ordered_boundaries.py
 
+.PHONY: verify-weyl-middle-coefficients
+verify-weyl-middle-coefficients:
+	python3 tools/check_weyl_middle_coefficients.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py

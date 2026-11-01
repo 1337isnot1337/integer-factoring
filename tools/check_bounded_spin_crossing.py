@@ -43,6 +43,7 @@ def literal_integral_entry(selected):
 
 def check():
     coefficients,grams,raising,unranking = 0,0,0,0
+    reduced_sites = 0
     dimensions = []
     for length in range(11):
         row = []
@@ -71,6 +72,17 @@ def check():
                     grams += 1
             if length >= 2 and length % 2 == 0 and height == 0:
                 dimensions.append(len(ps))
+                for v,w in product(vs,repeat=2):
+                    gram = sum(c*w.get(word,0) for word,c in v.items())
+                    for site in range(length):
+                        reduced = [[0,0],[0,0]]
+                        for word,c in v.items():
+                            a = (word >> site)&1
+                            for b in range(2):
+                                other = (word & ~(1 << site)) | (b << site)
+                                reduced[a][b] += c*w.get(other,0)
+                        assert [[2*c for c in row] for row in reduced] == [[gram,0],[0,gram]]
+                        reduced_sites += 1
     assert dimensions == [1,2,5,13,34]
     binary = []
     for width in range(1,9):
@@ -90,6 +102,9 @@ def check():
         integral = integral_polynomial_entry(selected)
         assert integral == literal_integral_entry(selected)
         assert sum(integral) == 12**4*expected
+        assert 2*integral[1]+4*integral[0] == 0
+        assert 2*sum(j*c for j,c in enumerate(integral))-4*sum(integral) == 0
+        assert 2*integral[-2]+4*integral[-1] == 0
         assert [c % 5 for c in integral] == [pow(12,4,5)*c % 5 for c in actual]
         table[labels] = actual
         literal += 1
@@ -121,6 +136,8 @@ def check():
     assert sum(polynomial_entry((first,)*4)) % 5 == 1
     return {'status':'pass','prime':5,'height_cap':3,'encoder_word_coefficients':coefficients,
             'integer_gram_entries':grams,'highest_weight_vectors':raising,
+            'integral_one_site_reduced_matrices':reduced_sites,
+            'independent_integral_three_jet_controls':literal,
             'complete_path_unrank_controls':unranking,'return_to_zero_dimensions':dimensions,
             'exact_binary_width_controls':binary,'independent_literal_polynomial_entries':literal,
             'independent_integral_polynomial_entries':literal,'integral_crossing_scale_at_length_four':12**4,

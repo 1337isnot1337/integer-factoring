@@ -149,6 +149,9 @@ def check():
     operators = normalized_operators(t)
     assert t.shape == (9, 13, 13, 13, 13)
     assert rank(t.reshape(9, -1)) == D
+    assert not np.any((2*t[1]+8*t[0]) % P)
+    assert not np.any((sum(2*j*t[j] for j in range(9))-8*t.sum(axis=0)) % P)
+    assert not np.any((2*t[-2]+8*t[-1]) % P)
     target = np.array(certificate['target'], dtype=np.int64)
     forms, cuts, powers_models = [], [], []
     raw_pairs = []
@@ -255,6 +258,7 @@ def check():
     return {'status': 'pass', 'length': 8, 'physical_labels': 13,
             'coefficient_span_dimension': D, 'ambient_cut_dimension': N,
             'independent_magnetic_entry_controls': controls,
+            'complete_eight_site_jet_identities': 3,
             'coefficient_rank_pairs': [list(pair) for pair in zip(*raw_pairs)],
             'primary_component_dimensions': [20, 1, 43, 70, 35],
             'double_component_nilpotent_rank': 13, 'kernel_flats': len(flats),

@@ -16,6 +16,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Coarsened grid check](coarsened-grid-validation.md): exact finite integration checks for signed network grouping, orientation, composite moduli, and padded clique tables.
+
 - [Bare criterion through twelve letters](bare-seven-to-twelve-letters.md): proved box-minor Kronecker budgets couple the two cuts; exact entropy-dual certificates give rho_bare>1/sqrt(2) for 7<=q<=12 at every degree and field, with fixed auxiliaries; an exact thirteen-letter profile satisfies every box budget and adjugate inequality and is the remaining construction target.
 
 - [Auxiliary binary gauge floor](auxiliary-binary-gauge-floor.md): the gauged binary floor extends to matrix-valued Laurent seeds of every fixed auxiliary dimension with independent rational auxiliary conjugation gauges at the two places, by dominating the rectangular Smith orders coordinatewise with a twisted scalar boundary contraction; an explicit seed shows that no constant contraction dominates at both places and that a boundary contraction `f^T K e` can have strictly larger pressure.
@@ -365,7 +367,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Ordered physical-gauge crossings](ordered-physical-gauge-crossings.md): noncommuting matrix gauges preserve every endpoint and the polynomial coefficient count; exact rank-sum dual potentials exclude 216 stated binary controls, with a distinct clock/shift phase construction left for further work.
 
-- [Ordered Weyl boundaries](weyl-ordered-boundaries.md): explicit quadratic-phase word kernels and an all-length rank-one cold-boundary classification; exact four-jet certificates reject all 4,096 normalized F4 boundaries at two positions, without excluding longer words.
+- [Ordered Weyl boundaries](weyl-ordered-boundaries.md): explicit quadratic-phase word kernels and an all-length rank-one cold-boundary classification; exact four-jet certificates reject all 4,096 normalized F4 boundaries at two positions, and complete middle-coefficient tests reject actual F4 spans at two selected boundaries; longer ordered words remain open.
 
 - [Group-shear crossings](group-shear-crossings.md): multiplication/division shears give cubic swap paths over every finite `p`-group in characteristic `p`; exact early-jet certificates exclude six displayed binary seeds, without an all-group claim.
 
@@ -421,6 +423,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Coherent bounded-spin crossing](bounded-spin-crossing.md): uniform height-three path encoders over F5, Fibonacci growth, strict endpoint, exact binary widths and a finite-state entry constructor; a post-half actual-rank bound remains open.
 - [Bounded-spin primary rank algebra](bounded-spin-rank-algebra.md): exact six-dimensional cut algebras at length eight, a rank formula over every characteristic-five extension, and a sharp minmax product 2304 certified by 759 common kernels and a separating hyperplane.
+- [Three uniform spin-zero jets](bounded-spin-three-jets.md): integral scalar one-site transition matrices force three coefficient relations and an `n-2` span bound at every even length at least six; a four-qubit invariant model separates this from the open rank-growth problem.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
