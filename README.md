@@ -2153,6 +2153,13 @@ frames at every common scale and physical type; the full 65,536-case run
 is separate and incomplete at that snapshot. Full-gauge fits remain
 iteration-limited evidence. No improved factoring exponent is claimed.
 
+A separate [asymmetric screen of those complete profiles](research/moving-boundary-crossings.md#asymmetric-supporting-line-screen-of-the-frozen-prefix)
+checks 11,010,048 numerical angle/tilt points and refines twenty cases.
+Its normalization agrees with the existing native supporting-line oracle;
+the best retained support value is about `1.000419`, above the required
+one. This numerical result leaves unsearched parameters open and supplies
+no new factoring exponent.
+
 ## Sparse oriented power prefixes
 
 The [sparse residual selector](research/sparse-oriented-power-prefixes.md)
@@ -2213,3 +2220,24 @@ search time from 67.006 to 9.694 seconds. A new certified 96-bit input factors
 after 20,480 queries versus 35,106 for the original exact-key selector. Full
 witnesses, both integer presentation maps and the original comparison replay;
 the original selector remains faster in total time, and the score is unchanged.
+
+A [literal Pfaffian constructor](research/tensor-literal-low-cell-retractions.md)
+now evaluates homogeneous physical retractions without deletion closure,
+retaining every within-cut Gaussian term. Independent original-kernel,
+Pfaffian, endpoint and Toeplitz controls accompany a complete capped 55-label
+pilot. It keeps more upper states than the coherent kernel construction,
+but this first numerical profile does not improve the pressure frontier.
+
+A [lattice terminal for ratio classes](research/circuit-box-ratio-lattice.md)
+recovers every local factor pair using at most four residue roots and twenty
+lattice lines once `R^3` exceeds the rectangle's product height. Streaming
+these queries gives `2^(n/3)*poly(n)` time and polynomial space, removing
+the preceding divisor-bound overhead. This is a classical cube-root scale,
+not an improvement over the main theorem or the scoring exponent.
+
+[Primitive integer row selection](research/primitive-integer-row-selection.md)
+replaces rational-entry rank tests while retaining exactly the same original
+integer relations. Only temporary test vectors are divided by their content.
+On the 96-bit core, five paired runs reduce median selection CPU time from
+0.606 to 0.141 seconds; 17,000 finite acceptance decisions agree with the
+reference. This changes component cost without weakening torsion information.

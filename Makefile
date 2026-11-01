@@ -2557,3 +2557,24 @@ verify-oriented-refinement: verify-optimized-oriented-power
 verify-optimized-oriented-power:
 	python3 tools/check_optimized_oriented_power_search.py --replay evidence/optimized-oriented-power-search.json
 	python3 tools/check_optimized_oriented_fresh_run.py --replay evidence/optimized-oriented-power-96.json.xz
+
+.PHONY: verify-tensor-literal-hot
+
+verify-tensor-f16: verify-tensor-literal-hot
+
+verify-tensor-literal-hot:
+	python3 tools/check_tensor_literal_hot_pfaffians_f16.py --output /tmp/integer-factoring-tensor-literal-hot.json
+
+.PHONY: verify-circuit-box-ratio-lattice
+
+verify-circuit-box-normalization: verify-circuit-box-ratio-lattice
+
+verify-circuit-box-ratio-lattice:
+	python3 tools/check_circuit_box_ratio_lattice.py --output /tmp/integer-factoring-ratio-lattice.json
+
+.PHONY: verify-primitive-integer-row-basis
+
+verify-oriented-refinement: verify-primitive-integer-row-basis
+
+verify-primitive-integer-row-basis:
+	python3 tools/check_primitive_integer_row_basis.py --repetitions 1

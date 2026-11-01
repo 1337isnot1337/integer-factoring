@@ -1,5 +1,11 @@
 # Research index
 
+- [Primitive temporary rows for exact relation selection](primitive-integer-row-selection.md): an all-matrix equivalence proof, charged coefficient bounds, 17,000 matched decisions and measured 96-bit core selection; original relations remain intact.
+
+- [A lattice terminal for exact ratio-class factors](circuit-box-ratio-lattice.md): weighted two-dimensional reduction, a uniform twenty-line local bound, exact quadratic recovery and fully charged `2^(n/3)*poly(n)` smallest-factor search; representation-specific scope.
+
+- [Literal hot tensors for low-cell retractions](tensor-literal-low-cell-retractions.md): original Gaussian/Pfaffian evaluation without deletion closure, a proved cache bound, complete independent kernel controls and a retained 55-label capped pilot; no frontier gain.
+
 - [Exact component acceleration and a certified 96-bit prefix](optimized-oriented-power-search.md): frozen-body 64/80-bit equivalence, independently replayed 96-bit factoring after 20,480 queries, and an exact 35,106-query original comparison; timings and query gains are separated.
 
 - [Compact traces for integer presentation isomorphisms](unit-presentation-traces.md): composable unit isomorphisms, independent local replay, 432 finite comparisons and eight rejection checks, with complete compact 64/80-bit certificates and charged component timings.

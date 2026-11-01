@@ -456,3 +456,48 @@ control. The best retained numerical value is approximately
 Those iteration-limited fits are not optimization exclusions or global
 optimality certificates. They remain distinct from the exact natural
 quarter-prefix obstruction and the all-degree protected-subtensor proofs.
+
+## Asymmetric supporting-line screen of the frozen prefix
+
+The balanced product obstruction does not exclude asymmetric supporting
+weights. The [existing supporting-line theorem](asymmetric-support-line-crossings.md)
+and [complete rectangular transfer](asymmetric-modular-transfer.md) give a
+different sufficient criterion: positive weights a,b with `a^2+b^2=1`
+and a certified support value R<1 would yield a stronger exponent.
+The coefficient Chernoff slopes must be `t/a` and `t/b`, so the coefficient
+index cancels. Independently choosing those slopes is invalid.
+
+For the retained natural profiles, set `E_i=4h_i`. Both crossing-pair
+physical charges are `t E_i`. After eliminating both physical types, the
+rate-one test is
+
+```math
+a\log\sum_j e^{-t\nu_{\infty,j}/a}
++b\log\sum_j e^{-t\nu_{0,j}/b}
+-2\log\sum_i e^{-tE_i}<0.                         \tag{2}
+```
+
+The [data-only screen](../tools/screen_asymmetric_moving_profiles.py)
+uses every complete profile in the 16,384-case frozen prefix. It removes
+opposite scalar shifts exactly before evaluating the logarithms.
+Six unsymmetric native-oracle comparisons and two balanced comparisons
+verify its normalization: at a=b=1/sqrt(2) and t=s/sqrt(2), its support
+value equals sqrt(2) times the ordinary balanced rho. The maximum
+discrepancy in those eight controls is `2.23e-15`.
+
+The [complete screen archive](../evidence/asymmetric-moving-frame-prefix-screen.json.gz)
+records **11,010,048 numerical grid evaluations**, with 13 declared
+rational half-angle choices, the balanced angle, and 48 tilts between
+0.002 and 1.5. None gives a negative rate-one gap. Twenty retained cases
+were then refined in angle and tilt, within the stated bounds; all
+twenty optimizers reported convergence. The smallest retained support
+value is approximately **1.0004187269519174**, above the required one.
+
+This is a finite numerical search, not an all-angle or all-scale theorem.
+It does not extend the exact quarter-prefix exclusion to arbitrary
+supporting weights, and it does not establish a new factoring exponent.
+
+```sh
+python3 tools/screen_asymmetric_moving_profiles.py \
+  --output /tmp/asymmetric-moving-frame-prefix-screen.json
+```

@@ -1,0 +1,226 @@
+{
+  "complete_factorings": [
+    {
+      "factor": 1031,
+      "input_bits": 21,
+      "line_queries": 10,
+      "number": 1124821,
+      "prime_factors": [
+        1031,
+        1091
+      ],
+      "ratio_queries": 272,
+      "rectangle_queries": 10
+    },
+    {
+      "factor": 8209,
+      "input_bits": 27,
+      "line_queries": 120,
+      "number": 68077237,
+      "prime_factors": [
+        8209,
+        8293
+      ],
+      "ratio_queries": 1280,
+      "rectangle_queries": 13
+    },
+    {
+      "factor": 65537,
+      "input_bits": 33,
+      "line_queries": 768,
+      "number": 4297850923,
+      "prime_factors": [
+        65537,
+        65579
+      ],
+      "ratio_queries": 5632,
+      "rectangle_queries": 16
+    }
+  ],
+  "counts": {
+    "known_factorization_large_class_controls": 4,
+    "literal_complete_rectangles": 1200,
+    "literal_ratio_factor_lists": 1200,
+    "smallest_prime_factor_controls": 1198,
+    "weighted_lattice_reductions": 1000
+  },
+  "empty_semiprime_rectangles": [
+    {
+      "count": 0,
+      "first_interval": [
+        32768,
+        98304
+      ],
+      "input_bits": 33,
+      "lattice_reductions": 8972,
+      "lattice_swaps": 6924,
+      "least_row": null,
+      "line_queries": 744,
+      "maximum_lines_per_root": 1,
+      "maximum_product": 28990636033,
+      "number": 4302094417,
+      "prime_factors": [
+        16411,
+        262147
+      ],
+      "ratio_precision": 12,
+      "ratio_queries": 512,
+      "second_interval": [
+        98304,
+        294912
+      ],
+      "singleton_queries": 0
+    },
+    {
+      "count": 0,
+      "first_interval": [
+        262144,
+        786432
+      ],
+      "input_bits": 39,
+      "lattice_reductions": 39324,
+      "lattice_swaps": 31132,
+      "least_row": null,
+      "line_queries": 2994,
+      "maximum_lines_per_root": 1,
+      "maximum_product": 1855422726145,
+      "number": 274940953069,
+      "prime_factors": [
+        131101,
+        2097169
+      ],
+      "ratio_precision": 14,
+      "ratio_queries": 2048,
+      "second_interval": [
+        786432,
+        2359296
+      ],
+      "singleton_queries": 0
+    },
+    {
+      "count": 0,
+      "first_interval": [
+        2097152,
+        6291456
+      ],
+      "input_bits": 45,
+      "lattice_reductions": 170432,
+      "lattice_swaps": 137664,
+      "least_row": null,
+      "line_queries": 12389,
+      "maximum_lines_per_root": 1,
+      "maximum_product": 118747230633985,
+      "number": 17592348573997,
+      "prime_factors": [
+        1048583,
+        16777259
+      ],
+      "ratio_precision": 16,
+      "ratio_queries": 8192,
+      "second_interval": [
+        6291456,
+        18874368
+      ],
+      "singleton_queries": 0
+    },
+    {
+      "count": 0,
+      "first_interval": [
+        16777216,
+        50331648
+      ],
+      "input_bits": 51,
+      "lattice_reductions": 735012,
+      "lattice_swaps": 603940,
+      "least_row": null,
+      "line_queries": 49389,
+      "maximum_lines_per_root": 1,
+      "maximum_product": 7599824169861121,
+      "number": 1125901358072069,
+      "prime_factors": [
+        8388617,
+        134217757
+      ],
+      "ratio_precision": 18,
+      "ratio_queries": 32768,
+      "second_interval": [
+        50331648,
+        150994944
+      ],
+      "singleton_queries": 0
+    }
+  ],
+  "global_comparison": "Classical cube-root scale; weaker than established general factoring bounds and the repository score 1/2 theorem.",
+  "known_factorization_controls": [
+    {
+      "count": 1,
+      "factorization": {
+        "3": 48,
+        "5": 32
+      },
+      "first_interval_length_bits": 75,
+      "independent_divisor_candidates": 1617,
+      "input_bits": 151,
+      "lattice_swaps": 52,
+      "line_queries": 1,
+      "maximum_lines_per_root": 1,
+      "ratio_precision": 64,
+      "second_interval_length_bits": 73
+    },
+    {
+      "count": 1,
+      "factorization": {
+        "3": 96,
+        "5": 64
+      },
+      "first_interval_length_bits": 151,
+      "independent_divisor_candidates": 6305,
+      "input_bits": 301,
+      "lattice_swaps": 112,
+      "line_queries": 1,
+      "maximum_lines_per_root": 1,
+      "ratio_precision": 128,
+      "second_interval_length_bits": 148
+    },
+    {
+      "count": 1,
+      "factorization": {
+        "3": 192,
+        "5": 128
+      },
+      "first_interval_length_bits": 303,
+      "independent_divisor_candidates": 24897,
+      "input_bits": 602,
+      "lattice_swaps": 200,
+      "line_queries": 1,
+      "maximum_lines_per_root": 1,
+      "ratio_precision": 256,
+      "second_interval_length_bits": 296
+    },
+    {
+      "count": 1,
+      "factorization": {
+        "3": 384,
+        "5": 256
+      },
+      "first_interval_length_bits": 608,
+      "independent_divisor_candidates": 98945,
+      "input_bits": 1204,
+      "lattice_swaps": 392,
+      "line_queries": 1,
+      "maximum_lines_per_root": 1,
+      "ratio_precision": 512,
+      "second_interval_length_bits": 594
+    }
+  ],
+  "large_controls_included": true,
+  "maximum_terminal_lines_per_root_in_small_controls": 1,
+  "proved_search_cost": "2**(n/3)*poly(n) time, polynomial bit space, for positive rectangles with maximum product <=C*N for fixed C",
+  "seed": 2026110151921,
+  "source_sha256": {
+    "tools/check_circuit_box_ratio_lattice.py": "8a8b1d5b3659a389af740cf6a6101d6f695c021d4b5025fae04fec8c3d53e01d",
+    "tools/circuit_box_kloosterman_blocks.py": "3fbdda39cd6264249d9b949672e50a0bc7a6eb2b7a2bbcd1f44a365e1a098821",
+    "tools/circuit_box_ratio_lattice.py": "3b3015782896d9df14f4b873d759c440d720d430fc4753f7d31a94aae43c4320"
+  },
+  "status": "passed"
+}

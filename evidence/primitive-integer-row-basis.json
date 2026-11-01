@@ -1,0 +1,92 @@
+{
+  "claim": "Primitive temporary rows preserve the exact selected original relations",
+  "controls": {
+    "matched_integer_matrices": 680,
+    "matched_row_decisions": 17000,
+    "original_nonprimitive_relations_retained": [
+      [
+        2,
+        0
+      ],
+      [
+        0,
+        6
+      ]
+    ],
+    "internal_primitive_pivots_not_emitted": true
+  },
+  "benchmark": {
+    "input_file": "evidence/optimized-oriented-power-96.json.xz",
+    "input_sha256": "46ec21d6af643d6c9a9fddd759e854910efc9425ceba8e02c674f9e88b841a9b",
+    "rows": 321,
+    "columns": 89,
+    "independent_original_rows": 89,
+    "selected_original_rows_sha256": "b250bce2a302bc5ec32c32930e8d8cbc729139b9fa7628c893c85c5599af77b3",
+    "statistics": {
+      "row_attempts": 321,
+      "elimination_steps": 4045,
+      "content_normalizations": 3843,
+      "maximum_temporary_entry_bits": 1109
+    },
+    "methods": {
+      "rational": {
+        "runs": [
+          {
+            "wall_seconds": 1.2634495689999312,
+            "cpu_seconds": 0.5716206750000001
+          },
+          {
+            "wall_seconds": 1.4529600829991978,
+            "cpu_seconds": 0.6497730339999994
+          },
+          {
+            "wall_seconds": 1.4591294690035284,
+            "cpu_seconds": 0.6509777400000001
+          },
+          {
+            "wall_seconds": 1.3131934639968676,
+            "cpu_seconds": 0.5866170850000003
+          },
+          {
+            "wall_seconds": 1.366993428004207,
+            "cpu_seconds": 0.6056747459999992
+          }
+        ],
+        "median_wall_seconds": 1.366993428004207,
+        "median_cpu_seconds": 0.6056747459999992
+      },
+      "primitive_integer": {
+        "runs": [
+          {
+            "wall_seconds": 0.29475538899714593,
+            "cpu_seconds": 0.13277972400000015
+          },
+          {
+            "wall_seconds": 0.3916817080025794,
+            "cpu_seconds": 0.17519171200000017
+          },
+          {
+            "wall_seconds": 0.34715926500211935,
+            "cpu_seconds": 0.1531093099999996
+          },
+          {
+            "wall_seconds": 0.3102373220026493,
+            "cpu_seconds": 0.14068597899999968
+          },
+          {
+            "wall_seconds": 0.2962741139999707,
+            "cpu_seconds": 0.13336579599999965
+          }
+        ],
+        "median_wall_seconds": 0.3102373220026493,
+        "median_cpu_seconds": 0.14068597899999968
+      }
+    },
+    "scope": "Original-row selection on a supplied core; no complete factoring timing claim."
+  },
+  "source_sha256": {
+    "tools/primitive_integer_row_basis.py": "656bdfa439ca96dfa997fce614f3c2f8700d6954ad59c6c2a80133743a6459ff",
+    "tools/check_primitive_integer_row_basis.py": "6162c93fc1973964c5c2d0e2dfe2528bbb6005923441b3ab0185580abd64404d",
+    "tools/cofactor_collision_relations.py": "e3ca86c6e2208edf1f5edc980ed954c6fb3919f21a4cce40a8681d0d908022c5"
+  }
+}
