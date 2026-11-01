@@ -2118,3 +2118,7 @@ verify-coherent-inverse-f4:
 
 verify-coherent-gram-f4:
 	python3 tools/check_coherent_gram_f4.py
+
+.PHONY: verify-coherent-divided-powers
+verify-coherent-divided-powers:
+	python3 tools/check_coherent_divided_powers.py

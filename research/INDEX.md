@@ -19,6 +19,7 @@
 - [Exact monotone coefficient retiming](isotonic-coefficient-retiming.md): adjacent pooling gives the optimal constant-basis profile pressure; physical Smith retimings require recomputation, and all thirty declared eight-letter perturbations have exact all-scale dominance certificates.
 - [Deletion-closed spaces and complete compound profiles](coherent-hot-compound-retractions.md): derivative inverse systems, differential kernels, separate cut compressions, exact `rho < 1781/2501`, and all-scale optimality in a declared 121-map binary boundary class.
 - [F4 inverse systems and bilinear dual physical codes](coherent-inverse-f4-pairings.md): arbitrary field-valued derivative relations, independent dual spaces, equal two-cut profiles for nondegenerate self-pairings, an all-field quartic Hilbert-function jump, and complete finite F4 probes without a score improvement.
+- [Growing divided-power inverse systems](coherent-divided-power-families.md): polynomial-size graded dimension formulas from subset-incidence ranks, a protected low-Smith segment, the explicit regular symplectic identity, and complete unequal-alphabet evaluation with both costs charged.
 - [Mixed-occupation height boundaries](coherent-hot-mixed-boundary.md): exact parity-block evaluation expands the height-16 boundary family to 496 maps; the extension alone does not improve the factoring exponent.
 
 ## Composite-cofactor relations
