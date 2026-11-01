@@ -2644,3 +2644,8 @@ verify-oriented-power-112:
 .PHONY: verify-circuit-box-ratio-small-roots
 verify-circuit-box-ratio-small-roots:
 	python3 tools/check_circuit_box_ratio_small_roots.py --output /tmp/circuit-box-ratio-small-roots-verify.json
+
+.PHONY: verify-batch-smooth-fresh-192
+verify-batch-smooth-fresh-192:
+	python3 tools/assemble_factoring_certificate.py evidence/batch-smooth-fresh-192-selective.json.xz.manifest.json
+	python3 tools/check_fresh_prime_cofactor_control.py --bits 192 --replay evidence/batch-smooth-fresh-192-selective.json.xz

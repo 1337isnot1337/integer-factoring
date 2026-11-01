@@ -1,5 +1,7 @@
 # Research index
 
+- [Certified 192-bit batched selective promotion](batch-smooth-fresh-192.md): complete saved-artifact replay, charged generated-ahead work, checked archive reconstruction, and the gated 208-bit follow-on.
+
 - [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact full-matrix controls, completed 484-point and 61,440-point finite families, and two registered large scans in a specified 18-dimensional subspace; no completed large-scan or stronger factoring claim.
 
 - [Two classical passes for all supplied orientations](circuit-box-orientation-batch.md): normalized root differences, sparse incidence signs, and essentially linear integer-data construction.
