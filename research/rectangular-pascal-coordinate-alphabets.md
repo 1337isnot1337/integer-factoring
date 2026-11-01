@@ -102,3 +102,23 @@ python3 tools/screen_rectangular_pascal_sectors.py \
   --manifest evidence/rectangular-pascal-coordinate-manifest.json \
   --output /tmp/rectangular-coordinate-screen.json
 ```
+
+The [whole-symbol driver](../tools/search_rectangular_pascal_sectors.py)
+implements that registered selection directly from a completed screen.
+It replays the chosen complete baseline, checks five new derivatives,
+removes only the eight constant-height gauge directions, and records
+successful and rejected queries separately. Its budget counts actual
+search time; complete-profile and derivative initialization are recorded
+separately. Twelve restarts and one thousand iterations per restart are
+ceilings, not promises that every restart completes within the hour.
+
+```sh
+python3 tools/search_rectangular_pascal_sectors.py \
+  --screen /tmp/rectangular-coordinate-screen.json \
+  --output /tmp/rectangular-coordinate-search.json
+```
+
+A [separate two-by-three smoke receipt](../evidence/rectangular-pascal-driver-smoke.json.xz)
+checks the screen/selection/search pipeline with an explicitly shortened
+one-second budget and two-restart ceiling. It is a driver control, not part
+of the nineteen-case screen or its one-hour follow-on.
