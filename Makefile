@@ -2015,3 +2015,8 @@ verify-coherent-q96-pressure:
 	python3 tools/check_coherent_q96_pressure.py --output /tmp/integer-factoring-coherent-q96-pressure.json
 verify-coherent-mixed-catalogue:
 	python3 tools/check_coherent_q32_mixed_catalogue.py --output /tmp/integer-factoring-coherent-q32-mixed-boundary-optimum.json
+
+
+.PHONY: verify-pole-cauchy-batched-poles
+verify-pole-cauchy-batched-poles:
+	python3 tools/check_pole_cauchy_pole_polynomials.py --output /tmp/integer-factoring-pole-cauchy-pole-polynomials.json
