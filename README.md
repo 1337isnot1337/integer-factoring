@@ -52,13 +52,12 @@ also closes both fixed-gauge endpoint escapes over the entire pencil and every
 characteristic-two field. Interior angles remain open.
 A [constructive graded lattice](research/graded-zero-lattice.md) improves
 the zero prefix to 8,10,10, but its actual opposite profile is worse.
-The [ordered fused envelope now has an exact F4 interface](research/fused-f4-envelope.md),
-with complete finite controls and registered larger subspace scans.
-These registrations do not establish a stronger bound.
-The [affine-zero F4 half](research/fused-f4-envelope.md) has completed
-all 17,179,869,184 registered positions and excludes rank product below
-56 on its specified functional kernel. Every chunk's normalization counts
-have an independent exact replay; the other half remains incomplete.
+The [completed F4 subspace census](research/fused-f4-decomposition-obstruction.md)
+covers all 22,906,492,245 projective points of the declared 18-dimensional
+space. Its catalogue and 117 scalar-complement checks put every piece
+count above balanced finite-block parameter `3/4`. The same refinement
+strengthens the full binary envelope; full 33-dimensional F4 and
+asymmetric criteria remain open. This is not a factoring improvement.
 A [global natural-energy floor](research/natural-five-letter-pressure-floor.md)
 now excludes the balanced criterion for every scalar Laurent-polynomial
 kernel over any field with the reference five-letter paired-energy shape.
@@ -1281,7 +1280,7 @@ crossing. A different elimination algorithm independently checks the separating
 affine hyperplane. A separate
 [full ordered-envelope certificate](research/fused-ordered-scalar-envelope.md)
 checks all `2^33` vectors with two rank-product thresholds and proves
-rank-sum cost at least `sqrt(504)>9^sqrt(2)` for every binary decomposition
+rank-sum cost at least `sqrt(162)+2sqrt(56)>27>9^sqrt(2)` for every binary decomposition
 in the 33-dimensional two-copy space. Its quick gate reconstructs the
 audit input and 84 full ranks; a separate command repeats the native audit.
 Higher powers, other fields and physical type restrictions remain open.

@@ -2499,6 +2499,10 @@ verify-polynomial-crossing-axis:
 
 verify-frontier: verify-polynomial-crossing-axis
 
+.PHONY: verify-fused-f4-obstruction
+verify-fused-f4-obstruction:
+	python3 tools/check_fused_f4_decomposition_obstruction.py
+
 .PHONY: verify-smith-chambers-f4
 verify-smith-chambers-f4:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_smith_chambers_f4.py --output /tmp/smith-chambers-f4.json

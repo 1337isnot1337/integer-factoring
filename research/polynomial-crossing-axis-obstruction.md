@@ -84,7 +84,8 @@ matched principal minors used in (1) are separately proved nonzero.
 The mere existence of a typed crossing endpoint does not supply that fact.
 
 For the coordinate Pascal endpoint `[b=y]*det(P[v,x])`, matching the
-columns produces `I_B tensor Q` or its transpose, where `Q` is a principal
+columns produces the identity on the `B/Y` alphabet tensored with `Q`,
+or its transpose, where `Q` is a principal
 restriction of the compound Pascal matrix. It is unit triangular on each
 occupation block, so every principal minor is one. Thus the proof also
 covers the current [coordinate Pascal constructors](rectangular-pascal-coordinate-alphabets.md),

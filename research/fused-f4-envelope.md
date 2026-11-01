@@ -9,14 +9,18 @@ It extends the binary representation from
 does not imply a field-extension obstruction. No improved factoring
 exponent is claimed here; the complete score remains **1/2**.
 
-The completed controls and newly registered larger scans have different
-coverage. The large scans below are **not complete at registration**.
+Both registered scans are now complete. The
+[catalogues and piece-count argument](fused-f4-decomposition-obstruction.md)
+give `S >= sqrt(162)+2sqrt(56)>27` for every decomposition in the declared
+18-dimensional F4 subspace, with balanced finite-block parameter above
+`3/4`. The full 33-dimensional F4 space remains open.
 
 The **affine-zero half is now complete**: all `4^17=17,179,869,184`
 coordinate positions, in 512 contiguous chunks, with no nonzero vector
 of rank product at most 55. This gives rank product **at least 56**
 on the specified 17-dimensional functional kernel inside `W`. It is
-not a claimed sharp minimum. The affine-one half remains incomplete.
+not a claimed sharp minimum. The affine-one half is also complete, with
+39 retained points and exact minimum product 162.
 
 The run performed **5,726,623,061 exact native threshold tests**, skipped
 **11,453,246,122** other scalar representatives and counted zero once.
@@ -123,11 +127,9 @@ binary, input or registration. The canonical binary input is
 [retained](../evidence/fused-f4-subspace-input.bin) and independently
 reconstructed by the focused gate.
 
-The registration alone is no exclusion theorem. Even full completion
-would concern this specified 18-dimensional F4 space, rather than the
-whole 33-dimensional envelope or other coefficient fields. Any final
-decomposition obstruction needs the actual resulting catalogues and
-a separate argument covering arbitrary numbers of pieces.
+The [completed catalogue and arbitrary-piece-count proof](fused-f4-decomposition-obstruction.md)
+now combine both halves. They concern this specified 18-dimensional F4
+space, not the whole 33-dimensional field extension or other fields.
 
 Substantial OpenAI assistant support was used for the implementation,
 controls and text. No new Lean formalization is included.

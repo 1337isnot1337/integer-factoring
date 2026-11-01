@@ -144,3 +144,7 @@ The seed is the repository's existing finite fusion construction. This
 rank-sum argument, native audits and replays were developed with
 substantial OpenAI assistant support. No new Lean formalization or
 improved factoring exponent is claimed.
+
+## Later piece-count refinement
+
+The [completed F4 subspace analysis](fused-f4-decomposition-obstruction.md) also sharpens the argument for this full binary catalogue. Every decomposition contains a nonzero-functional piece of product at least 162. Three or more nonzero pieces therefore cost at least `sqrt(162)+2sqrt(56)>27`; the catalogue and complement bounds put all two-piece cases above 28, and the single crossing piece costs 81. Thus the balanced finite-block rank-sum parameter here is strictly above `3/4`. This uses the existing exhaustive binary data and fresh quick rank checks; it is not another binary native replay, a full-space F4 result or a factoring improvement.

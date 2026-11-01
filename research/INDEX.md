@@ -56,7 +56,7 @@
 
 - [Certified 192-bit batched selective promotion](batch-smooth-fresh-192.md): complete saved-artifact replay, charged generated-ahead work, checked archive reconstruction, and the gated 208-bit follow-on.
 
-- [F4 extension of the ordered fused coefficient envelope](fused-f4-envelope.md): exact controls and a completed 17,179,869,184-position affine-zero census in a specified 18-dimensional subspace, with independently reconstructed coverage counts; the affine-one half is still incomplete and no stronger factoring bound follows.
+- [Every piece count in the F4 subspace has balanced parameter above three quarters](fused-f4-decomposition-obstruction.md): all 22,906,492,245 projective W18 points, 39 affine-one retained points and 117 scalar complements give `S>=sqrt(162)+2sqrt(56)>27`; 312 independent F4 ranks, a binary full-space refinement, and explicit field/asymmetric limits.
 
 - [Two classical passes for all supplied orientations](circuit-box-orientation-batch.md): normalized root differences, sparse incidence signs, and essentially linear integer-data construction.
 
@@ -364,7 +364,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Finite fused six-vertex crossings](finite-fused-six-vertex-crossings.md): literal three- and four-symbol F16 fusion, exact common-factor cancellation, 24 independent binary profiles, and 144 replayed full-gauge starts; the completed finite searches remain uncompetitive.
 - [Binary scalar projection and a complete fused coefficient envelope](fused-scalar-projection-envelope.md): exhaustive rank-span separation excludes every binary decomposition in the 21-dimensional symmetric two-copy space, with an independent affine-hyperplane replay.
-- [A complete rank-sum obstruction in the ordered binary envelope](fused-ordered-scalar-envelope.md): two exhaustive thresholds cover all `2^33` vectors and prove cost at least `sqrt(504)>9^sqrt(2)` for every binary decomposition; quick receipt/rank checks and an optional full native replay are separate.
+- [A complete rank-sum obstruction in the ordered binary envelope](fused-ordered-scalar-envelope.md): two exhaustive thresholds cover all `2^33` vectors; the later piece-count refinement strengthens the cost to `sqrt(162)+2sqrt(56)>27`. Quick receipt/rank checks and an optional full native replay are separate.
 - [A primary-character code bounds every unprojected tensor length](fused-primary-character-code.md): weighted distance three tensorizes to an opposite-cut rank bound for every nonzero coefficient recombination and a uniform `rho>=3/4` obstruction before scalar or physical projection.
 - [An energy-refined Newton ceiling for arbitrary rational gauges](joint-graded-newton-ceiling.md): block-scalar characteristic coefficients bound every zero Smith prefix over all characteristic-two fields, without restrictions on gauge degree or distinguished-place poles; attainability and opposite-cut costs remain open.
 - [Zero-loop reachability and a coupled two-place pencil](joint-zero-rational-loops.md): an all-field affine/Frobenius contradiction excludes zero orders `(8,10)` for any square-zero simple-pole energy move, while an exact eleven-parameter pencil couples the two distinguished finite places.
