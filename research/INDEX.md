@@ -1,5 +1,18 @@
 # Research index
 
+## Composite-cofactor relations
+
+- [Exact composite-cofactor selection](cofactor-collision-selection.md): signed residual-ideal keys, fixed-base collision rows, exact rational-span retention, and matched 92-bit/124-bit finite controls.
+- [An explicit admissible quota](cofactor-collision-quota.md): a finite key count and weighted dominance force full relation rank; the uniform time to collect admissible hits remains open.
+
+## Exact pole-Cauchy algorithms
+
+- [Explicit residue-flow profiles](pole-smith-residue-flow.md): every Smith order in `(r+s) poly(b)` bit operations on explicit node lists, without constructing the matrix.
+- [Balanced overlap spectra](pole-smith-overlap-spectrum.md): one tree pass gives the full histogram; power-of-two padding gives a diagonal Smith formula.
+- [Inverse conditioning and entry queries](pole-cauchy-conditioning.md): balanced padding controls precision independently of dimension and permits polynomial-cost individual inverse entries.
+- [Implicit polynomial inverse moments](pole-cauchy-polynomial-moments.md): whole low-degree bilinear forms are computed from two short jets without enumerating either node set; the actual factor-count kernel remains open.
+- [Modular Newton interval jets](modular-interval-jet-arithmetic.md): explicit precision budgets retain the product identities while avoiding large exact symmetric coefficients.
+
 Related checkpoint: [31 October ordinary-proof research session](frontier-session-20261031.md) — complete score unchanged at 1/2; exact constructors, global charge obstructions, completed finite searches, and final validation.
 
 This index covers research notes on `main`. Open PRs can contain later work. Each note states its own assumptions, proof scope, and evidence. An obstruction to a specific construction is not a factoring lower bound.
