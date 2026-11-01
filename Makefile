@@ -246,6 +246,14 @@ verify-fused-primary-code:
 verify-joint-graded-newton:
 	python3 tools/check_joint_graded_newton.py
 
+.PHONY: verify-joint-zero-prefix
+verify-joint-zero-prefix:
+	python3 tools/check_joint_zero_prefix.py
+
+.PHONY: verify-joint-two-place-obstruction
+verify-joint-two-place-obstruction:
+	python3 tools/check_joint_two_place_obstruction.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
