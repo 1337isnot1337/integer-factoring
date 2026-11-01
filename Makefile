@@ -2715,3 +2715,7 @@ check-direct-unit-search:
 .PHONY: check-centered-windows
 check-centered-windows:
 	python3 tools/check_circuit_box_centered_windows.py
+
+.PHONY: check-cached-lll
+check-cached-lll:
+	python3 tools/check_circuit_box_cached_lll.py
