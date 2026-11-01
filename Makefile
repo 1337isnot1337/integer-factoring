@@ -2754,3 +2754,9 @@ verify-orthogonal-joint-global:
 .PHONY: verify-orthogonal-joint-symbolic
 verify-orthogonal-joint-symbolic:
 	python3 tools/check_orthogonal_joint_symbolic_profiles.py
+
+.PHONY: verify-height36-core-floor verify-height36-core-replay
+verify-height36-core-floor:
+	python3 tools/check_height36_core_floor.py
+verify-height36-core-replay:
+	python3 tools/check_height36_core_floor.py --replay-core

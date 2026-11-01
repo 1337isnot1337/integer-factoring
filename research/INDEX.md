@@ -1474,3 +1474,7 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 [All-field two-parameter normal form](orthogonal-joint-global-rigidity.md) proves that constant orthogonal energy-preserving gauges retaining rank-one leading realignment fix that coefficient globally. The remaining tensor orbit has two parameters. Finite F4/F8/F16 profile controls do not establish an all-field dominance theorem.
 
 The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-field-classification-of-the-natural-profiles) now gives all five natural-profile strata over every characteristic-two field. Every stratum is prefix-dominated by the reference; this is not an arbitrary-weight or nonorthogonal exclusion.
+
+## Protected low core through height 36
+
+[All-field balanced natural floor](height36-protected-core-floor.md): twelve-mode coherent retractions retaining all 81 coordinate labels below height 24 and supported through height 36 satisfy rho >= 17/24. The proof uses only 3,359 exact low core orders per cut and retains 3,202 unknown orders explicitly. Arbitrary weights and asymmetric criteria are outside scope.
