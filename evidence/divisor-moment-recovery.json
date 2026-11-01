@@ -1,0 +1,30 @@
+{
+  "scope": "Deterministic recovery from supplied exact moments; no fast coefficient oracle",
+  "finite_oracle": "divisors enumerated for small N; supplied large factors independently trial-proved prime",
+  "core_recoveries": 516,
+  "core_moment_queries": 7224,
+  "largest_hankel_rank": 32,
+  "uniform_wrapper_cases": 255,
+  "uniform_wrapper_trial_returns": 195,
+  "uniform_wrapper_moment_queries": 832,
+  "large_supplied_divisor_controls": [
+    {
+      "integer": 1000000016000000063,
+      "smallest_prime_factor": 1000000007,
+      "divisor_count": 4,
+      "moment_queries": 16,
+      "largest_eisenstein_weight": 34,
+      "maximum_moment_bits": 1974,
+      "maximum_polynomial_coefficient_bits": 240
+    },
+    {
+      "integer": 906694351050364540708897,
+      "smallest_prime_factor": 824633708473,
+      "divisor_count": 4,
+      "moment_queries": 16,
+      "largest_eisenstein_weight": 34,
+      "maximum_moment_bits": 2627,
+      "maximum_polynomial_coefficient_bits": 319
+    }
+  ]
+}

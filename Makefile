@@ -28,6 +28,10 @@ verify-smooth-norms:
 verify-class-square-conic:
 	python3 tools/check_class_square_conic.py
 
+.PHONY: verify-divisor-moments
+verify-divisor-moments:
+	python3 tools/check_divisor_moment_recovery.py
+
 verify-neutral-duals:
 	python3 tools/check_neutral_reflected_crossings.py
 	python3 tools/check_homogeneous_dual_completion.py
@@ -470,7 +474,7 @@ verify-post-half:
 verify-arithmetic-sieve:
 	python3 tools/check_arithmetic_sieve_certificate.py
 
-verify-frontier: verify-bell verify-class-square-conic
+verify-frontier: verify-bell verify-class-square-conic verify-divisor-moments
 	python3 tools/check_bare_seven_to_twelve_letters.py > /dev/null
 	python3 tools/check_quadratic_inverse_degree_caps.py > /dev/null
 	python3 tools/check_quadratic_inverse_paths.py --alphabet 9 > /dev/null

@@ -1147,6 +1147,15 @@ solving every modular square-norm instance without a prime factorization of the 
 An exact negative integer example is soluble at every modulus, separating
 this local information from the required global search. The score remains `1/2`.
 
+An [exact counting alternative](research/divisor-moment-recovery.md)
+recovers the smallest prime factor from a family of divisor moments by
+positive Hankel reconstruction and integer root isolation. After small-factor
+trial division, recovery costs `exp(O(sqrt(b)))`. The moments are coefficients
+of level-one Eisenstein series with explicitly bounded growing weights.
+A suitably uniform fast coefficient engine would preserve its saving exponent
+in the complete factoring bound; that engine remains unproved. Run
+`make verify-divisor-moments` for the supplied-moment controls.
+
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight
