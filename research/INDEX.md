@@ -1486,3 +1486,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## Protected low core through height 36
 
 [All-field balanced natural floor](height36-protected-core-floor.md): twelve-mode coherent retractions retaining all 81 coordinate labels below height 24 and supported through height 36 satisfy rho >= 17/24. The proof uses only 3,359 exact low core orders per cut and retains 3,202 unknown orders explicitly. Arbitrary weights and asymmetric criteria are outside scope.
+
+## F8 coherent retraction engine
+
+[Three-plane construction and independent controls](coherent-hot-f8-retractions.md) extends the coherent code interface to F8, with exact low orders and explicit unresolved tails. The check covers 16,884 complete polynomial entries and 70 independent full block profiles. No factoring improvement follows from the engine alone.
