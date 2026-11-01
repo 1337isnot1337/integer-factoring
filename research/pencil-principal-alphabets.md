@@ -79,3 +79,38 @@ actual height/scale/angle bounds before those trials run. Every selected
 literal input hash and inherited profile is replayed. Successful queries,
 rejections, completed optimizer calls and trial/global timeouts remain
 separate counters.
+
+## Completed screen and proper-alphabet follow-on
+
+Frozen `f2b30c5` completed all **45,292** cases and **753,750** orders in
+390.26 seconds, with no unresolved profiles. There are 6,490 distinct exact
+inherited scalar-curve keys. The [complete archive](../evidence/pencil-principal-screen-complete.json.xz)
+contains every input hash, complete profile, physical energy vector, scalar
+fit, source text and stdout. The full five-letter control remains best,
+with numerical rho `0.7263479477045`. The best proper restriction has
+`S_X={0,2,3,4}`, `S_Y={0,1,2,3,4}` and numerical rho `0.7293910850819`.
+Neither passes the balanced threshold.
+
+The [screen checker](../tools/check_pencil_principal_screen.py) validates
+every declared input, restored height/energy vector and exact cache key.
+It also extracts sixteen samples from the independent full five-letter
+matrices and recomputes both profiles by untruncated fraction-free Smith
+elimination: **262 additional independent orders**. The
+[receipt](../evidence/pencil-principal-screen-controls.json) states this
+scope; the other native orders are not independently reconstructed.
+
+```sh
+python3 tools/check_pencil_principal_screen.py
+```
+
+Frozen `6163cf6` then finished all **140** registered free-height asymmetric
+optimizer calls on twenty distinct proper restricted tensors. All calls
+returned local success, with **35,708** successful complete-profile queries
+and zero rejections, in 53.13 seconds. The
+[full follow-on archive](../evidence/pencil-principal-asymmetric-complete.json.xz)
+retains every trial and both physical types. Its best support is
+`1.000001337545`, still above one, on the four-by-four restriction
+`S_X=S_Y={0,2,3,4}` of the unperturbed source. This is closer to the axis
+limit than the full five-letter trial, but it is not a contraction or a
+global lower bound. Other gauges, angles, source points and constructions
+remain open. The complete factoring score remains `1/2`.

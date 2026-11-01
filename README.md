@@ -96,8 +96,9 @@ A [fixed-type bundle comparison](research/pascal-coordinate-bundle-search.md)
 checks supporting planes at every complete profile query and targets the
 valuation ties encountered by the direct coordinate optimizer.
 The [principal-pencil screen](research/pencil-principal-alphabets.md)
-registers all 45,292 independently paired subsets of the 67 retained
-five-letter points, exploring the boundary outside bounded-height searches.
+completed all 45,292 independently paired subsets of the 67 retained
+five-letter points and 753,750 channel orders. Its 140 proper-alphabet
+free-height asymmetric trials remain above the threshold; all data are retained.
 
 ## Arithmetic construction and space bounds
 
@@ -1022,6 +1023,8 @@ decoder for the full Catalan cup frame. A tree-profile argument gives the
 exact maximum path-norm valuation `M_r` over dyadic candidate heights and a
 paired pole bound `4M_r <= r^2+4(r+1)log_2(r+1)` at `q=1+u`. Exact path-
 valuation distributions match the closed form through semilength 32;
+their exact mean is `Theta(r log r)`, from marked plane-tree levels, reducing
+the total path-resolved principal-part slots but not yet the cut ranks.
 truncated-series Smith profiles pass through sixteen physical strands, with
 valuation jumps from three to seven at fourteen strands. Its two-cut rank sum
 remains unresolved. Run

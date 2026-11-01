@@ -3,7 +3,9 @@
 
 from __future__ import annotations
 
+from fractions import Fraction
 from functools import lru_cache
+from math import comb
 
 from catalan_cup_crossing import cup_basis
 
@@ -128,6 +130,23 @@ def dyck_path_valuation_distribution(semilength):
                     target[total] = target.get(total, 0) + count
         current = following
     return current.get(0, {})
+
+
+def mean_path_norm_delta_valuation(semilength):
+    """Exact mean spin-path norm valuation from marked tree vertices."""
+    assert semilength >= 1
+    catalan = comb(2 * semilength, semilength) // (semilength + 1)
+    numerator = 0
+    for height in range(1, semilength + 1):
+        even_index = height if height % 2 == 0 else height + 1
+        weight = (even_index & -even_index) - 1
+        marked_vertices = (
+            Fraction(2 * height + 1, 2 * semilength + 1)
+            * comb(2 * semilength + 1, semilength - height)
+        )
+        assert marked_vertices.denominator == 1
+        numerator += weight * marked_vertices.numerator
+    return Fraction(numerator, catalan)
 
 
 def maximum_path_norm_delta_valuation(semilength):
