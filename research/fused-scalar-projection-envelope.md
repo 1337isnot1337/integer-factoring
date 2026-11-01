@@ -117,7 +117,10 @@ argument, not independent mathematical review or a new Lean proof.
 
 The full ordered two-copy envelope has dimension 33. It allows
 `chi(a T_i tensor T_j)` without symmetrizing the two positions and is
-not excluded by the completed 21-dimensional certificate. More generally,
+not excluded by the completed 21-dimensional certificate. A
+[separate full ordered-envelope audit](fused-ordered-scalar-envelope.md)
+now excludes that 33-dimensional binary space using two threshold audits
+and a bound on the number of affordable pieces. More generally,
 projection need not commute with a nonbinary change of primary basis;
 an extension-field rank obstruction cannot silently be transferred to
 the projected binary space. Higher powers and physical type restrictions

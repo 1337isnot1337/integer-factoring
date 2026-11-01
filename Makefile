@@ -199,6 +199,13 @@ verify-joint-filtered-gauges:
 verify-fused-scalar-projection:
 	python3 tools/check_fused_scalar_projection.py
 
+.PHONY: verify-fused-ordered-projection verify-fused-ordered-projection-full
+verify-fused-ordered-projection:
+	python3 tools/check_fused_ordered_projection.py
+
+verify-fused-ordered-projection-full:
+	python3 tools/check_fused_ordered_projection.py --full-replay --jobs 4
+
 .PHONY: verify-fused-primary-code
 verify-fused-primary-code:
 	python3 tools/check_fused_primary_code.py

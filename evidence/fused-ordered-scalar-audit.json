@@ -1,0 +1,192 @@
+{
+  "dimension": 33,
+  "dual": 1572866,
+  "target": 1118481,
+  "data_sha256": "f8e4f0f282d069b34d290571522d8c6cdbfe837025abf4994e982a7611916f3a",
+  "source_one_sha256": "f853eb322927e44cdf85e55eb2df94c98a1d4d81a7ab2f930a0f33e74bdd3bc0",
+  "source_zero_sha256": "0a302040787dce5e29f32778e262219d3bb8d103f7f04f482e596dd24170b4a1",
+  "thresholds": {
+    "one": 501,
+    "zero": 55
+  },
+  "shard_bits": 2,
+  "shards": {
+    "one": [
+      {
+        "index": 0,
+        "dimension": 33,
+        "states": 1073741824,
+        "eligible": 12,
+        "exit_code": 0,
+        "elapsed_seconds": 2272.34
+      },
+      {
+        "index": 1,
+        "dimension": 33,
+        "states": 1073741824,
+        "eligible": 4,
+        "exit_code": 0,
+        "elapsed_seconds": 2269.71
+      },
+      {
+        "index": 2,
+        "dimension": 33,
+        "states": 1073741824,
+        "eligible": 4,
+        "exit_code": 0,
+        "elapsed_seconds": 2281.79
+      },
+      {
+        "index": 3,
+        "dimension": 33,
+        "states": 1073741824,
+        "eligible": 1,
+        "exit_code": 0,
+        "elapsed_seconds": 2267.06
+      }
+    ],
+    "zero": [
+      {
+        "index": 0,
+        "dimension": 33,
+        "states": 1073741824,
+        "eligible": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 850.03
+      },
+      {
+        "index": 1,
+        "dimension": 33,
+        "states": 1073741824,
+        "eligible": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 827.031
+      },
+      {
+        "index": 2,
+        "dimension": 33,
+        "states": 1073741824,
+        "eligible": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 831.344
+      },
+      {
+        "index": 3,
+        "dimension": 33,
+        "states": 1073741824,
+        "eligible": 0,
+        "exit_code": 0,
+        "elapsed_seconds": 822.185
+      }
+    ]
+  },
+  "affine_one_catalogue": [
+    [
+      106954755,
+      9,
+      18
+    ],
+    [
+      106955571,
+      9,
+      18
+    ],
+    [
+      108029192,
+      13,
+      32
+    ],
+    [
+      108029496,
+      13,
+      32
+    ],
+    [
+      108658886,
+      13,
+      37
+    ],
+    [
+      108659702,
+      13,
+      37
+    ],
+    [
+      654726115,
+      12,
+      36
+    ],
+    [
+      654790755,
+      12,
+      36
+    ],
+    [
+      682624341,
+      18,
+      27
+    ],
+    [
+      682688773,
+      18,
+      27
+    ],
+    [
+      1688003459,
+      12,
+      41
+    ],
+    [
+      1688199619,
+      12,
+      41
+    ],
+    [
+      3332399203,
+      18,
+      18
+    ],
+    [
+      3332793139,
+      18,
+      18
+    ],
+    [
+      4259569358,
+      12,
+      40
+    ],
+    [
+      4259631166,
+      12,
+      40
+    ],
+    [
+      5568636245,
+      18,
+      27
+    ],
+    [
+      5595242662,
+      18,
+      27
+    ],
+    [
+      5961261472,
+      18,
+      18
+    ],
+    [
+      6125895846,
+      12,
+      40
+    ],
+    [
+      6664798406,
+      18,
+      27
+    ]
+  ],
+  "source_scope": "Exact frozen native source and canonical binary input; local exhaustive author audit, without independent full native replay.",
+  "audited_states": 8589934592
+}

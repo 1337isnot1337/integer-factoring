@@ -933,9 +933,16 @@ tests arbitrary binary recombinations after scalar projection of a complete
 two-copy crossing. All `2^21` vectors of the symmetric envelope were checked;
 the 17 tensors below the rank-product threshold span a space excluding the
 crossing. A different elimination algorithm independently checks the separating
-affine hyperplane. This rules out that entire finite envelope, with the full
-ordered space, higher powers and physical type restrictions still open.
+affine hyperplane. A separate
+[full ordered-envelope certificate](research/fused-ordered-scalar-envelope.md)
+checks all `2^33` vectors with two rank-product thresholds and proves
+rank-sum cost at least `sqrt(504)>9^sqrt(2)` for every binary decomposition
+in the 33-dimensional two-copy space. Its quick gate reconstructs the
+audit input and 84 full ranks; a separate command repeats the native audit.
+Higher powers, other fields and physical type restrictions remain open.
 Run `make verify-fused-scalar-projection` (requires a C++17 compiler).
+Run `make verify-fused-ordered-projection` for the ordered-space receipt
+and rank checks, or add `-full` for the complete native replay.
 For the original unprojected coefficient span, the
 [primary-character code theorem](research/fused-primary-character-code.md)
 proves `rho>=3/4` for every tensor length and every extension of the fixed
