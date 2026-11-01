@@ -1174,6 +1174,14 @@ the required weights, query count and recovery work are polynomial in `b`.
 The coefficient engine remains unproved. Run
 `make verify-divisor-moments` for the supplied-moment controls.
 
+The [global sparse-residue transfer](research/sparse-divisor-residues.md)
+connects that trial budget to the fixed-characteristic weighted constructor.
+Garg--Schost interpolation recovers the integer divisor polynomial from
+global cyclic residues, with polynomial algebra degrees through target
+score one. The refined transfer preserves every fixed positive saving
+exponent, removing the earlier cap from the transfer overhead. Its faster
+weighted evaluator remains unproved. Run `make verify-sparse-divisor-residues`.
+
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
 coefficient spans at local dimensions two and four. Dimension eight
