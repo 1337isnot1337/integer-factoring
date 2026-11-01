@@ -215,7 +215,12 @@ The field inverse-value identity cannot be copied to arbitrary ring inputs.
 For example, `3` has inverse `11 mod 16`; a field exponent-one rule would
 return `3`. Nonunits need not have any inverse. The model's Hensel steps
 invert acquired units, and (7) additionally inverts the known odd scalar
-`b-1`. These charged operations do not supply an inverse-factor compiler.
+`b-1`. The [collected-denominator extension](precision-efficient-residue-indicators.md#acquired-collected-denominator-carry-interface)
+now acquires total unit-inverse factors with at most `h+1` polynomial
+queries for the entire denominator list. It uses the companion's formal
+polynomial `H_(h+1)(X)/X`, charges the enlarged degree budget, and assigns
+zero to every nonunit. The field inverse exponent itself remains invalid
+at higher precision.
 
 The later [collected-inverse companion](precision-efficient-residue-indicators.md)
 supplies an inverse-factor compiler for total unit inverses, assigning zero
@@ -240,6 +245,12 @@ pins the seed, sources, quotient models and query digest. Regenerate with:
 ```
 python3 tools/check_teichmuller_cyclic_carries.py --generate
 ```
+
+The [clean full replay](../evidence/teichmuller-carry-full-verification.json)
+pins the default and 35 focused targets at exact `b9cd96f`, with 384 Python
+command blocks, 66 unit tests, five crossing tests and 1,129 Markdown files.
+It predates the collected-unit-inverse implementation and the companion
+precision-indicator addition; those later checks have separate scope.
 
 The negative control over precision six is substantive: the constant
 polynomial `3` has no residue roots, but the naive sum of `1-N_f` is
