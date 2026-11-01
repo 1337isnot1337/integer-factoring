@@ -2207,3 +2207,10 @@ search time from 67.006 to 9.694 seconds. A new certified 96-bit input factors
 after 20,480 queries versus 35,106 for the original exact-key selector. Full
 witnesses, both integer presentation maps and the original comparison replay;
 the original selector remains faster in total time, and the score is unchanged.
+
+A [literal Pfaffian constructor](research/tensor-literal-low-cell-retractions.md)
+now evaluates homogeneous physical retractions without deletion closure,
+retaining every within-cut Gaussian term. Independent original-kernel,
+Pfaffian, endpoint and Toeplitz controls accompany a complete capped 55-label
+pilot. It keeps more upper states than the coherent kernel construction,
+but this first numerical profile does not improve the pressure frontier.
