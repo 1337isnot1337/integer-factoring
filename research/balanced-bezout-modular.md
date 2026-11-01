@@ -255,10 +255,10 @@ Let `P^*(T)=T^m P(1+1/T)` and `Q^*(T)=T^m Q(1+1/T)`.
 Their constant coefficients are units. For `j>=0`, their degree-`j`
 coefficients, and those of their power-series inverses, satisfy
 
-\[
+```math
  v_2([T^j](P^*)^{\pm1})\ge(h+1)j,\qquad
  v_2([T^j](Q^*)^{\pm1})\ge hj.                  \tag{21}
-\]
+```
 
 For the products this follows from the valuations of their roots
 after translation: `A_i-1` is divisible by `2^(h+1)`, while

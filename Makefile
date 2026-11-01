@@ -301,6 +301,14 @@ verify-braid-path-profiles:
 verify-braid-reversal:
 	python3 tools/check_quantum_braid_reversal.py
 
+.PHONY: verify-braid-matrix-aux
+verify-braid-matrix-aux:
+	python3 tools/check_quantum_braid_matrix_aux.py
+
+.PHONY: verify-braid-rank-one
+verify-braid-rank-one:
+	python3 tools/check_quantum_braid_rank_one.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
@@ -2186,3 +2194,11 @@ verify-cube-f4-generic-frames:
 verify-cube-flat-low-order:
 	python3 tools/cube_flat_seeds.py
 	python3 tools/check_cube_flat_low_order_floors.py
+
+.PHONY: verify-matched-progression-bezout
+verify-matched-progression-bezout:
+	python3 tools/check_matched_progression_bezout.py --output /tmp/matched-progression-bezout.json
+
+.PHONY: verify-tensor-pascal-boxes
+verify-tensor-pascal-boxes:
+	python3 tools/check_tensor_pascal_box_crossings.py --output /tmp/tensor-pascal-box-crossings.json

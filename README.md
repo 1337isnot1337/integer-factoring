@@ -698,6 +698,19 @@ rank-one operator square-zero at every binary width. Polynomial
 conjugations preserve both endpoints; exact small examples cancel
 leading degrees without establishing a stronger pressure bound.
 Run the NumPy check `make verify-braid-reversal`.
+The [noncommuting matrix auxiliary](research/quantum-braid-matrix-auxiliary.md)
+preserves the strict F4 crossing and gives an explicit identity channel
+as its leading coefficient. Both cut ranks of this piece are exactly
+`L` at every length on a common alphabet containing the zigzag path.
+The whole polynomial has degree `3n^2/2`; its remaining coefficients
+still need a favorable decomposition. Complete small spans have
+dimensions16,55,97. Run the NumPy check `make verify-braid-matrix-aux`.
+An [all-extension minor certificate](research/quantum-braid-rank-one-loci.md)
+determines both six-site rank-one loci: the scalar family has only
+its top row-rank-one line and constant column-rank-one line; the
+matrix auxiliary has no nonzero row-rank-one direction and only
+the constant column-rank-one line. Higher ranks and longer paths
+remain open. Run `make verify-braid-rank-one` (NumPy).
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -1840,3 +1853,7 @@ The [fixed-dimensional cube transfer](research/multiaxis-cube-transfer.md) now s
 [Exact dyadic Bézout denominators](research/interval-bezout-precision.md) determine the least global polynomial normalization for residue-separated product domains. The [balanced-node refinement](research/balanced-bezout-denominator.md) proves `r=m+v2((m-1)!)` for every size, including independently deformed dyadic isometries. Its parity interpolation proof also reduces enormous-index normalized coefficients to low symmetric moments and shows that only `2p` terminal Newton terms survive modulo `2^p`. The normalization exponent is stored in binary; general factor extraction remains open. Run `make verify-interval-bezout verify-balanced-bezout`.
 
 The [complete modular Bézout compiler](research/balanced-bezout-modular.md) now constructs both optimally normalized global polynomials for the separated arithmetic-progression family in polynomial bit time. Each polynomial has fewer than `4p` possible terms in powers of `X-1` modulo `2^p`, despite an exponentially large degree and normalization exponent. Independent dense rational controls and three implicit domains of up to `2^200+13` nodes verify the complete coefficient output and charge factorial-ratio guard precision explicitly. This resolves normalized construction for that family, while unknown common-root extraction remains open. Run `make verify-balanced-bezout-modular`.
+
+A [deeply matched progression construction](research/matched-progression-bezout.md) computes complete primitive Bézout polynomials modulo a requested power of two for reflected arithmetic progressions with binary encoded, exponentially large counts. The proof controls reciprocal perturbations and accounts for the complete polynomial tails; its stable coprime family does not change the factoring exponent.
+
+[Tensor-product Pascal boxes](research/tensor-pascal-box-crossings.md) give an exact multi-coordinate crossing construction and coherent energy types. The accompanying pressure calculations and integer-polynomial certificates delimit the tested inherited gauges; they do not supply a score above one half.

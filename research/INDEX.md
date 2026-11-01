@@ -575,6 +575,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Quantum block-braid crossing compiler](quantum-block-braid-crossings.md): constant-dimensional cup/projector identities prove an all-length braided endpoint, with degree `O(lambda^2)`, allowed exponential entry construction and a complete six-site coefficient span of dimension 33; favorable uniform cut ranks remain open.
 - [Exact block-braid path quotient and F4 descent](quantum-braid-path-quotient.md): a negligible-wall and orthogonal-frame argument identifies the ambient coefficients with local bounded-path matrices; explicit period-five weights give a strict F4 crossing and omit one residue class without inflating retained cut ranks.
 - [Reversal-stable alphabets and nilpotent braid dressings](quantum-braid-reversal-nilpotence.md): polynomial-time binary orbit unranking gives a square-zero rank-one leading operator at every width; explicit conjugations preserve the crossing and cancel leading degrees in small examples, with the favorable pressure bound still open.
+- [Noncommuting matrix auxiliary and a linear-rank channel](quantum-braid-matrix-auxiliary.md): a strict degree-`3n^2/2` crossing has an explicit leading identity channel with both cut ranks exactly L; full finite spans grow to16,55,97, while a favorable decomposition of the remaining coefficients is open.
+- [All-extension braid rank-one loci](quantum-braid-rank-one-loci.md): pure-square minor consequences determine both six-site loci over every extension of F4; the scalar row locus is its top line, the enlarged auxiliary row locus is zero, and both column loci are their constant lines. Higher ranks and lengths remain open.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
@@ -1216,3 +1218,11 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Low-order tests for parity-breaking flat cubes
 
 - [Rank-one faces and a necessary average second-order gain](cube-flat-low-order-floors.md)
+
+## Interior F4 differential modules
+
+- [F4 differential codes and a matroid Hilbert formula](f4-differential-pair-codes.md): exact graded dimensions, a binary/F4 difference, and six completed two-cut trials. The trials do not improve the current hyperoval pressure bound.
+
+- [Deeply matched reflected progressions](matched-progression-bezout.md): exact primitive denominator and complete modular Bézout compiler at binary huge degree, with reciprocal perturbations retained.
+
+- [Tensor-product Pascal box crossings](tensor-pascal-box-crossings.md): exact crossing matrices, coherent energy labels, and all-scale certificates for 150 finite restriction screens.

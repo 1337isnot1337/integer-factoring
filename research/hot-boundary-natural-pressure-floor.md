@@ -3,7 +3,8 @@
 ## Result and precise scope
 
 Fix the 92 coordinate occupation words of height below 25. Add four
-paired labels from the eleven-dimensional height-25 space, using any
+paired labels from the eleven-dimensional height-25 space within the first
+twelve hot modes, using any
 height-preserving embedding and retraction with LP=I. The two physical
 sides may use different maps. Over every characteristic-two field,
 the natural zero/infinity typed Smith-pressure cost satisfies
