@@ -1,5 +1,7 @@
 # Research index
 
+- [Rectangular cofactors close the bare interface through nine letters](subalphabet-bare-nine-letter-floor.md): all-field, all-degree, all-scale floors `719/1000`, `713/1000` and `17/24` at seven, eight and nine letters, from short exact rational entropy witnesses. Independent physical gauges and factoring improvements remain open.
+
 - [Physical subalphabets strengthen graded adjugate compatibility](subalphabet-adjugate-caps.md): all-field square restrictions and rectangular cofactor gaps exclude the last integer target and give exact positive pressure certificates at three formerly negative parameter points; no global energy floor or score improvement.
 
 - [Complete affine equations in F4 reference frames](windowed-f4-affine-frames.md): coupled field equations, independent binary equivalence and nonbinary frame controls, an actual degree-42 five-letter pilot, and the completed four-frame binary predecessor.

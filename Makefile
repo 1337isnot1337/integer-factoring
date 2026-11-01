@@ -2448,6 +2448,12 @@ verify-subalphabet-adjugate-caps:
 
 verify-frontier: verify-subalphabet-adjugate-caps
 
+.PHONY: verify-subalphabet-bare-entropy
+verify-subalphabet-bare-entropy:
+	python3 tools/check_subalphabet_bare_entropy.py --output /tmp/subalphabet-bare-entropy.json
+
+verify-frontier: verify-subalphabet-bare-entropy
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py

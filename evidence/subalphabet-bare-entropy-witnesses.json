@@ -1,0 +1,188 @@
+[
+  {
+    "alphabet": 7,
+    "rho_floor": "719/1000",
+    "integer_constraint_weights": [
+      [
+        [
+          "prefix",
+          7
+        ],
+        53987
+      ],
+      [
+        [
+          "square cofactor cell",
+          7,
+          7,
+          49
+        ],
+        29
+      ],
+      [
+        [
+          "square cofactor shared line",
+          7,
+          7,
+          7
+        ],
+        1197
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          3,
+          7,
+          7
+        ],
+        213
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          4,
+          7,
+          7
+        ],
+        995
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          5,
+          7,
+          7
+        ],
+        513
+      ]
+    ],
+    "scope": "Ordinary all-field, all-degree, all-scale bare local Smith-pressure obstruction; no factoring lower bound."
+  },
+  {
+    "alphabet": 8,
+    "rho_floor": "713/1000",
+    "integer_constraint_weights": [
+      [
+        [
+          "prefix",
+          8
+        ],
+        49183
+      ],
+      [
+        [
+          "square cofactor cell",
+          8,
+          8,
+          64
+        ],
+        14
+      ],
+      [
+        [
+          "square cofactor shared line",
+          8,
+          8,
+          8
+        ],
+        753
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          4,
+          8,
+          8
+        ],
+        549
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          5,
+          8,
+          8
+        ],
+        422
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          6,
+          8,
+          8
+        ],
+        266
+      ]
+    ],
+    "scope": "Ordinary all-field, all-degree, all-scale bare local Smith-pressure obstruction; no factoring lower bound."
+  },
+  {
+    "alphabet": 9,
+    "rho_floor": "17/24",
+    "integer_constraint_weights": [
+      [
+        [
+          "prefix",
+          9
+        ],
+        45117
+      ],
+      [
+        [
+          "square cofactor cell",
+          9,
+          9,
+          81
+        ],
+        7
+      ],
+      [
+        [
+          "square cofactor shared line",
+          9,
+          9,
+          9
+        ],
+        504
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          4,
+          9,
+          9
+        ],
+        236
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          5,
+          9,
+          9
+        ],
+        309
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          6,
+          9,
+          9
+        ],
+        226
+      ],
+      [
+        [
+          "rectangular cofactor shared line",
+          7,
+          9,
+          9
+        ],
+        148
+      ]
+    ],
+    "scope": "Ordinary all-field, all-degree, all-scale bare local Smith-pressure obstruction; no factoring lower bound."
+  }
+]

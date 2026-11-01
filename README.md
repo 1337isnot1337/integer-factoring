@@ -66,6 +66,10 @@ cell-cap profile optimizers. Stronger
 also exclude the later integer target and its entire proposed row-prefix
 sector. Exact rational dual certificates give positive critical pressure
 at three old parameter points; a global floor over all energies remains open.
+For the bare interface,
+[rectangular cofactor entropy witnesses](research/subalphabet-bare-nine-letter-floor.md)
+give all-field, all-degree, all-scale exclusions through nine physical letters;
+the nine-letter rate is greater than `17/24 > 1/sqrt(2)`.
 An [exact finite-window frame backend](research/windowed-smith-frames.md)
 makes repeated affine-frame construction practical while preserving the
 original low-coefficient systems. Its
