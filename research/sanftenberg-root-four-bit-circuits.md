@@ -163,13 +163,95 @@ transforms, the inverse transform, and the coefficient/carry recovery. A
 local `O(T)`-width product gadget does not by itself give a sub-`ell/sqrt(log
 ell)` separator for this connected network.
 
-The next proof obligation is an explicit tree decomposition or elimination
-order for the *entire* bit circuit, including canonical-word checks, all
-pointwise multipliers, the inverse transform, carry recovery, and every
-interface wire. A bound below `ell/sqrt(log ell)` could change the evaluator
-cost; gate count alone cannot. The source's semiprime promise and complete
-primitive-machine cost also remain separate obligations. No stronger
-factoring exponent or Lean result is claimed here.
+### The ideal twisted-fiber model has a sharp half-rate floor
+
+There is a useful conditional model for the missing global argument. Let
+`H(B,q,pi)` have a `q`-vertex clique `F_v` for every vertex `v` of a simple
+base graph `B`. For each base edge `uv`, join `F_u` to `F_v` by an arbitrary
+perfect matching; `pi` denotes the collection of these permutations. Define
+
+```math
+\mu_{1/6}(B)=
+\min_{\substack{U\subseteq V(B)\\
+|U|,\,|V(B)\setminus U|\ge \lfloor n/6\rfloor}}
+\nu(E_B(U,V(B)\setminus U)),\qquad n=|V(B)|.
+```
+
+Here `nu` is maximum matching size. For `|V(B)|>=6`,
+
+```math
+\operatorname{tw}(H(B,q,\pi)) \ge q\mu_{1/6}(B)-1,
+```
+
+independently of every matching permutation. To see this, take any balanced
+separator `S` of `H`. If `|S|>=q|V(B)|/6`, use
+`mu_{1/6}(B)<=floor(|V(B)|/6)`. Otherwise the components of `H-S`, each of
+size at most half the graph, can be grouped into two unions of size at least
+`q|V(B)|/6`: take one component of that size if it exists, and otherwise
+accumulate components until the union first reaches that size. Since each
+fiber is a clique, its surviving vertices lie in one group. Assign a fully
+deleted fiber arbitrarily. The resulting base cut has both sides of size at
+least `|V(B)|/6`. Every matching edge across a crossing base edge must meet
+`S`; choosing a maximum matching of crossing base edges makes all `q`-edge
+fiber matchings vertex-disjoint, so `|S|>=q mu_{1/6}(B)`. The balanced
+separator characterization of treewidth gives the claim.
+
+For `B=Q_d`, this parameter is sharp:
+
+```math
+\mu_{1/6}(Q_d)=\Theta(2^d/\sqrt d).
+```
+
+The upper bound uses a median Hamming-ball cut; its crossing edges meet a
+central layer of size `O(2^d/sqrt(d))`. For the lower bound, the crossing-edge
+graph of any cut is bipartite. By Koenig's theorem its maximum matching has
+the size of a minimum vertex cover `C`. If `|C|` is already at least a fixed
+fraction of `2^d`, the desired bound follows. Otherwise deleting `C` leaves
+at least a fixed positive fraction of the cube on each side and no edge
+between them. Thus the external vertex boundary of either side is contained
+in `C`. Harper's vertex-isoperimetric theorem says this boundary is minimized
+by an initial segment of the simplicial order. For a set whose size is between
+fixed positive fractions of `2^d`, this prefix contains all layers below some
+`k=d/2+O(sqrt(d))` and a subset `A_k` of layer `k`. Its external boundary
+contains both the unused part of layer `k` and the upper shadow of `A_k` in
+layer `k+1`. Double-counting incidences gives
+`|upper(A_k)| >= |A_k|(d-k)/(k+1) >= |A_k|/2` for sufficiently large `d`.
+Thus the boundary is at least a fixed fraction of `binom(d,k)`, which is
+`Theta(2^d/sqrt(d))` by Stirling's estimate. Consequently
+`|C|=Omega(2^d/sqrt(d))`.
+
+There is also a matching upper bound on the bundle treewidth: lift every bag
+of a tree decomposition of `B` by replacing each base vertex with its whole
+fiber. Therefore
+
+```math
+\operatorname{tw}(H(B,q,\pi)) \le q(\operatorname{tw}(B)+1)-1.
+```
+
+The hypercube treewidth estimate from the
+[dense-table analysis](sanftenberg-transform-treewidth-floor.md) gives
+`tw(Q_d)=Theta(2^d/sqrt(d))`. Thus the ideal twisted-fiber graph has
+`tw(H(Q_d,q,pi))=Theta(q2^d/sqrt(d))` for every choice of twists. With
+`q=T/2`, `T=2^d`, and `T^2=Theta(ell)`, this is
+`Theta(ell/sqrt(log ell))`: twists alone cannot take this graph-decomposition
+route below the current half-rate scale. The vertex-isoperimetric input is
+Harper, [*Optimal numberings and isoperimetric problems on graphs*](https://doi.org/10.1016/S0021-9800(66)80059-5).
+
+This settles the matching-cut order for the abstract model, not its occurrence
+in the actual bit circuit. The pointwise-product clique minors and the
+butterfly connections must still be realized by pairwise-disjoint branch sets
+in the same graph. Until that embedding is proved, the result is not a
+treewidth lower bound for the source circuit. Even with the embedding, it
+would obstruct dense tree-decomposition evaluation of this representation,
+not factoring algorithms in general.
+
+The next proof obligation is now specific: either construct the circuit-to-
+bundle minor with disjoint branch sets, which would close this representation
+at the half-rate width floor, or identify exactly which carry/circuit feature
+prevents that embedding and could permit a smaller decomposition. Any
+candidate improvement still needs the entire bit circuit, coefficient/carry
+recovery, the source's semiprime promise, and complete primitive-machine cost
+accounted for. No stronger factoring exponent or Lean result is claimed here.
 
 No upstream code was copied. Substantial OpenAI assistant support was used in
 the source and circuit analysis.
