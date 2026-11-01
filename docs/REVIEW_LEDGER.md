@@ -780,3 +780,18 @@ retain all commands and hashes. This includes PR64 and the q12 box
 correction, but predates the q13 audits/target and later peer treewidth
 delta, whose checks remain separate. No new Lean or stronger complete
 factoring bound is implied.
+
+## Exact PR65/67 default integration replay at `3709a9e`
+
+The clean frozen source `3709a9e71f5ba6614f8a40318cf5921baadf931b`,
+tree `a9ece4ec6b6d0147e817eaa88511af1abf383dc8`, passed `make verify`
+in 730.30 seconds, then the elliptic-word, graded-box and higher-axis
+Frobenius targets in 2.03 seconds. The
+[receipt](../evidence/verify-pr65-67-default-3709a9e.json) and
+[complete compressed log](../evidence/verify-pr65-67-default-3709a9e.stdout.txt.xz)
+retain exact commands, clean pre/post status and hashes. The separately
+archived routing replay at the same source also passed. This source
+includes the routing failure-exit fixes but predates the final PR65
+documentation/receipt merge and global-axis-alignment extension; their
+focused checks remain separate. No Lean or stronger factoring bound
+is claimed.
