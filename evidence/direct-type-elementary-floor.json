@@ -1,0 +1,634 @@
+{
+  "status": "pass",
+  "scope": "Uniform floor for full common binary types of the elementary seed; no factoring lower bound.",
+  "proved_pressure_floor": "3/4",
+  "half_threshold_separation": "9/16 > 1/2",
+  "typed_tensor_cases": [
+    {
+      "length": 2,
+      "weight": 1,
+      "alphabet": 2,
+      "degree": 2,
+      "tensor_entries_checked": 16,
+      "row_infinity_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "column_zero_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "pressure_checks": [
+        {
+          "scale": "1",
+          "actual_product": "16",
+          "block_floor": "9",
+          "uniform_floor": 8
+        },
+        {
+          "scale": "3/2",
+          "actual_product": "28561/2916",
+          "block_floor": "289/36",
+          "uniform_floor": 8
+        },
+        {
+          "scale": "2",
+          "actual_product": "625/64",
+          "block_floor": "9",
+          "uniform_floor": 8
+        },
+        {
+          "scale": "3",
+          "actual_product": "10000/729",
+          "block_floor": "121/9",
+          "uniform_floor": 8
+        }
+      ]
+    },
+    {
+      "length": 3,
+      "weight": 1,
+      "alphabet": 3,
+      "degree": 2,
+      "tensor_entries_checked": 81,
+      "row_infinity_counts": [
+        [
+          0,
+          3
+        ],
+        [
+          2,
+          3
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "column_zero_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          8
+        ]
+      ],
+      "pressure_checks": [
+        {
+          "scale": "1",
+          "actual_product": "81",
+          "block_floor": "42",
+          "uniform_floor": 27
+        },
+        {
+          "scale": "3/2",
+          "actual_product": "5453/108",
+          "block_floor": "143/4",
+          "uniform_floor": 27
+        },
+        {
+          "scale": "2",
+          "actual_product": "189/4",
+          "block_floor": "75/2",
+          "uniform_floor": 27
+        },
+        {
+          "scale": "3",
+          "actual_product": "1547/27",
+          "block_floor": "50",
+          "uniform_floor": 27
+        }
+      ]
+    },
+    {
+      "length": 4,
+      "weight": 1,
+      "alphabet": 4,
+      "degree": 2,
+      "tensor_entries_checked": 256,
+      "row_infinity_counts": [
+        [
+          0,
+          6
+        ],
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          6
+        ]
+      ],
+      "column_zero_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "pressure_checks": [
+        {
+          "scale": "1",
+          "actual_product": "256",
+          "block_floor": "130",
+          "uniform_floor": 64
+        },
+        {
+          "scale": "3/2",
+          "actual_product": "72721/486",
+          "block_floor": "665/6",
+          "uniform_floor": 64
+        },
+        {
+          "scale": "2",
+          "actual_product": "4307/32",
+          "block_floor": "112",
+          "uniform_floor": 64
+        },
+        {
+          "scale": "3",
+          "actual_product": "36608/243",
+          "block_floor": "406/3",
+          "uniform_floor": 64
+        }
+      ]
+    },
+    {
+      "length": 4,
+      "weight": 2,
+      "alphabet": 6,
+      "degree": 4,
+      "tensor_entries_checked": 1296,
+      "row_infinity_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "column_zero_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          4,
+          6
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "pressure_checks": [
+        {
+          "scale": "1",
+          "actual_product": "1296",
+          "block_floor": "361",
+          "uniform_floor": 216
+        },
+        {
+          "scale": "3/2",
+          "actual_product": "4029837361/8503056",
+          "block_floor": "41209/144",
+          "uniform_floor": 216
+        },
+        {
+          "scale": "2",
+          "actual_product": "1703025/4096",
+          "block_floor": "1225/4",
+          "uniform_floor": 216
+        },
+        {
+          "scale": "3",
+          "actual_product": "302064400/531441",
+          "block_floor": "4225/9",
+          "uniform_floor": 216
+        }
+      ]
+    },
+    {
+      "length": 5,
+      "weight": 1,
+      "alphabet": 5,
+      "degree": 2,
+      "tensor_entries_checked": 625,
+      "row_infinity_counts": [
+        [
+          0,
+          10
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          10
+        ]
+      ],
+      "column_zero_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          24
+        ]
+      ],
+      "pressure_checks": [
+        {
+          "scale": "1",
+          "actual_product": "625",
+          "block_floor": "315",
+          "uniform_floor": 125
+        },
+        {
+          "scale": "3/2",
+          "actual_product": "20125/54",
+          "block_floor": "4895/18",
+          "uniform_floor": 125
+        },
+        {
+          "scale": "2",
+          "actual_product": "665/2",
+          "block_floor": "270",
+          "uniform_floor": 125
+        },
+        {
+          "scale": "3",
+          "actual_product": "9515/27",
+          "block_floor": "2755/9",
+          "uniform_floor": 125
+        }
+      ]
+    },
+    {
+      "length": 5,
+      "weight": 2,
+      "alphabet": 10,
+      "degree": 4,
+      "tensor_entries_checked": 10000,
+      "row_infinity_counts": [
+        [
+          0,
+          5
+        ],
+        [
+          2,
+          40
+        ],
+        [
+          4,
+          10
+        ],
+        [
+          6,
+          40
+        ],
+        [
+          8,
+          5
+        ]
+      ],
+      "column_zero_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          24
+        ],
+        [
+          4,
+          74
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "pressure_checks": [
+        {
+          "scale": "1",
+          "actual_product": "10000",
+          "block_floor": "2295",
+          "uniform_floor": 1000
+        },
+        {
+          "scale": "3/2",
+          "actual_product": "32248341125/8503056",
+          "block_floor": "702415/432",
+          "uniform_floor": 1000
+        },
+        {
+          "scale": "2",
+          "actual_product": "12399205/4096",
+          "block_floor": "6615/4",
+          "uniform_floor": 1000
+        },
+        {
+          "scale": "3",
+          "actual_product": "1897483280/531441",
+          "block_floor": "66445/27",
+          "uniform_floor": 1000
+        }
+      ]
+    }
+  ],
+  "tensor_entries_checked": 12274,
+  "integer_binomial_cases": 4096,
+  "square_identity_coefficient_cases": 561,
+  "square_identity_matrix_entries": 441,
+  "middle_slice_profiles": [
+    {
+      "rank": 0,
+      "dimension": 1,
+      "profile_counts": [
+        [
+          0,
+          1
+        ]
+      ]
+    },
+    {
+      "rank": 1,
+      "dimension": 2,
+      "visible_orders_below_rank": 1,
+      "profile_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "finite_multiplicity_pattern_matches": true,
+      "completion_uses_proved_square_identity": true
+    },
+    {
+      "rank": 2,
+      "dimension": 6,
+      "visible_orders_below_rank": 3,
+      "profile_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          3,
+          2
+        ],
+        [
+          4,
+          1
+        ]
+      ],
+      "finite_multiplicity_pattern_matches": true,
+      "completion_uses_proved_square_identity": true
+    },
+    {
+      "rank": 3,
+      "dimension": 20,
+      "visible_orders_below_rank": 10,
+      "profile_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          5
+        ],
+        [
+          4,
+          5
+        ],
+        [
+          5,
+          4
+        ],
+        [
+          6,
+          1
+        ]
+      ],
+      "finite_multiplicity_pattern_matches": true,
+      "completion_uses_proved_square_identity": true
+    },
+    {
+      "rank": 4,
+      "dimension": 70,
+      "visible_orders_below_rank": 35,
+      "profile_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          2,
+          14
+        ],
+        [
+          3,
+          14
+        ],
+        [
+          5,
+          14
+        ],
+        [
+          6,
+          14
+        ],
+        [
+          7,
+          6
+        ],
+        [
+          8,
+          1
+        ]
+      ],
+      "finite_multiplicity_pattern_matches": true,
+      "completion_uses_proved_square_identity": true
+    },
+    {
+      "rank": 5,
+      "dimension": 252,
+      "visible_orders_below_rank": 126,
+      "profile_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          8
+        ],
+        [
+          2,
+          27
+        ],
+        [
+          3,
+          48
+        ],
+        [
+          4,
+          42
+        ],
+        [
+          6,
+          42
+        ],
+        [
+          7,
+          48
+        ],
+        [
+          8,
+          27
+        ],
+        [
+          9,
+          8
+        ],
+        [
+          10,
+          1
+        ]
+      ],
+      "finite_multiplicity_pattern_matches": true,
+      "completion_uses_proved_square_identity": true
+    },
+    {
+      "rank": 6,
+      "dimension": 924,
+      "visible_orders_below_rank": 462,
+      "profile_counts": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          10
+        ],
+        [
+          2,
+          44
+        ],
+        [
+          3,
+          110
+        ],
+        [
+          4,
+          165
+        ],
+        [
+          5,
+          132
+        ],
+        [
+          7,
+          132
+        ],
+        [
+          8,
+          165
+        ],
+        [
+          9,
+          110
+        ],
+        [
+          10,
+          44
+        ],
+        [
+          11,
+          10
+        ],
+        [
+          12,
+          1
+        ]
+      ],
+      "finite_multiplicity_pattern_matches": true,
+      "completion_uses_proved_square_identity": true
+    }
+  ],
+  "general_middle_multiplicity_formula_proved": false,
+  "checker_sha256": "ce3f5b24d76f48d4c5cbfef17aabf671062c0891845a40333c065df87c3b9b21"
+}
