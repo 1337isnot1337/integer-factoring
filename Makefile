@@ -2653,3 +2653,8 @@ verify-batch-smooth-fresh-192:
 .PHONY: verify-classical-oriented-basis
 verify-classical-oriented-basis:
 	python3 tools/check_classical_coprime_basis.py
+
+.PHONY: verify-tensor-literal-full-tail
+verify-tensor-literal-full-tail:
+	python3 tools/check_tensor_literal_full_tail_core.py --output /tmp/tensor-full-tail-replay.json
+	python3 tools/check_tensor_literal_full_tail_rank_one.py --output /tmp/tensor-full-tail-rank-one-replay.json

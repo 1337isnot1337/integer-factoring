@@ -1,5 +1,7 @@
 # Research index
 
+- [Uniform literal full-tail core](tensor-literal-full-tail-core.md): weighted operator transport, both cut gauges, complete rank-one applications, and independent endpoint/Smith controls.
+
 - [Executable classical coprime construction](classical-oriented-basis-engine.md): complete integer engine, sparse norm words, oriented ideal verification, and full 64/80/96 controls.
 
 - [Certified 192-bit batched selective promotion](batch-smooth-fresh-192.md): complete saved-artifact replay, charged generated-ahead work, checked archive reconstruction, and the gated 208-bit follow-on.
