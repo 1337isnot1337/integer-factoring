@@ -92,6 +92,16 @@ def certificate():
     base = [[p for p, high in row] for row in literal]
     assert all(high == 0 for row in literal for _, high in row)
     normalized = [regular_zero(base), regular_infinity(base)]
+    first_minor_checks = 0
+    for row, h in enumerate(H):
+        for raw in row_space(h, 1):
+            changed = [r[:] for r in base]
+            changed[row] = [a ^ b for a, b in zip(changed[row], raw)]
+            for m in (regular_zero(changed), regular_infinity(changed)):
+                minor = mul(m[0][0], m[1][1]) ^ mul(m[0][1], m[1][0])
+                assert minor & 3 == 2
+                first_minor_checks += 1
+    assert first_minor_checks == 958
     gauges, formula = [two_pivot_flag(m) for m in normalized], [patterns(m) for m in normalized]
     variables, images, rawimages = [], [], []
     for row, h in enumerate(H):
@@ -155,6 +165,8 @@ def certificate():
     return dict(scope='All characteristic-two fields: complete fixed-embedding rational row module; under the stated degree bound, frozen first two raw jets and no order two at either cut, the third zero Smith order is exactly three.',
                 basis=basis, polynomial_right_inverse=inverse, source_to_basis=conversion,
                 right_inverse_degree=bound, source_rank_at_omega=9, saturation=steps,
+                frozen_leading_space_dimension=479, first_minor_coefficient=1,
+                first_minor_direction_checks=first_minor_checks,
                 bounded_row_dimensions=dims, k2_variables=len(variables), no_order_two_rank=len(pivots),
                 no_order_two_dimension=len(nullspace), second_jet_quotient_dimension=len(directions),
                 higher_jet_dimension=higher, higher_jet_minor_checks=higher_checks,

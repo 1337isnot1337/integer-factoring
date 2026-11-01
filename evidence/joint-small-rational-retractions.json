@@ -1005,6 +1005,9 @@
     ],
     "leading_reductions": 0
   },
+  "frozen_leading_space_dimension": 479,
+  "first_minor_coefficient": 1,
+  "first_minor_direction_checks": 958,
   "bounded_row_dimensions": [
     [
       16,
@@ -2848,7 +2851,7 @@
   ],
   "linear_constraint_sha256": "4bb151aab3d813a93a62f63b6d18f6069c04d1bcd06f106e9748976743be033a",
   "source_sha256": {
-    "check_joint_small_rational_retractions.py": "a8f50cc436021287922e809e90a0f2534589a55ea79c7c55d58a10169fe56fdc",
+    "check_joint_small_rational_retractions.py": "8b73c3780e28abdda988c733a325812387a8a4fa44e4cf390e02f9e08284e077",
     "joint_small_rational_retractions.py": "935b42bc67803a242381adb8b329caa07dbcd2539586130ded5ace1d0ae9cd4c",
     "joint_hot_retraction_module.py": "417a27579dda957564e70bef5c6c4a2458dbe2b4b35b025a1782fb8ae9367c90",
     "check_joint_hot_retraction_module.py": "63605f841341bfb35e6c3ae49ac52bed2ba94191546afde49f449382740710f7",

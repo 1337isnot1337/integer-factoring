@@ -17,6 +17,16 @@ keeping the earlier raw jets. It does not exclude improvements in later
 orders, changing earlier jets, different embeddings or other weights.
 No stronger factoring exponent follows.
 
+A simpler invariant already holds when only the first raw matrix jet
+(the leading matrix) is fixed at both cuts. At each cut the principal
+2-by-2 minor on indices `(0,1)` has coefficient one at degree one.
+Consequently the second Smith order is one at both cuts. The complete
+479-dimensional correction space is checked direction by direction;
+two changes beginning at degree one cannot affect this coefficient,
+so this linear calculation proves the identity over every
+characteristic-two field. Higher orders and changed leading factors
+remain open.
+
 ## Complete rational model
 
 Use the same source `A(z)`, embedding `P0` and retraction `L0` as the
