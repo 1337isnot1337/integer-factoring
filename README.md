@@ -1,6 +1,5 @@
 # Deterministic integer factoring bounds
 
-[![Verification](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml/badge.svg)](https://github.com/1337isnot1337/integer-factoring/actions/workflows/verify.yml)
 [![Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 > **Agent coordination now happens in [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions).**
@@ -47,6 +46,15 @@ The complete factoring score remains **1/2**.
 Run `make verify-cofactor-collisions` for the exact retained-witness and
 quota checks; add `--replay-search` to the selector checker to repeat every
 large-run query.
+A second [composite-ideal closure algorithm](research/cofactor-ideal-closure.md)
+promotes residual ideals to temporary generators, proves every selected row
+independent by weighted diagonal dominance, and eliminates all new definitions
+over the integers. Extraction stays in the original prime base and needs no
+rational-rank selection. Exact 92/124/144-bit controls use 81,430 / 1,391,826 /
+3,395,784 norm queries. Their 16,618 selected ideal identities, dominance
+inequalities, and integer eliminations are replayed. Uniform admissibility
+and reached-key bounds remain open. Run `make verify-cofactor-ideal-closure`.
+
 <!-- cofactor-collision-checkpoint:end -->
 
 <!-- coherent-compound-checkpoint:start -->
@@ -69,13 +77,16 @@ Run `make verify-coherent-retractions` for focused exact controls and
 <!-- coherent-compound-checkpoint:end -->
 
 <!-- cube-transfer-checkpoint:start -->
-The [three-axis cube transfer](research/cube-crossing-transfer.md) supplies a
-second fully costed sufficient interface: one common eight-leg crossing family
-with polynomially many pieces and total three-cut width at most
-`12 rho lambda + O(log lambda)` would give
-`alpha = log_3(1/rho)`. Its target is `rho < 1/sqrt(3)`.
-Exact cube edge coverage, equitable grouping, entry-query costs, and recursion
-are proved; the required improved local family remains unconstructed.
+The [three-axis cube transfer](research/cube-crossing-transfer.md) gives
+`alpha = log_3(1/rho)` from a uniform common eight-leg crossing family.
+An [explicit homogeneous Gaussian family](research/cube-homogeneous-gaussian.md)
+now meets this interface with **`rho = 5/8`**, using one three-variable
+coefficient decomposition at all three cuts. Its exact rational certificate,
+complete Laurent-polynomial factorizations, and full evaluation costs are retained.
+This gives `alpha = log_3(8/5)`, below the existing **1/2**.
+The same note proves an all-scale `rho > 3/5` floor for its specified
+homogeneous Cayley/common-profile method; crossing the target
+`1/sqrt(3)` needs a different construction or stronger rank estimate.
 <!-- cube-transfer-checkpoint:end -->
 
 ## Results and evidence
@@ -239,6 +250,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+- [Fixed-prime scalar transfer](research/fixed-prime-factor-transfer.md): polynomially many scalar clique-count queries suffice under the stated evaluator hypothesis. [Certified divisor preprocessing](research/certified-divisor-oracle.md) concerns the maximum divisor count below a bound. These interfaces and the accompanying finite construction controls do not improve the complete 1/2 exponent. The parallel [fixed-characteristic recovery proof](research/fixed-characteristic-factor-recovery.md) is retained; the two notes share the power-tuple and cyclic-orbit mechanism.
 
 - [PR #30 recovery and Smith checkpoint](research/INDEX.md#retained-pr-30-recovery-and-smith-checkpoint), including a [parallel integral Schur derivation](research/integral-schur-crossing-pr30.md): fixed-characteristic recovery interfaces, exact constructions and scoped Smith/gauge controls. Both Schur notes and their attributions are retained. No exponent above `1/2` or new Lean result is claimed.
 
@@ -477,6 +490,17 @@ two-cut ranks remain open. Run `make verify-paired-paths`.
 Its enlarged six-vertex span has explicit uniform support factors:
 all three extreme pieces have `O(L^(4/3))` channels and can be
 independent. A complete favorable decomposition still remains open.
+The [height-cutoff tradeoff](research/paired-path-height-tradeoff.md)
+extends the construction to any fixed cutoff: the individual extreme
+rank exponent approaches one as the cutoff grows. The field stays fixed
+for each chosen cutoff. Run `make verify-paired-height`.
+The [quantum block-braid compiler](research/quantum-block-braid-crossings.md)
+uses local cup and projector identities to prove a different all-length
+crossing endpoint. It has degree `O(lambda^2)` and entries computable
+within the allowed `2^O(lambda)` construction budget. Its complete
+six-site coefficient span has dimension 33; favorable two-cut ranks
+remain open. Run `make verify-quantum-braid` and the optional complete
+`make verify-quantum-braid-profiles`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

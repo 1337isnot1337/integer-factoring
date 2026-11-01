@@ -1,0 +1,23 @@
+{
+  "scope": "All characteristic-two fields; full V tensor fourth power; no claim for changed coefficient spaces or larger powers.",
+  "counts": {
+    "binary_minor_controls": 720,
+    "field4_minor_controls": 1280,
+    "field4_local_conics": 15,
+    "binary_four_site_conics": 81
+  },
+  "four_site_conic_column_rank_histogram": {
+    "1": 16,
+    "4": 32,
+    "16": 24,
+    "64": 8,
+    "256": 1
+  },
+  "case_bound_numerators": {
+    "neither_exception": 688,
+    "one_exception": 748,
+    "both_exceptions": 703
+  },
+  "case_bound_denominator": 13,
+  "checker_sha256": "f81eb8732c5ba8be41c4255fb92698b56edeb5a41be589ed1a4d95001e8d30d9"
+}

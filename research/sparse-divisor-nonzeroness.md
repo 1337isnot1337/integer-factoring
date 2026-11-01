@@ -2,6 +2,11 @@
 
 ## Result and scope
 
+The [rough-input refinement](rough-sparse-transfer.md) improves the additional
+transfer cost below to `exp(O(sqrt n))` by testing small factors first. It
+preserves every fixed exponent supplied by the same evaluator hypothesis,
+removing the `min(alpha,1)` ceiling of this original support bound.
+
 Weighted divisor-prefix queries can be tested deterministically over one
 fixed characteristic. Integer counts do not need to be reconstructed.
 The required family of cyclic polynomial rings has

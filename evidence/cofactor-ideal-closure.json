@@ -1,0 +1,9704 @@
+{
+  "budget_failure_controls": [
+    {
+      "active_primes": [
+        2,
+        3
+      ],
+      "admissible_queries": 1,
+      "augmented_relation_rank": 1,
+      "cached_word_count": 2,
+      "closed": false,
+      "cofactor_rejections": 1,
+      "cutoff": 5,
+      "definition_nodes_expanded": 0,
+      "discriminant": -4088468,
+      "extractions": 1,
+      "factor": null,
+      "factoring_oracle_calls": 0,
+      "fixed_relation_sources": [
+        0
+      ],
+      "generator_count": 2,
+      "generators": [
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            2,
+            2,
+            511059
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 2
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            3,
+            -2,
+            340706
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 3
+        }
+      ],
+      "height_bound": 1167,
+      "initial_base_size": 2,
+      "initial_power_computations": 2,
+      "input_bits": 20,
+      "integer": 1022117,
+      "last_extraction": {
+        "annihilator_supplied": false,
+        "determinant_computed": false,
+        "group_inversions": 0,
+        "group_multiplications": 8,
+        "identity_tops": 0,
+        "initial_relations_verified": 1,
+        "kernel_passes": 1,
+        "maximum_entry_bits": 4,
+        "paired_bad_top_updates": 0,
+        "rejected_nonidentity_tops": 1,
+        "relation_deficiency": 1,
+        "relation_dimension": 2,
+        "relation_rows": 1,
+        "saturation_bound": 4,
+        "saturations": 0,
+        "termination": "cyclic two-part with its sole top rejected",
+        "tops_evaluated": 1
+      },
+      "max_cofactor": 1,
+      "max_generators": null,
+      "max_queries": null,
+      "maximum_definition_depth": 0,
+      "maximum_exponent_tested": 11,
+      "maximum_relation_entry_bits": 4,
+      "maximum_residual_bits": 0,
+      "maximum_word_coefficient_bits": 1,
+      "method": "admissible power window exhausted",
+      "new_primes_introduced": 0,
+      "new_residual_generators": 0,
+      "norm_queries": 2,
+      "partial_identities_verified": 0,
+      "prime_records": {
+        "2": [
+          2,
+          [
+            2,
+            2,
+            511059
+          ]
+        ],
+        "3": [
+          4,
+          [
+            3,
+            -2,
+            340706
+          ]
+        ]
+      },
+      "relation_matrix": [
+        [
+          10,
+          0
+        ]
+      ],
+      "relation_rank": 1,
+      "residual_primality_tests": 0,
+      "sparse_augmented_relation_matrix": [
+        [
+          [
+            0,
+            10
+          ]
+        ]
+      ],
+      "successive_power_compositions": 0,
+      "terminal_witness": {
+        "generator_index": 1
+      },
+      "trial_divisions": 2,
+      "window": 1,
+      "witnesses": [
+        {
+          "exponent": 11,
+          "factors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "generator_index": 0,
+          "key": null,
+          "orientation": 1,
+          "residual": 1,
+          "residual_form": null,
+          "residual_index": null,
+          "smooth_part": 2,
+          "target": [
+            2,
+            2,
+            511059
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "2": 1
+          }
+        }
+      ],
+      "word_expansions": 0
+    },
+    {
+      "active_primes": [
+        2,
+        3
+      ],
+      "admissible_queries": 0,
+      "augmented_relation_rank": 0,
+      "cached_word_count": 2,
+      "closed": false,
+      "cofactor_rejections": 0,
+      "cutoff": 5,
+      "definition_nodes_expanded": 0,
+      "discriminant": -4088468,
+      "extractions": 0,
+      "factor": null,
+      "factoring_oracle_calls": 0,
+      "fixed_relation_sources": [],
+      "generator_count": 2,
+      "generators": [
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            2,
+            2,
+            511059
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 2
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            3,
+            -2,
+            340706
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 3
+        }
+      ],
+      "height_bound": 1167,
+      "initial_base_size": 2,
+      "initial_power_computations": 1,
+      "input_bits": 20,
+      "integer": 1022117,
+      "last_extraction": null,
+      "max_cofactor": 10000,
+      "max_generators": null,
+      "max_queries": 0,
+      "maximum_definition_depth": 0,
+      "maximum_exponent_tested": 0,
+      "maximum_relation_entry_bits": 0,
+      "maximum_residual_bits": 0,
+      "maximum_word_coefficient_bits": 1,
+      "method": "query cap exhausted",
+      "new_primes_introduced": 0,
+      "new_residual_generators": 0,
+      "norm_queries": 0,
+      "partial_identities_verified": 0,
+      "prime_records": {
+        "2": [
+          2,
+          [
+            2,
+            2,
+            511059
+          ]
+        ],
+        "3": [
+          4,
+          [
+            3,
+            -2,
+            340706
+          ]
+        ]
+      },
+      "relation_matrix": [],
+      "relation_rank": 0,
+      "residual_primality_tests": 0,
+      "sparse_augmented_relation_matrix": [],
+      "successive_power_compositions": 0,
+      "terminal_witness": null,
+      "trial_divisions": 0,
+      "window": 32,
+      "witnesses": [],
+      "word_expansions": 0
+    },
+    {
+      "active_primes": [
+        2,
+        3
+      ],
+      "admissible_queries": 1,
+      "augmented_relation_rank": 1,
+      "cached_word_count": 2,
+      "closed": false,
+      "cofactor_rejections": 0,
+      "cutoff": 5,
+      "definition_nodes_expanded": 0,
+      "discriminant": -4088468,
+      "extractions": 1,
+      "factor": null,
+      "factoring_oracle_calls": 0,
+      "fixed_relation_sources": [
+        0
+      ],
+      "generator_count": 2,
+      "generators": [
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            2,
+            2,
+            511059
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 2
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            3,
+            -2,
+            340706
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 3
+        }
+      ],
+      "height_bound": 1167,
+      "initial_base_size": 2,
+      "initial_power_computations": 2,
+      "input_bits": 20,
+      "integer": 1022117,
+      "last_extraction": {
+        "annihilator_supplied": false,
+        "determinant_computed": false,
+        "group_inversions": 0,
+        "group_multiplications": 8,
+        "identity_tops": 0,
+        "initial_relations_verified": 1,
+        "kernel_passes": 1,
+        "maximum_entry_bits": 4,
+        "paired_bad_top_updates": 0,
+        "rejected_nonidentity_tops": 1,
+        "relation_deficiency": 1,
+        "relation_dimension": 2,
+        "relation_rows": 1,
+        "saturation_bound": 4,
+        "saturations": 0,
+        "termination": "cyclic two-part with its sole top rejected",
+        "tops_evaluated": 1
+      },
+      "max_cofactor": 10000,
+      "max_generators": 2,
+      "max_queries": null,
+      "maximum_definition_depth": 0,
+      "maximum_exponent_tested": 11,
+      "maximum_relation_entry_bits": 4,
+      "maximum_residual_bits": 8,
+      "maximum_word_coefficient_bits": 1,
+      "method": "residual generator cap exhausted",
+      "new_primes_introduced": 0,
+      "new_residual_generators": 0,
+      "norm_queries": 2,
+      "partial_identities_verified": 0,
+      "prime_records": {
+        "2": [
+          2,
+          [
+            2,
+            2,
+            511059
+          ]
+        ],
+        "3": [
+          4,
+          [
+            3,
+            -2,
+            340706
+          ]
+        ]
+      },
+      "relation_matrix": [
+        [
+          10,
+          0
+        ]
+      ],
+      "relation_rank": 1,
+      "residual_primality_tests": 0,
+      "sparse_augmented_relation_matrix": [
+        [
+          [
+            0,
+            10
+          ]
+        ]
+      ],
+      "successive_power_compositions": 0,
+      "terminal_witness": {
+        "exponent": 7,
+        "factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "generator_index": 1,
+        "key": [
+          197,
+          142
+        ],
+        "orientation": -1,
+        "residual": 197,
+        "residual_form": [
+          197,
+          142,
+          5214
+        ],
+        "smooth_part": 3,
+        "target": [
+          591,
+          -142,
+          1738
+        ],
+        "trial_divisions": 3,
+        "word": {
+          "3": -1
+        }
+      },
+      "trial_divisions": 5,
+      "window": 32,
+      "witnesses": [
+        {
+          "exponent": 11,
+          "factors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "generator_index": 0,
+          "key": null,
+          "orientation": 1,
+          "residual": 1,
+          "residual_form": null,
+          "residual_index": null,
+          "smooth_part": 2,
+          "target": [
+            2,
+            2,
+            511059
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "2": 1
+          }
+        }
+      ],
+      "word_expansions": 0
+    }
+  ],
+  "cases": [
+    {
+      "active_primes": [
+        2,
+        3
+      ],
+      "admissible_queries": 6,
+      "augmented_relation_rank": 6,
+      "cached_word_count": 4,
+      "closed": true,
+      "cofactor_rejections": 0,
+      "cutoff": 5,
+      "definition_nodes_expanded": 7,
+      "discriminant": -4088468,
+      "extractions": 2,
+      "factor": 1009,
+      "factoring_oracle_calls": 0,
+      "fixed_relation_sources": [
+        0,
+        5
+      ],
+      "generator_count": 6,
+      "generators": [
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            2,
+            2,
+            511059
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 2
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            3,
+            -2,
+            340706
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 3
+        },
+        {
+          "definition": {
+            "exponent": 7,
+            "orientation": -1,
+            "source": 1,
+            "word": {
+              "3": -1
+            }
+          },
+          "depth": 1,
+          "form": [
+            197,
+            142,
+            5214
+          ],
+          "key": [
+            197,
+            142
+          ],
+          "kind": "residual",
+          "norm": 197
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 2,
+            "word": {
+              "2": 1,
+              "3": 1
+            }
+          },
+          "depth": 2,
+          "form": [
+            49,
+            22,
+            20862
+          ],
+          "key": [
+            49,
+            22
+          ],
+          "kind": "residual",
+          "norm": 49
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 3,
+            "word": {
+              "3": 1
+            }
+          },
+          "depth": 3,
+          "form": [
+            151,
+            92,
+            6783
+          ],
+          "key": [
+            151,
+            92
+          ],
+          "kind": "residual",
+          "norm": 151
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 4,
+            "word": {
+              "2": 1
+            }
+          },
+          "depth": 4,
+          "form": [
+            103,
+            80,
+            9939
+          ],
+          "key": [
+            103,
+            80
+          ],
+          "kind": "residual",
+          "norm": 103
+        }
+      ],
+      "height_bound": 1167,
+      "initial_base_size": 2,
+      "initial_power_computations": 6,
+      "input_bits": 20,
+      "integer": 1022117,
+      "last_extraction": {
+        "annihilator_supplied": false,
+        "determinant_computed": false,
+        "group_inversions": 0,
+        "group_multiplications": 19,
+        "identity_tops": 0,
+        "initial_relations_verified": 0,
+        "kernel_passes": 1,
+        "maximum_entry_bits": 8,
+        "paired_bad_top_updates": 0,
+        "rejected_nonidentity_tops": 1,
+        "relation_deficiency": 0,
+        "relation_dimension": 2,
+        "relation_rows": 2,
+        "saturation_bound": 12,
+        "saturations": 0,
+        "termination": "useful involution",
+        "tops_evaluated": 2
+      },
+      "max_cofactor": 10000,
+      "max_generators": 256,
+      "max_queries": 10000,
+      "maximum_definition_depth": 4,
+      "maximum_exponent_tested": 11,
+      "maximum_relation_entry_bits": 8,
+      "maximum_residual_bits": 8,
+      "maximum_word_coefficient_bits": 7,
+      "method": "ideal-closure relation halving",
+      "new_primes_introduced": 0,
+      "new_residual_generators": 4,
+      "norm_queries": 6,
+      "partial_identities_verified": 6,
+      "prime_records": {
+        "2": [
+          2,
+          [
+            2,
+            2,
+            511059
+          ]
+        ],
+        "3": [
+          4,
+          [
+            3,
+            -2,
+            340706
+          ]
+        ]
+      },
+      "relation_matrix": [
+        [
+          10,
+          0
+        ],
+        [
+          12,
+          174
+        ]
+      ],
+      "relation_rank": 2,
+      "residual_primality_tests": 0,
+      "sparse_augmented_relation_matrix": [
+        [
+          [
+            0,
+            10
+          ]
+        ],
+        [
+          [
+            1,
+            8
+          ],
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            3,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            4,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            5,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            4,
+            -1
+          ],
+          [
+            5,
+            2
+          ]
+        ]
+      ],
+      "successive_power_compositions": 0,
+      "terminal_witness": null,
+      "trial_divisions": 17,
+      "window": 32,
+      "witnesses": [
+        {
+          "exponent": 11,
+          "factors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "generator_index": 0,
+          "key": null,
+          "orientation": 1,
+          "residual": 1,
+          "residual_form": null,
+          "residual_index": null,
+          "smooth_part": 2,
+          "target": [
+            2,
+            2,
+            511059
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "2": 1
+          }
+        },
+        {
+          "exponent": 7,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 1,
+          "key": [
+            197,
+            142
+          ],
+          "orientation": -1,
+          "residual": 197,
+          "residual_form": [
+            197,
+            142,
+            5214
+          ],
+          "residual_index": 2,
+          "smooth_part": 3,
+          "target": [
+            591,
+            -142,
+            1738
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "3": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 2,
+          "key": [
+            49,
+            22
+          ],
+          "orientation": 1,
+          "residual": 49,
+          "residual_form": [
+            49,
+            22,
+            20862
+          ],
+          "residual_index": 3,
+          "smooth_part": 6,
+          "target": [
+            294,
+            22,
+            3477
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "2": 1,
+            "3": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 3,
+          "key": [
+            151,
+            92
+          ],
+          "orientation": 1,
+          "residual": 151,
+          "residual_form": [
+            151,
+            92,
+            6783
+          ],
+          "residual_index": 4,
+          "smooth_part": 3,
+          "target": [
+            453,
+            394,
+            2342
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "3": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "generator_index": 4,
+          "key": [
+            103,
+            80
+          ],
+          "orientation": -1,
+          "residual": 103,
+          "residual_form": [
+            103,
+            80,
+            9939
+          ],
+          "residual_index": 5,
+          "smooth_part": 2,
+          "target": [
+            206,
+            126,
+            4981
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "2": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 5,
+          "key": [
+            151,
+            92
+          ],
+          "orientation": 1,
+          "residual": 151,
+          "residual_form": [
+            151,
+            92,
+            6783
+          ],
+          "residual_index": 4,
+          "smooth_part": 3,
+          "target": [
+            453,
+            394,
+            2342
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "3": 1
+          }
+        }
+      ],
+      "word_expansions": 2
+    },
+    {
+      "active_primes": [
+        2,
+        3,
+        5
+      ],
+      "admissible_queries": 8,
+      "augmented_relation_rank": 8,
+      "cached_word_count": 4,
+      "closed": false,
+      "cofactor_rejections": 0,
+      "cutoff": 5,
+      "definition_nodes_expanded": 3,
+      "discriminant": -1040399,
+      "extractions": 1,
+      "factor": 1019,
+      "factoring_oracle_calls": 0,
+      "fixed_relation_sources": [
+        2,
+        7
+      ],
+      "generator_count": 9,
+      "generators": [
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            2,
+            1,
+            130050
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 2
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            3,
+            1,
+            86700
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 3
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            5,
+            1,
+            52020
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 5
+        },
+        {
+          "definition": {
+            "exponent": 10,
+            "orientation": -1,
+            "source": 0,
+            "word": {}
+          },
+          "depth": 1,
+          "form": [
+            413,
+            19,
+            630
+          ],
+          "key": [
+            413,
+            19
+          ],
+          "kind": "residual",
+          "norm": 413
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": 1,
+            "source": 1,
+            "word": {
+              "2": -2
+            }
+          },
+          "depth": 1,
+          "form": [
+            91,
+            37,
+            2862
+          ],
+          "key": [
+            91,
+            37
+          ],
+          "kind": "residual",
+          "norm": 91
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 3,
+            "word": {
+              "2": -1,
+              "3": 2
+            }
+          },
+          "depth": 2,
+          "form": [
+            7,
+            5,
+            37158
+          ],
+          "key": [
+            7,
+            5
+          ],
+          "kind": "residual",
+          "norm": 7
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 4,
+            "word": {
+              "3": -1
+            }
+          },
+          "depth": 2,
+          "form": [
+            121,
+            71,
+            2160
+          ],
+          "key": [
+            121,
+            71
+          ],
+          "kind": "residual",
+          "norm": 121
+        },
+        {
+          "definition": {
+            "exponent": 4,
+            "orientation": -1,
+            "source": 5,
+            "word": {
+              "2": -1,
+              "3": 1
+            }
+          },
+          "depth": 3,
+          "form": [
+            77,
+            5,
+            3378
+          ],
+          "key": [
+            77,
+            5
+          ],
+          "kind": "residual",
+          "norm": 77
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 6,
+            "word": {
+              "2": -1,
+              "3": -1,
+              "5": 1
+            }
+          },
+          "depth": 3,
+          "form": [
+            13,
+            11,
+            20010
+          ],
+          "key": [
+            13,
+            11
+          ],
+          "kind": "residual",
+          "norm": 13
+        }
+      ],
+      "height_bound": 588,
+      "initial_base_size": 3,
+      "initial_power_computations": 8,
+      "input_bits": 20,
+      "integer": 1040399,
+      "last_extraction": {
+        "annihilator_supplied": false,
+        "determinant_computed": false,
+        "group_inversions": 0,
+        "group_multiplications": 18,
+        "identity_tops": 0,
+        "initial_relations_verified": 0,
+        "kernel_passes": 1,
+        "maximum_entry_bits": 8,
+        "paired_bad_top_updates": 0,
+        "rejected_nonidentity_tops": 0,
+        "relation_deficiency": 1,
+        "relation_dimension": 3,
+        "relation_rows": 2,
+        "saturation_bound": 12,
+        "saturations": 0,
+        "termination": "useful involution",
+        "tops_evaluated": 1
+      },
+      "max_cofactor": 10000,
+      "max_generators": 256,
+      "max_queries": 10000,
+      "maximum_definition_depth": 3,
+      "maximum_exponent_tested": 10,
+      "maximum_relation_entry_bits": 8,
+      "maximum_residual_bits": 9,
+      "maximum_word_coefficient_bits": 7,
+      "method": "ideal-closure relation halving",
+      "new_primes_introduced": 0,
+      "new_residual_generators": 6,
+      "norm_queries": 8,
+      "partial_identities_verified": 8,
+      "prime_records": {
+        "2": [
+          1,
+          [
+            2,
+            1,
+            130050
+          ]
+        ],
+        "3": [
+          1,
+          [
+            3,
+            1,
+            86700
+          ]
+        ],
+        "5": [
+          1,
+          [
+            5,
+            1,
+            52020
+          ]
+        ]
+      },
+      "relation_matrix": [
+        [
+          4,
+          -3,
+          4
+        ],
+        [
+          154,
+          19,
+          0
+        ]
+      ],
+      "relation_rank": 2,
+      "residual_primality_tests": 0,
+      "sparse_augmented_relation_matrix": [
+        [
+          [
+            0,
+            10
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            4,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            -3
+          ],
+          [
+            2,
+            4
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -2
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            5,
+            4
+          ],
+          [
+            7,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            6,
+            2
+          ],
+          [
+            8,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            4
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            7,
+            2
+          ]
+        ]
+      ],
+      "successive_power_compositions": 0,
+      "terminal_witness": null,
+      "trial_divisions": 38,
+      "window": 32,
+      "witnesses": [
+        {
+          "exponent": 10,
+          "factors": [],
+          "generator_index": 0,
+          "key": [
+            413,
+            19
+          ],
+          "orientation": -1,
+          "residual": 413,
+          "residual_form": [
+            413,
+            19,
+            630
+          ],
+          "residual_index": 3,
+          "smooth_part": 1,
+          "target": [
+            413,
+            -19,
+            630
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              2,
+              2
+            ]
+          ],
+          "generator_index": 1,
+          "key": [
+            91,
+            37
+          ],
+          "orientation": 1,
+          "residual": 91,
+          "residual_form": [
+            91,
+            37,
+            2862
+          ],
+          "residual_index": 4,
+          "smooth_part": 4,
+          "target": [
+            364,
+            -145,
+            729
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "2": -2
+          }
+        },
+        {
+          "exponent": 4,
+          "factors": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              3
+            ]
+          ],
+          "generator_index": 2,
+          "key": null,
+          "orientation": 1,
+          "residual": 1,
+          "residual_form": null,
+          "residual_index": null,
+          "smooth_part": 432,
+          "target": [
+            432,
+            199,
+            625
+          ],
+          "trial_divisions": 9,
+          "word": {
+            "2": -4,
+            "3": 3
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              2
+            ]
+          ],
+          "generator_index": 3,
+          "key": [
+            7,
+            5
+          ],
+          "orientation": 1,
+          "residual": 7,
+          "residual_form": [
+            7,
+            5,
+            37158
+          ],
+          "residual_index": 5,
+          "smooth_part": 18,
+          "target": [
+            126,
+            19,
+            2065
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "2": -1,
+            "3": 2
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 4,
+          "key": [
+            121,
+            71
+          ],
+          "orientation": -1,
+          "residual": 121,
+          "residual_form": [
+            121,
+            71,
+            2160
+          ],
+          "residual_index": 6,
+          "smooth_part": 3,
+          "target": [
+            363,
+            -313,
+            784
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "3": -1
+          }
+        },
+        {
+          "exponent": 4,
+          "factors": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 5,
+          "key": [
+            77,
+            5
+          ],
+          "orientation": -1,
+          "residual": 77,
+          "residual_form": [
+            77,
+            5,
+            3378
+          ],
+          "residual_index": 7,
+          "smooth_part": 6,
+          "target": [
+            462,
+            -5,
+            563
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "2": -1,
+            "3": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ]
+          ],
+          "generator_index": 6,
+          "key": [
+            13,
+            11
+          ],
+          "orientation": 1,
+          "residual": 13,
+          "residual_form": [
+            13,
+            11,
+            20010
+          ],
+          "residual_index": 8,
+          "smooth_part": 30,
+          "target": [
+            390,
+            11,
+            667
+          ],
+          "trial_divisions": 6,
+          "word": {
+            "2": -1,
+            "3": -1,
+            "5": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              4
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 7,
+          "key": null,
+          "orientation": 1,
+          "residual": 1,
+          "residual_form": null,
+          "residual_index": null,
+          "smooth_part": 48,
+          "target": [
+            48,
+            -25,
+            5422
+          ],
+          "trial_divisions": 7,
+          "word": {
+            "2": -4,
+            "3": -1
+          }
+        }
+      ],
+      "word_expansions": 1
+    },
+    {
+      "active_primes": [
+        2,
+        3
+      ],
+      "admissible_queries": 5,
+      "augmented_relation_rank": 5,
+      "cached_word_count": 4,
+      "closed": true,
+      "cofactor_rejections": 0,
+      "cutoff": 5,
+      "definition_nodes_expanded": 3,
+      "discriminant": -1065023,
+      "extractions": 1,
+      "factor": 1031,
+      "factoring_oracle_calls": 0,
+      "fixed_relation_sources": [
+        3,
+        4
+      ],
+      "generator_count": 5,
+      "generators": [
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            2,
+            1,
+            133128
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 2
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            3,
+            1,
+            88752
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 3
+        },
+        {
+          "definition": {
+            "exponent": 10,
+            "orientation": 1,
+            "source": 0,
+            "word": {
+              "2": -2
+            }
+          },
+          "depth": 1,
+          "form": [
+            83,
+            45,
+            3214
+          ],
+          "key": [
+            83,
+            45
+          ],
+          "kind": "residual",
+          "norm": 83
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": 1,
+            "source": 1,
+            "word": {
+              "2": -2
+            }
+          },
+          "depth": 1,
+          "form": [
+            113,
+            51,
+            2362
+          ],
+          "key": [
+            113,
+            51
+          ],
+          "kind": "residual",
+          "norm": 113
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 2,
+            "word": {
+              "2": -1
+            }
+          },
+          "depth": 2,
+          "form": [
+            179,
+            57,
+            1492
+          ],
+          "key": [
+            179,
+            57
+          ],
+          "kind": "residual",
+          "norm": 179
+        }
+      ],
+      "height_bound": 595,
+      "initial_base_size": 2,
+      "initial_power_computations": 5,
+      "input_bits": 21,
+      "integer": 1065023,
+      "last_extraction": {
+        "annihilator_supplied": false,
+        "determinant_computed": false,
+        "group_inversions": 0,
+        "group_multiplications": 26,
+        "identity_tops": 2,
+        "initial_relations_verified": 0,
+        "kernel_passes": 3,
+        "maximum_entry_bits": 7,
+        "paired_bad_top_updates": 0,
+        "rejected_nonidentity_tops": 0,
+        "relation_deficiency": 0,
+        "relation_dimension": 2,
+        "relation_rows": 2,
+        "saturation_bound": 11,
+        "saturations": 2,
+        "termination": "useful involution",
+        "tops_evaluated": 3
+      },
+      "max_cofactor": 10000,
+      "max_generators": 256,
+      "max_queries": 10000,
+      "maximum_definition_depth": 2,
+      "maximum_exponent_tested": 10,
+      "maximum_relation_entry_bits": 7,
+      "maximum_residual_bits": 8,
+      "maximum_word_coefficient_bits": 5,
+      "method": "ideal-closure relation halving",
+      "new_primes_introduced": 0,
+      "new_residual_generators": 3,
+      "norm_queries": 5,
+      "partial_identities_verified": 5,
+      "prime_records": {
+        "2": [
+          1,
+          [
+            2,
+            1,
+            133128
+          ]
+        ],
+        "3": [
+          1,
+          [
+            3,
+            1,
+            88752
+          ]
+        ]
+      },
+      "relation_matrix": [
+        [
+          1,
+          13
+        ],
+        [
+          75,
+          -1
+        ]
+      ],
+      "relation_rank": 2,
+      "residual_primality_tests": 0,
+      "sparse_augmented_relation_matrix": [
+        [
+          [
+            0,
+            12
+          ],
+          [
+            2,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            6
+          ],
+          [
+            3,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            4,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -3
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            3,
+            2
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            4,
+            3
+          ]
+        ]
+      ],
+      "successive_power_compositions": 0,
+      "terminal_witness": null,
+      "trial_divisions": 17,
+      "window": 32,
+      "witnesses": [
+        {
+          "exponent": 10,
+          "factors": [
+            [
+              2,
+              2
+            ]
+          ],
+          "generator_index": 0,
+          "key": [
+            83,
+            45
+          ],
+          "orientation": 1,
+          "residual": 83,
+          "residual_form": [
+            83,
+            45,
+            3214
+          ],
+          "residual_index": 2,
+          "smooth_part": 4,
+          "target": [
+            332,
+            -121,
+            813
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "2": -2
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              2,
+              2
+            ]
+          ],
+          "generator_index": 1,
+          "key": [
+            113,
+            51
+          ],
+          "orientation": 1,
+          "residual": 113,
+          "residual_form": [
+            113,
+            51,
+            2362
+          ],
+          "residual_index": 3,
+          "smooth_part": 4,
+          "target": [
+            452,
+            -401,
+            678
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "2": -2
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "generator_index": 2,
+          "key": [
+            179,
+            57
+          ],
+          "orientation": 1,
+          "residual": 179,
+          "residual_form": [
+            179,
+            57,
+            1492
+          ],
+          "residual_index": 4,
+          "smooth_part": 2,
+          "target": [
+            358,
+            -301,
+            807
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "2": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              3
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 3,
+          "key": null,
+          "orientation": 1,
+          "residual": 1,
+          "residual_form": null,
+          "residual_index": null,
+          "smooth_part": 24,
+          "target": [
+            24,
+            17,
+            11097
+          ],
+          "trial_divisions": 6,
+          "word": {
+            "2": 3,
+            "3": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 4,
+          "key": [
+            179,
+            57
+          ],
+          "orientation": -1,
+          "residual": 179,
+          "residual_form": [
+            179,
+            57,
+            1492
+          ],
+          "residual_index": 4,
+          "smooth_part": 3,
+          "target": [
+            537,
+            301,
+            538
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "3": 1
+          }
+        }
+      ],
+      "word_expansions": 2
+    },
+    {
+      "active_primes": [
+        2,
+        3,
+        7
+      ],
+      "admissible_queries": 11,
+      "augmented_relation_rank": 11,
+      "cached_word_count": 5,
+      "closed": false,
+      "cofactor_rejections": 0,
+      "cutoff": 7,
+      "definition_nodes_expanded": 5,
+      "discriminant": -100160063,
+      "extractions": 1,
+      "factor": 10007,
+      "factoring_oracle_calls": 0,
+      "fixed_relation_sources": [
+        10
+      ],
+      "generator_count": 13,
+      "generators": [
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            2,
+            1,
+            12520008
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 2
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            3,
+            1,
+            8346672
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 3
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            7,
+            -5,
+            3577146
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 7
+        },
+        {
+          "definition": {
+            "exponent": 13,
+            "orientation": 1,
+            "source": 0,
+            "word": {
+              "2": -3,
+              "7": -1
+            }
+          },
+          "depth": 1,
+          "form": [
+            59,
+            15,
+            424408
+          ],
+          "key": [
+            59,
+            15
+          ],
+          "kind": "residual",
+          "norm": 59
+        },
+        {
+          "definition": {
+            "exponent": 8,
+            "orientation": -1,
+            "source": 1,
+            "word": {
+              "2": -3
+            }
+          },
+          "depth": 1,
+          "form": [
+            677,
+            291,
+            37018
+          ],
+          "key": [
+            677,
+            291
+          ],
+          "kind": "residual",
+          "norm": 677
+        },
+        {
+          "definition": {
+            "exponent": 5,
+            "orientation": 1,
+            "source": 2,
+            "word": {
+              "2": -3
+            }
+          },
+          "depth": 1,
+          "form": [
+            481,
+            85,
+            52062
+          ],
+          "key": [
+            481,
+            85
+          ],
+          "kind": "residual",
+          "norm": 481
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": -1,
+            "source": 3,
+            "word": {
+              "2": 1,
+              "7": 2
+            }
+          },
+          "depth": 2,
+          "form": [
+            31,
+            21,
+            807746
+          ],
+          "key": [
+            31,
+            21
+          ],
+          "kind": "residual",
+          "norm": 31
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 4,
+            "word": {
+              "3": 1
+            }
+          },
+          "depth": 2,
+          "form": [
+            1097,
+            869,
+            22998
+          ],
+          "key": [
+            1097,
+            869
+          ],
+          "kind": "residual",
+          "norm": 1097
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 5,
+            "word": {
+              "2": 2,
+              "3": 1
+            }
+          },
+          "depth": 2,
+          "form": [
+            13,
+            7,
+            1926156
+          ],
+          "key": [
+            13,
+            7
+          ],
+          "kind": "residual",
+          "norm": 13
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": -1,
+            "source": 6,
+            "word": {
+              "2": 1
+            }
+          },
+          "depth": 3,
+          "form": [
+            1423,
+            1229,
+            17862
+          ],
+          "key": [
+            1423,
+            1229
+          ],
+          "kind": "residual",
+          "norm": 1423
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 7,
+            "word": {
+              "2": 2
+            }
+          },
+          "depth": 3,
+          "form": [
+            1201,
+            977,
+            21048
+          ],
+          "key": [
+            1201,
+            977
+          ],
+          "kind": "residual",
+          "norm": 1201
+        },
+        {
+          "definition": {
+            "exponent": 4,
+            "orientation": -1,
+            "source": 8,
+            "word": {
+              "3": 1,
+              "7": 1
+            }
+          },
+          "depth": 3,
+          "form": [
+            167,
+            109,
+            149958
+          ],
+          "key": [
+            167,
+            109
+          ],
+          "kind": "residual",
+          "norm": 167
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 9,
+            "word": {
+              "2": -3
+            }
+          },
+          "depth": 4,
+          "form": [
+            499,
+            259,
+            50214
+          ],
+          "key": [
+            499,
+            259
+          ],
+          "kind": "residual",
+          "norm": 499
+        }
+      ],
+      "height_bound": 5778,
+      "initial_base_size": 3,
+      "initial_power_computations": 11,
+      "input_bits": 27,
+      "integer": 100160063,
+      "last_extraction": {
+        "annihilator_supplied": false,
+        "determinant_computed": false,
+        "group_inversions": 1,
+        "group_multiplications": 18,
+        "identity_tops": 1,
+        "initial_relations_verified": 0,
+        "kernel_passes": 2,
+        "maximum_entry_bits": 7,
+        "paired_bad_top_updates": 0,
+        "rejected_nonidentity_tops": 0,
+        "relation_deficiency": 2,
+        "relation_dimension": 3,
+        "relation_rows": 1,
+        "saturation_bound": 7,
+        "saturations": 1,
+        "termination": "useful involution",
+        "tops_evaluated": 2
+      },
+      "max_cofactor": 10000,
+      "max_generators": 256,
+      "max_queries": 10000,
+      "maximum_definition_depth": 4,
+      "maximum_exponent_tested": 13,
+      "maximum_relation_entry_bits": 7,
+      "maximum_residual_bits": 11,
+      "maximum_word_coefficient_bits": 6,
+      "method": "ideal-closure relation halving",
+      "new_primes_introduced": 0,
+      "new_residual_generators": 10,
+      "norm_queries": 11,
+      "partial_identities_verified": 11,
+      "prime_records": {
+        "2": [
+          1,
+          [
+            2,
+            1,
+            12520008
+          ]
+        ],
+        "3": [
+          1,
+          [
+            3,
+            1,
+            8346672
+          ]
+        ],
+        "7": [
+          9,
+          [
+            7,
+            -5,
+            3577146
+          ]
+        ]
+      },
+      "relation_matrix": [
+        [
+          20,
+          -68,
+          0
+        ]
+      ],
+      "relation_rank": 1,
+      "residual_primality_tests": 0,
+      "sparse_augmented_relation_matrix": [
+        [
+          [
+            0,
+            16
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            3,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            8
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            2,
+            5
+          ],
+          [
+            5,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            2,
+            -2
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            4,
+            2
+          ],
+          [
+            7,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            6,
+            3
+          ],
+          [
+            9,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            10,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            8,
+            4
+          ],
+          [
+            11,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            9,
+            2
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            6,
+            -1
+          ],
+          [
+            10,
+            2
+          ]
+        ]
+      ],
+      "successive_power_compositions": 0,
+      "terminal_witness": null,
+      "trial_divisions": 48,
+      "window": 32,
+      "witnesses": [
+        {
+          "exponent": 13,
+          "factors": [
+            [
+              2,
+              3
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 0,
+          "key": [
+            59,
+            15
+          ],
+          "orientation": 1,
+          "residual": 59,
+          "residual_form": [
+            59,
+            15,
+            424408
+          ],
+          "residual_index": 3,
+          "smooth_part": 56,
+          "target": [
+            3304,
+            2847,
+            8192
+          ],
+          "trial_divisions": 7,
+          "word": {
+            "2": -3,
+            "7": -1
+          }
+        },
+        {
+          "exponent": 8,
+          "factors": [
+            [
+              2,
+              3
+            ]
+          ],
+          "generator_index": 1,
+          "key": [
+            677,
+            291
+          ],
+          "orientation": -1,
+          "residual": 677,
+          "residual_form": [
+            677,
+            291,
+            37018
+          ],
+          "residual_index": 4,
+          "smooth_part": 8,
+          "target": [
+            5416,
+            -4353,
+            5498
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "2": -3
+          }
+        },
+        {
+          "exponent": 5,
+          "factors": [
+            [
+              2,
+              3
+            ]
+          ],
+          "generator_index": 2,
+          "key": [
+            481,
+            85
+          ],
+          "orientation": 1,
+          "residual": 481,
+          "residual_form": [
+            481,
+            85,
+            52062
+          ],
+          "residual_index": 5,
+          "smooth_part": 8,
+          "target": [
+            3848,
+            -2801,
+            7017
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "2": -3
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              2,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 3,
+          "key": [
+            31,
+            21
+          ],
+          "orientation": -1,
+          "residual": 31,
+          "residual_form": [
+            31,
+            21,
+            807746
+          ],
+          "residual_index": 6,
+          "smooth_part": 98,
+          "target": [
+            3038,
+            2893,
+            8931
+          ],
+          "trial_divisions": 6,
+          "word": {
+            "2": 1,
+            "7": 2
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 4,
+          "key": [
+            1097,
+            869
+          ],
+          "orientation": 1,
+          "residual": 1097,
+          "residual_form": [
+            1097,
+            869,
+            22998
+          ],
+          "residual_index": 7,
+          "smooth_part": 3,
+          "target": [
+            3291,
+            -1325,
+            7742
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "3": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              2
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 5,
+          "key": [
+            13,
+            7
+          ],
+          "orientation": -1,
+          "residual": 13,
+          "residual_form": [
+            13,
+            7,
+            1926156
+          ],
+          "residual_index": 8,
+          "smooth_part": 12,
+          "target": [
+            156,
+            97,
+            160528
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "2": 2,
+            "3": 1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              2,
+              1
+            ]
+          ],
+          "generator_index": 6,
+          "key": [
+            1423,
+            1229
+          ],
+          "orientation": -1,
+          "residual": 1423,
+          "residual_form": [
+            1423,
+            1229,
+            17862
+          ],
+          "residual_index": 9,
+          "smooth_part": 2,
+          "target": [
+            2846,
+            1617,
+            9028
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "2": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              2
+            ]
+          ],
+          "generator_index": 7,
+          "key": [
+            1201,
+            977
+          ],
+          "orientation": 1,
+          "residual": 1201,
+          "residual_form": [
+            1201,
+            977,
+            21048
+          ],
+          "residual_index": 10,
+          "smooth_part": 4,
+          "target": [
+            4804,
+            977,
+            5262
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "2": 2
+          }
+        },
+        {
+          "exponent": 4,
+          "factors": [
+            [
+              3,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 8,
+          "key": [
+            167,
+            109
+          ],
+          "orientation": -1,
+          "residual": 167,
+          "residual_form": [
+            167,
+            109,
+            149958
+          ],
+          "residual_index": 11,
+          "smooth_part": 21,
+          "target": [
+            3507,
+            -3449,
+            7988
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "3": 1,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              3
+            ]
+          ],
+          "generator_index": 9,
+          "key": [
+            499,
+            259
+          ],
+          "orientation": -1,
+          "residual": 499,
+          "residual_form": [
+            499,
+            259,
+            50214
+          ],
+          "residual_index": 12,
+          "smooth_part": 8,
+          "target": [
+            3992,
+            2735,
+            6741
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "2": -3
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              2,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 10,
+          "key": [
+            31,
+            21
+          ],
+          "orientation": 1,
+          "residual": 31,
+          "residual_form": [
+            31,
+            21,
+            807746
+          ],
+          "residual_index": 6,
+          "smooth_part": 14,
+          "target": [
+            434,
+            331,
+            57759
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "2": -1,
+            "7": 1
+          }
+        }
+      ],
+      "word_expansions": 2
+    },
+    {
+      "active_primes": [
+        3,
+        7
+      ],
+      "admissible_queries": 16,
+      "augmented_relation_rank": 16,
+      "cached_word_count": 4,
+      "closed": false,
+      "cofactor_rejections": 0,
+      "cutoff": 7,
+      "definition_nodes_expanded": 12,
+      "discriminant": -100761443,
+      "extractions": 1,
+      "factor": 10037,
+      "factoring_oracle_calls": 0,
+      "fixed_relation_sources": [
+        15
+      ],
+      "generator_count": 17,
+      "generators": [
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            3,
+            1,
+            8396787
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 3
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            7,
+            1,
+            3598623
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 7
+        },
+        {
+          "definition": {
+            "exponent": 8,
+            "orientation": 1,
+            "source": 0,
+            "word": {
+              "3": -2,
+              "7": 1
+            }
+          },
+          "depth": 1,
+          "form": [
+            61,
+            59,
+            412971
+          ],
+          "key": [
+            61,
+            59
+          ],
+          "kind": "residual",
+          "norm": 61
+        },
+        {
+          "definition": {
+            "exponent": 5,
+            "orientation": -1,
+            "source": 1,
+            "word": {}
+          },
+          "depth": 1,
+          "form": [
+            3839,
+            2813,
+            7077
+          ],
+          "key": [
+            3839,
+            2813
+          ],
+          "kind": "residual",
+          "norm": 3839
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 2,
+            "word": {}
+          },
+          "depth": 2,
+          "form": [
+            3557,
+            977,
+            7149
+          ],
+          "key": [
+            3557,
+            977
+          ],
+          "kind": "residual",
+          "norm": 3557
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 3,
+            "word": {
+              "3": -1
+            }
+          },
+          "depth": 2,
+          "form": [
+            941,
+            779,
+            26931
+          ],
+          "key": [
+            941,
+            779
+          ],
+          "kind": "residual",
+          "norm": 941
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 4,
+            "word": {}
+          },
+          "depth": 3,
+          "form": [
+            3811,
+            1313,
+            6723
+          ],
+          "key": [
+            3811,
+            1313
+          ],
+          "kind": "residual",
+          "norm": 3811
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 5,
+            "word": {}
+          },
+          "depth": 3,
+          "form": [
+            2543,
+            1785,
+            10219
+          ],
+          "key": [
+            2543,
+            1785
+          ],
+          "kind": "residual",
+          "norm": 2543
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 6,
+            "word": {}
+          },
+          "depth": 4,
+          "form": [
+            5071,
+            3099,
+            5441
+          ],
+          "key": [
+            5071,
+            3099
+          ],
+          "kind": "residual",
+          "norm": 5071
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 7,
+            "word": {
+              "3": -1
+            }
+          },
+          "depth": 4,
+          "form": [
+            641,
+            107,
+            39303
+          ],
+          "key": [
+            641,
+            107
+          ],
+          "kind": "residual",
+          "norm": 641
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 8,
+            "word": {
+              "7": -2
+            }
+          },
+          "depth": 5,
+          "form": [
+            89,
+            21,
+            283039
+          ],
+          "key": [
+            89,
+            21
+          ],
+          "kind": "residual",
+          "norm": 89
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 9,
+            "word": {}
+          },
+          "depth": 5,
+          "form": [
+            4973,
+            333,
+            5071
+          ],
+          "key": [
+            4973,
+            333
+          ],
+          "kind": "residual",
+          "norm": 4973
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 10,
+            "word": {
+              "7": -1
+            }
+          },
+          "depth": 6,
+          "form": [
+            611,
+            215,
+            41247
+          ],
+          "key": [
+            611,
+            215
+          ],
+          "kind": "residual",
+          "norm": 611
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 11,
+            "word": {}
+          },
+          "depth": 6,
+          "form": [
+            2369,
+            901,
+            10719
+          ],
+          "key": [
+            2369,
+            901
+          ],
+          "kind": "residual",
+          "norm": 2369
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 12,
+            "word": {
+              "3": -1
+            }
+          },
+          "depth": 7,
+          "form": [
+            583,
+            173,
+            43221
+          ],
+          "key": [
+            583,
+            173
+          ],
+          "kind": "residual",
+          "norm": 583
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 13,
+            "word": {
+              "3": 1
+            }
+          },
+          "depth": 7,
+          "form": [
+            1739,
+            537,
+            14527
+          ],
+          "key": [
+            1739,
+            537
+          ],
+          "kind": "residual",
+          "norm": 1739
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 14,
+            "word": {}
+          },
+          "depth": 8,
+          "form": [
+            673,
+            53,
+            37431
+          ],
+          "key": [
+            673,
+            53
+          ],
+          "kind": "residual",
+          "norm": 673
+        }
+      ],
+      "height_bound": 5795,
+      "initial_base_size": 2,
+      "initial_power_computations": 16,
+      "input_bits": 27,
+      "integer": 100761443,
+      "last_extraction": {
+        "annihilator_supplied": false,
+        "determinant_computed": false,
+        "group_inversions": 1,
+        "group_multiplications": 23,
+        "identity_tops": 0,
+        "initial_relations_verified": 0,
+        "kernel_passes": 1,
+        "maximum_entry_bits": 10,
+        "paired_bad_top_updates": 0,
+        "rejected_nonidentity_tops": 0,
+        "relation_deficiency": 1,
+        "relation_dimension": 2,
+        "relation_rows": 1,
+        "saturation_bound": 10,
+        "saturations": 0,
+        "termination": "useful involution",
+        "tops_evaluated": 1
+      },
+      "max_cofactor": 10000,
+      "max_generators": 256,
+      "max_queries": 10000,
+      "maximum_definition_depth": 8,
+      "maximum_exponent_tested": 8,
+      "maximum_relation_entry_bits": 10,
+      "maximum_residual_bits": 13,
+      "maximum_word_coefficient_bits": 9,
+      "method": "ideal-closure relation halving",
+      "new_primes_introduced": 0,
+      "new_residual_generators": 15,
+      "norm_queries": 16,
+      "partial_identities_verified": 16,
+      "prime_records": {
+        "3": [
+          1,
+          [
+            3,
+            1,
+            8396787
+          ]
+        ],
+        "7": [
+          1,
+          [
+            7,
+            1,
+            3598623
+          ]
+        ]
+      },
+      "relation_matrix": [
+        [
+          320,
+          -662
+        ]
+      ],
+      "relation_rank": 1,
+      "residual_primality_tests": 0,
+      "sparse_augmented_relation_matrix": [
+        [
+          [
+            0,
+            10
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            5
+          ],
+          [
+            3,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            3
+          ],
+          [
+            4,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            5,
+            -1
+          ]
+        ],
+        [
+          [
+            4,
+            2
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        [
+          [
+            5,
+            2
+          ],
+          [
+            7,
+            -1
+          ]
+        ],
+        [
+          [
+            6,
+            2
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            7,
+            2
+          ],
+          [
+            9,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            8,
+            2
+          ],
+          [
+            10,
+            -1
+          ]
+        ],
+        [
+          [
+            9,
+            2
+          ],
+          [
+            11,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            10,
+            2
+          ],
+          [
+            12,
+            -1
+          ]
+        ],
+        [
+          [
+            11,
+            2
+          ],
+          [
+            13,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            12,
+            2
+          ],
+          [
+            14,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            13,
+            2
+          ],
+          [
+            15,
+            -1
+          ]
+        ],
+        [
+          [
+            14,
+            2
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            10,
+            1
+          ],
+          [
+            15,
+            2
+          ]
+        ]
+      ],
+      "successive_power_compositions": 0,
+      "terminal_witness": null,
+      "trial_divisions": 31,
+      "window": 32,
+      "witnesses": [
+        {
+          "exponent": 8,
+          "factors": [
+            [
+              3,
+              2
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 0,
+          "key": [
+            61,
+            59
+          ],
+          "orientation": 1,
+          "residual": 61,
+          "residual_form": [
+            61,
+            59,
+            412971
+          ],
+          "residual_index": 2,
+          "smooth_part": 63,
+          "target": [
+            3843,
+            -307,
+            6561
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "3": -2,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 5,
+          "factors": [],
+          "generator_index": 1,
+          "key": [
+            3839,
+            2813
+          ],
+          "orientation": -1,
+          "residual": 3839,
+          "residual_form": [
+            3839,
+            2813,
+            7077
+          ],
+          "residual_index": 3,
+          "smooth_part": 1,
+          "target": [
+            3839,
+            -2813,
+            7077
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 3,
+          "factors": [],
+          "generator_index": 2,
+          "key": [
+            3557,
+            977
+          ],
+          "orientation": 1,
+          "residual": 3557,
+          "residual_form": [
+            3557,
+            977,
+            7149
+          ],
+          "residual_index": 4,
+          "smooth_part": 1,
+          "target": [
+            3557,
+            977,
+            7149
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 3,
+          "key": [
+            941,
+            779
+          ],
+          "orientation": 1,
+          "residual": 941,
+          "residual_form": [
+            941,
+            779,
+            26931
+          ],
+          "residual_index": 5,
+          "smooth_part": 3,
+          "target": [
+            2823,
+            779,
+            8977
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "3": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [],
+          "generator_index": 4,
+          "key": [
+            3811,
+            1313
+          ],
+          "orientation": -1,
+          "residual": 3811,
+          "residual_form": [
+            3811,
+            1313,
+            6723
+          ],
+          "residual_index": 6,
+          "smooth_part": 1,
+          "target": [
+            3811,
+            -1313,
+            6723
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 2,
+          "factors": [],
+          "generator_index": 5,
+          "key": [
+            2543,
+            1785
+          ],
+          "orientation": 1,
+          "residual": 2543,
+          "residual_form": [
+            2543,
+            1785,
+            10219
+          ],
+          "residual_index": 7,
+          "smooth_part": 1,
+          "target": [
+            2543,
+            1785,
+            10219
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 2,
+          "factors": [],
+          "generator_index": 6,
+          "key": [
+            5071,
+            3099
+          ],
+          "orientation": -1,
+          "residual": 5071,
+          "residual_form": [
+            5071,
+            3099,
+            5441
+          ],
+          "residual_index": 8,
+          "smooth_part": 1,
+          "target": [
+            5071,
+            -3099,
+            5441
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 7,
+          "key": [
+            641,
+            107
+          ],
+          "orientation": -1,
+          "residual": 641,
+          "residual_form": [
+            641,
+            107,
+            39303
+          ],
+          "residual_index": 9,
+          "smooth_part": 3,
+          "target": [
+            1923,
+            1175,
+            13279
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "3": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 8,
+          "key": [
+            89,
+            21
+          ],
+          "orientation": 1,
+          "residual": 89,
+          "residual_form": [
+            89,
+            21,
+            283039
+          ],
+          "residual_index": 10,
+          "smooth_part": 49,
+          "target": [
+            4361,
+            4115,
+            6747
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "7": -2
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [],
+          "generator_index": 9,
+          "key": [
+            4973,
+            333
+          ],
+          "orientation": -1,
+          "residual": 4973,
+          "residual_form": [
+            4973,
+            333,
+            5071
+          ],
+          "residual_index": 11,
+          "smooth_part": 1,
+          "target": [
+            4973,
+            -333,
+            5071
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 10,
+          "key": [
+            611,
+            215
+          ],
+          "orientation": 1,
+          "residual": 611,
+          "residual_form": [
+            611,
+            215,
+            41247
+          ],
+          "residual_index": 12,
+          "smooth_part": 7,
+          "target": [
+            4277,
+            2659,
+            6303
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "7": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [],
+          "generator_index": 11,
+          "key": [
+            2369,
+            901
+          ],
+          "orientation": 1,
+          "residual": 2369,
+          "residual_form": [
+            2369,
+            901,
+            10719
+          ],
+          "residual_index": 13,
+          "smooth_part": 1,
+          "target": [
+            2369,
+            901,
+            10719
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 12,
+          "key": [
+            583,
+            173
+          ],
+          "orientation": 1,
+          "residual": 583,
+          "residual_form": [
+            583,
+            173,
+            43221
+          ],
+          "residual_index": 14,
+          "smooth_part": 3,
+          "target": [
+            1749,
+            173,
+            14407
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "3": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              1
+            ]
+          ],
+          "generator_index": 13,
+          "key": [
+            1739,
+            537
+          ],
+          "orientation": 1,
+          "residual": 1739,
+          "residual_form": [
+            1739,
+            537,
+            14527
+          ],
+          "residual_index": 15,
+          "smooth_part": 3,
+          "target": [
+            5217,
+            4015,
+            5601
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "3": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [],
+          "generator_index": 14,
+          "key": [
+            673,
+            53
+          ],
+          "orientation": -1,
+          "residual": 673,
+          "residual_form": [
+            673,
+            53,
+            37431
+          ],
+          "residual_index": 16,
+          "smooth_part": 1,
+          "target": [
+            673,
+            -53,
+            37431
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              3,
+              2
+            ]
+          ],
+          "generator_index": 15,
+          "key": [
+            89,
+            21
+          ],
+          "orientation": -1,
+          "residual": 89,
+          "residual_form": [
+            89,
+            21,
+            283039
+          ],
+          "residual_index": 10,
+          "smooth_part": 9,
+          "target": [
+            801,
+            -199,
+            31461
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "3": -2
+          }
+        }
+      ],
+      "word_expansions": 2
+    },
+    {
+      "active_primes": [
+        5,
+        7,
+        19
+      ],
+      "admissible_queries": 71,
+      "augmented_relation_rank": 71,
+      "cached_word_count": 5,
+      "closed": false,
+      "cofactor_rejections": 230,
+      "cutoff": 19,
+      "definition_nodes_expanded": 37,
+      "discriminant": -1000036000099,
+      "extractions": 1,
+      "factor": 1000003,
+      "factoring_oracle_calls": 0,
+      "fixed_relation_sources": [
+        70
+      ],
+      "generator_count": 73,
+      "generators": [
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            5,
+            1,
+            50001800005
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 5
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            7,
+            -5,
+            35715571433
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 7
+        },
+        {
+          "definition": null,
+          "depth": 0,
+          "form": [
+            19,
+            7,
+            13158368423
+          ],
+          "key": null,
+          "kind": "prime",
+          "norm": 19
+        },
+        {
+          "definition": {
+            "exponent": 13,
+            "orientation": 1,
+            "source": 0,
+            "word": {
+              "19": 1
+            }
+          },
+          "depth": 1,
+          "form": [
+            9169,
+            7453,
+            27268283
+          ],
+          "key": [
+            9169,
+            7453
+          ],
+          "kind": "residual",
+          "norm": 9169
+        },
+        {
+          "definition": {
+            "exponent": 10,
+            "orientation": 1,
+            "source": 1,
+            "word": {
+              "5": -2,
+              "7": -1,
+              "19": 1
+            }
+          },
+          "depth": 1,
+          "form": [
+            167,
+            143,
+            1497059911
+          ],
+          "key": [
+            167,
+            143
+          ],
+          "kind": "residual",
+          "norm": 167
+        },
+        {
+          "definition": {
+            "exponent": 13,
+            "orientation": 1,
+            "source": 2,
+            "word": {
+              "5": -1,
+              "7": -1
+            }
+          },
+          "depth": 1,
+          "form": [
+            9007,
+            2263,
+            27757331
+          ],
+          "key": [
+            9007,
+            2263
+          ],
+          "kind": "residual",
+          "norm": 9007
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": -1,
+            "source": 3,
+            "word": {
+              "5": -1,
+              "7": 1
+            }
+          },
+          "depth": 2,
+          "form": [
+            6031,
+            4521,
+            41454835
+          ],
+          "key": [
+            6031,
+            4521
+          ],
+          "kind": "residual",
+          "norm": 6031
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": 1,
+            "source": 4,
+            "word": {
+              "5": -2
+            }
+          },
+          "depth": 2,
+          "form": [
+            8527,
+            2355,
+            29319853
+          ],
+          "key": [
+            8527,
+            2355
+          ],
+          "kind": "residual",
+          "norm": 8527
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 5,
+            "word": {
+              "5": -1,
+              "7": -2
+            }
+          },
+          "depth": 2,
+          "form": [
+            1019,
+            933,
+            245347613
+          ],
+          "key": [
+            1019,
+            933
+          ],
+          "kind": "residual",
+          "norm": 1019
+        },
+        {
+          "definition": {
+            "exponent": 8,
+            "orientation": 1,
+            "source": 6,
+            "word": {
+              "7": 1,
+              "19": 2
+            }
+          },
+          "depth": 3,
+          "form": [
+            151,
+            89,
+            1655688755
+          ],
+          "key": [
+            151,
+            89
+          ],
+          "kind": "residual",
+          "norm": 151
+        },
+        {
+          "definition": {
+            "exponent": 7,
+            "orientation": -1,
+            "source": 7,
+            "word": {
+              "19": -1
+            }
+          },
+          "depth": 3,
+          "form": [
+            8017,
+            6545,
+            31186193
+          ],
+          "key": [
+            8017,
+            6545
+          ],
+          "kind": "residual",
+          "norm": 8017
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 8,
+            "word": {
+              "7": 1,
+              "19": 1
+            }
+          },
+          "depth": 3,
+          "form": [
+            1201,
+            1043,
+            208167587
+          ],
+          "key": [
+            1201,
+            1043
+          ],
+          "kind": "residual",
+          "norm": 1201
+        },
+        {
+          "definition": {
+            "exponent": 4,
+            "orientation": -1,
+            "source": 9,
+            "word": {
+              "7": 1
+            }
+          },
+          "depth": 4,
+          "form": [
+            8383,
+            2849,
+            29823575
+          ],
+          "key": [
+            8383,
+            2849
+          ],
+          "kind": "residual",
+          "norm": 8383
+        },
+        {
+          "definition": {
+            "exponent": 9,
+            "orientation": -1,
+            "source": 10,
+            "word": {
+              "19": 1
+            }
+          },
+          "depth": 4,
+          "form": [
+            9907,
+            7,
+            25235591
+          ],
+          "key": [
+            9907,
+            7
+          ],
+          "kind": "residual",
+          "norm": 9907
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 11,
+            "word": {
+              "5": -2
+            }
+          },
+          "depth": 4,
+          "form": [
+            8221,
+            3509,
+            30411395
+          ],
+          "key": [
+            8221,
+            3509
+          ],
+          "kind": "residual",
+          "norm": 8221
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 12,
+            "word": {
+              "5": -1,
+              "7": 1
+            }
+          },
+          "depth": 5,
+          "form": [
+            4243,
+            699,
+            58922725
+          ],
+          "key": [
+            4243,
+            699
+          ],
+          "kind": "residual",
+          "norm": 4243
+        },
+        {
+          "definition": {
+            "exponent": 7,
+            "orientation": -1,
+            "source": 13,
+            "word": {
+              "7": 1,
+              "19": 1
+            }
+          },
+          "depth": 5,
+          "form": [
+            1613,
+            1155,
+            154996487
+          ],
+          "key": [
+            1613,
+            1155
+          ],
+          "kind": "residual",
+          "norm": 1613
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": -1,
+            "source": 14,
+            "word": {
+              "7": -2
+            }
+          },
+          "depth": 5,
+          "form": [
+            929,
+            59,
+            269116255
+          ],
+          "key": [
+            929,
+            59
+          ],
+          "kind": "residual",
+          "norm": 929
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 15,
+            "word": {
+              "5": -1,
+              "7": 1
+            }
+          },
+          "depth": 6,
+          "form": [
+            3581,
+            1863,
+            69815657
+          ],
+          "key": [
+            3581,
+            1863
+          ],
+          "kind": "residual",
+          "norm": 3581
+        },
+        {
+          "definition": {
+            "exponent": 5,
+            "orientation": -1,
+            "source": 16,
+            "word": {
+              "7": 2
+            }
+          },
+          "depth": 6,
+          "form": [
+            2399,
+            783,
+            104213903
+          ],
+          "key": [
+            2399,
+            783
+          ],
+          "kind": "residual",
+          "norm": 2399
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 17,
+            "word": {
+              "5": 2,
+              "7": 1
+            }
+          },
+          "depth": 6,
+          "form": [
+            2027,
+            469,
+            123339445
+          ],
+          "key": [
+            2027,
+            469
+          ],
+          "kind": "residual",
+          "norm": 2027
+        },
+        {
+          "definition": {
+            "exponent": 8,
+            "orientation": -1,
+            "source": 18,
+            "word": {
+              "7": -3
+            }
+          },
+          "depth": 7,
+          "form": [
+            773,
+            601,
+            323427025
+          ],
+          "key": [
+            773,
+            601
+          ],
+          "kind": "residual",
+          "norm": 773
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 19,
+            "word": {
+              "5": -1
+            }
+          },
+          "depth": 7,
+          "form": [
+            1873,
+            893,
+            133480619
+          ],
+          "key": [
+            1873,
+            893
+          ],
+          "kind": "residual",
+          "norm": 1873
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 20,
+            "word": {
+              "19": -1
+            }
+          },
+          "depth": 7,
+          "form": [
+            3431,
+            523,
+            72867697
+          ],
+          "key": [
+            3431,
+            523
+          ],
+          "kind": "residual",
+          "norm": 3431
+        },
+        {
+          "definition": {
+            "exponent": 9,
+            "orientation": 1,
+            "source": 21,
+            "word": {
+              "7": -3
+            }
+          },
+          "depth": 8,
+          "form": [
+            1289,
+            701,
+            193955875
+          ],
+          "key": [
+            1289,
+            701
+          ],
+          "kind": "residual",
+          "norm": 1289
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 22,
+            "word": {
+              "19": 2
+            }
+          },
+          "depth": 8,
+          "form": [
+            293,
+            281,
+            853273105
+          ],
+          "key": [
+            293,
+            281
+          ],
+          "kind": "residual",
+          "norm": 293
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": -1,
+            "source": 23,
+            "word": {
+              "7": -1,
+              "19": 1
+            }
+          },
+          "depth": 8,
+          "form": [
+            971,
+            729,
+            257475935
+          ],
+          "key": [
+            971,
+            729
+          ],
+          "kind": "residual",
+          "norm": 971
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": -1,
+            "source": 24,
+            "word": {
+              "5": 1,
+              "19": -2
+            }
+          },
+          "depth": 9,
+          "form": [
+            191,
+            47,
+            1308947647
+          ],
+          "key": [
+            191,
+            47
+          ],
+          "kind": "residual",
+          "norm": 191
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": -1,
+            "source": 25,
+            "word": {
+              "5": -2,
+              "7": 1
+            }
+          },
+          "depth": 9,
+          "form": [
+            2773,
+            793,
+            90158369
+          ],
+          "key": [
+            2773,
+            793
+          ],
+          "kind": "residual",
+          "norm": 2773
+        },
+        {
+          "definition": {
+            "exponent": 4,
+            "orientation": 1,
+            "source": 26,
+            "word": {
+              "5": -1,
+              "19": -1
+            }
+          },
+          "depth": 9,
+          "form": [
+            4847,
+            1931,
+            51580345
+          ],
+          "key": [
+            4847,
+            1931
+          ],
+          "kind": "residual",
+          "norm": 4847
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 27,
+            "word": {
+              "7": 2
+            }
+          },
+          "depth": 10,
+          "form": [
+            5989,
+            3677,
+            41745263
+          ],
+          "key": [
+            5989,
+            3677
+          ],
+          "kind": "residual",
+          "norm": 5989
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 28,
+            "word": {
+              "7": -2
+            }
+          },
+          "depth": 10,
+          "form": [
+            1961,
+            1769,
+            127490965
+          ],
+          "key": [
+            1961,
+            1769
+          ],
+          "kind": "residual",
+          "norm": 1961
+        },
+        {
+          "definition": {
+            "exponent": 7,
+            "orientation": -1,
+            "source": 29,
+            "word": {
+              "5": -2
+            }
+          },
+          "depth": 10,
+          "form": [
+            9479,
+            4671,
+            26375615
+          ],
+          "key": [
+            9479,
+            4671
+          ],
+          "kind": "residual",
+          "norm": 9479
+        },
+        {
+          "definition": {
+            "exponent": 8,
+            "orientation": 1,
+            "source": 30,
+            "word": {
+              "7": -1
+            }
+          },
+          "depth": 11,
+          "form": [
+            853,
+            549,
+            293093875
+          ],
+          "key": [
+            853,
+            549
+          ],
+          "kind": "residual",
+          "norm": 853
+        },
+        {
+          "definition": {
+            "exponent": 12,
+            "orientation": -1,
+            "source": 31,
+            "word": {
+              "5": 2,
+              "7": 1
+            }
+          },
+          "depth": 11,
+          "form": [
+            2213,
+            1687,
+            112973209
+          ],
+          "key": [
+            2213,
+            1687
+          ],
+          "kind": "residual",
+          "norm": 2213
+        },
+        {
+          "definition": {
+            "exponent": 5,
+            "orientation": 1,
+            "source": 32,
+            "word": {
+              "5": -1,
+              "7": -1
+            }
+          },
+          "depth": 11,
+          "form": [
+            3593,
+            559,
+            69582265
+          ],
+          "key": [
+            3593,
+            559
+          ],
+          "kind": "residual",
+          "norm": 3593
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 33,
+            "word": {
+              "7": -2
+            }
+          },
+          "depth": 12,
+          "form": [
+            9601,
+            5009,
+            26040545
+          ],
+          "key": [
+            9601,
+            5009
+          ],
+          "kind": "residual",
+          "norm": 9601
+        },
+        {
+          "definition": {
+            "exponent": 5,
+            "orientation": 1,
+            "source": 34,
+            "word": {
+              "5": -2
+            }
+          },
+          "depth": 12,
+          "form": [
+            2011,
+            1375,
+            124320971
+          ],
+          "key": [
+            2011,
+            1375
+          ],
+          "kind": "residual",
+          "norm": 2011
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 35,
+            "word": {
+              "5": 1,
+              "7": 1
+            }
+          },
+          "depth": 12,
+          "form": [
+            4253,
+            2269,
+            58784455
+          ],
+          "key": [
+            4253,
+            2269
+          ],
+          "kind": "residual",
+          "norm": 4253
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 36,
+            "word": {
+              "5": 2
+            }
+          },
+          "depth": 13,
+          "form": [
+            2377,
+            855,
+            105178453
+          ],
+          "key": [
+            2377,
+            855
+          ],
+          "kind": "residual",
+          "norm": 2377
+        },
+        {
+          "definition": {
+            "exponent": 9,
+            "orientation": -1,
+            "source": 37,
+            "word": {
+              "5": -1
+            }
+          },
+          "depth": 13,
+          "form": [
+            6803,
+            273,
+            36749819
+          ],
+          "key": [
+            6803,
+            273
+          ],
+          "kind": "residual",
+          "norm": 6803
+        },
+        {
+          "definition": {
+            "exponent": 22,
+            "orientation": -1,
+            "source": 38,
+            "word": {}
+          },
+          "depth": 13,
+          "form": [
+            4357,
+            1843,
+            57381191
+          ],
+          "key": [
+            4357,
+            1843
+          ],
+          "kind": "residual",
+          "norm": 4357
+        },
+        {
+          "definition": {
+            "exponent": 9,
+            "orientation": -1,
+            "source": 39,
+            "word": {
+              "5": -1,
+              "19": 1
+            }
+          },
+          "depth": 14,
+          "form": [
+            1861,
+            1811,
+            134341655
+          ],
+          "key": [
+            1861,
+            1811
+          ],
+          "kind": "residual",
+          "norm": 1861
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": -1,
+            "source": 40,
+            "word": {
+              "7": 1,
+              "19": -1
+            }
+          },
+          "depth": 14,
+          "form": [
+            2741,
+            1973,
+            91211227
+          ],
+          "key": [
+            2741,
+            1973
+          ],
+          "kind": "residual",
+          "norm": 2741
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 41,
+            "word": {
+              "7": -1,
+              "19": -1
+            }
+          },
+          "depth": 14,
+          "form": [
+            3041,
+            2481,
+            82213265
+          ],
+          "key": [
+            3041,
+            2481
+          ],
+          "kind": "residual",
+          "norm": 3041
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 42,
+            "word": {
+              "7": 1,
+              "19": -1
+            }
+          },
+          "depth": 15,
+          "form": [
+            3589,
+            363,
+            69659803
+          ],
+          "key": [
+            3589,
+            363
+          ],
+          "kind": "residual",
+          "norm": 3589
+        },
+        {
+          "definition": {
+            "exponent": 9,
+            "orientation": 1,
+            "source": 43,
+            "word": {
+              "5": 1,
+              "7": -1
+            }
+          },
+          "depth": 15,
+          "form": [
+            1987,
+            533,
+            125822381
+          ],
+          "key": [
+            1987,
+            533
+          ],
+          "kind": "residual",
+          "norm": 1987
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 44,
+            "word": {
+              "5": 1,
+              "7": 1
+            }
+          },
+          "depth": 15,
+          "form": [
+            857,
+            107,
+            291725791
+          ],
+          "key": [
+            857,
+            107
+          ],
+          "kind": "residual",
+          "norm": 857
+        },
+        {
+          "definition": {
+            "exponent": 8,
+            "orientation": 1,
+            "source": 45,
+            "word": {
+              "7": 2
+            }
+          },
+          "depth": 16,
+          "form": [
+            2447,
+            1499,
+            102169825
+          ],
+          "key": [
+            2447,
+            1499
+          ],
+          "kind": "residual",
+          "norm": 2447
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 46,
+            "word": {
+              "5": 1,
+              "7": 1
+            }
+          },
+          "depth": 16,
+          "form": [
+            4937,
+            1619,
+            50639995
+          ],
+          "key": [
+            4937,
+            1619
+          ],
+          "kind": "residual",
+          "norm": 4937
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": -1,
+            "source": 47,
+            "word": {
+              "5": -1
+            }
+          },
+          "depth": 16,
+          "form": [
+            4307,
+            2275,
+            58047433
+          ],
+          "key": [
+            4307,
+            2275
+          ],
+          "kind": "residual",
+          "norm": 4307
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": -1,
+            "source": 48,
+            "word": {
+              "5": -1,
+              "7": -1
+            }
+          },
+          "depth": 17,
+          "form": [
+            6059,
+            1521,
+            41262515
+          ],
+          "key": [
+            6059,
+            1521
+          ],
+          "kind": "residual",
+          "norm": 6059
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 49,
+            "word": {
+              "5": 2
+            }
+          },
+          "depth": 17,
+          "form": [
+            3697,
+            27,
+            67624831
+          ],
+          "key": [
+            3697,
+            27
+          ],
+          "kind": "residual",
+          "norm": 3697
+        },
+        {
+          "definition": {
+            "exponent": 15,
+            "orientation": -1,
+            "source": 50,
+            "word": {
+              "7": -1
+            }
+          },
+          "depth": 17,
+          "form": [
+            8971,
+            3195,
+            27868861
+          ],
+          "key": [
+            8971,
+            3195
+          ],
+          "kind": "residual",
+          "norm": 8971
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": -1,
+            "source": 51,
+            "word": {
+              "7": 3
+            }
+          },
+          "depth": 18,
+          "form": [
+            59,
+            33,
+            4237440683
+          ],
+          "key": [
+            59,
+            33
+          ],
+          "kind": "residual",
+          "norm": 59
+        },
+        {
+          "definition": {
+            "exponent": 5,
+            "orientation": -1,
+            "source": 52,
+            "word": {
+              "5": 3
+            }
+          },
+          "depth": 18,
+          "form": [
+            769,
+            715,
+            325109399
+          ],
+          "key": [
+            769,
+            715
+          ],
+          "kind": "residual",
+          "norm": 769
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": 1,
+            "source": 53,
+            "word": {
+              "5": -1,
+              "7": -2
+            }
+          },
+          "depth": 18,
+          "form": [
+            239,
+            143,
+            1046062783
+          ],
+          "key": [
+            239,
+            143
+          ],
+          "kind": "residual",
+          "norm": 239
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": 1,
+            "source": 54,
+            "word": {
+              "5": 2
+            }
+          },
+          "depth": 19,
+          "form": [
+            257,
+            99,
+            972797675
+          ],
+          "key": [
+            257,
+            99
+          ],
+          "kind": "residual",
+          "norm": 257
+        },
+        {
+          "definition": {
+            "exponent": 4,
+            "orientation": -1,
+            "source": 55,
+            "word": {
+              "19": -1
+            }
+          },
+          "depth": 19,
+          "form": [
+            3733,
+            1697,
+            66972869
+          ],
+          "key": [
+            3733,
+            1697
+          ],
+          "kind": "residual",
+          "norm": 3733
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 56,
+            "word": {
+              "5": -1,
+              "7": -3
+            }
+          },
+          "depth": 19,
+          "form": [
+            97,
+            25,
+            2577412373
+          ],
+          "key": [
+            97,
+            25
+          ],
+          "kind": "residual",
+          "norm": 97
+        },
+        {
+          "definition": {
+            "exponent": 10,
+            "orientation": 1,
+            "source": 57,
+            "word": {
+              "5": -1,
+              "7": -1
+            }
+          },
+          "depth": 20,
+          "form": [
+            4229,
+            979,
+            59117815
+          ],
+          "key": [
+            4229,
+            979
+          ],
+          "kind": "residual",
+          "norm": 4229
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": -1,
+            "source": 58,
+            "word": {
+              "5": -3,
+              "7": 1
+            }
+          },
+          "depth": 20,
+          "form": [
+            37,
+            7,
+            6757000001
+          ],
+          "key": [
+            37,
+            7
+          ],
+          "kind": "residual",
+          "norm": 37
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 59,
+            "word": {
+              "5": 1,
+              "19": 1
+            }
+          },
+          "depth": 20,
+          "form": [
+            4289,
+            3363,
+            58291403
+          ],
+          "key": [
+            4289,
+            3363
+          ],
+          "kind": "residual",
+          "norm": 4289
+        },
+        {
+          "definition": {
+            "exponent": 7,
+            "orientation": 1,
+            "source": 60,
+            "word": {
+              "5": 2
+            }
+          },
+          "depth": 21,
+          "form": [
+            5953,
+            129,
+            41997145
+          ],
+          "key": [
+            5953,
+            129
+          ],
+          "kind": "residual",
+          "norm": 5953
+        },
+        {
+          "definition": {
+            "exponent": 4,
+            "orientation": 1,
+            "source": 61,
+            "word": {
+              "7": -1,
+              "19": 1
+            }
+          },
+          "depth": 21,
+          "form": [
+            1229,
+            309,
+            203424755
+          ],
+          "key": [
+            1229,
+            309
+          ],
+          "kind": "residual",
+          "norm": 1229
+        },
+        {
+          "definition": {
+            "exponent": 2,
+            "orientation": 1,
+            "source": 62,
+            "word": {
+              "5": 3,
+              "19": 1
+            }
+          },
+          "depth": 21,
+          "form": [
+            173,
+            159,
+            1445138765
+          ],
+          "key": [
+            173,
+            159
+          ],
+          "kind": "residual",
+          "norm": 173
+        },
+        {
+          "definition": {
+            "exponent": 6,
+            "orientation": -1,
+            "source": 63,
+            "word": {
+              "5": -1,
+              "19": 1
+            }
+          },
+          "depth": 22,
+          "form": [
+            3673,
+            2899,
+            68067275
+          ],
+          "key": [
+            3673,
+            2899
+          ],
+          "kind": "residual",
+          "norm": 3673
+        },
+        {
+          "definition": {
+            "exponent": 8,
+            "orientation": -1,
+            "source": 64,
+            "word": {
+              "19": -1
+            }
+          },
+          "depth": 22,
+          "form": [
+            1069,
+            463,
+            233871893
+          ],
+          "key": [
+            1069,
+            463
+          ],
+          "kind": "residual",
+          "norm": 1069
+        },
+        {
+          "definition": {
+            "exponent": 8,
+            "orientation": 1,
+            "source": 65,
+            "word": {
+              "5": 1,
+              "19": -1
+            }
+          },
+          "depth": 22,
+          "form": [
+            3559,
+            2629,
+            70247465
+          ],
+          "key": [
+            3559,
+            2629
+          ],
+          "kind": "residual",
+          "norm": 3559
+        },
+        {
+          "definition": {
+            "exponent": 5,
+            "orientation": 1,
+            "source": 66,
+            "word": {
+              "5": -1,
+              "7": -1
+            }
+          },
+          "depth": 23,
+          "form": [
+            7417,
+            5915,
+            33708743
+          ],
+          "key": [
+            7417,
+            5915
+          ],
+          "kind": "residual",
+          "norm": 7417
+        },
+        {
+          "definition": {
+            "exponent": 5,
+            "orientation": -1,
+            "source": 67,
+            "word": {
+              "5": 2,
+              "7": -1
+            }
+          },
+          "depth": 23,
+          "form": [
+            1571,
+            1393,
+            159140347
+          ],
+          "key": [
+            1571,
+            1393
+          ],
+          "kind": "residual",
+          "norm": 1571
+        },
+        {
+          "definition": {
+            "exponent": 8,
+            "orientation": -1,
+            "source": 68,
+            "word": {
+              "5": 1
+            }
+          },
+          "depth": 23,
+          "form": [
+            8389,
+            6415,
+            29803229
+          ],
+          "key": [
+            8389,
+            6415
+          ],
+          "kind": "residual",
+          "norm": 8389
+        },
+        {
+          "definition": {
+            "exponent": 3,
+            "orientation": 1,
+            "source": 69,
+            "word": {}
+          },
+          "depth": 24,
+          "form": [
+            5227,
+            4335,
+            47831203
+          ],
+          "key": [
+            5227,
+            4335
+          ],
+          "kind": "residual",
+          "norm": 5227
+        }
+      ],
+      "height_bound": 577360,
+      "initial_base_size": 3,
+      "initial_power_computations": 71,
+      "input_bits": 40,
+      "integer": 1000036000099,
+      "last_extraction": {
+        "annihilator_supplied": false,
+        "determinant_computed": false,
+        "group_inversions": 1,
+        "group_multiplications": 305,
+        "identity_tops": 1,
+        "initial_relations_verified": 0,
+        "kernel_passes": 2,
+        "maximum_entry_bits": 56,
+        "paired_bad_top_updates": 0,
+        "rejected_nonidentity_tops": 0,
+        "relation_deficiency": 2,
+        "relation_dimension": 3,
+        "relation_rows": 1,
+        "saturation_bound": 57,
+        "saturations": 1,
+        "termination": "useful involution",
+        "tops_evaluated": 2
+      },
+      "max_cofactor": 10000,
+      "max_generators": 256,
+      "max_queries": 10000,
+      "maximum_definition_depth": 24,
+      "maximum_exponent_tested": 22,
+      "maximum_relation_entry_bits": 56,
+      "maximum_residual_bits": 14,
+      "maximum_word_coefficient_bits": 54,
+      "method": "ideal-closure relation halving",
+      "new_primes_introduced": 0,
+      "new_residual_generators": 70,
+      "norm_queries": 301,
+      "partial_identities_verified": 71,
+      "prime_records": {
+        "5": [
+          1,
+          [
+            5,
+            1,
+            50001800005
+          ]
+        ],
+        "7": [
+          9,
+          [
+            7,
+            -5,
+            35715571433
+          ]
+        ],
+        "19": [
+          7,
+          [
+            19,
+            7,
+            13158368423
+          ]
+        ]
+      },
+      "relation_matrix": [
+        [
+          12444090462471472,
+          58663052844032092,
+          -5194178445991040
+        ]
+      ],
+      "relation_rank": 1,
+      "residual_primality_tests": 0,
+      "sparse_augmented_relation_matrix": [
+        [
+          [
+            0,
+            13
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            3,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            11
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            4,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            13
+          ],
+          [
+            5,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            3,
+            3
+          ],
+          [
+            6,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            4,
+            6
+          ],
+          [
+            7,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            5,
+            2
+          ],
+          [
+            8,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -2
+          ],
+          [
+            6,
+            8
+          ],
+          [
+            9,
+            -1
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            7,
+            7
+          ],
+          [
+            10,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            8,
+            3
+          ],
+          [
+            11,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            9,
+            4
+          ],
+          [
+            12,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            -1
+          ],
+          [
+            10,
+            9
+          ],
+          [
+            13,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            11,
+            2
+          ],
+          [
+            14,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            12,
+            3
+          ],
+          [
+            15,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            13,
+            7
+          ],
+          [
+            16,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            14,
+            6
+          ],
+          [
+            17,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            15,
+            2
+          ],
+          [
+            18,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            16,
+            5
+          ],
+          [
+            19,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            17,
+            2
+          ],
+          [
+            20,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            18,
+            8
+          ],
+          [
+            21,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            19,
+            3
+          ],
+          [
+            22,
+            -1
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            20,
+            2
+          ],
+          [
+            23,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            3
+          ],
+          [
+            21,
+            9
+          ],
+          [
+            24,
+            -1
+          ]
+        ],
+        [
+          [
+            2,
+            -2
+          ],
+          [
+            22,
+            2
+          ],
+          [
+            25,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            23,
+            3
+          ],
+          [
+            26,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            2,
+            2
+          ],
+          [
+            24,
+            6
+          ],
+          [
+            27,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            25,
+            6
+          ],
+          [
+            28,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            26,
+            4
+          ],
+          [
+            29,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            27,
+            3
+          ],
+          [
+            30,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            28,
+            2
+          ],
+          [
+            31,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            29,
+            7
+          ],
+          [
+            32,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            30,
+            8
+          ],
+          [
+            33,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            31,
+            12
+          ],
+          [
+            34,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            32,
+            5
+          ],
+          [
+            35,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            2
+          ],
+          [
+            33,
+            3
+          ],
+          [
+            36,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            34,
+            5
+          ],
+          [
+            37,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            35,
+            3
+          ],
+          [
+            38,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            36,
+            3
+          ],
+          [
+            39,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            37,
+            9
+          ],
+          [
+            40,
+            1
+          ]
+        ],
+        [
+          [
+            38,
+            22
+          ],
+          [
+            41,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            39,
+            9
+          ],
+          [
+            42,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            40,
+            6
+          ],
+          [
+            43,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            41,
+            2
+          ],
+          [
+            44,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            -1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            42,
+            2
+          ],
+          [
+            45,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            43,
+            9
+          ],
+          [
+            46,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            44,
+            2
+          ],
+          [
+            47,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -2
+          ],
+          [
+            45,
+            8
+          ],
+          [
+            48,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            46,
+            2
+          ],
+          [
+            49,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            47,
+            3
+          ],
+          [
+            50,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            48,
+            6
+          ],
+          [
+            51,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            49,
+            2
+          ],
+          [
+            52,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            50,
+            15
+          ],
+          [
+            53,
+            1
+          ]
+        ],
+        [
+          [
+            1,
+            -3
+          ],
+          [
+            51,
+            2
+          ],
+          [
+            54,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -3
+          ],
+          [
+            52,
+            5
+          ],
+          [
+            55,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            53,
+            6
+          ],
+          [
+            56,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            54,
+            6
+          ],
+          [
+            57,
+            -1
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            55,
+            4
+          ],
+          [
+            58,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            56,
+            3
+          ],
+          [
+            59,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            57,
+            10
+          ],
+          [
+            60,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            3
+          ],
+          [
+            1,
+            -1
+          ],
+          [
+            58,
+            3
+          ],
+          [
+            61,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            59,
+            3
+          ],
+          [
+            62,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            60,
+            7
+          ],
+          [
+            63,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            61,
+            4
+          ],
+          [
+            64,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -3
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            62,
+            2
+          ],
+          [
+            65,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            2,
+            -1
+          ],
+          [
+            63,
+            6
+          ],
+          [
+            66,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            1
+          ],
+          [
+            64,
+            8
+          ],
+          [
+            67,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            2,
+            1
+          ],
+          [
+            65,
+            8
+          ],
+          [
+            68,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            66,
+            5
+          ],
+          [
+            69,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ],
+          [
+            1,
+            1
+          ],
+          [
+            67,
+            5
+          ],
+          [
+            70,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            68,
+            8
+          ],
+          [
+            71,
+            1
+          ]
+        ],
+        [
+          [
+            69,
+            3
+          ],
+          [
+            72,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            42,
+            -1
+          ],
+          [
+            70,
+            5
+          ]
+        ]
+      ],
+      "successive_power_compositions": 230,
+      "terminal_witness": null,
+      "trial_divisions": 296,
+      "window": 32,
+      "witnesses": [
+        {
+          "exponent": 13,
+          "factors": [
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 0,
+          "key": [
+            9169,
+            7453
+          ],
+          "orientation": 1,
+          "residual": 9169,
+          "residual_form": [
+            9169,
+            7453,
+            27268283
+          ],
+          "residual_index": 3,
+          "smooth_part": 19,
+          "target": [
+            174211,
+            135819,
+            1461565
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "19": 1
+          }
+        },
+        {
+          "exponent": 10,
+          "factors": [
+            [
+              5,
+              2
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 1,
+          "key": [
+            167,
+            143
+          ],
+          "orientation": 1,
+          "residual": 167,
+          "residual_form": [
+            167,
+            143,
+            1497059911
+          ],
+          "residual_index": 4,
+          "smooth_part": 3325,
+          "target": [
+            555275,
+            -514551,
+            569447
+          ],
+          "trial_divisions": 7,
+          "word": {
+            "5": -2,
+            "7": -1,
+            "19": 1
+          }
+        },
+        {
+          "exponent": 13,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 2,
+          "key": [
+            9007,
+            2263
+          ],
+          "orientation": 1,
+          "residual": 9007,
+          "residual_form": [
+            9007,
+            2263,
+            27757331
+          ],
+          "residual_index": 5,
+          "smooth_part": 35,
+          "target": [
+            315245,
+            -105821,
+            801943
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": -1,
+            "7": -1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 3,
+          "key": [
+            6031,
+            4521
+          ],
+          "orientation": -1,
+          "residual": 6031,
+          "residual_form": [
+            6031,
+            4521,
+            41454835
+          ],
+          "residual_index": 6,
+          "smooth_part": 35,
+          "target": [
+            211085,
+            176409,
+            1221257
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": -1,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              5,
+              2
+            ]
+          ],
+          "generator_index": 4,
+          "key": [
+            8527,
+            2355
+          ],
+          "orientation": 1,
+          "residual": 8527,
+          "residual_form": [
+            8527,
+            2355,
+            29319853
+          ],
+          "residual_index": 7,
+          "smooth_part": 25,
+          "target": [
+            213175,
+            189949,
+            1215101
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "5": -2
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 5,
+          "key": [
+            1019,
+            933
+          ],
+          "orientation": -1,
+          "residual": 1019,
+          "residual_form": [
+            1019,
+            933,
+            245347613
+          ],
+          "residual_index": 8,
+          "smooth_part": 245,
+          "target": [
+            249655,
+            -43731,
+            1003333
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": -1,
+            "7": -2
+          }
+        },
+        {
+          "exponent": 8,
+          "factors": [
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              2
+            ]
+          ],
+          "generator_index": 6,
+          "key": [
+            151,
+            89
+          ],
+          "orientation": 1,
+          "residual": 151,
+          "residual_form": [
+            151,
+            89,
+            1655688755
+          ],
+          "residual_index": 9,
+          "smooth_part": 2527,
+          "target": [
+            381577,
+            -262953,
+            700501
+          ],
+          "trial_divisions": 6,
+          "word": {
+            "7": 1,
+            "19": 2
+          }
+        },
+        {
+          "exponent": 7,
+          "factors": [
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 7,
+          "key": [
+            8017,
+            6545
+          ],
+          "orientation": -1,
+          "residual": 8017,
+          "residual_form": [
+            8017,
+            6545,
+            31186193
+          ],
+          "residual_index": 10,
+          "smooth_part": 19,
+          "target": [
+            152323,
+            -22579,
+            1642145
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "19": -1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 8,
+          "key": [
+            1201,
+            1043
+          ],
+          "orientation": 1,
+          "residual": 1201,
+          "residual_form": [
+            1201,
+            1043,
+            208167587
+          ],
+          "residual_index": 11,
+          "smooth_part": 133,
+          "target": [
+            159733,
+            123545,
+            1589057
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": 1,
+            "19": 1
+          }
+        },
+        {
+          "exponent": 4,
+          "factors": [
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 9,
+          "key": [
+            8383,
+            2849
+          ],
+          "orientation": -1,
+          "residual": 8383,
+          "residual_form": [
+            8383,
+            2849,
+            29823575
+          ],
+          "residual_index": 12,
+          "smooth_part": 7,
+          "target": [
+            58681,
+            30683,
+            4264487
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "7": 1
+          }
+        },
+        {
+          "exponent": 9,
+          "factors": [
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 10,
+          "key": [
+            9907,
+            7
+          ],
+          "orientation": -1,
+          "residual": 9907,
+          "residual_form": [
+            9907,
+            7,
+            25235591
+          ],
+          "residual_index": 13,
+          "smooth_part": 19,
+          "target": [
+            188233,
+            158505,
+            1361557
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "19": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              5,
+              2
+            ]
+          ],
+          "generator_index": 11,
+          "key": [
+            8221,
+            3509
+          ],
+          "orientation": -1,
+          "residual": 8221,
+          "residual_form": [
+            8221,
+            3509,
+            30411395
+          ],
+          "residual_index": 14,
+          "smooth_part": 25,
+          "target": [
+            205525,
+            -19951,
+            1216925
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "5": -2
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 12,
+          "key": [
+            4243,
+            699
+          ],
+          "orientation": 1,
+          "residual": 4243,
+          "residual_form": [
+            4243,
+            699,
+            58922725
+          ],
+          "residual_index": 15,
+          "smooth_part": 35,
+          "target": [
+            148505,
+            43129,
+            1686637
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": -1,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 7,
+          "factors": [
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 13,
+          "key": [
+            1613,
+            1155
+          ],
+          "orientation": -1,
+          "residual": 1613,
+          "residual_form": [
+            1613,
+            1155,
+            154996487
+          ],
+          "residual_index": 16,
+          "smooth_part": 133,
+          "target": [
+            214529,
+            195631,
+            1209985
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": 1,
+            "19": 1
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 14,
+          "key": [
+            929,
+            59
+          ],
+          "orientation": -1,
+          "residual": 929,
+          "residual_form": [
+            929,
+            59,
+            269116255
+          ],
+          "residual_index": 17,
+          "smooth_part": 49,
+          "target": [
+            45521,
+            -16781,
+            5493715
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "7": -2
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 15,
+          "key": [
+            3581,
+            1863
+          ],
+          "orientation": -1,
+          "residual": 3581,
+          "residual_form": [
+            3581,
+            1863,
+            69815657
+          ],
+          "residual_index": 18,
+          "smooth_part": 35,
+          "target": [
+            125335,
+            -30511,
+            1996583
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": -1,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 5,
+          "factors": [
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 16,
+          "key": [
+            2399,
+            783
+          ],
+          "orientation": -1,
+          "residual": 2399,
+          "residual_form": [
+            2399,
+            783,
+            104213903
+          ],
+          "residual_index": 19,
+          "smooth_part": 49,
+          "target": [
+            117551,
+            90379,
+            2144185
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "7": 2
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              5,
+              2
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 17,
+          "key": [
+            2027,
+            469
+          ],
+          "orientation": 1,
+          "residual": 2027,
+          "residual_form": [
+            2027,
+            469,
+            123339445
+          ],
+          "residual_index": 20,
+          "smooth_part": 175,
+          "target": [
+            354725,
+            235601,
+            743917
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": 2,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 8,
+          "factors": [
+            [
+              7,
+              3
+            ]
+          ],
+          "generator_index": 18,
+          "key": [
+            773,
+            601
+          ],
+          "orientation": -1,
+          "residual": 773,
+          "residual_form": [
+            773,
+            601,
+            323427025
+          ],
+          "residual_index": 21,
+          "smooth_part": 343,
+          "target": [
+            265139,
+            -6785,
+            942979
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": -3
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              5,
+              1
+            ]
+          ],
+          "generator_index": 19,
+          "key": [
+            1873,
+            893
+          ],
+          "orientation": 1,
+          "residual": 1873,
+          "residual_form": [
+            1873,
+            893,
+            133480619
+          ],
+          "residual_index": 22,
+          "smooth_part": 5,
+          "target": [
+            9365,
+            4639,
+            26696677
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "5": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 20,
+          "key": [
+            3431,
+            523
+          ],
+          "orientation": -1,
+          "residual": 3431,
+          "residual_form": [
+            3431,
+            523,
+            72867697
+          ],
+          "residual_index": 23,
+          "smooth_part": 19,
+          "target": [
+            65189,
+            6339,
+            3835295
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "19": -1
+          }
+        },
+        {
+          "exponent": 9,
+          "factors": [
+            [
+              7,
+              3
+            ]
+          ],
+          "generator_index": 21,
+          "key": [
+            1289,
+            701
+          ],
+          "orientation": 1,
+          "residual": 1289,
+          "residual_form": [
+            1289,
+            701,
+            193955875
+          ],
+          "residual_index": 24,
+          "smooth_part": 343,
+          "target": [
+            442127,
+            -373109,
+            644185
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": -3
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              19,
+              2
+            ]
+          ],
+          "generator_index": 22,
+          "key": [
+            293,
+            281
+          ],
+          "orientation": 1,
+          "residual": 293,
+          "residual_form": [
+            293,
+            281,
+            853273105
+          ],
+          "residual_index": 25,
+          "smooth_part": 361,
+          "target": [
+            105773,
+            61225,
+            2372497
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "19": 2
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 23,
+          "key": [
+            971,
+            729
+          ],
+          "orientation": -1,
+          "residual": 971,
+          "residual_form": [
+            971,
+            729,
+            257475935
+          ],
+          "residual_index": 26,
+          "smooth_part": 133,
+          "target": [
+            129143,
+            98313,
+            1954619
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": -1,
+            "19": 1
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              19,
+              2
+            ]
+          ],
+          "generator_index": 24,
+          "key": [
+            191,
+            47
+          ],
+          "orientation": -1,
+          "residual": 191,
+          "residual_form": [
+            191,
+            47,
+            1308947647
+          ],
+          "residual_index": 27,
+          "smooth_part": 1805,
+          "target": [
+            344755,
+            -311759,
+            795659
+          ],
+          "trial_divisions": 6,
+          "word": {
+            "5": 1,
+            "19": -2
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              5,
+              2
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 25,
+          "key": [
+            2773,
+            793
+          ],
+          "orientation": -1,
+          "residual": 2773,
+          "residual_form": [
+            2773,
+            793,
+            90158369
+          ],
+          "residual_index": 28,
+          "smooth_part": 175,
+          "target": [
+            485275,
+            10299,
+            515245
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": -2,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 4,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 26,
+          "key": [
+            4847,
+            1931
+          ],
+          "orientation": 1,
+          "residual": 4847,
+          "residual_form": [
+            4847,
+            1931,
+            51580345
+          ],
+          "residual_index": 29,
+          "smooth_part": 95,
+          "target": [
+            460465,
+            -366441,
+            615853
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": -1,
+            "19": -1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 27,
+          "key": [
+            5989,
+            3677
+          ],
+          "orientation": 1,
+          "residual": 5989,
+          "residual_form": [
+            5989,
+            3677,
+            41745263
+          ],
+          "residual_index": 30,
+          "smooth_part": 49,
+          "target": [
+            293461,
+            255215,
+            907421
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "7": 2
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 28,
+          "key": [
+            1961,
+            1769
+          ],
+          "orientation": 1,
+          "residual": 1961,
+          "residual_form": [
+            1961,
+            1769,
+            127490965
+          ],
+          "residual_index": 31,
+          "smooth_part": 49,
+          "target": [
+            96089,
+            -53139,
+            2609195
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "7": -2
+          }
+        },
+        {
+          "exponent": 7,
+          "factors": [
+            [
+              5,
+              2
+            ]
+          ],
+          "generator_index": 29,
+          "key": [
+            9479,
+            4671
+          ],
+          "orientation": -1,
+          "residual": 9479,
+          "residual_form": [
+            9479,
+            4671,
+            26375615
+          ],
+          "residual_index": 32,
+          "smooth_part": 25,
+          "target": [
+            236975,
+            -194251,
+            1094809
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "5": -2
+          }
+        },
+        {
+          "exponent": 8,
+          "factors": [
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 30,
+          "key": [
+            853,
+            549
+          ],
+          "orientation": 1,
+          "residual": 853,
+          "residual_form": [
+            853,
+            549,
+            293093875
+          ],
+          "residual_index": 33,
+          "smooth_part": 7,
+          "target": [
+            5971,
+            -1157,
+            41870597
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "7": -1
+          }
+        },
+        {
+          "exponent": 12,
+          "factors": [
+            [
+              5,
+              2
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 31,
+          "key": [
+            2213,
+            1687
+          ],
+          "orientation": -1,
+          "residual": 2213,
+          "residual_form": [
+            2213,
+            1687,
+            112973209
+          ],
+          "residual_index": 34,
+          "smooth_part": 175,
+          "target": [
+            387275,
+            -276099,
+            694769
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": 2,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 5,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 32,
+          "key": [
+            3593,
+            559
+          ],
+          "orientation": 1,
+          "residual": 3593,
+          "residual_form": [
+            3593,
+            559,
+            69582265
+          ],
+          "residual_index": 35,
+          "smooth_part": 35,
+          "target": [
+            125755,
+            36489,
+            1990711
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": -1,
+            "7": -1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 33,
+          "key": [
+            9601,
+            5009
+          ],
+          "orientation": 1,
+          "residual": 9601,
+          "residual_form": [
+            9601,
+            5009,
+            26040545
+          ],
+          "residual_index": 36,
+          "smooth_part": 49,
+          "target": [
+            470449,
+            427453,
+            628523
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "7": -2
+          }
+        },
+        {
+          "exponent": 5,
+          "factors": [
+            [
+              5,
+              2
+            ]
+          ],
+          "generator_index": 34,
+          "key": [
+            2011,
+            1375
+          ],
+          "orientation": 1,
+          "residual": 2011,
+          "residual_form": [
+            2011,
+            1375,
+            124320971
+          ],
+          "residual_index": 37,
+          "smooth_part": 25,
+          "target": [
+            50275,
+            -30801,
+            4977547
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "5": -2
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 35,
+          "key": [
+            4253,
+            2269
+          ],
+          "orientation": 1,
+          "residual": 4253,
+          "residual_form": [
+            4253,
+            2269,
+            58784455
+          ],
+          "residual_index": 38,
+          "smooth_part": 35,
+          "target": [
+            148855,
+            -108309,
+            1699249
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": 1,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              5,
+              2
+            ]
+          ],
+          "generator_index": 36,
+          "key": [
+            2377,
+            855
+          ],
+          "orientation": 1,
+          "residual": 2377,
+          "residual_form": [
+            2377,
+            855,
+            105178453
+          ],
+          "residual_index": 39,
+          "smooth_part": 25,
+          "target": [
+            59425,
+            -3899,
+            4207199
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "5": 2
+          }
+        },
+        {
+          "exponent": 9,
+          "factors": [
+            [
+              5,
+              1
+            ]
+          ],
+          "generator_index": 37,
+          "key": [
+            6803,
+            273
+          ],
+          "orientation": -1,
+          "residual": 6803,
+          "residual_form": [
+            6803,
+            273,
+            36749819
+          ],
+          "residual_index": 40,
+          "smooth_part": 5,
+          "target": [
+            34015,
+            26939,
+            7355297
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "5": -1
+          }
+        },
+        {
+          "exponent": 22,
+          "factors": [],
+          "generator_index": 38,
+          "key": [
+            4357,
+            1843
+          ],
+          "orientation": -1,
+          "residual": 4357,
+          "residual_form": [
+            4357,
+            1843,
+            57381191
+          ],
+          "residual_index": 41,
+          "smooth_part": 1,
+          "target": [
+            4357,
+            -1843,
+            57381191
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 9,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 39,
+          "key": [
+            1861,
+            1811
+          ],
+          "orientation": -1,
+          "residual": 1861,
+          "residual_form": [
+            1861,
+            1811,
+            134341655
+          ],
+          "residual_index": 42,
+          "smooth_part": 95,
+          "target": [
+            176795,
+            -132081,
+            1438787
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": -1,
+            "19": 1
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 40,
+          "key": [
+            2741,
+            1973
+          ],
+          "orientation": -1,
+          "residual": 2741,
+          "residual_form": [
+            2741,
+            1973,
+            91211227
+          ],
+          "residual_index": 43,
+          "smooth_part": 133,
+          "target": [
+            364553,
+            -111613,
+            694339
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": 1,
+            "19": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 41,
+          "key": [
+            3041,
+            2481
+          ],
+          "orientation": 1,
+          "residual": 3041,
+          "residual_form": [
+            3041,
+            2481,
+            82213265
+          ],
+          "residual_index": 44,
+          "smooth_part": 133,
+          "target": [
+            404453,
+            -52257,
+            619829
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": -1,
+            "19": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 42,
+          "key": [
+            3589,
+            363
+          ],
+          "orientation": 1,
+          "residual": 3589,
+          "residual_form": [
+            3589,
+            363,
+            69659803
+          ],
+          "residual_index": 45,
+          "smooth_part": 133,
+          "target": [
+            477337,
+            459755,
+            634463
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": 1,
+            "19": -1
+          }
+        },
+        {
+          "exponent": 9,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 43,
+          "key": [
+            1987,
+            533
+          ],
+          "orientation": 1,
+          "residual": 1987,
+          "residual_form": [
+            1987,
+            533,
+            125822381
+          ],
+          "residual_index": 46,
+          "smooth_part": 35,
+          "target": [
+            69545,
+            48221,
+            3603283
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": 1,
+            "7": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 44,
+          "key": [
+            857,
+            107
+          ],
+          "orientation": -1,
+          "residual": 857,
+          "residual_form": [
+            857,
+            107,
+            291725791
+          ],
+          "residual_index": 47,
+          "smooth_part": 35,
+          "target": [
+            29995,
+            29031,
+            8342047
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": 1,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 8,
+          "factors": [
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 45,
+          "key": [
+            2447,
+            1499
+          ],
+          "orientation": 1,
+          "residual": 2447,
+          "residual_form": [
+            2447,
+            1499,
+            102169825
+          ],
+          "residual_index": 48,
+          "smooth_part": 49,
+          "target": [
+            119903,
+            6393,
+            2085179
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "7": 2
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 46,
+          "key": [
+            4937,
+            1619
+          ],
+          "orientation": 1,
+          "residual": 4937,
+          "residual_form": [
+            4937,
+            1619,
+            50639995
+          ],
+          "residual_index": 49,
+          "smooth_part": 35,
+          "target": [
+            172795,
+            -67499,
+            1453445
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": 1,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              5,
+              1
+            ]
+          ],
+          "generator_index": 47,
+          "key": [
+            4307,
+            2275
+          ],
+          "orientation": -1,
+          "residual": 4307,
+          "residual_form": [
+            4307,
+            2275,
+            58047433
+          ],
+          "residual_index": 50,
+          "smooth_part": 5,
+          "target": [
+            21535,
+            6339,
+            11609893
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "5": -1
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 48,
+          "key": [
+            6059,
+            1521
+          ],
+          "orientation": -1,
+          "residual": 6059,
+          "residual_form": [
+            6059,
+            1521,
+            41262515
+          ],
+          "residual_index": 51,
+          "smooth_part": 35,
+          "target": [
+            212065,
+            -1521,
+            1178929
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": -1,
+            "7": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              5,
+              2
+            ]
+          ],
+          "generator_index": 49,
+          "key": [
+            3697,
+            27
+          ],
+          "orientation": -1,
+          "residual": 3697,
+          "residual_form": [
+            3697,
+            27,
+            67624831
+          ],
+          "residual_index": 52,
+          "smooth_part": 25,
+          "target": [
+            92425,
+            88701,
+            2726275
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "5": 2
+          }
+        },
+        {
+          "exponent": 15,
+          "factors": [
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 50,
+          "key": [
+            8971,
+            3195
+          ],
+          "orientation": -1,
+          "residual": 8971,
+          "residual_form": [
+            8971,
+            3195,
+            27868861
+          ],
+          "residual_index": 53,
+          "smooth_part": 7,
+          "target": [
+            62797,
+            14747,
+            3982091
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "7": -1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              7,
+              3
+            ]
+          ],
+          "generator_index": 51,
+          "key": [
+            59,
+            33
+          ],
+          "orientation": -1,
+          "residual": 59,
+          "residual_form": [
+            59,
+            33,
+            4237440683
+          ],
+          "residual_index": 54,
+          "smooth_part": 343,
+          "target": [
+            20237,
+            -12423,
+            12355961
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": 3
+          }
+        },
+        {
+          "exponent": 5,
+          "factors": [
+            [
+              5,
+              3
+            ]
+          ],
+          "generator_index": 52,
+          "key": [
+            769,
+            715
+          ],
+          "orientation": -1,
+          "residual": 769,
+          "residual_form": [
+            769,
+            715,
+            325109399
+          ],
+          "residual_index": 55,
+          "smooth_part": 125,
+          "target": [
+            96125,
+            86951,
+            2620537
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": 3
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 53,
+          "key": [
+            239,
+            143
+          ],
+          "orientation": 1,
+          "residual": 239,
+          "residual_form": [
+            239,
+            143,
+            1046062783
+          ],
+          "residual_index": 56,
+          "smooth_part": 245,
+          "target": [
+            58555,
+            10659,
+            4270129
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": -1,
+            "7": -2
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              5,
+              2
+            ]
+          ],
+          "generator_index": 54,
+          "key": [
+            257,
+            99
+          ],
+          "orientation": 1,
+          "residual": 257,
+          "residual_form": [
+            257,
+            99,
+            972797675
+          ],
+          "residual_index": 57,
+          "smooth_part": 25,
+          "target": [
+            6425,
+            -3499,
+            38912383
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "5": 2
+          }
+        },
+        {
+          "exponent": 4,
+          "factors": [
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 55,
+          "key": [
+            3733,
+            1697
+          ],
+          "orientation": -1,
+          "residual": 3733,
+          "residual_form": [
+            3733,
+            1697,
+            66972869
+          ],
+          "residual_index": 58,
+          "smooth_part": 19,
+          "target": [
+            70927,
+            5769,
+            3524995
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "19": -1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              3
+            ]
+          ],
+          "generator_index": 56,
+          "key": [
+            97,
+            25
+          ],
+          "orientation": 1,
+          "residual": 97,
+          "residual_form": [
+            97,
+            25,
+            2577412373
+          ],
+          "residual_index": 59,
+          "smooth_part": 1715,
+          "target": [
+            166355,
+            -14331,
+            1503173
+          ],
+          "trial_divisions": 6,
+          "word": {
+            "5": -1,
+            "7": -3
+          }
+        },
+        {
+          "exponent": 10,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 57,
+          "key": [
+            4229,
+            979
+          ],
+          "orientation": 1,
+          "residual": 4229,
+          "residual_form": [
+            4229,
+            979,
+            59117815
+          ],
+          "residual_index": 60,
+          "smooth_part": 35,
+          "target": [
+            148015,
+            85559,
+            1701443
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": -1,
+            "7": -1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              5,
+              3
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 58,
+          "key": [
+            37,
+            7
+          ],
+          "orientation": -1,
+          "residual": 37,
+          "residual_form": [
+            37,
+            7,
+            6757000001
+          ],
+          "residual_index": 61,
+          "smooth_part": 875,
+          "target": [
+            32375,
+            -28201,
+            7728427
+          ],
+          "trial_divisions": 6,
+          "word": {
+            "5": -3,
+            "7": 1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 59,
+          "key": [
+            4289,
+            3363
+          ],
+          "orientation": 1,
+          "residual": 4289,
+          "residual_form": [
+            4289,
+            3363,
+            58291403
+          ],
+          "residual_index": 62,
+          "smooth_part": 95,
+          "target": [
+            407455,
+            -116729,
+            621947
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": 1,
+            "19": 1
+          }
+        },
+        {
+          "exponent": 7,
+          "factors": [
+            [
+              5,
+              2
+            ]
+          ],
+          "generator_index": 60,
+          "key": [
+            5953,
+            129
+          ],
+          "orientation": 1,
+          "residual": 5953,
+          "residual_form": [
+            5953,
+            129,
+            41997145
+          ],
+          "residual_index": 63,
+          "smooth_part": 25,
+          "target": [
+            148825,
+            143001,
+            1714237
+          ],
+          "trial_divisions": 3,
+          "word": {
+            "5": 2
+          }
+        },
+        {
+          "exponent": 4,
+          "factors": [
+            [
+              7,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 61,
+          "key": [
+            1229,
+            309
+          ],
+          "orientation": 1,
+          "residual": 1229,
+          "residual_form": [
+            1229,
+            309,
+            203424755
+          ],
+          "residual_index": 64,
+          "smooth_part": 133,
+          "target": [
+            163457,
+            147789,
+            1562915
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "7": -1,
+            "19": 1
+          }
+        },
+        {
+          "exponent": 2,
+          "factors": [
+            [
+              5,
+              3
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 62,
+          "key": [
+            173,
+            159
+          ],
+          "orientation": 1,
+          "residual": 173,
+          "residual_form": [
+            173,
+            159,
+            1445138765
+          ],
+          "residual_index": 65,
+          "smooth_part": 2375,
+          "target": [
+            410875,
+            381451,
+            697013
+          ],
+          "trial_divisions": 7,
+          "word": {
+            "5": 3,
+            "19": 1
+          }
+        },
+        {
+          "exponent": 6,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 63,
+          "key": [
+            3673,
+            2899
+          ],
+          "orientation": -1,
+          "residual": 3673,
+          "residual_form": [
+            3673,
+            2899,
+            68067275
+          ],
+          "residual_index": 66,
+          "smooth_part": 95,
+          "target": [
+            348935,
+            -201241,
+            745507
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": -1,
+            "19": 1
+          }
+        },
+        {
+          "exponent": 8,
+          "factors": [
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 64,
+          "key": [
+            1069,
+            463
+          ],
+          "orientation": -1,
+          "residual": 1069,
+          "residual_form": [
+            1069,
+            463,
+            233871893
+          ],
+          "residual_index": 67,
+          "smooth_part": 19,
+          "target": [
+            20311,
+            -463,
+            12309047
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "19": -1
+          }
+        },
+        {
+          "exponent": 8,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              19,
+              1
+            ]
+          ],
+          "generator_index": 65,
+          "key": [
+            3559,
+            2629
+          ],
+          "orientation": 1,
+          "residual": 3559,
+          "residual_form": [
+            3559,
+            2629,
+            70247465
+          ],
+          "residual_index": 68,
+          "smooth_part": 95,
+          "target": [
+            338105,
+            -253619,
+            787003
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": 1,
+            "19": -1
+          }
+        },
+        {
+          "exponent": 5,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 66,
+          "key": [
+            7417,
+            5915
+          ],
+          "orientation": 1,
+          "residual": 7417,
+          "residual_form": [
+            7417,
+            5915,
+            33708743
+          ],
+          "residual_index": 69,
+          "smooth_part": 35,
+          "target": [
+            259595,
+            -127591,
+            978751
+          ],
+          "trial_divisions": 4,
+          "word": {
+            "5": -1,
+            "7": -1
+          }
+        },
+        {
+          "exponent": 5,
+          "factors": [
+            [
+              5,
+              2
+            ],
+            [
+              7,
+              1
+            ]
+          ],
+          "generator_index": 67,
+          "key": [
+            1571,
+            1393
+          ],
+          "orientation": -1,
+          "residual": 1571,
+          "residual_form": [
+            1571,
+            1393,
+            159140347
+          ],
+          "residual_index": 70,
+          "smooth_part": 175,
+          "target": [
+            274925,
+            -215049,
+            951425
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": 2,
+            "7": -1
+          }
+        },
+        {
+          "exponent": 8,
+          "factors": [
+            [
+              5,
+              1
+            ]
+          ],
+          "generator_index": 68,
+          "key": [
+            8389,
+            6415
+          ],
+          "orientation": -1,
+          "residual": 8389,
+          "residual_form": [
+            8389,
+            6415,
+            29803229
+          ],
+          "residual_index": 71,
+          "smooth_part": 5,
+          "target": [
+            41945,
+            27141,
+            5964791
+          ],
+          "trial_divisions": 2,
+          "word": {
+            "5": 1
+          }
+        },
+        {
+          "exponent": 3,
+          "factors": [],
+          "generator_index": 69,
+          "key": [
+            5227,
+            4335
+          ],
+          "orientation": 1,
+          "residual": 5227,
+          "residual_form": [
+            5227,
+            4335,
+            47831203
+          ],
+          "residual_index": 72,
+          "smooth_part": 1,
+          "target": [
+            5227,
+            4335,
+            47831203
+          ],
+          "trial_divisions": 1,
+          "word": {}
+        },
+        {
+          "exponent": 5,
+          "factors": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              2
+            ]
+          ],
+          "generator_index": 70,
+          "key": [
+            1861,
+            1811
+          ],
+          "orientation": 1,
+          "residual": 1861,
+          "residual_form": [
+            1861,
+            1811,
+            134341655
+          ],
+          "residual_index": 42,
+          "smooth_part": 245,
+          "target": [
+            455945,
+            132081,
+            557897
+          ],
+          "trial_divisions": 5,
+          "word": {
+            "5": 1,
+            "7": -2
+          }
+        }
+      ],
+      "word_expansions": 2
+    }
+  ],
+  "claim": "Dominant composite-ideal closure without residual factorization",
+  "known_composite_residual_controls": {
+    "49": [
+      7,
+      7
+    ],
+    "77": [
+      7,
+      11
+    ],
+    "91": [
+      7,
+      13
+    ],
+    "121": [
+      11,
+      11
+    ],
+    "413": [
+      7,
+      59
+    ]
+  },
+  "scope": "Uniform admissible-hit and closure-size bounds are not proved; finite small bases need not generate the class group.",
+  "self_reference_control": {
+    "active_primes": [
+      2,
+      3
+    ],
+    "admissible_queries": 3,
+    "augmented_relation_rank": 3,
+    "cached_word_count": 3,
+    "closed": true,
+    "cofactor_rejections": 0,
+    "cutoff": 5,
+    "definition_nodes_expanded": 1,
+    "discriminant": -4052,
+    "extractions": 2,
+    "factor": null,
+    "factoring_oracle_calls": 0,
+    "fixed_relation_sources": [
+      0,
+      2
+    ],
+    "generator_count": 3,
+    "generators": [
+      {
+        "definition": null,
+        "depth": 0,
+        "form": [
+          2,
+          2,
+          507
+        ],
+        "key": null,
+        "kind": "prime",
+        "norm": 2
+      },
+      {
+        "definition": null,
+        "depth": 0,
+        "form": [
+          3,
+          -2,
+          338
+        ],
+        "key": null,
+        "kind": "prime",
+        "norm": 3
+      },
+      {
+        "definition": {
+          "exponent": 4,
+          "orientation": 1,
+          "source": 1,
+          "word": {
+            "2": 1
+          }
+        },
+        "depth": 1,
+        "form": [
+          7,
+          6,
+          146
+        ],
+        "key": [
+          7,
+          6
+        ],
+        "kind": "residual",
+        "norm": 7
+      }
+    ],
+    "height_bound": 36,
+    "initial_base_size": 2,
+    "initial_power_computations": 3,
+    "input_bits": 10,
+    "integer": 1013,
+    "last_extraction": {
+      "annihilator_supplied": false,
+      "determinant_computed": false,
+      "group_inversions": 0,
+      "group_multiplications": 4,
+      "identity_tops": 0,
+      "initial_relations_verified": 0,
+      "kernel_passes": 1,
+      "maximum_entry_bits": 4,
+      "paired_bad_top_updates": 0,
+      "rejected_nonidentity_tops": 1,
+      "relation_deficiency": 0,
+      "relation_dimension": 2,
+      "relation_rows": 2,
+      "saturation_bound": 7,
+      "saturations": 0,
+      "termination": "cyclic two-part with its sole top rejected",
+      "tops_evaluated": 1
+    },
+    "max_cofactor": 36,
+    "max_generators": 80,
+    "max_queries": 100,
+    "maximum_definition_depth": 1,
+    "maximum_exponent_tested": 6,
+    "maximum_relation_entry_bits": 4,
+    "maximum_residual_bits": 3,
+    "maximum_word_coefficient_bits": 3,
+    "method": "complete composite-ideal presentation",
+    "new_primes_introduced": 0,
+    "new_residual_generators": 1,
+    "norm_queries": 3,
+    "partial_identities_verified": 3,
+    "prime_records": {
+      "2": [
+        2,
+        [
+          2,
+          2,
+          507
+        ]
+      ],
+      "3": [
+        4,
+        [
+          3,
+          -2,
+          338
+        ]
+      ]
+    },
+    "relation_matrix": [
+      [
+        6,
+        0
+      ],
+      [
+        -3,
+        13
+      ]
+    ],
+    "relation_rank": 2,
+    "residual_primality_tests": 0,
+    "sparse_augmented_relation_matrix": [
+      [
+        [
+          0,
+          6
+        ]
+      ],
+      [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          4
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          2,
+          3
+        ]
+      ]
+    ],
+    "successive_power_compositions": 0,
+    "terminal_witness": null,
+    "trial_divisions": 6,
+    "window": 1,
+    "witnesses": [
+      {
+        "exponent": 6,
+        "factors": [],
+        "generator_index": 0,
+        "key": null,
+        "orientation": 1,
+        "residual": 1,
+        "residual_form": null,
+        "residual_index": null,
+        "smooth_part": 1,
+        "target": [
+          1,
+          0,
+          1013
+        ],
+        "trial_divisions": 1,
+        "word": {}
+      },
+      {
+        "exponent": 4,
+        "factors": [
+          [
+            2,
+            1
+          ]
+        ],
+        "generator_index": 1,
+        "key": [
+          7,
+          6
+        ],
+        "orientation": 1,
+        "residual": 7,
+        "residual_form": [
+          7,
+          6,
+          146
+        ],
+        "residual_index": 2,
+        "smooth_part": 2,
+        "target": [
+          14,
+          6,
+          73
+        ],
+        "trial_divisions": 2,
+        "word": {
+          "2": 1
+        }
+      },
+      {
+        "exponent": 2,
+        "factors": [
+          [
+            3,
+            1
+          ]
+        ],
+        "generator_index": 2,
+        "key": [
+          7,
+          6
+        ],
+        "orientation": -1,
+        "residual": 7,
+        "residual_form": [
+          7,
+          6,
+          146
+        ],
+        "residual_index": 2,
+        "smooth_part": 3,
+        "target": [
+          21,
+          8,
+          49
+        ],
+        "trial_divisions": 3,
+        "word": {
+          "3": -1
+        }
+      }
+    ],
+    "word_expansions": 1
+  },
+  "small_base_nongeneration_control": {
+    "active_primes": [
+      7
+    ],
+    "admissible_queries": 1,
+    "augmented_relation_rank": 1,
+    "cached_word_count": 1,
+    "closed": true,
+    "cofactor_rejections": 0,
+    "cutoff": 7,
+    "definition_nodes_expanded": 0,
+    "discriminant": -1147,
+    "extractions": 1,
+    "factor": null,
+    "factoring_oracle_calls": 0,
+    "fixed_relation_sources": [
+      0
+    ],
+    "generator_count": 1,
+    "generators": [
+      {
+        "definition": null,
+        "depth": 0,
+        "form": [
+          7,
+          1,
+          41
+        ],
+        "key": null,
+        "kind": "prime",
+        "norm": 7
+      }
+    ],
+    "height_bound": 19,
+    "initial_base_size": 1,
+    "initial_power_computations": 1,
+    "input_bits": 11,
+    "integer": 1147,
+    "last_extraction": {
+      "annihilator_supplied": false,
+      "determinant_computed": false,
+      "group_inversions": 0,
+      "group_multiplications": 3,
+      "identity_tops": 0,
+      "initial_relations_verified": 1,
+      "kernel_passes": 1,
+      "maximum_entry_bits": 2,
+      "paired_bad_top_updates": 0,
+      "rejected_nonidentity_tops": 0,
+      "relation_deficiency": 0,
+      "relation_dimension": 1,
+      "relation_rows": 1,
+      "saturation_bound": 2,
+      "saturations": 0,
+      "termination": "odd presented torsion",
+      "tops_evaluated": 0
+    },
+    "max_cofactor": 100,
+    "max_generators": null,
+    "max_queries": null,
+    "maximum_definition_depth": 0,
+    "maximum_exponent_tested": 2,
+    "maximum_relation_entry_bits": 2,
+    "maximum_residual_bits": 0,
+    "maximum_word_coefficient_bits": 1,
+    "method": "complete composite-ideal presentation",
+    "new_primes_introduced": 0,
+    "new_residual_generators": 0,
+    "norm_queries": 1,
+    "partial_identities_verified": 0,
+    "prime_records": {
+      "7": [
+        1,
+        [
+          7,
+          1,
+          41
+        ]
+      ]
+    },
+    "relation_matrix": [
+      [
+        3
+      ]
+    ],
+    "relation_rank": 1,
+    "residual_primality_tests": 0,
+    "sparse_augmented_relation_matrix": [
+      [
+        [
+          0,
+          3
+        ]
+      ]
+    ],
+    "successive_power_compositions": 0,
+    "terminal_witness": null,
+    "trial_divisions": 2,
+    "window": 16,
+    "witnesses": [
+      {
+        "exponent": 2,
+        "factors": [
+          [
+            7,
+            1
+          ]
+        ],
+        "generator_index": 0,
+        "key": null,
+        "orientation": 1,
+        "residual": 1,
+        "residual_form": null,
+        "residual_index": null,
+        "smooth_part": 7,
+        "target": [
+          7,
+          -1,
+          41
+        ],
+        "trial_divisions": 2,
+        "word": {
+          "7": -1
+        }
+      }
+    ],
+    "word_expansions": 0
+  },
+  "successful_factoring_controls": 6,
+  "verification": {
+    "fixed_base_relation_checks": 11,
+    "integer_elimination_replays": 120,
+    "literal_relation_checks": 120,
+    "negative_orientations": 54,
+    "partial_identity_checks": 120,
+    "self_references": 2,
+    "weighted_dominance_checks": 120
+  }
+}

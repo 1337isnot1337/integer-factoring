@@ -1,0 +1,276 @@
+{
+  "status": "universal all-field obstruction through physical size12; no factoring exponent improvement",
+  "all_field_claims": {
+    "strict_mixed_budget": "sum min(row_rank,column_rank) >= q+1 for q>=3",
+    "cost_floor": "q-1+2*sqrt(q*q-q) for q>=3"
+  },
+  "exhaustive_one_term_control": {
+    "q": 3,
+    "prime": 2,
+    "nonzero_factor_pairs": 261121,
+    "invertible_factor_pairs": 28224,
+    "minimum_residual_row_rank": 3,
+    "minimum_with_invertible_factors": 3,
+    "minimum_with_a_singular_factor": 6
+  },
+  "q2_exception": {
+    "q": 2,
+    "prime": 2,
+    "residual_row_rank": 1,
+    "correction_column_rank": 1,
+    "mixed_budget": 2,
+    "strict_q_plus_one_claim_does_not_apply": true
+  },
+  "threshold_certificates": {
+    "exponent_upper_bound_numerator": 17,
+    "exponent_upper_bound_denominator": 12,
+    "excluded_physical_sizes": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "comparisons": [
+      {
+        "q": 2,
+        "rational_floor_numerator": 3,
+        "rational_floor_denominator": 1,
+        "left_integer": 531441,
+        "right_integer": 131072
+      },
+      {
+        "q": 3,
+        "rational_floor_numerator": 6,
+        "rational_floor_denominator": 1,
+        "left_integer": 2176782336,
+        "right_integer": 129140163
+      },
+      {
+        "q": 4,
+        "rational_floor_numerator": 9,
+        "rational_floor_denominator": 1,
+        "left_integer": 282429536481,
+        "right_integer": 17179869184
+      },
+      {
+        "q": 5,
+        "rational_floor_numerator": 12,
+        "rational_floor_denominator": 1,
+        "left_integer": 8916100448256,
+        "right_integer": 762939453125
+      },
+      {
+        "q": 6,
+        "rational_floor_numerator": 15,
+        "rational_floor_denominator": 1,
+        "left_integer": 129746337890625,
+        "right_integer": 16926659444736
+      },
+      {
+        "q": 7,
+        "rational_floor_numerator": 18,
+        "rational_floor_denominator": 1,
+        "left_integer": 1156831381426176,
+        "right_integer": 232630513987207
+      },
+      {
+        "q": 8,
+        "rational_floor_numerator": 21,
+        "rational_floor_denominator": 1,
+        "left_integer": 7355827511386641,
+        "right_integer": 2251799813685248
+      },
+      {
+        "q": 9,
+        "rational_floor_numerator": 24,
+        "rational_floor_denominator": 1,
+        "left_integer": 36520347436056576,
+        "right_integer": 16677181699666569
+      },
+      {
+        "q": 10,
+        "rational_floor_numerator": 27,
+        "rational_floor_denominator": 1,
+        "left_integer": 150094635296999121,
+        "right_integer": 100000000000000000
+      },
+      {
+        "q": 11,
+        "rational_floor_numerator": 30,
+        "rational_floor_denominator": 1,
+        "left_integer": 531441000000000000,
+        "right_integer": 505447028499293771
+      },
+      {
+        "q": 12,
+        "rational_floor_numerator": 169,
+        "rational_floor_denominator": 5,
+        "left_integer": 542800770374370512771595361,
+        "right_integer": 541653102231552000000000000
+      }
+    ]
+  },
+  "optimal_budget_relaxation_controls": [
+    {
+      "q": 3,
+      "rank_pairs": [
+        [
+          6,
+          1
+        ],
+        [
+          1,
+          6
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "row_budget": 9,
+      "column_budget": 9,
+      "mixed_budget": 4,
+      "cost_expression": "2+2*sqrt(6)",
+      "realization_as_one_crossing_decomposition_not_claimed": true
+    },
+    {
+      "q": 12,
+      "rank_pairs": [
+        [
+          132,
+          1
+        ],
+        [
+          1,
+          132
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "row_budget": 144,
+      "column_budget": 144,
+      "mixed_budget": 13,
+      "cost_expression": "11+2*sqrt(132)",
+      "realization_as_one_crossing_decomposition_not_claimed": true
+    },
+    {
+      "q": 13,
+      "rank_pairs": [
+        [
+          156,
+          1
+        ],
+        [
+          1,
+          156
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "row_budget": 169,
+      "column_budget": 169,
+      "mixed_budget": 14,
+      "cost_expression": "12+2*sqrt(156)",
+      "realization_as_one_crossing_decomposition_not_claimed": true
+    }
+  ]
+}
