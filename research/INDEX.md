@@ -2,6 +2,10 @@
 
 - [Graded adjugate compatibility at independent physical heights](graded-adjugate-caps.md): two all-field upper-tail families exclude the previous negative five- and six-letter cell-cap profiles; a nearby certified negative integer profile satisfies the stronger constraints but has no realizing tensor.
 
+- [Gaussian circuits with arbitrary one-mode factors](tensor-affine-clifford-profiles.md): integral auxiliary permutation, complete profile theorem, determinant mean, 18-row evaluator, and F4 census.
+
+- [Essentially linear compact oriented ideals](compact-oriented-basis-input-bound.md): total-input bit bound, batch discriminant checks, complete arithmetic verification, and independent HNF controls.
+
 - [Global balanced floor for the natural five-letter energy shape](natural-five-letter-pressure-floor.md): every scalar Laurent-polynomial kernel over any field at this paired-energy ray has rho at least 5/7; all 2,456 compact boxes and analytic tails are certified, with changed energy shapes and asymmetric criteria left open.
 
 - [Compact reconstructible power witnesses](compact-reconstructible-power-witnesses.md): unchanged query syntax, independent reconstruction, complete 64/80 comparisons, and earlier checkpoint release.
@@ -702,6 +706,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 - [Exact spectral transport through invertible fusion](fused-spectral-transport.md): a faithful local TL identity keeps the nonzero negligible residual and gives compatible three-by-one transport at every length. Exact normalization and fifth-root Frobenius cycles produce sparse scalar strings; the global fused-kernel and complete crossing rank budget remain open.
 - [Complete crossing resolution by fusion occupancy](fusion-occupancy-resolution.md): grouping all vacuum/triplet placements gives `n+1` orthogonal sectors of exact rank `binom(n,k)F_(k-1)` (rank one at k=0). The full two-parameter family has an exact scale-one crossing sum and explicit two-cut bounds; favorable cancellation of its costly middle sectors remains open.
 - [Exact leading ranks from a fusion automaton](nilpotent-leading-rank-automaton.md): five four-letter generators close on22 projective matrices. Exact44-counter identities prove rational generating functions for every even length and refine the leading central auxiliary rank bound; boundary contractions and the complete favorable crossing sum remain separate.
+- [Full Catalan cup codes with coordinate duals](catalan-cup-crossings.md): a unitriangular physical minor retains every noncrossing cup, including the Gram radical, with a strict F2 crossing and `n=lambda+O(log(lambda+2))`. Independent full physical coefficients and both small cut profiles pass; favorable uniform ranks remain open.
 - [Binary site-symmetry actual-rank barrier](binary-site-symmetry-barrier.md): a universal degree-four certificate forces `rho>=3/4` over any fixed field, including all scalar polynomial degrees, coefficient recombinations, and common partitions into sublinearly many position classes.
 - [Full auxiliary coefficient-span optimization](auxiliary-coefficient-span.md): all 2,588 binary functionals in 15 finite cases, strict recombination gains, exact minmax certificates, and rational rank-sum optima certified by shortest-path dual potentials.
 - [Nonlinear downset-code crossings](downset-code-crossings.md): exact global characteristic-two Smith factors and a constant basis normal form for actual coefficient ranks on every downset and every paired-downset encoding, with complete small-domain controls and nonlinear regular-code searches.
@@ -1446,3 +1451,13 @@ The [paired MDS family extension](orthogonal-pair-core-floor.md#5-a-stronger-all
 ## Three-row Hecke path crossings over F8
 
 [Construction and complete finite checks](three-row-hecke-crossings.md) gives strict five- and nine-letter tensors outside the Temperley–Lieb quotient. Uniform local relations, finite endpoints, confluent coefficient verification and complete profiles are separated. The bare zero/infinity profile infimum is exactly one; no factoring improvement is claimed.
+
+- [Proper norm stencil overlap](circuit-box-stencil-overlap.md): exact conjugate-overlap identity, maximal rational content, and prime-power/HNF controls; no supply or factoring-exponent claim.
+
+- [Direct unit-presentation traces](direct-unit-presentation-traces.md): original sparse relation matrices, independently indexed integer-isomorphism replay, explicit free summands, and complete matched 64/80-bit power-prefix results.
+
+- [Centered unknown-divisor windows](circuit-box-centered-windows.md): signed root intervals remove two guard bits and aggregate shorter windows; complete exact LLL/Sturm controls, with the classical quarter-bit scope retained.
+
+- [Exact cached LLL](circuit-box-cached-lll.md): derived rational cache updates, identical complete small-root/window receipts, and a dimension-19 control reducing full Gram–Schmidt computations from 3,370 to one.
+
+- [Singular affine Clifford profiles](tensor-singular-affine-clifford.md): lexicographic regularization proves power-of-two rank and complete nonzero subset-sum profiles; exact bounded substitution and independent Fock controls, including compact 32-mode examples.

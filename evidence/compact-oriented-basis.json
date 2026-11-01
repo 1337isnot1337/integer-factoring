@@ -1,0 +1,791 @@
+{
+  "scope": "Compact supplied-ideal construction and verification; no factoring-exponent claim.",
+  "small_cases": [
+    {
+      "keys": 43,
+      "atoms": 15,
+      "raw_differences": false,
+      "input_bits": 522,
+      "literal_hnf_identities": 43,
+      "independent_prime_expansions": 43,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 522,
+        "norm_bits": 263,
+        "statistics": {
+          "normalization_multiplications": 42,
+          "normalization_multiplication_operand_bits": 1871,
+          "normalization_remainders": 88,
+          "normalization_remainder_operand_bits": 6171,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 3,
+          "local_congruence_checks": 43,
+          "unramified_gcds": 43,
+          "unramified_gcd_operand_bits": 609
+        }
+      }
+    },
+    {
+      "keys": 43,
+      "atoms": 15,
+      "raw_differences": true,
+      "input_bits": 1475,
+      "literal_hnf_identities": 43,
+      "independent_prime_expansions": 43,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 1475,
+        "norm_bits": 263,
+        "statistics": {
+          "normalization_multiplications": 42,
+          "normalization_multiplication_operand_bits": 1871,
+          "normalization_remainders": 88,
+          "normalization_remainder_operand_bits": 6171,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 3,
+          "local_congruence_checks": 43,
+          "unramified_gcds": 43,
+          "unramified_gcd_operand_bits": 609
+        }
+      }
+    },
+    {
+      "keys": 53,
+      "atoms": 13,
+      "raw_differences": false,
+      "input_bits": 649,
+      "literal_hnf_identities": 53,
+      "independent_prime_expansions": 53,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 649,
+        "norm_bits": 325,
+        "statistics": {
+          "normalization_multiplications": 52,
+          "normalization_multiplication_operand_bits": 2426,
+          "normalization_remainders": 108,
+          "normalization_remainder_operand_bits": 7772,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 5,
+          "local_congruence_checks": 53,
+          "unramified_gcds": 53,
+          "unramified_gcd_operand_bits": 740
+        }
+      }
+    },
+    {
+      "keys": 53,
+      "atoms": 13,
+      "raw_differences": true,
+      "input_bits": 2086,
+      "literal_hnf_identities": 53,
+      "independent_prime_expansions": 53,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 2086,
+        "norm_bits": 325,
+        "statistics": {
+          "normalization_multiplications": 52,
+          "normalization_multiplication_operand_bits": 2426,
+          "normalization_remainders": 108,
+          "normalization_remainder_operand_bits": 7772,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 5,
+          "local_congruence_checks": 53,
+          "unramified_gcds": 53,
+          "unramified_gcd_operand_bits": 740
+        }
+      }
+    },
+    {
+      "keys": 53,
+      "atoms": 15,
+      "raw_differences": false,
+      "input_bits": 649,
+      "literal_hnf_identities": 53,
+      "independent_prime_expansions": 53,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 649,
+        "norm_bits": 325,
+        "statistics": {
+          "normalization_multiplications": 52,
+          "normalization_multiplication_operand_bits": 2427,
+          "normalization_remainders": 108,
+          "normalization_remainder_operand_bits": 7780,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 7,
+          "local_congruence_checks": 53,
+          "unramified_gcds": 53,
+          "unramified_gcd_operand_bits": 725
+        }
+      }
+    },
+    {
+      "keys": 53,
+      "atoms": 15,
+      "raw_differences": true,
+      "input_bits": 2088,
+      "literal_hnf_identities": 53,
+      "independent_prime_expansions": 53,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 2088,
+        "norm_bits": 325,
+        "statistics": {
+          "normalization_multiplications": 52,
+          "normalization_multiplication_operand_bits": 2427,
+          "normalization_remainders": 108,
+          "normalization_remainder_operand_bits": 7780,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 7,
+          "local_congruence_checks": 53,
+          "unramified_gcds": 53,
+          "unramified_gcd_operand_bits": 725
+        }
+      }
+    },
+    {
+      "keys": 77,
+      "atoms": 18,
+      "raw_differences": false,
+      "input_bits": 953,
+      "literal_hnf_identities": 77,
+      "independent_prime_expansions": 77,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 953,
+        "norm_bits": 481,
+        "statistics": {
+          "normalization_multiplications": 76,
+          "normalization_multiplication_operand_bits": 4000,
+          "normalization_remainders": 157,
+          "normalization_remainder_operand_bits": 13032,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 9,
+          "local_congruence_checks": 77,
+          "unramified_gcds": 77,
+          "unramified_gcd_operand_bits": 995
+        }
+      }
+    },
+    {
+      "keys": 77,
+      "atoms": 18,
+      "raw_differences": true,
+      "input_bits": 3974,
+      "literal_hnf_identities": 77,
+      "independent_prime_expansions": 77,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 3974,
+        "norm_bits": 481,
+        "statistics": {
+          "normalization_multiplications": 76,
+          "normalization_multiplication_operand_bits": 4000,
+          "normalization_remainders": 157,
+          "normalization_remainder_operand_bits": 13032,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 9,
+          "local_congruence_checks": 77,
+          "unramified_gcds": 77,
+          "unramified_gcd_operand_bits": 995
+        }
+      }
+    },
+    {
+      "keys": 53,
+      "atoms": 13,
+      "raw_differences": false,
+      "input_bits": 642,
+      "literal_hnf_identities": 53,
+      "independent_prime_expansions": 53,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 642,
+        "norm_bits": 325,
+        "statistics": {
+          "normalization_multiplications": 52,
+          "normalization_multiplication_operand_bits": 2426,
+          "normalization_remainders": 108,
+          "normalization_remainder_operand_bits": 7769,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 10,
+          "local_congruence_checks": 53,
+          "unramified_gcds": 53,
+          "unramified_gcd_operand_bits": 688
+        }
+      }
+    },
+    {
+      "keys": 53,
+      "atoms": 13,
+      "raw_differences": true,
+      "input_bits": 2091,
+      "literal_hnf_identities": 53,
+      "independent_prime_expansions": 53,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 2091,
+        "norm_bits": 325,
+        "statistics": {
+          "normalization_multiplications": 52,
+          "normalization_multiplication_operand_bits": 2426,
+          "normalization_remainders": 108,
+          "normalization_remainder_operand_bits": 7769,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 10,
+          "local_congruence_checks": 53,
+          "unramified_gcds": 53,
+          "unramified_gcd_operand_bits": 688
+        }
+      }
+    },
+    {
+      "keys": 0,
+      "atoms": 0,
+      "raw_differences": false,
+      "input_bits": 3,
+      "literal_hnf_identities": 0,
+      "independent_prime_expansions": 0,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 3,
+        "norm_bits": 0,
+        "statistics": {
+          "normalization_multiplications": 0,
+          "normalization_multiplication_operand_bits": 0,
+          "normalization_remainders": 0,
+          "normalization_remainder_operand_bits": 0,
+          "discriminant_batches": 0,
+          "discriminant_operand_bits": 0,
+          "local_congruence_checks": 0,
+          "unramified_gcds": 0,
+          "unramified_gcd_operand_bits": 0
+        }
+      }
+    },
+    {
+      "keys": 7,
+      "atoms": 0,
+      "raw_differences": false,
+      "input_bits": 17,
+      "literal_hnf_identities": 7,
+      "independent_prime_expansions": 7,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 17,
+        "norm_bits": 7,
+        "statistics": {
+          "normalization_multiplications": 6,
+          "normalization_multiplication_operand_bits": 52,
+          "normalization_remainders": 14,
+          "normalization_remainder_operand_bits": 153,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 3,
+          "local_congruence_checks": 7,
+          "unramified_gcds": 7,
+          "unramified_gcd_operand_bits": 7
+        }
+      }
+    },
+    {
+      "keys": 2,
+      "atoms": 2,
+      "raw_differences": false,
+      "input_bits": 28,
+      "literal_hnf_identities": 2,
+      "independent_prime_expansions": 2,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 28,
+        "norm_bits": 14,
+        "statistics": {
+          "normalization_multiplications": 1,
+          "normalization_multiplication_operand_bits": 18,
+          "normalization_remainders": 3,
+          "normalization_remainder_operand_bits": 72,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 3,
+          "local_congruence_checks": 2,
+          "unramified_gcds": 2,
+          "unramified_gcd_operand_bits": 32
+        }
+      }
+    },
+    {
+      "keys": 2,
+      "atoms": 2,
+      "raw_differences": false,
+      "input_bits": 38,
+      "literal_hnf_identities": 2,
+      "independent_prime_expansions": 2,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 38,
+        "norm_bits": 18,
+        "statistics": {
+          "normalization_multiplications": 1,
+          "normalization_multiplication_operand_bits": 22,
+          "normalization_remainders": 3,
+          "normalization_remainder_operand_bits": 88,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 3,
+          "local_congruence_checks": 2,
+          "unramified_gcds": 2,
+          "unramified_gcd_operand_bits": 40
+        }
+      }
+    },
+    {
+      "keys": 3,
+      "atoms": 1,
+      "raw_differences": false,
+      "input_bits": 43,
+      "literal_hnf_identities": 3,
+      "independent_prime_expansions": 3,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 43,
+        "norm_bits": 20,
+        "statistics": {
+          "normalization_multiplications": 2,
+          "normalization_multiplication_operand_bits": 42,
+          "normalization_remainders": 6,
+          "normalization_remainder_operand_bits": 172,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 3,
+          "local_congruence_checks": 3,
+          "unramified_gcds": 3,
+          "unramified_gcd_operand_bits": 46
+        }
+      }
+    },
+    {
+      "keys": 256,
+      "atoms": 8,
+      "raw_differences": false,
+      "input_bits": 57129,
+      "literal_hnf_identities": 256,
+      "independent_prime_expansions": 0,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 57129,
+        "norm_bits": 28598,
+        "statistics": {
+          "normalization_multiplications": 255,
+          "normalization_multiplication_operand_bits": 232244,
+          "normalization_remainders": 511,
+          "normalization_remainder_operand_bits": 725524,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 3,
+          "local_congruence_checks": 256,
+          "unramified_gcds": 256,
+          "unramified_gcd_operand_bits": 57708
+        }
+      }
+    },
+    {
+      "keys": 256,
+      "atoms": 8,
+      "raw_differences": true,
+      "input_bits": 57129,
+      "literal_hnf_identities": 256,
+      "independent_prime_expansions": 0,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 57129,
+        "norm_bits": 28598,
+        "statistics": {
+          "normalization_multiplications": 255,
+          "normalization_multiplication_operand_bits": 232244,
+          "normalization_remainders": 511,
+          "normalization_remainder_operand_bits": 725524,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 3,
+          "local_congruence_checks": 256,
+          "unramified_gcds": 256,
+          "unramified_gcd_operand_bits": 57708
+        }
+      }
+    }
+  ],
+  "large_discriminants": [
+    {
+      "shift": 4096,
+      "discriminant_bits": 4218,
+      "keys": 2048,
+      "definition": "Delta=1-4*product(primes)*2^shift",
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97
+      ],
+      "old_validation_wall_seconds": 0.0072372130016447045,
+      "old_validation_cpu_seconds": 0.0032336290000001267,
+      "batch_validation_wall_seconds": 0.006754096997610759,
+      "batch_validation_cpu_seconds": 0.002755227999999832,
+      "same_normalized_keys": true,
+      "complete_compact_basis_verified": true,
+      "validation": {
+        "input_bits": 22971,
+        "norm_bits": 11251,
+        "statistics": {
+          "normalization_multiplications": 2047,
+          "normalization_multiplication_operand_bits": 159244,
+          "normalization_remainders": 4095,
+          "normalization_remainder_operand_bits": 381768,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 4218,
+          "local_congruence_checks": 2048,
+          "unramified_gcds": 2048,
+          "unramified_gcd_operand_bits": 13299
+        }
+      },
+      "compact_verification": {
+        "arithmetic_literal_ideal_identities": 2048,
+        "sparse_orientation_incidences": 2048,
+        "compact_atoms": 24,
+        "coprimality": {
+          "norms": 24,
+          "product_bits": 120,
+          "batch_gcds": 24
+        },
+        "key_validation": {
+          "input_bits": 23127,
+          "norm_bits": 11383,
+          "statistics": {
+            "normalization_multiplications": 2071,
+            "normalization_multiplication_operand_bits": 174512,
+            "normalization_remainders": 4150,
+            "normalization_remainder_operand_bits": 427280,
+            "discriminant_batches": 1,
+            "discriminant_operand_bits": 4218,
+            "local_congruence_checks": 2072,
+            "unramified_gcds": 2072,
+            "unramified_gcd_operand_bits": 13455
+          }
+        },
+        "root_remainder_statistics": {
+          "normalization_multiplications": 0,
+          "normalization_multiplication_operand_bits": 0,
+          "normalization_remainders": 2048,
+          "normalization_remainder_operand_bits": 20801,
+          "discriminant_batches": 0,
+          "discriminant_operand_bits": 0,
+          "local_congruence_checks": 0,
+          "unramified_gcds": 0,
+          "unramified_gcd_operand_bits": 0
+        },
+        "expanded_hnf_products": 0,
+        "reduced_forms_constructed": 0
+      }
+    },
+    {
+      "shift": 65536,
+      "discriminant_bits": 65658,
+      "keys": 2048,
+      "definition": "Delta=1-4*product(primes)*2^shift",
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97
+      ],
+      "old_validation_wall_seconds": 0.08779457300261129,
+      "old_validation_cpu_seconds": 0.03977049899999985,
+      "batch_validation_wall_seconds": 0.00770850100525422,
+      "batch_validation_cpu_seconds": 0.0037093470000000295,
+      "same_normalized_keys": true,
+      "complete_compact_basis_verified": true,
+      "validation": {
+        "input_bits": 84411,
+        "norm_bits": 11251,
+        "statistics": {
+          "normalization_multiplications": 2047,
+          "normalization_multiplication_operand_bits": 159244,
+          "normalization_remainders": 4095,
+          "normalization_remainder_operand_bits": 443318,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 65658,
+          "local_congruence_checks": 2048,
+          "unramified_gcds": 2048,
+          "unramified_gcd_operand_bits": 13299
+        }
+      },
+      "compact_verification": {
+        "arithmetic_literal_ideal_identities": 2048,
+        "sparse_orientation_incidences": 2048,
+        "compact_atoms": 24,
+        "coprimality": {
+          "norms": 24,
+          "product_bits": 120,
+          "batch_gcds": 24
+        },
+        "key_validation": {
+          "input_bits": 84567,
+          "norm_bits": 11383,
+          "statistics": {
+            "normalization_multiplications": 2071,
+            "normalization_multiplication_operand_bits": 174512,
+            "normalization_remainders": 4150,
+            "normalization_remainder_operand_bits": 488826,
+            "discriminant_batches": 1,
+            "discriminant_operand_bits": 65658,
+            "local_congruence_checks": 2072,
+            "unramified_gcds": 2072,
+            "unramified_gcd_operand_bits": 13455
+          }
+        },
+        "root_remainder_statistics": {
+          "normalization_multiplications": 0,
+          "normalization_multiplication_operand_bits": 0,
+          "normalization_remainders": 2048,
+          "normalization_remainder_operand_bits": 20801,
+          "discriminant_batches": 0,
+          "discriminant_operand_bits": 0,
+          "local_congruence_checks": 0,
+          "unramified_gcds": 0,
+          "unramified_gcd_operand_bits": 0
+        },
+        "expanded_hnf_products": 0,
+        "reduced_forms_constructed": 0
+      }
+    },
+    {
+      "shift": 1048576,
+      "discriminant_bits": 1048698,
+      "keys": 2048,
+      "definition": "Delta=1-4*product(primes)*2^shift",
+      "primes": [
+        3,
+        5,
+        7,
+        11,
+        13,
+        17,
+        19,
+        23,
+        29,
+        31,
+        37,
+        41,
+        43,
+        47,
+        53,
+        59,
+        61,
+        67,
+        71,
+        73,
+        79,
+        83,
+        89,
+        97
+      ],
+      "old_validation_wall_seconds": 1.3348042130019167,
+      "old_validation_cpu_seconds": 0.598641175,
+      "batch_validation_wall_seconds": 0.05218307100585662,
+      "batch_validation_cpu_seconds": 0.022090576000000084,
+      "same_normalized_keys": true,
+      "complete_compact_basis_verified": true,
+      "validation": {
+        "input_bits": 1067451,
+        "norm_bits": 11251,
+        "statistics": {
+          "normalization_multiplications": 2047,
+          "normalization_multiplication_operand_bits": 159244,
+          "normalization_remainders": 4095,
+          "normalization_remainder_operand_bits": 1426122,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 1048698,
+          "local_congruence_checks": 2048,
+          "unramified_gcds": 2048,
+          "unramified_gcd_operand_bits": 13299
+        }
+      },
+      "compact_verification": {
+        "arithmetic_literal_ideal_identities": 2048,
+        "sparse_orientation_incidences": 2048,
+        "compact_atoms": 24,
+        "coprimality": {
+          "norms": 24,
+          "product_bits": 120,
+          "batch_gcds": 24
+        },
+        "key_validation": {
+          "input_bits": 1067607,
+          "norm_bits": 11383,
+          "statistics": {
+            "normalization_multiplications": 2071,
+            "normalization_multiplication_operand_bits": 174512,
+            "normalization_remainders": 4150,
+            "normalization_remainder_operand_bits": 1471632,
+            "discriminant_batches": 1,
+            "discriminant_operand_bits": 1048698,
+            "local_congruence_checks": 2072,
+            "unramified_gcds": 2072,
+            "unramified_gcd_operand_bits": 13455
+          }
+        },
+        "root_remainder_statistics": {
+          "normalization_multiplications": 0,
+          "normalization_multiplication_operand_bits": 0,
+          "normalization_remainders": 2048,
+          "normalization_remainder_operand_bits": 20801,
+          "discriminant_batches": 0,
+          "discriminant_operand_bits": 0,
+          "local_congruence_checks": 0,
+          "unramified_gcds": 0,
+          "unramified_gcd_operand_bits": 0
+        },
+        "expanded_hnf_products": 0,
+        "reduced_forms_constructed": 0
+      }
+    }
+  ],
+  "rejections": {
+    "invalid_inputs": 5,
+    "corruptions": 9,
+    "huge_binary_exponent_rejected_before_power": true
+  },
+  "fixtures": [
+    {
+      "input_path": "evidence/sparse-oriented-power-64.json.xz",
+      "input_sha256": "228bce17adc8f29243f4f3d393c67ced0932dbb724e0666767dfca16015cf97b",
+      "full_key_count": 1806,
+      "checked_key_count": 1806,
+      "keys": 1806,
+      "atoms": 1854,
+      "raw_differences": false,
+      "input_bits": 92431,
+      "literal_hnf_identities": 1806,
+      "independent_prime_expansions": 0,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 92431,
+        "norm_bits": 47456,
+        "statistics": {
+          "normalization_multiplications": 1805,
+          "normalization_multiplication_operand_bits": 551955,
+          "normalization_remainders": 3616,
+          "normalization_remainder_operand_bits": 1705042,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 66,
+          "local_congruence_checks": 1806,
+          "unramified_gcds": 1806,
+          "unramified_gcd_operand_bits": 95912
+        }
+      }
+    },
+    {
+      "input_path": "evidence/sparse-oriented-power-80.json.xz",
+      "input_sha256": "f55879f2bcd0c8077c715fa1675e547e669cf9e8bfb25fe510efc5c310ebe2b7",
+      "full_key_count": 9776,
+      "checked_key_count": 128,
+      "keys": 128,
+      "atoms": 137,
+      "raw_differences": false,
+      "input_bits": 8514,
+      "literal_hnf_identities": 128,
+      "independent_prime_expansions": 0,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 8514,
+        "norm_bits": 4291,
+        "statistics": {
+          "normalization_multiplications": 127,
+          "normalization_multiplication_operand_bits": 31528,
+          "normalization_remainders": 255,
+          "normalization_remainder_operand_bits": 98877,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 80,
+          "local_congruence_checks": 128,
+          "unramified_gcds": 128,
+          "unramified_gcd_operand_bits": 8658
+        }
+      }
+    },
+    {
+      "input_path": "evidence/optimized-oriented-power-96.json.xz",
+      "input_sha256": "46ec21d6af643d6c9a9fddd759e854910efc9425ceba8e02c674f9e88b841a9b",
+      "full_key_count": 19705,
+      "checked_key_count": 128,
+      "keys": 128,
+      "atoms": 129,
+      "raw_differences": false,
+      "input_bits": 9411,
+      "literal_hnf_identities": 128,
+      "independent_prime_expansions": 0,
+      "same_complete_compact_payload": true,
+      "validation": {
+        "input_bits": 9411,
+        "norm_bits": 4747,
+        "statistics": {
+          "normalization_multiplications": 127,
+          "normalization_multiplication_operand_bits": 34701,
+          "normalization_remainders": 255,
+          "normalization_remainder_operand_bits": 108830,
+          "discriminant_batches": 1,
+          "discriminant_operand_bits": 98,
+          "local_congruence_checks": 128,
+          "unramified_gcds": 128,
+          "unramified_gcd_operand_bits": 9550
+        }
+      }
+    }
+  ],
+  "source_sha256": {
+    "tools/binary_quadratic_forms.py": "cb8136aca2df9015c5433771ecce9f1855e179c7be316ae56deabdfc65870af8",
+    "tools/check_circuit_box_oriented_batch.py": "6b5de5bd005e29523fc84c732c6f4caad434aade81a82d807406630f510e404e",
+    "tools/check_compact_oriented_basis.py": "14ba49624b83a6767d074377483d798349732a73c91128b29ea67f25b087592a",
+    "tools/circuit_box_oriented_batch.py": "9dfee586c29373d8769992a17f84e6f8d87c4c4c713baa3d6f683cbe0c06cba4",
+    "tools/classical_coprime_basis.py": "77526b169bf842af224f0d6300387708f6488b19159836ffa30a00049be60d1d",
+    "tools/compact_oriented_basis.py": "91ff5382216f51d466e3c16fef220c53afab8c54618937f7d5e7107be6ee70ce",
+    "tools/oriented_coprime_basis.py": "dba31b12ce2a93b7de9a79f69e4ffb2a8f0aec8218f3ab6082ad25817117571d",
+    "tools/oriented_norm_basis_lift.py": "66118511f12e40e4a97dfc1bb0627fb551782971f7def3dc6e00414f22fcbc8a",
+    "tools/quadratic_ideal_hnf.py": "fd9c4217f1c751c1d2f20485a35ae36ae749c24980d90a6aae13fbc471634a74"
+  },
+  "seconds": 19.09125300699816
+}

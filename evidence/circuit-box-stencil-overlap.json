@@ -1,0 +1,1636 @@
+{
+  "canonical_sign_patterns": {
+    "-1,-1": 342,
+    "-1,1": 344,
+    "1,-1": 415,
+    "1,1": 341
+  },
+  "counts": {
+    "completion_shift_controls": 4992,
+    "determinant_counterexamples": 185,
+    "four_stencil_graph_identities": 78,
+    "independent_prime_incidence_controls": 598,
+    "larger_stencil_graph_identities": 78,
+    "nontrivial_unramified_pair_controls": 1442,
+    "polarization_identities": 9360,
+    "prime_power_pairs": 185,
+    "primitive_forms": 78,
+    "proper_keys": 1248
+  },
+  "explicit_graph": {
+    "edges": [
+      [
+        0,
+        2,
+        5
+      ],
+      [
+        2,
+        3,
+        3
+      ]
+    ],
+    "form": [
+      65,
+      3,
+      7
+    ],
+    "integer_content": 15,
+    "leftovers": [
+      13,
+      7,
+      5,
+      23
+    ],
+    "prime_occurrences": 5,
+    "residuals": [
+      65,
+      7,
+      75,
+      69
+    ],
+    "vertices": 4
+  },
+  "four_stencil": [
+    [
+      1,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      -1
+    ]
+  ],
+  "large_prime_power_control": {
+    "canonical_signs": [
+      -1,
+      -1
+    ],
+    "exponent": 128,
+    "first_norm_bits": 298,
+    "gcd": 293873587705571876992184134305561419454666389193021880377187926569604314863681793212890625,
+    "gcd_bits": 298,
+    "other_exponent": 257,
+    "prime": 5,
+    "proper_roots": [
+      429141140577640779984539769148829838893716253538219607900094738495691911955101723386158386,
+      412523137242437568323099541220090348629433530836250943114991350486708276626046505930284251080160962739769200712674850253869610006798859768998055524855506157996661464820651585188136097401069713602231809376715120462680370297978700986832852285114115292939538565318154454804603017325600188177291688393354235561544774387893187255647694512079442107839405018814518705805338945882524477955928605040107324344884771666213218243280029939331813077704673098216614
+    ],
+    "second_norm_bits": 1493
+  },
+  "larger_stencil": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      -3
+    ],
+    [
+      1,
+      -2
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      1,
+      3
+    ],
+    [
+      2,
+      -3
+    ],
+    [
+      2,
+      -1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      3,
+      -2
+    ],
+    [
+      3,
+      -1
+    ],
+    [
+      3,
+      1
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "prime_power_controls": [
+    {
+      "exponent": 1,
+      "first_norm_bits": 3,
+      "gcd_bits": 3,
+      "other_exponent": 1,
+      "prime": 5,
+      "second_norm_bits": 7
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 3,
+      "gcd_bits": 3,
+      "other_exponent": 2,
+      "prime": 5,
+      "second_norm_bits": 10
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 3,
+      "gcd_bits": 3,
+      "other_exponent": 3,
+      "prime": 5,
+      "second_norm_bits": 21
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 5,
+      "gcd_bits": 3,
+      "other_exponent": 1,
+      "prime": 5,
+      "second_norm_bits": 8
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 5,
+      "gcd_bits": 5,
+      "other_exponent": 2,
+      "prime": 5,
+      "second_norm_bits": 18
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 5,
+      "gcd_bits": 5,
+      "other_exponent": 3,
+      "prime": 5,
+      "second_norm_bits": 22
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 5,
+      "gcd_bits": 5,
+      "other_exponent": 5,
+      "prime": 5,
+      "second_norm_bits": 26
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 7,
+      "gcd_bits": 3,
+      "other_exponent": 1,
+      "prime": 5,
+      "second_norm_bits": 16
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 7,
+      "gcd_bits": 7,
+      "other_exponent": 3,
+      "prime": 5,
+      "second_norm_bits": 14
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 7,
+      "gcd_bits": 7,
+      "other_exponent": 4,
+      "prime": 5,
+      "second_norm_bits": 23
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 7,
+      "gcd_bits": 7,
+      "other_exponent": 7,
+      "prime": 5,
+      "second_norm_bits": 37
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 10,
+      "gcd_bits": 3,
+      "other_exponent": 1,
+      "prime": 5,
+      "second_norm_bits": 17
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 10,
+      "gcd_bits": 10,
+      "other_exponent": 4,
+      "prime": 5,
+      "second_norm_bits": 29
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 10,
+      "gcd_bits": 10,
+      "other_exponent": 5,
+      "prime": 5,
+      "second_norm_bits": 37
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 10,
+      "gcd_bits": 10,
+      "other_exponent": 9,
+      "prime": 5,
+      "second_norm_bits": 55
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 19,
+      "gcd_bits": 3,
+      "other_exponent": 1,
+      "prime": 5,
+      "second_norm_bits": 28
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 19,
+      "gcd_bits": 19,
+      "other_exponent": 8,
+      "prime": 5,
+      "second_norm_bits": 53
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 19,
+      "gcd_bits": 19,
+      "other_exponent": 9,
+      "prime": 5,
+      "second_norm_bits": 63
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 19,
+      "gcd_bits": 19,
+      "other_exponent": 17,
+      "prime": 5,
+      "second_norm_bits": 97
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 38,
+      "gcd_bits": 3,
+      "other_exponent": 1,
+      "prime": 5,
+      "second_norm_bits": 45
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 38,
+      "gcd_bits": 38,
+      "other_exponent": 16,
+      "prime": 5,
+      "second_norm_bits": 109
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 38,
+      "gcd_bits": 38,
+      "other_exponent": 17,
+      "prime": 5,
+      "second_norm_bits": 118
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 38,
+      "gcd_bits": 38,
+      "other_exponent": 33,
+      "prime": 5,
+      "second_norm_bits": 184
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 4,
+      "gcd_bits": 4,
+      "other_exponent": 1,
+      "prime": 13,
+      "second_norm_bits": 13
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 4,
+      "gcd_bits": 4,
+      "other_exponent": 2,
+      "prime": 13,
+      "second_norm_bits": 19
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 4,
+      "gcd_bits": 4,
+      "other_exponent": 3,
+      "prime": 13,
+      "second_norm_bits": 26
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 8,
+      "gcd_bits": 4,
+      "other_exponent": 1,
+      "prime": 13,
+      "second_norm_bits": 15
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 8,
+      "gcd_bits": 8,
+      "other_exponent": 2,
+      "prime": 13,
+      "second_norm_bits": 23
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 8,
+      "gcd_bits": 8,
+      "other_exponent": 3,
+      "prime": 13,
+      "second_norm_bits": 31
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 8,
+      "gcd_bits": 8,
+      "other_exponent": 5,
+      "prime": 13,
+      "second_norm_bits": 47
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 12,
+      "gcd_bits": 4,
+      "other_exponent": 1,
+      "prime": 13,
+      "second_norm_bits": 19
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 12,
+      "gcd_bits": 12,
+      "other_exponent": 3,
+      "prime": 13,
+      "second_norm_bits": 32
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 12,
+      "gcd_bits": 12,
+      "other_exponent": 4,
+      "prime": 13,
+      "second_norm_bits": 43
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 12,
+      "gcd_bits": 12,
+      "other_exponent": 7,
+      "prime": 13,
+      "second_norm_bits": 61
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 15,
+      "gcd_bits": 4,
+      "other_exponent": 1,
+      "prime": 13,
+      "second_norm_bits": 24
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 15,
+      "gcd_bits": 15,
+      "other_exponent": 4,
+      "prime": 13,
+      "second_norm_bits": 47
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 15,
+      "gcd_bits": 15,
+      "other_exponent": 5,
+      "prime": 13,
+      "second_norm_bits": 52
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 15,
+      "gcd_bits": 15,
+      "other_exponent": 9,
+      "prime": 13,
+      "second_norm_bits": 72
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 30,
+      "gcd_bits": 4,
+      "other_exponent": 1,
+      "prime": 13,
+      "second_norm_bits": 37
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 30,
+      "gcd_bits": 30,
+      "other_exponent": 8,
+      "prime": 13,
+      "second_norm_bits": 91
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 30,
+      "gcd_bits": 30,
+      "other_exponent": 9,
+      "prime": 13,
+      "second_norm_bits": 98
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 30,
+      "gcd_bits": 30,
+      "other_exponent": 17,
+      "prime": 13,
+      "second_norm_bits": 150
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 60,
+      "gcd_bits": 4,
+      "other_exponent": 1,
+      "prime": 13,
+      "second_norm_bits": 69
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 60,
+      "gcd_bits": 60,
+      "other_exponent": 16,
+      "prime": 13,
+      "second_norm_bits": 179
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 60,
+      "gcd_bits": 60,
+      "other_exponent": 17,
+      "prime": 13,
+      "second_norm_bits": 187
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 60,
+      "gcd_bits": 60,
+      "other_exponent": 33,
+      "prime": 13,
+      "second_norm_bits": 303
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 5,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 17,
+      "second_norm_bits": 7
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 5,
+      "gcd_bits": 5,
+      "other_exponent": 2,
+      "prime": 17,
+      "second_norm_bits": 19
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 5,
+      "gcd_bits": 5,
+      "other_exponent": 3,
+      "prime": 17,
+      "second_norm_bits": 30
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 9,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 17,
+      "second_norm_bits": 15
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 9,
+      "gcd_bits": 9,
+      "other_exponent": 2,
+      "prime": 17,
+      "second_norm_bits": 26
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 9,
+      "gcd_bits": 9,
+      "other_exponent": 3,
+      "prime": 17,
+      "second_norm_bits": 35
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 9,
+      "gcd_bits": 9,
+      "other_exponent": 5,
+      "prime": 17,
+      "second_norm_bits": 51
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 13,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 17,
+      "second_norm_bits": 22
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 13,
+      "gcd_bits": 13,
+      "other_exponent": 3,
+      "prime": 17,
+      "second_norm_bits": 39
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 13,
+      "gcd_bits": 13,
+      "other_exponent": 4,
+      "prime": 17,
+      "second_norm_bits": 47
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 13,
+      "gcd_bits": 13,
+      "other_exponent": 7,
+      "prime": 17,
+      "second_norm_bits": 71
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 17,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 17,
+      "second_norm_bits": 27
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 17,
+      "gcd_bits": 17,
+      "other_exponent": 4,
+      "prime": 17,
+      "second_norm_bits": 51
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 17,
+      "gcd_bits": 17,
+      "other_exponent": 5,
+      "prime": 17,
+      "second_norm_bits": 57
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 17,
+      "gcd_bits": 17,
+      "other_exponent": 9,
+      "prime": 17,
+      "second_norm_bits": 94
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 33,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 17,
+      "second_norm_bits": 41
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 33,
+      "gcd_bits": 33,
+      "other_exponent": 8,
+      "prime": 17,
+      "second_norm_bits": 103
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 33,
+      "gcd_bits": 33,
+      "other_exponent": 9,
+      "prime": 17,
+      "second_norm_bits": 100
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 33,
+      "gcd_bits": 33,
+      "other_exponent": 17,
+      "prime": 17,
+      "second_norm_bits": 169
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 66,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 17,
+      "second_norm_bits": 68
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 66,
+      "gcd_bits": 66,
+      "other_exponent": 16,
+      "prime": 17,
+      "second_norm_bits": 197
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 66,
+      "gcd_bits": 66,
+      "other_exponent": 17,
+      "prime": 17,
+      "second_norm_bits": 206
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 66,
+      "gcd_bits": 66,
+      "other_exponent": 33,
+      "prime": 17,
+      "second_norm_bits": 336
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 5,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 29,
+      "second_norm_bits": 15
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 5,
+      "gcd_bits": 5,
+      "other_exponent": 2,
+      "prime": 29,
+      "second_norm_bits": 23
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 5,
+      "gcd_bits": 5,
+      "other_exponent": 3,
+      "prime": 29,
+      "second_norm_bits": 36
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 10,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 29,
+      "second_norm_bits": 18
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 10,
+      "gcd_bits": 10,
+      "other_exponent": 2,
+      "prime": 29,
+      "second_norm_bits": 32
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 10,
+      "gcd_bits": 10,
+      "other_exponent": 3,
+      "prime": 29,
+      "second_norm_bits": 40
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 10,
+      "gcd_bits": 10,
+      "other_exponent": 5,
+      "prime": 29,
+      "second_norm_bits": 57
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 15,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 29,
+      "second_norm_bits": 27
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 15,
+      "gcd_bits": 15,
+      "other_exponent": 3,
+      "prime": 29,
+      "second_norm_bits": 45
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 15,
+      "gcd_bits": 15,
+      "other_exponent": 4,
+      "prime": 29,
+      "second_norm_bits": 52
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 15,
+      "gcd_bits": 15,
+      "other_exponent": 7,
+      "prime": 29,
+      "second_norm_bits": 78
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 20,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 29,
+      "second_norm_bits": 31
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 20,
+      "gcd_bits": 20,
+      "other_exponent": 4,
+      "prime": 29,
+      "second_norm_bits": 61
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 20,
+      "gcd_bits": 20,
+      "other_exponent": 5,
+      "prime": 29,
+      "second_norm_bits": 67
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 20,
+      "gcd_bits": 20,
+      "other_exponent": 9,
+      "prime": 29,
+      "second_norm_bits": 105
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 39,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 29,
+      "second_norm_bits": 48
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 39,
+      "gcd_bits": 39,
+      "other_exponent": 8,
+      "prime": 29,
+      "second_norm_bits": 121
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 39,
+      "gcd_bits": 39,
+      "other_exponent": 9,
+      "prime": 29,
+      "second_norm_bits": 119
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 39,
+      "gcd_bits": 39,
+      "other_exponent": 17,
+      "prime": 29,
+      "second_norm_bits": 206
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 78,
+      "gcd_bits": 5,
+      "other_exponent": 1,
+      "prime": 29,
+      "second_norm_bits": 80
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 78,
+      "gcd_bits": 78,
+      "other_exponent": 16,
+      "prime": 29,
+      "second_norm_bits": 233
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 78,
+      "gcd_bits": 78,
+      "other_exponent": 17,
+      "prime": 29,
+      "second_norm_bits": 241
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 78,
+      "gcd_bits": 78,
+      "other_exponent": 33,
+      "prime": 29,
+      "second_norm_bits": 392
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 37,
+      "second_norm_bits": 16
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 2,
+      "prime": 37,
+      "second_norm_bits": 28
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 3,
+      "prime": 37,
+      "second_norm_bits": 35
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 11,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 37,
+      "second_norm_bits": 23
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 11,
+      "gcd_bits": 11,
+      "other_exponent": 2,
+      "prime": 37,
+      "second_norm_bits": 29
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 11,
+      "gcd_bits": 11,
+      "other_exponent": 3,
+      "prime": 37,
+      "second_norm_bits": 42
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 11,
+      "gcd_bits": 11,
+      "other_exponent": 5,
+      "prime": 37,
+      "second_norm_bits": 59
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 16,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 37,
+      "second_norm_bits": 24
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 16,
+      "gcd_bits": 16,
+      "other_exponent": 3,
+      "prime": 37,
+      "second_norm_bits": 49
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 16,
+      "gcd_bits": 16,
+      "other_exponent": 4,
+      "prime": 37,
+      "second_norm_bits": 54
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 16,
+      "gcd_bits": 16,
+      "other_exponent": 7,
+      "prime": 37,
+      "second_norm_bits": 89
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 21,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 37,
+      "second_norm_bits": 32
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 21,
+      "gcd_bits": 21,
+      "other_exponent": 4,
+      "prime": 37,
+      "second_norm_bits": 62
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 21,
+      "gcd_bits": 21,
+      "other_exponent": 5,
+      "prime": 37,
+      "second_norm_bits": 73
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 21,
+      "gcd_bits": 21,
+      "other_exponent": 9,
+      "prime": 37,
+      "second_norm_bits": 113
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 42,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 37,
+      "second_norm_bits": 52
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 42,
+      "gcd_bits": 42,
+      "other_exponent": 8,
+      "prime": 37,
+      "second_norm_bits": 127
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 42,
+      "gcd_bits": 42,
+      "other_exponent": 9,
+      "prime": 37,
+      "second_norm_bits": 137
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 42,
+      "gcd_bits": 42,
+      "other_exponent": 17,
+      "prime": 37,
+      "second_norm_bits": 215
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 84,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 37,
+      "second_norm_bits": 95
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 84,
+      "gcd_bits": 84,
+      "other_exponent": 16,
+      "prime": 37,
+      "second_norm_bits": 252
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 84,
+      "gcd_bits": 84,
+      "other_exponent": 17,
+      "prime": 37,
+      "second_norm_bits": 259
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 84,
+      "gcd_bits": 84,
+      "other_exponent": 33,
+      "prime": 37,
+      "second_norm_bits": 427
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 41,
+      "second_norm_bits": 12
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 2,
+      "prime": 41,
+      "second_norm_bits": 27
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 3,
+      "prime": 41,
+      "second_norm_bits": 36
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 11,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 41,
+      "second_norm_bits": 21
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 11,
+      "gcd_bits": 11,
+      "other_exponent": 2,
+      "prime": 41,
+      "second_norm_bits": 31
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 11,
+      "gcd_bits": 11,
+      "other_exponent": 3,
+      "prime": 41,
+      "second_norm_bits": 42
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 11,
+      "gcd_bits": 11,
+      "other_exponent": 5,
+      "prime": 41,
+      "second_norm_bits": 66
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 17,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 41,
+      "second_norm_bits": 26
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 17,
+      "gcd_bits": 17,
+      "other_exponent": 3,
+      "prime": 41,
+      "second_norm_bits": 47
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 17,
+      "gcd_bits": 17,
+      "other_exponent": 4,
+      "prime": 41,
+      "second_norm_bits": 61
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 17,
+      "gcd_bits": 17,
+      "other_exponent": 7,
+      "prime": 41,
+      "second_norm_bits": 93
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 22,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 41,
+      "second_norm_bits": 31
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 22,
+      "gcd_bits": 22,
+      "other_exponent": 4,
+      "prime": 41,
+      "second_norm_bits": 65
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 22,
+      "gcd_bits": 22,
+      "other_exponent": 5,
+      "prime": 41,
+      "second_norm_bits": 74
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 22,
+      "gcd_bits": 22,
+      "other_exponent": 9,
+      "prime": 41,
+      "second_norm_bits": 110
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 43,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 41,
+      "second_norm_bits": 53
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 43,
+      "gcd_bits": 43,
+      "other_exponent": 8,
+      "prime": 41,
+      "second_norm_bits": 131
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 43,
+      "gcd_bits": 43,
+      "other_exponent": 9,
+      "prime": 41,
+      "second_norm_bits": 144
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 43,
+      "gcd_bits": 43,
+      "other_exponent": 17,
+      "prime": 41,
+      "second_norm_bits": 225
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 86,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 41,
+      "second_norm_bits": 101
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 86,
+      "gcd_bits": 86,
+      "other_exponent": 16,
+      "prime": 41,
+      "second_norm_bits": 258
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 86,
+      "gcd_bits": 86,
+      "other_exponent": 17,
+      "prime": 41,
+      "second_norm_bits": 265
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 86,
+      "gcd_bits": 86,
+      "other_exponent": 33,
+      "prime": 41,
+      "second_norm_bits": 434
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 53,
+      "second_norm_bits": 19
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 2,
+      "prime": 53,
+      "second_norm_bits": 24
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 3,
+      "prime": 53,
+      "second_norm_bits": 33
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 12,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 53,
+      "second_norm_bits": 19
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 12,
+      "gcd_bits": 12,
+      "other_exponent": 2,
+      "prime": 53,
+      "second_norm_bits": 28
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 12,
+      "gcd_bits": 12,
+      "other_exponent": 3,
+      "prime": 53,
+      "second_norm_bits": 46
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 12,
+      "gcd_bits": 12,
+      "other_exponent": 5,
+      "prime": 53,
+      "second_norm_bits": 66
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 18,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 53,
+      "second_norm_bits": 22
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 18,
+      "gcd_bits": 18,
+      "other_exponent": 3,
+      "prime": 53,
+      "second_norm_bits": 51
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 18,
+      "gcd_bits": 18,
+      "other_exponent": 4,
+      "prime": 53,
+      "second_norm_bits": 61
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 18,
+      "gcd_bits": 18,
+      "other_exponent": 7,
+      "prime": 53,
+      "second_norm_bits": 98
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 23,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 53,
+      "second_norm_bits": 35
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 23,
+      "gcd_bits": 23,
+      "other_exponent": 4,
+      "prime": 53,
+      "second_norm_bits": 71
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 23,
+      "gcd_bits": 23,
+      "other_exponent": 5,
+      "prime": 53,
+      "second_norm_bits": 81
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 23,
+      "gcd_bits": 23,
+      "other_exponent": 9,
+      "prime": 53,
+      "second_norm_bits": 125
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 46,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 53,
+      "second_norm_bits": 58
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 46,
+      "gcd_bits": 46,
+      "other_exponent": 8,
+      "prime": 53,
+      "second_norm_bits": 139
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 46,
+      "gcd_bits": 46,
+      "other_exponent": 9,
+      "prime": 53,
+      "second_norm_bits": 151
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 46,
+      "gcd_bits": 46,
+      "other_exponent": 17,
+      "prime": 53,
+      "second_norm_bits": 239
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 92,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 53,
+      "second_norm_bits": 105
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 92,
+      "gcd_bits": 92,
+      "other_exponent": 16,
+      "prime": 53,
+      "second_norm_bits": 277
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 92,
+      "gcd_bits": 92,
+      "other_exponent": 17,
+      "prime": 53,
+      "second_norm_bits": 284
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 92,
+      "gcd_bits": 92,
+      "other_exponent": 33,
+      "prime": 53,
+      "second_norm_bits": 471
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 61,
+      "second_norm_bits": 13
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 2,
+      "prime": 61,
+      "second_norm_bits": 32
+    },
+    {
+      "exponent": 1,
+      "first_norm_bits": 6,
+      "gcd_bits": 6,
+      "other_exponent": 3,
+      "prime": 61,
+      "second_norm_bits": 40
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 12,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 61,
+      "second_norm_bits": 26
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 12,
+      "gcd_bits": 12,
+      "other_exponent": 2,
+      "prime": 61,
+      "second_norm_bits": 34
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 12,
+      "gcd_bits": 12,
+      "other_exponent": 3,
+      "prime": 61,
+      "second_norm_bits": 43
+    },
+    {
+      "exponent": 2,
+      "first_norm_bits": 12,
+      "gcd_bits": 12,
+      "other_exponent": 5,
+      "prime": 61,
+      "second_norm_bits": 68
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 18,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 61,
+      "second_norm_bits": 28
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 18,
+      "gcd_bits": 18,
+      "other_exponent": 3,
+      "prime": 61,
+      "second_norm_bits": 54
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 18,
+      "gcd_bits": 18,
+      "other_exponent": 4,
+      "prime": 61,
+      "second_norm_bits": 62
+    },
+    {
+      "exponent": 3,
+      "first_norm_bits": 18,
+      "gcd_bits": 18,
+      "other_exponent": 7,
+      "prime": 61,
+      "second_norm_bits": 100
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 24,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 61,
+      "second_norm_bits": 31
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 24,
+      "gcd_bits": 24,
+      "other_exponent": 4,
+      "prime": 61,
+      "second_norm_bits": 70
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 24,
+      "gcd_bits": 24,
+      "other_exponent": 5,
+      "prime": 61,
+      "second_norm_bits": 83
+    },
+    {
+      "exponent": 4,
+      "first_norm_bits": 24,
+      "gcd_bits": 24,
+      "other_exponent": 9,
+      "prime": 61,
+      "second_norm_bits": 134
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 48,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 61,
+      "second_norm_bits": 59
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 48,
+      "gcd_bits": 48,
+      "other_exponent": 8,
+      "prime": 61,
+      "second_norm_bits": 139
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 48,
+      "gcd_bits": 48,
+      "other_exponent": 9,
+      "prime": 61,
+      "second_norm_bits": 154
+    },
+    {
+      "exponent": 8,
+      "first_norm_bits": 48,
+      "gcd_bits": 48,
+      "other_exponent": 17,
+      "prime": 61,
+      "second_norm_bits": 251
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 95,
+      "gcd_bits": 6,
+      "other_exponent": 1,
+      "prime": 61,
+      "second_norm_bits": 107
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 95,
+      "gcd_bits": 95,
+      "other_exponent": 16,
+      "prime": 61,
+      "second_norm_bits": 280
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 95,
+      "gcd_bits": 95,
+      "other_exponent": 17,
+      "prime": 61,
+      "second_norm_bits": 297
+    },
+    {
+      "exponent": 16,
+      "first_norm_bits": 95,
+      "gcd_bits": 95,
+      "other_exponent": 33,
+      "prime": 61,
+      "second_norm_bits": 487
+    }
+  ],
+  "scope": "Exact proper-root correlations and rational-content cancellation; no relation-supply, rank-per-budget, or factoring-score bound.",
+  "source_sha256": {
+    "tools/binary_quadratic_forms.py": "cb8136aca2df9015c5433771ecce9f1855e179c7be316ae56deabdfc65870af8",
+    "tools/check_circuit_box_stencil_overlap.py": "91cd2ccc214bcf743dfde110d5fe25835dae93e19999982adae3e77a87ecc1a7",
+    "tools/quadratic_ideal_hnf.py": "fd9c4217f1c751c1d2f20485a35ae36ae749c24980d90a6aae13fbc471634a74"
+  },
+  "status": "passed"
+}

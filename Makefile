@@ -364,6 +364,10 @@ verify-braid-fusion-occupancy:
 verify-braid-leading-automaton:
 	python3 tools/check_nilpotent_seam_top_rank.py
 
+.PHONY: verify-catalan-cup-crossing
+verify-catalan-cup-crossing:
+	python3 tools/check_catalan_cup_crossing.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
@@ -2695,3 +2699,33 @@ verify-equivalent-norm-stencils:
 .PHONY: verify-compact-power-witnesses
 verify-compact-power-witnesses:
 	python3 tools/check_compact_witness_oriented_power_search.py --replay evidence/compact-witness-oriented-power-search.json
+
+.PHONY: verify-compact-oriented-basis
+verify-compact-oriented-basis:
+	python3 tools/check_compact_oriented_basis.py --output /tmp/compact-oriented-basis-replay.json
+
+.PHONY: verify-tensor-affine-clifford
+verify-tensor-affine-clifford:
+	python3 tools/check_tensor_affine_clifford_profiles.py --output /tmp/tensor-affine-clifford-replay.json
+
+.PHONY: check-stencil-overlap
+check-stencil-overlap:
+	python3 tools/check_circuit_box_stencil_overlap.py
+
+.PHONY: check-direct-unit-presentation check-direct-unit-search
+check-direct-unit-presentation:
+	python3 tools/check_direct_unit_presentation.py --replay evidence/direct-unit-presentation.json
+check-direct-unit-search:
+	python3 tools/check_direct_unit_oriented_power_search.py --replay evidence/direct-unit-oriented-power-search.json.xz
+
+.PHONY: check-centered-windows
+check-centered-windows:
+	python3 tools/check_circuit_box_centered_windows.py
+
+.PHONY: check-cached-lll
+check-cached-lll:
+	python3 tools/check_circuit_box_cached_lll.py
+
+.PHONY: check-singular-affine-clifford
+check-singular-affine-clifford:
+	python3 tools/check_tensor_singular_affine_clifford.py

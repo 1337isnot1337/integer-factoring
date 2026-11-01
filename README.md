@@ -933,6 +933,14 @@ at every even length. The leading central ranks have half-power scale
 in the label count and sharpen the earlier counting envelope; full
 contracted coefficients can still vanish. This does not close the
 complete crossing rank sum. Run `make verify-braid-leading-automaton` (NumPy).
+The [full Catalan cup frame](research/catalan-cup-crossings.md) retains
+all noncrossing primal cups using a unitriangular coordinate decoder.
+It gives a strict crossing over F2 even with zero primal Gram matrix,
+and binary width lambda uses only `lambda+O(log(lambda+2))` physical strands.
+At the old order-five parameter it retains nonzero radical channels,
+so quotient-only formulas require their ambient residuals. Complete
+small profiles and independent physical evolution pass; a favorable
+uniform two-cut rank sum remains open. Run `make verify-catalan-cup-crossing`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -2310,3 +2318,9 @@ The [full-rank affine full-tail census](research/tensor-full-tail-affine-search.
 [Equivalent-norm stencils](research/equivalent-norm-stencils.md) add exact complementary norms to supplied form powers and replay all class, ideal, graph, and unit identities. In 24 cases with 57600 charged norm tests, the leading-only method retains at least the refined rank of both alternatives at every equal budget. This negative result is retained; the active policy and score are unchanged.
 
 [Compact reconstructible power witnesses](research/compact-reconstructible-power-witnesses.md) preserve the complete query logic and mathematical result while storing only base words, residual indices, and signs. Full 64/80 replays and 25 additional policies pass. The 80-bit witness section falls from 3390155 to 264539 canonical JSON bytes; this is a representation measurement, not a peak-memory claim.
+
+The [declared compact-witness 128-bit policy](evidence/compact-witness-oriented-fresh-128-policy.json) repeats the same certified input and query schedule with a 2-GiB address-space bound. It tests the representation change against the separately retained projected search. This is a charged new attempt; a saved result requires independent replay before certification.
+
+[Compact oriented construction and verification](research/compact-oriented-basis-input-bound.md) now have a deterministic B^(1+o(1)) bit bound in total supplied input size, counting the discriminant once. Batched discriminant validation, two coprime passes, and a balanced arithmetic verifier avoid per-key large-discriminant work and reduced-form output. Controls include 3146 independent HNF identities and constructed large-discriminant inputs. Relation supply and the factoring score remain unchanged.
+
+The [auxiliary-mode Clifford theorem](research/tensor-affine-clifford-profiles.md) recovers complete Smith profiles for Gaussian circuits interleaved with arbitrary invertible one-mode maps over characteristic-two fields. One auxiliary mode gives a matrix of order 2n+2, with scalar valuations and both cut clearings retained. The 18-row implementation matches all 131072 prior binary orders and independent original F4 kernels. A completed 1792-case F4 degree census finds no pressure improvement.
