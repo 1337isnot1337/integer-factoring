@@ -1,0 +1,559 @@
+{
+  "controls": {
+    "endpoint_matrix_entries": 480,
+    "exact_Smith_transformations": 8,
+    "records": [
+      {
+        "constant_basis_changes": [
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ],
+          [
+            1
+          ]
+        ],
+        "degree_cap": 2,
+        "modes_per_parent": 1,
+        "profiles": [
+          {
+            "axis": 0,
+            "exact_transformation_sha256": "8779eb404df7c1dab52d0eb6b39f2c2da6878e75738ad89000dc8f45aafc5061",
+            "finite_operations": 3,
+            "orders": [
+              1,
+              3
+            ]
+          },
+          {
+            "axis": 1,
+            "exact_transformation_sha256": "07c6d2d833492df872b6868065e08ef281faa1438aaec56f9e568e6314090ff5",
+            "finite_operations": 3,
+            "orders": [
+              1,
+              3
+            ]
+          }
+        ],
+        "shared_minor": [
+          [
+            1,
+            1,
+            0
+          ]
+        ],
+        "shared_prefix_cap": 2,
+        "shared_prefix_sum": 2,
+        "total_order_cap": 8,
+        "total_order_sum": 8
+      },
+      {
+        "constant_basis_changes": [
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            3
+          ],
+          [
+            3,
+            2
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "degree_cap": 2,
+        "modes_per_parent": 2,
+        "profiles": [
+          {
+            "axis": 0,
+            "exact_transformation_sha256": "ba5c0e13c868dc934cdb5bc4fcc45ef6fd6c0325b265f309c3133e4c32328d26",
+            "finite_operations": 8,
+            "orders": [
+              1,
+              1,
+              3,
+              3
+            ]
+          },
+          {
+            "axis": 1,
+            "exact_transformation_sha256": "ed3b2b887e64466c227dbf545c4a2e670b0568daee47f41b7a3d3844e9131174",
+            "finite_operations": 6,
+            "orders": [
+              1,
+              1,
+              3,
+              3
+            ]
+          }
+        ],
+        "shared_minor": [
+          [
+            2,
+            2,
+            0
+          ]
+        ],
+        "shared_prefix_cap": 4,
+        "shared_prefix_sum": 4,
+        "total_order_cap": 16,
+        "total_order_sum": 16
+      },
+      {
+        "constant_basis_changes": [
+          [
+            3,
+            6,
+            4
+          ],
+          [
+            1,
+            3,
+            6
+          ],
+          [
+            7,
+            6,
+            4
+          ],
+          [
+            1,
+            3,
+            7
+          ]
+        ],
+        "degree_cap": 2,
+        "modes_per_parent": 3,
+        "profiles": [
+          {
+            "axis": 0,
+            "exact_transformation_sha256": "383a9a62322edc43c5063d8ae90187d4c73ff70a5f4aafd9481fdfac345cfed7",
+            "finite_operations": 13,
+            "orders": [
+              1,
+              1,
+              1,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "axis": 1,
+            "exact_transformation_sha256": "c62bb099d8a51a5646f6439af03b72b3c4ef2a735cb5c9410480c1e87b160707",
+            "finite_operations": 11,
+            "orders": [
+              1,
+              1,
+              1,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "shared_minor": [
+          [
+            3,
+            3,
+            0
+          ]
+        ],
+        "shared_prefix_cap": 6,
+        "shared_prefix_sum": 6,
+        "total_order_cap": 24,
+        "total_order_sum": 24
+      },
+      {
+        "constant_basis_changes": [
+          [
+            3,
+            6,
+            12,
+            8
+          ],
+          [
+            1,
+            3,
+            6,
+            12
+          ],
+          [
+            15,
+            14,
+            12,
+            8
+          ],
+          [
+            1,
+            3,
+            7,
+            15
+          ]
+        ],
+        "degree_cap": 2,
+        "modes_per_parent": 4,
+        "profiles": [
+          {
+            "axis": 0,
+            "exact_transformation_sha256": "5ec28c7a33a0834310454d149e4df3570561c1fa98d2b86e84e6115e3d8da8d0",
+            "finite_operations": 18,
+            "orders": [
+              1,
+              1,
+              1,
+              1,
+              3,
+              3,
+              3,
+              3
+            ]
+          },
+          {
+            "axis": 1,
+            "exact_transformation_sha256": "eb526434b6d160b49e985a3eed70debcae339fce487097268c04066112ce597c",
+            "finite_operations": 16,
+            "orders": [
+              1,
+              1,
+              1,
+              1,
+              3,
+              3,
+              3,
+              3
+            ]
+          }
+        ],
+        "shared_minor": [
+          [
+            4,
+            4,
+            0
+          ]
+        ],
+        "shared_prefix_cap": 8,
+        "shared_prefix_sum": 8,
+        "total_order_cap": 32,
+        "total_order_sum": 32
+      }
+    ]
+  },
+  "floor": [
+    3,
+    4
+  ],
+  "normalization": "4*L*H(p); shared L-minor bounds joint first-L prefixes",
+  "partition_certificate": {
+    "Q": [
+      2,
+      -3,
+      0,
+      1,
+      0,
+      -3,
+      2,
+      0,
+      0,
+      3,
+      0,
+      0,
+      2,
+      0,
+      0,
+      1,
+      0,
+      0,
+      2,
+      0,
+      0,
+      1
+    ],
+    "bernstein_coefficients": [
+      [
+        2,
+        1
+      ],
+      [
+        125,
+        64
+      ],
+      [
+        61,
+        32
+      ],
+      [
+        38735,
+        20832
+      ],
+      [
+        1180,
+        651
+      ],
+      [
+        13357,
+        7564
+      ],
+      [
+        64449005,
+        37487184
+      ],
+      [
+        35831471,
+        21421248
+      ],
+      [
+        4354733,
+        2677656
+      ],
+      [
+        21758353321,
+        13770292256
+      ],
+      [
+        10562066387,
+        6885146128
+      ],
+      [
+        671884525,
+        451484992
+      ],
+      [
+        4737457980233,
+        3284214703056
+      ],
+      [
+        18352571413223,
+        13136858812224
+      ],
+      [
+        1268437999849,
+        938347058016
+      ],
+      [
+        208451161609451,
+        159518999862720
+      ],
+      [
+        88070035229207,
+        69789562439940
+      ],
+      [
+        79960385021851,
+        65684294061120
+      ],
+      [
+        4224653228922611,
+        3601688791018080
+      ],
+      [
+        106988270332819,
+        94781283974160
+      ],
+      [
+        6426252520252,
+        5923830248385
+      ],
+      [
+        42794250960403427,
+        41107996877935680
+      ],
+      [
+        1863679104064319,
+        1868545312633440
+      ],
+      [
+        77497884805657,
+        81241100549280
+      ],
+      [
+        513731308833,
+        564174309370
+      ],
+      [
+        1060784301875,
+        1222984309344
+      ],
+      [
+        3906218855347,
+        4739064198708
+      ],
+      [
+        334672122657,
+        428389984064
+      ],
+      [
+        12662165524485,
+        17150899004848
+      ],
+      [
+        822527450097,
+        1182820621024
+      ],
+      [
+        165403008017,
+        253461561648
+      ],
+      [
+        69805370083,
+        114466511712
+      ],
+      [
+        885257955342,
+        1560798581573
+      ],
+      [
+        4764468375647,
+        9081009929152
+      ],
+      [
+        3993545243413,
+        8279744347168
+      ],
+      [
+        1562225434519,
+        3548461863072
+      ],
+      [
+        14731771720,
+        36963144407
+      ],
+      [
+        422703637535,
+        1182820621024
+      ],
+      [
+        20432411855,
+        64477063928
+      ],
+      [
+        63096011757949,
+        227475081537984
+      ],
+      [
+        33997332480427,
+        142171925961240
+      ],
+      [
+        115188568192843,
+        568687703844960
+      ],
+      [
+        6830176539077,
+        40620550274640
+      ],
+      [
+        244032484149127,
+        1787304212084160
+      ],
+      [
+        14481547882669,
+        133467522330960
+      ],
+      [
+        105897114562157,
+        1245696875088960
+      ],
+      [
+        12750152708453,
+        189562567948320
+      ],
+      [
+        8696900939423,
+        153263352809280
+      ],
+      [
+        1589593605121,
+        28736878651740
+      ],
+      [
+        10413791662313,
+        159518999862720
+      ],
+      [
+        1428214107491,
+        15951899986272
+      ],
+      [
+        10297339609,
+        78195588168
+      ],
+      [
+        253425737,
+        1290964899
+      ],
+      [
+        23891317175,
+        82621753536
+      ],
+      [
+        63254775541,
+        151473214816
+      ],
+      [
+        2034470555,
+        3442573064
+      ],
+      [
+        6514843,
+        7932196
+      ],
+      [
+        349158671,
+        310608096
+      ],
+      [
+        28478953,
+        18743592
+      ],
+      [
+        1722433,
+        847168
+      ],
+      [
+        1715045,
+        635376
+      ],
+      [
+        1325,
+        372
+      ],
+      [
+        131,
+        28
+      ],
+      [
+        49,
+        8
+      ],
+      [
+        8,
+        1
+      ]
+    ],
+    "bernstein_degree": 64,
+    "identity": "(1+u^3)^2(1+u^9)^2-(1+u^4)^3=u^3*Q(u)",
+    "minimum_bernstein": [
+      1589593605121,
+      28736878651740
+    ],
+    "ordinary_basis_reconstruction": true,
+    "positive_interval": "0<=u<=1; reciprocal extension handles all r>1"
+  },
+  "scope": "Two-axis common-scale, common unweighted type Gaussian profile floor rho>=3/4 for every equal block multiplicity; no actual-rank or factoring lower bound.",
+  "source_sha256": {
+    "tools/check_block_gaussian_profile_floor.py": "acd7c0d733471025b3e9552f88d5da653cec94d56ace36d31cc5b6146a36c2f1",
+    "tools/check_fixed_cube_projection_floor.py": "29fee853fcd01019bd247a26da2fc60048187d6d0e4f74de3576c6c99a076598",
+    "tools/cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  }
+}

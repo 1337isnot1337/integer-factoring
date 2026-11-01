@@ -3170,3 +3170,7 @@ verify-normal-basis-and:
 .PHONY: verify-fixed-cube-projection
 verify-fixed-cube-projection:
 	python3 tools/check_fixed_cube_projection_floor.py
+
+.PHONY: verify-block-gaussian-floor
+verify-block-gaussian-floor:
+	python3 tools/check_block_gaussian_profile_floor.py

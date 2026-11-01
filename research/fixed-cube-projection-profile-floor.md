@@ -37,6 +37,11 @@ Smith data are not a free constructor; selected finite Laurent
 factorizations below are controls, not a general constructor theorem.
 The complete factoring score remains **1/2**.
 
+The later [block-mode extension](block-gaussian-two-axis-profile-floor.md)
+proves the same common-type profile floor for every polynomial Gaussian
+kernel with any equal number of modes per parent label. The explicit
+projection profiles and their certificate below remain useful controls.
+
 ## 1. Exact one-particle profiles for every projection
 
 Retain the kernel and augmentation basis of the

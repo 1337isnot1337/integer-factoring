@@ -1333,3 +1333,26 @@ combined packed-system, divided-power, Artin--Hasse, native-Witt circuit
 work and first regrouping audit. It predates the normal-basis AND diagnostic,
 fixed projection floor and global-pairing proposal/counterexample. Their
 focused checks remain separately scoped. No new score or Lean is claimed.
+
+## Two-axis shared-minor floor at arbitrary equal block multiplicity
+
+The [ordinary extension](../research/block-gaussian-two-axis-profile-floor.md)
+allows any equal number L of Gaussian modes in each of the four parent
+labels. The same X-to-V minor lies in both cut matrices and has degree
+at most LD, bounding the joint first-L prefixes by LD. Determinant caps
+bound the total orders. Jensen on the prefix and tail pools gives the
+balanced D/2,3D/2 partition expression; the existing exact Bernstein
+certificate proves the common-type, common-scale floor rho>=3/4.
+This requires neither Cayley symmetry nor homogeneity, and is uniform
+in L, degree, field and kernel. It is a profile-envelope floor, not an
+actual coefficient-rank or factoring lower bound.
+
+The [receipt](../evidence/block-gaussian-two-axis-floor.json) replays the
+partition certificate and checks four congruence-mixed block kernels:
+480 endpoint entries, eight exact finite Laurent Smith transformations,
+and common minors/prefix budgets attaining the boundary conventions.
+The focused target and docs are the local gate; the full dd7a36d replay
+predates this extension. Unequal or weighted types, rational poles,
+actual-rank/joint-support improvements, non-Gaussian tensors and other
+evaluators remain outside this proof. No new Lean or independent
+mathematical acceptance is claimed.

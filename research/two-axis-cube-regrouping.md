@@ -162,6 +162,12 @@ minima, changing local labels or increasing the arithmetic test panel does
 not resolve the failure. Other tensor families, structured contractions
 and different global networks remain open.
 
+For a fixed embedding, merely putting multiple Gaussian modes in each
+parent label does not escape the common-type profile estimate: the later
+[block-mode shared-minor theorem](block-gaussian-two-axis-profile-floor.md)
+extends its 3/4 floor to every equal mode multiplicity. It does not bound
+actual coefficient ranks or all other transfer constructions.
+
 Run make verify-two-axis-cube-regrouping. Its success means the audit and
 counterexamples pass, and its explicit factoring_exponent_improved field
 is false. The rejected historical JSON is not a current validation receipt.

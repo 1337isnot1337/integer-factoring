@@ -1,5 +1,7 @@
 # Research index
 
+- [A two-axis Gaussian profile floor for arbitrary equal mode blocks](block-gaussian-two-axis-profile-floor.md): one shared L-minor and determinant budgets force the common-scale, common-unweighted-type envelope above 3/4 for every L, degree and field, without Cayley symmetry. This extends the one-mode floor to multiple Gaussian modes per parent label; actual ranks, other types and other evaluators remain outside the theorem.
+
 - [A profile floor for fixed homogeneous cube projections](fixed-cube-projection-profile-floor.md): a valid fixed-bundle monomial projection retains the endpoint at two parent axes, but its common-type Smith-profile envelope is at least 3/4 for every projection and scale. Convexity reduces to a balanced profile and an exact Bernstein certificate; actual ranks and other representations remain outside the floor.
 
 - [Exact degree/column tradeoff for direct normal-basis AND](normal-basis-and-degree-tradeoff.md): every normal basis requires all cyclic Frobenius offsets. With t rows, the exact minimum formal degree is 2^floor(t/2)+1, with a matching acquired representation. This closes a direct Boolean-word gate route under the current degree/dimension estimate; arbitrary bases, auxiliaries and structured global predicates remain outside the claim.
