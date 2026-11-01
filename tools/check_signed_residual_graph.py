@@ -15,6 +15,7 @@ from prime_form_factor_base import build_prime_form_factor_base
 from quadratic_ideal_hnf import compose_forms_hnf
 from relation_two_saturation import first_useful_relation_top
 from signed_residual_graph import eliminate_signed_residual_graph, verify_signed_graph_elimination
+from signed_residual_unit_elimination import eliminate_unit_residual_columns
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -60,7 +61,7 @@ def exhaustive_graph_controls():
 
 def mixed_row_controls():
     rng = Random(20261101)
-    cases = character_tests = 0
+    cases = character_tests = unit_pivots = 0
     digest = sha256()
     for trial in range(420):
         base, residuals = rng.randrange(4), rng.randrange(7)
@@ -78,17 +79,28 @@ def mixed_row_controls():
             rows.append(row)
         result = eliminate_signed_residual_graph(rows, base, generator_count=dimension,
                                                  allow_extra_rows=True)
+        sparse = [{i: value for i, value in enumerate(row) if value} for row in rows]
+        assert eliminate_signed_residual_graph(sparse, base, generator_count=dimension,
+                                                allow_extra_rows=True) == result
         verify_signed_graph_elimination(rows, json.loads(json.dumps(result)))
+        units = eliminate_unit_residual_columns(sparse, result)
+        verify_signed_graph_elimination(rows, json.loads(json.dumps(units)))
+        unit_pivots += units['counts']['later_unit_columns_eliminated']
         if trial < 100 and dimension <= 5:
             for modulus in (3, 4):
                 left = character_count(rows, dimension, modulus)
                 right = character_count(result['torsion_rows'], len(result['torsion_columns']), modulus)
                 right *= modulus**len(result['free_root_columns'])
                 assert left == right
+                unit_count = character_count(units['torsion_rows'], len(units['torsion_columns']), modulus)
+                unit_count *= modulus**len(units['free_root_columns'])
+                assert left == unit_count
                 character_tests += 1
         digest.update(json.dumps([rows, result['torsion_rows']], separators=(',', ':')).encode())
         cases += 1
-    return {'mixed_base_and_extra_row_cases': cases, 'independent_character_counts': character_tests,
+    return {'mixed_base_and_extra_row_cases': cases, 'dense_sparse_certificate_equalities': cases,
+            'unit_pivots_replayed': unit_pivots,
+            'independent_character_counts': character_tests,
             'canonical_result_sha256': digest.hexdigest()}
 
 
@@ -123,6 +135,7 @@ def ideal_controls():
     assert compose_forms_hnf((5, 4, 5), (5, 4, 5)) == (1, 0, 21)
     triangle = eliminate_signed_residual_graph(triangle_rows, 0)
     assert triangle['torsion_rows'] == [[2]] and triangle['counts']['unbalanced_components'] == 1
+    assert eliminate_unit_residual_columns(triangle_rows, triangle)['torsion_rows'] == [[2]]
     triangle_extraction = extract(21, [triangle_generators[i] for i in triangle['torsion_generator_indices']],
                                   triangle['torsion_rows'])
     assert triangle_extraction['factor'] == 3
@@ -150,9 +163,14 @@ def prefix_control(path):
     selected = [generators[i] for i in result['torsion_generator_indices']]
     extraction = extract(data['integer'], selected, result['torsion_rows'])
     assert extraction['factor'] is not None and data['integer'] % extraction['factor'] == 0
+    units = eliminate_unit_residual_columns(data['transported_rows'], result)
+    unit_generators = [generators[i] for i in units['torsion_generator_indices']]
+    unit_extraction = extract(data['integer'], unit_generators, units['torsion_rows'])
+    assert unit_extraction['factor'] == extraction['factor']
     return {'input_path': str(path), 'input_sha256': sha256(path.read_bytes()).hexdigest(),
             'integer': data['integer'], 'norm_queries': data['norm_queries'],
-            'reduction': result, 'extraction': extraction}
+            'reduction': result, 'extraction': extraction,
+            'unit_reduction': units, 'unit_extraction': unit_extraction}
 
 
 def rejection_controls():
@@ -161,7 +179,10 @@ def rejection_controls():
            lambda: eliminate_signed_residual_graph([[1], [1, 0]], 0),
            lambda: eliminate_signed_residual_graph([[1.5]], 0),
            lambda: eliminate_signed_residual_graph([[1]], 2),
-           lambda: eliminate_signed_residual_graph([], -1)]
+           lambda: eliminate_signed_residual_graph([], -1),
+           lambda: eliminate_signed_residual_graph([{-1: 1}], 0),
+           lambda: eliminate_signed_residual_graph([{'0': 1}], 0),
+           lambda: eliminate_signed_residual_graph([{2: 1}], 0, generator_count=2)]
     for call in bad:
         try:
             call()
@@ -198,7 +219,8 @@ def main():
               'ideals': ideal_controls(), 'rejections': rejection_controls()}
     if args.prefix:
         report['prefix'] = prefix_control(args.prefix)
-    sources = ('signed_residual_graph.py', 'check_signed_residual_graph.py',
+    sources = ('signed_residual_graph.py', 'signed_residual_unit_elimination.py',
+               'check_signed_residual_graph.py',
                'check_oriented_coprime_basis.py', 'oriented_coprime_basis.py',
                'relation_two_saturation.py', 'quadratic_ideal_hnf.py')
     report['source_sha256'] = {'tools/'+name: sha256((ROOT/'tools'/name).read_bytes()).hexdigest()

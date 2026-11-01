@@ -15,8 +15,10 @@ Removing only unused free direct summands then preserves its evaluated
 torsion image exactly.
 
 On the retained 40-bit prefix, the complete 320-row system on 252
-generators becomes five rows on five generators. Its relation-halving
-extractor still returns 1000003. This is a finite matrix reduction and a
+generators becomes five rows on five generators. Two additional unit
+pivots reduce it further to three rows on the original three base
+generators. Both relation-halving extractions return 1000003. This is a
+finite matrix reduction and a
 supplied-witness theorem. It gives no uniform search bound and does not
 improve the complete factoring score of one half.
 
@@ -148,6 +150,25 @@ not free merely because its graph component was balanced. Only root
 columns that are zero in every final row are removed as free summands.
 All other roots remain available to the exact torsion extractor.
 
+### Additional unit pivots
+
+The [unit-elimination pass](../tools/signed_residual_unit_elimination.py)
+can remove any remaining residual column having a coefficient `+/-1`
+in a current row. Solve that row for its residual generator and substitute
+it in every other row and every generator definition. Delete the defining
+row and generator. The pass retains the fixed-base columns throughout.
+
+Every step is an integer presentation isomorphism. If a double-root
+relation also uses the eliminated generator, substitution transfers that
+relation to the remaining generators; it is not discarded or divided by
+two. An isolated relation `2y=0` therefore survives this pass.
+
+The implementation chooses a unit in a row of minimum current support,
+with deterministic index tie breaking. This is a finite sparsity heuristic,
+not a claim that the resulting presentation has minimum dimension. Every
+source combination and generator map is updated, so the four identities
+in the next section replay the complete result directly.
+
 ## 4. Four identities certify the complete presentation
 
 Use row-vector coordinates. Let R contain the old relation rows and S
@@ -208,6 +229,21 @@ multiplies this bound across components. All stored words, source
 combinations and direct certificate checks have polynomial bit cost in
 the written input. No near-linear implementation bound is asserted.
 
+The implementation accepts sparse integer-column dictionaries as well
+as dense rows. This avoids allocating an input matrix full of zeros.
+Its expanded path and relation certificates can still have quadratic
+written size; that cost remains charged. The generator list, including
+its v residual generators, is part of the input convention.
+
+The additional unit pass also has polynomial bit cost. Its current
+entries are Schur-complement minors of the initial reduced matrix.
+The eliminated pivot block has determinant `+/-1`, since every pivot is
+a unit. Hadamard's bound therefore controls the entry bit lengths by a
+polynomial in the matrix dimension and the initial coefficient lengths.
+Applying the same argument to the augmented matrix with an identity
+block bounds the retained source combinations. There are at most v
+residual-column eliminations.
+
 The graph contract arises without factoring residual norms. Suppose
 each supplied residual R is Y-rough, where `Y>=2`, meaning every prime
 factor exceeds Y, and `R<=Y^3`. Pairwise coprime atom refinement gives
@@ -234,9 +270,10 @@ The [checker](../tools/check_signed_residual_graph.py) verifies:
 - All 1728 three-vertex signed graph systems with optional unit anchors
   and double loops, with 3456 independent character counts.
 - 420 mixed systems with arbitrary base coefficients and additional
-  larger residual words, with 140 further character counts.
+  larger residual words, with 140 further character counts, 420 exact
+  dense/sparse certificate comparisons, and 137 later unit pivots.
 - Both directions of every presentation map, including JSON round trips.
-- Six invalid contracts and four corrupt certificates.
+- Nine invalid contracts and four corrupt certificates.
 
 The four-cycle in [oriented refinement](oriented-coprime-basis.md) reduces
 four rows on seven generators to the single base relation
@@ -275,6 +312,10 @@ unused free columns. The complete useful output is
 The five remaining generators are the three base generators and two
 original atom generators. The extractor verifies all five relation
 identities and finds `(500009,15,500009)`, yielding the factor 1000003.
+The additional unit pass removes those two residual columns and leaves
+the three base rows `(-78,52,-11)`, `(-37,23,52)`, and `(-51,169,-53)`.
+It again returns the same ambiguous form and factor. Both full sets of
+integer presentation maps are retained in the receipt.
 The same graph rows alone, with the three additional rows discarded,
 would leave only two base relations and would not extract a factor in
 this control. Retaining the larger words is therefore material.

@@ -18,6 +18,8 @@ def _add(target, source, multiple=1):
 
 
 def _sparse(row):
+    if isinstance(row, dict):
+        return {i: value for i, value in row.items() if value}
     return {i: value for i, value in enumerate(row) if value}
 
 
@@ -25,21 +27,31 @@ def eliminate_signed_residual_graph(rows, initial_size, *, generator_count=None,
                                     allow_extra_rows=False, verify=True):
     """Eliminate tree/unit relations and preserve necessary double roots.
 
-Rows have fixed-base columns followed by residual columns. The latter
+    Rows are dense integer lists or sparse integer-column dictionaries.
+    Supply generator_count to retain trailing isolated generators in a
+    sparse input. Rows have fixed-base columns followed by residual columns. The latter
 have absolute weight <=2, allowing a single coefficient +/-2. All
     unanchored roots occur in the full output; free root columns are omitted
     from torsion_rows because they occur in no relation. With allow_extra_rows,
     larger residual words are transported through the same exact substitution.
     """
-    rows = [list(row) for row in rows]
+    rows = [dict(row) if isinstance(row, dict) else list(row) for row in rows]
     if not isinstance(initial_size, int) or initial_size < 0:
         raise ValueError('Require a nonnegative fixed-base size.')
-    count = len(rows[0]) if rows else (initial_size if generator_count is None else generator_count)
+    dense_widths = [len(row) for row in rows if not isinstance(row, dict)]
+    sparse_indices = [i for row in rows if isinstance(row, dict) for i in row]
+    if any(not isinstance(i, int) or i < 0 for i in sparse_indices):
+        raise ValueError('Sparse column indices must be nonnegative integers.')
+    inferred = dense_widths[0] if dense_widths else max([initial_size] + [i+1 for i in sparse_indices])
+    count = inferred if generator_count is None else generator_count
     if (not isinstance(count, int) or count < initial_size
-            or (generator_count is not None and count != generator_count)
-            or any(len(row) != count or any(not isinstance(x, int) for x in row) for row in rows)
+            or any(width != count for width in dense_widths)
+            or any(i >= count for i in sparse_indices)
+            or any(any(not isinstance(x, int) for x in
+                       (row.values() if isinstance(row, dict) else row)) for row in rows)
             or (not allow_extra_rows and
-                any(sum(abs(x) for x in row[initial_size:]) > 2 for row in rows))):
+                any(sum(abs(x) for i, x in _sparse(row).items() if i >= initial_size) > 2
+                    for row in rows))):
         raise ValueError('Require rectangular integer rows with residual absolute weight <=2.')
     residual_count = count - initial_size
     sparse_rows = [_sparse(row) for row in rows]
@@ -199,7 +211,8 @@ def verify_signed_graph_elimination(rows, result):
     combinations = [normalize(row) for row in result['old_row_combinations']]
     chosen = result['new_generator_indices']
     old_count = result['old_generator_count']
-    assert all(len(row) == old_count for row in rows)
+    assert all((all(isinstance(i, int) and 0 <= i < old_count for i in row)
+                if isinstance(row, dict) else len(row) == old_count) for row in rows)
     assert len(words) == len(definitions) == old_count
     assert len(combinations) == len(old) and len(sources) == len(output)
     assert len(set(chosen)) == len(chosen) and all(0 <= i < old_count for i in chosen)

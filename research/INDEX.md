@@ -43,6 +43,8 @@
 
 ## Composite-cofactor relations
 
+- [Sparse graph input and certified unit pivots](signed-residual-graph-elimination.md#additional-unit-pivots): the same integer maps support sparse rows and further residual elimination; 420 dense/sparse comparisons and 137 additional unit pivots are replayed.
+
 - [Matched oriented-atom prefixes](oriented-coprime-basis.md#8-more-emitted-rows-on-actual-selector-prefixes): 416 independently replayed powers, exact integer combinations, and three strict factor gains against the original selector at equal query caps.
 - [Integer signed residual graph elimination](signed-residual-graph-elimination.md): inverse presentation maps, retained unbalanced-root torsion, transport of larger words, and a 252-to-5 generator reduction on the retained 40-bit control.
 

@@ -129,7 +129,9 @@ and integer row-combination certificates retained.
 
 [Signed residual graph elimination](research/signed-residual-graph-elimination.md)
 compresses that complete 320-row, 252-generator presentation to five rows
-on five generators. Explicit integer maps preserve the full presentation
+on five generators; two later unit pivots reduce it to three rows on the
+original three base generators. Dense and sparse input produce identical
+certificates. Explicit integer maps preserve the full presentation
 before unused free summands are removed. Unbalanced components retain
 their necessary double-root relations, and larger residual words are
 transported without loss. These are finite search and supplied-witness
