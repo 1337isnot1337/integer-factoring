@@ -610,3 +610,18 @@ and does not improve the complete score or introduce a new obstruction.
 The focused target and documentation checks are the correction's local
 validation; earlier full-suite receipts apply only to their exact sources.
 No new Lean or independent mathematical review is claimed.
+
+## Thirteen-letter historical target compatibility audit
+
+The original `M=2000` thirteen-letter point remains an exact witness for
+the box-only relaxation, but the newer second-jet and higher-word families
+each exclude it in 348 oriented checks. A size-five witness in both
+families is `1680456>1680000`. The
+[focused receipt](../evidence/q13-box-target-exclusion.json) retains every
+violation, successful checks of the other three newer cofactor families,
+the original box/adjugate pass and source hashes. The profile file and its
+original formal-rate proof are preserved. Its status is corrected in the
+note, index and README; no universal thirteen-letter exclusion follows.
+Focused replay and documentation checks validate this finite audit. The
+separate full run at `d159502` predates this addition. No new Lean or
+independent mathematical review is claimed.

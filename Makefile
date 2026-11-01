@@ -2286,6 +2286,10 @@ verify-higher-jet-words:
 verify-q12-integer-word-target:
 	python3 tools/check_q12_integer_word_target.py
 
+.PHONY: verify-q13-box-target-exclusion
+verify-q13-box-target-exclusion:
+	python3 tools/check_q13_box_target_exclusion.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

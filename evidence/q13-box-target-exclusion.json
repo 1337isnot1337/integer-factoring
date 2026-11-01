@@ -1,0 +1,6312 @@
+{
+  "scope": "The recorded q13 box-relaxation profile is excluded by newer jet caps; the q13 criterion itself remains open.",
+  "alphabet": 13,
+  "degree": 2000,
+  "original_box_and_adjugate_checks": "pass",
+  "input_sha256": "a6d9430e9e9c758983b0241a05801cd46ffdd7a3fba7f78852f5b3d3a4a2bcc7",
+  "families": {
+    "square": {
+      "checks": 1816,
+      "violated_checks": 0,
+      "minimum_slack": 523,
+      "violations": []
+    },
+    "second_jet": {
+      "checks": 1816,
+      "violated_checks": 348,
+      "minimum_slack": -76060,
+      "violations": [
+        {
+          "physical_size": 13,
+          "size": 5,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "1680456",
+          "rhs": "1680000",
+          "slack": "-456"
+        },
+        {
+          "physical_size": 13,
+          "size": 5,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "1680456",
+          "rhs": "1680000",
+          "slack": "-456"
+        },
+        {
+          "physical_size": 13,
+          "size": 6,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "2016917",
+          "rhs": "2016000",
+          "slack": "-917"
+        },
+        {
+          "physical_size": 13,
+          "size": 6,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "2016917",
+          "rhs": "2016000",
+          "slack": "-917"
+        },
+        {
+          "physical_size": 13,
+          "size": 7,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "2353378",
+          "rhs": "2352000",
+          "slack": "-1378"
+        },
+        {
+          "physical_size": 13,
+          "size": 7,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "2353378",
+          "rhs": "2352000",
+          "slack": "-1378"
+        },
+        {
+          "physical_size": 13,
+          "size": 8,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "2689839",
+          "rhs": "2688000",
+          "slack": "-1839"
+        },
+        {
+          "physical_size": 13,
+          "size": 8,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "2689839",
+          "rhs": "2688000",
+          "slack": "-1839"
+        },
+        {
+          "physical_size": 13,
+          "size": 9,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "3026300",
+          "rhs": "3024000",
+          "slack": "-2300"
+        },
+        {
+          "physical_size": 13,
+          "size": 9,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "3026300",
+          "rhs": "3024000",
+          "slack": "-2300"
+        },
+        {
+          "physical_size": 13,
+          "size": 10,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "3362761",
+          "rhs": "3360000",
+          "slack": "-2761"
+        },
+        {
+          "physical_size": 13,
+          "size": 10,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "3362761",
+          "rhs": "3360000",
+          "slack": "-2761"
+        },
+        {
+          "physical_size": 13,
+          "size": 11,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "3699222",
+          "rhs": "3696000",
+          "slack": "-3222"
+        },
+        {
+          "physical_size": 13,
+          "size": 11,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "3699222",
+          "rhs": "3696000",
+          "slack": "-3222"
+        },
+        {
+          "physical_size": 13,
+          "size": 12,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "4035683",
+          "rhs": "4032000",
+          "slack": "-3683"
+        },
+        {
+          "physical_size": 13,
+          "size": 12,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "4035683",
+          "rhs": "4032000",
+          "slack": "-3683"
+        },
+        {
+          "physical_size": 13,
+          "size": 13,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "4372144",
+          "rhs": "4368000",
+          "slack": "-4144"
+        },
+        {
+          "physical_size": 13,
+          "size": 13,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "4372144",
+          "rhs": "4368000",
+          "slack": "-4144"
+        },
+        {
+          "physical_size": 13,
+          "size": 14,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "4708605",
+          "rhs": "4704000",
+          "slack": "-4605"
+        },
+        {
+          "physical_size": 13,
+          "size": 14,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "4708605",
+          "rhs": "4704000",
+          "slack": "-4605"
+        },
+        {
+          "physical_size": 13,
+          "size": 15,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "5045066",
+          "rhs": "5040000",
+          "slack": "-5066"
+        },
+        {
+          "physical_size": 13,
+          "size": 15,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "5045066",
+          "rhs": "5040000",
+          "slack": "-5066"
+        },
+        {
+          "physical_size": 13,
+          "size": 16,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "5381527",
+          "rhs": "5376000",
+          "slack": "-5527"
+        },
+        {
+          "physical_size": 13,
+          "size": 16,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "5381527",
+          "rhs": "5376000",
+          "slack": "-5527"
+        },
+        {
+          "physical_size": 13,
+          "size": 17,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "5717988",
+          "rhs": "5712000",
+          "slack": "-5988"
+        },
+        {
+          "physical_size": 13,
+          "size": 17,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "5717988",
+          "rhs": "5712000",
+          "slack": "-5988"
+        },
+        {
+          "physical_size": 13,
+          "size": 18,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "6054449",
+          "rhs": "6048000",
+          "slack": "-6449"
+        },
+        {
+          "physical_size": 13,
+          "size": 18,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "6054449",
+          "rhs": "6048000",
+          "slack": "-6449"
+        },
+        {
+          "physical_size": 13,
+          "size": 19,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "6390910",
+          "rhs": "6384000",
+          "slack": "-6910"
+        },
+        {
+          "physical_size": 13,
+          "size": 19,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "6390910",
+          "rhs": "6384000",
+          "slack": "-6910"
+        },
+        {
+          "physical_size": 13,
+          "size": 20,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "6727371",
+          "rhs": "6720000",
+          "slack": "-7371"
+        },
+        {
+          "physical_size": 13,
+          "size": 20,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "6727371",
+          "rhs": "6720000",
+          "slack": "-7371"
+        },
+        {
+          "physical_size": 13,
+          "size": 21,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "7063832",
+          "rhs": "7056000",
+          "slack": "-7832"
+        },
+        {
+          "physical_size": 13,
+          "size": 21,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "7063832",
+          "rhs": "7056000",
+          "slack": "-7832"
+        },
+        {
+          "physical_size": 13,
+          "size": 22,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "7400293",
+          "rhs": "7392000",
+          "slack": "-8293"
+        },
+        {
+          "physical_size": 13,
+          "size": 22,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "7400293",
+          "rhs": "7392000",
+          "slack": "-8293"
+        },
+        {
+          "physical_size": 13,
+          "size": 23,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "7736754",
+          "rhs": "7728000",
+          "slack": "-8754"
+        },
+        {
+          "physical_size": 13,
+          "size": 23,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "7736754",
+          "rhs": "7728000",
+          "slack": "-8754"
+        },
+        {
+          "physical_size": 13,
+          "size": 24,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "8073215",
+          "rhs": "8064000",
+          "slack": "-9215"
+        },
+        {
+          "physical_size": 13,
+          "size": 24,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "8073215",
+          "rhs": "8064000",
+          "slack": "-9215"
+        },
+        {
+          "physical_size": 13,
+          "size": 25,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "8409676",
+          "rhs": "8400000",
+          "slack": "-9676"
+        },
+        {
+          "physical_size": 13,
+          "size": 25,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "8409676",
+          "rhs": "8400000",
+          "slack": "-9676"
+        },
+        {
+          "physical_size": 13,
+          "size": 26,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "8746137",
+          "rhs": "8736000",
+          "slack": "-10137"
+        },
+        {
+          "physical_size": 13,
+          "size": 26,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "8746137",
+          "rhs": "8736000",
+          "slack": "-10137"
+        },
+        {
+          "physical_size": 13,
+          "size": 27,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "9082598",
+          "rhs": "9072000",
+          "slack": "-10598"
+        },
+        {
+          "physical_size": 13,
+          "size": 27,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "9082598",
+          "rhs": "9072000",
+          "slack": "-10598"
+        },
+        {
+          "physical_size": 13,
+          "size": 28,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "9419059",
+          "rhs": "9408000",
+          "slack": "-11059"
+        },
+        {
+          "physical_size": 13,
+          "size": 28,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "9419059",
+          "rhs": "9408000",
+          "slack": "-11059"
+        },
+        {
+          "physical_size": 13,
+          "size": 29,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "9755520",
+          "rhs": "9744000",
+          "slack": "-11520"
+        },
+        {
+          "physical_size": 13,
+          "size": 29,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "9755520",
+          "rhs": "9744000",
+          "slack": "-11520"
+        },
+        {
+          "physical_size": 13,
+          "size": 30,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "10091981",
+          "rhs": "10080000",
+          "slack": "-11981"
+        },
+        {
+          "physical_size": 13,
+          "size": 30,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "10091981",
+          "rhs": "10080000",
+          "slack": "-11981"
+        },
+        {
+          "physical_size": 13,
+          "size": 31,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "10428442",
+          "rhs": "10416000",
+          "slack": "-12442"
+        },
+        {
+          "physical_size": 13,
+          "size": 31,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "10428442",
+          "rhs": "10416000",
+          "slack": "-12442"
+        },
+        {
+          "physical_size": 13,
+          "size": 32,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "10764903",
+          "rhs": "10752000",
+          "slack": "-12903"
+        },
+        {
+          "physical_size": 13,
+          "size": 32,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "10764903",
+          "rhs": "10752000",
+          "slack": "-12903"
+        },
+        {
+          "physical_size": 13,
+          "size": 33,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "11101364",
+          "rhs": "11088000",
+          "slack": "-13364"
+        },
+        {
+          "physical_size": 13,
+          "size": 33,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "11101364",
+          "rhs": "11088000",
+          "slack": "-13364"
+        },
+        {
+          "physical_size": 13,
+          "size": 34,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "11437825",
+          "rhs": "11424000",
+          "slack": "-13825"
+        },
+        {
+          "physical_size": 13,
+          "size": 34,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "11437825",
+          "rhs": "11424000",
+          "slack": "-13825"
+        },
+        {
+          "physical_size": 13,
+          "size": 35,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "11774286",
+          "rhs": "11760000",
+          "slack": "-14286"
+        },
+        {
+          "physical_size": 13,
+          "size": 35,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "11774286",
+          "rhs": "11760000",
+          "slack": "-14286"
+        },
+        {
+          "physical_size": 13,
+          "size": 36,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "12110747",
+          "rhs": "12096000",
+          "slack": "-14747"
+        },
+        {
+          "physical_size": 13,
+          "size": 36,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "12110747",
+          "rhs": "12096000",
+          "slack": "-14747"
+        },
+        {
+          "physical_size": 13,
+          "size": 37,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "12447208",
+          "rhs": "12432000",
+          "slack": "-15208"
+        },
+        {
+          "physical_size": 13,
+          "size": 37,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "12447208",
+          "rhs": "12432000",
+          "slack": "-15208"
+        },
+        {
+          "physical_size": 13,
+          "size": 38,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "12783669",
+          "rhs": "12768000",
+          "slack": "-15669"
+        },
+        {
+          "physical_size": 13,
+          "size": 38,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "12783669",
+          "rhs": "12768000",
+          "slack": "-15669"
+        },
+        {
+          "physical_size": 13,
+          "size": 39,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "13120130",
+          "rhs": "13104000",
+          "slack": "-16130"
+        },
+        {
+          "physical_size": 13,
+          "size": 39,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "13120130",
+          "rhs": "13104000",
+          "slack": "-16130"
+        },
+        {
+          "physical_size": 13,
+          "size": 40,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "13456591",
+          "rhs": "13440000",
+          "slack": "-16591"
+        },
+        {
+          "physical_size": 13,
+          "size": 40,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "13456591",
+          "rhs": "13440000",
+          "slack": "-16591"
+        },
+        {
+          "physical_size": 13,
+          "size": 41,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "13793052",
+          "rhs": "13776000",
+          "slack": "-17052"
+        },
+        {
+          "physical_size": 13,
+          "size": 41,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "13793052",
+          "rhs": "13776000",
+          "slack": "-17052"
+        },
+        {
+          "physical_size": 13,
+          "size": 42,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "14129513",
+          "rhs": "14112000",
+          "slack": "-17513"
+        },
+        {
+          "physical_size": 13,
+          "size": 42,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "14129513",
+          "rhs": "14112000",
+          "slack": "-17513"
+        },
+        {
+          "physical_size": 13,
+          "size": 43,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "14465974",
+          "rhs": "14448000",
+          "slack": "-17974"
+        },
+        {
+          "physical_size": 13,
+          "size": 43,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "14465974",
+          "rhs": "14448000",
+          "slack": "-17974"
+        },
+        {
+          "physical_size": 13,
+          "size": 44,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "14802435",
+          "rhs": "14784000",
+          "slack": "-18435"
+        },
+        {
+          "physical_size": 13,
+          "size": 44,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "14802435",
+          "rhs": "14784000",
+          "slack": "-18435"
+        },
+        {
+          "physical_size": 13,
+          "size": 45,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "15138896",
+          "rhs": "15120000",
+          "slack": "-18896"
+        },
+        {
+          "physical_size": 13,
+          "size": 45,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "15138896",
+          "rhs": "15120000",
+          "slack": "-18896"
+        },
+        {
+          "physical_size": 13,
+          "size": 46,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "15475357",
+          "rhs": "15456000",
+          "slack": "-19357"
+        },
+        {
+          "physical_size": 13,
+          "size": 46,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "15475357",
+          "rhs": "15456000",
+          "slack": "-19357"
+        },
+        {
+          "physical_size": 13,
+          "size": 47,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "15811818",
+          "rhs": "15792000",
+          "slack": "-19818"
+        },
+        {
+          "physical_size": 13,
+          "size": 47,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "15811818",
+          "rhs": "15792000",
+          "slack": "-19818"
+        },
+        {
+          "physical_size": 13,
+          "size": 48,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "16148279",
+          "rhs": "16128000",
+          "slack": "-20279"
+        },
+        {
+          "physical_size": 13,
+          "size": 48,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "16148279",
+          "rhs": "16128000",
+          "slack": "-20279"
+        },
+        {
+          "physical_size": 13,
+          "size": 49,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "16484740",
+          "rhs": "16464000",
+          "slack": "-20740"
+        },
+        {
+          "physical_size": 13,
+          "size": 49,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "16484740",
+          "rhs": "16464000",
+          "slack": "-20740"
+        },
+        {
+          "physical_size": 13,
+          "size": 50,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "16821201",
+          "rhs": "16800000",
+          "slack": "-21201"
+        },
+        {
+          "physical_size": 13,
+          "size": 50,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "16821201",
+          "rhs": "16800000",
+          "slack": "-21201"
+        },
+        {
+          "physical_size": 13,
+          "size": 51,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "17157662",
+          "rhs": "17136000",
+          "slack": "-21662"
+        },
+        {
+          "physical_size": 13,
+          "size": 51,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "17157662",
+          "rhs": "17136000",
+          "slack": "-21662"
+        },
+        {
+          "physical_size": 13,
+          "size": 52,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "17494123",
+          "rhs": "17472000",
+          "slack": "-22123"
+        },
+        {
+          "physical_size": 13,
+          "size": 52,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "17494123",
+          "rhs": "17472000",
+          "slack": "-22123"
+        },
+        {
+          "physical_size": 13,
+          "size": 53,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "17830584",
+          "rhs": "17808000",
+          "slack": "-22584"
+        },
+        {
+          "physical_size": 13,
+          "size": 53,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "17830584",
+          "rhs": "17808000",
+          "slack": "-22584"
+        },
+        {
+          "physical_size": 13,
+          "size": 54,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "18167045",
+          "rhs": "18144000",
+          "slack": "-23045"
+        },
+        {
+          "physical_size": 13,
+          "size": 54,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "18167045",
+          "rhs": "18144000",
+          "slack": "-23045"
+        },
+        {
+          "physical_size": 13,
+          "size": 55,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "18503506",
+          "rhs": "18480000",
+          "slack": "-23506"
+        },
+        {
+          "physical_size": 13,
+          "size": 55,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "18503506",
+          "rhs": "18480000",
+          "slack": "-23506"
+        },
+        {
+          "physical_size": 13,
+          "size": 56,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "18839967",
+          "rhs": "18816000",
+          "slack": "-23967"
+        },
+        {
+          "physical_size": 13,
+          "size": 56,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "18839967",
+          "rhs": "18816000",
+          "slack": "-23967"
+        },
+        {
+          "physical_size": 13,
+          "size": 57,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "19176428",
+          "rhs": "19152000",
+          "slack": "-24428"
+        },
+        {
+          "physical_size": 13,
+          "size": 57,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "19176428",
+          "rhs": "19152000",
+          "slack": "-24428"
+        },
+        {
+          "physical_size": 13,
+          "size": 58,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "19512889",
+          "rhs": "19488000",
+          "slack": "-24889"
+        },
+        {
+          "physical_size": 13,
+          "size": 58,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "19512889",
+          "rhs": "19488000",
+          "slack": "-24889"
+        },
+        {
+          "physical_size": 13,
+          "size": 59,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "19849350",
+          "rhs": "19824000",
+          "slack": "-25350"
+        },
+        {
+          "physical_size": 13,
+          "size": 59,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "19849350",
+          "rhs": "19824000",
+          "slack": "-25350"
+        },
+        {
+          "physical_size": 13,
+          "size": 60,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "20185811",
+          "rhs": "20160000",
+          "slack": "-25811"
+        },
+        {
+          "physical_size": 13,
+          "size": 60,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "20185811",
+          "rhs": "20160000",
+          "slack": "-25811"
+        },
+        {
+          "physical_size": 13,
+          "size": 61,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "20522272",
+          "rhs": "20496000",
+          "slack": "-26272"
+        },
+        {
+          "physical_size": 13,
+          "size": 61,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "20522272",
+          "rhs": "20496000",
+          "slack": "-26272"
+        },
+        {
+          "physical_size": 13,
+          "size": 62,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "20858733",
+          "rhs": "20832000",
+          "slack": "-26733"
+        },
+        {
+          "physical_size": 13,
+          "size": 62,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "20858733",
+          "rhs": "20832000",
+          "slack": "-26733"
+        },
+        {
+          "physical_size": 13,
+          "size": 63,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "21195194",
+          "rhs": "21168000",
+          "slack": "-27194"
+        },
+        {
+          "physical_size": 13,
+          "size": 63,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "21195194",
+          "rhs": "21168000",
+          "slack": "-27194"
+        },
+        {
+          "physical_size": 13,
+          "size": 64,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "21531655",
+          "rhs": "21504000",
+          "slack": "-27655"
+        },
+        {
+          "physical_size": 13,
+          "size": 64,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "21531655",
+          "rhs": "21504000",
+          "slack": "-27655"
+        },
+        {
+          "physical_size": 13,
+          "size": 65,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "21868116",
+          "rhs": "21840000",
+          "slack": "-28116"
+        },
+        {
+          "physical_size": 13,
+          "size": 65,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "21868116",
+          "rhs": "21840000",
+          "slack": "-28116"
+        },
+        {
+          "physical_size": 13,
+          "size": 66,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "22204577",
+          "rhs": "22176000",
+          "slack": "-28577"
+        },
+        {
+          "physical_size": 13,
+          "size": 66,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "22204577",
+          "rhs": "22176000",
+          "slack": "-28577"
+        },
+        {
+          "physical_size": 13,
+          "size": 67,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "22541038",
+          "rhs": "22512000",
+          "slack": "-29038"
+        },
+        {
+          "physical_size": 13,
+          "size": 67,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "22541038",
+          "rhs": "22512000",
+          "slack": "-29038"
+        },
+        {
+          "physical_size": 13,
+          "size": 68,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "22877499",
+          "rhs": "22848000",
+          "slack": "-29499"
+        },
+        {
+          "physical_size": 13,
+          "size": 68,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "22877499",
+          "rhs": "22848000",
+          "slack": "-29499"
+        },
+        {
+          "physical_size": 13,
+          "size": 69,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "23213960",
+          "rhs": "23184000",
+          "slack": "-29960"
+        },
+        {
+          "physical_size": 13,
+          "size": 69,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "23213960",
+          "rhs": "23184000",
+          "slack": "-29960"
+        },
+        {
+          "physical_size": 13,
+          "size": 70,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "23550421",
+          "rhs": "23520000",
+          "slack": "-30421"
+        },
+        {
+          "physical_size": 13,
+          "size": 70,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "23550421",
+          "rhs": "23520000",
+          "slack": "-30421"
+        },
+        {
+          "physical_size": 13,
+          "size": 71,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "23886882",
+          "rhs": "23856000",
+          "slack": "-30882"
+        },
+        {
+          "physical_size": 13,
+          "size": 71,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "23886882",
+          "rhs": "23856000",
+          "slack": "-30882"
+        },
+        {
+          "physical_size": 13,
+          "size": 72,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "24223343",
+          "rhs": "24192000",
+          "slack": "-31343"
+        },
+        {
+          "physical_size": 13,
+          "size": 72,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "24223343",
+          "rhs": "24192000",
+          "slack": "-31343"
+        },
+        {
+          "physical_size": 13,
+          "size": 73,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "24559804",
+          "rhs": "24528000",
+          "slack": "-31804"
+        },
+        {
+          "physical_size": 13,
+          "size": 73,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "24559804",
+          "rhs": "24528000",
+          "slack": "-31804"
+        },
+        {
+          "physical_size": 13,
+          "size": 74,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "24896265",
+          "rhs": "24864000",
+          "slack": "-32265"
+        },
+        {
+          "physical_size": 13,
+          "size": 74,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "24896265",
+          "rhs": "24864000",
+          "slack": "-32265"
+        },
+        {
+          "physical_size": 13,
+          "size": 75,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "25232726",
+          "rhs": "25200000",
+          "slack": "-32726"
+        },
+        {
+          "physical_size": 13,
+          "size": 75,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "25232726",
+          "rhs": "25200000",
+          "slack": "-32726"
+        },
+        {
+          "physical_size": 13,
+          "size": 76,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "25569187",
+          "rhs": "25536000",
+          "slack": "-33187"
+        },
+        {
+          "physical_size": 13,
+          "size": 76,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "25569187",
+          "rhs": "25536000",
+          "slack": "-33187"
+        },
+        {
+          "physical_size": 13,
+          "size": 77,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "25905648",
+          "rhs": "25872000",
+          "slack": "-33648"
+        },
+        {
+          "physical_size": 13,
+          "size": 77,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "25905648",
+          "rhs": "25872000",
+          "slack": "-33648"
+        },
+        {
+          "physical_size": 13,
+          "size": 78,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "26242109",
+          "rhs": "26208000",
+          "slack": "-34109"
+        },
+        {
+          "physical_size": 13,
+          "size": 78,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "26242109",
+          "rhs": "26208000",
+          "slack": "-34109"
+        },
+        {
+          "physical_size": 13,
+          "size": 79,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "26578570",
+          "rhs": "26544000",
+          "slack": "-34570"
+        },
+        {
+          "physical_size": 13,
+          "size": 79,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "26578570",
+          "rhs": "26544000",
+          "slack": "-34570"
+        },
+        {
+          "physical_size": 13,
+          "size": 80,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "26915031",
+          "rhs": "26880000",
+          "slack": "-35031"
+        },
+        {
+          "physical_size": 13,
+          "size": 80,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "26915031",
+          "rhs": "26880000",
+          "slack": "-35031"
+        },
+        {
+          "physical_size": 13,
+          "size": 81,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "27251492",
+          "rhs": "27216000",
+          "slack": "-35492"
+        },
+        {
+          "physical_size": 13,
+          "size": 81,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "27251492",
+          "rhs": "27216000",
+          "slack": "-35492"
+        },
+        {
+          "physical_size": 13,
+          "size": 82,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "27587953",
+          "rhs": "27552000",
+          "slack": "-35953"
+        },
+        {
+          "physical_size": 13,
+          "size": 82,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "27587953",
+          "rhs": "27552000",
+          "slack": "-35953"
+        },
+        {
+          "physical_size": 13,
+          "size": 83,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "27924414",
+          "rhs": "27888000",
+          "slack": "-36414"
+        },
+        {
+          "physical_size": 13,
+          "size": 83,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "27924414",
+          "rhs": "27888000",
+          "slack": "-36414"
+        },
+        {
+          "physical_size": 13,
+          "size": 84,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "28260875",
+          "rhs": "28224000",
+          "slack": "-36875"
+        },
+        {
+          "physical_size": 13,
+          "size": 84,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "28260875",
+          "rhs": "28224000",
+          "slack": "-36875"
+        },
+        {
+          "physical_size": 13,
+          "size": 85,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "28597336",
+          "rhs": "28560000",
+          "slack": "-37336"
+        },
+        {
+          "physical_size": 13,
+          "size": 85,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "28597336",
+          "rhs": "28560000",
+          "slack": "-37336"
+        },
+        {
+          "physical_size": 13,
+          "size": 86,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "28933797",
+          "rhs": "28896000",
+          "slack": "-37797"
+        },
+        {
+          "physical_size": 13,
+          "size": 86,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "28933797",
+          "rhs": "28896000",
+          "slack": "-37797"
+        },
+        {
+          "physical_size": 13,
+          "size": 87,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "29270258",
+          "rhs": "29232000",
+          "slack": "-38258"
+        },
+        {
+          "physical_size": 13,
+          "size": 87,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "29270258",
+          "rhs": "29232000",
+          "slack": "-38258"
+        },
+        {
+          "physical_size": 13,
+          "size": 88,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "29606719",
+          "rhs": "29568000",
+          "slack": "-38719"
+        },
+        {
+          "physical_size": 13,
+          "size": 88,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "29606719",
+          "rhs": "29568000",
+          "slack": "-38719"
+        },
+        {
+          "physical_size": 13,
+          "size": 89,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "29943180",
+          "rhs": "29904000",
+          "slack": "-39180"
+        },
+        {
+          "physical_size": 13,
+          "size": 89,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "29943180",
+          "rhs": "29904000",
+          "slack": "-39180"
+        },
+        {
+          "physical_size": 13,
+          "size": 90,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "30279641",
+          "rhs": "30240000",
+          "slack": "-39641"
+        },
+        {
+          "physical_size": 13,
+          "size": 90,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "30279641",
+          "rhs": "30240000",
+          "slack": "-39641"
+        },
+        {
+          "physical_size": 13,
+          "size": 91,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "30616102",
+          "rhs": "30576000",
+          "slack": "-40102"
+        },
+        {
+          "physical_size": 13,
+          "size": 91,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "30616102",
+          "rhs": "30576000",
+          "slack": "-40102"
+        },
+        {
+          "physical_size": 13,
+          "size": 92,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "30952563",
+          "rhs": "30912000",
+          "slack": "-40563"
+        },
+        {
+          "physical_size": 13,
+          "size": 92,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "30952563",
+          "rhs": "30912000",
+          "slack": "-40563"
+        },
+        {
+          "physical_size": 13,
+          "size": 93,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "31289024",
+          "rhs": "31248000",
+          "slack": "-41024"
+        },
+        {
+          "physical_size": 13,
+          "size": 93,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "31289024",
+          "rhs": "31248000",
+          "slack": "-41024"
+        },
+        {
+          "physical_size": 13,
+          "size": 94,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "31625485",
+          "rhs": "31584000",
+          "slack": "-41485"
+        },
+        {
+          "physical_size": 13,
+          "size": 94,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "31625485",
+          "rhs": "31584000",
+          "slack": "-41485"
+        },
+        {
+          "physical_size": 13,
+          "size": 95,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "31961946",
+          "rhs": "31920000",
+          "slack": "-41946"
+        },
+        {
+          "physical_size": 13,
+          "size": 95,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "31961946",
+          "rhs": "31920000",
+          "slack": "-41946"
+        },
+        {
+          "physical_size": 13,
+          "size": 96,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "32298407",
+          "rhs": "32256000",
+          "slack": "-42407"
+        },
+        {
+          "physical_size": 13,
+          "size": 96,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "32298407",
+          "rhs": "32256000",
+          "slack": "-42407"
+        },
+        {
+          "physical_size": 13,
+          "size": 97,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "32634868",
+          "rhs": "32592000",
+          "slack": "-42868"
+        },
+        {
+          "physical_size": 13,
+          "size": 97,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "32634868",
+          "rhs": "32592000",
+          "slack": "-42868"
+        },
+        {
+          "physical_size": 13,
+          "size": 98,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "32971329",
+          "rhs": "32928000",
+          "slack": "-43329"
+        },
+        {
+          "physical_size": 13,
+          "size": 98,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "32971329",
+          "rhs": "32928000",
+          "slack": "-43329"
+        },
+        {
+          "physical_size": 13,
+          "size": 99,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "33307790",
+          "rhs": "33264000",
+          "slack": "-43790"
+        },
+        {
+          "physical_size": 13,
+          "size": 99,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "33307790",
+          "rhs": "33264000",
+          "slack": "-43790"
+        },
+        {
+          "physical_size": 13,
+          "size": 100,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "33644251",
+          "rhs": "33600000",
+          "slack": "-44251"
+        },
+        {
+          "physical_size": 13,
+          "size": 100,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "33644251",
+          "rhs": "33600000",
+          "slack": "-44251"
+        },
+        {
+          "physical_size": 13,
+          "size": 101,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "33980712",
+          "rhs": "33936000",
+          "slack": "-44712"
+        },
+        {
+          "physical_size": 13,
+          "size": 101,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "33980712",
+          "rhs": "33936000",
+          "slack": "-44712"
+        },
+        {
+          "physical_size": 13,
+          "size": 102,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "34317173",
+          "rhs": "34272000",
+          "slack": "-45173"
+        },
+        {
+          "physical_size": 13,
+          "size": 102,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "34317173",
+          "rhs": "34272000",
+          "slack": "-45173"
+        },
+        {
+          "physical_size": 13,
+          "size": 103,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "34653634",
+          "rhs": "34608000",
+          "slack": "-45634"
+        },
+        {
+          "physical_size": 13,
+          "size": 103,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "34653634",
+          "rhs": "34608000",
+          "slack": "-45634"
+        },
+        {
+          "physical_size": 13,
+          "size": 104,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "34990095",
+          "rhs": "34944000",
+          "slack": "-46095"
+        },
+        {
+          "physical_size": 13,
+          "size": 104,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "34990095",
+          "rhs": "34944000",
+          "slack": "-46095"
+        },
+        {
+          "physical_size": 13,
+          "size": 105,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "35326556",
+          "rhs": "35280000",
+          "slack": "-46556"
+        },
+        {
+          "physical_size": 13,
+          "size": 105,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "35326556",
+          "rhs": "35280000",
+          "slack": "-46556"
+        },
+        {
+          "physical_size": 13,
+          "size": 106,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "35663017",
+          "rhs": "35616000",
+          "slack": "-47017"
+        },
+        {
+          "physical_size": 13,
+          "size": 106,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "35663017",
+          "rhs": "35616000",
+          "slack": "-47017"
+        },
+        {
+          "physical_size": 13,
+          "size": 107,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "35999478",
+          "rhs": "35952000",
+          "slack": "-47478"
+        },
+        {
+          "physical_size": 13,
+          "size": 107,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "35999478",
+          "rhs": "35952000",
+          "slack": "-47478"
+        },
+        {
+          "physical_size": 13,
+          "size": 108,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "36335939",
+          "rhs": "36288000",
+          "slack": "-47939"
+        },
+        {
+          "physical_size": 13,
+          "size": 108,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "36335939",
+          "rhs": "36288000",
+          "slack": "-47939"
+        },
+        {
+          "physical_size": 13,
+          "size": 109,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "36672400",
+          "rhs": "36624000",
+          "slack": "-48400"
+        },
+        {
+          "physical_size": 13,
+          "size": 109,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "36672400",
+          "rhs": "36624000",
+          "slack": "-48400"
+        },
+        {
+          "physical_size": 13,
+          "size": 110,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "37008861",
+          "rhs": "36960000",
+          "slack": "-48861"
+        },
+        {
+          "physical_size": 13,
+          "size": 110,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "37008861",
+          "rhs": "36960000",
+          "slack": "-48861"
+        },
+        {
+          "physical_size": 13,
+          "size": 111,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "37345322",
+          "rhs": "37296000",
+          "slack": "-49322"
+        },
+        {
+          "physical_size": 13,
+          "size": 111,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "37345322",
+          "rhs": "37296000",
+          "slack": "-49322"
+        },
+        {
+          "physical_size": 13,
+          "size": 112,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "37681783",
+          "rhs": "37632000",
+          "slack": "-49783"
+        },
+        {
+          "physical_size": 13,
+          "size": 112,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "37681783",
+          "rhs": "37632000",
+          "slack": "-49783"
+        },
+        {
+          "physical_size": 13,
+          "size": 113,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "38018244",
+          "rhs": "37968000",
+          "slack": "-50244"
+        },
+        {
+          "physical_size": 13,
+          "size": 113,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "38018244",
+          "rhs": "37968000",
+          "slack": "-50244"
+        },
+        {
+          "physical_size": 13,
+          "size": 114,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "38354705",
+          "rhs": "38304000",
+          "slack": "-50705"
+        },
+        {
+          "physical_size": 13,
+          "size": 114,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "38354705",
+          "rhs": "38304000",
+          "slack": "-50705"
+        },
+        {
+          "physical_size": 13,
+          "size": 115,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "38691166",
+          "rhs": "38640000",
+          "slack": "-51166"
+        },
+        {
+          "physical_size": 13,
+          "size": 115,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "38691166",
+          "rhs": "38640000",
+          "slack": "-51166"
+        },
+        {
+          "physical_size": 13,
+          "size": 116,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "39027627",
+          "rhs": "38976000",
+          "slack": "-51627"
+        },
+        {
+          "physical_size": 13,
+          "size": 116,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "39027627",
+          "rhs": "38976000",
+          "slack": "-51627"
+        },
+        {
+          "physical_size": 13,
+          "size": 117,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "39364088",
+          "rhs": "39312000",
+          "slack": "-52088"
+        },
+        {
+          "physical_size": 13,
+          "size": 117,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "39364088",
+          "rhs": "39312000",
+          "slack": "-52088"
+        },
+        {
+          "physical_size": 13,
+          "size": 118,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "39700549",
+          "rhs": "39648000",
+          "slack": "-52549"
+        },
+        {
+          "physical_size": 13,
+          "size": 118,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "39700549",
+          "rhs": "39648000",
+          "slack": "-52549"
+        },
+        {
+          "physical_size": 13,
+          "size": 119,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "40037010",
+          "rhs": "39984000",
+          "slack": "-53010"
+        },
+        {
+          "physical_size": 13,
+          "size": 119,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "40037010",
+          "rhs": "39984000",
+          "slack": "-53010"
+        },
+        {
+          "physical_size": 13,
+          "size": 120,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "40373471",
+          "rhs": "40320000",
+          "slack": "-53471"
+        },
+        {
+          "physical_size": 13,
+          "size": 120,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "40373471",
+          "rhs": "40320000",
+          "slack": "-53471"
+        },
+        {
+          "physical_size": 13,
+          "size": 121,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "40709932",
+          "rhs": "40656000",
+          "slack": "-53932"
+        },
+        {
+          "physical_size": 13,
+          "size": 121,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "40709932",
+          "rhs": "40656000",
+          "slack": "-53932"
+        },
+        {
+          "physical_size": 13,
+          "size": 122,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "41046393",
+          "rhs": "40992000",
+          "slack": "-54393"
+        },
+        {
+          "physical_size": 13,
+          "size": 122,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "41046393",
+          "rhs": "40992000",
+          "slack": "-54393"
+        },
+        {
+          "physical_size": 13,
+          "size": 123,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "41382854",
+          "rhs": "41328000",
+          "slack": "-54854"
+        },
+        {
+          "physical_size": 13,
+          "size": 123,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "41382854",
+          "rhs": "41328000",
+          "slack": "-54854"
+        },
+        {
+          "physical_size": 13,
+          "size": 124,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "41719315",
+          "rhs": "41664000",
+          "slack": "-55315"
+        },
+        {
+          "physical_size": 13,
+          "size": 124,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "41719315",
+          "rhs": "41664000",
+          "slack": "-55315"
+        },
+        {
+          "physical_size": 13,
+          "size": 125,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "42055776",
+          "rhs": "42000000",
+          "slack": "-55776"
+        },
+        {
+          "physical_size": 13,
+          "size": 125,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "42055776",
+          "rhs": "42000000",
+          "slack": "-55776"
+        },
+        {
+          "physical_size": 13,
+          "size": 126,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "42392237",
+          "rhs": "42336000",
+          "slack": "-56237"
+        },
+        {
+          "physical_size": 13,
+          "size": 126,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "42392237",
+          "rhs": "42336000",
+          "slack": "-56237"
+        },
+        {
+          "physical_size": 13,
+          "size": 127,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "42728698",
+          "rhs": "42672000",
+          "slack": "-56698"
+        },
+        {
+          "physical_size": 13,
+          "size": 127,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "42728698",
+          "rhs": "42672000",
+          "slack": "-56698"
+        },
+        {
+          "physical_size": 13,
+          "size": 128,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "43065159",
+          "rhs": "43008000",
+          "slack": "-57159"
+        },
+        {
+          "physical_size": 13,
+          "size": 128,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "43065159",
+          "rhs": "43008000",
+          "slack": "-57159"
+        },
+        {
+          "physical_size": 13,
+          "size": 129,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "43401620",
+          "rhs": "43344000",
+          "slack": "-57620"
+        },
+        {
+          "physical_size": 13,
+          "size": 129,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "43401620",
+          "rhs": "43344000",
+          "slack": "-57620"
+        },
+        {
+          "physical_size": 13,
+          "size": 130,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "43738081",
+          "rhs": "43680000",
+          "slack": "-58081"
+        },
+        {
+          "physical_size": 13,
+          "size": 130,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "43738081",
+          "rhs": "43680000",
+          "slack": "-58081"
+        },
+        {
+          "physical_size": 13,
+          "size": 131,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "44074542",
+          "rhs": "44016000",
+          "slack": "-58542"
+        },
+        {
+          "physical_size": 13,
+          "size": 131,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "44074542",
+          "rhs": "44016000",
+          "slack": "-58542"
+        },
+        {
+          "physical_size": 13,
+          "size": 132,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "44411003",
+          "rhs": "44352000",
+          "slack": "-59003"
+        },
+        {
+          "physical_size": 13,
+          "size": 132,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "44411003",
+          "rhs": "44352000",
+          "slack": "-59003"
+        },
+        {
+          "physical_size": 13,
+          "size": 133,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "44747464",
+          "rhs": "44688000",
+          "slack": "-59464"
+        },
+        {
+          "physical_size": 13,
+          "size": 133,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "44747464",
+          "rhs": "44688000",
+          "slack": "-59464"
+        },
+        {
+          "physical_size": 13,
+          "size": 134,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "45083925",
+          "rhs": "45024000",
+          "slack": "-59925"
+        },
+        {
+          "physical_size": 13,
+          "size": 134,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "45083925",
+          "rhs": "45024000",
+          "slack": "-59925"
+        },
+        {
+          "physical_size": 13,
+          "size": 135,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "45420386",
+          "rhs": "45360000",
+          "slack": "-60386"
+        },
+        {
+          "physical_size": 13,
+          "size": 135,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "45420386",
+          "rhs": "45360000",
+          "slack": "-60386"
+        },
+        {
+          "physical_size": 13,
+          "size": 136,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "45756847",
+          "rhs": "45696000",
+          "slack": "-60847"
+        },
+        {
+          "physical_size": 13,
+          "size": 136,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "45756847",
+          "rhs": "45696000",
+          "slack": "-60847"
+        },
+        {
+          "physical_size": 13,
+          "size": 137,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "46093308",
+          "rhs": "46032000",
+          "slack": "-61308"
+        },
+        {
+          "physical_size": 13,
+          "size": 137,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "46093308",
+          "rhs": "46032000",
+          "slack": "-61308"
+        },
+        {
+          "physical_size": 13,
+          "size": 138,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "46429769",
+          "rhs": "46368000",
+          "slack": "-61769"
+        },
+        {
+          "physical_size": 13,
+          "size": 138,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "46429769",
+          "rhs": "46368000",
+          "slack": "-61769"
+        },
+        {
+          "physical_size": 13,
+          "size": 139,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "46766230",
+          "rhs": "46704000",
+          "slack": "-62230"
+        },
+        {
+          "physical_size": 13,
+          "size": 139,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "46766230",
+          "rhs": "46704000",
+          "slack": "-62230"
+        },
+        {
+          "physical_size": 13,
+          "size": 140,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "47102691",
+          "rhs": "47040000",
+          "slack": "-62691"
+        },
+        {
+          "physical_size": 13,
+          "size": 140,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "47102691",
+          "rhs": "47040000",
+          "slack": "-62691"
+        },
+        {
+          "physical_size": 13,
+          "size": 141,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "47439152",
+          "rhs": "47376000",
+          "slack": "-63152"
+        },
+        {
+          "physical_size": 13,
+          "size": 141,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "47439152",
+          "rhs": "47376000",
+          "slack": "-63152"
+        },
+        {
+          "physical_size": 13,
+          "size": 142,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "47775613",
+          "rhs": "47712000",
+          "slack": "-63613"
+        },
+        {
+          "physical_size": 13,
+          "size": 142,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "47775613",
+          "rhs": "47712000",
+          "slack": "-63613"
+        },
+        {
+          "physical_size": 13,
+          "size": 143,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "48112074",
+          "rhs": "48048000",
+          "slack": "-64074"
+        },
+        {
+          "physical_size": 13,
+          "size": 143,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "48112074",
+          "rhs": "48048000",
+          "slack": "-64074"
+        },
+        {
+          "physical_size": 13,
+          "size": 144,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "48448535",
+          "rhs": "48384000",
+          "slack": "-64535"
+        },
+        {
+          "physical_size": 13,
+          "size": 144,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "48448535",
+          "rhs": "48384000",
+          "slack": "-64535"
+        },
+        {
+          "physical_size": 13,
+          "size": 145,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "48784996",
+          "rhs": "48720000",
+          "slack": "-64996"
+        },
+        {
+          "physical_size": 13,
+          "size": 145,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "48784996",
+          "rhs": "48720000",
+          "slack": "-64996"
+        },
+        {
+          "physical_size": 13,
+          "size": 146,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "49121457",
+          "rhs": "49056000",
+          "slack": "-65457"
+        },
+        {
+          "physical_size": 13,
+          "size": 146,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "49121457",
+          "rhs": "49056000",
+          "slack": "-65457"
+        },
+        {
+          "physical_size": 13,
+          "size": 147,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "49457918",
+          "rhs": "49392000",
+          "slack": "-65918"
+        },
+        {
+          "physical_size": 13,
+          "size": 147,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "49457918",
+          "rhs": "49392000",
+          "slack": "-65918"
+        },
+        {
+          "physical_size": 13,
+          "size": 148,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "49794379",
+          "rhs": "49728000",
+          "slack": "-66379"
+        },
+        {
+          "physical_size": 13,
+          "size": 148,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "49794379",
+          "rhs": "49728000",
+          "slack": "-66379"
+        },
+        {
+          "physical_size": 13,
+          "size": 149,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "50130840",
+          "rhs": "50064000",
+          "slack": "-66840"
+        },
+        {
+          "physical_size": 13,
+          "size": 149,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "50130840",
+          "rhs": "50064000",
+          "slack": "-66840"
+        },
+        {
+          "physical_size": 13,
+          "size": 150,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "50467301",
+          "rhs": "50400000",
+          "slack": "-67301"
+        },
+        {
+          "physical_size": 13,
+          "size": 150,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "50467301",
+          "rhs": "50400000",
+          "slack": "-67301"
+        },
+        {
+          "physical_size": 13,
+          "size": 151,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "50803762",
+          "rhs": "50736000",
+          "slack": "-67762"
+        },
+        {
+          "physical_size": 13,
+          "size": 151,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "50803762",
+          "rhs": "50736000",
+          "slack": "-67762"
+        },
+        {
+          "physical_size": 13,
+          "size": 152,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "51140223",
+          "rhs": "51072000",
+          "slack": "-68223"
+        },
+        {
+          "physical_size": 13,
+          "size": 152,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "51140223",
+          "rhs": "51072000",
+          "slack": "-68223"
+        },
+        {
+          "physical_size": 13,
+          "size": 153,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "51476684",
+          "rhs": "51408000",
+          "slack": "-68684"
+        },
+        {
+          "physical_size": 13,
+          "size": 153,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "51476684",
+          "rhs": "51408000",
+          "slack": "-68684"
+        },
+        {
+          "physical_size": 13,
+          "size": 154,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "51813145",
+          "rhs": "51744000",
+          "slack": "-69145"
+        },
+        {
+          "physical_size": 13,
+          "size": 154,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "51813145",
+          "rhs": "51744000",
+          "slack": "-69145"
+        },
+        {
+          "physical_size": 13,
+          "size": 155,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "52149606",
+          "rhs": "52080000",
+          "slack": "-69606"
+        },
+        {
+          "physical_size": 13,
+          "size": 155,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "52149606",
+          "rhs": "52080000",
+          "slack": "-69606"
+        },
+        {
+          "physical_size": 13,
+          "size": 156,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "52486067",
+          "rhs": "52416000",
+          "slack": "-70067"
+        },
+        {
+          "physical_size": 13,
+          "size": 156,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "52486067",
+          "rhs": "52416000",
+          "slack": "-70067"
+        },
+        {
+          "physical_size": 13,
+          "size": 157,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "52822528",
+          "rhs": "52752000",
+          "slack": "-70528"
+        },
+        {
+          "physical_size": 13,
+          "size": 157,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "52822528",
+          "rhs": "52752000",
+          "slack": "-70528"
+        },
+        {
+          "physical_size": 13,
+          "size": 158,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "53158989",
+          "rhs": "53088000",
+          "slack": "-70989"
+        },
+        {
+          "physical_size": 13,
+          "size": 158,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "53158989",
+          "rhs": "53088000",
+          "slack": "-70989"
+        },
+        {
+          "physical_size": 13,
+          "size": 159,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "53495450",
+          "rhs": "53424000",
+          "slack": "-71450"
+        },
+        {
+          "physical_size": 13,
+          "size": 159,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "53495450",
+          "rhs": "53424000",
+          "slack": "-71450"
+        },
+        {
+          "physical_size": 13,
+          "size": 160,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "53831911",
+          "rhs": "53760000",
+          "slack": "-71911"
+        },
+        {
+          "physical_size": 13,
+          "size": 160,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "53831911",
+          "rhs": "53760000",
+          "slack": "-71911"
+        },
+        {
+          "physical_size": 13,
+          "size": 161,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "54168372",
+          "rhs": "54096000",
+          "slack": "-72372"
+        },
+        {
+          "physical_size": 13,
+          "size": 161,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "54168372",
+          "rhs": "54096000",
+          "slack": "-72372"
+        },
+        {
+          "physical_size": 13,
+          "size": 162,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "54504833",
+          "rhs": "54432000",
+          "slack": "-72833"
+        },
+        {
+          "physical_size": 13,
+          "size": 162,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "54504833",
+          "rhs": "54432000",
+          "slack": "-72833"
+        },
+        {
+          "physical_size": 13,
+          "size": 163,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "54841294",
+          "rhs": "54768000",
+          "slack": "-73294"
+        },
+        {
+          "physical_size": 13,
+          "size": 163,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "54841294",
+          "rhs": "54768000",
+          "slack": "-73294"
+        },
+        {
+          "physical_size": 13,
+          "size": 164,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "55177755",
+          "rhs": "55104000",
+          "slack": "-73755"
+        },
+        {
+          "physical_size": 13,
+          "size": 164,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "55177755",
+          "rhs": "55104000",
+          "slack": "-73755"
+        },
+        {
+          "physical_size": 13,
+          "size": 165,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "55514216",
+          "rhs": "55440000",
+          "slack": "-74216"
+        },
+        {
+          "physical_size": 13,
+          "size": 165,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "55514216",
+          "rhs": "55440000",
+          "slack": "-74216"
+        },
+        {
+          "physical_size": 13,
+          "size": 166,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "55850677",
+          "rhs": "55776000",
+          "slack": "-74677"
+        },
+        {
+          "physical_size": 13,
+          "size": 166,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "55850677",
+          "rhs": "55776000",
+          "slack": "-74677"
+        },
+        {
+          "physical_size": 13,
+          "size": 167,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "56187138",
+          "rhs": "56112000",
+          "slack": "-75138"
+        },
+        {
+          "physical_size": 13,
+          "size": 167,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "56187138",
+          "rhs": "56112000",
+          "slack": "-75138"
+        },
+        {
+          "physical_size": 13,
+          "size": 168,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "56523599",
+          "rhs": "56448000",
+          "slack": "-75599"
+        },
+        {
+          "physical_size": 13,
+          "size": 168,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "56523599",
+          "rhs": "56448000",
+          "slack": "-75599"
+        },
+        {
+          "physical_size": 13,
+          "size": 169,
+          "family": "hereditary second jet cell",
+          "orientation": 0,
+          "lhs": "56860060",
+          "rhs": "56784000",
+          "slack": "-76060"
+        },
+        {
+          "physical_size": 13,
+          "size": 169,
+          "family": "hereditary second jet cell",
+          "orientation": 1,
+          "lhs": "56860060",
+          "rhs": "56784000",
+          "slack": "-76060"
+        },
+        {
+          "physical_size": 13,
+          "size": 5,
+          "family": "hereditary second jet shared",
+          "orientation": 0,
+          "lhs": "1680456",
+          "rhs": "1680000",
+          "slack": "-456"
+        },
+        {
+          "physical_size": 13,
+          "size": 5,
+          "family": "hereditary second jet shared",
+          "orientation": 1,
+          "lhs": "1680456",
+          "rhs": "1680000",
+          "slack": "-456"
+        },
+        {
+          "physical_size": 13,
+          "size": 6,
+          "family": "hereditary second jet shared",
+          "orientation": 0,
+          "lhs": "2016917",
+          "rhs": "2016000",
+          "slack": "-917"
+        },
+        {
+          "physical_size": 13,
+          "size": 6,
+          "family": "hereditary second jet shared",
+          "orientation": 1,
+          "lhs": "2016917",
+          "rhs": "2016000",
+          "slack": "-917"
+        },
+        {
+          "physical_size": 13,
+          "size": 7,
+          "family": "hereditary second jet shared",
+          "orientation": 0,
+          "lhs": "2353378",
+          "rhs": "2352000",
+          "slack": "-1378"
+        },
+        {
+          "physical_size": 13,
+          "size": 7,
+          "family": "hereditary second jet shared",
+          "orientation": 1,
+          "lhs": "2353378",
+          "rhs": "2352000",
+          "slack": "-1378"
+        },
+        {
+          "physical_size": 13,
+          "size": 8,
+          "family": "hereditary second jet shared",
+          "orientation": 0,
+          "lhs": "2689839",
+          "rhs": "2688000",
+          "slack": "-1839"
+        },
+        {
+          "physical_size": 13,
+          "size": 8,
+          "family": "hereditary second jet shared",
+          "orientation": 1,
+          "lhs": "2689839",
+          "rhs": "2688000",
+          "slack": "-1839"
+        },
+        {
+          "physical_size": 13,
+          "size": 9,
+          "family": "hereditary second jet shared",
+          "orientation": 0,
+          "lhs": "3026300",
+          "rhs": "3024000",
+          "slack": "-2300"
+        },
+        {
+          "physical_size": 13,
+          "size": 9,
+          "family": "hereditary second jet shared",
+          "orientation": 1,
+          "lhs": "3026300",
+          "rhs": "3024000",
+          "slack": "-2300"
+        },
+        {
+          "physical_size": 13,
+          "size": 10,
+          "family": "hereditary second jet shared",
+          "orientation": 0,
+          "lhs": "3362761",
+          "rhs": "3360000",
+          "slack": "-2761"
+        },
+        {
+          "physical_size": 13,
+          "size": 10,
+          "family": "hereditary second jet shared",
+          "orientation": 1,
+          "lhs": "3362761",
+          "rhs": "3360000",
+          "slack": "-2761"
+        },
+        {
+          "physical_size": 13,
+          "size": 11,
+          "family": "hereditary second jet shared",
+          "orientation": 0,
+          "lhs": "3699222",
+          "rhs": "3696000",
+          "slack": "-3222"
+        },
+        {
+          "physical_size": 13,
+          "size": 11,
+          "family": "hereditary second jet shared",
+          "orientation": 1,
+          "lhs": "3699222",
+          "rhs": "3696000",
+          "slack": "-3222"
+        },
+        {
+          "physical_size": 13,
+          "size": 12,
+          "family": "hereditary second jet shared",
+          "orientation": 0,
+          "lhs": "4035683",
+          "rhs": "4032000",
+          "slack": "-3683"
+        },
+        {
+          "physical_size": 13,
+          "size": 12,
+          "family": "hereditary second jet shared",
+          "orientation": 1,
+          "lhs": "4035683",
+          "rhs": "4032000",
+          "slack": "-3683"
+        },
+        {
+          "physical_size": 13,
+          "size": 13,
+          "family": "hereditary second jet shared",
+          "orientation": 0,
+          "lhs": "4372144",
+          "rhs": "4368000",
+          "slack": "-4144"
+        },
+        {
+          "physical_size": 13,
+          "size": 13,
+          "family": "hereditary second jet shared",
+          "orientation": 1,
+          "lhs": "4372144",
+          "rhs": "4368000",
+          "slack": "-4144"
+        }
+      ]
+    },
+    "word_jet": {
+      "checks": 1816,
+      "violated_checks": 348,
+      "minimum_slack": -213861,
+      "violations": [
+        {
+          "physical_size": 13,
+          "size": 5,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "1680456",
+          "rhs": "1680000",
+          "slack": "-456"
+        },
+        {
+          "physical_size": 13,
+          "size": 5,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "1680456",
+          "rhs": "1680000",
+          "slack": "-456"
+        },
+        {
+          "physical_size": 13,
+          "size": 6,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "2016917",
+          "rhs": "2016000",
+          "slack": "-917"
+        },
+        {
+          "physical_size": 13,
+          "size": 6,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "2016917",
+          "rhs": "2016000",
+          "slack": "-917"
+        },
+        {
+          "physical_size": 13,
+          "size": 7,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "2353433",
+          "rhs": "2352000",
+          "slack": "-1433"
+        },
+        {
+          "physical_size": 13,
+          "size": 7,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "2353433",
+          "rhs": "2352000",
+          "slack": "-1433"
+        },
+        {
+          "physical_size": 13,
+          "size": 8,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "2690056",
+          "rhs": "2688000",
+          "slack": "-2056"
+        },
+        {
+          "physical_size": 13,
+          "size": 8,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "2690056",
+          "rhs": "2688000",
+          "slack": "-2056"
+        },
+        {
+          "physical_size": 13,
+          "size": 9,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "3026753",
+          "rhs": "3024000",
+          "slack": "-2753"
+        },
+        {
+          "physical_size": 13,
+          "size": 9,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "3026753",
+          "rhs": "3024000",
+          "slack": "-2753"
+        },
+        {
+          "physical_size": 13,
+          "size": 10,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "3363450",
+          "rhs": "3360000",
+          "slack": "-3450"
+        },
+        {
+          "physical_size": 13,
+          "size": 10,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "3363450",
+          "rhs": "3360000",
+          "slack": "-3450"
+        },
+        {
+          "physical_size": 13,
+          "size": 11,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "3700217",
+          "rhs": "3696000",
+          "slack": "-4217"
+        },
+        {
+          "physical_size": 13,
+          "size": 11,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "3700217",
+          "rhs": "3696000",
+          "slack": "-4217"
+        },
+        {
+          "physical_size": 13,
+          "size": 12,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "4036984",
+          "rhs": "4032000",
+          "slack": "-4984"
+        },
+        {
+          "physical_size": 13,
+          "size": 12,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "4036984",
+          "rhs": "4032000",
+          "slack": "-4984"
+        },
+        {
+          "physical_size": 13,
+          "size": 13,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "4373751",
+          "rhs": "4368000",
+          "slack": "-5751"
+        },
+        {
+          "physical_size": 13,
+          "size": 13,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "4373751",
+          "rhs": "4368000",
+          "slack": "-5751"
+        },
+        {
+          "physical_size": 13,
+          "size": 14,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "4710518",
+          "rhs": "4704000",
+          "slack": "-6518"
+        },
+        {
+          "physical_size": 13,
+          "size": 14,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "4710518",
+          "rhs": "4704000",
+          "slack": "-6518"
+        },
+        {
+          "physical_size": 13,
+          "size": 15,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "5047285",
+          "rhs": "5040000",
+          "slack": "-7285"
+        },
+        {
+          "physical_size": 13,
+          "size": 15,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "5047285",
+          "rhs": "5040000",
+          "slack": "-7285"
+        },
+        {
+          "physical_size": 13,
+          "size": 16,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "5384052",
+          "rhs": "5376000",
+          "slack": "-8052"
+        },
+        {
+          "physical_size": 13,
+          "size": 16,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "5384052",
+          "rhs": "5376000",
+          "slack": "-8052"
+        },
+        {
+          "physical_size": 13,
+          "size": 17,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "5720888",
+          "rhs": "5712000",
+          "slack": "-8888"
+        },
+        {
+          "physical_size": 13,
+          "size": 17,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "5720888",
+          "rhs": "5712000",
+          "slack": "-8888"
+        },
+        {
+          "physical_size": 13,
+          "size": 18,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "6057724",
+          "rhs": "6048000",
+          "slack": "-9724"
+        },
+        {
+          "physical_size": 13,
+          "size": 18,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "6057724",
+          "rhs": "6048000",
+          "slack": "-9724"
+        },
+        {
+          "physical_size": 13,
+          "size": 19,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "6394657",
+          "rhs": "6384000",
+          "slack": "-10657"
+        },
+        {
+          "physical_size": 13,
+          "size": 19,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "6394657",
+          "rhs": "6384000",
+          "slack": "-10657"
+        },
+        {
+          "physical_size": 13,
+          "size": 20,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "6731610",
+          "rhs": "6720000",
+          "slack": "-11610"
+        },
+        {
+          "physical_size": 13,
+          "size": 20,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "6731610",
+          "rhs": "6720000",
+          "slack": "-11610"
+        },
+        {
+          "physical_size": 13,
+          "size": 21,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "7068563",
+          "rhs": "7056000",
+          "slack": "-12563"
+        },
+        {
+          "physical_size": 13,
+          "size": 21,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "7068563",
+          "rhs": "7056000",
+          "slack": "-12563"
+        },
+        {
+          "physical_size": 13,
+          "size": 22,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "7405516",
+          "rhs": "7392000",
+          "slack": "-13516"
+        },
+        {
+          "physical_size": 13,
+          "size": 22,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "7405516",
+          "rhs": "7392000",
+          "slack": "-13516"
+        },
+        {
+          "physical_size": 13,
+          "size": 23,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "7742524",
+          "rhs": "7728000",
+          "slack": "-14524"
+        },
+        {
+          "physical_size": 13,
+          "size": 23,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "7742524",
+          "rhs": "7728000",
+          "slack": "-14524"
+        },
+        {
+          "physical_size": 13,
+          "size": 24,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "8079532",
+          "rhs": "8064000",
+          "slack": "-15532"
+        },
+        {
+          "physical_size": 13,
+          "size": 24,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "8079532",
+          "rhs": "8064000",
+          "slack": "-15532"
+        },
+        {
+          "physical_size": 13,
+          "size": 25,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "8416567",
+          "rhs": "8400000",
+          "slack": "-16567"
+        },
+        {
+          "physical_size": 13,
+          "size": 25,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "8416567",
+          "rhs": "8400000",
+          "slack": "-16567"
+        },
+        {
+          "physical_size": 13,
+          "size": 26,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "8753602",
+          "rhs": "8736000",
+          "slack": "-17602"
+        },
+        {
+          "physical_size": 13,
+          "size": 26,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "8753602",
+          "rhs": "8736000",
+          "slack": "-17602"
+        },
+        {
+          "physical_size": 13,
+          "size": 27,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "9090637",
+          "rhs": "9072000",
+          "slack": "-18637"
+        },
+        {
+          "physical_size": 13,
+          "size": 27,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "9090637",
+          "rhs": "9072000",
+          "slack": "-18637"
+        },
+        {
+          "physical_size": 13,
+          "size": 28,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "9427672",
+          "rhs": "9408000",
+          "slack": "-19672"
+        },
+        {
+          "physical_size": 13,
+          "size": 28,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "9427672",
+          "rhs": "9408000",
+          "slack": "-19672"
+        },
+        {
+          "physical_size": 13,
+          "size": 29,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "9764707",
+          "rhs": "9744000",
+          "slack": "-20707"
+        },
+        {
+          "physical_size": 13,
+          "size": 29,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "9764707",
+          "rhs": "9744000",
+          "slack": "-20707"
+        },
+        {
+          "physical_size": 13,
+          "size": 30,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "10101742",
+          "rhs": "10080000",
+          "slack": "-21742"
+        },
+        {
+          "physical_size": 13,
+          "size": 30,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "10101742",
+          "rhs": "10080000",
+          "slack": "-21742"
+        },
+        {
+          "physical_size": 13,
+          "size": 31,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "10438777",
+          "rhs": "10416000",
+          "slack": "-22777"
+        },
+        {
+          "physical_size": 13,
+          "size": 31,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "10438777",
+          "rhs": "10416000",
+          "slack": "-22777"
+        },
+        {
+          "physical_size": 13,
+          "size": 32,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "10775812",
+          "rhs": "10752000",
+          "slack": "-23812"
+        },
+        {
+          "physical_size": 13,
+          "size": 32,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "10775812",
+          "rhs": "10752000",
+          "slack": "-23812"
+        },
+        {
+          "physical_size": 13,
+          "size": 33,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "11112847",
+          "rhs": "11088000",
+          "slack": "-24847"
+        },
+        {
+          "physical_size": 13,
+          "size": 33,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "11112847",
+          "rhs": "11088000",
+          "slack": "-24847"
+        },
+        {
+          "physical_size": 13,
+          "size": 34,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "11449882",
+          "rhs": "11424000",
+          "slack": "-25882"
+        },
+        {
+          "physical_size": 13,
+          "size": 34,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "11449882",
+          "rhs": "11424000",
+          "slack": "-25882"
+        },
+        {
+          "physical_size": 13,
+          "size": 35,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "11786917",
+          "rhs": "11760000",
+          "slack": "-26917"
+        },
+        {
+          "physical_size": 13,
+          "size": 35,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "11786917",
+          "rhs": "11760000",
+          "slack": "-26917"
+        },
+        {
+          "physical_size": 13,
+          "size": 36,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "12123952",
+          "rhs": "12096000",
+          "slack": "-27952"
+        },
+        {
+          "physical_size": 13,
+          "size": 36,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "12123952",
+          "rhs": "12096000",
+          "slack": "-27952"
+        },
+        {
+          "physical_size": 13,
+          "size": 37,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "12460987",
+          "rhs": "12432000",
+          "slack": "-28987"
+        },
+        {
+          "physical_size": 13,
+          "size": 37,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "12460987",
+          "rhs": "12432000",
+          "slack": "-28987"
+        },
+        {
+          "physical_size": 13,
+          "size": 38,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "12798059",
+          "rhs": "12768000",
+          "slack": "-30059"
+        },
+        {
+          "physical_size": 13,
+          "size": 38,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "12798059",
+          "rhs": "12768000",
+          "slack": "-30059"
+        },
+        {
+          "physical_size": 13,
+          "size": 39,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "13135131",
+          "rhs": "13104000",
+          "slack": "-31131"
+        },
+        {
+          "physical_size": 13,
+          "size": 39,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "13135131",
+          "rhs": "13104000",
+          "slack": "-31131"
+        },
+        {
+          "physical_size": 13,
+          "size": 40,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "13472246",
+          "rhs": "13440000",
+          "slack": "-32246"
+        },
+        {
+          "physical_size": 13,
+          "size": 40,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "13472246",
+          "rhs": "13440000",
+          "slack": "-32246"
+        },
+        {
+          "physical_size": 13,
+          "size": 41,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "13809361",
+          "rhs": "13776000",
+          "slack": "-33361"
+        },
+        {
+          "physical_size": 13,
+          "size": 41,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "13809361",
+          "rhs": "13776000",
+          "slack": "-33361"
+        },
+        {
+          "physical_size": 13,
+          "size": 42,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "14146550",
+          "rhs": "14112000",
+          "slack": "-34550"
+        },
+        {
+          "physical_size": 13,
+          "size": 42,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "14146550",
+          "rhs": "14112000",
+          "slack": "-34550"
+        },
+        {
+          "physical_size": 13,
+          "size": 43,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "14483739",
+          "rhs": "14448000",
+          "slack": "-35739"
+        },
+        {
+          "physical_size": 13,
+          "size": 43,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "14483739",
+          "rhs": "14448000",
+          "slack": "-35739"
+        },
+        {
+          "physical_size": 13,
+          "size": 44,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "14820928",
+          "rhs": "14784000",
+          "slack": "-36928"
+        },
+        {
+          "physical_size": 13,
+          "size": 44,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "14820928",
+          "rhs": "14784000",
+          "slack": "-36928"
+        },
+        {
+          "physical_size": 13,
+          "size": 45,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "15158117",
+          "rhs": "15120000",
+          "slack": "-38117"
+        },
+        {
+          "physical_size": 13,
+          "size": 45,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "15158117",
+          "rhs": "15120000",
+          "slack": "-38117"
+        },
+        {
+          "physical_size": 13,
+          "size": 46,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "15495306",
+          "rhs": "15456000",
+          "slack": "-39306"
+        },
+        {
+          "physical_size": 13,
+          "size": 46,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "15495306",
+          "rhs": "15456000",
+          "slack": "-39306"
+        },
+        {
+          "physical_size": 13,
+          "size": 47,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "15832517",
+          "rhs": "15792000",
+          "slack": "-40517"
+        },
+        {
+          "physical_size": 13,
+          "size": 47,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "15832517",
+          "rhs": "15792000",
+          "slack": "-40517"
+        },
+        {
+          "physical_size": 13,
+          "size": 48,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "16169761",
+          "rhs": "16128000",
+          "slack": "-41761"
+        },
+        {
+          "physical_size": 13,
+          "size": 48,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "16169761",
+          "rhs": "16128000",
+          "slack": "-41761"
+        },
+        {
+          "physical_size": 13,
+          "size": 49,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "16507005",
+          "rhs": "16464000",
+          "slack": "-43005"
+        },
+        {
+          "physical_size": 13,
+          "size": 49,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "16507005",
+          "rhs": "16464000",
+          "slack": "-43005"
+        },
+        {
+          "physical_size": 13,
+          "size": 50,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "16844250",
+          "rhs": "16800000",
+          "slack": "-44250"
+        },
+        {
+          "physical_size": 13,
+          "size": 50,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "16844250",
+          "rhs": "16800000",
+          "slack": "-44250"
+        },
+        {
+          "physical_size": 13,
+          "size": 51,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "17181495",
+          "rhs": "17136000",
+          "slack": "-45495"
+        },
+        {
+          "physical_size": 13,
+          "size": 51,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "17181495",
+          "rhs": "17136000",
+          "slack": "-45495"
+        },
+        {
+          "physical_size": 13,
+          "size": 52,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "17518740",
+          "rhs": "17472000",
+          "slack": "-46740"
+        },
+        {
+          "physical_size": 13,
+          "size": 52,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "17518740",
+          "rhs": "17472000",
+          "slack": "-46740"
+        },
+        {
+          "physical_size": 13,
+          "size": 53,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "17855985",
+          "rhs": "17808000",
+          "slack": "-47985"
+        },
+        {
+          "physical_size": 13,
+          "size": 53,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "17855985",
+          "rhs": "17808000",
+          "slack": "-47985"
+        },
+        {
+          "physical_size": 13,
+          "size": 54,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "18193230",
+          "rhs": "18144000",
+          "slack": "-49230"
+        },
+        {
+          "physical_size": 13,
+          "size": 54,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "18193230",
+          "rhs": "18144000",
+          "slack": "-49230"
+        },
+        {
+          "physical_size": 13,
+          "size": 55,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "18530475",
+          "rhs": "18480000",
+          "slack": "-50475"
+        },
+        {
+          "physical_size": 13,
+          "size": 55,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "18530475",
+          "rhs": "18480000",
+          "slack": "-50475"
+        },
+        {
+          "physical_size": 13,
+          "size": 56,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "18867720",
+          "rhs": "18816000",
+          "slack": "-51720"
+        },
+        {
+          "physical_size": 13,
+          "size": 56,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "18867720",
+          "rhs": "18816000",
+          "slack": "-51720"
+        },
+        {
+          "physical_size": 13,
+          "size": 57,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "19204965",
+          "rhs": "19152000",
+          "slack": "-52965"
+        },
+        {
+          "physical_size": 13,
+          "size": 57,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "19204965",
+          "rhs": "19152000",
+          "slack": "-52965"
+        },
+        {
+          "physical_size": 13,
+          "size": 58,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "19542210",
+          "rhs": "19488000",
+          "slack": "-54210"
+        },
+        {
+          "physical_size": 13,
+          "size": 58,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "19542210",
+          "rhs": "19488000",
+          "slack": "-54210"
+        },
+        {
+          "physical_size": 13,
+          "size": 59,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "19879455",
+          "rhs": "19824000",
+          "slack": "-55455"
+        },
+        {
+          "physical_size": 13,
+          "size": 59,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "19879455",
+          "rhs": "19824000",
+          "slack": "-55455"
+        },
+        {
+          "physical_size": 13,
+          "size": 60,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "20216700",
+          "rhs": "20160000",
+          "slack": "-56700"
+        },
+        {
+          "physical_size": 13,
+          "size": 60,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "20216700",
+          "rhs": "20160000",
+          "slack": "-56700"
+        },
+        {
+          "physical_size": 13,
+          "size": 61,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "20553945",
+          "rhs": "20496000",
+          "slack": "-57945"
+        },
+        {
+          "physical_size": 13,
+          "size": 61,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "20553945",
+          "rhs": "20496000",
+          "slack": "-57945"
+        },
+        {
+          "physical_size": 13,
+          "size": 62,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "20891190",
+          "rhs": "20832000",
+          "slack": "-59190"
+        },
+        {
+          "physical_size": 13,
+          "size": 62,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "20891190",
+          "rhs": "20832000",
+          "slack": "-59190"
+        },
+        {
+          "physical_size": 13,
+          "size": 63,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "21228449",
+          "rhs": "21168000",
+          "slack": "-60449"
+        },
+        {
+          "physical_size": 13,
+          "size": 63,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "21228449",
+          "rhs": "21168000",
+          "slack": "-60449"
+        },
+        {
+          "physical_size": 13,
+          "size": 64,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "21565708",
+          "rhs": "21504000",
+          "slack": "-61708"
+        },
+        {
+          "physical_size": 13,
+          "size": 64,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "21565708",
+          "rhs": "21504000",
+          "slack": "-61708"
+        },
+        {
+          "physical_size": 13,
+          "size": 65,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "21902967",
+          "rhs": "21840000",
+          "slack": "-62967"
+        },
+        {
+          "physical_size": 13,
+          "size": 65,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "21902967",
+          "rhs": "21840000",
+          "slack": "-62967"
+        },
+        {
+          "physical_size": 13,
+          "size": 66,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "22240226",
+          "rhs": "22176000",
+          "slack": "-64226"
+        },
+        {
+          "physical_size": 13,
+          "size": 66,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "22240226",
+          "rhs": "22176000",
+          "slack": "-64226"
+        },
+        {
+          "physical_size": 13,
+          "size": 67,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "22577485",
+          "rhs": "22512000",
+          "slack": "-65485"
+        },
+        {
+          "physical_size": 13,
+          "size": 67,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "22577485",
+          "rhs": "22512000",
+          "slack": "-65485"
+        },
+        {
+          "physical_size": 13,
+          "size": 68,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "22914744",
+          "rhs": "22848000",
+          "slack": "-66744"
+        },
+        {
+          "physical_size": 13,
+          "size": 68,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "22914744",
+          "rhs": "22848000",
+          "slack": "-66744"
+        },
+        {
+          "physical_size": 13,
+          "size": 69,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "23252003",
+          "rhs": "23184000",
+          "slack": "-68003"
+        },
+        {
+          "physical_size": 13,
+          "size": 69,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "23252003",
+          "rhs": "23184000",
+          "slack": "-68003"
+        },
+        {
+          "physical_size": 13,
+          "size": 70,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "23589262",
+          "rhs": "23520000",
+          "slack": "-69262"
+        },
+        {
+          "physical_size": 13,
+          "size": 70,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "23589262",
+          "rhs": "23520000",
+          "slack": "-69262"
+        },
+        {
+          "physical_size": 13,
+          "size": 71,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "23926521",
+          "rhs": "23856000",
+          "slack": "-70521"
+        },
+        {
+          "physical_size": 13,
+          "size": 71,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "23926521",
+          "rhs": "23856000",
+          "slack": "-70521"
+        },
+        {
+          "physical_size": 13,
+          "size": 72,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "24263780",
+          "rhs": "24192000",
+          "slack": "-71780"
+        },
+        {
+          "physical_size": 13,
+          "size": 72,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "24263780",
+          "rhs": "24192000",
+          "slack": "-71780"
+        },
+        {
+          "physical_size": 13,
+          "size": 73,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "24601039",
+          "rhs": "24528000",
+          "slack": "-73039"
+        },
+        {
+          "physical_size": 13,
+          "size": 73,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "24601039",
+          "rhs": "24528000",
+          "slack": "-73039"
+        },
+        {
+          "physical_size": 13,
+          "size": 74,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "24938298",
+          "rhs": "24864000",
+          "slack": "-74298"
+        },
+        {
+          "physical_size": 13,
+          "size": 74,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "24938298",
+          "rhs": "24864000",
+          "slack": "-74298"
+        },
+        {
+          "physical_size": 13,
+          "size": 75,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "25275626",
+          "rhs": "25200000",
+          "slack": "-75626"
+        },
+        {
+          "physical_size": 13,
+          "size": 75,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "25275626",
+          "rhs": "25200000",
+          "slack": "-75626"
+        },
+        {
+          "physical_size": 13,
+          "size": 76,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "25612954",
+          "rhs": "25536000",
+          "slack": "-76954"
+        },
+        {
+          "physical_size": 13,
+          "size": 76,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "25612954",
+          "rhs": "25536000",
+          "slack": "-76954"
+        },
+        {
+          "physical_size": 13,
+          "size": 77,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "25950282",
+          "rhs": "25872000",
+          "slack": "-78282"
+        },
+        {
+          "physical_size": 13,
+          "size": 77,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "25950282",
+          "rhs": "25872000",
+          "slack": "-78282"
+        },
+        {
+          "physical_size": 13,
+          "size": 78,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "26287610",
+          "rhs": "26208000",
+          "slack": "-79610"
+        },
+        {
+          "physical_size": 13,
+          "size": 78,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "26287610",
+          "rhs": "26208000",
+          "slack": "-79610"
+        },
+        {
+          "physical_size": 13,
+          "size": 79,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "26624938",
+          "rhs": "26544000",
+          "slack": "-80938"
+        },
+        {
+          "physical_size": 13,
+          "size": 79,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "26624938",
+          "rhs": "26544000",
+          "slack": "-80938"
+        },
+        {
+          "physical_size": 13,
+          "size": 80,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "26962289",
+          "rhs": "26880000",
+          "slack": "-82289"
+        },
+        {
+          "physical_size": 13,
+          "size": 80,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "26962289",
+          "rhs": "26880000",
+          "slack": "-82289"
+        },
+        {
+          "physical_size": 13,
+          "size": 81,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "27299640",
+          "rhs": "27216000",
+          "slack": "-83640"
+        },
+        {
+          "physical_size": 13,
+          "size": 81,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "27299640",
+          "rhs": "27216000",
+          "slack": "-83640"
+        },
+        {
+          "physical_size": 13,
+          "size": 82,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "27637020",
+          "rhs": "27552000",
+          "slack": "-85020"
+        },
+        {
+          "physical_size": 13,
+          "size": 82,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "27637020",
+          "rhs": "27552000",
+          "slack": "-85020"
+        },
+        {
+          "physical_size": 13,
+          "size": 83,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "27974400",
+          "rhs": "27888000",
+          "slack": "-86400"
+        },
+        {
+          "physical_size": 13,
+          "size": 83,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "27974400",
+          "rhs": "27888000",
+          "slack": "-86400"
+        },
+        {
+          "physical_size": 13,
+          "size": 84,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "28311780",
+          "rhs": "28224000",
+          "slack": "-87780"
+        },
+        {
+          "physical_size": 13,
+          "size": 84,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "28311780",
+          "rhs": "28224000",
+          "slack": "-87780"
+        },
+        {
+          "physical_size": 13,
+          "size": 85,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "28649160",
+          "rhs": "28560000",
+          "slack": "-89160"
+        },
+        {
+          "physical_size": 13,
+          "size": 85,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "28649160",
+          "rhs": "28560000",
+          "slack": "-89160"
+        },
+        {
+          "physical_size": 13,
+          "size": 86,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "28986540",
+          "rhs": "28896000",
+          "slack": "-90540"
+        },
+        {
+          "physical_size": 13,
+          "size": 86,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "28986540",
+          "rhs": "28896000",
+          "slack": "-90540"
+        },
+        {
+          "physical_size": 13,
+          "size": 87,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "29323920",
+          "rhs": "29232000",
+          "slack": "-91920"
+        },
+        {
+          "physical_size": 13,
+          "size": 87,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "29323920",
+          "rhs": "29232000",
+          "slack": "-91920"
+        },
+        {
+          "physical_size": 13,
+          "size": 88,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "29661300",
+          "rhs": "29568000",
+          "slack": "-93300"
+        },
+        {
+          "physical_size": 13,
+          "size": 88,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "29661300",
+          "rhs": "29568000",
+          "slack": "-93300"
+        },
+        {
+          "physical_size": 13,
+          "size": 89,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "29998680",
+          "rhs": "29904000",
+          "slack": "-94680"
+        },
+        {
+          "physical_size": 13,
+          "size": 89,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "29998680",
+          "rhs": "29904000",
+          "slack": "-94680"
+        },
+        {
+          "physical_size": 13,
+          "size": 90,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "30336060",
+          "rhs": "30240000",
+          "slack": "-96060"
+        },
+        {
+          "physical_size": 13,
+          "size": 90,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "30336060",
+          "rhs": "30240000",
+          "slack": "-96060"
+        },
+        {
+          "physical_size": 13,
+          "size": 91,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "30673440",
+          "rhs": "30576000",
+          "slack": "-97440"
+        },
+        {
+          "physical_size": 13,
+          "size": 91,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "30673440",
+          "rhs": "30576000",
+          "slack": "-97440"
+        },
+        {
+          "physical_size": 13,
+          "size": 92,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "31010820",
+          "rhs": "30912000",
+          "slack": "-98820"
+        },
+        {
+          "physical_size": 13,
+          "size": 92,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "31010820",
+          "rhs": "30912000",
+          "slack": "-98820"
+        },
+        {
+          "physical_size": 13,
+          "size": 93,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "31348200",
+          "rhs": "31248000",
+          "slack": "-100200"
+        },
+        {
+          "physical_size": 13,
+          "size": 93,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "31348200",
+          "rhs": "31248000",
+          "slack": "-100200"
+        },
+        {
+          "physical_size": 13,
+          "size": 94,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "31685580",
+          "rhs": "31584000",
+          "slack": "-101580"
+        },
+        {
+          "physical_size": 13,
+          "size": 94,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "31685580",
+          "rhs": "31584000",
+          "slack": "-101580"
+        },
+        {
+          "physical_size": 13,
+          "size": 95,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "32022963",
+          "rhs": "31920000",
+          "slack": "-102963"
+        },
+        {
+          "physical_size": 13,
+          "size": 95,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "32022963",
+          "rhs": "31920000",
+          "slack": "-102963"
+        },
+        {
+          "physical_size": 13,
+          "size": 96,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "32360346",
+          "rhs": "32256000",
+          "slack": "-104346"
+        },
+        {
+          "physical_size": 13,
+          "size": 96,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "32360346",
+          "rhs": "32256000",
+          "slack": "-104346"
+        },
+        {
+          "physical_size": 13,
+          "size": 97,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "32697771",
+          "rhs": "32592000",
+          "slack": "-105771"
+        },
+        {
+          "physical_size": 13,
+          "size": 97,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "32697771",
+          "rhs": "32592000",
+          "slack": "-105771"
+        },
+        {
+          "physical_size": 13,
+          "size": 98,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "33035196",
+          "rhs": "32928000",
+          "slack": "-107196"
+        },
+        {
+          "physical_size": 13,
+          "size": 98,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "33035196",
+          "rhs": "32928000",
+          "slack": "-107196"
+        },
+        {
+          "physical_size": 13,
+          "size": 99,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "33372621",
+          "rhs": "33264000",
+          "slack": "-108621"
+        },
+        {
+          "physical_size": 13,
+          "size": 99,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "33372621",
+          "rhs": "33264000",
+          "slack": "-108621"
+        },
+        {
+          "physical_size": 13,
+          "size": 100,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "33710066",
+          "rhs": "33600000",
+          "slack": "-110066"
+        },
+        {
+          "physical_size": 13,
+          "size": 100,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "33710066",
+          "rhs": "33600000",
+          "slack": "-110066"
+        },
+        {
+          "physical_size": 13,
+          "size": 101,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "34047511",
+          "rhs": "33936000",
+          "slack": "-111511"
+        },
+        {
+          "physical_size": 13,
+          "size": 101,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "34047511",
+          "rhs": "33936000",
+          "slack": "-111511"
+        },
+        {
+          "physical_size": 13,
+          "size": 102,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "34384956",
+          "rhs": "34272000",
+          "slack": "-112956"
+        },
+        {
+          "physical_size": 13,
+          "size": 102,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "34384956",
+          "rhs": "34272000",
+          "slack": "-112956"
+        },
+        {
+          "physical_size": 13,
+          "size": 103,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "34722401",
+          "rhs": "34608000",
+          "slack": "-114401"
+        },
+        {
+          "physical_size": 13,
+          "size": 103,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "34722401",
+          "rhs": "34608000",
+          "slack": "-114401"
+        },
+        {
+          "physical_size": 13,
+          "size": 104,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "35059846",
+          "rhs": "34944000",
+          "slack": "-115846"
+        },
+        {
+          "physical_size": 13,
+          "size": 104,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "35059846",
+          "rhs": "34944000",
+          "slack": "-115846"
+        },
+        {
+          "physical_size": 13,
+          "size": 105,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "35397304",
+          "rhs": "35280000",
+          "slack": "-117304"
+        },
+        {
+          "physical_size": 13,
+          "size": 105,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "35397304",
+          "rhs": "35280000",
+          "slack": "-117304"
+        },
+        {
+          "physical_size": 13,
+          "size": 106,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "35734762",
+          "rhs": "35616000",
+          "slack": "-118762"
+        },
+        {
+          "physical_size": 13,
+          "size": 106,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "35734762",
+          "rhs": "35616000",
+          "slack": "-118762"
+        },
+        {
+          "physical_size": 13,
+          "size": 107,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "36072220",
+          "rhs": "35952000",
+          "slack": "-120220"
+        },
+        {
+          "physical_size": 13,
+          "size": 107,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "36072220",
+          "rhs": "35952000",
+          "slack": "-120220"
+        },
+        {
+          "physical_size": 13,
+          "size": 108,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "36409678",
+          "rhs": "36288000",
+          "slack": "-121678"
+        },
+        {
+          "physical_size": 13,
+          "size": 108,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "36409678",
+          "rhs": "36288000",
+          "slack": "-121678"
+        },
+        {
+          "physical_size": 13,
+          "size": 109,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "36747136",
+          "rhs": "36624000",
+          "slack": "-123136"
+        },
+        {
+          "physical_size": 13,
+          "size": 109,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "36747136",
+          "rhs": "36624000",
+          "slack": "-123136"
+        },
+        {
+          "physical_size": 13,
+          "size": 110,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "37084594",
+          "rhs": "36960000",
+          "slack": "-124594"
+        },
+        {
+          "physical_size": 13,
+          "size": 110,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "37084594",
+          "rhs": "36960000",
+          "slack": "-124594"
+        },
+        {
+          "physical_size": 13,
+          "size": 111,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "37422052",
+          "rhs": "37296000",
+          "slack": "-126052"
+        },
+        {
+          "physical_size": 13,
+          "size": 111,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "37422052",
+          "rhs": "37296000",
+          "slack": "-126052"
+        },
+        {
+          "physical_size": 13,
+          "size": 112,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "37759510",
+          "rhs": "37632000",
+          "slack": "-127510"
+        },
+        {
+          "physical_size": 13,
+          "size": 112,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "37759510",
+          "rhs": "37632000",
+          "slack": "-127510"
+        },
+        {
+          "physical_size": 13,
+          "size": 113,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "38096968",
+          "rhs": "37968000",
+          "slack": "-128968"
+        },
+        {
+          "physical_size": 13,
+          "size": 113,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "38096968",
+          "rhs": "37968000",
+          "slack": "-128968"
+        },
+        {
+          "physical_size": 13,
+          "size": 114,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "38434426",
+          "rhs": "38304000",
+          "slack": "-130426"
+        },
+        {
+          "physical_size": 13,
+          "size": 114,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "38434426",
+          "rhs": "38304000",
+          "slack": "-130426"
+        },
+        {
+          "physical_size": 13,
+          "size": 115,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "38771884",
+          "rhs": "38640000",
+          "slack": "-131884"
+        },
+        {
+          "physical_size": 13,
+          "size": 115,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "38771884",
+          "rhs": "38640000",
+          "slack": "-131884"
+        },
+        {
+          "physical_size": 13,
+          "size": 116,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "39109342",
+          "rhs": "38976000",
+          "slack": "-133342"
+        },
+        {
+          "physical_size": 13,
+          "size": 116,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "39109342",
+          "rhs": "38976000",
+          "slack": "-133342"
+        },
+        {
+          "physical_size": 13,
+          "size": 117,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "39446800",
+          "rhs": "39312000",
+          "slack": "-134800"
+        },
+        {
+          "physical_size": 13,
+          "size": 117,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "39446800",
+          "rhs": "39312000",
+          "slack": "-134800"
+        },
+        {
+          "physical_size": 13,
+          "size": 118,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "39784290",
+          "rhs": "39648000",
+          "slack": "-136290"
+        },
+        {
+          "physical_size": 13,
+          "size": 118,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "39784290",
+          "rhs": "39648000",
+          "slack": "-136290"
+        },
+        {
+          "physical_size": 13,
+          "size": 119,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "40121780",
+          "rhs": "39984000",
+          "slack": "-137780"
+        },
+        {
+          "physical_size": 13,
+          "size": 119,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "40121780",
+          "rhs": "39984000",
+          "slack": "-137780"
+        },
+        {
+          "physical_size": 13,
+          "size": 120,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "40459275",
+          "rhs": "40320000",
+          "slack": "-139275"
+        },
+        {
+          "physical_size": 13,
+          "size": 120,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "40459275",
+          "rhs": "40320000",
+          "slack": "-139275"
+        },
+        {
+          "physical_size": 13,
+          "size": 121,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "40796770",
+          "rhs": "40656000",
+          "slack": "-140770"
+        },
+        {
+          "physical_size": 13,
+          "size": 121,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "40796770",
+          "rhs": "40656000",
+          "slack": "-140770"
+        },
+        {
+          "physical_size": 13,
+          "size": 122,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "41134265",
+          "rhs": "40992000",
+          "slack": "-142265"
+        },
+        {
+          "physical_size": 13,
+          "size": 122,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "41134265",
+          "rhs": "40992000",
+          "slack": "-142265"
+        },
+        {
+          "physical_size": 13,
+          "size": 123,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "41471760",
+          "rhs": "41328000",
+          "slack": "-143760"
+        },
+        {
+          "physical_size": 13,
+          "size": 123,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "41471760",
+          "rhs": "41328000",
+          "slack": "-143760"
+        },
+        {
+          "physical_size": 13,
+          "size": 124,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "41809255",
+          "rhs": "41664000",
+          "slack": "-145255"
+        },
+        {
+          "physical_size": 13,
+          "size": 124,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "41809255",
+          "rhs": "41664000",
+          "slack": "-145255"
+        },
+        {
+          "physical_size": 13,
+          "size": 125,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "42146750",
+          "rhs": "42000000",
+          "slack": "-146750"
+        },
+        {
+          "physical_size": 13,
+          "size": 125,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "42146750",
+          "rhs": "42000000",
+          "slack": "-146750"
+        },
+        {
+          "physical_size": 13,
+          "size": 126,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "42484245",
+          "rhs": "42336000",
+          "slack": "-148245"
+        },
+        {
+          "physical_size": 13,
+          "size": 126,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "42484245",
+          "rhs": "42336000",
+          "slack": "-148245"
+        },
+        {
+          "physical_size": 13,
+          "size": 127,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "42821740",
+          "rhs": "42672000",
+          "slack": "-149740"
+        },
+        {
+          "physical_size": 13,
+          "size": 127,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "42821740",
+          "rhs": "42672000",
+          "slack": "-149740"
+        },
+        {
+          "physical_size": 13,
+          "size": 128,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "43159235",
+          "rhs": "43008000",
+          "slack": "-151235"
+        },
+        {
+          "physical_size": 13,
+          "size": 128,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "43159235",
+          "rhs": "43008000",
+          "slack": "-151235"
+        },
+        {
+          "physical_size": 13,
+          "size": 129,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "43496730",
+          "rhs": "43344000",
+          "slack": "-152730"
+        },
+        {
+          "physical_size": 13,
+          "size": 129,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "43496730",
+          "rhs": "43344000",
+          "slack": "-152730"
+        },
+        {
+          "physical_size": 13,
+          "size": 130,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "43834225",
+          "rhs": "43680000",
+          "slack": "-154225"
+        },
+        {
+          "physical_size": 13,
+          "size": 130,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "43834225",
+          "rhs": "43680000",
+          "slack": "-154225"
+        },
+        {
+          "physical_size": 13,
+          "size": 131,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "44171720",
+          "rhs": "44016000",
+          "slack": "-155720"
+        },
+        {
+          "physical_size": 13,
+          "size": 131,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "44171720",
+          "rhs": "44016000",
+          "slack": "-155720"
+        },
+        {
+          "physical_size": 13,
+          "size": 132,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "44509220",
+          "rhs": "44352000",
+          "slack": "-157220"
+        },
+        {
+          "physical_size": 13,
+          "size": 132,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "44509220",
+          "rhs": "44352000",
+          "slack": "-157220"
+        },
+        {
+          "physical_size": 13,
+          "size": 133,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "44846720",
+          "rhs": "44688000",
+          "slack": "-158720"
+        },
+        {
+          "physical_size": 13,
+          "size": 133,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "44846720",
+          "rhs": "44688000",
+          "slack": "-158720"
+        },
+        {
+          "physical_size": 13,
+          "size": 134,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "45184220",
+          "rhs": "45024000",
+          "slack": "-160220"
+        },
+        {
+          "physical_size": 13,
+          "size": 134,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "45184220",
+          "rhs": "45024000",
+          "slack": "-160220"
+        },
+        {
+          "physical_size": 13,
+          "size": 135,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "45521720",
+          "rhs": "45360000",
+          "slack": "-161720"
+        },
+        {
+          "physical_size": 13,
+          "size": 135,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "45521720",
+          "rhs": "45360000",
+          "slack": "-161720"
+        },
+        {
+          "physical_size": 13,
+          "size": 136,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "45859220",
+          "rhs": "45696000",
+          "slack": "-163220"
+        },
+        {
+          "physical_size": 13,
+          "size": 136,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "45859220",
+          "rhs": "45696000",
+          "slack": "-163220"
+        },
+        {
+          "physical_size": 13,
+          "size": 137,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "46196747",
+          "rhs": "46032000",
+          "slack": "-164747"
+        },
+        {
+          "physical_size": 13,
+          "size": 137,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "46196747",
+          "rhs": "46032000",
+          "slack": "-164747"
+        },
+        {
+          "physical_size": 13,
+          "size": 138,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "46534274",
+          "rhs": "46368000",
+          "slack": "-166274"
+        },
+        {
+          "physical_size": 13,
+          "size": 138,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "46534274",
+          "rhs": "46368000",
+          "slack": "-166274"
+        },
+        {
+          "physical_size": 13,
+          "size": 139,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "46871801",
+          "rhs": "46704000",
+          "slack": "-167801"
+        },
+        {
+          "physical_size": 13,
+          "size": 139,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "46871801",
+          "rhs": "46704000",
+          "slack": "-167801"
+        },
+        {
+          "physical_size": 13,
+          "size": 140,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "47209328",
+          "rhs": "47040000",
+          "slack": "-169328"
+        },
+        {
+          "physical_size": 13,
+          "size": 140,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "47209328",
+          "rhs": "47040000",
+          "slack": "-169328"
+        },
+        {
+          "physical_size": 13,
+          "size": 141,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "47546855",
+          "rhs": "47376000",
+          "slack": "-170855"
+        },
+        {
+          "physical_size": 13,
+          "size": 141,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "47546855",
+          "rhs": "47376000",
+          "slack": "-170855"
+        },
+        {
+          "physical_size": 13,
+          "size": 142,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "47884382",
+          "rhs": "47712000",
+          "slack": "-172382"
+        },
+        {
+          "physical_size": 13,
+          "size": 142,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "47884382",
+          "rhs": "47712000",
+          "slack": "-172382"
+        },
+        {
+          "physical_size": 13,
+          "size": 143,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "48221909",
+          "rhs": "48048000",
+          "slack": "-173909"
+        },
+        {
+          "physical_size": 13,
+          "size": 143,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "48221909",
+          "rhs": "48048000",
+          "slack": "-173909"
+        },
+        {
+          "physical_size": 13,
+          "size": 144,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "48559436",
+          "rhs": "48384000",
+          "slack": "-175436"
+        },
+        {
+          "physical_size": 13,
+          "size": 144,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "48559436",
+          "rhs": "48384000",
+          "slack": "-175436"
+        },
+        {
+          "physical_size": 13,
+          "size": 145,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "48896963",
+          "rhs": "48720000",
+          "slack": "-176963"
+        },
+        {
+          "physical_size": 13,
+          "size": 145,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "48896963",
+          "rhs": "48720000",
+          "slack": "-176963"
+        },
+        {
+          "physical_size": 13,
+          "size": 146,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "49234490",
+          "rhs": "49056000",
+          "slack": "-178490"
+        },
+        {
+          "physical_size": 13,
+          "size": 146,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "49234490",
+          "rhs": "49056000",
+          "slack": "-178490"
+        },
+        {
+          "physical_size": 13,
+          "size": 147,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "49572017",
+          "rhs": "49392000",
+          "slack": "-180017"
+        },
+        {
+          "physical_size": 13,
+          "size": 147,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "49572017",
+          "rhs": "49392000",
+          "slack": "-180017"
+        },
+        {
+          "physical_size": 13,
+          "size": 148,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "49909544",
+          "rhs": "49728000",
+          "slack": "-181544"
+        },
+        {
+          "physical_size": 13,
+          "size": 148,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "49909544",
+          "rhs": "49728000",
+          "slack": "-181544"
+        },
+        {
+          "physical_size": 13,
+          "size": 149,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "50247071",
+          "rhs": "50064000",
+          "slack": "-183071"
+        },
+        {
+          "physical_size": 13,
+          "size": 149,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "50247071",
+          "rhs": "50064000",
+          "slack": "-183071"
+        },
+        {
+          "physical_size": 13,
+          "size": 150,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "50584598",
+          "rhs": "50400000",
+          "slack": "-184598"
+        },
+        {
+          "physical_size": 13,
+          "size": 150,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "50584598",
+          "rhs": "50400000",
+          "slack": "-184598"
+        },
+        {
+          "physical_size": 13,
+          "size": 151,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "50922125",
+          "rhs": "50736000",
+          "slack": "-186125"
+        },
+        {
+          "physical_size": 13,
+          "size": 151,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "50922125",
+          "rhs": "50736000",
+          "slack": "-186125"
+        },
+        {
+          "physical_size": 13,
+          "size": 152,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "51259652",
+          "rhs": "51072000",
+          "slack": "-187652"
+        },
+        {
+          "physical_size": 13,
+          "size": 152,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "51259652",
+          "rhs": "51072000",
+          "slack": "-187652"
+        },
+        {
+          "physical_size": 13,
+          "size": 153,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "51597179",
+          "rhs": "51408000",
+          "slack": "-189179"
+        },
+        {
+          "physical_size": 13,
+          "size": 153,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "51597179",
+          "rhs": "51408000",
+          "slack": "-189179"
+        },
+        {
+          "physical_size": 13,
+          "size": 154,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "51934706",
+          "rhs": "51744000",
+          "slack": "-190706"
+        },
+        {
+          "physical_size": 13,
+          "size": 154,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "51934706",
+          "rhs": "51744000",
+          "slack": "-190706"
+        },
+        {
+          "physical_size": 13,
+          "size": 155,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "52272233",
+          "rhs": "52080000",
+          "slack": "-192233"
+        },
+        {
+          "physical_size": 13,
+          "size": 155,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "52272233",
+          "rhs": "52080000",
+          "slack": "-192233"
+        },
+        {
+          "physical_size": 13,
+          "size": 156,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "52609760",
+          "rhs": "52416000",
+          "slack": "-193760"
+        },
+        {
+          "physical_size": 13,
+          "size": 156,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "52609760",
+          "rhs": "52416000",
+          "slack": "-193760"
+        },
+        {
+          "physical_size": 13,
+          "size": 157,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "52947287",
+          "rhs": "52752000",
+          "slack": "-195287"
+        },
+        {
+          "physical_size": 13,
+          "size": 157,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "52947287",
+          "rhs": "52752000",
+          "slack": "-195287"
+        },
+        {
+          "physical_size": 13,
+          "size": 158,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "53284814",
+          "rhs": "53088000",
+          "slack": "-196814"
+        },
+        {
+          "physical_size": 13,
+          "size": 158,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "53284814",
+          "rhs": "53088000",
+          "slack": "-196814"
+        },
+        {
+          "physical_size": 13,
+          "size": 159,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "53622341",
+          "rhs": "53424000",
+          "slack": "-198341"
+        },
+        {
+          "physical_size": 13,
+          "size": 159,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "53622341",
+          "rhs": "53424000",
+          "slack": "-198341"
+        },
+        {
+          "physical_size": 13,
+          "size": 160,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "53959868",
+          "rhs": "53760000",
+          "slack": "-199868"
+        },
+        {
+          "physical_size": 13,
+          "size": 160,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "53959868",
+          "rhs": "53760000",
+          "slack": "-199868"
+        },
+        {
+          "physical_size": 13,
+          "size": 161,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "54297395",
+          "rhs": "54096000",
+          "slack": "-201395"
+        },
+        {
+          "physical_size": 13,
+          "size": 161,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "54297395",
+          "rhs": "54096000",
+          "slack": "-201395"
+        },
+        {
+          "physical_size": 13,
+          "size": 162,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "54634922",
+          "rhs": "54432000",
+          "slack": "-202922"
+        },
+        {
+          "physical_size": 13,
+          "size": 162,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "54634922",
+          "rhs": "54432000",
+          "slack": "-202922"
+        },
+        {
+          "physical_size": 13,
+          "size": 163,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "54972477",
+          "rhs": "54768000",
+          "slack": "-204477"
+        },
+        {
+          "physical_size": 13,
+          "size": 163,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "54972477",
+          "rhs": "54768000",
+          "slack": "-204477"
+        },
+        {
+          "physical_size": 13,
+          "size": 164,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "55310041",
+          "rhs": "55104000",
+          "slack": "-206041"
+        },
+        {
+          "physical_size": 13,
+          "size": 164,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "55310041",
+          "rhs": "55104000",
+          "slack": "-206041"
+        },
+        {
+          "physical_size": 13,
+          "size": 165,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "55647605",
+          "rhs": "55440000",
+          "slack": "-207605"
+        },
+        {
+          "physical_size": 13,
+          "size": 165,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "55647605",
+          "rhs": "55440000",
+          "slack": "-207605"
+        },
+        {
+          "physical_size": 13,
+          "size": 166,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "55985169",
+          "rhs": "55776000",
+          "slack": "-209169"
+        },
+        {
+          "physical_size": 13,
+          "size": 166,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "55985169",
+          "rhs": "55776000",
+          "slack": "-209169"
+        },
+        {
+          "physical_size": 13,
+          "size": 167,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "56322733",
+          "rhs": "56112000",
+          "slack": "-210733"
+        },
+        {
+          "physical_size": 13,
+          "size": 167,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "56322733",
+          "rhs": "56112000",
+          "slack": "-210733"
+        },
+        {
+          "physical_size": 13,
+          "size": 168,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "56660297",
+          "rhs": "56448000",
+          "slack": "-212297"
+        },
+        {
+          "physical_size": 13,
+          "size": 168,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "56660297",
+          "rhs": "56448000",
+          "slack": "-212297"
+        },
+        {
+          "physical_size": 13,
+          "size": 169,
+          "orientation": 0,
+          "family": "hereditary word jet cell",
+          "lhs": "56997861",
+          "rhs": "56784000",
+          "slack": "-213861"
+        },
+        {
+          "physical_size": 13,
+          "size": 169,
+          "orientation": 1,
+          "family": "hereditary word jet cell",
+          "lhs": "56997861",
+          "rhs": "56784000",
+          "slack": "-213861"
+        },
+        {
+          "physical_size": 13,
+          "size": 5,
+          "orientation": 0,
+          "family": "hereditary word jet shared",
+          "lhs": "1680456",
+          "rhs": "1680000",
+          "slack": "-456"
+        },
+        {
+          "physical_size": 13,
+          "size": 5,
+          "orientation": 1,
+          "family": "hereditary word jet shared",
+          "lhs": "1680456",
+          "rhs": "1680000",
+          "slack": "-456"
+        },
+        {
+          "physical_size": 13,
+          "size": 6,
+          "orientation": 0,
+          "family": "hereditary word jet shared",
+          "lhs": "2016917",
+          "rhs": "2016000",
+          "slack": "-917"
+        },
+        {
+          "physical_size": 13,
+          "size": 6,
+          "orientation": 1,
+          "family": "hereditary word jet shared",
+          "lhs": "2016917",
+          "rhs": "2016000",
+          "slack": "-917"
+        },
+        {
+          "physical_size": 13,
+          "size": 7,
+          "orientation": 0,
+          "family": "hereditary word jet shared",
+          "lhs": "2353433",
+          "rhs": "2352000",
+          "slack": "-1433"
+        },
+        {
+          "physical_size": 13,
+          "size": 7,
+          "orientation": 1,
+          "family": "hereditary word jet shared",
+          "lhs": "2353433",
+          "rhs": "2352000",
+          "slack": "-1433"
+        },
+        {
+          "physical_size": 13,
+          "size": 8,
+          "orientation": 0,
+          "family": "hereditary word jet shared",
+          "lhs": "2690056",
+          "rhs": "2688000",
+          "slack": "-2056"
+        },
+        {
+          "physical_size": 13,
+          "size": 8,
+          "orientation": 1,
+          "family": "hereditary word jet shared",
+          "lhs": "2690056",
+          "rhs": "2688000",
+          "slack": "-2056"
+        },
+        {
+          "physical_size": 13,
+          "size": 9,
+          "orientation": 0,
+          "family": "hereditary word jet shared",
+          "lhs": "3026753",
+          "rhs": "3024000",
+          "slack": "-2753"
+        },
+        {
+          "physical_size": 13,
+          "size": 9,
+          "orientation": 1,
+          "family": "hereditary word jet shared",
+          "lhs": "3026753",
+          "rhs": "3024000",
+          "slack": "-2753"
+        },
+        {
+          "physical_size": 13,
+          "size": 10,
+          "orientation": 0,
+          "family": "hereditary word jet shared",
+          "lhs": "3363450",
+          "rhs": "3360000",
+          "slack": "-3450"
+        },
+        {
+          "physical_size": 13,
+          "size": 10,
+          "orientation": 1,
+          "family": "hereditary word jet shared",
+          "lhs": "3363450",
+          "rhs": "3360000",
+          "slack": "-3450"
+        },
+        {
+          "physical_size": 13,
+          "size": 11,
+          "orientation": 0,
+          "family": "hereditary word jet shared",
+          "lhs": "3700217",
+          "rhs": "3696000",
+          "slack": "-4217"
+        },
+        {
+          "physical_size": 13,
+          "size": 11,
+          "orientation": 1,
+          "family": "hereditary word jet shared",
+          "lhs": "3700217",
+          "rhs": "3696000",
+          "slack": "-4217"
+        },
+        {
+          "physical_size": 13,
+          "size": 12,
+          "orientation": 0,
+          "family": "hereditary word jet shared",
+          "lhs": "4036984",
+          "rhs": "4032000",
+          "slack": "-4984"
+        },
+        {
+          "physical_size": 13,
+          "size": 12,
+          "orientation": 1,
+          "family": "hereditary word jet shared",
+          "lhs": "4036984",
+          "rhs": "4032000",
+          "slack": "-4984"
+        },
+        {
+          "physical_size": 13,
+          "size": 13,
+          "orientation": 0,
+          "family": "hereditary word jet shared",
+          "lhs": "4373751",
+          "rhs": "4368000",
+          "slack": "-5751"
+        },
+        {
+          "physical_size": 13,
+          "size": 13,
+          "orientation": 1,
+          "family": "hereditary word jet shared",
+          "lhs": "4373751",
+          "rhs": "4368000",
+          "slack": "-5751"
+        }
+      ]
+    },
+    "rectangular_jet": {
+      "checks": 8918,
+      "violated_checks": 0,
+      "minimum_slack": 655
+    },
+    "multichannel": {
+      "checks": 8918,
+      "violated_checks": 0,
+      "minimum_slack": 588
+    }
+  },
+  "source_sha256": {
+    "tools/check_q13_box_target_exclusion.py": "ae2287169907ed2a1d9b83dd669c2a8dabb23aaab246fe080f968f7f00d4397a",
+    "tools/check_bare_seven_to_twelve_letters.py": "d1b0df7e2fd1c39715c0511440f8f0732d0f15d1a16d2520cbce2eb9fd1418f6",
+    "tools/hereditary_adjugate_caps.py": "5e7f5b43bbd39e267629d2ef624d721228e46951bccbaac3fa4a56cca13d47fe",
+    "tools/higher_jet_word_caps.py": "63521f298b00324d49d9f3cb78d37be88698a67949d41d13085794d851d663cc",
+    "tools/inherited_second_jet_caps.py": "3407c44bda2796daabc957cf0653077c034ba4c1f16019debf7dfc9c26d77231",
+    "tools/multichannel_cofactor_caps.py": "f0561973de6ff525674c7b52621221788bd8e32d45dc2b09c8d286b39b5df358",
+    "tools/rectangular_adjugate_jet_caps.py": "d59773c82318246f10bde91158dbf84a77daab62ac27481e43a0d48baf47075f"
+  }
+}
