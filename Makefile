@@ -2069,3 +2069,7 @@ verify-coherent-asymmetric-gauges:
 .PHONY: verify-cube-generic-smith
 verify-cube-generic-smith:
 	python3 tools/check_cube_generic_smith128.py --output /tmp/integer-factoring-cube-generic-smith128.json
+
+.PHONY: verify-f4-global-restarts
+verify-f4-global-restarts:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_recentered_walks.py evidence/f4-global-restart-controls-search.json --output /tmp/integer-factoring-f4-global-restart-controls.json
