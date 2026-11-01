@@ -1280,3 +1280,6 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 
 
 - [Polynomial-size recursive symmetric blocks](recursive-symmetric-exterior-blocks.md): simultaneous conjugacy, an exact word classification, a sharp quadratic block-size bound, full integer multiplicities, and complete specialized profiles through 64 axes.
+
+
+- [Fixed-field count values and a boundary parity provider](bezout-count-values.md): common-unit suffix values, logarithmic-precision prime-window recovery, explicit provider-cost tradeoffs, and an implemented evaluator that visits only the product-feasible interval boundary.

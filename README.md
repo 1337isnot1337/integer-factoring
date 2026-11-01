@@ -1910,3 +1910,6 @@ The [complete filtered-unit curve family](research/filtered-unit-crossings.md) e
 
 
 Repeating the symplectic reduction gives [polynomial-size blocks for symmetric exterior multiplication](research/recursive-symmetric-exterior-blocks.md): exactly `ceil(r/2)` block types, each of order at most `(r+2)^2/4`, retain the complete `2^r`-dimensional operator. This makes exact symmetric specialization profiles practical through 64 axes; it is a matrix-computation improvement, with no new factoring exponent claimed.
+
+
+The [fixed-field count-value refinement](research/bezout-count-values.md) reduces the precision requirement to `O(log n)` bits: differences of two normalized inverse values detect prime divisors in certified windows. It also implements an exact precision-one provider for intervals with a small symmetric difference, including implicit large singular examples. The general value provider remains open, and its full cost is included in every conditional bound.
