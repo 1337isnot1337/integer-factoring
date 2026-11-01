@@ -170,3 +170,50 @@ rank is not itself a factoring impossibility result. No improved
 coefficient-rank bound or new Lean work is claimed. The ordinary proof
 and checker used substantial OpenAI assistant support and retain the
 Gaussian reference's source attribution.
+
+## 5. Every rank-one energy generator, even outside the sector
+
+For a rank-one generator the centralizer assumption can be removed.
+Let `P=v w^T` preserve the integer energy blocks, with `w^T v=0`, so
+`P^2=0`. Let `f(t)` be any **nonconstant** scalar polynomial, and set
+`U(t)=I+f(t)P`. Suppose its transformed infinity matrix has no entry
+below order `-8` and its leading realignment has rank one. Then the
+transformed seed is exactly the original reference, over every
+characteristic-two field.
+
+The additional fact about this reference is
+
+```math
+B_{-8}^4=I,\qquad (B_{-8}-I)^4=0.                      \tag{9}
+```
+
+The checker verifies the matrix identity directly. In particular its
+only eigenvalue over any coefficient field is one.
+
+Write `d=deg f>=1` and let `a_d!=0` be its leading coefficient. Before
+using the sector identities, the general conjugation formula is
+
+```math
+B_U=B+f(z^{-1})[P,B]+f(z^{-1})^2PBP.
+```
+
+At power `z^(-8-d)`, the linear term is exactly
+`a_d[P,B_-8]`; lower coefficients of `f` would require a nonexistent
+coefficient of `B` below `-8`. Every quadratic contribution is a scalar
+multiple of `P`, since `P B_k P=(w^T B_k v)P`. The no-new-pole condition
+therefore forces `[P,B_-8]=beta P` for some scalar `beta`.
+
+For a rank-one `P`, that relation implies
+`B_-8 v=lambda v` and `w^T B_-8=(lambda+beta)w^T`.
+Equation (9) forces both eigenvalues to be one, hence `beta=0`.
+Thus `P` belongs to the leading centralizer after all. Its nilpotence
+places it in the four-dimensional sector `R`.
+
+The all-degree reduction now applies to `f(t)P`. If `P` were nonzero
+modulo `Z`, a positive-degree coefficient would remain nonzero modulo
+`Z`, contradicting sections 3--4. Hence `P` commutes with the entire
+reference and the conjugation is trivial for every `t`.
+
+This closes rank-one scalar-polynomial energy dressings under the stated
+pole and leading-rank conditions. Higher-rank generators outside `R`
+and transformations that relax those conditions remain open.

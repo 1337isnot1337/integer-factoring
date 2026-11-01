@@ -10,7 +10,7 @@ from pathlib import Path
 
 from check_controlled_permutation_smith import binary_rank
 from check_joint_leading_tangent import realign
-from joint_energy_conjugations import Space, binary_product, kernel, model, unit_characters
+from joint_energy_conjugations import IDENTITY, Space, binary_product, kernel, model, unit_characters
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -32,6 +32,8 @@ def polynomial_product(a, b):
 
 def certificate():
     data = model()
+    leading_square = binary_product(data['weighted'][-8], data['weighted'][-8])
+    assert binary_product(leading_square, leading_square) == IDENTITY
     characters, full_characters = unit_characters(data)
     radical = [data['leading'].matrix((v, 0))[0] for v in kernel(characters, 10)]
     trivial = [data['full'].matrix((v, 0))[0] for v in kernel(full_characters, 4)]
@@ -67,6 +69,7 @@ def certificate():
         assert value == expected
         minors.append(dict(rows=rows, columns=columns, polynomial=value))
     return dict(nilpotent_sector_dimension=4, trivial_sector_dimension=2,
+                leading_operator_fourth_power_identity=True,
                 effective_polynomial_parameters=2, sector_square_zero_products=16,
                 quadratic_matrix_identities=quadratic_identities,
                 quotient_generators=[first, second], leading_minor_witnesses=minors,
@@ -75,6 +78,7 @@ def certificate():
                                             'check_joint_leading_tangent.py', 'search_f4_recentered_crossings.py')},
                 scope='Every characteristic-two field and every polynomial degree, for radical-valued energy-preserving unimodular dressings retaining the original worst infinity pole and rank-one leading coefficient.',
                 conclusion='The transformed seed equals a constant conjugate; if the dressing is identity at zero, the seed is unchanged.',
+                rank_one_extension='Every nonconstant scalar-polynomial rank-one energy dressing retaining that pole and leading rank is trivial, even without assuming its generator lies in the leading centralizer.',
                 factoring_exponent='1/2; unchanged')
 
 
