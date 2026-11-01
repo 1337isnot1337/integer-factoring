@@ -1993,3 +1993,15 @@ all-field `rho >= 3/4` obstruction away from its zero parameter. Different
 jet factors and asymmetric weights remain open. Run
 `make verify-joint-split-jet-guards` for the new focused certificates;
 this follow-up is outside the earlier full-suite pin.
+
+[Finite-field rank-flag queries](research/joint-split-finite-flags.md)
+allow the low-rank factors to vary across the full declared homogeneous
+protected split family. Recorded Z3 results over F2/F4/F8 leave only
+physical phases of the coordinate crossing. Together with the exact guards
+and a degree-905 integer Bernstein certificate, this gives a solver-trusted
+balanced natural `rho >= 5/7` floor for those fields. F16 remains unresolved
+after a timeout; no all-field or asymmetric conclusion follows. Run
+`make verify-joint-split-flags` for independent positive jet controls and
+receipt replay; this does not independently certify the solver's UNSAT
+claims. These additions postdate the full-suite source pin, and the
+factoring score remains **1/2**.

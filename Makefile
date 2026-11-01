@@ -2179,6 +2179,10 @@ verify-joint-grid-compressions:
 verify-joint-split-jet-guards:
 	python3 tools/check_joint_split_jet_guards.py
 
+.PHONY: verify-joint-split-flags
+verify-joint-split-flags:
+	python3 tools/check_joint_split_flag_queries.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py
