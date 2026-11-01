@@ -1332,3 +1332,4 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## Multichannel rectangular cofactor checkpoint
 
 - [Multichannel rectangular cofactors](multichannel-rectangular-cofactors.md): an integral rank-capacity factorization forces cofactors to pay for several crossed Smith orders; all-field graded caps and exact rejection of an eight-letter point that passes the preceding square and rectangular-jet relaxation. No realizing tensor or score improvement.
+- [Bare obstruction through eleven letters](multichannel-bare-eleven-letter-floor.md): eight short integer weights per alphabet give all-field, all-degree, all-scale floors `71/100` and `177/250` on ten and eleven letters; independently gauged energies and twelve letters remain outside these witnesses.

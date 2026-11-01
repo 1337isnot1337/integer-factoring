@@ -2215,6 +2215,10 @@ verify-hereditary-q6-rejection:
 verify-multichannel-cofactors:
 	python3 tools/check_multichannel_cofactor_caps.py
 
+.PHONY: verify-multichannel-bare-entropy
+verify-multichannel-bare-entropy:
+	python3 tools/check_multichannel_bare_entropy.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

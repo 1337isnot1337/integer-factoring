@@ -2072,6 +2072,13 @@ square and rectangular-jet caps but violates these new constraints.
 Literal cofactors attain the new entry bound. Run
 `make verify-multichannel-cofactors`; the factoring score remains **1/2**.
 
+[Eight-row entropy witnesses](research/multichannel-bare-eleven-letter-floor.md)
+extend the all-field, all-degree, all-scale scalar bare obstruction through
+**eleven letters**: `rho>71/100` on ten and `rho>177/250` on eleven.
+Both exceed `1/sqrt(2)`. Independently gauged energies remain outside this
+obstruction. Run `make verify-multichannel-bare-entropy` for the exact
+rational probabilities and 100-bit outward entropy comparisons.
+
 The [latest full verification receipt](evidence/hereditary-full-verification.json)
 pins a successful clean default replay and all nine named joint/hereditary
 targets to exact `d31ffec`: 350 Python command blocks, 66 unit tests,
