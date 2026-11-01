@@ -2211,6 +2211,10 @@ verify-hereditary-adjugate:
 verify-hereditary-q6-rejection:
 	python3 tools/check_hereditary_q6_rectangular_rejection.py
 
+.PHONY: verify-multichannel-cofactors
+verify-multichannel-cofactors:
+	python3 tools/check_multichannel_cofactor_caps.py
+
 .PHONY: verify-multiaxis-cube
 verify-multiaxis-cube:
 	python3 tools/check_multiaxis_cube_transfer.py

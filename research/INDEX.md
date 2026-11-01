@@ -1328,3 +1328,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 ## First orthogonal candidate: exact natural-pressure floor
 
 [Low-core exclusion](orthogonal-pair-core-floor.md) proves balanced natural rho >= 32/45 for the specified92-letter candidate without completing its full profile. Other gauges, asymmetric criteria and low-core changes remain outside this result.
+
+## Multichannel rectangular cofactor checkpoint
+
+- [Multichannel rectangular cofactors](multichannel-rectangular-cofactors.md): an integral rank-capacity factorization forces cofactors to pay for several crossed Smith orders; all-field graded caps and exact rejection of an eight-letter point that passes the preceding square and rectangular-jet relaxation. No realizing tensor or score improvement.

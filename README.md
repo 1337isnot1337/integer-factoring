@@ -2065,6 +2065,13 @@ Run `make verify-hereditary-adjugate verify-hereditary-q6-rejection` for
 the historical relaxation and the exact rejection. No realizing tensor or
 stronger factoring algorithm is supplied.
 
+The [multichannel rectangular cofactor bound](research/multichannel-rectangular-cofactors.md)
+also charges third and later Smith channels when forming a cofactor.
+An exact eight-letter negative-pressure point passes the preceding
+square and rectangular-jet caps but violates these new constraints.
+Literal cofactors attain the new entry bound. Run
+`make verify-multichannel-cofactors`; the factoring score remains **1/2**.
+
 The [latest full verification receipt](evidence/hereditary-full-verification.json)
 pins a successful clean default replay and all nine named joint/hereditary
 targets to exact `d31ffec`: 350 Python command blocks, 66 unit tests,
