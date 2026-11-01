@@ -1256,3 +1256,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Fixed-scale factor moments from global Bézout data](regularized-bezout-factor-moments.md): arbitrary odd inputs, independent power-of-two interval sizes, known normalization, complete short reverse supports, and polynomial-time postprocessing of a supplied jet.
 - [Displaced Bézout extraction](displaced-bezout-extraction.md): factor-count-sensitive primitive stabilization and an exact modular Hankel decoder that permits vanishing early minors.
 - [One leading coefficient suffices for factoring](leading-bezout-factoring.md): flat derivative units turn one normalized scalar into a positive proper-divisor sum; a linear-precision, polynomial-query reduction isolates the remaining coefficient evaluator.
+
+## Rational joint retraction model
+
+- [Complete polynomial normal form](joint-hot-rational-retraction-module.md): a degree-11 polynomial right inverse removes all pole-location/order guesses for the stated fixed embedding. Raw-jet rigidity is narrower than Smith-profile rigidity; no improved crossing cost is claimed.

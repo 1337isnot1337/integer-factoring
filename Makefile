@@ -2259,3 +2259,7 @@ verify-displaced-bezout-extraction:
 
 verify-leading-bezout-factoring:
 	python3 tools/check_leading_bezout_factoring.py --output /tmp/leading-bezout-factoring.json
+
+.PHONY: verify-joint-retraction-module
+verify-joint-retraction-module:
+	python3 tools/check_joint_hot_retraction_module.py
