@@ -281,6 +281,10 @@ verify-braid-path:
 verify-braid-path-profiles:
 	python3 tools/check_quantum_braid_path_profiles.py
 
+.PHONY: verify-braid-reversal
+verify-braid-reversal:
+	python3 tools/check_quantum_braid_reversal.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py

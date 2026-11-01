@@ -660,6 +660,12 @@ complete eight-site profile. The strict F4 span has dimension 51 at
 eight sites; its retained central coefficient has full rank in both
 cuts. This remains a structural checkpoint, without a favorable
 recombination. The optional batch replay needs NumPy.
+The [reversal-stable binary selection](research/quantum-braid-reversal-nilpotence.md)
+gives a closed form for the leading coefficient and makes its normalized
+rank-one operator square-zero at every binary width. Polynomial
+conjugations preserve both endpoints; exact small examples cancel
+leading degrees without establishing a stronger pressure bound.
+Run the NumPy check `make verify-braid-reversal`.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the

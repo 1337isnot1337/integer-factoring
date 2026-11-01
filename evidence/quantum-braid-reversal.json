@@ -1,0 +1,80 @@
+{
+  "status": "pass",
+  "local_reflection_identities": 288,
+  "word_reflection_controls": 38500,
+  "reversal_stable_binary_labels": 8190,
+  "full_leading_tensor_entries": 29202,
+  "independent_polynomial_product_entries": 10832,
+  "lexicographic_eight_label_square_zero_negative_control": true,
+  "finite_dressings": [
+    {
+      "length": 4,
+      "binary_width": 1,
+      "labels": 2,
+      "selected_indices": [
+        0,
+        1
+      ],
+      "scalar": 1,
+      "original_degree": 16,
+      "dressed_degree": 14,
+      "new_leading_rank_pair": [
+        2,
+        4
+      ]
+    },
+    {
+      "length": 6,
+      "binary_width": 2,
+      "labels": 4,
+      "selected_indices": [
+        2,
+        3,
+        0,
+        1
+      ],
+      "scalar": 3,
+      "original_degree": 36,
+      "dressed_degree": 35,
+      "new_leading_rank_pair": [
+        2,
+        12
+      ]
+    },
+    {
+      "length": 8,
+      "binary_width": 3,
+      "labels": 8,
+      "selected_indices": [
+        7,
+        11,
+        1,
+        3,
+        2,
+        8,
+        5,
+        9
+      ],
+      "scalar": 3,
+      "original_degree": 64,
+      "dressed_degree": 64,
+      "new_leading_rank_pair": [
+        1,
+        64
+      ]
+    }
+  ],
+  "scope": "Uniform reversal alphabets and leading nilpotence; finite pole cancellation examples, without a favorable rank-pressure theorem.",
+  "source_sha256": {
+    "tools/quantum_braid_reversal.py": "58309277654f87cc0dfd3017659986e0f3f2275e9299754451e4ae3b5848a05d",
+    "tools/check_quantum_braid_reversal.py": "5154bc0f479a69a11a72e53fa3ed1fbef304086c7ec26cde225716325fbe5c4c",
+    "tools/quantum_braid_path.py": "4a6ce2cbad920cbe6dde6b6abf4642675a1d3d13955c8be67e6d0b6c97eae946",
+    "tools/quantum_block_braid.py": "116d689f620a5d8fb784387d3eccc311497f56fbfc05a400ac8188f2c13cfc94",
+    "tools/paired_path_crossing.py": "309fb3f10a230475d5fae68625fcee5f5cfb50fc52491cc63f0765a7627c5c4b",
+    "tools/bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "tools/bounded_spin_support.py": "d3771564da3fb1d88ebdc2444f4e62db6754b2f72ad11101ed72a078a2d4a678",
+    "tools/check_fixed_field_descent.py": "831c1fe850b9d21b8d0050e310adaed2586251950542bb7d274e2ffd334ea8ac",
+    "tools/check_quantum_braid_path_profiles.py": "edbc7f1ed7ff0ca35da5ff5603a08cfd528b549b7cf4e9d3ca828c7f447e0af7",
+    "tools/search_auxiliary_extension_span.py": "b819f76b73a6b15509af27de5784b1488c0affe077d4677064291c61ab7c574b"
+  }
+}
