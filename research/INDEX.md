@@ -1,5 +1,7 @@
 # Research index
 
+- [Executable two-pass oriented construction](circuit-box-oriented-batch-controls.md): unitary preprocessing, raw-difference comparison, sparse output charges, and independent ideal controls.
+
 - [Small internal pivots](small-pivot-integer-row-selection.md): arbitrary pivot-column exactness, retained original relations, and paired 96/112 component measurements.
 
 - [Sparse graph projections and bounded 128-bit attempts](sparse-projected-signed-graph.md): identical full integer maps, independently replayed integration, explicit failure costs, and a declared larger retry.

@@ -1,0 +1,1666 @@
+{
+  "counts": {
+    "independent_prime_expansions": 3357,
+    "invalid_inputs_rejected": 5,
+    "literal_ideal_identities": 2932,
+    "ordered_ideal_batches": 15,
+    "raw_delta_variant_comparisons": 24,
+    "single_pass_comparisons": 15
+  },
+  "edge_cases": [
+    {
+      "atoms": [],
+      "keys": [],
+      "raw_delta_atoms": [],
+      "raw_delta_statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 0,
+          "exact_divisions": 0,
+          "family_factor_calls": 1,
+          "gcd_calls": 0,
+          "gcd_operand_bits": 0,
+          "maximum_operand_bits": 0,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 0,
+          "multiplications": 0,
+          "pair_calls": 0,
+          "power_reductions": 0,
+          "single_factor_calls": 0,
+          "support_splits": 0
+        },
+        "first_pass_basis_size": 0,
+        "normalization_multiplication_operand_bits": 0,
+        "normalization_multiplications": 0,
+        "normalization_remainder_operand_bits": 0,
+        "normalization_remainders": 0,
+        "normalized_root_incidences": 0,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 0,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 0,
+          "exact_divisions": 0,
+          "family_factor_calls": 1,
+          "gcd_calls": 0,
+          "gcd_operand_bits": 0,
+          "maximum_operand_bits": 0,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 0,
+          "multiplications": 0,
+          "pair_calls": 0,
+          "power_reductions": 0,
+          "single_factor_calls": 0,
+          "support_splits": 0
+        },
+        "second_pass_basis_size": 0,
+        "second_pass_input_bits": 0,
+        "second_pass_input_count": 0,
+        "sparse_usage_entries": 0,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 0
+      },
+      "raw_delta_words": [],
+      "statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 0,
+          "exact_divisions": 0,
+          "family_factor_calls": 1,
+          "gcd_calls": 0,
+          "gcd_operand_bits": 0,
+          "maximum_operand_bits": 0,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 0,
+          "multiplications": 0,
+          "pair_calls": 0,
+          "power_reductions": 0,
+          "single_factor_calls": 0,
+          "support_splits": 0
+        },
+        "first_pass_basis_size": 0,
+        "normalization_multiplication_operand_bits": 0,
+        "normalization_multiplications": 0,
+        "normalization_remainder_operand_bits": 0,
+        "normalization_remainders": 0,
+        "normalized_root_incidences": 0,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 0,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 0,
+          "exact_divisions": 0,
+          "family_factor_calls": 1,
+          "gcd_calls": 0,
+          "gcd_operand_bits": 0,
+          "maximum_operand_bits": 0,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 0,
+          "multiplications": 0,
+          "pair_calls": 0,
+          "power_reductions": 0,
+          "single_factor_calls": 0,
+          "support_splits": 0
+        },
+        "second_pass_basis_size": 0,
+        "second_pass_input_bits": 0,
+        "second_pass_input_count": 0,
+        "sparse_usage_entries": 0,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 0
+      },
+      "words": []
+    },
+    {
+      "atoms": [],
+      "keys": [
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "raw_delta_atoms": [],
+      "raw_delta_statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 2,
+          "exact_divisions": 1,
+          "family_factor_calls": 1,
+          "gcd_calls": 2,
+          "gcd_operand_bits": 4,
+          "maximum_operand_bits": 1,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 0,
+          "multiplications": 0,
+          "pair_calls": 0,
+          "power_reductions": 0,
+          "single_factor_calls": 1,
+          "support_splits": 1
+        },
+        "first_pass_basis_size": 0,
+        "normalization_multiplication_operand_bits": 0,
+        "normalization_multiplications": 0,
+        "normalization_remainder_operand_bits": 0,
+        "normalization_remainders": 0,
+        "normalized_root_incidences": 0,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 0,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 0,
+          "exact_divisions": 0,
+          "family_factor_calls": 1,
+          "gcd_calls": 0,
+          "gcd_operand_bits": 0,
+          "maximum_operand_bits": 0,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 0,
+          "multiplications": 0,
+          "pair_calls": 0,
+          "power_reductions": 0,
+          "single_factor_calls": 0,
+          "support_splits": 0
+        },
+        "second_pass_basis_size": 0,
+        "second_pass_input_bits": 0,
+        "second_pass_input_count": 0,
+        "sparse_usage_entries": 0,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 0
+      },
+      "raw_delta_words": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ],
+      "statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 2,
+          "exact_divisions": 1,
+          "family_factor_calls": 1,
+          "gcd_calls": 2,
+          "gcd_operand_bits": 4,
+          "maximum_operand_bits": 1,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 0,
+          "multiplications": 0,
+          "pair_calls": 0,
+          "power_reductions": 0,
+          "single_factor_calls": 1,
+          "support_splits": 1
+        },
+        "first_pass_basis_size": 0,
+        "normalization_multiplication_operand_bits": 0,
+        "normalization_multiplications": 0,
+        "normalization_remainder_operand_bits": 0,
+        "normalization_remainders": 0,
+        "normalized_root_incidences": 0,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 0,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 0,
+          "exact_divisions": 0,
+          "family_factor_calls": 1,
+          "gcd_calls": 0,
+          "gcd_operand_bits": 0,
+          "maximum_operand_bits": 0,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 0,
+          "multiplications": 0,
+          "pair_calls": 0,
+          "power_reductions": 0,
+          "single_factor_calls": 0,
+          "support_splits": 0
+        },
+        "second_pass_basis_size": 0,
+        "second_pass_input_bits": 0,
+        "second_pass_input_count": 0,
+        "sparse_usage_entries": 0,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 0
+      },
+      "words": [
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
+      ]
+    },
+    {
+      "atoms": [
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 5,
+          "root": 4
+        },
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 13,
+          "root": 10
+        }
+      ],
+      "keys": [
+        [
+          65,
+          16
+        ],
+        [
+          65,
+          36
+        ]
+      ],
+      "raw_delta_atoms": [
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 5,
+          "root": 4
+        },
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 13,
+          "root": 10
+        }
+      ],
+      "raw_delta_statistics": {
+        "discarded_auxiliary_atoms": 1,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 42,
+          "exact_divisions": 3,
+          "family_factor_calls": 1,
+          "gcd_calls": 7,
+          "gcd_operand_bits": 80,
+          "maximum_operand_bits": 13,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 14,
+          "multiplications": 1,
+          "pair_calls": 0,
+          "power_reductions": 2,
+          "single_factor_calls": 1,
+          "support_splits": 2
+        },
+        "first_pass_basis_size": 1,
+        "normalization_multiplication_operand_bits": 9,
+        "normalization_multiplications": 1,
+        "normalization_remainder_operand_bits": 60,
+        "normalization_remainders": 5,
+        "normalized_root_incidences": 2,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 2,
+        "second_coprime_pass": {
+          "basis_extensions": 2,
+          "basis_merges": 1,
+          "comparison_splits": 4,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 284,
+          "exact_divisions": 36,
+          "family_factor_calls": 3,
+          "gcd_calls": 71,
+          "gcd_operand_bits": 523,
+          "maximum_operand_bits": 10,
+          "maximum_pair_depth": 2,
+          "multiplication_operand_bits": 148,
+          "multiplications": 24,
+          "pair_calls": 5,
+          "power_reductions": 8,
+          "single_factor_calls": 6,
+          "support_splits": 24
+        },
+        "second_pass_basis_size": 3,
+        "second_pass_input_bits": 11,
+        "second_pass_input_count": 2,
+        "sparse_usage_entries": 4,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 1
+      },
+      "raw_delta_words": [
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ],
+      "statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 42,
+          "exact_divisions": 3,
+          "family_factor_calls": 1,
+          "gcd_calls": 7,
+          "gcd_operand_bits": 80,
+          "maximum_operand_bits": 13,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 14,
+          "multiplications": 1,
+          "pair_calls": 0,
+          "power_reductions": 2,
+          "single_factor_calls": 1,
+          "support_splits": 2
+        },
+        "first_pass_basis_size": 1,
+        "normalization_multiplication_operand_bits": 9,
+        "normalization_multiplications": 1,
+        "normalization_remainder_operand_bits": 60,
+        "normalization_remainders": 5,
+        "normalized_root_incidences": 2,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 2,
+        "second_coprime_pass": {
+          "basis_extensions": 2,
+          "basis_merges": 1,
+          "comparison_splits": 4,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 204,
+          "exact_divisions": 28,
+          "family_factor_calls": 3,
+          "gcd_calls": 54,
+          "gcd_operand_bits": 372,
+          "maximum_operand_bits": 9,
+          "maximum_pair_depth": 2,
+          "multiplication_operand_bits": 86,
+          "multiplications": 14,
+          "pair_calls": 5,
+          "power_reductions": 6,
+          "single_factor_calls": 4,
+          "support_splits": 17
+        },
+        "second_pass_basis_size": 2,
+        "second_pass_input_bits": 10,
+        "second_pass_input_count": 2,
+        "sparse_usage_entries": 4,
+        "unitary_preconditioning_gcd_operand_bits": 11,
+        "unitary_preconditioning_gcds": 1,
+        "zero_difference_incidences": 1
+      },
+      "words": [
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "atoms": [
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 13,
+          "root": 10
+        },
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 25,
+          "root": 14
+        }
+      ],
+      "keys": [
+        [
+          325,
+          114
+        ],
+        [
+          325,
+          614
+        ]
+      ],
+      "raw_delta_atoms": [
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 5,
+          "root": 4
+        },
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 13,
+          "root": 10
+        }
+      ],
+      "raw_delta_statistics": {
+        "discarded_auxiliary_atoms": 1,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 54,
+          "exact_divisions": 3,
+          "family_factor_calls": 1,
+          "gcd_calls": 7,
+          "gcd_operand_bits": 102,
+          "maximum_operand_bits": 17,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 18,
+          "multiplications": 1,
+          "pair_calls": 0,
+          "power_reductions": 2,
+          "single_factor_calls": 1,
+          "support_splits": 2
+        },
+        "first_pass_basis_size": 1,
+        "normalization_multiplication_operand_bits": 9,
+        "normalization_multiplications": 1,
+        "normalization_remainder_operand_bits": 76,
+        "normalization_remainders": 5,
+        "normalized_root_incidences": 2,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 2,
+        "second_coprime_pass": {
+          "basis_extensions": 2,
+          "basis_merges": 1,
+          "comparison_splits": 8,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 435,
+          "exact_divisions": 52,
+          "family_factor_calls": 3,
+          "gcd_calls": 91,
+          "gcd_operand_bits": 751,
+          "maximum_operand_bits": 17,
+          "maximum_pair_depth": 4,
+          "multiplication_operand_bits": 218,
+          "multiplications": 33,
+          "pair_calls": 9,
+          "power_reductions": 9,
+          "single_factor_calls": 6,
+          "support_splits": 26
+        },
+        "second_pass_basis_size": 3,
+        "second_pass_input_bits": 17,
+        "second_pass_input_count": 2,
+        "sparse_usage_entries": 4,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 1
+      },
+      "raw_delta_words": [
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            -1
+          ]
+        ]
+      ],
+      "statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 0,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 54,
+          "exact_divisions": 3,
+          "family_factor_calls": 1,
+          "gcd_calls": 7,
+          "gcd_operand_bits": 102,
+          "maximum_operand_bits": 17,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 18,
+          "multiplications": 1,
+          "pair_calls": 0,
+          "power_reductions": 2,
+          "single_factor_calls": 1,
+          "support_splits": 2
+        },
+        "first_pass_basis_size": 1,
+        "normalization_multiplication_operand_bits": 11,
+        "normalization_multiplications": 1,
+        "normalization_remainder_operand_bits": 80,
+        "normalization_remainders": 5,
+        "normalized_root_incidences": 2,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 2,
+        "second_coprime_pass": {
+          "basis_extensions": 2,
+          "basis_merges": 1,
+          "comparison_splits": 4,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 279,
+          "exact_divisions": 28,
+          "family_factor_calls": 3,
+          "gcd_calls": 54,
+          "gcd_operand_bits": 508,
+          "maximum_operand_bits": 13,
+          "maximum_pair_depth": 2,
+          "multiplication_operand_bits": 116,
+          "multiplications": 14,
+          "pair_calls": 5,
+          "power_reductions": 6,
+          "single_factor_calls": 4,
+          "support_splits": 17
+        },
+        "second_pass_basis_size": 2,
+        "second_pass_input_bits": 14,
+        "second_pass_input_count": 2,
+        "sparse_usage_entries": 4,
+        "unitary_preconditioning_gcd_operand_bits": 17,
+        "unitary_preconditioning_gcds": 1,
+        "zero_difference_incidences": 1
+      },
+      "words": [
+        [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    },
+    {
+      "atoms": [
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 13,
+          "root": 10
+        }
+      ],
+      "keys": [
+        [
+          169,
+          140
+        ],
+        [
+          13,
+          10
+        ],
+        [
+          169,
+          198
+        ]
+      ],
+      "raw_delta_atoms": [
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 13,
+          "root": 10
+        }
+      ],
+      "raw_delta_statistics": {
+        "discarded_auxiliary_atoms": 1,
+        "first_coprime_pass": {
+          "basis_extensions": 2,
+          "basis_merges": 1,
+          "comparison_splits": 6,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 189,
+          "exact_divisions": 28,
+          "family_factor_calls": 3,
+          "gcd_calls": 46,
+          "gcd_operand_bits": 333,
+          "maximum_operand_bits": 12,
+          "maximum_pair_depth": 3,
+          "multiplication_operand_bits": 74,
+          "multiplications": 11,
+          "pair_calls": 7,
+          "power_reductions": 4,
+          "single_factor_calls": 2,
+          "support_splits": 11
+        },
+        "first_pass_basis_size": 1,
+        "normalization_multiplication_operand_bits": 0,
+        "normalization_multiplications": 0,
+        "normalization_remainder_operand_bits": 44,
+        "normalization_remainders": 4,
+        "normalized_root_incidences": 3,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 1,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 1,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 1,
+          "division_operand_bits": 104,
+          "exact_divisions": 14,
+          "family_factor_calls": 3,
+          "gcd_calls": 31,
+          "gcd_operand_bits": 204,
+          "maximum_operand_bits": 8,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 54,
+          "multiplications": 9,
+          "pair_calls": 0,
+          "power_reductions": 4,
+          "single_factor_calls": 2,
+          "support_splits": 12
+        },
+        "second_pass_basis_size": 2,
+        "second_pass_input_bits": 6,
+        "second_pass_input_count": 2,
+        "sparse_usage_entries": 3,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 2
+      },
+      "raw_delta_words": [
+        [
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ]
+        ]
+      ],
+      "statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 2,
+          "basis_merges": 1,
+          "comparison_splits": 6,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 189,
+          "exact_divisions": 28,
+          "family_factor_calls": 3,
+          "gcd_calls": 46,
+          "gcd_operand_bits": 333,
+          "maximum_operand_bits": 12,
+          "maximum_pair_depth": 3,
+          "multiplication_operand_bits": 74,
+          "multiplications": 11,
+          "pair_calls": 7,
+          "power_reductions": 4,
+          "single_factor_calls": 2,
+          "support_splits": 11
+        },
+        "first_pass_basis_size": 1,
+        "normalization_multiplication_operand_bits": 0,
+        "normalization_multiplications": 0,
+        "normalization_remainder_operand_bits": 44,
+        "normalization_remainders": 4,
+        "normalized_root_incidences": 3,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 1,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 1,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 0,
+          "division_operand_bits": 47,
+          "exact_divisions": 7,
+          "family_factor_calls": 3,
+          "gcd_calls": 15,
+          "gcd_operand_bits": 91,
+          "maximum_operand_bits": 8,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 13,
+          "multiplications": 2,
+          "pair_calls": 0,
+          "power_reductions": 2,
+          "single_factor_calls": 2,
+          "support_splits": 6
+        },
+        "second_pass_basis_size": 1,
+        "second_pass_input_bits": 5,
+        "second_pass_input_count": 2,
+        "sparse_usage_entries": 3,
+        "unitary_preconditioning_gcd_operand_bits": 6,
+        "unitary_preconditioning_gcds": 1,
+        "zero_difference_incidences": 2
+      },
+      "words": [
+        [
+          [
+            0,
+            2
+          ]
+        ],
+        [
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -2
+          ]
+        ]
+      ]
+    },
+    {
+      "atoms": [
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 29,
+          "root": 24
+        },
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 65,
+          "root": 16
+        }
+      ],
+      "keys": [
+        [
+          29,
+          24
+        ],
+        [
+          29,
+          34
+        ],
+        [
+          65,
+          16
+        ]
+      ],
+      "raw_delta_atoms": [
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 5,
+          "root": 4
+        },
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 13,
+          "root": 10
+        },
+        {
+          "form": [
+            1,
+            0,
+            1
+          ],
+          "norm": 29,
+          "root": 24
+        }
+      ],
+      "raw_delta_statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 1,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 1,
+          "division_operand_bits": 198,
+          "exact_divisions": 14,
+          "family_factor_calls": 3,
+          "gcd_calls": 31,
+          "gcd_operand_bits": 383,
+          "maximum_operand_bits": 13,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 108,
+          "multiplications": 9,
+          "pair_calls": 0,
+          "power_reductions": 4,
+          "single_factor_calls": 2,
+          "support_splits": 12
+        },
+        "first_pass_basis_size": 2,
+        "normalization_multiplication_operand_bits": 9,
+        "normalization_multiplications": 1,
+        "normalization_remainder_operand_bits": 80,
+        "normalization_remainders": 7,
+        "normalized_root_incidences": 3,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 3,
+        "second_coprime_pass": {
+          "basis_extensions": 2,
+          "basis_merges": 2,
+          "comparison_splits": 4,
+          "coprime_merge_shortcuts": 1,
+          "division_operand_bits": 476,
+          "exact_divisions": 51,
+          "family_factor_calls": 5,
+          "gcd_calls": 102,
+          "gcd_operand_bits": 923,
+          "maximum_operand_bits": 14,
+          "maximum_pair_depth": 2,
+          "multiplication_operand_bits": 342,
+          "multiplications": 39,
+          "pair_calls": 7,
+          "power_reductions": 8,
+          "single_factor_calls": 5,
+          "support_splits": 39
+        },
+        "second_pass_basis_size": 3,
+        "second_pass_input_bits": 15,
+        "second_pass_input_count": 3,
+        "sparse_usage_entries": 4,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 2
+      },
+      "raw_delta_words": [
+        [
+          [
+            2,
+            1
+          ]
+        ],
+        [
+          [
+            2,
+            -1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ],
+          [
+            1,
+            -1
+          ]
+        ]
+      ],
+      "statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 1,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 1,
+          "division_operand_bits": 198,
+          "exact_divisions": 14,
+          "family_factor_calls": 3,
+          "gcd_calls": 31,
+          "gcd_operand_bits": 383,
+          "maximum_operand_bits": 13,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 108,
+          "multiplications": 9,
+          "pair_calls": 0,
+          "power_reductions": 4,
+          "single_factor_calls": 2,
+          "support_splits": 12
+        },
+        "first_pass_basis_size": 2,
+        "normalization_multiplication_operand_bits": 0,
+        "normalization_multiplications": 0,
+        "normalization_remainder_operand_bits": 60,
+        "normalization_remainders": 5,
+        "normalized_root_incidences": 3,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 2,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 2,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 1,
+          "division_operand_bits": 294,
+          "exact_divisions": 22,
+          "family_factor_calls": 5,
+          "gcd_calls": 47,
+          "gcd_operand_bits": 565,
+          "maximum_operand_bits": 13,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 174,
+          "multiplications": 15,
+          "pair_calls": 0,
+          "power_reductions": 4,
+          "single_factor_calls": 3,
+          "support_splits": 20
+        },
+        "second_pass_basis_size": 2,
+        "second_pass_input_bits": 13,
+        "second_pass_input_count": 3,
+        "sparse_usage_entries": 3,
+        "unitary_preconditioning_gcd_operand_bits": 8,
+        "unitary_preconditioning_gcds": 1,
+        "zero_difference_incidences": 2
+      },
+      "words": [
+        [
+          [
+            0,
+            1
+          ]
+        ],
+        [
+          [
+            0,
+            -1
+          ]
+        ],
+        [
+          [
+            1,
+            1
+          ]
+        ]
+      ]
+    }
+  ],
+  "mixed_prime_power_family": {
+    "final_atoms": 8,
+    "first_pass_basis_size": 1,
+    "input_bits": 28598,
+    "keys": 256,
+    "maximum_norm_bits": 186,
+    "raw_delta_statistics": {
+      "discarded_auxiliary_atoms": 212,
+      "first_coprime_pass": {
+        "basis_extensions": 8,
+        "basis_merges": 4,
+        "comparison_splits": 28,
+        "coprime_merge_shortcuts": 0,
+        "division_operand_bits": 10008,
+        "exact_divisions": 120,
+        "family_factor_calls": 9,
+        "gcd_calls": 188,
+        "gcd_operand_bits": 18031,
+        "maximum_operand_bits": 558,
+        "maximum_pair_depth": 5,
+        "multiplication_operand_bits": 6639,
+        "multiplications": 62,
+        "pair_calls": 32,
+        "power_reductions": 13,
+        "single_factor_calls": 5,
+        "support_splits": 39
+      },
+      "first_pass_basis_size": 1,
+      "normalization_multiplication_operand_bits": 142,
+      "normalization_multiplications": 7,
+      "normalization_remainder_operand_bits": 38990,
+      "normalization_remainders": 271,
+      "normalized_root_incidences": 256,
+      "orientation_gcd_calls_after_basis_passes": 0,
+      "retained_atoms": 8,
+      "second_coprime_pass": {
+        "basis_extensions": 1040,
+        "basis_merges": 255,
+        "comparison_splits": 24850,
+        "coprime_merge_shortcuts": 13,
+        "division_operand_bits": 2948461,
+        "exact_divisions": 123293,
+        "family_factor_calls": 511,
+        "gcd_calls": 209237,
+        "gcd_operand_bits": 6548886,
+        "maximum_operand_bits": 9187,
+        "maximum_pair_depth": 5,
+        "multiplication_operand_bits": 9120891,
+        "multiplications": 180033,
+        "pair_calls": 43919,
+        "power_reductions": 3217,
+        "single_factor_calls": 2914,
+        "support_splits": 70154
+      },
+      "second_pass_basis_size": 220,
+      "second_pass_input_bits": 9327,
+      "second_pass_input_count": 256,
+      "sparse_usage_entries": 2048,
+      "unitary_preconditioning_gcd_operand_bits": 0,
+      "unitary_preconditioning_gcds": 0,
+      "zero_difference_incidences": 1
+    },
+    "second_pass_data_bit_bound": 113368,
+    "statistics": {
+      "discarded_auxiliary_atoms": 0,
+      "first_coprime_pass": {
+        "basis_extensions": 8,
+        "basis_merges": 4,
+        "comparison_splits": 28,
+        "coprime_merge_shortcuts": 0,
+        "division_operand_bits": 10008,
+        "exact_divisions": 120,
+        "family_factor_calls": 9,
+        "gcd_calls": 188,
+        "gcd_operand_bits": 18031,
+        "maximum_operand_bits": 558,
+        "maximum_pair_depth": 5,
+        "multiplication_operand_bits": 6639,
+        "multiplications": 62,
+        "pair_calls": 32,
+        "power_reductions": 13,
+        "single_factor_calls": 5,
+        "support_splits": 39
+      },
+      "first_pass_basis_size": 1,
+      "normalization_multiplication_operand_bits": 142,
+      "normalization_multiplications": 7,
+      "normalization_remainder_operand_bits": 38990,
+      "normalization_remainders": 271,
+      "normalized_root_incidences": 256,
+      "orientation_gcd_calls_after_basis_passes": 0,
+      "retained_atoms": 8,
+      "second_coprime_pass": {
+        "basis_extensions": 806,
+        "basis_merges": 255,
+        "comparison_splits": 7868,
+        "coprime_merge_shortcuts": 24,
+        "division_operand_bits": 438572,
+        "exact_divisions": 36483,
+        "family_factor_calls": 511,
+        "gcd_calls": 62442,
+        "gcd_operand_bits": 840312,
+        "maximum_operand_bits": 4761,
+        "maximum_pair_depth": 2,
+        "multiplication_operand_bits": 586534,
+        "multiplications": 33836,
+        "pair_calls": 11910,
+        "power_reductions": 2048,
+        "single_factor_calls": 1794,
+        "support_splits": 19723
+      },
+      "second_pass_basis_size": 8,
+      "second_pass_input_bits": 4890,
+      "second_pass_input_count": 256,
+      "sparse_usage_entries": 2048,
+      "unitary_preconditioning_gcd_operand_bits": 18979,
+      "unitary_preconditioning_gcds": 255,
+      "zero_difference_incidences": 1
+    }
+  },
+  "retained_fixture_prefixes": [
+    {
+      "atoms": 137,
+      "checked_prefix_keys": 128,
+      "full_retained_key_count": 9776,
+      "input_bits": 4291,
+      "input_path": "evidence/sparse-oriented-power-80.json.xz",
+      "input_sha256": "f55879f2bcd0c8077c715fa1675e547e669cf9e8bfb25fe510efc5c310ebe2b7",
+      "raw_delta_atoms": 137,
+      "raw_delta_statistics": {
+        "discarded_auxiliary_atoms": 1,
+        "first_coprime_pass": {
+          "basis_extensions": 42,
+          "basis_merges": 127,
+          "comparison_splits": 1572,
+          "coprime_merge_shortcuts": 123,
+          "division_operand_bits": 1387641,
+          "exact_divisions": 13086,
+          "family_factor_calls": 255,
+          "gcd_calls": 24087,
+          "gcd_operand_bits": 3081533,
+          "maximum_operand_bits": 4231,
+          "maximum_pair_depth": 2,
+          "multiplication_operand_bits": 4635779,
+          "multiplications": 27589,
+          "pair_calls": 3913,
+          "power_reductions": 292,
+          "single_factor_calls": 164,
+          "support_splits": 9796
+        },
+        "first_pass_basis_size": 137,
+        "normalization_multiplication_operand_bits": 634,
+        "normalization_multiplications": 18,
+        "normalization_remainder_operand_bits": 18784,
+        "normalization_remainders": 301,
+        "normalized_root_incidences": 146,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 137,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 137,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 137,
+          "division_operand_bits": 633374,
+          "exact_divisions": 4358,
+          "family_factor_calls": 275,
+          "gcd_calls": 8991,
+          "gcd_operand_bits": 1232640,
+          "maximum_operand_bits": 4156,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 1486494,
+          "multiplications": 10733,
+          "pair_calls": 0,
+          "power_reductions": 276,
+          "single_factor_calls": 138,
+          "support_splits": 4220
+        },
+        "second_pass_basis_size": 138,
+        "second_pass_input_bits": 4221,
+        "second_pass_input_count": 138,
+        "sparse_usage_entries": 146,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 145
+      },
+      "second_pass_data_bit_bound": 16652,
+      "statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 42,
+          "basis_merges": 127,
+          "comparison_splits": 1572,
+          "coprime_merge_shortcuts": 123,
+          "division_operand_bits": 1387641,
+          "exact_divisions": 13086,
+          "family_factor_calls": 255,
+          "gcd_calls": 24087,
+          "gcd_operand_bits": 3081533,
+          "maximum_operand_bits": 4231,
+          "maximum_pair_depth": 2,
+          "multiplication_operand_bits": 4635779,
+          "multiplications": 27589,
+          "pair_calls": 3913,
+          "power_reductions": 292,
+          "single_factor_calls": 164,
+          "support_splits": 9796
+        },
+        "first_pass_basis_size": 137,
+        "normalization_multiplication_operand_bits": 634,
+        "normalization_multiplications": 18,
+        "normalization_remainder_operand_bits": 18784,
+        "normalization_remainders": 301,
+        "normalized_root_incidences": 146,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 137,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 137,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 136,
+          "division_operand_bits": 631398,
+          "exact_divisions": 4327,
+          "family_factor_calls": 275,
+          "gcd_calls": 8927,
+          "gcd_operand_bits": 1228802,
+          "maximum_operand_bits": 4149,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 1482335,
+          "multiplications": 10639,
+          "pair_calls": 0,
+          "power_reductions": 274,
+          "single_factor_calls": 138,
+          "support_splits": 4190
+        },
+        "second_pass_basis_size": 137,
+        "second_pass_input_bits": 4214,
+        "second_pass_input_count": 138,
+        "sparse_usage_entries": 146,
+        "unitary_preconditioning_gcd_operand_bits": 19,
+        "unitary_preconditioning_gcds": 1,
+        "zero_difference_incidences": 145
+      }
+    },
+    {
+      "atoms": 129,
+      "checked_prefix_keys": 128,
+      "full_retained_key_count": 19705,
+      "input_bits": 4747,
+      "input_path": "evidence/optimized-oriented-power-96.json.xz",
+      "input_sha256": "46ec21d6af643d6c9a9fddd759e854910efc9425ceba8e02c674f9e88b841a9b",
+      "raw_delta_atoms": 129,
+      "raw_delta_statistics": {
+        "discarded_auxiliary_atoms": 1,
+        "first_coprime_pass": {
+          "basis_extensions": 10,
+          "basis_merges": 127,
+          "comparison_splits": 260,
+          "coprime_merge_shortcuts": 126,
+          "division_operand_bits": 819824,
+          "exact_divisions": 5512,
+          "family_factor_calls": 255,
+          "gcd_calls": 10891,
+          "gcd_operand_bits": 1660583,
+          "maximum_operand_bits": 4683,
+          "maximum_pair_depth": 2,
+          "multiplication_operand_bits": 2022278,
+          "multiplications": 12460,
+          "pair_calls": 680,
+          "power_reductions": 260,
+          "single_factor_calls": 132,
+          "support_splits": 4862
+        },
+        "first_pass_basis_size": 129,
+        "normalization_multiplication_operand_bits": 68,
+        "normalization_multiplications": 2,
+        "normalization_remainder_operand_bits": 19054,
+        "normalization_remainders": 261,
+        "normalized_root_incidences": 130,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 129,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 129,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 129,
+          "division_operand_bits": 694681,
+          "exact_divisions": 4046,
+          "family_factor_calls": 259,
+          "gcd_calls": 8351,
+          "gcd_operand_bits": 1351570,
+          "maximum_operand_bits": 4683,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 1583844,
+          "multiplications": 9829,
+          "pair_calls": 0,
+          "power_reductions": 260,
+          "single_factor_calls": 130,
+          "support_splits": 3916
+        },
+        "second_pass_basis_size": 130,
+        "second_pass_input_bits": 4747,
+        "second_pass_input_count": 130,
+        "sparse_usage_entries": 130,
+        "unitary_preconditioning_gcd_operand_bits": 0,
+        "unitary_preconditioning_gcds": 0,
+        "zero_difference_incidences": 129
+      },
+      "second_pass_data_bit_bound": 18476,
+      "statistics": {
+        "discarded_auxiliary_atoms": 0,
+        "first_coprime_pass": {
+          "basis_extensions": 10,
+          "basis_merges": 127,
+          "comparison_splits": 260,
+          "coprime_merge_shortcuts": 126,
+          "division_operand_bits": 819824,
+          "exact_divisions": 5512,
+          "family_factor_calls": 255,
+          "gcd_calls": 10891,
+          "gcd_operand_bits": 1660583,
+          "maximum_operand_bits": 4683,
+          "maximum_pair_depth": 2,
+          "multiplication_operand_bits": 2022278,
+          "multiplications": 12460,
+          "pair_calls": 680,
+          "power_reductions": 260,
+          "single_factor_calls": 132,
+          "support_splits": 4862
+        },
+        "first_pass_basis_size": 129,
+        "normalization_multiplication_operand_bits": 68,
+        "normalization_multiplications": 2,
+        "normalization_remainder_operand_bits": 19054,
+        "normalization_remainders": 261,
+        "normalized_root_incidences": 130,
+        "orientation_gcd_calls_after_basis_passes": 0,
+        "retained_atoms": 129,
+        "second_coprime_pass": {
+          "basis_extensions": 0,
+          "basis_merges": 129,
+          "comparison_splits": 0,
+          "coprime_merge_shortcuts": 128,
+          "division_operand_bits": 692266,
+          "exact_divisions": 4015,
+          "family_factor_calls": 259,
+          "gcd_calls": 8287,
+          "gcd_operand_bits": 1346896,
+          "maximum_operand_bits": 4672,
+          "maximum_pair_depth": 0,
+          "multiplication_operand_bits": 1557433,
+          "multiplications": 9739,
+          "pair_calls": 0,
+          "power_reductions": 258,
+          "single_factor_calls": 130,
+          "support_splits": 3886
+        },
+        "second_pass_basis_size": 129,
+        "second_pass_input_bits": 4737,
+        "second_pass_input_count": 130,
+        "sparse_usage_entries": 130,
+        "unitary_preconditioning_gcd_operand_bits": 23,
+        "unitary_preconditioning_gcds": 1,
+        "zero_difference_incidences": 129
+      }
+    }
+  ],
+  "scope": "Complete two-pass construction on supplied keys. Classical fast-arithmetic complexity is separate from Python timings; no relation-supply or factoring-score claim.",
+  "seed": 2026110190731,
+  "small_batches": [
+    {
+      "atoms": 15,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -4,
+      "input_bits": 263,
+      "keys": 43,
+      "normalization_remainders": 73,
+      "raw_delta_atoms": 15,
+      "raw_delta_discarded_atoms": 6,
+      "second_pass_input_bits": 116
+    },
+    {
+      "atoms": 15,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -4,
+      "input_bits": 263,
+      "keys": 43,
+      "normalization_remainders": 73,
+      "raw_delta_atoms": 15,
+      "raw_delta_discarded_atoms": 4,
+      "second_pass_input_bits": 116
+    },
+    {
+      "atoms": 15,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -4,
+      "input_bits": 383,
+      "keys": 63,
+      "normalization_remainders": 98,
+      "raw_delta_atoms": 15,
+      "raw_delta_discarded_atoms": 6,
+      "second_pass_input_bits": 122
+    },
+    {
+      "atoms": 13,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -23,
+      "input_bits": 325,
+      "keys": 53,
+      "normalization_remainders": 105,
+      "raw_delta_atoms": 13,
+      "raw_delta_discarded_atoms": 5,
+      "second_pass_input_bits": 114
+    },
+    {
+      "atoms": 13,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -23,
+      "input_bits": 325,
+      "keys": 53,
+      "normalization_remainders": 105,
+      "raw_delta_atoms": 13,
+      "raw_delta_discarded_atoms": 6,
+      "second_pass_input_bits": 114
+    },
+    {
+      "atoms": 13,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -23,
+      "input_bits": 442,
+      "keys": 73,
+      "normalization_remainders": 136,
+      "raw_delta_atoms": 13,
+      "raw_delta_discarded_atoms": 6,
+      "second_pass_input_bits": 123
+    },
+    {
+      "atoms": 15,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -84,
+      "input_bits": 325,
+      "keys": 53,
+      "normalization_remainders": 99,
+      "raw_delta_atoms": 15,
+      "raw_delta_discarded_atoms": 4,
+      "second_pass_input_bits": 123
+    },
+    {
+      "atoms": 15,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -84,
+      "input_bits": 325,
+      "keys": 53,
+      "normalization_remainders": 99,
+      "raw_delta_atoms": 15,
+      "raw_delta_discarded_atoms": 4,
+      "second_pass_input_bits": 123
+    },
+    {
+      "atoms": 15,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -84,
+      "input_bits": 442,
+      "keys": 73,
+      "normalization_remainders": 130,
+      "raw_delta_atoms": 15,
+      "raw_delta_discarded_atoms": 4,
+      "second_pass_input_bits": 132
+    },
+    {
+      "atoms": 18,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -260,
+      "input_bits": 481,
+      "keys": 77,
+      "normalization_remainders": 158,
+      "raw_delta_atoms": 18,
+      "raw_delta_discarded_atoms": 5,
+      "second_pass_input_bits": 161
+    },
+    {
+      "atoms": 18,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -260,
+      "input_bits": 481,
+      "keys": 77,
+      "normalization_remainders": 158,
+      "raw_delta_atoms": 18,
+      "raw_delta_discarded_atoms": 4,
+      "second_pass_input_bits": 161
+    },
+    {
+      "atoms": 18,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -260,
+      "input_bits": 607,
+      "keys": 97,
+      "normalization_remainders": 191,
+      "raw_delta_atoms": 18,
+      "raw_delta_discarded_atoms": 4,
+      "second_pass_input_bits": 170
+    },
+    {
+      "atoms": 13,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -575,
+      "input_bits": 325,
+      "keys": 53,
+      "normalization_remainders": 105,
+      "raw_delta_atoms": 13,
+      "raw_delta_discarded_atoms": 5,
+      "second_pass_input_bits": 114
+    },
+    {
+      "atoms": 13,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -575,
+      "input_bits": 325,
+      "keys": 53,
+      "normalization_remainders": 105,
+      "raw_delta_atoms": 13,
+      "raw_delta_discarded_atoms": 5,
+      "second_pass_input_bits": 114
+    },
+    {
+      "atoms": 13,
+      "discarded_auxiliary_atoms": 0,
+      "discriminant": -575,
+      "input_bits": 444,
+      "keys": 73,
+      "normalization_remainders": 143,
+      "raw_delta_atoms": 13,
+      "raw_delta_discarded_atoms": 4,
+      "second_pass_input_bits": 125
+    }
+  ],
+  "source_sha256": {
+    "tools/check_circuit_box_oriented_batch.py": "6b5de5bd005e29523fc84c732c6f4caad434aade81a82d807406630f510e404e",
+    "tools/circuit_box_oriented_batch.py": "9dfee586c29373d8769992a17f84e6f8d87c4c4c713baa3d6f683cbe0c06cba4",
+    "tools/classical_coprime_basis.py": "77526b169bf842af224f0d6300387708f6488b19159836ffa30a00049be60d1d",
+    "tools/oriented_coprime_basis.py": "dba31b12ce2a93b7de9a79f69e4ffb2a8f0aec8218f3ab6082ad25817117571d",
+    "tools/oriented_norm_basis_lift.py": "66118511f12e40e4a97dfc1bb0627fb551782971f7def3dc6e00414f22fcbc8a",
+    "tools/quadratic_ideal_hnf.py": "fd9c4217f1c751c1d2f20485a35ae36ae749c24980d90a6aae13fbc471634a74"
+  },
+  "status": "passed"
+}

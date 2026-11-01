@@ -2663,3 +2663,7 @@ verify-tensor-literal-full-tail:
 verify-sparse-projected-graph:
 	python3 tools/check_sparse_projected_signed_graph.py
 	python3 tools/check_projected_oriented_power_search.py --replay evidence/projected-oriented-power-search.json
+
+.PHONY: verify-two-pass-oriented-basis
+verify-two-pass-oriented-basis:
+	python3 tools/check_circuit_box_oriented_batch.py --output /tmp/two-pass-oriented-replay.json
