@@ -16,6 +16,9 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 ## Transfers and proposed stronger evaluators
 
+- [Exact natural-pressure intervals](exact-natural-pressure-intervals.md): outward integer powers and rational logarithm tails certify `rho < 0.710005874881191` for the complete 96-letter code without computing enormous final powers.
+- [Complete 96-letter profile and integer certificates](hot96-rational-pressure.md): all 9,216 channels, a largest block of 2,738, and independent exact `49/69` and `27/38` scalar comparisons.
+
 - [Resumed physical-frame and target searches](root-worker-search-checkpoint.md): 6,722 saved candidate outcomes, explicit continuation lineage, complete winners, and separately scoped charge, Laurent, Hasse, dense-target, and truncated-fiber replays.
 
 - [Coherent hot-boundary crossings](coherent-hot-boundary-crossings.md): exact paired compression at equal energy gives `rho < 18/25` on eight letters, with a complete 396-idempotent finite grid and independent literal winner checks.

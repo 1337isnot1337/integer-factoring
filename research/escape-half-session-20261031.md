@@ -20,7 +20,7 @@ The most useful reading order is:
    for the strongest complete constructor result.
 2. [Stable physical codes](stable-hot-reflection-codes.md),
    [complete occupation profiles](hot-code-charge-profile-constructor.md),
-   and the [64-letter certificate](hot64-rational-pressure.md)
+   and the [96-letter exact interval certificate](exact-natural-pressure-intervals.md)
    for the strongest certified crossing bound in this checkpoint.
 3. [Finite-block amplification](finite-block-crossing-amplification.md)
    and the [asymmetric machine transfer](asymmetric-modular-transfer.md)
@@ -135,6 +135,7 @@ the recorded parameters. They are not outward-rounded minima.
 | Stable coordinate code | 32 | 0.7121199592 |
 | Stable coordinate code | 48 | 0.7111215197 |
 | Stable coordinate code | 64 | 0.710590358354 |
+| Stable coordinate code | 96 | 0.7100058748811902 |
 
 The exact certificates are separate:
 
@@ -142,6 +143,8 @@ The exact certificates are separate:
   proves `rho < 5/7`.
 - The [64-letter certificate](hot64-rational-pressure.md)
   proves `rho < 32/45`.
+- The [96-letter interval certificate](exact-natural-pressure-intervals.md)
+  proves the exact rational bound `rho < 0.710005874881191`.
 - A [coherent eight-letter boundary code](coherent-hot-boundary-crossings.md)
   proves `rho < 18/25`.
 
@@ -152,9 +155,14 @@ integers have 14,266,197 bits. Positive rational physical types and the
 strict gap give an effective finite block, and finite amplification
 supplies the uniform family at every external label width.
 
-Every bound above remains larger than `1/sqrt(2)`. None establishes a
-post-half factoring exponent. The unfinished larger-profile calculation
-is not used in this checkpoint's claims.
+The 96-letter calculation completed all 9,216 channels, with largest
+block 2,738, in about 25 minutes. Separate large-integer controls prove
+`rho < 49/69` and `rho < 27/38`. The finer certificate uses exact outward
+power intervals and rational logarithm tails, with 192-bit endpoints.
+Its arithmetic takes less than one second on the saved complete profile;
+that timing excludes the earlier profile construction. Every bound above
+remains larger than `1/sqrt(2)`. None establishes a post-half factoring
+exponent.
 
 ### Coherent boundary maps and full-letter gauges
 
@@ -318,7 +326,12 @@ Fresh main-worker replays also passed the full 64-letter profile and
 integer certificate, 94 independent complete determinant controls,
 the weighted oracle's 102 gradient coordinates, the 5,175-dimensional
 affine saturation, the ramified-minor certificate, and the coherent
-eight-letter certificate. Separate research-worker replays cover the
+eight-letter certificate. The new 96-letter pressure arithmetic passed
+911 exact power controls, 125 independent alternating-log controls,
+24 integer-power sign comparisons, and separate executable audit.
+Its full polynomial profile was constructed once and frozen; the fast
+interval check does not claim a second large-matrix reconstruction.
+Separate research-worker replays cover the
 constructor, local contraction, finite-block, and archived-witness
 packages. Each note states what is exact and what remains numerical.
 

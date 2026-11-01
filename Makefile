@@ -872,3 +872,12 @@ verify-coherent-boundary:
 verify-root-worker-searches:
 	OPENBLAS_NUM_THREADS=1 python3 tools/checkpoint_root_worker_searches.py --output /tmp/integer-factoring-root-worker-searches.json
 
+.PHONY: verify-hot96-pressure verify-hot96-profile
+
+verify-hot96-pressure:
+	python3 tools/check_natural_pressure_intervals.py --output /tmp/integer-factoring-pressure-interval-controls.json
+	python3 tools/certify_natural_pressure_interval.py evidence/hot96-charge-profile.json --rho 710005874881191 1000000000000000 --base 5571156672673465 5571156672673466 --output /tmp/integer-factoring-hot96-interval-pressure.json
+
+verify-hot96-profile:
+	OPENBLAS_NUM_THREADS=1 python3 tools/certify_hot_charge_pressure.py --size 96 --modes 12 --base 768 769 --support 98 69 --output /tmp/integer-factoring-hot96-full-replay.json
+

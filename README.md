@@ -221,9 +221,13 @@ once the retained energies lie below an explicit bound. Exact
 compute both complete profiles without constructing the ambient tensor.
 The sixty-four-letter code has an
 [exact certificate `rho < 32/45`](research/hot64-rational-pressure.md),
-proved by a strict integer comparison; its numerical natural optimum is
-about `0.71059036`. This remains above `1/sqrt(2)`, so the factoring score
-is unchanged. An [explicit integrality cone](research/weighted-hot-compound-profiles.md)
+proved by a strict integer comparison. The complete ninety-six-letter
+code improves this to the [exact bound `rho < 0.710005874881191`](research/exact-natural-pressure-intervals.md),
+using 9,216 channels and outward rational intervals. Separate
+[large-integer comparisons](research/hot96-rational-pressure.md) prove
+`rho < 49/69` and `rho < 27/38` for the same code. These remain above
+`1/sqrt(2)`, so the factoring score is unchanged.
+An [explicit integrality cone](research/weighted-hot-compound-profiles.md)
 also permits complete full-letter weighted profiles through the same blocks.
 At a fixed energy boundary, [coherent paired compressions](research/coherent-hot-boundary-crossings.md)
 allow linear combinations of physical states. An explicit eight-letter
@@ -312,6 +316,8 @@ make verify-frobenius-stars # Exact field/torus sums, infinity correction, and c
 make verify-finite-crossing-certificates # Exact finite block to all-width amplification and adaptive gates
 make verify-stable-hot-codes # Exact restrictions, natural duality, charge blocks, and weighted-cone controls
 make verify-hot64-certificate # Reconstruct all 4096 channels and the exact rho < 32/45 comparison
+make verify-hot96-pressure # Fast exact interval certificate on the frozen complete 9216-channel profile
+make verify-hot96-profile # Reconstruct all q96 blocks and the separate integer certificate; about 25 minutes
 make verify-paired-affine-space # Saturate the exact 5175-dimensional paired-trace space
 make verify-bell-jets # Entrywise jets, Bell CRT, transversality, and ramified minors
 make verify-finite-fibers # Complete F4 regular-frame and finite-jet controls
