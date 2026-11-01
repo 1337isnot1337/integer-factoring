@@ -719,6 +719,19 @@ verify-joint-residue-retiming:
 .PHONY: verify-paired-trace verify-companion-search verify-monoid-blocks
 .PHONY: verify-unsplit-monoid
 .PHONY: verify-degree16-crossing verify-reflection-truncations
+.PHONY: verify-observable-constructors verify-prime-constructors
+verify-observable-constructors:
+	python3 tools/check_observable_boundary_constructor.py --output /tmp/integer-factoring-observable-boundary.json
+	python3 tools/check_lattice_boundary_decoder.py --output /tmp/integer-factoring-lattice-boundary.json
+
+verify-prime-constructors:
+	python3 tools/check_power_two_progression_dyadic_prime.py --output /tmp/integer-factoring-dyadic-prime.json
+	python3 tools/check_prime_transform_boundary_constructor.py --output /tmp/integer-factoring-prime-transform.json
+	python3 tools/check_width_sensitive_prime_constructor.py --output /tmp/integer-factoring-width-sensitive.json
+	python3 tools/check_polynomial_entry_prime_constructor.py --output /tmp/integer-factoring-polynomial-entry.json
+	python3 tools/check_rough_observable_factor_constructor.py --output /tmp/integer-factoring-rough-observable.json
+	python3 tools/check_prime_root_field_construction.py --output /tmp/integer-factoring-prime-root-field.json
+
 verify-degree16-crossing:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_degree16_reflection_crossing.py --output /tmp/integer-factoring-degree16-replay.json
 

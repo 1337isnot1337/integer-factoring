@@ -64,6 +64,21 @@ reduces each length-conditioned instance further to `P^2 lambda <= 49n`
 and `B_tab <= 57n/P`, with limiting constants 18 and 20. Summing the
 `n` disjoint length classes gives each original prefix count; the added
 polynomial number of evaluator calls preserves the same runtime exponent.
+The [observable-boundary constructor](research/observable-boundary-constructor.md)
+then makes every local table Boolean and reduces the top bound to
+`P^2 lambda < 17n`, with leading constant 12. Its explicit grouping
+uses boundary Fourier observations to recover the internal operands.
+A [width-sensitive prime schedule](research/width-sensitive-prime-constructor.md)
+now reaches `P = Theta(sqrt(n/log n))` and `P^2 lambda < (12+epsilon)n`
+for every fixed positive `epsilon`. A
+[small-factor pretest](research/rough-observable-factor-constructor.md)
+makes each surviving entry computable by polynomial-time interpolation.
+All tables, prime search, and the pretest are charged in
+`exp(O_epsilon(sqrt(n log n)))` time.
+[Explicit root-field construction](research/prime-root-field-construction.md)
+also gives polynomial preparation for this schedule. These are complete
+constructor and overhead improvements; the crossing exponent remains
+the separate condition needed for a score above one half.
 
 [Adaptive opposite flags](research/adaptive-mixed-place-crossings.md) choose
 the cheapest available jet at each step. A complete rational interval
@@ -230,6 +245,8 @@ make verify-monoid-blocks # Explicit multiplication blocks and full Fourier/copy
 make verify-unsplit-monoid # Original-field fast convolution and whole-middle bundle controls
 make verify-degree16-crossing # Exact sharp degree16 crossing and affine provenance
 make verify-reflection-truncations # Uniform truncations, all coefficients, and 48 fresh minima
+make verify-observable-constructors # Boolean boundary tables and exact polynomial lattice decoder
+make verify-prime-constructors # Narrow primes, width-sensitive schedule, and elementary factor recovery
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
