@@ -501,3 +501,38 @@ supporting weights, and it does not establish a new factoring exponent.
 python3 tools/screen_asymmetric_moving_profiles.py \
   --output /tmp/asymmetric-moving-frame-prefix-screen.json
 ```
+
+## A complete F4 family that changes one protected letter
+
+The [F4 interior driver](../tools/search_f4_interior_frames.py) takes the
+smallest supported frame family that can change the five-letter protected
+subtensor: for each interior index i from zero through four, both vectors
+A,B are supported on i and the height-eight index seven. All four F4
+coefficients are independent, and reciprocal height flow one is used.
+The resulting **1,280 declared parameter cases** include all 256 choices
+at each of the five interior sites. Both complete natural profiles and all
+endpoint entries are resolved for every case.
+
+The [complete profile archive](../evidence/f4-interior-moving-frames.json.gz)
+retains all parameters, source hashes, tensor digests and numerical fits.
+The best balanced value remains the old constant control, approximately
+`0.7199753178555385`. Among cases with all four supported coefficients
+nonzero, the best fitted natural pressure is approximately `0.886108`.
+These are finite parameter counts, not counts of distinct tensors and not
+global lower bounds.
+
+The same asymmetric criterion was evaluated at **860,160 grid points** on
+these profiles. None has a negative rate-one gap. The
+[asymmetric archive](../evidence/asymmetric-f4-interior-moving-frames.json.gz)
+also records twenty bounded refinements. Each initial grid candidate is
+evaluated with the full positive root and retained if the optimizer gives
+a worse value. All twenty refinements retain their initial candidates in
+this run; the best retained support is approximately `1.00307003105552`,
+above one. A converged numerical fit is not treated as a global exclusion.
+
+```sh
+python3 tools/search_f4_interior_frames.py --output /tmp/f4-interior-frames.json
+python3 tools/screen_asymmetric_moving_profiles.py \
+  --archive evidence/f4-interior-moving-frames.json.gz \
+  --output /tmp/asymmetric-f4-interior-frame-screen.json
+```

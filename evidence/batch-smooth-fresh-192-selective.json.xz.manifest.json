@@ -1,0 +1,26 @@
+{
+  "schema": "sha256-segmented-certificate-v1",
+  "filename": "batch-smooth-fresh-192-selective.json.xz",
+  "bytes": 22214068,
+  "sha256": "52354c1ea02b6e90f1ee39b7244cebe29302e0ad9df83a51b3277bcdd728b80e",
+  "segments": [
+    {
+      "filename": "batch-smooth-fresh-192-selective.json.xz.part000",
+      "offset": 0,
+      "bytes": 8388608,
+      "sha256": "e00ae4ac74f63289d019b76e6b5feb44f70472d89bf4d9b2f17c45c57db10ae4"
+    },
+    {
+      "filename": "batch-smooth-fresh-192-selective.json.xz.part001",
+      "offset": 8388608,
+      "bytes": 8388608,
+      "sha256": "a3ecf738b5bd6171f2448f648c596d1c2403d3da161db4bfa0509d9230a2b0b3"
+    },
+    {
+      "filename": "batch-smooth-fresh-192-selective.json.xz.part002",
+      "offset": 16777216,
+      "bytes": 5436852,
+      "sha256": "ca74fbdf36ac7bd007ba659b145cdc7891149285756ded0c3a11b29c49dfb1fb"
+    }
+  ]
+}

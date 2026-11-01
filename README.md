@@ -47,6 +47,14 @@ has completed all 4,194,304 registered cases with zero unresolved cases
 and 67 complete profile classes; its numerical fits give no stronger bound.
 A [constructive graded lattice](research/graded-zero-lattice.md) improves
 the zero prefix to 8,10,10, but its actual opposite profile is worse.
+The [ordered fused envelope now has an exact F4 interface](research/fused-f4-envelope.md),
+with complete finite controls and registered larger subspace scans.
+These registrations do not establish a stronger bound.
+A [global natural-energy floor](research/natural-five-letter-pressure-floor.md)
+now excludes the balanced criterion for every scalar Laurent-polynomial
+kernel over any field with the reference five-letter paired-energy shape.
+Its exact compact certificate and unbounded tails give `rho >= 5/7`;
+changed energy shapes and asymmetric criteria remain open.
 
 ## Arithmetic construction and space bounds
 
@@ -2177,6 +2185,18 @@ the best retained support value is about `1.000419`, above the required
 one. This numerical result leaves unsearched parameters open and supplies
 no new factoring exponent.
 
+A [complete F4 interior-frame screen](research/moving-boundary-crossings.md#a-complete-f4-family-that-changes-one-protected-letter)
+changes one of the five protected letters in 1,280 declared parameter cases.
+All complete profiles are retained. A further 860,160 asymmetric grid points
+and twenty bounded refinements give no support value below one. The full
+binary frame run and more general gauge choices retain their separate scope.
+
+A [pinned source audit of RiemannGaussian's semiprime work](research/riemann-gaussian-semiprime-source-audit.md)
+identifies reusable deterministic boundary contraction and exact factor-moment
+encodings. Its current target has the same logarithmic saving exponent `1/2`.
+The semiprime promise, coefficient-ring interface, and complete evaluation
+cost remain explicit obligations before importing a factoring consequence.
+
 ## Sparse oriented power prefixes
 
 The [sparse residual selector](research/sparse-oriented-power-prefixes.md)
@@ -2274,3 +2294,29 @@ The [complete 112-bit oriented prefix](research/oriented-power-112-prefix.md) fa
 The [classical quarter-bit terminal](research/circuit-box-ratio-small-roots.md) now has an exact implementation: explicit integer LLL parameters, independently reconstructed short-polynomial certificates, and Sturm isolation avoid scanning exponentially long root intervals. The complete reference algorithm is 2^(n/4) poly(n), handles all factor-size ranges, and is weaker than the established repository theorem. The 255-bit controls are local known-factorization tests, not complete factoring benchmarks.
 
 A [two-pass orientation construction](research/circuit-box-orientation-batch.md) reduces both norm separation and root-sign separation to classical coprime factorization on O(S) integer data. Sparse incidence bookkeeping preserves every literal ideal word, including prime powers and repeated norms. It strengthens the supplied-data processing argument without a relation-generation or score claim.
+
+The [certified 192-bit run](research/batch-smooth-fresh-192.md) returns a proper factor after 48,097,746 generated norms, with all 1,481,611 generated-ahead norms charged. The complete 22.2 MB certificate independently replays 98,968 partial ideal identities, 95,676 prime-residual certificates, and 3,292 integer DAG eliminations. Three checksummed archive segments reconstruct the exact saved certificate. Fixed-base rank is 3,292 of 3,299. This is a finite control with no matched 192-bit speedup or new score claim; the declared 208-bit follow-on started after saved-artifact replay passed.
+
+The [classical coprime engine](research/classical-oriented-basis-engine.md) now constructs all supplied norm data and exact oriented ideal words without a factoring oracle. Complete 64-, 80-, and 96-bit fixtures match their saved bases. This makes the classical supplied-data bound executable; the faster prepared implementation remains the practical search path, and the score exponent remains 1/2.
+
+The [literal full-tail reduction](research/tensor-literal-full-tail-core.md) handles fixed low-mode maps, including maps mixing heights, through an explicit 8k-mode active core and charged spectator factors. Independent literal checks and 78 complete F4 profiles are retained. The tested rank-one families do not improve the current tensor frontier or the factoring score.
+
+[Sparse intermediate graph projections](research/sparse-projected-signed-graph.md) preserve every integer presentation map while avoiding a redundant dense allocation. Independent component and full 64/80 integration replays pass. Both 2-GiB 128-bit failures are retained with their available costs; the second reached rank 418 at 245760 queries. A separate unchanged-source 3-GiB retry is declared, with no success claim.
+
+[Small internal integer pivots](research/small-pivot-integer-row-selection.md) retain exactly the same original relation subsequence. Three paired measurements reduce rank-selection CPU medians from 0.137 to 0.068 seconds on the 96-bit core and from 16.918 to 7.002 seconds on the 112-bit core; these are component measurements.
+
+The [two-pass oriented constructor](research/circuit-box-oriented-batch-controls.md) now uses two explicit classical coprime-basis calls. Unitary preprocessing removes irrelevant second-pass atoms while preserving literal ideal words; the raw-difference option is also tested. Independent replay checks 2932 ideal identities and 3357 prime expansions, including 24 variant comparisons. This improves supplied-data processing without a new relation-supply bound.
+
+[Completed Laurent-frame and F16 searches](research/tensor-weighted-laurent-frame-search.md) retain the full 256-case binary frame census, 152 F16 representatives covering 544 normalized pairs, and finished 115-, 91-, and 55-letter profiles. The Laurent constructor passed independent raw-tensor, endpoint, reciprocal, and Smith checks. These searches did not improve the numerical frontier; capped data and numerical fits are distinguished explicitly.
+
+The [full-rank affine full-tail census](research/tensor-full-tail-affine-search.md) computes both complete profiles for all 256 binary low-mode map pairs at M=16, retaining 131072 active orders and every spectator factor. The constructor passes 524288 independent raw coefficient comparisons. The Gaussian control remains best in this census; no new numerical or factoring frontier is claimed.
+
+[Equivalent-norm stencils](research/equivalent-norm-stencils.md) add exact complementary norms to supplied form powers and replay all class, ideal, graph, and unit identities. In 24 cases with 57600 charged norm tests, the leading-only method retains at least the refined rank of both alternatives at every equal budget. This negative result is retained; the active policy and score are unchanged.
+
+[Compact reconstructible power witnesses](research/compact-reconstructible-power-witnesses.md) preserve the complete query logic and mathematical result while storing only base words, residual indices, and signs. Full 64/80 replays and 25 additional policies pass. The 80-bit witness section falls from 3390155 to 264539 canonical JSON bytes; this is a representation measurement, not a peak-memory claim.
+
+The [declared compact-witness 128-bit policy](evidence/compact-witness-oriented-fresh-128-policy.json) repeats the same certified input and query schedule with a 2-GiB address-space bound. It tests the representation change against the separately retained projected search. This is a charged new attempt; a saved result requires independent replay before certification.
+
+[Compact oriented construction and verification](research/compact-oriented-basis-input-bound.md) now have a deterministic B^(1+o(1)) bit bound in total supplied input size, counting the discriminant once. Batched discriminant validation, two coprime passes, and a balanced arithmetic verifier avoid per-key large-discriminant work and reduced-form output. Controls include 3146 independent HNF identities and constructed large-discriminant inputs. Relation supply and the factoring score remain unchanged.
+
+The [auxiliary-mode Clifford theorem](research/tensor-affine-clifford-profiles.md) recovers complete Smith profiles for Gaussian circuits interleaved with arbitrary invertible one-mode maps over characteristic-two fields. One auxiliary mode gives a matrix of order 2n+2, with scalar valuations and both cut clearings retained. The 18-row implementation matches all 131072 prior binary orders and independent original F4 kernels. A completed 1792-case F4 degree census finds no pressure improvement.

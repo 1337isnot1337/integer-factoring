@@ -2405,6 +2405,21 @@ verify-two-place-f4-census-complete:
 
 verify-frontier: verify-graded-zero-lattice
 
+.PHONY: verify-fused-f4-envelope verify-fused-f4-finite-controls
+verify-fused-f4-envelope:
+	$(CXX) -O3 -std=c++17 tools/search_fused_f4_envelope.cpp -o /tmp/integer-factoring-fused-f4-search-check
+	$(CXX) -O3 -std=c++17 tools/scan_fused_f4_subspace.cpp -o /tmp/integer-factoring-fused-f4-scan-check
+	python3 tools/check_fused_f4_envelope.py --binary /tmp/integer-factoring-fused-f4-search-check --scanner /tmp/integer-factoring-fused-f4-scan-check --output /tmp/fused-f4-envelope-controls.json
+
+verify-fused-f4-finite-controls:
+	python3 tools/check_fused_f4_finite_controls.py --output /tmp/fused-f4-finite-controls.json
+
+.PHONY: verify-natural-five-letter-floor
+verify-natural-five-letter-floor:
+	python3 tools/check_natural_five_letter_floor.py --replay evidence/natural-five-letter-floor.json.xz
+
+verify-frontier: verify-natural-five-letter-floor
+
 .PHONY: verify-coherent-f4-partial
 verify-coherent-f4-partial:
 	python3 tools/check_coherent_hot_f4_partial.py
@@ -2639,3 +2654,50 @@ verify-oriented-power-112:
 .PHONY: verify-circuit-box-ratio-small-roots
 verify-circuit-box-ratio-small-roots:
 	python3 tools/check_circuit_box_ratio_small_roots.py --output /tmp/circuit-box-ratio-small-roots-verify.json
+
+.PHONY: verify-batch-smooth-fresh-192
+verify-batch-smooth-fresh-192:
+	python3 tools/assemble_factoring_certificate.py evidence/batch-smooth-fresh-192-selective.json.xz.manifest.json
+	python3 tools/check_fresh_prime_cofactor_control.py --bits 192 --replay evidence/batch-smooth-fresh-192-selective.json.xz
+
+.PHONY: verify-classical-oriented-basis
+verify-classical-oriented-basis:
+	python3 tools/check_classical_coprime_basis.py
+
+.PHONY: verify-tensor-literal-full-tail
+verify-tensor-literal-full-tail:
+	python3 tools/check_tensor_literal_full_tail_core.py --output /tmp/tensor-full-tail-replay.json
+	python3 tools/check_tensor_literal_full_tail_rank_one.py --output /tmp/tensor-full-tail-rank-one-replay.json
+
+.PHONY: verify-sparse-projected-graph
+verify-sparse-projected-graph:
+	python3 tools/check_sparse_projected_signed_graph.py
+	python3 tools/check_projected_oriented_power_search.py --replay evidence/projected-oriented-power-search.json
+
+.PHONY: verify-two-pass-oriented-basis
+verify-two-pass-oriented-basis:
+	python3 tools/check_circuit_box_oriented_batch.py --output /tmp/two-pass-oriented-replay.json
+
+.PHONY: verify-tensor-literal-moving-frames
+verify-tensor-literal-moving-frames:
+	python3 tools/check_tensor_literal_moving_frames.py --output /tmp/tensor-moving-frame-replay.json
+
+.PHONY: verify-tensor-affine-full-tail
+verify-tensor-affine-full-tail:
+	python3 tools/check_tensor_literal_full_tail_affine_frames.py --output /tmp/tensor-affine-full-tail-replay.json
+
+.PHONY: verify-equivalent-norm-stencils
+verify-equivalent-norm-stencils:
+	python3 tools/check_equivalent_norm_stencils.py --output /tmp/equivalent-norm-stencils-replay.json
+
+.PHONY: verify-compact-power-witnesses
+verify-compact-power-witnesses:
+	python3 tools/check_compact_witness_oriented_power_search.py --replay evidence/compact-witness-oriented-power-search.json
+
+.PHONY: verify-compact-oriented-basis
+verify-compact-oriented-basis:
+	python3 tools/check_compact_oriented_basis.py --output /tmp/compact-oriented-basis-replay.json
+
+.PHONY: verify-tensor-affine-clifford
+verify-tensor-affine-clifford:
+	python3 tools/check_tensor_affine_clifford_profiles.py --output /tmp/tensor-affine-clifford-replay.json
