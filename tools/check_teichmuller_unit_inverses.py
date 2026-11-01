@@ -8,9 +8,9 @@ from pathlib import Path
 import random
 from unittest.mock import patch
 
-from teichmuller_cyclic_carries import UnramifiedRing, polynomial_sum
-import teichmuller_unit_inverses as inverse_backend
-from teichmuller_unit_inverses import unit_inverse_coefficients, conjugate_factor, rational_sum
+from teichmuller_cyclic_carries import UnramifiedRing, polynomial_sum, parity_lift_coefficients
+import precision_rational_carries as inverse_backend
+from precision_rational_carries import conjugate_factor, rational_sum
 from check_teichmuller_cyclic_carries import evaluate, POLYNOMIALS
 from joint_frobenius_carries import joint_trace
 from check_carry_fourier_elimination import BinaryField
@@ -23,7 +23,7 @@ def run():
     complete = []
     for precision, degree in ((1, 1), (2, 2), (3, 2), (4, 2), (2, 3)):
         ring = UnramifiedRing(precision, POLYNOMIALS[degree])
-        coefficients = unit_inverse_coefficients(precision)
+        coefficients = parity_lift_coefficients(precision+1)[1:]
         units = 0
         for a in range(1 << (precision*degree)):
             norm, partial = 1, 1
@@ -104,8 +104,9 @@ def run():
                         queries.append(budget)
                         return polynomial_sum(ring, width, t, variables, factors, nonzero)
                     with patch.object(inverse_backend, 'polynomial_sum', side_effect=acquire):
-                        actual = rational_sum(ring, width, t, variables, numerators, denominators, mask)
+                        actual, invoice = rational_sum(ring, width, t, variables, numerators, denominators, mask)
                     assert len(queries) <= precision+1
+                    assert len(queries) == invoice['queries'] and invoice['max_degree_budget'] <= bound
                     counts['carry_queries'] += len(queries)
                     assert actual == expected, (precision, degree, width, t, variables, trial, mask)
                     if precision == 1:
@@ -115,13 +116,13 @@ def run():
                     digest.update(json.dumps([precision, degree, width, t, variables, numerators, denominators, mask, actual]).encode())
     branches = []
     for precision in range(1, 9):
-        coefficients = unit_inverse_coefficients(precision)
+        coefficients = parity_lift_coefficients(precision+1)[1:]
         positions = [j for j, c in enumerate(coefficients) if c % (1 << precision)]
         assert min(positions) >= precision and max(positions) <= 2*precision
         assert len(positions) <= precision+1
         branches.append(dict(precision=precision, nonzero_positions=positions,
                              one_factor_branches=len(positions)))
-    names = ['tools/teichmuller_cyclic_carries.py', 'tools/teichmuller_unit_inverses.py',
+    names = ['tools/teichmuller_cyclic_carries.py', 'tools/precision_rational_carries.py',
              'tools/check_teichmuller_unit_inverses.py', 'tools/check_teichmuller_cyclic_carries.py',
              'tools/joint_frobenius_carries.py']
     return dict(scope='Collected unit inverses with zero on nonunits, acquired by at most h+1 norm-polynomial branches; denominator degree and count remain charged.',

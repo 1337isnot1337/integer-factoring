@@ -237,21 +237,61 @@ The hypercube treewidth estimate from the
 route below the current half-rate scale. The vertex-isoperimetric input is
 Harper, [*Optimal numberings and isoperimetric problems on graphs*](https://doi.org/10.1016/S0021-9800(66)80059-5).
 
-This settles the matching-cut order for the abstract model, not its occurrence
-in the actual bit circuit. The pointwise-product clique minors and the
-butterfly connections must still be realized by pairwise-disjoint branch sets
-in the same graph. Until that embedding is proved, the result is not a
-treewidth lower bound for the source circuit. Even with the embedding, it
-would obstruct dense tree-decomposition evaluation of this representation,
-not factoring algorithms in general.
+### The direct signed-digit schoolbook circuit contains this minor
 
-The next proof obligation is now specific: either construct the circuit-to-
-bundle minor with disjoint branch sets, which would close this representation
-at the half-rate width floor, or identify exactly which carry/circuit feature
-prevents that embedding and could permit a smaller decomposition. Any
-candidate improvement still needs the entire bit circuit, coefficient/carry
-recovery, the source's semiprime promise, and complete primitive-machine cost
-accounted for. No stronger factoring exponent or Lean result is claimed here.
+Here the circuit graph means the primal graph of the Boolean gate relations:
+each variable is a vertex, and all variables in one gate relation are made
+pairwise adjacent. Fix the direct implementation already analyzed above:
+signed digits use fixed-width two's-complement words, butterfly additions are
+coordinatewise, and every pointwise negacyclic product uses schoolbook
+partial products. For each butterfly output digit, compute its low bit with
+its own XOR gate, duplicating the two equal low-bit computations at the two
+output positions. This is exact because negation preserves parity and
+addition and subtraction have the same low bit modulo two.
+
+At a product cell `x`, write `a_{x,i}` and `b_{x,j}` for the low-bit variables
+of the two input digits, `0<=i,j<q`. Schoolbook multiplication includes the
+partial-product gate `a_{x,i} AND b_{x,j}` for every pair `(i,j)`, including
+terms later subtracted in the negacyclic wrap. Hence the primal graph contains
+`K_{q,q}` between the `a` and `b` variables. Contract the edges
+`a_{x,i}--b_{x,i}` for `i<q-1`. The contracted vertices together with
+`a_{x,q-1}` form a `q`-clique. These are the `q` branch sets in fiber `F_x`;
+each contains the corresponding `a` variable from the first forward
+transform.
+
+Now use the radix-2 stage indexing from the
+[dense-table analysis](sanftenberg-transform-treewidth-floor.md). A stage
+butterfly pairs positions `x` and `x xor e_s`. Each low-bit output digit at
+one position is an XOR of one low-bit input digit at that same position and
+one from the paired position. Signed rotations only permute the digit
+coordinates, and signs do not change a low bit. Thus the same-position
+predecessor map and the opposite-position map are both permutations of the
+`q` digit coordinates. The primal graph of the XOR gate makes the output
+variable adjacent to both input variables.
+
+For each final frequency position and each of its `q` clique branches, follow
+the unique same-position predecessor backwards through the transform stages.
+The predecessor maps are permutations, so these paths are pairwise disjoint
+within a position; distinct positions also use distinct wire variables. Each
+path is connected to its product-cell branch at the first transform's output.
+For a stage edge `xy`, the `q` XOR output variables at `x` lie in distinct
+branches of `F_x`, while their opposite-position inputs lie in distinct
+branches of `F_y`. They give a perfect matching between the two fibers.
+Duplicated output gates ensure the two position paths never share an output
+variable. Across all stages these base edges are exactly the edges of `Q_d`.
+Therefore `H(Q_d,q,pi)` is a minor of this explicit circuit primal graph;
+the rotations merely determine the edge-matching permutations `pi`.
+
+It follows that this circuit's primal graph has treewidth
+`Omega(ell/sqrt(log ell))`. Dense variable elimination on this chosen
+representation therefore retains a `2^(Omega(ell/sqrt(log ell)))` table
+barrier, at the current `alpha=1/2` scale. This is not a lower bound for a
+different multiplication circuit, a different arithmetic representation, a
+structured evaluator, or factoring in general. In particular, the local
+schoolbook `K_{q,q}` incidence is a feature a future representation would
+have to remove or bypass. The source's semiprime promise and complete
+primitive-machine cost remain separate obligations; no stronger factoring
+exponent or Lean result is claimed here.
 
 No upstream code was copied. Substantial OpenAI assistant support was used in
 the source and circuit analysis.

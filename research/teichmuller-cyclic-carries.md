@@ -215,12 +215,13 @@ The field inverse-value identity cannot be copied to arbitrary ring inputs.
 For example, `3` has inverse `11 mod 16`; a field exponent-one rule would
 return `3`. Nonunits need not have any inverse. The model's Hensel steps
 invert acquired units, and (7) additionally inverts the known odd scalar
-`b-1`. The [collected-denominator extension](precision-efficient-residue-indicators.md#acquired-collected-denominator-carry-interface)
-now acquires total unit-inverse factors with at most `h+1` polynomial
-queries for the entire denominator list. It uses the companion's formal
-polynomial `H_(h+1)(X)/X`, charges the enlarged degree budget, and assigns
-zero to every nonunit. The field inverse exponent itself remains invalid
-at higher precision.
+`b-1`. The later [collected-inverse companion](precision-efficient-residue-indicators.md)
+supplies an inverse-factor compiler for total unit inverses, assigning zero
+to nonunits, with at most `h+1` polynomial queries for the entire denominator
+list and an explicit precision-dependent degree budget. Its
+coefficient-extension packing also gives a second residue-system interface
+without the extra summation variables or precision shift in (1). The
+original additive-character interface and its exact receipt remain retained.
 
 ## 6. Reproduction and credit
 
