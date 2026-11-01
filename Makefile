@@ -2675,3 +2675,7 @@ verify-tensor-literal-moving-frames:
 .PHONY: verify-tensor-affine-full-tail
 verify-tensor-affine-full-tail:
 	python3 tools/check_tensor_literal_full_tail_affine_frames.py --output /tmp/tensor-affine-full-tail-replay.json
+
+.PHONY: verify-equivalent-norm-stencils
+verify-equivalent-norm-stencils:
+	python3 tools/check_equivalent_norm_stencils.py --output /tmp/equivalent-norm-stencils-replay.json
