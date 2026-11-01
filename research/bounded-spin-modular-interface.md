@@ -151,7 +151,58 @@ unless one separately improves the dimension bound or the selection
 algorithm. Finite optimization at one fixed length does not resolve
 this uniform cost issue.
 
-## 4. Bounds on whole path alphabets also suffice
+## 4. Original-space search also removes extension-field advice
+
+The automatic selection conclusion extends beyond the base field.
+Suppose the original coefficient space has favorable decompositions
+over finite extensions `L_lambda/F_5` of degrees `h_lambda` with
+
+```math
+\log_2 h_\lambda=o(\lambda).
+```
+
+Assume their rank sums have the fixed strict saving in (1). No uniform
+algorithm for constructing these fields or finding those decompositions
+is needed for the following original-space conclusion.
+
+Choose any base-field linear map `pi:L_lambda->F_5` fixing one. The
+existing [coefficient projection lemma](fixed-field-descent.md) gives
+
+```math
+\operatorname{rank}_{F_5}\pi(A)
+   \le h_\lambda\operatorname{rank}_{L_\lambda}A.
+```
+
+Apply the map **after** forming each complete coefficient tensor.
+Because the original basis tensors have `F_5` entries, `pi(A)` is still
+in their base-field span. The projected pieces sum to the crossing and
+their rank sum increases by at most `h_lambda`. Its subexponential
+size consumes at most half of any fixed positive saving, for sufficiently
+large `lambda`. For example (1) then holds with `epsilon/2` in place
+of `epsilon`, with an adjusted polynomial constant.
+
+Section 2's base-field search finds a suitable spanning collection without
+ever constructing `L_lambda` or being supplied its low-rank pieces.
+Finite initial widths can use the direct crossing and a larger fixed
+logarithmic-slack constant. Thus even nonuniform extension-field
+existence, at these degree bounds, reduces to a uniform base-field
+algorithm once the favorable rank theorem is proved. Polynomial
+extension degrees are a special case.
+
+This argument uses a coordinate projection fixing one, rather than an
+unqualified field trace. A trace sends one to the extension degree,
+which can vanish in characteristic five. It also does not project each
+local factor separately; doing so could incur an exponential loss per
+position. These distinctions are already part of the prior projection
+lemma.
+
+For the enlarged space the rank descent remains valid, but the search
+cost issue of section 3 persists. An explicit field and piece-generation
+algorithm costing `2^O(lambda)` would suffice there; a bare existence
+claim is not automatically effective by the presently proved dimension
+bound.
+
+## 5. Bounds on whole path alphabets also suffice
 
 One may prove rank estimates first for all `L_n=F_(n-1)` paths, rather
 than a power-of-two selection. For the least even `n` chosen above,

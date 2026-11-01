@@ -173,6 +173,14 @@ verify-bounded-spin-algebra:
 verify-bounded-spin-six-vertex:
 	python3 tools/check_bounded_spin_six_vertex.py
 
+.PHONY: verify-bounded-spin-projector
+verify-bounded-spin-projector:
+	python3 tools/check_bounded_spin_projector.py
+
+.PHONY: verify-bounded-spin-support
+verify-bounded-spin-support:
+	python3 tools/check_bounded_spin_support.py
+
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:
 	python3 tools/check_downset_crossing_normal_form.py
