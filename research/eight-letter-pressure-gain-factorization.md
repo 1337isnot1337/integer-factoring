@@ -75,4 +75,3 @@ The [evidence](../evidence/eight-letter-pressure-gain-factorization.json)
 records the exact positive lower bound in (5), the coefficient
 identities, and source hashes. As in the original packet, the result
 extends unchanged to every coefficient field of characteristic two.
-

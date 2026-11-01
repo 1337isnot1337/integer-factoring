@@ -210,21 +210,23 @@ factoring exponent is asserted.
 
 The strongest new alphabet result is the
 [all-degree seven-letter adjugate floor](adjugate-seven-letter-pressure-floor.md):
-bare ungauged local Smith pressure is greater than `709/1000`, hence
+the bare ungauged local Smith pressure rate `rho` is greater than `709/1000`, hence
 greater than `1/sqrt(2)`, over every field. The stated constant auxiliary
 contraction extension has the same pressure conclusion. Independent
 endpoint gauges, adaptive cancellation, and direct coefficient-rank
 methods are outside its hypotheses.
 
 An explicit eight-letter formal profile satisfies the current algebraic
-constraints and has pressure below `707/1000`. No polynomial crossing
+constraints and has pressure rate `rho` below `707/1000`. No polynomial crossing
 realizing that profile is known. A feasible relaxation is a construction
 target, not a new algorithm.
 
 Further exact results delimit particular constructions:
 
 - [Smith orders bounded by the degree](bounded-order-smith-pressure-floor.md)
-  force `rho>442/625=0.7072` through ten letters at every degree.
+  force `rho>442/625=0.7072` through ten letters at every degree,
+  with the degree and both profiles measured after removal of the common
+  scalar monomial.
   This includes the stated eight-letter Bell polynomial paths. The
   general eight-letter formal profile has larger orders and remains
   outside this hypothesis.
