@@ -125,3 +125,9 @@ claim. The earlier endpoint-slice and convexity arguments retain credit;
 this contribution supplies their unequal-pair extension and the finite-cover
 invoice. Substantial OpenAI assistant support; no new Lean or independent
 mathematical review is claimed.
+
+The [complete replay receipt](../evidence/finite-cover-full-verification.json)
+pins a clean successful default gate plus twenty-six focused targets at
+`b9ffbafe981eafe9d15cb585e824c184ed42888a`, in 834.33 seconds. This includes
+the unequal-pair/companion controls and preceding main/PR63 integration;
+later additions are outside the source pin.

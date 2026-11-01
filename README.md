@@ -2006,6 +2006,8 @@ The [unequal-pair extension](research/linear-smith-barrier.md) proves
 A [finite-cover invoice](research/finite-cover-linearization-invoice.md)
 charges the physical states introduced by Artin--Schreier degree compression;
 the resulting bare linear pencil is covered before any large profile search.
+Its [full replay receipt](evidence/finite-cover-full-verification.json) pins
+the successful default-plus-focused integration checks at `b9ffbaf`.
 
 For the nilpotent-path construction, a [controlled monomial obstruction](research/controlled-permutation-smith-floor.md)
 extends the existing permutation calculation to dependent and noncommuting
