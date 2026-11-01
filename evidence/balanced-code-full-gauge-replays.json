@@ -1,0 +1,437 @@
+{
+  "scope": "Exact complete Gaussian-minor reconstruction and independent complete-matrix replay of saved floating gauges; no exact numerical optimum or pressure-sign certificate.",
+  "record": "evidence/balanced-code-full-gauge-search.json",
+  "record_sha256": "c8907648a9832731ca2b2aebc73500e85d7a19c1a5be4ba4d0ebc43b18c38bce",
+  "status": "passed",
+  "source_provenance": {
+    "search_balanced_code_full_gauges.py": {
+      "location": "worktree",
+      "sha256": "ed9303083456bae2c0178777a59dee6f87337a6d93040add965b03162bc43a2f"
+    },
+    "asymmetric_four_particle_codes.py": {
+      "location": "worktree",
+      "sha256": "839a922baac851b22ea779e48bab2571bcb9959309231441321b0fe0043a85e9"
+    },
+    "balanced_four_particle_codes.py": {
+      "location": "worktree",
+      "sha256": "b1164944d90556e1a52b694e618dcc8f33cf4c1c51af26fdabb53caae831d008"
+    },
+    "selected_gaussian_coefficients.py": {
+      "location": "worktree",
+      "sha256": "eba892e833a2b61abc8af15fe57a31a7781670fe7287277371f5de9e89f91354"
+    },
+    "selected_gaussian_coefficients.cpp": {
+      "location": "worktree",
+      "sha256": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15"
+    },
+    "native_rectangular_smith_f4.py": {
+      "location": "worktree",
+      "sha256": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a"
+    },
+    "native_rectangular_smith_f4.cpp": {
+      "location": "worktree",
+      "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+    },
+    "search_f4_recentered_crossings.py": {
+      "location": "worktree",
+      "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+    }
+  },
+  "literal_gaussian_minors": 5625,
+  "saved_gauge_states_replayed": 29,
+  "complete_matrix_gauge_profiles_replayed": 58,
+  "candidates": [
+    {
+      "family": "reference",
+      "code_x": [
+        15,
+        23,
+        43,
+        51,
+        77
+      ],
+      "code_y": [
+        15,
+        23,
+        43,
+        51,
+        77
+      ],
+      "rho": 0.7263479477044688,
+      "type_x": [
+        0.6394381824523284,
+        0.27666494946357617,
+        0.051792311635198096,
+        0.022408917193840132,
+        0.00969563925505723
+      ],
+      "type_y": [
+        0.6394381824523284,
+        0.27666494946357617,
+        0.051792311635198096,
+        0.022408917193840132,
+        0.00969563925505723
+      ],
+      "optimizer_successes": 1,
+      "recorded_failed_oracle_evaluations": 7
+    },
+    {
+      "family": "symmetric",
+      "code_x": [
+        15,
+        23,
+        43,
+        51,
+        228
+      ],
+      "code_y": [
+        15,
+        23,
+        43,
+        51,
+        228
+      ],
+      "rho": 0.7310818098523639,
+      "type_x": [
+        0.6661988121916247,
+        0.04476366412710356,
+        0.27083915997361596,
+        0.018198363707654725,
+        1.1342443389188552e-15
+      ],
+      "type_y": [
+        0.6661985978371924,
+        0.04476369698963995,
+        0.27083930495103403,
+        0.018198400222132254,
+        1.3776655557472601e-15
+      ],
+      "optimizer_successes": 2,
+      "recorded_failed_oracle_evaluations": 111
+    },
+    {
+      "family": "symmetric",
+      "code_x": [
+        15,
+        23,
+        43,
+        77,
+        228
+      ],
+      "code_y": [
+        15,
+        23,
+        43,
+        77,
+        228
+      ],
+      "rho": 0.73999438332999,
+      "type_x": [
+        0.7075704384484293,
+        0.25501477467780537,
+        0.03311850626634505,
+        0.004296280607420392,
+        1.1452597833257648e-18
+      ],
+      "type_y": [
+        0.7075714518950631,
+        0.2550137864246139,
+        0.03311606469562279,
+        0.004298696984700229,
+        1.3789025790624152e-18
+      ],
+      "optimizer_successes": 2,
+      "recorded_failed_oracle_evaluations": 263
+    },
+    {
+      "family": "symmetric",
+      "code_x": [
+        15,
+        23,
+        43,
+        51,
+        226
+      ],
+      "code_y": [
+        15,
+        23,
+        43,
+        51,
+        226
+      ],
+      "rho": 0.7310940237022012,
+      "type_x": [
+        0.6661231023161139,
+        0.044789109837867935,
+        0.2708759019934193,
+        0.018211885852598784,
+        1.0399363067872871e-17
+      ],
+      "type_y": [
+        0.6661269348682881,
+        0.04479119895712221,
+        0.2708716730628738,
+        0.018210193111715886,
+        5.849007383949771e-18
+      ],
+      "optimizer_successes": 2,
+      "recorded_failed_oracle_evaluations": 344
+    },
+    {
+      "family": "symmetric",
+      "code_x": [
+        15,
+        23,
+        43,
+        77,
+        226
+      ],
+      "code_y": [
+        15,
+        23,
+        43,
+        77,
+        226
+      ],
+      "rho": 0.7399750709308166,
+      "type_x": [
+        0.7073655120409986,
+        0.255128509694318,
+        0.03318862764751929,
+        0.004317350617164034,
+        1.3602707571702301e-21
+      ],
+      "type_y": [
+        0.7073663850404137,
+        0.2551288243976932,
+        0.03318862152983777,
+        0.004316169032055268,
+        5.800354949411261e-22
+      ],
+      "optimizer_successes": 2,
+      "recorded_failed_oracle_evaluations": 168
+    },
+    {
+      "family": "asymmetric",
+      "code_x": [
+        15,
+        23,
+        43,
+        51,
+        77
+      ],
+      "code_y": [
+        15,
+        23,
+        43,
+        51,
+        228
+      ],
+      "rho": 0.7311055681426195,
+      "type_x": [
+        0.6668771428893461,
+        0.04444495084121134,
+        0.27037973872219734,
+        0.01801990783750075,
+        0.00027825970974458124
+      ],
+      "type_y": [
+        0.6670662860431791,
+        0.04445680711941173,
+        0.27045226473612693,
+        0.018024642101254693,
+        2.7475531730613123e-14
+      ],
+      "optimizer_successes": 0,
+      "recorded_failed_oracle_evaluations": 7
+    },
+    {
+      "family": "asymmetric",
+      "code_x": [
+        15,
+        23,
+        43,
+        51,
+        77
+      ],
+      "code_y": [
+        15,
+        23,
+        43,
+        77,
+        228
+      ],
+      "rho": 0.734378975283178,
+      "type_x": [
+        0.6761129753411195,
+        0.2628278849627202,
+        0.039663503301263385,
+        0.01542317379639304,
+        0.0059724625985038615
+      ],
+      "type_y": [
+        0.6865994973788685,
+        0.2669552552477821,
+        0.0403600058660665,
+        0.006085241507251854,
+        3.098560702104872e-14
+      ],
+      "optimizer_successes": 1,
+      "recorded_failed_oracle_evaluations": 8
+    },
+    {
+      "family": "asymmetric",
+      "code_x": [
+        15,
+        23,
+        43,
+        51,
+        77
+      ],
+      "code_y": [
+        15,
+        23,
+        43,
+        51,
+        226
+      ],
+      "rho": 0.729623714001044,
+      "type_x": [
+        0.6540494885624015,
+        0.27163291235412085,
+        0.04690243005467743,
+        0.019367495914180553,
+        0.008047673114619553
+      ],
+      "type_y": [
+        0.6593195663126592,
+        0.27382386242931456,
+        0.047256382434040296,
+        0.019600188822748024,
+        1.2378434957219963e-12
+      ],
+      "optimizer_successes": 0,
+      "recorded_failed_oracle_evaluations": 11
+    },
+    {
+      "family": "asymmetric",
+      "code_x": [
+        15,
+        23,
+        43,
+        51,
+        77
+      ],
+      "code_y": [
+        15,
+        23,
+        51,
+        77,
+        228
+      ],
+      "rho": 0.7452958312291855,
+      "type_x": [
+        0.6956249835424368,
+        0.2538953980006748,
+        0.03382327713710336,
+        0.012335963238756872,
+        0.004320378081028072
+      ],
+      "type_y": [
+        0.7199200277851528,
+        0.2627637567408308,
+        0.012768714906734242,
+        0.0045475005672809855,
+        1.0789546145189052e-15
+      ],
+      "optimizer_successes": 1,
+      "recorded_failed_oracle_evaluations": 26
+    }
+  ],
+  "refinements": [
+    {
+      "provenance": "evidence/balanced-asymmetric-gauge-refinement-provenance.json",
+      "provenance_sha256": "f56827cdf48b1f93f17952d9a8be52fcce760e83627a10650843b2719927f35d",
+      "family": "asymmetric",
+      "rho": 0.729549834747631,
+      "type_x": [
+        0.6540069029443067,
+        0.27168896127952485,
+        0.04688607679667962,
+        0.019376423125737622,
+        0.008041635853751092
+      ],
+      "type_y": [
+        0.6592638848794546,
+        0.2738727892945516,
+        0.047256626407418637,
+        0.019606699417340778,
+        1.2343481532934249e-12
+      ],
+      "profile_queries": 17401,
+      "failed_profile_queries": 2717,
+      "completed_restarts": 32,
+      "source_provenance": {
+        "refine_balanced_code_gauges.py": {
+          "location": "worktree",
+          "sha256": "fd4ea18ac629a1a263b90cfbe33569999332f4548a5af59fdc1a21202c263c9d"
+        },
+        "search_rectangular_f4_pressure.py": {
+          "location": "worktree",
+          "sha256": "b54c4779330851aa480b664d4a0eb5f37b732213c6f612fea60a19cd93c43fd1"
+        },
+        "native_rectangular_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a"
+        },
+        "native_rectangular_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+        }
+      }
+    },
+    {
+      "provenance": "evidence/balanced-symmetric-gauge-refinement-provenance.json",
+      "provenance_sha256": "39f691f136e23502d3b64d165c49c13cf39b832dceba6f27c23eb98cf65aca8f",
+      "family": "symmetric",
+      "rho": 0.7310816701980001,
+      "type_x": [
+        0.6661987011864554,
+        0.044763659975551824,
+        0.27083928795126344,
+        0.01819835088672819,
+        1.1342367817735637e-15
+      ],
+      "type_y": [
+        0.6661986266549297,
+        0.0447637190381707,
+        0.27083925736433173,
+        0.01819839694256649,
+        1.3776567170667483e-15
+      ],
+      "profile_queries": 12256,
+      "failed_profile_queries": 727,
+      "completed_restarts": 32,
+      "source_provenance": {
+        "refine_balanced_code_gauges.py": {
+          "location": "worktree",
+          "sha256": "fd4ea18ac629a1a263b90cfbe33569999332f4548a5af59fdc1a21202c263c9d"
+        },
+        "search_rectangular_f4_pressure.py": {
+          "location": "worktree",
+          "sha256": "b54c4779330851aa480b664d4a0eb5f37b732213c6f612fea60a19cd93c43fd1"
+        },
+        "native_rectangular_smith_f4.py": {
+          "location": "worktree",
+          "sha256": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a"
+        },
+        "native_rectangular_smith_f4.cpp": {
+          "location": "worktree",
+          "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+        }
+      }
+    }
+  ],
+  "checker_sha256": "e1afc8fce50f3b3823dfc89ac671baf4b1df5b4d9c20f53e3a9a19414c613925",
+  "elapsed_seconds": 3.9436540070000774
+}

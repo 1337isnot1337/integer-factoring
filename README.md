@@ -66,6 +66,12 @@ The result table distinguishes verified machine bounds from conditional construc
 
 ## Verification
 
+Before starting overlapping work, run `python3 tools/find_overlap.py KEYWORD`
+with an authenticated GitHub CLI. It searches discussion posts, comments and
+replies, open issues/PRs, historical issue #8 comments, and local research
+Markdown. See [the research workflow](autoresearch.md#workflow) and the tool's
+coverage report; matches are leads, not proof of novelty or active claims.
+
 From the repository root, run:
 
 ```sh
@@ -300,6 +306,17 @@ product 2304; that finite block cannot improve the rate. Run
 The [spin-zero jet identities](research/bounded-spin-three-jets.md)
 hold at every length and bound the coefficient span by `n-2` for even
 `n>=6`; ordinary cut-rank growth remains open.
+An [enlarged six-vertex construction](research/bounded-spin-six-vertex.md)
+exposes the complete monomial span with degree `O(n^2)` and the same
+strict endpoint. At eight sites it adds a seventh tensor direction;
+the noncommuting cut operators have invariant commutator modules of
+dimension 28. Uniform favorable ranks remain open. Run the optional
+`make verify-bounded-spin-six-vertex`.
+The [modular interface](research/bounded-spin-modular-interface.md)
+connects these constructors to the existing fixed-characteristic transfer:
+dense rank factors meet its cost bound, and the original coefficient
+space also permits automatic selection. A favorable uniform rank
+estimate is still missing.
 
 The [exact nonlinear charge theorem](research/nonlinear-symbol-charge-lattices.md)
 characterizes every admissible pair of full-symbol potentials for the
@@ -457,6 +474,15 @@ selected boundaries, with rank-product floors 576 and 1950. These tests
 leave other boundaries and longer ordered words open. Run
 `make verify-weyl-ordered-boundaries` and
 `make verify-weyl-middle-coefficients` for the standard-library replays.
+
+The [subgroup-return construction](research/subgroup-return-crossings.md)
+preserves both endpoints using noncommuting group words and has a rank-one
+starting cut at every length. Its free-group version has an auxiliary
+return functional of infinite Hankel rank, yet word reduction gives
+effective complete construction in `2^O(m)` time. Exact full binary
+coefficient spans fail the finite half target at lengths one through three
+for that example and a four-state analogue; useful uniform rank bounds
+remain open. Run `make verify-subgroup-return`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

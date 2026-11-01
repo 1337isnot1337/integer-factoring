@@ -1,0 +1,56 @@
+{
+  "status": "passed",
+  "checker_sha256": "2cd6cfabf2dcdb1b41de317d608153f620628f9e401e23a8b1cd3172a5a7f5db",
+  "gauges": {
+    "record": "evidence/nonreflection-particle-extension-gauge-search.json",
+    "record_sha256": "1f1b4ddacb821759994d5f06abbda51daf8c43131b5a4c6d2472e3ec0a21a041",
+    "source_provenance": {
+      "search_nonreflection_extension_gauges.py": {
+        "location": "worktree",
+        "sha256": "f06e5a33dd1b1a372293fdd32fd9751cf101bf181e3fd8f4894d51af513f5e74"
+      },
+      "search_balanced_extension_gauges.py": {
+        "location": "worktree",
+        "sha256": "60066930f45e60863c97508c034bdee5534528312285094e8e60b0173963e5dc"
+      },
+      "balanced_particle_extensions.py": {
+        "location": "worktree",
+        "sha256": "efa61dd3e921d2d642dca0863a13bd807ce22dac150a7b04bc04ba63af880168"
+      },
+      "bounded_paired_gibbs.py": {
+        "location": "worktree",
+        "sha256": "dcd806d23d42fca52407a2df09fb6d4a3eea2915dfb7b68ba2c528aeb1175f1c"
+      },
+      "balanced_four_particle_codes.py": {
+        "location": "worktree",
+        "sha256": "b1164944d90556e1a52b694e618dcc8f33cf4c1c51af26fdabb53caae831d008"
+      },
+      "selected_gaussian_coefficients.py": {
+        "location": "worktree",
+        "sha256": "eba892e833a2b61abc8af15fe57a31a7781670fe7287277371f5de9e89f91354"
+      },
+      "selected_gaussian_coefficients.cpp": {
+        "location": "worktree",
+        "sha256": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15"
+      },
+      "native_rectangular_smith_f4.py": {
+        "location": "worktree",
+        "sha256": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a"
+      },
+      "native_rectangular_smith_f4.cpp": {
+        "location": "worktree",
+        "sha256": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+      },
+      "search_f4_recentered_crossings.py": {
+        "location": "worktree",
+        "sha256": "8715f1a28b0cb68ad4d3fd29adc53fe082f6181882ed4bce7ce0e9ff582b0be4"
+      }
+    },
+    "literal_complete_gaussian_minors": 9288,
+    "saved_floating_gauge_states": 81,
+    "independent_complete_weighted_matrix_profiles": 162,
+    "best_recorded_rho": 0.7265708830616555,
+    "scope": "Floating profile replay, type lower bounds, entropy quotient and sufficient Gibbs KKT conditions; no exact gauge optimum or pressure-sign certificate."
+  },
+  "elapsed_seconds": 4.1766670329998306
+}

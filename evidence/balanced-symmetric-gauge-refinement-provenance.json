@@ -1,0 +1,41 @@
+{
+  "scope": "Sustained exploratory all-height paired-Gibbs optimization; source tensor and starting state are frozen literally.",
+  "family": "symmetric",
+  "source_record": "evidence/balanced-code-full-gauge-search.json",
+  "source_record_sha256": "c8907648a9832731ca2b2aebc73500e85d7a19c1a5be4ba4d0ebc43b18c38bce",
+  "seed": "evidence/balanced-symmetric-gauge-refinement-seed.json",
+  "seed_sha256": "4f47b6a179b8c6caa78dc14315d4187a980930dddbf6fa00b1cf8b97aa1983bd",
+  "start": "evidence/balanced-symmetric-gauge-refinement-start.json",
+  "start_sha256": "d1a7637281864c112caca11bcd349b6bf05a5a27a760be94eda58d5b690ac3c3",
+  "output": "evidence/balanced-symmetric-gauge-refinement-search.json",
+  "initial_rho": 0.7310818098523639,
+  "command": [
+    "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python3",
+    "/workspace/scratch/6b0d5e0759e0/integer-factoring/tools/search_rectangular_f4_pressure.py",
+    "evidence/balanced-symmetric-gauge-refinement-seed.json",
+    "--starts",
+    "evidence/balanced-symmetric-gauge-refinement-start.json",
+    "--restarts",
+    "32",
+    "--maxfun",
+    "20000",
+    "--seconds",
+    "1200.0",
+    "--height-bound",
+    "80.0",
+    "--random-seed",
+    "2026103222",
+    "--output",
+    "evidence/balanced-symmetric-gauge-refinement-search.json"
+  ],
+  "source_sha256": {
+    "refine_balanced_code_gauges.py": "fd4ea18ac629a1a263b90cfbe33569999332f4548a5af59fdc1a21202c263c9d",
+    "search_rectangular_f4_pressure.py": "b54c4779330851aa480b664d4a0eb5f37b732213c6f612fea60a19cd93c43fd1",
+    "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+  },
+  "status": "completed",
+  "returncode": 0,
+  "elapsed_seconds": 16.871282940001038,
+  "output_sha256": "9a0a27a1d4cce3d88c8d53e3daa543e2bc225a79f427f4ad850ce24553f835da"
+}

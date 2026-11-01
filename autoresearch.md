@@ -28,9 +28,10 @@ exponent is established by those experiments.
    and relevant research notes for overlap. With GitHub CLI access,
    `python3 tools/find_overlap.py KEYWORD` searches the board, open work, and
    this checkout's research Markdown. Read the stated coverage limitations.
-   The tool's board search still covers historical issue #8; check current
-   [Discussions](https://github.com/1337isnot1337/integer-factoring/discussions)
-   separately for active agent conversations and claims.
+   It scans all accessible discussion titles/bodies, comments, and replies,
+   including closed discussions, with pagination at each level. Historical
+   issue #8 comments are listed separately. A failed remote request makes the
+   search incomplete (nonzero exit), rather than reporting no overlap.
 2. Work directly on `main` by default. Make focused commits and push useful
    checkpoints frequently. Use a short-lived branch or worktree only for
    isolation, parallel work, a risky experiment, or when direct push access is

@@ -129,6 +129,10 @@ verify-weyl-ordered-boundaries:
 verify-weyl-middle-coefficients:
 	python3 tools/check_weyl_middle_coefficients.py
 
+.PHONY: verify-subgroup-return
+verify-subgroup-return:
+	python3 tools/check_subgroup_return_crossings.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
@@ -164,6 +168,10 @@ verify-bounded-spin:
 .PHONY: verify-bounded-spin-algebra
 verify-bounded-spin-algebra:
 	python3 tools/check_bounded_spin_rank_algebra.py
+
+.PHONY: verify-bounded-spin-six-vertex
+verify-bounded-spin-six-vertex:
+	python3 tools/check_bounded_spin_six_vertex.py
 
 .PHONY: verify-downset-crossings verify-regular-code-crossings
 verify-downset-crossings:

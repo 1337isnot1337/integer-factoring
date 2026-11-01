@@ -8,6 +8,22 @@
   "empty_padded_domains": 2,
   "literal_entry_flow_controls": 704,
   "normalized_trace_controls": 96,
+  "literal_schur_entry_controls": 466,
+  "nonintegral_schur_control": {
+    "number": 15,
+    "nodes": [
+      3,
+      4,
+      5
+    ],
+    "eliminated_prefix_size": 2,
+    "scale_bits": 7,
+    "schur_orders": [
+      -6,
+      -7
+    ],
+    "schur_order_slope": -1
+  },
   "vandermonde_content_controls": 128,
   "two_interval_content_controls": 128,
   "huge_known_content_controls": [
