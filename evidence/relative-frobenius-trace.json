@@ -1,0 +1,55 @@
+{
+  "claim": "exact relative-Frobenius product traces by vector carries",
+  "counts": {
+    "all_point_geometric_box_controls": 46,
+    "computed_row_transfer_states": 9128,
+    "cross_digit_and_final_overflow_controls": 3,
+    "exact_relative_trace_comparisons": 240,
+    "exact_vector_coefficient_comparisons": 437,
+    "exact_zero_preserving_inverse_controls": 46,
+    "initial_carry_vector_controls": 7268,
+    "positive_multiplicative_order_coefficient_queries": 237,
+    "reference_field_point_evaluations": 1280,
+    "zero_denominator_point_controls": 129
+  },
+  "field_models": [
+    {
+      "D": 1,
+      "field_degree": 1,
+      "irreducible_polynomial": "0b11",
+      "t": 1
+    },
+    {
+      "D": 1,
+      "field_degree": 2,
+      "irreducible_polynomial": "0b111",
+      "t": 1
+    },
+    {
+      "D": 2,
+      "field_degree": 2,
+      "irreducible_polynomial": "0b111",
+      "t": 1
+    },
+    {
+      "D": 1,
+      "field_degree": 2,
+      "irreducible_polynomial": "0b111",
+      "t": 2
+    },
+    {
+      "D": 1,
+      "field_degree": 4,
+      "irreducible_polynomial": "0b10011",
+      "t": 2
+    },
+    {
+      "D": 2,
+      "field_degree": 4,
+      "irreducible_polynomial": "0b10011",
+      "t": 2
+    }
+  ],
+  "scope": "The explicit product representation is required; no repeated network closure is claimed.",
+  "status": "passed"
+}

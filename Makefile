@@ -720,6 +720,14 @@ verify-joint-residue-retiming:
 .PHONY: verify-unsplit-monoid
 .PHONY: verify-degree16-crossing verify-reflection-truncations
 .PHONY: verify-observable-constructors verify-prime-constructors
+.PHONY: verify-frobenius-stars
+verify-frobenius-stars:
+	python3 tools/check_frobenius_rational_trace.py --output /tmp/integer-factoring-rational-star.json
+	python3 tools/check_fermat_torus_binomials.py --output /tmp/integer-factoring-torus-star.json
+	python3 tools/check_frobenius_trace_infinity.py --output /tmp/integer-factoring-star-infinity.json
+	python3 tools/check_relative_frobenius_trace.py --output /tmp/integer-factoring-relative-trace.json
+	python3 tools/check_semisimple_cyclic_box_contraction.py --output /tmp/integer-factoring-cyclic-box.json
+
 verify-observable-constructors:
 	python3 tools/check_observable_boundary_constructor.py --output /tmp/integer-factoring-observable-boundary.json
 	python3 tools/check_lattice_boundary_decoder.py --output /tmp/integer-factoring-lattice-boundary.json

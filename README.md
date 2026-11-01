@@ -201,6 +201,18 @@ viewed as three dense bundles, has tensor rank between `M^A` and
 `M^(A(1+O(1/log D)))`. Its factors couple the original neighboring labels;
 the note accounts for their interfaces and does not infer a stronger
 factoring exponent from this bundle contraction alone.
+Several [exact local contraction algorithms](research/frobenius-rational-trace-contraction.md)
+now sum entire Frobenius-binomial frequency stars without enumerating their
+field elements. A [division-free torus circuit](research/fermat-torus-binomial-contraction.md)
+handles the actual dyadic box factors over every commutative coefficient
+algebra. The [infinity correction](research/frobenius-trace-infinity-correction.md)
+removes the rational-function degree restriction, and
+[relative-linearized factors](research/relative-frobenius-trace-contraction.md)
+retain an explicit dimension-dependent carry bound.
+[Semisimple cyclic recovery algebras](research/semisimple-cyclic-box-contraction.md)
+also admit zero-safe quotient formulas, including zero-divisor denominators.
+The unresolved global step is controlling the jointly varying multiplication
+phase and the representation after successive frequency eliminations.
 
 For two fixed ternary bases with uniform paired types, an
 [exact minor certificate](research/ternary-uniform-gauge-majorization.md)
@@ -247,6 +259,7 @@ make verify-degree16-crossing # Exact sharp degree16 crossing and affine provena
 make verify-reflection-truncations # Uniform truncations, all coefficients, and 48 fresh minima
 make verify-observable-constructors # Boolean boundary tables and exact polynomial lattice decoder
 make verify-prime-constructors # Narrow primes, width-sensitive schedule, and elementary factor recovery
+make verify-frobenius-stars # Exact field/torus sums, infinity correction, and cyclic-algebra compatibility
 make verify-coupled-searches # Completed search replays and exact affine determinant change
 make verify-schur-fermion # Complete Schur entry formulas and exact comparisons
 make verify-schur-central # Hook-residue identities and full Schur ranks through weight 8
