@@ -2111,3 +2111,10 @@ verify-cube-pair-specialization:
 .PHONY: verify-coherent-tail-injectivity
 verify-coherent-tail-injectivity:
 	python3 tools/check_coherent_tail_injectivity.py --output /tmp/integer-factoring-coherent-tail-injectivity.json
+
+.PHONY: verify-coherent-inverse-f4 verify-coherent-gram-f4
+verify-coherent-inverse-f4:
+	python3 tools/check_coherent_inverse_systems_f4.py
+
+verify-coherent-gram-f4:
+	python3 tools/check_coherent_gram_f4.py
