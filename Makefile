@@ -3007,3 +3007,7 @@ verify-trace-constraints:
 .PHONY: verify-collective-css-pauli
 verify-collective-css-pauli:
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_collective_css_pauli.py
+
+.PHONY: verify-high-axis-cayley
+verify-high-axis-cayley:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_high_axis_cayley.py
