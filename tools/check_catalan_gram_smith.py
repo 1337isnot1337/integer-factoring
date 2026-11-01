@@ -17,6 +17,7 @@ from catalan_cup_crossing import cup_basis, cup_frame, triangular_dual
 from catalan_gram_smith import (
     dyck_path_valuation_distribution,
     loop_count,
+    mean_path_norm_delta_valuation,
     maximum_path_norm_delta_valuation,
     max_path_norm_delta_valuation_dp,
     smith_valuation_profile,
@@ -194,6 +195,8 @@ def path_valuation_distribution_controls():
             sum(valuation * count for valuation, count in distribution.items()),
             total,
         )
+        exact_mean = mean_path_norm_delta_valuation(semilength)
+        assert mean == exact_mean
         controls.append(
             {
                 "semilength": semilength,
@@ -204,6 +207,7 @@ def path_valuation_distribution_controls():
                 "closed_form_maximum_delta_order": closed_form_maximum,
                 "uniform_delta_order_bound": bound,
                 "mean_delta_order": str(mean),
+                "mean_matches_marked_tree_formula": True,
                 "paths_at_or_below_2r": sum(
                     count
                     for valuation, count in distribution.items()
@@ -212,6 +216,24 @@ def path_valuation_distribution_controls():
             }
         )
     return controls
+
+
+def mean_valuation_controls():
+    selected = (1, 2, 4, 8, 16, 32, 64, 128, 256, 512)
+    return {
+        "selected_semilengths": list(selected),
+        "selected_exact_means": {
+            str(semilength): str(
+                mean_path_norm_delta_valuation(semilength)
+            )
+            for semilength in selected
+        },
+        "formula_matches_independent_path_distribution_through_32": True,
+        "scope": (
+            "Exact marked-tree mean formula; distribution cross-checks at the "
+            "recorded sizes through 32."
+        ),
+    }
 
 
 def closed_form_maximum_controls():
@@ -233,6 +255,7 @@ def check():
     physical_entries = physical_gram_controls()
     path_controls = unrestricted_path_controls()
     valuation_controls = path_valuation_distribution_controls()
+    mean_controls = mean_valuation_controls()
     maximum_controls = closed_form_maximum_controls()
     profiles = []
     for length, expected in EXPECTED.items():
@@ -253,14 +276,17 @@ def check():
         "physical_loop_gram_entries_checked_over_F16": physical_entries,
         "unrestricted_q_path_basis_controls_over_F16": path_controls,
         "path_norm_valuation_distribution_controls": valuation_controls,
+        "mean_path_norm_valuation_controls": mean_controls,
         "closed_form_maximum_path_valuation_controls": maximum_controls,
         "truncated_toeplitz_profiles": profiles,
         "scope": (
             "Exact Smith valuations through 16 strands and unrestricted path "
             "controls through 8 strands; exact path-norm valuation distributions "
-            "through semilength 32; closed-form maximum agrees with an independent "
-            "max-plus recurrence through semilength 512; no favorable rank sum "
-            "or factoring gain."
+            "at the recorded semilengths through 32; the marked-tree mean formula "
+            "matches those distributions and selected exact means are recorded "
+            "through semilength 512; "
+            "the closed-form maximum agrees with an independent max-plus recurrence "
+            "through semilength 512; no favorable rank sum or factoring gain."
         ),
         "source_sha256": {
             path: sha256((ROOT / path).read_bytes()).hexdigest()
