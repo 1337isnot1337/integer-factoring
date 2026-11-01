@@ -1,5 +1,14 @@
 # Research index
 
+## A three-axis crossing interface
+
+- [Cube geometry and a complete conditional transfer](cube-crossing-transfer.md): antipodal cube edges, equitable regrouping, effective entry queries, and `alpha=log_3(1/rho)`; a new local family below `1/sqrt(3)` is still required to improve the score.
+
+## Coherent physical crossing spaces
+
+- [Deletion-closed spaces and complete compound profiles](coherent-hot-compound-retractions.md): derivative inverse systems, differential kernels, separate cut compressions, exact `rho < 1781/2501`, and all-scale optimality in a declared 121-map binary boundary class.
+- [Mixed-occupation height boundaries](coherent-hot-mixed-boundary.md): exact parity-block evaluation expands the height-16 boundary family to 496 maps; the extension alone does not improve the factoring exponent.
+
 ## Composite-cofactor relations
 
 - [Exact composite-cofactor selection](cofactor-collision-selection.md): signed residual-ideal keys, fixed-base collision rows, exact rational-span retention, and matched 92-bit/124-bit finite controls.

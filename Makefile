@@ -1566,3 +1566,17 @@ verify-pole-arithmetic:
 verify-cofactor-collisions:
 	python3 tools/check_cofactor_collision_relations.py
 	python3 tools/check_cofactor_collision_quota.py
+
+.PHONY: verify-coherent-retractions verify-coherent-q32-catalogue
+verify-coherent-retractions:
+	python3 tools/check_coherent_hot_compounds.py --output /tmp/coherent-hot-compound-controls.json
+	python3 tools/check_coherent_hot_fast.py --output /tmp/coherent-hot-fast-controls.json
+	python3 tools/check_coherent_hot_mixed.py --output /tmp/coherent-hot-mixed-controls.json
+	python3 tools/check_coherent_q32_pressure.py --output /tmp/coherent-q32-pressure.json
+
+verify-coherent-q32-catalogue:
+	python3 tools/check_coherent_q32_catalogue.py --output /tmp/coherent-q32-catalogue-optimum.json
+
+.PHONY: verify-cube-transfer
+verify-cube-transfer:
+	python3 tools/check_cube_crossing_transfer.py --output /tmp/cube-crossing-transfer.json

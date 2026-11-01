@@ -49,6 +49,35 @@ quota checks; add `--replay-search` to the selector checker to repeat every
 large-run query.
 <!-- cofactor-collision-checkpoint:end -->
 
+<!-- coherent-compound-checkpoint:start -->
+## Coherent crossing profiles
+
+The [deletion-closed physical-space construction](research/coherent-hot-compound-retractions.md)
+computes both complete crossing cuts by separate compressed compound matrices.
+A 32-letter coherent map strictly improves its coordinate counterpart at every
+scale and has the exact rational certificate **`rho < 1781/2501`**.
+It also minimizes the product pressure at every scale in the complete
+121-map binary occupation-preserving height-16 boundary class.
+
+The [mixed-occupation extension](research/coherent-hot-mixed-boundary.md)
+supports all 496 binary height-preserving rank-four retractions on that
+boundary. Exact constructors, literal Pfaffian controls, full profile receipts,
+and the 121-map all-scale proof are retained. The certified contraction remains
+above `1/sqrt(2)`; the complete factoring score remains **1/2**.
+Run `make verify-coherent-retractions` for focused exact controls and
+`make verify-coherent-q32-catalogue` to recompute the complete catalogue proof.
+<!-- coherent-compound-checkpoint:end -->
+
+<!-- cube-transfer-checkpoint:start -->
+The [three-axis cube transfer](research/cube-crossing-transfer.md) supplies a
+second fully costed sufficient interface: one common eight-leg crossing family
+with polynomially many pieces and total three-cut width at most
+`12 rho lambda + O(log lambda)` would give
+`alpha = log_3(1/rho)`. Its target is `rho < 1/sqrt(3)`.
+Exact cube edge coverage, equitable grouping, entry-query costs, and recursion
+are proved; the required improved local family remains unconstructed.
+<!-- cube-transfer-checkpoint:end -->
+
 ## Results and evidence
 
 | Claim | Status | Details |
