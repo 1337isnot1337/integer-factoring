@@ -305,7 +305,79 @@ The all-field cost floor of sections 3--4 applies. This proves the
 theorem without a generator-rank, pole-order or coefficient-field
 cutoff.
 
-## 6. Replay and precise limits
+## 6. Higher nilpotency at every monomial pole depth
+
+There is a further complete case without a square-zero assumption.
+Let `P` be any **nilpotent** constant energy-block generator and
+
+```math
+U(t)=I+\frac{P}{(t+1)^d},\qquad d\ge1.                \tag{13}
+```
+
+If this yields a strict polynomial crossing, then at depths one,
+two and three `P` lies in `R_1`, while at every depth at least four
+it lies in `Z` and leaves the tensor unchanged. In particular every
+admissible generator in (13) is automatically square zero; the
+nontrivial cases inherit the all-field `rho>=3/4` floor.
+
+Every integer energy block has dimension at most four, so nilpotence
+implies `P^4=0`. Expand the finite geometric inverse of (13). With
+`s=t+1`, the perturbation is exactly
+
+```math
+A_U-A=\sum_{j=1}^4 s^{-jd}[P,A]P^{j-1}.               \tag{14}
+```
+
+For `1<=i<=d`, define
+
+```math
+Q_i(P)=\sum_{j=0}^3[P,D_{i+jd}]P^j,
+\qquad D_k=0\quad(k>18).                             \tag{15}
+```
+
+The coefficient at `s^(i-d)` is `Q_i`, and each lower coefficient
+in that residue class is `Q_i P^k`. Therefore `P^4=0` together
+with `Q_i=0` is necessary and sufficient for polynomiality and
+the strict endpoint. These equations have degree at most four.
+
+For `d>=18`, all higher terms in (15) vanish, giving
+`[P,D_i]=0` for every `i<=18`. Thus `P` is in the full commutant,
+whose nilpotent sector is `Z`. For the remaining seventeen depths,
+formal polynomial row-space elimination extracts linear, pure-square
+and pure-fourth-power consequences and takes their valid Frobenius
+roots. Every terminal space satisfies the original equations
+identically. The complete dimension chains are:
+
+| Depth | Dimension chain | Terminal space |
+| --- | --- | --- |
+| 1 | `69 -> 15 -> 3` | `R_1` |
+| 2 | `69 -> 18 -> 7 -> 3` | `R_1` |
+| 3 | `69 -> 19 -> 4 -> 3` | `R_1` |
+| 4 | `69 -> 40 -> 25 -> 6 -> 2` | `Z` |
+| 5 | `69 -> 5 -> 2` | `Z` |
+| 6 | `69 -> 4 -> 2` | `Z` |
+| 8 | `69 -> 11 -> 4 -> 2` | `Z` |
+| 7, 9--17 | `69 -> 3 -> 2` | `Z` |
+
+The [higher-nilpotency checker](../tools/check_joint_nilpotent_depths.py)
+retains every linear, square-root and fourth-root consequence in
+its [certificate](../evidence/joint-nilpotent-depths.json). It also
+compares 47,500 assembled entries with independent literal dense
+`F4` products. The argument is over every characteristic-two field;
+it does not impose identities such as `alpha_i^4=alpha_i`.
+
+```sh
+make verify-joint-nilpotent-depths
+python3 tools/check_joint_nilpotent_depths.py --generate
+```
+
+This higher-nilpotency result fixes the monomial multiplier in (13).
+The all-rational multiplier theorem of section 5 still assumes a
+square-zero generator. Intermediate factors in a decomposition of
+a more general gauge need not individually preserve polynomiality,
+so such a factorization does not extend these theorems automatically.
+
+## 7. Replay and precise limits
 
 The [checker](../tools/check_joint_endpoint_loops.py) recomputes the
 five-dimensional endpoint commutant, its three-dimensional nilpotent

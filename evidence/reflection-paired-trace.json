@@ -1,0 +1,50 @@
+{
+  "status": "passed",
+  "scope": "Uniform proof with exact cleared-Schur, complete-tensor, and affine-frame controls.",
+  "schur_controls": [
+    {
+      "interval": 4,
+      "cleared_schur_entries": 16
+    },
+    {
+      "interval": 8,
+      "cleared_schur_entries": 64
+    },
+    {
+      "interval": 16,
+      "cleared_schur_entries": 256
+    }
+  ],
+  "original_tensors": [
+    {
+      "interval": 4,
+      "alphabet": 4,
+      "paired_entries": 32,
+      "contracted_tensor_entries": 128,
+      "trace_sha256": [
+        "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1",
+        "5f56d6ea92de28e409fb39de9b6221a153392d5aaac6fadcf4da065f840dfaa1"
+      ]
+    },
+    {
+      "interval": 8,
+      "alphabet": 16,
+      "paired_entries": 512,
+      "contracted_tensor_entries": 8192,
+      "trace_sha256": [
+        "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d",
+        "8e1fa866bca17d7a8ff15f53d1a5120f7737fce93d3432ea5abc18f7750c874d"
+      ]
+    }
+  ],
+  "constant_basis_frames": 6,
+  "independent_laurent_series_frames": 8,
+  "affine_combinations": 16,
+  "source_sha256": {
+    "check_reflection_paired_trace.py": "cfb56ef9bf0eea49508ab7c1b0cd13e3dc00cbc39f606668c5015ff137e5f366",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+    "laurent_series_coupled_frames.py": "7fdcab4e01306cc957b305c1e404a73991adaef0e57f800d3de6c652dbbf5887",
+    "reflection_laurent_physical_frames.py": "e4396ed1a78303893adce6a4f931d8a1866f79ae09fc9f8b0ac6aea164352563",
+    "search_reflection_physical_bases.py": "33234abfb35605ca5eefabe24dc90f27ca0f230efb8eb37d694a1616eda7f424"
+  }
+}

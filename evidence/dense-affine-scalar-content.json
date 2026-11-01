@@ -1,0 +1,4879 @@
+{
+  "schema_version": 1,
+  "scope": "Solve scalar-zero constraints in the full finite rank-one frame span.\n\nThis is exact linear algebra over F4, not a pressure or optimality claim.\nEach column is the complete coefficient vector of T_G,k minus T. The saved\nrank and remainder describe precisely the declared finite catalogue.\n",
+  "catalogue_sha256": "1e6b46b06c86500f0d9ed061383e02722d707f7e5f95c243c3ea340b1db6c09c",
+  "generators": 5355,
+  "candidate_count": 7176,
+  "complete_catalogue": true,
+  "endpoint": 1,
+  "alphabet": 4,
+  "degree": 24,
+  "source_sha256": {
+    "solve_dense_affine_scalar_content.py": "05fb51d3917bd3ddbe9b1c1168d674648cc4f593f86b8b76a1a3dfe6ff520514",
+    "dense_coupled_reflection_frames.py": "ce0b2dcc390a4c7f1a7fdaf88016132b0f6fca70b7b96406b92792420aeeebe0",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+    "reflection_laurent_physical_frames.py": "e4396ed1a78303893adce6a4f931d8a1866f79ae09fc9f8b0ac6aea164352563",
+    "screen_affine_finite_places.py": "041c5b4176d3c090f0c9ad0724ef71a99b57dc75256bfb2d203096898959d5d8"
+  },
+  "results": [
+    {
+      "points": [
+        0
+      ],
+      "constraint_count": 256,
+      "rank": 102,
+      "nullity": 7074,
+      "consistent": false,
+      "rank_increments": [
+        {
+          "candidate": 3,
+          "pivot": 3
+        },
+        {
+          "candidate": 7,
+          "pivot": 15
+        },
+        {
+          "candidate": 13,
+          "pivot": 11
+        },
+        {
+          "candidate": 21,
+          "pivot": 75
+        },
+        {
+          "candidate": 37,
+          "pivot": 7
+        },
+        {
+          "candidate": 45,
+          "pivot": 71
+        },
+        {
+          "candidate": 69,
+          "pivot": 135
+        },
+        {
+          "candidate": 139,
+          "pivot": 0
+        },
+        {
+          "candidate": 147,
+          "pivot": 192
+        },
+        {
+          "candidate": 157,
+          "pivot": 8
+        },
+        {
+          "candidate": 165,
+          "pivot": 72
+        },
+        {
+          "candidate": 181,
+          "pivot": 4
+        },
+        {
+          "candidate": 189,
+          "pivot": 68
+        },
+        {
+          "candidate": 213,
+          "pivot": 132
+        },
+        {
+          "candidate": 279,
+          "pivot": 5
+        },
+        {
+          "candidate": 283,
+          "pivot": 48
+        },
+        {
+          "candidate": 289,
+          "pivot": 120
+        },
+        {
+          "candidate": 313,
+          "pivot": 180
+        },
+        {
+          "candidate": 321,
+          "pivot": 116
+        },
+        {
+          "candidate": 411,
+          "pivot": 53
+        },
+        {
+          "candidate": 541,
+          "pivot": 13
+        },
+        {
+          "candidate": 543,
+          "pivot": 45
+        },
+        {
+          "candidate": 546,
+          "pivot": 33
+        },
+        {
+          "candidate": 547,
+          "pivot": 1
+        },
+        {
+          "candidate": 548,
+          "pivot": 35
+        },
+        {
+          "candidate": 550,
+          "pivot": 65
+        },
+        {
+          "candidate": 559,
+          "pivot": 6
+        },
+        {
+          "candidate": 561,
+          "pivot": 54
+        },
+        {
+          "candidate": 566,
+          "pivot": 37
+        },
+        {
+          "candidate": 567,
+          "pivot": 69
+        },
+        {
+          "candidate": 570,
+          "pivot": 133
+        },
+        {
+          "candidate": 574,
+          "pivot": 165
+        },
+        {
+          "candidate": 581,
+          "pivot": 39
+        },
+        {
+          "candidate": 619,
+          "pivot": 9
+        },
+        {
+          "candidate": 621,
+          "pivot": 225
+        },
+        {
+          "candidate": 624,
+          "pivot": 32
+        },
+        {
+          "candidate": 625,
+          "pivot": 40
+        },
+        {
+          "candidate": 626,
+          "pivot": 193
+        },
+        {
+          "candidate": 639,
+          "pivot": 160
+        },
+        {
+          "candidate": 644,
+          "pivot": 36
+        },
+        {
+          "candidate": 645,
+          "pivot": 128
+        },
+        {
+          "candidate": 648,
+          "pivot": 164
+        },
+        {
+          "candidate": 659,
+          "pivot": 129
+        },
+        {
+          "candidate": 697,
+          "pivot": 38
+        },
+        {
+          "candidate": 702,
+          "pivot": 56
+        },
+        {
+          "candidate": 703,
+          "pivot": 41
+        },
+        {
+          "candidate": 704,
+          "pivot": 64
+        },
+        {
+          "candidate": 717,
+          "pivot": 101
+        },
+        {
+          "candidate": 722,
+          "pivot": 52
+        },
+        {
+          "candidate": 723,
+          "pivot": 100
+        },
+        {
+          "candidate": 737,
+          "pivot": 55
+        },
+        {
+          "candidate": 781,
+          "pivot": 96
+        },
+        {
+          "candidate": 782,
+          "pivot": 104
+        },
+        {
+          "candidate": 858,
+          "pivot": 43
+        },
+        {
+          "candidate": 859,
+          "pivot": 67
+        },
+        {
+          "candidate": 873,
+          "pivot": 103
+        },
+        {
+          "candidate": 878,
+          "pivot": 149
+        },
+        {
+          "candidate": 936,
+          "pivot": 59
+        },
+        {
+          "candidate": 937,
+          "pivot": 99
+        },
+        {
+          "candidate": 951,
+          "pivot": 161
+        },
+        {
+          "candidate": 1170,
+          "pivot": 70
+        },
+        {
+          "candidate": 1171,
+          "pivot": 97
+        },
+        {
+          "candidate": 1477,
+          "pivot": 14
+        },
+        {
+          "candidate": 1479,
+          "pivot": 29
+        },
+        {
+          "candidate": 1485,
+          "pivot": 27
+        },
+        {
+          "candidate": 1506,
+          "pivot": 17
+        },
+        {
+          "candidate": 1507,
+          "pivot": 2
+        },
+        {
+          "candidate": 1508,
+          "pivot": 19
+        },
+        {
+          "candidate": 1510,
+          "pivot": 25
+        },
+        {
+          "candidate": 1511,
+          "pivot": 10
+        },
+        {
+          "candidate": 1514,
+          "pivot": 73
+        },
+        {
+          "candidate": 1522,
+          "pivot": 130
+        },
+        {
+          "candidate": 1526,
+          "pivot": 66
+        },
+        {
+          "candidate": 1555,
+          "pivot": 209
+        },
+        {
+          "candidate": 1563,
+          "pivot": 81
+        },
+        {
+          "candidate": 1584,
+          "pivot": 16
+        },
+        {
+          "candidate": 1585,
+          "pivot": 20
+        },
+        {
+          "candidate": 1586,
+          "pivot": 194
+        },
+        {
+          "candidate": 1588,
+          "pivot": 24
+        },
+        {
+          "candidate": 1589,
+          "pivot": 80
+        },
+        {
+          "candidate": 1592,
+          "pivot": 88
+        },
+        {
+          "candidate": 1633,
+          "pivot": 23
+        },
+        {
+          "candidate": 1641,
+          "pivot": 57
+        },
+        {
+          "candidate": 1663,
+          "pivot": 21
+        },
+        {
+          "candidate": 1664,
+          "pivot": 131
+        },
+        {
+          "candidate": 1667,
+          "pivot": 84
+        },
+        {
+          "candidate": 1741,
+          "pivot": 148
+        },
+        {
+          "candidate": 1789,
+          "pivot": 30
+        },
+        {
+          "candidate": 1794,
+          "pivot": 18
+        },
+        {
+          "candidate": 1795,
+          "pivot": 82
+        },
+        {
+          "candidate": 1806,
+          "pivot": 22
+        },
+        {
+          "candidate": 1807,
+          "pivot": 145
+        },
+        {
+          "candidate": 1813,
+          "pivot": 26
+        },
+        {
+          "candidate": 1818,
+          "pivot": 86
+        },
+        {
+          "candidate": 1867,
+          "pivot": 210
+        },
+        {
+          "candidate": 1873,
+          "pivot": 42
+        },
+        {
+          "candidate": 1885,
+          "pivot": 85
+        },
+        {
+          "candidate": 1891,
+          "pivot": 146
+        },
+        {
+          "candidate": 2131,
+          "pivot": 87
+        },
+        {
+          "candidate": 2133,
+          "pivot": 83
+        },
+        {
+          "candidate": 2211,
+          "pivot": 89
+        },
+        {
+          "candidate": 2439,
+          "pivot": 144
+        }
+      ],
+      "target_remainder_bitplanes": [
+        "0x1268000012681268000000001268000000001268000000000000",
+        "0x0"
+      ]
+    },
+    {
+      "points": [
+        2
+      ],
+      "constraint_count": 256,
+      "rank": 181,
+      "nullity": 6995,
+      "consistent": false,
+      "rank_increments": [
+        {
+          "candidate": 0,
+          "pivot": 0
+        },
+        {
+          "candidate": 1,
+          "pivot": 3
+        },
+        {
+          "candidate": 2,
+          "pivot": 15
+        },
+        {
+          "candidate": 12,
+          "pivot": 1
+        },
+        {
+          "candidate": 13,
+          "pivot": 9
+        },
+        {
+          "candidate": 14,
+          "pivot": 8
+        },
+        {
+          "candidate": 15,
+          "pivot": 13
+        },
+        {
+          "candidate": 16,
+          "pivot": 11
+        },
+        {
+          "candidate": 17,
+          "pivot": 65
+        },
+        {
+          "candidate": 18,
+          "pivot": 75
+        },
+        {
+          "candidate": 20,
+          "pivot": 73
+        },
+        {
+          "candidate": 36,
+          "pivot": 2
+        },
+        {
+          "candidate": 37,
+          "pivot": 5
+        },
+        {
+          "candidate": 38,
+          "pivot": 4
+        },
+        {
+          "candidate": 39,
+          "pivot": 7
+        },
+        {
+          "candidate": 40,
+          "pivot": 14
+        },
+        {
+          "candidate": 41,
+          "pivot": 17
+        },
+        {
+          "candidate": 42,
+          "pivot": 68
+        },
+        {
+          "candidate": 44,
+          "pivot": 6
+        },
+        {
+          "candidate": 45,
+          "pivot": 70
+        },
+        {
+          "candidate": 46,
+          "pivot": 66
+        },
+        {
+          "candidate": 47,
+          "pivot": 71
+        },
+        {
+          "candidate": 52,
+          "pivot": 67
+        },
+        {
+          "candidate": 53,
+          "pivot": 135
+        },
+        {
+          "candidate": 68,
+          "pivot": 131
+        },
+        {
+          "candidate": 132,
+          "pivot": 12
+        },
+        {
+          "candidate": 133,
+          "pivot": 192
+        },
+        {
+          "candidate": 156,
+          "pivot": 16
+        },
+        {
+          "candidate": 157,
+          "pivot": 77
+        },
+        {
+          "candidate": 158,
+          "pivot": 193
+        },
+        {
+          "candidate": 180,
+          "pivot": 21
+        },
+        {
+          "candidate": 181,
+          "pivot": 72
+        },
+        {
+          "candidate": 182,
+          "pivot": 64
+        },
+        {
+          "candidate": 188,
+          "pivot": 78
+        },
+        {
+          "candidate": 189,
+          "pivot": 128
+        },
+        {
+          "candidate": 196,
+          "pivot": 194
+        },
+        {
+          "candidate": 276,
+          "pivot": 48
+        },
+        {
+          "candidate": 278,
+          "pivot": 80
+        },
+        {
+          "candidate": 288,
+          "pivot": 24
+        },
+        {
+          "candidate": 289,
+          "pivot": 88
+        },
+        {
+          "candidate": 290,
+          "pivot": 25
+        },
+        {
+          "candidate": 291,
+          "pivot": 56
+        },
+        {
+          "candidate": 292,
+          "pivot": 59
+        },
+        {
+          "candidate": 293,
+          "pivot": 83
+        },
+        {
+          "candidate": 294,
+          "pivot": 116
+        },
+        {
+          "candidate": 312,
+          "pivot": 20
+        },
+        {
+          "candidate": 313,
+          "pivot": 52
+        },
+        {
+          "candidate": 314,
+          "pivot": 32
+        },
+        {
+          "candidate": 315,
+          "pivot": 55
+        },
+        {
+          "candidate": 316,
+          "pivot": 119
+        },
+        {
+          "candidate": 317,
+          "pivot": 133
+        },
+        {
+          "candidate": 318,
+          "pivot": 132
+        },
+        {
+          "candidate": 320,
+          "pivot": 36
+        },
+        {
+          "candidate": 321,
+          "pivot": 84
+        },
+        {
+          "candidate": 322,
+          "pivot": 96
+        },
+        {
+          "candidate": 323,
+          "pivot": 120
+        },
+        {
+          "candidate": 328,
+          "pivot": 69
+        },
+        {
+          "candidate": 422,
+          "pivot": 129
+        },
+        {
+          "candidate": 423,
+          "pivot": 74
+        },
+        {
+          "candidate": 424,
+          "pivot": 76
+        },
+        {
+          "candidate": 426,
+          "pivot": 201
+        },
+        {
+          "candidate": 444,
+          "pivot": 79
+        },
+        {
+          "candidate": 445,
+          "pivot": 180
+        },
+        {
+          "candidate": 446,
+          "pivot": 136
+        },
+        {
+          "candidate": 447,
+          "pivot": 87
+        },
+        {
+          "candidate": 448,
+          "pivot": 176
+        },
+        {
+          "candidate": 454,
+          "pivot": 144
+        },
+        {
+          "candidate": 455,
+          "pivot": 198
+        },
+        {
+          "candidate": 460,
+          "pivot": 112
+        },
+        {
+          "candidate": 540,
+          "pivot": 18
+        },
+        {
+          "candidate": 541,
+          "pivot": 19
+        },
+        {
+          "candidate": 542,
+          "pivot": 22
+        },
+        {
+          "candidate": 546,
+          "pivot": 10
+        },
+        {
+          "candidate": 547,
+          "pivot": 23
+        },
+        {
+          "candidate": 548,
+          "pivot": 26
+        },
+        {
+          "candidate": 549,
+          "pivot": 27
+        },
+        {
+          "candidate": 550,
+          "pivot": 28
+        },
+        {
+          "candidate": 551,
+          "pivot": 81
+        },
+        {
+          "candidate": 552,
+          "pivot": 82
+        },
+        {
+          "candidate": 558,
+          "pivot": 29
+        },
+        {
+          "candidate": 559,
+          "pivot": 30
+        },
+        {
+          "candidate": 560,
+          "pivot": 31
+        },
+        {
+          "candidate": 561,
+          "pivot": 33
+        },
+        {
+          "candidate": 562,
+          "pivot": 39
+        },
+        {
+          "candidate": 563,
+          "pivot": 40
+        },
+        {
+          "candidate": 564,
+          "pivot": 91
+        },
+        {
+          "candidate": 566,
+          "pivot": 34
+        },
+        {
+          "candidate": 567,
+          "pivot": 86
+        },
+        {
+          "candidate": 568,
+          "pivot": 130
+        },
+        {
+          "candidate": 618,
+          "pivot": 35
+        },
+        {
+          "candidate": 619,
+          "pivot": 99
+        },
+        {
+          "candidate": 620,
+          "pivot": 200
+        },
+        {
+          "candidate": 624,
+          "pivot": 37
+        },
+        {
+          "candidate": 625,
+          "pivot": 38
+        },
+        {
+          "candidate": 626,
+          "pivot": 41
+        },
+        {
+          "candidate": 627,
+          "pivot": 224
+        },
+        {
+          "candidate": 628,
+          "pivot": 45
+        },
+        {
+          "candidate": 629,
+          "pivot": 42
+        },
+        {
+          "candidate": 630,
+          "pivot": 85
+        },
+        {
+          "candidate": 632,
+          "pivot": 43
+        },
+        {
+          "candidate": 633,
+          "pivot": 134
+        },
+        {
+          "candidate": 636,
+          "pivot": 44
+        },
+        {
+          "candidate": 637,
+          "pivot": 100
+        },
+        {
+          "candidate": 638,
+          "pivot": 49
+        },
+        {
+          "candidate": 639,
+          "pivot": 97
+        },
+        {
+          "candidate": 640,
+          "pivot": 141
+        },
+        {
+          "candidate": 644,
+          "pivot": 46
+        },
+        {
+          "candidate": 645,
+          "pivot": 50
+        },
+        {
+          "candidate": 646,
+          "pivot": 160
+        },
+        {
+          "candidate": 648,
+          "pivot": 51
+        },
+        {
+          "candidate": 649,
+          "pivot": 90
+        },
+        {
+          "candidate": 656,
+          "pivot": 164
+        },
+        {
+          "candidate": 664,
+          "pivot": 53
+        },
+        {
+          "candidate": 696,
+          "pivot": 54
+        },
+        {
+          "candidate": 697,
+          "pivot": 57
+        },
+        {
+          "candidate": 698,
+          "pivot": 89
+        },
+        {
+          "candidate": 702,
+          "pivot": 208
+        },
+        {
+          "candidate": 703,
+          "pivot": 92
+        },
+        {
+          "candidate": 704,
+          "pivot": 93
+        },
+        {
+          "candidate": 705,
+          "pivot": 104
+        },
+        {
+          "candidate": 707,
+          "pivot": 95
+        },
+        {
+          "candidate": 714,
+          "pivot": 143
+        },
+        {
+          "candidate": 716,
+          "pivot": 94
+        },
+        {
+          "candidate": 717,
+          "pivot": 101
+        },
+        {
+          "candidate": 718,
+          "pivot": 98
+        },
+        {
+          "candidate": 719,
+          "pivot": 161
+        },
+        {
+          "candidate": 722,
+          "pivot": 196
+        },
+        {
+          "candidate": 723,
+          "pivot": 102
+        },
+        {
+          "candidate": 726,
+          "pivot": 113
+        },
+        {
+          "candidate": 774,
+          "pivot": 145
+        },
+        {
+          "candidate": 775,
+          "pivot": 105
+        },
+        {
+          "candidate": 781,
+          "pivot": 103
+        },
+        {
+          "candidate": 782,
+          "pivot": 197
+        },
+        {
+          "candidate": 852,
+          "pivot": 47
+        },
+        {
+          "candidate": 853,
+          "pivot": 107
+        },
+        {
+          "candidate": 858,
+          "pivot": 106
+        },
+        {
+          "candidate": 859,
+          "pivot": 108
+        },
+        {
+          "candidate": 860,
+          "pivot": 137
+        },
+        {
+          "candidate": 861,
+          "pivot": 109
+        },
+        {
+          "candidate": 862,
+          "pivot": 110
+        },
+        {
+          "candidate": 863,
+          "pivot": 115
+        },
+        {
+          "candidate": 866,
+          "pivot": 118
+        },
+        {
+          "candidate": 870,
+          "pivot": 138
+        },
+        {
+          "candidate": 871,
+          "pivot": 140
+        },
+        {
+          "candidate": 872,
+          "pivot": 111
+        },
+        {
+          "candidate": 873,
+          "pivot": 146
+        },
+        {
+          "candidate": 874,
+          "pivot": 149
+        },
+        {
+          "candidate": 878,
+          "pivot": 114
+        },
+        {
+          "candidate": 879,
+          "pivot": 148
+        },
+        {
+          "candidate": 880,
+          "pivot": 150
+        },
+        {
+          "candidate": 882,
+          "pivot": 147
+        },
+        {
+          "candidate": 883,
+          "pivot": 151
+        },
+        {
+          "candidate": 890,
+          "pivot": 165
+        },
+        {
+          "candidate": 898,
+          "pivot": 152
+        },
+        {
+          "candidate": 937,
+          "pivot": 155
+        },
+        {
+          "candidate": 938,
+          "pivot": 163
+        },
+        {
+          "candidate": 939,
+          "pivot": 225
+        },
+        {
+          "candidate": 941,
+          "pivot": 162
+        },
+        {
+          "candidate": 942,
+          "pivot": 177
+        },
+        {
+          "candidate": 948,
+          "pivot": 167
+        },
+        {
+          "candidate": 950,
+          "pivot": 210
+        },
+        {
+          "candidate": 951,
+          "pivot": 209
+        },
+        {
+          "candidate": 957,
+          "pivot": 173
+        },
+        {
+          "candidate": 960,
+          "pivot": 168
+        },
+        {
+          "candidate": 1008,
+          "pivot": 202
+        },
+        {
+          "candidate": 1009,
+          "pivot": 212
+        },
+        {
+          "candidate": 1010,
+          "pivot": 216
+        },
+        {
+          "candidate": 1171,
+          "pivot": 228
+        },
+        {
+          "candidate": 1476,
+          "pivot": 139
+        },
+        {
+          "candidate": 1477,
+          "pivot": 153
+        },
+        {
+          "candidate": 1478,
+          "pivot": 154
+        },
+        {
+          "candidate": 1483,
+          "pivot": 142
+        },
+        {
+          "candidate": 1484,
+          "pivot": 121
+        },
+        {
+          "candidate": 1485,
+          "pivot": 217
+        },
+        {
+          "candidate": 1486,
+          "pivot": 166
+        },
+        {
+          "candidate": 1487,
+          "pivot": 157
+        },
+        {
+          "candidate": 1506,
+          "pivot": 159
+        },
+        {
+          "candidate": 1507,
+          "pivot": 172
+        },
+        {
+          "candidate": 1511,
+          "pivot": 214
+        },
+        {
+          "candidate": 1788,
+          "pivot": 171
+        },
+        {
+          "candidate": 1796,
+          "pivot": 206
+        }
+      ],
+      "target_remainder_bitplanes": [
+        "0x35c4f51d7c6c2ab8d769933b591973ebff18af96f7f2b3dd1400000000000000",
+        "0x26cce570f81eb65efe08aa2a99215303fbeff310fbbb81d51800000000000000"
+      ]
+    },
+    {
+      "points": [
+        3
+      ],
+      "constraint_count": 256,
+      "rank": 181,
+      "nullity": 6995,
+      "consistent": false,
+      "rank_increments": [
+        {
+          "candidate": 0,
+          "pivot": 0
+        },
+        {
+          "candidate": 1,
+          "pivot": 3
+        },
+        {
+          "candidate": 2,
+          "pivot": 15
+        },
+        {
+          "candidate": 12,
+          "pivot": 1
+        },
+        {
+          "candidate": 13,
+          "pivot": 9
+        },
+        {
+          "candidate": 14,
+          "pivot": 8
+        },
+        {
+          "candidate": 15,
+          "pivot": 13
+        },
+        {
+          "candidate": 16,
+          "pivot": 65
+        },
+        {
+          "candidate": 17,
+          "pivot": 11
+        },
+        {
+          "candidate": 18,
+          "pivot": 75
+        },
+        {
+          "candidate": 21,
+          "pivot": 73
+        },
+        {
+          "candidate": 36,
+          "pivot": 2
+        },
+        {
+          "candidate": 37,
+          "pivot": 5
+        },
+        {
+          "candidate": 38,
+          "pivot": 4
+        },
+        {
+          "candidate": 39,
+          "pivot": 7
+        },
+        {
+          "candidate": 40,
+          "pivot": 17
+        },
+        {
+          "candidate": 41,
+          "pivot": 14
+        },
+        {
+          "candidate": 42,
+          "pivot": 68
+        },
+        {
+          "candidate": 44,
+          "pivot": 6
+        },
+        {
+          "candidate": 45,
+          "pivot": 70
+        },
+        {
+          "candidate": 46,
+          "pivot": 66
+        },
+        {
+          "candidate": 47,
+          "pivot": 71
+        },
+        {
+          "candidate": 52,
+          "pivot": 67
+        },
+        {
+          "candidate": 53,
+          "pivot": 135
+        },
+        {
+          "candidate": 69,
+          "pivot": 131
+        },
+        {
+          "candidate": 132,
+          "pivot": 12
+        },
+        {
+          "candidate": 133,
+          "pivot": 192
+        },
+        {
+          "candidate": 156,
+          "pivot": 16
+        },
+        {
+          "candidate": 157,
+          "pivot": 77
+        },
+        {
+          "candidate": 158,
+          "pivot": 193
+        },
+        {
+          "candidate": 180,
+          "pivot": 21
+        },
+        {
+          "candidate": 181,
+          "pivot": 72
+        },
+        {
+          "candidate": 182,
+          "pivot": 64
+        },
+        {
+          "candidate": 188,
+          "pivot": 78
+        },
+        {
+          "candidate": 189,
+          "pivot": 128
+        },
+        {
+          "candidate": 196,
+          "pivot": 194
+        },
+        {
+          "candidate": 277,
+          "pivot": 48
+        },
+        {
+          "candidate": 278,
+          "pivot": 80
+        },
+        {
+          "candidate": 288,
+          "pivot": 24
+        },
+        {
+          "candidate": 289,
+          "pivot": 88
+        },
+        {
+          "candidate": 290,
+          "pivot": 56
+        },
+        {
+          "candidate": 291,
+          "pivot": 25
+        },
+        {
+          "candidate": 292,
+          "pivot": 83
+        },
+        {
+          "candidate": 293,
+          "pivot": 59
+        },
+        {
+          "candidate": 294,
+          "pivot": 116
+        },
+        {
+          "candidate": 312,
+          "pivot": 20
+        },
+        {
+          "candidate": 313,
+          "pivot": 52
+        },
+        {
+          "candidate": 314,
+          "pivot": 55
+        },
+        {
+          "candidate": 315,
+          "pivot": 32
+        },
+        {
+          "candidate": 316,
+          "pivot": 119
+        },
+        {
+          "candidate": 317,
+          "pivot": 132
+        },
+        {
+          "candidate": 318,
+          "pivot": 133
+        },
+        {
+          "candidate": 320,
+          "pivot": 36
+        },
+        {
+          "candidate": 321,
+          "pivot": 84
+        },
+        {
+          "candidate": 322,
+          "pivot": 96
+        },
+        {
+          "candidate": 323,
+          "pivot": 120
+        },
+        {
+          "candidate": 328,
+          "pivot": 69
+        },
+        {
+          "candidate": 422,
+          "pivot": 76
+        },
+        {
+          "candidate": 423,
+          "pivot": 129
+        },
+        {
+          "candidate": 425,
+          "pivot": 74
+        },
+        {
+          "candidate": 426,
+          "pivot": 201
+        },
+        {
+          "candidate": 444,
+          "pivot": 79
+        },
+        {
+          "candidate": 445,
+          "pivot": 180
+        },
+        {
+          "candidate": 446,
+          "pivot": 87
+        },
+        {
+          "candidate": 447,
+          "pivot": 136
+        },
+        {
+          "candidate": 448,
+          "pivot": 176
+        },
+        {
+          "candidate": 454,
+          "pivot": 198
+        },
+        {
+          "candidate": 455,
+          "pivot": 144
+        },
+        {
+          "candidate": 460,
+          "pivot": 112
+        },
+        {
+          "candidate": 540,
+          "pivot": 18
+        },
+        {
+          "candidate": 541,
+          "pivot": 19
+        },
+        {
+          "candidate": 543,
+          "pivot": 22
+        },
+        {
+          "candidate": 546,
+          "pivot": 10
+        },
+        {
+          "candidate": 547,
+          "pivot": 23
+        },
+        {
+          "candidate": 548,
+          "pivot": 26
+        },
+        {
+          "candidate": 549,
+          "pivot": 27
+        },
+        {
+          "candidate": 550,
+          "pivot": 28
+        },
+        {
+          "candidate": 551,
+          "pivot": 81
+        },
+        {
+          "candidate": 552,
+          "pivot": 82
+        },
+        {
+          "candidate": 558,
+          "pivot": 29
+        },
+        {
+          "candidate": 559,
+          "pivot": 30
+        },
+        {
+          "candidate": 560,
+          "pivot": 31
+        },
+        {
+          "candidate": 561,
+          "pivot": 33
+        },
+        {
+          "candidate": 562,
+          "pivot": 39
+        },
+        {
+          "candidate": 563,
+          "pivot": 40
+        },
+        {
+          "candidate": 564,
+          "pivot": 91
+        },
+        {
+          "candidate": 566,
+          "pivot": 34
+        },
+        {
+          "candidate": 567,
+          "pivot": 86
+        },
+        {
+          "candidate": 568,
+          "pivot": 130
+        },
+        {
+          "candidate": 618,
+          "pivot": 35
+        },
+        {
+          "candidate": 619,
+          "pivot": 99
+        },
+        {
+          "candidate": 621,
+          "pivot": 200
+        },
+        {
+          "candidate": 624,
+          "pivot": 37
+        },
+        {
+          "candidate": 625,
+          "pivot": 38
+        },
+        {
+          "candidate": 626,
+          "pivot": 41
+        },
+        {
+          "candidate": 627,
+          "pivot": 224
+        },
+        {
+          "candidate": 628,
+          "pivot": 42
+        },
+        {
+          "candidate": 629,
+          "pivot": 43
+        },
+        {
+          "candidate": 630,
+          "pivot": 85
+        },
+        {
+          "candidate": 632,
+          "pivot": 45
+        },
+        {
+          "candidate": 633,
+          "pivot": 134
+        },
+        {
+          "candidate": 636,
+          "pivot": 44
+        },
+        {
+          "candidate": 637,
+          "pivot": 100
+        },
+        {
+          "candidate": 638,
+          "pivot": 49
+        },
+        {
+          "candidate": 639,
+          "pivot": 97
+        },
+        {
+          "candidate": 640,
+          "pivot": 141
+        },
+        {
+          "candidate": 644,
+          "pivot": 46
+        },
+        {
+          "candidate": 645,
+          "pivot": 50
+        },
+        {
+          "candidate": 646,
+          "pivot": 160
+        },
+        {
+          "candidate": 648,
+          "pivot": 90
+        },
+        {
+          "candidate": 649,
+          "pivot": 51
+        },
+        {
+          "candidate": 657,
+          "pivot": 164
+        },
+        {
+          "candidate": 664,
+          "pivot": 53
+        },
+        {
+          "candidate": 696,
+          "pivot": 57
+        },
+        {
+          "candidate": 697,
+          "pivot": 54
+        },
+        {
+          "candidate": 702,
+          "pivot": 208
+        },
+        {
+          "candidate": 703,
+          "pivot": 89
+        },
+        {
+          "candidate": 704,
+          "pivot": 92
+        },
+        {
+          "candidate": 705,
+          "pivot": 93
+        },
+        {
+          "candidate": 707,
+          "pivot": 95
+        },
+        {
+          "candidate": 708,
+          "pivot": 104
+        },
+        {
+          "candidate": 714,
+          "pivot": 143
+        },
+        {
+          "candidate": 716,
+          "pivot": 94
+        },
+        {
+          "candidate": 717,
+          "pivot": 98
+        },
+        {
+          "candidate": 718,
+          "pivot": 101
+        },
+        {
+          "candidate": 722,
+          "pivot": 196
+        },
+        {
+          "candidate": 723,
+          "pivot": 102
+        },
+        {
+          "candidate": 724,
+          "pivot": 161
+        },
+        {
+          "candidate": 726,
+          "pivot": 113
+        },
+        {
+          "candidate": 774,
+          "pivot": 103
+        },
+        {
+          "candidate": 775,
+          "pivot": 145
+        },
+        {
+          "candidate": 777,
+          "pivot": 197
+        },
+        {
+          "candidate": 781,
+          "pivot": 105
+        },
+        {
+          "candidate": 852,
+          "pivot": 107
+        },
+        {
+          "candidate": 853,
+          "pivot": 47
+        },
+        {
+          "candidate": 855,
+          "pivot": 108
+        },
+        {
+          "candidate": 858,
+          "pivot": 106
+        },
+        {
+          "candidate": 859,
+          "pivot": 115
+        },
+        {
+          "candidate": 860,
+          "pivot": 137
+        },
+        {
+          "candidate": 861,
+          "pivot": 118
+        },
+        {
+          "candidate": 862,
+          "pivot": 109
+        },
+        {
+          "candidate": 863,
+          "pivot": 110
+        },
+        {
+          "candidate": 870,
+          "pivot": 140
+        },
+        {
+          "candidate": 871,
+          "pivot": 138
+        },
+        {
+          "candidate": 872,
+          "pivot": 111
+        },
+        {
+          "candidate": 873,
+          "pivot": 146
+        },
+        {
+          "candidate": 874,
+          "pivot": 148
+        },
+        {
+          "candidate": 875,
+          "pivot": 149
+        },
+        {
+          "candidate": 876,
+          "pivot": 165
+        },
+        {
+          "candidate": 878,
+          "pivot": 114
+        },
+        {
+          "candidate": 879,
+          "pivot": 147
+        },
+        {
+          "candidate": 880,
+          "pivot": 150
+        },
+        {
+          "candidate": 882,
+          "pivot": 151
+        },
+        {
+          "candidate": 898,
+          "pivot": 152
+        },
+        {
+          "candidate": 937,
+          "pivot": 155
+        },
+        {
+          "candidate": 938,
+          "pivot": 162
+        },
+        {
+          "candidate": 939,
+          "pivot": 225
+        },
+        {
+          "candidate": 941,
+          "pivot": 167
+        },
+        {
+          "candidate": 942,
+          "pivot": 177
+        },
+        {
+          "candidate": 948,
+          "pivot": 163
+        },
+        {
+          "candidate": 950,
+          "pivot": 209
+        },
+        {
+          "candidate": 951,
+          "pivot": 210
+        },
+        {
+          "candidate": 957,
+          "pivot": 173
+        },
+        {
+          "candidate": 960,
+          "pivot": 168
+        },
+        {
+          "candidate": 1008,
+          "pivot": 202
+        },
+        {
+          "candidate": 1009,
+          "pivot": 216
+        },
+        {
+          "candidate": 1011,
+          "pivot": 212
+        },
+        {
+          "candidate": 1171,
+          "pivot": 228
+        },
+        {
+          "candidate": 1476,
+          "pivot": 139
+        },
+        {
+          "candidate": 1477,
+          "pivot": 153
+        },
+        {
+          "candidate": 1479,
+          "pivot": 154
+        },
+        {
+          "candidate": 1483,
+          "pivot": 142
+        },
+        {
+          "candidate": 1484,
+          "pivot": 121
+        },
+        {
+          "candidate": 1485,
+          "pivot": 217
+        },
+        {
+          "candidate": 1486,
+          "pivot": 157
+        },
+        {
+          "candidate": 1487,
+          "pivot": 166
+        },
+        {
+          "candidate": 1506,
+          "pivot": 159
+        },
+        {
+          "candidate": 1507,
+          "pivot": 172
+        },
+        {
+          "candidate": 1511,
+          "pivot": 214
+        },
+        {
+          "candidate": 1788,
+          "pivot": 171
+        },
+        {
+          "candidate": 1796,
+          "pivot": 206
+        }
+      ],
+      "target_remainder_bitplanes": [
+        "0x66b4ddc7a3b98930bb54f8f4b3a5765944821fdf2cf008240400000000000000",
+        "0x505cdac7c7a48e9d7ced2b38e5c9fc146fa0b9e092f185321800000000000000"
+      ]
+    },
+    {
+      "points": [
+        2,
+        3
+      ],
+      "constraint_count": 512,
+      "rank": 316,
+      "nullity": 6860,
+      "consistent": false,
+      "rank_increments": [
+        {
+          "candidate": 0,
+          "pivot": 0
+        },
+        {
+          "candidate": 1,
+          "pivot": 3
+        },
+        {
+          "candidate": 2,
+          "pivot": 15
+        },
+        {
+          "candidate": 4,
+          "pivot": 256
+        },
+        {
+          "candidate": 5,
+          "pivot": 259
+        },
+        {
+          "candidate": 12,
+          "pivot": 1
+        },
+        {
+          "candidate": 13,
+          "pivot": 9
+        },
+        {
+          "candidate": 14,
+          "pivot": 8
+        },
+        {
+          "candidate": 15,
+          "pivot": 13
+        },
+        {
+          "candidate": 16,
+          "pivot": 11
+        },
+        {
+          "candidate": 17,
+          "pivot": 65
+        },
+        {
+          "candidate": 18,
+          "pivot": 75
+        },
+        {
+          "candidate": 19,
+          "pivot": 267
+        },
+        {
+          "candidate": 20,
+          "pivot": 73
+        },
+        {
+          "candidate": 21,
+          "pivot": 257
+        },
+        {
+          "candidate": 22,
+          "pivot": 265
+        },
+        {
+          "candidate": 24,
+          "pivot": 331
+        },
+        {
+          "candidate": 28,
+          "pivot": 269
+        },
+        {
+          "candidate": 36,
+          "pivot": 2
+        },
+        {
+          "candidate": 37,
+          "pivot": 5
+        },
+        {
+          "candidate": 38,
+          "pivot": 4
+        },
+        {
+          "candidate": 39,
+          "pivot": 7
+        },
+        {
+          "candidate": 40,
+          "pivot": 14
+        },
+        {
+          "candidate": 41,
+          "pivot": 17
+        },
+        {
+          "candidate": 42,
+          "pivot": 68
+        },
+        {
+          "candidate": 43,
+          "pivot": 263
+        },
+        {
+          "candidate": 44,
+          "pivot": 6
+        },
+        {
+          "candidate": 45,
+          "pivot": 70
+        },
+        {
+          "candidate": 46,
+          "pivot": 66
+        },
+        {
+          "candidate": 47,
+          "pivot": 71
+        },
+        {
+          "candidate": 48,
+          "pivot": 271
+        },
+        {
+          "candidate": 52,
+          "pivot": 67
+        },
+        {
+          "candidate": 53,
+          "pivot": 135
+        },
+        {
+          "candidate": 68,
+          "pivot": 131
+        },
+        {
+          "candidate": 69,
+          "pivot": 258
+        },
+        {
+          "candidate": 70,
+          "pivot": 261
+        },
+        {
+          "candidate": 72,
+          "pivot": 327
+        },
+        {
+          "candidate": 76,
+          "pivot": 262
+        },
+        {
+          "candidate": 84,
+          "pivot": 391
+        },
+        {
+          "candidate": 100,
+          "pivot": 270
+        },
+        {
+          "candidate": 132,
+          "pivot": 12
+        },
+        {
+          "candidate": 133,
+          "pivot": 192
+        },
+        {
+          "candidate": 140,
+          "pivot": 268
+        },
+        {
+          "candidate": 141,
+          "pivot": 448
+        },
+        {
+          "candidate": 156,
+          "pivot": 16
+        },
+        {
+          "candidate": 157,
+          "pivot": 77
+        },
+        {
+          "candidate": 158,
+          "pivot": 193
+        },
+        {
+          "candidate": 159,
+          "pivot": 449
+        },
+        {
+          "candidate": 164,
+          "pivot": 264
+        },
+        {
+          "candidate": 165,
+          "pivot": 321
+        },
+        {
+          "candidate": 180,
+          "pivot": 21
+        },
+        {
+          "candidate": 181,
+          "pivot": 72
+        },
+        {
+          "candidate": 182,
+          "pivot": 64
+        },
+        {
+          "candidate": 183,
+          "pivot": 320
+        },
+        {
+          "candidate": 188,
+          "pivot": 78
+        },
+        {
+          "candidate": 189,
+          "pivot": 128
+        },
+        {
+          "candidate": 196,
+          "pivot": 194
+        },
+        {
+          "candidate": 212,
+          "pivot": 272
+        },
+        {
+          "candidate": 213,
+          "pivot": 322
+        },
+        {
+          "candidate": 220,
+          "pivot": 324
+        },
+        {
+          "candidate": 276,
+          "pivot": 48
+        },
+        {
+          "candidate": 277,
+          "pivot": 273
+        },
+        {
+          "candidate": 278,
+          "pivot": 80
+        },
+        {
+          "candidate": 280,
+          "pivot": 304
+        },
+        {
+          "candidate": 288,
+          "pivot": 24
+        },
+        {
+          "candidate": 289,
+          "pivot": 88
+        },
+        {
+          "candidate": 290,
+          "pivot": 25
+        },
+        {
+          "candidate": 291,
+          "pivot": 56
+        },
+        {
+          "candidate": 292,
+          "pivot": 59
+        },
+        {
+          "candidate": 293,
+          "pivot": 83
+        },
+        {
+          "candidate": 294,
+          "pivot": 116
+        },
+        {
+          "candidate": 295,
+          "pivot": 277
+        },
+        {
+          "candidate": 296,
+          "pivot": 280
+        },
+        {
+          "candidate": 298,
+          "pivot": 281
+        },
+        {
+          "candidate": 300,
+          "pivot": 328
+        },
+        {
+          "candidate": 312,
+          "pivot": 20
+        },
+        {
+          "candidate": 313,
+          "pivot": 52
+        },
+        {
+          "candidate": 314,
+          "pivot": 32
+        },
+        {
+          "candidate": 315,
+          "pivot": 55
+        },
+        {
+          "candidate": 316,
+          "pivot": 119
+        },
+        {
+          "candidate": 317,
+          "pivot": 133
+        },
+        {
+          "candidate": 318,
+          "pivot": 132
+        },
+        {
+          "candidate": 319,
+          "pivot": 260
+        },
+        {
+          "candidate": 320,
+          "pivot": 36
+        },
+        {
+          "candidate": 321,
+          "pivot": 84
+        },
+        {
+          "candidate": 322,
+          "pivot": 96
+        },
+        {
+          "candidate": 323,
+          "pivot": 120
+        },
+        {
+          "candidate": 324,
+          "pivot": 336
+        },
+        {
+          "candidate": 328,
+          "pivot": 69
+        },
+        {
+          "candidate": 344,
+          "pivot": 276
+        },
+        {
+          "candidate": 345,
+          "pivot": 388
+        },
+        {
+          "candidate": 346,
+          "pivot": 288
+        },
+        {
+          "candidate": 352,
+          "pivot": 292
+        },
+        {
+          "candidate": 408,
+          "pivot": 372
+        },
+        {
+          "candidate": 422,
+          "pivot": 129
+        },
+        {
+          "candidate": 423,
+          "pivot": 74
+        },
+        {
+          "candidate": 424,
+          "pivot": 76
+        },
+        {
+          "candidate": 425,
+          "pivot": 312
+        },
+        {
+          "candidate": 426,
+          "pivot": 201
+        },
+        {
+          "candidate": 427,
+          "pivot": 376
+        },
+        {
+          "candidate": 430,
+          "pivot": 325
+        },
+        {
+          "candidate": 444,
+          "pivot": 79
+        },
+        {
+          "candidate": 445,
+          "pivot": 180
+        },
+        {
+          "candidate": 446,
+          "pivot": 136
+        },
+        {
+          "candidate": 447,
+          "pivot": 87
+        },
+        {
+          "candidate": 448,
+          "pivot": 176
+        },
+        {
+          "candidate": 449,
+          "pivot": 308
+        },
+        {
+          "candidate": 450,
+          "pivot": 436
+        },
+        {
+          "candidate": 454,
+          "pivot": 144
+        },
+        {
+          "candidate": 455,
+          "pivot": 198
+        },
+        {
+          "candidate": 456,
+          "pivot": 385
+        },
+        {
+          "candidate": 460,
+          "pivot": 112
+        },
+        {
+          "candidate": 478,
+          "pivot": 340
+        },
+        {
+          "candidate": 540,
+          "pivot": 18
+        },
+        {
+          "candidate": 541,
+          "pivot": 19
+        },
+        {
+          "candidate": 542,
+          "pivot": 22
+        },
+        {
+          "candidate": 543,
+          "pivot": 274
+        },
+        {
+          "candidate": 544,
+          "pivot": 275
+        },
+        {
+          "candidate": 546,
+          "pivot": 10
+        },
+        {
+          "candidate": 547,
+          "pivot": 23
+        },
+        {
+          "candidate": 548,
+          "pivot": 26
+        },
+        {
+          "candidate": 549,
+          "pivot": 27
+        },
+        {
+          "candidate": 550,
+          "pivot": 28
+        },
+        {
+          "candidate": 551,
+          "pivot": 81
+        },
+        {
+          "candidate": 552,
+          "pivot": 82
+        },
+        {
+          "candidate": 558,
+          "pivot": 29
+        },
+        {
+          "candidate": 559,
+          "pivot": 30
+        },
+        {
+          "candidate": 560,
+          "pivot": 31
+        },
+        {
+          "candidate": 561,
+          "pivot": 33
+        },
+        {
+          "candidate": 562,
+          "pivot": 39
+        },
+        {
+          "candidate": 563,
+          "pivot": 40
+        },
+        {
+          "candidate": 564,
+          "pivot": 91
+        },
+        {
+          "candidate": 565,
+          "pivot": 266
+        },
+        {
+          "candidate": 566,
+          "pivot": 34
+        },
+        {
+          "candidate": 567,
+          "pivot": 86
+        },
+        {
+          "candidate": 568,
+          "pivot": 130
+        },
+        {
+          "candidate": 578,
+          "pivot": 279
+        },
+        {
+          "candidate": 579,
+          "pivot": 278
+        },
+        {
+          "candidate": 580,
+          "pivot": 283
+        },
+        {
+          "candidate": 582,
+          "pivot": 287
+        },
+        {
+          "candidate": 618,
+          "pivot": 35
+        },
+        {
+          "candidate": 619,
+          "pivot": 99
+        },
+        {
+          "candidate": 620,
+          "pivot": 200
+        },
+        {
+          "candidate": 621,
+          "pivot": 284
+        },
+        {
+          "candidate": 622,
+          "pivot": 352
+        },
+        {
+          "candidate": 624,
+          "pivot": 37
+        },
+        {
+          "candidate": 625,
+          "pivot": 38
+        },
+        {
+          "candidate": 626,
+          "pivot": 41
+        },
+        {
+          "candidate": 627,
+          "pivot": 224
+        },
+        {
+          "candidate": 628,
+          "pivot": 45
+        },
+        {
+          "candidate": 629,
+          "pivot": 42
+        },
+        {
+          "candidate": 630,
+          "pivot": 85
+        },
+        {
+          "candidate": 632,
+          "pivot": 43
+        },
+        {
+          "candidate": 633,
+          "pivot": 134
+        },
+        {
+          "candidate": 636,
+          "pivot": 44
+        },
+        {
+          "candidate": 637,
+          "pivot": 100
+        },
+        {
+          "candidate": 638,
+          "pivot": 49
+        },
+        {
+          "candidate": 639,
+          "pivot": 97
+        },
+        {
+          "candidate": 640,
+          "pivot": 141
+        },
+        {
+          "candidate": 644,
+          "pivot": 46
+        },
+        {
+          "candidate": 645,
+          "pivot": 50
+        },
+        {
+          "candidate": 646,
+          "pivot": 160
+        },
+        {
+          "candidate": 648,
+          "pivot": 51
+        },
+        {
+          "candidate": 649,
+          "pivot": 90
+        },
+        {
+          "candidate": 652,
+          "pivot": 289
+        },
+        {
+          "candidate": 656,
+          "pivot": 164
+        },
+        {
+          "candidate": 657,
+          "pivot": 293
+        },
+        {
+          "candidate": 658,
+          "pivot": 291
+        },
+        {
+          "candidate": 660,
+          "pivot": 450
+        },
+        {
+          "candidate": 664,
+          "pivot": 53
+        },
+        {
+          "candidate": 665,
+          "pivot": 282
+        },
+        {
+          "candidate": 668,
+          "pivot": 384
+        },
+        {
+          "candidate": 676,
+          "pivot": 389
+        },
+        {
+          "candidate": 696,
+          "pivot": 54
+        },
+        {
+          "candidate": 697,
+          "pivot": 57
+        },
+        {
+          "candidate": 698,
+          "pivot": 89
+        },
+        {
+          "candidate": 699,
+          "pivot": 285
+        },
+        {
+          "candidate": 700,
+          "pivot": 420
+        },
+        {
+          "candidate": 702,
+          "pivot": 208
+        },
+        {
+          "candidate": 703,
+          "pivot": 92
+        },
+        {
+          "candidate": 704,
+          "pivot": 93
+        },
+        {
+          "candidate": 705,
+          "pivot": 104
+        },
+        {
+          "candidate": 706,
+          "pivot": 386
+        },
+        {
+          "candidate": 707,
+          "pivot": 95
+        },
+        {
+          "candidate": 708,
+          "pivot": 309
+        },
+        {
+          "candidate": 714,
+          "pivot": 143
+        },
+        {
+          "candidate": 715,
+          "pivot": 296
+        },
+        {
+          "candidate": 716,
+          "pivot": 94
+        },
+        {
+          "candidate": 717,
+          "pivot": 101
+        },
+        {
+          "candidate": 718,
+          "pivot": 98
+        },
+        {
+          "candidate": 719,
+          "pivot": 161
+        },
+        {
+          "candidate": 720,
+          "pivot": 305
+        },
+        {
+          "candidate": 722,
+          "pivot": 196
+        },
+        {
+          "candidate": 723,
+          "pivot": 102
+        },
+        {
+          "candidate": 724,
+          "pivot": 356
+        },
+        {
+          "candidate": 726,
+          "pivot": 113
+        },
+        {
+          "candidate": 727,
+          "pivot": 323
+        },
+        {
+          "candidate": 736,
+          "pivot": 290
+        },
+        {
+          "candidate": 737,
+          "pivot": 326
+        },
+        {
+          "candidate": 742,
+          "pivot": 452
+        },
+        {
+          "candidate": 774,
+          "pivot": 145
+        },
+        {
+          "candidate": 775,
+          "pivot": 105
+        },
+        {
+          "candidate": 776,
+          "pivot": 306
+        },
+        {
+          "candidate": 777,
+          "pivot": 353
+        },
+        {
+          "candidate": 781,
+          "pivot": 103
+        },
+        {
+          "candidate": 782,
+          "pivot": 197
+        },
+        {
+          "candidate": 794,
+          "pivot": 286
+        },
+        {
+          "candidate": 795,
+          "pivot": 360
+        },
+        {
+          "candidate": 852,
+          "pivot": 47
+        },
+        {
+          "candidate": 853,
+          "pivot": 107
+        },
+        {
+          "candidate": 854,
+          "pivot": 294
+        },
+        {
+          "candidate": 855,
+          "pivot": 301
+        },
+        {
+          "candidate": 858,
+          "pivot": 106
+        },
+        {
+          "candidate": 859,
+          "pivot": 108
+        },
+        {
+          "candidate": 860,
+          "pivot": 137
+        },
+        {
+          "candidate": 861,
+          "pivot": 109
+        },
+        {
+          "candidate": 862,
+          "pivot": 110
+        },
+        {
+          "candidate": 863,
+          "pivot": 115
+        },
+        {
+          "candidate": 866,
+          "pivot": 118
+        },
+        {
+          "candidate": 870,
+          "pivot": 138
+        },
+        {
+          "candidate": 871,
+          "pivot": 140
+        },
+        {
+          "candidate": 872,
+          "pivot": 111
+        },
+        {
+          "candidate": 873,
+          "pivot": 146
+        },
+        {
+          "candidate": 874,
+          "pivot": 149
+        },
+        {
+          "candidate": 875,
+          "pivot": 295
+        },
+        {
+          "candidate": 876,
+          "pivot": 297
+        },
+        {
+          "candidate": 878,
+          "pivot": 114
+        },
+        {
+          "candidate": 879,
+          "pivot": 148
+        },
+        {
+          "candidate": 880,
+          "pivot": 150
+        },
+        {
+          "candidate": 882,
+          "pivot": 147
+        },
+        {
+          "candidate": 883,
+          "pivot": 151
+        },
+        {
+          "candidate": 890,
+          "pivot": 165
+        },
+        {
+          "candidate": 891,
+          "pivot": 329
+        },
+        {
+          "candidate": 892,
+          "pivot": 299
+        },
+        {
+          "candidate": 893,
+          "pivot": 357
+        },
+        {
+          "candidate": 894,
+          "pivot": 421
+        },
+        {
+          "candidate": 898,
+          "pivot": 152
+        },
+        {
+          "candidate": 899,
+          "pivot": 355
+        },
+        {
+          "candidate": 931,
+          "pivot": 456
+        },
+        {
+          "candidate": 937,
+          "pivot": 155
+        },
+        {
+          "candidate": 938,
+          "pivot": 163
+        },
+        {
+          "candidate": 939,
+          "pivot": 225
+        },
+        {
+          "candidate": 941,
+          "pivot": 162
+        },
+        {
+          "candidate": 942,
+          "pivot": 177
+        },
+        {
+          "candidate": 945,
+          "pivot": 330
+        },
+        {
+          "candidate": 948,
+          "pivot": 167
+        },
+        {
+          "candidate": 950,
+          "pivot": 210
+        },
+        {
+          "candidate": 951,
+          "pivot": 209
+        },
+        {
+          "candidate": 952,
+          "pivot": 481
+        },
+        {
+          "candidate": 957,
+          "pivot": 173
+        },
+        {
+          "candidate": 958,
+          "pivot": 303
+        },
+        {
+          "candidate": 960,
+          "pivot": 168
+        },
+        {
+          "candidate": 961,
+          "pivot": 417
+        },
+        {
+          "candidate": 970,
+          "pivot": 392
+        },
+        {
+          "candidate": 1008,
+          "pivot": 202
+        },
+        {
+          "candidate": 1009,
+          "pivot": 212
+        },
+        {
+          "candidate": 1010,
+          "pivot": 216
+        },
+        {
+          "candidate": 1011,
+          "pivot": 332
+        },
+        {
+          "candidate": 1012,
+          "pivot": 400
+        },
+        {
+          "candidate": 1028,
+          "pivot": 307
+        },
+        {
+          "candidate": 1164,
+          "pivot": 337
+        },
+        {
+          "candidate": 1171,
+          "pivot": 228
+        },
+        {
+          "candidate": 1182,
+          "pivot": 466
+        },
+        {
+          "candidate": 1476,
+          "pivot": 139
+        },
+        {
+          "candidate": 1477,
+          "pivot": 153
+        },
+        {
+          "candidate": 1478,
+          "pivot": 154
+        },
+        {
+          "candidate": 1479,
+          "pivot": 311
+        },
+        {
+          "candidate": 1480,
+          "pivot": 302
+        },
+        {
+          "candidate": 1483,
+          "pivot": 142
+        },
+        {
+          "candidate": 1484,
+          "pivot": 121
+        },
+        {
+          "candidate": 1485,
+          "pivot": 217
+        },
+        {
+          "candidate": 1486,
+          "pivot": 166
+        },
+        {
+          "candidate": 1487,
+          "pivot": 157
+        },
+        {
+          "candidate": 1488,
+          "pivot": 298
+        },
+        {
+          "candidate": 1489,
+          "pivot": 313
+        },
+        {
+          "candidate": 1490,
+          "pivot": 333
+        },
+        {
+          "candidate": 1491,
+          "pivot": 338
+        },
+        {
+          "candidate": 1494,
+          "pivot": 339
+        },
+        {
+          "candidate": 1506,
+          "pivot": 159
+        },
+        {
+          "candidate": 1507,
+          "pivot": 172
+        },
+        {
+          "candidate": 1508,
+          "pivot": 300
+        },
+        {
+          "candidate": 1509,
+          "pivot": 310
+        },
+        {
+          "candidate": 1510,
+          "pivot": 315
+        },
+        {
+          "candidate": 1511,
+          "pivot": 214
+        },
+        {
+          "candidate": 1512,
+          "pivot": 334
+        },
+        {
+          "candidate": 1514,
+          "pivot": 341
+        },
+        {
+          "candidate": 1522,
+          "pivot": 342
+        },
+        {
+          "candidate": 1523,
+          "pivot": 343
+        },
+        {
+          "candidate": 1524,
+          "pivot": 344
+        },
+        {
+          "candidate": 1526,
+          "pivot": 345
+        },
+        {
+          "candidate": 1527,
+          "pivot": 347
+        },
+        {
+          "candidate": 1530,
+          "pivot": 416
+        },
+        {
+          "candidate": 1538,
+          "pivot": 387
+        },
+        {
+          "candidate": 1555,
+          "pivot": 457
+        },
+        {
+          "candidate": 1561,
+          "pivot": 346
+        },
+        {
+          "candidate": 1563,
+          "pivot": 349
+        },
+        {
+          "candidate": 1584,
+          "pivot": 354
+        },
+        {
+          "candidate": 1586,
+          "pivot": 359
+        },
+        {
+          "candidate": 1632,
+          "pivot": 358
+        },
+        {
+          "candidate": 1633,
+          "pivot": 369
+        },
+        {
+          "candidate": 1640,
+          "pivot": 468
+        },
+        {
+          "candidate": 1642,
+          "pivot": 363
+        },
+        {
+          "candidate": 1643,
+          "pivot": 465
+        },
+        {
+          "candidate": 1662,
+          "pivot": 404
+        },
+        {
+          "candidate": 1663,
+          "pivot": 348
+        },
+        {
+          "candidate": 1664,
+          "pivot": 401
+        },
+        {
+          "candidate": 1665,
+          "pivot": 402
+        },
+        {
+          "candidate": 1667,
+          "pivot": 365
+        },
+        {
+          "candidate": 1788,
+          "pivot": 171
+        },
+        {
+          "candidate": 1789,
+          "pivot": 407
+        },
+        {
+          "candidate": 1790,
+          "pivot": 405
+        },
+        {
+          "candidate": 1796,
+          "pivot": 206
+        },
+        {
+          "candidate": 1797,
+          "pivot": 390
+        },
+        {
+          "candidate": 1798,
+          "pivot": 375
+        },
+        {
+          "candidate": 1811,
+          "pivot": 350
+        },
+        {
+          "candidate": 2724,
+          "pivot": 403
+        }
+      ],
+      "target_remainder_bitplanes": [
+        "0xe7d4214527ef97818a7f74b717c64090ba3115879478c6394f9b11ec2f74af6235c4f51d7c6c2ab8d769933b591973ebff18af96f7f2b3dd1400000000000000",
+        "0xabdc4268a0b3018b651bbf3032b1bce6daf51883bdb10e7cdbe90c02029e08d926cce570f81eb65efe08aa2a99215303fbeff310fbbb81d51800000000000000"
+      ]
+    },
+    {
+      "points": [
+        0,
+        2,
+        3
+      ],
+      "constraint_count": 768,
+      "rank": 415,
+      "nullity": 6761,
+      "consistent": false,
+      "rank_increments": [
+        {
+          "candidate": 0,
+          "pivot": 256
+        },
+        {
+          "candidate": 1,
+          "pivot": 259
+        },
+        {
+          "candidate": 2,
+          "pivot": 271
+        },
+        {
+          "candidate": 3,
+          "pivot": 3
+        },
+        {
+          "candidate": 4,
+          "pivot": 512
+        },
+        {
+          "candidate": 5,
+          "pivot": 515
+        },
+        {
+          "candidate": 7,
+          "pivot": 15
+        },
+        {
+          "candidate": 12,
+          "pivot": 257
+        },
+        {
+          "candidate": 13,
+          "pivot": 11
+        },
+        {
+          "candidate": 14,
+          "pivot": 264
+        },
+        {
+          "candidate": 15,
+          "pivot": 265
+        },
+        {
+          "candidate": 16,
+          "pivot": 267
+        },
+        {
+          "candidate": 17,
+          "pivot": 269
+        },
+        {
+          "candidate": 18,
+          "pivot": 331
+        },
+        {
+          "candidate": 19,
+          "pivot": 523
+        },
+        {
+          "candidate": 20,
+          "pivot": 321
+        },
+        {
+          "candidate": 21,
+          "pivot": 75
+        },
+        {
+          "candidate": 22,
+          "pivot": 513
+        },
+        {
+          "candidate": 24,
+          "pivot": 587
+        },
+        {
+          "candidate": 28,
+          "pivot": 329
+        },
+        {
+          "candidate": 36,
+          "pivot": 258
+        },
+        {
+          "candidate": 37,
+          "pivot": 7
+        },
+        {
+          "candidate": 38,
+          "pivot": 260
+        },
+        {
+          "candidate": 39,
+          "pivot": 261
+        },
+        {
+          "candidate": 40,
+          "pivot": 263
+        },
+        {
+          "candidate": 41,
+          "pivot": 270
+        },
+        {
+          "candidate": 42,
+          "pivot": 273
+        },
+        {
+          "candidate": 43,
+          "pivot": 519
+        },
+        {
+          "candidate": 44,
+          "pivot": 262
+        },
+        {
+          "candidate": 45,
+          "pivot": 71
+        },
+        {
+          "candidate": 46,
+          "pivot": 322
+        },
+        {
+          "candidate": 47,
+          "pivot": 327
+        },
+        {
+          "candidate": 48,
+          "pivot": 527
+        },
+        {
+          "candidate": 52,
+          "pivot": 323
+        },
+        {
+          "candidate": 53,
+          "pivot": 391
+        },
+        {
+          "candidate": 68,
+          "pivot": 324
+        },
+        {
+          "candidate": 69,
+          "pivot": 135
+        },
+        {
+          "candidate": 70,
+          "pivot": 514
+        },
+        {
+          "candidate": 72,
+          "pivot": 583
+        },
+        {
+          "candidate": 76,
+          "pivot": 326
+        },
+        {
+          "candidate": 84,
+          "pivot": 647
+        },
+        {
+          "candidate": 100,
+          "pivot": 387
+        },
+        {
+          "candidate": 132,
+          "pivot": 268
+        },
+        {
+          "candidate": 133,
+          "pivot": 448
+        },
+        {
+          "candidate": 139,
+          "pivot": 0
+        },
+        {
+          "candidate": 140,
+          "pivot": 517
+        },
+        {
+          "candidate": 141,
+          "pivot": 704
+        },
+        {
+          "candidate": 147,
+          "pivot": 192
+        },
+        {
+          "candidate": 156,
+          "pivot": 272
+        },
+        {
+          "candidate": 157,
+          "pivot": 8
+        },
+        {
+          "candidate": 158,
+          "pivot": 449
+        },
+        {
+          "candidate": 159,
+          "pivot": 705
+        },
+        {
+          "candidate": 164,
+          "pivot": 333
+        },
+        {
+          "candidate": 165,
+          "pivot": 72
+        },
+        {
+          "candidate": 180,
+          "pivot": 277
+        },
+        {
+          "candidate": 181,
+          "pivot": 4
+        },
+        {
+          "candidate": 182,
+          "pivot": 320
+        },
+        {
+          "candidate": 183,
+          "pivot": 576
+        },
+        {
+          "candidate": 188,
+          "pivot": 334
+        },
+        {
+          "candidate": 189,
+          "pivot": 68
+        },
+        {
+          "candidate": 196,
+          "pivot": 384
+        },
+        {
+          "candidate": 212,
+          "pivot": 328
+        },
+        {
+          "candidate": 213,
+          "pivot": 132
+        },
+        {
+          "candidate": 220,
+          "pivot": 450
+        },
+        {
+          "candidate": 276,
+          "pivot": 304
+        },
+        {
+          "candidate": 277,
+          "pivot": 529
+        },
+        {
+          "candidate": 278,
+          "pivot": 336
+        },
+        {
+          "candidate": 279,
+          "pivot": 5
+        },
+        {
+          "candidate": 280,
+          "pivot": 560
+        },
+        {
+          "candidate": 283,
+          "pivot": 48
+        },
+        {
+          "candidate": 288,
+          "pivot": 280
+        },
+        {
+          "candidate": 289,
+          "pivot": 120
+        },
+        {
+          "candidate": 290,
+          "pivot": 281
+        },
+        {
+          "candidate": 291,
+          "pivot": 312
+        },
+        {
+          "candidate": 292,
+          "pivot": 315
+        },
+        {
+          "candidate": 293,
+          "pivot": 339
+        },
+        {
+          "candidate": 294,
+          "pivot": 372
+        },
+        {
+          "candidate": 295,
+          "pivot": 520
+        },
+        {
+          "candidate": 296,
+          "pivot": 344
+        },
+        {
+          "candidate": 298,
+          "pivot": 528
+        },
+        {
+          "candidate": 300,
+          "pivot": 584
+        },
+        {
+          "candidate": 312,
+          "pivot": 276
+        },
+        {
+          "candidate": 313,
+          "pivot": 180
+        },
+        {
+          "candidate": 314,
+          "pivot": 288
+        },
+        {
+          "candidate": 315,
+          "pivot": 308
+        },
+        {
+          "candidate": 316,
+          "pivot": 311
+        },
+        {
+          "candidate": 317,
+          "pivot": 375
+        },
+        {
+          "candidate": 318,
+          "pivot": 388
+        },
+        {
+          "candidate": 319,
+          "pivot": 516
+        },
+        {
+          "candidate": 320,
+          "pivot": 292
+        },
+        {
+          "candidate": 321,
+          "pivot": 116
+        },
+        {
+          "candidate": 322,
+          "pivot": 340
+        },
+        {
+          "candidate": 323,
+          "pivot": 376
+        },
+        {
+          "candidate": 324,
+          "pivot": 580
+        },
+        {
+          "candidate": 328,
+          "pivot": 325
+        },
+        {
+          "candidate": 344,
+          "pivot": 389
+        },
+        {
+          "candidate": 345,
+          "pivot": 644
+        },
+        {
+          "candidate": 346,
+          "pivot": 544
+        },
+        {
+          "candidate": 352,
+          "pivot": 352
+        },
+        {
+          "candidate": 408,
+          "pivot": 592
+        },
+        {
+          "candidate": 411,
+          "pivot": 53
+        },
+        {
+          "candidate": 422,
+          "pivot": 385
+        },
+        {
+          "candidate": 423,
+          "pivot": 330
+        },
+        {
+          "candidate": 424,
+          "pivot": 332
+        },
+        {
+          "candidate": 425,
+          "pivot": 568
+        },
+        {
+          "candidate": 426,
+          "pivot": 457
+        },
+        {
+          "candidate": 427,
+          "pivot": 632
+        },
+        {
+          "candidate": 430,
+          "pivot": 581
+        },
+        {
+          "candidate": 444,
+          "pivot": 335
+        },
+        {
+          "candidate": 445,
+          "pivot": 436
+        },
+        {
+          "candidate": 446,
+          "pivot": 392
+        },
+        {
+          "candidate": 447,
+          "pivot": 343
+        },
+        {
+          "candidate": 448,
+          "pivot": 432
+        },
+        {
+          "candidate": 449,
+          "pivot": 564
+        },
+        {
+          "candidate": 450,
+          "pivot": 692
+        },
+        {
+          "candidate": 454,
+          "pivot": 400
+        },
+        {
+          "candidate": 455,
+          "pivot": 454
+        },
+        {
+          "candidate": 456,
+          "pivot": 628
+        },
+        {
+          "candidate": 460,
+          "pivot": 368
+        },
+        {
+          "candidate": 478,
+          "pivot": 596
+        },
+        {
+          "candidate": 540,
+          "pivot": 274
+        },
+        {
+          "candidate": 541,
+          "pivot": 13
+        },
+        {
+          "candidate": 542,
+          "pivot": 275
+        },
+        {
+          "candidate": 543,
+          "pivot": 45
+        },
+        {
+          "candidate": 544,
+          "pivot": 278
+        },
+        {
+          "candidate": 546,
+          "pivot": 33
+        },
+        {
+          "candidate": 547,
+          "pivot": 1
+        },
+        {
+          "candidate": 548,
+          "pivot": 35
+        },
+        {
+          "candidate": 549,
+          "pivot": 266
+        },
+        {
+          "candidate": 550,
+          "pivot": 65
+        },
+        {
+          "candidate": 551,
+          "pivot": 279
+        },
+        {
+          "candidate": 552,
+          "pivot": 282
+        },
+        {
+          "candidate": 554,
+          "pivot": 337
+        },
+        {
+          "candidate": 558,
+          "pivot": 283
+        },
+        {
+          "candidate": 559,
+          "pivot": 6
+        },
+        {
+          "candidate": 560,
+          "pivot": 284
+        },
+        {
+          "candidate": 561,
+          "pivot": 54
+        },
+        {
+          "candidate": 562,
+          "pivot": 285
+        },
+        {
+          "candidate": 563,
+          "pivot": 286
+        },
+        {
+          "candidate": 564,
+          "pivot": 287
+        },
+        {
+          "candidate": 565,
+          "pivot": 518
+        },
+        {
+          "candidate": 566,
+          "pivot": 37
+        },
+        {
+          "candidate": 567,
+          "pivot": 69
+        },
+        {
+          "candidate": 568,
+          "pivot": 338
+        },
+        {
+          "candidate": 570,
+          "pivot": 133
+        },
+        {
+          "candidate": 571,
+          "pivot": 342
+        },
+        {
+          "candidate": 574,
+          "pivot": 165
+        },
+        {
+          "candidate": 578,
+          "pivot": 295
+        },
+        {
+          "candidate": 579,
+          "pivot": 290
+        },
+        {
+          "candidate": 580,
+          "pivot": 386
+        },
+        {
+          "candidate": 581,
+          "pivot": 39
+        },
+        {
+          "candidate": 582,
+          "pivot": 521
+        },
+        {
+          "candidate": 583,
+          "pivot": 347
+        },
+        {
+          "candidate": 599,
+          "pivot": 522
+        },
+        {
+          "candidate": 618,
+          "pivot": 291
+        },
+        {
+          "candidate": 619,
+          "pivot": 9
+        },
+        {
+          "candidate": 620,
+          "pivot": 355
+        },
+        {
+          "candidate": 621,
+          "pivot": 225
+        },
+        {
+          "candidate": 622,
+          "pivot": 456
+        },
+        {
+          "candidate": 624,
+          "pivot": 32
+        },
+        {
+          "candidate": 625,
+          "pivot": 40
+        },
+        {
+          "candidate": 626,
+          "pivot": 193
+        },
+        {
+          "candidate": 627,
+          "pivot": 480
+        },
+        {
+          "candidate": 628,
+          "pivot": 293
+        },
+        {
+          "candidate": 629,
+          "pivot": 296
+        },
+        {
+          "candidate": 630,
+          "pivot": 341
+        },
+        {
+          "candidate": 632,
+          "pivot": 289
+        },
+        {
+          "candidate": 633,
+          "pivot": 294
+        },
+        {
+          "candidate": 636,
+          "pivot": 297
+        },
+        {
+          "candidate": 637,
+          "pivot": 356
+        },
+        {
+          "candidate": 638,
+          "pivot": 298
+        },
+        {
+          "candidate": 639,
+          "pivot": 160
+        },
+        {
+          "candidate": 640,
+          "pivot": 397
+        },
+        {
+          "candidate": 641,
+          "pivot": 577
+        },
+        {
+          "candidate": 644,
+          "pivot": 36
+        },
+        {
+          "candidate": 645,
+          "pivot": 128
+        },
+        {
+          "candidate": 646,
+          "pivot": 416
+        },
+        {
+          "candidate": 648,
+          "pivot": 164
+        },
+        {
+          "candidate": 649,
+          "pivot": 300
+        },
+        {
+          "candidate": 652,
+          "pivot": 299
+        },
+        {
+          "candidate": 656,
+          "pivot": 390
+        },
+        {
+          "candidate": 657,
+          "pivot": 301
+        },
+        {
+          "candidate": 658,
+          "pivot": 353
+        },
+        {
+          "candidate": 659,
+          "pivot": 129
+        },
+        {
+          "candidate": 660,
+          "pivot": 706
+        },
+        {
+          "candidate": 661,
+          "pivot": 305
+        },
+        {
+          "candidate": 664,
+          "pivot": 302
+        },
+        {
+          "candidate": 665,
+          "pivot": 420
+        },
+        {
+          "candidate": 668,
+          "pivot": 307
+        },
+        {
+          "candidate": 676,
+          "pivot": 525
+        },
+        {
+          "candidate": 677,
+          "pivot": 534
+        },
+        {
+          "candidate": 678,
+          "pivot": 640
+        },
+        {
+          "candidate": 679,
+          "pivot": 309
+        },
+        {
+          "candidate": 684,
+          "pivot": 530
+        },
+        {
+          "candidate": 696,
+          "pivot": 306
+        },
+        {
+          "candidate": 697,
+          "pivot": 38
+        },
+        {
+          "candidate": 698,
+          "pivot": 310
+        },
+        {
+          "candidate": 699,
+          "pivot": 313
+        },
+        {
+          "candidate": 700,
+          "pivot": 531
+        },
+        {
+          "candidate": 702,
+          "pivot": 56
+        },
+        {
+          "candidate": 703,
+          "pivot": 41
+        },
+        {
+          "candidate": 704,
+          "pivot": 64
+        },
+        {
+          "candidate": 705,
+          "pivot": 360
+        },
+        {
+          "candidate": 706,
+          "pivot": 464
+        },
+        {
+          "candidate": 707,
+          "pivot": 346
+        },
+        {
+          "candidate": 708,
+          "pivot": 349
+        },
+        {
+          "candidate": 711,
+          "pivot": 345
+        },
+        {
+          "candidate": 714,
+          "pivot": 399
+        },
+        {
+          "candidate": 715,
+          "pivot": 532
+        },
+        {
+          "candidate": 716,
+          "pivot": 350
+        },
+        {
+          "candidate": 717,
+          "pivot": 101
+        },
+        {
+          "candidate": 718,
+          "pivot": 354
+        },
+        {
+          "candidate": 719,
+          "pivot": 417
+        },
+        {
+          "candidate": 720,
+          "pivot": 533
+        },
+        {
+          "candidate": 722,
+          "pivot": 52
+        },
+        {
+          "candidate": 723,
+          "pivot": 100
+        },
+        {
+          "candidate": 724,
+          "pivot": 452
+        },
+        {
+          "candidate": 726,
+          "pivot": 369
+        },
+        {
+          "candidate": 727,
+          "pivot": 357
+        },
+        {
+          "candidate": 730,
+          "pivot": 535
+        },
+        {
+          "candidate": 734,
+          "pivot": 548
+        },
+        {
+          "candidate": 736,
+          "pivot": 358
+        },
+        {
+          "candidate": 737,
+          "pivot": 55
+        },
+        {
+          "candidate": 738,
+          "pivot": 561
+        },
+        {
+          "candidate": 739,
+          "pivot": 552
+        },
+        {
+          "candidate": 742,
+          "pivot": 582
+        },
+        {
+          "candidate": 743,
+          "pivot": 579
+        },
+        {
+          "candidate": 746,
+          "pivot": 612
+        },
+        {
+          "candidate": 756,
+          "pivot": 641
+        },
+        {
+          "candidate": 774,
+          "pivot": 401
+        },
+        {
+          "candidate": 775,
+          "pivot": 361
+        },
+        {
+          "candidate": 776,
+          "pivot": 562
+        },
+        {
+          "candidate": 777,
+          "pivot": 608
+        },
+        {
+          "candidate": 778,
+          "pivot": 645
+        },
+        {
+          "candidate": 781,
+          "pivot": 96
+        },
+        {
+          "candidate": 782,
+          "pivot": 104
+        },
+        {
+          "candidate": 783,
+          "pivot": 453
+        },
+        {
+          "candidate": 785,
+          "pivot": 359
+        },
+        {
+          "candidate": 794,
+          "pivot": 526
+        },
+        {
+          "candidate": 795,
+          "pivot": 616
+        },
+        {
+          "candidate": 801,
+          "pivot": 536
+        },
+        {
+          "candidate": 805,
+          "pivot": 708
+        },
+        {
+          "candidate": 815,
+          "pivot": 676
+        },
+        {
+          "candidate": 852,
+          "pivot": 303
+        },
+        {
+          "candidate": 853,
+          "pivot": 363
+        },
+        {
+          "candidate": 854,
+          "pivot": 541
+        },
+        {
+          "candidate": 855,
+          "pivot": 557
+        },
+        {
+          "candidate": 858,
+          "pivot": 43
+        },
+        {
+          "candidate": 859,
+          "pivot": 67
+        },
+        {
+          "candidate": 860,
+          "pivot": 362
+        },
+        {
+          "candidate": 861,
+          "pivot": 364
+        },
+        {
+          "candidate": 862,
+          "pivot": 365
+        },
+        {
+          "candidate": 863,
+          "pivot": 371
+        },
+        {
+          "candidate": 864,
+          "pivot": 393
+        },
+        {
+          "candidate": 866,
+          "pivot": 374
+        },
+        {
+          "candidate": 870,
+          "pivot": 366
+        },
+        {
+          "candidate": 871,
+          "pivot": 394
+        },
+        {
+          "candidate": 872,
+          "pivot": 367
+        },
+        {
+          "candidate": 873,
+          "pivot": 103
+        },
+        {
+          "candidate": 874,
+          "pivot": 402
+        },
+        {
+          "candidate": 875,
+          "pivot": 545
+        },
+        {
+          "candidate": 876,
+          "pivot": 549
+        },
+        {
+          "candidate": 878,
+          "pivot": 149
+        },
+        {
+          "candidate": 879,
+          "pivot": 370
+        },
+        {
+          "candidate": 880,
+          "pivot": 404
+        },
+        {
+          "candidate": 882,
+          "pivot": 403
+        },
+        {
+          "candidate": 883,
+          "pivot": 406
+        },
+        {
+          "candidate": 886,
+          "pivot": 396
+        },
+        {
+          "candidate": 890,
+          "pivot": 421
+        },
+        {
+          "candidate": 891,
+          "pivot": 537
+        },
+        {
+          "candidate": 892,
+          "pivot": 405
+        },
+        {
+          "candidate": 893,
+          "pivot": 613
+        },
+        {
+          "candidate": 894,
+          "pivot": 677
+        },
+        {
+          "candidate": 898,
+          "pivot": 408
+        },
+        {
+          "candidate": 899,
+          "pivot": 609
+        },
+        {
+          "candidate": 902,
+          "pivot": 407
+        },
+        {
+          "candidate": 910,
+          "pivot": 642
+        },
+        {
+          "candidate": 913,
+          "pivot": 538
+        },
+        {
+          "candidate": 931,
+          "pivot": 712
+        },
+        {
+          "candidate": 936,
+          "pivot": 59
+        },
+        {
+          "candidate": 937,
+          "pivot": 99
+        },
+        {
+          "candidate": 938,
+          "pivot": 419
+        },
+        {
+          "candidate": 939,
+          "pivot": 481
+        },
+        {
+          "candidate": 941,
+          "pivot": 411
+        },
+        {
+          "candidate": 942,
+          "pivot": 418
+        },
+        {
+          "candidate": 945,
+          "pivot": 433
+        },
+        {
+          "candidate": 948,
+          "pivot": 423
+        },
+        {
+          "candidate": 950,
+          "pivot": 466
+        },
+        {
+          "candidate": 951,
+          "pivot": 161
+        },
+        {
+          "candidate": 952,
+          "pivot": 737
+        },
+        {
+          "candidate": 956,
+          "pivot": 524
+        },
+        {
+          "candidate": 957,
+          "pivot": 429
+        },
+        {
+          "candidate": 958,
+          "pivot": 465
+        },
+        {
+          "candidate": 960,
+          "pivot": 424
+        },
+        {
+          "candidate": 961,
+          "pivot": 542
+        },
+        {
+          "candidate": 970,
+          "pivot": 550
+        },
+        {
+          "candidate": 977,
+          "pivot": 553
+        },
+        {
+          "candidate": 990,
+          "pivot": 673
+        },
+        {
+          "candidate": 1008,
+          "pivot": 458
+        },
+        {
+          "candidate": 1009,
+          "pivot": 468
+        },
+        {
+          "candidate": 1010,
+          "pivot": 472
+        },
+        {
+          "candidate": 1011,
+          "pivot": 547
+        },
+        {
+          "candidate": 1012,
+          "pivot": 611
+        },
+        {
+          "candidate": 1014,
+          "pivot": 565
+        },
+        {
+          "candidate": 1015,
+          "pivot": 539
+        },
+        {
+          "candidate": 1028,
+          "pivot": 546
+        },
+        {
+          "candidate": 1164,
+          "pivot": 586
+        },
+        {
+          "candidate": 1170,
+          "pivot": 70
+        },
+        {
+          "candidate": 1171,
+          "pivot": 97
+        },
+        {
+          "candidate": 1172,
+          "pivot": 484
+        },
+        {
+          "candidate": 1182,
+          "pivot": 648
+        },
+        {
+          "candidate": 1190,
+          "pivot": 578
+        },
+        {
+          "candidate": 1249,
+          "pivot": 656
+        },
+        {
+          "candidate": 1476,
+          "pivot": 395
+        },
+        {
+          "candidate": 1477,
+          "pivot": 14
+        },
+        {
+          "candidate": 1478,
+          "pivot": 409
+        },
+        {
+          "candidate": 1479,
+          "pivot": 29
+        },
+        {
+          "candidate": 1480,
+          "pivot": 410
+        },
+        {
+          "candidate": 1482,
+          "pivot": 348
+        },
+        {
+          "candidate": 1483,
+          "pivot": 351
+        },
+        {
+          "candidate": 1484,
+          "pivot": 377
+        },
+        {
+          "candidate": 1485,
+          "pivot": 27
+        },
+        {
+          "candidate": 1486,
+          "pivot": 422
+        },
+        {
+          "candidate": 1487,
+          "pivot": 413
+        },
+        {
+          "candidate": 1488,
+          "pivot": 473
+        },
+        {
+          "candidate": 1489,
+          "pivot": 540
+        },
+        {
+          "candidate": 1490,
+          "pivot": 551
+        },
+        {
+          "candidate": 1491,
+          "pivot": 569
+        },
+        {
+          "candidate": 1492,
+          "pivot": 543
+        },
+        {
+          "candidate": 1494,
+          "pivot": 585
+        },
+        {
+          "candidate": 1506,
+          "pivot": 17
+        },
+        {
+          "candidate": 1507,
+          "pivot": 2
+        },
+        {
+          "candidate": 1508,
+          "pivot": 19
+        },
+        {
+          "candidate": 1509,
+          "pivot": 554
+        },
+        {
+          "candidate": 1510,
+          "pivot": 25
+        },
+        {
+          "candidate": 1511,
+          "pivot": 10
+        },
+        {
+          "candidate": 1512,
+          "pivot": 428
+        },
+        {
+          "candidate": 1514,
+          "pivot": 73
+        },
+        {
+          "candidate": 1522,
+          "pivot": 130
+        },
+        {
+          "candidate": 1523,
+          "pivot": 398
+        },
+        {
+          "candidate": 1524,
+          "pivot": 470
+        },
+        {
+          "candidate": 1526,
+          "pivot": 66
+        },
+        {
+          "candidate": 1527,
+          "pivot": 556
+        },
+        {
+          "candidate": 1530,
+          "pivot": 558
+        },
+        {
+          "candidate": 1538,
+          "pivot": 555
+        },
+        {
+          "candidate": 1539,
+          "pivot": 559
+        },
+        {
+          "candidate": 1542,
+          "pivot": 563
+        },
+        {
+          "candidate": 1554,
+          "pivot": 672
+        },
+        {
+          "candidate": 1555,
+          "pivot": 209
+        },
+        {
+          "candidate": 1557,
+          "pivot": 566
+        },
+        {
+          "candidate": 1561,
+          "pivot": 593
+        },
+        {
+          "candidate": 1562,
+          "pivot": 567
+        },
+        {
+          "candidate": 1563,
+          "pivot": 81
+        },
+        {
+          "candidate": 1584,
+          "pivot": 16
+        },
+        {
+          "candidate": 1585,
+          "pivot": 20
+        },
+        {
+          "candidate": 1586,
+          "pivot": 194
+        },
+        {
+          "candidate": 1588,
+          "pivot": 24
+        },
+        {
+          "candidate": 1589,
+          "pivot": 80
+        },
+        {
+          "candidate": 1592,
+          "pivot": 88
+        },
+        {
+          "candidate": 1600,
+          "pivot": 588
+        },
+        {
+          "candidate": 1601,
+          "pivot": 589
+        },
+        {
+          "candidate": 1602,
+          "pivot": 600
+        },
+        {
+          "candidate": 1616,
+          "pivot": 594
+        },
+        {
+          "candidate": 1632,
+          "pivot": 595
+        },
+        {
+          "candidate": 1633,
+          "pivot": 23
+        },
+        {
+          "candidate": 1634,
+          "pivot": 605
+        },
+        {
+          "candidate": 1635,
+          "pivot": 602
+        },
+        {
+          "candidate": 1640,
+          "pivot": 601
+        },
+        {
+          "candidate": 1641,
+          "pivot": 57
+        },
+        {
+          "candidate": 1642,
+          "pivot": 603
+        },
+        {
+          "candidate": 1643,
+          "pivot": 625
+        },
+        {
+          "candidate": 1644,
+          "pivot": 713
+        },
+        {
+          "candidate": 1645,
+          "pivot": 721
+        },
+        {
+          "candidate": 1662,
+          "pivot": 660
+        },
+        {
+          "candidate": 1663,
+          "pivot": 21
+        },
+        {
+          "candidate": 1664,
+          "pivot": 131
+        },
+        {
+          "candidate": 1665,
+          "pivot": 610
+        },
+        {
+          "candidate": 1667,
+          "pivot": 84
+        },
+        {
+          "candidate": 1670,
+          "pivot": 599
+        },
+        {
+          "candidate": 1678,
+          "pivot": 597
+        },
+        {
+          "candidate": 1679,
+          "pivot": 614
+        },
+        {
+          "candidate": 1680,
+          "pivot": 722
+        },
+        {
+          "candidate": 1682,
+          "pivot": 724
+        },
+        {
+          "candidate": 1741,
+          "pivot": 148
+        },
+        {
+          "candidate": 1788,
+          "pivot": 427
+        },
+        {
+          "candidate": 1789,
+          "pivot": 30
+        },
+        {
+          "candidate": 1790,
+          "pivot": 661
+        },
+        {
+          "candidate": 1791,
+          "pivot": 598
+        },
+        {
+          "candidate": 1794,
+          "pivot": 18
+        },
+        {
+          "candidate": 1795,
+          "pivot": 82
+        },
+        {
+          "candidate": 1796,
+          "pivot": 462
+        },
+        {
+          "candidate": 1797,
+          "pivot": 615
+        },
+        {
+          "candidate": 1798,
+          "pivot": 631
+        },
+        {
+          "candidate": 1799,
+          "pivot": 590
+        },
+        {
+          "candidate": 1806,
+          "pivot": 22
+        },
+        {
+          "candidate": 1807,
+          "pivot": 145
+        },
+        {
+          "candidate": 1808,
+          "pivot": 604
+        },
+        {
+          "candidate": 1811,
+          "pivot": 606
+        },
+        {
+          "candidate": 1813,
+          "pivot": 26
+        },
+        {
+          "candidate": 1818,
+          "pivot": 86
+        },
+        {
+          "candidate": 1819,
+          "pivot": 658
+        },
+        {
+          "candidate": 1867,
+          "pivot": 210
+        },
+        {
+          "candidate": 1872,
+          "pivot": 657
+        },
+        {
+          "candidate": 1873,
+          "pivot": 42
+        },
+        {
+          "candidate": 1874,
+          "pivot": 643
+        },
+        {
+          "candidate": 1885,
+          "pivot": 85
+        },
+        {
+          "candidate": 1891,
+          "pivot": 146
+        },
+        {
+          "candidate": 2106,
+          "pivot": 646
+        },
+        {
+          "candidate": 2131,
+          "pivot": 87
+        },
+        {
+          "candidate": 2133,
+          "pivot": 83
+        },
+        {
+          "candidate": 2143,
+          "pivot": 571
+        },
+        {
+          "candidate": 2209,
+          "pivot": 619
+        },
+        {
+          "candidate": 2211,
+          "pivot": 89
+        },
+        {
+          "candidate": 2439,
+          "pivot": 144
+        },
+        {
+          "candidate": 2724,
+          "pivot": 659
+        }
+      ],
+      "target_remainder_bitplanes": [
+        "0x866000004004066800001269162900000900146912490100166000000004000112696806608612694990126912690114299012690400011212690106001600000000000000001268000012681268000000001268000000001268000000000000",
+        "0x940968062082140149900000044001142090060016490012040901060012000194096806208214014990000004400114209006001649001204090106001200010000000000000000000000000000000000000000000000000000000000000000"
+      ]
+    }
+  ],
+  "elapsed_seconds": 143.74053204400025
+}

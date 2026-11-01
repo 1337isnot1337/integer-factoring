@@ -1,0 +1,19 @@
+{
+  "claim": "rough factor search with directly observable Boolean entries",
+  "counts": {
+    "complete_trial_prime_returns": 841,
+    "exact_large_height_boundaries": 238,
+    "exact_pretest_budget_controls": 119,
+    "exact_small_height_boundaries": 2388,
+    "invalid_padding_rejections": 30,
+    "least_prime_prefix_recoveries": 2950,
+    "reference_local_assignments": 10828,
+    "rough_prime_network_entry_controls": 30,
+    "rough_support_and_completeness_controls": 5493,
+    "small_factor_pretest_returns": 18236,
+    "zero_free_digit_interpolation_controls": 160,
+    "zero_padded_prefix_decisions": 32995
+  },
+  "scope": "No free digit, norm bound, or lattice algorithm is used in the direct decoder.",
+  "status": "passed"
+}

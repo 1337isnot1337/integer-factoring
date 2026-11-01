@@ -1,0 +1,51 @@
+{
+  "claim": "exact polynomial-operation contraction of one Frobenius rational star",
+  "counts": {
+    "binary_carry_positions": 7331,
+    "cancelled_pole_controls": 58,
+    "carry_and_overflow_controls": 2,
+    "constant_rational_controls": 4,
+    "double_subfield_unit_contractions": 404,
+    "double_unit_circle_contractions": 284,
+    "exact_Cauchy_box_comparisons": 332,
+    "exact_coefficient_comparisons": 1920,
+    "exact_rational_trace_comparisons": 400,
+    "forbidden_domain_pole_rejections": 30,
+    "higher_Z_to_base_trace_terms": 194,
+    "pairwise_distinct_pole_controls": 213,
+    "pole_trace_coefficient_queries": 1246,
+    "poles_with_multiplicity_at_least_base": 188,
+    "proper_rational_controls": 301,
+    "reference_field_point_evaluations": 3000,
+    "removable_pole_controls": 4,
+    "single_subfield_unit_contractions": 34,
+    "single_unit_circle_contractions": 26,
+    "tagged_Frobenius_box_comparisons": 137,
+    "zero_numerator_constant_coefficient_controls": 94,
+    "zero_numerator_constant_trace_controls": 46
+  },
+  "field_models": [
+    {
+      "field_degree": 2,
+      "irreducible_polynomial": "0b111",
+      "w": 1
+    },
+    {
+      "field_degree": 4,
+      "irreducible_polynomial": "0b10011",
+      "w": 2
+    },
+    {
+      "field_degree": 6,
+      "irreducible_polynomial": "0b1000011",
+      "w": 3
+    },
+    {
+      "field_degree": 8,
+      "irreducible_polynomial": "0b100011011",
+      "w": 4
+    }
+  ],
+  "scope": "No second-variable closure or improved factoring exponent is claimed.",
+  "status": "passed"
+}

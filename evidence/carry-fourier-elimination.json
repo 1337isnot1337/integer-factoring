@@ -1,0 +1,706 @@
+{
+  "result": "constant-state exact carry Fourier evaluation",
+  "scope": "one specified frequency vector; no uniform small tensor bond or improved factoring exponent",
+  "models": [
+    {
+      "D": 2,
+      "b": 4,
+      "K": 6,
+      "field_construction": {
+        "m": 5,
+        "M": 33,
+        "field_degree": 10,
+        "irreducible_polynomial_binary": "0b10000001001",
+        "irreducible_candidates_tested": 5,
+        "prime_divisors_of_M": [
+          3,
+          11
+        ],
+        "root_search_candidate": 2,
+        "primitive_root_binary": "0b10011011"
+      },
+      "sample_queries": [
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            1,
+            4,
+            16,
+            31,
+            25,
+            1
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            5,
+            7,
+            25,
+            3,
+            2,
+            3
+          ],
+          "answer_field_element": 1
+        }
+      ],
+      "rank_controls": {
+        "fixed_frequency_ranks": [
+          {
+            "digit": 0,
+            "frequency": 0,
+            "rank": 3
+          },
+          {
+            "digit": 0,
+            "frequency": 1,
+            "rank": 3
+          },
+          {
+            "digit": 1,
+            "frequency": 0,
+            "rank": 3
+          },
+          {
+            "digit": 1,
+            "frequency": 1,
+            "rank": 3
+          },
+          {
+            "digit": 2,
+            "frequency": 0,
+            "rank": 2
+          },
+          {
+            "digit": 2,
+            "frequency": 1,
+            "rank": 2
+          },
+          {
+            "digit": 3,
+            "frequency": 0,
+            "rank": 2
+          },
+          {
+            "digit": 3,
+            "frequency": 1,
+            "rank": 2
+          }
+        ],
+        "joint_frequency_rank": 7
+      }
+    },
+    {
+      "D": 3,
+      "b": 4,
+      "K": 9,
+      "field_construction": {
+        "m": 6,
+        "M": 65,
+        "field_degree": 12,
+        "irreducible_polynomial_binary": "0b1000000001001",
+        "irreducible_candidates_tested": 5,
+        "prime_divisors_of_M": [
+          5,
+          13
+        ],
+        "root_search_candidate": 3,
+        "primitive_root_binary": "0b110001111000"
+      },
+      "sample_queries": [
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            1,
+            4,
+            16,
+            64,
+            61,
+            49
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            20,
+            45,
+            49,
+            34,
+            10,
+            8
+          ],
+          "answer_field_element": 1
+        }
+      ],
+      "rank_controls": {
+        "fixed_frequency_ranks": [
+          {
+            "digit": 0,
+            "frequency": 0,
+            "rank": 4
+          },
+          {
+            "digit": 0,
+            "frequency": 1,
+            "rank": 4
+          },
+          {
+            "digit": 1,
+            "frequency": 0,
+            "rank": 3
+          },
+          {
+            "digit": 1,
+            "frequency": 1,
+            "rank": 3
+          },
+          {
+            "digit": 3,
+            "frequency": 0,
+            "rank": 3
+          },
+          {
+            "digit": 3,
+            "frequency": 1,
+            "rank": 3
+          }
+        ],
+        "joint_frequency_rank": 10
+      }
+    },
+    {
+      "D": 4,
+      "b": 8,
+      "K": 28,
+      "field_construction": {
+        "m": 8,
+        "M": 257,
+        "field_degree": 16,
+        "irreducible_polynomial_binary": "0b10000000000101011",
+        "irreducible_candidates_tested": 22,
+        "prime_divisors_of_M": [
+          257
+        ],
+        "root_search_candidate": 2,
+        "primitive_root_binary": "0b10100001111000"
+      },
+      "sample_queries": [
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            1,
+            8,
+            64,
+            255,
+            241,
+            129
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            241,
+            86,
+            158,
+            113,
+            75,
+            254
+          ],
+          "answer_field_element": 1
+        }
+      ],
+      "rank_controls": {
+        "fixed_frequency_ranks": [
+          {
+            "digit": 0,
+            "frequency": 0,
+            "rank": 5
+          },
+          {
+            "digit": 0,
+            "frequency": 1,
+            "rank": 5
+          },
+          {
+            "digit": 3,
+            "frequency": 0,
+            "rank": 5
+          },
+          {
+            "digit": 3,
+            "frequency": 1,
+            "rank": 5
+          },
+          {
+            "digit": 4,
+            "frequency": 0,
+            "rank": 4
+          },
+          {
+            "digit": 4,
+            "frequency": 1,
+            "rank": 4
+          },
+          {
+            "digit": 7,
+            "frequency": 0,
+            "rank": 4
+          },
+          {
+            "digit": 7,
+            "frequency": 1,
+            "rank": 4
+          }
+        ],
+        "joint_frequency_rank": 29
+      }
+    },
+    {
+      "D": 8,
+      "b": 16,
+      "K": 120,
+      "field_construction": {
+        "m": 11,
+        "M": 2049,
+        "field_degree": 22,
+        "irreducible_polynomial_binary": "0b10000000000000000000011",
+        "irreducible_candidates_tested": 2,
+        "prime_divisors_of_M": [
+          3,
+          683
+        ],
+        "root_search_candidate": 2,
+        "primitive_root_binary": "0b1100110001011001100"
+      },
+      "sample_queries": [
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            1,
+            16,
+            256,
+            2047,
+            2017,
+            1537
+          ],
+          "answer_field_element": 1
+        },
+        {
+          "target_digits": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "frequencies": [
+            1144,
+            1632,
+            376,
+            831,
+            1865,
+            202
+          ],
+          "answer_field_element": 1
+        }
+      ],
+      "rank_controls": null
+    }
+  ],
+  "complete_dual_checks": {
+    "models": [
+      {
+        "target": 2,
+        "accepted_coefficient_tuples": 1,
+        "weighted_factor_polynomial": [
+          0,
+          1,
+          1,
+          0
+        ]
+      },
+      {
+        "target": 4,
+        "accepted_coefficient_tuples": 2,
+        "weighted_factor_polynomial": [
+          0,
+          0,
+          1,
+          0
+        ]
+      },
+      {
+        "target": 9,
+        "accepted_coefficient_tuples": 3,
+        "weighted_factor_polynomial": [
+          0,
+          0,
+          0,
+          1
+        ]
+      }
+    ],
+    "frequency_tuples_per_target": 1089
+  },
+  "two_frequency_kernel_checks": [
+    {
+      "interval_start": 0,
+      "interval_length": 1,
+      "full_rank": 1,
+      "restricted_rows": [
+        0
+      ],
+      "restricted_columns": [
+        1
+      ],
+      "restricted_rank": 1
+    },
+    {
+      "interval_start": 0,
+      "interval_length": 4,
+      "full_rank": 4,
+      "restricted_rows": [
+        0,
+        2,
+        4,
+        6
+      ],
+      "restricted_columns": [
+        1,
+        4,
+        7,
+        10
+      ],
+      "restricted_rank": 4
+    },
+    {
+      "interval_start": 2,
+      "interval_length": 5,
+      "full_rank": 5,
+      "restricted_rows": [
+        0,
+        2,
+        4,
+        6,
+        8
+      ],
+      "restricted_columns": [
+        1,
+        4,
+        7,
+        10,
+        13
+      ],
+      "restricted_rank": 5
+    },
+    {
+      "interval_start": 3,
+      "interval_length": 8,
+      "full_rank": 8,
+      "restricted_rows": [
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "restricted_columns": [
+        1,
+        4,
+        7,
+        10,
+        13,
+        16,
+        19,
+        22
+      ],
+      "restricted_rank": 8
+    }
+  ],
+  "twisted_composition_checks": {
+    "fixed_coefficient_cases": [
+      {
+        "target_digit": 0,
+        "coefficient": 0,
+        "surviving_integer_pairs": [
+          [
+            0,
+            0
+          ],
+          [
+            4,
+            1
+          ]
+        ],
+        "rank": 2
+      },
+      {
+        "target_digit": 3,
+        "coefficient": 0,
+        "surviving_integer_pairs": [
+          [
+            3,
+            0
+          ]
+        ],
+        "rank": 1
+      },
+      {
+        "target_digit": 0,
+        "coefficient": 3,
+        "surviving_integer_pairs": [
+          [
+            1,
+            1
+          ],
+          [
+            5,
+            2
+          ]
+        ],
+        "rank": 2
+      },
+      {
+        "target_digit": 3,
+        "coefficient": 18,
+        "surviving_integer_pairs": [
+          [
+            1,
+            4
+          ],
+          [
+            5,
+            5
+          ]
+        ],
+        "rank": 2
+      }
+    ],
+    "unresolved_coefficient_rank": 7
+  },
+  "summary": {
+    "complete_coefficient_fourier_checks": 18,
+    "complete_frequency_queries": 120,
+    "complete_weighted_dual_identities": 3,
+    "dual_frequency_tuples": 3267,
+    "explicit_field_root_constructions": 4,
+    "fixed_frequency_matrix_ranks": 22,
+    "full_vector_steps": 384,
+    "geometric_pair_controls": 700,
+    "joint_frequency_full_rank_controls": 3,
+    "literal_matrix_steps": 336,
+    "state_coordinates_checked": 31656,
+    "twisted_composition_identities": 4,
+    "two_frequency_interval_ranks": 4,
+    "unresolved_coefficient_full_rank_controls": 1,
+    "weighted_prefix_checks": 3927
+  }
+}

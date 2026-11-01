@@ -184,6 +184,14 @@ verify-joint-evaluation-algebra:
 verify-joint-endpoint-loops:
 	python3 tools/check_joint_endpoint_loops.py
 
+.PHONY: verify-joint-nilpotent-depths
+verify-joint-nilpotent-depths:
+	python3 tools/check_joint_nilpotent_depths.py
+
+.PHONY: verify-joint-filtered-gauges
+verify-joint-filtered-gauges:
+	python3 tools/check_joint_filtered_gauges.py
+
 .PHONY: verify-group-shears
 verify-group-shears:
 	python3 tools/check_group_shear_crossings.py
@@ -1645,3 +1653,240 @@ verify-cofactor-ideal-closure:
 	python3 tools/check_cofactor_ideal_closure.py --replay evidence/cofactor-ideal-closure-92.json
 	python3 tools/check_cofactor_ideal_closure.py --replay evidence/cofactor-ideal-closure-124.json
 	python3 tools/check_cofactor_ideal_closure.py --replay evidence/cofactor-ideal-closure-144.json
+
+.PHONY: verify-mixed-place
+verify-mixed-place:
+	python3 tools/check_weighted_multipoint_hermite.py
+	python3 tools/check_mixed_place_hermite.py
+	python3 tools/check_ternary_basis_mixed.py
+
+.PHONY: verify-adaptive-mixed-place
+verify-adaptive-mixed-place:
+	python3 tools/check_adaptive_mixed_place.py --certificate evidence/fused-q4-adaptive-certificate.json
+
+.PHONY: verify-network-codecs
+verify-network-codecs:
+	python3 tools/check_factoring_network_structure.py
+	python3 tools/check_factoring_primitive_recipients.py
+	python3 tools/check_factoring_recipient_rank_envelope.py
+
+.PHONY: verify-adaptive-transform
+verify-adaptive-transform:
+	python3 tools/check_adaptive_transform_constructor.py
+
+.PHONY: verify-operand-length
+verify-operand-length:
+	python3 tools/check_operand_length_transform.py
+
+.PHONY: verify-fused-places
+verify-fused-places:
+	python3 tools/check_fused_multipoint_profiles.py
+	python3 tools/check_fused_closed_profiles.py
+
+.PHONY: verify-fused-weights
+verify-fused-weights:
+	python3 tools/check_fused_weighted_places.py
+
+.PHONY: verify-compressed-fusion
+verify-compressed-fusion:
+	python3 tools/check_compressed_fusion.py --output /tmp/integer-factoring-compressed-fusion-replay.json
+	python3 tools/check_f16_weighted_local_oracle.py --output /tmp/integer-factoring-f16-local-oracle-replay.json
+
+.PHONY: verify-stable-hot-codes
+verify-stable-hot-codes:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_implicit_reflection_codes.py --output /tmp/integer-factoring-implicit-hot.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_natural_cut_duality.py --output /tmp/integer-factoring-natural-duality.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_hot_code_charge_profiles.py --output /tmp/integer-factoring-hot-charge.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_weighted_hot_compounds.py --output /tmp/integer-factoring-weighted-compound.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_weighted_hot_code_oracle.py --output /tmp/integer-factoring-weighted-hot-oracle.json
+
+.PHONY: verify-hot64-certificate
+verify-hot64-certificate:
+	OPENBLAS_NUM_THREADS=1 python3 tools/certify_hot_charge_pressure.py --size 64 --modes 12 --base 459 460 --support 64 45 --output /tmp/integer-factoring-hot64-certificate.json
+
+.PHONY: verify-finite-crossing-certificates
+verify-finite-crossing-certificates:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_block_amplification.py --output /tmp/integer-factoring-finite-amplification.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_typed_adaptive_certificate.py --output /tmp/integer-factoring-finite-typed.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_rational_typed_adaptive_bounds.py --output /tmp/integer-factoring-rational-finite.json
+
+.PHONY: verify-frobenius-stars
+verify-frobenius-stars:
+	python3 tools/check_frobenius_rational_trace.py --output /tmp/integer-factoring-rational-star.json
+	python3 tools/check_fermat_torus_binomials.py --output /tmp/integer-factoring-torus-star.json
+	python3 tools/check_frobenius_trace_infinity.py --output /tmp/integer-factoring-star-infinity.json
+	python3 tools/check_relative_frobenius_trace.py --output /tmp/integer-factoring-relative-trace.json
+	python3 tools/check_semisimple_cyclic_box_contraction.py --output /tmp/integer-factoring-cyclic-box.json
+
+.PHONY: verify-observable-constructors
+verify-observable-constructors:
+	python3 tools/check_observable_boundary_constructor.py --output /tmp/integer-factoring-observable-boundary.json
+	python3 tools/check_lattice_boundary_decoder.py --output /tmp/integer-factoring-lattice-boundary.json
+
+.PHONY: verify-prime-constructors
+verify-prime-constructors:
+	python3 tools/check_power_two_progression_dyadic_prime.py --output /tmp/integer-factoring-dyadic-prime.json
+	python3 tools/check_prime_transform_boundary_constructor.py --output /tmp/integer-factoring-prime-transform.json
+	python3 tools/check_width_sensitive_prime_constructor.py --output /tmp/integer-factoring-width-sensitive.json
+	python3 tools/check_polynomial_entry_prime_constructor.py --output /tmp/integer-factoring-polynomial-entry.json
+	python3 tools/check_rough_observable_factor_constructor.py --output /tmp/integer-factoring-rough-observable.json
+	python3 tools/check_prime_root_field_construction.py --output /tmp/integer-factoring-prime-root-field.json
+
+.PHONY: verify-degree16-crossing
+verify-degree16-crossing:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_degree16_reflection_crossing.py --output /tmp/integer-factoring-degree16-replay.json
+
+.PHONY: verify-reflection-truncations
+verify-reflection-truncations:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_truncated_reflection_crossings.py --output /tmp/integer-factoring-truncation-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_truncated_reflection4_search.py --output /tmp/integer-factoring-truncation-pressure-replay.json
+
+.PHONY: verify-unsplit-monoid
+verify-unsplit-monoid:
+	python3 tools/check_unsplit_monoid_contraction.py --output /tmp/integer-factoring-unsplit-monoid-replay.json
+
+.PHONY: verify-paired-trace
+verify-paired-trace:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_paired_trace.py --output /tmp/integer-factoring-paired-trace-replay.json
+
+.PHONY: verify-companion-search
+verify-companion-search:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_dense_coupled_companions.py --output /tmp/integer-factoring-companion-search-replay.json
+
+.PHONY: verify-monoid-blocks
+verify-monoid-blocks:
+	python3 tools/check_multiplicative_monoid_blocks.py --output /tmp/integer-factoring-monoid-blocks-replay.json
+
+.PHONY: verify-triangular-series
+verify-triangular-series:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_triangular_reflection_jet_families.py --output /tmp/integer-factoring-triangular-jets-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_laurent_series_coupled_frames.py --output /tmp/integer-factoring-laurent-series-replay.json
+
+.PHONY: verify-uniform-reflection-jets
+verify-uniform-reflection-jets:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_low_jet_frames.py --include-interval16 --output /tmp/integer-factoring-uniform-reflection-jets-replay.json
+
+.PHONY: verify-coupled-searches
+verify-coupled-searches:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection4_coupled_search.py --output /tmp/integer-factoring-coordinate-search-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_dense_rank_one_pressure.py --output /tmp/integer-factoring-dense-pressure-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_affine_coupled_frames.py --output /tmp/integer-factoring-affine-frames-replay.json
+
+.PHONY: verify-constant-carry-weights
+verify-constant-carry-weights:
+	python3 tools/check_constant_field_carry_weights.py --output /tmp/integer-factoring-constant-carry-weights-replay.json
+	python3 tools/check_first_jet_carry_weights.py --output /tmp/integer-factoring-first-jet-carry-weights-replay.json
+
+.PHONY: verify-square-zero-frames
+verify-square-zero-frames:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_square_zero_coupled_frames.py --output /tmp/integer-factoring-square-zero-first-jet-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_square_zero_second_jet.py --output /tmp/integer-factoring-square-zero-second-jet-replay.json
+
+.PHONY: verify-dense-coupled-frames
+verify-dense-coupled-frames:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_dense_coupled_reflection_frames.py --catalogue evidence/dense-rank-one-coupled-frames.json --output /tmp/integer-factoring-dense-coupled-frames-replay.json
+
+.PHONY: verify-weighted-carries
+verify-weighted-carries:
+	python3 tools/check_weighted_dyadic_carry.py --output /tmp/integer-factoring-weighted-carries-replay.json
+
+.PHONY: verify-physical-frames
+verify-physical-frames:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_physical_polynomial_frames.py --output /tmp/integer-factoring-polynomial-frames-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_laurent_frames.py --output /tmp/integer-factoring-laurent-frames-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_reflection_coupled_frames.py --output /tmp/integer-factoring-coupled-frames-replay.json
+
+.PHONY: verify-ternary-majorization
+verify-ternary-majorization:
+	python3 tools/check_ternary_gauge_majorization.py --output /tmp/integer-factoring-ternary-majorization-replay.json
+
+.PHONY: verify-frobenius-recovery
+verify-frobenius-recovery:
+	python3 tools/check_frobenius_sparse_recovery.py --output /tmp/integer-factoring-frobenius-recovery-replay.json
+
+.PHONY: verify-weighted-adaptive
+verify-weighted-adaptive:
+	python3 tools/check_weighted_adaptive_catalogues.py --output /tmp/integer-factoring-weighted-adaptive-replay.json
+
+.PHONY: verify-basis-searches
+verify-basis-searches:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_ternary_basis_search.py --output /tmp/integer-factoring-ternary-basis-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_fused_weighted_winners.py evidence/fused-mixed-weighted-summary.json --output /tmp/integer-factoring-fused-winners-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_fused_physical_bases.py --output /tmp/integer-factoring-fused-bases-replay.json
+
+.PHONY: verify-asymmetric-crossings
+verify-asymmetric-crossings:
+	python3 tools/check_asymmetric_support_line.py --output /tmp/integer-factoring-asymmetric-support-replay.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_asymmetric_pressure_oracle.py --output /tmp/integer-factoring-asymmetric-oracle-replay.json
+
+.PHONY: verify-explicit-fusion
+verify-explicit-fusion:
+	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
+	python3 tools/check_fused_frobenius_spectators.py --output /tmp/integer-factoring-fused-spectators-replay.json
+
+.PHONY: verify-carry-fourier
+verify-carry-fourier:
+	python3 tools/check_carry_fourier_elimination.py --output /tmp/integer-factoring-carry-fourier-replay.json
+
+.PHONY: verify-paired-affine-space
+verify-paired-affine-space:
+	OPENBLAS_NUM_THREADS=1 python3 tools/saturate_paired_trace_affine_space.py evidence/independent-paired-affine-degree-basis.json.gz --output /tmp/integer-factoring-paired-affine-saturation.json --basis-output /tmp/integer-factoring-paired-affine-basis.json.gz
+
+.PHONY: verify-bell-jets
+verify-bell-jets:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_entrywise_reflection_constraints.py --output /tmp/integer-factoring-entrywise-jets.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_bell_jet_crt_crossings.py --output /tmp/integer-factoring-bell-crt.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_bell_jet_transversality.py --output /tmp/integer-factoring-bell-transversality.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_ramified_carrier_minors.py --output /tmp/integer-factoring-ramified-carrier-minors.json
+
+.PHONY: verify-finite-fibers
+verify-finite-fibers:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_regular_smith_frames.py --output /tmp/integer-factoring-f4-regular-frames.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_finite_jet_smith_fibers.py --output /tmp/integer-factoring-finite-jet-fibers.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_two_cut_smith_fibers.py --output /tmp/integer-factoring-f4-two-cut-fibers.json
+
+.PHONY: verify-closed-place-oracles
+verify-closed-place-oracles:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_f4_closed_place_oracle.py --output /tmp/integer-factoring-f4-closed-oracle.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_paired_mixed_place_pressure.py --output /tmp/integer-factoring-paired-mixed-pressure.json
+
+.PHONY: verify-filtered-affine-search
+verify-filtered-affine-search:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_filtered_reflection16_affine_search.py --output /tmp/integer-factoring-filtered-affine-search.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_filtered_reflection16_affine_combinations.py --output /tmp/integer-factoring-filtered-affine-combinations.json
+
+.PHONY: verify-laurent-search
+verify-laurent-search:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_laurent_series_search.py --output /tmp/integer-factoring-laurent-series-search.json
+
+.PHONY: verify-coherent-boundary
+verify-coherent-boundary:
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_coherent_hot_boundary.py --output /tmp/integer-factoring-coherent-hot8.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/checkpoint_coherent_hot_boundaries.py --output /tmp/integer-factoring-coherent-boundary-search.json
+
+.PHONY: verify-root-worker-searches
+verify-root-worker-searches:
+	OPENBLAS_NUM_THREADS=1 python3 tools/checkpoint_root_worker_searches.py --output /tmp/integer-factoring-root-worker-searches.json
+
+.PHONY: verify-hot96-pressure
+verify-hot96-pressure:
+	python3 tools/check_natural_pressure_intervals.py --output /tmp/integer-factoring-pressure-interval-controls.json
+	python3 tools/certify_natural_pressure_interval.py evidence/hot96-charge-profile.json --rho 710005874881191 1000000000000000 --base 5571156672673465 5571156672673466 --output /tmp/integer-factoring-hot96-interval-pressure.json
+
+.PHONY: verify-hot96-profile
+verify-hot96-profile:
+	OPENBLAS_NUM_THREADS=1 python3 tools/certify_hot_charge_pressure.py --size 96 --modes 12 --base 768 769 --support 98 69 --output /tmp/integer-factoring-hot96-full-replay.json
+
+.PHONY: verify-final-searches
+verify-final-searches:
+	OPENBLAS_NUM_THREADS=1 python3 tools/checkpoint_algorithm_final_searches.py --output /tmp/integer-factoring-final-searches.json
+	OPENBLAS_NUM_THREADS=1 python3 tools/check_unequal_coherent_hot_codes.py --output /tmp/integer-factoring-unequal-coherent-codes.json
+
+.PHONY: verify-bilinear-cauchy
+verify-bilinear-cauchy:
+	python3 tools/check_bilinear_cauchy_closure.py --output /tmp/integer-factoring-bilinear-cauchy-closure.json
+	python3 tools/check_cauchy_bilinear_phase_counterexample.py --output /tmp/integer-factoring-cauchy-phase-counterexample.json
+
+.PHONY: verify-hot96-type
+verify-hot96-type:
+	python3 tools/certify_hot_rational_type_rounding.py --output /tmp/integer-factoring-hot96-small-type.json

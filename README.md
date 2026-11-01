@@ -110,6 +110,10 @@ and [global modular input circuits](research/interval-packet-circuits.md)
 with `O(n+p)` arithmetic nodes and polynomial generation cost.
 Recovering the genuine rational common factor within the desired time
 bound remains open; these results do not improve the factoring score.
+The [deadline reduction](research/output-sensitive-gcd-deadline.md) sharpens
+the conditional consequence: the proposed output-sensitive rational gcd
+primitive would imply polynomial-time factoring. It is enough to prove a
+fast termination bound on coprime inputs; that bound is also unresolved.
 [Normalized integer-center jets](research/normalized-interval-jets.md)
 also separate huge local powers of two from polynomial-cost unit data.
 The [global pole trace](research/interval-pole-trace.md) gives an exact
@@ -250,6 +254,8 @@ The [GitHub Actions workflow](.github/workflows/verify.yml) runs five groups on 
 | [`tools/`](tools/) and [`tests/`](tests/) | Exact checkers, reproduction scripts, and unit tests |
 
 ## Current research frontier
+
+- [Exact 96-letter pressure certificate](research/exact-natural-pressure-intervals.md): the complete saved profile certifies rho < 0.710005874881191, still above the required 1/sqrt(2). [Width-sensitive Boolean constructors](research/width-sensitive-prime-constructor.md) reduce preparation cost without supplying the missing crossing improvement. See the [session record](research/escape-half-session-20261031.md) for scope and replay costs.
 
 - [Fixed-prime scalar transfer](research/fixed-prime-factor-transfer.md): polynomially many scalar clique-count queries suffice under the stated evaluator hypothesis. [Certified divisor preprocessing](research/certified-divisor-oracle.md) concerns the maximum divisor count below a bound. These interfaces and the accompanying finite construction controls do not improve the complete 1/2 exponent. The parallel [fixed-characteristic recovery proof](research/fixed-characteristic-factor-recovery.md) is retained; the two notes share the power-tuple and cyclic-orbit mechanism.
 
@@ -735,6 +741,16 @@ conditions. Two symbolic minors and a positive Bernstein certificate prove
 `rho>=3/4` for every nontrivial member over every characteristic-two field
 at the natural heights.
 Thus it gives no half-rate improvement. Run `make verify-joint-endpoint-loops`.
+At a monomial endpoint pole, exact quartic/Frobenius elimination also
+reduces every higher-nilpotency energy generator to that square-zero
+sector or a tensor-preserving direction, at every positive depth.
+Run `make verify-joint-nilpotent-depths`.
+The [opposite-filtration lemma](research/joint-filtered-gauge-rigidity.md)
+extends zero-profile preservation to a 347-dimensional constant gauge
+group, then proves that retaining the original infinity pole forces it
+back to the 69-dimensional energy-block group. It also gives the exact
+extra pole in terms of the largest energy difference in the inverse gauge.
+Run `make verify-joint-filtered-gauges`.
 
 The [group-shear extension](research/group-shear-crossings.md) implements
 the swap through three multiplication/division shears over any finite

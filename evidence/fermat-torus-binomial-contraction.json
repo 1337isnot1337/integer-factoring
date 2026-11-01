@@ -1,0 +1,59 @@
+{
+  "counts": {
+    "coefficient_independent_gate_schedules": 4,
+    "complete_dyadic_box_stars": 120,
+    "complete_torus_sums": 300,
+    "dyadic_reference_points": 1608,
+    "enumerated_reference_points": 4020,
+    "large_bitlength_complete_expansions": 32,
+    "large_bitlength_expanded_monomials": 32768,
+    "negative_reduced_exponents": 1039,
+    "zero_coefficient_factors": 242,
+    "zero_divisor_algebra_sums": 80,
+    "zero_divisor_reference_points": 1072
+  },
+  "fixed_gate_counts": {
+    "additions": 99,
+    "multiplications": 98
+  },
+  "models": [
+    {
+      "field_degree": 2,
+      "irreducible_polynomial": 7,
+      "m": 1,
+      "torus_order": 3
+    },
+    {
+      "field_degree": 4,
+      "irreducible_polynomial": 19,
+      "m": 2,
+      "torus_order": 5
+    },
+    {
+      "field_degree": 6,
+      "irreducible_polynomial": 67,
+      "m": 3,
+      "torus_order": 9
+    },
+    {
+      "field_degree": 8,
+      "irreducible_polynomial": 283,
+      "m": 4,
+      "torus_order": 17
+    },
+    {
+      "field_degree": 10,
+      "irreducible_polynomial": 1033,
+      "m": 5,
+      "torus_order": 33
+    }
+  ],
+  "scope": "complete finite torus sums, literal dyadic boxes, coefficient algebras with zero divisors, and large binary-exponent monomial controls",
+  "source_sha256": {
+    "check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
+    "check_fermat_torus_binomials.py": "489882ed116892013be13d62c0151a724084fad20101c6c3fc3b9fe5c1b01bbd",
+    "check_frobenius_rational_trace.py": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3",
+    "fermat_torus_binomial_contraction.py": "e802013431c9251ed3fbccfcfeb6da2c17a16b46170402fa98f7cb5d60265380"
+  },
+  "status": "passed"
+}

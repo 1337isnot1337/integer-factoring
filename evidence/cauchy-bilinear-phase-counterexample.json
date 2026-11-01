@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "scope": "Exact failure of the bounded-degree interpolation formula when an encoded bilinear Fourier phase violates its formal degree hypothesis. The proved bounded-degree algorithm is unaffected.",
+  "field_polynomial": 19,
+  "omega": 6,
+  "omega_squared": 7,
+  "subfield_by_encoded_integer": [
+    0,
+    1,
+    6,
+    7
+  ],
+  "torus": [
+    1,
+    8,
+    10,
+    12,
+    15
+  ],
+  "rows": [
+    {
+      "v": 1,
+      "phase_coefficients_in_U": [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reduced_coefficients_in_U": [
+        1,
+        0,
+        0,
+        0
+      ],
+      "actual_inner_sum": 0,
+      "naive_inner_sum": 0,
+      "corrected_inner_sum": 0,
+      "missing_term": 0
+    },
+    {
+      "v": 8,
+      "phase_coefficients_in_U": [
+        1,
+        7,
+        5,
+        15,
+        4
+      ],
+      "reduced_coefficients_in_U": [
+        1,
+        3,
+        5,
+        15
+      ],
+      "actual_inner_sum": 9,
+      "naive_inner_sum": 0,
+      "corrected_inner_sum": 9,
+      "missing_term": 9
+    },
+    {
+      "v": 10,
+      "phase_coefficients_in_U": [
+        1,
+        13,
+        4,
+        12,
+        14
+      ],
+      "reduced_coefficients_in_U": [
+        1,
+        3,
+        4,
+        12
+      ],
+      "actual_inner_sum": 10,
+      "naive_inner_sum": 14,
+      "corrected_inner_sum": 10,
+      "missing_term": 4
+    },
+    {
+      "v": 12,
+      "phase_coefficients_in_U": [
+        1,
+        11,
+        5,
+        10,
+        9
+      ],
+      "reduced_coefficients_in_U": [
+        1,
+        2,
+        5,
+        10
+      ],
+      "actual_inner_sum": 12,
+      "naive_inner_sum": 9,
+      "corrected_inner_sum": 12,
+      "missing_term": 5
+    },
+    {
+      "v": 15,
+      "phase_coefficients_in_U": [
+        1,
+        7,
+        4,
+        8,
+        5
+      ],
+      "reduced_coefficients_in_U": [
+        1,
+        2,
+        4,
+        8
+      ],
+      "actual_inner_sum": 14,
+      "naive_inner_sum": 0,
+      "corrected_inner_sum": 14,
+      "missing_term": 14
+    }
+  ],
+  "phase_encoding_controls": 20,
+  "zero_denominator_points": 1,
+  "actual_joint_sum": 1,
+  "naive_joint_sum": 7,
+  "missing_joint_sum": 6,
+  "source_sha256": {
+    "check_cauchy_bilinear_phase_counterexample.py": "c0f54583cf7e649f93cef05643e8441367b14976c1810386f187dd0a3bc73fc9",
+    "check_frobenius_rational_trace.py": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3",
+    "check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763"
+  }
+}

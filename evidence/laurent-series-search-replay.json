@@ -1,0 +1,221 @@
+{
+  "status": "passed",
+  "scope": "Complete finite family accounting, independent full-coefficient replay, and fresh floating winner costs; no global pressure optimum or factoring bound.",
+  "archive_sha256": "2c27343d1361732d9ce98823d54867185173afe0b1e9557d924ea23f1b5171ea",
+  "completed_screens": 65536,
+  "completed_refinements": 32,
+  "requested_seconds": 4200.0,
+  "actual_elapsed_seconds": 1589.898212565,
+  "unresolved_calls": 90,
+  "independent_tensor_replays": 35,
+  "independent_coefficient_entries": 8960,
+  "fresh_pressure_replays": 32,
+  "maximum_replay_error": 0.0,
+  "baseline_rho": 0.7310809359734765,
+  "best_word": 0,
+  "best_rho": 0.7310809359734765,
+  "best_nonzero_word": 8192,
+  "best_nonzero_rho": 0.7546022282548617,
+  "replays": [
+    {
+      "index": 0,
+      "recorded_rho": 0.7310809359734765,
+      "replayed_rho": 0.7310809359734765,
+      "tensor_sha256": "c0a850cf9561d4e4ad5fe697507f746fcc091cf7f8caeb8355fab726cba4e494"
+    },
+    {
+      "index": 16640,
+      "recorded_rho": 0.806526319239782,
+      "replayed_rho": 0.806526319239782,
+      "tensor_sha256": "b74a4841a541ee7a8d7dad166857e1eb8592b9355b449efdd479a031f8cfa3cd"
+    },
+    {
+      "index": 33280,
+      "recorded_rho": 0.793662336876728,
+      "replayed_rho": 0.793662336876728,
+      "tensor_sha256": "77f986e98f910d93ae533960bd19f86ff3a8b7f1207afe7aca7b3b0bf5dc34b3"
+    },
+    {
+      "index": 49920,
+      "recorded_rho": 0.793662336876728,
+      "replayed_rho": 0.793662336876728,
+      "tensor_sha256": "5399824bcec269b1d3d91cb1cce346d789cec1d2e9cb4f14e32b4248bb4854e9"
+    },
+    {
+      "index": 4096,
+      "recorded_rho": 0.7546022308691793,
+      "replayed_rho": 0.7546022308691793,
+      "tensor_sha256": "8ec159bc9efb8be2a0b38cd4688753fd1ae32397323a3b8260aea83f126a1917"
+    },
+    {
+      "index": 8192,
+      "recorded_rho": 0.7546022282548617,
+      "replayed_rho": 0.7546022282548617,
+      "tensor_sha256": "359adccd8f689d0df3c4cf60ba0256b2cd9ab0307c7c456332394a1d72ac017a"
+    },
+    {
+      "index": 12288,
+      "recorded_rho": 0.7546022282548617,
+      "replayed_rho": 0.7546022282548617,
+      "tensor_sha256": "efda540ccf5f6e3474cc2e7f0cc9e92c3c4b43425d3f16a7b9fc388254616069"
+    },
+    {
+      "index": 16,
+      "recorded_rho": 0.7564168029840139,
+      "replayed_rho": 0.7564168029840139,
+      "tensor_sha256": "3b1c27aae1b5e69446620b5f4a9920a461ac79ec724794b817f2e5fcdf78d9f8"
+    },
+    {
+      "index": 32,
+      "recorded_rho": 0.7564168029534373,
+      "replayed_rho": 0.7564168029534373,
+      "tensor_sha256": "af3322c29fb0fa310a3f545bdd18baeef61068a9bc27394972589820143a0179"
+    },
+    {
+      "index": 48,
+      "recorded_rho": 0.7564168029534373,
+      "replayed_rho": 0.7564168029534373,
+      "tensor_sha256": "f1c7acc74d54313d6a0a0aed0ba2b1f6bde2297b18579c05a02fd57fca74923e"
+    },
+    {
+      "index": 16656,
+      "recorded_rho": 0.7936623499147437,
+      "replayed_rho": 0.7936623499147437,
+      "tensor_sha256": "74a63629ec64393a66d57806c48f5cfc4f05f0e34b3fc781c4b6a4a4d5ab9ffe"
+    },
+    {
+      "index": 16672,
+      "recorded_rho": 0.7936623435820702,
+      "replayed_rho": 0.7936623435820702,
+      "tensor_sha256": "ab0161c2ea6f6263f0d3df7157a72b1e982dd9b8541585fd277114b0a2f3de58"
+    },
+    {
+      "index": 16688,
+      "recorded_rho": 0.7936623425228088,
+      "replayed_rho": 0.7936623425228088,
+      "tensor_sha256": "bc8e3753c1a2d564996722cf77666943d2c9e13b1946cde9da978ff8d7303ca6"
+    },
+    {
+      "index": 33296,
+      "recorded_rho": 0.7936623366157792,
+      "replayed_rho": 0.7936623366157792,
+      "tensor_sha256": "937a63f48c810b50b620830a8ff80460f8277289be68e9ee59b30825f67c0710"
+    },
+    {
+      "index": 33312,
+      "recorded_rho": 0.7936623366129625,
+      "replayed_rho": 0.7936623366129625,
+      "tensor_sha256": "c8518dabea35f593a58f5f56b0c37b5a2dcce84eda8cc9c02822d1412d3e33b2"
+    },
+    {
+      "index": 33328,
+      "recorded_rho": 0.7936623365969723,
+      "replayed_rho": 0.7936623365969723,
+      "tensor_sha256": "93054985b5771800bbff4b11ad4174eb5940591cc8cd9f8b06e17ade6e7d87aa"
+    },
+    {
+      "index": 49936,
+      "recorded_rho": 0.7936623365890544,
+      "replayed_rho": 0.7936623365890544,
+      "tensor_sha256": "96e6e4c451e17430a32a6ccc1f64ed96aa2ee9a2b80cd179de60244c5e496388"
+    },
+    {
+      "index": 49952,
+      "recorded_rho": 0.79366233657517,
+      "replayed_rho": 0.79366233657517,
+      "tensor_sha256": "95a5085f05cd98fc7bc52580d1f8f707a001412c22000691421add5225c77879"
+    },
+    {
+      "index": 49968,
+      "recorded_rho": 0.7936623365730754,
+      "replayed_rho": 0.7936623365730754,
+      "tensor_sha256": "25ea38908f6e5e2a59acd491b70d1f48d9ced937ca3e6a24dda0289047feb921"
+    },
+    {
+      "index": 4112,
+      "recorded_rho": 0.7575956562102756,
+      "replayed_rho": 0.7575956562102756,
+      "tensor_sha256": "70fa03924122fe41ea625edaadb825168a5e43a2a77d0ae0971887e7d993eb3c"
+    },
+    {
+      "index": 4128,
+      "recorded_rho": 0.757595648832128,
+      "replayed_rho": 0.757595648832128,
+      "tensor_sha256": "3bb099a31a1b715c705dd24262b9764c55a254e9556866b5d4eaf1e0c7749ea2"
+    },
+    {
+      "index": 4144,
+      "recorded_rho": 0.757595648832128,
+      "replayed_rho": 0.757595648832128,
+      "tensor_sha256": "54cdb7bfdba5580c0068990ac6c7de2f979368070008d9e7e1c1302c8bd133aa"
+    },
+    {
+      "index": 8208,
+      "recorded_rho": 0.757595648832128,
+      "replayed_rho": 0.757595648832128,
+      "tensor_sha256": "9035917cc7db7aaf1d770b5f52874233dcb163b4806e71856491940cdfc4b522"
+    },
+    {
+      "index": 8224,
+      "recorded_rho": 0.757595648832128,
+      "replayed_rho": 0.757595648832128,
+      "tensor_sha256": "2a4bea6ec1adf0f0d40c6e6c9e20673e1cd71426a5438b4e98cce26ad8b00dc6"
+    },
+    {
+      "index": 8240,
+      "recorded_rho": 0.757595648832128,
+      "replayed_rho": 0.757595648832128,
+      "tensor_sha256": "af3299e019a919de07c76cd1235b8a8786dcd8ad43ea0091ece212fdea3b62ff"
+    },
+    {
+      "index": 12304,
+      "recorded_rho": 0.757595648832128,
+      "replayed_rho": 0.757595648832128,
+      "tensor_sha256": "a01db681e8f5836af53ecb41115380a8f735ad428925fbc74cd44a047879d86b"
+    },
+    {
+      "index": 12320,
+      "recorded_rho": 0.757595648832128,
+      "replayed_rho": 0.757595648832128,
+      "tensor_sha256": "2763070329365e7357f2126d727da560c847c0c15bc8febcfaedcd059480ca91"
+    },
+    {
+      "index": 12336,
+      "recorded_rho": 0.757595648832128,
+      "replayed_rho": 0.757595648832128,
+      "tensor_sha256": "6b9a2a92f3457a6598d7c884b2f30b8a87c3ca54ef815b714f79c8088a4c377e"
+    },
+    {
+      "index": 256,
+      "recorded_rho": 0.8064509170140841,
+      "replayed_rho": 0.8064509170140841,
+      "tensor_sha256": "4751eb5f077c545f5393ed9b6f0ce4de351c632b284e28e6dbf7cf4c627d9b73"
+    },
+    {
+      "index": 512,
+      "recorded_rho": 0.8064509170140841,
+      "replayed_rho": 0.8064509170140841,
+      "tensor_sha256": "6b9979e5a41c06019e66c652bbf50ebef493aae034585d88d42ab39566c2d0d4"
+    },
+    {
+      "index": 768,
+      "recorded_rho": 0.8064509170140841,
+      "replayed_rho": 0.8064509170140841,
+      "tensor_sha256": "8ea1c5cf3fdda64310e3cc32c3f9b82e19b0e21fc554a7ceb5caaded1d7e0a1d"
+    },
+    {
+      "index": 20736,
+      "recorded_rho": 0.7936623366603687,
+      "replayed_rho": 0.7936623366603687,
+      "tensor_sha256": "f2b4106ee3096d978a84bd6eebc8e6c3e3aa8cb8c2e07f311533077ae56ae817"
+    }
+  ],
+  "source_sha256": {
+    "check_laurent_series_search.py": "be25ab8d2ed419a457cc116d96bd1ce2a9b5ee224a7308cd641a607f7f3baf5b",
+    "search_reflection4_laurent_series.py": "f837e80a619df072540ac6a9527c8b0e49b504ef03ba5fa2a2a55e1431b87314",
+    "check_dense_coupled_reflection_frames.py": "3ca7c1117cc7c5a36b3da9db567194c29e82d22a0cf7c6fad49bbc220151b178",
+    "laurent_series_coupled_frames.py": "7fdcab4e01306cc957b305c1e404a73991adaef0e57f800d3de6c652dbbf5887",
+    "asymmetric_crossing_pressure.py": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42",
+    "search_affine_coupled_reflection_frames.py": "bf4d360a7da1554e03858f1876d231fcb25f7e78f3abb5629e623d64d87481c6"
+  }
+}

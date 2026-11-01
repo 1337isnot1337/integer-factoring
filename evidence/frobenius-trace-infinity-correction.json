@@ -1,0 +1,98 @@
+{
+  "coefficient_query_counts": {
+    "finite_pole_coefficient_queries": 693,
+    "infinity_coefficient_queries": 707,
+    "nonzero_infinity_corrections": 152
+  },
+  "counts": {
+    "cases_with_zero_leading_numerator_factor": 152,
+    "complete_rational_traces": 400,
+    "constant_polynomial_controls": 340,
+    "denominator_free_cases": 60,
+    "enumerated_field_points": 3768,
+    "larger_polynomial_part_traces": 12,
+    "literal_pole_cancellations": 32,
+    "original_proper_trace_comparisons": 131,
+    "pole_on_subfield_rejections": 4,
+    "polynomial_zero_divisor_extension_traces": 40,
+    "positive_formal_degree_cases": 269,
+    "positive_multiple_monomial_controls": 12,
+    "zero_denominator_evaluations": 1093,
+    "zero_safe_complete_traces": 450,
+    "zero_safe_fixed_gate_schedules": 4,
+    "zero_safe_reference_points": 3100
+  },
+  "models": [
+    {
+      "field_degree": 2,
+      "irreducible_polynomial": 7,
+      "w": 1
+    },
+    {
+      "field_degree": 4,
+      "irreducible_polynomial": 19,
+      "w": 2
+    },
+    {
+      "field_degree": 6,
+      "irreducible_polynomial": 67,
+      "w": 3
+    },
+    {
+      "field_degree": 8,
+      "irreducible_polynomial": 283,
+      "w": 4
+    }
+  ],
+  "scope": "ordinary degree-free rational traces and the separate all-coefficient zero-safe binomial circuit",
+  "source_sha256": {
+    "check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
+    "check_frobenius_rational_trace.py": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3",
+    "check_frobenius_trace_infinity.py": "d4f8e340b773ae29b44c6d1cf97e25bdb8e97b88b66cf6de4a969da57cb6faa3",
+    "fermat_torus_binomial_contraction.py": "e802013431c9251ed3fbccfcfeb6da2c17a16b46170402fa98f7cb5d60265380",
+    "frobenius_trace_infinity_correction.py": "d95a321c5a0d5459dd68121b83c8d5b35e07997d67edc346c62d6b3f6e198bdd"
+  },
+  "status": "passed",
+  "zero_safe_fixed_gate_counts": {
+    "additions": 134,
+    "multiplications": 149
+  },
+  "zero_safe_models": [
+    {
+      "field_degree": 1,
+      "subfield_degree": 1
+    },
+    {
+      "field_degree": 2,
+      "subfield_degree": 1
+    },
+    {
+      "field_degree": 2,
+      "subfield_degree": 2
+    },
+    {
+      "field_degree": 3,
+      "subfield_degree": 1
+    },
+    {
+      "field_degree": 3,
+      "subfield_degree": 3
+    },
+    {
+      "field_degree": 4,
+      "subfield_degree": 2
+    },
+    {
+      "field_degree": 4,
+      "subfield_degree": 4
+    },
+    {
+      "field_degree": 6,
+      "subfield_degree": 3
+    },
+    {
+      "field_degree": 8,
+      "subfield_degree": 4
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "schema_version": 1,
+  "id": "bilinear-cauchy-two-stage-closure",
+  "status": "frozen; independent mathematical and circuit/API audit passed; exact checker passed",
+  "depends_on": [
+    "frobenius-rational-trace",
+    "fermat-torus"
+  ],
+  "files": [
+    {
+      "path": "research/bilinear-cauchy-two-stage-closure.md",
+      "sha256": "2683d63636029b3ce6386e7425b097102c684afa31632b3143bfba92a2052a74",
+      "bytes": 11029
+    },
+    {
+      "path": "tools/check_bilinear_cauchy_closure.py",
+      "sha256": "51f30124417c90913b6448b6bc6d5aef2a50cfff6fc8cc943fe5274633ac6b61",
+      "bytes": 14989
+    },
+    {
+      "path": "evidence/bilinear-cauchy-closure.json",
+      "sha256": "0bdaada6f6ba2b6cb4113f5176f23925e3a3bc771527ad054cbbc6f204d91de4",
+      "bytes": 1961
+    }
+  ],
+  "checker_command": [
+    "python",
+    "tools/check_bilinear_cauchy_closure.py",
+    "--output",
+    "evidence/bilinear-cauchy-closure.json"
+  ],
+  "source_dependencies": [
+    {
+      "path": "tools/fermat_torus_binomial_contraction.py",
+      "sha256": "e802013431c9251ed3fbccfcfeb6da2c17a16b46170402fa98f7cb5d60265380",
+      "bytes": 3920
+    },
+    {
+      "path": "tools/check_frobenius_rational_trace.py",
+      "sha256": "d5cdf093a71fa6f3528b58359d8bb5307e94972aab12642d6818d45d1398c1f3",
+      "bytes": 15069
+    },
+    {
+      "path": "tools/check_carry_fourier_elimination.py",
+      "sha256": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
+      "bytes": 21667
+    }
+  ],
+  "scope": "Polynomial-size two-elimination circuit for a bounded-degree subfield input, one bilinear Cauchy kernel, and a matching Fermat torus. Does not represent the integer multiplication Fourier phase. No factoring-score change."
+}

@@ -1,0 +1,633 @@
+{
+  "claim": "deterministic prescribed-subfield prime-root construction",
+  "counts": {
+    "exact_Frobenius_orbit_vectors": 91,
+    "exact_binary_trace_idempotents": 165,
+    "exact_prescribed_subfield_products": 1080,
+    "exact_primitive_prime_root_controls": 40,
+    "independent_irreducibility_Frobenius_controls": 40,
+    "independent_irreducibility_gcd_controls": 43,
+    "proper_trace_gcd_splits": 41,
+    "root_already_in_subfield_controls": 5
+  },
+  "models": [
+    {
+      "Q": 3,
+      "binary_degree": 2,
+      "extension_degree": 2,
+      "ground_polynomial": "0b11",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1
+      ],
+      "w": 1
+    },
+    {
+      "Q": 5,
+      "binary_degree": 4,
+      "extension_degree": 4,
+      "ground_polynomial": "0b11",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "w": 1
+    },
+    {
+      "Q": 7,
+      "binary_degree": 3,
+      "extension_degree": 3,
+      "ground_polynomial": "0b11",
+      "root_factor_coefficients": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "w": 1
+    },
+    {
+      "Q": 11,
+      "binary_degree": 10,
+      "extension_degree": 10,
+      "ground_polynomial": "0b11",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "w": 1
+    },
+    {
+      "Q": 13,
+      "binary_degree": 12,
+      "extension_degree": 12,
+      "ground_polynomial": "0b11",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "w": 1
+    },
+    {
+      "Q": 17,
+      "binary_degree": 8,
+      "extension_degree": 8,
+      "ground_polynomial": "0b11",
+      "root_factor_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "w": 1
+    },
+    {
+      "Q": 19,
+      "binary_degree": 18,
+      "extension_degree": 18,
+      "ground_polynomial": "0b11",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "w": 1
+    },
+    {
+      "Q": 31,
+      "binary_degree": 5,
+      "extension_degree": 5,
+      "ground_polynomial": "0b11",
+      "root_factor_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "w": 1
+    },
+    {
+      "Q": 3,
+      "binary_degree": 2,
+      "extension_degree": 1,
+      "ground_polynomial": "0b111",
+      "root_factor_coefficients": [
+        3,
+        1
+      ],
+      "w": 2
+    },
+    {
+      "Q": 5,
+      "binary_degree": 4,
+      "extension_degree": 2,
+      "ground_polynomial": "0b111",
+      "root_factor_coefficients": [
+        1,
+        3,
+        1
+      ],
+      "w": 2
+    },
+    {
+      "Q": 7,
+      "binary_degree": 6,
+      "extension_degree": 3,
+      "ground_polynomial": "0b111",
+      "root_factor_coefficients": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "w": 2
+    },
+    {
+      "Q": 11,
+      "binary_degree": 10,
+      "extension_degree": 5,
+      "ground_polynomial": "0b111",
+      "root_factor_coefficients": [
+        1,
+        2,
+        1,
+        1,
+        3,
+        1
+      ],
+      "w": 2
+    },
+    {
+      "Q": 13,
+      "binary_degree": 12,
+      "extension_degree": 6,
+      "ground_polynomial": "0b111",
+      "root_factor_coefficients": [
+        1,
+        3,
+        0,
+        2,
+        0,
+        3,
+        1
+      ],
+      "w": 2
+    },
+    {
+      "Q": 17,
+      "binary_degree": 8,
+      "extension_degree": 4,
+      "ground_polynomial": "0b111",
+      "root_factor_coefficients": [
+        1,
+        1,
+        3,
+        1,
+        1
+      ],
+      "w": 2
+    },
+    {
+      "Q": 19,
+      "binary_degree": 18,
+      "extension_degree": 9,
+      "ground_polynomial": "0b111",
+      "root_factor_coefficients": [
+        1,
+        2,
+        0,
+        2,
+        2,
+        3,
+        3,
+        0,
+        3,
+        1
+      ],
+      "w": 2
+    },
+    {
+      "Q": 31,
+      "binary_degree": 10,
+      "extension_degree": 5,
+      "ground_polynomial": "0b111",
+      "root_factor_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "w": 2
+    },
+    {
+      "Q": 3,
+      "binary_degree": 6,
+      "extension_degree": 2,
+      "ground_polynomial": "0b1011",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1
+      ],
+      "w": 3
+    },
+    {
+      "Q": 5,
+      "binary_degree": 12,
+      "extension_degree": 4,
+      "ground_polynomial": "0b1011",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "w": 3
+    },
+    {
+      "Q": 7,
+      "binary_degree": 3,
+      "extension_degree": 1,
+      "ground_polynomial": "0b1011",
+      "root_factor_coefficients": [
+        2,
+        1
+      ],
+      "w": 3
+    },
+    {
+      "Q": 11,
+      "binary_degree": 30,
+      "extension_degree": 10,
+      "ground_polynomial": "0b1011",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "w": 3
+    },
+    {
+      "Q": 13,
+      "binary_degree": 12,
+      "extension_degree": 4,
+      "ground_polynomial": "0b1011",
+      "root_factor_coefficients": [
+        1,
+        3,
+        7,
+        3,
+        1
+      ],
+      "w": 3
+    },
+    {
+      "Q": 17,
+      "binary_degree": 24,
+      "extension_degree": 8,
+      "ground_polynomial": "0b1011",
+      "root_factor_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "w": 3
+    },
+    {
+      "Q": 19,
+      "binary_degree": 18,
+      "extension_degree": 6,
+      "ground_polynomial": "0b1011",
+      "root_factor_coefficients": [
+        1,
+        3,
+        5,
+        5,
+        5,
+        3,
+        1
+      ],
+      "w": 3
+    },
+    {
+      "Q": 31,
+      "binary_degree": 15,
+      "extension_degree": 5,
+      "ground_polynomial": "0b1011",
+      "root_factor_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "w": 3
+    },
+    {
+      "Q": 3,
+      "binary_degree": 4,
+      "extension_degree": 1,
+      "ground_polynomial": "0b10011",
+      "root_factor_coefficients": [
+        6,
+        1
+      ],
+      "w": 4
+    },
+    {
+      "Q": 5,
+      "binary_degree": 4,
+      "extension_degree": 1,
+      "ground_polynomial": "0b10011",
+      "root_factor_coefficients": [
+        8,
+        1
+      ],
+      "w": 4
+    },
+    {
+      "Q": 7,
+      "binary_degree": 12,
+      "extension_degree": 3,
+      "ground_polynomial": "0b10011",
+      "root_factor_coefficients": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "w": 4
+    },
+    {
+      "Q": 11,
+      "binary_degree": 20,
+      "extension_degree": 5,
+      "ground_polynomial": "0b10011",
+      "root_factor_coefficients": [
+        1,
+        7,
+        1,
+        1,
+        6,
+        1
+      ],
+      "w": 4
+    },
+    {
+      "Q": 13,
+      "binary_degree": 12,
+      "extension_degree": 3,
+      "ground_polynomial": "0b10011",
+      "root_factor_coefficients": [
+        1,
+        14,
+        9,
+        1
+      ],
+      "w": 4
+    },
+    {
+      "Q": 17,
+      "binary_degree": 8,
+      "extension_degree": 2,
+      "ground_polynomial": "0b10011",
+      "root_factor_coefficients": [
+        1,
+        2,
+        1
+      ],
+      "w": 4
+    },
+    {
+      "Q": 19,
+      "binary_degree": 36,
+      "extension_degree": 9,
+      "ground_polynomial": "0b10011",
+      "root_factor_coefficients": [
+        1,
+        7,
+        0,
+        7,
+        7,
+        6,
+        6,
+        0,
+        6,
+        1
+      ],
+      "w": 4
+    },
+    {
+      "Q": 31,
+      "binary_degree": 20,
+      "extension_degree": 5,
+      "ground_polynomial": "0b10011",
+      "root_factor_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        0,
+        1
+      ],
+      "w": 4
+    },
+    {
+      "Q": 3,
+      "binary_degree": 10,
+      "extension_degree": 2,
+      "ground_polynomial": "0b100101",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1
+      ],
+      "w": 5
+    },
+    {
+      "Q": 5,
+      "binary_degree": 20,
+      "extension_degree": 4,
+      "ground_polynomial": "0b100101",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "w": 5
+    },
+    {
+      "Q": 7,
+      "binary_degree": 15,
+      "extension_degree": 3,
+      "ground_polynomial": "0b100101",
+      "root_factor_coefficients": [
+        1,
+        1,
+        0,
+        1
+      ],
+      "w": 5
+    },
+    {
+      "Q": 11,
+      "binary_degree": 10,
+      "extension_degree": 2,
+      "ground_polynomial": "0b100101",
+      "root_factor_coefficients": [
+        1,
+        3,
+        1
+      ],
+      "w": 5
+    },
+    {
+      "Q": 13,
+      "binary_degree": 60,
+      "extension_degree": 12,
+      "ground_polynomial": "0b100101",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "w": 5
+    },
+    {
+      "Q": 17,
+      "binary_degree": 40,
+      "extension_degree": 8,
+      "ground_polynomial": "0b100101",
+      "root_factor_coefficients": [
+        1,
+        0,
+        0,
+        1,
+        1,
+        1,
+        0,
+        0,
+        1
+      ],
+      "w": 5
+    },
+    {
+      "Q": 19,
+      "binary_degree": 90,
+      "extension_degree": 18,
+      "ground_polynomial": "0b100101",
+      "root_factor_coefficients": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "w": 5
+    },
+    {
+      "Q": 31,
+      "binary_degree": 5,
+      "extension_degree": 1,
+      "ground_polynomial": "0b100101",
+      "root_factor_coefficients": [
+        11,
+        1
+      ],
+      "w": 5
+    }
+  ],
+  "scope": "Root-field preparation only; no improved whole-network contraction is claimed.",
+  "status": "passed"
+}

@@ -1,0 +1,927 @@
+{
+  "status": "all exact controls passed",
+  "score_improvement_claimed": false,
+  "summary": {
+    "accepted_assignments_with_nonzero_carry": 61,
+    "aligned_common_scalar_denominators": 2,
+    "aligned_univariate_field_evaluations": 3264,
+    "aligned_univariate_prefix_queries": 44,
+    "aligned_univariate_recoveries": 8,
+    "carry_factor_unit_inverses": 126,
+    "coupled_input_box_units": 1164,
+    "cyclic_weighted_target_coefficients": 78,
+    "degree_dependent_carry_weight_recoveries": 4,
+    "exact_cyclic_common_quotients": 6,
+    "full_coupled_fourier_contractions": 8,
+    "full_fourier_frequency_terms": 70920,
+    "instance_rescaled_univariate_recoveries": 4,
+    "insufficient_modulus_negative_controls": 1,
+    "literal_weighted_carry_terms": 7056,
+    "padded_modular_assignments": 324528,
+    "recovery_field_fixed_frobenius_quotients": 3,
+    "unique_accepted_factor_assignments": 104,
+    "weighted_prefix_field_evaluations": 168132,
+    "whole_carry_fourier_products": 63
+  },
+  "carry_transform_models": [
+    {
+      "m": 3,
+      "M": 9,
+      "field_degree": 6,
+      "irreducible_polynomial_binary": "0b1000011",
+      "irreducible_candidates_tested": 2,
+      "prime_divisors_of_M": [
+        3
+      ],
+      "root_search_candidate": 2,
+      "primitive_root_binary": "0b110",
+      "base": 2,
+      "D": 2,
+      "T": 3,
+      "weight_degree": 3,
+      "width_is_multiple_of_weight_degree": false
+    },
+    {
+      "m": 5,
+      "M": 33,
+      "field_degree": 10,
+      "irreducible_polynomial_binary": "0b10000001001",
+      "irreducible_candidates_tested": 5,
+      "prime_divisors_of_M": [
+        3,
+        11
+      ],
+      "root_search_candidate": 2,
+      "primitive_root_binary": "0b10011011",
+      "base": 4,
+      "D": 2,
+      "T": 3,
+      "weight_degree": 3,
+      "width_is_multiple_of_weight_degree": false
+    },
+    {
+      "m": 7,
+      "M": 129,
+      "field_degree": 14,
+      "irreducible_polynomial_binary": "0b100000000100001",
+      "irreducible_candidates_tested": 17,
+      "prime_divisors_of_M": [
+        3,
+        43
+      ],
+      "root_search_candidate": 7,
+      "primitive_root_binary": "0b11111010001010",
+      "base": 8,
+      "D": 2,
+      "T": 3,
+      "weight_degree": 3,
+      "width_is_multiple_of_weight_degree": true
+    }
+  ],
+  "coupled_fourier_models": [
+    {
+      "base": 4,
+      "D": 2,
+      "M": 33,
+      "weight_degree": 3,
+      "width_is_multiple_of_weight_degree": false,
+      "targets": [
+        {
+          "N": 1,
+          "factor_pairs_in_digit_boxes": [
+            [
+              1,
+              1
+            ]
+          ],
+          "weighted_field_value": 6
+        },
+        {
+          "N": 5,
+          "factor_pairs_in_digit_boxes": [],
+          "weighted_field_value": 0
+        },
+        {
+          "N": 9,
+          "factor_pairs_in_digit_boxes": [
+            [
+              3,
+              3
+            ]
+          ],
+          "weighted_field_value": 1
+        },
+        {
+          "N": 15,
+          "factor_pairs_in_digit_boxes": [],
+          "weighted_field_value": 0
+        }
+      ]
+    },
+    {
+      "base": 8,
+      "D": 2,
+      "M": 129,
+      "weight_degree": 3,
+      "width_is_multiple_of_weight_degree": true,
+      "targets": [
+        {
+          "N": 1,
+          "factor_pairs_in_digit_boxes": [
+            [
+              1,
+              1
+            ]
+          ],
+          "weighted_field_value": 6
+        },
+        {
+          "N": 9,
+          "factor_pairs_in_digit_boxes": [
+            [
+              3,
+              3
+            ]
+          ],
+          "weighted_field_value": 5
+        },
+        {
+          "N": 49,
+          "factor_pairs_in_digit_boxes": [
+            [
+              7,
+              7
+            ]
+          ],
+          "weighted_field_value": 5
+        },
+        {
+          "N": 63,
+          "factor_pairs_in_digit_boxes": [],
+          "weighted_field_value": 0
+        }
+      ]
+    }
+  ],
+  "cyclic_quotient_models": [
+    {
+      "base": 2,
+      "D": 2,
+      "M": 9,
+      "T": 3,
+      "first_operand_digits": [
+        1,
+        1
+      ],
+      "denominator_terms": 8,
+      "inverse_terms": 162,
+      "low_carry_terms": 4,
+      "joint_box_terms": 32
+    },
+    {
+      "base": 4,
+      "D": 2,
+      "M": 33,
+      "T": 2,
+      "first_operand_digits": [
+        0
+      ],
+      "denominator_terms": 2,
+      "inverse_terms": 33,
+      "low_carry_terms": 2,
+      "joint_box_terms": 8
+    },
+    {
+      "base": 4,
+      "D": 2,
+      "M": 33,
+      "T": 2,
+      "first_operand_digits": [
+        3
+      ],
+      "denominator_terms": 4,
+      "inverse_terms": 363,
+      "low_carry_terms": 2,
+      "joint_box_terms": 32
+    },
+    {
+      "base": 8,
+      "D": 2,
+      "M": 129,
+      "T": 2,
+      "first_operand_digits": [
+        1
+      ],
+      "denominator_terms": 4,
+      "inverse_terms": 16641,
+      "low_carry_terms": 2,
+      "joint_box_terms": 128
+    },
+    {
+      "base": 8,
+      "D": 2,
+      "M": 129,
+      "T": 2,
+      "first_operand_digits": [
+        3
+      ],
+      "denominator_terms": 4,
+      "inverse_terms": 5547,
+      "low_carry_terms": 2,
+      "joint_box_terms": 128
+    },
+    {
+      "base": 8,
+      "D": 2,
+      "M": 129,
+      "T": 2,
+      "first_operand_digits": [
+        7
+      ],
+      "denominator_terms": 4,
+      "inverse_terms": 16641,
+      "low_carry_terms": 2,
+      "joint_box_terms": 128
+    }
+  ],
+  "weighted_recovery_models": [
+    {
+      "N": 9,
+      "recovered_smallest_prime": 3,
+      "degree_dependent_carry_weights": [
+        {
+          "degree": 3,
+          "digit_width": 3,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 3,
+              "carry_sum": 1,
+              "nonzero_coefficient": 2
+            },
+            {
+              "divisor": 9,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        },
+        {
+          "degree": 5,
+          "digit_width": 5,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 3,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 9,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        },
+        {
+          "degree": 7,
+          "digit_width": 7,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 3,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 9,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "N": 25,
+      "recovered_smallest_prime": 5,
+      "degree_dependent_carry_weights": [
+        {
+          "degree": 3,
+          "digit_width": 3,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 5,
+              "carry_sum": 3,
+              "nonzero_coefficient": 3
+            },
+            {
+              "divisor": 25,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        },
+        {
+          "degree": 5,
+          "digit_width": 5,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 5,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 25,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        },
+        {
+          "degree": 7,
+          "digit_width": 7,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 5,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 25,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "N": 49,
+      "recovered_smallest_prime": 7,
+      "degree_dependent_carry_weights": [
+        {
+          "degree": 3,
+          "digit_width": 3,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 7,
+              "carry_sum": 6,
+              "nonzero_coefficient": 5
+            },
+            {
+              "divisor": 49,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        },
+        {
+          "degree": 5,
+          "digit_width": 5,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 7,
+              "carry_sum": 1,
+              "nonzero_coefficient": 2
+            },
+            {
+              "divisor": 49,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        },
+        {
+          "degree": 7,
+          "digit_width": 7,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 7,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 49,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "N": 121,
+      "recovered_smallest_prime": 11,
+      "degree_dependent_carry_weights": [
+        {
+          "degree": 3,
+          "digit_width": 6,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 11,
+              "carry_sum": 1,
+              "nonzero_coefficient": 2
+            },
+            {
+              "divisor": 121,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        },
+        {
+          "degree": 5,
+          "digit_width": 5,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 11,
+              "carry_sum": 3,
+              "nonzero_coefficient": 8
+            },
+            {
+              "divisor": 121,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        },
+        {
+          "degree": 7,
+          "digit_width": 7,
+          "weights": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 11,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            },
+            {
+              "divisor": 121,
+              "carry_sum": 0,
+              "nonzero_coefficient": 1
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "aligned_scalar_denominator_models": [
+    {
+      "base": 8,
+      "D": 2,
+      "M": 129,
+      "beta": 3,
+      "gamma": 7,
+      "inverse_frobenius_exponent": 4,
+      "clearing_scalar": 7,
+      "cleared_joint_terms": 128,
+      "full_cycle_product_terms": 5547
+    },
+    {
+      "base": 4,
+      "D": 8,
+      "M": 129,
+      "beta": 3,
+      "gamma": 3,
+      "inverse_frobenius_exponent": 1,
+      "clearing_scalar": 7,
+      "cleared_joint_terms": 128,
+      "full_cycle_product_terms": 16641
+    }
+  ],
+  "aligned_univariate_recovery_models": [
+    {
+      "N": 9,
+      "recovered_smallest_prime": 3,
+      "recovered_after_instance_rescaling": 3,
+      "degree_dependent_coefficients": [
+        {
+          "degree": 3,
+          "beta": 3,
+          "gamma": 7,
+          "digit_width": 3,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 5,
+              "clearing_scalar": 2,
+              "cleared_coefficient": 1
+            },
+            {
+              "divisor": 3,
+              "carry_sum": 1,
+              "coefficient": 1,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 7
+            },
+            {
+              "divisor": 9,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 2
+            }
+          ]
+        },
+        {
+          "degree": 5,
+          "beta": 3,
+          "gamma": 26,
+          "digit_width": 5,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 20,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 3
+            },
+            {
+              "divisor": 3,
+              "carry_sum": 0,
+              "coefficient": 15,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 8
+            },
+            {
+              "divisor": 9,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 9
+            }
+          ]
+        },
+        {
+          "degree": 7,
+          "beta": 3,
+          "gamma": 19,
+          "digit_width": 7,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 9,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 94
+            },
+            {
+              "divisor": 3,
+              "carry_sum": 0,
+              "coefficient": 15,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 87
+            },
+            {
+              "divisor": 9,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "N": 25,
+      "recovered_smallest_prime": 5,
+      "recovered_after_instance_rescaling": 5,
+      "degree_dependent_coefficients": [
+        {
+          "degree": 3,
+          "beta": 3,
+          "gamma": 7,
+          "digit_width": 3,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 7,
+              "clearing_scalar": 2,
+              "cleared_coefficient": 5
+            },
+            {
+              "divisor": 5,
+              "carry_sum": 3,
+              "coefficient": 4,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 1
+            },
+            {
+              "divisor": 25,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 2
+            }
+          ]
+        },
+        {
+          "degree": 5,
+          "beta": 3,
+          "gamma": 26,
+          "digit_width": 5,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 27,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 11
+            },
+            {
+              "divisor": 5,
+              "carry_sum": 0,
+              "coefficient": 22,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 13
+            },
+            {
+              "divisor": 25,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 9
+            }
+          ]
+        },
+        {
+          "degree": 7,
+          "beta": 3,
+          "gamma": 19,
+          "digit_width": 7,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 62,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 93
+            },
+            {
+              "divisor": 5,
+              "carry_sum": 0,
+              "coefficient": 51,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 13
+            },
+            {
+              "divisor": 25,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "N": 49,
+      "recovered_smallest_prime": 7,
+      "recovered_after_instance_rescaling": 7,
+      "degree_dependent_coefficients": [
+        {
+          "degree": 3,
+          "beta": 3,
+          "gamma": 7,
+          "digit_width": 3,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 1,
+              "clearing_scalar": 2,
+              "cleared_coefficient": 2
+            },
+            {
+              "divisor": 7,
+              "carry_sum": 6,
+              "coefficient": 4,
+              "clearing_scalar": 2,
+              "cleared_coefficient": 3
+            },
+            {
+              "divisor": 49,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 2
+            }
+          ]
+        },
+        {
+          "degree": 5,
+          "beta": 3,
+          "gamma": 26,
+          "digit_width": 5,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 29,
+              "clearing_scalar": 10,
+              "cleared_coefficient": 12
+            },
+            {
+              "divisor": 7,
+              "carry_sum": 1,
+              "coefficient": 7,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 21
+            },
+            {
+              "divisor": 49,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 9
+            }
+          ]
+        },
+        {
+          "degree": 7,
+          "beta": 3,
+          "gamma": 19,
+          "digit_width": 7,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 71,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 40
+            },
+            {
+              "divisor": 7,
+              "carry_sum": 0,
+              "coefficient": 124,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 57
+            },
+            {
+              "divisor": 49,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 69
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "N": 121,
+      "recovered_smallest_prime": 11,
+      "recovered_after_instance_rescaling": 11,
+      "degree_dependent_coefficients": [
+        {
+          "degree": 3,
+          "beta": 3,
+          "gamma": 7,
+          "digit_width": 6,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 5,
+              "clearing_scalar": 2,
+              "cleared_coefficient": 1
+            },
+            {
+              "divisor": 11,
+              "carry_sum": 1,
+              "coefficient": 3,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 2
+            },
+            {
+              "divisor": 121,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 2
+            }
+          ]
+        },
+        {
+          "degree": 5,
+          "beta": 3,
+          "gamma": 26,
+          "digit_width": 5,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 13,
+              "clearing_scalar": 10,
+              "cleared_coefficient": 29
+            },
+            {
+              "divisor": 11,
+              "carry_sum": 3,
+              "coefficient": 13,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 6
+            },
+            {
+              "divisor": 121,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 7,
+              "cleared_coefficient": 9
+            }
+          ]
+        },
+        {
+          "degree": 7,
+          "beta": 3,
+          "gamma": 19,
+          "digit_width": 7,
+          "coefficients": [
+            {
+              "divisor": 1,
+              "carry_sum": 0,
+              "coefficient": 109,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 67
+            },
+            {
+              "divisor": 11,
+              "carry_sum": 0,
+              "coefficient": 45,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 32
+            },
+            {
+              "divisor": 121,
+              "carry_sum": 0,
+              "coefficient": 3,
+              "clearing_scalar": 66,
+              "cleared_coefficient": 69
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
