@@ -113,13 +113,23 @@ def github_discussions() -> tuple[list[dict], list[dict]]:
 
 def github_pages(endpoint: str) -> list[dict]:
     result = subprocess.run(
-        ["gh", "api", "--paginate", "--slurp", endpoint],
+        ["gh", "api", "--paginate", endpoint],
         check=True, capture_output=True, text=True, timeout=45,
     )
-    pages = json.loads(result.stdout)
-    if not isinstance(pages, list) or any(not isinstance(page, list) for page in pages):
-        raise ValueError("unexpected GitHub pagination response")
-    return [item for page in pages for item in page]
+    # --paginate emits successive JSON values. Parse that stream directly so
+    # this also works with CLI releases predating the optional --slurp flag.
+    decoder = json.JSONDecoder()
+    remaining = result.stdout.lstrip()
+    records = []
+    if not remaining:
+        raise ValueError("empty GitHub pagination response")
+    while remaining:
+        page, end = decoder.raw_decode(remaining)
+        if not isinstance(page, list) or any(not isinstance(item, dict) for item in page):
+            raise ValueError("unexpected GitHub pagination response")
+        records.extend(page)
+        remaining = remaining[end:].lstrip()
+    return records
 
 
 def matches(text: str, terms: list[str]) -> bool:

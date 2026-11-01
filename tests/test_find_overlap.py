@@ -13,15 +13,18 @@ from tools import find_overlap
 
 class OverlapSearchTests(unittest.TestCase):
     def test_pagination_is_flattened_and_bad_shape_is_rejected(self):
-        result = subprocess.CompletedProcess([], 0, json.dumps([[{"id": 1}], [{"id": 2}]]), "")
+        result = subprocess.CompletedProcess(
+            [], 0, json.dumps([{"id": 1}])+"\n"+json.dumps([{"id": 2}]), "")
         with patch.object(find_overlap.subprocess, "run", return_value=result) as run:
             self.assertEqual(find_overlap.github_pages("example"), [{"id": 1}, {"id": 2}])
             self.assertIn("--paginate", run.call_args.args[0])
-            self.assertIn("--slurp", run.call_args.args[0])
-        result.stdout = json.dumps({"message": "unexpected response"})
-        with patch.object(find_overlap.subprocess, "run", return_value=result):
-            with self.assertRaises(ValueError):
-                find_overlap.github_pages("example")
+            self.assertNotIn("--slurp", run.call_args.args[0])
+        for invalid in ('', '{"message":"unexpected response"}', '[1]', '[]\ninvalid'):
+            result.stdout = invalid
+            with self.subTest(response=invalid), \
+                 patch.object(find_overlap.subprocess, "run", return_value=result):
+                with self.assertRaises(ValueError):
+                    find_overlap.github_pages("example")
 
     def test_search_reports_matches_from_each_source_and_excludes_prs_from_issues(self):
         def record(url, title="", body=""):

@@ -232,6 +232,14 @@ each with at most q coordinate bits; constructing the map and solving
 the system take polynomial time in q. The construction does not
 enumerate divisors of N.
 
+The [explicit polynomial inverse](cyclotomic-character-decoder.md) gives an
+alternative decoder of the same inputs using Galois substitutions, an
+odd-order Fourier transform and exact nilpotent divisions. It avoids storing
+the Gaussian system and proves that every sampled character order is necessary
+for decoding arbitrary paired binary vectors. The original implementation
+remains an independent comparison. Neither decoder obtains the coefficient
+bits from the composite index N.
+
 Keeping the full algebra A_m is essential. At q=5 it is
 F_2[T]/((T+1)^2); the two vectors 1 and T distinguish the two opposite
 residue pairs. Passing to the reduced quotient sets T=1 and loses

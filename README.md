@@ -1613,7 +1613,11 @@ reconstruction recovers factors. One bit per cyclotomic coordinate suffices
 at every level `q`: a binary decoder keeps the full algebra modulo two,
 including its nilpotents. The coefficient at the original composite
 index remains the unresolved engine; no improvement follows from prime-index
-formulas. Run `make verify-odd-character-residues` for the component checks.
+formulas. An [explicit polynomial decoder](research/cyclotomic-character-decoder.md)
+inverts the same one-bit map by Galois substitutions, odd-order Fourier
+inversion and exact nilpotent divisions, avoiding a stored Gaussian system.
+Run `make verify-odd-character-residues` for both decoders and the component
+checks, or `make verify-cyclotomic-decoder` for the new construction alone.
 
 The [Bell-diagonal seed construction](research/bell-diagonal-crossings.md)
 gives exact two-cut transforms and excludes its complete symmetric
