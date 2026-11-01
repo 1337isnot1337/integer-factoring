@@ -1,0 +1,19 @@
+[1] divisor enumeration of ambiguous reduced forms == brute force for 1999 discriminants |D|<4000: OK
+[2] chi_q(fg) = chi_q(f) chi_q(g) on 4000 random products: OK
+[3] Y=13: joint-residue pair q1=8089, q2=13729, (q1/q2)=-1, least nonresidues n(q1)=17, n(q2)=17; 54 multipliers s<200
+    s=  3 D=-333161643 |base|=2 |H|=858 ambiguous=4 splitting=2 ambiguous_in_H=2 splitting_in_H=0
+    s=  4 D=-444215524 |base|=2 |H|=1602 ambiguous=4 splitting=2 ambiguous_in_H=2 splitting_in_H=0
+    s=  7 D=-777377167 |base|=2 |H|=2934 ambiguous=4 splitting=2 ambiguous_in_H=2 splitting_in_H=0
+    s=  8 D=-888431048 |base|=2 |H|=2384 ambiguous=4 splitting=2 ambiguous_in_H=2 splitting_in_H=0
+    all 54 multipliers: base chars all +1, every splitting ambiguous form has a -1 char: True
+[3] Y=23: joint-residue pair q1=87481, q2=336361, (q1/q2)=-1, least nonresidues n(q1)=29, n(q2)=29; 68 multipliers s<200
+    s=  3 D=-88275589923 |base|=3 |H|=14268 ambiguous=4 splitting=2 ambiguous_in_H=2 splitting_in_H=0
+    s=  4 D=-117700786564 |base|=3 |H|=24812 ambiguous=4 splitting=2 ambiguous_in_H=2 splitting_in_H=0
+    all 68 multipliers: base chars all +1, every splitting ambiguous form has a -1 char: True
+[3] Y=31: joint-residue pair q1=515761, q2=1083289, (q1/q2)=-1, least nonresidues n(q1)=37, n(q2)=41; 73 multipliers s<200
+    all 73 multipliers: base chars all +1, every splitting ambiguous form has a -1 char: True
+[4] control N=8089*13729, s=3, base primes <= 13: |base|=2 |H|=858, splitting ambiguous in H = 0 of 2
+[4] control N=8089*13729, s=3, base primes <= 16: |base|=2 |H|=858, splitting ambiguous in H = 0 of 2
+[4] control N=8089*13729, s=3, base primes <= 17: |base|=2 |H|=858, splitting ambiguous in H = 0 of 2
+[4] control N=8089*13729, s=3, base primes <= 60: |base|=7 |H|=3432, splitting ambiguous in H = 2 of 2
+RESULT: PASS

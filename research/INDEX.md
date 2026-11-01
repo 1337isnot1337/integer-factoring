@@ -1606,3 +1606,4 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 
 - [Square-zero aggregation of trace constraints](square-zero-trace-contraction.md): one carry contraction over an explicit subset algebra gives `2^O(r) (S+rt+2)^O(vw/t)` cost, retaining scalar-only denominator inversion. The prefix implementation uses this sharper bound; the complete arithmetic phase representation remains open.
 - [Generic engine routing-rank no-go (scoped)](generic-engine-routing-rank-nogo.md): every Step-2 matrix on the OpenAI engine's schedule-pair array keeps α ≤ 1/2 within the preprint's accounting; open doors listed.
+- [Deterministic smooth relations: scope and wall](deterministic-smooth-relations-scope.md): genus invariance and least-nonresidue reductions showing where unconditional analytic input is needed; p-adic CFRAC view of the leading-power window.
