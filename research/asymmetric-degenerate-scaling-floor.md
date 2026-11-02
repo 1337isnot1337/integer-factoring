@@ -155,6 +155,11 @@ escapes are:
 - a different protected core or a joint boundary compression that changes
   the channel algebra.
 
+The existing rectangular oracle already exposes both pairings as `cut=0`
+and `cut=1`; both still have `AB` channels, so the cross-pairing alone does
+not change the zero-scale count.  A genuine escape needs a `3+1` or `1+3`
+partition whose Smith matrix is rectangular.
+
 The next experiment should construct one explicit unequal-channel or
 non-rectangular two-cut profile and evaluate its support value.  A tested
 value below one would be a genuine crossing candidate; a value above one
