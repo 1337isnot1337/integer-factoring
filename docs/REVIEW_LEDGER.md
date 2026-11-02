@@ -14,8 +14,23 @@ The original Sol worker 1 counterfamily and alignment are retained and
 credited. The fundamental lemma is sourced to Tao's Lemma17/Corollary19
 and Kedlaya's combinatorial-sieve theorem. Existing near-height exact
 controls are reused; no numerical sieve constant or asymptotic theorem is
-inferred from them. Full default replay and independent ordinary inspection
-of this extension are pending. No new Lean or score improvement is claimed.
+inferred from them. The [full default replay](../evidence/full-trial-sieve-full-verification.json)
+and [complete compressed log](../evidence/full-trial-sieve-full-verification.stdout.txt.xz)
+record exit-zero make verify at clean frozen source
+`27fd1ed0e0812a5c87c689587c5deced295d692c`, tree
+`fa1dd36eb754b42897789872000e23712609d6d2`, in 1773.73 seconds.
+The marker test verified private /tmp and a different mount namespace;
+the host root was read-only, only the frozen checkout was writable, and
+tracked state stayed clean. This later archive/prose has focused checks;
+no second full replay is claimed.
+
+Sol worker 1's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360786)
+at that frozen source found no missing arithmetic condition in the new
+sieve application, checking its uniform dimension-two product bound,
+product-supported remainder and asymptotic comparison. It did not reprove
+the external fundamental lemma. The predecessor's geometry and alignment
+are that worker's own construction, so this is not independent review of
+the entire theorem. No new Lean or score improvement is claimed.
 
 ## Near-height smooth descent
 

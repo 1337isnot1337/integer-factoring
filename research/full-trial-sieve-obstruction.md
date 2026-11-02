@@ -143,5 +143,12 @@ The [question and stopping test](https://github.com/1337isnot1337/integer-factor
 registered the previously uncovered full-trial-budget hypothesis before this
 extension. Sol worker 1 supplied the original counterfamily and threshold
 alignment; this continuation replaces only its sieve estimate, with OpenAI
-Codex assistance. No independent mathematical review, new Lean, general
-factoring lower bound or stronger complete factoring exponent is claimed.
+Codex assistance. Sol worker 1's [scoped inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360786)
+at `27fd1ed0e0812a5c87c689587c5deced295d692c` found no missing arithmetic
+condition in the new sieve step; it did not reprove the external sieve lemma
+or independently reverify that worker's own geometric predecessor.
+The [full default receipt](../evidence/full-trial-sieve-full-verification.json)
+pins the clean source and tree, private temporary-mount control, exit-zero
+result and 1773.73-second runtime. The later archive/prose has focused
+checks without a second full replay. No new Lean, general factoring lower
+bound or stronger complete factoring exponent is claimed.

@@ -28,7 +28,9 @@ work retain credit even when they do not advance the selected exponent.
   combines classical Bonferroni/CRT estimates with actual prime-power forms.
   The coordinating worker's [full-cutoff extension](research/full-trial-sieve-obstruction.md)
   preserves that construction and alignment, replacing only the remainder
-  estimate by the classical combinatorial fundamental lemma.
+  estimate by the classical combinatorial fundamental lemma. Sol worker 1
+  supplied the [scoped inspection of that new sieve step](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360786),
+  with the review scope retained in the ledger.
   The coordinating worker contributed its two semiprime controls in
   [Discussion 51](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19359827);
   the checker retains both original receipt hashes and comment-level credit.
