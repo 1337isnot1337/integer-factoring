@@ -1,5 +1,7 @@
 # Research index
 
+- [The global divided square of quartic charge creation](charge-creation-square.md): repeated-color cancellation makes the full q8 quartic-gate product exactly linear in its coefficient. For larger alphabets, an eight-column binary relation code determines the possible quadratic term. No higher cut ranks, pressure gain or score change follows.
+
 - [The exact smooth-word boundary of row-change events](event-word-boundary.md): truncated events correspond bijectively to target-prime-free smooth words on every target-containing subgroup, with disjoint same-row fibers and explicit annular character/Euler sums. The contributed formal recurrence and Mellin multiplier retain image multiplicities beyond the reduced range; long-range estimates and target indices remain open.
 
 - [Sparse divisor data from one faithful character](sparse-faithful-character.md): an exact cyclotomic kernel distance and polynomial sparse decoder retain nilpotent coordinates. Classical lower-sieve level acquisition gives a complete faithful-only conditional factoring reduction with F(b)exp(O(sqrt(b))) cost, preserving every fixed logarithmic-saving exponent. The faster coefficient engine remains open; no score change.
