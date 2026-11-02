@@ -113,6 +113,7 @@ def class_control(discriminant, target):
         rows.append([(1 << k)*int(i == j) for j in range(len(forms))])
     E = odd_relation_annihilator(forms, rows, [M]*len(forms), identity, multiply, inverse_primitive)
     projected = project_to_two_part(forms, E, identity, multiply)
+    assert projected == [image(f) for f in forms]
     basis = two_group_basis(projected, identity, multiply, inverse_primitive,
                             (-discriminant).bit_length())
     assert 1 << sum(k for _, k in basis) == len(images)
@@ -125,6 +126,7 @@ def class_control(discriminant, target):
                 target=list(target), strict_smaller_quotient_preimage=list(match),
                 nonidentity_odd_residual=list(residual), relation_determinant_bits=abs(determinant(rows)).bit_length(),
                 annihilator_bits=E.bit_length(), extracted_two_order_logs=[k for _, k in basis],
+                direct_filtered_two_group_test=True,
                 recovered_factors=factors)
 
 
@@ -156,6 +158,18 @@ def run():
             rejected.append(label)
         else:
             raise AssertionError(label)
+    # A large odd component is not mistaken for a two-group by the direct
+    # smooth-odd filter. No class-number or odd-order oracle is used.
+    M = uniform_odd_multiplier(5, 11)
+    residual = power((1, 1), M, (0, 0),
+                     lambda a, b: ((a[0]+b[0]) % 2, (a[1]+b[1]) % 13))
+    try:
+        order_log_two(residual, (0, 0),
+                      lambda a, b: ((a[0]+b[0]) % 2, (a[1]+b[1]) % 13), 5)
+    except ValueError:
+        rejected.append('direct_filter_residual_odd_thirteen')
+    else:
+        raise AssertionError('Nonsmooth odd component passed the two-group test')
     names = ['tools/odd_quotient_relations.py', 'tools/check_odd_quotient_relations.py',
              'tools/arithmetic_two_group.py', 'tools/check_positive_relation_kernel.py',
              'tools/binary_quadratic_forms.py', 'tools/quadratic_form_arithmetic.py']

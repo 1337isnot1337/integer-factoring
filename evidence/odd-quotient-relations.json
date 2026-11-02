@@ -129,7 +129,8 @@
   "rejected_certificates": [
     "even_witness",
     "false_odd_witness",
-    "singular_matrix"
+    "singular_matrix",
+    "direct_filter_residual_odd_thirteen"
   ],
   "static_class_groups": [
     {
@@ -160,6 +161,7 @@
       "extracted_two_order_logs": [
         3
       ],
+      "direct_filtered_two_group_test": true,
       "recovered_factors": [
         13
       ]
@@ -192,6 +194,7 @@
       "extracted_two_order_logs": [
         4
       ],
+      "direct_filtered_two_group_test": true,
       "recovered_factors": [
         79
       ]
@@ -199,7 +202,7 @@
   ],
   "source_sha256": {
     "tools/odd_quotient_relations.py": "18e74485250fb3fc6e2ed0e02b72b389af1076cb31e86617af7a3db420e77d5c",
-    "tools/check_odd_quotient_relations.py": "3dedc34fcf9c15de8f027207aabc780d1afd41a8ef10f2858f7088a3935f745f",
+    "tools/check_odd_quotient_relations.py": "4178b64fbada68f3b5ad89d127284ba69d3ec9c07daae9d9c16782951b7bada8",
     "tools/arithmetic_two_group.py": "79fd5a8d9bc50402e56cd383c33f6bc9a7190a625e28e4bd10a3f040e1072766",
     "tools/check_positive_relation_kernel.py": "bbbc23445f55338d0e0b31a8cf2b09a127b7df184c581ee605704fd69085bbc4",
     "tools/binary_quadratic_forms.py": "cc44b5ac962736c6de2b1ffbcf07bd963b0c9b4a050f16252914cb63d55e94dd",

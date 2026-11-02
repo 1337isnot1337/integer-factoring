@@ -150,6 +150,18 @@ with multiplicity when B>=2. This does not give its coordinates, orders,
 or a fast smooth-pair extractor; even one large cyclic component may be
 hard to handle.
 
+There is one directly certifiable fast branch. Power the supplied generators
+by M, then square each result at most L times. If every result reaches the
+identity, the image is a two-group; apply the existing two-group basis
+algorithm directly, without any relation matrix or pair extractor. This
+test succeeds exactly when the odd part of the generated H is B-smooth.
+It needs no class number. If a generator fails the test, its image retains
+a prime-order component greater than B, and this branch makes no further
+claim. The fixed class controls below pass this direct test as well as
+the relation-certificate route. A product-group control with residual
+odd order thirteen at B=11 correctly fails. This is not a smooth-class-number
+theorem for every input.
+
 For the existing arithmetic choice `s=ceil(sqrt(b log_2(b+2)))`,
 `B=2^O(s)`, and `L=O(b)`, acquiring M and powering the factor-base
 generators cost `2^O(s)` bit operations. With the predecessor's generator
