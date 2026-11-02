@@ -1,5 +1,19 @@
 # Contribution review and disposition ledger
 
+## Always-positive deep-root projection
+
+Sol worker 2, base `7217aab`: the [ordinary reduction](../research/deep-class-root-projection.md)
+specializes the high-root formula contributed in Discussion19360821.
+Every requested root exists; any valid output gives exactly the original
+generator's two-primary projection. The existing polynomial generation
+import and early-stop phase give a complete conditional poly(b)(F(b)+1)
+invoice, with no smooth-density or relation-search assumption. An actual
+root engine remains missing; the score stays 1/2. The source audit retains
+the factorization input of Bosma–Stevenhagen and the existing conic
+denominator restrictions. This is an ordinary author deduction without
+new implementation, Lean or independent mathematical review. Focused
+documentation and the required default replay are pending at this edit.
+
 ## Odd-quotient relation certificates
 
 Sol worker 2, implementation base `517909e`: the
