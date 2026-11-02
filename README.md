@@ -37,6 +37,8 @@ The [Fourier window analysis](research/window-orbit-normalization.md) separates 
 
 An [even-product density theorem](research/small-index-smooth-density.md) now proves original smooth density at least `exp(-O(b/log b))` on every subgroup of index at most `D^kappa`, for fixed `kappa<1/4`, under the principal split-prime estimate. With the full pinned character estimate, every coset is covered for `kappa<1/64`. Covered prime orbits inherit row-change density at the same scale. Actual target indices and short-window moments remain open.
 
+A [sparse faithful-character reduction](research/sparse-faithful-character.md) replaces the full character-order family by one coefficient vector at each eligible prime level. Exact code distance, polynomial sparse decoding and classical lower-sieve prime acquisition preserve every fixed logarithmic-saving exponent, conditionally on a faster composite-index coefficient engine. That engine remains open.
+
 A [connected-event criterion](research/connected-event-window-criterion.md) gives an explicit window linear in inverse event density, a cumulant scale, and the logarithm of a period bound, conditional on factorial cumulant estimates through that order. The arithmetic estimates and uncovered target indices remain open; saved-cycle controls do not certify the criterion or a stronger complete bound.
 
 A [small-norm event theorem](research/small-norm-event-separation.md) preserves the covered-subgroup density scale while forcing local event separation and explicit connected correlations. The unramified principal-word norm gap supplies this arithmetic constraint; long-range correlations and actual target indices remain open.

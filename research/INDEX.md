@@ -1,5 +1,7 @@
 # Research index
 
+- [Sparse divisor data from one faithful character](sparse-faithful-character.md): an exact cyclotomic kernel distance and polynomial sparse decoder retain nilpotent coordinates. Classical lower-sieve level acquisition gives a complete faithful-only conditional factoring reduction with F(b)exp(O(sqrt(b))) cost, preserving every fixed logarithmic-saving exponent. The faster coefficient engine remains open; no score change.
+
 - [Small reduced norms, density and local event separation](small-norm-event-separation.md): a nonzero unramified principal word has norm at least D/4. A truncated smooth predicate retains the covered-subgroup density scale and has T-separated row-change events with explicit short-range cumulants. Long-range correlations and actual target indices remain open; no complete bound change.
 
 - [Color parity obstructs large one-hot cube profiles](color-distinct-sector-obstruction.md): closed odd-color sectors and the existing scalar polynomial certificate give a pressure floor 3/4 for every homogeneous antipodal tensor preserving separate color parity, all q>=34, every field and common physical type, in the common-scale unweighted three-axis profile method. This extends the scalar-clone floor to arbitrary parity-preserving tensors; no score change.
