@@ -1,0 +1,124 @@
+{
+  "scope": "Finite derived-orbit pooled-rank diagnostic. Norm-query counts describe schedules on the complete frozen flags, not a new timed native selector. No uniform rank-window bound follows.",
+  "N": 1000036000099,
+  "cutoff": 19,
+  "period": 198850,
+  "primes": [
+    5,
+    7,
+    19
+  ],
+  "derived_generator_indices": {
+    "5": 1,
+    "7": 66509,
+    "19": 43240
+  },
+  "index19_witness_relation": [
+    22592,
+    2,
+    1
+  ],
+  "round_robin_rank_steps": [
+    {
+      "prime": 5,
+      "exponent": 673,
+      "offset": 664,
+      "rank": 1,
+      "round_robin_norm_queries": 1993
+    },
+    {
+      "prime": 5,
+      "exponent": 2620,
+      "offset": 2611,
+      "rank": 2,
+      "round_robin_norm_queries": 7834
+    },
+    {
+      "prime": 19,
+      "exponent": 2888,
+      "offset": 2883,
+      "rank": 3,
+      "round_robin_norm_queries": 8652
+    }
+  ],
+  "selected_rows": [
+    [
+      677,
+      -3,
+      0
+    ],
+    [
+      2621,
+      1,
+      3
+    ],
+    [
+      3,
+      3,
+      2888
+    ]
+  ],
+  "pooled_round_robin_norm_queries": 8652,
+  "factor": 1000003,
+  "extraction": {
+    "relation_dimension": 3,
+    "relation_rows": 3,
+    "relation_deficiency": 0,
+    "initial_relations_verified": 3,
+    "determinant_computed": false,
+    "annihilator_supplied": false,
+    "saturation_bound": 34,
+    "saturations": 2,
+    "kernel_passes": 3,
+    "tops_evaluated": 3,
+    "identity_tops": 2,
+    "rejected_nonidentity_tops": 0,
+    "paired_bad_top_updates": 0,
+    "group_multiplications": 80,
+    "group_inversions": 1,
+    "maximum_entry_bits": 12,
+    "termination": "useful involution"
+  },
+  "one_first_row_per_target": [
+    {
+      "prime": 5,
+      "K": 9,
+      "first_offset": 664,
+      "norm_queries": 665
+    },
+    {
+      "prime": 7,
+      "K": 7,
+      "first_offset": 3823,
+      "norm_queries": 3824
+    },
+    {
+      "prime": 19,
+      "K": 5,
+      "first_offset": 2883,
+      "norm_queries": 2884
+    }
+  ],
+  "one_per_target_total_norm_queries": 7373,
+  "one_per_target_rows": [
+    [
+      677,
+      -3,
+      0
+    ],
+    [
+      1,
+      3831,
+      3
+    ],
+    [
+      3,
+      3,
+      2888
+    ]
+  ],
+  "additional_audit_compositions": 130,
+  "total_composition_upper_bound": 225841,
+  "composition_cap": 250000,
+  "factoring_exponent": "1/2; unchanged"
+}

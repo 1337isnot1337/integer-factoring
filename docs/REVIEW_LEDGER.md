@@ -1,5 +1,23 @@
 # Contribution review and disposition ledger
 
+## Path C repeated relations and pooled rank windows
+
+Based on `959f496a25a46c7877efb4d29bc77bd0391fc516`. The
+[ordinary note](../research/clustered-hits-and-pooled-rank.md) proves a
+fixed integer-row multiplicity bound and transfers a sufficient pooled
+full-rank window to the existing factoring machinery, under its inherited
+generation and extraction contracts. Grok's window investigation and the
+existing selector/moment framework retain their credits. No uniform
+rank-window theorem or improved complete factoring bound is claimed.
+
+The portable two-cycle producer, row audit, and pooled audit reproduce the
+discovery's flags, all statistics, rank histories and factor certificates
+exactly (runtime fields excluded). Discovery uses at most 225841 of its
+250000 compositions; verification replays are separate. The focused checker
+passes on all 670 saved rows and both minimal cycle orders; documentation
+checks pass on 1159 Markdown files. A new frozen default replay will be
+recorded separately. No Lean or independent mathematical review is claimed.
+
 ## PR75 Fourier window duality, with scope repairs and orbit normalization
 
 Inspected source `0462759d46485c439fc751c88f7d6e134c9a2fb3`, tree
