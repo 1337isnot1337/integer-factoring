@@ -1,0 +1,122 @@
+{
+  "scope": "Exact cumulant algebra and saved-event postprocessing; no new arithmetic walks.",
+  "independent_controls": [
+    {
+      "trials": 4096,
+      "probability": "1/8",
+      "order": 12,
+      "scale": 1,
+      "even_moment_void_bound_checked": true
+    },
+    {
+      "trials": 4096,
+      "probability": "1/2",
+      "order": 12,
+      "scale": 1,
+      "even_moment_void_bound_checked": true
+    },
+    {
+      "trials": 4096,
+      "probability": "7/8",
+      "order": 12,
+      "scale": 1,
+      "even_moment_void_bound_checked": true
+    }
+  ],
+  "repeated_index_orders": [
+    2,
+    3,
+    4,
+    5
+  ],
+  "pairwise_independent_nonzero_third_cumulant": "-1/8",
+  "regular_control": {
+    "mean": "1024",
+    "minimum_count": 1024,
+    "maximum_count": 1024,
+    "empty_windows": 0,
+    "checked_cumulant_orders": 28,
+    "minimum_integer_scale": 1,
+    "mean_threshold_met": true,
+    "exact_cumulants_sha256": "916c07b3f2ab7670c9666a00159353f7dc12fc202a3b9e85c3b481677cdd740d"
+  },
+  "clustered_negative_control": {
+    "mean": "32",
+    "minimum_count": 0,
+    "maximum_count": 64,
+    "empty_windows": 65,
+    "checked_cumulant_orders": 18,
+    "minimum_integer_scale": 14,
+    "mean_threshold_met": false,
+    "exact_cumulants_sha256": "176e02ca8646b8d92da1acb2dc3ac0c6c42de50ff059b8b7bd5bb8d4ee4f2693"
+  },
+  "saved_event_controls": [
+    {
+      "prime": 5,
+      "period": 198850,
+      "events": 61,
+      "event_flags_sha256": "afa278a38e3b9cb408bbb5fade6b30dfa97ed87da42b50c73b19db7cb81c0ae0",
+      "all_phase_order": 18,
+      "threshold_impossible_for_nonwrapping_windows": true,
+      "controls": [
+        {
+          "window": 3260,
+          "mean": "19886/19885",
+          "minimum_count": 0,
+          "maximum_count": 5,
+          "empty_windows": 121984,
+          "checked_cumulant_orders": 12,
+          "minimum_integer_scale": 2,
+          "mean_threshold_met": false,
+          "exact_cumulants_sha256": "b8e5ae0123a4d9028fad3bbda29d8f254837d5780c1714382714a9696f168fcd"
+        },
+        {
+          "window": 49712,
+          "mean": "1516216/99425",
+          "minimum_count": 12,
+          "maximum_count": 21,
+          "empty_windows": 0,
+          "checked_cumulant_orders": 12,
+          "minimum_integer_scale": 1,
+          "mean_threshold_met": false,
+          "exact_cumulants_sha256": "fcab76f999978ed8b2556f07671968845eb5961f16cb80b1a990bf98a685926b"
+        }
+      ]
+    },
+    {
+      "prime": 7,
+      "period": 198850,
+      "events": 73,
+      "event_flags_sha256": "a3d178abc66dde884433cdd4db73c7cbdaa9772226ac8d94da4481b31de6cfa8",
+      "all_phase_order": 18,
+      "threshold_impossible_for_nonwrapping_windows": true,
+      "controls": [
+        {
+          "window": 3260,
+          "mean": "23798/19885",
+          "minimum_count": 0,
+          "maximum_count": 2,
+          "empty_windows": 30776,
+          "checked_cumulant_orders": 12,
+          "minimum_integer_scale": 1,
+          "mean_threshold_met": false,
+          "exact_cumulants_sha256": "a6df322fdc2fb1401c7276fa9a5025f0c2f041afb57e7375ed855dfa789cc184"
+        },
+        {
+          "window": 49712,
+          "mean": "1814488/99425",
+          "minimum_count": 13,
+          "maximum_count": 25,
+          "empty_windows": 0,
+          "checked_cumulant_orders": 12,
+          "minimum_integer_scale": 2,
+          "mean_threshold_met": false,
+          "exact_cumulants_sha256": "113834ca682253105383acec744e549fcaa867d24ea1ff9b89d9f81211e973e6"
+        }
+      ]
+    }
+  ],
+  "arithmetic_tree_bound_proved": false,
+  "target_indices_bounded": false,
+  "complete_factoring_exponent": "1/2; unchanged"
+}

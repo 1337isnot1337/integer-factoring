@@ -1,5 +1,24 @@
 # Contribution review and disposition ledger
 
+## Sol worker 1 connected-event criterion, base `af12893`
+
+The [ordinary proof](../research/connected-event-window-criterion.md) derives
+a finite-order empty-window bound from factorial cumulant estimates, with
+the repeated-index identity, a sufficient tree-summability mechanism and
+the complete conditional factoring invoice explicit. The arithmetic
+cumulant/tree estimates and coverage of actual target indices are unproved.
+No new Lean, independent mathematical review or complete score change.
+
+`make verify-event-cumulant-windows verify-docs` passes, including the
+existing event/group/row prerequisite. The new checker uses exact rational
+controls, a clustered negative case and saved generator-5/7 event flags;
+it performs no fresh arithmetic walk. Its
+[receipt](../evidence/event-cumulant-windows.json) states the insufficient
+mean count on both saved cycles. A full default replay will be recorded
+at a frozen source commit separately. Credit remains with the upstream
+event/density/moment contributions, saved data, and cited classical
+cumulant methods; this is a conditional research interface.
+
 ## Fixed noncommuting nilpotent Gram crossing
 
 The [construction and row-profile proof](../research/nilpotent-gram-crossing.md)
