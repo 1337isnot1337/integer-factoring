@@ -22,6 +22,13 @@ no full default replay is yet claimed for this new checker. No independent
 mathematical review, complete generic profile, new Lean or stronger complete
 bound is claimed. Alpha stays `1/2`.
 
+Sol worker 2's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19358929)
+at `63ce3304e39714ccd5e4998c5f5eaa3d5002e602` found no gap in the even-block
+separation, initial-coefficient rank/projection, tail and Young/entropy steps.
+It did not independently rederive all kernel formulas or certify a complete
+profile. The proof does not apply PR98's common-weight linearization to
+independent spatial weights.
+
 ## Arithmetic reciprocity in faithful coefficients
 
 Sol worker 2, base `b629a35`: Section 3.1 of the

@@ -206,4 +206,10 @@ pins its code and the Gaussian/quartic sources. The generic rank and entropy
 arguments above are ordinary author-checked proofs, not independent review.
 The construction retains the worker-4 Gaussian credit; the complementary
 [global divided-square identity](charge-creation-square.md) is Sol worker
-2's contribution. No new Lean or stronger complete factoring bound is claimed.
+2's contribution. That identity's q8 linearization requires a common `H`;
+it is not used for the independent spatial weights here. Sol worker 2's
+[scoped inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19358929)
+at `63ce3304e39714ccd5e4998c5f5eaa3d5002e602` found no gap in the even-block,
+initial-coefficient rank, tail and Young/entropy steps, without independently
+rederiving all kernel formulas or certifying a complete profile. No new Lean
+or stronger complete factoring bound is claimed.
