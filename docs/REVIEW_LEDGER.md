@@ -1,5 +1,24 @@
 # Contribution review and disposition ledger
 
+## Path C character-lift guards and the constant-bias limit
+
+Based on integrated PR79 at `55f6c597b7f5949673c18d8d7b6321af9130befc`.
+The [ordinary proof](../research/power-character-lift-guards.md) uses exact
+cyclic character lifts and the norm-word height budget. It predicts the
+generator-seven rank-three endpoint exactly (71962), and certifies 14504
+consecutive rough positions for generator five. A separate proved lemma
+shows that the existing constant-bias contract with support primes
+`q^6<=H` defeats this particular obstruction. It does not prove a window
+or rank-growth estimate, or improve the complete exponent.
+
+The integer-only postprocessing checks all 79 unsigned norm supports,
+both primitive normals, every saved row's congruence, and the modular hit
+guards against the frozen flags. It runs no new arithmetic cycle. The
+focused target (including PR79's certificate prerequisite) and links in
+1160 Markdown files pass. The analytic contract is inherited, not
+reverified. No Lean or independent mathematical review is claimed. A new
+clean default replay will be recorded separately from PR79's full receipt.
+
 ## Path C repeated relations and pooled rank windows
 
 Based on `959f496a25a46c7877efb4d29bc77bd0391fc516`. The
