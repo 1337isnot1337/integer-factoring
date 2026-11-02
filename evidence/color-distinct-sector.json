@@ -1,0 +1,52 @@
+{
+  "scope": "Generic direct-sector and complementary-minor identities plus a uniform integer pressure certificate. No specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.",
+  "original_color_checkpoint": "1772970a7dbaab83eeb0607014a1111e46718d86",
+  "axes": [
+    {
+      "axis": 0,
+      "sector_order": 24,
+      "sector_endpoint_checks": 576,
+      "closed_sector_zero_checks": 1272,
+      "complement_minor_checks": 36,
+      "smallest_sector_order": 8
+    },
+    {
+      "axis": 1,
+      "sector_order": 24,
+      "sector_endpoint_checks": 576,
+      "closed_sector_zero_checks": 1272,
+      "complement_minor_checks": 36,
+      "smallest_sector_order": 8
+    },
+    {
+      "axis": 2,
+      "sector_order": 24,
+      "sector_endpoint_checks": 576,
+      "closed_sector_zero_checks": 1272,
+      "complement_minor_checks": 36,
+      "smallest_sector_order": 8
+    }
+  ],
+  "certificate": {
+    "base_nonzero_colors": 255,
+    "degree_in_parameter": 20,
+    "degree_in_s": 120,
+    "divided_power": 6,
+    "mobius_degree": 114,
+    "coefficients_checked": 2415,
+    "independent_polynomial_identity_checks": 3,
+    "constant_parameter_min": 10152345600,
+    "nonnegative_coefficients": 2415,
+    "coefficient_sha256": "4e9f69651738e2bb8218d3af45d365886017b3595e06baa74496902610dd72a4",
+    "rho_floor": [
+      3,
+      5
+    ],
+    "threshold_check": {
+      "left": 27,
+      "right": 25
+    },
+    "scope": "All integer q>=256, all common physical types, common-scale unweighted three-axis Smith-profile pressure."
+  },
+  "kernel_source_sha256": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+}

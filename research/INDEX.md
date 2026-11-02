@@ -1,5 +1,7 @@
 # Research index
 
+- [Distinct-color sectors obstruct the large one-hot Gaussian cube](color-distinct-sector-obstruction.md): closed 24-dimensional sectors and a complementary minor give a generic pressure floor 3/5 for all q>=256, every common physical type, and the common-scale unweighted three-axis profile method. Exact integer parameter coefficients prove the entire alphabet range; no score change.
+
 - [Fixed nilpotent Gram crossings](nilpotent-gram-crossing.md): a canonical noncommuting flag gives a degree-12 seven-letter tensor with the flip endpoint and both cold ranks one. Its unchanged row profile alone forces pressure above 345 at every pair of places over every finite coefficient extension; the fixed test is stopped.
 
 - [Original smooth density from even prime products](small-index-smooth-density.md): a high-precision prime-color partition and one-sided product spectrum prove density exp(-O(b/log b)) on subgroups of index at most D^kappa, kappa<1/4, from the principal split-prime estimate. The full character estimate gives every coset for kappa<1/64. Actual target indices and hit gaps remain open.

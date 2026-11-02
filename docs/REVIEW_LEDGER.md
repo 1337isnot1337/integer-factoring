@@ -1,5 +1,30 @@
 # Contribution review and disposition ledger
 
+## One-hot colored cube integration and generic sector obstruction
+
+The worker-4 source `1772970a7dbaab83eeb0607014a1111e46718d86`
+is merged with its construction/correction history intact.
+The [specialized note](../research/color-class-cube-profile.md), checker
+and receipt remain credited. Integration corrects the description of the
+256-letter target's grading, clarifies cumulative-count monotonicity, and
+states that the historical `q4_full_profile` key contains only 250 orders.
+Source hashes match; selected replays pass for the complete binary control,
+the ternary orders through six, and saved graded comparisons. The larger
+specialized screens were not independently rerun.
+
+The new [generic proof](../research/color-distinct-sector-obstruction.md)
+uses exact closed distinct-color sectors and a complementary minor. Its
+replay verifies 1728 endpoint, 3816 zero-coupling and 108 minor identities,
+then checks 2415 nonnegative integer coefficients and three rational
+identity controls. This proves the stated pressure floor 3/5 for every
+q>=256 and every common physical type in the common-scale unweighted
+three-axis profile method. The large one-hot family is stopped there;
+no complete generic profile or specialized extrapolation is used.
+
+Focused verification and the frozen full default replay will be recorded
+at their exact source. No new Lean or independent mathematical review is
+claimed; the complete factoring exponent remains 1/2.
+
 ## Fixed noncommuting nilpotent Gram crossing
 
 The [construction and row-profile proof](../research/nilpotent-gram-crossing.md)

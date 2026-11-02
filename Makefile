@@ -3295,3 +3295,9 @@ verify-nilpotent-gram-crossing:
 	python3 tools/check_nilpotent_gram_crossing.py --output /tmp/integer-factoring-nilpotent-gram-crossing.json
 
 verify-arithmetic: verify-nilpotent-gram-crossing
+
+.PHONY: verify-color-distinct-sector
+verify-color-distinct-sector:
+	python3 tools/check_color_distinct_sector.py --output /tmp/integer-factoring-color-distinct-sector.json
+
+verify-arithmetic: verify-color-distinct-sector

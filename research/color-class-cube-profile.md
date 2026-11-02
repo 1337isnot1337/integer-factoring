@@ -23,9 +23,10 @@ of the four vertices on one side; its energy is three times the number of
 nonvacuum vertices, so the side-word multiplicities are
 \(1,4(q-1),6(q-1)^2,4(q-1)^3,(q-1)^4\) at orders
 \(0,3,6,9,12\). The
-[equal-height 256-letter profile](cube-graded-minor-budget.md) therefore
-does not apply. The correct comparison is the shared-minor envelope with
-the **vertex-letter** energies \(0\) and \(3\), whose length-four word
+[256-letter abstract target](cube-graded-minor-budget.md) uses exactly
+this grading when \(q=256\): one vacuum and 255 height-one letters,
+with tensor energy three per occupied vertex. The correct comparison
+for each \(q\) is the shared-minor envelope with the **vertex-letter** energies \(0\) and \(3\), whose length-four word
 multiplicities are exactly the side-word distribution above. Section 2
 performs that comparison; the specialized profile satisfies it.
 
@@ -60,7 +61,9 @@ multiplicity at order \(k\) is the second difference
 
 The evaluation uses \(y=2,z=3\) in \(\mathbb F_{256}\) with modulus
 \(x^8+x^4+x^3+x+1\). A specialization can only increase Smith orders, so
-the resulting small-order counts are lower bounds for the generic tensor.
+the resulting cumulative counts through any order are lower bounds for
+the generic tensor. An individual layer multiplicity has no such
+monotonicity guarantee.
 The \(q=2\) check against the known Gaussian profile validates the
 extraction:
 
@@ -147,24 +150,31 @@ distribution the specialized profile satisfies the necessary envelope at
 all tested prefixes. Specialization increases orders, so the generic
 profile, if it differs, has smaller orders and also satisfies the
 envelope. This is a necessary-condition pass, not a viability proof; the
-generic \(q=256\) profile is still the missing object.
+generic \(q=256\) profile has not been computed. The
+[distinct-sector proof](color-distinct-sector-obstruction.md) now excludes
+its common-scale unweighted three-axis target without that computation.
 
-## 3. Scope and next question
+## 3. Current scope and stopped family
 
-The finite profiles are useful as a regression and as a source of the
-monomial pattern in (5). They do not prove a uniform law, and they do not
-rule out the one-hot construction. The equal-height 256-letter target is
-not the right comparison for this graded alphabet.
+This specialized contribution is retained from worker 4, exact source
+`1772970a7dbaab83eeb0607014a1111e46718d86`, including the correction
+history above. The finite profiles are regression controls and do not
+prove a uniform monomial law. The historical `q4_full_profile` receipt
+key records 250 of 256 orders through order 39, rather than an exhaustive
+profile.
 
-The next question is:
+The subsequent [generic direct-sector obstruction](color-distinct-sector-obstruction.md)
+proves that this one-hot construction has common-scale, unweighted
+three-axis profile pressure at least \(3/5>1/\sqrt3\) for **every
+\(q\ge256\)** and every common physical type. Large instances of this
+family are stopped under that criterion. No larger specialized matrix
+or complete generic profile is needed to reach this conclusion.
 
-> What is the generic low-order profile of the one-hot color-class
-> Gaussian, and does it satisfy the graded envelope at \(q=256\)?
-
-A second question is whether a different structured subspace can reduce
-the observed monomial growth without breaking the antipodal endpoint.
-Capping color-class sizes is not immediate because the endpoint already
-uses classes of size \(8\).
+The earlier statement that the 256-letter target had incompatible grading
+was incorrect: its 255 nonvacuum letters all have height one, exactly as
+here. The side-word versus vertex-letter correction remains necessary.
+Smaller alphabets, physical types that differ between vertices, weighted gauges, actual
+coefficient ranks and different tensors remain outside the new obstruction.
 
 The factoring exponent remains \(1/2\); this note adds no score claim.
 
@@ -177,7 +187,7 @@ python3 tools/check_color_class_cube_profile.py \
 
 The checker recomputes the \(q=2\) Gaussian regression, the \(q=3\)
 specialized profile and three additional specializations, the \(q=4,5,6\)
-low-order layers, the \(q=4\) full specialized profile, and the graded
+low-order layers, the \(q=4\) specialized orders through 39, and the graded
 envelope comparison for \(q=3,4\). The
 receipt records the exact profiles and hashes. The source is
 [`check_color_class_cube_profile.py`](../tools/check_color_class_cube_profile.py).
