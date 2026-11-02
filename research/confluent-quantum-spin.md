@@ -149,3 +149,8 @@ ledger. The receipt contains exact field elements and integer orders;
 no floating-point estimate is used for the exclusion. These are finite
 exact checks supporting the displayed ordinary proof, not independent
 mathematical review or a new Lean formalization.
+
+The [clean full default replay](../evidence/confluent-quantum-spin-full-verification.json)
+passes at exact source `570f6166360eeca50243e822465358fe1ffd8ce0`
+in 731.40 seconds. The subsequent archive commit changes only documentation
+and verification records.

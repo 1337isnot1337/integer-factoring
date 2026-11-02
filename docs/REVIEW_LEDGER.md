@@ -13,8 +13,12 @@ the claim. The complete factoring exponent remains 1/2.
 The focused replay reconstructs the tensor and checks all 2401 endpoint
 entries, both cuts at nine rational places and 440 independent Toeplitz
 nullities against native Smith profiles. Source formulas and Bytsko credit
-are retained. Full default verification is pending at this checkpoint;
-no new Lean or independent mathematical review is claimed.
+are retained. The [full default replay](../evidence/confluent-quantum-spin-full-verification.json)
+passes at exact source `570f6166360eeca50243e822465358fe1ffd8ce0`
+(tree `75caae02d8570d497ff2f49e48a3bfc051c30808`), in 731.40 seconds
+with clean tracked state before and after. The archived follow-up changes
+only review prose and verification records. No new Lean or independent
+mathematical review is claimed.
 
 ## Correct generator-seven controls and aggregate walk accounting
 
