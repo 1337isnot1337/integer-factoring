@@ -3171,6 +3171,12 @@ verify-witt-trace-words:
 	python3 tools/check_witt_trace_word_circuits.py
 
 verify-arithmetic: verify-witt-trace-words
+
+.PHONY: verify-one-trace-inverse-words
+verify-one-trace-inverse-words:
+	python3 tools/check_one_trace_inverse_words.py
+
+verify-arithmetic: verify-one-trace-inverse-words
 .PHONY: verify-divided-power-traces
 verify-divided-power-traces:
 	python3 tools/check_divided_power_trace_carries.py
@@ -3266,6 +3272,12 @@ verify-relation-change-events: verify-clustered-power-relations
 
 verify-arithmetic: verify-relation-change-events
 
+.PHONY: verify-event-cumulant-windows
+verify-event-cumulant-windows: verify-relation-change-events
+	python3 tools/check_event_cumulant_windows.py
+
+verify-arithmetic: verify-event-cumulant-windows
+
 .PHONY: verify-ambient-minorant-gap
 verify-ambient-minorant-gap:
 	python3 tools/check_ambient_minorant_gap.py --output /tmp/integer-factoring-ambient-minorant-gap.json
@@ -3298,6 +3310,7 @@ verify-arithmetic: verify-nilpotent-gram-crossing
 
 .PHONY: verify-color-distinct-sector
 verify-color-distinct-sector:
+	python3 tools/check_cube_scalar_color_clone_floor.py --output /tmp/integer-factoring-cube-scalar-color-clone-floor.json
 	python3 tools/check_color_distinct_sector.py --output /tmp/integer-factoring-color-distinct-sector.json
 
 verify-arithmetic: verify-color-distinct-sector

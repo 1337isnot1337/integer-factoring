@@ -5,7 +5,7 @@ from hashlib import sha256
 from fractions import Fraction
 from itertools import permutations,product
 import json
-from math import comb,factorial
+from math import comb
 from pathlib import Path
 import cube_homogeneous_gaussian as cube
 
@@ -59,66 +59,23 @@ def structural_control():
     return records
 
 
-def mul(a,b):
-    c=[0]*(len(a)+len(b)-1)
-    for i,x in enumerate(a):
-        for j,y in enumerate(b):c[i+j]+=x*y
-    return c
-
-
-def power(a,k):
-    c=[1]
-    for _ in range(k):c=mul(c,a)
-    return c
-
-
-def pressure_certificate():
-    # d=255+r, A(r)=24*binom(d,4). P=24^5*(L_d(s^3)^5-(1+d*s^10)^12).
-    A=[1]
-    for c in (252,253,254,255):A=mul(A,[c,1])
-    d=[255,1];P=[[0]*121 for _ in range(21)]
-    for a in range(6):
-        for b in range(6-a):
-            c=5-a-b;degree=6*a+24*b
-            co=factorial(5)//(factorial(a)*factorial(b)*factorial(c))*24**(a+c)
-            for j,v in enumerate(mul(power(d,a),power(A,b))):P[j][degree]+=co*v
-    for b in range(13):
-        for j,v in enumerate(power(d,b)):P[j][10*b]-=24**5*comb(12,b)*v
-    assert all(not any(p[:6]) for p in P)
-    transformed=[]
-    for p in P:
-        q=p[6:]
-        transformed.append([sum(q[j]*comb(114-j,k-j) for j in range(k+1)) for k in range(115)])
-    for parameter,point in ((0,Fraction(1,2)),(1,Fraction(2,3)),(17,Fraction(3,5))):
-        colors=255+parameter
-        explicit=24**5*((1+colors*point**6+comb(colors,4)*point**24)**5-(1+colors*point**10)**12)
-        expanded=sum(v*parameter**j*point**k for j,row in enumerate(P) for k,v in enumerate(row))
-        assert explicit==expanded
-        u=point/(1-point)
-        check=sum(v*parameter**j*u**k for j,row in enumerate(transformed) for k,v in enumerate(row))
-        assert check==(1+u)**114*explicit/point**6
-    assert all(v>=0 for row in transformed for v in row)
-    assert min(transformed[0])>0
-    assert 3*3**2>5**2
-    return dict(base_nonzero_colors=255,degree_in_parameter=20,degree_in_s=120,divided_power=6,mobius_degree=114,coefficients_checked=2415,independent_polynomial_identity_checks=3,constant_parameter_min=min(transformed[0]),nonnegative_coefficients=2415,coefficient_sha256=sha256(json.dumps(transformed,separators=(',',':')).encode()).hexdigest(),rho_floor=[3,5],threshold_check=dict(left=27,right=25),scope='All integer q>=256, every coefficient field, all common physical types, common-scale unweighted three-axis Smith-profile pressure for homogeneous antipodal tensors preserving each color parity.')
-
-
 def asymmetric_control():
     # The general theorem bounds the geometric mean; per-axis bounds need not hold.
     q=5;d=q-1;t=Fraction(1,2)
     orders=[6*sum(c!=0 for c in word) for word in product(range(q),repeat=4)]
     zx=sum(t**s for s in orders);zy=zz=q**4
-    lower=1+d*t**2+comb(d,4)*t**8
+    lower=sum(comb(d,r)*t**(2*r) for r in range(5))
     assert zx==(1+d*t**6)**4 and zx<lower and zx*zy*zz>=lower**3
     return dict(q=q,side_words_checked=len(orders),t=[1,2],single_axis_bound_fails=True,geometric_mean_bound_passes=True)
 
 
 def main():
-    controls=structural_control();certificate=pressure_certificate();asymmetric=asymmetric_control()
-    result=dict(scope='Gaussian direct-sector controls, an asymmetric parity-preserving control, and a uniform integer pressure certificate supporting the ordinary shared-sector theorem. No exhaustive tensor verification, specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.',original_color_checkpoint='1772970a7dbaab83eeb0607014a1111e46718d86',axes=controls,certificate=certificate,asymmetric_control=asymmetric,kernel_source_sha256=sha256(Path(cube.__file__).read_bytes()).hexdigest())
+    controls=structural_control();asymmetric=asymmetric_control()
+    certificate=dict(source='tools/check_cube_scalar_color_clone_floor.py',source_sha256=sha256(Path(__file__).with_name('check_cube_scalar_color_clone_floor.py').read_bytes()).hexdigest(),replayed_by='make verify-color-distinct-sector',newton_coefficients=50,minimum_q=34,rho_floor=[3,4],scope='Existing polynomial certificate reused by the ordinary parity-sector theorem; run the Make target for both certificate and structural controls.')
+    result=dict(scope='Gaussian direct-sector controls and an asymmetric parity-preserving control supporting the ordinary parity-sector theorem, which reuses the separately replayed scalar polynomial certificate. No exhaustive tensor verification, specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.',original_color_checkpoint='1772970a7dbaab83eeb0607014a1111e46718d86',axes=controls,certificate=certificate,asymmetric_control=asymmetric,kernel_source_sha256=sha256(Path(cube.__file__).read_bytes()).hexdigest())
     parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);args=parser.parse_args()
     if args.output:args.output.write_text(json.dumps(result,indent=2)+'\n')
-    print(json.dumps(dict(axes=len(controls),sector_endpoint_checks=sum(r['sector_endpoint_checks'] for r in controls),closed_sector_zero_checks=sum(r['closed_sector_zero_checks'] for r in controls),minor_checks=sum(r['complement_minor_checks'] for r in controls),coefficients_checked=2415,rho_floor=[3,5],minimum_q=256)))
+    print(json.dumps(dict(axes=len(controls),sector_endpoint_checks=sum(r['sector_endpoint_checks'] for r in controls),closed_sector_zero_checks=sum(r['closed_sector_zero_checks'] for r in controls),minor_checks=sum(r['complement_minor_checks'] for r in controls),reused_certificate_floor=[3,4],minimum_q=34)))
 
 
 if __name__=='__main__':main()

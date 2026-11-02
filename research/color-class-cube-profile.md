@@ -165,8 +165,8 @@ profile.
 
 The subsequent [generic direct-sector obstruction](color-distinct-sector-obstruction.md)
 proves that this one-hot construction has common-scale, unweighted
-three-axis profile pressure at least \(3/5>1/\sqrt3\) for **every
-\(q\ge256\)** and every common physical type. Large instances of this
+three-axis profile pressure at least \(3/4>1/\sqrt3\) for **every
+\(q\ge34\)** and every common physical type. Large instances of this
 family are stopped under that criterion. No larger specialized matrix
 or complete generic profile is needed to reach this conclusion. The same
 proof excludes every tensor with the same homogeneity and antipodal

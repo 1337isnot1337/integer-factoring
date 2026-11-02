@@ -13,21 +13,51 @@ the ternary orders through six, and saved graded comparisons. The larger
 specialized screens were not independently rerun.
 
 The new [generic proof](../research/color-distinct-sector-obstruction.md)
-uses exact closed distinct-color sectors and a shared complementary minor.
-The ordinary proof only needs homogeneous degree three per occupied
-vertex, the antipodal endpoint and separate even parity of every color,
-over any field; Gaussian factorization is unnecessary. Its
-replay verifies 1728 endpoint, 3816 zero-coupling and 108 minor identities,
-then checks 2415 nonnegative integer coefficients, three rational
-identity controls and an asymmetric monomial tensor demonstrating why
-the general conclusion uses an averaged partition bound. This proves the stated pressure floor 3/5 for every
-q>=256 and every common physical type in the common-scale unweighted
-three-axis profile method. The large one-hot family is stopped there;
-no complete generic profile or specialized extrapolation is used.
+uses closed odd-color sectors, with a common antipodal entry in every
+sector and every axis. It extends the earlier scalar-clone polynomial
+certificate (source `0c78cd26c5a7eefad1e107077b6385cc2bbdd9fb`) to every
+homogeneous antipodal tensor preserving separate color parity, over any
+field. The common-scale unweighted three-axis profile floor is at least
+3/4 for every q>=34 and every common physical type. These constructions
+are stopped under this criterion; no generic-profile extrapolation is used.
 
-Focused verification and the frozen full default replay will be recorded
-at their exact source. No new Lean or independent mathematical review is
-claimed; the complete factoring exponent remains 1/2.
+The [full default replay](../evidence/color-parity-full-verification.json)
+passes at exact source `a879fd7dc54c6b6fa0041da6578148886f94efaa`
+(tree `7f3973f255cfd4d82db0970018214ff3148e2fe1`) in 1071.17 seconds,
+clean before and after. That source contained the valid, weaker 3/5
+certificate at q>=256. The integration follow-up merges main's separately
+verified trace and cumulant work, replaces that redundant polynomial
+checker with the unchanged earlier 50-coefficient scalar certificate,
+and supplies the stronger ordinary parity-sector argument. The original
+weaker checker and receipt remain accessible at the full source commit.
+The full default suite was not repeated after this follow-up; its changed
+Make recipe, retained structural controls and links receive focused replay.
+
+The structural replay verifies 1728 endpoint, 3816 zero-coupling and 108
+minor identities and the asymmetric monomial control. The scalar checker
+reconstructs all 50 Newton coefficients and 80 additional coefficient
+controls. No new Lean or independent mathematical review; complete alpha
+remains 1/2.
+
+## Sol worker 1 connected-event criterion, base `af12893`
+
+The [ordinary proof](../research/connected-event-window-criterion.md) derives
+a finite-order empty-window bound from factorial cumulant estimates, with
+the repeated-index identity, a sufficient tree-summability mechanism and
+the complete conditional factoring invoice explicit. The arithmetic
+cumulant/tree estimates and coverage of actual target indices are unproved.
+No new Lean, independent mathematical review or complete score change.
+
+`make verify-event-cumulant-windows verify-docs` passes, including the
+existing event/group/row prerequisite. The new checker uses exact rational
+controls, a clustered negative case and saved generator-5/7 event flags;
+it performs no fresh arithmetic walk. Its
+[receipt](../evidence/event-cumulant-windows.json) states the insufficient
+mean count on both saved cycles. The [full default replay](../evidence/event-cumulant-full-verification.json)
+passes at exact `0a478fbead58c99a7500125536322f7ba23f241f` in 951.55 seconds,
+with clean tracked state before and after. Credit remains with the upstream
+event/density/moment contributions, saved data, and cited classical
+cumulant methods; this is a conditional research interface.
 
 ## Fixed noncommuting nilpotent Gram crossing
 
@@ -1924,3 +1954,33 @@ to the full source pin; later main results are outside that replay.
 The pointwise known-division circuit and ordinary surjectivity proof do
 not supply a fast contractor. No new Lean, independent mathematical
 review or stronger complete factoring score is claimed.
+
+## One half-width trace and a cofactor inverse
+
+Sol worker 2, base `af12893`: the [unary reduction](../research/one-trace-inverse-words.md)
+retains the preceding Witt-trace/known-division construction and credit,
+replaces the second input by a division-free odd inverse polynomial,
+and proves the required no-wrap equivalence. Its count consumer handles
+every N>=2 with at most ceil(bits(N)/2)+1 conditional queries; ring,
+precision and bit costs are charged against the original input width.
+The uniform count contractor is still missing, so no stronger complete
+factoring bound follows.
+
+The [source-pinned finite receipt](../evidence/one-trace-inverse-word-controls.json)
+contains 511 inverse controls, 50,694 scalar pointwise queries, one
+complete 512-point measured trace domain, 3,423 prefix-count queries
+and 132 scalar minimum-factor recoveries. Unequal fibre multiplicities,
+the wrapped-product false positive, high trace digits, even-input
+adaptation and 40-/60-/128-bit supplied scalar factors are included.
+`make verify-one-trace-inverse-words` is the focused replay and passed.
+The [full default receipt](../evidence/one-trace-inverse-full-verification.json)
+and [complete compressed log](../evidence/one-trace-inverse-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean source
+`2a09eb7a75761fc249cace3dd0c311b70085fc64`, tree
+`593e90864892be8c30c986dbcc6e186ad0e5ba2a`, in 961.27 seconds,
+clean before and after. Current-main integration retains PR90 and both
+research-index entries; that later combined tree was not fully replayed.
+The unary implementation, checker and imported sources are byte-identical
+to the frozen source. This is an author-checked ordinary
+reduction and finite implementation evidence, not independent mathematical
+review, a fast count, new Lean work or a score improvement.

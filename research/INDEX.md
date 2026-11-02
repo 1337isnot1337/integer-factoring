@@ -1,6 +1,10 @@
 # Research index
 
-- [Color parity obstructs large one-hot cube profiles](color-distinct-sector-obstruction.md): closed 24-dimensional sectors and a shared complementary minor give a pressure floor 3/5 for every homogeneous antipodal tensor preserving separate color parity, all q>=256, every field and common physical type, in the common-scale unweighted three-axis profile method. Exact integer parameter coefficients prove the entire alphabet range; no score change.
+- [Color parity obstructs large one-hot cube profiles](color-distinct-sector-obstruction.md): closed odd-color sectors and the existing scalar polynomial certificate give a pressure floor 3/4 for every homogeneous antipodal tensor preserving separate color parity, all q>=34, every field and common physical type, in the common-scale unweighted three-axis profile method. This extends the scalar-clone floor to arbitrary parity-preserving tensors; no score change.
+
+- [One half-width trace and a modular-inverse interval test](one-trace-inverse-words.md): one candidate input determines its cofactor through a polynomial inverse; a no-wrap range test gives a complete conditional smallest-factor reduction with charged field, precision, exact divisions and bit costs. The uniform contractor remains open; no score change.
+
+- [Connected event correlations and a finite-order window criterion](connected-event-window-criterion.md): factorial bounds on aggregate cumulants through twice the logarithm of a period bound imply a window linear in inverse event density and the correlation scale. A tree estimate is sufficient but unproved arithmetically; exact saved-event controls neither certify it nor change the complete bound.
 
 - [Fixed nilpotent Gram crossings](nilpotent-gram-crossing.md): a canonical noncommuting flag gives a degree-12 seven-letter tensor with the flip endpoint and both cold ranks one. Its unchanged row profile alone forces pressure above 345 at every pair of places over every finite coefficient extension; the fixed test is stopped.
 

@@ -1,0 +1,16 @@
+{
+  "source_commit": "0a478fbead58c99a7500125536322f7ba23f241f",
+  "source_tree": "096d238f06d0a2914f6cf71946a500c09db7fc80",
+  "command": [
+    "make",
+    "verify"
+  ],
+  "tracked_state_before": "",
+  "exit_code": 0,
+  "seconds": 951.5490530370007,
+  "tracked_state_after": "",
+  "scope": "Default non-Lean verification at exact frozen source; no independent mathematical review.",
+  "stdout_sha256": "b26f55cda7a9c05f5f84f75ffca090ef9d3bc20b73c1ef0265d7acc6ace78cb6",
+  "stdout_archive": "evidence/event-cumulant-full-verification.stdout.txt.xz",
+  "archive_sha256": "075b29d2e345af9b9cad6a6d3c327463dd988524563d1aea70e4a7a4d32ff06d"
+}

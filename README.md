@@ -37,6 +37,8 @@ The [Fourier window analysis](research/window-orbit-normalization.md) separates 
 
 An [even-product density theorem](research/small-index-smooth-density.md) now proves original smooth density at least `exp(-O(b/log b))` on every subgroup of index at most `D^kappa`, for fixed `kappa<1/4`, under the principal split-prime estimate. With the full pinned character estimate, every coset is covered for `kappa<1/64`. Covered prime orbits inherit row-change density at the same scale. Actual target indices and short-window moments remain open.
 
+A [connected-event criterion](research/connected-event-window-criterion.md) gives an explicit window linear in inverse event density, a cumulant scale, and the logarithm of a period bound, conditional on factorial cumulant estimates through that order. The arithmetic estimates and uncovered target indices remain open; saved-cycle controls do not certify the criterion or a stronger complete bound.
+
 A [pooled-rank alternative](research/clustered-hits-and-pooled-rank.md) can certify enough relations before every target prime has a smooth hit. Fixed integer rows repeat at most `2K_p-1` times, but different rows need not be independent. The finite pool uses more total probes in the checked example; a uniform rank-window bound remains open.
 
 [Character-lift guards](research/power-character-lift-guards.md) explain one finite rank stall exactly and certify long rough gaps. The existing constant-bias hypothesis defeats this specific obstruction on sufficiently large valid bases; it still supplies no quantitative rank window.
@@ -49,13 +51,15 @@ A [confluent seven-letter quantum-spin construction](research/confluent-quantum-
 
 A [noncommuting nilpotent Gram test](research/nilpotent-gram-crossing.md) also preserves the endpoint and both cold ranks one, but its row Smith profile forces pressure above the required threshold over every finite coefficient extension. This fixed construction is stopped.
 
-A [color-parity sector theorem](research/color-distinct-sector-obstruction.md) excludes every homogeneous antipodal cube retaining separate color parity at `q>=256`, over every field: its common-scale, unweighted three-axis profile pressure is at least `3/5>1/sqrt(3)` for every common physical type. This includes the one-hot Gaussian. Closed blocks and a shared complementary minor prove the bound without a generic profile computation; changing Gaussian weights while preserving color parity cannot escape it.
+A [color-parity sector theorem](research/color-distinct-sector-obstruction.md) excludes every homogeneous antipodal cube retaining separate color parity at `q>=34`, over every field: its common-scale, unweighted three-axis profile pressure is at least `3/4>1/sqrt(3)` for every common physical type. This includes the one-hot Gaussian. Closed odd-color sectors and the existing scalar polynomial certificate prove the bound without a generic profile computation; changing Gaussian weights while preserving color parity cannot escape it.
 
 For the fixed two-word audit family, an [all-block functional profile](research/cube-global-functional-profile.md) also excludes repairing globally favorable common-orientation products by scalar reweighting. A [recombination-before-orientation check](research/recombination-before-orientation.md) finds that the unique recombination of the 22 pieces sent to E4 by a fixed pairing has width sum 12, above the 5/8 budget; endpoint restoration is possible only at effective rho=1. Larger native alphabets, other families and coupled blocks remain open.
 
 An [exact residue-system backend](research/precision-efficient-residue-indicators.md#5-implemented-compilers-and-the-system-count-bound) retains counts at growing 2-adic precision and handles collected unit inverses. A complete integer factoring query within that polynomial interface remains open.
 
 A [Witt-trace word interface](research/witt-trace-native-word-circuits.md) gives a complete two-input factor/prefix predicate using explicitly charged exact divisions. Fast contraction of that extended circuit family remains open; the polynomial carry backend does not supply it.
+
+A [one-trace inverse predicate](research/one-trace-inverse-words.md) determines the cofactor from one half-width candidate, with a division-free inverse polynomial and a certified no-wrap interval test. It preserves the complete smallest-factor reduction and charges all precision; a fast contractor remains open.
 
 A [divided-power extension](research/divided-power-trace-lifting.md) handles polynomial trace constraints at growing precision, with its coefficient-algebra size charged explicitly. An [Artin--Hasse alternative](research/artin-hasse-trace-projection.md) uses classical binary characters and charges extra precision for Fourier projection. Both provide exact counts for their represented input class; a complete factoring representation remains open.
 

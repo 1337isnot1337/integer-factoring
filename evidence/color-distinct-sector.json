@@ -1,5 +1,5 @@
 {
-  "scope": "Gaussian direct-sector controls, an asymmetric parity-preserving control, and a uniform integer pressure certificate supporting the ordinary shared-sector theorem. No exhaustive tensor verification, specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.",
+  "scope": "Gaussian direct-sector controls and an asymmetric parity-preserving control supporting the ordinary parity-sector theorem, which reuses the separately replayed scalar polynomial certificate. No exhaustive tensor verification, specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.",
   "original_color_checkpoint": "1772970a7dbaab83eeb0607014a1111e46718d86",
   "axes": [
     {
@@ -28,25 +28,16 @@
     }
   ],
   "certificate": {
-    "base_nonzero_colors": 255,
-    "degree_in_parameter": 20,
-    "degree_in_s": 120,
-    "divided_power": 6,
-    "mobius_degree": 114,
-    "coefficients_checked": 2415,
-    "independent_polynomial_identity_checks": 3,
-    "constant_parameter_min": 10152345600,
-    "nonnegative_coefficients": 2415,
-    "coefficient_sha256": "4e9f69651738e2bb8218d3af45d365886017b3595e06baa74496902610dd72a4",
+    "source": "tools/check_cube_scalar_color_clone_floor.py",
+    "source_sha256": "c84950243fa0a2d8402844ecc56a80f81bdb49f29ac07397173b97a0791eed15",
+    "replayed_by": "make verify-color-distinct-sector",
+    "newton_coefficients": 50,
+    "minimum_q": 34,
     "rho_floor": [
       3,
-      5
+      4
     ],
-    "threshold_check": {
-      "left": 27,
-      "right": 25
-    },
-    "scope": "All integer q>=256, every coefficient field, all common physical types, common-scale unweighted three-axis Smith-profile pressure for homogeneous antipodal tensors preserving each color parity."
+    "scope": "Existing polynomial certificate reused by the ordinary parity-sector theorem; run the Make target for both certificate and structural controls."
   },
   "asymmetric_control": {
     "q": 5,
