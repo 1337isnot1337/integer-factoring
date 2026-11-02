@@ -1,5 +1,50 @@
 # Contribution review and disposition ledger
 
+## Bijective trace-dual candidate counts
+
+The [ordinary coordinate-word construction](../research/trace-dual-native-counts.md)
+replaces the nonuniform native scalar trace by a trace-dual basis of a
+degree ceil(b/2)-1 field. It retains one Teichmuller summation input,
+uses that many coordinate traces, fixes the candidate's odd bit, and
+keeps the predecessor's certified no-wrap inverse test. Unweighted counts
+after completed trial division through 2^t fit K=min(d,ceil(b/t)) output
+bits; a polynomial Boolean bit-serial division computes the cofactor with
+starting precision K and no exact-halving gates.
+The count consumer performs the pretest before relying on this precision.
+
+The [source-pinned receipt](../evidence/coordinate-inverse-word-controls.json)
+records 126 complete field-coordinate bijections in six even/odd-degree
+models, 1764 actual lifted pointwise controls, and 67 complete finite
+count/minimum recoveries. Separate modular-inversion controls check the
+division-free Boolean circuit. The false-roughness guard shows a positive count
+wrapping to zero if the pretest is omitted; the consumer finds the factor
+before making that invalid query. The finite count oracle enumerates its
+domain and supplies no fast contractor. The [full default replay](../evidence/coordinate-word-full-verification.json)
+and [complete compressed log](../evidence/coordinate-word-full-verification.stdout.txt.xz)
+record exit-zero make verify at clean frozen
+`e764b055dff1d6bf6f7b52e995b2694314618af7`, tree
+`281a9f4f92320b504b9815bb852b94d73c95e544`, in 1214.86 seconds.
+A fresh marker probe verified private /tmp and a different mount namespace;
+the host root was read-only, only the frozen checkout was writable and
+network was unshared. Tracked state stayed clean. The
+[initial interrupted attempt](../evidence/coordinate-word-full-interrupted.json)
+and its [log](../evidence/coordinate-word-full-interrupted.stdout.txt.xz)
+are archived separately: its exec session ended143/SIGTERM before a final
+wrapper receipt, without a recorded checker failure. It is not a pass.
+The detached restart supplied the complete result above. Later archival
+and integration prose has focused checks, without another full replay.
+
+Sol worker 1's [scoped inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362216)
+and Sol worker 2's [separate inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362256)
+at that exact frozen source found no missing condition in trace duality,
+Teichmuller repeated-squaring traces, polynomial borrow and the residual
+invariant, no-wrap test, and trial-certified precision. Neither rederived
+all imported field/ring/Hermite primitives or implemented the circuit sum.
+These are scoped ordinary source inspections, not full independent
+rederivations. Hosted checks also passed at the same source in
+[run41539671079](https://github.com/1337isnot1337/integer-factoring/actions/runs/41539671079).
+No new Lean or score improvement is claimed.
+
 ## Always-positive deep-root projection
 
 Sol worker 2, base `7217aab`: the [ordinary reduction](../research/deep-class-root-projection.md)

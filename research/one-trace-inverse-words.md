@@ -24,6 +24,14 @@ this particular unary modular-inverse predicate has an evaluator that
 preserves its structure across the explicitly admitted exact divisions.
 The present polynomial carry compiler does not provide one.
 
+The later [trace-dual coordinate construction](trace-dual-native-counts.md)
+keeps this inverse/no-wrap test and replaces the nonuniform word map by
+a bijection onto odd candidates. It uses several coordinate traces of one
+Teichmuller input, permits trial-certified smaller unweighted count
+precision, and replaces inverse-bit extraction by polynomial Boolean gates
+with no exact halvings. It supplies no fast circuit contractor and does
+not change this note's original fibre-weighted query or evidence.
+
 ## 1. Determine a cofactor from one smaller candidate
 
 Let N>=3 be odd, b=bits(N), and put

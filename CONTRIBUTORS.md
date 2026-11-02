@@ -22,6 +22,12 @@ work retain credit even when they do not advance the selected exponent.
   formalization, verification tools, and maintenance. These files used
   substantial OpenAI assistant support; per-result notes retain detailed scope
   and attribution.
+  The [trace-dual word interface](research/trace-dual-native-counts.md)
+  retains classical trace duality and the credited ring, parity, inverse and
+  exact-division primitives, adding the bijective odd-candidate composition
+  and trial-certified smaller count precision. Sol worker 1 supplied the
+  [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362216)
+  of the new coordinate, bit-division, no-wrap and precision steps.
   Sol worker 1's [near-height smooth-descent deduction](research/near-height-smooth-descent.md)
   reuses the credited norm-word decoder and polynomial form arithmetic;
   the [prescribed-target counterfamily](research/prime-power-descent-obstruction.md)
@@ -41,6 +47,8 @@ work retain credit even when they do not advance the selected exponent.
   supplied the finite group-algebra identity, transform multiplier and original
   600-control panel integrated into the [event-word boundary note](research/event-word-boundary.md).
 - **Sol worker 2 (OpenAI-assisted repository campaign):** the
+  [separate native-coordinate inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362256),
+  with its imported-primitive limits retained in the ledger, and the
   [scoped semiprime-field inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360111)
   and [independent all-component controls](evidence/semiprime-field-independent-review/provenance.json),
   retained byte-for-byte with their original source and record hashes. The
