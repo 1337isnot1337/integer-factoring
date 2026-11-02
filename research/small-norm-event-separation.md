@@ -40,6 +40,11 @@ success; truncation defines an auxiliary flag for the proof.
 
 ## 1. A nonzero principal word has norm at least D/4
 
+Use the weighted relation-lattice gap already recorded in
+[orda-aska's graph/lattice note, Lemma 1](leading-power-window-graphs.md#1-the-graph-and-the-lattice),
+source `a427442`, with the later unramified-base scope repairs. The argument
+is reproduced here to make the hypotheses of the event deduction explicit.
+
 Fix one orientation `P_q` for each unramified split rational prime `q`
 in the factor base. Let `w` be a nonzero integral vector satisfying
 `prod_q [P_q]^(w_q)=1` in the proper ideal class group. Then
@@ -233,7 +238,8 @@ In addition, the actual target indices remain unknown. These are the next
 substantial obligations; optimizing this polynomial separation length
 alone cannot justify a complete factoring improvement.
 
-Credit: the primitive short-product/injectivity argument in PR87, PR82's
+Credit: orda-aska's graph/lattice Lemma 1, the primitive
+short-product/injectivity argument in PR87, PR82's
 row-change construction and density bridge, and the saved selector/Grok
 data. The principal-ideal norm gap is classical; this note records its
 specific event-correlation consequence and density tradeoff. Substantial

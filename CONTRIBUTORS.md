@@ -44,6 +44,10 @@ work retain credit even when they do not advance the selected exponent.
   arithmetic experiments in [PR #75](https://github.com/1337isnot1337/integer-factoring/pull/75),
   with Grok Bot assistance disclosed in the source. The integration retains
   that credit and data, with explicit domain and quantifier repairs.
+  The [graph/lattice follow-up](research/leading-power-window-graphs.md),
+  source [`a427442`](https://github.com/1337isnot1337/integer-factoring/commit/a427442),
+  supplies the weighted principal-word norm gap and injective-ball lemma
+  used by the later event-separation and word-boundary deductions.
 
 The [research index](research/INDEX.md), individual PRs, and
 [review ledger](docs/REVIEW_LEDGER.md) retain the provenance and status of
