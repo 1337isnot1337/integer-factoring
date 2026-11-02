@@ -144,17 +144,18 @@ overhead. This is a conditional complete-cost transfer, not a new bound.
 
 ## 4. A known boundary norm need not descend
 
-Let `m=2^k`, and choose an odd prime `a` in `(m/4,m/2)`. Bertrand's
-postulate supplies such an `a` for all sufficiently large `k`. Set
+Fix any prime `p`, let `m=p^k`, and choose an odd prime `a` in
+`(m/4,m/2)`. Bertrand's postulate supplies such an `a` for all
+sufficiently large `k`. Set
 
 ```math
 \Delta=1-4ma,\qquad D=4ma-1,\qquad Q=(a,-1,m).
 ```
 
-This is a primitive strict reduced form; `2` is unramified and split.
+This is a primitive strict reduced form; `p` is unramified and split.
 The oriented norm-`m` form `(m,1,a)` reduces to `Q`, so
-`Q=red(g_2^k)` for the norm-two orientation with root one. Also
-`m/2<=floor(sqrt(D/3))<m`: this is exactly the first power used by
+`Q=red(g_p^k)` for the norm-`p` orientation with root one. Also
+`m/p<=m/2<=floor(sqrt(D/3))<m`: this is exactly the first power used by
 the original leading-power selector. The known vector `(0,1)` has norm
 `m` and is primitive.
 
@@ -187,7 +188,8 @@ It compares the exact intervals with an independent direct signed-box
 exhaustion, verifies known primitive norm witnesses, checks (1) and (4)
 after leading rejection, and replays every decoded word with polynomial
 ideal arithmetic. The [receipt](../evidence/near-height-smooth-descent.json)
-also contains four explicit first-power failures, using checked rough
+also contains five explicit first-power failures, including an odd-prime
+target, using checked rough
 coefficients; their primality is unnecessary for the finite controls.
 The 60-bit prime-seven target at exponent twelve has a rough leading
 coefficient and two smaller smooth primitive norms. These are finite

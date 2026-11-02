@@ -91,6 +91,11 @@ def compute():
         assert record['reduced_form'] == [rough, -1, cap]
         assert record['smaller_vectors'] == 1 and not record['smooth_successes']
         counterexamples.append(record)
+    odd = audit(-7451, 3, 4, 19, 1)  # m=81, a=23; the same obstruction at an odd prime.
+    assert least_power_above(3, isqrt(7451 // 3)) == 4
+    assert odd['reduced_form'] == [23, -1, 81]
+    assert odd['smaller_vectors'] == 1 and not odd['smooth_successes']
+    counterexamples.append(odd)
     assert any(c['smooth_successes'] and not c['leading_success'] for c in controls)
     sources = ['tools/near_height_smooth_descent.py', 'tools/check_near_height_smooth_descent.py']
     return dict(scope='Complete smaller-norm ellipses at fixed near-height prime powers; no uniform smooth-existence or score claim.',
@@ -107,4 +112,4 @@ if __name__ == '__main__':
         EXPECTED.write_text(json.dumps(result, indent=2) + '\n')
     else:
         assert result == json.loads(EXPECTED.read_text())
-    print(f"near-height descent: {len(result['controls'])} fixed targets and four exact first-power failures passed")
+    print(f"near-height descent: {len(result['controls'])} fixed targets and {len(result['first_power_counterexamples'])} exact first-power failures passed")

@@ -8,7 +8,7 @@ target-specific balance bound and complete ellipse-enumeration cost,
 with an explicit first-power counterfamily and a conditional factoring
 transfer. The new enumerator is checked against independent direct
 signed-box exhaustion on six fixed targets. Known primitive norm witnesses
-and all smaller smooth words replay exactly. Four finite first-power
+and all smaller smooth words replay exactly. Five finite first-power
 controls have no smaller smooth norm. The focused target and document
 links pass; a clean frozen full default replay will be recorded separately.
 The strict-descent existence input is unproved, and the counterfamily
