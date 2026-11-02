@@ -1,5 +1,33 @@
 # Contribution review and disposition ledger
 
+## Near-identity positive Fourier minorants for the raw selector
+
+The [ordinary note](../research/near-identity-positive-minorants.md) proves
+the exact Fejer identity and the sufficient stopping bound
+`K<=k<=(2K-1)D` from a positive Fourier minorant of the original success
+set with mean at least `1/D`. The existing raw selector needs to evaluate
+neither the minorant nor `D`. The conditional complete factoring transfer
+retains the inherited generator and extraction contracts. A sharp parity
+example shows that density alone does not provide the required minorant.
+The missing uniform arithmetic minorant is explicit; no stronger score is
+claimed. Classical Fourier/Turan and repository pair-kernel credits remain.
+
+This checkpoint changes prose only. Local links pass; no tests are added
+for the ordinary proof. A clean default replay of its combined code base
+will be recorded separately, including the runtime-stable guard receipt
+follow-up to PR80. No Lean or independent mathematical review is claimed.
+
+The [combined clean replay](../evidence/pathc-positive-minorant-full-verification.json)
+passes at `dd1b393235daa2c25f8529c0b3b405479d3be0aa`, tree
+`51e3efdfcd1f50303e56efcb1964b7eadf92e94e`, in 705.34 seconds:
+`make verify` and `make verify-power-character-lifts`, clean tracked state
+before and after. Its tools and evidence trees equal PR80 head
+`6b73781e8f6e52a9aabcbd69bc61df4e3460cee6`. The complete compressed log
+is archived. The subsequent one-sided spectral corollary changes prose
+only; links are rechecked. An isolated full arithmetic regeneration and
+both certificate replays also pass after runtime fields change, with its
+log archived in the same receipt. No numerical LP optimum is claimed.
+
 ## Path C character-lift guards and the constant-bias limit
 
 Based on integrated PR79 at `55f6c597b7f5949673c18d8d7b6321af9130befc`.
