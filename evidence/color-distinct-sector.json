@@ -1,5 +1,5 @@
 {
-  "scope": "Generic direct-sector and complementary-minor identities plus a uniform integer pressure certificate. No specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.",
+  "scope": "Gaussian direct-sector controls, an asymmetric parity-preserving control, and a uniform integer pressure certificate supporting the ordinary shared-sector theorem. No exhaustive tensor verification, specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.",
   "original_color_checkpoint": "1772970a7dbaab83eeb0607014a1111e46718d86",
   "axes": [
     {
@@ -46,7 +46,17 @@
       "left": 27,
       "right": 25
     },
-    "scope": "All integer q>=256, all common physical types, common-scale unweighted three-axis Smith-profile pressure."
+    "scope": "All integer q>=256, every coefficient field, all common physical types, common-scale unweighted three-axis Smith-profile pressure for homogeneous antipodal tensors preserving each color parity."
+  },
+  "asymmetric_control": {
+    "q": 5,
+    "side_words_checked": 625,
+    "t": [
+      1,
+      2
+    ],
+    "single_axis_bound_fails": true,
+    "geometric_mean_bound_passes": true
   },
   "kernel_source_sha256": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
 }

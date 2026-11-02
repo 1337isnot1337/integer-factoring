@@ -13,10 +13,14 @@ the ternary orders through six, and saved graded comparisons. The larger
 specialized screens were not independently rerun.
 
 The new [generic proof](../research/color-distinct-sector-obstruction.md)
-uses exact closed distinct-color sectors and a complementary minor. Its
+uses exact closed distinct-color sectors and a shared complementary minor.
+The ordinary proof only needs homogeneous degree three per occupied
+vertex, the antipodal endpoint and separate even parity of every color,
+over any field; Gaussian factorization is unnecessary. Its
 replay verifies 1728 endpoint, 3816 zero-coupling and 108 minor identities,
-then checks 2415 nonnegative integer coefficients and three rational
-identity controls. This proves the stated pressure floor 3/5 for every
+then checks 2415 nonnegative integer coefficients, three rational
+identity controls and an asymmetric monomial tensor demonstrating why
+the general conclusion uses an averaged partition bound. This proves the stated pressure floor 3/5 for every
 q>=256 and every common physical type in the common-scale unweighted
 three-axis profile method. The large one-hot family is stopped there;
 no complete generic profile or specialized extrapolation is used.

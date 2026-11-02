@@ -1,22 +1,31 @@
-# Distinct-color sectors obstruct the large one-hot Gaussian cube
+# Color parity obstructs large one-hot cube profiles
 
 ## Result and scope
 
-The one-hot color-class Gaussian cube has a generic profile obstruction
-at every physical alphabet size `q>=256`. For its **common-scale,
-unweighted three-axis Smith-profile criterion with a common physical
-type**, the pressure coefficient satisfies
+Let a polynomial cube tensor over any field have one vacuum and
+`d=q-1` nonvacuum colors. Assume:
+
+- Each entry has homogeneous degree three times its number of nonvacuum
+  vertex labels.
+- At `(1,1,1)` the tensor is antipodal equality.
+- An entry vanishes whenever any individual nonzero color occurs an odd
+  number of times among its eight labels.
+
+For **every `q>=256`**, its common-scale, unweighted three-axis Smith-profile
+criterion with a common physical type has pressure coefficient
 
 ```math
 \rho_{\mathrm{prof}}\ge\frac35>\frac1{\sqrt3}.
 ```
 
-This excludes the proposed `q=256` instance and every larger alphabet
-in that method. It does not require the complete generic profile,
-a specialization extrapolation or a large matrix. These large-color
-instances are stopped. Smaller alphabets, physical types that differ between vertices,
-weighted gauges, actual coefficient ranks and other constructions are
-outside this theorem. The complete factoring exponent remains `1/2`.
+This excludes the proposed one-hot color-class Gaussian and every other
+tensor satisfying these hypotheses, over every field. It does not need
+Gaussian factorization, color-permutation symmetry, the complete generic
+profile, or a specialization extrapolation. Large-color constructions
+retaining separate color parity are stopped under this criterion.
+Smaller alphabets, physical types that differ between vertices, weighted
+gauges, actual coefficient ranks and tensors breaking a displayed hypothesis
+remain outside this theorem. The complete factoring exponent stays `1/2`.
 
 The construction and specialized controls are the original worker-4
 contribution, retained from commit
@@ -52,58 +61,99 @@ Smith orders and `0<t<1`. Two exact kernel identities are used:
 These follow directly from the displayed augmentation kernel and are
 rechecked symbolically in all axes by the replay.
 
-## 2. Four distinct colors give closed 24-dimensional blocks
+## 2. A shared-sector theorem beyond Gaussian kernels
 
 Fix a set `C` of four distinct nonzero colors. A row assigning those
-colors bijectively to the four vertices has a nonzero tensor entry only
-if the column uses exactly the same four colors, once each. Indeed,
-every color must have even total cardinality. Each row color already
-occurs once, and four column slots are needed to complete all four.
+colors bijectively to the four vertices has a nonzero entry only if the
+column uses exactly the same four colors, once each. Every color must
+have even total cardinality, and all four column slots are needed to
+complete the four row colors. The reverse coupling also vanishes.
 
-Consequently each color set gives a closed `24 by 24` direct summand,
-indexed by the permutations of `C`. Its entry is the product of the four
-kernel entries matching equal colors. Every entry has axis valuation
-at least eight, and the antipodal matching is exactly `k^4=x^8y^8z^8`.
-Its smallest Smith order is therefore eight. The block has a permutation
-endpoint, so all its orders are finite.
+Thus each color set gives a closed `24 by 24` direct summand in **each**
+axis cut, indexed by the permutations of `C`. Its endpoint is a permutation
+matrix, so its generic rank is 24. Let `m_(a,C)` be its smallest Smith
+order at axis `a`.
 
-There are `binom(d,4)` such independent summands. Their contribution to
-each partition function is at least `binom(d,4)t^8`.
-
-In the complementary summand, fix all but one antipodal pair to vacuum
-and allow that pair to carry either vacuum or one color. Its selected
-minor is exactly `diag(1,k I_d)`. It lies entirely outside the distinct
-four-color summands. Thus the complement has a unit order and the sum
-of its first `d+1` orders is at most `2d`. Convexity of `t^s` gives a
-complementary contribution at least `1+d t^2`. Adding the disjoint
-summands proves the generic bound
+Choose one tensor labeling that assigns the four colors to four antipodal
+pairs, and let `f_C(x,y,z)` be that entry. It has degree 24 and endpoint
+one, so it is nonzero. The same entry belongs to the `C` sector in every
+axis. Since the smallest Smith order is the minimum entry valuation,
 
 ```math
-\boxed{Z_a(t)\ge L_d(t):=1+d t^2+\binom d4 t^8}
+\sum_a m_{a,C}\le\sum_a\operatorname{ord}_a f_C\le24.
+                                                               \tag{1}
 ```
 
-for every axis. The block separation is literal in the physical basis;
-no coupled rank-preserving change of basis is assumed.
+The last inequality holds because the product of the three coordinate
+powers divides a nonzero polynomial of total degree 24. No equality or
+axis symmetry is assumed.
+
+The remaining rows and columns form a common complementary summand.
+Fix all but one antipodal pair to vacuum and let that pair be vacuum or
+one color. Parity makes the selected `(d+1) by (d+1)` minor diagonal:
+`diag(1,f_1,...,f_d)`, where each `f_c` has degree six and endpoint one.
+This is the **same physical minor** in all cuts, up to row/column order.
+If `r_(a,i)`, `i=0,...`, are ascending complementary Smith orders, its
+unit entry gives `r_(a,0)=0`. The minor valuation bound gives
+
+```math
+\sum_a\sum_{i=1}^d r_{a,i}
+ \le\sum_a\operatorname{ord}_a\prod_{c=1}^d f_c\le6d.
+                                                               \tag{2}
+```
+
+For a fixed axis, retain the first `d+1` complementary orders and one
+smallest order from each of the `binom(d,4)` closed sectors. They are
+disjoint channels. Apply convexity of log-sum-exp to the three vectors
+of retained orders. Then apply convexity of `t^s` to the `d` averaged
+nonunit complementary orders. Equations (1)--(2) yield
+
+```math
+\frac13\sum_a\log Z_a(t)
+ \ge\log\left(1+\sum_{i=1}^d t^{\bar r_i}
+                  +\sum_C t^{\bar m_C}\right)
+ \ge\log L_d(t),\qquad
+ L_d(t)=1+d t^2+\binom{d}{4}t^8,
+                                                               \tag{3}
+```
+
+where bars denote the three-axis averages and `0<t<1`. In particular,
+`sum_i bar(r_i)<=2d` and each `bar(m_C)<=8`. Direct sums let us retain
+these channels without assuming compatible Smith bases for different cuts.
+
+For the **Gaussian specialization**, the bound is stronger axis by axis:
+every cross-kernel entry has valuation at least two, while the antipodal
+entry is exactly `k=x^2y^2z^2`. A four-color sector entry is a product of
+four matching cross entries, with the antipodal one equal to `k^4`.
+Hence its smallest order is exactly eight in every axis, and the
+complementary minor is `diag(1,k I_d)`. Thus `Z_a(t)>=L_d(t)` separately.
+The general theorem needs only the averaged inequality (3).
+
+The asymmetric control `T(a)=x^(3w(a))*delta_antipodal(a)` illustrates
+why this distinction matters. It satisfies all general hypotheses, but
+at `q=5,t=1/2` its x-cut partition is smaller than `L_d(t)`; the geometric
+mean of all three cut partitions still obeys (3). The replay checks this
+exactly from the literal four-letter side words.
 
 ## 3. An exact pressure certificate for all d>=255
 
 For `d=255+r`, `r>=0`, define
 
 ```math
-A(r)=(r+252)(r+253)(r+254)(r+255)=24\binom d4
+A(r)=(r+252)(r+253)(r+254)(r+255)=24\binom{d}{4}
 ```
 
 and the integer polynomial
 
 ```math
-P(r,s)=(24+24d s^6+A(r)s^24)^5-24^5(1+d s^10)^12.
+P(r,s)=(24+24d s^6+A(r)s^{24})^5-24^5(1+d s^{10})^{12}.
 ```
 
 It has degree at most 20 in `r`, degree 120 in `s`, and is divisible by
 `s^6`. The checker forms the polynomial
 
 ```math
-F(r,u)=(1+u)^120 P(r,u/(1+u))/u^6.
+F(r,u)=(1+u)^{120} P(r,u/(1+u))/u^6.
 ```
 
 Its 2415 coefficients, in degrees `0..20` of `r` and `0..114` of `u`,
@@ -157,7 +207,7 @@ make verify-color-distinct-sector
 The [checker](../tools/check_color_distinct_sector.py) verifies 1728
 sector endpoint identities, 3816 zero-coupling identities and 108
 complementary-minor entries in the three formal variables, then proves
-the integer polynomial inequality. These constant-size checks support
+the integer polynomial inequality and replays the asymmetric control. These constant-size checks support
 the displayed general parity and minor arguments; they do not enumerate
 a `256^4` profile.
 
@@ -169,5 +219,6 @@ to cumulative counts through each order. Selected independent regression
 commands replayed the binary specialized profile, the ternary profile
 through order six, and the saved graded comparisons. The larger full
 specialized screens were retained with their original scope and were
-not rerun. The new generic obstruction does not use their numerical
-profile values. No new Lean or independent mathematical review is claimed.
+not rerun. The general parity theorem is the ordinary argument in section 2;
+the Gaussian identities are finite controls, not an exhaustive check of
+all tensors. The obstruction does not use the specialized profile values. No new Lean or independent mathematical review is claimed.

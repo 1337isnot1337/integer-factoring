@@ -168,7 +168,10 @@ proves that this one-hot construction has common-scale, unweighted
 three-axis profile pressure at least \(3/5>1/\sqrt3\) for **every
 \(q\ge256\)** and every common physical type. Large instances of this
 family are stopped under that criterion. No larger specialized matrix
-or complete generic profile is needed to reach this conclusion.
+or complete generic profile is needed to reach this conclusion. The same
+proof excludes every tensor with the same homogeneity and antipodal
+endpoint that preserves separate color parity, over any field; Gaussian
+factorization and color-permutation symmetry are unnecessary.
 
 The earlier statement that the 256-letter target had incompatible grading
 was incorrect: its 255 nonvacuum letters all have height one, exactly as

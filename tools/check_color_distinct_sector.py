@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generic distinct-color pressure obstruction, with no large-q matrix screen."""
+"""Controls and exact pressure certificate for the shared color-parity theorem."""
 import argparse
 from hashlib import sha256
 from fractions import Fraction
@@ -100,12 +100,22 @@ def pressure_certificate():
     assert all(v>=0 for row in transformed for v in row)
     assert min(transformed[0])>0
     assert 3*3**2>5**2
-    return dict(base_nonzero_colors=255,degree_in_parameter=20,degree_in_s=120,divided_power=6,mobius_degree=114,coefficients_checked=2415,independent_polynomial_identity_checks=3,constant_parameter_min=min(transformed[0]),nonnegative_coefficients=2415,coefficient_sha256=sha256(json.dumps(transformed,separators=(',',':')).encode()).hexdigest(),rho_floor=[3,5],threshold_check=dict(left=27,right=25),scope='All integer q>=256, all common physical types, common-scale unweighted three-axis Smith-profile pressure.')
+    return dict(base_nonzero_colors=255,degree_in_parameter=20,degree_in_s=120,divided_power=6,mobius_degree=114,coefficients_checked=2415,independent_polynomial_identity_checks=3,constant_parameter_min=min(transformed[0]),nonnegative_coefficients=2415,coefficient_sha256=sha256(json.dumps(transformed,separators=(',',':')).encode()).hexdigest(),rho_floor=[3,5],threshold_check=dict(left=27,right=25),scope='All integer q>=256, every coefficient field, all common physical types, common-scale unweighted three-axis Smith-profile pressure for homogeneous antipodal tensors preserving each color parity.')
+
+
+def asymmetric_control():
+    # The general theorem bounds the geometric mean; per-axis bounds need not hold.
+    q=5;d=q-1;t=Fraction(1,2)
+    orders=[6*sum(c!=0 for c in word) for word in product(range(q),repeat=4)]
+    zx=sum(t**s for s in orders);zy=zz=q**4
+    lower=1+d*t**2+comb(d,4)*t**8
+    assert zx==(1+d*t**6)**4 and zx<lower and zx*zy*zz>=lower**3
+    return dict(q=q,side_words_checked=len(orders),t=[1,2],single_axis_bound_fails=True,geometric_mean_bound_passes=True)
 
 
 def main():
-    controls=structural_control();certificate=pressure_certificate()
-    result=dict(scope='Generic direct-sector and complementary-minor identities plus a uniform integer pressure certificate. No specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.',original_color_checkpoint='1772970a7dbaab83eeb0607014a1111e46718d86',axes=controls,certificate=certificate,kernel_source_sha256=sha256(Path(cube.__file__).read_bytes()).hexdigest())
+    controls=structural_control();certificate=pressure_certificate();asymmetric=asymmetric_control()
+    result=dict(scope='Gaussian direct-sector controls, an asymmetric parity-preserving control, and a uniform integer pressure certificate supporting the ordinary shared-sector theorem. No exhaustive tensor verification, specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.',original_color_checkpoint='1772970a7dbaab83eeb0607014a1111e46718d86',axes=controls,certificate=certificate,asymmetric_control=asymmetric,kernel_source_sha256=sha256(Path(cube.__file__).read_bytes()).hexdigest())
     parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);args=parser.parse_args()
     if args.output:args.output.write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(dict(axes=len(controls),sector_endpoint_checks=sum(r['sector_endpoint_checks'] for r in controls),closed_sector_zero_checks=sum(r['closed_sector_zero_checks'] for r in controls),minor_checks=sum(r['complement_minor_checks'] for r in controls),coefficients_checked=2415,rho_floor=[3,5],minimum_q=256)))
