@@ -17,8 +17,15 @@ integer abstract profile passes the shared-minor/prefix budgets and the
 degree-four restored bound 4/7; this is explicitly not a profile of the
 constructed tensor. The preceding
 NumPy prototype agrees; the committed replay does not need NumPy.
-The degree-four restoration is explicit. Focused links and source checks,
-and any frozen default replay, will be recorded at their exact heads.
+The degree-four restoration is explicit. The default non-Lean `make verify`
+passed at clean frozen source `b1b85810d35a69513099917160192365bca3bd16`,
+tree `cd56e4f50292c303c0756f9b25b1fa4d3969ca0a`, in 950.82 seconds.
+The [receipt](../evidence/quartic-charge-full-verification.json) and
+[compressed stdout](../evidence/quartic-charge-full-verification.stdout.txt.xz)
+pin that replay. Its private temporary mount passed the marker-isolation
+control; this archive follow-up does not claim a second default replay.
+The earlier degree-five replay was intentionally stopped after 195.04 seconds
+when the lower-degree construction was verified; it is not a passed check.
 No new Lean or independent mathematical review is claimed; alpha stays 1/2.
 
 ## Sol worker 1 boundary representation and contributed Euler recurrence

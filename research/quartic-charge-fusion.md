@@ -229,3 +229,8 @@ No floating-point minimization or `4096^4` matrix is part of this receipt.
 an analytic higher-channel argument remains meaningful after charging the
 extra degree. A larger-alphabet matrix screen, or a substitution of this
 relaxation for the actual profile, would not resolve that question.
+
+The [frozen default replay](../evidence/quartic-charge-full-verification.json)
+passed at `b1b85810d35a69513099917160192365bca3bd16` in 950.82 seconds,
+with clean tracked state before and after. This verifies the recorded
+non-Lean checks; it is not independent mathematical review.
