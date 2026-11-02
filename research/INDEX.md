@@ -1663,3 +1663,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 - [Window lemma: graph and lattice view](leading-power-window-graphs.md): smooth set is bracketed by weighted-ℓ¹ ball images (Lemma 1), explaining small-p clustering and Fourier bias; expander, hitting-time, Bohr and flatness routes reduce to the known barriers; conditional IW derandomization remark.
 - [Multiplier treewidth and relation cycles](multiplier-treewidth-and-relation-cycles.md): a linear lower bound for the unfixed Boolean multiplication relation, with a corrected half-size odd variant. Fixed-target transfer requires unchanged output pins or specified simplicial-output deletions; arbitrary propagation and other representations remain open.
 - [Window-lemma character duality](window-lemma-character-duality.md): proved finite-group Fourier inequalities, with ramified relations quotiented and large coefficients distinguished from simultaneous phase closeness; complete orbit-relative mass estimates remain open.
+
+## q96 unequal-cut-scale screen
+
+[q96 unequal cut scales stay above one](q96-asymmetric-scale-screen.md): six complete 96-letter profiles are screened under the two-place asymmetric supporting-line criterion. The balanced calibration matches the certified or recorded natural pressures. The best interior support is `1.0037692355`, and the near-one values are a degenerate one-cut boundary layer rather than a fixed-aspect crossing. No exact certificate or score improvement.

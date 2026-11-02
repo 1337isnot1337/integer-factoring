@@ -3023,6 +3023,10 @@ verify-mixed-graph-retractions:
 verify-asymmetric-profile-bundle:
 	python3 tools/check_asymmetric_profile_bundle.py
 
+.PHONY: verify-q96-asymmetric-scale
+verify-q96-asymmetric-scale:
+	python3 tools/check_q96_asymmetric_scales.py --output /tmp/q96-asymmetric-scale-check.json
+
 .PHONY: verify-q12-reflection-graphs verify-q12-reflection-graphs-independent
 verify-q12-reflection-graphs:
 	python3 tools/check_q12_reflection_graphs.py
