@@ -56,11 +56,14 @@ This specializes the contributed adjugate construction one generator at
 a time, with one-row matrix `[2^L]`, determinant valuation L and root
 precision `B=2L`. It satisfies `B>=L+v_2(det R)`. Using the tautological
 matrix `[2^B]` would not satisfy that inequality and is not the argument.
+The [general certificate note](high-root-projection.md#guaranteed-positive-deep-roots-remove-row-selection)
+now records and credits this specialization. The all-input engine contract
+and complete polynomial invoice are given here.
 
 Each power in this proof is acquired by repeated squaring. Constructing h,
 verifying (2) and computing (3) costs O(L) group operations per generator.
 The parameter L is charged by value, even though its binary encoding is
-short. No exponent-sized string of `2^(2L)` bits is constructed.
+short. The powers are evaluated without expanding their values.
 
 ## 2. The arithmetic engine contract and all-input transfer
 
@@ -125,6 +128,15 @@ root class and its possible unhelpful twist unless a displayed gcd already
 factors N. Those results on unrestricted conic solubility and the known
 shallower root do not supply the deeper class root in (2).
 No new search or larger collision-frontier experiment is inferred here.
+
+The higher-dimensional action identity in
+[PEGASIS](https://r98inver.github.io/papers/2503_pegasis.pdf), Section 3.1,
+starts with ideals b,c already in a supplied class a. Its known
+composition uses the principal product `c conjugate(b)` to evaluate a's
+oriented action. It does not output a class whose large two-power is a.
+Thus this identity does not fill (2). This is an input/output distinction,
+not an obstruction to other orientation-preserving constructions; no
+implementation or norm-solver performance is imported here.
 
 This ordinary deduction specializes the contributed high-root formula
 and retains the predecessor credit for generation, group arithmetic and
