@@ -1,5 +1,7 @@
 # Research index
 
+- [Original smooth density from even prime products](small-index-smooth-density.md): a high-precision prime-color partition and one-sided product spectrum prove density exp(-O(b/log b)) on subgroups of index at most D^kappa, kappa<1/4, from the principal split-prime estimate. The full character estimate gives every coset for kappa<1/64. Actual target indices and hit gaps remain open.
+
 - [A uniform obstruction to ambient positive minorants](uniform-ambient-minorant-obstruction.md): an auxiliary split prime and unreduced product norm yield a missed low-bias translate in every large class group, under the pinned analytic input. Ambient mean is at most 2^(-b/64+o(b)), also with subexponential cofactor caps; original target-orbit hitting remains open.
 
 - [An arithmetic obstruction to ambient positive minorants](ambient-minorant-norm-gap.md): missed low-bias translates force exponentially small ambient means on a preprocessing-surviving semiprime family, under the pinned analytic input. The one-sided negative-spectrum repair is also excluded; target-subgroup certificates and original orbit hitting remain open.

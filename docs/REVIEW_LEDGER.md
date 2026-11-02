@@ -1,5 +1,31 @@
 # Contribution review and disposition ledger
 
+## Original smooth density from even prime products
+
+The [density theorem](../research/small-index-smooth-density.md) uses a
+high-precision simultaneous prime-color partition and an even norm budget.
+Real color-character averages approximate a common mean. Their product
+is nonnegative unless that mean is tiny, giving a one-sided Fourier bound
+-D^(-1/4+o(1)). Subgroup orthogonality then gives enough distinct original
+smooth classes at index at most D^kappa, fixed kappa<1/4, with density
+exp(-O(b/log b)). This uses the principal split-prime abundance estimate.
+With the full character estimate, every coset retains the smaller
+kappa<1/64 range. Actual target indices and hit-gap/moment bounds remain
+open; the complete factoring exponent stays 1/2.
+
+The focused checker tests 50625 raw tuples, all cosets of four quotient
+controls and eight genuinely negative product Fourier coefficients.
+Separately, 64 distinct arithmetic classes agree with a literal CRT
+construction. The uniform analytic input and partition proof are explicit,
+not inferred from finite data. The [full default replay](../evidence/small-index-smooth-density-full-verification.json)
+passes at exact source `eab8be2d2a9e5a4b1da1c4719db1503829c0a5dd`
+(tree `3c10bc497f52792ad68a0083cb6c8723450a346f`), in 751.46 seconds,
+clean before and after. The archive follow-up changes review prose and
+records, including a fixed-alpha cutoff corollary and exact index bounds
+23 and 150 on the two existing cycle controls. No checker or Makefile
+change is made. No new Lean or independent mathematical review is claimed.
+Existing prime-band, density and row-event credits are preserved.
+
 ## Uniform ambient-minorant norm gap
 
 The [uniform theorem](../research/uniform-ambient-minorant-obstruction.md)

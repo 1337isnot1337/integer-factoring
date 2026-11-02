@@ -3279,3 +3279,9 @@ verify-uniform-ambient-minorant-gap: verify-ambient-minorant-gap
 	python3 tools/check_uniform_ambient_minorant_gap.py --output /tmp/integer-factoring-uniform-ambient-minorant-gap.json
 
 verify-arithmetic: verify-uniform-ambient-minorant-gap
+
+.PHONY: verify-small-index-smooth-density
+verify-small-index-smooth-density:
+	python3 tools/check_small_index_smooth_density.py --output /tmp/integer-factoring-small-index-smooth-density.json
+
+verify-arithmetic: verify-small-index-smooth-density
