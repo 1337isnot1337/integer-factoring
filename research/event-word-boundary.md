@@ -344,3 +344,16 @@ are classical. The coordinated finite recurrence, Mellin multiplier and
 control code are credited to the linked Discussion #51 contribution.
 Developed with substantial OpenAI Codex assistance; no
 new Lean, independent mathematical review or score improvement claimed.
+
+The [frozen default replay](../evidence/event-word-boundary-full-verification.json)
+passes at exact source `ac6cd8c1dea8b6989eeaad14a674fc4f77bc3553` in
+1085.08 seconds, with clean tracked state before and after. The
+[complete compressed log](../evidence/event-word-boundary-full-verification.stdout.txt.xz)
+is archived. The later bounded-transport follow-up `df6c461` has a separate
+focused/docs replay; the full suite was not repeated for that follow-up.
+All full-suite temporary paths were private to its namespace.
+
+The [separately reported entry-tail sign error](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19357329)
+concerns two older moment helpers. This checker imports only their unchanged
+cyclic-count routine and uses its own event/fiber identities. The frozen
+code replay is not an endorsement of those older tail labels.

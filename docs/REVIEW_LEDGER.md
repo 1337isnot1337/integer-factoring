@@ -19,8 +19,10 @@ counterexample. No new large orbit or parameter search is run. The
 long-range arithmetic estimates and actual indices are still open; no
 complete score change, new Lean or independent mathematical review.
 `make verify-event-word-boundary verify-docs` passes, including all upstream
-event/group/row/cumulant/separation prerequisites. A frozen full default
-replay of this checkpoint is recorded separately when finished.
+event/group/row/cumulant/separation prerequisites. The [frozen full default replay](../evidence/event-word-boundary-full-verification.json)
+passes at exact `ac6cd8c1dea8b6989eeaad14a674fc4f77bc3553` in 1085.08 seconds,
+clean before and after, inside a private `/tmp` namespace. Its complete
+compressed log is archived. This is a code replay, not mathematical acceptance.
 The bounded-transport follow-up identifies a static, inversion-symmetric
 prime-free flag of exactly the same density. Its window counts differ
 from event counts by at most `floor(log_p R)`; fixed saved windows check
