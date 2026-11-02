@@ -3261,3 +3261,9 @@ verify-relation-change-events: verify-clustered-power-relations
 	python3 tools/check_relation_change_events.py
 
 verify-arithmetic: verify-relation-change-events
+
+.PHONY: verify-ambient-minorant-gap
+verify-ambient-minorant-gap:
+	python3 tools/check_ambient_minorant_gap.py --output /tmp/integer-factoring-ambient-minorant-gap.json
+
+verify-arithmetic: verify-ambient-minorant-gap
