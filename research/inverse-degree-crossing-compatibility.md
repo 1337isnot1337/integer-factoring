@@ -177,4 +177,7 @@ finite screen, endpoint and inverse controls use only exact F2 arithmetic.
 Remaining constructive routes include more general noncommuting pencils,
 nonmonomial determinant paths, additional physical gauges, and direct
 coefficient recombinations. A new candidate must satisfy inverse as well
-as determinant and shared-minor constraints.
+as determinant and shared-minor constraints. The
+[nearby asymmetric profile](seven-letter-asymmetric-profile.md) is one
+such feasible profile: it satisfies the inverse-degree bound and crosses
+the profile threshold, but it is not constructed algebraically.

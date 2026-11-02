@@ -722,6 +722,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Nine-letter quadratic-inverse probe](nine-letter-quadratic-inverse-probe.md): a general first-two-coefficient tradeoff and complete 31-path schedule, with every exact profile, 248 independent Toeplitz controls and all-scale exclusions.
 - [Inverse-degree compatibility and noncommuting paths](inverse-degree-crossing-compatibility.md): a new cut constraint rules out the formal seven-letter optimum at all integer ramifications; a quadratic-inverse constructor supplies exact endpoints and a complete 5,005-path first-jet exclusion.
+- [A seven-letter asymmetric profile survives inverse-degree compatibility](seven-letter-asymmetric-profile.md): the formal q=7 optimizer is excluded, but a nearby profile with `nu_49=16` satisfies the inverse-degree bound and has exact `B(34/25)=244.848867...<7^{2sqrt2}`. This is a necessary Smith profile only; no algebraic crossing or score change is claimed.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
