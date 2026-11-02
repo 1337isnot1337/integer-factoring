@@ -243,6 +243,52 @@ indices and quantitative hit-window or moment bounds remain open.
 Density alone does not supply a short first-hit window, so no complete
 factoring improvement or new selection algorithm follows here.
 
+## Fixed higher logarithmic cutoffs
+
+The same proof is not restricted to the displayed cutoff. For any fixed
+`alpha>0`, take `Y=ceil(exp((log b)^(1+alpha)))`. Then `log Y=o(b)` and
+`log Y/log b` tends to infinity. The color tolerance still tends to zero,
+the Hoeffding exponent still dominates `b`, and both index thresholds
+retain their limits `1/4` and `1/64`. Equation (8) gives
+
+```math
+\frac{|S_Y\cap U|}{|U|}
+ >=\exp\left(-O_\alpha\left(\log^{1+alpha}b+
+                               \frac b{\log^\alpha b}\right)\right)
+ =\exp\left(-O_\alpha\left(\frac b{\log^\alpha b}\right)\right)
+```
+
+in the covered subgroup range, and likewise for covered cosets. The
+row-change density inherits this bound for covered prime orbits.
+This is a density theorem for each fixed `alpha`; actual subgroup-index
+and short-window bounds remain necessary for any complete score claim.
+
+## The saved cycle controls satisfy the index condition
+
+No ambient class number was certified by merely closing a target orbit.
+The elementary bound used above gives a sufficient index estimate without
+claiming index one. Since `3/pi<1` and `log D<7b/10`,
+
+```math
+|G|<\sqrt D(\log D+2)
+ <\lceil\sqrt D\rceil(7b+20)/10.
+```
+
+An element's exact period divides `|G|`, so divide the rounded-up right
+side by the saved period to bound the index. The two existing controls
+have bounds:
+
+| Discriminant | Period | Class-number upper bound | Subgroup-index upper bound |
+| --- | ---: | ---: | ---: |
+| `-450296711` | 20456 | 473229 | 23 |
+| `-1000036000099` | 198850 | 30000540 | 150 |
+
+The exact comparisons are `23^5=6436343<450296711` and
+`150^5=75937500000<1000036000099`, so both satisfy the index condition
+with `kappa=1/5`. This checks the index hypothesis for those saved orbits;
+it does not assert that their finite sizes exceed the uniform analytic
+threshold or establish any short-window moment bound.
+
 ## Exact controls and review scope
 
 ```sh
@@ -261,3 +307,9 @@ forms and rational quantities. Finite data do not establish the analytic
 input, simultaneous color partition or asymptotic theorem. Those
 ordinary proofs and external assumptions are stated explicitly;
 no new Lean or independent mathematical review is claimed.
+
+The [clean full default replay](../evidence/small-index-smooth-density-full-verification.json)
+passes at exact source `eab8be2d2a9e5a4b1da1c4719db1503829c0a5dd`
+(tree `3c10bc497f52792ad68a0083cb6c8723450a346f`), in 751.46 seconds.
+The archive follow-up changes review prose, the cutoff corollary and the
+separately checked index arithmetic; checker code and the Makefile are unchanged.

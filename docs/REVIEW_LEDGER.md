@@ -17,9 +17,14 @@ The focused checker tests 50625 raw tuples, all cosets of four quotient
 controls and eight genuinely negative product Fourier coefficients.
 Separately, 64 distinct arithmetic classes agree with a literal CRT
 construction. The uniform analytic input and partition proof are explicit,
-not inferred from finite data. Full default verification is pending;
-no new Lean or independent mathematical review is claimed. Existing
-prime-band, density and row-event credits are preserved.
+not inferred from finite data. The [full default replay](../evidence/small-index-smooth-density-full-verification.json)
+passes at exact source `eab8be2d2a9e5a4b1da1c4719db1503829c0a5dd`
+(tree `3c10bc497f52792ad68a0083cb6c8723450a346f`), in 751.46 seconds,
+clean before and after. The archive follow-up changes review prose and
+records, including a fixed-alpha cutoff corollary and exact index bounds
+23 and 150 on the two existing cycle controls. No checker or Makefile
+change is made. No new Lean or independent mathematical review is claimed.
+Existing prime-band, density and row-event credits are preserved.
 
 ## Uniform ambient-minorant norm gap
 

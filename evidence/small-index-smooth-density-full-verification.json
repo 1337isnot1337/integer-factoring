@@ -1,0 +1,33 @@
+{
+  "source_commit": "eab8be2d2a9e5a4b1da1c4719db1503829c0a5dd",
+  "source_tree": "3c10bc497f52792ad68a0083cb6c8723450a346f",
+  "command": [
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 751.4599298350076,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "scope": "Default non-Lean verification at the exact source commit; no independent mathematical review.",
+  "stdout_sha256": "f8e38acb7b2bbee8042c45eeff2ace200ba66f0da7073e65bc48deb0a786b220",
+  "stdout_archive": "evidence/small-index-smooth-density-full-verification.stdout.txt.xz",
+  "archive_sha256": "ba40696fce43d7af73748ceb543ee4d5c4c2e136f6e94405289fc6b72c8afec9",
+  "additional_integer_checks": [
+    {
+      "discriminant": -450296711,
+      "period": 20456,
+      "class_number_upper": 473229,
+      "index_upper": 23,
+      "index_upper_fifth_power": 6436343
+    },
+    {
+      "discriminant": -1000036000099,
+      "period": 198850,
+      "class_number_upper": 30000540,
+      "index_upper": 150,
+      "index_upper_fifth_power": 75937500000
+    }
+  ],
+  "archive_followup_scope": "Review prose, fixed-alpha cutoff corollary and existing-control index arithmetic only; no checker or Makefile change."
+}
