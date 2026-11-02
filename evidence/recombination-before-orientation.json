@@ -1,0 +1,107 @@
+{
+  "budget_exceeded": true,
+  "coefficient_pieces": 22,
+  "effective_rho": "1",
+  "exact_cut_ranks": [
+    16,
+    16,
+    16
+  ],
+  "exact_cut_widths": [
+    4,
+    4,
+    4
+  ],
+  "factoring_exponent_improved": false,
+  "family": "m=5, weight 1, Q={00001,00010}",
+  "favorable_dual_on_endpoint": 1,
+  "favorable_dual_on_recombination": 1,
+  "fixed_pairing_positive_controls": {
+    "(0, 1)": true,
+    "(0, 2)": true,
+    "(1, 2)": true
+  },
+  "gaussian_width_budget": "15/2",
+  "per_cut_cap": 4,
+  "preimages_coincide": true,
+  "recombination_exponents": [
+    [
+      0,
+      0,
+      24
+    ],
+    [
+      0,
+      12,
+      12
+    ],
+    [
+      0,
+      18,
+      6
+    ],
+    [
+      0,
+      24,
+      0
+    ],
+    [
+      6,
+      0,
+      18
+    ],
+    [
+      6,
+      6,
+      12
+    ],
+    [
+      6,
+      18,
+      0
+    ],
+    [
+      8,
+      8,
+      8
+    ],
+    [
+      12,
+      0,
+      12
+    ],
+    [
+      12,
+      12,
+      0
+    ],
+    [
+      24,
+      0,
+      0
+    ]
+  ],
+  "recombination_piece_count": 11,
+  "recombination_piece_indices": [
+    0,
+    2,
+    3,
+    4,
+    8,
+    9,
+    11,
+    12,
+    15,
+    17,
+    21
+  ],
+  "recombination_truth_bits": "0x8000008008000008200000200200000240000040040000041000001001000001",
+  "scope": "Fixed 22-piece single-block Gaussian family only. Every recombination restored to E4 by one fixed parent pairing is this full-rank recombination, which leaves the 5/8 width regime. Larger alphabets, other families, coupled blocks and a new adaptive identity remain open.",
+  "source_sha256": {
+    "check_cube_favorable_reweighting.py": "7a8e113b82e6e38b8cfa9c52b83b2a70e242888bcdf8686c4456ea8ec5a99eec",
+    "check_recombination_before_orientation.py": "28418f6223393101cf00178ad29fe2bca80b2667c717e35cf28b5db316666357",
+    "check_two_axis_global_pairing.py": "4dbbcb8ac8cacd440138724301e42f5bfa05d6af60b8c0273d5b2fbd7eb56114",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  },
+  "width_sum": 12
+}

@@ -3195,6 +3195,10 @@ verify-quartic-weighted-run:
 verify-cube-favorable-reweighting:
 	python3 tools/check_cube_favorable_reweighting.py
 
+.PHONY: verify-recombination-before-orientation
+verify-recombination-before-orientation:
+	PYTHONPATH=tools python3 tools/check_recombination_before_orientation.py
+
 .PHONY: verify-cube-global-functional-profile
 verify-cube-global-functional-profile:
 	python3 tools/check_cube_global_functional_profile.py
