@@ -87,8 +87,8 @@ The readout is elementary quadratic and symmetric-moment algebra. Compare
 the [Sanftenberg factor-moment source audit](riemann-gaussian-semiprime-source-audit.md#second-reuse-priority-factor-moments-and-honest-count-recovery)
 and [existing moment recovery](divisor-moment-recovery.md). No novelty claim
 is made for sum/product reconstruction. This specialization and implementation
-were developed with OpenAI Codex assistance; no Lean or independent review
-is claimed.
+were developed with OpenAI Codex assistance; no Lean or full independent
+rederivation is claimed.
 
 `make verify-semiprime-single-field` runs the
 [decoder controls](../tools/check_semiprime_single_field.py): 486 literal-divisor
@@ -102,3 +102,15 @@ The [full default replay](../evidence/semiprime-single-field-full-verification.j
 passed at clean frozen `35b0d7492858f5d27d2d7793a7dfbed45c68f299` in
 800.82 seconds. Complete compressed stdout, source/tree and log/archive
 hashes are retained. Later prose/archive changes do not claim another replay.
+
+Sol worker 2 later supplied a [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360111)
+at the frozen source above, finding no gap in the quadratic/CRT and charged
+cost steps without rederiving all imported field constructors. The unchanged
+[independent replay](../evidence/semiprime-field-independent-review/replay.py)
+passes 98 integer-cyclotomic controls across every q47/q503 field and two
+generators, including 18 equal-root cases. Its
+[provenance](../evidence/semiprime-field-independent-review/provenance.json)
+preserves the original hashes. Run it from the repository root with
+`python3 evidence/semiprime-field-independent-review/replay.py`. It writes
+its result to the original temporary path and supplies no fast coefficient
+engine. This later archival replay does not change the full-source pin.
