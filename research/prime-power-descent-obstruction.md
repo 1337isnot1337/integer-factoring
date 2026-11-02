@@ -52,6 +52,13 @@ the cutoff inside this scope is not a continuation. Further work needs
 collective or adaptive targets, another source of relations, or a different
 arithmetic representation.
 
+A subsequent [classical-sieve extension](full-trial-sieve-obstruction.md)
+replaces condition (2) by `log Z=o(log D)`, covering every subexponential
+trial-division cutoff, including full positive-score trial budgets. The
+elementary proof here and its narrower source scope are retained. The
+extension still excludes no adaptive/collective targets or arbitrary
+preprocessing of the same cost.
+
 ## 1. A rigid prime-power target at any near-height ratio
 
 Let `m=3^k` and `1<a<m`. Set
