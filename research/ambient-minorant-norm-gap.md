@@ -1,5 +1,11 @@
 # An arithmetic obstruction to uniformly large ambient positive minorants
 
+**Strengthened result.** The [uniform norm-gap theorem](uniform-ambient-minorant-obstruction.md)
+now applies to every sufficiently large order discriminant and gives
+`tau<=2^(-b/64+o(b))`, including subexponential cofactor caps. It removes
+the special-family and least-prime construction below. The semiprime
+proof and exact controls are retained as a valid earlier checkpoint.
+
 ## Result and scope
 
 The [near-identity criterion](near-identity-positive-minorants.md) is a valid

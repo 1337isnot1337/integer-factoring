@@ -1,5 +1,26 @@
 # Contribution review and disposition ledger
 
+## Uniform ambient-minorant norm gap
+
+The [uniform theorem](../research/uniform-ambient-minorant-obstruction.md)
+removes the selected semiprime/Linnik family from the earlier obstruction.
+An auxiliary split prime above the subexponential smoothness/cofactor
+cutoffs and a positive prime-band sample give unreduced product norms
+below sqrt(D)/4 for every sufficiently large order discriminant. They
+remain reduced, nonambiguous and outside the full success predicate.
+Under the inherited uniform analytic contract, every ambient positive
+minorant has mean at most 2^(-b/64+o(b)). Multiplier choices do not repair
+this certificate. Subgroup means of subexponential-index subgroups inherit
+the same obstruction; no actual target-subgroup index bound is claimed.
+Original power-orbit hitting, moments and extraction remain open.
+
+The focused checker verifies the positive band identity and 20 oriented
+compositions on five fixed fundamental/nonmaximal discriminants. Its
+finite cutoffs certify geometry, not the external analytic thresholds.
+The previous semiprime and Fourier controls and credits are retained.
+Full default verification is pending; no new Lean, independent review or
+stronger complete factoring exponent is claimed.
+
 ## Ambient positive-minorant obstruction on semiprime inputs
 
 The [norm-gap deduction](../research/ambient-minorant-norm-gap.md) bounds

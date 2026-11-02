@@ -3273,3 +3273,9 @@ verify-confluent-quantum-spin:
 	python3 tools/check_confluent_quantum_spin.py --output /tmp/integer-factoring-confluent-quantum-spin.json
 
 verify-arithmetic: verify-confluent-quantum-spin
+
+.PHONY: verify-uniform-ambient-minorant-gap
+verify-uniform-ambient-minorant-gap: verify-ambient-minorant-gap
+	python3 tools/check_uniform_ambient_minorant_gap.py --output /tmp/integer-factoring-uniform-ambient-minorant-gap.json
+
+verify-arithmetic: verify-uniform-ambient-minorant-gap

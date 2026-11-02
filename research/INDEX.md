@@ -1,5 +1,7 @@
 # Research index
 
+- [A uniform obstruction to ambient positive minorants](uniform-ambient-minorant-obstruction.md): an auxiliary split prime and unreduced product norm yield a missed low-bias translate in every large class group, under the pinned analytic input. Ambient mean is at most 2^(-b/64+o(b)), also with subexponential cofactor caps; original target-orbit hitting remains open.
+
 - [An arithmetic obstruction to ambient positive minorants](ambient-minorant-norm-gap.md): missed low-bias translates force exponentially small ambient means on a preprocessing-surviving semiprime family, under the pinned analytic input. The one-sided negative-spectrum repair is also excluded; target-subgroup certificates and original orbit hitting remain open.
 
 - [A confluent seven-letter quantum-spin crossing](confluent-quantum-spin.md): paired Casimir collisions yield an exact degree-six tensor, but its determinant budgets exclude the bare two-place target over every finite coefficient extension. No score change.
