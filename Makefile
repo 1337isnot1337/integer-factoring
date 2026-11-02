@@ -3231,3 +3231,9 @@ verify-trace-anf-counterexample:
 	python3 tools/check_trace_anf_counterexample.py
 
 verify-arithmetic: verify-trace-anf-counterexample
+
+.PHONY: verify-clustered-power-relations
+verify-clustered-power-relations:
+	python3 tools/check_clustered_power_relations.py
+
+verify-arithmetic: verify-clustered-power-relations
