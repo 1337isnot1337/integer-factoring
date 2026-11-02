@@ -177,6 +177,12 @@ identities, rank histories, and extracted factors. It does **not** recompute
 every rough phase; use the full producers for that stronger replay. No
 Lean or independent proof review is claimed.
 
+The [clean full replay](../evidence/clustered-power-relations/full-verification.json)
+passes `make verify` and the focused target at exact source head
+`b9737e9764d6719984daa5f4d58fd65d0f8ef16d` in 692.28 seconds, with
+clean tracked state before and after. Its complete compressed log is
+archived; the replay predates only this receipt/documentation follow-up.
+
 The next relevant theorem would bound rank-generation windows uniformly,
 possibly by exploiting arithmetic correlations directly. A polynomial
 bound on fixed-row repetition removes one obstacle, but supplies neither

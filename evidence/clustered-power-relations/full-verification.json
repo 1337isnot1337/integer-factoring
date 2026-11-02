@@ -1,0 +1,23 @@
+{
+  "head": "b9737e9764d6719984daa5f4d58fd65d0f8ef16d",
+  "tree": "c4992130e482782ea4ef3cb0a65b99ad0e6407b2",
+  "pre_status": "",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-clustered-power-relations"
+    ]
+  ],
+  "started_utc": "2026-11-02T01:11:23Z",
+  "exit_code": 0,
+  "seconds": 692.2816777109983,
+  "post_status": "",
+  "scope": "Clean default and focused replay at the exact source head; no Lean or independent mathematical review.",
+  "stdout_sha256": "f052519cc0888f2911e7a285896eebb061706b75f395d12089b2141dd164d53c",
+  "stdout_archive": "evidence/clustered-power-relations/full-verification.stdout.txt.xz",
+  "archive_sha256": "9ebde2ff30b6e34eb0e764de28f9df5054450a571e1a3b646a9ed3578840d30b"
+}
