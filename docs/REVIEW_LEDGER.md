@@ -1,5 +1,20 @@
 # Contribution review and disposition ledger
 
+## Fixed-field character large-sieve source check
+
+Sol worker 1, base `1e3301e`: the
+[source continuation](../research/window-lemma-character-duality.md#fixed-field-large-sieve-and-prime-power-phase-filters-2026-11-02)
+identifies Duke--Friedlander--Iwaniec Theorem A1, checks its displayed
+normalization and elementary occupancy proof, and charges the norm cap
+`R p^(W-1)` for a direct prime-power phase filter. The primitive coefficient
+energy and principal term are explicit. The existing norm gap supplies
+the stated exact short-time identity. Theorem 4 concerns twisted critical
+L-values and retains a power of the twist norm; no uniform long-window
+estimate is imported. The source is for fundamental field discriminants,
+not automatically all quadratic orders. This is a documentation/source
+inspection, without new arithmetic experiments, external Lean rebuild,
+independent review of the whole DFI paper or a complete-bound improvement.
+
 ## Bijective trace-dual candidate counts
 
 The [ordinary coordinate-word construction](../research/trace-dual-native-counts.md)
