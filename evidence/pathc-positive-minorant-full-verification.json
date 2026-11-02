@@ -1,0 +1,38 @@
+{
+  "head": "dd1b393235daa2c25f8529c0b3b405479d3be0aa",
+  "tree": "51e3efdfcd1f50303e56efcb1964b7eadf92e94e",
+  "pre_status": "",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-power-character-lifts"
+    ]
+  ],
+  "started_utc": "2026-11-02T01:49:01Z",
+  "exit_code": 0,
+  "seconds": 705.3397070850042,
+  "post_status": "",
+  "scope": "Combined PR80 source and PR81 prose; no stronger factoring claim, new Lean or independent mathematical review.",
+  "stdout_sha256": "179bc257a39352ada08bb88540bd6123f4104ab451f228c2549d03e6c6e71426",
+  "stdout_archive": "evidence/pathc-positive-minorant-full-verification.stdout.txt.xz",
+  "archive_sha256": "ccf9b5ec4ddc6818705d46b739bc9792b577d20f105141b402485a227587a583",
+  "pr80_source_equivalence": "tools and evidence trees match 6b73781e8f6e52a9aabcbd69bc61df4e3460cee6",
+  "additional_isolated_reproduction": {
+    "source_head": "6b73781e8f6e52a9aabcbd69bc61df4e3460cee6",
+    "commands": [
+      "python3 tools/pathc_cluster_tail/generate_orbits.py",
+      "python3 tools/pathc_cluster_tail/audit_rows.py",
+      "python3 tools/pathc_cluster_tail/audit_pool.py",
+      "python3 tools/check_clustered_power_relations.py",
+      "python3 tools/check_power_character_lifts.py"
+    ],
+    "result": "PASS; full arithmetic regeneration changes runtime fields and preserves the existing semantic guard receipt.",
+    "stdout_sha256": "3992f7fd0c4d0866baac5e636a4e4913ee86622131c618bee1c135d70dbc043a",
+    "stdout_archive": "evidence/pathc-runtime-stable-reproduction.stdout.txt.xz",
+    "archive_sha256": "f6266b1e61aac36a0810ae04540807b39d4772fdec691d84e01f54f41f31518c"
+  }
+}

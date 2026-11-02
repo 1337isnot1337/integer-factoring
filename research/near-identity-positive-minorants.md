@@ -185,3 +185,10 @@ Fourier minorant of the **original** smooth-leading-norm set with uniform
 subexponential inverse mean, potentially using its arithmetic correlations.
 A vanished character obstruction or a Dickman density fit does not
 establish this property. No such minorant is asserted in this note.
+
+The [clean combined replay](../evidence/pathc-positive-minorant-full-verification.json)
+passes the default gate and the focused character-lift gate at exact
+`dd1b393235daa2c25f8529c0b3b405479d3be0aa`. Later changes add the
+one-sided corollary and verification records in prose; source code is
+unchanged. Documentation links are rechecked separately. No Lean or
+independent mathematical review is claimed.
