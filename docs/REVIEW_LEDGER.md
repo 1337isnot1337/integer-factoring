@@ -12,7 +12,10 @@ mechanism, not a complete profile or a stronger factoring bound.
 The standard-library checker verifies formal leading coefficients in three
 axes, 108 two-minors and 48 three-minors, plus the independently binary
 restricted Toeplitz ranks of one q8 charge block through order four.
-A separate binary color matrix verifies ranks 21 and 7. The preceding
+A separate binary color matrix verifies ranks 21 and 7. An exact q4096
+integer abstract profile passes the shared-minor/prefix budgets and the
+degree-four restored bound 4/7; this is explicitly not a profile of the
+constructed tensor. The preceding
 NumPy prototype agrees; the committed replay does not need NumPy.
 The degree-four restoration is explicit. Focused links and source checks,
 and any frozen default replay, will be recorded at their exact heads.

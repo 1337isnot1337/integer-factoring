@@ -3,6 +3,8 @@
 from collections import Counter
 from hashlib import sha256
 from itertools import combinations, product
+from math import comb
+from fractions import Fraction
 from pathlib import Path
 import argparse
 import json
@@ -152,6 +154,36 @@ def low_jet_controls(kernel):
                                                   fusion=[[0,1],[2,7],[4,14]]))
 
 
+def abstract_profile_room():
+    # A necessary-profile witness, never substituted for the constructed profile.
+    q=4096;d=q-1
+    profile=[(0,1),(2,4095),(4,8190),(8,16740360),(9,24570),
+             (17,33587190),(18,50266125),(24,274676629500),(32,281200199450625)]
+    assert sum(n for _,n in profile)==q**4
+    assert profile[:3]==[(0,1),(2,d),(4,2*d)]
+    def prefix(k):
+        out=0
+        for order,n in profile:
+            take=min(k,n);out+=order*take;k-=take
+        assert k==0
+        return out
+    checks=0
+    for length,factor in ((1,Fraction(2,3)),(2,Fraction(1)),(4,Fraction(2))):
+        count=energy=0
+        for occupied in range(length+1):
+            n=comb(length,occupied)*d**occupied
+            count+=n;energy+=4*occupied*n
+            assert prefix(count)<=factor*energy
+            checks+=1
+    t=Fraction(11,24);Z=sum(n*t**order for order,n in profile)
+    assert Z**21*t**(-224)<d**48 and 3*4**2<7**2
+    return dict(q=q,profile=profile,raw_prefix_endpoints_checked=checks,
+                physical_degree_per_occupied_vertex=4,occupancy=1,t=[11,24],
+                restored_pressure_strict_upper_bound=[4,7],
+                exact_comparison='Z(11/24)^21*(11/24)^(-224)<4095^48',
+                scope='Integer abstract profile satisfying only the shared-minor budgets and the proved prefix. It is not a generic profile of the constructed tensor or a factoring improvement.')
+
+
 def main():
     parser = argparse.ArgumentParser();parser.add_argument('--output',type=Path);args = parser.parse_args()
     assert all(power(a,255)==1 for a in range(1,256))
@@ -159,12 +191,13 @@ def main():
     result = dict(scope='Formal kernel/endpoint/minor identities and one q8 low-jet charge block, independently restricted from F256 to binary Toeplitz ranks. The generic prefix uses the ordinary sector argument; no full profile, favorable normalized pressure or stronger factoring exponent is established.',
                   physical_degree_per_occupied_vertex=4,quartic_terms=sorted(QUARTIC),
                   formal=formal_controls(kernel),low_jets=low_jet_controls(kernel),
+                  abstract_profile_room=abstract_profile_room(),
                   source_sha256={name:sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
                                  for name in ('check_quartic_charge_fusion.py','cube_homogeneous_gaussian.py')})
     if args.output: args.output.write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(dict(status='passed',axes=3,charge_block_size=136,
                           gaussian_prefix=[[0,1],[2,7],[4,28]],fusion_prefix=[[0,1],[2,7],[4,14]],
-                          full_profile_known=False,factoring_exponent='1/2; unchanged')))
+                          full_profile_known=False,abstract_profile_room=True,factoring_exponent='1/2; unchanged')))
 
 
 if __name__=='__main__': main()

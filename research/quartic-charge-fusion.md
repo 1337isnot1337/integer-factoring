@@ -189,3 +189,43 @@ be incorrect. A prefix alone cannot evaluate (5). Further work must give
 an explicit growing-color argument for higher orders or a complete profile
 with the restored cost; a lower first-layer rank is not a score gain.
 No larger matrix or q/field/weight sweep is justified solely by this control.
+
+## 5. Known necessary budgets leave room after restoration
+
+The higher-profile question is not excluded by the current shared-minor
+budgets and prefix (1). One explicit integer relaxation at `q=4096` is:
+
+| Order | Multiplicity |
+|---:|---:|
+| 0 | 1 |
+| 2 | 4095 |
+| 4 | 8190 |
+| 8 | 16740360 |
+| 9 | 24570 |
+| 17 | 33587190 |
+| 18 | 50266125 |
+| 24 | 274676629500 |
+| 32 | 281200199450625 |
+
+These multiplicities total `q^4`. The checker evaluates all compressed
+prefix endpoints of the [graded shared-minor theorem](cube-graded-minor-budget.md)
+for vertex energies zero and four, as well as the exact prefix (1).
+Convexity supplies the intermediate prefixes. This is a witness for the
+listed necessary inequalities only, not for every possible compatibility
+condition.
+
+Use all nonzero colors uniformly, with occupancy `E=1`, entropy
+`log(4095)`, and `t=11/24`. Writing `Z` for this table, the exact check is
+
+```math
+Z(11/24)^{21}(11/24)^{-224}<4095^{48}.
+```
+
+Taking logarithms gives the degree-four objective in (5) strictly below
+`4/7`. The integer comparison `3*4^2<7^2` places it below `1/sqrt(3)`.
+No floating-point minimization or `4096^4` matrix is part of this receipt.
+
+**This table is not a profile of the constructed tensor.** It shows why
+an analytic higher-channel argument remains meaningful after charging the
+extra degree. A larger-alphabet matrix screen, or a substitution of this
+relaxation for the actual profile, would not resolve that question.

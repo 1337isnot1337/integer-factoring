@@ -138,8 +138,62 @@
       ]
     }
   },
+  "abstract_profile_room": {
+    "q": 4096,
+    "profile": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        4095
+      ],
+      [
+        4,
+        8190
+      ],
+      [
+        8,
+        16740360
+      ],
+      [
+        9,
+        24570
+      ],
+      [
+        17,
+        33587190
+      ],
+      [
+        18,
+        50266125
+      ],
+      [
+        24,
+        274676629500
+      ],
+      [
+        32,
+        281200199450625
+      ]
+    ],
+    "raw_prefix_endpoints_checked": 10,
+    "physical_degree_per_occupied_vertex": 4,
+    "occupancy": 1,
+    "t": [
+      11,
+      24
+    ],
+    "restored_pressure_strict_upper_bound": [
+      4,
+      7
+    ],
+    "exact_comparison": "Z(11/24)^21*(11/24)^(-224)<4095^48",
+    "scope": "Integer abstract profile satisfying only the shared-minor budgets and the proved prefix. It is not a generic profile of the constructed tensor or a factoring improvement."
+  },
   "source_sha256": {
-    "check_quartic_charge_fusion.py": "277c7af3425ff1cb2f4a9e403c69cea1f5f855d6e8a4175a2c04cf58902cdb67",
+    "check_quartic_charge_fusion.py": "8fd507feb9225adf4270a7976c4724261684f1935aacb4b3f92e46ddefed64d0",
     "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
   }
 }
