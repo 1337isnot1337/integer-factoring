@@ -1,0 +1,199 @@
+{
+  "scope": "Formal kernel/endpoint/minor identities and one q8 low-jet charge block, independently restricted from F256 to binary Toeplitz ranks. The generic prefix uses the ordinary sector argument; no full profile, favorable normalized pressure or stronger factoring exponent is established.",
+  "physical_degree_per_occupied_vertex": 4,
+  "quartic_terms": [
+    [
+      4,
+      4,
+      8
+    ],
+    [
+      4,
+      8,
+      4
+    ],
+    [
+      5,
+      5,
+      6
+    ],
+    [
+      5,
+      6,
+      5
+    ],
+    [
+      6,
+      5,
+      5
+    ],
+    [
+      8,
+      4,
+      4
+    ]
+  ],
+  "formal": [
+    {
+      "axis": 0,
+      "cross_entries": 16,
+      "two_minors": 36,
+      "three_minors": 16,
+      "first_spatial_orders": [
+        2,
+        4
+      ],
+      "later_spatial_orders_at_least": 5
+    },
+    {
+      "axis": 1,
+      "cross_entries": 16,
+      "two_minors": 36,
+      "three_minors": 16,
+      "first_spatial_orders": [
+        2,
+        4
+      ],
+      "later_spatial_orders_at_least": 5
+    },
+    {
+      "axis": 2,
+      "cross_entries": 16,
+      "two_minors": 36,
+      "three_minors": 16,
+      "first_spatial_orders": [
+        2,
+        4
+      ],
+      "later_spatial_orders_at_least": 5
+    }
+  ],
+  "low_jets": {
+    "block_size": 136,
+    "coefficient_field_modulus": 283,
+    "y": 2,
+    "z": 3,
+    "first_layers": {
+      "gaussian": {
+        "ranks": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          7
+        ],
+        "profile": {
+          "2": 1,
+          "4": 4
+        }
+      },
+      "fusion": {
+        "ranks": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          5
+        ],
+        "profile": {
+          "2": 1,
+          "4": 2
+        }
+      }
+    },
+    "color_pair_ranks": [
+      21,
+      7
+    ],
+    "full_prefix_from_sector_proof": {
+      "gaussian": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          28
+        ]
+      ],
+      "fusion": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          14
+        ]
+      ]
+    }
+  },
+  "abstract_profile_room": {
+    "q": 4096,
+    "profile": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        4095
+      ],
+      [
+        4,
+        8190
+      ],
+      [
+        8,
+        16740360
+      ],
+      [
+        9,
+        24570
+      ],
+      [
+        17,
+        33587190
+      ],
+      [
+        18,
+        50266125
+      ],
+      [
+        24,
+        274676629500
+      ],
+      [
+        32,
+        281200199450625
+      ]
+    ],
+    "raw_prefix_endpoints_checked": 10,
+    "physical_degree_per_occupied_vertex": 4,
+    "occupancy": 1,
+    "t": [
+      11,
+      24
+    ],
+    "restored_pressure_strict_upper_bound": [
+      4,
+      7
+    ],
+    "exact_comparison": "Z(11/24)^21*(11/24)^(-224)<4095^48",
+    "scope": "Integer abstract profile satisfying only the shared-minor budgets and the proved prefix. It is not a generic profile of the constructed tensor or a factoring improvement."
+  },
+  "source_sha256": {
+    "check_quartic_charge_fusion.py": "8fd507feb9225adf4270a7976c4724261684f1935aacb4b3f92e46ddefed64d0",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  }
+}
