@@ -9,7 +9,8 @@ from random import Random
 
 from check_carry_fourier_elimination import irreducible
 from cyclotomic_character_decoder import (
-    modular_power, parameters, polynomial_product, polynomial_remainder,
+    modular_compose, modular_inverse, modular_power, modular_product,
+    parameters, polynomial_divmod, polynomial_product, polynomial_remainder,
 )
 from odd_character_residues import primitive_generator, root_of_unity_powers
 from sparse_faithful_character import (
@@ -123,6 +124,59 @@ def run():
     assert polynomial_remainder(left, full_modulus) != polynomial_remainder(right, full_modulus)
     assert decode_sparse_faithful(46, left, 4) == left
     assert decode_sparse_faithful(46, right, 4) == right
+    # Actual divisor data has a known twisted-reciprocal promise. At q47
+    # inversion exchanges the only two fields, so one supplies both.
+    companion, remainder = polynomial_divmod(phi, component)
+    assert remainder == 0 and companion == 3189
+    assert int(bin(component)[2:][::-1], 2) == companion
+    generator = primitive_generator(47)
+    logs = {pow(generator, j, 47): j % 23 for j in range(46)}
+    reciprocal_digest, reciprocal_vectors = sha256(), 0
+    for integer in range(2, 400):
+        if integer % 47 == 0:
+            continue
+        shift, mask = logs[integer % 47], 0
+        for divisor in range(1, integer+1):
+            if integer % divisor == 0:
+                mask ^= 1 << logs[divisor % 47]
+        assert mask == sum(((mask >> j) & 1) << ((shift-j) % 23) for j in range(23))
+        center = 12*shift % 23
+        normalized = sum(((mask >> j) & 1) << ((j-center) % 23) for j in range(23))
+        assert normalized & 1 == int(isqrt(integer)**2 == integer)
+        observed = supplied_faithful(46, mask)
+        first = polynomial_remainder(observed, component)
+        second = modular_product(modular_power(2, shift, companion),
+            modular_compose(first, modular_power(2, 22, companion), companion), companion)
+        correction = modular_product(second ^ polynomial_remainder(first, companion),
+                                     modular_inverse(component, companion), companion)
+        recovered = first ^ polynomial_product(component, correction)
+        assert recovered == observed
+        reciprocal_digest.update(json.dumps([integer, shift, first, recovered]).encode())
+        reciprocal_vectors += 1
+    assert reciprocal_vectors == 390
+    assert all(word != sum(((word >> j) & 1) << ((c-j) % 23) for j in range(23))
+               for word in (left, right) for c in range(23))
+
+    # A reciprocal sparse promise still does not always supply every field.
+    # q503 is eligible even at sparsity14: 2*14 < leastprime(251).
+    _, odd, _, phi503 = parameters(502)
+    factor503 = primitive_component(phi503)
+    assert odd == 251 and factor503 == 1986479280909191
+    assert factor503 == int(bin(factor503)[2:][::-1], 2)
+    symmetric_kernel = 0
+    for j in range(51):
+        if factor503 >> j & 1:
+            symmetric_kernel ^= 1 << ((j-24) % 251)
+            symmetric_kernel ^= 1 << ((j-26) % 251)
+    pairs = [j for j in range(1, 126) if symmetric_kernel >> j & 1]
+    real_left = sum((1 << j) | (1 << (251-j)) for j in pairs[:7])
+    real_right = symmetric_kernel ^ real_left
+    for word in (real_left, real_right):
+        assert word.bit_count() == 14 and word & 1 == 0
+        assert word == sum(((word >> j) & 1) << (-j % 251) for j in range(251))
+    assert polynomial_remainder(real_left, factor503) == polynomial_remainder(real_right, factor503)
+    assert polynomial_remainder(real_left, phi503) != polynomial_remainder(real_right, phi503)
+    assert 2*14 < least_prime_factor(251)
     rejected = []
     for order, observation, bound in ((6, 3, 2), (22, 1 << 10, 2), (22, 3, 0)):
         try:
@@ -228,6 +282,13 @@ def run():
                 one_component_collision=dict(order=46, sparsity=4, words=[left, right],
                                              component_modulus=component,
                                              shared_component_observation=35),
+                arithmetic_reciprocity=dict(prime=47, components=[component, companion],
+                    supplied_divisor_vectors=reciprocal_vectors,
+                    records_sha256=reciprocal_digest.hexdigest(),
+                    generic_q47_words_have_no_reciprocal_center=True),
+                reciprocal_one_component_collision=dict(prime=503, sparsity=14,
+                    words=[real_left, real_right], component_modulus=factor503,
+                    scope='Reciprocal sparse vectors, not asserted to be actual divisor data'),
                 counts=dict(nonzero_kernel_words=kernel_words, sparse_roundtrips=decoded,
                             actual_divisor_vectors=actual, actual_vectors_outside_promise=skipped,
                             acquired_prime_levels=sum(len(r['levels']) for r in acquisitions),

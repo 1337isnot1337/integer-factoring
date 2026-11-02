@@ -555,6 +555,26 @@
     "component_modulus": 2787,
     "shared_component_observation": 35
   },
+  "arithmetic_reciprocity": {
+    "prime": 47,
+    "components": [
+      2787,
+      3189
+    ],
+    "supplied_divisor_vectors": 390,
+    "records_sha256": "791f5eae7d85cabc46ee2d6c2e9b0c91249f34c40056a390cdae981d2349cb55",
+    "generic_q47_words_have_no_reciprocal_center": true
+  },
+  "reciprocal_one_component_collision": {
+    "prime": 503,
+    "sparsity": 14,
+    "words": [
+      416092483755309509616866561424957310477372457714208264637638260404411964784,
+      77375046934722336210694333299746340033338604492691443020767361529348096
+    ],
+    "component_modulus": 1986479280909191,
+    "scope": "Reciprocal sparse vectors, not asserted to be actual divisor data"
+  },
   "counts": {
     "nonzero_kernel_words": 19642,
     "sparse_roundtrips": 1902,
@@ -568,7 +588,7 @@
   "vector_sha256": "b624b29635558247408139858be8ef5b2ba65fb230e07909ac72924ce3dd2934",
   "source_sha256": {
     "tools/sparse_faithful_character.py": "e48f51518993a8640e9a12b182b7ebd25fc4eea88ae26339b6c6c4054c1834cd",
-    "tools/check_sparse_faithful_character.py": "3bea9e138db7c052fb34980088e8c5371cb2ca5e6f74eac75b197ae89344c618",
+    "tools/check_sparse_faithful_character.py": "4ddacbcf29065a781c457683e9b6a55eb40719db890e4e589b930191ff0dc0d4",
     "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
     "tools/odd_character_residues.py": "6703866bd7a7960a4fa6635442ee62c9449e463ab5b03334882c134578bab623",
     "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
