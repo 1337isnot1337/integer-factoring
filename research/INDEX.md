@@ -2,13 +2,15 @@
 
 - [Sparse divisor data from one faithful character](sparse-faithful-character.md): an exact cyclotomic kernel distance and polynomial sparse decoder retain nilpotent coordinates. Classical lower-sieve level acquisition gives a complete faithful-only conditional factoring reduction with F(b)exp(O(sqrt(b))) cost, preserving every fixed logarithmic-saving exponent. The faster coefficient engine remains open; no score change.
 
+- [Small reduced norms, density and local event separation](small-norm-event-separation.md): a nonzero unramified principal word has norm at least D/4. A truncated smooth predicate retains the covered-subgroup density scale and has T-separated row-change events with explicit short-range cumulants. Long-range correlations and actual target indices remain open; no complete bound change.
+
 - [Color parity obstructs large one-hot cube profiles](color-distinct-sector-obstruction.md): closed odd-color sectors and the existing scalar polynomial certificate give a pressure floor 3/4 for every homogeneous antipodal tensor preserving separate color parity, all q>=34, every field and common physical type, in the common-scale unweighted three-axis profile method. This extends the scalar-clone floor to arbitrary parity-preserving tensors; no score change.
 
 - [One half-width trace and a modular-inverse interval test](one-trace-inverse-words.md): one candidate input determines its cofactor through a polynomial inverse; a no-wrap range test gives a complete conditional smallest-factor reduction with charged field, precision, exact divisions and bit costs. The uniform contractor remains open; no score change.
 
 - [Connected event correlations and a finite-order window criterion](connected-event-window-criterion.md): factorial bounds on aggregate cumulants through twice the logarithm of a period bound imply a window linear in inverse event density and the correlation scale. A tree estimate is sufficient but unproved arithmetically; exact saved-event controls neither certify it nor change the complete bound.
 
-- [Fixed nilpotent Gram crossings](nilpotent-gram-crossing.md): a canonical noncommuting flag gives a degree-12 seven-letter tensor with the flip endpoint and both cold ranks one. Its unchanged row profile alone forces pressure above 345 at every pair of places over every finite coefficient extension; the fixed test is stopped.
+- [Fixed nilpotent Gram crossings](nilpotent-gram-crossing.md): a canonical noncommuting flag gives a degree-12 seven-letter tensor with the flip endpoint and both cold ranks one. Its unchanged row profile supplies an exact finite pressure control; the broader bare criterion through twelve letters already excludes both constructions at every degree.
 
 - [Original smooth density from even prime products](small-index-smooth-density.md): a high-precision prime-color partition and one-sided product spectrum prove density exp(-O(b/log b)) on subgroups of index at most D^kappa, kappa<1/4, from the principal split-prime estimate. The full character estimate gives every coset for kappa<1/64. Actual target indices and hit gaps remain open.
 
@@ -740,7 +742,7 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Nine-letter quadratic-inverse probe](nine-letter-quadratic-inverse-probe.md): a general first-two-coefficient tradeoff and complete 31-path schedule, with every exact profile, 248 independent Toeplitz controls and all-scale exclusions.
 - [Inverse-degree compatibility and noncommuting paths](inverse-degree-crossing-compatibility.md): a new cut constraint rules out the formal seven-letter optimum at all integer ramifications; a quadratic-inverse constructor supplies exact endpoints and a complete 5,005-path first-jet exclusion.
-- [A seven-letter asymmetric profile survives inverse-degree compatibility](seven-letter-asymmetric-profile.md): the formal q=7 optimizer is excluded, but a nearby profile with `nu_49=16` satisfies the inverse-degree bound and has exact `B(34/25)=244.848867...<7^{2sqrt2}`. This is a necessary Smith profile only; no algebraic crossing or score change is claimed.
+- [Excluded historical seven-letter asymmetric profile](seven-letter-asymmetric-profile.md): the profile passes the older inverse bound and has exact relaxed pressure below threshold, but violates the later adjugate determinant budget by 140 times every positive integer ramification. It is not an active construction target; the bare criterion is already closed through twelve letters.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.

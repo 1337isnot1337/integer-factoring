@@ -2,9 +2,13 @@
 
 ## Question, outcome and stopping rule
 
-Can noncommuting nilpotent flags produce a degree-12 seven-letter
-crossing with the deep flags needed by the
-[asymmetric profile target](seven-letter-asymmetric-profile.md)?
+The retained experiment asked whether noncommuting nilpotent flags could
+produce a degree-12 seven-letter crossing with a deep asymmetric profile.
+The [historical target](seven-letter-asymmetric-profile.md) is already
+excluded by the later adjugate theorem; the older
+[box-minor result](bare-seven-to-twelve-letters.md) excludes the bare
+criterion through twelve letters at every degree and field. The fixed
+constructions below are regression controls, not escapes from that result.
 This changes the commuting-flag assumption; it is not a larger field,
 root, degree or parameter screen.
 
@@ -20,17 +24,18 @@ That row profile alone excludes the bare two-place target over every
 finite coefficient extension. Even the best relaxed opposite profile has
 pressure greater than 345, whereas `7^(2 sqrt(2))<7^3=343`.
 **These two fixed constructions are stopped.** No flag or field sweep
-is justified by their profiles. General nilpotent Gram paths, different
-row profiles, physical weights and collective criteria are outside this
-statement. The complete factoring exponent remains `1/2`.
+is justified by their profiles. Other row profiles remain covered by the broader bare seven-letter
+exclusion. Physical weights and collective criteria are outside these
+bare-profile conclusions. The complete factoring exponent remains `1/2`.
 
 The single-flag control is a fourth-power reparameterization of a
 cubic path, so its bare exclusion was already covered by the
 [integer shared-minor degree floor](integer-shared-minor-pressure-floor.md),
 which excludes seven-letter degrees one through eleven. The cycle
-construction has odd column orders and actual degree twelve. The
-row-specific argument here excludes that case without extrapolating
-the earlier degree range.
+construction has odd column orders and actual degree twelve. Both cases
+are already covered by the all-degree box-minor theorem. The row-specific
+argument supplies an additional finite control and does not extend the
+known bare exclusion.
 
 ## 1. An explicit operator-space construction
 
