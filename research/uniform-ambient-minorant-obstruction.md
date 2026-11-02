@@ -177,3 +177,7 @@ fails the full-height cofactor predicate and is nonambiguous. Its
 These small geometric cutoffs are not claimed to meet the analytic
 threshold `T`; uniform existence and bias use the stated external input.
 The earlier semiprime and sharp finite Fourier controls remain intact.
+
+The [clean full default replay](../evidence/uniform-ambient-minorant-full-verification.json)
+passes at exact source `bfb5f74b487b725b4e3ccf9ab2819b3f94151e98`
+in 773.91 seconds. The archive follow-up changes review prose and receipts.
