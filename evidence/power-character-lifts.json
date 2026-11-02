@@ -14,11 +14,12 @@
     43240
   ],
   "unsigned_norm_support_size": 79,
-  "input_sha256": {
-    "receipt.json": "e2a553281dba7aad8804d03d9909204bbd2e27fc8049abe9584383fcfa739acc",
-    "row-audit.json": "9702ccf2f06e780c669b90b2e2a34902f5c35ac12aa499a218728a519dc19660",
-    "pool-audit.json": "d665a3fdb554d6bfcfa34e5e4be00116358d54f93ddd10fd1cbd2e6b66f63e5b"
+  "input_semantic_sha256": {
+    "receipt.json": "7edc3cb95ebced9b30063d92501182040e5571a1273919ebd5b510af69ab859e",
+    "row-audit.json": "e1efe5802d6759528f4c8e07c3294f9b9dbaff7d73a5e33ca0552c2511a2d572",
+    "pool-audit.json": "33ba78d5dd51f58860c5ec89bbd4c10f779996d2261bdc8d540323af441a658d"
   },
+  "input_hash_scope": "Canonical JSON with only the top-level runtime seconds omitted.",
   "results": [
     {
       "prime": 5,

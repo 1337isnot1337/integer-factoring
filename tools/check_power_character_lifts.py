@@ -93,11 +93,17 @@ def compute():
                             forced_rough_phases=h-sum(allowed),
                             longest_forced_rough_run=maximum_zero_run(allowed),
                             base_admits_bias_at_most_half=False))
+    inputs = {"receipt.json":orbit, "row-audit.json":rows, "pool-audit.json":pool}
+    semantic_hashes = {
+        name:sha256(json.dumps({k:v for k,v in data.items() if k != "seconds"},
+                               sort_keys=True, separators=(",", ":")).encode()).hexdigest()
+        for name, data in inputs.items()
+    }
     return dict(scope="Integer postprocessing of certified saved cycles; no new class compositions, orbit or cutoff search.",
                 N=pool["N"], primes=primes, period=h, height=height,
                 generator_indices=indices, unsigned_norm_support_size=len(support),
-                input_sha256={name:sha256((DATA/name).read_bytes()).hexdigest()
-                              for name in ("receipt.json", "row-audit.json", "pool-audit.json")},
+                input_semantic_sha256=semantic_hashes,
+                input_hash_scope="Canonical JSON with only the top-level runtime seconds omitted.",
                 results=results, complete_factoring_exponent="1/2; unchanged")
 
 

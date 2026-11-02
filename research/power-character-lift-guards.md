@@ -149,8 +149,11 @@ are separate from the discovery composition cap.
 make verify-power-character-lifts
 ```
 
-The [receipt](../evidence/power-character-lifts.json) pins the three
-upstream data files. To regenerate this integer postprocessing only:
+The [receipt](../evidence/power-character-lifts.json) pins the semantic
+contents of the three upstream data files using canonical JSON, omitting
+only their top-level runtime `seconds`. Thus an identical full arithmetic
+reproduction does not invalidate the guard certificate merely because it
+took a different time. To regenerate this integer postprocessing only:
 
 ```sh
 python3 tools/check_power_character_lifts.py --output evidence/power-character-lifts.json
