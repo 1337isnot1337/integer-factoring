@@ -2,9 +2,9 @@
 
 **Status.** A valid sufficient near-identity hitting criterion and its
 conditional factoring transfer. The proposed uniformly subexponential
-**ambient mean** is now [excluded on an arithmetic semiprime family](ambient-minorant-norm-gap.md)
+**ambient mean** is now [excluded uniformly in the discriminant](uniform-ambient-minorant-obstruction.md)
 under the same pinned analytic input. The one-sided negative-spectrum
-repair is excluded there as well. Subgroup-specific certificates remain
+repair is excluded as well. Subgroup-specific certificates remain
 outside that obstruction. The complete factoring score stays **1/2**.
 
 The [moment criterion](cofactor-orbit-moment-criterion.md) controls every
