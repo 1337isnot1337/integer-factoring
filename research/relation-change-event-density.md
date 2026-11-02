@@ -95,7 +95,32 @@ canonical words `v=(0,1,-1)` at the three phases. All phases are smooth,
 `delta=1`, `kappa=1/3`, and `L=3`. Pure hit-run entries would instead
 have density zero. This is a cyclic model, not a new factoring input.
 
-## 3. What remains in the moment route
+## 3. The maximum zero gap increases by only an additive polynomial
+
+Let `G_raw` be the longest cyclic run of inadmissible phases and `G_event`
+the longest cyclic run with no change event. Set the longest zero run to
+zero for an all-good flag. Then
+
+\[
+ \boxed{G_{\rm raw}\le G_{\rm event}
+                   \le G_{\rm raw}+2K_p-2.}
+ \tag{3}
+\]
+
+The first inequality follows because every event is admissible. For the
+second, consider two consecutive events. After the first, its identical-row
+hit segment has length `ell<=L` (a proper-gcd segment has length one).
+Until the next event, this is followed only by a miss run of length
+`G<=G_raw`: a later hit after a miss would itself be an event. Hence
+the intervening event-zero run has length `ell-1+G<=L-1+G_raw`.
+
+Thus if every raw window of length `W` hits, every event window of
+length `W+2K_p-2` hits. This is a statement about the worst case over
+starting phases, not the difference between first-hit times at an
+individual start. The all-good cyclic control above attains the additive
+gap overhead exactly.
+
+## 4. What remains in the moment route
 
 Every event is an admissible query. The existing sliding-window moment
 proof applies to any periodic zero-one flag; it needs no inversion
@@ -120,7 +145,7 @@ entries on other inputs, is not automatically an estimate for these
 events. The new lemma supplies one previously separate density-loss
 step; it does not establish a stronger complete runtime.
 
-## 4. Exact saved-data check
+## 5. Exact saved-data check
 
 The [checker](../tools/check_relation_change_events.py) reconstructs the
 canonical words from all 670 saved rows on the existing larger cycle,
@@ -140,6 +165,9 @@ changed process on these two saved directions. This equality is a
 finite observation, not a general identity between the two processes.
 The maximum segments include the identity arc across phase zero, outside
 the earlier `k>=K` nonwrapping multiplicity table.
+The existing exact maximum-zero-run records give raw/event gaps
+`17939/17939` for target five and `4506/4508` for target seven,
+consistent with (3). No new phase enumeration is required for these values.
 The checker includes the sharp all-good cyclic control and a
 factor-producing-phase control. Its
 [receipt](../evidence/relation-change-events.json) pins semantic upstream

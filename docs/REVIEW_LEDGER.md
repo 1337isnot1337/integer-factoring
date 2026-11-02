@@ -10,6 +10,13 @@ This changes the event observable and removes a separate raw-cluster
 assumption; uniform original density and event moments remain unproved.
 The complete saving exponent stays 1/2.
 
+The same segment decomposition proves the maximum event-zero gap is at
+most the maximum raw-zero gap plus `2K_p-2`. This controls the worst case
+over phases, not a pointwise difference of first-hit times. The abstract
+all-good control attains this additive bound. The source code is unchanged
+by this proof corollary; the existing exact gap receipts give `17939/17939`
+and `4506/4508` for the two saved raw/event patterns.
+
 Integer postprocessing reconstructs all 670 saved rows plus their known
 small-power prefixes. In both existing directions the new flags equal the
 previously measured entry flags at every phase, including the boundary.
