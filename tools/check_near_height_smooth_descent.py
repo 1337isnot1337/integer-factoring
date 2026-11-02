@@ -135,6 +135,26 @@ def bonferroni_control():
                 bonferroni_odd_orders=[1, 3, 5, 7], exact_crt_intersections=len(states))
 
 
+def contributed_semiprime_controls():
+    """Retain the coordinating worker's Discussion 51 controls and credit."""
+    results = []
+    for d, factors, exponent, comment, source_hash in (
+            (7423, [13, 571], 6, 19359806,
+             '454d0c507cf0becb5e05add2fb483c41ceb08ac9461ebf672d0f55c23febfef0'),
+            (26623, [79, 337], 9, 19359827,
+             '179a68827fb162b6db3f1d00b4c32733adfeed6a7ddc558482e7734781a46515')):
+        assert prod(factors) == d and len(set(factors)) == 2
+        assert all(p in primes_through(max(factors)) and p > 11 for p in factors)
+        record = audit(-d, 2, exponent, 11, 1)
+        form, _ = prime_power_target(-d, 2, exponent, 1)
+        norms = sorted({n for x, y, n in smaller_norm_vectors(form, 2**exponent + 1)
+                        if gcd(x, y) == 1})
+        assert norms == [form[0], 2**exponent] and not record['smooth_successes']
+        results.append(dict(**record, factors=factors, primitive_norms_through_cap=norms,
+                            source_discussion_comment=comment, original_receipt_sha256=source_hash))
+    return results
+
+
 def compute():
     controls = []
     # Existing finite inputs, only two predeclared powers per fixed prime.
@@ -172,6 +192,7 @@ def compute():
                 rough_composite_counterexamples=[rough_composite_control(24, 16, 19, 1009),
                                                  rough_composite_control(40, 64, 43, 10007)],
                 bonferroni_control=bonferroni_control(),
+                contributed_semiprime_controls=contributed_semiprime_controls(),
                 source_sha256={name: sha256((ROOT / name).read_bytes()).hexdigest() for name in sources})
 
 
@@ -186,4 +207,4 @@ if __name__ == '__main__':
         assert result == json.loads(EXPECTED.read_text())
     print(f"near-height descent: {len(result['controls'])} fixed targets, "
           f"{len(result['first_power_counterexamples'])} first-power failures, "
-          "two rough composite controls and 256 CRT intersections passed")
+          "two rough composites, two contributed semiprimes and 256 CRT intersections passed")

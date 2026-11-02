@@ -17,8 +17,9 @@ proves an elementary uniform lower-sieve estimate and aligns the rough
 target with the least prime-three power above each ordinary scalar
 near-height threshold. This disproves the corresponding one-shot descent
 input even on composite non-perfect-power integers surviving trial division
-through a specified roughness cutoff. Two fixed CRT controls, complete
-ellipse exhaustions and 256 exact CRT/Bonferroni intersections pass.
+through a specified roughness cutoff. Two fixed CRT controls, two credited
+semiprime controls, complete ellipse exhaustions and 256 exact CRT/Bonferroni
+intersections pass.
 Adaptive or collective target choices remain outside the theorem. This is
 author verification, without independent mathematical review, new Lean
 or an improved complete exponent.

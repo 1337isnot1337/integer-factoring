@@ -344,8 +344,68 @@
     ],
     "exact_crt_intersections": 256
   },
+  "contributed_semiprime_controls": [
+    {
+      "discriminant": -7423,
+      "prime": 2,
+      "exponent": 6,
+      "cutoff": 11,
+      "cap": 64,
+      "reduced_form": [
+        29,
+        -1,
+        64
+      ],
+      "known_primitive_vector": [
+        0,
+        -1
+      ],
+      "leading_success": false,
+      "smaller_vectors": 1,
+      "smooth_successes": [],
+      "factors": [
+        13,
+        571
+      ],
+      "primitive_norms_through_cap": [
+        29,
+        64
+      ],
+      "source_discussion_comment": 19359806,
+      "original_receipt_sha256": "454d0c507cf0becb5e05add2fb483c41ceb08ac9461ebf672d0f55c23febfef0"
+    },
+    {
+      "discriminant": -26623,
+      "prime": 2,
+      "exponent": 9,
+      "cutoff": 11,
+      "cap": 512,
+      "reduced_form": [
+        13,
+        -1,
+        512
+      ],
+      "known_primitive_vector": [
+        0,
+        -1
+      ],
+      "leading_success": false,
+      "smaller_vectors": 6,
+      "smooth_successes": [],
+      "factors": [
+        79,
+        337
+      ],
+      "primitive_norms_through_cap": [
+        13,
+        512
+      ],
+      "source_discussion_comment": 19359827,
+      "original_receipt_sha256": "179a68827fb162b6db3f1d00b4c32733adfeed6a7ddc558482e7734781a46515"
+    }
+  ],
   "source_sha256": {
     "tools/near_height_smooth_descent.py": "3f94d952405804e4fa44b1e41c186ea31af0c5306cd48131e43fd0a54e11d6bf",
-    "tools/check_near_height_smooth_descent.py": "787de543b61162e77a5372ace764082e28b7ece60f41d055ccff8e8f9633f7c1"
+    "tools/check_near_height_smooth_descent.py": "30540325ae8ae2669a73a76b52340bd75ba0dd4f37c821f9c6b5c9d0d1dff371"
   }
 }

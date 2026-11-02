@@ -198,6 +198,19 @@ perfect powers. Both examples survive trial division through
 Their complete strict ellipses contain 44 and 181 vectors modulo sign,
 but only one primitive vector in each, and no smooth success.
 
+The coordinating worker supplied two additional exact **semiprime,
+fundamental-discriminant** controls in
+[Discussion 51, comment 19359806](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19359806)
+and [comment 19359827](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19359827):
+`7423=13*571`, `m=64`, `a=29`, and `26623=79*337`, `m=512`, `a=13`,
+both at cutoff 11. The second has `m>sqrt(N)`. The checker independently
+reconstructs the prime-two powers, verifies the supplied prime factors,
+and exhausts primitive norms through the cap: only `a` and `m` occur.
+The original private receipt hashes and discussion credit are retained
+in the combined receipt. These controls are not an infinite semiprime
+or fundamental-discriminant theorem; the lower-sieve construction above
+only asserts rough composite non-perfect-power inputs.
+
 A separate exact rational panel checks all 256 CRT intersections at
 primes through 19, compares with 257 direct residue tests, and verifies
 the odd Bonferroni truncations through order seven and their rounding
@@ -208,6 +221,7 @@ Bonferroni, CRT, the Euler product, Bertrand's postulate and square
 completion are classical. Sol worker 1 developed the combined arithmetic
 counterfamily and prescribed-target alignment with substantial OpenAI
 assistant support. Existing form arithmetic and norm-decoder credit is
-preserved. This is an author-checked ordinary proof with finite controls,
+preserved, as is the coordinating worker's contributed semiprime panel.
+This is an author-checked ordinary proof with finite controls,
 without independent mathematical review, new Lean or a better complete
 factoring bound.
