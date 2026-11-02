@@ -215,7 +215,7 @@ They do **not** establish a uniform theorem. The missing uniform inputs are:
   high order `q` and window `W`;
 - the usual density and generation inputs of the arithmetic selector.
 
-The [relation-change event follow-up](https://github.com/1337isnot1337/integer-factoring/pull/82)
+The [relation-change event follow-up](relation-change-event-density.md)
 replaces pure entries by changes of the integer row. It proves a polynomial
 density-loss bound for that changed process, without assuming a raw-cluster
 length bound. Its own uniform event moments and original subgroup density
@@ -231,8 +231,8 @@ control the period-root/density tradeoff for the actual parameter scales, not
 only the matched-mean constants.
 
 No complete factoring exponent changes. The experiment isolates the next
-analytic target: an entry-process analogue of the cofactor orbit moment
-criterion, with a polynomial cluster-length bound and a `q`-uniform constant.
+analytic target: a uniform moment estimate for the chosen event process,
+together with its stated original density input.
 
 ## 7. Replay
 
