@@ -1,9 +1,11 @@
 # Path C: a positive Fourier minorant can bound the raw power search
 
-**Status.** A sufficient near-identity hitting criterion and its conditional
-complete factoring transfer, with ordinary proofs. No arithmetic minorant
-of the required strength is constructed. No improved complete factoring
-bound is claimed; the score remains **1/2**.
+**Status.** A valid sufficient near-identity hitting criterion and its
+conditional factoring transfer. The proposed uniformly subexponential
+**ambient mean** is now [excluded on an arithmetic semiprime family](ambient-minorant-norm-gap.md)
+under the same pinned analytic input. The one-sided negative-spectrum
+repair is excluded there as well. Subgroup-specific certificates remain
+outside that obstruction. The complete factoring score stays **1/2**.
 
 The [moment criterion](cofactor-orbit-moment-criterion.md) controls every
 translated window of a target cycle. The actual
@@ -176,15 +178,18 @@ This asks for the **negative** spectrum, not a bound on absolute character
 sums. The [absolute-value Parseval obstruction](leading-power-window-barrier.md)
 does not itself lower-bound `B`: large positive coefficients can carry
 that energy. Reusing an absolute bound would, however, retain its cost.
-No one-sided arithmetic bound of the required strength is proved here.
-The general minorant condition can also hold without being obtained by
-this particular identity correction.
+The [arithmetic norm-gap obstruction](ambient-minorant-norm-gap.md#4-large-global-density-and-the-negative-spectrum-consequence)
+now forces an exponential negative bound on a semiprime family with
+subexponential inverse density. The general ambient minorant condition
+is excluded uniformly on that family too; this conclusion does not
+assume that the minorant uses this identity correction.
 
-The remaining research question is to construct or bound a positive
-Fourier minorant of the **original** smooth-leading-norm set with uniform
-subexponential inverse mean, potentially using its arithmetic correlations.
-A vanished character obstruction or a Dickman density fit does not
-establish this property. No such minorant is asserted in this note.
+The uniform ambient-minorant program is stopped by the
+[arithmetic obstruction](ambient-minorant-norm-gap.md). A possible
+continuation would need a large mean on the target subgroup, another
+representation, or the original density/moment or pooled-rank obligations.
+The exact criterion above remains valid and can still be useful for a
+restricted input family when its hypotheses are separately established.
 
 The [clean combined replay](../evidence/pathc-positive-minorant-full-verification.json)
 passes the default gate and the focused character-lift gate at exact

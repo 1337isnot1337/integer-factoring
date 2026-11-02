@@ -1,5 +1,27 @@
 # Contribution review and disposition ledger
 
+## Ambient positive-minorant obstruction on semiprime inputs
+
+The [norm-gap deduction](../research/ambient-minorant-norm-gap.md) bounds
+every admissible ambient positive minorant by epsilon/(1+epsilon) when
+a low-bias sample misses a translate of the success set. General form
+composition and a least-prime progression construction give semiprimes
+surviving the stated preprocessing, for the full reduced-height
+smooth-or-proper-gcd predicate. Under the inherited pinned analytic
+contract, their ambient mean is O(b 2^(-b/5376)). Quasipolynomial cutoff
+still gives density 2^-o(b), forcing an exponential one-sided negative
+Fourier bound. The corresponding uniform ambient programs are stopped.
+Target-subgroup means, original power-orbit hitting and other multiplier
+choices remain outside this obstruction; the factoring exponent stays 1/2.
+
+The exact focused checker passes a sharp Walsh control and 26 oriented
+prime translates on six verified semiprimes, including their full-height
+recognition and finite preprocessing inequalities. The uniform analytic
+input and Linnik theorem are identified external inputs; no finite
+control establishes them. Full default verification is pending, and no
+new Lean or independent mathematical review is claimed. Existing norm-gap
+and Fourier-kernel credits are preserved.
+
 ## Confluent seven-letter quantum-spin crossing
 
 The [root-of-unity note](../research/confluent-quantum-spin.md) regularizes
