@@ -2050,3 +2050,45 @@ The unary implementation, checker and imported sources are byte-identical
 to the frozen source. This is an author-checked ordinary
 reduction and finite implementation evidence, not independent mathematical
 review, a fast count, new Lean work or a score improvement.
+
+## Sparse faithful-character information and the complete conditional invoice
+
+Sol worker 2, base `252128d`: the [sparse-character note](../research/sparse-faithful-character.md)
+proves exact minimum kernel weight equal to the least prime factor of the
+odd character-order part. Interleaving retains every nilpotent coordinate.
+One faithful coefficient vector suffices below half that distance, with
+an acquired polynomial decoder. CRT/Linnik gives an exp(O(D))*poly(b)
+level-acquisition bound. A classical dimension-one lower sieve plus
+Bombieri--Vinogradov improves it to polynomial cost in b,D. The exact
+fixed-four progression is 2d+1 modulo 4d, with g(d)=1/phi(d) for odd d.
+The resulting all-input conditional reduction costs F(b)exp(O(sqrt(b)))
+and preserves every fixed logarithmic-saving exponent; it supplies no
+faster composite-index coefficient engine.
+
+The [finite receipt](../evidence/sparse-faithful-character.json) includes
+19,642 nonzero kernel codewords, 1,902 sparse roundtrips, 457 actual
+supplied divisor vectors, 303 actual vectors outside the fixed promises,
+twelve CRT-acquired levels, twelve sieved levels, forty fixed-four
+CRT density controls, and three complete supplied-data CRT
+factorizations. Exact integer cyclotomic arithmetic supplies the observations
+independently. The sharp sparse collision and reduced-quotient loss are
+retained. A later q47 control also distinguishes retaining a reduced
+algebra from discarding all but one field component. The reverse
+factoring-to-coefficient argument makes the fixed-score equivalence explicit.
+
+The [full default receipt](../evidence/sparse-faithful-full-verification.json)
+and [compressed log](../evidence/sparse-faithful-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at clean frozen source
+`a4e607f5132e56ee34f5f5fc9864e4beabf81414`, tree
+`d2d40ac03967d1d4b9d846058c6907a9b0dfd975`, in 907.08 seconds.
+The private /tmp namespace and read-only host root were explicitly checked;
+only the frozen checkout was writable, and tracked state was clean before
+and after. The later component guard and reverse-score prose were checked
+with the focused replay and links; the implementation and imports are
+byte-identical to the full source. Later main integrations are outside
+that full pin. The analytic inputs are the cited
+classical Linnik, lower-sieve and Bombieri--Vinogradov theorems, not
+numerically reverified by the small acquisition controls.
+This is an author-checked ordinary conditional reduction and finite code
+evidence, without independent mathematical review, new Lean or a stronger
+complete factoring score.
