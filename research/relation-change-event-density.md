@@ -14,6 +14,13 @@ The [registered scope](https://github.com/1337isnot1337/integer-factoring/discus
 uses only previously saved rows and an abstract cyclic control, with no
 new arithmetic orbit or cutoff search.
 
+The later [small-index density theorem](small-index-smooth-density.md)
+supplies original smooth density `exp(-O(b/log b))` whenever the target
+subgroup has index at most `D^kappa`, for fixed `kappa<1/64`, under the
+pinned analytic input. Equation (2) below then gives event density at the
+same scale for those prime orbits. General target-index and moment bounds
+remain open.
+
 ## 1. Define a periodic event, despite the row's drift
 
 Fix a target prime `p` and its cyclic class orbit of period `h`. Let
