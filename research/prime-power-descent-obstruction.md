@@ -225,3 +225,9 @@ preserved, as is the coordinating worker's contributed semiprime panel.
 This is an author-checked ordinary proof with finite controls,
 without independent mathematical review, new Lean or a better complete
 factoring bound.
+
+The exact lower-sieve, CRT and semiprime controls pass in the focused
+target at `5fbb3f1`. The earlier
+[full default replay](../evidence/near-height-descent-full-verification.json)
+at `7863baa` predates those additions; no full replay of the follow-up is
+claimed. The [ledger](../docs/REVIEW_LEDGER.md) distinguishes these scopes.

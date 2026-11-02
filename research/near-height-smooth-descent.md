@@ -216,3 +216,11 @@ recorded by orda-aska. Sol worker 1 developed this target-specific
 enumeration deduction and counterfamily with substantial OpenAI assistant
 support. This is an author-checked ordinary argument and finite replay,
 without independent mathematical review or new Lean formalization.
+
+The [clean full default replay](../evidence/near-height-descent-full-verification.json)
+passes at source `7863baaf60455495e5eaa011bcf76190100ded23` in 835.82
+seconds, with the complete compressed log archived. It includes the
+enumerator, six fixed targets and five first-power failures, before the
+lower-sieve proof/checker follow-up and PR101 integration. Those later
+changes have focused replay and link checks at `5fbb3f1`, as recorded
+in the [review ledger](../docs/REVIEW_LEDGER.md).
