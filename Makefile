@@ -3190,6 +3190,12 @@ verify-sparse-faithful-character:
 
 verify-arithmetic: verify-sparse-faithful-character
 
+.PHONY: verify-odd-quotient-relations
+verify-odd-quotient-relations:
+	python3 tools/check_odd_quotient_relations.py
+
+verify-arithmetic: verify-odd-quotient-relations
+
 .PHONY: verify-charge-creation-square
 verify-charge-creation-square:
 	python3 tools/check_charge_creation_square.py

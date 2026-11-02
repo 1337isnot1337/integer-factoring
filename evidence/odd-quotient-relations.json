@@ -1,0 +1,225 @@
+{
+  "scope": "Exact odd-residual relation certificates and finite quotient controls; no fast quotient smooth-pair extractor, uniform generator claim or stronger factoring bound.",
+  "product_group_controls": [
+    {
+      "moduli": [
+        8,
+        2,
+        3
+      ],
+      "relation_matrix": [
+        [
+          8,
+          0,
+          0
+        ],
+        [
+          -2,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "odd_witnesses": [
+        3,
+        1,
+        3
+      ],
+      "determinant": 16,
+      "annihilator": 48,
+      "nonidentity_row_residues": 2,
+      "extracted_two_order_logs": [
+        1,
+        3
+      ]
+    },
+    {
+      "moduli": [
+        4,
+        3,
+        5
+      ],
+      "relation_matrix": [
+        [
+          4,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "odd_witnesses": [
+        1,
+        3,
+        5
+      ],
+      "determinant": 4,
+      "annihilator": 60,
+      "nonidentity_row_residues": 2,
+      "extracted_two_order_logs": [
+        2
+      ]
+    }
+  ],
+  "quotient_kernel": {
+    "group": "(Z/2)^4 x Z/3",
+    "multiplier": 3,
+    "original_density": "5/48",
+    "image_density": "5/16",
+    "image_sample_bias": "1/3",
+    "correlation_lower_bound": "5/192",
+    "minimum_sampled_correlation": "1/24",
+    "full_sample_bias": "1",
+    "targets": 48,
+    "exact_pair_targets_missed": 32,
+    "quotient_pair_targets": 48,
+    "relation_matrix": [
+      [
+        8,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        10,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        2,
+        0,
+        0,
+        8
+      ]
+    ],
+    "annihilator": 122880,
+    "extracted_two_rank": 4
+  },
+  "multiplier_controls": 54,
+  "rejected_certificates": [
+    "even_witness",
+    "false_odd_witness",
+    "singular_matrix",
+    "direct_filter_residual_odd_thirteen"
+  ],
+  "principal_gap_not_inherited": {
+    "discriminant": -23,
+    "prime_form": [
+      2,
+      1,
+      3
+    ],
+    "multiplier": 3,
+    "nonzero_word_norm": 2,
+    "old_safe_cap": [
+      23,
+      4
+    ]
+  },
+  "static_class_groups": [
+    {
+      "discriminant": -7423,
+      "enumerated_classes": 40,
+      "smooth_bound": 11,
+      "smooth_forms": 21,
+      "image_classes": 8,
+      "image_smooth_forms": 8,
+      "multiplier": 65522472159375,
+      "target": [
+        29,
+        1,
+        64
+      ],
+      "strict_smaller_quotient_preimage": [
+        4,
+        1,
+        464
+      ],
+      "nonidentity_odd_residual": [
+        23,
+        11,
+        82
+      ],
+      "relation_determinant_bits": 86,
+      "annihilator_bits": 131,
+      "extracted_two_order_logs": [
+        3
+      ],
+      "direct_filtered_two_group_test": true,
+      "recovered_factors": [
+        13
+      ]
+    },
+    {
+      "discriminant": -26623,
+      "enumerated_classes": 48,
+      "smooth_bound": 11,
+      "smooth_forms": 13,
+      "image_classes": 16,
+      "image_smooth_forms": 8,
+      "multiplier": 75678455344078125,
+      "target": [
+        13,
+        1,
+        512
+      ],
+      "strict_smaller_quotient_preimage": [
+        2,
+        -1,
+        3328
+      ],
+      "nonidentity_odd_residual": [
+        26,
+        1,
+        256
+      ],
+      "relation_determinant_bits": 148,
+      "annihilator_bits": 204,
+      "extracted_two_order_logs": [
+        4
+      ],
+      "direct_filtered_two_group_test": true,
+      "recovered_factors": [
+        79
+      ]
+    }
+  ],
+  "source_sha256": {
+    "tools/odd_quotient_relations.py": "18e74485250fb3fc6e2ed0e02b72b389af1076cb31e86617af7a3db420e77d5c",
+    "tools/check_odd_quotient_relations.py": "e80590e13097e022f40f16a3e8f597a26214fddc8d3517c48850e354c750ea22",
+    "tools/arithmetic_two_group.py": "79fd5a8d9bc50402e56cd383c33f6bc9a7190a625e28e4bd10a3f040e1072766",
+    "tools/check_positive_relation_kernel.py": "bbbc23445f55338d0e0b31a8cf2b09a127b7df184c581ee605704fd69085bbc4",
+    "tools/binary_quadratic_forms.py": "cc44b5ac962736c6de2b1ffbcf07bd963b0c9b4a050f16252914cb63d55e94dd",
+    "tools/quadratic_form_arithmetic.py": "7a2845a1d6892c7757f2003daeb89e7d8612450106ed4319868d06750543580a"
+  }
+}

@@ -1,5 +1,42 @@
 # Contribution review and disposition ledger
 
+## Odd-quotient relation certificates
+
+Sol worker 2, implementation base `517909e`: the
+[odd-quotient proof](../research/odd-quotient-relations.md) allows verified
+odd-order row residues and preserves the exact two-adic determinant
+valuation. Its uniform small-primary multiplier has fully charged bit
+cost; positive-kernel search in the computable image preserves smooth-set
+density and all two-part directions. Efficient quotient-pair extraction
+remains open; generation retains the predecessor's analytic premises.
+
+The [checker and receipt](../evidence/odd-quotient-relations.json) include
+mixed product groups, 54 fixed multiplier controls, false-certificate
+guards, and a lifted positive-kernel fixture where 32 exact pair targets
+fail but all 48 quotient targets pass. Static class groups -7423/-26623
+reuse the contributed boundary examples with source credit, distinguish
+different-class preimages from strict descent, and recover their full
+two-parts. Their generator/relation enumeration is finite supplied data.
+The direct filter rejects residual odd order thirteen, and the contributed
+discriminant -23 guard prevents importing the old principal-word gap or
+event separation unchanged into the image.
+The [full default receipt](../evidence/odd-quotient-full-verification.json)
+and [complete compressed log](../evidence/odd-quotient-full-verification.stdout.txt.xz)
+record exit-zero make verify at clean frozen source
+`002bcf341e8bfc56322cae7fbf5d1fd6f8e4a8c7`, tree
+`d949a4dd14c00805a17a5bbbfac0d0782db96e86`, in 2,354.44 seconds.
+Its marker probe verified private /tmp, a read-only host root and a writable
+frozen checkout; network was unshared and tracked state stayed clean.
+The new checker appears in that log. Later premise/attribution prose,
+archive and PR104 integration have focused documentation and whitespace
+checks; executable sources stayed identical to the frozen pin. PR104's
+own receipt remains separate, and PR105 is outside this replay.
+The subsequent PR105 integration retains both Makefile targets;
+odd-quotient, CM-geometry and documentation checks pass together in a
+private /tmp namespace. Its full receipt is separately pinned below.
+This is an author-checked ordinary relaxation, without independent
+mathematical review, new Lean or a stronger complete factoring bound.
+
 ## CM mixing scope and ambient interpolation budget
 
 Sol worker 1, base `afdda60`: the [source audit](../research/cm-mixing-event-scope.md)

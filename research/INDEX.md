@@ -1,5 +1,7 @@
 # Research index
 
+- [Smooth-pair relations modulo a certified odd kernel](odd-quotient-relations.md): verified odd row annihilators preserve the determinant's two-adic valuation and all two-part factoring directions. A uniform odd multiplier permits positive-kernel search in H^M without an unknown class number. A fast quotient-pair extractor remains open; the existing generation/analytic premises are retained. No score change.
+
 - [Prescribed descent after full subexponential trial budgets](full-trial-sieve-obstruction.md): the fundamental lemma replaces the Bonferroni remainder by a fixed-product sieve bound, extending the rough composite counterfamily to every log Z=o(log D). This covers trial division at positive-score runtime scales; adaptive/collective targets and other preprocessing remain outside the theorem.
 
 - [One primitive field component for promised semiprimes](semiprime-single-field.md): a quadratic recovers unordered signed factor residues at every coprime q>=7, q=3 mod 4. Symmetric CRT avoids cross-level matching with polynomial non-provider cost. The original-index coefficient engine and arbitrary-input reduction remain open; no score change.
