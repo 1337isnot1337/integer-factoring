@@ -200,6 +200,15 @@ high trace digits and rejected uncertified field parameters are retained.
 These are finite controls for the stated reduction, not a uniform count
 algorithm or independent mathematical review.
 
+The [full default receipt](../evidence/one-trace-inverse-full-verification.json)
+and [compressed log](../evidence/one-trace-inverse-full-verification.stdout.txt.xz)
+pin an exit-zero `make verify` at clean source
+`2a09eb7a75761fc249cace3dd0c311b70085fc64`, in 961.27 seconds. This
+includes the new focused target. Later source integration, including
+PR90's connected-event work, is outside that full-replay pin. The unary
+module, checker and imported source hashes are unchanged by integration.
+No Lean target was run.
+
 Credit: trace surjectivity, parity-polynomial acquisition, exact-division
 semantics and the Galois-ring implementation retain the preceding authors'
 and Davis--Wan--Xiao's credit via the linked proof. Modular inversion,

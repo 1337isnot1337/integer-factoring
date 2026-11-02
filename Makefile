@@ -3268,6 +3268,12 @@ verify-relation-change-events: verify-clustered-power-relations
 
 verify-arithmetic: verify-relation-change-events
 
+.PHONY: verify-event-cumulant-windows
+verify-event-cumulant-windows: verify-relation-change-events
+	python3 tools/check_event_cumulant_windows.py
+
+verify-arithmetic: verify-event-cumulant-windows
+
 .PHONY: verify-ambient-minorant-gap
 verify-ambient-minorant-gap:
 	python3 tools/check_ambient_minorant_gap.py --output /tmp/integer-factoring-ambient-minorant-gap.json

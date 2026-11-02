@@ -37,6 +37,8 @@ The [Fourier window analysis](research/window-orbit-normalization.md) separates 
 
 An [even-product density theorem](research/small-index-smooth-density.md) now proves original smooth density at least `exp(-O(b/log b))` on every subgroup of index at most `D^kappa`, for fixed `kappa<1/4`, under the principal split-prime estimate. With the full pinned character estimate, every coset is covered for `kappa<1/64`. Covered prime orbits inherit row-change density at the same scale. Actual target indices and short-window moments remain open.
 
+A [connected-event criterion](research/connected-event-window-criterion.md) gives an explicit window linear in inverse event density, a cumulant scale, and the logarithm of a period bound, conditional on factorial cumulant estimates through that order. The arithmetic estimates and uncovered target indices remain open; saved-cycle controls do not certify the criterion or a stronger complete bound.
+
 A [pooled-rank alternative](research/clustered-hits-and-pooled-rank.md) can certify enough relations before every target prime has a smooth hit. Fixed integer rows repeat at most `2K_p-1` times, but different rows need not be independent. The finite pool uses more total probes in the checked example; a uniform rank-window bound remains open.
 
 [Character-lift guards](research/power-character-lift-guards.md) explain one finite rank stall exactly and certify long rough gaps. The existing constant-bias hypothesis defeats this specific obstruction on sufficiently large valid bases; it still supplies no quantitative rank window.

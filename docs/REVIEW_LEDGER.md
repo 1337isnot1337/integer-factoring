@@ -1,5 +1,25 @@
 # Contribution review and disposition ledger
 
+## Sol worker 1 connected-event criterion, base `af12893`
+
+The [ordinary proof](../research/connected-event-window-criterion.md) derives
+a finite-order empty-window bound from factorial cumulant estimates, with
+the repeated-index identity, a sufficient tree-summability mechanism and
+the complete conditional factoring invoice explicit. The arithmetic
+cumulant/tree estimates and coverage of actual target indices are unproved.
+No new Lean, independent mathematical review or complete score change.
+
+`make verify-event-cumulant-windows verify-docs` passes, including the
+existing event/group/row prerequisite. The new checker uses exact rational
+controls, a clustered negative case and saved generator-5/7 event flags;
+it performs no fresh arithmetic walk. Its
+[receipt](../evidence/event-cumulant-windows.json) states the insufficient
+mean count on both saved cycles. The [full default replay](../evidence/event-cumulant-full-verification.json)
+passes at exact `0a478fbead58c99a7500125536322f7ba23f241f` in 951.55 seconds,
+with clean tracked state before and after. Credit remains with the upstream
+event/density/moment contributions, saved data, and cited classical
+cumulant methods; this is a conditional research interface.
+
 ## Fixed noncommuting nilpotent Gram crossing
 
 The [construction and row-profile proof](../research/nilpotent-gram-crossing.md)
@@ -1913,8 +1933,15 @@ complete 512-point measured trace domain, 3,423 prefix-count queries
 and 132 scalar minimum-factor recoveries. Unequal fibre multiplicities,
 the wrapped-product false positive, high trace digits, even-input
 adaptation and 40-/60-/128-bit supplied scalar factors are included.
-`make verify-one-trace-inverse-words` is the focused replay; the initial
-generation passed. Default verification is recorded separately after
-the source checkpoint is frozen. This is an author-checked ordinary
+`make verify-one-trace-inverse-words` is the focused replay and passed.
+The [full default receipt](../evidence/one-trace-inverse-full-verification.json)
+and [complete compressed log](../evidence/one-trace-inverse-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean source
+`2a09eb7a75761fc249cace3dd0c311b70085fc64`, tree
+`593e90864892be8c30c986dbcc6e186ad0e5ba2a`, in 961.27 seconds,
+clean before and after. Current-main integration retains PR90 and both
+research-index entries; that later combined tree was not fully replayed.
+The unary implementation, checker and imported sources are byte-identical
+to the frozen source. This is an author-checked ordinary
 reduction and finite implementation evidence, not independent mathematical
 review, a fast count, new Lean work or a score improvement.
