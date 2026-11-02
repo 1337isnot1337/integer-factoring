@@ -507,6 +507,14 @@ decoder implementation and imported arithmetic sources are unchanged.
 Later main integrations are outside that full-replay pin. No Lean target
 or independent mathematical proof review is included.
 
+The [combined default receipt](../evidence/charge-reciprocity-full-verification.json)
+and [complete log](../evidence/charge-reciprocity-full-verification.stdout.txt.xz)
+also cover the later arithmetic-reciprocity checker and its updated receipt:
+clean frozen source `a21c955`, tree `ab36f031d27fb3dcbe41eec969bfab9d47a8a4ed`,
+exit zero in 888.40 seconds. That private-namespace run includes
+PR96/97/98/99 and excludes PR100 and subsequent changes. No Lean target
+was run; later documentation changes have a separate focused scope.
+
 The faithful map, signed sparse-CRT consumer, trial-budget inequality and
 source attribution retain the preceding contributors' credit. Berlekamp,
 Prony/Vandermonde recovery, cyclotomic distance arguments, CRT, Linnik,

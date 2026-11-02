@@ -49,7 +49,17 @@ checker; its earlier full replay pin remains historical. The modular-form
 rewrite retains the earlier weight-one sources and Stein's coefficient,
 constant-term and parity theorem, with level q^2 and the coprime adapter
 charged. Focused replay, links in 1,180 Markdown files and whitespace pass.
-Full default validation of this follow-up is pending.
+The [combined default replay](../evidence/charge-reciprocity-full-verification.json)
+and [compressed log](../evidence/charge-reciprocity-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at frozen source
+`a21c955689a87650eea3c1d2f3eebeaf87d63314`, tree
+`ab36f031d27fb3dcbe41eec969bfab9d47a8a4ed`, in 888.40 seconds.
+It includes PR96/97/98/99, with clean tracked state before and after, in
+marker-checked private `/tmp` with the host root read-only and network off.
+It excludes PR100 and later changes. The common-H documentation clarification
+has a separate literal eight-partition check and docs/whitespace inspection;
+the checker sources are unchanged from the full pin. Later changes are
+covered only by their stated focused scope.
 No fast coefficient engine, new Lean work, independent mathematical review
 or complete bound improvement is claimed.
 
@@ -95,8 +105,11 @@ The [checker and receipt](../evidence/charge-creation-square.json) independently
 expand 987,840 q8 terms and compare literal quartet counts with binary ranks
 on all 6,435 q16 eight-color subsets. The ordinary-square and total-XOR-only
 shortcuts have explicit nonzero/zero guards. Focused replay, documentation
-(1,179 Markdown files) and whitespace checks pass; a full default
-replay is not yet recorded for this source. No full Smith profile, pressure
+(1,179 Markdown files) and whitespace checks pass. The combined default
+replay at `a21c955` described above also covers this implementation.
+The later spatial-weight caution preserves the common-H hypothesis and
+does not claim that cancellation survives arbitrary spatial coefficients.
+No full Smith profile, pressure
 gain, new Lean work or stronger complete factoring bound is claimed.
 
 ## Entry lower-tail sign correction, base `89aeec9`

@@ -80,6 +80,23 @@ holds whenever there are fewer than eight nonzero colors. Multiplying
 (2) by the Gaussian pair-creation operator gives the exact q8 charge-fused
 tensor, not merely its initial jet.
 
+The common coefficient `H` is essential. If a single gate on `S_0` has
+weight `H+Delta` and the others still have weight `H`, its q8 product is
+
+```math
+I+HU+\Delta C_{S_0}+H\Delta C_{S_0}C_{V\setminus S_0}.
+```
+
+The last term has coefficient `H*Delta` on the output with colors
+`1,2,4,7` in each block of that partition. Thus (2) must not be used for
+arbitrary spatial weights. For PR #97's nonzero polynomial `H`, the
+endpoint-preserving variation
+`Delta=(xyz)^5(x+y)` in the later
+[spatial-quartic family in PR #100](https://github.com/1337isnot1337/integer-factoring/pull/100) gives a nonzero
+term. Its order is at least nine in each cut, so this scope distinction
+does not affect that family's order-five obstruction. This was reported
+in the [focused inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19358929).
+
 ## 3. Eight distinct colors and the binary code formula
 
 Now suppose the eight output colors are distinct and nonzero. If their
@@ -139,6 +156,14 @@ colors and the two guards above. The [receipt](../evidence/charge-creation-squar
 pins the checker and deterministic record hashes. These finite controls
 support the implementation; the all-alphabet statements follow from the
 proofs, rather than extrapolation of the panel.
+
+The [combined full default receipt](../evidence/charge-reciprocity-full-verification.json)
+and [compressed log](../evidence/charge-reciprocity-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at clean frozen source `a21c955` in 888.40
+seconds, inside a marker-checked private `/tmp` namespace. It includes
+PR96/97/98/99; the later common-H caution and PR100 are outside that exact
+pin. The caution has a literal eight-partition check and documentation
+inspection, while this checker is byte-identical to the full source.
 
 This checkpoint simplifies the full q8 representation and controls the
 extra term for growing alphabets. It does not determine higher Smith

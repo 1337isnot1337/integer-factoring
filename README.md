@@ -93,6 +93,8 @@ make verify-formal        # Original supporting Lean lemmas
 
 The default `make verify` gate does not rebuild the Lean proofs. Research notes list their own focused replay commands and dependencies.
 
+The [combined PR96–PR99 replay](evidence/charge-reciprocity-full-verification.json) passed at clean frozen source `a21c955` in 888.40 seconds; its [complete log](evidence/charge-reciprocity-full-verification.stdout.txt.xz) and source/tree hashes are archived. Later changes have their separate focused scope in the [review ledger](docs/REVIEW_LEDGER.md). This verifies implementations and certificates, without establishing a stronger factoring bound.
+
 ## Repository map
 
 | Path | Contents |
