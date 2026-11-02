@@ -41,7 +41,7 @@ A [sparse faithful-character reduction](research/sparse-faithful-character.md) r
 
 A [connected-event criterion](research/connected-event-window-criterion.md) gives an explicit window linear in inverse event density, a cumulant scale, and the logarithm of a period bound, conditional on factorial cumulant estimates through that order. The arithmetic estimates and uncovered target indices remain open; saved-cycle controls do not certify the criterion or a stronger complete bound.
 
-A [small-norm event theorem](research/small-norm-event-separation.md) preserves the covered-subgroup density scale while forcing local event separation and explicit connected correlations. The unramified principal-word norm gap supplies this arithmetic constraint; long-range correlations and actual target indices remain open.
+A [small-norm event theorem](research/small-norm-event-separation.md) preserves the covered-subgroup density scale while forcing local event separation and explicit connected correlations. An [exact word-boundary representation](research/event-word-boundary.md) reduces window estimates to a static target-prime-free smooth set by bounded phase transport. It also gives annular character sums and a contributed finite recurrence/Mellin multiplier. Long-range correlations and actual target indices remain open.
 
 A [pooled-rank alternative](research/clustered-hits-and-pooled-rank.md) can certify enough relations before every target prime has a smooth hit. Fixed integer rows repeat at most `2K_p-1` times, but different rows need not be independent. The finite pool uses more total probes in the checked example; a uniform rank-window bound remains open.
 

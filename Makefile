@@ -3290,6 +3290,12 @@ verify-small-norm-event-separation: verify-event-cumulant-windows
 
 verify-arithmetic: verify-small-norm-event-separation
 
+.PHONY: verify-event-word-boundary
+verify-event-word-boundary: verify-small-norm-event-separation
+	python3 tools/check_event_word_boundary.py
+
+verify-arithmetic: verify-event-word-boundary
+
 .PHONY: verify-ambient-minorant-gap
 verify-ambient-minorant-gap:
 	python3 tools/check_ambient_minorant_gap.py --output /tmp/integer-factoring-ambient-minorant-gap.json

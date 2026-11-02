@@ -1,5 +1,7 @@
 # Research index
 
+- [The exact smooth-word boundary of row-change events](event-word-boundary.md): truncated events correspond bijectively to target-prime-free smooth words on every target-containing subgroup, with disjoint same-row fibers and explicit annular character/Euler sums. The contributed formal recurrence and Mellin multiplier retain image multiplicities beyond the reduced range; long-range estimates and target indices remain open.
+
 - [Sparse divisor data from one faithful character](sparse-faithful-character.md): an exact cyclotomic kernel distance and polynomial sparse decoder retain nilpotent coordinates. Classical lower-sieve level acquisition gives a complete faithful-only conditional factoring reduction with F(b)exp(O(sqrt(b))) cost, preserving every fixed logarithmic-saving exponent. The faster coefficient engine remains open; no score change.
 
 - [Small reduced norms, density and local event separation](small-norm-event-separation.md): a nonzero unramified principal word has norm at least D/4. A truncated smooth predicate retains the covered-subgroup density scale and has T-separated row-change events with explicit short-range cumulants. Long-range correlations and actual target indices remain open; no complete bound change.
