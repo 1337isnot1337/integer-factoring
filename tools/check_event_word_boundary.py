@@ -9,6 +9,7 @@ from math import prod
 from pathlib import Path
 
 from binary_quadratic_forms import compose_forms
+from check_entry_moment_cycles import cyclic_window_counts
 from check_relation_change_events import event_flags
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -106,6 +107,19 @@ def compute():
         assert starts == {k for k, flag in enumerate(events) if flag}
         rows = {tuple((k if j == i else 0) - e for j, e in enumerate(low[k])) for k in starts}
         assert len(rows) == len(starts)
+        transport_bound = max(a for _, _, a in fibers)
+        global_transport_bound = 0
+        while p ** (global_transport_bound + 1) <= radius:
+            global_transport_bound += 1
+        assert transport_bound <= global_transport_bound < h
+        pfree_flags = bytes(int(k in pfree) for k in range(h))
+        transport = []
+        for window in (3260, h // 4):
+            source_counts = cyclic_window_counts(pfree_flags, window)
+            event_counts = cyclic_window_counts(events, window)
+            difference = max(abs(a - b) for a, b in zip(source_counts, event_counts))
+            assert difference <= global_transport_bound
+            transport.append(dict(window=window, maximum_count_difference=difference))
         fourier = []
         for modulus in (1, 2, 5, 10):
             assert h % modulus == 0
@@ -122,6 +136,9 @@ def compute():
         results.append(dict(prime=p, period=h, radius=radius, hits=len(low),
                             p_free_words=len(pfree), events=sum(events),
                             disjoint_fibers=len(fibers), distinct_integer_event_rows=len(rows),
+                            maximum_source_to_event_shift=transport_bound,
+                            global_shift_bound=global_transport_bound,
+                            bounded_transport_controls=transport,
                             event_flags_sha256=sha256(events).hexdigest(),
                             exact_annular_character_controls=fourier))
 

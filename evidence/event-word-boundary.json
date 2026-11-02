@@ -10,6 +10,18 @@
       "events": 45,
       "disjoint_fibers": 45,
       "distinct_integer_event_rows": 45,
+      "maximum_source_to_event_shift": 7,
+      "global_shift_bound": 7,
+      "bounded_transport_controls": [
+        {
+          "window": 3260,
+          "maximum_count_difference": 1
+        },
+        {
+          "window": 49712,
+          "maximum_count_difference": 1
+        }
+      ],
       "event_flags_sha256": "ebf4bec72445f30a12adc30965ee50e04a46245f29fbe0044a638850aab76fec",
       "exact_annular_character_controls": [
         {
@@ -61,6 +73,18 @@
       "events": 55,
       "disjoint_fibers": 55,
       "distinct_integer_event_rows": 55,
+      "maximum_source_to_event_shift": 5,
+      "global_shift_bound": 5,
+      "bounded_transport_controls": [
+        {
+          "window": 3260,
+          "maximum_count_difference": 1
+        },
+        {
+          "window": 49712,
+          "maximum_count_difference": 1
+        }
+      ],
       "event_flags_sha256": "b1fbcba031eccf72bf9d6cf2d4e7d18fc0c80c362be46f39d770748af2213fc3",
       "exact_annular_character_controls": [
         {

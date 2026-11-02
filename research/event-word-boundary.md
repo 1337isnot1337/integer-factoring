@@ -122,6 +122,62 @@ At the fixed-alpha cutoff and radius of the separation theorem this is
 the same `exp(-O_alpha(b/(log b)^alpha))` scale. The index restriction
 remains; (3) does not bound an actual cyclic index.
 
+### A static prime-free flag and bounded phase transport
+
+Let `f_0` mark the smooth, discriminant-coprime reduced classes of norm
+at most `R` whose leading coefficient is not divisible by `p`. This is
+the image of the prime-free words above. It is inversion symmetric and
+recognized from the current reduced form alone. Each such hit has decoded
+coordinate `v_p=0`, so its integer relation row has `p` coordinate exactly
+the exponent `k`. No two of these hits repeat an integer row.
+
+On the actual target cycle, the fiber proof gives a bijection from a
+prime-free hit at phase `j` to its event at `j-a(u)`, with
+
+```math
+0\le a(u)\le A_p:=\lfloor\log_pR\rfloor.
+```
+
+Injectivity of the pure `p`-word fiber implies `2A_p<h`; otherwise
+two words in `[-A_p,A_p]e_p` would have the same class. In every cyclic
+window `I` of any integer length `W`, this bounded one-sided transport
+therefore gives
+
+```math
+\boxed{\left|\sum_{k\in I}e_R(k)-\sum_{k\in I}f_0(k)\right|\le A_p.}
+                                                               \tag{4a}
+```
+
+Reduce `W` modulo `h`, since full cycles have equal counts by (3).
+A point transported into the residual window from outside must start
+within `A_p` positions beyond its right end. A point transported out
+must start within `A_p` positions of its left end. Each of the two
+counts is at most `A_p`, and the net difference is their difference,
+proving (4a). Reordering transported points is allowed.
+
+If every length-`W` prime-free window hits, every event window of length
+`W+A_p` hits: a prime-free point in its subwindow starting `A_p` steps
+after the left end is transported inside it. The reverse direction uses
+the inverse rightward transport. In particular, their longest zero gaps
+differ by at most `A_p`. Their common window mean is `mu`, and the
+triangle inequality in `L^(2q)` gives
+
+```math
+\| (\mu-X_{e_R})_+\|_{2q}
+ \le\|(\mu-X_{f_0})_+\|_{2q}+A_p.                        \tag{4b}
+```
+
+Thus the remaining analysis may use the **static, inversion-symmetric
+prime-free flag** directly. The finite-order window criterion applies
+to it with the proved covered-subgroup density (4); the raw selector
+already accepts its hits and needs no event-transport oracle. If an
+event window is desired, the extra `A_p=O(b)` steps do not affect a fixed
+saving exponent. Under `4p^T R^2<D`, this prime-free flag is also
+`T`-separated: two hits `t<=T` apart would give a nonzero principal word
+whose `p` coordinate is `t` and whose norm is at most `p^tR^2`.
+This supplies the same exact short-range cumulants without history.
+Long-range moment estimates for the prime-free flag remain open.
+
 ## 3. Exact annular character sums and their Euler product
 
 For a class character `chi`, put `z=chi(g_p)` and define
@@ -263,6 +319,8 @@ The [checker](../tools/check_event_word_boundary.py) reuses the fixed radii
 of the preceding separation control, without choosing another cutoff.
 It checks every saved truncated event against (2), partitions all 235/213
 hits into 45/55 disjoint fibers, and verifies unique integer event rows.
+The existing windows 3260 and 49712 check (4a) at every phase, without
+selecting another window or changing a cutoff.
 It checks (5) exactly for character orders 1, 2, 5 and 10 by residue
 histograms, using the actual target strides. No floating roots of unity
 or new large cycle are used. The

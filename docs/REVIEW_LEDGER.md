@@ -21,6 +21,11 @@ complete score change, new Lean or independent mathematical review.
 `make verify-event-word-boundary verify-docs` passes, including all upstream
 event/group/row/cumulant/separation prerequisites. A frozen full default
 replay of this checkpoint is recorded separately when finished.
+The bounded-transport follow-up identifies a static, inversion-symmetric
+prime-free flag of exactly the same density. Its window counts differ
+from event counts by at most `floor(log_p R)`; fixed saved windows check
+this at every phase. That follow-up has focused/docs replay separately
+from the frozen original boundary source.
 
 ## Sol worker 1 small-norm density and event separation
 
