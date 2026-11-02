@@ -1,5 +1,21 @@
 # Contribution review and disposition ledger
 
+## Confluent seven-letter quantum-spin crossing
+
+The [root-of-unity note](../research/confluent-quantum-spin.md) regularizes
+three Casimir eigenvalue collisions over F8. Its degree-six tensor has the
+flip endpoint, and first-cut rank one at one point. The local determinant
+budgets nevertheless force bare two-place pressure at least 2401 over
+every finite coefficient extension. This stops that fixed degeneration;
+other gauges, collective constructions and multipoint criteria are outside
+the claim. The complete factoring exponent remains 1/2.
+
+The focused replay reconstructs the tensor and checks all 2401 endpoint
+entries, both cuts at nine rational places and 440 independent Toeplitz
+nullities against native Smith profiles. Source formulas and Bytsko credit
+are retained. Full default verification is pending at this checkpoint;
+no new Lean or independent mathematical review is claimed.
+
 ## Correct generator-seven controls and aggregate walk accounting
 
 The [independent entry replay](../research/entry-moment-cycles.md) previously

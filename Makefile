@@ -3261,3 +3261,9 @@ verify-relation-change-events: verify-clustered-power-relations
 	python3 tools/check_relation_change_events.py
 
 verify-arithmetic: verify-relation-change-events
+
+.PHONY: verify-confluent-quantum-spin
+verify-confluent-quantum-spin:
+	python3 tools/check_confluent_quantum_spin.py --output /tmp/integer-factoring-confluent-quantum-spin.json
+
+verify-arithmetic: verify-confluent-quantum-spin
