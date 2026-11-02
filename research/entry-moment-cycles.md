@@ -171,6 +171,8 @@ A universal bound explains much of the small constants:
 Low-mean, high-order passes therefore do not establish independence or
 short empty-window control. Entry constants are sometimes smaller, but
 the old claimed orders-of-magnitude lower-tail contrast is unsupported.
+The universal bound alone implies all 32 `C=2` passes and 28 of the
+30 `C=1` passes in this matched-mean panel.
 The empty fractions and their genuine difference between raw and entry
 flags are unchanged.
 

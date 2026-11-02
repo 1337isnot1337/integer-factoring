@@ -46,6 +46,10 @@ C_{\rm req}\le\mu/q,
 so small lower-tail constants at low mean/high order are not by themselves
 evidence of independent hits or a uniform empty-window estimate. The
 unchanged empty fractions and gaps still distinguish raw hits and entries.
+In fact this universal bound already implies all 32 matched-mean `C=2`
+passes and 28 of the 30 `C=1` passes. The two remaining `C=1` passes are
+the entry mean-eight tests at the smaller order. Those are finite findings,
+not an asymptotic moment theorem.
 
 The abstract lower-tail moment theorem is unaffected. The independent
 clustered-cycle lower-tail checker and saved arithmetic words are

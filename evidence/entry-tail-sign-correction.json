@@ -46,5 +46,7 @@
   "corrected_constant_two_passes": 32,
   "corrected_constant_one_passes": 30,
   "nonwrapping_sufficient_window_passes": 10,
-  "complete_factoring_exponent": "1/2; unchanged"
+  "complete_factoring_exponent": "1/2; unchanged",
+  "constant_one_passes_implied_by_trivial_bound": 28,
+  "constant_two_passes_implied_by_trivial_bound": 32
 }
