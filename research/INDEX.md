@@ -1,5 +1,7 @@
 # Research index
 
+- [Character lifts explain a Path C rank stall exactly](power-character-lift-guards.md): an exact height budget predicts the first generator-seven rank escape at exponent 71962 and forces 14504-position rough gaps for generator five. Under the existing constant-bias contract, sufficiently large valid bases defeat this particular obstruction; no uniform window theorem follows.
+
 - [Repeated smooth relations and pooled rank windows](clustered-hits-and-pooled-rank.md): uniform fixed-row multiplicity at most `2K_p-1`, a weaker sufficient rank condition with the existing conditional factoring transfer, and exact saved-hit certificates; the finite pool reaches rank sooner in window length but uses more probes. No stronger complete bound.
 
 - [Exact entry lower-tail moments on two Path C cycles](entry-moment-cycles.md): both registered cycles close (periods 20456 and 198850); clusters are short (mean run about 6); entry lower-tail constants are O(1) at matched mean counts and improve with q, while the entry density loss makes the predeclared sufficient window wrap the sparse cycle; no uniform moment/window theorem or score improvement.

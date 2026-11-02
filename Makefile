@@ -3237,3 +3237,9 @@ verify-clustered-power-relations:
 	python3 tools/check_clustered_power_relations.py
 
 verify-arithmetic: verify-clustered-power-relations
+
+.PHONY: verify-power-character-lifts
+verify-power-character-lifts: verify-clustered-power-relations
+	python3 tools/check_power_character_lifts.py
+
+verify-arithmetic: verify-power-character-lifts

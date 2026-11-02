@@ -1,0 +1,85 @@
+{
+  "scope": "Integer postprocessing of certified saved cycles; no new class compositions, orbit or cutoff search.",
+  "N": 1000036000099,
+  "primes": [
+    5,
+    7,
+    19
+  ],
+  "period": 198850,
+  "height": 577360,
+  "generator_indices": [
+    1,
+    66509,
+    43240
+  ],
+  "unsigned_norm_support_size": 79,
+  "input_sha256": {
+    "receipt.json": "e2a553281dba7aad8804d03d9909204bbd2e27fc8049abe9584383fcfa739acc",
+    "row-audit.json": "9702ccf2f06e780c669b90b2e2a34902f5c35ac12aa499a218728a519dc19660",
+    "pool-audit.json": "d665a3fdb554d6bfcfa34e5e4be00116358d54f93ddd10fd1cbd2e6b66f63e5b"
+  },
+  "results": [
+    {
+      "prime": 5,
+      "normal": [
+        -9,
+        -2031,
+        8540
+      ],
+      "character_multiplier": -9,
+      "exact_word_budget": 34160,
+      "budget_witness": {
+        "norm": 130321,
+        "exponents": [
+          0,
+          0,
+          4
+        ]
+      },
+      "first_possible_escape_exponent": 18299,
+      "first_actual_escape_exponent": 19968,
+      "escape_dot": -198850,
+      "escape_row": [
+        19971,
+        1,
+        -2
+      ],
+      "forced_hyperplane_rows": 14,
+      "forced_rough_phases": 130529,
+      "longest_forced_rough_run": 14504,
+      "base_admits_bias_at_most_half": false
+    },
+    {
+      "prime": 7,
+      "normal": [
+        -15861,
+        1,
+        4010
+      ],
+      "character_multiplier": -15861,
+      "exact_word_budget": 126888,
+      "budget_witness": {
+        "norm": 390625,
+        "exponents": [
+          8,
+          0,
+          0
+        ]
+      },
+      "first_possible_escape_exponent": 71962,
+      "first_actual_escape_exponent": 71962,
+      "escape_dot": 198850,
+      "escape_row": [
+        -8,
+        71962,
+        0
+      ],
+      "forced_hyperplane_rows": 146,
+      "forced_rough_phases": 0,
+      "longest_forced_rough_run": 0,
+      "base_admits_bias_at_most_half": false
+    }
+  ],
+  "complete_factoring_exponent": "1/2; unchanged"
+}
