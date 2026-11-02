@@ -30,7 +30,7 @@ def squared_factor_residues(integer, prime, observed):
     integer, and observed=sum_(d|integer) omega**log_g(d) in the acquired field.
     Equal character roots are retained with multiplicity two.
     """
-    order, field, generator, logs, powers = component_data(prime)
+    _, field, generator, logs, powers = component_data(prime)
     if integer < 2 or gcd(integer, prime) != 1:
         raise ValueError('A positive coprime composite index is required')
     if not isinstance(observed, int) or observed < 0 or observed.bit_length() >= field.bit_length():

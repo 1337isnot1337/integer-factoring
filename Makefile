@@ -3356,3 +3356,9 @@ verify-semiprime-single-field:
 	python3 tools/check_semiprime_single_field.py --output /tmp/integer-factoring-semiprime-single-field.json
 
 verify-arithmetic: verify-semiprime-single-field
+
+.PHONY: verify-quartic-order-five
+verify-quartic-order-five:
+	python3 tools/check_quartic_order_five.py --output /tmp/integer-factoring-quartic-order-five.json
+
+verify-arithmetic: verify-quartic-order-five

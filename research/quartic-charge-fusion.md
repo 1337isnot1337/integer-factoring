@@ -26,6 +26,11 @@ coefficient-rank bound or stronger factoring exponent is established.
 The complete score remains `1/2`. This is a positive construction and a
 prefix theorem, not a new factoring bound.
 
+**Subsequent disposition:** the [order-five obstruction](quartic-order-five-obstruction.md)
+forces restored pressure at least `7/12` for every q>=4096 in this family,
+even with the stated independent spatial-quartic coefficients. Its generic
+prefix remains valid; growing-alphabet profile expansion is stopped.
+
 The starting kernel and one-hot construction are the
 [homogeneous Gaussian cube](cube-homogeneous-profile-budget.md) and the
 [worker-4 color-class model](color-class-cube-profile.md), retained at
@@ -190,10 +195,12 @@ an explicit growing-color argument for higher orders or a complete profile
 with the restored cost; a lower first-layer rank is not a score gain.
 No larger matrix or q/field/weight sweep is justified solely by this control.
 
-## 5. Known necessary budgets leave room after restoration
+## 5. Historical necessary-budget relaxation, now excluded
 
-The higher-profile question is not excluded by the current shared-minor
-budgets and prefix (1). One explicit integer relaxation at `q=4096` is:
+The shared-minor budgets and prefix (1) alone leave room. The following
+integer relaxation at `q=4096` still passes those listed checks, but the
+subsequent [order-five condition](quartic-order-five-obstruction.md)
+excludes it as a profile of this construction:
 
 | Order | Multiplicity |
 |---:|---:|
@@ -225,10 +232,11 @@ Taking logarithms gives the degree-four objective in (5) strictly below
 `4/7`. The integer comparison `3*4^2<7^2` places it below `1/sqrt(3)`.
 No floating-point minimization or `4096^4` matrix is part of this receipt.
 
-**This table is not a profile of the constructed tensor.** It shows why
-an analytic higher-channel argument remains meaningful after charging the
-extra degree. A larger-alphabet matrix screen, or a substitution of this
-relaxation for the actual profile, would not resolve that question.
+**This table is not a profile of the constructed tensor.** It records the
+limitations of the earlier necessary budgets. It has no order-five channels,
+whereas the construction requires at least `(q-1)(q-4)` in each axis.
+The new restored floor excludes this family for every q>=4096 without a
+larger-alphabet matrix screen.
 
 The [frozen default replay](../evidence/quartic-charge-full-verification.json)
 passed at `b1b85810d35a69513099917160192365bca3bd16` in 950.82 seconds,
