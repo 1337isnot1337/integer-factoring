@@ -25,6 +25,19 @@ Sol worker 2 subsequently contributed the guaranteed-positive specialization
 charged deep-root engine. The note links that contribution and distinguishes
 it from the rejected equal-depth tautology; no such engine is supplied.
 
+The [full default receipt](../evidence/high-root-full-verification.json)
+and [complete compressed stdout](../evidence/high-root-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen
+`be4aae16f0d1e1432b5a142e0ed39b109220992f`, tree
+`c4dcf4c9b82dd9f6f5c01080688555747dc8ae9e`, in 1,300.61 seconds.
+The new checker is in the complete log; raw/archive hashes match, with
+clean tracked pre/post state. A fresh private `/tmp` marker probe passed,
+the host root was read-only and networking disabled. PR107 merged at
+`60f5989bc5eb50f1db3ef69a9e730536aa53f87f` with an identical tree.
+Hosted exact-certificates and arithmetic-sieve also passed for PR107
+head `be4aae1` in run 41539389635. The later corollary and archive prose
+have focused/docs checks only; executable sources are unchanged.
+
 ## Odd-quotient relation certificates
 
 Sol worker 2, implementation base `517909e`: the

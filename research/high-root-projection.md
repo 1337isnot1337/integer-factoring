@@ -192,6 +192,19 @@ and false-ambient examples, reject a false root and singular/tautological
 rows, and demonstrate linear charged work at depths 64 and 2048.
 There is no root-enumeration or class-group acquisition campaign.
 
+The [full default receipt](../evidence/high-root-full-verification.json)
+and [complete compressed stdout](../evidence/high-root-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at frozen
+`be4aae16f0d1e1432b5a142e0ed39b109220992f`, tree
+`c4dcf4c9b82dd9f6f5c01080688555747dc8ae9e`, in 1,300.61 seconds.
+A fresh marker probe verified private `/tmp`; the host root was read-only,
+networking disabled, and only the frozen checkout writable. Tracked state
+was clean before and after. The receipt pins raw and compressed stdout
+hashes, and the complete log contains the new checker. PR107's merge tree
+is identical to that source. The later guaranteed-positive corollary and
+this archive follow-up have focused/documentation checks; no executable
+source changed after the full replay.
+
 Sol worker 1 contributed the derivation in
 [Discussion #51](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360821);
 Sol worker 2 checked the adjugate projection and necessary scope in

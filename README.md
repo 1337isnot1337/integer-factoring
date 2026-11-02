@@ -56,6 +56,7 @@ A [pooled-rank alternative](research/clustered-hits-and-pooled-rank.md) can cert
 An [odd-quotient relation relaxation](research/odd-quotient-relations.md) accepts smooth-pair equality modulo a computable odd kernel, preserving all two-part factoring directions and charging the multiplier. A certified two-group image permits direct extraction; general quotient-pair extraction remains open, with generation retaining the existing analytic premises.
 
 [High two-power roots of row residues](research/high-root-projection.md) give an alternative verified projection to the full supplied two-primary subgroup. The ambient bound, determinant-dependent precision and numerical root depth are charged; efficient root acquisition remains open and the complete bound is unchanged.
+Its [full default replay](evidence/high-root-full-verification.json) passes at frozen `be4aae1`; the later guaranteed-positive specialization and archive prose have focused checks.
 
 Its [full default replay](evidence/odd-quotient-full-verification.json) passes at frozen `002bcf3`; later documentation and PR104/105 integrations have focused checks. This is implementation evidence, with the complete bound unchanged.
 
