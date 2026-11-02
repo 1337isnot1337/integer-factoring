@@ -1,0 +1,402 @@
+{
+  "status": "passed",
+  "q2_profile": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      6,
+      1
+    ],
+    [
+      8,
+      1
+    ],
+    [
+      10,
+      2
+    ],
+    [
+      12,
+      2
+    ],
+    [
+      14,
+      2
+    ],
+    [
+      16,
+      1
+    ],
+    [
+      18,
+      1
+    ],
+    [
+      20,
+      1
+    ],
+    [
+      22,
+      1
+    ],
+    [
+      24,
+      1
+    ]
+  ],
+  "q2_ranks": [
+    0,
+    1,
+    2,
+    4,
+    6,
+    9,
+    12,
+    16,
+    20,
+    25,
+    30,
+    37,
+    44,
+    53,
+    62,
+    73,
+    84,
+    96,
+    108,
+    121,
+    134,
+    148,
+    162,
+    177,
+    192,
+    208
+  ],
+  "q3_specialized_profile": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      6,
+      4
+    ],
+    [
+      8,
+      5
+    ],
+    [
+      10,
+      8
+    ],
+    [
+      12,
+      9
+    ],
+    [
+      14,
+      12
+    ],
+    [
+      16,
+      10
+    ],
+    [
+      18,
+      4
+    ],
+    [
+      20,
+      7
+    ],
+    [
+      22,
+      4
+    ],
+    [
+      24,
+      6
+    ],
+    [
+      28,
+      3
+    ],
+    [
+      32,
+      2
+    ],
+    [
+      36,
+      1
+    ]
+  ],
+  "q3_ranks": [
+    0,
+    1,
+    2,
+    5,
+    8,
+    14,
+    20,
+    30,
+    40,
+    55,
+    70,
+    93,
+    116,
+    148,
+    180,
+    224,
+    268,
+    322,
+    376,
+    434,
+    492,
+    557,
+    622,
+    691,
+    760,
+    835,
+    910,
+    985,
+    1060,
+    1138,
+    1216,
+    1294,
+    1372,
+    1452,
+    1532,
+    1612,
+    1692,
+    1773
+  ],
+  "q3_specialization_stability": [
+    {
+      "(3, 5)": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          10,
+          8
+        ]
+      ]
+    },
+    {
+      "(5, 7)": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          10,
+          8
+        ]
+      ]
+    },
+    {
+      "(7, 11)": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          4,
+          3
+        ],
+        [
+          6,
+          4
+        ],
+        [
+          8,
+          5
+        ],
+        [
+          10,
+          8
+        ]
+      ]
+    }
+  ],
+  "low_order_profiles": {
+    "4": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        4,
+        6
+      ],
+      [
+        6,
+        10
+      ]
+    ],
+    "5": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        4
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        6,
+        20
+      ]
+    ],
+    "6": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        4,
+        15
+      ],
+      [
+        6,
+        35
+      ]
+    ]
+  },
+  "target_comparison": {
+    "alphabet": 256,
+    "target_order_multiplicity": [
+      [
+        0,
+        1
+      ],
+      [
+        2,
+        255
+      ],
+      [
+        4,
+        255
+      ],
+      [
+        6,
+        65025
+      ],
+      [
+        13,
+        262650
+      ],
+      [
+        14,
+        62985
+      ],
+      [
+        18,
+        66325500
+      ],
+      [
+        24,
+        4228250625
+      ]
+    ],
+    "target_partition_at_6_13": {
+      "numerator": "436852945423061196670294793101",
+      "denominator": "542800770374370512771595361"
+    },
+    "target_prefix_through_order6": 65536,
+    "observed_prefix_through_order6_at_q256": 2829056,
+    "total_order_budget_per_cut": 102676561920,
+    "minimum_partition_with_observed_prefix": {
+      "order_6_count": 2829056,
+      "order_23_count": 351730176,
+      "order_24_count": 3940408064,
+      "value_at_6_13": {
+        "numerator": "14865545379117713534076305719296",
+        "denominator": "542800770374370512771595361"
+      }
+    },
+    "partition_gap_ratio_at_6_13": 34.02871729460696,
+    "single_point_pressure_floor": "72/125",
+    "single_point_pressure_certificate": true,
+    "uniform_law_proved": false,
+    "diagnostic_minimum_pressure": {
+      "minimum_lower_bound": 0.723612022235108,
+      "scale": 0.58338,
+      "certified": false
+    },
+    "scope": "Conditional on the observed C(q+2,3) prefix-through-order-6 lower bound holding for q=256; the finite q<=6 checks alone do not prove it.  The exact 72/125 certificate is at t=6/13; the advertised contract is the minimum over t."
+  },
+  "source_sha256": {
+    "check_color_class_cube_profile.py": "53d936135a98101b34ee3e6ff41a2466c58ee06389ba0fcdee1567bb9ce56102",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
+    "cube_graded_minor_budget.py": "930d32ddec53b5692cef627f1d40986c8e5535beb6cd142a13b58af9d28bdc00"
+  },
+  "scope": "One-hot color-class Gaussian cube tensor; specialized F256 block Toeplitz ranks.  Specialization increases orders, so the reported profiles are lower bounds for the generic tensor. No factoring exponent changes."
+}
