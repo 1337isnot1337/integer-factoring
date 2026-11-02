@@ -529,9 +529,9 @@
     }
   },
   "source_sha256": {
-    "check_color_class_cube_profile.py": "0d6fc3de1e900ed9946218abfaedd75294777cbc0db658938baaa75a87773bb6",
+    "check_color_class_cube_profile.py": "8ff649add88a0bbcace513dbebbc5f8b64ba2ebbf7036cd351d8ca80f1380f43",
     "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
     "cube_graded_minor_budget.py": "930d32ddec53b5692cef627f1d40986c8e5535beb6cd142a13b58af9d28bdc00"
   },
-  "scope": "One-hot color-class Gaussian cube tensor; specialized F256 block Toeplitz ranks.  Specialization increases orders, so the reported profiles are lower bounds for the generic tensor. No factoring exponent changes."
+  "scope": "One-hot color-class Gaussian cube tensor; specialized F256 block Toeplitz ranks.  Specialization increases orders, so the reported orders are specialization upper bounds and the small-order counts are generic lower bounds.  The graded envelope constrains prefix sums, not counts; no viability claim is made.  No factoring exponent changes."
 }

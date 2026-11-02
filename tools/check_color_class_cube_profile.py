@@ -248,8 +248,10 @@ def main():
         },
         "scope": "One-hot color-class Gaussian cube tensor; specialized F256 "
                  "block Toeplitz ranks.  Specialization increases orders, so "
-                 "the reported profiles are lower bounds for the generic tensor. "
-                 "No factoring exponent changes.",
+                 "the reported orders are specialization upper bounds and the "
+                 "small-order counts are generic lower bounds.  The graded "
+                 "envelope constrains prefix sums, not counts; no viability "
+                 "claim is made.  No factoring exponent changes.",
     }
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
