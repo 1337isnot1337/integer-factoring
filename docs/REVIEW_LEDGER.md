@@ -1613,3 +1613,23 @@ exact pressure certificate or score improvement follows. The receipt and
 complete compressed query/stdout archives are linked from the note;
 `make verify-quartic-weighted-run` checks archive integrity and recorded
 arithmetic. The one registered run is closed without additional starts.
+
+
+## Exact native-word/default replay at `9f0b9ad`
+
+The [receipt](../evidence/witt-trace-word-full-verification.json) and
+[complete compressed log](../evidence/witt-trace-word-full-verification.stdout.txt.xz)
+record an exit-zero default-plus-four-focused run at clean frozen
+`9f0b9ad19409383f42e0e52219ab17a79ea6fd59`, tree
+`254197b2a5ec86fd0bd5d7cb5bd8eeedd3be9477`, in 1,577.50 seconds.
+It has 358 Python command blocks, 66 unit tests, five crossing tests
+and 1,138 Markdown files, with clean pre/post status and log hashes.
+The source includes native pointwise word circuits, divided-power traces
+and Artin--Hasse projection. PR77 was subsequently merged at `b5c5685`.
+
+This follow-up retains current main `443bd08`. The native-word module,
+checker and its two imported arithmetic-source files are byte-identical
+to the full source pin; later main results are outside that replay.
+The pointwise known-division circuit and ordinary surjectivity proof do
+not supply a fast contractor. No new Lean, independent mathematical
+review or stronger complete factoring score is claimed.

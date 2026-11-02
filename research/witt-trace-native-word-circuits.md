@@ -245,3 +245,12 @@ selector for this native query. Its full fibre rectangles also obstruct
 direct low-degree ordinary equations without auxiliaries. These are
 restrictions on those acquisition interfaces, not a lower bound for
 the admitted exact-division circuit family or a structured contractor.
+
+The [clean full replay receipt](../evidence/witt-trace-word-full-verification.json)
+and [complete compressed log](../evidence/witt-trace-word-full-verification.stdout.txt.xz)
+pin the default and four focused trace/compiler targets at `9f0b9ad`.
+The run passed in 1,577.50 seconds, with 358 Python command blocks,
+66 unit tests, five crossing tests and 1,138 Markdown files. Later main
+changes are outside that pin. This verifies the pointwise implementation
+and stated finite controls; it does not supply the counter in Section 4
+or independently review the geometric proof.

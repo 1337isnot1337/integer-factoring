@@ -1,0 +1,29 @@
+{
+  "source": "9f0b9ad19409383f42e0e52219ab17a79ea6fd59",
+  "tree": "254197b2a5ec86fd0bd5d7cb5bd8eeedd3be9477",
+  "command": [
+    "make",
+    "-j2",
+    "--output-sync=target",
+    "verify",
+    "verify-witt-trace-words",
+    "verify-divided-power-traces",
+    "verify-artin-hasse-traces",
+    "verify-precision-rational-carries"
+  ],
+  "exit_code": 0,
+  "seconds": 1577.497556524002,
+  "clean_before": true,
+  "clean_after": true,
+  "log_sha256": "5a611d49d7b4d275d7594ca3137b6bda44daf424d29e23ebaae6bdf47f8e8edc",
+  "log_archive": "evidence/witt-trace-word-full-verification.stdout.txt.xz",
+  "archive_sha256": "9e40cdac085b1040c89a6388b3f4a89faf4097703985308d096ddcd896139c8c",
+  "python_command_blocks": 358,
+  "test_reports": [
+    "Ran 66 tests in 3.840s",
+    "Ran 5 tests in 1.764s"
+  ],
+  "markdown_files": 1138,
+  "scope": "Clean frozen default plus four focused trace/compiler targets at exact 9f0b9ad, including pointwise native Witt-word circuits, divided-power traces and Artin-Hasse projection. Later receipt/docs and main integration changes are outside this pin. Code replay only; it does not supply the missing exact-division circuit counter, new Lean, independent mathematical review or a stronger factoring bound.",
+  "factoring_exponent": "1/2; unchanged"
+}
