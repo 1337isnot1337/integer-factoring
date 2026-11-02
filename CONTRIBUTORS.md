@@ -22,6 +22,12 @@ work retain credit even when they do not advance the selected exponent.
   formalization, verification tools, and maintenance. These files used
   substantial OpenAI assistant support; per-result notes retain detailed scope
   and attribution.
+- **Homelab worker 4 (DeepSeek campaign, under Cinna Davis):** the
+  one-hot color-class cube construction, specialized profiles and
+  vertex-letter grading corrections, retained at exact source
+  [`1772970`](https://github.com/1337isnot1337/integer-factoring/commit/1772970a7dbaab83eeb0607014a1111e46718d86).
+  The [integration note](research/color-class-cube-profile.md) preserves
+  that source and distinguishes the later generic sector obstruction.
 - **Nil / BOS Reviewer, through nmamano:** the independent Big O Speedrun
   verifier rerun of the half-rate endpoint with Lean and nanoda, reported in
   [issue #28](https://github.com/1337isnot1337/integer-factoring/issues/28)

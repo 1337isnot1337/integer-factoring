@@ -51,6 +51,8 @@ A [confluent seven-letter quantum-spin construction](research/confluent-quantum-
 
 A [noncommuting nilpotent Gram test](research/nilpotent-gram-crossing.md) also preserves the endpoint and both cold ranks one, but its row Smith profile forces pressure above the required threshold over every finite coefficient extension. This fixed construction is stopped.
 
+A [color-parity sector theorem](research/color-distinct-sector-obstruction.md) excludes every homogeneous antipodal cube retaining separate color parity at `q>=34`, over every field: its common-scale, unweighted three-axis profile pressure is at least `3/4>1/sqrt(3)` for every common physical type. This includes the one-hot Gaussian. Closed odd-color sectors and the existing scalar polynomial certificate prove the bound without a generic profile computation; changing Gaussian weights while preserving color parity cannot escape it.
+
 For the fixed two-word audit family, an [all-block functional profile](research/cube-global-functional-profile.md) also excludes repairing globally favorable common-orientation products by scalar reweighting. A [recombination-before-orientation check](research/recombination-before-orientation.md) finds that the unique recombination of the 22 pieces sent to E4 by a fixed pairing has width sum 12, above the 5/8 budget; endpoint restoration is possible only at effective rho=1. Larger native alphabets, other families and coupled blocks remain open.
 
 An [exact residue-system backend](research/precision-efficient-residue-indicators.md#5-implemented-compilers-and-the-system-count-bound) retains counts at growing 2-adic precision and handles collected unit inverses. A complete integer factoring query within that polynomial interface remains open.

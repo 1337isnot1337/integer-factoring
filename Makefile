@@ -2184,6 +2184,10 @@ verify-cube-shared-budgets:
 	python3 tools/check_cube_scalar_color_clone_floor.py --output /tmp/integer-factoring-cube-scalar-color-clone-floor.json
 	python3 tools/check_cube_equal_height_fock_floor.py --output /tmp/integer-factoring-cube-equal-height-fock-floor.json
 
+.PHONY: verify-color-class-cube-profile
+verify-color-class-cube-profile:
+	python3 tools/check_color_class_cube_profile.py --output /tmp/integer-factoring-color-class-cube-profile.json
+
 .PHONY: verify-coherent-full-tail
 verify-coherent-full-tail:
 	python3 tools/check_coherent_full_tail_core.py --evidence evidence/coherent-full-tail-core.json --output /tmp/integer-factoring-coherent-full-tail-controls.json
@@ -3303,3 +3307,10 @@ verify-nilpotent-gram-crossing:
 	python3 tools/check_nilpotent_gram_crossing.py --output /tmp/integer-factoring-nilpotent-gram-crossing.json
 
 verify-arithmetic: verify-nilpotent-gram-crossing
+
+.PHONY: verify-color-distinct-sector
+verify-color-distinct-sector:
+	python3 tools/check_cube_scalar_color_clone_floor.py --output /tmp/integer-factoring-cube-scalar-color-clone-floor.json
+	python3 tools/check_color_distinct_sector.py --output /tmp/integer-factoring-color-distinct-sector.json
+
+verify-arithmetic: verify-color-distinct-sector
