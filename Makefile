@@ -3350,3 +3350,9 @@ verify-quartic-charge-fusion:
 	python3 tools/check_quartic_charge_fusion.py --output /tmp/integer-factoring-quartic-charge-fusion.json
 
 verify-arithmetic: verify-quartic-charge-fusion
+
+.PHONY: verify-semiprime-single-field
+verify-semiprime-single-field:
+	python3 tools/check_semiprime_single_field.py --output /tmp/integer-factoring-semiprime-single-field.json
+
+verify-arithmetic: verify-semiprime-single-field

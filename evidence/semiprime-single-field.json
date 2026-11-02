@@ -1,0 +1,143 @@
+{
+  "scope": "Supplied-coefficient decoder under the distinct-semiprime promise; literal divisors construct finite fixtures only. No fast coefficient engine or arbitrary-integer bound.",
+  "component_controls": [
+    {
+      "prime": 7,
+      "odd_order": 3,
+      "field_polynomial": 7,
+      "field_degree": 2,
+      "semiprimes": 66,
+      "equal_character_roots": 19
+    },
+    {
+      "prime": 11,
+      "odd_order": 5,
+      "field_polynomial": 31,
+      "field_degree": 4,
+      "semiprimes": 66,
+      "equal_character_roots": 9
+    },
+    {
+      "prime": 19,
+      "odd_order": 9,
+      "field_polynomial": 73,
+      "field_degree": 6,
+      "semiprimes": 66,
+      "equal_character_roots": 3
+    },
+    {
+      "prime": 23,
+      "odd_order": 11,
+      "field_polynomial": 2047,
+      "field_degree": 10,
+      "semiprimes": 66,
+      "equal_character_roots": 2
+    },
+    {
+      "prime": 31,
+      "odd_order": 15,
+      "field_polynomial": 25,
+      "field_degree": 4,
+      "semiprimes": 66,
+      "equal_character_roots": 2
+    },
+    {
+      "prime": 47,
+      "odd_order": 23,
+      "field_polynomial": 2787,
+      "field_degree": 11,
+      "semiprimes": 78,
+      "equal_character_roots": 0
+    },
+    {
+      "prime": 503,
+      "odd_order": 251,
+      "field_polynomial": 1986479280909191,
+      "field_degree": 50,
+      "semiprimes": 78,
+      "equal_character_roots": 0
+    }
+  ],
+  "semiprimes_checked": 486,
+  "equal_character_roots": 35,
+  "digest": "7cceb424fc821d161e458bc765b407f3484d56875f7ae734f1798778ba1ceacc",
+  "crt_controls": [
+    {
+      "integer": 11413,
+      "factors": [
+        101,
+        113
+      ],
+      "levels": [
+        7,
+        11,
+        19,
+        23,
+        31,
+        43,
+        47,
+        59,
+        67,
+        71,
+        79,
+        83
+      ]
+    },
+    {
+      "integer": 1022117,
+      "factors": [
+        1009,
+        1013
+      ],
+      "levels": [
+        7,
+        11,
+        19,
+        23,
+        31,
+        43,
+        47,
+        59,
+        67,
+        71,
+        79,
+        83
+      ]
+    },
+    {
+      "integer": 2018,
+      "factors": [
+        2,
+        1009
+      ],
+      "levels": [
+        7,
+        11,
+        19,
+        23,
+        31,
+        43,
+        47,
+        59,
+        67,
+        71,
+        79,
+        83
+      ]
+    }
+  ],
+  "rejected": [
+    "wrong_level",
+    "noncoprime",
+    "noncanonical",
+    "short_crt",
+    "duplicate_level"
+  ],
+  "source_sha256": {
+    "semiprime_single_field.py": "b13baeb1edd2d8555cd09f9decb40d81233b0ac564408b905b46e6826c33b5e3",
+    "check_semiprime_single_field.py": "434ac28e68ae7284494abc2ef6e3a921f2836308ea363bb2bb64e315d4ac0d16",
+    "sparse_faithful_character.py": "e48f51518993a8640e9a12b182b7ebd25fc4eea88ae26339b6c6c4054c1834cd",
+    "cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
+    "odd_character_residues.py": "6703866bd7a7960a4fa6635442ee62c9449e463ab5b03334882c134578bab623"
+  }
+}

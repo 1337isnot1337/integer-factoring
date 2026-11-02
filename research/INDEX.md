@@ -1,5 +1,7 @@
 # Research index
 
+- [One primitive field component for promised semiprimes](semiprime-single-field.md): a quadratic recovers unordered signed factor residues at every coprime q>=7, q=3 mod 4. Symmetric CRT avoids cross-level matching with polynomial non-provider cost. The original-index coefficient engine and arbitrary-input reduction remain open; no score change.
+
 - [Quartic additive-charge fusion](quartic-charge-fusion.md): an even non-Gaussian interaction preserves the homogeneous antipodal endpoint and proves generic prefix 0^1,2^(q-1),4^(2(q-1)) for q=2^s>=4. A q8 binary Toeplitz control confirms the order-four drop 28 to 14. The degree cost rises from three to four per occupied vertex; complete profiles, restored pressure and a stronger score remain open.
 
 - [The global divided square of quartic charge creation](charge-creation-square.md): repeated-color cancellation makes the full q8 quartic-gate product exactly linear in its coefficient. For larger alphabets, an eight-column binary relation code determines the possible quadratic term. No higher cut ranks, pressure gain or score change follows.

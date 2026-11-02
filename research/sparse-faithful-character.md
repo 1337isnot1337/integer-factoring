@@ -162,6 +162,8 @@ uses ordinary Gaussian elimination over the acquired field. The bound
 does not enumerate the coefficient index N, divisors of N or an
 exponential set of candidate support vectors.
 
+For the stronger distinct-semiprime promise, [one primitive field always suffices](semiprime-single-field.md) at every coprime q>=7, q=3 mod 4, using a quadratic and the known product residue. This separate arithmetic decoder does not assert one-field recovery for arbitrary sparse words.
+
 ### 3.1 Actual divisor reciprocity and an inversion-fixed target
 
 The arithmetic inputs have more structure than arbitrary sparse words.

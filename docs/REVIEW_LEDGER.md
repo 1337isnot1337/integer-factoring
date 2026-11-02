@@ -1,5 +1,21 @@
 # Contribution review and disposition ledger
 
+## One primitive field for promised semiprimes
+
+The [quadratic and CRT proof](../research/semiprime-single-field.md) uses the
+actual distinct-semiprime promise and known product residue to decode signed
+factor residues from one primitive field at every coprime q>=7, q=3 mod 4.
+It avoids full cyclotomic observations, inverse-orbit assumptions, and root
+matching across levels. Non-provider costs are polynomial; the original-index
+coefficient engine and arbitrary-input extension remain open. Alpha stays1/2.
+Existing faithful-decoder and factor-moment sources are credited.
+
+The [receipt](../evidence/semiprime-single-field.json) checks 486 supplied
+literal-divisor fixtures, including35 repeated roots, three full CRT
+reconstructions, and input guards. The decoder does not construct these
+fixtures. Full default verification and independent ordinary inspection are
+pending; no new Lean or score improvement is claimed.
+
 ## Arithmetic reciprocity in faithful coefficients
 
 Sol worker 2, base `b629a35`: Section 3.1 of the
