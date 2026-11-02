@@ -2062,9 +2062,13 @@ verify-prime-cofactor-saturation:
 	python3 tools/check_prime_cofactor_saturation.py --replay evidence/prime-cofactor-saturation-144.json
 	python3 tools/check_prime_cofactor_saturation.py --replay evidence/prime-cofactor-saturation-selective-144.json
 
-.PHONY: verify-cofactor-orbit-moments
+.PHONY: verify-cofactor-orbit-moments verify-entry-moment-cycles
 verify-cofactor-orbit-moments:
 	python3 tools/check_cofactor_orbit_moments.py --output /tmp/integer-factoring-cofactor-orbit-moments.json
+
+verify-entry-moment-cycles:
+	python3 tools/check_entry_moment_cycles.py --output /tmp/integer-factoring-entry-moment-cycles.json
+	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json
 
 .PHONY: verify-output-space-transfer
 verify-output-space-transfer:

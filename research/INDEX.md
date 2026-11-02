@@ -1,5 +1,7 @@
 # Research index
 
+- [Exact entry lower-tail moments on two Path C cycles](entry-moment-cycles.md): both registered cycles close (periods 20456 and 198850); clusters are short (mean run about 6); entry lower-tail constants are O(1) at matched mean counts and improve with q, while the entry density loss makes the predeclared sufficient window wrap the sparse cycle; no uniform moment/window theorem or score improvement.
+
 - [Normalize Fourier windows on the target cycle](window-orbit-normalization.md): character restriction absorbs all zero target phases into a positive orbit mean, with an exact coset-collision formula and all-scale sufficient window criterion. Rational finite-group controls and PR75 scope repairs do not supply a quantitative arithmetic window or new score.
 
 - [Self-dual Pfaffian codes and uniform crossing blocks](pfaffian-derivative-codes.md): a strict equal-copy Gaussian compression has self-dual deletion codes, a uniform subset constructor, and two explicit Hamming kernels giving every vertex-degree block. Complete finite profiles with independent literal/Toeplitz controls are above the critical target; no score improvement.
