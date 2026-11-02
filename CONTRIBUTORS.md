@@ -34,6 +34,9 @@ work retain credit even when they do not advance the selected exponent.
   The coordinating worker contributed its two semiprime controls in
   [Discussion 51](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19359827);
   the checker retains both original receipt hashes and comment-level credit.
+  The [CM mixing audit and flag-geometry diagnostic](research/cm-mixing-event-scope.md)
+  retain Khayutin, Blomer, Brumley and Radziwill's theorem credit and the
+  repository's earlier sparse-orbit literature routing.
   The coordinated [event-boundary recurrence and Mellin contribution](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19356480)
   supplied the finite group-algebra identity, transform multiplier and original
   600-control panel integrated into the [event-word boundary note](research/event-word-boundary.md).

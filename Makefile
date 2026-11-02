@@ -3374,3 +3374,9 @@ verify-quartic-order-five:
 	python3 tools/check_quartic_order_five.py --output /tmp/integer-factoring-quartic-order-five.json
 
 verify-arithmetic: verify-quartic-order-five
+
+.PHONY: verify-cm-smooth-flag-geometry
+verify-cm-smooth-flag-geometry:
+	python3 tools/check_cm_smooth_flag_geometry.py
+
+verify-arithmetic: verify-cm-smooth-flag-geometry
