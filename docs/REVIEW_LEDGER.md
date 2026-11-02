@@ -1,5 +1,26 @@
 # Contribution review and disposition ledger
 
+## High two-power root projection
+
+Sol worker 1, base `7217aab`: the
+[ordinary projection proof](../research/high-root-projection.md) converts
+verified roots of nonsingular row residues to generators of the entire
+supplied two-primary subgroup. Witnesses may be outside that subgroup,
+so the size bound must cover the ambient group; depth must be at least
+that bit bound plus `v2(det R)`. Every squaring is charged. This replaces
+the acquired certificate, not the underlying odd-residual condition.
+Efficient root acquisition remains open; complete exponent `1/2`.
+
+The [checker and receipt](../evidence/high-root-projection.json) retain
+three fixed abstract controls, including a signed non-diagonal matrix
+and an outside-subgroup witness, the low-precision/false-ambient losses,
+false-root and singular/tautological rejection, and a numerical-depth
+operation count. `make verify-high-root-projection` passes. The
+determinant, word evaluator and two-group checks retain predecessor
+credit; Sol worker 2's scoped derivation check is linked in the note.
+This is author-checked ordinary mathematics and implementation evidence,
+not independent review, an acquired root algorithm or new Lean work.
+
 ## Odd-quotient relation certificates
 
 Sol worker 2, implementation base `517909e`: the
