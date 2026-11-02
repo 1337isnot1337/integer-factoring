@@ -11,7 +11,18 @@ The ordinary adjacent-form argument proves an exponential Lipschitz
 budget on a family of order discriminants; no infinite fundamental or
 hard-composite subfamily is claimed. Five exact constructed controls,
 including a small-cutoff p-free guard, pass with documentation links and
-whitespace. Full default verification will be recorded separately.
+whitespace. The [full default replay](../evidence/cm-mixing-full-verification.json)
+passed at clean frozen `78b3c115c10148f89b3eb393c37c89b1bb3d3239`, tree
+`b0d2acb893e87d1026c51cb1e55b7e246eef20e8`, in 2201.06 seconds.
+The complete compressed log and raw/archive hashes are retained. The
+private `/tmp` marker control passed; host root was read-only, the frozen
+checkout was the only writable host bind, and tracked state stayed clean.
+The [hosted run](https://github.com/1337isnot1337/integer-factoring/actions/runs/41527780930)
+also passed exact certificates and arithmetic-sieve at `a6db160`, which
+includes PR103 and the one-sided-minorant caveat. PR104 integration has
+focused CM/near-height/docs checks; its new theorem has its own full pin
+below. The archive follow-up has focused/docs/whitespace checks. None of
+these statements reverify the external automorphic proofs.
 This is author verification, without independent mathematical review,
 new Lean or any complete bound improvement.
 

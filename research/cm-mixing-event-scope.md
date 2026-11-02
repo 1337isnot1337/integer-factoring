@@ -214,3 +214,12 @@ character orthogonality and Sobolev embedding are classical; Sol worker 1
 developed the explicit flag-budget diagnostic with substantial OpenAI
 assistant support. This is author verification, without independent
 mathematical review, new Lean formalization or a stronger complete bound.
+
+The [full default replay](../evidence/cm-mixing-full-verification.json)
+passes in 2201.06 seconds at clean frozen source
+`78b3c115c10148f89b3eb393c37c89b1bb3d3239`; its complete compressed
+stdout and hashes are archived. Later PR103 integration and the explicit
+one-sided-minorant caveat also have a hosted exact-certificate pass at
+`a6db160`. PR104 integration has separate focused checks. The
+[review ledger](../docs/REVIEW_LEDGER.md) retains these source boundaries;
+the checker is unchanged from the full pin.
