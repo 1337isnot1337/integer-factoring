@@ -1,5 +1,7 @@
 # Research index
 
+- [Smooth-pair relations modulo a certified odd kernel](odd-quotient-relations.md): verified odd row annihilators preserve the determinant's two-adic valuation and all two-part factoring directions. A uniform odd multiplier permits positive-kernel search in H^M without an unknown class number. A fast quotient-pair extractor and generator coverage remain open; no score change.
+
 - [One primitive field component for promised semiprimes](semiprime-single-field.md): a quadratic recovers unordered signed factor residues at every coprime q>=7, q=3 mod 4. Symmetric CRT avoids cross-level matching with polynomial non-provider cost. The original-index coefficient engine and arbitrary-input reduction remain open; no score change.
 
 

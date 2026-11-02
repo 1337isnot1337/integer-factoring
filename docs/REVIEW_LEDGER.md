@@ -1,5 +1,27 @@
 # Contribution review and disposition ledger
 
+## Odd-quotient relation certificates
+
+Sol worker 2, implementation base `517909e`: the
+[odd-quotient proof](../research/odd-quotient-relations.md) allows verified
+odd-order row residues and preserves the exact two-adic determinant
+valuation. Its uniform small-primary multiplier has fully charged bit
+cost; positive-kernel search in the computable image preserves smooth-set
+density and all two-part directions. Generator coverage and efficient
+quotient-pair extraction remain explicit open obligations.
+
+The [checker and receipt](../evidence/odd-quotient-relations.json) include
+mixed product groups, 54 fixed multiplier controls, false-certificate
+guards, and a lifted positive-kernel fixture where 32 exact pair targets
+fail but all 48 quotient targets pass. Static class groups -7423/-26623
+reuse the contributed boundary examples with source credit, distinguish
+different-class preimages from strict descent, and recover their full
+two-parts. Their generator/relation enumeration is finite supplied data.
+Focused replay, links in 1,186 Markdown files and whitespace pass; full
+default verification is pending for this source. This is an
+author-checked ordinary relaxation, without independent mathematical
+review, new Lean or a stronger complete factoring bound.
+
 ## Near-height smooth descent
 
 Sol worker 1, base `440c816`: the

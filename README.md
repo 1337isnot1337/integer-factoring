@@ -51,6 +51,8 @@ A [near-height enumeration theorem](research/near-height-smooth-descent.md) make
 
 A [pooled-rank alternative](research/clustered-hits-and-pooled-rank.md) can certify enough relations before every target prime has a smooth hit. Fixed integer rows repeat at most `2K_p-1` times, but different rows need not be independent. The finite pool uses more total probes in the checked example; a uniform rank-window bound remains open.
 
+An [odd-quotient relation relaxation](research/odd-quotient-relations.md) accepts smooth-pair equality modulo a computable odd kernel, preserving all two-part factoring directions and charging the multiplier. It weakens the exact-principality witness requirement; efficient quotient-pair extraction and generator coverage remain open.
+
 [Character-lift guards](research/power-character-lift-guards.md) explain one finite rank stall exactly and certify long rough gaps. The existing constant-bias hypothesis defeats this specific obstruction on sufficiently large valid bases; it still supplies no quantitative rank window.
 
 A [near-identity positivity criterion](research/near-identity-positive-minorants.md) would bound the raw selector from a positive Fourier minorant. A [uniform arithmetic norm gap](research/uniform-ambient-minorant-obstruction.md) now excludes a subexponential inverse ambient mean for every sufficiently large discriminant, under the same pinned analytic input. It covers subexponential cofactor caps and multiplier choices, and excludes the one-sided negative-spectrum repair. Subgroup-specific certificates and the original target-cycle questions remain open.
