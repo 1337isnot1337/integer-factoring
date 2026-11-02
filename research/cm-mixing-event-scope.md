@@ -167,6 +167,13 @@ We do not assume without inspection which exact norm a source theorem
 uses. Equation (5) rules out a free subexponential Lipschitz interpolation
 of the ambient arithmetic flag.
 
+This is a full-interpolation statement. It does not rule out a one-sided
+geometric minorant that discards these particular smooth points; the
+retained mass and norm of such a minorant would need separate proofs.
+The [ambient Fourier-positive obstruction](uniform-ambient-minorant-obstruction.md)
+has its own positivity hypotheses and is not automatically a theorem about
+every geometric minorant.
+
 Under the existing principal split-prime band estimate, this example
 also applies to an ambient **p-free** flag for some target prime `p<=Y`.
 The band has `>>Y/log Y` unramified split primes, while at most
