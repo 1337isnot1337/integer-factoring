@@ -230,3 +230,7 @@ inequalities. The [receipt](../evidence/ambient-minorant-gap.json) records
 the exact forms. These controls do not prove Linnik's theorem, the uniform
 analytic estimate, the infinite family, or independent mathematical review;
 those ingredients and the ordinary deduction are identified above.
+
+The [clean full default replay](../evidence/ambient-minorant-gap-full-verification.json)
+passes at exact source `4b6d914ee0e292d69a72951b1de0c0ec1254ddd7`
+in 720.93 seconds. The archive follow-up changes review prose and receipts.

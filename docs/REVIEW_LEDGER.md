@@ -39,9 +39,12 @@ The exact focused checker passes a sharp Walsh control and 26 oriented
 prime translates on six verified semiprimes, including their full-height
 recognition and finite preprocessing inequalities. The uniform analytic
 input and Linnik theorem are identified external inputs; no finite
-control establishes them. Full default verification is pending, and no
-new Lean or independent mathematical review is claimed. Existing norm-gap
-and Fourier-kernel credits are preserved.
+control establishes them. The [full default replay](../evidence/ambient-minorant-gap-full-verification.json)
+passes at exact source `4b6d914ee0e292d69a72951b1de0c0ec1254ddd7`
+(tree `43d86328965639d613972758feca016e810544cf`), in 720.93 seconds
+with clean state before and after. The archive follow-up changes review
+prose and receipts only. No new Lean or independent mathematical review
+is claimed. Existing norm-gap and Fourier-kernel credits are preserved.
 
 ## Confluent seven-letter quantum-spin crossing
 
