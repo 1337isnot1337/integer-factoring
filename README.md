@@ -47,6 +47,8 @@ A [near-identity positivity criterion](research/near-identity-positive-minorants
 
 A [confluent seven-letter quantum-spin construction](research/confluent-quantum-spin.md) has a rank-one specialization, but an exact determinant budget excludes its bare two-place target over every finite coefficient extension. That fixed degeneration is stopped.
 
+A [noncommuting nilpotent Gram test](research/nilpotent-gram-crossing.md) also preserves the endpoint and both cold ranks one, but its row Smith profile forces pressure above the required threshold over every finite coefficient extension. This fixed construction is stopped.
+
 For the fixed two-word audit family, an [all-block functional profile](research/cube-global-functional-profile.md) also excludes repairing globally favorable common-orientation products by scalar reweighting. A [recombination-before-orientation check](research/recombination-before-orientation.md) finds that the unique recombination of the 22 pieces sent to E4 by a fixed pairing has width sum 12, above the 5/8 budget; endpoint restoration is possible only at effective rho=1. Larger native alphabets, other families and coupled blocks remain open.
 
 An [exact residue-system backend](research/precision-efficient-residue-indicators.md#5-implemented-compilers-and-the-system-count-bound) retains counts at growing 2-adic precision and handles collected unit inverses. A complete integer factoring query within that polynomial interface remains open.

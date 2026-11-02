@@ -3285,3 +3285,9 @@ verify-small-index-smooth-density:
 	python3 tools/check_small_index_smooth_density.py --output /tmp/integer-factoring-small-index-smooth-density.json
 
 verify-arithmetic: verify-small-index-smooth-density
+
+.PHONY: verify-nilpotent-gram-crossing
+verify-nilpotent-gram-crossing:
+	python3 tools/check_nilpotent_gram_crossing.py --output /tmp/integer-factoring-nilpotent-gram-crossing.json
+
+verify-arithmetic: verify-nilpotent-gram-crossing
