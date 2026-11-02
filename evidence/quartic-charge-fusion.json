@@ -1,34 +1,34 @@
 {
   "scope": "Formal kernel/endpoint/minor identities and one q8 low-jet charge block, independently restricted from F256 to binary Toeplitz ranks. The generic prefix uses the ordinary sector argument; no full profile, favorable normalized pressure or stronger factoring exponent is established.",
-  "physical_degree_per_occupied_vertex": 5,
+  "physical_degree_per_occupied_vertex": 4,
   "quartic_terms": [
     [
       4,
       4,
-      12
-    ],
-    [
-      4,
-      12,
-      4
-    ],
-    [
-      6,
-      6,
       8
     ],
     [
-      6,
+      4,
       8,
+      4
+    ],
+    [
+      5,
+      5,
       6
     ],
     [
-      8,
+      5,
       6,
-      6
+      5
     ],
     [
-      12,
+      6,
+      5,
+      5
+    ],
+    [
+      8,
       4,
       4
     ]
@@ -139,7 +139,7 @@
     }
   },
   "source_sha256": {
-    "check_quartic_charge_fusion.py": "f8d7b3dfd7f068bc494475d9ba35949928369120206a113f317f4456e790db82",
+    "check_quartic_charge_fusion.py": "277c7af3425ff1cb2f4a9e403c69cea1f5f855d6e8a4175a2c04cf58902cdb67",
     "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
   }
 }

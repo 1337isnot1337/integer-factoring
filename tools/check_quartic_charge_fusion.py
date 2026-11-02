@@ -10,9 +10,9 @@ import cube_homogeneous_gaussian as cube
 
 MODULUS = 0x11B
 LENGTH = 5
-ELL4 = frozenset(((4,0,0),(0,4,0),(0,0,4)))
-QUARTIC = frozenset(((12,4,4),(4,12,4),(4,4,12),
-                     (8,6,6),(6,8,6),(6,6,8)))
+ELL2 = frozenset(((2,0,0),(0,2,0),(0,0,2)))
+QUARTIC = frozenset(((8,4,4),(4,8,4),(4,4,8),
+                     (6,5,5),(5,6,5),(5,5,6)))
 
 
 def multiply(a, b):
@@ -83,8 +83,8 @@ def formal_controls(kernel):
     for mask,entry in enumerate(gaussian):
         paired = all(bool(mask>>v&1)==bool(mask>>(v^7)&1) for v in range(8))
         assert (len(entry)%2)==paired
-    assert QUARTIC and all(sum(e)==20 for e in QUARTIC) and len(QUARTIC)%2==0
-    assert all(sum(e)==10 for row in kernel for entry in row for e in entry)
+    assert QUARTIC and all(sum(e)==16 for e in QUARTIC) and len(QUARTIC)%2==0
+    assert all(sum(e)==8 for row in kernel for entry in row for e in entry)
     records = []
     for axis in range(3):
         left,right = cube.axis_parts(axis)
@@ -155,9 +155,9 @@ def low_jet_controls(kernel):
 def main():
     parser = argparse.ArgumentParser();parser.add_argument('--output',type=Path);args = parser.parse_args()
     assert all(power(a,255)==1 for a in range(1,256))
-    kernel = [[cube.multiply(ELL4,a) for a in row] for row in cube.kernel()]
+    kernel = [[cube.multiply(ELL2,a) for a in row] for row in cube.kernel()]
     result = dict(scope='Formal kernel/endpoint/minor identities and one q8 low-jet charge block, independently restricted from F256 to binary Toeplitz ranks. The generic prefix uses the ordinary sector argument; no full profile, favorable normalized pressure or stronger factoring exponent is established.',
-                  physical_degree_per_occupied_vertex=5,quartic_terms=sorted(QUARTIC),
+                  physical_degree_per_occupied_vertex=4,quartic_terms=sorted(QUARTIC),
                   formal=formal_controls(kernel),low_jets=low_jet_controls(kernel),
                   source_sha256={name:sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
                                  for name in ('check_quartic_charge_fusion.py','cube_homogeneous_gaussian.py')})

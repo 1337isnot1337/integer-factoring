@@ -4,7 +4,7 @@
 
 The [ordinary construction and prefix proof](../research/quartic-charge-fusion.md)
 add even quartic color fusion to the worker-4 Gaussian model. The tensor
-has homogeneous degree five per occupied vertex, exact antipodal endpoint,
+has homogeneous degree four per occupied vertex, exact antipodal endpoint,
 and genuinely breaks separate color parity. Its generic first orders are
 0^1,2^(q-1),4^(2(q-1)) for q=2^s>=4. This is a lower-order cancellation
 mechanism, not a complete profile or a stronger factoring bound.
@@ -14,7 +14,7 @@ axes, 108 two-minors and 48 three-minors, plus the independently binary
 restricted Toeplitz ranks of one q8 charge block through order four.
 A separate binary color matrix verifies ranks 21 and 7. The preceding
 NumPy prototype agrees; the committed replay does not need NumPy.
-The degree-five restoration is explicit. Focused links and source checks,
+The degree-four restoration is explicit. Focused links and source checks,
 and any frozen default replay, will be recorded at their exact heads.
 No new Lean or independent mathematical review is claimed; alpha stays 1/2.
 

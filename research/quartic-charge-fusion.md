@@ -20,7 +20,7 @@ For `q=8`, this changes the Gaussian prefix `0^1,2^7,4^28` to
 exact Toeplitz ranks, independently implemented over binary matrices.
 The general statement follows from the leading-coefficient argument below.
 
-The construction pays **degree five per occupied vertex**, rather than
+The construction pays **degree four per occupied vertex**, rather than
 three. No complete generic profile, favorable normalized pressure, full
 coefficient-rank bound or stronger factoring exponent is established.
 The complete score remains `1/2`. This is a positive construction and a
@@ -46,24 +46,25 @@ properties.
 Put `ell=x+y+z`, and replace every Gaussian pair kernel by
 
 ```math
-\widetilde K_{uv}=\ell^4 K_{uv}.                         \tag{2}
+\widetilde K_{uv}=\ell^2 K_{uv}.                         \tag{2}
 ```
 
 Starting from the vacuum, apply the pair-creation gates for every vertex
 pair and every equal nonzero color. Their product is the color-class
-Gaussian with entries multiplied by `ell^(2w)`, where `w` is occupied
-vertex count. Pair weights have degree ten, so this base has degree `5w`.
+Gaussian with entries multiplied by `ell^w`, where `w` is occupied
+vertex count. Pair weights have degree eight, so this base has degree `4w`.
 
 For every four-vertex set `S`, let `C_S` sum the creations of four
-**distinct** nonzero colors with XOR zero. Add the gates
+**distinct** nonzero colors with XOR zero, counting each assignment to
+the four fixed vertices exactly once. Add the gates
 
 ```math
 \prod_{|S|=4}(I+H C_S),\qquad
-H=(xyz)^4\bigl(\ell^8+(xyz)^2\ell^2\bigr).              \tag{3}
+H=(xyz)^4\bigl(\ell^4+xyz\ell\bigr).              \tag{3}
 ```
 
-The polynomial `H` has degree 20 and six monomials. Creating four vertices
-therefore preserves degree `5w`. All gates commute; there are at most two
+The polynomial `H` has degree 16 and six monomials. Creating four vertices
+therefore preserves degree `4w`. All gates commute; there are at most two
 disjoint quartics in any term. This defines a uniform finite tensor, with
 no quotient or uncharged auxiliary algebra. For fixed `q`, its complete
 local polynomial tensor can be constructed by finite pair/quartic
@@ -74,7 +75,7 @@ At `(1,1,1)`, `ell=1` and `H=0`. The pair construction retains its original
 antipodal endpoint and every quartic gate becomes the identity. A labeling
 with colors `1,2,4,7` on four vertices and vacuum elsewhere has entry
 exactly `H`, so separate color parity is genuinely broken. The full tensor
-has actual total degree 40: the all-one-color antipodal entry is nonzero
+has actual total degree 32: the all-one-color antipodal entry is nonzero
 at the endpoint and homogeneous of that degree.
 
 ## 2. The leading coefficient matches in every axis
@@ -83,16 +84,21 @@ Fix the x cut and work over `F_2(y,z)[[x]]`. Every cross-pair entry has
 valuation two and the same leading coefficient
 
 ```math
-A=y^2z^2(y+z)^4.
+A=y^2z^2(y+z)^2.
 ```
 
 The quartic has valuation four and
 
 ```math
-[x^4]H=y^4z^4(y+z)^8=A^2.                              \tag{4}
+[x^4]H=y^4z^4(y+z)^4=A^2.                              \tag{4}
 ```
 
-The cyclic identities hold for y and z. Thus the cancellation is generic
+The cyclic identities hold for y and z. With the original degree-three
+grading, a quartic of degree twelve with these three leading coefficients
+would have to be the monomial `(xyz)^4`, whose endpoint is one. Degree
+four per occupied vertex is the smallest integer degree for this
+simultaneous-leading-coefficient construction with a vanishing quartic
+endpoint. Thus the cancellation is generic
 and simultaneous in the three axes, not a consequence of a finite-field
 specialization.
 
@@ -111,7 +117,7 @@ columns have one spatial `4 by 4` block per color. Its first two Smith
 orders are `2,4`, with no other order at most four. The checker verifies
 this generically in all axes: every entry has order two; the least
 nonzero two-minor order is six; all three-minors have order at least eleven.
-Multiplication by `ell^4` is a local unit and preserves these orders.
+Multiplication by `ell^2` is a local unit and preserves these orders.
 
 Now consider two distinct colors on each side. For an unordered pair
 `{a,b}`, the Gaussian order-four coefficient is `A^2` when the column
@@ -173,7 +179,7 @@ occupancy `E`, the correctly restored objective is
 
 ```math
 \Phi_p(t)=
- \frac{\frac13\sum_a\log Z_a(t)-\frac{40}{3}E\log t}{4H(p)}.
+ \frac{\frac13\sum_a\log Z_a(t)-\frac{32}{3}E\log t}{4H(p)}.
                                                                \tag{5}
 ```
 
