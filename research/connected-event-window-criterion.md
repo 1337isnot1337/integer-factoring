@@ -229,3 +229,10 @@ assistance; no novelty priority or independent mathematical review claimed.
 The next arithmetic question is to bound the signed connected sum (6)
 for the actual reduced-norm predicate at (4), or to identify a genuine
 arithmetic obstruction. A generic low-bias sample does not settle it.
+
+The [frozen default replay](../evidence/event-cumulant-full-verification.json)
+passes at exact source `0a478fbead58c99a7500125536322f7ba23f241f` in
+951.55 seconds, with clean tracked state before and after. Its
+[complete compressed log](../evidence/event-cumulant-full-verification.stdout.txt.xz)
+is archived. This follow-up adds the record and prose; the cumulant checker
+and its default-gate integration are unchanged.

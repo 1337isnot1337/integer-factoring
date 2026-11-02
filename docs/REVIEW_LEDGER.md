@@ -14,8 +14,9 @@ existing event/group/row prerequisite. The new checker uses exact rational
 controls, a clustered negative case and saved generator-5/7 event flags;
 it performs no fresh arithmetic walk. Its
 [receipt](../evidence/event-cumulant-windows.json) states the insufficient
-mean count on both saved cycles. A full default replay will be recorded
-at a frozen source commit separately. Credit remains with the upstream
+mean count on both saved cycles. The [full default replay](../evidence/event-cumulant-full-verification.json)
+passes at exact `0a478fbead58c99a7500125536322f7ba23f241f` in 951.55 seconds,
+with clean tracked state before and after. Credit remains with the upstream
 event/density/moment contributions, saved data, and cited classical
 cumulant methods; this is a conditional research interface.
 
