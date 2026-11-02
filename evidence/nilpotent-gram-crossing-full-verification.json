@@ -1,0 +1,16 @@
+{
+  "source_commit": "8b1a041d5400353bd08ac81329fd5de75b741a8e",
+  "source_tree": "2707e8cfbe84986d8a02b2fd78fc0a2fd7623785",
+  "command": [
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 1259.841847129006,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "scope": "Default non-Lean verification at the exact source commit; no independent mathematical review.",
+  "stdout_sha256": "4c3a9e1d6aacbc04761108bd235d207a691d243a5e55865d8f4e852f9e644a3b",
+  "stdout_archive": "evidence/nilpotent-gram-crossing-full-verification.stdout.txt.xz",
+  "archive_sha256": "7ef88c9b6f408f5ea6742d28dc4abfbd490b04d3312071ad8ce42718632f5c76"
+}

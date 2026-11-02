@@ -24,6 +24,14 @@ is justified by their profiles. General nilpotent Gram paths, different
 row profiles, physical weights and collective criteria are outside this
 statement. The complete factoring exponent remains `1/2`.
 
+The single-flag control is a fourth-power reparameterization of a
+cubic path, so its bare exclusion was already covered by the
+[integer shared-minor degree floor](integer-shared-minor-pressure-floor.md),
+which excludes seven-letter degrees one through eleven. The cycle
+construction has odd column orders and actual degree twelve. The
+row-specific argument here excludes that case without extrapolating
+the earlier degree range.
+
 ## 1. An explicit operator-space construction
 
 Work over `F_2`. On a 49-dimensional space, let `N` have nilpotent Jordan
@@ -158,3 +166,9 @@ opposite profiles use the existing native Smith engine; the row-only
 exclusion has the separate Toeplitz control. These fixed finite checks
 and the displayed ordinary proof do not constitute independent
 mathematical review, a general family obstruction or a new Lean proof.
+
+The [clean full default replay](../evidence/nilpotent-gram-crossing-full-verification.json)
+passes at exact source `8b1a041d5400353bd08ac81329fd5de75b741a8e`
+(tree `2707e8cfbe84986d8a02b2fd78fc0a2fd7623785`), in 1259.84 seconds.
+The archive follow-up adds review prose, earlier-degree-floor credit and
+verification records; checker code and the Makefile are unchanged.

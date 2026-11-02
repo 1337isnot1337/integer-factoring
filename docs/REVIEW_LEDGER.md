@@ -13,8 +13,13 @@ collective criteria remain outside the claim. The complete exponent stays 1/2.
 
 The focused replay verifies 4802 endpoint entries, native profiles and ten
 independent row Toeplitz nullities. The exclusion uses exact integer
-comparisons, without numerical optimization. Full default verification is
-pending. No new Lean or independent mathematical review is claimed.
+comparisons, without numerical optimization. The [full default replay](../evidence/nilpotent-gram-crossing-full-verification.json)
+passes at exact source `8b1a041d5400353bd08ac81329fd5de75b741a8e`
+(tree `2707e8cfbe84986d8a02b2fd78fc0a2fd7623785`), in 1259.84 seconds,
+clean before and after. The archive follow-up adds review prose, receipts
+and explicit credit to the earlier integer degree floor for the cubic
+single-flag control. No checker or Makefile change is made. No new Lean
+or independent mathematical review is claimed.
 
 ## Original smooth density from even prime products
 
