@@ -2074,6 +2074,12 @@ verify-entry-moment-cycles:
 	python3 tools/check_entry_moment_cycles.py --output /tmp/integer-factoring-entry-moment-cycles.json
 	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json
 
+.PHONY: verify-entry-moment-saved
+verify-entry-moment-saved:
+	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json --saved-flags
+
+verify-arithmetic: verify-entry-moment-saved
+
 .PHONY: verify-output-space-transfer
 verify-output-space-transfer:
 	python3 tools/check_output_sensitive_space_transfer.py
@@ -3183,6 +3189,12 @@ verify-sparse-faithful-character:
 	python3 tools/check_sparse_faithful_character.py
 
 verify-arithmetic: verify-sparse-faithful-character
+
+.PHONY: verify-charge-creation-square
+verify-charge-creation-square:
+	python3 tools/check_charge_creation_square.py
+
+verify-constructions: verify-charge-creation-square
 .PHONY: verify-divided-power-traces
 verify-divided-power-traces:
 	python3 tools/check_divided_power_trace_carries.py

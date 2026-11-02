@@ -28,6 +28,50 @@ The earlier degree-five replay was intentionally stopped after 195.04 seconds
 when the lower-degree construction was verified; it is not a passed check.
 No new Lean or independent mathematical review is claimed; alpha stays 1/2.
 
+## Quartic charge-creation divided square
+
+Sol worker 2, base `60a21ef`: the
+[global creation note](../research/charge-creation-square.md) complements
+the primary worker's PR #97, retaining its proposal and predecessor credit.
+A fixed-pair involution proves exact q8 cancellation of the full quadratic
+creation term. For eight distinct colors, an even binary relation code
+gives its uniform coefficient formula. These are author-checked ordinary
+construction identities, not independently reviewed mathematics.
+
+The [checker and receipt](../evidence/charge-creation-square.json) independently
+expand 987,840 q8 terms and compare literal quartet counts with binary ranks
+on all 6,435 q16 eight-color subsets. The ordinary-square and total-XOR-only
+shortcuts have explicit nonzero/zero guards. Focused replay, documentation
+(1,179 Markdown files) and whitespace checks pass; a full default
+replay is not yet recorded for this source. No full Smith profile, pressure
+gain, new Lean work or stronger complete factoring bound is claimed.
+
+## Entry lower-tail sign correction, base `89aeec9`
+
+The [correction](../research/entry-moment-tail-sign-correction.md) fixes
+two reversed deviation definitions in the entry-cycle checker. The
+period-three asymmetric regression returns the correct lower numerator
+2 rather than the previous upper numerator 4; it failed before the fix.
+The separate cofactor lower-tail implementation is unchanged and agrees
+with the repaired helper. All table statistics are recomputed from the
+existing saved flags, with no new compositions or parameter choices.
+
+The [correction receipt](../evidence/entry-tail-sign-correction.json)
+records 83 changed moment fields and unchanged orbit/window/gap metadata.
+All 32 matched-mean lower-tail tests pass C=2 after correction; the old
+general lower-tail contrast is withdrawn. The abstract moment implication,
+saved row/event data, and complete 1/2 theorem are unaffected. Historical
+full receipts still describe their exact old code; they do not establish
+the semantic validity of its mislabeled tail statistic.
+
+The asymmetric regressions, saved-flag replay and combined boundary/event
+prerequisite gate pass. The [full default replay](../evidence/entry-tail-sign-full-verification.json)
+passes at exact `de0c57c7d803fc17a32611a8116e011a607bff7f` in 2494.28 seconds,
+with clean tracked state before and after, inside private `/tmp`. Its
+complete compressed log is archived. Later proof/metadata clarification
+and integration preserve the corrected checker and canonical-statistics
+hashes; focused/docs checks cover those follow-ups separately.
+
 ## Sol worker 1 boundary representation and contributed Euler recurrence
 
 The [word-boundary proof](../research/event-word-boundary.md) identifies

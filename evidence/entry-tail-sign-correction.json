@@ -1,0 +1,52 @@
+{
+  "base_commit": "89aeec9ffc8a8b34af19ef45650b8ff520b33c40",
+  "scope": "Repair upper/lower sign labels; saved-flag postprocessing only, zero new group compositions.",
+  "changed_scalar_fields": 83,
+  "changed_field_categories": {
+    "constant_one_bound_holds": 16,
+    "constant_two_bound_holds": 15,
+    "required_constant_decimal": 42,
+    "lower_tail_numerator": 10
+  },
+  "independent_saved_lower_numerator_checks": 10,
+  "regression": {
+    "flags": [
+      1,
+      0,
+      0
+    ],
+    "window": 1,
+    "order": 1,
+    "old_reported_lower_numerator": 4,
+    "true_lower_numerator": 2
+  },
+  "source_before": {
+    "tools/check_entry_moment_cycles.py": "5929ec9ac48f040df340148ebea95c82c28a9af3df1ed529821a5d8bb7c687c3",
+    "evidence/entry-moment-cycles.json": "8509f0ebcaa44c8b7032f788a4a14c90e2a937a150a7e36ed301411d7062fcb3"
+  },
+  "source_after": {
+    "tools/check_entry_moment_cycles.py": "8b8257579f64da02978ac9f97bb8fed41e3024653d47f4734618ac6b50ffb228",
+    "evidence/entry-moment-cycles.json": "97c7d9d91f1c140e90aeec2fe6aa36b998e5480338c297516d07f56c64e1a011"
+  },
+  "unchanged_flag_sha256": {
+    "450296711": "cd6661da96679a8ae0bdf67c462f6b925f1315f90659bfa74ea9de402144c450",
+    "1000036000099": "0ee59bf98ca0d6268f25d9e65a4a8c33aea222f9594f9f2a175d0c47c3f5c4ad"
+  },
+  "unchanged_fields": [
+    "flags",
+    "periods",
+    "windows",
+    "orders",
+    "starting phases",
+    "entry counts",
+    "empty fractions",
+    "composition budget"
+  ],
+  "matched_mean_tests": 32,
+  "corrected_constant_two_passes": 32,
+  "corrected_constant_one_passes": 30,
+  "nonwrapping_sufficient_window_passes": 10,
+  "complete_factoring_exponent": "1/2; unchanged",
+  "constant_one_passes_implied_by_trivial_bound": 28,
+  "constant_two_passes_implied_by_trivial_bound": 32
+}

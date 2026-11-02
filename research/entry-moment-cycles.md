@@ -1,5 +1,11 @@
 # Exact entry lower-tail moments on two Path C cycles
 
+**2026-11-02 correction:** the earlier checker selected the upper tail while
+labeling it as the lower tail. Both sign sites and the tables below are
+corrected from the identical archived flags, with zero new group compositions.
+The former raw-versus-entry lower-tail contrast is withdrawn. See the
+[exact correction and regression](entry-moment-tail-sign-correction.md).
+
 - **Base commit:** `443bd08` (current `main` when this checkpoint was written).
 - **Registered scope:** the bounded experiment at
   [Discussion #51, 2026-11-01T20:41:39Z](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19338636).
@@ -28,9 +34,8 @@ kappa = delta / mean_hit_run.
 
 A window containing an entry contains a hit. Thus the same lower-tail moment
 criterion can be applied to `e`, with density `kappa`, and a window theorem for
-entries implies a window theorem for hits. The candidate gain is that the
-entry process removes the heavy lower tail created by clustered hits. The cost
-is the factor `1/kappa = mean_hit_run / delta`.
+entries implies a window theorem for hits. The diagnostic asks whether removing clusters reduces lower deviations; the
+old upper-tail calculation did not test that assertion. The cost is the factor `1/kappa = mean_hit_run / delta`.
 
 The predeclared diagnostic used:
 
@@ -48,8 +53,8 @@ compositions. The two periods use exactly 219306 steps; the generator-seven
 index is recorded during the existing generator-five walk and costs no
 extra walk. The earlier separate index helper added 66509 steps, making
 its aggregate 285815; its `composition_cap` field did not certify that
-aggregate. This bookkeeping error is corrected without changing either
-base cycle's flags, moments or run profile.
+aggregate. That bookkeeping repair preserved the base flags and computations. The later
+sign correction changes only moment statistics, not either run profile.
 
 For a window `W`, with cyclic window counts `A_x(W)` and `mu=delta W`, the
 tested inequality is
@@ -89,84 +94,87 @@ Controls checked by the tool:
 - `g_7 = g_5^66509` in the second cycle. Since `K_7=7`, the actual `g_7` start
   phase in the `g_5` cycle is `7*66509 mod 198850 = 67863`.
 
-## 3. Sufficient windows
+## 3. Corrected sufficient-window lower tails
 
-Exact required constants `C_req`, where the bound holds at the displayed `W`
-with `C_req^q` equal to the exact left/right ratio.
+The decimals below use the true lower tail. Exact integer inequalities are
+in the corrected receipt; all previously specified windows are retained.
 
 ### Cycle A: `N=450296711`
 
-| process | `q` | `C` | `W` | `C_req` | empty windows | start empty? |
-|---|---|---|---|---|---|---|
-| raw | 5 | 1 | 1432 | 0.6358 | 0/20456 | no |
-| raw | 5 | 2 | 2536 | 0.5116 | 0/20456 | no |
-| raw | 25 | 1 | 464 | 0.4479 | 0/20456 | no |
-| raw | 25 | 2 | 896 | 0.2187 | 0/20456 | no |
-| entry | 5 | 1 | 8234 | 0.6533 | 0/20456 | no |
-| entry | 5 | 2 | 14582 | 0.2920 | 0/20456 | no |
-| entry | 25 | 1 | 2668 | 0.1920 | 0/20456 | no |
-| entry | 25 | 2 | 5152 | 0.2254 | 0/20456 | no |
-
-All eight windows fit inside the period. The predeclared `C=1` and `C=2`
-bounds hold, and the required constant is below `1` in every case.
+| process | `q` | `C` | `W` | `C_req` | empty windows |
+|---|---|---|---|---|---|
+| raw | 5 | 1 | 1432 | 0.69338 | 0/20456 |
+| raw | 5 | 2 | 2536 | 0.357367 | 0/20456 |
+| raw | 25 | 1 | 464 | 0.473949 | 0/20456 |
+| raw | 25 | 2 | 896 | 0.24697 | 0/20456 |
+| entry | 5 | 1 | 8234 | 0.669454 | 0/20456 |
+| entry | 5 | 2 | 14582 | 0.295602 | 0/20456 |
+| entry | 25 | 1 | 2668 | 0.156032 | 0/20456 |
+| entry | 25 | 2 | 5152 | 0.220861 | 0/20456 |
 
 ### Cycle B: `N=1000036000099`
 
-| process | `q` | `C` | `W` | result |
-|---|---|---|---|---|
-| raw | 6 | 1 | 223300 | wraps |
-| raw | 6 | 2 | 403680 | wraps |
-| raw | 36 | 1 | 46400 | `C_req=0.1319`, 0 empty, start nonempty |
-| raw | 36 | 2 | 90480 | `C_req=0.1432`, 0 empty, start nonempty |
-| entry | 6 | 1 | 1255100 | wraps |
-| entry | 6 | 2 | 2268960 | wraps |
-| entry | 36 | 1 | 260800 | wraps |
-| entry | 36 | 2 | 508560 | wraps |
+| process | `q` | `C` | `W` | `C_req` | empty windows |
+|---|---|---|---|---|---|
+| raw | 6 | 1 | 223300 | wraps | not used |
+| raw | 6 | 2 | 403680 | wraps | not used |
+| raw | 36 | 1 | 46400 | 0.0635417 | 0/198850 |
+| raw | 36 | 2 | 90480 | 0.0138492 | 0/198850 |
+| entry | 6 | 1 | 1255100 | wraps | not used |
+| entry | 6 | 2 | 2268960 | wraps | not used |
+| entry | 36 | 1 | 260800 | wraps | not used |
+| entry | 36 | 2 | 508560 | wraps | not used |
 
-Here the entry density loss matters: `D=3260` for the entry process, so every
-entry sufficient window at the predeclared `C,q` exceeds the period. Those
-criteria are trivial, not positive evidence. The raw high-moment window at
-`q=36, C=1` fits and is nonempty at the actual start.
+All ten nonwrapping sufficient-window inequalities still pass. The six
+wrapped sufficient windows retain their previous coverage status. On the
+sparse 40-bit cycle, every entry sufficient window still wraps the period;
+that is not a nontrivial entry-window certificate.
 
-## 4. Matched mean counts
+## 4. Corrected matched-mean lower tails
 
-`W = ceil(m/delta)` for mean `m`. The table gives the empty-window fraction and
-the exact required constant at `q=bit_length(b+1)` and `q^2`. The independent
-replay at the same convention reports the same mean run lengths and the same
-one-mean-count empty fractions.
+Keep `W=ceil(m/delta)` and the previous empty-phase fractions. The changed
+numbers are the lower-tail constants and their pass/fail flags.
 
 ### Cycle A
 
 | process | `m` | `W` | empty fraction | `C_req(q=5)` | `C_req(q=25)` |
 |---|---|---|---|---|---|
-| raw | 1 | 8 | 0.7193 | 4.607 | 1.513 |
-| raw | 2 | 15 | 0.5922 | 6.774 | 2.660 |
-| raw | 4 | 30 | 0.4022 | 7.126 | 3.600 |
-| raw | 8 | 59 | 0.2274 | 7.372 | 3.823 |
-| entry | 1 | 46 | 0.3093 | 0.512 | 0.268 |
-| entry | 2 | 91 | 0.1229 | 0.513 | 0.244 |
-| entry | 4 | 181 | 0.0088 | 0.594 | 0.282 |
-| entry | 8 | 362 | 0.0000 | 0.340 | 0.141 |
+| raw | 1 | 8 | 0.7193 | 0.206578 | 0.0435521 |
+| raw | 2 | 15 | 0.5922 | 0.372581 | 0.0810277 |
+| raw | 4 | 30 | 0.4022 | 0.691646 | 0.159567 |
+| raw | 8 | 59 | 0.2274 | 1.23693 | 0.306745 |
+| entry | 1 | 46 | 0.3093 | 0.161122 | 0.0388788 |
+| entry | 2 | 91 | 0.1229 | 0.26513 | 0.0741243 |
+| entry | 4 | 181 | 0.0088 | 0.334459 | 0.132677 |
+| entry | 8 | 362 | 0.0000 | 0.218159 | 0.0709386 |
 
 ### Cycle B
 
 | process | `m` | `W` | empty fraction | `C_req(q=6)` | `C_req(q=36)` |
 |---|---|---|---|---|---|
-| raw | 1 | 580 | 0.8207 | 16.666 | 6.039 |
-| raw | 2 | 1160 | 0.7362 | 21.489 | 6.900 |
-| raw | 4 | 2319 | 0.6559 | 19.954 | 6.446 |
-| raw | 8 | 4638 | 0.5510 | 12.845 | 3.505 |
-| entry | 1 | 3260 | 0.6134 | 1.137 | 0.377 |
-| entry | 2 | 6520 | 0.4659 | 1.427 | 0.434 |
-| entry | 4 | 13040 | 0.1708 | 0.591 | 0.158 |
-| entry | 8 | 26079 | 0.0000 | 0.257 | 0.0767 |
+| raw | 1 | 580 | 0.8207 | 0.161339 | 0.0276382 |
+| raw | 2 | 1160 | 0.7362 | 0.316889 | 0.0551098 |
+| raw | 4 | 2319 | 0.6559 | 0.621634 | 0.10982 |
+| raw | 8 | 4638 | 0.5510 | 1.2102 | 0.218578 |
+| entry | 1 | 3260 | 0.6134 | 0.153639 | 0.0274047 |
+| entry | 2 | 6520 | 0.4659 | 0.293507 | 0.054392 |
+| entry | 4 | 13040 | 0.1708 | 0.497941 | 0.105794 |
+| entry | 8 | 26079 | 0.0000 | 0.13043 | 0.0294155 |
 
-The qualitative separation is clear. Raw windows of one or a few mean counts
-have a heavy lower tail and fail `C=2` (the only exception is cycle A,
-`m=1,q=25`, at `C_req=1.513`). Entry windows satisfy `C=2` everywhere in the
-table and satisfy `C=1` from `m=4` onward on cycle B and everywhere on cycle A.
-Increasing `q` lowers the entry constant by a factor of about two to four.
-So the cluster-entry decomposition is doing real work on these cycles.
+All 32 matched-mean lower-tail tests pass `C=2`. Thirty pass `C=1`;
+the two exceptions are the raw `m=8` tests at the smaller order on each
+cycle. The previous claim that raw tests generally fail `C=2` was about
+the upper tail and is withdrawn.
+
+A universal bound explains much of the small constants:
+`E(mu-A)_+^(2q)<=mu^(2q)`, so `C_req<=mu/q` in this normalization.
+Low-mean, high-order passes therefore do not establish independence or
+short empty-window control. Entry constants are sometimes smaller, but
+the old claimed orders-of-magnitude lower-tail contrast is unsupported.
+The universal bound alone implies all 32 `C=2` passes and 28 of the
+30 `C=1` passes in this matched-mean panel.
+The empty fractions and their genuine difference between raw and entry
+flags are unchanged.
 
 ## 5. Actual starting phases
 
@@ -199,10 +207,11 @@ the actual generator-seven direction and its moments.
 
 ## 6. Verdict and remaining obligation
 
-The finite data support the owner's mechanism in the following precise sense:
+The corrected finite findings are:
 
-1. The entry lower-tail moment constant is `O(1)` at matched mean counts on
-   both cycles, and it improves with `q`.
+1. Both raw and entry matched-mean lower tails satisfy `C=2`. Much of the
+   decrease with `q` follows from the universal `mu/q` bound; it is not an
+   independent-hit certificate.
 2. The cluster-length loss is small on these cycles (`mean_hit_run` about
    `5.6` and `6.2`), so the loss of density is a small constant factor here.
 3. At every sufficient window that fits inside the period, the predeclared
@@ -237,7 +246,7 @@ together with its stated original density input.
 ## 7. Replay
 
 ```sh
-python3 tools/check_entry_moment_cycles.py --output /tmp/entry-moment-cycles.json
+python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json --saved-flags
 make verify-entry-moment-cycles
 make verify-docs
 ```
@@ -260,3 +269,8 @@ clean tracked state before and after. Its complete compressed log is
 archived. The receipt also records the instrumented 219306-call replay
 and the forced-cap regression; later main integration checks are scoped
 separately.
+
+The historical full replay above predates the sign repair. It checked the
+then-current code and receipt, whose tail labels were incorrect; it is not
+evidence for the corrected statistics. The correction note records the
+new saved-flag replay and asymmetric regressions separately.

@@ -2,6 +2,8 @@
 
 - [Quartic additive-charge fusion](quartic-charge-fusion.md): an even non-Gaussian interaction preserves the homogeneous antipodal endpoint and proves generic prefix 0^1,2^(q-1),4^(2(q-1)) for q=2^s>=4. A q8 binary Toeplitz control confirms the order-four drop 28 to 14. The degree cost rises from three to four per occupied vertex; complete profiles, restored pressure and a stronger score remain open.
 
+- [The global divided square of quartic charge creation](charge-creation-square.md): repeated-color cancellation makes the full q8 quartic-gate product exactly linear in its coefficient. For larger alphabets, an eight-column binary relation code determines the possible quadratic term. No higher cut ranks, pressure gain or score change follows.
+
 - [The exact smooth-word boundary of row-change events](event-word-boundary.md): truncated events correspond bijectively to target-prime-free smooth words on every target-containing subgroup, with disjoint same-row fibers and explicit annular character/Euler sums. The contributed formal recurrence and Mellin multiplier retain image multiplicities beyond the reduced range; long-range estimates and target indices remain open.
 
 - [Sparse divisor data from one faithful character](sparse-faithful-character.md): an exact cyclotomic kernel distance and polynomial sparse decoder retain nilpotent coordinates. Classical lower-sieve level acquisition gives a complete faithful-only conditional factoring reduction with F(b)exp(O(sqrt(b))) cost, preserving every fixed logarithmic-saving exponent. The faster coefficient engine remains open; no score change.
@@ -32,7 +34,7 @@
 
 - [Repeated smooth relations and pooled rank windows](clustered-hits-and-pooled-rank.md): uniform fixed-row multiplicity at most `2K_p-1`, a weaker sufficient rank condition with the existing conditional factoring transfer, and exact saved-hit certificates; the finite pool reaches rank sooner in window length but uses more probes. No stronger complete bound.
 
-- [Exact entry lower-tail moments on two Path C cycles](entry-moment-cycles.md): both registered cycles close (periods 20456 and 198850); clusters are short (mean run about 6); entry lower-tail constants are O(1) at matched mean counts and improve with q, while the entry density loss makes the predeclared sufficient window wrap the sparse cycle; no uniform moment/window theorem or score improvement.
+- [Exact entry lower-tail moments on two Path C cycles](entry-moment-cycles.md): the [sign correction](entry-moment-tail-sign-correction.md) replaces mislabeled upper-tail statistics with true lower tails from identical saved flags. All matched-mean tests now pass C=2; low-mean constants are constrained by the universal mu/q bound. Periods, gaps, sufficient-window status and the complete bound are unchanged.
 
 - [Normalize Fourier windows on the target cycle](window-orbit-normalization.md): character restriction absorbs all zero target phases into a positive orbit mean, with an exact coset-collision formula and all-scale sufficient window criterion. Rational finite-group controls and PR75 scope repairs do not supply a quantitative arithmetic window or new score.
 
