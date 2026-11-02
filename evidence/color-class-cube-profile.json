@@ -407,131 +407,96 @@
   "q4_prefix_sum_175": 2150,
   "graded_comparison": {
     "3": {
-      "alphabet": 81,
-      "letter_energies": [
-        [
-          0,
-          1
-        ],
-        [
-          3,
-          8
-        ],
-        [
-          6,
-          24
-        ],
-        [
-          9,
-          32
-        ],
-        [
-          12,
-          16
-        ]
-      ],
-      "blocks": [
+      "letter_energies": {
+        "0": 1,
+        "3": 2
+      },
+      "envelope_blocks": [
         [
           1,
           "0"
         ],
         [
-          8,
+          2,
           "2"
+        ],
+        [
+          2,
+          "4"
+        ],
+        [
+          4,
+          "6"
         ],
         [
           24,
-          "4"
+          "25/2"
         ],
         [
           32,
-          "6"
+          "18"
         ],
         [
-          64,
-          "13/2"
-        ],
-        [
-          448,
-          "9"
-        ],
-        [
-          1120,
-          "12"
-        ],
-        [
-          1792,
-          "15"
+          16,
+          "24"
         ]
       ],
-      "prefix_count_through_order6": 65
+      "max_prefix_excess": "0",
+      "max_excess_at_prefix": 5,
+      "profile_prefix_at_max": 12,
+      "envelope_prefix_at_max": "12",
+      "profile_total": 1224,
+      "envelope_total": "1296"
     },
     "4": {
-      "alphabet": 256,
-      "letter_energies": [
-        [
-          0,
-          1
-        ],
-        [
-          3,
-          12
-        ],
-        [
-          6,
-          54
-        ],
-        [
-          9,
-          108
-        ],
-        [
-          12,
-          81
-        ]
-      ],
-      "blocks": [
+      "letter_energies": {
+        "0": 1,
+        "3": 3
+      },
+      "envelope_blocks": [
         [
           1,
           "0"
         ],
         [
-          12,
+          3,
           "2"
         ],
         [
-          54,
+          3,
           "4"
         ],
         [
-          108,
+          9,
           "6"
         ],
         [
-          102,
-          "116/17"
+          51,
+          "216/17"
         ],
         [
-          1512,
-          "9"
+          108,
+          "18"
         ],
         [
-          5670,
-          "12"
-        ],
-        [
-          13608,
-          "15"
+          81,
+          "24"
         ]
       ],
-      "prefix_count_through_order6": 175,
-      "envelope_prefix_sum_175": "888"
+      "max_prefix_excess": "0",
+      "max_excess_at_prefix": 7,
+      "profile_prefix_at_max": 18,
+      "envelope_prefix_at_max": "18",
+      "profile_total": 4068,
+      "envelope_total": "4464",
+      "profile_prefix_175": 2150,
+      "envelope_prefix_175": "2664"
     }
   },
   "source_sha256": {
-    "check_color_class_cube_profile.py": "8ff649add88a0bbcace513dbebbc5f8b64ba2ebbf7036cd351d8ca80f1380f43",
+    "check_color_class_cube_profile.py": "e413c35a15fb09667abac89a2d21b3edc4931ec3807fb9f1bd4dd38b6e02b9be",
     "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
     "cube_graded_minor_budget.py": "930d32ddec53b5692cef627f1d40986c8e5535beb6cd142a13b58af9d28bdc00"
   },
-  "scope": "One-hot color-class Gaussian cube tensor; specialized F256 block Toeplitz ranks.  Specialization increases orders, so the reported orders are specialization upper bounds and the small-order counts are generic lower bounds.  The graded envelope constrains prefix sums, not counts; no viability claim is made.  No factoring exponent changes."
+  "scope": "One-hot color-class Gaussian cube tensor; specialized F256 block Toeplitz ranks.  Specialization increases orders, so the reported orders are specialization upper bounds and the small-order counts are generic lower bounds.  The graded envelope is evaluated with the correct vertex-letter energies 0 and 3; the specialized prefix sums are below the envelope at all tested prefixes.  This is a necessary-condition pass, not a viability claim.  No factoring exponent changes."
 }

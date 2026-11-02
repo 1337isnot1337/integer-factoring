@@ -171,26 +171,38 @@ def expected_q2_profile():
     return dict(Counter(orders))
 
 
-def graded_comparison():
+def graded_comparison(profiles):
     from cube_graded_minor_budget import cumulative, envelope
 
     records = {}
-    for q in (3, 4):
+    for q, profile in profiles.items():
         colors = q - 1
-        energies = Counter({0: 1, 3: 4 * colors, 6: 6 * colors ** 2,
-                            9: 4 * colors ** 3, 12: colors ** 4})
-        result = envelope(energies)
-        prefix = sum(count for count, order in result["blocks"] if order <= 6)
+        result = envelope(Counter({0: 1, 3: colors}))
+        orders = [order for order, count in sorted(profile.items())
+                  for _ in range(count)]
+        prefixes = []
+        for k in range(1, min(len(orders), q ** 4) + 1):
+            bound = cumulative(result["blocks"], k)
+            prefixes.append((sum(orders[:k]) - bound, k, sum(orders[:k]),
+                             str(bound)))
+        excess, at, total, bound = max(prefixes)
+        assert excess <= 0
         records[str(q)] = {
-            "alphabet": result["alphabet"],
-            "letter_energies": sorted(energies.items()),
-            "blocks": [[count, str(order)] for count, order in result["blocks"][:8]],
-            "prefix_count_through_order6": prefix,
+            "letter_energies": {"0": 1, "3": colors},
+            "envelope_blocks": [[count, str(order)]
+                                for count, order in result["blocks"]],
+            "max_prefix_excess": str(excess),
+            "max_excess_at_prefix": at,
+            "profile_prefix_at_max": total,
+            "envelope_prefix_at_max": bound,
+            "profile_total": sum(orders),
+            "envelope_total": str(cumulative(result["blocks"], len(orders))),
         }
-    assert records["3"]["prefix_count_through_order6"] == 65
-    assert records["4"]["prefix_count_through_order6"] == 175
-    records["4"]["envelope_prefix_sum_175"] = str(
-        cumulative(result["blocks"], 175))
+    records["4"]["profile_prefix_175"] = sum(
+        [order for order, count in sorted(profiles[4].items())
+         for _ in range(count)][:175])
+    records["4"]["envelope_prefix_175"] = str(
+        cumulative(envelope(Counter({0: 1, 3: 3}))["blocks"], 175))
     return records
 
 def main():
@@ -227,8 +239,9 @@ def main():
                  for _ in range(count)]
     assert sum(q4_orders[:175]) == 2150
     assert len(q4_orders) == 250
+    q3 = dict(q3)
 
-    comparison = graded_comparison()
+    comparison = graded_comparison({3: q3, 4: q4_full})
     result = {
         "status": "passed",
         "q2_profile": sorted(q2.items()),
@@ -250,8 +263,10 @@ def main():
                  "block Toeplitz ranks.  Specialization increases orders, so "
                  "the reported orders are specialization upper bounds and the "
                  "small-order counts are generic lower bounds.  The graded "
-                 "envelope constrains prefix sums, not counts; no viability "
-                 "claim is made.  No factoring exponent changes.",
+                 "envelope is evaluated with the correct vertex-letter energies "
+                 "0 and 3; the specialized prefix sums are below the envelope "
+                 "at all tested prefixes.  This is a necessary-condition pass, "
+                 "not a viability claim.  No factoring exponent changes.",
     }
     if args.output:
         args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -261,9 +276,8 @@ def main():
         "q2_profile": sorted(q2.items()),
         "q3_specialized_profile": sorted(q3.items()),
         "q4_prefix_through_order6": comb(6, 3),
-        "q4_graded_prefix_budget": comparison["4"]["prefix_count_through_order6"],
-        "q3_prefix_through_order6": comb(5, 3),
-        "q3_graded_prefix_budget": comparison["3"]["prefix_count_through_order6"],
+        "q4_envelope_max_excess": comparison["4"]["max_prefix_excess"],
+        "q3_envelope_max_excess": comparison["3"]["max_prefix_excess"],
     }, sort_keys=True))
 
 

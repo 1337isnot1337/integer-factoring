@@ -16,16 +16,18 @@ where \(G\) is the homogeneous eight-mode Gaussian cube tensor. This is a
 homogeneous tensor with the antipodal endpoint. For \(q=2\) it is exactly
 the binary Gaussian cube.
 
-The physical alphabet of \(T_q\) is **graded**, not equal-height. A letter
-is a coloring of the four vertices on one side; its energy is the number of
-nonvacuum vertices, so the letter energies are \(0,1,2,3,4\) with
-multiplicities \(1,4(q-1),6(q-1)^2,4(q-1)^3,(q-1)^4\). The
+The physical alphabet of \(T_q\) is **graded**, not equal-height. A
+vertex letter is either the vacuum (energy \(0\)) or one of \(q-1\)
+colors (energy \(3\) in tensor-degree units). A side word is a coloring
+of the four vertices on one side; its energy is three times the number of
+nonvacuum vertices, so the side-word multiplicities are
+\(1,4(q-1),6(q-1)^2,4(q-1)^3,(q-1)^4\) at orders
+\(0,3,6,9,12\). The
 [equal-height 256-letter profile](cube-graded-minor-budget.md) therefore
-does not apply to this tensor. Comparing the specialized low-order counts
-below to that profile would be an error. The correct comparison is the
-graded envelope with these letter energies; the construction is below the
-graded low-order prefix at the tested sizes, so the finite data do not
-exclude it.
+does not apply. The correct comparison is the shared-minor envelope with
+the **vertex-letter** energies \(0\) and \(3\), whose length-four word
+multiplicities are exactly the side-word distribution above. Section 2
+performs that comparison; the specialized profile satisfies it.
 
 ## 1. Specialized block Toeplitz ranks
 
@@ -103,29 +105,49 @@ observed low-order law, not a general free-algebra description.
 
 ## 2. Graded comparison
 
-The one-hot alphabet has energies \(0,1,2,3,4\), but the tensor degree is
-three times the number of nonvacuum vertices. The shared-minor envelope is
-therefore evaluated with energies
+The shared-minor theorem of
+[cube-graded-minor-budget.md](cube-graded-minor-budget.md) is stated for an
+alphabet of physical letters. Here the physical letters are the \(q\)
+vertex colors, not the \(q^4\) side words: the vacuum has energy \(0\)
+and each of the \(q-1\) colors has energy \(3\). The theorem's
+\(S_1,S_2,S_4\) are computed from that letter distribution; its
+length-four words are precisely the side words, with multiplicities
+\(1,4(q-1),6(q-1)^2,4(q-1)^3,(q-1)^4\).
+
+For \(q=3\) the envelope blocks are
 
 \[
- 0^1,\quad 3^{4(q-1)},\quad 6^{6(q-1)^2},\quad
- 9^{4(q-1)^3},\quad 12^{(q-1)^4}.
+ 0^1,2^2,4^2,6^4,\left(\tfrac{25}{2}\right)^{24},18^{32},24^{16},
  \tag{6}
 \]
 
-For \(q=3\) and \(q=4\) the envelope's prefix counts through order six are
-\(65\) and \(175\). The specialized construction has prefix counts \(10\)
-and \(20\). These are counts, while the envelope constrains prefix sums;
-the count comparison alone is not a viability test.
+with total multiplicity \(81\) and total order \(1296\). The
+specialized profile (4) has order sum \(1224\), and every prefix sum is
+at most the envelope's; the maximum excess is \(0\), attained at prefix
+\(5\).
 
-The specialized \(q=4\) profile does not satisfy the graded prefix-sum
-budget at the tested specializations: its first \(175\) orders sum to
-\(2150\), while the envelope's first \(175\) orders sum to \(888\). This
-is consistent with specialization increasing orders relative to the
-generic tensor, and it is one reason the generic profile is the missing
-object. The stable specializations are therefore not automatically the
-generic profile, despite agreeing at six tested points. No viability or
-obstruction conclusion is drawn.
+For \(q=4\) the envelope blocks are
+
+\[
+ 0^1,2^3,4^3,6^9,\left(\tfrac{216}{17}\right)^{51},18^{108},24^{81},
+ \tag{7}
+\]
+
+with total multiplicity \(256\) and total order \(4608\). The
+specialized profile of section 1 has \(250\) recorded orders, total
+order \(4068\), and first-\(175\) order sum \(2150\), against an
+envelope first-\(175\) sum of \(2664\). Every prefix sum is at most the
+envelope's; the maximum excess is \(0\), attained at prefix \(7\).
+
+An earlier version of this note reported the envelope's first-\(175\)
+sum as \(888\). That was wrong: it passed the side-word multiplicities
+to the envelope as if they were letter multiplicities, which overcounts
+the one-letter and pair bounds. With the correct vertex-letter
+distribution the specialized profile satisfies the necessary envelope at
+all tested prefixes. Specialization increases orders, so the generic
+profile, if it differs, has smaller orders and also satisfies the
+envelope. This is a necessary-condition pass, not a viability proof; the
+generic \(q=256\) profile is still the missing object.
 
 ## 3. Scope and next question
 
@@ -155,6 +177,7 @@ python3 tools/check_color_class_cube_profile.py \
 
 The checker recomputes the \(q=2\) Gaussian regression, the \(q=3\)
 specialized profile and three additional specializations, the \(q=4,5,6\)
-low-order layers, and the graded envelope comparison for \(q=3,4\). The
+low-order layers, the \(q=4\) full specialized profile, and the graded
+envelope comparison for \(q=3,4\). The
 receipt records the exact profiles and hashes. The source is
 [`check_color_class_cube_profile.py`](../tools/check_color_class_cube_profile.py).
