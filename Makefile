@@ -1955,6 +1955,10 @@ verify-asymmetric-crossings:
 	python3 tools/check_asymmetric_support_line.py --output /tmp/integer-factoring-asymmetric-support-replay.json
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_asymmetric_pressure_oracle.py --output /tmp/integer-factoring-asymmetric-oracle-replay.json
 
+.PHONY: verify-asymmetric-scaling-floor
+verify-asymmetric-scaling-floor:
+	python3 tools/check_asymmetric_scaling_floor.py --output /tmp/integer-factoring-asymmetric-scaling-floor.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
