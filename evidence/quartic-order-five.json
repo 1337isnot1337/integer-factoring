@@ -1,0 +1,58 @@
+{
+  "scope": "Formal coefficient controls and rational allocations for the ordinary restricted-family proof; no complete Smith profile or stronger factoring bound.",
+  "coefficient_controls": [
+    {
+      "axis": 0,
+      "word_count": 36,
+      "coefficient": [
+        5,
+        9,
+        2
+      ],
+      "raw_rank": 6,
+      "projected_rank": 4
+    },
+    {
+      "axis": 1,
+      "word_count": 36,
+      "coefficient": [
+        9,
+        5,
+        2
+      ],
+      "raw_rank": 6,
+      "projected_rank": 4
+    },
+    {
+      "axis": 2,
+      "word_count": 36,
+      "coefficient": [
+        9,
+        2,
+        5
+      ],
+      "raw_rank": 6,
+      "projected_rank": 4
+    }
+  ],
+  "pressure": {
+    "q_at_least": 4096,
+    "rho_lower_bound": [
+      7,
+      12
+    ],
+    "tail_order": 33,
+    "split_scale": [
+      3,
+      4
+    ],
+    "quadratic_allocation": true,
+    "young_allocation": true,
+    "large_scale_allocation": true
+  },
+  "source_sha256": {
+    "check_quartic_order_five.py": "f7c5dcc5240d7cbc31a7862f6a192cfac6678bce9fb0c4d55f89caeaa4af8c70",
+    "check_quartic_charge_fusion.py": "8fd507feb9225adf4270a7976c4724261684f1935aacb4b3f92e46ddefed64d0",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  }
+}

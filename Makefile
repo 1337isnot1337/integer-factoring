@@ -3350,3 +3350,9 @@ verify-quartic-charge-fusion:
 	python3 tools/check_quartic_charge_fusion.py --output /tmp/integer-factoring-quartic-charge-fusion.json
 
 verify-arithmetic: verify-quartic-charge-fusion
+
+.PHONY: verify-quartic-order-five
+verify-quartic-order-five:
+	python3 tools/check_quartic_order_five.py --output /tmp/integer-factoring-quartic-order-five.json
+
+verify-arithmetic: verify-quartic-order-five

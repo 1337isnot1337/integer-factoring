@@ -1,5 +1,27 @@
 # Contribution review and disposition ledger
 
+## Quartic order-five obstruction
+
+The [ordinary argument](../research/quartic-order-five-obstruction.md)
+allows independent degree-16 spatial quartet weights with the prescribed
+leading coefficients, divisibility by `(xyz)^4`, and vanishing endpoint.
+A lowest second-axis coefficient forces at least `(q-1)(q-4)` order-five
+channels in every axis. A dimension/degree tail and exact Young allocations
+give restored pressure at least `7/12>1/sqrt(3)` for q>=4096, every common
+physical type, in the common-scale unweighted three-axis profile method.
+The earlier q4096 relaxation is excluded, not promoted to an actual profile.
+This does not cover all smaller alphabets or other interaction classes.
+
+The [source-pinned receipt](../evidence/quartic-order-five.json) verifies
+formal coefficients in three axes, q8 coefficient ranks six and four before
+and after projection, and the exact rational allocations. The generic proof
+is author-checked. `make verify-quartic-order-five verify-quartic-charge-fusion
+verify-docs` and whitespace pass on this follow-up, with 1182 Markdown files.
+The earlier full replay belongs to the construction source recorded below;
+no full default replay is yet claimed for this new checker. No independent
+mathematical review, complete generic profile, new Lean or stronger complete
+bound is claimed. Alpha stays `1/2`.
+
 ## Quartic additive-charge cube construction
 
 The [ordinary construction and prefix proof](../research/quartic-charge-fusion.md)

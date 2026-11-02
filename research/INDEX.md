@@ -1,6 +1,8 @@
 # Research index
 
-- [Quartic additive-charge fusion](quartic-charge-fusion.md): an even non-Gaussian interaction preserves the homogeneous antipodal endpoint and proves generic prefix 0^1,2^(q-1),4^(2(q-1)) for q=2^s>=4. A q8 binary Toeplitz control confirms the order-four drop 28 to 14. The degree cost rises from three to four per occupied vertex; complete profiles, restored pressure and a stronger score remain open.
+- [Returning order-five quartic channels](quartic-order-five-obstruction.md): a lowest second-axis coefficient forces at least (q-1)(q-4) order-five channels in the stated spatial-quartic class. Jensen and Young inequalities give restored pressure at least 7/12 for all q>=4096 and common physical types, excluding the earlier q4096 relaxation. Other interactions and smaller alphabets remain outside this result; no score change.
+
+- [Quartic additive-charge fusion](quartic-charge-fusion.md): an even non-Gaussian interaction preserves the homogeneous antipodal endpoint and proves generic prefix 0^1,2^(q-1),4^(2(q-1)) for q=2^s>=4. A q8 binary Toeplitz control confirms the order-four drop 28 to 14. The degree cost rises from three to four per occupied vertex; the returning-order-five obstruction excludes growing alphabets q>=4096 in the stated family.
 
 - [The global divided square of quartic charge creation](charge-creation-square.md): repeated-color cancellation makes the full q8 quartic-gate product exactly linear in its coefficient. For larger alphabets, an eight-column binary relation code determines the possible quadratic term. No higher cut ranks, pressure gain or score change follows.
 
