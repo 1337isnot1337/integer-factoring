@@ -16,9 +16,12 @@ truncation in each direction, cyclic event separation and exact second/third
 connected correlations. These are saved-data postprocessing, not a uniform
 arithmetic estimate or a new orbit. `make verify-small-norm-event-separation`
 and `make verify-docs` pass, including the upstream event/group/row and
-cumulant controls. A full default replay of these new files has not yet run;
-the previous connected-event default replay does not cover them. The next
-full suite is queued behind the other workers' already running/queued gates.
+cumulant controls. The [full default replay](../evidence/small-norm-event-full-verification.json)
+passes at exact `b36cf5799aa4537b75e988ab2fc907ef4fe3620e` in 1216.39 seconds,
+with clean tracked state before and after. It used a verified private `/tmp`
+namespace to avoid the other workers' fixed temporary paths. The source
+checker is unchanged after integrating main's unary inverse checkpoint;
+the integration has separate focused and documentation checks.
 
 ## Sol worker 1 connected-event criterion, base `af12893`
 

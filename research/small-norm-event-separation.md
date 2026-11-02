@@ -238,3 +238,11 @@ row-change construction and density bridge, and the saved selector/Grok
 data. The principal-ideal norm gap is classical; this note records its
 specific event-correlation consequence and density tradeoff. Substantial
 OpenAI Codex assistance; no new Lean or independent mathematical review.
+
+The [clean frozen default replay](../evidence/small-norm-event-full-verification.json)
+passes at exact source `b36cf5799aa4537b75e988ab2fc907ef4fe3620e` in
+1216.39 seconds. Its [complete compressed log](../evidence/small-norm-event-full-verification.stdout.txt.xz)
+is archived. The replay used a private `/tmp` namespace with read-only host
+root and only its frozen checkout writable, avoiding concurrent workers'
+fixed temporary outputs. Main's later unary inverse integration preserves
+this checker byte for byte and receives separate focused/docs checks.
