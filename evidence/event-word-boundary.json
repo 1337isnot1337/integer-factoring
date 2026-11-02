@@ -1,0 +1,136 @@
+{
+  "scope": "Saved-word boundary identities and a fixed height counterexample; no new orbit search.",
+  "controls": [
+    {
+      "prime": 5,
+      "period": 198850,
+      "radius": 100001,
+      "hits": 235,
+      "p_free_words": 45,
+      "events": 45,
+      "disjoint_fibers": 45,
+      "distinct_integer_event_rows": 45,
+      "event_flags_sha256": "ebf4bec72445f30a12adc30965ee50e04a46245f29fbe0044a638850aab76fec",
+      "exact_annular_character_controls": [
+        {
+          "character_order": 1,
+          "residue_counts": [
+            45
+          ]
+        },
+        {
+          "character_order": 2,
+          "residue_counts": [
+            22,
+            23
+          ]
+        },
+        {
+          "character_order": 5,
+          "residue_counts": [
+            7,
+            11,
+            11,
+            2,
+            14
+          ]
+        },
+        {
+          "character_order": 10,
+          "residue_counts": [
+            3,
+            4,
+            3,
+            1,
+            8,
+            4,
+            7,
+            8,
+            1,
+            6
+          ]
+        }
+      ]
+    },
+    {
+      "prime": 7,
+      "period": 198850,
+      "radius": 71429,
+      "hits": 213,
+      "p_free_words": 55,
+      "events": 55,
+      "disjoint_fibers": 55,
+      "distinct_integer_event_rows": 55,
+      "event_flags_sha256": "b1fbcba031eccf72bf9d6cf2d4e7d18fc0c80c362be46f39d770748af2213fc3",
+      "exact_annular_character_controls": [
+        {
+          "character_order": 1,
+          "residue_counts": [
+            55
+          ]
+        },
+        {
+          "character_order": 2,
+          "residue_counts": [
+            34,
+            21
+          ]
+        },
+        {
+          "character_order": 5,
+          "residue_counts": [
+            11,
+            15,
+            8,
+            9,
+            12
+          ]
+        },
+        {
+          "character_order": 10,
+          "residue_counts": [
+            5,
+            4,
+            3,
+            2,
+            8,
+            6,
+            11,
+            5,
+            7,
+            4
+          ]
+        }
+      ]
+    }
+  ],
+  "contributed_euler_control": {
+    "primes": [
+      3,
+      5,
+      7
+    ],
+    "entry_prime": 3,
+    "heights": 200,
+    "exact_checks": 600,
+    "words": 67,
+    "group_orders": [
+      3,
+      5
+    ],
+    "original_source_sha256": "37fef094a7110f3c78f2b60f4f8baf72c415c821e1e23b8637037f0cece256e9",
+    "source_discussion_comments": [
+      19356441,
+      19356480
+    ]
+  },
+  "excessive_height_negative_control": {
+    "discriminant": -23,
+    "prime": 2,
+    "radius": 4,
+    "actual_events": 1,
+    "incorrect_boundary_events": 0
+  },
+  "long_range_character_estimate_proved": false,
+  "complete_factoring_exponent": "1/2; unchanged"
+}

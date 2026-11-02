@@ -1,5 +1,7 @@
 # Research index
 
+- [The exact smooth-word boundary of row-change events](event-word-boundary.md): truncated events correspond bijectively to target-prime-free smooth words on every target-containing subgroup, with disjoint same-row fibers and explicit annular character/Euler sums. The contributed formal recurrence and Mellin multiplier retain image multiplicities beyond the reduced range; long-range estimates and target indices remain open.
+
 - [Small reduced norms, density and local event separation](small-norm-event-separation.md): a nonzero unramified principal word has norm at least D/4. A truncated smooth predicate retains the covered-subgroup density scale and has T-separated row-change events with explicit short-range cumulants. Long-range correlations and actual target indices remain open; no complete bound change.
 
 - [Color parity obstructs large one-hot cube profiles](color-distinct-sector-obstruction.md): closed odd-color sectors and the existing scalar polynomial certificate give a pressure floor 3/4 for every homogeneous antipodal tensor preserving separate color parity, all q>=34, every field and common physical type, in the common-scale unweighted three-axis profile method. This extends the scalar-clone floor to arbitrary parity-preserving tensors; no score change.

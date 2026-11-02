@@ -1,5 +1,27 @@
 # Contribution review and disposition ledger
 
+## Sol worker 1 boundary representation and contributed Euler recurrence
+
+The [word-boundary proof](../research/event-word-boundary.md) identifies
+the actual truncated events with one-sided signed-word fibers in the
+injective reduced range. It gives exact target-prime-free event counts,
+unique integer event rows, annular character sums and explicit connected
+moment constraints. The Discussion #51 contributor supplied the finite
+group-algebra recurrence, Mellin multiplier and original 600-control source;
+the board links, original source hash and credit are retained, including
+in [CONTRIBUTORS](../CONTRIBUTORS.md). Outside the reduced range the
+formal measures retain multiplicities and are not event indicators.
+
+The new [receipt](../evidence/event-word-boundary.json) checks the saved
+235/213 hits in 45/55 disjoint fibers, eight exact finite-character
+identities, the original contributed panel and an excessive-height
+counterexample. No new large orbit or parameter search is run. The
+long-range arithmetic estimates and actual indices are still open; no
+complete score change, new Lean or independent mathematical review.
+`make verify-event-word-boundary verify-docs` passes, including all upstream
+event/group/row/cumulant/separation prerequisites. A frozen full default
+replay of this checkpoint is recorded separately when finished.
+
 ## Sol worker 1 small-norm density and event separation
 
 The [ordinary argument](../research/small-norm-event-separation.md) applies
