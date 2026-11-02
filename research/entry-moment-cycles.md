@@ -122,38 +122,40 @@ criteria are trivial, not positive evidence. The raw high-moment window at
 
 ## 4. Matched mean counts
 
-`W = round(m/delta)` for mean `m`. The table gives the empty-window fraction and
-the exact required constant at `q=bit_length(b+1)` and `q^2`.
+`W = ceil(m/delta)` for mean `m`. The table gives the empty-window fraction and
+the exact required constant at `q=bit_length(b+1)` and `q^2`. The independent
+replay at the same convention reports the same mean run lengths and the same
+one-mean-count empty fractions.
 
 ### Cycle A
 
 | process | `m` | `W` | empty fraction | `C_req(q=5)` | `C_req(q=25)` |
 |---|---|---|---|---|---|
-| raw | 1 | 7 | 0.7385 | 4.167 | 1.335 |
+| raw | 1 | 8 | 0.7193 | 4.607 | 1.513 |
 | raw | 2 | 15 | 0.5922 | 6.774 | 2.660 |
-| raw | 4 | 29 | 0.4128 | 7.027 | 3.729 |
-| raw | 8 | 58 | 0.2318 | 7.462 | 3.890 |
-| entry | 1 | 45 | 0.3157 | 0.508 | 0.274 |
-| entry | 2 | 90 | 0.1257 | 0.516 | 0.249 |
+| raw | 4 | 30 | 0.4022 | 7.126 | 3.600 |
+| raw | 8 | 59 | 0.2274 | 7.372 | 3.823 |
+| entry | 1 | 46 | 0.3093 | 0.512 | 0.268 |
+| entry | 2 | 91 | 0.1229 | 0.513 | 0.244 |
 | entry | 4 | 181 | 0.0088 | 0.594 | 0.282 |
-| entry | 8 | 361 | 0.0000 | 0.338 | 0.142 |
+| entry | 8 | 362 | 0.0000 | 0.340 | 0.141 |
 
 ### Cycle B
 
 | process | `m` | `W` | empty fraction | `C_req(q=6)` | `C_req(q=36)` |
 |---|---|---|---|---|---|
 | raw | 1 | 580 | 0.8207 | 16.666 | 6.039 |
-| raw | 2 | 1159 | 0.7363 | 21.503 | 6.906 |
+| raw | 2 | 1160 | 0.7362 | 21.489 | 6.900 |
 | raw | 4 | 2319 | 0.6559 | 19.954 | 6.446 |
 | raw | 8 | 4638 | 0.5510 | 12.845 | 3.505 |
 | entry | 1 | 3260 | 0.6134 | 1.137 | 0.377 |
 | entry | 2 | 6520 | 0.4659 | 1.427 | 0.434 |
-| entry | 4 | 13039 | 0.1708 | 0.591 | 0.158 |
+| entry | 4 | 13040 | 0.1708 | 0.591 | 0.158 |
 | entry | 8 | 26079 | 0.0000 | 0.257 | 0.0767 |
 
 The qualitative separation is clear. Raw windows of one or a few mean counts
 have a heavy lower tail and fail `C=2` (the only exception is cycle A,
-`m=1,q=25`, at `C_req=1.335`). Entry windows satisfy `C=2` everywhere in the
+`m=1,q=25`, at `C_req=1.513`). Entry windows satisfy `C=2` everywhere in the
 table and satisfy `C=1` from `m=4` onward on cycle B and everywhere on cycle A.
 Increasing `q` lowers the entry constant by a factor of about two to four.
 So the cluster-entry decomposition is doing real work on these cycles.
@@ -163,13 +165,14 @@ So the cluster-entry decomposition is doing real work on these cycles.
 The actual selector starts at `K_p`, not at the identity. Both starts lie in
 initial gaps:
 
-- cycle A: `K_2=14`, `f(14)=0`, first hit at offset `7`. The raw `m=1`
-  window `W=7` is empty; the entry `W=45` window contains two entries.
-- cycle B: `K_5=9`, `f(9)=0`, first hit at offset `664`. The raw
-  `W=580` and `W=1159` windows are empty; the entry `W=3260` window contains
-  three entries.
+- cycle A: `K_2=14`, `f(14)=0`, first hit at offset `7`. The exact one-mean
+  window `W=floor(1/delta)=7` is empty; the ceilings `W=8` (raw) and `W=46`
+  (entry) contain one hit and two entries respectively.
+- cycle B: `K_5=9`, `f(9)=0`, first hit at offset `664`. The raw `m=1`
+  window `W=580` is empty; the raw `m=2` window `W=1160` and the entry
+  `W=3260` window contain hits (nine and three respectively).
 - `g_7` (cycle B): index `66509`, start phase `67863`, `f=0`, first hit at
-  offset `1265`. The raw `W=580` and `W=1159` windows are empty; the entry
+  offset `1265`. The raw `W=580` and `W=1160` windows are empty; the entry
   `W=3260` window contains one entry.
 
 This is the concrete phenomenon the registered experiment was aimed at: small

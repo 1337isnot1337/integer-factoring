@@ -38,38 +38,38 @@
         {
           "constant_one_bound_holds": false,
           "constant_two_bound_holds": false,
-          "empty_fraction_decimal": 0.7385119280406727,
-          "maximum_hits": 7,
+          "empty_fraction_decimal": 0.7192999608916699,
+          "maximum_hits": 8,
           "mean_multiple": 1,
           "minimum_hits": 0,
           "moment_order": 5,
           "process": "raw",
-          "required_constant_decimal": 4.16703070414286,
+          "required_constant_decimal": 4.607377327065317,
           "start": {
             "start_phase": 14,
-            "window": 7,
-            "window_empty": true,
-            "window_hits": 0
+            "window": 8,
+            "window_empty": false,
+            "window_hits": 1
           },
-          "window": 7
+          "window": 8
         },
         {
           "constant_one_bound_holds": false,
           "constant_two_bound_holds": true,
-          "empty_fraction_decimal": 0.7385119280406727,
-          "maximum_hits": 7,
+          "empty_fraction_decimal": 0.7192999608916699,
+          "maximum_hits": 8,
           "mean_multiple": 1,
           "minimum_hits": 0,
           "moment_order": 25,
           "process": "raw",
-          "required_constant_decimal": 1.3354707666845818,
+          "required_constant_decimal": 1.5133246512189198,
           "start": {
             "start_phase": 14,
-            "window": 7,
-            "window_empty": true,
-            "window_hits": 0
+            "window": 8,
+            "window_empty": false,
+            "window_hits": 1
           },
-          "window": 7
+          "window": 8
         },
         {
           "constant_one_bound_holds": false,
@@ -110,146 +110,146 @@
         {
           "constant_one_bound_holds": false,
           "constant_two_bound_holds": false,
-          "empty_fraction_decimal": 0.4128373093468909,
+          "empty_fraction_decimal": 0.4022291748142354,
           "maximum_hits": 27,
           "mean_multiple": 4,
           "minimum_hits": 0,
           "moment_order": 5,
           "process": "raw",
-          "required_constant_decimal": 7.026697432962009,
+          "required_constant_decimal": 7.126317960971734,
           "start": {
             "start_phase": 14,
-            "window": 29,
+            "window": 30,
             "window_empty": false,
             "window_hits": 7
           },
-          "window": 29
+          "window": 30
         },
         {
           "constant_one_bound_holds": false,
           "constant_two_bound_holds": false,
-          "empty_fraction_decimal": 0.4128373093468909,
+          "empty_fraction_decimal": 0.4022291748142354,
           "maximum_hits": 27,
           "mean_multiple": 4,
           "minimum_hits": 0,
           "moment_order": 25,
           "process": "raw",
-          "required_constant_decimal": 3.7287639297274375,
+          "required_constant_decimal": 3.599986403763618,
           "start": {
             "start_phase": 14,
-            "window": 29,
+            "window": 30,
             "window_empty": false,
             "window_hits": 7
           },
-          "window": 29
+          "window": 30
         },
         {
           "constant_one_bound_holds": false,
           "constant_two_bound_holds": false,
-          "empty_fraction_decimal": 0.2318146265154478,
+          "empty_fraction_decimal": 0.22741493938208837,
           "maximum_hits": 41,
           "mean_multiple": 8,
           "minimum_hits": 0,
           "moment_order": 5,
           "process": "raw",
-          "required_constant_decimal": 7.461604642274274,
+          "required_constant_decimal": 7.37224858381007,
           "start": {
             "start_phase": 14,
-            "window": 58,
+            "window": 59,
             "window_empty": false,
             "window_hits": 9
           },
-          "window": 58
+          "window": 59
         },
         {
           "constant_one_bound_holds": false,
           "constant_two_bound_holds": false,
-          "empty_fraction_decimal": 0.2318146265154478,
+          "empty_fraction_decimal": 0.22741493938208837,
           "maximum_hits": 41,
           "mean_multiple": 8,
           "minimum_hits": 0,
           "moment_order": 25,
           "process": "raw",
-          "required_constant_decimal": 3.890133384311166,
+          "required_constant_decimal": 3.8225040473489185,
           "start": {
             "start_phase": 14,
-            "window": 58,
+            "window": 59,
             "window_empty": false,
             "window_hits": 9
           },
-          "window": 58
+          "window": 59
         },
         {
           "constant_one_bound_holds": true,
           "constant_two_bound_holds": true,
-          "empty_fraction_decimal": 0.3157019945248338,
+          "empty_fraction_decimal": 0.3093468908877591,
           "maximum_hits": 4,
           "mean_multiple": 1,
           "minimum_hits": 0,
           "moment_order": 5,
           "process": "entry",
-          "required_constant_decimal": 0.5082400547531641,
+          "required_constant_decimal": 0.5123210550721322,
           "start": {
             "start_phase": 14,
-            "window": 45,
+            "window": 46,
             "window_empty": false,
             "window_hits": 2
           },
-          "window": 45
+          "window": 46
         },
         {
           "constant_one_bound_holds": true,
           "constant_two_bound_holds": true,
-          "empty_fraction_decimal": 0.3157019945248338,
+          "empty_fraction_decimal": 0.3093468908877591,
           "maximum_hits": 4,
           "mean_multiple": 1,
           "minimum_hits": 0,
           "moment_order": 25,
           "process": "entry",
-          "required_constant_decimal": 0.27386349995319775,
+          "required_constant_decimal": 0.2677104131743066,
           "start": {
             "start_phase": 14,
-            "window": 45,
+            "window": 46,
             "window_empty": false,
             "window_hits": 2
           },
-          "window": 45
+          "window": 46
         },
         {
           "constant_one_bound_holds": true,
           "constant_two_bound_holds": true,
-          "empty_fraction_decimal": 0.12573328118889324,
+          "empty_fraction_decimal": 0.12289792725850607,
           "maximum_hits": 6,
           "mean_multiple": 2,
           "minimum_hits": 0,
           "moment_order": 5,
           "process": "entry",
-          "required_constant_decimal": 0.5162777066296961,
+          "required_constant_decimal": 0.5133829883793452,
           "start": {
             "start_phase": 14,
-            "window": 90,
+            "window": 91,
             "window_empty": false,
             "window_hits": 3
           },
-          "window": 90
+          "window": 91
         },
         {
           "constant_one_bound_holds": true,
           "constant_two_bound_holds": true,
-          "empty_fraction_decimal": 0.12573328118889324,
+          "empty_fraction_decimal": 0.12289792725850607,
           "maximum_hits": 6,
           "mean_multiple": 2,
           "minimum_hits": 0,
           "moment_order": 25,
           "process": "entry",
-          "required_constant_decimal": 0.24853519335451701,
+          "required_constant_decimal": 0.24427752418393778,
           "start": {
             "start_phase": 14,
-            "window": 90,
+            "window": 91,
             "window_empty": false,
             "window_hits": 3
           },
-          "window": 90
+          "window": 91
         },
         {
           "constant_one_bound_holds": true,
@@ -296,14 +296,14 @@
           "minimum_hits": 4,
           "moment_order": 5,
           "process": "entry",
-          "required_constant_decimal": 0.33767786801440014,
+          "required_constant_decimal": 0.3396850127056334,
           "start": {
             "start_phase": 14,
-            "window": 361,
+            "window": 362,
             "window_empty": false,
             "window_hits": 9
           },
-          "window": 361
+          "window": 362
         },
         {
           "constant_one_bound_holds": true,
@@ -314,14 +314,14 @@
           "minimum_hits": 4,
           "moment_order": 25,
           "process": "entry",
-          "required_constant_decimal": 0.1416541780303103,
+          "required_constant_decimal": 0.1414786937735927,
           "start": {
             "start_phase": 14,
-            "window": 361,
+            "window": 362,
             "window_empty": false,
             "window_hits": 9
           },
-          "window": 361
+          "window": 362
         }
       ],
       "moment_parameters": {
@@ -335,6 +335,7 @@
           4,
           8
         ],
+        "matched_window_convention": "ceil(multiple/density)",
         "order_definition": "bit_length(input_bits + 1) and its square",
         "orders": [
           5,
@@ -657,50 +658,50 @@
         {
           "constant_one_bound_holds": false,
           "constant_two_bound_holds": false,
-          "empty_fraction_decimal": 0.7362987176263516,
+          "empty_fraction_decimal": 0.736183052552175,
           "maximum_hits": 26,
           "mean_multiple": 2,
           "minimum_hits": 0,
           "moment_order": 6,
           "process": "raw",
-          "required_constant_decimal": 21.502710802486433,
+          "required_constant_decimal": 21.488526408507163,
           "start": {
             "start_phase": 9,
-            "window": 1159,
+            "window": 1160,
             "window_empty": false,
             "window_hits": 9
           },
           "start_derived_other": {
             "start_phase": 67863,
-            "window": 1159,
+            "window": 1160,
             "window_empty": true,
             "window_hits": 0
           },
-          "window": 1159
+          "window": 1160
         },
         {
           "constant_one_bound_holds": false,
           "constant_two_bound_holds": false,
-          "empty_fraction_decimal": 0.7362987176263516,
+          "empty_fraction_decimal": 0.736183052552175,
           "maximum_hits": 26,
           "mean_multiple": 2,
           "minimum_hits": 0,
           "moment_order": 36,
           "process": "raw",
-          "required_constant_decimal": 6.906472922164134,
+          "required_constant_decimal": 6.8999325689482,
           "start": {
             "start_phase": 9,
-            "window": 1159,
+            "window": 1160,
             "window_empty": false,
             "window_hits": 9
           },
           "start_derived_other": {
             "start_phase": 67863,
-            "window": 1159,
+            "window": 1160,
             "window_empty": true,
             "window_hits": 0
           },
-          "window": 1159
+          "window": 1160
         },
         {
           "constant_one_bound_holds": false,
@@ -897,50 +898,50 @@
         {
           "constant_one_bound_holds": true,
           "constant_two_bound_holds": true,
-          "empty_fraction_decimal": 0.1708473723912497,
+          "empty_fraction_decimal": 0.1708021121448328,
           "maximum_hits": 9,
           "mean_multiple": 4,
           "minimum_hits": 0,
           "moment_order": 6,
           "process": "entry",
-          "required_constant_decimal": 0.5911567830390687,
+          "required_constant_decimal": 0.5910529320124911,
           "start": {
             "start_phase": 9,
-            "window": 13039,
+            "window": 13040,
             "window_empty": false,
             "window_hits": 4
           },
           "start_derived_other": {
             "start_phase": 67863,
-            "window": 13039,
+            "window": 13040,
             "window_empty": false,
             "window_hits": 1
           },
-          "window": 13039
+          "window": 13040
         },
         {
           "constant_one_bound_holds": true,
           "constant_two_bound_holds": true,
-          "empty_fraction_decimal": 0.1708473723912497,
+          "empty_fraction_decimal": 0.1708021121448328,
           "maximum_hits": 9,
           "mean_multiple": 4,
           "minimum_hits": 0,
           "moment_order": 36,
           "process": "entry",
-          "required_constant_decimal": 0.15784617630683892,
+          "required_constant_decimal": 0.15781538576105325,
           "start": {
             "start_phase": 9,
-            "window": 13039,
+            "window": 13040,
             "window_empty": false,
             "window_hits": 4
           },
           "start_derived_other": {
             "start_phase": 67863,
-            "window": 13039,
+            "window": 13040,
             "window_empty": false,
             "window_hits": 1
           },
-          "window": 13039
+          "window": 13040
         },
         {
           "constant_one_bound_holds": true,
@@ -1002,6 +1003,7 @@
           4,
           8
         ],
+        "matched_window_convention": "ceil(multiple/density)",
         "order_definition": "bit_length(input_bits + 1) and its square",
         "orders": [
           6,

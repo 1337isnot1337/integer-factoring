@@ -222,7 +222,7 @@ def profile_cycle(record: dict) -> dict:
                     item["lower_tail"] = check
                 sufficient.append(item)
         for multiple in (1, 2, 4, 8):
-            window = max(1, round(multiple / process_density))
+            window = max(1, math.ceil(multiple / process_density))
             for moment_order in orders:
                 check = lower_tail_record(process_flags, window, moment_order, 1)
                 check2 = lower_tail_record(process_flags, window, moment_order, 2)
@@ -247,6 +247,7 @@ def profile_cycle(record: dict) -> dict:
         "period_bound_is_input_only": True,
         "constants": [1, 2],
         "matched_mean_multiples": [1, 2, 4, 8],
+        "matched_window_convention": "ceil(multiple/density)",
     }
     record["sufficient_windows"] = sufficient
     record["matched_mean_windows"] = matched
