@@ -1,0 +1,45 @@
+{
+  "scope": "Principal-word norm gap and fixed T=2 low-height event separation; no new orbit.",
+  "source_row_semantic_sha256": "e1efe5802d6759528f4c8e07c3294f9b9dbaff7d73a5e33ca0552c2511a2d572",
+  "controls": [
+    {
+      "prime": 5,
+      "period": 198850,
+      "unramified_word_pairs": 57423,
+      "equal_row_pairs": 1230,
+      "separation": 2,
+      "radius": 100001,
+      "low_norm_hits": 235,
+      "low_norm_events": 45,
+      "row_multiplicity_cap": 15,
+      "minimum_cyclic_event_distance": 673,
+      "covariance": "-81/1581652900",
+      "third_cumulant": "729/31451167916500",
+      "event_flags_sha256": "ebf4bec72445f30a12adc30965ee50e04a46245f29fbe0044a638850aab76fec"
+    },
+    {
+      "prime": 7,
+      "period": 198850,
+      "unramified_word_pairs": 57687,
+      "equal_row_pairs": 966,
+      "separation": 2,
+      "radius": 71429,
+      "low_norm_hits": 213,
+      "low_norm_events": 55,
+      "row_multiplicity_cap": 11,
+      "minimum_cyclic_event_distance": 175,
+      "covariance": "-121/1581652900",
+      "third_cumulant": "1331/31451167916500",
+      "event_flags_sha256": "b1fbcba031eccf72bf9d6cf2d4e7d18fc0c80c362be46f39d770748af2213fc3"
+    }
+  ],
+  "ramified_negative_control": {
+    "discriminant": -20,
+    "prime": 2,
+    "word_exponent": 2,
+    "word_norm": 4,
+    "violates_unqualified_gap": true
+  },
+  "long_range_cumulant_estimate_proved": false,
+  "complete_factoring_exponent": "1/2; unchanged"
+}

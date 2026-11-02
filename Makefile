@@ -3268,6 +3268,12 @@ verify-event-cumulant-windows: verify-relation-change-events
 
 verify-arithmetic: verify-event-cumulant-windows
 
+.PHONY: verify-small-norm-event-separation
+verify-small-norm-event-separation: verify-event-cumulant-windows
+	python3 tools/check_small_norm_event_separation.py
+
+verify-arithmetic: verify-small-norm-event-separation
+
 .PHONY: verify-ambient-minorant-gap
 verify-ambient-minorant-gap:
 	python3 tools/check_ambient_minorant_gap.py --output /tmp/integer-factoring-ambient-minorant-gap.json

@@ -1,5 +1,25 @@
 # Contribution review and disposition ledger
 
+## Sol worker 1 small-norm density and event separation
+
+The [ordinary argument](../research/small-norm-event-separation.md) applies
+the classical principal-ideal norm gap to decoded row differences, then
+proves local separation of a truncated row-change process. Repeating PR87's
+norm-budget count retains its covered-subgroup density scale. The exact
+unramified hypotheses, a ramified-square counterexample, and the remaining
+long-range correlation/index obligations are explicit. The complete score
+remains 1/2; this is not independent mathematical review or new Lean work.
+
+The [checker and receipt](../evidence/small-norm-event-separation.json)
+check all 115110 nonzero saved row differences, one prescribed `T=2`
+truncation in each direction, cyclic event separation and exact second/third
+connected correlations. These are saved-data postprocessing, not a uniform
+arithmetic estimate or a new orbit. `make verify-small-norm-event-separation`
+and `make verify-docs` pass, including the upstream event/group/row and
+cumulant controls. A full default replay of these new files has not yet run;
+the previous connected-event default replay does not cover them. The next
+full suite is queued behind the other workers' already running/queued gates.
+
 ## Sol worker 1 connected-event criterion, base `af12893`
 
 The [ordinary proof](../research/connected-event-window-criterion.md) derives
