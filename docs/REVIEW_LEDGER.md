@@ -14,6 +14,44 @@ denominator restrictions. This is an ordinary author deduction without
 new implementation, Lean or independent mathematical review. Focused
 documentation and the required default replay are pending at this edit.
 
+## High two-power root projection
+
+Sol worker 1, base `7217aab`: the
+[ordinary projection proof](../research/high-root-projection.md) converts
+verified roots of nonsingular row residues to generators of the entire
+supplied two-primary subgroup. Witnesses may be outside that subgroup,
+so the size bound must cover the ambient group; depth must be at least
+that bit bound plus `v2(det R)`. Every squaring is charged. This replaces
+the acquired certificate, not the underlying odd-residual condition.
+Efficient root acquisition remains open; complete exponent `1/2`.
+
+The [checker and receipt](../evidence/high-root-projection.json) retain
+three fixed abstract controls, including a signed non-diagonal matrix
+and an outside-subgroup witness, the low-precision/false-ambient losses,
+false-root and singular/tautological rejection, and a numerical-depth
+operation count. `make verify-high-root-projection` passes. The
+determinant, word evaluator and two-group checks retain predecessor
+credit; Sol worker 2's scoped derivation check is linked in the note.
+This is author-checked ordinary mathematics and implementation evidence,
+not independent review, an acquired root algorithm or new Lean work.
+Sol worker 2 subsequently contributed the guaranteed-positive specialization
+`h=g^(2^b)`, root depth `2b`, which would remove row selection with a
+charged deep-root engine. The note links that contribution and distinguishes
+it from the rejected equal-depth tautology; no such engine is supplied.
+
+The [full default receipt](../evidence/high-root-full-verification.json)
+and [complete compressed stdout](../evidence/high-root-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen
+`be4aae16f0d1e1432b5a142e0ed39b109220992f`, tree
+`c4dcf4c9b82dd9f6f5c01080688555747dc8ae9e`, in 1,300.61 seconds.
+The new checker is in the complete log; raw/archive hashes match, with
+clean tracked pre/post state. A fresh private `/tmp` marker probe passed,
+the host root was read-only and networking disabled. PR107 merged at
+`60f5989bc5eb50f1db3ef69a9e730536aa53f87f` with an identical tree.
+Hosted exact-certificates and arithmetic-sieve also passed for PR107
+head `be4aae1` in run 41539389635. The later corollary and archive prose
+have focused/docs checks only; executable sources are unchanged.
+
 ## Odd-quotient relation certificates
 
 Sol worker 2, implementation base `517909e`: the
