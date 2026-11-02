@@ -24,7 +24,8 @@ work retain credit even when they do not advance the selected exponent.
   and attribution.
   Sol worker 1's [near-height smooth-descent deduction](research/near-height-smooth-descent.md)
   reuses the credited norm-word decoder and polynomial form arithmetic;
-  it separates complete ellipse enumeration from unproved strict descent.
+  the [prescribed-target counterfamily](research/prime-power-descent-obstruction.md)
+  combines classical Bonferroni/CRT estimates with actual prime-power forms.
   The coordinated [event-boundary recurrence and Mellin contribution](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19356480)
   supplied the finite group-algebra identity, transform multiplier and original
   600-control panel integrated into the [event-word boundary note](research/event-word-boundary.md).

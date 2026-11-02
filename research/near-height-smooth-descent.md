@@ -30,10 +30,12 @@ and the written bit lengths. Rejected vectors and row setup are included.
 For `Q=red(g_p^k)`, the primitive norm `m=p^k` is explicitly available.
 A smooth primitive norm **strictly below** `m` yields a weighted dominant
 relation. Thus (2) removes the coordinate-search obligation from a
-near-height strict-descent hypothesis for these targets. The strict-descent
-existence statement remains open. A counterfamily below shows that even
-the first power above the reduced-height bound can have no smaller smooth
-norm. No complete factoring improvement follows; the score stays **1/2**.
+near-height strict-descent interface for these targets. A
+[stronger prescribed-target obstruction](prime-power-descent-obstruction.md)
+disproves the existence input for ordinary scalar thresholds, including on
+composite inputs surviving ordinary preprocessing. The known smooth norm
+does not force descent. No complete factoring improvement follows; the
+score stays **1/2**.
 
 The [scope and stopping test](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19359593)
 were registered before the fixed controls. This changes the arbitrary-target
@@ -100,7 +102,7 @@ matrix to recover its known primitive vector. This costs polynomial time
 in `log m`, `log D` and the factor-base setup cost. Only this near-height
 use materializes `p^k`; it has `O(b)` bits in the application below.
 
-## 3. What would suffice for a complete bound
+## 3. Complete cost if strict descent were supplied
 
 Fix `alpha>1/2`, `b=bits(D)` and
 `Y=ceil(exp((log b)^(1+alpha)))`, eventually above the pinned
@@ -116,17 +118,23 @@ and, for every unramified split generator `p<=Y`, let `k_p` be the
 least integer with `p^(k_p)>L_D`. Then
 `m_p=p^(k_p)<=p L_D<=Y L_D`, and `log m_p=O(b)`.
 
-The missing arithmetic input is precise:
+A sufficient arithmetic input would be:
 
 > For every sufficiently large relevant discriminant and every such
 > target `red(g_p^(k_p))`, either the leading norm is eligible, or there
 > is a primitive eligible smooth represented norm `n<m_p`.
 
-This is **unproved**. Existence of a norm `n<=m_p` is automatic from
+This is **false for the ordinary prescribed scalar thresholds** covered by
+the [later counterfamily](prime-power-descent-obstruction.md), for every
+fixed height constant. A general adaptive choice is outside that theorem,
+and is not supplied here. Existence of a norm `n<=m_p` is automatic from
 `p^(k_p)` and is insufficient. Global smooth-class density, density on
 covered subgroups, and the known boundary norm do not establish the strict
 inequality. Unlike the older short-box interface, no additional coordinate
-localization assumption is needed if this strict-descent input holds.
+localization assumption is needed if strict descent is supplied by a
+changed target mechanism. The cost calculation below is retained for
+that distinction; it is not a conjecture that increasing the scalar height
+will make the stated input true.
 
 For an eligible leading norm use `(1,0)`; otherwise exhaust (3).
 The decoded word `v_p` satisfies `prod q^|v_(p,q)|=n<m_p`, so
@@ -171,9 +179,11 @@ This refutes an unconditional first-power descent statement for all
 quadratic orders, even though the entire search has constant size.
 It is not a factoring lower bound: the discriminants have not been
 restricted to inputs surviving primality and small-factor preprocessing.
-It does not exclude descent at `m/sqrt(D)` growing subexponentially,
-later prime powers, other target choices or useful partial presentations.
-No larger parameter sweep is justified merely by this counterfamily.
+The later lower-sieve argument extends the failure to prescribed targets
+at subexponentially growing `m/sqrt(D)`, including composite inputs without
+small prime factors. Adaptive/later target selection and useful partial
+presentations remain outside that obstruction. No scalar-height sweep is
+justified by these failures.
 
 ## 5. Fixed evidence and attribution
 
@@ -191,6 +201,10 @@ ideal arithmetic. The [receipt](../evidence/near-height-smooth-descent.json)
 also contains five explicit first-power failures, including an odd-prime
 target, using checked rough
 coefficients; their primality is unnecessary for the finite controls.
+Two additional bounded CRT/sieve controls certify rough composite inputs
+with no smaller smooth norm, and an exact rational Bonferroni panel checks
+the finite lower-sieve identities; their scope is stated in the
+[obstruction note](prime-power-descent-obstruction.md).
 The 60-bit prime-seven target at exponent twelve has a rough leading
 coefficient and two smaller smooth primitive norms. These are finite
 examples, not a uniform density or complexity theorem.

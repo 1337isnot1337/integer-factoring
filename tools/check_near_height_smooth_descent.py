@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Fixed target controls for the near-height ellipse theorem; no orbit sweep."""
 import argparse
+from fractions import Fraction
 from hashlib import sha256
 import json
 from math import gcd, isqrt, prod
@@ -8,7 +9,7 @@ from pathlib import Path
 
 from bounded_smooth_norm import smooth_factors
 from near_height_smooth_descent import prime_power_target, smaller_norm_vectors
-from prime_form_factor_base import build_prime_form_factor_base
+from prime_form_factor_base import build_prime_form_factor_base, primes_through
 from quadratic_form_arithmetic import compose_primitive, inverse_primitive, power_primitive, reduce_primitive
 from smooth_norm_relation import norm_to_prime_word
 from weighted_norm_relations import least_power_above
@@ -66,6 +67,74 @@ def audit(discriminant, prime, exponent, cutoff, root):
                 smaller_vectors=len(points), smooth_successes=successes)
 
 
+def rough_composite_control(exponent, ratio, cutoff, sieve_cutoff):
+    """One bounded CRT/sieve construction, not a factoring or orbit search."""
+    cap = 3 ** exponent
+    q = next(p for p in primes_through(2*sieve_cutoff) if p > sieve_cutoff)
+    residue = (q + 1) * pow(4*cap, -1, q*q) % (q*q)
+    lower = cap // (8*ratio*ratio)
+    first = lower + (residue - lower) % (q*q)
+    primorial = prod(primes_through(sieve_cutoff))
+    for rejected in range(4096):
+        rough = first + rejected*q*q
+        assert rough < 2*lower
+        d = 4*cap*rough - 1
+        if gcd(rough*d, primorial) == 1:
+            break
+    else:
+        raise AssertionError('The fixed CRT/sieve construction exhausted its budget.')
+    assert d > q and d % (q*q) == q  # A known proper prime factor of valuation one.
+    trial_cutoff = 1 << (isqrt(d.bit_length() - 1) + 1)
+    assert trial_cutoff <= sieve_cutoff
+    record = audit(-d, 3, exponent, cutoff, 1)
+    assert record['reduced_form'] == [rough, -1, cap]
+    assert not record['smooth_successes']
+    assert sum(gcd(x, y) == 1 for x, y, _ in smaller_norm_vectors((rough, -1, cap), cap)) == 1
+    return dict(**record, sieve_cutoff=sieve_cutoff, proper_prime_factor=q,
+                prime_factor_valuation=1, rejected_crt_candidates=rejected,
+                trial_division_cutoff=trial_cutoff)
+
+
+def bonferroni_control():
+    """Exact product/intersection controls for the elementary lower-sieve proof."""
+    primes = primes_through(19)
+    m, q, length = 81, 23, 257
+    residue = (q + 1) * pow(4*m, -1, q*q) % (q*q)
+    roots = {p: [t for t in range(p)
+                 if ((residue + q*q*t) * (4*m*(residue + q*q*t) - 1)) % p == 0]
+             for p in primes}
+    assert all(len(roots[p]) == (1 if p in (2, 3) else 2) for p in primes)
+    # Group intersection counts by number of selected prime conditions.
+    counts, masses, errors = [0]*9, [Fraction(0)]*9, [0]*9
+    states = [(1, [0], 0)]
+    for p in primes:
+        extended = []
+        for modulus, residues, order in states:
+            next_roots = [(r + modulus*((s - r)*pow(modulus, -1, p) % p))
+                          for r in residues for s in roots[p]]
+            extended.append((modulus*p, next_roots, order + 1))
+        states += extended
+    for modulus, residues, order in states:
+        count = sum((length - 1 - r)//modulus + 1 for r in residues if r < length)
+        mass = Fraction(len(residues), modulus)
+        assert abs(count - length*mass) <= len(residues)
+        counts[order] += count
+        masses[order] += mass
+        errors[order] += len(residues)
+    product_mass = prod(1 - Fraction(len(roots[p]), p) for p in primes)
+    survivors = sum(all(t % p not in roots[p] for p in primes) for t in range(length))
+    assert sum((-1)**j * counts[j] for j in range(9)) == survivors
+    for order in (1, 3, 5, 7):
+        lower = sum((-1)**j * masses[j] for j in range(order + 1))
+        lower_count = sum((-1)**j * counts[j] for j in range(order + 1))
+        assert lower <= product_mass <= lower + masses[order + 1]
+        assert lower_count <= survivors <= lower_count + counts[order + 1]
+        assert abs(lower_count - length*lower) <= sum(errors[:order + 1])
+    return dict(primes=primes, length=length, survivors=survivors,
+                independent_product=str(product_mass),
+                bonferroni_odd_orders=[1, 3, 5, 7], exact_crt_intersections=len(states))
+
+
 def compute():
     controls = []
     # Existing finite inputs, only two predeclared powers per fixed prime.
@@ -100,6 +169,9 @@ def compute():
     sources = ['tools/near_height_smooth_descent.py', 'tools/check_near_height_smooth_descent.py']
     return dict(scope='Complete smaller-norm ellipses at fixed near-height prime powers; no uniform smooth-existence or score claim.',
                 controls=controls, first_power_counterexamples=counterexamples,
+                rough_composite_counterexamples=[rough_composite_control(24, 16, 19, 1009),
+                                                 rough_composite_control(40, 64, 43, 10007)],
+                bonferroni_control=bonferroni_control(),
                 source_sha256={name: sha256((ROOT / name).read_bytes()).hexdigest() for name in sources})
 
 
@@ -112,4 +184,6 @@ if __name__ == '__main__':
         EXPECTED.write_text(json.dumps(result, indent=2) + '\n')
     else:
         assert result == json.loads(EXPECTED.read_text())
-    print(f"near-height descent: {len(result['controls'])} fixed targets and {len(result['first_power_counterexamples'])} exact first-power failures passed")
+    print(f"near-height descent: {len(result['controls'])} fixed targets, "
+          f"{len(result['first_power_counterexamples'])} first-power failures, "
+          "two rough composite controls and 256 CRT intersections passed")

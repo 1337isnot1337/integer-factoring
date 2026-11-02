@@ -11,8 +11,15 @@ signed-box exhaustion on six fixed targets. Known primitive norm witnesses
 and all smaller smooth words replay exactly. Five finite first-power
 controls have no smaller smooth norm. The focused target and document
 links pass; a clean frozen full default replay will be recorded separately.
-The strict-descent existence input is unproved, and the counterfamily
-is not restricted to inputs surviving factoring preprocessing. This is
+
+The [prescribed-target follow-up](../research/prime-power-descent-obstruction.md)
+proves an elementary uniform lower-sieve estimate and aligns the rough
+target with the least prime-three power above each ordinary scalar
+near-height threshold. This disproves the corresponding one-shot descent
+input even on composite non-perfect-power integers surviving trial division
+through a specified roughness cutoff. Two fixed CRT controls, complete
+ellipse exhaustions and 256 exact CRT/Bonferroni intersections pass.
+Adaptive or collective target choices remain outside the theorem. This is
 author verification, without independent mathematical review, new Lean
 or an improved complete exponent.
 

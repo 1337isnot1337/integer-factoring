@@ -12,7 +12,9 @@
 
 - [Small reduced norms, density and local event separation](small-norm-event-separation.md): using the existing graph/lattice principal-word gap, a truncated smooth predicate retains the covered-subgroup density scale and has T-separated row-change events with explicit short-range cumulants. Long-range correlations and actual target indices remain open; no complete bound change.
 
-- [Near-height smooth descent](near-height-smooth-descent.md): a rejected leading test on a known smooth prime-power target makes the entire smaller-norm ellipse enumerable in O(1+p^k/sqrt(D)) candidates. This removes coordinate localization from a conditional strict-descent interface; six fixed targets and five exact first-power failures retain the unproved existence obligation.
+- [Near-height smooth descent](near-height-smooth-descent.md): a rejected leading test on a known smooth prime-power target makes the entire smaller-norm ellipse enumerable in O(1+p^k/sqrt(D)) candidates. Six fixed targets verify the enumeration and decoded words; existence of strict descent is a separate condition.
+
+- [Prescribed prime-power descent obstruction](prime-power-descent-obstruction.md): elementary Bonferroni sieving produces rough composite non-perfect-power inputs whose prescribed near-height prime-three target has no smaller smooth norm, for every fixed scalar height constant and saving exponent. This stops the one-shot scalar-height mechanism; adaptive/collective targets and full orbit windows remain outside the theorem.
 
 - [Color parity obstructs large one-hot cube profiles](color-distinct-sector-obstruction.md): closed odd-color sectors and the existing scalar polynomial certificate give a pressure floor 3/4 for every homogeneous antipodal tensor preserving separate color parity, all q>=34, every field and common physical type, in the common-scale unweighted three-axis profile method. This extends the scalar-clone floor to arbitrary parity-preserving tensors; no score change.
 
