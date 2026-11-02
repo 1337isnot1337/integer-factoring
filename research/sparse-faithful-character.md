@@ -162,6 +162,8 @@ uses ordinary Gaussian elimination over the acquired field. The bound
 does not enumerate the coefficient index N, divisors of N or an
 exponential set of candidate support vectors.
 
+For the stronger distinct-semiprime promise, [one primitive field always suffices](semiprime-single-field.md) at every coprime q>=7, q=3 mod 4, using a quadratic and the known product residue. This separate arithmetic decoder does not assert one-field recovery for arbitrary sparse words.
+
 ### 3.1 Actual divisor reciprocity and an inversion-fixed target
 
 The arithmetic inputs have more structure than arbitrary sparse words.
@@ -466,6 +468,42 @@ invoice. The same conclusion holds if the coefficient engine accepts the
 certified roughness promise from the trial phase. The forward direction
 needs the eligible levels only. This does not establish either task at a
 stronger score or prove an unconditional complexity lower bound.
+
+### A field-query contract for the complete coefficient target
+
+For the acquired q=3 modulo 4 levels, a full faithful coefficient vector
+can instead be supplied by polynomially many original-index queries in ONE
+fixed finite field, provided the engine is uniform in a supplied primitive
+generator. This requires additional coefficient queries; it does not infer
+all components from one fixed observation and does not assume a semiprime.
+
+For u=(q-1)/2>1, acquire one irreducible f of Phi_u and put omega=T in
+F=F_2[T]/f, of degree nu. Choose one representative r from each doubling
+orbit on the units modulo u. Every orbit has size nu. For the canonical
+generator g choose an odd unit k modulo 2u with k^(-1)=r modulo u, and
+query the engine using generator g^k, still sending that supplied generator
+to the SAME omega. Its output is P_N(omega^r). Frobenius gives all values
+in that orbit because P_N has binary coefficients. The phi(u)/nu queries
+therefore give its values on every primitive u-th root.
+
+On degree-below-phi(u) binary polynomials this is a square injective binary
+linear map: a polynomial in its kernel vanishes at all primitive roots,
+so Phi_u divides it, and it is zero. Explicit binary elimination acquires
+the inverse in polynomial bit cost in q. Apply it to recover the complete
+faithful remainder, then use the earlier sparse decoder and complete
+factoring reduction. Field acquisition, the changed generators, all query
+outputs and the inverse are charged. Conversely, a full coefficient vector
+answers each such field query by evaluation. Thus the complete fixed-saving
+complexity target in Section 5 is equivalently a single-field coefficient
+engine uniform in the supplied primitive generator, with polynomial-in-q
+overhead. This is a standard finite-field/CRT encoding observation, not a
+new coefficient algorithm or an exponent gain. It applies to these reduced
+e=1 levels; it does not discard nilpotent coordinates at other levels.
+
+The [semiprime specialization](semiprime-single-field.md) is stronger in a
+different direction: it uses only ONE fixed component per level and a
+quadratic, with an explicit semiprime promise. A provider restricted to
+that promise does not satisfy the all-input field-query contract above.
 
 ## 6. Controls, credit and stopping point
 
