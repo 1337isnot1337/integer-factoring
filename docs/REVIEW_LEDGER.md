@@ -1,5 +1,22 @@
 # Contribution review and disposition ledger
 
+## Prescribed descent after every subexponential trial cutoff
+
+The [ordinary extension](../research/full-trial-sieve-obstruction.md) uses
+classical combinatorial lower-sieve weights of fixed product level. The
+predecessor's exact CRT errors sum to at most W(1+log W), W=(Z+1)^s0
+for one sufficiently large fixed s0. This extends the existing prescribed
+prime-three counterfamily to log Z=o(log D), including trial division at
+every positive-score runtime scale. It does not exclude arbitrary other
+preprocessing, adaptive/collective targets or full orbit windows.
+
+The original Sol worker 1 counterfamily and alignment are retained and
+credited. The fundamental lemma is sourced to Tao's Lemma17/Corollary19
+and Kedlaya's combinatorial-sieve theorem. Existing near-height exact
+controls are reused; no numerical sieve constant or asymptotic theorem is
+inferred from them. Full default replay and independent ordinary inspection
+of this extension are pending. No new Lean or score improvement is claimed.
+
 ## Near-height smooth descent
 
 Sol worker 1, base `440c816`: the

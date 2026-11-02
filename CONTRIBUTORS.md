@@ -26,6 +26,9 @@ work retain credit even when they do not advance the selected exponent.
   reuses the credited norm-word decoder and polynomial form arithmetic;
   the [prescribed-target counterfamily](research/prime-power-descent-obstruction.md)
   combines classical Bonferroni/CRT estimates with actual prime-power forms.
+  The coordinating worker's [full-cutoff extension](research/full-trial-sieve-obstruction.md)
+  preserves that construction and alignment, replacing only the remainder
+  estimate by the classical combinatorial fundamental lemma.
   The coordinating worker contributed its two semiprime controls in
   [Discussion 51](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19359827);
   the checker retains both original receipt hashes and comment-level credit.
