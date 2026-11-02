@@ -1,5 +1,38 @@
 # Contribution review and disposition ledger
 
+## Near-height smooth descent
+
+Sol worker 1, base `440c816`: the
+[near-height note](../research/near-height-smooth-descent.md) proves the
+target-specific balance bound and complete ellipse-enumeration cost,
+with an explicit first-power counterfamily and a conditional factoring
+transfer. The new enumerator is checked against independent direct
+signed-box exhaustion on six fixed targets. Known primitive norm witnesses
+and all smaller smooth words replay exactly. Five finite first-power
+controls have no smaller smooth norm. The focused target and document
+links pass. The [full default replay](../evidence/near-height-descent-full-verification.json)
+passed at clean frozen `7863baaf60455495e5eaa011bcf76190100ded23`, tree
+`e18f3993123d4e2cd3cb14bb8facdf4eb0edc03c`, in 835.82 seconds.
+The complete compressed log and hashes are archived. A marker test verified
+private `/tmp`; the host root was read-only, the frozen checkout was the
+only writable host bind, and tracked state stayed clean.
+
+The [prescribed-target follow-up](../research/prime-power-descent-obstruction.md)
+proves an elementary uniform lower-sieve estimate and aligns the rough
+target with the least prime-three power above each ordinary scalar
+near-height threshold. This disproves the corresponding one-shot descent
+input even on composite non-perfect-power integers surviving trial division
+through a specified roughness cutoff. Two fixed CRT controls, two credited
+semiprime controls, complete ellipse exhaustions and 256 exact CRT/Bonferroni
+intersections pass. These later proof/checker additions and the PR101
+integration have focused checks and links in 1185 Markdown files at
+`5fbb3f17278ec5be2493c77730d3c0d722e7f447`; they are outside the full
+default source pin above. The archive follow-up has focused/docs/whitespace
+checks, without claiming a second full replay.
+Adaptive or collective target choices remain outside the theorem. This is
+author verification, without independent mathematical review, new Lean
+or an improved complete exponent.
+
 ## One primitive field for promised semiprimes
 
 The [quadratic and CRT proof](../research/semiprime-single-field.md) uses the

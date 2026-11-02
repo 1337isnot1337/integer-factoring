@@ -3308,6 +3308,12 @@ verify-event-word-boundary: verify-small-norm-event-separation
 
 verify-arithmetic: verify-event-word-boundary
 
+.PHONY: verify-near-height-smooth-descent
+verify-near-height-smooth-descent:
+	python3 tools/check_near_height_smooth_descent.py
+
+verify-arithmetic: verify-near-height-smooth-descent
+
 .PHONY: verify-ambient-minorant-gap
 verify-ambient-minorant-gap:
 	python3 tools/check_ambient_minorant_gap.py --output /tmp/integer-factoring-ambient-minorant-gap.json
