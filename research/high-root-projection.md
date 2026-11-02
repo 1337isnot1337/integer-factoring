@@ -120,6 +120,9 @@ continued divisibility: choices can introduce a two-primary component.
 No procedure for acquiring the deeper roots is supplied here. The
 specialization changes the precise open acquisition target, rather than
 solving it.
+The [complete all-input transfer](deep-class-root-projection.md) gives the
+precise engine promise and polynomial overhead using the existing
+generation import and early-stop factor extraction.
 
 ## Relation to odd-order certificates
 
