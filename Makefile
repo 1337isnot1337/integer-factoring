@@ -3332,3 +3332,9 @@ verify-color-distinct-sector:
 	python3 tools/check_color_distinct_sector.py --output /tmp/integer-factoring-color-distinct-sector.json
 
 verify-arithmetic: verify-color-distinct-sector
+
+.PHONY: verify-quartic-charge-fusion
+verify-quartic-charge-fusion:
+	python3 tools/check_quartic_charge_fusion.py --output /tmp/integer-factoring-quartic-charge-fusion.json
+
+verify-arithmetic: verify-quartic-charge-fusion

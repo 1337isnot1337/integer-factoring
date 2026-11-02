@@ -1,0 +1,145 @@
+{
+  "scope": "Formal kernel/endpoint/minor identities and one q8 low-jet charge block, independently restricted from F256 to binary Toeplitz ranks. The generic prefix uses the ordinary sector argument; no full profile, favorable normalized pressure or stronger factoring exponent is established.",
+  "physical_degree_per_occupied_vertex": 5,
+  "quartic_terms": [
+    [
+      4,
+      4,
+      12
+    ],
+    [
+      4,
+      12,
+      4
+    ],
+    [
+      6,
+      6,
+      8
+    ],
+    [
+      6,
+      8,
+      6
+    ],
+    [
+      8,
+      6,
+      6
+    ],
+    [
+      12,
+      4,
+      4
+    ]
+  ],
+  "formal": [
+    {
+      "axis": 0,
+      "cross_entries": 16,
+      "two_minors": 36,
+      "three_minors": 16,
+      "first_spatial_orders": [
+        2,
+        4
+      ],
+      "later_spatial_orders_at_least": 5
+    },
+    {
+      "axis": 1,
+      "cross_entries": 16,
+      "two_minors": 36,
+      "three_minors": 16,
+      "first_spatial_orders": [
+        2,
+        4
+      ],
+      "later_spatial_orders_at_least": 5
+    },
+    {
+      "axis": 2,
+      "cross_entries": 16,
+      "two_minors": 36,
+      "three_minors": 16,
+      "first_spatial_orders": [
+        2,
+        4
+      ],
+      "later_spatial_orders_at_least": 5
+    }
+  ],
+  "low_jets": {
+    "block_size": 136,
+    "coefficient_field_modulus": 283,
+    "y": 2,
+    "z": 3,
+    "first_layers": {
+      "gaussian": {
+        "ranks": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          7
+        ],
+        "profile": {
+          "2": 1,
+          "4": 4
+        }
+      },
+      "fusion": {
+        "ranks": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          5
+        ],
+        "profile": {
+          "2": 1,
+          "4": 2
+        }
+      }
+    },
+    "color_pair_ranks": [
+      21,
+      7
+    ],
+    "full_prefix_from_sector_proof": {
+      "gaussian": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          28
+        ]
+      ],
+      "fusion": [
+        [
+          0,
+          1
+        ],
+        [
+          2,
+          7
+        ],
+        [
+          4,
+          14
+        ]
+      ]
+    }
+  },
+  "source_sha256": {
+    "check_quartic_charge_fusion.py": "f8d7b3dfd7f068bc494475d9ba35949928369120206a113f317f4456e790db82",
+    "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  }
+}
