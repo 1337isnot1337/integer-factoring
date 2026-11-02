@@ -23,6 +23,11 @@ by a few low-degree equations. The operation requirement changes: the new
 circuit is division-free, but has unrestricted degree. The original explicit-product polynomial carry
 backend does not automatically contract its shared circuit DAG.
 
+The [direct parity-hash follow-up](native-parity-hashes.md) uses the same
+pointwise Boolean predicate at precision one. It explicitly requests
+linear hash masks and bit tags, reusing sparse isolation to replace the
+exact-count provider by scalar parity queries. That provider remains open.
+
 ## 1. Acquire a bijective coordinate map
 
 For odd N>=5 write `b=bits(N)`, `a=ceil(b/2)` and `d=a-1>=1`.

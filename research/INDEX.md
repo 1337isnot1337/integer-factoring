@@ -1,5 +1,7 @@
 # Research index
 
+- [Native factoring from direct one-bit hash queries](native-parity-hashes.md): the existing sparse polynomial hash family and bit tags compose with Boolean bucket masks on the native circuit. A precision-one pure-field provider suffices for all inputs with a complete charged transfer; one reduced univariate circuit coefficient is the exact target. No fast provider is supplied.
+
 - [Division-free trace-dual counts at sparsity-sized precision](trace-dual-native-counts.md): a trace-dual coordinate map gives one Teichmuller point per odd half-width candidate. Completed trial division bounds unweighted prefix counts at K=min(ceil(b/2)-1,ceil(b/t)) bits, with polylogarithmic output precision below any fixed positive-score budget. Polynomial Boolean gates remove exact halvings and retain the same small starting precision; summing the unrestricted-degree circuit is still open.
 
 - [Smooth-pair relations modulo a certified odd kernel](odd-quotient-relations.md): verified odd row annihilators preserve the determinant's two-adic valuation and all two-part factoring directions. A uniform odd multiplier permits positive-kernel search in H^M without an unknown class number. A fast quotient-pair extractor remains open; the existing generation/analytic premises are retained. No score change.

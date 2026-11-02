@@ -1,5 +1,24 @@
 # Contribution review and disposition ledger
 
+## Direct precision-one native parity recovery
+
+The [parity-hash composition](../research/native-parity-hashes.md) applies
+the existing bit-tagged chunk-polynomial isolation proof to directly
+compiled Boolean bucket tests. The native coefficient field has degree
+ceil(b/2)-1 and precision one. Every true candidate is isolated in some
+bucket; reconstructed XOR tags are verified by actual integer division.
+The charged pretest, control-field acquisition, all masks/tags and queries
+are retained in the all-input cost. The fast masked-parity provider is open.
+
+The [finite receipt](../evidence/native-parity-hash-controls.json) records
+1172 actual native points, 504 direct mask controls, and 3208 scalar
+parity queries. A complete d=10 fixture has an even bucket hiding two
+factors, yet the full family recovers the minimum. A separate zero-mask
+guard produces false singleton tags and rejects the candidate. Its finite
+oracle caches exhaustive pointwise states and is not a fast provider.
+Full default replay and independent ordinary inspection are pending.
+No new Lean or stronger complete factoring exponent is claimed.
+
 ## Bijective trace-dual candidate counts
 
 The [ordinary coordinate-word construction](../research/trace-dual-native-counts.md)

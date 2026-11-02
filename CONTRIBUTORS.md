@@ -26,6 +26,10 @@ work retain credit even when they do not advance the selected exponent.
   retains classical trace duality and the credited ring, parity, inverse and
   exact-division primitives, adding the bijective odd-candidate composition
   and trial-certified smaller count precision.
+  The [direct native parity composition](research/native-parity-hashes.md)
+  reuses the existing bit-tagged polynomial hash, sparse isolation and
+  verification proof, with direct Boolean bucket tests and a pure-field
+  one-bit provider contract.
   Sol worker 1's [near-height smooth-descent deduction](research/near-height-smooth-descent.md)
   reuses the credited norm-word decoder and polynomial form arithmetic;
   the [prescribed-target counterfamily](research/prime-power-descent-obstruction.md)
