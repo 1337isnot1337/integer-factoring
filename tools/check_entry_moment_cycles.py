@@ -108,6 +108,31 @@ def entry_flags(flags: bytes) -> bytes:
     return bytes(flags[index] * (1 - flags[index - 1]) for index in range(period))
 
 
+def maximum_cyclic_run(flags: bytes, value: int) -> int:
+    period = len(flags)
+    if all(flag == value for flag in flags):
+        return period
+    start = next(index for index, flag in enumerate(flags) if flag != value)
+    best = 0
+    run = 0
+    for offset in range(1, period + 1):
+        if flags[(start + offset) % period] == value:
+            run += 1
+            best = max(best, run)
+        else:
+            run = 0
+    return best
+
+
+def maximum_entry_gap(entries: bytes) -> int:
+    positions = [index for index, entry in enumerate(entries) if entry]
+    period = len(entries)
+    if len(positions) < 2:
+        return period - 1
+    return max((positions[(index + 1) % len(positions)] - positions[index]) % period
+               for index in range(len(positions))) - 1
+
+
 def cyclic_window_counts(flags: bytes, window: int) -> list[int]:
     period, good = len(flags), sum(flags)
     whole, remainder = divmod(window, period)
@@ -184,6 +209,12 @@ def profile_cycle(record: dict) -> dict:
     assert all(entry <= hit for entry, hit in zip(entries, flags))
     assert sum(1 for index in range(period)
                if flags[index] and not flags[index - 1]) == entry_count
+    run_profile = {
+        "max_hit_run": maximum_cyclic_run(flags, 1),
+        "max_zero_run": maximum_cyclic_run(flags, 0),
+        "max_entry_gap": maximum_entry_gap(entries),
+        "hit_runs": entry_count,
+    }
     assert good * period == sum(flags) * period
     mean_run = good / entry_count
     assert abs(entry_count / period - (good / period) / mean_run) < 1e-15
@@ -191,6 +222,7 @@ def profile_cycle(record: dict) -> dict:
     orders = sorted({order, order * order})
     start = record["least_power_above_height"]
     record.update({
+        "run_profile": run_profile,
         "density": {"good_classes": good, "period": period,
                     "decimal": good / period},
         "entry": {"entries": entry_count, "density_decimal": entry_count / period,
