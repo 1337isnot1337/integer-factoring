@@ -24,9 +24,20 @@ Their maximum identical-row segments attain the proved caps 17 and 13.
 A sharp all-good `Z/3` control and a proper-gcd-phase control pass. No new
 arithmetic orbit, composition, input or cutoff is used in this diagnostic.
 The original group/order/row certificate replay is a prerequisite. Focused
-and documentation checks are the local gate; a new clean default replay
-will be archived separately. Existing multiplicity, selector, Grok entry
+and documentation checks are the local gate. Existing multiplicity, selector, Grok entry
 data and moment credits remain. No Lean or independent review is claimed.
+
+The [frozen full replay](../evidence/relation-change-events-full-verification.json)
+passes at `fd5970d76735c4d4e0f041bc908f3589c5933ee2`, tree
+`28aa795ac9b16a670e54a851038bca7c86c95735`, in 1572.86 seconds:
+`make verify` and `make verify-relation-change-events`, clean tracked state
+before and after. The additive gap corollary is a later prose-only change.
+After integration with current main, the new checker, its weighted-norm
+helper and the original certificate checker are byte-identical to that
+source pin. The event, protected-core transition, independent entry replay
+and documentation targets pass on the integrated tree (1165 Markdown
+files). The full log is archived; later main additions are outside the
+frozen default replay's scope.
 
 ## Near-identity positive Fourier minorants for the raw selector
 

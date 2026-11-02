@@ -181,3 +181,10 @@ The density proof is an ordinary argument, not an inference from the
 finite panel. Existing selector, Grok data/entry analysis and repository
 moment credits are retained. No new Lean or independent mathematical
 review is claimed.
+
+The [clean frozen replay](../evidence/relation-change-events-full-verification.json)
+passes the default and focused gates at exact source
+`fd5970d76735c4d4e0f041bc908f3589c5933ee2`, with its complete compressed
+log archived. The later gap corollary changes prose only; the subsequent
+main integration retains identical event-checker source and has separate
+focused and documentation checks recorded in the receipt.
