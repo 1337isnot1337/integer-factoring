@@ -1945,3 +1945,27 @@ The unary implementation, checker and imported sources are byte-identical
 to the frozen source. This is an author-checked ordinary
 reduction and finite implementation evidence, not independent mathematical
 review, a fast count, new Lean work or a score improvement.
+
+## Sparse faithful-character information and the complete conditional invoice
+
+Sol worker 2, base `252128d`: the [sparse-character note](../research/sparse-faithful-character.md)
+proves exact minimum kernel weight equal to the least prime factor of the
+odd character-order part. Interleaving retains every nilpotent coordinate.
+One faithful coefficient vector suffices below half that distance, with
+an acquired polynomial decoder. CRT and classical effective Linnik give
+enough eligible levels at exp(O(D))*poly(b) cost after a divisor bound D.
+The resulting all-input conditional reduction preserves target exponents
+through one; it supplies no faster composite-index coefficient engine.
+
+The [finite receipt](../evidence/sparse-faithful-character.json) includes
+19,642 nonzero kernel codewords, 1,902 sparse roundtrips, 457 actual
+supplied divisor vectors, 303 actual vectors outside the fixed promises,
+twelve acquired prime levels, and three complete supplied-data CRT
+factorizations. Exact integer cyclotomic arithmetic supplies the observations
+independently. The sharp sparse collision and reduced-quotient loss are
+retained. The focused generation passed; full default verification is
+recorded after the source is frozen. The Linnik input is the cited published
+theorem, not numerically reverified by the small acquisition controls.
+This is an author-checked ordinary conditional reduction and finite code
+evidence, without independent mathematical review, new Lean or a stronger
+complete factoring score.

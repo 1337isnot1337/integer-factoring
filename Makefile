@@ -3173,6 +3173,12 @@ verify-one-trace-inverse-words:
 	python3 tools/check_one_trace_inverse_words.py
 
 verify-arithmetic: verify-one-trace-inverse-words
+
+.PHONY: verify-sparse-faithful-character
+verify-sparse-faithful-character:
+	python3 tools/check_sparse_faithful_character.py
+
+verify-arithmetic: verify-sparse-faithful-character
 .PHONY: verify-divided-power-traces
 verify-divided-power-traces:
 	python3 tools/check_divided_power_trace_carries.py

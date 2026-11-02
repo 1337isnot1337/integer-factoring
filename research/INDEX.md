@@ -1,5 +1,7 @@
 # Research index
 
+- [Sparse divisor data from one faithful character](sparse-faithful-character.md): an exact cyclotomic kernel distance and polynomial sparse decoder retain nilpotent coordinates. Charged CRT/Linnik level acquisition gives a complete conditional factoring reduction using only faithful coefficient vectors for target exponents through one. The faster coefficient engine remains open; no score change.
+
 - [One half-width trace and a modular-inverse interval test](one-trace-inverse-words.md): one candidate input determines its cofactor through a polynomial inverse; a no-wrap range test gives a complete conditional smallest-factor reduction with charged field, precision, exact divisions and bit costs. The uniform contractor remains open; no score change.
 
 - [Connected event correlations and a finite-order window criterion](connected-event-window-criterion.md): factorial bounds on aggregate cumulants through twice the logarithm of a period bound imply a window linear in inverse event density and the correlation scale. A tree estimate is sufficient but unproved arithmetically; exact saved-event controls neither certify it nor change the complete bound.

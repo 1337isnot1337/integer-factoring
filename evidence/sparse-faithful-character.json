@@ -1,0 +1,513 @@
+{
+  "scope": "Exact sparse faithful-character decoding and fixed CRT acquisition controls. Divisor observations are supplied from explicit divisors; no fast composite-index coefficient engine, asymptotic analytic replay or stronger factoring bound.",
+  "kernel_controls": [
+    {
+      "order": 6,
+      "e": 1,
+      "odd_part": 3,
+      "exhaustive_nonzero_kernel_words": 1,
+      "minimum_weight": 3,
+      "attaining_word": 7
+    },
+    {
+      "order": 10,
+      "e": 1,
+      "odd_part": 5,
+      "exhaustive_nonzero_kernel_words": 1,
+      "minimum_weight": 5,
+      "attaining_word": 31
+    },
+    {
+      "order": 12,
+      "e": 2,
+      "odd_part": 3,
+      "exhaustive_nonzero_kernel_words": 3,
+      "minimum_weight": 3,
+      "attaining_word": 21
+    },
+    {
+      "order": 14,
+      "e": 1,
+      "odd_part": 7,
+      "exhaustive_nonzero_kernel_words": 1,
+      "minimum_weight": 7,
+      "attaining_word": 127
+    },
+    {
+      "order": 18,
+      "e": 1,
+      "odd_part": 9,
+      "exhaustive_nonzero_kernel_words": 7,
+      "minimum_weight": 3,
+      "attaining_word": 73
+    },
+    {
+      "order": 22,
+      "e": 1,
+      "odd_part": 11,
+      "exhaustive_nonzero_kernel_words": 1,
+      "minimum_weight": 11,
+      "attaining_word": 2047
+    },
+    {
+      "order": 28,
+      "e": 2,
+      "odd_part": 7,
+      "exhaustive_nonzero_kernel_words": 3,
+      "minimum_weight": 7,
+      "attaining_word": 5461
+    },
+    {
+      "order": 30,
+      "e": 1,
+      "odd_part": 15,
+      "exhaustive_nonzero_kernel_words": 127,
+      "minimum_weight": 3,
+      "attaining_word": 1057
+    },
+    {
+      "order": 42,
+      "e": 1,
+      "odd_part": 21,
+      "exhaustive_nonzero_kernel_words": 511,
+      "minimum_weight": 3,
+      "attaining_word": 16513
+    },
+    {
+      "order": 50,
+      "e": 1,
+      "odd_part": 25,
+      "exhaustive_nonzero_kernel_words": 31,
+      "minimum_weight": 5,
+      "attaining_word": 1082401
+    },
+    {
+      "order": 54,
+      "e": 1,
+      "odd_part": 27,
+      "exhaustive_nonzero_kernel_words": 511,
+      "minimum_weight": 3,
+      "attaining_word": 262657
+    },
+    {
+      "order": 60,
+      "e": 2,
+      "odd_part": 15,
+      "exhaustive_nonzero_kernel_words": 16383,
+      "minimum_weight": 3,
+      "attaining_word": 1049601
+    },
+    {
+      "order": 70,
+      "e": 1,
+      "odd_part": 35,
+      "exhaustive_nonzero_kernel_words": 2047,
+      "minimum_weight": 5,
+      "attaining_word": 270549121
+    },
+    {
+      "order": 88,
+      "e": 4,
+      "odd_part": 11,
+      "exhaustive_nonzero_kernel_words": 15,
+      "minimum_weight": 11,
+      "attaining_word": 1172812402961
+    }
+  ],
+  "decoding_controls": [
+    {
+      "order": 2,
+      "e": 1,
+      "odd_part": 1,
+      "sparsity": 1,
+      "auxiliary_field_polynomial": 3,
+      "complete_sparse_ball": true,
+      "vectors": 2
+    },
+    {
+      "order": 4,
+      "e": 2,
+      "odd_part": 1,
+      "sparsity": 2,
+      "auxiliary_field_polynomial": 3,
+      "complete_sparse_ball": true,
+      "vectors": 4
+    },
+    {
+      "order": 6,
+      "e": 1,
+      "odd_part": 3,
+      "sparsity": 1,
+      "auxiliary_field_polynomial": 7,
+      "complete_sparse_ball": true,
+      "vectors": 4
+    },
+    {
+      "order": 8,
+      "e": 4,
+      "odd_part": 1,
+      "sparsity": 4,
+      "auxiliary_field_polynomial": 3,
+      "complete_sparse_ball": true,
+      "vectors": 16
+    },
+    {
+      "order": 10,
+      "e": 1,
+      "odd_part": 5,
+      "sparsity": 2,
+      "auxiliary_field_polynomial": 31,
+      "complete_sparse_ball": true,
+      "vectors": 16
+    },
+    {
+      "order": 12,
+      "e": 2,
+      "odd_part": 3,
+      "sparsity": 1,
+      "auxiliary_field_polynomial": 7,
+      "complete_sparse_ball": true,
+      "vectors": 7
+    },
+    {
+      "order": 14,
+      "e": 1,
+      "odd_part": 7,
+      "sparsity": 3,
+      "auxiliary_field_polynomial": 11,
+      "complete_sparse_ball": true,
+      "vectors": 64
+    },
+    {
+      "order": 16,
+      "e": 8,
+      "odd_part": 1,
+      "sparsity": 4,
+      "auxiliary_field_polynomial": 3,
+      "complete_sparse_ball": true,
+      "vectors": 163
+    },
+    {
+      "order": 18,
+      "e": 1,
+      "odd_part": 9,
+      "sparsity": 1,
+      "auxiliary_field_polynomial": 73,
+      "complete_sparse_ball": true,
+      "vectors": 10
+    },
+    {
+      "order": 22,
+      "e": 1,
+      "odd_part": 11,
+      "sparsity": 4,
+      "auxiliary_field_polynomial": 2047,
+      "complete_sparse_ball": true,
+      "vectors": 562
+    },
+    {
+      "order": 28,
+      "e": 2,
+      "odd_part": 7,
+      "sparsity": 3,
+      "auxiliary_field_polynomial": 11,
+      "complete_sparse_ball": true,
+      "vectors": 470
+    },
+    {
+      "order": 30,
+      "e": 1,
+      "odd_part": 15,
+      "sparsity": 1,
+      "auxiliary_field_polynomial": 25,
+      "complete_sparse_ball": false,
+      "vectors": 14
+    },
+    {
+      "order": 44,
+      "e": 2,
+      "odd_part": 11,
+      "sparsity": 4,
+      "auxiliary_field_polynomial": 2047,
+      "complete_sparse_ball": false,
+      "vectors": 107
+    },
+    {
+      "order": 46,
+      "e": 1,
+      "odd_part": 23,
+      "sparsity": 4,
+      "auxiliary_field_polynomial": 2787,
+      "complete_sparse_ball": false,
+      "vectors": 107
+    },
+    {
+      "order": 58,
+      "e": 1,
+      "odd_part": 29,
+      "sparsity": 4,
+      "auxiliary_field_polynomial": 536870911,
+      "complete_sparse_ball": false,
+      "vectors": 107
+    },
+    {
+      "order": 88,
+      "e": 4,
+      "odd_part": 11,
+      "sparsity": 4,
+      "auxiliary_field_polynomial": 2047,
+      "complete_sparse_ball": false,
+      "vectors": 114
+    },
+    {
+      "order": 98,
+      "e": 1,
+      "odd_part": 49,
+      "sparsity": 3,
+      "auxiliary_field_polynomial": 2097281,
+      "complete_sparse_ball": false,
+      "vectors": 83
+    },
+    {
+      "order": 210,
+      "e": 1,
+      "odd_part": 105,
+      "sparsity": 1,
+      "auxiliary_field_polynomial": 7049,
+      "complete_sparse_ball": false,
+      "vectors": 27
+    },
+    {
+      "order": 264,
+      "e": 4,
+      "odd_part": 33,
+      "sparsity": 1,
+      "auxiliary_field_polynomial": 1193,
+      "complete_sparse_ball": false,
+      "vectors": 25
+    }
+  ],
+  "prime_acquisition_controls": [
+    {
+      "sparsity": 1,
+      "count": 4,
+      "forbidden_odd_primes": [],
+      "base_modulus": 4,
+      "auxiliary_prime": 5,
+      "progression_modulus": 20,
+      "levels": [
+        {
+          "auxiliary_residue": 1,
+          "progression_residue": 11,
+          "prime": 11,
+          "tested_candidates": 1
+        },
+        {
+          "auxiliary_residue": 2,
+          "progression_residue": 7,
+          "prime": 7,
+          "tested_candidates": 1
+        },
+        {
+          "auxiliary_residue": 3,
+          "progression_residue": 3,
+          "prime": 3,
+          "tested_candidates": 1
+        },
+        {
+          "auxiliary_residue": 4,
+          "progression_residue": 19,
+          "prime": 19,
+          "tested_candidates": 1
+        }
+      ]
+    },
+    {
+      "sparsity": 2,
+      "count": 4,
+      "forbidden_odd_primes": [
+        3
+      ],
+      "base_modulus": 12,
+      "auxiliary_prime": 5,
+      "progression_modulus": 60,
+      "levels": [
+        {
+          "auxiliary_residue": 1,
+          "progression_residue": 11,
+          "prime": 11,
+          "tested_candidates": 1
+        },
+        {
+          "auxiliary_residue": 2,
+          "progression_residue": 47,
+          "prime": 47,
+          "tested_candidates": 1
+        },
+        {
+          "auxiliary_residue": 3,
+          "progression_residue": 23,
+          "prime": 23,
+          "tested_candidates": 1
+        },
+        {
+          "auxiliary_residue": 4,
+          "progression_residue": 59,
+          "prime": 59,
+          "tested_candidates": 1
+        }
+      ]
+    },
+    {
+      "sparsity": 4,
+      "count": 4,
+      "forbidden_odd_primes": [
+        3,
+        5,
+        7
+      ],
+      "base_modulus": 420,
+      "auxiliary_prime": 11,
+      "progression_modulus": 4620,
+      "levels": [
+        {
+          "auxiliary_residue": 1,
+          "progression_residue": 947,
+          "prime": 947,
+          "tested_candidates": 1
+        },
+        {
+          "auxiliary_residue": 2,
+          "progression_residue": 3467,
+          "prime": 3467,
+          "tested_candidates": 1
+        },
+        {
+          "auxiliary_residue": 3,
+          "progression_residue": 1367,
+          "prime": 1367,
+          "tested_candidates": 1
+        },
+        {
+          "auxiliary_residue": 4,
+          "progression_residue": 3887,
+          "prime": 13127,
+          "tested_candidates": 3
+        }
+      ]
+    }
+  ],
+  "rejected_inputs": [
+    [
+      6,
+      3,
+      2
+    ],
+    [
+      22,
+      1024,
+      2
+    ],
+    [
+      22,
+      3,
+      0
+    ]
+  ],
+  "supplied_crt_factorizations": [
+    {
+      "target": 9,
+      "supplied_divisor_count": 3,
+      "eligible_levels": [
+        23,
+        47,
+        59,
+        83,
+        107,
+        167
+      ],
+      "reconstructed_divisor_square_polynomial": [
+        -729,
+        819,
+        -91,
+        1
+      ],
+      "crt_modulus": 94592356933,
+      "smallest_factor": 3
+    },
+    {
+      "target": 11,
+      "supplied_divisor_count": 2,
+      "eligible_levels": [
+        23,
+        47,
+        59,
+        83,
+        107,
+        167
+      ],
+      "reconstructed_divisor_square_polynomial": [
+        121,
+        -122,
+        1
+      ],
+      "crt_modulus": 94592356933,
+      "smallest_factor": 11
+    },
+    {
+      "target": 15,
+      "supplied_divisor_count": 4,
+      "eligible_levels": [
+        23,
+        47,
+        59,
+        83,
+        107,
+        167
+      ],
+      "reconstructed_divisor_square_polynomial": [
+        50625,
+        -58500,
+        8134,
+        -260,
+        1
+      ],
+      "crt_modulus": 94592356933,
+      "smallest_factor": 3
+    }
+  ],
+  "collision_outside_certificate": {
+    "order": 6,
+    "words": [
+      4,
+      3
+    ]
+  },
+  "reduced_quotient_collision": {
+    "order": 8,
+    "words": [
+      1,
+      2
+    ],
+    "reduced_modulus": 3
+  },
+  "counts": {
+    "nonzero_kernel_words": 19642,
+    "sparse_roundtrips": 1902,
+    "actual_divisor_vectors": 457,
+    "actual_vectors_outside_promise": 303,
+    "acquired_prime_levels": 12,
+    "complete_supplied_crt_factorizations": 3
+  },
+  "vector_sha256": "b624b29635558247408139858be8ef5b2ba65fb230e07909ac72924ce3dd2934",
+  "source_sha256": {
+    "tools/sparse_faithful_character.py": "f361babef0af6dfa96e20916c80e99a9343e70774f92bce07f259473a9077268",
+    "tools/check_sparse_faithful_character.py": "1f4d2da2fc5384ca41ac427f6fcc7116e051f6a7e898c3ea1045a326b1cb7743",
+    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
+    "tools/odd_character_residues.py": "6703866bd7a7960a4fa6635442ee62c9449e463ab5b03334882c134578bab623",
+    "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
+    "tools/sparse_divisor_residues.py": "03a87aa052bddbe0bc1467a7c329d52949738492389d5354c156cf402ef3b397",
+    "tools/divisor_moment_recovery.py": "334c5089e3745818ad78830f76f89c63ab57a9f5ddd2853a188c8134aa6bcd38"
+  },
+  "factoring_exponent": "1/2; unchanged"
+}
