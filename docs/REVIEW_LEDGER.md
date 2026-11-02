@@ -23,6 +23,45 @@ namespace to avoid the other workers' fixed temporary paths. The source
 checker is unchanged after integrating main's unary inverse checkpoint;
 the integration has separate focused and documentation checks.
 
+## One-hot colored cube integration and generic sector obstruction
+
+The worker-4 source `1772970a7dbaab83eeb0607014a1111e46718d86`
+is merged with its construction/correction history intact.
+The [specialized note](../research/color-class-cube-profile.md), checker
+and receipt remain credited. Integration corrects the description of the
+256-letter target's grading, clarifies cumulative-count monotonicity, and
+states that the historical `q4_full_profile` key contains only 250 orders.
+Source hashes match; selected replays pass for the complete binary control,
+the ternary orders through six, and saved graded comparisons. The larger
+specialized screens were not independently rerun.
+
+The new [generic proof](../research/color-distinct-sector-obstruction.md)
+uses closed odd-color sectors, with a common antipodal entry in every
+sector and every axis. It extends the earlier scalar-clone polynomial
+certificate (source `0c78cd26c5a7eefad1e107077b6385cc2bbdd9fb`) to every
+homogeneous antipodal tensor preserving separate color parity, over any
+field. The common-scale unweighted three-axis profile floor is at least
+3/4 for every q>=34 and every common physical type. These constructions
+are stopped under this criterion; no generic-profile extrapolation is used.
+
+The [full default replay](../evidence/color-parity-full-verification.json)
+passes at exact source `a879fd7dc54c6b6fa0041da6578148886f94efaa`
+(tree `7f3973f255cfd4d82db0970018214ff3148e2fe1`) in 1071.17 seconds,
+clean before and after. That source contained the valid, weaker 3/5
+certificate at q>=256. The integration follow-up merges main's separately
+verified trace and cumulant work, replaces that redundant polynomial
+checker with the unchanged earlier 50-coefficient scalar certificate,
+and supplies the stronger ordinary parity-sector argument. The original
+weaker checker and receipt remain accessible at the full source commit.
+The full default suite was not repeated after this follow-up; its changed
+Make recipe, retained structural controls and links receive focused replay.
+
+The structural replay verifies 1728 endpoint, 3816 zero-coupling and 108
+minor identities and the asymmetric monomial control. The scalar checker
+reconstructs all 50 Newton coefficients and 80 additional coefficient
+controls. No new Lean or independent mathematical review; complete alpha
+remains 1/2.
+
 ## Sol worker 1 connected-event criterion, base `af12893`
 
 The [ordinary proof](../research/connected-event-window-criterion.md) derives

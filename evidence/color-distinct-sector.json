@@ -1,0 +1,53 @@
+{
+  "scope": "Gaussian direct-sector controls and an asymmetric parity-preserving control supporting the ordinary parity-sector theorem, which reuses the separately replayed scalar polynomial certificate. No exhaustive tensor verification, specialized rank extrapolation, large-q matrix screen, stronger factoring exponent, or independent mathematical review.",
+  "original_color_checkpoint": "1772970a7dbaab83eeb0607014a1111e46718d86",
+  "axes": [
+    {
+      "axis": 0,
+      "sector_order": 24,
+      "sector_endpoint_checks": 576,
+      "closed_sector_zero_checks": 1272,
+      "complement_minor_checks": 36,
+      "smallest_sector_order": 8
+    },
+    {
+      "axis": 1,
+      "sector_order": 24,
+      "sector_endpoint_checks": 576,
+      "closed_sector_zero_checks": 1272,
+      "complement_minor_checks": 36,
+      "smallest_sector_order": 8
+    },
+    {
+      "axis": 2,
+      "sector_order": 24,
+      "sector_endpoint_checks": 576,
+      "closed_sector_zero_checks": 1272,
+      "complement_minor_checks": 36,
+      "smallest_sector_order": 8
+    }
+  ],
+  "certificate": {
+    "source": "tools/check_cube_scalar_color_clone_floor.py",
+    "source_sha256": "c84950243fa0a2d8402844ecc56a80f81bdb49f29ac07397173b97a0791eed15",
+    "replayed_by": "make verify-color-distinct-sector",
+    "newton_coefficients": 50,
+    "minimum_q": 34,
+    "rho_floor": [
+      3,
+      4
+    ],
+    "scope": "Existing polynomial certificate reused by the ordinary parity-sector theorem; run the Make target for both certificate and structural controls."
+  },
+  "asymmetric_control": {
+    "q": 5,
+    "side_words_checked": 625,
+    "t": [
+      1,
+      2
+    ],
+    "single_axis_bound_fails": true,
+    "geometric_mean_bound_passes": true
+  },
+  "kernel_source_sha256": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+}

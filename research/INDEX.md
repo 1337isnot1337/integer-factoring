@@ -2,6 +2,8 @@
 
 - [Small reduced norms, density and local event separation](small-norm-event-separation.md): a nonzero unramified principal word has norm at least D/4. A truncated smooth predicate retains the covered-subgroup density scale and has T-separated row-change events with explicit short-range cumulants. Long-range correlations and actual target indices remain open; no complete bound change.
 
+- [Color parity obstructs large one-hot cube profiles](color-distinct-sector-obstruction.md): closed odd-color sectors and the existing scalar polynomial certificate give a pressure floor 3/4 for every homogeneous antipodal tensor preserving separate color parity, all q>=34, every field and common physical type, in the common-scale unweighted three-axis profile method. This extends the scalar-clone floor to arbitrary parity-preserving tensors; no score change.
+
 - [One half-width trace and a modular-inverse interval test](one-trace-inverse-words.md): one candidate input determines its cofactor through a polynomial inverse; a no-wrap range test gives a complete conditional smallest-factor reduction with charged field, precision, exact divisions and bit costs. The uniform contractor remains open; no score change.
 
 - [Connected event correlations and a finite-order window criterion](connected-event-window-criterion.md): factorial bounds on aggregate cumulants through twice the logarithm of a period bound imply a window linear in inverse event density and the correlation scale. A tree estimate is sufficient but unproved arithmetically; exact saved-event controls neither certify it nor change the complete bound.
@@ -1421,6 +1423,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [A profile floor for every homogeneous binary cube tensor](cube-homogeneous-profile-budget.md)
 - [Shared-minor budgets for graded cube alphabets](cube-graded-minor-budget.md)
 - [A uniform floor for scalar Gaussian color clones](cube-scalar-color-clone-floor.md)
+- [Specialized profiles of the one-hot color-class Gaussian cube](color-class-cube-profile.md)
 - [A Gaussian cube floor for every equally weighted Fock alphabet](cube-equal-height-fock-floor.md)
 
 
