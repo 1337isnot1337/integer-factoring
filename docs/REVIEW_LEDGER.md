@@ -22,8 +22,16 @@ factoring score, new Lean or independent mathematical review is claimed.
 The focused replay passes. An instrumented run verifies 219306 actual walk
 composition calls, and a forced-cap regression stops at exactly 1000 calls.
 The corrected actual-stride control agrees with the separately frozen
-generator-seven receipt. A clean default replay will be recorded after
-integration with the current Path C checkpoint.
+generator-seven receipt.
+
+The [clean combined replay](../evidence/entry-control-correction-full-verification.json)
+passes at `059a215cab000d216bcaff4838b0c4e6a6a913f4`, tree
+`78f5b43d10e5c432e31bc3b890955c6121d472c4`, in 748.87 seconds:
+`make verify` and `make verify-entry-moment-cycles verify-relation-change-events`,
+with clean tracked state before and after. The complete compressed log is
+archived. This exact source includes the integrated relation-change
+checkpoint; subsequent archive/prose changes do not change the corrected
+replayer. Later main additions have separately scoped integration checks.
 
 ## Uniform event density from integer relation changes
 

@@ -252,3 +252,11 @@ owner's. This checkpoint is an independent exact implementation and replay.
 The arithmetic orbit code is the repository's existing prime-form machinery.
 Substantial AI assistance was used; no human review, Lean formalization or
 stronger score is claimed.
+
+The [clean full replay](../evidence/entry-control-correction-full-verification.json)
+passes the default and focused entry/event gates at exact source
+`059a215cab000d216bcaff4838b0c4e6a6a913f4` in 748.87 seconds, with
+clean tracked state before and after. Its complete compressed log is
+archived. The receipt also records the instrumented 219306-call replay
+and the forced-cap regression; later main integration checks are scoped
+separately.
