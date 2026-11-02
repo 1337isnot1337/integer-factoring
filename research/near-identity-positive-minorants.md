@@ -144,6 +144,42 @@ required in (5). The pair kernel built from the whole smooth set has
 larger support `S S^{-1}`; using it in (3) would prove only a pair hit,
 whose fast arithmetic extraction remains open.
 
+## 4. A one-sided spectral bound would suffice
+
+There is a concrete special case of the open minorant condition. Write
+the real, unnormalized character sums as
+
+\[
+ F_S(\chi)=\sum_{x\in S}\overline{\chi(x)}.
+\]
+
+Suppose `B>=0` bounds only their negative part:
+`F_S(chi)>=-B` for every character. Since `1 in S`, the function
+
+\[
+ f(x)=\frac{\mathbf1_S(x)+B\mathbf1_{\{1\}}(x)}{B+1}
+\]
+
+satisfies (1), with exact mean
+
+\[
+ \tau=\frac{|S|+B}{|G|(B+1)}\ge\frac{\delta}{B+1},
+ \qquad\delta=\frac{|S|}{|G|}.
+\]
+
+Indeed its normalized Fourier coefficients are
+`(F_S(chi)+B)/(|G|(B+1))>=0`; all other requirements are immediate.
+Thus uniform subexponential bounds of the desired saving scale for both
+`1/delta` and `B+1` would suffice through (3)--(5).
+
+This asks for the **negative** spectrum, not a bound on absolute character
+sums. The [absolute-value Parseval obstruction](leading-power-window-barrier.md)
+does not itself lower-bound `B`: large positive coefficients can carry
+that energy. Reusing an absolute bound would, however, retain its cost.
+No one-sided arithmetic bound of the required strength is proved here.
+The general minorant condition can also hold without being obtained by
+this particular identity correction.
+
 The remaining research question is to construct or bound a positive
 Fourier minorant of the **original** smooth-leading-norm set with uniform
 subexponential inverse mean, potentially using its arithmetic correlations.
