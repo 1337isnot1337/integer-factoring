@@ -12,23 +12,33 @@ from prime_form_bias import primes_below
 
 
 def quotient_control():
-    n=16;choices=list(range(1,n));L=3
+    n=16;L=4;excluded=(0,1,2,4)
+    colors=[[x for x in range(n) if x!=e] for e in excluded]
     character=lambda x,c:(-1)**((x&c).bit_count()%2)
-    eta=max(abs(sum(F(character(x,c),n-1) for x in choices)) for c in range(1,n))
-    assert eta==F(1,15)
-    counts=Counter(a^b^c for a,b,c in product(choices,repeat=L))
-    beta=4*eta;rows=[]
+    spectra=[[sum(F(character(x,c),15) for x in color) for c in range(n)] for color in colors]
+    common=[sum(row[c] for row in spectra)/L for c in range(n)]
+    error=max(abs(row[c]-common[c]) for row in spectra for c in range(n))
+    assert error==F(1,10)
+    product_spectrum=[prod(row[c] for row in spectra) for c in range(n)]
+    negative_floor=(2*error)**L
+    assert negative_floor==F(1,625)
+    assert all(v>=-negative_floor for v in product_spectrum)
+    negatives=sum(v<0 for v in product_spectrum)
+    assert negatives==8 and min(product_spectrum)==-F(1,50625)
+    beta=max(abs(row[c]) for row in spectra for c in range(1,n))
+    assert beta==F(1,15)
+    counts=Counter(a^b^c^d for a,b,c,d in product(*colors));rows=[]
     for mask in (1,3,7,15):
         index=1<<mask.bit_count()
         hits=[sum(v for g,v in counts.items() if g&mask==coset) for coset in range(index)]
-        assert index*beta**L<=F(1,2)
+        assert index*negative_floor<=F(1,2)
+        assert F(hits[0],15**L)>=F(1,index)-negative_floor>=F(1,2*index)
         for count in hits:
-            probability=F(count,len(choices)**L)
-            assert probability>=F(1,index)-eta**L>=F(1,2*index)
-            # Each color has 15 equal-weight raw choices in its disjoint copy.
-            assert count>=F(len(choices)**L,2*index)
-        rows.append(dict(index=index,coset_counts=hits,minimum_probability=str(F(min(hits),15**L)),guaranteed_probability=str(F(1,2*index))))
-    return dict(group='(Z/2)^4',colors=L,raw_choices_per_color=15,per_color_bias=str(eta),coarse_color_bias=str(beta),raw_tuples=15**L,records=rows)
+            probability=F(count,15**L)
+            assert probability>=F(1,index)-beta**L>=F(1,2*index)
+            assert count>=F(15**L,2*index)
+        rows.append(dict(index=index,coset_counts=hits,subgroup_probability=str(F(hits[0],15**L)),guaranteed_probability=str(F(1,2*index))))
+    return dict(group='(Z/2)^4',colors=L,raw_choices_per_color=15,excluded_labels=excluded,normalized_color_error=str(error),negative_product_floor=str(negative_floor),negative_product_characters=negatives,minimum_product_coefficient=str(min(product_spectrum)),per_color_absolute_bias=str(beta),raw_tuples=15**L,records=rows)
 
 
 def injection_control():
@@ -59,12 +69,12 @@ def injection_control():
 
 
 def main():
-    assert F(1,2)*F(1,32)==F(1,64)
+    assert F(1,2)*F(1,32)==F(1,64) and F(1,2)*F(1,2)==F(1,4)
     q=quotient_control();a=injection_control()
-    result=dict(scope='Exact controls for quotient mixing and injective distinct-prime products below the reduction threshold. They do not infer the analytic estimate, probabilistic partition lemma or uniform asymptotic density from finite data.',quotient=q,injection=a,threshold_exponent='1/64')
+    result=dict(scope='Exact controls for quotient mixing and injective distinct-prime products below the reduction threshold. They do not infer the analytic estimate, probabilistic partition lemma or uniform asymptotic density from finite data.',quotient=q,injection=a,subgroup_threshold_exponent='1/4',coset_threshold_exponent='1/64')
     parser=argparse.ArgumentParser();parser.add_argument('--output',type=Path);args=parser.parse_args()
     if args.output:args.output.write_text(json.dumps(result,indent=2)+'\n')
-    print(json.dumps(dict(quotient_tuples=q['raw_tuples'],quotient_subgroups=len(q['records']),distinct_arithmetic_classes=a['distinct_reduced_classes'],threshold_exponent='1/64')))
+    print(json.dumps(dict(quotient_tuples=q['raw_tuples'],quotient_subgroups=len(q['records']),distinct_arithmetic_classes=a['distinct_reduced_classes'],subgroup_threshold_exponent='1/4',coset_threshold_exponent='1/64')))
 
 
 if __name__=='__main__':main()

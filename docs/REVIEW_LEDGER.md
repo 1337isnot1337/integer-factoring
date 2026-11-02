@@ -1,24 +1,25 @@
 # Contribution review and disposition ledger
 
-## Original smooth density in small-index subgroup cosets
+## Original smooth density from even prime products
 
-The [density theorem](../research/small-index-smooth-density.md) combines
-the inherited prime-band character estimate with an elementary simultaneous
-color partition. Choosing one oriented prime per color avoids repeated
-factors; their product norms remain below sqrt(D)/4, so tuples inject
-into actual original smooth reduced classes. Quotient mixing and raw
-probability bounds prove density exp(-O(b/log b)) in every coset of any
-subgroup with index at most D^kappa, for fixed kappa<1/64. The existing
-row-change lemma yields event density at the same scale for covered prime
-orbits. No actual target-index bound, moment or short-gap estimate is
-supplied, so the complete factoring exponent remains 1/2.
+The [density theorem](../research/small-index-smooth-density.md) uses a
+high-precision simultaneous prime-color partition and an even norm budget.
+Real color-character averages approximate a common mean. Their product
+is nonnegative unless that mean is tiny, giving a one-sided Fourier bound
+-D^(-1/4+o(1)). Subgroup orthogonality then gives enough distinct original
+smooth classes at index at most D^kappa, fixed kappa<1/4, with density
+exp(-O(b/log b)). This uses the principal split-prime abundance estimate.
+With the full character estimate, every coset retains the smaller
+kappa<1/64 range. Actual target indices and hit-gap/moment bounds remain
+open; the complete factoring exponent stays 1/2.
 
-The focused checker verifies every coset of four finite quotient controls
-on 3375 raw tuples and 64 distinct arithmetic classes against a separate
-literal CRT construction. The analytic contract and the ordinary partition
-proof are stated, not inferred from finite data. Full default verification
-is pending; no new Lean or independent mathematical review is claimed.
-Existing prime-band, density and row-event credits are preserved.
+The focused checker tests 50625 raw tuples, all cosets of four quotient
+controls and eight genuinely negative product Fourier coefficients.
+Separately, 64 distinct arithmetic classes agree with a literal CRT
+construction. The uniform analytic input and partition proof are explicit,
+not inferred from finite data. Full default verification is pending;
+no new Lean or independent mathematical review is claimed. Existing
+prime-band, density and row-event credits are preserved.
 
 ## Uniform ambient-minorant norm gap
 

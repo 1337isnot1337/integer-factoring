@@ -2,68 +2,77 @@
   "scope": "Exact controls for quotient mixing and injective distinct-prime products below the reduction threshold. They do not infer the analytic estimate, probabilistic partition lemma or uniform asymptotic density from finite data.",
   "quotient": {
     "group": "(Z/2)^4",
-    "colors": 3,
+    "colors": 4,
     "raw_choices_per_color": 15,
-    "per_color_bias": "1/15",
-    "coarse_color_bias": "4/15",
-    "raw_tuples": 3375,
+    "excluded_labels": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "normalized_color_error": "1/10",
+    "negative_product_floor": "1/625",
+    "negative_product_characters": 8,
+    "minimum_product_coefficient": "-1/50625",
+    "per_color_absolute_bias": "1/15",
+    "raw_tuples": 50625,
     "records": [
       {
         "index": 2,
         "coset_counts": [
-          1687,
-          1688
+          25312,
+          25313
         ],
-        "minimum_probability": "1687/3375",
+        "subgroup_probability": "25312/50625",
         "guaranteed_probability": "1/4"
       },
       {
         "index": 4,
         "coset_counts": [
-          843,
-          844,
-          844,
-          844
+          12656,
+          12656,
+          12656,
+          12657
         ],
-        "minimum_probability": "281/1125",
+        "subgroup_probability": "12656/50625",
         "guaranteed_probability": "1/8"
       },
       {
         "index": 8,
         "coset_counts": [
-          421,
-          422,
-          422,
-          422,
-          422,
-          422,
-          422,
-          422
+          6328,
+          6328,
+          6328,
+          6328,
+          6328,
+          6328,
+          6328,
+          6329
         ],
-        "minimum_probability": "421/3375",
+        "subgroup_probability": "6328/50625",
         "guaranteed_probability": "1/16"
       },
       {
         "index": 16,
         "coset_counts": [
-          210,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211,
-          211
+          3164,
+          3164,
+          3164,
+          3164,
+          3164,
+          3164,
+          3164,
+          3165,
+          3164,
+          3164,
+          3164,
+          3164,
+          3164,
+          3164,
+          3164,
+          3164
         ],
-        "minimum_probability": "14/225",
+        "subgroup_probability": "3164/50625",
         "guaranteed_probability": "1/32"
       }
     ]
@@ -1429,5 +1438,6 @@
       }
     ]
   },
-  "threshold_exponent": "1/64"
+  "subgroup_threshold_exponent": "1/4",
+  "coset_threshold_exponent": "1/64"
 }
