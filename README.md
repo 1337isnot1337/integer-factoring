@@ -53,6 +53,8 @@ A [pooled-rank alternative](research/clustered-hits-and-pooled-rank.md) can cert
 
 An [odd-quotient relation relaxation](research/odd-quotient-relations.md) accepts smooth-pair equality modulo a computable odd kernel, preserving all two-part factoring directions and charging the multiplier. A certified two-group image permits direct extraction; general quotient-pair extraction remains open, with generation retaining the existing analytic premises.
 
+Its [full default replay](evidence/odd-quotient-full-verification.json) passes at frozen `002bcf3`; later documentation and PR104 integration have focused checks. This is implementation evidence, with the complete bound unchanged.
+
 [Character-lift guards](research/power-character-lift-guards.md) explain one finite rank stall exactly and certify long rough gaps. The existing constant-bias hypothesis defeats this specific obstruction on sufficiently large valid bases; it still supplies no quantitative rank window.
 
 A [near-identity positivity criterion](research/near-identity-positive-minorants.md) would bound the raw selector from a positive Fourier minorant. A [uniform arithmetic norm gap](research/uniform-ambient-minorant-obstruction.md) now excludes a subexponential inverse ambient mean for every sufficiently large discriminant, under the same pinned analytic input. It covers subexponential cofactor caps and multiplier choices, and excludes the one-sided negative-spectrum repair. Subgroup-specific certificates and the original target-cycle questions remain open.

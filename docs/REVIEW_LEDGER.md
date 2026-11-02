@@ -20,10 +20,19 @@ two-parts. Their generator/relation enumeration is finite supplied data.
 The direct filter rejects residual odd order thirteen, and the contributed
 discriminant -23 guard prevents importing the old principal-word gap or
 event separation unchanged into the image.
-Focused replay, links in 1,186 Markdown files and whitespace pass; full
-default verification is pending for this source. This is an
-author-checked ordinary relaxation, without independent mathematical
-review, new Lean or a stronger complete factoring bound.
+The [full default receipt](../evidence/odd-quotient-full-verification.json)
+and [complete compressed log](../evidence/odd-quotient-full-verification.stdout.txt.xz)
+record exit-zero make verify at clean frozen source
+`002bcf341e8bfc56322cae7fbf5d1fd6f8e4a8c7`, tree
+`d949a4dd14c00805a17a5bbbfac0d0782db96e86`, in 2,354.44 seconds.
+Its marker probe verified private /tmp, a read-only host root and a writable
+frozen checkout; network was unshared and tracked state stayed clean.
+The new checker appears in that log. Later premise/attribution prose,
+archive and PR104 integration have focused documentation and whitespace
+checks; executable sources stayed identical to the frozen pin. PR104's
+own receipt remains separate, and PR105 is outside this replay.
+This is an author-checked ordinary relaxation, without independent
+mathematical review, new Lean or a stronger complete factoring bound.
 
 ## Prescribed descent after every subexponential trial cutoff
 

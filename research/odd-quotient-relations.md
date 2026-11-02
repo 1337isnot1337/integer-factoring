@@ -255,6 +255,16 @@ orders eight and sixteen, and the verified certificates recover factors
 13 of 7423 and 79 of 26623. The
 [receipt](../evidence/odd-quotient-relations.json) pins sources and results.
 
+The [full default replay](../evidence/odd-quotient-full-verification.json)
+passed at clean frozen `002bcf3`, tree
+`d949a4dd14c00805a17a5bbbfac0d0782db96e86`, in 2,354.44 seconds,
+including this checker and integrated main `517909e`. The
+[complete compressed log](../evidence/odd-quotient-full-verification.stdout.txt.xz)
+and hashes are archived. Private /tmp, read-only host root, network
+isolation and clean tracked state are recorded. Later premise/attribution
+prose and PR104 integration have focused checks; no executable source
+changed. PR105 is outside this full source pin.
+
 The generic two-group proof, positive Fourier kernel, word construction,
 class-group arithmetic, ambiguous-form extraction and boundary examples
 retain their linked predecessor credit. The algebraic relaxation and
