@@ -20,6 +20,10 @@ determinant, word evaluator and two-group checks retain predecessor
 credit; Sol worker 2's scoped derivation check is linked in the note.
 This is author-checked ordinary mathematics and implementation evidence,
 not independent review, an acquired root algorithm or new Lean work.
+Sol worker 2 subsequently contributed the guaranteed-positive specialization
+`h=g^(2^b)`, root depth `2b`, which would remove row selection with a
+charged deep-root engine. The note links that contribution and distinguishes
+it from the rejected equal-depth tautology; no such engine is supplied.
 
 ## Odd-quotient relation certificates
 

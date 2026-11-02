@@ -15,11 +15,13 @@ set of admissible residues. At sufficient depth, a residue has such a root
 if and only if it has odd order. The possible algorithmic difference is
 acquiring a root without acquiring an odd annihilator.
 
-The next research question is consequently an acquisition question: can an
-arithmetic construction produce the roots and independent rows with all
-costs below the desired complete factoring bound? Further fixed-group root
-enumeration would not resolve it. Sol worker 2's
-[source investigation](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19361717)
+The next research question is consequently an acquisition question. The
+guaranteed-positive specialization below removes row selection if a suitable
+deep-root engine can be acquired; more generally, roots and independent
+rows could suffice. Every cost must fit the desired complete bound.
+Further fixed-group root enumeration would not resolve this question.
+Sol worker 2's
+[deep-root investigation](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362022)
 is coordinated separately; no factoring or class-group oracle is available
 to this construction.
 
@@ -92,6 +94,32 @@ The tautological choice `R=2^B I` supplies roots `z_i=g_i`, but has
 factoring algorithm. If the matrix depends on the chosen depth, its
 **actual** determinant valuation must be checked; selecting `B` first
 does not establish the inequality for a later matrix.
+
+## Guaranteed-positive deep roots remove row selection
+
+Sol worker 2 contributed the following
+[specialization](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362022).
+For any supplied `g` in `G`, put `h=g^(2^b)`. This element has odd order,
+so there **exists** a root `z` satisfying `z^(2^(2b))=h`. Apply the theorem
+separately to each generator with the one-row matrix `R=[2^b]`, root
+depth `B=2b` and `s=b`. For **any** returned root,
+
+```
+w = g / z^(2^b) = pi_2(g).                             (3)
+```
+
+All displayed powers cost `O(b)` squarings per generator. Thus a charged
+algorithm for these guaranteed-positive deep-root queries would retain
+all factoring directions without selecting relation rows at all. This
+is not the rejected equal-depth choice `R=[2^B]`: the root depth in (3)
+is twice the row depth.
+
+The known root `g` at the shallower depth `b` is not a root at depth `2b`
+in general. Nor does an arbitrary chain of square-root choices guarantee
+continued divisibility: choices can introduce a two-primary component.
+No procedure for acquiring the deeper roots is supplied here. The
+specialization changes the precise open acquisition target, rather than
+solving it.
 
 ## Relation to odd-order certificates
 
