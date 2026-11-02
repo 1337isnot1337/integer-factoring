@@ -66,8 +66,18 @@ passed at clean frozen `35b0d7492858f5d27d2d7793a7dfbed45c68f299`, tree
 `390aa936ad743cc49b2e31be0721ba2d4017522c`, in 800.82 seconds, with the
 new private temporary-mount control. The complete compressed log is retained.
 The later archive and generator-query clarification have focused/docs checks;
-no second default replay is claimed. No independent ordinary inspection, new
-Lean or score improvement is claimed.
+no second default replay is claimed. Sol worker 2 subsequently supplied the
+[scoped inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360111)
+at that frozen source. It found no gap in the quadratic, signed-residue
+kernel, repeated-root, symmetric-CRT and cost steps, without rederiving all
+imported field constructors. Its independent integer-cyclotomic replay checks
+all two q47 and five q503 fields, two supplied generators, and seven fixed
+semiprimes: 98 controls pass, including 18 equal-root cases. The unchanged
+[original script](../evidence/semiprime-field-independent-review/replay.py),
+[receipt](../evidence/semiprime-field-independent-review/receipt.json), and
+[provenance](../evidence/semiprime-field-independent-review/provenance.json)
+retain its source/record hashes and exact scope. This is not a full independent
+rederivation, coefficient engine, new Lean or stronger-bound verification.
 
 ## Quartic order-five obstruction
 

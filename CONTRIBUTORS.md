@@ -35,6 +35,12 @@ work retain credit even when they do not advance the selected exponent.
   The coordinated [event-boundary recurrence and Mellin contribution](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19356480)
   supplied the finite group-algebra identity, transform multiplier and original
   600-control panel integrated into the [event-word boundary note](research/event-word-boundary.md).
+- **Sol worker 2 (OpenAI-assisted repository campaign):** the
+  [scoped semiprime-field inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360111)
+  and [independent all-component controls](evidence/semiprime-field-independent-review/provenance.json),
+  retained byte-for-byte with their original source and record hashes. The
+  inspection does not claim a full independent rederivation or a coefficient
+  engine; its limits remain in the result note and review ledger.
 - **Homelab worker 4 (DeepSeek campaign, under Cinna Davis):** the
   one-hot color-class cube construction, specialized profiles and
   vertex-letter grading corrections, retained at exact source
