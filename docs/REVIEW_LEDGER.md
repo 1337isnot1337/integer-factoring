@@ -24,6 +24,27 @@ Adaptive or collective target choices remain outside the theorem. This is
 author verification, without independent mathematical review, new Lean
 or an improved complete exponent.
 
+## One primitive field for promised semiprimes
+
+The [quadratic and CRT proof](../research/semiprime-single-field.md) uses the
+actual distinct-semiprime promise and known product residue to decode signed
+factor residues from one primitive field at every coprime q>=7, q=3 mod 4.
+It avoids full cyclotomic observations, inverse-orbit assumptions, and root
+matching across levels. Non-provider costs are polynomial; the original-index
+coefficient engine and arbitrary-input extension remain open. Alpha stays 1/2.
+Existing faithful-decoder and factor-moment sources are credited.
+
+The [receipt](../evidence/semiprime-single-field.json) checks 486 supplied
+literal-divisor fixtures, including 35 repeated roots, three full CRT
+reconstructions, and input guards. The decoder does not construct these
+fixtures. The [full default replay](../evidence/semiprime-single-field-full-verification.json)
+passed at clean frozen `35b0d7492858f5d27d2d7793a7dfbed45c68f299`, tree
+`390aa936ad743cc49b2e31be0721ba2d4017522c`, in 800.82 seconds, with the
+new private temporary-mount control. The complete compressed log is retained.
+The later archive and generator-query clarification have focused/docs checks;
+no second default replay is claimed. No independent ordinary inspection, new
+Lean or score improvement is claimed.
+
 ## Quartic order-five obstruction
 
 The [ordinary argument](../research/quartic-order-five-obstruction.md)
