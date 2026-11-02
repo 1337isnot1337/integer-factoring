@@ -18,6 +18,14 @@ saved row/event data, and complete 1/2 theorem are unaffected. Historical
 full receipts still describe their exact old code; they do not establish
 the semantic validity of its mislabeled tail statistic.
 
+The asymmetric regressions, saved-flag replay and combined boundary/event
+prerequisite gate pass. The [full default replay](../evidence/entry-tail-sign-full-verification.json)
+passes at exact `de0c57c7d803fc17a32611a8116e011a607bff7f` in 2494.28 seconds,
+with clean tracked state before and after, inside private `/tmp`. Its
+complete compressed log is archived. Later proof/metadata clarification
+and integration preserve the corrected checker and canonical-statistics
+hashes; focused/docs checks cover those follow-ups separately.
+
 ## Sol worker 1 boundary representation and contributed Euler recurrence
 
 The [word-boundary proof](../research/event-word-boundary.md) identifies

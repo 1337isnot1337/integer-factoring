@@ -35,6 +35,10 @@ The [correction receipt](../evidence/entry-tail-sign-correction.json)
 pins the old/new sources, saved flags, field counts and separate lower-tail
 cross-checks.
 
+The former upper-tail numbers remain accessible in the
+[exact pre-repair receipt](https://github.com/1337isnot1337/integer-factoring/blob/89aeec9ffc8a8b34af19ef45650b8ff520b33c40/evidence/entry-moment-cycles.json).
+They are not discarded or promoted to lower-tail evidence.
+
 The former claim that raw matched-mean lower tails generally fail `C=2`
 is withdrawn. The older tables measured upper deviations. Also,
 
@@ -78,3 +82,12 @@ This is a correctness repair, not a new factoring result or independent
 mathematical review. The original selector, registered experiment and
 Grok/independent-cycle contributions retain their source credit.
 Developed with substantial OpenAI Codex assistance. No Lean work.
+
+The [clean frozen default replay](../evidence/entry-tail-sign-full-verification.json)
+passes at exact source `de0c57c7d803fc17a32611a8116e011a607bff7f` in
+2494.28 seconds. Its [complete compressed log](../evidence/entry-tail-sign-full-verification.stdout.txt.xz)
+is archived. The namespace has private `/tmp`, read-only host root and
+only the frozen checkout writable. The later automatic-bound clarification
+and current-main integration retain both corrected source hashes in the
+correction receipt, and pass saved-flag/boundary integration and docs checks
+separately. This is code verification, not independent mathematical review.
