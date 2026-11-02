@@ -352,6 +352,12 @@
       ],
       "prime_product": 7590,
       "prime_root": 1,
+      "run_profile": {
+        "hit_runs": 453,
+        "max_entry_gap": 208,
+        "max_hit_run": 27,
+        "max_zero_run": 202
+      },
       "sufficient_windows": [
         {
           "constant": 1,
@@ -1020,6 +1026,12 @@
       ],
       "prime_product": 665,
       "prime_root": 1,
+      "run_profile": {
+        "hit_runs": 61,
+        "max_entry_gap": 17939,
+        "max_hit_run": 17,
+        "max_zero_run": 17939
+      },
       "sufficient_windows": [
         {
           "constant": 1,

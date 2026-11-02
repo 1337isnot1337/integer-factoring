@@ -17,7 +17,10 @@ common balanced natural cut scale.
 This extends the [81-state height-36 result](height36-protected-core-floor.md).
 It does not exclude changes to the protected low block, higher supports,
 nonconstant maps, other physical gauges, or unequal cut scales and
-supporting angles. The factoring exponent remains `1/2`.
+supporting angles. The height-38 conclusion does not extend to height 39:
+the same test admits `70/99 < 1/sqrt(2)` there; see the
+[height-39 transition](protected-core-height39-transition.md). The
+factoring exponent remains `1/2`.
 
 ## 1. Recover a lower bound from the unknown tail
 
