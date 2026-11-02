@@ -2102,6 +2102,10 @@ verify-entry-moment-cycles:
 verify-entry-moment-saved:
 	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json --saved-flags
 
+.PHONY: verify-entry-gap-cluster-loss
+verify-entry-gap-cluster-loss:
+	python3 tools/check_entry_gap_cluster_loss.py --output evidence/entry-gap-cluster-loss.json
+
 verify-arithmetic: verify-entry-moment-saved
 
 .PHONY: verify-output-space-transfer
