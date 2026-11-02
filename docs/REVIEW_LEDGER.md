@@ -1895,3 +1895,26 @@ to the full source pin; later main results are outside that replay.
 The pointwise known-division circuit and ordinary surjectivity proof do
 not supply a fast contractor. No new Lean, independent mathematical
 review or stronger complete factoring score is claimed.
+
+## One half-width trace and a cofactor inverse
+
+Sol worker 2, base `af12893`: the [unary reduction](../research/one-trace-inverse-words.md)
+retains the preceding Witt-trace/known-division construction and credit,
+replaces the second input by a division-free odd inverse polynomial,
+and proves the required no-wrap equivalence. Its count consumer handles
+every N>=2 with at most ceil(bits(N)/2)+1 conditional queries; ring,
+precision and bit costs are charged against the original input width.
+The uniform count contractor is still missing, so no stronger complete
+factoring bound follows.
+
+The [source-pinned finite receipt](../evidence/one-trace-inverse-word-controls.json)
+contains 511 inverse controls, 50,694 scalar pointwise queries, one
+complete 512-point measured trace domain, 3,423 prefix-count queries
+and 132 scalar minimum-factor recoveries. Unequal fibre multiplicities,
+the wrapped-product false positive, high trace digits, even-input
+adaptation and 40-/60-/128-bit supplied scalar factors are included.
+`make verify-one-trace-inverse-words` is the focused replay; the initial
+generation passed. Default verification is recorded separately after
+the source checkpoint is frozen. This is an author-checked ordinary
+reduction and finite implementation evidence, not independent mathematical
+review, a fast count, new Lean work or a score improvement.
