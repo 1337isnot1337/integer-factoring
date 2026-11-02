@@ -3208,6 +3208,12 @@ verify-odd-quotient-relations:
 
 verify-arithmetic: verify-odd-quotient-relations
 
+.PHONY: verify-high-root-projection
+verify-high-root-projection:
+	python3 tools/check_high_root_projection.py
+
+verify-arithmetic: verify-high-root-projection
+
 .PHONY: verify-charge-creation-square
 verify-charge-creation-square:
 	python3 tools/check_charge_creation_square.py
