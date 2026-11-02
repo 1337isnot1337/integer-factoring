@@ -1,5 +1,26 @@
 # Contribution review and disposition ledger
 
+## Arithmetic reciprocity in faithful coefficients
+
+Sol worker 2, base `b629a35`: Section 3.1 of the
+[faithful-character note](../research/sparse-faithful-character.md) uses
+d <-> N/d to normalize the actual divisor observation into the
+inversion-fixed algebra. One field determines its inverse companion,
+which recovers the entire faithful observation at q47. The generic q47
+collision is explicitly outside this arithmetic promise. A q503 control
+shows that reciprocal sparsity alone still need not supply every field;
+it is not asserted to be actual divisor data.
+
+The added controls reconstruct 390 supplied actual q47 vectors and check
+the known central square bit. The existing receipt now pins the changed
+checker; its earlier full replay pin remains historical. The modular-form
+rewrite retains the earlier weight-one sources and Stein's coefficient,
+constant-term and parity theorem, with level q^2 and the coprime adapter
+charged. Focused replay, links in 1,180 Markdown files and whitespace pass.
+Full default validation of this follow-up is pending.
+No fast coefficient engine, new Lean work, independent mathematical review
+or complete bound improvement is claimed.
+
 ## Quartic additive-charge cube construction
 
 The [ordinary construction and prefix proof](../research/quartic-charge-fusion.md)
