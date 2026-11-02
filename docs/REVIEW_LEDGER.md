@@ -1,5 +1,21 @@
 # Contribution review and disposition ledger
 
+## Near-height smooth descent
+
+Sol worker 1, base `440c816`: the
+[near-height note](../research/near-height-smooth-descent.md) proves the
+target-specific balance bound and complete ellipse-enumeration cost,
+with an explicit first-power counterfamily and a conditional factoring
+transfer. The new enumerator is checked against independent direct
+signed-box exhaustion on six fixed targets. Known primitive norm witnesses
+and all smaller smooth words replay exactly. Four finite first-power
+controls have no smaller smooth norm. The focused target and document
+links pass; a clean frozen full default replay will be recorded separately.
+The strict-descent existence input is unproved, and the counterfamily
+is not restricted to inputs surviving factoring preprocessing. This is
+author verification, without independent mathematical review, new Lean
+or an improved complete exponent.
+
 ## Arithmetic reciprocity in faithful coefficients
 
 Sol worker 2, base `b629a35`: Section 3.1 of the

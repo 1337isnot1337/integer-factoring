@@ -22,6 +22,9 @@ work retain credit even when they do not advance the selected exponent.
   formalization, verification tools, and maintenance. These files used
   substantial OpenAI assistant support; per-result notes retain detailed scope
   and attribution.
+  Sol worker 1's [near-height smooth-descent deduction](research/near-height-smooth-descent.md)
+  reuses the credited norm-word decoder and polynomial form arithmetic;
+  it separates complete ellipse enumeration from unproved strict descent.
   The coordinated [event-boundary recurrence and Mellin contribution](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19356480)
   supplied the finite group-algebra identity, transform multiplier and original
   600-control panel integrated into the [event-word boundary note](research/event-word-boundary.md).

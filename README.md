@@ -45,6 +45,8 @@ A [connected-event criterion](research/connected-event-window-criterion.md) give
 
 A [small-norm event theorem](research/small-norm-event-separation.md) preserves the covered-subgroup density scale while forcing local event separation and explicit connected correlations. An [exact word-boundary representation](research/event-word-boundary.md) reduces window estimates to a static target-prime-free smooth set by bounded phase transport. It also gives annular character sums and a contributed finite recurrence/Mellin multiplier. Long-range correlations and actual target indices remain open.
 
+A [near-height smooth-descent theorem](research/near-height-smooth-descent.md) makes the complete smaller-norm ellipse enumerable in `O(1+p^k/sqrt(D))` candidates, up to polynomial costs, after a prime-power target's leading smoothness test fails. Existence of a strictly smaller smooth norm remains open; an explicit first-power counterfamily shows that the known smooth norm alone is insufficient. No stronger complete bound follows.
+
 A [pooled-rank alternative](research/clustered-hits-and-pooled-rank.md) can certify enough relations before every target prime has a smooth hit. Fixed integer rows repeat at most `2K_p-1` times, but different rows need not be independent. The finite pool uses more total probes in the checked example; a uniform rank-window bound remains open.
 
 [Character-lift guards](research/power-character-lift-guards.md) explain one finite rank stall exactly and certify long rough gaps. The existing constant-bias hypothesis defeats this specific obstruction on sufficiently large valid bases; it still supplies no quantitative rank window.
