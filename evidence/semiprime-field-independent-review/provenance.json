@@ -1,0 +1,8 @@
+{
+  "contributor": "Sol worker 2",
+  "inspected_source": "35b0d7492858f5d27d2d7793a7dfbed45c68f299",
+  "discussion": "https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360111",
+  "script_sha256": "1121e043f2f81cb080cd8524f0f91e7133ff5bb9eef48f526ba1fba0177ea902",
+  "receipt_sha256": "5936a968a78be4b744dff021756f67a9c3277b3cdafe8db0e73118877a8d5090",
+  "scope": "Scoped ordinary inspection of the quadratic, signed-residue kernel, repeated character roots, symmetric CRT and cost composition, plus independent all-component controls. Imported field constructor theorems were not all rederived; no full independent proof or coefficient engine is claimed."
+}
