@@ -1,5 +1,7 @@
 # Research index
 
+- [Division-free trace-dual counts at sparsity-sized precision](trace-dual-native-counts.md): a trace-dual coordinate map gives one Teichmuller point per odd half-width candidate. Completed trial division bounds unweighted prefix counts at K=min(ceil(b/2)-1,ceil(b/t)) bits, with polylogarithmic output precision below any fixed positive-score budget. Polynomial Boolean gates remove exact halvings and retain the same small starting precision; summing the unrestricted-degree circuit is still open.
+
 - [Smooth-pair relations modulo a certified odd kernel](odd-quotient-relations.md): verified odd row annihilators preserve the determinant's two-adic valuation and all two-part factoring directions. A uniform odd multiplier permits positive-kernel search in H^M without an unknown class number. A fast quotient-pair extractor remains open; the existing generation/analytic premises are retained. No score change.
 
 - [Prescribed descent after full subexponential trial budgets](full-trial-sieve-obstruction.md): the fundamental lemma replaces the Bonferroni remainder by a fixed-product sieve bound, extending the rough composite counterfamily to every log Z=o(log D). This covers trial division at positive-score runtime scales; adaptive/collective targets and other preprocessing remain outside the theorem.

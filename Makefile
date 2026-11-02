@@ -3184,6 +3184,12 @@ verify-one-trace-inverse-words:
 
 verify-arithmetic: verify-one-trace-inverse-words
 
+.PHONY: verify-coordinate-inverse-words
+verify-coordinate-inverse-words:
+	python3 tools/check_coordinate_inverse_words.py
+
+verify-arithmetic: verify-coordinate-inverse-words
+
 .PHONY: verify-sparse-faithful-character
 verify-sparse-faithful-character:
 	python3 tools/check_sparse_faithful_character.py

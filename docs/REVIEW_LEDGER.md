@@ -1,5 +1,27 @@
 # Contribution review and disposition ledger
 
+## Bijective trace-dual candidate counts
+
+The [ordinary coordinate-word construction](../research/trace-dual-native-counts.md)
+replaces the nonuniform native scalar trace by a trace-dual basis of a
+degree ceil(b/2)-1 field. It retains one Teichmuller summation input,
+uses that many coordinate traces, fixes the candidate's odd bit, and
+keeps the predecessor's certified no-wrap inverse test. Unweighted counts
+after completed trial division through 2^t fit K=min(d,ceil(b/t)) output
+bits; a polynomial Boolean bit-serial division computes the cofactor with
+starting precision K and no exact-halving gates.
+The count consumer performs the pretest before relying on this precision.
+
+The [source-pinned receipt](../evidence/coordinate-inverse-word-controls.json)
+records 126 complete field-coordinate bijections in six even/odd-degree
+models, 1764 actual lifted pointwise controls, and 67 complete finite
+count/minimum recoveries. Separate modular-inversion controls check the
+division-free Boolean circuit. The false-roughness guard shows a positive count
+wrapping to zero if the pretest is omitted; the consumer finds the factor
+before making that invalid query. The finite count oracle enumerates its
+domain and supplies no fast contractor. Full default replay and independent
+ordinary inspection are pending. No new Lean or score improvement is claimed.
+
 ## Odd-quotient relation certificates
 
 Sol worker 2, implementation base `517909e`: the

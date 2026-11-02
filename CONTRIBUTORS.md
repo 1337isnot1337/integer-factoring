@@ -22,6 +22,10 @@ work retain credit even when they do not advance the selected exponent.
   formalization, verification tools, and maintenance. These files used
   substantial OpenAI assistant support; per-result notes retain detailed scope
   and attribution.
+  The [trace-dual word interface](research/trace-dual-native-counts.md)
+  retains classical trace duality and the credited ring, parity, inverse and
+  exact-division primitives, adding the bijective odd-candidate composition
+  and trial-certified smaller count precision.
   Sol worker 1's [near-height smooth-descent deduction](research/near-height-smooth-descent.md)
   reuses the credited norm-word decoder and polynomial form arithmetic;
   the [prescribed-target counterfamily](research/prime-power-descent-obstruction.md)
