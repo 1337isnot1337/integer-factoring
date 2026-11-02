@@ -1,5 +1,26 @@
 # Contribution review and disposition ledger
 
+## Uniform event density from integer relation changes
+
+The [ordinary proof](../research/relation-change-event-density.md) defines
+a periodic change event using canonical words rather than periodic integer
+row labels. The existing multiplicity lemma then gives event density at
+least `delta/(2K_p-1)`, including all-good cycles and proper-gcd events.
+This changes the event observable and removes a separate raw-cluster
+assumption; uniform original density and event moments remain unproved.
+The complete saving exponent stays 1/2.
+
+Integer postprocessing reconstructs all 670 saved rows plus their known
+small-power prefixes. In both existing directions the new flags equal the
+previously measured entry flags at every phase, including the boundary.
+Their maximum identical-row segments attain the proved caps 17 and 13.
+A sharp all-good `Z/3` control and a proper-gcd-phase control pass. No new
+arithmetic orbit, composition, input or cutoff is used in this diagnostic.
+The original group/order/row certificate replay is a prerequisite. Focused
+and documentation checks are the local gate; a new clean default replay
+will be archived separately. Existing multiplicity, selector, Grok entry
+data and moment credits remain. No Lean or independent review is claimed.
+
 ## Near-identity positive Fourier minorants for the raw selector
 
 The [ordinary note](../research/near-identity-positive-minorants.md) proves
