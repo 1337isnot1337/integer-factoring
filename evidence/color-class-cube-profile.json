@@ -330,71 +330,130 @@
       ]
     ]
   },
-  "target_comparison": {
-    "alphabet": 256,
-    "target_order_multiplicity": [
-      [
-        0,
-        1
+  "graded_comparison": {
+    "3": {
+      "alphabet": 81,
+      "letter_energies": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          8
+        ],
+        [
+          6,
+          24
+        ],
+        [
+          9,
+          32
+        ],
+        [
+          12,
+          16
+        ]
       ],
-      [
-        2,
-        255
+      "blocks": [
+        [
+          1,
+          "0"
+        ],
+        [
+          8,
+          "2"
+        ],
+        [
+          24,
+          "4"
+        ],
+        [
+          32,
+          "6"
+        ],
+        [
+          64,
+          "13/2"
+        ],
+        [
+          448,
+          "9"
+        ],
+        [
+          1120,
+          "12"
+        ],
+        [
+          1792,
+          "15"
+        ]
       ],
-      [
-        4,
-        255
-      ],
-      [
-        6,
-        65025
-      ],
-      [
-        13,
-        262650
-      ],
-      [
-        14,
-        62985
-      ],
-      [
-        18,
-        66325500
-      ],
-      [
-        24,
-        4228250625
-      ]
-    ],
-    "target_partition_at_6_13": {
-      "numerator": "436852945423061196670294793101",
-      "denominator": "542800770374370512771595361"
+      "prefix_count_through_order6": 65
     },
-    "target_prefix_through_order6": 65536,
-    "observed_prefix_through_order6_at_q256": 2829056,
-    "total_order_budget_per_cut": 102676561920,
-    "minimum_partition_with_observed_prefix": {
-      "order_6_count": 2829056,
-      "order_23_count": 351730176,
-      "order_24_count": 3940408064,
-      "value_at_6_13": {
-        "numerator": "14865545379117713534076305719296",
-        "denominator": "542800770374370512771595361"
-      }
-    },
-    "partition_gap_ratio_at_6_13": 34.02871729460696,
-    "single_point_pressure_floor": "72/125",
-    "single_point_pressure_certificate": true,
-    "uniform_law_proved": false,
-    "diagnostic_minimum_pressure": {
-      "minimum_lower_bound": 0.723612022235108,
-      "scale": 0.58338,
-      "certified": false
-    },
-    "scope": "Conditional on the observed C(q+2,3) prefix-through-order-6 lower bound holding for q=256; the finite q<=6 checks alone do not prove it.  The exact 72/125 certificate is at t=6/13; the advertised contract is the minimum over t."
+    "4": {
+      "alphabet": 256,
+      "letter_energies": [
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          12
+        ],
+        [
+          6,
+          54
+        ],
+        [
+          9,
+          108
+        ],
+        [
+          12,
+          81
+        ]
+      ],
+      "blocks": [
+        [
+          1,
+          "0"
+        ],
+        [
+          12,
+          "2"
+        ],
+        [
+          54,
+          "4"
+        ],
+        [
+          108,
+          "6"
+        ],
+        [
+          102,
+          "116/17"
+        ],
+        [
+          1512,
+          "9"
+        ],
+        [
+          5670,
+          "12"
+        ],
+        [
+          13608,
+          "15"
+        ]
+      ],
+      "prefix_count_through_order6": 175
+    }
   },
   "source_sha256": {
-    "check_color_class_cube_profile.py": "53d936135a98101b34ee3e6ff41a2466c58ee06389ba0fcdee1567bb9ce56102",
+    "check_color_class_cube_profile.py": "55f123f7cf00212732492dfce6490d2d818e7dd3bd4c6861e275b9c05b258fc0",
     "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
     "cube_graded_minor_budget.py": "930d32ddec53b5692cef627f1d40986c8e5535beb6cd142a13b58af9d28bdc00"
   },

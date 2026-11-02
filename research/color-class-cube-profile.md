@@ -1,10 +1,10 @@
-# The one-hot color-class Gaussian misses the 256-letter cube profile
+# Specialized profiles of the one-hot color-class Gaussian cube
 
 The [scalar color-clone floor](cube-scalar-color-clone-floor.md) rules out
 replicating one Gaussian kernel over independent colors and keeping the
-vacuum plus single-particle letters. It explicitly leaves open genuine
-interactions between colors. This note tests the natural interacting
-extension: one vacuum plus \(q-1\) colors per cube vertex, and
+vacuum plus single-particle letters. It leaves open genuine interactions
+between colors. This note records a computational control for the natural
+interacting extension: one vacuum plus \(q-1\) colors per cube vertex, and
 
 \[
  T_q(a)=\prod_{c=1}^{q-1}G_{S_c}(x,y,z),
@@ -16,12 +16,16 @@ where \(G\) is the homogeneous eight-mode Gaussian cube tensor. This is a
 homogeneous tensor with the antipodal endpoint. For \(q=2\) it is exactly
 the binary Gaussian cube.
 
-The finite profiles below show that the low-order channels grow much faster
-than the 256-letter profile budget allows. The number of orders at most six
-is \(\binom{q+2}{3}\) at the tested specializations, while the 256-letter
-hull has only \(65{,}536\). At \(q=256\) the observed law gives
-\(2{,}829{,}056\). The extrapolation is not proved; the note records a
-scoped negative control and the structural question it raises.
+The physical alphabet of \(T_q\) is **graded**, not equal-height. A letter
+is a coloring of the four vertices on one side; its energy is the number of
+nonvacuum vertices, so the letter energies are \(0,1,2,3,4\) with
+multiplicities \(1,4(q-1),6(q-1)^2,4(q-1)^3,(q-1)^4\). The
+[equal-height 256-letter profile](cube-graded-minor-budget.md) therefore
+does not apply to this tensor. Comparing the specialized low-order counts
+below to that profile would be an error. The correct comparison is the
+graded envelope with these letter energies; the construction is below the
+graded low-order prefix at the tested sizes, so the finite data do not
+exclude it.
 
 ## 1. Specialized block Toeplitz ranks
 
@@ -71,9 +75,9 @@ For \(q=3\), the specialized profile is
  \tag{4}
 \]
 
-with \(81\) orders and order sum \(1224\). The same low-order profile was
-obtained at \((y,z)=(3,5),(5,7),(7,11)\). These are still specializations,
-not a generic computation.
+with \(81\) orders and specialized order sum \(1224\). The same low-order
+profile was obtained at \((y,z)=(3,5),(5,7),(7,11)\). These are still
+specializations, not a generic computation.
 
 For \(q=4,5,6\) the first four nonzero layers are
 
@@ -92,97 +96,51 @@ The tested values are
 | 5 | 4 | 10 | 20 |
 | 6 | 5 | 15 | 35 |
 
-The order-six column is \(1,4,10,20,35=\binom{q+1}{3}\). The cumulative
-count through order six is even simpler:
+The low-order layers follow the monomial counts of degree at most three
+in \(q-1\) color variables. The order-eight column already departs from
+that pattern at \(q=5\) (\(70\) rather than \(35\)), so this is an
+observed low-order law, not a general free-algebra description.
+
+## 2. Graded comparison
+
+The one-hot alphabet has energies \(0,1,2,3,4\), but the tensor degree is
+three times the number of nonvacuum vertices. The shared-minor envelope is
+therefore evaluated with energies
 
 \[
- \#\{s_i\le6\}=4,10,20,35,56=\binom{q+2}{3}.
+ 0^1,\quad 3^{4(q-1)},\quad 6^{6(q-1)^2},\quad
+ 9^{4(q-1)^3},\quad 12^{(q-1)^4}.
  \tag{6}
 \]
 
-This is the quantity used below. Specialization can only increase orders,
-so the specialized count \(\#\{s_i\le6\}\) is a lower bound for the
-generic tensor. The order-eight column already departs from the
-symmetric-power pattern at \(q=5\) (\(70\) rather than \(35\)), so (5) is
-an observed low-order law, not a general free-algebra description.
+For \(q=3\) and \(q=4\) the envelope's prefix counts through order six are
+\(65\) and \(175\). The specialized construction has prefix counts \(10\)
+and \(20\). The construction is below the graded prefix budget, not above
+it. This is consistent with the tensor being a valid homogeneous cube
+tensor; it does not establish a profile obstruction.
 
-## 2. Comparison with the 256-letter hull
-
-The [graded minor budget](cube-graded-minor-budget.md) gives the necessary
-profile
-
-\[
- 0^1,2^{255},4^{255},6^{65025},13^{262650},14^{62985},
- 18^{66325500},24^{4228250625},
- \tag{7}
-\]
-
-with pressure \(72/125<1/\sqrt3\). The order-six layer is the first large
-layer, and the prefix through order six has
-
-\[
- 1+255+255+65{,}025=65{,}536=256^2
- \tag{8}
-\]
-
-orders.
-
-If the law in (6) persists to \(q=256\), the color-class tensor has
-\(\binom{258}{3}=2{,}829{,}056\) orders at most six. The hull also gives
-the total order budget
-
-\[
- \sum_i\sigma_i=102{,}676{,}561{,}920
- \tag{9}
-\]
-
-per cut. With \(2{,}829{,}056\) orders at most six and total order at
-most (9), the smallest possible partition value puts those orders at six
-and spreads the remaining total order as evenly as possible. The
-resulting extremal profile has
-
-\[
- 2{,}829{,}056\text{ orders at }6,\quad
- 3{,}940{,}408{,}064\text{ at }24,\quad
- 351{,}730{,}176\text{ at }23.
- \tag{10}
-\]
-
-At \(t=6/13\) its partition is about \(27{,}386.7\), while the hull
-partition is about \(804.8\); the ratio is \(34.0\). An exact integer
-comparison certifies that the pressure at this scale is at least
-\(72/125\). A fine-grid scan of the same lower bound has minimum about
-\(0.724\) near \(t=0.583\), above \(1/\sqrt3\). The scan is a
-diagnostic, not a certified minimum; the exact certificate is the single
-scale \(t=6/13\). The conclusion is conditional on the prefix lower bound
-at \(q=256\).
-
-The structural point does not depend on the exact numerical minimum: the
-hull's order-six budget is quadratic in \(q\), while the interacting
-color-class construction produces a cubic number of low-order channels.
-That is the opposite direction from the near-saturation needed for the
-[three-axis crossing](cube-crossing-transfer.md).
+The specialized count is a lower bound for the generic count, while the
+graded envelope is an upper bound on a prefix sum, not on a count. The two
+quantities are not interchangeable. A correct viability test needs the
+generic profile, or at least a specialization-independent bound on the
+prefix sums; neither is computed here.
 
 ## 3. Scope and next question
 
-The finite checks do not prove that (6) holds for every \(q\), and they do
-not rule out a different one-hot subspace with fewer order-six channels.
-They do show that the most direct genuine-interaction extension of the
-Gaussian cube is far below the hull at the first layer where the hull
-becomes large.
+The finite profiles are useful as a regression and as a source of the
+monomial pattern in (5). They do not prove a uniform law, and they do not
+rule out the one-hot construction. The equal-height 256-letter target is
+not the right comparison for this graded alphabet.
 
-The next question is structural:
+The next question is:
 
-> Is there a homogeneous one-hot cube tensor with fewer than
-> \(65{,}536\) orders at most six at \(q=256\)?
+> What is the generic low-order profile of the one-hot color-class
+> Gaussian, and does it satisfy the graded envelope at \(q=256\)?
 
-If the observed \(\binom{q+1}{3}\) lower bound is general for one-hot
-tensors, the one-hot route is excluded and the 256-letter hull requires
-multi-particle letters or a different grading. If a one-hot construction
-can suppress these channels, it must break the symmetric-color mechanism
-that produces (5). Capping color-class sizes is not immediate: the
-endpoint already uses color classes of size \(8\), so a naive cap destroys
-endpoint words.
+A second question is whether a different structured subspace can reduce
+the observed monomial growth without breaking the antipodal endpoint.
+Capping color-class sizes is not immediate because the endpoint already
+uses classes of size \(8\).
 
 The factoring exponent remains \(1/2\); this note adds no score claim.
 
@@ -195,6 +153,6 @@ python3 tools/check_color_class_cube_profile.py \
 
 The checker recomputes the \(q=2\) Gaussian regression, the \(q=3\)
 specialized profile and three additional specializations, the \(q=4,5,6\)
-low-order layers, and the \(q=256\) order-six comparison. The receipt
-records the exact partitions and hashes. The source is
+low-order layers, and the graded envelope comparison for \(q=3,4\). The
+receipt records the exact profiles and hashes. The source is
 [`check_color_class_cube_profile.py`](../tools/check_color_class_cube_profile.py).

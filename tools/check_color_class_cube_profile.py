@@ -18,10 +18,9 @@ The q=2 output is checked against the known exact Gaussian profile.
 from __future__ import annotations
 
 from collections import Counter
-from fractions import Fraction
 from hashlib import sha256
 from itertools import product
-from math import comb, log2
+from math import comb
 import argparse
 import json
 from pathlib import Path
@@ -172,100 +171,25 @@ def expected_q2_profile():
     return dict(Counter(orders))
 
 
-def target_comparison():
+def graded_comparison():
     from cube_graded_minor_budget import envelope
 
-    result = envelope(Counter({0: 1, 1: 255}))
-    blocks = [[multiplicity, str(order)]
-              for multiplicity, order in result["blocks"]]
-    assert blocks == [[1, "0"], [255, "2/3"], [255, "4/3"], [65025, "2"],
-                      [325635, "5616/1277"], [66325500, "6"],
-                      [4228250625, "8"]]
-    target = {0: 1, 2: 255, 4: 255, 6: 65025, 13: 262650,
-              14: 62985, 18: 66325500, 24: 4228250625}
-    scale = Fraction(6, 13)
-    hull_partition = sum(count * scale ** order for order, count in target.items())
-    target_prefix6 = sum(count for order, count in target.items() if order <= 6)
-    observed_prefix6 = comb(258, 3)
-    total_budget = sum(order * count for order, count in target.items())
-    assert target_prefix6 == 65536
-    assert observed_prefix6 == 2829056
-    assert total_budget == 102676561920
-
-    n = 256 ** 4
-    remaining = total_budget - 6 * observed_prefix6
-    low_order = remaining // (n - observed_prefix6)
-    high_count = remaining - low_order * (n - observed_prefix6)
-    low_count = n - observed_prefix6 - high_count
-    assert (low_order, high_count, low_count) == (23, 3940408064, 351730176)
-
-    def minimum_partition(t):
-        return (observed_prefix6 * t ** 6 + high_count * t ** 24
-                + low_count * t ** 23)
-
-    conditional_partition = minimum_partition(scale)
-    ratio = float(conditional_partition / hull_partition)
-
-    occupation = Fraction(19, 20)
-    pressure = Fraction(72, 125)
-    a, b = occupation.numerator, occupation.denominator
-    c, d = pressure.numerator, pressure.denominator
-    left = conditional_partition ** (b * d) * scale ** (-8 * a * d)
-    entropy_base = Fraction(b ** b * 255 ** a,
-                            a ** a * (b - a) ** (b - a))
-    right = entropy_base ** (4 * c)
-    assert left > right
-    assert 3 * c ** 2 < d ** 2
-    return {
-        "alphabet": 256,
-        "target_order_multiplicity": sorted(target.items()),
-        "target_partition_at_6_13": {
-            "numerator": str(hull_partition.numerator),
-            "denominator": str(hull_partition.denominator),
-        },
-        "target_prefix_through_order6": target_prefix6,
-        "observed_prefix_through_order6_at_q256": observed_prefix6,
-        "total_order_budget_per_cut": total_budget,
-        "minimum_partition_with_observed_prefix": {
-            "order_6_count": observed_prefix6,
-            "order_23_count": low_count,
-            "order_24_count": high_count,
-            "value_at_6_13": {
-                "numerator": str(conditional_partition.numerator),
-                "denominator": str(conditional_partition.denominator),
-            },
-        },
-        "partition_gap_ratio_at_6_13": ratio,
-        "single_point_pressure_floor": "72/125",
-        "single_point_pressure_certificate": True,
-        "uniform_law_proved": False,
-        "diagnostic_minimum_pressure": diagnostic_pressure(target, observed_prefix6, total_budget),
-        "scope": "Conditional on the observed C(q+2,3) prefix-through-order-6 "
-                 "lower bound holding for q=256; the finite q<=6 checks alone "
-                 "do not prove it.  The exact 72/125 certificate is at t=6/13; "
-                 "the advertised contract is the minimum over t.",
-    }
-
-
-def diagnostic_pressure(target, prefix6, total_budget):
-    occupation = Fraction(19, 20)
-    p = float(occupation)
-    entropy = -(p * log2(p) + (1 - p) * log2(1 - p)) + p * log2(255)
-    n = 256 ** 4
-    remaining = total_budget - 6 * prefix6
-    low_order = remaining // (n - prefix6)
-    high_count = remaining - low_order * (n - prefix6)
-    low_count = n - prefix6 - high_count
-    best = None
-    for step in range(1, 100000):
-        scale = step / 100000
-        lower = (prefix6 * scale ** 6 + high_count * scale ** 24
-                 + low_count * scale ** 23)
-        value = (log2(lower) - 8 * p * log2(scale)) / (4 * entropy)
-        if best is None or value < best[0]:
-            best = (value, scale)
-    return {"minimum_lower_bound": best[0], "scale": best[1],
-            "certified": False}
+    records = {}
+    for q in (3, 4):
+        colors = q - 1
+        energies = Counter({0: 1, 3: 4 * colors, 6: 6 * colors ** 2,
+                            9: 4 * colors ** 3, 12: colors ** 4})
+        result = envelope(energies)
+        prefix = sum(count for count, order in result["blocks"] if order <= 6)
+        records[str(q)] = {
+            "alphabet": result["alphabet"],
+            "letter_energies": sorted(energies.items()),
+            "blocks": [[count, str(order)] for count, order in result["blocks"][:8]],
+            "prefix_count_through_order6": prefix,
+        }
+    assert records["3"]["prefix_count_through_order6"] == 65
+    assert records["4"]["prefix_count_through_order6"] == 175
+    return records
 
 def main():
     parser = argparse.ArgumentParser()
@@ -296,7 +220,7 @@ def main():
         assert sum(profile.values()) == comb(q + 2, 3)
         low_orders[str(q)] = sorted(profile.items())
 
-    comparison = target_comparison()
+    comparison = graded_comparison()
     result = {
         "status": "passed",
         "q2_profile": sorted(q2.items()),
@@ -305,7 +229,7 @@ def main():
         "q3_ranks": q3_ranks,
         "q3_specialization_stability": stability,
         "low_order_profiles": low_orders,
-        "target_comparison": comparison,
+        "graded_comparison": comparison,
         "source_sha256": {
             name: sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
             for name in ("check_color_class_cube_profile.py",
@@ -324,12 +248,10 @@ def main():
         "status": "passed",
         "q2_profile": sorted(q2.items()),
         "q3_specialized_profile": sorted(q3.items()),
-        "q6_prefix_through_order6": comb(8, 3),
-        "q256_observed_prefix6": comb(258, 3),
-        "q256_target_prefix6": 65536,
-        "partition_gap_ratio_at_6_13": comparison[
-            "partition_gap_ratio_at_6_13"],
-        "uniform_law_proved": False,
+        "q4_prefix_through_order6": comb(6, 3),
+        "q4_graded_prefix_budget": comparison["4"]["prefix_count_through_order6"],
+        "q3_prefix_through_order6": comb(5, 3),
+        "q3_graded_prefix_budget": comparison["3"]["prefix_count_through_order6"],
     }, sort_keys=True))
 
 
