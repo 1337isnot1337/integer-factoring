@@ -43,6 +43,14 @@ The predeclared diagnostic used:
 - empty-window fractions at matched mean counts `1,2,4,8`;
 - the actual `K_p` starting phase.
 
+The current replay enforces an aggregate cap of 250000 base-walk
+compositions. The two periods use exactly 219306 steps; the generator-seven
+index is recorded during the existing generator-five walk and costs no
+extra walk. The earlier separate index helper added 66509 steps, making
+its aggregate 285815; its `composition_cap` field did not certify that
+aggregate. This bookkeeping error is corrected without changing either
+base cycle's flags, moments or run profile.
+
 For a window `W`, with cyclic window counts `A_x(W)` and `mu=delta W`, the
 tested inequality is
 
@@ -171,13 +179,23 @@ initial gaps:
 - cycle B: `K_5=9`, `f(9)=0`, first hit at offset `664`. The raw `m=1`
   window `W=580` is empty; the raw `m=2` window `W=1160` and the entry
   `W=3260` window contain hits (nine and three respectively).
-- `g_7` (cycle B): index `66509`, start phase `67863`, `f=0`, first hit at
-  offset `1265`. The raw `W=580` and `W=1160` windows are empty; the entry
-  `W=3260` window contains one entry.
+- The **actual `g_7` power walk** has flags
+  `f_7(j)=f_5(66509*j mod 198850)` and starts at exponent `K_7=7`.
+  Its first hit is at offset **3823**. It has 343 raw hits and 73 entries;
+  maximum raw and entry zero gaps are 4506 and 4508. Its raw windows
+  `W=580,1160` and its one-mean entry window `W=2724` are empty at this
+  start. The two-mean entry window `W=5448` contains two entries.
+- A separate **shifted generator-five walk** begins at base phase `67863`
+  but advances by one base step, not by `66509`. Its first hit offset is
+  `1265` and its entry window `W=3260` contains one entry. Those old
+  measurements are retained under explicit shifted-base labels. The
+  actual generator-seven entry window of length `3260` is empty.
 
-This is the concrete phenomenon the registered experiment was aimed at: small
-raw windows can be empty at the actual phase, while the entry process at a
-matched or slightly larger window is nonempty.
+Thus both raw and entry windows can miss at an actual starting phase.
+The derived control records its own stride and density; the moment tables
+above continue to concern the two original base directions. The broader
+[saved-cycle replay](clustered-hits-and-pooled-rank.md) independently checks
+the actual generator-seven direction and its moments.
 
 ## 6. Verdict and remaining obligation
 
@@ -196,6 +214,14 @@ They do **not** establish a uniform theorem. The missing uniform inputs are:
 - a uniform entry lower-tail moment bound with `C=O(1)` at the required
   high order `q` and window `W`;
 - the usual density and generation inputs of the arithmetic selector.
+
+The [relation-change event follow-up](https://github.com/1337isnot1337/integer-factoring/pull/82)
+replaces pure entries by changes of the integer row. It proves a polynomial
+density-loss bound for that changed process, without assuming a raw-cluster
+length bound. Its own uniform event moments and original subgroup density
+remain open. The finite flags of the two processes agree on the saved
+generator-five and generator-seven directions; this agreement is not a
+general identity.
 
 On the sparse 40-bit cycle, the entry density loss makes the `C=1,2` sufficient
 window exceed the period. That is a small-scale obstruction to the finite

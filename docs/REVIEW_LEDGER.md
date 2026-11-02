@@ -1,5 +1,30 @@
 # Contribution review and disposition ledger
 
+## Correct generator-seven controls and aggregate walk accounting
+
+The [independent entry replay](../research/entry-moment-cycles.md) previously
+advanced by generator five from the starting class `g_7^K7` while labeling
+the resulting offset 1265 as a generator-seven result. The corrected
+control advances with stride 66509 and first hits at offset 3823. Its
+entry window of length 3260 is empty. The shifted-base control is retained
+under an explicit name, and all original base-cycle flags, run profiles,
+moments and counts are unchanged (verified by semantic comparison).
+
+The separate 66509-step index walk is removed. Index acquisition now occurs
+during the existing base walk, and an aggregate cap is passed through both
+enumerations. Instrumented replay counts exactly 219306 walk compositions,
+within 250000, including the derived controls. The old aggregate was
+285815, so the former cap field did not establish that run's budget claim.
+Original contributor, owner experiment and repository arithmetic credits
+are preserved. This fixes finite evidence and accounting; no stronger
+factoring score, new Lean or independent mathematical review is claimed.
+
+The focused replay passes. An instrumented run verifies 219306 actual walk
+composition calls, and a forced-cap regression stops at exactly 1000 calls.
+The corrected actual-stride control agrees with the separately frozen
+generator-seven receipt. A clean default replay will be recorded after
+integration with the current Path C checkpoint.
+
 ## Near-identity positive Fourier minorants for the raw selector
 
 The [ordinary note](../research/near-identity-positive-minorants.md) proves
