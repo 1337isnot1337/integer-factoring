@@ -34,6 +34,8 @@ orientation for each, and let
 \mathcal A_R=\{v:\mathcal N(v)\le R\}.
 ```
 
+The injective-ball statement is already recorded in
+[orda-aska's graph/lattice Lemma 1](leading-power-window-graphs.md#1-the-graph-and-the-lattice).
 The map `phi` is injective on `A_R`. Indeed, two distinct words with the
 same class would give a nonzero principal word `v-w` of norm at most
 `N(v)N(w)<=R^2<=D/16`, contradicting the lower bound `D/4`.
@@ -337,7 +339,8 @@ hypothesis: the canonical words are `0,1,-1` on the three-cycle, giving
 one event, while an unqualified word-boundary test with that excessive
 radius gives none. The word map has already ceased to be injective.
 
-Credit: PR87's even-product density and primitive-word injection, PR82's
+Credit: orda-aska's graph/lattice Lemma 1, PR87's even-product density
+and primitive-word injection, PR82's
 row-change process, the preceding principal-word separation argument,
 and the saved selector/Grok data. The geometric-series and Fourier facts
 are classical. The coordinated finite recurrence, Mellin multiplier and

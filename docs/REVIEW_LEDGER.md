@@ -46,7 +46,7 @@ independent mathematical review is claimed.
 ## Sol worker 1 small-norm density and event separation
 
 The [ordinary argument](../research/small-norm-event-separation.md) applies
-the classical principal-ideal norm gap to decoded row differences, then
+the principal-ideal norm gap from orda-aska's graph/lattice Lemma 1 to decoded row differences, then
 proves local separation of a truncated row-change process. Repeating PR87's
 norm-budget count retains its covered-subgroup density scale. The exact
 unramified hypotheses, a ramified-square counterexample, and the remaining
