@@ -170,3 +170,22 @@ def acquire_rough_prime_levels(sparsity, count):
     return dict(sparsity=sparsity, count=count, forbidden_odd_primes=forbidden,
                 base_modulus=base_modulus, auxiliary_prime=auxiliary,
                 progression_modulus=modulus, levels=records)
+
+
+def acquire_sieved_prime_levels(sparsity, count):
+    """First eligible levels; a classical lower sieve/BV gives polynomial cost.
+
+    The implementation uses only trial division. The analytic proof, rather
+    than the small controls, supplies the bound on its stopping point.
+    """
+    if sparsity < 1 or count < 1:
+        raise ValueError('Positive sparsity and prime count required')
+    forbidden = [p for p in range(3, 2*sparsity+1, 2) if is_prime(p)]
+    levels, candidate, tested = [], 3, 0
+    while len(levels) < count:
+        tested += 1
+        if all((candidate-1) % p for p in forbidden) and is_prime(candidate):
+            levels.append(candidate)
+        candidate += 4
+    return dict(sparsity=sparsity, count=count, forbidden_odd_primes=forbidden,
+                levels=levels, tested_candidates=tested)

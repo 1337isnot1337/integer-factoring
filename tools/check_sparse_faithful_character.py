@@ -13,8 +13,8 @@ from cyclotomic_character_decoder import (
 )
 from odd_character_residues import primitive_generator, root_of_unity_powers
 from sparse_faithful_character import (
-    acquire_rough_prime_levels, decode_sparse_faithful, least_prime_factor,
-    primitive_component,
+    acquire_rough_prime_levels, acquire_sieved_prime_levels, decode_sparse_faithful,
+    least_prime_factor, primitive_component,
 )
 from sparse_divisor_residues import support_polynomial
 from divisor_moment_recovery import smallest_integer_root
@@ -134,6 +134,25 @@ def run():
             u = (q-1)//2
             assert u == 1 or least_prime_factor(u) > 2*record['sparsity']
 
+    sieved = [acquire_sieved_prime_levels(s, 4) for s in (1, 2, 4)]
+    for record in sieved:
+        assert len(set(record['levels'])) == record['count']
+        for q in record['levels']:
+            assert q % 4 == 3 and all(q % d for d in range(2, isqrt(q)+1))
+            assert (q-1)//2 == 1 or least_prime_factor((q-1)//2) > 2*record['sparsity']
+    crt_density_controls = 0
+    for limit in (100, 500):
+        primes = [q for q in range(3, limit+1, 4)
+                  if all(q % d for d in range(2, isqrt(q)+1))]
+        for d in range(1, 40, 2):
+            assert sum(((q-1)//2) % d == 0 for q in primes) == sum(
+                q % (4*d) == 2*d+1 for q in primes)
+            phi = sum(gcd(j, d) == 1 for j in range(1, d+1))
+            assert sum(gcd(j, 4*d) == 1 for j in range(1, 4*d+1)) == 2*phi
+            assert sum(gcd(j, 4*d) == 1 and j % 4 == 3
+                       for j in range(1, 4*d+1)) == phi
+            crt_density_controls += 1
+
     # A finite end-to-end supplied-data pipeline on six eligible levels.
     # These small controls certify their no-collision property independently;
     # they do not replace the uniform L-level count in the written theorem.
@@ -189,12 +208,17 @@ def run():
     return dict(scope='Exact sparse faithful-character decoding and fixed CRT acquisition controls. Divisor observations are supplied from explicit divisors; no fast composite-index coefficient engine, asymptotic analytic replay or stronger factoring bound.',
                 kernel_controls=kernel_records, decoding_controls=decode_records,
                 prime_acquisition_controls=acquisitions, rejected_inputs=rejected,
+                sieved_prime_acquisition_controls=sieved,
+                sieve_remainder_margin=dict(lower_sieve_exponent=[67, 200],
+                                             bombieri_vinogradov_exponent=[1, 2]),
                 supplied_crt_factorizations=crt_records,
                 collision_outside_certificate=dict(order=6, words=[4, 3]),
                 reduced_quotient_collision=dict(order=8, words=[1, 2], reduced_modulus=3),
                 counts=dict(nonzero_kernel_words=kernel_words, sparse_roundtrips=decoded,
                             actual_divisor_vectors=actual, actual_vectors_outside_promise=skipped,
                             acquired_prime_levels=sum(len(r['levels']) for r in acquisitions),
+                            sieved_prime_levels=sum(len(r['levels']) for r in sieved),
+                            fixed_four_crt_density_controls=crt_density_controls,
                             complete_supplied_crt_factorizations=len(crt_records)),
                 vector_sha256=digest.hexdigest(),
                 source_sha256={p:sha256((ROOT/p).read_bytes()).hexdigest() for p in names},

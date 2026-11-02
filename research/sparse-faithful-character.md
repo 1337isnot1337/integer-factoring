@@ -22,10 +22,11 @@ of u when u>1, independently of e. The full nonreduced coordinates are
 retained. This does not contradict the earlier necessity theorem, whose
 quantifier is arbitrary binary vectors.
 
-Classical Linnik prime acquisition then gives a **complete conditional
+Classical lower-sieve prime acquisition then gives a **complete conditional
 factoring reduction using only faithful-character coefficient vectors**,
-preserving any target saving exponent 0<beta<=1. The larger eligible
-prime levels and all their costs are charged below. A faster algorithm
+preserving every fixed positive logarithmic-saving exponent. An additional
+CRT/Linnik construction supplies a more expensive acquisition bound.
+All level and arithmetic costs are charged below. A faster algorithm
 for those coefficients at the original composite index is still missing.
 The complete proven factoring score remains **1/2**.
 
@@ -149,7 +150,9 @@ uses ordinary Gaussian elimination over the acquired field. The bound
 does not enumerate the coefficient index N, divisors of N or an
 exponential set of candidate support vectors.
 
-## 4. Acquire enough eligible prime levels without a safe-prime assumption
+## 4. Eligible prime acquisition and its full cost
+
+### 4.1. A direct CRT/Linnik construction
 
 Fix positive integers s and L. Let
 
@@ -200,7 +203,60 @@ levels are charged, including the full coefficient-vector output length.
 This is an asymptotic construction theorem; the finite checker does not
 numerically certify Linnik's constants.
 
-## 5. Complete conditional factoring invoice through score one
+### 4.2. Polynomial-size levels by a classical lower sieve
+
+There are L eligible levels bounded by poly(s+L), and they can be found
+deterministically in polynomial time in s+L. Here is the analytic input
+and its exact specialization. This is an ordinary application of classical
+sieve theorems, not a new distribution theorem for shifted primes.
+
+Use [Kevin Ford's Sieve Methods notes (2023), Theorems 3.3 and 3.4,
+pp.32,35](https://ford126.web.illinois.edu/sieve2023.pdf). The lower sieve
+has a fixed positive main coefficient at dimension one and remainder
+moduli through z^3.35. Bombieri--Vinogradov bounds the sum of progression
+errors through x^(1/2)/log^B(x), for any requested logarithmic error saving.
+
+Apply these to the integer sequence
+
+```
+A={(q-1)/2 : q<=x prime, q=3 modulo 4}.
+```
+
+Every member is odd, so g(2)=0. For odd squarefree d, divisibility by d
+selects exactly the residue 2d+1 modulo 4d. Thus, with X=li(x)/2,
+
+```
+|A_d|=pi(x;4d,2d+1)=X/phi(d)+r_d,       g(d)=1/phi(d).
+```
+
+The residue is coprime to 4d and phi(4d)=2phi(d). The local sieve density
+is dimension one, and V(z) is bounded above and below by constant
+multiples of 1/log z, by Mertens' product estimates and convergence of
+the odd-prime product of 1-1/(p-1)^2.
+
+Choose z=x^(1/10). The required moduli satisfy d<=x^(67/200).
+The fixed factor four still leaves them below the Bombieri--Vinogradov
+level, since 67/200<1/2. Its remainder is O(x/log^10(x)), which is
+smaller than the positive main term. Consequently there are at least
+c*x/log^2(x) such primes with (q-1)/2 free of primes at most x^(1/10),
+for all sufficiently large x and an absolute c>0.
+
+Take x a sufficiently large absolute multiple of (s+L+2)^20. Then
+x^(1/10)>=2s and the count exceeds L. This proves the polynomial bound.
+The algorithm simply scans q=3,7,11,..., tests primality by trial
+division, and rejects q for which an odd prime at most 2s divides q-1.
+It stops after L successes. Every operation and its stopping point have
+polynomial cost in s+L. Analytic constants and the sufficiently-large
+threshold are not input advice: the search does not use them, and an
+absolute constant absorbs the remaining finite parameter pairs.
+
+The special progression 3 modulo 4 is fixed. No distribution theorem
+with an uncharged growing modulus, safe-prime conjecture, or uniform
+claim at a numerical small threshold is used. The published lower-sieve
+and Bombieri--Vinogradov theorems supply the asymptotic bound; the finite
+controls check only eligibility and the CRT/local-density identities.
+
+## 5. Complete faithful-only conditional factoring invoice
 
 After trial division through 2^t finds no factor, the existing
 [trial-budget bound](sparse-divisor-residues.md#3-trial-division-makes-the-ring-degree-small)
@@ -218,7 +274,7 @@ one scalar bit. The character sends a supplied primitive generator
 modulo q to the primitive (q-1)-st cyclotomic root. Divisors divisible
 by q contribute zero, as in the predecessor.
 
-Acquire L distinct levels by (4), with s=D and
+Acquire L distinct levels by Section 4.2, with s=D and
 
 ```
 S=2D,
@@ -239,27 +295,35 @@ including for primes, prime powers and nonsquarefree inputs.
 
 Suppose the faithful coefficient vector at any of these supplied
 levels is obtained uniformly in F(b)*poly(b,q) bit operations, with
-fixed polynomial degrees. Equations (1)--(5) and the earlier complete
-recovery give total bit cost
+fixed polynomial degrees. The decoder, polynomial level acquisition and
+earlier complete recovery give total bit cost
 
 ```
-2^t poly(b) + F(b) exp(O(D)) poly(b),   D=2^ceil(b/t).     (6)
+2^t poly(b) + F(b) poly(b,D),         D=2^ceil(b/t).       (6)
 ```
 
 This includes parameter acquisition, coefficient-ring acquisition, output,
 sparse decoding, signed support recovery, CRT and integer root isolation.
 The algorithm's described searches and finite exceptions are deterministic.
 
-For any fixed rational 0<beta<1, take t=ceil(b/log^beta b) above a
-fixed small-input threshold, using the corresponding computable integer
-schedule from the trial-budget note. Then D=exp(O(log^beta b))=b^o(1),
-so its exponential cost is lower order than exp(O(b/log^beta b)).
-For beta=1 choose t=ceil(2b/floor(log_2(b+2))); then D=O(sqrt(b)),
-and the same conclusion holds at exp(O(b/log b)). A finite trial fallback
-handles smaller lengths. Thus an engine with that cost preserves its
-score beta for **every 0<beta<=1**. This acquisition argument does not
-claim to preserve higher target scores, and (6) is not a proved faster
-factoring algorithm without the coefficient engine.
+One fixed computable schedule t=ceil(sqrt(b)) gives
+D<=2^(sqrt(b)+1). For F(b)>=1, equation (6) is therefore
+
+```
+F(b) exp(O(sqrt(b))).                                    (7)
+```
+
+For every fixed beta>0, sqrt(b)=o(b/log^beta b). Thus an engine with
+F(b)=exp(O(b/log^beta b)) retains that logarithmic-saving exponent under
+the same schedule, including beta>1. The more economical trial schedule
+in the predecessor can also be used when polynomial-size levels in b
+are desired. This is not a faster factoring theorem without the engine.
+
+Using only the CRT/Linnik alternative gives the separately valid invoice
+2^t poly(b)+F(b)exp(O(D))poly(b). That version preserves exponents through
+one with the schedules recorded in the original checkpoint; Section 4.2
+is what removes that restriction. No engine or score is inferred from
+the better level bound alone.
 
 ## 6. Controls, credit and stopping point
 
@@ -278,8 +342,10 @@ they are not implementations of the missing coefficient engine.
 
 The panel has 19,642 nonzero kernel codewords, 1,902 sparse roundtrips,
 457 actual supplied divisor vectors and 303 actual vectors explicitly
-outside their fixed sparse promises. Twelve primes are acquired across
-the three fixed controls. Three complete supplied-data CRT factorizations
+outside their fixed sparse promises. Twelve CRT-acquired and twelve
+directly sieved prime levels have their eligibility checked. Forty
+fixed-four CRT density controls check the local progression formula.
+Three complete supplied-data CRT factorizations
 (9,11,15) recover their exact divisor-square polynomials and smallest
 factors from six eligible faithful-character vectors each. Their collision
 and height conditions are independently checked; these small certificates
@@ -287,8 +353,9 @@ do not replace the uniform L-level bound in Section 5.
 
 The faithful map, signed sparse-CRT consumer, trial-budget inequality and
 source attribution retain the preceding contributors' credit. Berlekamp,
-Prony/Vandermonde recovery, cyclotomic distance arguments, CRT and Linnik
-are classical. The present composition, charged restricted-engine transfer
+Prony/Vandermonde recovery, cyclotomic distance arguments, CRT, Linnik,
+the lower sieve and Bombieri--Vinogradov are classical. The present
+composition, charged restricted-engine transfer
 and implementation were developed by Sol worker 2 with substantial OpenAI
 Codex assistance. No new Lean or independent mathematical review is claimed.
 

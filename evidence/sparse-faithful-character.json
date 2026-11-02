@@ -414,6 +414,60 @@
       0
     ]
   ],
+  "sieved_prime_acquisition_controls": [
+    {
+      "sparsity": 1,
+      "count": 4,
+      "forbidden_odd_primes": [],
+      "levels": [
+        3,
+        7,
+        11,
+        19
+      ],
+      "tested_candidates": 5
+    },
+    {
+      "sparsity": 2,
+      "count": 4,
+      "forbidden_odd_primes": [
+        3
+      ],
+      "levels": [
+        3,
+        11,
+        23,
+        47
+      ],
+      "tested_candidates": 12
+    },
+    {
+      "sparsity": 4,
+      "count": 4,
+      "forbidden_odd_primes": [
+        3,
+        5,
+        7
+      ],
+      "levels": [
+        3,
+        23,
+        47,
+        59
+      ],
+      "tested_candidates": 15
+    }
+  ],
+  "sieve_remainder_margin": {
+    "lower_sieve_exponent": [
+      67,
+      200
+    ],
+    "bombieri_vinogradov_exponent": [
+      1,
+      2
+    ]
+  },
   "supplied_crt_factorizations": [
     {
       "target": 9,
@@ -497,12 +551,14 @@
     "actual_divisor_vectors": 457,
     "actual_vectors_outside_promise": 303,
     "acquired_prime_levels": 12,
+    "sieved_prime_levels": 12,
+    "fixed_four_crt_density_controls": 40,
     "complete_supplied_crt_factorizations": 3
   },
   "vector_sha256": "b624b29635558247408139858be8ef5b2ba65fb230e07909ac72924ce3dd2934",
   "source_sha256": {
-    "tools/sparse_faithful_character.py": "f361babef0af6dfa96e20916c80e99a9343e70774f92bce07f259473a9077268",
-    "tools/check_sparse_faithful_character.py": "1f4d2da2fc5384ca41ac427f6fcc7116e051f6a7e898c3ea1045a326b1cb7743",
+    "tools/sparse_faithful_character.py": "e48f51518993a8640e9a12b182b7ebd25fc4eea88ae26339b6c6c4054c1834cd",
+    "tools/check_sparse_faithful_character.py": "b19e6b9b6020f18c74e614b8bb2864bee5b4b065fa2a79e6fcdf52b6061c3a3f",
     "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
     "tools/odd_character_residues.py": "6703866bd7a7960a4fa6635442ee62c9449e463ab5b03334882c134578bab623",
     "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",
