@@ -112,6 +112,17 @@ def run():
     assert polynomial_remainder(1, 3) == polynomial_remainder(2, 3)
     assert decode_sparse_faithful(8, 1, 1) == 1
     assert decode_sparse_faithful(8, 2, 1) == 2
+    # Even at a reduced eligible level, one field component can lose sparse
+    # input data. The auxiliary field is used after retaining the full input.
+    _, _, phi, full_modulus = parameters(46)
+    component = primitive_component(phi)
+    assert component == 2787 and component.bit_count() == 7
+    left, right = 35, 2752
+    assert left ^ right == component and (left.bit_count(), right.bit_count()) == (3, 4)
+    assert polynomial_remainder(left, component) == polynomial_remainder(right, component) == 35
+    assert polynomial_remainder(left, full_modulus) != polynomial_remainder(right, full_modulus)
+    assert decode_sparse_faithful(46, left, 4) == left
+    assert decode_sparse_faithful(46, right, 4) == right
     rejected = []
     for order, observation, bound in ((6, 3, 2), (22, 1 << 10, 2), (22, 3, 0)):
         try:
@@ -214,6 +225,9 @@ def run():
                 supplied_crt_factorizations=crt_records,
                 collision_outside_certificate=dict(order=6, words=[4, 3]),
                 reduced_quotient_collision=dict(order=8, words=[1, 2], reduced_modulus=3),
+                one_component_collision=dict(order=46, sparsity=4, words=[left, right],
+                                             component_modulus=component,
+                                             shared_component_observation=35),
                 counts=dict(nonzero_kernel_words=kernel_words, sparse_roundtrips=decoded,
                             actual_divisor_vectors=actual, actual_vectors_outside_promise=skipped,
                             acquired_prime_levels=sum(len(r['levels']) for r in acquisitions),

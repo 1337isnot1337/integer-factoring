@@ -2043,8 +2043,21 @@ twelve CRT-acquired levels, twelve sieved levels, forty fixed-four
 CRT density controls, and three complete supplied-data CRT
 factorizations. Exact integer cyclotomic arithmetic supplies the observations
 independently. The sharp sparse collision and reduced-quotient loss are
-retained. The focused generation passed; full default verification is
-recorded after the source is frozen. The analytic inputs are the cited
+retained. A later q47 control also distinguishes retaining a reduced
+algebra from discarding all but one field component. The reverse
+factoring-to-coefficient argument makes the fixed-score equivalence explicit.
+
+The [full default receipt](../evidence/sparse-faithful-full-verification.json)
+and [compressed log](../evidence/sparse-faithful-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at clean frozen source
+`a4e607f5132e56ee34f5f5fc9864e4beabf81414`, tree
+`d2d40ac03967d1d4b9d846058c6907a9b0dfd975`, in 907.08 seconds.
+The private /tmp namespace and read-only host root were explicitly checked;
+only the frozen checkout was writable, and tracked state was clean before
+and after. The later component guard and reverse-score prose were checked
+with the focused replay and links; the implementation and imports are
+byte-identical to the full source. Later main integrations are outside
+that full pin. The analytic inputs are the cited
 classical Linnik, lower-sieve and Bombieri--Vinogradov theorems, not
 numerically reverified by the small acquisition controls.
 This is an author-checked ordinary conditional reduction and finite code

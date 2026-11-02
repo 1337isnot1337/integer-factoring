@@ -545,6 +545,16 @@
     ],
     "reduced_modulus": 3
   },
+  "one_component_collision": {
+    "order": 46,
+    "sparsity": 4,
+    "words": [
+      35,
+      2752
+    ],
+    "component_modulus": 2787,
+    "shared_component_observation": 35
+  },
   "counts": {
     "nonzero_kernel_words": 19642,
     "sparse_roundtrips": 1902,
@@ -558,7 +568,7 @@
   "vector_sha256": "b624b29635558247408139858be8ef5b2ba65fb230e07909ac72924ce3dd2934",
   "source_sha256": {
     "tools/sparse_faithful_character.py": "e48f51518993a8640e9a12b182b7ebd25fc4eea88ae26339b6c6c4054c1834cd",
-    "tools/check_sparse_faithful_character.py": "b19e6b9b6020f18c74e614b8bb2864bee5b4b065fa2a79e6fcdf52b6061c3a3f",
+    "tools/check_sparse_faithful_character.py": "3bea9e138db7c052fb34980088e8c5371cb2ca5e6f74eac75b197ae89344c618",
     "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
     "tools/odd_character_residues.py": "6703866bd7a7960a4fa6635442ee62c9449e463ab5b03334882c134578bab623",
     "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763",

@@ -128,6 +128,15 @@ remainder M_r is used in these substitutions, even though their answers
 lie in one field component. Keeping only M_r modulo f at the start
 would not justify evaluation at all omega^j.
 
+This distinction persists when the full coefficient algebra is already
+reduced. At q=47, u=23, one acquired field factor is
+f=1+X+X^5+X^6+X^7+X^9+X^11. The sparse words
+1+X+X^5 and X^6+X^7+X^9+X^11 have the same residue modulo f, but
+different full faithful observations modulo Phi_23. Their weights are
+three and four, within the certificate 2*4<23. This is a counterexample
+for arbitrary sparse vectors to discarding input components; it is not
+a lower bound for an alternative arithmetic-specific coefficient interface.
+
 If the block has t nonzero positions, its leading t-by-t Hankel matrix
 H_ij=m_(i+j+1), 0<=i,j<t, is nonsingular: it factors as
 V diag(z_1,...,z_t) V^T. Every larger such matrix is singular. Choose
@@ -281,6 +290,11 @@ S=2D,
 L=(b+1)S(S-1)/2+S(b+2)+3.
 ```
 
+Every queried level has q=3 modulo 4, hence e=1. The coefficient engine
+therefore needs only the full **reduced** algebra F_2[T]/Phi_u(T).
+Its primitive field components are all retained; the one-component
+counterexample in Section 3 still applies to the generic sparse input.
+
 Decode each faithful observation and copy its paired coefficients to
 the opposite residue positions. This supplies the same signed Laurent
 residues as the previous reduction. Its collision and CRT proofs use
@@ -325,6 +339,33 @@ one with the schedules recorded in the original checkpoint; Section 4.2
 is what removes that restriction. No engine or score is inferred from
 the better level bound alone.
 
+### The faithful coefficient family preserves both directions of the score
+
+Conversely, a smallest-prime-factor algorithm at a fixed saving exponent
+beta>0 computes the faithful coefficient vectors at the same exponent,
+with polynomial overhead in b,q. Fully factor N with at most b calls on
+integers no larger than N, then use the predecessor's multiplicative formula
+
+```
+M_1(N)=product_(p^a || N) (1+chi_1(p)+...+chi_1(p)^a).
+```
+
+Discrete logarithms modulo the auxiliary q are acquired by scanning all
+q-1 powers of its primitive generator, so their cost is polynomial in q.
+Use division-free powering and geometric-sum doubling in the explicit
+cyclotomic algebra; no inverse of 1-chi_1(p) is assumed. For p=q the
+character is zero and the local factor is one. All coefficient and ring
+costs are polynomial in b,q, as in the
+[baseline engine](weight-one-divisor-coefficients.md#4-encoding-and-arithmetic-are-charged).
+
+Thus, for each fixed positive logarithmic-saving exponent, factoring and
+computing these whole faithful vectors for all prime levels q=3 modulo 4
+have equivalent upper-bound targets under the stated polynomial-in-q
+invoice. The same conclusion holds if the coefficient engine accepts the
+certified roughness promise from the trial phase. The forward direction
+needs the eligible levels only. This does not establish either task at a
+stronger score or prove an unconditional complexity lower bound.
+
 ## 6. Controls, credit and stopping point
 
 Run `make verify-sparse-faithful-character`. The
@@ -350,6 +391,20 @@ Three complete supplied-data CRT factorizations
 factors from six eligible faithful-character vectors each. Their collision
 and height conditions are independently checked; these small certificates
 do not replace the uniform L-level bound in Section 5.
+
+The [full default receipt](../evidence/sparse-faithful-full-verification.json)
+and [complete compressed log](../evidence/sparse-faithful-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen source
+`a4e607f5132e56ee34f5f5fc9864e4beabf81414`, tree
+`d2d40ac03967d1d4b9d846058c6907a9b0dfd975`, in 907.08 seconds.
+The run used a verified private /tmp namespace, with the host root read-only
+and only the frozen checkout writable; tracked state was clean before and
+after. It includes the sparse decoder, both prime-acquisition algorithms
+and their controls. The later one-field-component guard and the reverse
+score argument have their focused checker/link replay separately; the
+decoder implementation and imported arithmetic sources are unchanged.
+Later main integrations are outside that full-replay pin. No Lean target
+or independent mathematical proof review is included.
 
 The faithful map, signed sparse-CRT consumer, trial-budget inequality and
 source attribution retain the preceding contributors' credit. Berlekamp,
