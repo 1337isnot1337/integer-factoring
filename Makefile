@@ -2074,6 +2074,12 @@ verify-entry-moment-cycles:
 	python3 tools/check_entry_moment_cycles.py --output /tmp/integer-factoring-entry-moment-cycles.json
 	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json
 
+.PHONY: verify-entry-moment-saved
+verify-entry-moment-saved:
+	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json --saved-flags
+
+verify-arithmetic: verify-entry-moment-saved
+
 .PHONY: verify-output-space-transfer
 verify-output-space-transfer:
 	python3 tools/check_output_sensitive_space_transfer.py

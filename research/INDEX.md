@@ -26,7 +26,7 @@
 
 - [Repeated smooth relations and pooled rank windows](clustered-hits-and-pooled-rank.md): uniform fixed-row multiplicity at most `2K_p-1`, a weaker sufficient rank condition with the existing conditional factoring transfer, and exact saved-hit certificates; the finite pool reaches rank sooner in window length but uses more probes. No stronger complete bound.
 
-- [Exact entry lower-tail moments on two Path C cycles](entry-moment-cycles.md): both registered cycles close (periods 20456 and 198850); clusters are short (mean run about 6); entry lower-tail constants are O(1) at matched mean counts and improve with q, while the entry density loss makes the predeclared sufficient window wrap the sparse cycle; no uniform moment/window theorem or score improvement.
+- [Exact entry lower-tail moments on two Path C cycles](entry-moment-cycles.md): the [sign correction](entry-moment-tail-sign-correction.md) replaces mislabeled upper-tail statistics with true lower tails from identical saved flags. All matched-mean tests now pass C=2; low-mean constants are constrained by the universal mu/q bound. Periods, gaps, sufficient-window status and the complete bound are unchanged.
 
 - [Normalize Fourier windows on the target cycle](window-orbit-normalization.md): character restriction absorbs all zero target phases into a positive orbit mean, with an exact coset-collision formula and all-scale sufficient window criterion. Rational finite-group controls and PR75 scope repairs do not supply a quantitative arithmetic window or new score.
 

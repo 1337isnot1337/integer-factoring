@@ -1,5 +1,23 @@
 # Contribution review and disposition ledger
 
+## Entry lower-tail sign correction, base `89aeec9`
+
+The [correction](../research/entry-moment-tail-sign-correction.md) fixes
+two reversed deviation definitions in the entry-cycle checker. The
+period-three asymmetric regression returns the correct lower numerator
+2 rather than the previous upper numerator 4; it failed before the fix.
+The separate cofactor lower-tail implementation is unchanged and agrees
+with the repaired helper. All table statistics are recomputed from the
+existing saved flags, with no new compositions or parameter choices.
+
+The [correction receipt](../evidence/entry-tail-sign-correction.json)
+records 83 changed moment fields and unchanged orbit/window/gap metadata.
+All 32 matched-mean lower-tail tests pass C=2 after correction; the old
+general lower-tail contrast is withdrawn. The abstract moment implication,
+saved row/event data, and complete 1/2 theorem are unaffected. Historical
+full receipts still describe their exact old code; they do not establish
+the semantic validity of its mislabeled tail statistic.
+
 ## Repair superseded bare-crossing frontier pointers
 
 The historical seven-letter asymmetric note passed the older inverse-degree
