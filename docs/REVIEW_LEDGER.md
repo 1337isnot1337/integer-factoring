@@ -1,5 +1,19 @@
 # Contribution review and disposition ledger
 
+## Repair superseded bare-crossing frontier pointers
+
+The historical seven-letter asymmetric note passed the older inverse-degree
+constraint, but the later adjugate determinant inequality already excludes
+it: 28364 exceeds 28224 by 140, scaling linearly at every positive integer
+ramification. Its checker/receipt now retain both the valid old relaxation
+calculation and the exact later exclusion. The inverse note, nilpotent Gram
+note, research index and README point to the existing all-field, all-degree
+bare criterion exclusion through twelve letters. These are source/status
+repairs, not new exclusions or a stronger complete factoring bound.
+Focused profile/certificate and documentation checks are recorded in the PR;
+the full default suite is not rerun for these changes. No new Lean or
+independent mathematical review is claimed.
+
 ## Sol worker 1 small-norm density and event separation
 
 The [ordinary argument](../research/small-norm-event-separation.md) applies
