@@ -253,7 +253,7 @@ retain their limits `1/4` and `1/64`. Equation (8) gives
 
 ```math
 \frac{|S_Y\cap U|}{|U|}
- >=\exp\left(-O_\alpha\left(\log^{1+alpha}b+
+ >=\exp\left(-O_\alpha\left(\log^{1+\alpha}b+
                                \frac b{\log^\alpha b}\right)\right)
  =\exp\left(-O_\alpha\left(\frac b{\log^\alpha b}\right)\right)
 ```
