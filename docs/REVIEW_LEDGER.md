@@ -18,6 +18,35 @@ saved row/event data, and complete 1/2 theorem are unaffected. Historical
 full receipts still describe their exact old code; they do not establish
 the semantic validity of its mislabeled tail statistic.
 
+## Sol worker 1 boundary representation and contributed Euler recurrence
+
+The [word-boundary proof](../research/event-word-boundary.md) identifies
+the actual truncated events with one-sided signed-word fibers in the
+injective reduced range. It gives exact target-prime-free event counts,
+unique integer event rows, annular character sums and explicit connected
+moment constraints. The Discussion #51 contributor supplied the finite
+group-algebra recurrence, Mellin multiplier and original 600-control source;
+the board links, original source hash and credit are retained, including
+in [CONTRIBUTORS](../CONTRIBUTORS.md). Outside the reduced range the
+formal measures retain multiplicities and are not event indicators.
+
+The new [receipt](../evidence/event-word-boundary.json) checks the saved
+235/213 hits in 45/55 disjoint fibers, eight exact finite-character
+identities, the original contributed panel and an excessive-height
+counterexample. No new large orbit or parameter search is run. The
+long-range arithmetic estimates and actual indices are still open; no
+complete score change, new Lean or independent mathematical review.
+`make verify-event-word-boundary verify-docs` passes, including all upstream
+event/group/row/cumulant/separation prerequisites. The [frozen full default replay](../evidence/event-word-boundary-full-verification.json)
+passes at exact `ac6cd8c1dea8b6989eeaad14a674fc4f77bc3553` in 1085.08 seconds,
+clean before and after, inside a private `/tmp` namespace. Its complete
+compressed log is archived. This is a code replay, not mathematical acceptance.
+The bounded-transport follow-up identifies a static, inversion-symmetric
+prime-free flag of exactly the same density. Its window counts differ
+from event counts by at most `floor(log_p R)`; fixed saved windows check
+this at every phase. That follow-up has focused/docs replay separately
+from the frozen original boundary source.
+
 ## Repair superseded bare-crossing frontier pointers
 
 The historical seven-letter asymmetric note passed the older inverse-degree
@@ -2039,3 +2068,45 @@ The unary implementation, checker and imported sources are byte-identical
 to the frozen source. This is an author-checked ordinary
 reduction and finite implementation evidence, not independent mathematical
 review, a fast count, new Lean work or a score improvement.
+
+## Sparse faithful-character information and the complete conditional invoice
+
+Sol worker 2, base `252128d`: the [sparse-character note](../research/sparse-faithful-character.md)
+proves exact minimum kernel weight equal to the least prime factor of the
+odd character-order part. Interleaving retains every nilpotent coordinate.
+One faithful coefficient vector suffices below half that distance, with
+an acquired polynomial decoder. CRT/Linnik gives an exp(O(D))*poly(b)
+level-acquisition bound. A classical dimension-one lower sieve plus
+Bombieri--Vinogradov improves it to polynomial cost in b,D. The exact
+fixed-four progression is 2d+1 modulo 4d, with g(d)=1/phi(d) for odd d.
+The resulting all-input conditional reduction costs F(b)exp(O(sqrt(b)))
+and preserves every fixed logarithmic-saving exponent; it supplies no
+faster composite-index coefficient engine.
+
+The [finite receipt](../evidence/sparse-faithful-character.json) includes
+19,642 nonzero kernel codewords, 1,902 sparse roundtrips, 457 actual
+supplied divisor vectors, 303 actual vectors outside the fixed promises,
+twelve CRT-acquired levels, twelve sieved levels, forty fixed-four
+CRT density controls, and three complete supplied-data CRT
+factorizations. Exact integer cyclotomic arithmetic supplies the observations
+independently. The sharp sparse collision and reduced-quotient loss are
+retained. A later q47 control also distinguishes retaining a reduced
+algebra from discarding all but one field component. The reverse
+factoring-to-coefficient argument makes the fixed-score equivalence explicit.
+
+The [full default receipt](../evidence/sparse-faithful-full-verification.json)
+and [compressed log](../evidence/sparse-faithful-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at clean frozen source
+`a4e607f5132e56ee34f5f5fc9864e4beabf81414`, tree
+`d2d40ac03967d1d4b9d846058c6907a9b0dfd975`, in 907.08 seconds.
+The private /tmp namespace and read-only host root were explicitly checked;
+only the frozen checkout was writable, and tracked state was clean before
+and after. The later component guard and reverse-score prose were checked
+with the focused replay and links; the implementation and imports are
+byte-identical to the full source. Later main integrations are outside
+that full pin. The analytic inputs are the cited
+classical Linnik, lower-sieve and Bombieri--Vinogradov theorems, not
+numerically reverified by the small acquisition controls.
+This is an author-checked ordinary conditional reduction and finite code
+evidence, without independent mathematical review, new Lean or a stronger
+complete factoring score.

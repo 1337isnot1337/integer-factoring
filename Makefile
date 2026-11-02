@@ -3183,6 +3183,12 @@ verify-one-trace-inverse-words:
 	python3 tools/check_one_trace_inverse_words.py
 
 verify-arithmetic: verify-one-trace-inverse-words
+
+.PHONY: verify-sparse-faithful-character
+verify-sparse-faithful-character:
+	python3 tools/check_sparse_faithful_character.py
+
+verify-arithmetic: verify-sparse-faithful-character
 .PHONY: verify-divided-power-traces
 verify-divided-power-traces:
 	python3 tools/check_divided_power_trace_carries.py
@@ -3289,6 +3295,12 @@ verify-small-norm-event-separation: verify-event-cumulant-windows
 	python3 tools/check_small_norm_event_separation.py
 
 verify-arithmetic: verify-small-norm-event-separation
+
+.PHONY: verify-event-word-boundary
+verify-event-word-boundary: verify-small-norm-event-separation
+	python3 tools/check_event_word_boundary.py
+
+verify-arithmetic: verify-event-word-boundary
 
 .PHONY: verify-ambient-minorant-gap
 verify-ambient-minorant-gap:
