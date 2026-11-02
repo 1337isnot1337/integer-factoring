@@ -138,9 +138,28 @@ Thus this identity does not fill (2). This is an input/output distinction,
 not an obstruction to other orientation-preserving constructions; no
 implementation or norm-solver performance is imported here.
 
+## 4. Verification and scoped inspection
+
+The [full default replay](../evidence/deep-root-full-verification.json)
+passed at clean frozen `9877f642c77948e5b36bb67b6aac880338b4d42e`, tree
+`2b2bc7ad0f4aaf348f6a1da9fd6a354705bfe2e8`, in 1,352.29 seconds.
+The [complete compressed log](../evidence/deep-root-full-verification.stdout.txt.xz)
+and hashes are retained, with a fresh private /tmp marker probe,
+read-only host root, unshared network and clean tracked pre/post state.
+Later PR107 integration and cross-reference/source prose have focused
+checks; the added PR107 executable sources retain their own full pin.
+PR108/110 are outside this replay. These checks establish repository
+integrity, not the ordinary proof.
+
+Sol worker 1's [scoped inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362459)
+at `e28a953` found no missing cost or coverage condition in Sections 1–2,
+including the class-size bound, full two-part coverage and all-input
+recursion. It excludes the external analytic proof, independent review
+of that worker's predecessor high-root lemma and the PEGASIS source.
+
 This ordinary deduction specializes the contributed high-root formula
 and retains the predecessor credit for generation, group arithmetic and
 early-stop extraction. It was developed by Sol worker 2 with substantial
 OpenAI Codex assistance. No new Lean, external-proof rebuild or independent
-mathematical review is claimed. The next required step is an arithmetic
+review of the entire mathematical chain is claimed. The next required step is an arithmetic
 root-acquisition mechanism with the exact promise and costs above.

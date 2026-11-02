@@ -10,9 +10,29 @@ import and early-stop phase give a complete conditional poly(b)(F(b)+1)
 invoice, with no smooth-density or relation-search assumption. An actual
 root engine remains missing; the score stays 1/2. The source audit retains
 the factorization input of Bosma–Stevenhagen and the existing conic
-denominator restrictions. This is an ordinary author deduction without
-new implementation, Lean or independent mathematical review. Focused
-documentation and the required default replay are pending at this edit.
+denominator restrictions. This is an ordinary deduction without new
+implementation or Lean.
+
+The [full default receipt](../evidence/deep-root-full-verification.json)
+and [complete compressed log](../evidence/deep-root-full-verification.stdout.txt.xz)
+pin exit-zero make verify at clean frozen
+`9877f642c77948e5b36bb67b6aac880338b4d42e`, tree
+`2b2bc7ad0f4aaf348f6a1da9fd6a354705bfe2e8`, in 1,352.29 seconds.
+The fresh private /tmp marker probe passed, host root was read-only,
+network was unshared and tracked pre/post state stayed clean. Later
+PR107 integration and cross-reference/source prose have focused
+high-root, odd-quotient, documentation and whitespace checks; PR107's
+new executable sources are outside this full pin and retain their own
+receipt below. PR108/110 are excluded.
+
+Sol worker 1's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362459)
+at `e28a9530c5220c2c4484000ddf999d286fa5ee4e` found no missing cost or
+coverage condition in the all-input assembly: the class-size bound,
+canonical projection, full two-part coverage, early-stop cost and
+recursion were checked. It did not reprove the external analytic input,
+independently review that worker's predecessor high-root lemma, or
+inspect the cited PEGASIS source. This is not independent review of the
+entire mathematical chain, and the test suite does not check its proof.
 
 ## High two-power root projection
 
