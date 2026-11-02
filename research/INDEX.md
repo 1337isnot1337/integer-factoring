@@ -1415,6 +1415,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [A profile floor for every homogeneous binary cube tensor](cube-homogeneous-profile-budget.md)
 - [Shared-minor budgets for graded cube alphabets](cube-graded-minor-budget.md)
 - [A uniform floor for scalar Gaussian color clones](cube-scalar-color-clone-floor.md)
+- [Specialized profiles of the one-hot color-class Gaussian cube](color-class-cube-profile.md)
 - [A Gaussian cube floor for every equally weighted Fock alphabet](cube-equal-height-fock-floor.md)
 
 
