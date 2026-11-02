@@ -131,6 +131,25 @@ global sum-of-widths selection changes the premise. Focused receipt
 reconstruction and documentation links are the local gate. No stronger
 score, Lean or independent mathematical acceptance is claimed.
 
+## Recombination before orientation in the fixed Gaussian family
+
+The [finite diagnostic](../research/recombination-before-orientation.md)
+tests the remaining single-block recombination question after the
+[global-pairing audit](../research/two-axis-global-pairing-repair.md) and
+the [favorable-reweighting certificate](../research/cube-favorable-reweighting.md).
+For each of the three fixed parent pairings, the preimage of E4 is the same
+recombination of 11 of the 22 actual coefficient tensors. Its exact cut
+ranks are `(16,16,16)`, widths `(4,4,4)` and width sum 12. At
+`lambda'=2` the inherited `5/8` budget is `6 rho lambda'=15/2`, so the
+recombination leaves the Gaussian width regime; its effective one-piece
+ratio is 1. The endpoint can be restored, but no pressure gain follows.
+The favorable two-entry dual is one on both E4 and the recombination, so
+the width sum, not the endpoint identity, is the obstruction. This is a
+fixed-family finite statement; larger alphabets, other families, coupled
+blocks and a new adaptive identity remain open. Focused receipt
+reconstruction and documentation links are the local gate. No stronger
+score, Lean result or independent mathematical acceptance is claimed.
+
 This is the maintenance checkpoint of 2026-10-30 against `main`
 `e91442d3162cae7f775e008efb2ea998c4478344`. GitHub is the
 [live PR queue](https://github.com/1337isnot1337/integer-factoring/pulls).
