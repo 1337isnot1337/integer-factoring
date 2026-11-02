@@ -1,5 +1,22 @@
 # Contribution review and disposition ledger
 
+## Near-identity positive Fourier minorants for the raw selector
+
+The [ordinary note](../research/near-identity-positive-minorants.md) proves
+the exact Fejer identity and the sufficient stopping bound
+`K<=k<=(2K-1)D` from a positive Fourier minorant of the original success
+set with mean at least `1/D`. The existing raw selector needs to evaluate
+neither the minorant nor `D`. The conditional complete factoring transfer
+retains the inherited generator and extraction contracts. A sharp parity
+example shows that density alone does not provide the required minorant.
+The missing uniform arithmetic minorant is explicit; no stronger score is
+claimed. Classical Fourier/Turan and repository pair-kernel credits remain.
+
+This checkpoint changes prose only. Local links pass; no tests are added
+for the ordinary proof. A clean default replay of its combined code base
+will be recorded separately, including the runtime-stable guard receipt
+follow-up to PR80. No Lean or independent mathematical review is claimed.
+
 ## Path C character-lift guards and the constant-bias limit
 
 Based on integrated PR79 at `55f6c597b7f5949673c18d8d7b6321af9130befc`.
