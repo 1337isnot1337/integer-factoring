@@ -3167,6 +3167,12 @@ verify-witt-trace-words:
 	python3 tools/check_witt_trace_word_circuits.py
 
 verify-arithmetic: verify-witt-trace-words
+
+.PHONY: verify-one-trace-inverse-words
+verify-one-trace-inverse-words:
+	python3 tools/check_one_trace_inverse_words.py
+
+verify-arithmetic: verify-one-trace-inverse-words
 .PHONY: verify-divided-power-traces
 verify-divided-power-traces:
 	python3 tools/check_divided_power_trace_carries.py
