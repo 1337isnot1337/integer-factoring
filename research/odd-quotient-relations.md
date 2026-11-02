@@ -171,6 +171,16 @@ the relation-certificate route. A product-group control with residual
 odd order thirteen at B=11 correctly fails. This is not a smooth-class-number
 theorem for every input.
 
+This direct branch uses the classical smooth-class-number mechanism of
+Schnorr and H. W. Lenstra, Jr.,
+[A Monte Carlo Factoring Algorithm With Linear Storage](https://pub.math.leidenuniv.nl/~lenstrahw/PUBLICATIONS/1984c/artc.pdf),
+Math. Comp. 43 (1984), 289–311, especially Stage 1 on pp. 290–291:
+power away small odd primary components and square to an ambiguous class.
+Here a supplied generating set and the existing deterministic two-group
+basis routine retain every two-part direction. This is not a new
+smooth-class-number factoring method or a proof that its favorable case
+covers every input.
+
 For the existing arithmetic choice `s=ceil(sqrt(b log_2(b+2)))`,
 `B=2^O(s)`, and `L=O(b)`, acquiring M and powering the factor-base
 generators cost `2^O(s)` bit operations. With the predecessor's generator
@@ -180,7 +190,18 @@ two-part extraction fits that scale. The value of M can be enormous;
 its **bit length**, all exponentiation and all group operations are paid.
 
 Retain the predecessor's good-multiplier, generator-coverage and smooth-set
-density assumptions exactly. If a uniform extractor for (5) on its stated
+density assumptions exactly. The existing
+[fixed-Hecke-strip deduction](polylog-prime-form-generators.md) supplies
+full prime-form generation and a direct biased prime-form sample under
+its pinned external analytic theorem. Thus coverage is already discharged
+within that import; the present relaxation makes no new analytic claim
+and does not discard the premise when that theorem is not invoked.
+Keep the full smooth factor base for the short words of S: a smaller
+generating sublist is not automatically an efficient short-word dictionary
+for all those classes. At the asymptotic parameters, the retained factor
+base contains the analytic prime-form sample, so that sample still has
+word length one in the retained generators.
+If a uniform extractor for (5) on its stated
 targets costs F(b), then the full conditional factoring invoice is
 
 ```math
@@ -211,7 +232,10 @@ bias one but image bias 1/3. It misses exact pair witnesses for 32 of the
 48 targets, while every target has a quotient pair. The nonsingular row
 certificate still recovers all four two-torsion directions. This tests a
 genuine weakening of the witness and mixing conditions, not exact equality
-with different notation. Finite witnesses are obtained by enumeration.
+with different notation. Here the predecessor's sharper threshold
+`1/3 < (5/16)/(1-5/16)=5/11` gives positive correlation; this fixture does
+not need to meet the more conservative delta/2 budget. Finite witnesses
+are obtained by enumeration.
 
 Two static class groups reuse the boundary forms supplied in
 [Discussion #51](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19359806)

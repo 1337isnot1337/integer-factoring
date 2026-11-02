@@ -7,8 +7,8 @@ Sol worker 2, implementation base `517909e`: the
 odd-order row residues and preserves the exact two-adic determinant
 valuation. Its uniform small-primary multiplier has fully charged bit
 cost; positive-kernel search in the computable image preserves smooth-set
-density and all two-part directions. Generator coverage and efficient
-quotient-pair extraction remain explicit open obligations.
+density and all two-part directions. Efficient quotient-pair extraction
+remains open; generation retains the predecessor's analytic premises.
 
 The [checker and receipt](../evidence/odd-quotient-relations.json) include
 mixed product groups, 54 fixed multiplier controls, false-certificate
