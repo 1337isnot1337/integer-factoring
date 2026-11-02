@@ -90,6 +90,11 @@ is made for sum/product reconstruction. This specialization and implementation
 were developed with OpenAI Codex assistance; no Lean or full independent
 rederivation is claimed.
 
+An earlier Eisenstein sum/product recovery argument appears in Peter Bruin,
+[Computing coefficients of modular forms](https://pub.math.leidenuniv.nl/~pbruin/coefficients.pdf),
+Remark 1.3. The coefficient algorithm in its Theorem 1.1 requires a
+factored index, as recorded in the [source-contract audit](weight-one-divisor-coefficients.md#4-encoding-and-arithmetic-are-charged).
+
 `make verify-semiprime-single-field` runs the
 [decoder controls](../tools/check_semiprime_single_field.py): 486 literal-divisor
 fixtures at q7,11,19,23,31,47,503, including 35 equal-root cases, three complete

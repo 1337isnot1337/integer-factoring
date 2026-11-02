@@ -184,6 +184,16 @@ character values. See the [pinned source, lines 3150--3192](https://github.com/s
 enumeration remains part of the cost here. This is a scoped source
 inspection, not an audit of every available modular-form algorithm.
 
+A relevant theoretical source has the same index condition. Peter Bruin,
+[Computing coefficients of modular forms](https://pub.math.leidenuniv.nl/~pbruin/coefficients.pdf),
+Theorem 1.1, takes the coefficient index in factored form and gives an
+expected polynomial-time algorithm under number-field GRH, with its
+stated level restrictions. It does not supply the deterministic,
+unfactored-index engine required here. Remark 1.3 already recovers a
+semiprime from an exact Eisenstein coefficient by sum/product algebra.
+These are source-contract and attribution checks, without a rederivation
+of the external algorithm or a new lower bound.
+
 ### 4.1 One bit per coordinate suffices at every level
 
 Write m=q-1=2^v u with u odd, v>=1, and r=2^(v-1). The target vector
