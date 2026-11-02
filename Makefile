@@ -2070,6 +2070,10 @@ verify-entry-moment-cycles:
 	python3 tools/check_entry_moment_cycles.py --output /tmp/integer-factoring-entry-moment-cycles.json
 	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json
 
+.PHONY: verify-entry-gap-cluster-loss
+verify-entry-gap-cluster-loss:
+	python3 tools/check_entry_gap_cluster_loss.py --output evidence/entry-gap-cluster-loss.json
+
 .PHONY: verify-output-space-transfer
 verify-output-space-transfer:
 	python3 tools/check_output_sensitive_space_transfer.py
