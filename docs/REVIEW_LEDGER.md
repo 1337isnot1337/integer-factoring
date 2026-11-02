@@ -21,6 +21,34 @@ Full default validation of this follow-up is pending.
 No fast coefficient engine, new Lean work, independent mathematical review
 or complete bound improvement is claimed.
 
+## Quartic additive-charge cube construction
+
+The [ordinary construction and prefix proof](../research/quartic-charge-fusion.md)
+add even quartic color fusion to the worker-4 Gaussian model. The tensor
+has homogeneous degree four per occupied vertex, exact antipodal endpoint,
+and genuinely breaks separate color parity. Its generic first orders are
+0^1,2^(q-1),4^(2(q-1)) for q=2^s>=4. This is a lower-order cancellation
+mechanism, not a complete profile or a stronger factoring bound.
+
+The standard-library checker verifies formal leading coefficients in three
+axes, 108 two-minors and 48 three-minors, plus the independently binary
+restricted Toeplitz ranks of one q8 charge block through order four.
+A separate binary color matrix verifies ranks 21 and 7. An exact q4096
+integer abstract profile passes the shared-minor/prefix budgets and the
+degree-four restored bound 4/7; this is explicitly not a profile of the
+constructed tensor. The preceding
+NumPy prototype agrees; the committed replay does not need NumPy.
+The degree-four restoration is explicit. The default non-Lean `make verify`
+passed at clean frozen source `b1b85810d35a69513099917160192365bca3bd16`,
+tree `cd56e4f50292c303c0756f9b25b1fa4d3969ca0a`, in 950.82 seconds.
+The [receipt](../evidence/quartic-charge-full-verification.json) and
+[compressed stdout](../evidence/quartic-charge-full-verification.stdout.txt.xz)
+pin that replay. Its private temporary mount passed the marker-isolation
+control; this archive follow-up does not claim a second default replay.
+The earlier degree-five replay was intentionally stopped after 195.04 seconds
+when the lower-degree construction was verified; it is not a passed check.
+No new Lean or independent mathematical review is claimed; alpha stays 1/2.
+
 ## Quartic charge-creation divided square
 
 Sol worker 2, base `60a21ef`: the
