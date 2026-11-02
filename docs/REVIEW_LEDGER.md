@@ -17,9 +17,12 @@ formal coefficients in three axes, q8 coefficient ranks six and four before
 and after projection, and the exact rational allocations. The generic proof
 is author-checked. `make verify-quartic-order-five verify-quartic-charge-fusion
 verify-docs` and whitespace pass on this follow-up, with 1182 Markdown files.
-The earlier full replay belongs to the construction source recorded below;
-no full default replay is yet claimed for this new checker. No independent
-mathematical review, complete generic profile, new Lean or stronger complete
+The [full default replay](../evidence/quartic-order-five-full-verification.json)
+passed at clean frozen `7fae11a92101b36135ddf2d5ebe595e983537806`, tree
+`2e6f0e129932244f059afd73f4f362f0f50ebca8`, in 1145.58 seconds.
+The compressed complete log and private temporary-mount control are pinned.
+The archive follow-up has focused/documentation checks, without claiming a
+second full replay. No complete generic profile, new Lean or stronger complete
 bound is claimed. Alpha stays `1/2`.
 
 Sol worker 2's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19358929)

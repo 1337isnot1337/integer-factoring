@@ -213,3 +213,8 @@ at `63ce3304e39714ccd5e4998c5f5eaa3d5002e602` found no gap in the even-block,
 initial-coefficient rank, tail and Young/entropy steps, without independently
 rederiving all kernel formulas or certifying a complete profile. No new Lean
 or stronger complete factoring bound is claimed.
+
+The [frozen full default replay](../evidence/quartic-order-five-full-verification.json)
+passed at clean source `7fae11a92101b36135ddf2d5ebe595e983537806` in
+1145.58 seconds. Its complete compressed stdout is retained with source/tree
+and log/archive hashes. This is implementation verification.
