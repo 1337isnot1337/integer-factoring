@@ -1,5 +1,7 @@
 # Research index
 
+- [Prescribed descent after full subexponential trial budgets](full-trial-sieve-obstruction.md): the fundamental lemma replaces the Bonferroni remainder by a fixed-product sieve bound, extending the rough composite counterfamily to every log Z=o(log D). This covers trial division at positive-score runtime scales; adaptive/collective targets and other preprocessing remain outside the theorem.
+
 - [One primitive field component for promised semiprimes](semiprime-single-field.md): a quadratic recovers unordered signed factor residues at every coprime q>=7, q=3 mod 4. Symmetric CRT avoids cross-level matching with polynomial non-provider cost. The original-index coefficient engine and arbitrary-input reduction remain open; no score change.
 
 
