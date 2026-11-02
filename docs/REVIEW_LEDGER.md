@@ -16,6 +16,38 @@ is not restricted to inputs surviving factoring preprocessing. This is
 author verification, without independent mathematical review, new Lean
 or an improved complete exponent.
 
+## Quartic order-five obstruction
+
+The [ordinary argument](../research/quartic-order-five-obstruction.md)
+allows independent degree-16 spatial quartet weights with the prescribed
+leading coefficients, divisibility by `(xyz)^4`, and vanishing endpoint.
+A lowest second-axis coefficient forces at least `(q-1)(q-4)` order-five
+channels in every axis. A dimension/degree tail and exact Young allocations
+give restored pressure at least `7/12>1/sqrt(3)` for q>=4096, every common
+physical type, in the common-scale unweighted three-axis profile method.
+The earlier q4096 relaxation is excluded, not promoted to an actual profile.
+This does not cover all smaller alphabets or other interaction classes.
+
+The [source-pinned receipt](../evidence/quartic-order-five.json) verifies
+formal coefficients in three axes, q8 coefficient ranks six and four before
+and after projection, and the exact rational allocations. The generic proof
+is author-checked. `make verify-quartic-order-five verify-quartic-charge-fusion
+verify-docs` and whitespace pass on this follow-up, with 1182 Markdown files.
+The [full default replay](../evidence/quartic-order-five-full-verification.json)
+passed at clean frozen `7fae11a92101b36135ddf2d5ebe595e983537806`, tree
+`2e6f0e129932244f059afd73f4f362f0f50ebca8`, in 1145.58 seconds.
+The compressed complete log and private temporary-mount control are pinned.
+The archive follow-up has focused/documentation checks, without claiming a
+second full replay. No complete generic profile, new Lean or stronger complete
+bound is claimed. Alpha stays `1/2`.
+
+Sol worker 2's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19358929)
+at `63ce3304e39714ccd5e4998c5f5eaa3d5002e602` found no gap in the even-block
+separation, initial-coefficient rank/projection, tail and Young/entropy steps.
+It did not independently rederive all kernel formulas or certify a complete
+profile. The proof does not apply PR98's common-weight linearization to
+independent spatial weights.
+
 ## Arithmetic reciprocity in faithful coefficients
 
 Sol worker 2, base `b629a35`: Section 3.1 of the
@@ -62,8 +94,8 @@ restricted Toeplitz ranks of one q8 charge block through order four.
 A separate binary color matrix verifies ranks 21 and 7. An exact q4096
 integer abstract profile passes the shared-minor/prefix budgets and the
 degree-four restored bound 4/7; this is explicitly not a profile of the
-constructed tensor. The preceding
-NumPy prototype agrees; the committed replay does not need NumPy.
+constructed tensor. The subsequent order-five result above excludes that
+relaxation for this family. The preceding NumPy prototype agrees; the committed replay does not need NumPy.
 The degree-four restoration is explicit. The default non-Lean `make verify`
 passed at clean frozen source `b1b85810d35a69513099917160192365bca3bd16`,
 tree `cd56e4f50292c303c0756f9b25b1fa4d3969ca0a`, in 950.82 seconds.
