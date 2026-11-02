@@ -1,5 +1,44 @@
 # Contribution review and disposition ledger
 
+## Uniform event density from integer relation changes
+
+The [ordinary proof](../research/relation-change-event-density.md) defines
+a periodic change event using canonical words rather than periodic integer
+row labels. The existing multiplicity lemma then gives event density at
+least `delta/(2K_p-1)`, including all-good cycles and proper-gcd events.
+This changes the event observable and removes a separate raw-cluster
+assumption; uniform original density and event moments remain unproved.
+The complete saving exponent stays 1/2.
+
+The same segment decomposition proves the maximum event-zero gap is at
+most the maximum raw-zero gap plus `2K_p-2`. This controls the worst case
+over phases, not a pointwise difference of first-hit times. The abstract
+all-good control attains this additive bound. The source code is unchanged
+by this proof corollary; the existing exact gap receipts give `17939/17939`
+and `4506/4508` for the two saved raw/event patterns.
+
+Integer postprocessing reconstructs all 670 saved rows plus their known
+small-power prefixes. In both existing directions the new flags equal the
+previously measured entry flags at every phase, including the boundary.
+Their maximum identical-row segments attain the proved caps 17 and 13.
+A sharp all-good `Z/3` control and a proper-gcd-phase control pass. No new
+arithmetic orbit, composition, input or cutoff is used in this diagnostic.
+The original group/order/row certificate replay is a prerequisite. Focused
+and documentation checks are the local gate. Existing multiplicity, selector, Grok entry
+data and moment credits remain. No Lean or independent review is claimed.
+
+The [frozen full replay](../evidence/relation-change-events-full-verification.json)
+passes at `fd5970d76735c4d4e0f041bc908f3589c5933ee2`, tree
+`28aa795ac9b16a670e54a851038bca7c86c95735`, in 1572.86 seconds:
+`make verify` and `make verify-relation-change-events`, clean tracked state
+before and after. The additive gap corollary is a later prose-only change.
+After integration with current main, the new checker, its weighted-norm
+helper and the original certificate checker are byte-identical to that
+source pin. The event, protected-core transition, independent entry replay
+and documentation targets pass on the integrated tree (1165 Markdown
+files). The full log is archived; later main additions are outside the
+frozen default replay's scope.
+
 ## Near-identity positive Fourier minorants for the raw selector
 
 The [ordinary note](../research/near-identity-positive-minorants.md) proves
