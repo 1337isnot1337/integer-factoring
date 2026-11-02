@@ -1,0 +1,141 @@
+{
+  "scope": "Two constructed reduced forms per fixed control; no class-cycle enumeration, analytic theorem verification or complete bound change.",
+  "controls": [
+    {
+      "exponent": 3,
+      "cutoff": 5,
+      "discriminant": -2199,
+      "forms": [
+        [
+          10,
+          1,
+          55
+        ],
+        [
+          11,
+          1,
+          50
+        ]
+      ],
+      "radius": 11,
+      "searched_integers": 3,
+      "raw_flags": [
+        1,
+        0
+      ],
+      "p_free_prime": null,
+      "cosh_lifted_distance_minus_one": "10/2199",
+      "lifted_distance_squared_upper_bound": "20/2199",
+      "exact_interpolation_lipschitz_squared_lower_bound": "2199/20"
+    },
+    {
+      "exponent": 8,
+      "cutoff": 5,
+      "discriminant": -1315839,
+      "forms": [
+        [
+          256,
+          1,
+          1285
+        ],
+        [
+          257,
+          1,
+          1280
+        ]
+      ],
+      "radius": 286,
+      "searched_integers": 1,
+      "raw_flags": [
+        1,
+        0
+      ],
+      "p_free_prime": 5,
+      "cosh_lifted_distance_minus_one": "10/1315839",
+      "lifted_distance_squared_upper_bound": "20/1315839",
+      "exact_interpolation_lipschitz_squared_lower_bound": "1315839/20"
+    },
+    {
+      "exponent": 10,
+      "cutoff": 11,
+      "discriminant": -20991999,
+      "forms": [
+        [
+          1024,
+          1,
+          5125
+        ],
+        [
+          1025,
+          1,
+          5120
+        ]
+      ],
+      "radius": 1145,
+      "searched_integers": 1,
+      "raw_flags": [
+        1,
+        0
+      ],
+      "p_free_prime": 5,
+      "cosh_lifted_distance_minus_one": "10/20991999",
+      "lifted_distance_squared_upper_bound": "20/20991999",
+      "exact_interpolation_lipschitz_squared_lower_bound": "20991999/20"
+    },
+    {
+      "exponent": 12,
+      "cutoff": 19,
+      "discriminant": -335626239,
+      "forms": [
+        [
+          4096,
+          1,
+          20485
+        ],
+        [
+          4097,
+          1,
+          20480
+        ]
+      ],
+      "radius": 4580,
+      "searched_integers": 1,
+      "raw_flags": [
+        1,
+        0
+      ],
+      "p_free_prime": 5,
+      "cosh_lifted_distance_minus_one": "10/335626239",
+      "lifted_distance_squared_upper_bound": "20/335626239",
+      "exact_interpolation_lipschitz_squared_lower_bound": "335626239/20"
+    },
+    {
+      "exponent": 16,
+      "cutoff": 31,
+      "discriminant": -85900656639,
+      "forms": [
+        [
+          65536,
+          1,
+          327685
+        ],
+        [
+          65537,
+          1,
+          327680
+        ]
+      ],
+      "radius": 73272,
+      "searched_integers": 1,
+      "raw_flags": [
+        1,
+        0
+      ],
+      "p_free_prime": 5,
+      "cosh_lifted_distance_minus_one": "10/85900656639",
+      "lifted_distance_squared_upper_bound": "20/85900656639",
+      "exact_interpolation_lipschitz_squared_lower_bound": "85900656639/20"
+    }
+  ],
+  "source_sha256": "bc95f83b019ffb0096f251fd4e19d010b1cd9ab6c5b0be3a1310b4fe561da378"
+}
