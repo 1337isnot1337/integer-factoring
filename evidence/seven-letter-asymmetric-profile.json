@@ -117,5 +117,11 @@
   "exact_threshold_comparison": "pressure^169 < 7^478",
   "threshold_below_two_sqrt_two": "478^2 < 8*169^2",
   "crosses_profile_threshold": true,
-  "scope": "necessary Smith profile only; no algebraic crossing is constructed"
+  "later_adjugate_budget": {
+    "left": 28364,
+    "right": 28224,
+    "violation_per_ramification": 140
+  },
+  "realizable_at_any_positive_integer_ramification": false,
+  "scope": "Historical relaxation point passing the older inverse bound but excluded by the later adjugate determinant condition at every positive integer ramification; no stronger factoring bound."
 }

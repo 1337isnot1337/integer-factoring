@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""A seven-letter asymmetric Smith profile compatible with inverse degree."""
+"""Historical inverse-bound pass, excluded by the later adjugate budget."""
 import json
 from fractions import Fraction
 
@@ -23,6 +23,9 @@ def main():
     assert sum(MU) == sum(NU) == DIMENSION * M
     assert sum(MU[:Q]) + sum(NU[:Q]) == Q * M
     assert MU[1] <= 2 * (NU[-1] - M)
+    adjugate_lhs = (DIMENSION - 1) * MU[1] + DIMENSION * sum(NU[:-1])
+    adjugate_rhs = DIMENSION * (DIMENSION - 1) * M
+    assert adjugate_lhs - adjugate_rhs == 140
     s = Fraction(34, 25)
     value = pressure(s)
     assert value.numerator ** 169 < 7 ** 478 * value.denominator ** 169
@@ -43,7 +46,9 @@ def main():
         "exact_threshold_comparison": "pressure^169 < 7^478",
         "threshold_below_two_sqrt_two": "478^2 < 8*169^2",
         "crosses_profile_threshold": True,
-        "scope": "necessary Smith profile only; no algebraic crossing is constructed",
+        "later_adjugate_budget": {"left": adjugate_lhs, "right": adjugate_rhs, "violation_per_ramification": 140},
+        "realizable_at_any_positive_integer_ramification": False,
+        "scope": "Historical relaxation point passing the older inverse bound but excluded by the later adjugate determinant condition at every positive integer ramification; no stronger factoring bound.",
     }
     print(json.dumps(report, indent=2))
 

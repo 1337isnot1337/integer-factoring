@@ -49,6 +49,8 @@ A [near-identity positivity criterion](research/near-identity-positive-minorants
 
 **Tensor and crossing route.** This work seeks a complete crossing below the required pressure threshold or a different valid transfer. The proposed two-axis cube regroupings fail their adaptive relabeling steps: the [per-cube audit](research/two-axis-cube-regrouping.md) and [global-pairing audit](research/two-axis-global-pairing-repair.md) retain exact counterexamples, including coefficients of the actual Gaussian family. The local Gaussian profiles remain valid; no stronger complete exponent follows. See [directions beyond the half-rate result](research/post-half-directions.md).
 
+The [box-minor theorem](research/bare-seven-to-twelve-letters.md) already excludes the bare, ungauged two-place Smith criterion for every alphabet `q<=12`, at every degree and over every field. The old [seven-letter asymmetric profile](research/seven-letter-asymmetric-profile.md) is excluded by the later adjugate condition at every integer ramification. Physical gauges, collective recombinations, actual coefficient ranks and other transfer criteria remain separate questions.
+
 A [confluent seven-letter quantum-spin construction](research/confluent-quantum-spin.md) has a rank-one specialization, but an exact determinant budget excludes its bare two-place target over every finite coefficient extension. That fixed degeneration is stopped.
 
 A [noncommuting nilpotent Gram test](research/nilpotent-gram-crossing.md) also preserves the endpoint and both cold ranks one, but its row Smith profile forces pressure above the required threshold over every finite coefficient extension. This fixed construction is stopped.
