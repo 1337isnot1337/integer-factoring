@@ -1634,6 +1634,8 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 
 [All-mode protected-core floors](jensen-tail-protected-core-floor.md) use a determinant-degree bound on 3,202 unresolved orders, rather than assigning individual values. Retaining the height-below-24 core forces rho >= 17/24 through height37, and >=29/41 through height38, over all characteristic-two fields. Separate alphabets/types and arbitrary homogeneous high splits are allowed; unequal cut scales and other gauges are not excluded.
 
+- [The height-38 protected-core barrier does not extend to height 39](protected-core-height39-transition.md): the same Jensen-tail test admits `70/99 < 1/sqrt(2)` at support height 39, though no split is constructed.
+
 ## Exact Hecke determinant factors and closed places
 
 [Complete F8 determinant factorizations](hecke-q5-closed-place-factorization.md) exclude the unweighted supporting criterion with one irreducible closed place per cut for the five-letter tensor, including conjugate-orbit degree weights. All 33 factors have exact reconstruction and Rabin certificates. General mixed-place allocations and physical gauges remain open.

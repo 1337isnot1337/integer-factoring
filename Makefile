@@ -2983,6 +2983,10 @@ verify-rectangular-pascal-coordinates:
 verify-jensen-core-floors:
 	python3 tools/check_jensen_tail_core_floor.py
 
+.PHONY: verify-protected-core-height39-transition
+verify-protected-core-height39-transition:
+	python3 tools/check_protected_core_height39.py --output /tmp/protected-core-height39-transition-check.json
+
 .PHONY: verify-coherent-inverse-f4 verify-coherent-gram-f4
 verify-coherent-inverse-f4:
 	python3 tools/check_coherent_inverse_systems_f4.py
