@@ -1,5 +1,7 @@
 # Research index
 
+- [Connected event correlations and a finite-order window criterion](connected-event-window-criterion.md): factorial bounds on aggregate cumulants through twice the logarithm of a period bound imply a window linear in inverse event density and the correlation scale. A tree estimate is sufficient but unproved arithmetically; exact saved-event controls neither certify it nor change the complete bound.
+
 - [Fixed nilpotent Gram crossings](nilpotent-gram-crossing.md): a canonical noncommuting flag gives a degree-12 seven-letter tensor with the flip endpoint and both cold ranks one. Its unchanged row profile alone forces pressure above 345 at every pair of places over every finite coefficient extension; the fixed test is stopped.
 
 - [Original smooth density from even prime products](small-index-smooth-density.md): a high-precision prime-color partition and one-sided product spectrum prove density exp(-O(b/log b)) on subgroups of index at most D^kappa, kappa<1/4, from the principal split-prime estimate. The full character estimate gives every coset for kappa<1/64. Actual target indices and hit gaps remain open.
