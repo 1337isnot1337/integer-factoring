@@ -31,6 +31,9 @@ The new checker appears in that log. Later premise/attribution prose,
 archive and PR104 integration have focused documentation and whitespace
 checks; executable sources stayed identical to the frozen pin. PR104's
 own receipt remains separate, and PR105 is outside this replay.
+The subsequent PR105 integration retains both Makefile targets;
+odd-quotient, CM-geometry and documentation checks pass together in a
+private /tmp namespace. Its full receipt is separately pinned below.
 This is an author-checked ordinary relaxation, without independent
 mathematical review, new Lean or a stronger complete factoring bound.
 
