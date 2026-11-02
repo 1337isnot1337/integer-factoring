@@ -20,6 +20,8 @@
 
 - [Weil bounds and the native-word pointwise-selection budget](trace-selection-weil-budget.md): formal AS reduction and exceptional-fibre control give r+log2(D(D+1))>=h for a nonempty trace-selected set of density<=2^-h, h<=w/2. Native Witt factor sets force a linear degree/rank parameter; their full fibre rectangles also obstruct low-degree ordinary equations without auxiliaries. Weighted cancellation and other representations/evaluators remain open.
 
+- [Withdrawn trace-character selection-entropy assertion](trace-anf-selection-counterexample.md): the attempted r-independent ANF bound is false; explicit F_8/F_3 counterexamples and a corrected F_2-ANF necessary condition are recorded. The Weil-budget note supplies the valid thin-set tradeoff; no score change.
+
 - [A two-axis Gaussian profile floor for arbitrary equal mode blocks](block-gaussian-two-axis-profile-floor.md): one shared L-minor and determinant budgets force the common-scale, common-unweighted-type envelope above 3/4 for every L, degree and field, without Cayley symmetry. This extends the one-mode floor to multiple Gaussian modes per parent label; actual ranks, other types and other evaluators remain outside the theorem.
 
 - [A profile floor for fixed homogeneous cube projections](fixed-cube-projection-profile-floor.md): a valid fixed-bundle monomial projection retains the endpoint at two parent axes, but its common-type Smith-profile envelope is at least 3/4 for every projection and scale. Convexity reduces to a balanced profile and an exact Bernstein certificate; actual ranks and other representations remain outside the floor.

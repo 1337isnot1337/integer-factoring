@@ -3225,3 +3225,9 @@ verify-window-orbit-duality:
 
 verify-window-duality-analysis:
 	python3 tools/check_window_duality_analysis.py
+
+.PHONY: verify-trace-anf-counterexample
+verify-trace-anf-counterexample:
+	python3 tools/check_trace_anf_counterexample.py
+
+verify-arithmetic: verify-trace-anf-counterexample
