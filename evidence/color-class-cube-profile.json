@@ -330,6 +330,81 @@
       ]
     ]
   },
+  "q4_full_profile": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      4,
+      6
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      8,
+      15
+    ],
+    [
+      10,
+      24
+    ],
+    [
+      12,
+      30
+    ],
+    [
+      14,
+      37
+    ],
+    [
+      16,
+      34
+    ],
+    [
+      18,
+      11
+    ],
+    [
+      20,
+      21
+    ],
+    [
+      22,
+      9
+    ],
+    [
+      24,
+      16
+    ],
+    [
+      26,
+      1
+    ],
+    [
+      28,
+      13
+    ],
+    [
+      30,
+      7
+    ],
+    [
+      32,
+      9
+    ],
+    [
+      36,
+      3
+    ]
+  ],
+  "q4_prefix_sum_175": 2150,
   "graded_comparison": {
     "3": {
       "alphabet": 81,
@@ -449,11 +524,12 @@
           "15"
         ]
       ],
-      "prefix_count_through_order6": 175
+      "prefix_count_through_order6": 175,
+      "envelope_prefix_sum_175": "888"
     }
   },
   "source_sha256": {
-    "check_color_class_cube_profile.py": "55f123f7cf00212732492dfce6490d2d818e7dd3bd4c6861e275b9c05b258fc0",
+    "check_color_class_cube_profile.py": "0d6fc3de1e900ed9946218abfaedd75294777cbc0db658938baaa75a87773bb6",
     "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
     "cube_graded_minor_budget.py": "930d32ddec53b5692cef627f1d40986c8e5535beb6cd142a13b58af9d28bdc00"
   },

@@ -172,7 +172,7 @@ def expected_q2_profile():
 
 
 def graded_comparison():
-    from cube_graded_minor_budget import envelope
+    from cube_graded_minor_budget import cumulative, envelope
 
     records = {}
     for q in (3, 4):
@@ -189,6 +189,8 @@ def graded_comparison():
         }
     assert records["3"]["prefix_count_through_order6"] == 65
     assert records["4"]["prefix_count_through_order6"] == 175
+    records["4"]["envelope_prefix_sum_175"] = str(
+        cumulative(result["blocks"], 175))
     return records
 
 def main():
@@ -220,6 +222,12 @@ def main():
         assert sum(profile.values()) == comb(q + 2, 3)
         low_orders[str(q)] = sorted(profile.items())
 
+    q4_full, _ = specialized_profile(4, 2, 3, 39)
+    q4_orders = [order for order, count in sorted(q4_full.items())
+                 for _ in range(count)]
+    assert sum(q4_orders[:175]) == 2150
+    assert len(q4_orders) == 250
+
     comparison = graded_comparison()
     result = {
         "status": "passed",
@@ -229,6 +237,8 @@ def main():
         "q3_ranks": q3_ranks,
         "q3_specialization_stability": stability,
         "low_order_profiles": low_orders,
+        "q4_full_profile": sorted(q4_full.items()),
+        "q4_prefix_sum_175": sum(q4_orders[:175]),
         "graded_comparison": comparison,
         "source_sha256": {
             name: sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()

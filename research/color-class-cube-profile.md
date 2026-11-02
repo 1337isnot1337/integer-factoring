@@ -115,15 +115,17 @@ therefore evaluated with energies
 
 For \(q=3\) and \(q=4\) the envelope's prefix counts through order six are
 \(65\) and \(175\). The specialized construction has prefix counts \(10\)
-and \(20\). The construction is below the graded prefix budget, not above
-it. This is consistent with the tensor being a valid homogeneous cube
-tensor; it does not establish a profile obstruction.
+and \(20\). These are counts, while the envelope constrains prefix sums;
+the count comparison alone is not a viability test.
 
-The specialized count is a lower bound for the generic count, while the
-graded envelope is an upper bound on a prefix sum, not on a count. The two
-quantities are not interchangeable. A correct viability test needs the
-generic profile, or at least a specialization-independent bound on the
-prefix sums; neither is computed here.
+The specialized \(q=4\) profile does not satisfy the graded prefix-sum
+budget at the tested specializations: its first \(175\) orders sum to
+\(2150\), while the envelope's first \(175\) orders sum to \(888\). This
+is consistent with specialization increasing orders relative to the
+generic tensor, and it is one reason the generic profile is the missing
+object. The stable specializations are therefore not automatically the
+generic profile, despite agreeing at six tested points. No viability or
+obstruction conclusion is drawn.
 
 ## 3. Scope and next question
 
