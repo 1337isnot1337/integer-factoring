@@ -13,8 +13,13 @@ Existing faithful-decoder and factor-moment sources are credited.
 The [receipt](../evidence/semiprime-single-field.json) checks 486 supplied
 literal-divisor fixtures, including 35 repeated roots, three full CRT
 reconstructions, and input guards. The decoder does not construct these
-fixtures. Full default verification and independent ordinary inspection are
-pending; no new Lean or score improvement is claimed.
+fixtures. The [full default replay](../evidence/semiprime-single-field-full-verification.json)
+passed at clean frozen `35b0d7492858f5d27d2d7793a7dfbed45c68f299`, tree
+`390aa936ad743cc49b2e31be0721ba2d4017522c`, in 800.82 seconds, with the
+new private temporary-mount control. The complete compressed log is retained.
+The later archive and generator-query clarification have focused/docs checks;
+no second default replay is claimed. No independent ordinary inspection, new
+Lean or score improvement is claimed.
 
 ## Quartic order-five obstruction
 

@@ -97,3 +97,8 @@ CRT reconstructions, and input guards. The
 [decoder](../tools/semiprime_single_field.py) never constructs these fixtures
 or lists candidate factors of N. The [receipt](../evidence/semiprime-single-field.json)
 pins all sources. Fixture construction is not the missing coefficient engine.
+
+The [full default replay](../evidence/semiprime-single-field-full-verification.json)
+passed at clean frozen `35b0d7492858f5d27d2d7793a7dfbed45c68f299` in
+800.82 seconds. Complete compressed stdout, source/tree and log/archive
+hashes are retained. Later prose/archive changes do not claim another replay.

@@ -529,3 +529,40 @@ The information and level-acquisition questions are closed at this scope.
 Further progress requires a faster faithful coefficient engine, a different
 complete arithmetic algorithm, or another genuine change of representation.
 Additional support/prime sweeps do not advance that remaining obligation.
+
+
+### A field-query contract for the complete coefficient target
+
+For the acquired q=3 modulo4 levels, a full faithful coefficient vector
+can instead be supplied by polynomially many original-index queries in ONE
+fixed finite field, provided the engine is uniform in a supplied primitive
+generator. This requires additional coefficient queries; it does not infer
+all components from one fixed observation and does not assume a semiprime.
+
+For u=(q-1)/2>1, acquire one irreducible f of Phi_u and put omega=T in
+F=F_2[T]/f, of degree nu. Choose one representative r from each doubling
+orbit on the units modulo u. Every orbit has size nu. For the canonical
+generator g choose an odd unit k modulo2u with k^(-1)=r modulo u, and
+query the engine using generator g^k, still sending that supplied generator
+to the SAME omega. Its output is P_N(omega^r). Frobenius gives all values
+in that orbit because P_N has binary coefficients. The phi(u)/nu queries
+therefore give its values on every primitive u-th root.
+
+On degree-below-phi(u) binary polynomials this is a square injective binary
+linear map: a polynomial in its kernel vanishes at all primitive roots,
+so Phi_u divides it, and it is zero. Explicit binary elimination acquires
+the inverse in polynomial bit cost in q. Apply it to recover the complete
+faithful remainder, then use the earlier sparse decoder and complete
+factoring reduction. Field acquisition, the changed generators, all query
+outputs and the inverse are charged. Conversely, a full coefficient vector
+answers each such field query by evaluation. Thus the complete fixed-saving
+complexity target in Section5 is equivalently a single-field coefficient
+engine uniform in the supplied primitive generator, with polynomial-in-q
+overhead. This is a standard finite-field/CRT encoding observation, not a
+new coefficient algorithm or an exponent gain. It applies to these reduced
+e=1 levels; it does not discard nilpotent coordinates at other levels.
+
+The [semiprime specialization](semiprime-single-field.md) is stronger in a
+different direction: it uses only ONE fixed component per level and a
+quadratic, with an explicit semiprime promise. A provider restricted to
+that promise does not satisfy the all-input field-query contract above.
