@@ -1,0 +1,517 @@
+{
+ "scope": "numerical complete-profile diagnostic of the degenerate asymmetric gauge scale; no crossing or global-optimality claim",
+ "alphabet": 4,
+ "degree": 24,
+ "zero_scale_identity": "R(log s -> 0, theta) = cos(theta)+sin(theta) for every rectangular A,B,B,A complete profile",
+ "zero_scale_tests": [
+  {
+   "generator_index": 5056,
+   "constant": 1,
+   "pole": 2,
+   "log_s": 1e-08,
+   "angle": 1e-10,
+   "support_value": 1.0000000000003566,
+   "cos_plus_sin": 1.0000000001,
+   "absolute_error": 9.96434046385275e-11
+  },
+  {
+   "generator_index": 5056,
+   "constant": 1,
+   "pole": 2,
+   "log_s": 1e-08,
+   "angle": 0.0001,
+   "support_value": 1.0000999373123913,
+   "cos_plus_sin": 1.0000999949998333,
+   "absolute_error": 5.768744193446196e-08
+  },
+  {
+   "generator_index": 5056,
+   "constant": 1,
+   "pole": 2,
+   "log_s": 1e-08,
+   "angle": 0.001,
+   "support_value": 1.0009994421276105,
+   "cos_plus_sin": 1.000999499833375,
+   "absolute_error": 5.770576461117116e-08
+  },
+  {
+   "generator_index": 5056,
+   "constant": 1,
+   "pole": 2,
+   "log_s": 1e-08,
+   "angle": 0.01,
+   "support_value": 1.0099497760432352,
+   "cos_plus_sin": 1.009949833750832,
+   "absolute_error": 5.77075967012064e-08
+  },
+  {
+   "generator_index": 5056,
+   "constant": 1,
+   "pole": 2,
+   "log_s": 1e-08,
+   "angle": 0.03,
+   "support_value": 1.029545476243751,
+   "cos_plus_sin": 1.0295455339514832,
+   "absolute_error": 5.77077321484154e-08
+  },
+  {
+   "generator_index": 5056,
+   "constant": 1,
+   "pole": 2,
+   "log_s": 1e-08,
+   "angle": 0.1,
+   "support_value": 1.0948375242170743,
+   "cos_plus_sin": 1.094837581924854,
+   "absolute_error": 5.7707779665960857e-08
+  },
+  {
+   "generator_index": 5056,
+   "constant": 1,
+   "pole": 2,
+   "log_s": 1e-08,
+   "angle": 0.7853981633974483,
+   "support_value": 1.4142135046652982,
+   "cos_plus_sin": 1.414213562373095,
+   "absolute_error": 5.7707796763395436e-08
+  },
+  {
+   "generator_index": 4035,
+   "constant": 1,
+   "pole": 4,
+   "log_s": 1e-08,
+   "angle": 1e-10,
+   "support_value": 1.0000000000144313,
+   "cos_plus_sin": 1.0000000001,
+   "absolute_error": 8.556866326614454e-11
+  },
+  {
+   "generator_index": 4035,
+   "constant": 1,
+   "pole": 4,
+   "log_s": 1e-08,
+   "angle": 0.0001,
+   "support_value": 1.0000999373108925,
+   "cos_plus_sin": 1.0000999949998333,
+   "absolute_error": 5.76889407355452e-08
+  },
+  {
+   "generator_index": 4035,
+   "constant": 1,
+   "pole": 4,
+   "log_s": 1e-08,
+   "angle": 0.001,
+   "support_value": 1.0009994421278912,
+   "cos_plus_sin": 1.000999499833375,
+   "absolute_error": 5.770548394679054e-08
+  },
+  {
+   "generator_index": 4035,
+   "constant": 1,
+   "pole": 4,
+   "log_s": 1e-08,
+   "angle": 0.01,
+   "support_value": 1.0099497760436893,
+   "cos_plus_sin": 1.009949833750832,
+   "absolute_error": 5.770714261998933e-08
+  },
+  {
+   "generator_index": 4035,
+   "constant": 1,
+   "pole": 4,
+   "log_s": 1e-08,
+   "angle": 0.03,
+   "support_value": 1.029545476244209,
+   "cos_plus_sin": 1.0295455339514832,
+   "absolute_error": 5.770727429244005e-08
+  },
+  {
+   "generator_index": 4035,
+   "constant": 1,
+   "pole": 4,
+   "log_s": 1e-08,
+   "angle": 0.1,
+   "support_value": 1.09483752421751,
+   "cos_plus_sin": 1.094837581924854,
+   "absolute_error": 5.7707344014445994e-08
+  },
+  {
+   "generator_index": 4035,
+   "constant": 1,
+   "pole": 4,
+   "log_s": 1e-08,
+   "angle": 0.7853981633974483,
+   "support_value": 1.4142135046657631,
+   "cos_plus_sin": 1.414213562373095,
+   "absolute_error": 5.770733180199272e-08
+  }
+ ],
+ "source_sha256": {
+  "evidence/dense-rank-one-coupled-frames.json": "1e6b46b06c86500f0d9ed061383e02722d707f7e5f95c243c3ea340b1db6c09c",
+  "evidence/dense-coupled-companion-pressure.json": "9c6bd43db6085c140ba3cb67a76931b840eb8db2711348caf5c3dbf37f4c88c9",
+  "tools/asymmetric_crossing_pressure.py": "de017ff2d5c352505aa2b3ec9a2541f8fb4db0bdd2e70b3ec74de91c4713ca42",
+  "tools/dense_coupled_reflection_frames.py": "ce0b2dcc390a4c7f1a7fdaf88016132b0f6fca70b7b96406b92792420aeeebe0",
+  "tools/native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+  "tools/native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6"
+ },
+ "cases": [
+  {
+   "generator_index": 5056,
+   "constant": 1,
+   "pole": 2,
+   "u": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "v": [
+    1,
+    0,
+    0,
+    1
+   ],
+   "seed_sha256": "b1695d0a85a6d02e20bfb468bb70d5ad83e4ab37da9ea692b22377728b19dd20",
+   "ratio_log_s": 4.7591804921380714e-05,
+   "ratios": [
+    -4.709088113750773,
+    -0.7090009703858702,
+    -6.350211751132689,
+    -0.2664541842782561,
+    0.004071933337265901,
+    0.32521875345151524,
+    0.9584759536854118,
+    1.327147518432496,
+    1.3275914786632077,
+    6.000196620204543,
+    2.267077785694943,
+    8.267066103188752,
+    6.075242194619832,
+    5.945379319897147,
+    4.352473101589534,
+    -1.5929064566138706,
+    -1.7227691057109604,
+    4.352472860568931,
+    -1.9760158532506398,
+    2.0084500064476405,
+    -0.0002068501734981388,
+    -2.008656867011697,
+    1.9758089286512306,
+    -0.0002069158172202761
+   ],
+   "scaled": [
+    {
+     "log_s": 0.0002,
+     "angle": 1e-10,
+     "support_value": 1.0000003514430602,
+     "minus_one_over_s_squared": 8.786076505229445
+    },
+    {
+     "log_s": 0.0001,
+     "angle": 1e-10,
+     "support_value": 1.0000000878650024,
+     "minus_one_over_s_squared": 8.786500238500139
+    },
+    {
+     "log_s": 5e-05,
+     "angle": 1e-10,
+     "support_value": 1.0000000219678276,
+     "minus_one_over_s_squared": 8.78713102281381
+    },
+    {
+     "log_s": 2.5e-05,
+     "angle": 1e-10,
+     "support_value": 1.0000000054926776,
+     "minus_one_over_s_squared": 8.788284233673949
+    },
+    {
+     "log_s": 1.25e-05,
+     "angle": 1e-10,
+     "support_value": 1.0000000013735213,
+     "minus_one_over_s_squared": 8.79053629887494
+    }
+   ],
+   "quadratic_coefficient": 8.786105202115582
+  },
+  {
+   "generator_index": 4035,
+   "constant": 1,
+   "pole": 4,
+   "u": [
+    0,
+    1,
+    0,
+    0
+   ],
+   "v": [
+    0,
+    0,
+    1,
+    0
+   ],
+   "seed_sha256": "dcb174d1037d059516407d28837cd3c274014af3de3fbc86d63e1535b9fb5e8e",
+   "ratio_log_s": 0.002712151136578734,
+   "ratios": [
+    58.14576534693918,
+    62.42006028347206,
+    117.99348626542188,
+    70.93631738091743,
+    41.49768782933282,
+    121.91924108340635,
+    66.63239677484266,
+    57.88824804322731,
+    126.0809350261095,
+    53.025422230451454,
+    86.28637369892886,
+    129.91060618588216,
+    3.9913743230319447,
+    7.991475055883823,
+    7.99995767642673,
+    4.008609968745028,
+    0.008604915747032546,
+    7.99998807414361,
+    -0.0008300930087646557,
+    -0.0008814963037714946,
+    2.2939378611068655e-08,
+    0.0008874582465476826,
+    0.00094242034626731,
+    3.7903377666299234e-05
+   ],
+   "scaled": [
+    {
+     "log_s": 0.0002,
+     "angle": 1e-10,
+     "support_value": 1.0000000244048803,
+     "minus_one_over_s_squared": 0.6101220084708814
+    },
+    {
+     "log_s": 0.0001,
+     "angle": 1e-10,
+     "support_value": 1.0000000076146291,
+     "minus_one_over_s_squared": 0.7614629149443886
+    },
+    {
+     "log_s": 5e-05,
+     "angle": 1e-10,
+     "support_value": 1.0000000026597269,
+     "minus_one_over_s_squared": 1.0638907532722897
+    },
+    {
+     "log_s": 2.5e-05,
+     "angle": 1e-10,
+     "support_value": 1.000000001043175,
+     "minus_one_over_s_squared": 1.6690801629692942
+    },
+    {
+     "log_s": 1.25e-05,
+     "angle": 1e-10,
+     "support_value": 1.0000000004498815,
+     "minus_one_over_s_squared": 2.8792413786504767
+    }
+   ],
+   "quadratic_coefficient": 0.6206539617616414
+  }
+ ],
+ "finite_angle_context": [
+  {
+   "generator_index": 4035,
+   "constant": 1,
+   "pole": 4,
+   "recorded_support_value": 1.0014360027905598,
+   "recorded_angle": 0.030000000000000023
+  },
+  {
+   "generator_index": 63,
+   "constant": 1,
+   "pole": 8,
+   "recorded_support_value": 1.0014407204155154,
+   "recorded_angle": 0.03
+  }
+ ],
+ "limit_scan": {
+  "scope": "exploratory re-optimization of the top twenty recorded asymmetric refinements at angle 1e-8 and log(s)>=0.0005; not replayed by the checker",
+  "rows": [
+   {
+    "finite_support": 1.0014360027905598,
+    "limit_support": 1.000001851179684,
+    "generator_index": 4035,
+    "constant": 1,
+    "pole": 4,
+    "log_s": 0.0014699345794952094,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0014407204155154,
+    "limit_support": 1.0000018820296437,
+    "generator_index": 63,
+    "constant": 1,
+    "pole": 8,
+    "log_s": 0.001644414969526615,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.002065586836399,
+    "limit_support": 1.0001074779055672,
+    "generator_index": 4035,
+    "constant": 1,
+    "pole": 1,
+    "log_s": 0.001586586699166346,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.002065586836399,
+    "limit_support": 1.0000033342832266,
+    "generator_index": 4035,
+    "constant": 1,
+    "pole": 2,
+    "log_s": 0.0009702110958911642,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.002065586836399,
+    "limit_support": 1.00000481822726,
+    "generator_index": 4035,
+    "constant": 1,
+    "pole": 3,
+    "log_s": 0.0009699725683366187,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.002766672669929,
+    "limit_support": 1.0000014428454254,
+    "generator_index": 63,
+    "constant": 1,
+    "pole": 1,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0027696616782569,
+    "limit_support": 1.0000014431131983,
+    "generator_index": 63,
+    "constant": 1,
+    "pole": 7,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0027702192331522,
+    "limit_support": 1.0000014427652442,
+    "generator_index": 63,
+    "constant": 1,
+    "pole": 6,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0027734661468306,
+    "limit_support": 1.000012159745031,
+    "generator_index": 63,
+    "constant": 1,
+    "pole": 4,
+    "log_s": 0.00080038010093199,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0027755376303746,
+    "limit_support": 1.0000014427824242,
+    "generator_index": 63,
+    "constant": 1,
+    "pole": 3,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0027757660860497,
+    "limit_support": 1.0000014442105551,
+    "generator_index": 63,
+    "constant": 1,
+    "pole": 5,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0027869055234635,
+    "limit_support": 1.0000014428544854,
+    "generator_index": 63,
+    "constant": 1,
+    "pole": 2,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0028192318327338,
+    "limit_support": 1.0000028853882585,
+    "generator_index": 1075,
+    "constant": 1,
+    "pole": 2,
+    "log_s": 0.0005000000000000001,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.002819231964437,
+    "limit_support": 1.0000027952217978,
+    "generator_index": 1343,
+    "constant": 1,
+    "pole": 1,
+    "log_s": 0.0005000000000000002,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0028192320551061,
+    "limit_support": 1.0000028853883045,
+    "generator_index": 1343,
+    "constant": 1,
+    "pole": 2,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0028192320944507,
+    "limit_support": 1.0000015485793647,
+    "generator_index": 79,
+    "constant": 1,
+    "pole": 1,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0028192321289866,
+    "limit_support": 1.000001713392409,
+    "generator_index": 5056,
+    "constant": 1,
+    "pole": 1,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.002819232280318,
+    "limit_support": 1.000001916148848,
+    "generator_index": 79,
+    "constant": 1,
+    "pole": 2,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.002819233508613,
+    "limit_support": 1.000001088287796,
+    "generator_index": 5056,
+    "constant": 1,
+    "pole": 2,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   },
+   {
+    "finite_support": 1.0028192341855473,
+    "limit_support": 1.0000018487385924,
+    "generator_index": 78,
+    "constant": 1,
+    "pole": 1,
+    "log_s": 0.0005,
+    "angle": 1e-08
+   }
+  ],
+  "minimum": 1.000001088287796,
+  "maximum": 1.0001074779055672
+ }
+}

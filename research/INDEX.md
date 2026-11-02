@@ -1231,6 +1231,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [An affine reflection path with eight additional singular places](affine-quadratic-place-crossings.md)
 - [Completed entrywise, finite-frame, mixed-place, and hot-code searches](algorithm-final-search-checkpoint.md)
 - [Supporting lines from opposite flags at several places](asymmetric-mixed-place-crossings.md)
+- [Degenerate asymmetric scaling of complete rectangular two-cut profiles](asymmetric-degenerate-scaling-floor.md): the recorded q4 asymmetric winner `1.001436` is bound-constrained; at zero gauge scale every rectangular `A,B,B,A` complete profile has support value `cos(theta)+sin(theta)`, so the degenerate corner is at least one. q4 replays approach one from above (best `1+1.37e-9`), and a bounded rank-two square-zero screen is worse. No strict crossing; unequal channel counts or non-rectangular cuts remain open.
 - [A weighted two-cut bound gives a complete rectangular factoring transfer](asymmetric-modular-transfer.md)
 - [Asymmetric supporting lines for crossing pieces](asymmetric-support-line-crossings.md)
 - [Opposite Bell jets have a unique simultaneous eighth-order carrier](bell-jet-transversality.md)
