@@ -39,8 +39,12 @@ The focused checker verifies the positive band identity and 20 oriented
 compositions on five fixed fundamental/nonmaximal discriminants. Its
 finite cutoffs certify geometry, not the external analytic thresholds.
 The previous semiprime and Fourier controls and credits are retained.
-Full default verification is pending; no new Lean, independent review or
-stronger complete factoring exponent is claimed.
+The [full default replay](../evidence/uniform-ambient-minorant-full-verification.json)
+passes at exact source `bfb5f74b487b725b4e3ccf9ab2819b3f94151e98`
+(tree `d21be71afac040234c4203e79bcc370879aeb71f`), in 773.91 seconds
+with clean state before and after. The archive follow-up changes review
+prose and receipts only. No new Lean, independent review or stronger
+complete factoring exponent is claimed.
 
 ## Ambient positive-minorant obstruction on semiprime inputs
 

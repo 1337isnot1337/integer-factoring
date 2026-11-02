@@ -1,0 +1,16 @@
+{
+  "source_commit": "bfb5f74b487b725b4e3ccf9ab2819b3f94151e98",
+  "source_tree": "d21be71afac040234c4203e79bcc370879aeb71f",
+  "command": [
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 773.9136312669871,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "scope": "Default non-Lean verification at the exact source commit; no independent mathematical review.",
+  "stdout_sha256": "f7cde3536ef43db20eb0778626e46c70866c247120a0fa8f09b87c5e3d3824a5",
+  "stdout_archive": "evidence/uniform-ambient-minorant-full-verification.stdout.txt.xz",
+  "archive_sha256": "90d1bc55d8d629fe9a7b7da88561fcf6f22f5157b35eb7ffda6338ba1f2bc891"
+}
