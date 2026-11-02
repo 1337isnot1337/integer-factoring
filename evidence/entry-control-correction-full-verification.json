@@ -1,0 +1,43 @@
+{
+  "head": "059a215cab000d216bcaff4838b0c4e6a6a913f4",
+  "tree": "78f5b43d10e5c432e31bc3b890955c6121d472c4",
+  "pre_status": "",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-entry-moment-cycles",
+      "verify-relation-change-events"
+    ]
+  ],
+  "started_utc": "2026-11-02T03:25:27Z",
+  "exit_code": 0,
+  "seconds": 748.8694109969947,
+  "post_status": "",
+  "scope": "Full corrected independent entry replay and integrated relation-change source; no stronger factoring claim, new Lean or independent mathematical review.",
+  "stdout_sha256": "41331be97f1cd3f3f29c1d22d453bb390744eb30c0c0e6c3fde0492beed1d875",
+  "stdout_archive": "evidence/entry-control-correction-full-verification.stdout.txt.xz",
+  "archive_sha256": "1e3dd119d99d12ddd017ad8882ec1dc9357ec834ce9218e90ddefab217b88235",
+  "additional_checks": {
+    "instrumented_walk_compositions": 219306,
+    "forced_cap": 1000,
+    "calls_at_forced_stop": 1000,
+    "base_cycle_flags_moments_and_run_profiles_preserved": true,
+    "actual_g7_first_hit": 3823,
+    "shifted_g5_first_hit": 1265
+  },
+  "integration_head": "cf3ec3b7cf14c13ec37867746856cd84634d7ead",
+  "unchanged_source_blobs_after_integration": {
+    "tools/check_entry_moment_cycles.py": "bf341d7c9a475d4cff4f7e37162be26ed1c8f33b",
+    "evidence/entry-moment-cycles.json": "3573c65528522c00a56eacfacfd27cde20fb5c01",
+    "tools/check_relation_change_events.py": "beaf7aff4a7332cbb8091d4f8f8f5715349cf120"
+  },
+  "integration_checks": [
+    "make verify-entry-moment-cycles verify-relation-change-events",
+    "python3 tools/check_seven_letter_asymmetric_profile.py",
+    "make verify-docs"
+  ]
+}

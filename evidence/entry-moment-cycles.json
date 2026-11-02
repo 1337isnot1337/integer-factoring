@@ -3,6 +3,7 @@
   "claim": "Exact raw/entry lower-tail moments on two complete base cycles",
   "complete_cycles": 2,
   "composition_cap": 250000,
+  "composition_cap_scope": "Aggregate base-walk compositions; derived index tracked in the existing walk.",
   "cycles": [
     {
       "actual_start": {
@@ -567,7 +568,8 @@
           "window": 5152,
           "wraps_period": false
         }
-      ]
+      ],
+      "walk_compositions": 20456
     },
     {
       "actual_start": {
@@ -582,17 +584,113 @@
         "period": 198850
       },
       "derived_other_generator": {
+        "actual_power_walk": {
+          "direction_prime": 7,
+          "entry_flags_sha256": "a3d178abc66dde884433cdd4db73c7cbdaa9772226ac8d94da4481b31de6cfa8",
+          "entry_good": 73,
+          "first_entry_offset": 3823,
+          "first_hit_offset": 3823,
+          "legacy_entry_window_3260": {
+            "start_phase": 7,
+            "window": 3260,
+            "window_empty": true,
+            "window_hits": 0
+          },
+          "matched_mean_start_controls": [
+            {
+              "mean_multiple": 1,
+              "process": "raw",
+              "start_phase": 7,
+              "window": 580,
+              "window_empty": true,
+              "window_hits": 0
+            },
+            {
+              "mean_multiple": 2,
+              "process": "raw",
+              "start_phase": 7,
+              "window": 1160,
+              "window_empty": true,
+              "window_hits": 0
+            },
+            {
+              "mean_multiple": 4,
+              "process": "raw",
+              "start_phase": 7,
+              "window": 2319,
+              "window_empty": true,
+              "window_hits": 0
+            },
+            {
+              "mean_multiple": 8,
+              "process": "raw",
+              "start_phase": 7,
+              "window": 4638,
+              "window_empty": false,
+              "window_hits": 14
+            },
+            {
+              "mean_multiple": 1,
+              "process": "entry",
+              "start_phase": 7,
+              "window": 2724,
+              "window_empty": true,
+              "window_hits": 0
+            },
+            {
+              "mean_multiple": 2,
+              "process": "entry",
+              "start_phase": 7,
+              "window": 5448,
+              "window_empty": false,
+              "window_hits": 2
+            },
+            {
+              "mean_multiple": 4,
+              "process": "entry",
+              "start_phase": 7,
+              "window": 10896,
+              "window_empty": false,
+              "window_hits": 4
+            },
+            {
+              "mean_multiple": 8,
+              "process": "entry",
+              "start_phase": 7,
+              "window": 21792,
+              "window_empty": false,
+              "window_hits": 10
+            }
+          ],
+          "period": 198850,
+          "raw_flags_sha256": "ee50548ffc9406ca07ea7355dc92e9cada4778a70854fc8b55d4a7fac47a3c75",
+          "raw_good": 343,
+          "run_profile": {
+            "max_entry_gap": 4508,
+            "max_hit_run": 13,
+            "max_zero_run": 4506
+          },
+          "start_base_phase": 67863,
+          "start_exponent": 7,
+          "stride_in_base_cycle": 66509
+        },
         "actual_start_phase": 67863,
         "discrete_index": 66509,
-        "first_hit_offset": 1265,
-        "flag": 0,
+        "index_acquisition": "Tracked during the existing base cycle; zero extra walk compositions.",
         "least_power_above_height": 7,
         "prime": 7,
         "prime_form": [
           7,
           -5,
           35715571433
-        ]
+        ],
+        "shifted_base_walk_start": {
+          "direction_prime": 5,
+          "first_hit_offset": 1265,
+          "flag": 0,
+          "phase": 67863,
+          "stride_in_base_cycle": 1
+        }
       },
       "discriminant": -1000036000099,
       "entry": {
@@ -623,14 +721,14 @@
           "moment_order": 6,
           "process": "raw",
           "required_constant_decimal": 16.665980187819574,
-          "start": {
-            "start_phase": 9,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
             "window": 580,
             "window_empty": true,
             "window_hits": 0
           },
-          "start_derived_other": {
-            "start_phase": 67863,
+          "start": {
+            "start_phase": 9,
             "window": 580,
             "window_empty": true,
             "window_hits": 0
@@ -647,14 +745,14 @@
           "moment_order": 36,
           "process": "raw",
           "required_constant_decimal": 6.038929360961029,
-          "start": {
-            "start_phase": 9,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
             "window": 580,
             "window_empty": true,
             "window_hits": 0
           },
-          "start_derived_other": {
-            "start_phase": 67863,
+          "start": {
+            "start_phase": 9,
             "window": 580,
             "window_empty": true,
             "window_hits": 0
@@ -671,17 +769,17 @@
           "moment_order": 6,
           "process": "raw",
           "required_constant_decimal": 21.488526408507163,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 1160,
+            "window_empty": true,
+            "window_hits": 0
+          },
           "start": {
             "start_phase": 9,
             "window": 1160,
             "window_empty": false,
             "window_hits": 9
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 1160,
-            "window_empty": true,
-            "window_hits": 0
           },
           "window": 1160
         },
@@ -695,17 +793,17 @@
           "moment_order": 36,
           "process": "raw",
           "required_constant_decimal": 6.8999325689482,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 1160,
+            "window_empty": true,
+            "window_hits": 0
+          },
           "start": {
             "start_phase": 9,
             "window": 1160,
             "window_empty": false,
             "window_hits": 9
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 1160,
-            "window_empty": true,
-            "window_hits": 0
           },
           "window": 1160
         },
@@ -719,17 +817,17 @@
           "moment_order": 6,
           "process": "raw",
           "required_constant_decimal": 19.95400648927303,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 2319,
+            "window_empty": false,
+            "window_hits": 5
+          },
           "start": {
             "start_phase": 9,
             "window": 2319,
             "window_empty": false,
             "window_hits": 10
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 2319,
-            "window_empty": false,
-            "window_hits": 5
           },
           "window": 2319
         },
@@ -743,17 +841,17 @@
           "moment_order": 36,
           "process": "raw",
           "required_constant_decimal": 6.445929078823003,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 2319,
+            "window_empty": false,
+            "window_hits": 5
+          },
           "start": {
             "start_phase": 9,
             "window": 2319,
             "window_empty": false,
             "window_hits": 10
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 2319,
-            "window_empty": false,
-            "window_hits": 5
           },
           "window": 2319
         },
@@ -767,17 +865,17 @@
           "moment_order": 6,
           "process": "raw",
           "required_constant_decimal": 12.845363318481583,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 4638,
+            "window_empty": false,
+            "window_hits": 5
+          },
           "start": {
             "start_phase": 9,
             "window": 4638,
             "window_empty": false,
             "window_hits": 14
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 4638,
-            "window_empty": false,
-            "window_hits": 5
           },
           "window": 4638
         },
@@ -791,17 +889,17 @@
           "moment_order": 36,
           "process": "raw",
           "required_constant_decimal": 3.504641139615871,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 4638,
+            "window_empty": false,
+            "window_hits": 5
+          },
           "start": {
             "start_phase": 9,
             "window": 4638,
             "window_empty": false,
             "window_hits": 14
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 4638,
-            "window_empty": false,
-            "window_hits": 5
           },
           "window": 4638
         },
@@ -815,17 +913,17 @@
           "moment_order": 6,
           "process": "entry",
           "required_constant_decimal": 1.1373816527829472,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 3260,
+            "window_empty": false,
+            "window_hits": 1
+          },
           "start": {
             "start_phase": 9,
             "window": 3260,
             "window_empty": false,
             "window_hits": 3
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 3260,
-            "window_empty": false,
-            "window_hits": 1
           },
           "window": 3260
         },
@@ -839,17 +937,17 @@
           "moment_order": 36,
           "process": "entry",
           "required_constant_decimal": 0.3773709196369789,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 3260,
+            "window_empty": false,
+            "window_hits": 1
+          },
           "start": {
             "start_phase": 9,
             "window": 3260,
             "window_empty": false,
             "window_hits": 3
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 3260,
-            "window_empty": false,
-            "window_hits": 1
           },
           "window": 3260
         },
@@ -863,17 +961,17 @@
           "moment_order": 6,
           "process": "entry",
           "required_constant_decimal": 1.4265015851864202,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 6520,
+            "window_empty": false,
+            "window_hits": 1
+          },
           "start": {
             "start_phase": 9,
             "window": 6520,
             "window_empty": false,
             "window_hits": 4
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 6520,
-            "window_empty": false,
-            "window_hits": 1
           },
           "window": 6520
         },
@@ -887,17 +985,17 @@
           "moment_order": 36,
           "process": "entry",
           "required_constant_decimal": 0.4338158488962982,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 6520,
+            "window_empty": false,
+            "window_hits": 1
+          },
           "start": {
             "start_phase": 9,
             "window": 6520,
             "window_empty": false,
             "window_hits": 4
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 6520,
-            "window_empty": false,
-            "window_hits": 1
           },
           "window": 6520
         },
@@ -911,17 +1009,17 @@
           "moment_order": 6,
           "process": "entry",
           "required_constant_decimal": 0.5910529320124911,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 13040,
+            "window_empty": false,
+            "window_hits": 1
+          },
           "start": {
             "start_phase": 9,
             "window": 13040,
             "window_empty": false,
             "window_hits": 4
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 13040,
-            "window_empty": false,
-            "window_hits": 1
           },
           "window": 13040
         },
@@ -935,17 +1033,17 @@
           "moment_order": 36,
           "process": "entry",
           "required_constant_decimal": 0.15781538576105325,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 13040,
+            "window_empty": false,
+            "window_hits": 1
+          },
           "start": {
             "start_phase": 9,
             "window": 13040,
             "window_empty": false,
             "window_hits": 4
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 13040,
-            "window_empty": false,
-            "window_hits": 1
           },
           "window": 13040
         },
@@ -959,17 +1057,17 @@
           "moment_order": 6,
           "process": "entry",
           "required_constant_decimal": 0.25736358603210274,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 26079,
+            "window_empty": false,
+            "window_hits": 8
+          },
           "start": {
             "start_phase": 9,
             "window": 26079,
             "window_empty": false,
             "window_hits": 11
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 26079,
-            "window_empty": false,
-            "window_hits": 8
           },
           "window": 26079
         },
@@ -983,17 +1081,17 @@
           "moment_order": 36,
           "process": "entry",
           "required_constant_decimal": 0.07670064401695126,
+          "shifted_base_walk_start": {
+            "start_phase": 67863,
+            "window": 26079,
+            "window_empty": false,
+            "window_hits": 8
+          },
           "start": {
             "start_phase": 9,
             "window": 26079,
             "window_empty": false,
             "window_hits": 11
-          },
-          "start_derived_other": {
-            "start_phase": 67863,
-            "window": 26079,
-            "window_empty": false,
-            "window_hits": 8
           },
           "window": 26079
         }
@@ -1060,17 +1158,17 @@
             "moment_rhs": 21755680691972687271641651111122535208034518675100218157984763709980226796392501207631174320119158965817192494842801523925045919344741731744676038787160374990430084459801256115444438750788085388592839589107875074348702237767795706025676010772869314616007209118699156879438026025326120675958145380559794596133864671901827724828911184709417940130118072602587005819289600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
             "process": "raw",
             "required_constant_decimal": 0.13188626350599522,
+            "shifted_base_walk_start": {
+              "start_phase": 67863,
+              "window": 46400,
+              "window_empty": false,
+              "window_hits": 71
+            },
             "start": {
               "start_phase": 9,
               "window": 46400,
               "window_empty": false,
               "window_hits": 79
-            },
-            "start_derived_other": {
-              "start_phase": 67863,
-              "window": 46400,
-              "window_empty": false,
-              "window_hits": 71
             },
             "window": 46400
           },
@@ -1092,17 +1190,17 @@
             "moment_rhs": 41295100653254433911397898992369902284060948652451019503803120376600450976764500197066282306211135372332617299434277765659307141087682529174171079585573259695920616432016710182898499894959026262791986550079820900490343643459704934805691571502933143474199313317623165668472155158807163976206910016481796964563390201663111908911342538056377504357043475926426213524798269591714709803662328054330223848315534944199681555143065600000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
             "process": "raw",
             "required_constant_decimal": 0.1432377882071965,
+            "shifted_base_walk_start": {
+              "start_phase": 67863,
+              "window": 90480,
+              "window_empty": false,
+              "window_hits": 152
+            },
             "start": {
               "start_phase": 9,
               "window": 90480,
               "window_empty": false,
               "window_hits": 163
-            },
-            "start_derived_other": {
-              "start_phase": 67863,
-              "window": 90480,
-              "window_empty": false,
-              "window_hits": 152
             },
             "window": 90480
           },
@@ -1139,10 +1237,13 @@
           "window": 508560,
           "wraps_period": true
         }
-      ]
+      ],
+      "walk_compositions": 198850
     }
   ],
+  "derived_lookup_compositions": 0,
   "factoring_exponent_improved": false,
   "predicate": "proper leading-norm gcd OR residual after fixed-base saturation <= cap",
-  "scope": "Finite Path C diagnostic on the two cycles registered at Discussion #51; no uniform density, moment, or window theorem."
+  "scope": "Finite Path C diagnostic on the two cycles registered at Discussion #51; no uniform density, moment, or window theorem.",
+  "total_walk_compositions": 219306
 }

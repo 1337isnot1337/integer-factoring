@@ -43,6 +43,14 @@ The predeclared diagnostic used:
 - empty-window fractions at matched mean counts `1,2,4,8`;
 - the actual `K_p` starting phase.
 
+The current replay enforces an aggregate cap of 250000 base-walk
+compositions. The two periods use exactly 219306 steps; the generator-seven
+index is recorded during the existing generator-five walk and costs no
+extra walk. The earlier separate index helper added 66509 steps, making
+its aggregate 285815; its `composition_cap` field did not certify that
+aggregate. This bookkeeping error is corrected without changing either
+base cycle's flags, moments or run profile.
+
 For a window `W`, with cyclic window counts `A_x(W)` and `mu=delta W`, the
 tested inequality is
 
@@ -171,13 +179,23 @@ initial gaps:
 - cycle B: `K_5=9`, `f(9)=0`, first hit at offset `664`. The raw `m=1`
   window `W=580` is empty; the raw `m=2` window `W=1160` and the entry
   `W=3260` window contain hits (nine and three respectively).
-- `g_7` (cycle B): index `66509`, start phase `67863`, `f=0`, first hit at
-  offset `1265`. The raw `W=580` and `W=1160` windows are empty; the entry
-  `W=3260` window contains one entry.
+- The **actual `g_7` power walk** has flags
+  `f_7(j)=f_5(66509*j mod 198850)` and starts at exponent `K_7=7`.
+  Its first hit is at offset **3823**. It has 343 raw hits and 73 entries;
+  maximum raw and entry zero gaps are 4506 and 4508. Its raw windows
+  `W=580,1160` and its one-mean entry window `W=2724` are empty at this
+  start. The two-mean entry window `W=5448` contains two entries.
+- A separate **shifted generator-five walk** begins at base phase `67863`
+  but advances by one base step, not by `66509`. Its first hit offset is
+  `1265` and its entry window `W=3260` contains one entry. Those old
+  measurements are retained under explicit shifted-base labels. The
+  actual generator-seven entry window of length `3260` is empty.
 
-This is the concrete phenomenon the registered experiment was aimed at: small
-raw windows can be empty at the actual phase, while the entry process at a
-matched or slightly larger window is nonempty.
+Thus both raw and entry windows can miss at an actual starting phase.
+The derived control records its own stride and density; the moment tables
+above continue to concern the two original base directions. The broader
+[saved-cycle replay](clustered-hits-and-pooled-rank.md) independently checks
+the actual generator-seven direction and its moments.
 
 ## 6. Verdict and remaining obligation
 
@@ -197,6 +215,14 @@ They do **not** establish a uniform theorem. The missing uniform inputs are:
   high order `q` and window `W`;
 - the usual density and generation inputs of the arithmetic selector.
 
+The [relation-change event follow-up](relation-change-event-density.md)
+replaces pure entries by changes of the integer row. It proves a polynomial
+density-loss bound for that changed process, without assuming a raw-cluster
+length bound. Its own uniform event moments and original subgroup density
+remain open. The finite flags of the two processes agree on the saved
+generator-five and generator-seven directions; this agreement is not a
+general identity.
+
 On the sparse 40-bit cycle, the entry density loss makes the `C=1,2` sufficient
 window exceed the period. That is a small-scale obstruction to the finite
 certificate, not evidence that the entry constants fail: the constants at
@@ -205,8 +231,8 @@ control the period-root/density tradeoff for the actual parameter scales, not
 only the matched-mean constants.
 
 No complete factoring exponent changes. The experiment isolates the next
-analytic target: an entry-process analogue of the cofactor orbit moment
-criterion, with a polynomial cluster-length bound and a `q`-uniform constant.
+analytic target: a uniform moment estimate for the chosen event process,
+together with its stated original density input.
 
 ## 7. Replay
 
@@ -226,3 +252,11 @@ owner's. This checkpoint is an independent exact implementation and replay.
 The arithmetic orbit code is the repository's existing prime-form machinery.
 Substantial AI assistance was used; no human review, Lean formalization or
 stronger score is claimed.
+
+The [clean full replay](../evidence/entry-control-correction-full-verification.json)
+passes the default and focused entry/event gates at exact source
+`059a215cab000d216bcaff4838b0c4e6a6a913f4` in 748.87 seconds, with
+clean tracked state before and after. Its complete compressed log is
+archived. The receipt also records the instrumented 219306-call replay
+and the forced-cap regression; later main integration checks are scoped
+separately.
