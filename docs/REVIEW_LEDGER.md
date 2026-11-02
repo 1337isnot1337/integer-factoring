@@ -1,5 +1,23 @@
 # Contribution review and disposition ledger
 
+## Quartic charge-creation divided square
+
+Sol worker 2, base `60a21ef`: the
+[global creation note](../research/charge-creation-square.md) complements
+the primary worker's PR #97, retaining its proposal and predecessor credit.
+A fixed-pair involution proves exact q8 cancellation of the full quadratic
+creation term. For eight distinct colors, an even binary relation code
+gives its uniform coefficient formula. These are author-checked ordinary
+construction identities, not independently reviewed mathematics.
+
+The [checker and receipt](../evidence/charge-creation-square.json) independently
+expand 987,840 q8 terms and compare literal quartet counts with binary ranks
+on all 6,435 q16 eight-color subsets. The ordinary-square and total-XOR-only
+shortcuts have explicit nonzero/zero guards. Focused replay, documentation
+(1,179 Markdown files) and whitespace checks pass; a full default
+replay is not yet recorded for this source. No full Smith profile, pressure
+gain, new Lean work or stronger complete factoring bound is claimed.
+
 ## Sol worker 1 boundary representation and contributed Euler recurrence
 
 The [word-boundary proof](../research/event-word-boundary.md) identifies

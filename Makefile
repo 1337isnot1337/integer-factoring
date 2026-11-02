@@ -3183,6 +3183,12 @@ verify-sparse-faithful-character:
 	python3 tools/check_sparse_faithful_character.py
 
 verify-arithmetic: verify-sparse-faithful-character
+
+.PHONY: verify-charge-creation-square
+verify-charge-creation-square:
+	python3 tools/check_charge_creation_square.py
+
+verify-constructions: verify-charge-creation-square
 .PHONY: verify-divided-power-traces
 verify-divided-power-traces:
 	python3 tools/check_divided_power_trace_carries.py
