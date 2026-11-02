@@ -14,8 +14,10 @@ The output is a finite diagnostic.  It proves no uniform window estimate.
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import json
+import lzma
 import math
 from math import gcd, isqrt, prod
 from pathlib import Path
@@ -168,7 +170,7 @@ def lower_tail_record(flags: bytes, window: int, order: int, constant: int) -> d
     """Exact check of (1/h) sum (mu-A)_+^{2q} <= (C q W delta)^q."""
     period, good = len(flags), sum(flags)
     counts = cyclic_window_counts(flags, window)
-    deviations = [good * window - period * count for count in counts]
+    deviations = [period * count - good * window for count in counts]
     lower = sum((-value) ** (2 * order) for value in deviations if value < 0)
     # lower <= (C q W good)^q * period^(q+1)
     unit_rhs = (order * window * good) ** order * period ** (order + 1)
@@ -191,7 +193,7 @@ def lower_tail_record(flags: bytes, window: int, order: int, constant: int) -> d
 def required_constant(flags: bytes, window: int, order: int) -> float:
     period, good = len(flags), sum(flags)
     counts = cyclic_window_counts(flags, window)
-    deviations = [good * window - period * count for count in counts]
+    deviations = [period * count - good * window for count in counts]
     lower = sum((-value) ** (2 * order) for value in deviations if value < 0)
     if lower == 0:
         return 0.0
@@ -348,16 +350,25 @@ def profile_cycle(record: dict) -> dict:
     return record
 
 
-def replay(expected_path: Path) -> None:
+def replay(expected_path: Path, *, saved_flags: bool = False) -> None:
     expected = json.loads(expected_path.read_text())
+    if saved_flags:
+        root = Path(__file__).resolve().parents[1]
+        sources = json.loads((root / "evidence/clustered-power-relations/receipt.json").read_text())["certificates"]
     total = 0
     for cycle in expected["cycles"]:
         if "derived_other_generator" in cycle:
             other = cycle["derived_other_generator"]["prime"]
         else:
             other = None
-        record = complete_cycle(cycle["integer"], cycle["cutoff"],
-                                cycle["generator_prime"], other, CAP - total)
+        if saved_flags:
+            source = next(item for item in sources if item["N"] == cycle["integer"])
+            record = copy.deepcopy(cycle)
+            record["flags"] = lzma.decompress((root / source["flags_file"]).read_bytes())
+            assert hashlib.sha256(record["flags"]).hexdigest() == cycle["flags_sha256"]
+        else:
+            record = complete_cycle(cycle["integer"], cycle["cutoff"],
+                                    cycle["generator_prime"], other, CAP - total)
         total += record["walk_compositions"]
         record = profile_cycle(record)
         assert record == cycle, f"Replay mismatch for N={cycle['integer']}"
@@ -369,10 +380,15 @@ def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path)
     parser.add_argument("--replay", type=Path)
+    parser.add_argument("--saved-flags", action="store_true",
+                        help="Reprofile the archived flags without new group compositions; requires --replay")
     args = parser.parse_args()
+    if args.saved_flags and not args.replay:
+        parser.error("--saved-flags requires --replay")
     if args.replay:
-        replay(args.replay)
-        print(f"Replay matches {args.replay}")
+        replay(args.replay, saved_flags=args.saved_flags)
+        mode = "Saved-flag profile (zero new compositions)" if args.saved_flags else "Replay"
+        print(f"{mode} matches {args.replay}")
         return
     specifications = (
         (450296711, 23, 2, None),

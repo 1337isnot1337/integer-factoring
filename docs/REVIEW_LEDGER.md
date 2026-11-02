@@ -1,5 +1,31 @@
 # Contribution review and disposition ledger
 
+## Entry lower-tail sign correction, base `89aeec9`
+
+The [correction](../research/entry-moment-tail-sign-correction.md) fixes
+two reversed deviation definitions in the entry-cycle checker. The
+period-three asymmetric regression returns the correct lower numerator
+2 rather than the previous upper numerator 4; it failed before the fix.
+The separate cofactor lower-tail implementation is unchanged and agrees
+with the repaired helper. All table statistics are recomputed from the
+existing saved flags, with no new compositions or parameter choices.
+
+The [correction receipt](../evidence/entry-tail-sign-correction.json)
+records 83 changed moment fields and unchanged orbit/window/gap metadata.
+All 32 matched-mean lower-tail tests pass C=2 after correction; the old
+general lower-tail contrast is withdrawn. The abstract moment implication,
+saved row/event data, and complete 1/2 theorem are unaffected. Historical
+full receipts still describe their exact old code; they do not establish
+the semantic validity of its mislabeled tail statistic.
+
+The asymmetric regressions, saved-flag replay and combined boundary/event
+prerequisite gate pass. The [full default replay](../evidence/entry-tail-sign-full-verification.json)
+passes at exact `de0c57c7d803fc17a32611a8116e011a607bff7f` in 2494.28 seconds,
+with clean tracked state before and after, inside private `/tmp`. Its
+complete compressed log is archived. Later proof/metadata clarification
+and integration preserve the corrected checker and canonical-statistics
+hashes; focused/docs checks cover those follow-ups separately.
+
 ## Sol worker 1 boundary representation and contributed Euler recurrence
 
 The [word-boundary proof](../research/event-word-boundary.md) identifies
