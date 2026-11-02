@@ -1,5 +1,21 @@
 # Contribution review and disposition ledger
 
+## Fixed noncommuting nilpotent Gram crossing
+
+The [construction and row-profile proof](../research/nilpotent-gram-crossing.md)
+give two exact degree-12 binary seven-letter tensors with the flip endpoint
+and rank one in both cold cuts. The canonical noncommuting flag changes
+the column profile but retains row orders (0,4^15,16^33). Convex integer
+balancing and AM-GM exclude the bare target at every two places over every
+finite coefficient extension, even with an optimistically relaxed column
+profile. These fixed constructions are stopped; other row profiles and
+collective criteria remain outside the claim. The complete exponent stays 1/2.
+
+The focused replay verifies 4802 endpoint entries, native profiles and ten
+independent row Toeplitz nullities. The exclusion uses exact integer
+comparisons, without numerical optimization. Full default verification is
+pending. No new Lean or independent mathematical review is claimed.
+
 ## Original smooth density from even prime products
 
 The [density theorem](../research/small-index-smooth-density.md) uses a
