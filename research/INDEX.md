@@ -2,6 +2,8 @@
 
 - [An arithmetic obstruction to ambient positive minorants](ambient-minorant-norm-gap.md): missed low-bias translates force exponentially small ambient means on a preprocessing-surviving semiprime family, under the pinned analytic input. The one-sided negative-spectrum repair is also excluded; target-subgroup certificates and original orbit hitting remain open.
 
+- [A confluent seven-letter quantum-spin crossing](confluent-quantum-spin.md): paired Casimir collisions yield an exact degree-six tensor, but its determinant budgets exclude the bare two-place target over every finite coefficient extension. No score change.
+
 - [Uniform density and gap control for changes of the relation row](relation-change-event-density.md): a periodic event process retains at least `delta/(2K_p-1)` density and increases the maximum zero gap by at most `2K_p-2`, without a raw-cluster-length conjecture. The saved cycles attain the segment cap and match measured entry flags. Uniform original density and event moments remain open; no stronger complete bound.
 
 - [Near-identity positive Fourier minorants](near-identity-positive-minorants.md): Fejer positivity bounds the recognizable raw power search by `(2K_p-1)D` if the original smooth set admits a positive Fourier minorant of mean at least `1/D`; neither the kernel nor `D` must be evaluated by the selector. The uniform ambient mean is excluded by the arithmetic norm-gap obstruction; subgroup-specific certificates remain open.

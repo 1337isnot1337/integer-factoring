@@ -3267,3 +3267,9 @@ verify-ambient-minorant-gap:
 	python3 tools/check_ambient_minorant_gap.py --output /tmp/integer-factoring-ambient-minorant-gap.json
 
 verify-arithmetic: verify-ambient-minorant-gap
+
+.PHONY: verify-confluent-quantum-spin
+verify-confluent-quantum-spin:
+	python3 tools/check_confluent_quantum_spin.py --output /tmp/integer-factoring-confluent-quantum-spin.json
+
+verify-arithmetic: verify-confluent-quantum-spin
