@@ -1,5 +1,20 @@
 # Contribution review and disposition ledger
 
+## CM mixing scope and ambient interpolation budget
+
+Sol worker 1, base `afdda60`: the [source audit](../research/cm-mixing-event-scope.md)
+pins Khayutin1710.04557v3 Theorem1.3, BBK2212.06280v2 Theorem4.2,
+and BBR2603.05609v1 Theorem2.5. It records hypotheses, averaging sets,
+rate and test-function gaps without importing their external proofs as
+verified here. The earlier sparse-orbit literature routing is retained.
+The ordinary adjacent-form argument proves an exponential Lipschitz
+budget on a family of order discriminants; no infinite fundamental or
+hard-composite subfamily is claimed. Five exact constructed controls,
+including a small-cutoff p-free guard, pass with documentation links and
+whitespace. Full default verification will be recorded separately.
+This is author verification, without independent mathematical review,
+new Lean or any complete bound improvement.
+
 ## Near-height smooth descent
 
 Sol worker 1, base `440c816`: the
