@@ -113,6 +113,15 @@ original smooth representatives and their words, not just two image
 identifiers. The image of a recognizable smooth set need not itself be
 efficiently recognizable.
 
+The predecessor's principal-word gap, safe-radius injection and event
+separation do **not** transfer automatically to this image. As supplied in
+[the scoped feedback](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360786),
+at discriminant -23 the nonidentity prime form `(2,1,3)` has order three.
+The M=3 image kills its nonzero word although its norm two is below 23/4.
+Image collisions must therefore be retained; the original p-free boundary
+bijection cannot be used unchanged. The positive autocorrelation theorem
+is applied anew to the image set and requires no inherited injective ball.
+
 To construct rows, take the usual integer `K_0>W+2A`, where W bounds sample
 word lengths. Apply (5) to `t=g_i^(K_0)` and set
 

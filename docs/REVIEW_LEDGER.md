@@ -17,6 +17,9 @@ fail but all 48 quotient targets pass. Static class groups -7423/-26623
 reuse the contributed boundary examples with source credit, distinguish
 different-class preimages from strict descent, and recover their full
 two-parts. Their generator/relation enumeration is finite supplied data.
+The direct filter rejects residual odd order thirteen, and the contributed
+discriminant -23 guard prevents importing the old principal-word gap or
+event separation unchanged into the image.
 Focused replay, links in 1,186 Markdown files and whitespace pass; full
 default verification is pending for this source. This is an
 author-checked ordinary relaxation, without independent mathematical

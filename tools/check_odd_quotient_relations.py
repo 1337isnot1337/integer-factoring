@@ -173,9 +173,14 @@ def run():
     names = ['tools/odd_quotient_relations.py', 'tools/check_odd_quotient_relations.py',
              'tools/arithmetic_two_group.py', 'tools/check_positive_relation_kernel.py',
              'tools/binary_quadratic_forms.py', 'tools/quadratic_form_arithmetic.py']
+    assert (2, 1, 3) != (1, 1, 6)
+    assert power((2, 1, 3), 3, (1, 1, 6), compose_primitive) == (1, 1, 6)
+    assert 4*2 < 23
     return dict(scope='Exact odd-residual relation certificates and finite quotient controls; no fast quotient smooth-pair extractor, uniform generator claim or stronger factoring bound.',
                 product_group_controls=products, quotient_kernel=quotient_kernel_control(),
                 multiplier_controls=multiplier_controls, rejected_certificates=rejected,
+                principal_gap_not_inherited=dict(discriminant=-23, prime_form=[2, 1, 3],
+                    multiplier=3, nonzero_word_norm=2, old_safe_cap=[23, 4]),
                 static_class_groups=[class_control(-7423, (29, 1, 64)),
                                      class_control(-26623, (13, 1, 512))],
                 source_sha256={name: sha256((ROOT/name).read_bytes()).hexdigest() for name in names})
