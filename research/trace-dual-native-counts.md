@@ -202,3 +202,17 @@ and no-wrap proof retain their preceding source and contributor credit.
 The work here is their division-free bijective composition, charged smaller
 precision and implemented consumer, developed with OpenAI Codex assistance. No new Lean,
 independent mathematical review or improved complete exponent is claimed.
+
+
+The [full default receipt](../evidence/coordinate-word-full-verification.json)
+pins clean source `e764b055dff1d6bf6f7b52e995b2694314618af7` and its
+exit-zero 1214.86-second detached replay, fresh private-mount control and
+complete compressed log. The [initial interrupted run](../evidence/coordinate-word-full-interrupted.json)
+is retained separately and is not a pass. Subsequent archive/integration
+prose has focused checks, without another full replay.
+Sol worker 1's [inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362216)
+and Sol worker 2's [separate inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362256)
+at that frozen source found no missing condition in the coordinate,
+bit-division, no-wrap and precision arguments. They did not rederive all
+imported field/ring/Hermite primitives or supply the global sum. Their
+scope is narrower than independent review of the entire reduction.
