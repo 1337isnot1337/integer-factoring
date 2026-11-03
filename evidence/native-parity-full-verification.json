@@ -55,5 +55,9 @@
       "verify-docs"
     ],
     "markdown_files": 1205
+  },
+  "subsequent_archival_integration": {
+    "main_commit": "1340ed6255e512b14adacf5a7cb283e79e87d202",
+    "scope": "Later PR116 spatial-full archive and documentation integration; no implementation change or broader full pin."
   }
 }
