@@ -2,6 +2,8 @@
 
 - [Quartic Pfaffians truncate a Gaussian](pfaffian-quartic-truncation.md): a characteristic-two creation identity removes higher Gaussian occupations. A repeated-colour covariant q8 completion deletes all order12..15 channels, but returns 322 at sixteen; exact generic jets and a positive scalar certificate force a 4/5 profile floor and stop this completion. The identity, full support controls and explicit endpoint/degree costs are retained; no stronger complete bound.
 
+- [Exact entry gaps and the cluster-length loss](entry-gap-cluster-loss.md): for a nonconstant cyclic predicate, the exact entry hitting window is the largest entry distance. Formal moment-window formulas differ by at most the mean-cluster ceiling at fixed parameters; their hypotheses remain separate. Nine specified traversals and censored prefixes are finite controls, with cyclic-subgroup overlap identified; no uniform estimate or score change.
+
 - [A floor from the first fifty q8 orders](q8-leading-prefix-floor.md): only the protected orders 0^1,6^14,12^35 and determinant-degree cap already force common-paired-type pressure at least 5/7>1/sqrt(2). An exact scalar certificate stops all later-jet refinements retaining these premises, without another tensor profile; other alphabets and changed early structure remain outside scope.
 
 - [One chosen cyclotomic completion](one-cyclotomic-completion.md): explicitly polynomial 2-adic precision and exact LLL decoding recover the full integral divisor coefficient from one fixed-character local value. The all-input conditional transfer counts Hensel acquisition, numerical field degree, precision, levels and integer recovery; no original-index coefficient engine or stronger complete bound.
@@ -74,6 +76,8 @@
 - [Normalize Fourier windows on the target cycle](window-orbit-normalization.md): character restriction absorbs all zero target phases into a positive orbit mean, with an exact coset-collision formula and all-scale sufficient window criterion. Rational finite-group controls and PR75 scope repairs do not supply a quantitative arithmetic window or new score.
 
 - [Self-dual Pfaffian codes and uniform crossing blocks](pfaffian-derivative-codes.md): a strict equal-copy Gaussian compression has self-dual deletion codes, a uniform subset constructor, and two explicit Hamming kernels giving every vertex-degree block. Complete finite profiles with independent literal/Toeplitz controls are above the critical target; no score improvement.
+
+- [A complete k=4 determinant-code profile](determinant-k4-profile.md): both natural profiles resolve at cutoff 511 (9,800 orders, zero tails), 130 selected original-matrix entries pass, and the sampled pressure `0.7394802516` stays above `1/sqrt(2)`; the k=2,3,4 values are flat and no score improvement follows.
 
 - [Determinant derivative physical codes](determinant-inverse-codes.md): all minors give a deletion-closed space of dimension binomial(2k,k), compatible diagonal/antidiagonal retractions and a dense Cauchy dual. Exact finite map acquisition changes the protected low core; favorable complete cut ranks and a score improvement are not inferred from the height character.
 
@@ -1738,7 +1742,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 - [Routing-rank no-go: graph view](generic-engine-routing-rank-graphs.md): MAIS/index-coding attribution for Theorem A; Theorem A′ closes the substitution door and the non-product-array door for Q = O(log n); remaining gap (b′) stated.
 - [Window lemma: graph and lattice view](leading-power-window-graphs.md): smooth set is bracketed by weighted-ℓ¹ ball images (Lemma 1), explaining small-p clustering and Fourier bias; expander, hitting-time, Bohr and flatness routes reduce to the known barriers; conditional IW derandomization remark.
 - [Multiplier treewidth and relation cycles](multiplier-treewidth-and-relation-cycles.md): a linear lower bound for the unfixed Boolean multiplication relation, with a corrected half-size odd variant. Fixed-target transfer requires unchanged output pins or specified simplicial-output deletions; arbitrary propagation and other representations remain open.
-- [Window-lemma character duality](window-lemma-character-duality.md): proved finite-group Fourier inequalities, with ramified relations quotiented and large coefficients distinguished from simultaneous phase closeness; complete orbit-relative mass estimates remain open.
+- [Window-lemma character duality](window-lemma-character-duality.md): proved finite-group Fourier inequalities, with ramified relations quotiented and large coefficients distinguished from simultaneous phase closeness. The Hecke zero-density source already permits a selected subgroup annihilator; smooth-coefficient energy and complete orbit-relative mass estimates remain open.
 
 ## q96 unequal-cut-scale screen
 

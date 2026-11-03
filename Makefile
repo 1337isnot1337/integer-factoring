@@ -2102,6 +2102,10 @@ verify-entry-moment-cycles:
 verify-entry-moment-saved:
 	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json --saved-flags
 
+.PHONY: verify-entry-gap-cluster-loss
+verify-entry-gap-cluster-loss:
+	python3 tools/check_entry_gap_cluster_loss.py --output evidence/entry-gap-cluster-loss.json
+
 verify-arithmetic: verify-entry-moment-saved
 
 .PHONY: verify-output-space-transfer
@@ -3312,6 +3316,14 @@ verify-determinant-inverse-codes:
 .PHONY: verify-determinant-inverse-profiles
 verify-determinant-inverse-profiles:
 	python3 tools/check_determinant_inverse_profiles.py
+
+.PHONY: verify-determinant-inverse-k4
+verify-determinant-inverse-k4:
+	python3 tools/check_determinant_inverse_k4.py
+
+.PHONY: verify-determinant-inverse-k4-full
+verify-determinant-inverse-k4-full:
+	python3 tools/check_determinant_inverse_k4.py --full
 
 .PHONY: verify-pfaffian-derivative-codes
 verify-pfaffian-derivative-codes:
