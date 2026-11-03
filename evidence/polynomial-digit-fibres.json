@@ -2,7 +2,7 @@
   "scope": "Classical known-polynomial fibre acquisition, exact carry identity and roughness/primitive consequence. No fast carry selection, complete-bound improvement or LLL implementation.",
   "source_sha256": {
     "tools/check_polynomial_digit_fibres.py": "256d98e7cc245bbb2f60da1836bb7bf33302b3354f58ab965a917c736e2a65ca",
-    "research/polynomial-digit-fibres.md": "091c31158b0835a4c2623b4bc662f1a217ce0193a0667cae2b0eeb9ce7b75db3"
+    "research/polynomial-digit-fibres.md": "a6aa29e1a9c6e0f8c18ece18106f9c24254734c1c93a9b8fbf67952c5611a910"
   },
   "acquisition": "SymPy 1.14.0 in a private venv; finite acquisition, not the LLL implementation.",
   "factorizations": 3651,

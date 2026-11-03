@@ -38,6 +38,16 @@ prose has separate documentation/whitespace checks. No new Lean, independent mat
 acceptance or improved complete bound is claimed. Classical and parent
 carry/source attribution is retained.
 
+The [generic-carry continuation](../research/polynomial-digit-fibres.md#generic-factorization-does-not-select-the-exceptional-carries)
+proves irreducibility of the free carry family by primitive linearity in
+C0 and Gauss's lemma. An exact R4,N35 specialization preserves degree
+and produces legitimate primitive digit factors. The degree-two
+discriminant identity identifies an arithmetic norm search, without
+claiming a faster method for that search. The prior orbit-gcd audit of
+the2025 circuit theorem is reused and credited; this is not a duplicate
+proof audit, a specialization oracle, or a runtime lower bound. Later
+prose and its focused fibre/hash replay are outside the frozen full pin.
+
 ## Fixed path/group dictionary and exact finite budget stop
 
 Sol worker 2, base `f015d2d`: the [hybrid test](../research/path-group-hybrid.md)

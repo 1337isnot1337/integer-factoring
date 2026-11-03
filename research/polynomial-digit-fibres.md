@@ -168,6 +168,63 @@ Contracting a whole transform into this fibre function does not
 automatically supply its dense table over all boundary coefficients.
 It also does not change the leading pad in the existing evaluator.
 
+### Generic factorization does not select the exceptional carries
+
+This distinction can be made exact. Leave C0 free in
+
+```math
+F(X,\mathbf C)=N_R(X)+(R-X)\sum_{j=0}^{T-2}C_jX^j,
+\qquad N_R(R)=N\ne0.
+```
+
+Then F is irreducible over `Q[C_0,...,C_(T-2),X]`, and hence over
+`Q(C_0,...,C_(T-2))[X]`. Indeed regard it as a polynomial in C0 over
+the UFD `A=Q[X,C_1,...]`. Its coefficient is R-X. The remaining
+term reduces to the nonzero rational constant N modulo R-X, so the
+two coefficients are coprime in A. Thus F is primitive and linear in
+C0; it is irreducible over the fraction field of A, and Gauss's lemma
+applies. Its positive X-degree permits localization to `Q(C)[X]`.
+The same argument holds after fixing any other carry coefficients,
+provided C0 remains free. This is an elementary Gauss-lemma application,
+not a new general irreducibility theorem.
+
+Nevertheless useful specializations exist. At R=4,N=35, fix the unused
+top carry to zero and consider the degree-two family
+
+```math
+F(X,U,V)=3+2X^2+(4-X)(U+VX).
+```
+
+It is generically irreducible, but U=0,V=1 gives
+`3+4X+X^2=(X+1)(X+3)`. Both factors have digits below4 and evaluate
+to5,7 at X=4; N has no prime divisor below4. The specialization also
+preserves degree two, so this phenomenon is not just a leading-degree
+drop.
+
+The [existing orbit-gcd source audit](interval-orbit-gcd.md#4-what-existing-algebraic-results-actually-supply)
+already records the constant-depth, polynomial-total-degree Q-circuit
+hypotheses of [the 2025 factorization theorem](https://arxiv.org/html/2504.08063v2#S5.SS1).
+That result factors a supplied polynomial and preserves generic factors
+under its variable reduction. It does not find exceptional integer
+specializations of an irreducible family. No bit-cost or characteristic-two
+transfer from that theorem is assumed here. This is the carry-family
+instance of the generic-specialization distinction in the earlier note,
+not a lower bound against an algorithm that actively searches for those
+specializations.
+
+At degree two the arithmetic selection problem has a useful exact form.
+If `W=aX^2+bX+c`, a!=0, and W(R)=N, its discriminant satisfies
+
+```math
+b^2-4ac=(b+2aR)^2-4aN.
+```
+
+This follows by substituting c=N-aR^2-bR. A rational factorization
+requires this integer discriminant to be a square; integrality and
+digit bounds must still be checked. It is a difference-of-squares/norm
+search across the carry choices, not a supplied generic factor. No
+faster collective norm search is supplied by this identity.
+
 The next relevant question is a **collective** carry selection or sum
 using this primitive-fibre structure, with every query, intermediate
 size and deterministic bit operation counted. A method making Q fibre
