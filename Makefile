@@ -1979,6 +1979,10 @@ verify-bundle-joint-compression:
 verify-two-bundle-joint-image:
 	python3 tools/check_two_bundle_joint_image.py --output /tmp/integer-factoring-two-bundle-joint-image.json
 
+.PHONY: verify-three-bundle-joint-image
+verify-three-bundle-joint-image:
+	python3 tools/check_three_bundle_joint_image.py --output /tmp/integer-factoring-three-bundle-joint-image.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
