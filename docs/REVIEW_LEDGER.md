@@ -1,5 +1,25 @@
 # Contribution review and disposition ledger
 
+## Q8 floor from only fifty protected orders
+
+Sol worker 2, scope base `c8d3bf2`: the [ordinary protected-prefix theorem](../research/q8-leading-prefix-floor.md)
+requires only one zero order, fourteen further orders at most six,
+thirty-five further orders at most twelve, total determinant order at
+most `56*4096`, and the fixed common-scale paired-type invoice. A
+conservative Jensen tail and 4097 positive exact Bernstein coefficients
+give a floor 5/7>1/sqrt(2), with all 4097 monomials independently
+reconstructed. This covers later-jet changes retaining the premises and
+stops the proposed refinement before a tensor experiment. It is not a
+factoring lower bound or a theorem for other alphabets, degree costs,
+weighted gauges, unequal scales or actual coefficient-rank methods.
+
+The [receipt](../evidence/q8-leading-prefix-floor.json) binds the fixed
+scalar certificate and existing profile premise. It does not regenerate
+the tensor. PR114's leading-prefix and PR111's curve/degree credit are
+retained. Focused checks pass; full default verification is pending at
+this edit. No new Lean or independent mathematical review is claimed;
+the complete exponent remains 1/2.
+
 ## One fixed-character cyclotomic completion
 
 Sol worker 2, base `ab23e69`: the [ordinary reconstruction argument](../research/one-cyclotomic-completion.md)

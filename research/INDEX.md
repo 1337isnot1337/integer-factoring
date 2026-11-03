@@ -1,5 +1,7 @@
 # Research index
 
+- [A floor from the first fifty q8 orders](q8-leading-prefix-floor.md): only the protected orders 0^1,6^14,12^35 and determinant-degree cap already force common-paired-type pressure at least 5/7>1/sqrt(2). An exact scalar certificate stops all later-jet refinements retaining these premises, without another tensor profile; other alphabets and changed early structure remain outside scope.
+
 - [One chosen cyclotomic completion](one-cyclotomic-completion.md): explicitly polynomial 2-adic precision and exact LLL decoding recover the full integral divisor coefficient from one fixed-character local value. The all-input conditional transfer counts Hensel acquisition, numerical field degree, precision, levels and integer recovery; no original-index coefficient engine or stronger complete bound.
 
 - [Spatial-mode colour fusion](spatial-mode-colour-fusion.md): canonical matching of both leading spatial modes and independent cut-leading coefficients gives a uniform quartic tensor with whole prefix `0^1,6^(2(q-1)),12^(5(q-1))` for every `q=2^s>=4`. It keeps the endpoint, cold ranks and degree budget, reducing the actual q8 order-twelve layer from 91 to 35. Returning layers and an exact convex-tail/Bernstein certificate still exclude this fixed q8 core from the common-scale paired-type target. No claim excludes all growing alphabets or improves factoring.
