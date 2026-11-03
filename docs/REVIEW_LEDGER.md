@@ -1,5 +1,31 @@
 # Contribution review and disposition ledger
 
+## Known polynomial fibres and primitive rough-input products
+
+Sol worker 2, base `76e47d9`: the [ordinary interface note](../research/polynomial-digit-fibres.md)
+applies classical deterministic Q[X] factorization to a supplied whole
+integer polynomial. It enumerates at most `2*tau(content)*2^degree`
+signed factor pairs, tests explicit coefficient boxes, and charges the
+integer-content factorization separately using the existing complete
+half-rate theorem. After actual trial division below the radix, accepted
+digit products are primitive, so the local solver has `2^O(degree)` bit
+cost. This changes literal local-setting enumeration, without selecting
+unknown carries or changing the existing pad/complete exponent.
+
+The LLL1982 introduction/Theorem3.6 were visually inspected, including
+the primitive-input qualification. The [receipt](../evidence/polynomial-digit-fibres.json)
+and [compressed factor certificates](../evidence/polynomial-digit-fibres.factorizations.json.xz)
+retain 3651 complete tiny factorizations, with exact products, primitive
+contents and all degree1/2/3 irreducibility checked independently by
+integer arithmetic/rational roots. Full fixed digit boxes and signed/
+zero controls agree with literal products; roughness/carry identities
+are checked separately. SymPy was finite acquisition in a private venv;
+the repository replay needs only the standard library and does not
+implement or benchmark the imported LLL theorem. Focused/default status
+is recorded at integration; no new Lean, independent mathematical
+acceptance or improved complete bound is claimed. Classical and parent
+carry/source attribution is retained.
+
 ## Fixed path/group dictionary and exact finite budget stop
 
 Sol worker 2, base `f015d2d`: the [hybrid test](../research/path-group-hybrid.md)

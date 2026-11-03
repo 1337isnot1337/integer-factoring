@@ -3486,3 +3486,9 @@ verify-path-group-hybrid:
 	python3 tools/check_path_group_hybrid.py
 
 verify-arithmetic: verify-path-group-hybrid
+
+.PHONY: verify-polynomial-digit-fibres
+verify-polynomial-digit-fibres:
+	python3 tools/check_polynomial_digit_fibres.py
+
+verify-arithmetic: verify-polynomial-digit-fibres
