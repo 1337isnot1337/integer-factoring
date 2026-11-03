@@ -3480,3 +3480,9 @@ verify-pfaffian-quartic-truncation:
 	python3 tools/check_pfaffian_quartic_truncation.py
 
 verify-arithmetic: verify-pfaffian-quartic-truncation
+
+.PHONY: verify-path-group-hybrid
+verify-path-group-hybrid:
+	python3 tools/check_path_group_hybrid.py
+
+verify-arithmetic: verify-path-group-hybrid
