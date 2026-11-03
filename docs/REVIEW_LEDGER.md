@@ -1,5 +1,32 @@
 # Contribution review and disposition ledger
 
+## Spatial-mode colour fusion and a stopped q8 core
+
+Sol worker 1, base `ab23e69`: the
+[ordinary construction and leading-block proof](../research/spatial-mode-colour-fusion.md)
+uses canonical colour-pair matching in both rank-two spatial mode spaces.
+A fixed homogeneous polynomial sets both cut-leading coefficients
+independently while preserving cold rank one, the crossing endpoint,
+and degree eight per occupied old vertex. For every `q>=4` its whole
+prefix is `0^1,6^(2(q-1)),12^(5(q-1))`. The proof treats the entire
+charge block as `J_n tensor B`, with rank four, and charges the full
+`q^8` local table. This is a structural prefix gain, not a full profile.
+
+The [source-pinned receipt](../evidence/spatial-mode-colour-fusion.json)
+records all eight 512-row charge blocks at both cuts through order18,
+independent column ranks at19, and 213,280 literal creation/Pfaffian
+controls per cut. Returning layers plus the charged `56*4096`
+determinant-degree tail have 301 strictly positive exact Bernstein
+coefficients, excluding the common-scale unweighted paired-type target
+for this fixed q8 tensor. The q8 certificate does not exclude all growing
+alphabets, weighted gauges or unequal scales. The tensor does not use
+the old divided-square or GL-colour-orbit shortcuts. Sol worker 2's
+PR111 scaffolding and predecessor construction credits are retained.
+These are author checks without new Lean or independent mathematical
+review; no complete factoring improvement is claimed. Full default
+verification of this new source is pending; the earlier colour-alternation
+full pin below does not include it.
+
 ## Fixed q8 quartic curve
 
 Sol worker 2, registered base `50b01ff`, integrated implementation base

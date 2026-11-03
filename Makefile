@@ -3438,3 +3438,9 @@ verify-colour-alternation:
 	python3 tools/check_colour_alternation.py
 
 verify-arithmetic: verify-colour-alternation
+
+.PHONY: verify-spatial-mode-fusion
+verify-spatial-mode-fusion:
+	python3 tools/check_spatial_mode_colour_fusion.py
+
+verify-arithmetic: verify-spatial-mode-fusion
