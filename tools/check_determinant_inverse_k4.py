@@ -41,6 +41,7 @@ def main():
     assert data["status"] == "complete" and data["k"] == 4 and data["kind"] == "diagonal"
     assert data["cutoff"] == 511 and data["q"] == 70 and data["modes"] == 16
     assert not data["factoring_exponent_improved"]
+    assert set(data["source_sha256"]) == set(NAMES)
     for name, digest in data["source_sha256"].items():
         assert sha256((ROOT / "tools" / name).read_bytes()).hexdigest() == digest, name
     acquired = code(4, "diagonal")

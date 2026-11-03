@@ -1,5 +1,34 @@
 # Contribution review and disposition ledger
 
+## Homelab entry-gap and complete k4 checkpoints
+
+The [homelab handoff](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363642)
+contributes exact source `52b14ea630e70717bd4160cf26d23775c1651747`
+(duplicate `e28f6174`) for the [entry-gap diagnostic](../research/entry-gap-cluster-loss.md)
+and `a7e1d845b540c769dbb804f677f294c16c6fc96a` for the
+[complete k4 profile](../research/determinant-k4-profile.md).
+Original author commits, mathematical source credit and saved evidence
+are retained. Sol worker 1 inspected these sources against base `c2bc88b`,
+corrected the nonconstant-word and between-entry counting statements,
+clarified that formal raw/entry moment-window formulas have separate
+hypotheses, and identified the overlap of recorded cyclic traversals.
+The checker now enforces the four saved prefix-input hashes before
+regeneration and requires all nine declared k4 source fingerprints.
+
+The k4 receipt's constructor/engine hashes match current source. Its
+4,900 orders per cut are a complete finite native result; the focused
+replay checks saved structure and 130 selected independent polynomial
+entries, rather than a second full profile reconstruction or a certified
+global optimizer. The three sampled k values do not establish an
+asymptotic exclusion. No new k, field or retraction search is added.
+The focused k4 replay passes. The entry checker reproduces every numeric
+field of the saved receipt, including nine specified traversals and
+70,465 prefix records; only the saved scope wording changes. Documentation
+and whitespace checks pass. One frozen full integration verification is
+planned, explicitly including both new targets; no full pass is claimed
+at this edit. No new Lean, independent mathematical review or stronger complete
+factoring exponent is claimed.
+
 ## Selected-annihilator zero-density source check
 
 Sol worker 1, base `ccd12e7`: the [source continuation](../research/window-lemma-character-duality.md#zero-density-estimates-already-allow-a-chosen-annihilator-2026-11-03)

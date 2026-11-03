@@ -37,6 +37,8 @@ The [Fourier window analysis](research/window-orbit-normalization.md) separates 
 
 An [entry-moment sign correction](research/entry-moment-tail-sign-correction.md) recomputes the old tables from saved flags: their earlier lower-tail labels actually measured upper deviations. The claimed general raw-versus-entry lower-tail contrast is withdrawn; periods, gaps and the complete bound are unchanged.
 
+An [entry-gap diagnostic](research/entry-gap-cluster-loss.md) separates the exact cyclic entry window from the larger conditional moment certificate. It retains nine specified generator traversals and censored prefix summaries, with overlapping cyclic subgroups identified. These finite controls provide no uniform gap or moment theorem.
+
 An [even-product density theorem](research/small-index-smooth-density.md) now proves original smooth density at least `exp(-O(b/log b))` on every subgroup of index at most `D^kappa`, for fixed `kappa<1/4`, under the principal split-prime estimate. With the full pinned character estimate, every coset is covered for `kappa<1/64`. Covered prime orbits inherit row-change density at the same scale. Actual target indices and short-window moments remain open.
 
 A [sparse faithful-character reduction](research/sparse-faithful-character.md) replaces the full character-order family by one coefficient vector at each eligible prime level. Exact code distance, polynomial sparse decoding and classical lower-sieve prime acquisition preserve every fixed logarithmic-saving exponent, conditionally on a faster composite-index coefficient engine. Actual divisor reciprocity also gives an inversion-fixed weight-one target and recovers paired field components under the stated condition. The engine remains open.
@@ -73,6 +75,8 @@ A [near-identity positivity criterion](research/near-identity-positive-minorants
 The [box-minor theorem](research/bare-seven-to-twelve-letters.md) already excludes the bare, ungauged two-place Smith criterion for every alphabet `q<=12`, at every degree and over every field. The old [seven-letter asymmetric profile](research/seven-letter-asymmetric-profile.md) is excluded by the later adjugate condition at every integer ramification. Physical gauges, collective recombinations, actual coefficient ranks and other transfer criteria remain separate questions.
 
 A [confluent seven-letter quantum-spin construction](research/confluent-quantum-spin.md) has a rank-one specialization, but an exact determinant budget excludes its bare two-place target over every finite coefficient extension. That fixed degeneration is stopped.
+
+The [completed k=4 determinant-code profile](research/determinant-k4-profile.md) resolves all 9,800 cut orders at cutoff 511, with 130 selected original-matrix entry controls. Its sampled natural pressure is about 0.7394803, above the crossing target; no global scale optimum or all-scale exclusion is claimed. This closes the local k panel without a stronger factoring bound.
 
 A [noncommuting nilpotent Gram test](research/nilpotent-gram-crossing.md) also preserves the endpoint and both cold ranks one, but its row Smith profile forces pressure above the required threshold over every finite coefficient extension. This fixed construction is stopped.
 
