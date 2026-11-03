@@ -1,5 +1,24 @@
 # Contribution review and disposition ledger
 
+## Fixed q8 quartic curve
+
+Sol worker 2, registered base `50b01ff`, integrated implementation base
+`8e4754b`: the [fixed-curve certificate](../research/fixed-curve-quartic-floor.md)
+keeps the cube pairing fixed and charges the doubled homogeneous degree.
+Exact full charge-zero/one jets through eighteen give the prefix
+0^1,6^14,12^91,18^254. A determinant-degree tail and positive degree-200
+Bernstein certificate prove a profile-envelope floor 3/4 for every common
+paired physical type, including correlated types. This stops the q8 curve
+under the stated criterion, not other curves, coefficient ranks or factoring.
+
+The Gaussian projection and quartic sources retain their existing credit.
+The [checker and receipt](../evidence/fixed-curve-quartic-floor.json) use
+all repeated-color/four-occupied rows, independent column elimination,
+61,376 literal creation controls and full monomial reconstruction of the
+Bernstein polynomial. Focused and documentation checks pass; default
+verification is pending at this edit. No independent mathematical review, new Lean or stronger complete
+bound is claimed.
+
 ## Fixed-field character large-sieve source check
 
 Sol worker 1, base `1e3301e`: the
