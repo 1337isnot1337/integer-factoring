@@ -240,7 +240,17 @@ was deliberately stopped after about seven minutes before output; its
 exit143 is recorded as incomplete. The permanent control verifies the
 nontrivial monomial coefficient bound at that order, without claiming
 its lattice replay. No larger field or reconstruction sweep is proposed.
-Focused checks pass; full default verification is pending at this edit.
+The [full default receipt](../evidence/one-completion-full-verification.json)
+and [complete compressed stdout](../evidence/one-completion-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at clean frozen
+`d5a1869d64e7b1f614522ffddf87c260eaa20d77`, tree
+`e8cde5ee9066de2efe4c8efcd41e8f136f0b74b2`, in 1385.48 seconds.
+A fresh marker probe verified private /tmp, read-only host root and only
+the frozen checkout writable, with network unshared. Tracked state stayed
+clean and the log includes this checker. Later main/PR114/115 integration
+has separate completion/spatial-fusion/docs1204 focused checks, outside
+that full-source pin. These are implementation checks, without a new
+Lean rebuild, independent mathematical review or coefficient engine.
 Further decoder optimization is not the next factoring mechanism: the
 open task is the stated original-index evaluator.
 

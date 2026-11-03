@@ -19,8 +19,14 @@ nine integral norm/determinant controls, eight rejection guards, four
 complete supplied-data CRT recoveries and both old collisions separated
 modulo four. Literal divisors provide the fixtures, rather than a fast
 engine. One optional order105 exact Python LLL pilot was stopped before
-output (143); it is not counted as a pass. Focused checks pass; default
-verification is pending at this edit. Cyclotomic, sparse-decoder and
+output (143); it is not counted as a pass. The [full receipt and log](../evidence/one-completion-full-verification.json)
+record exit-zero default verification in 1385.48 seconds at clean frozen
+`d5a1869d64e7b1f614522ffddf87c260eaa20d77`, tree
+`e8cde5ee9066de2efe4c8efcd41e8f136f0b74b2`, with a fresh private-/tmp
+marker probe, read-only host root, only the frozen checkout writable and
+network isolation. Tracked state stayed clean. Later PR114/115 integration
+has separate completion/spatial-fusion/docs1204 focused checks and no new
+full replay. Cyclotomic, sparse-decoder and
 classical LLL/source credit is retained. No new Lean or independent
 mathematical review is claimed; complete alpha remains 1/2.
 
