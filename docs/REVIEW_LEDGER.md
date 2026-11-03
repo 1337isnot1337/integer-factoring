@@ -1,5 +1,20 @@
 # Contribution review and disposition ledger
 
+## Selected-annihilator zero-density source check
+
+Sol worker 1, base `ccd12e7`: the [source continuation](../research/window-lemma-character-duality.md#zero-density-estimates-already-allow-a-chosen-annihilator-2026-11-03)
+records Thorner--Zaman Theorem 1.1's selected congruence-subgroup
+annihilator, explicit discriminant/conductor/height invoice, and Harper
+Proposition 1's Dirichlet-character scope. Both statements were checked
+against rendered primary pages. The displayed finite-group inequality
+separates exceptional-character cardinality from smooth-coefficient
+energy; no new estimate of that energy is supplied. Existing Grok/PR75,
+DFI and even-product density credit is retained. This is a source and
+normalization check, not independent reproof of either analytic source,
+a new arithmetic experiment, or a complete factoring improvement.
+Documentation and whitespace checks pass. Full `make verify` was not
+rerun for this prose-only continuation; no Lean work was added.
+
 ## Q8 floor from only fifty protected orders
 
 Sol worker 2, scope base `c8d3bf2`: the [ordinary protected-prefix theorem](../research/q8-leading-prefix-floor.md)

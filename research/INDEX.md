@@ -1736,7 +1736,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 - [Routing-rank no-go: graph view](generic-engine-routing-rank-graphs.md): MAIS/index-coding attribution for Theorem A; Theorem A′ closes the substitution door and the non-product-array door for Q = O(log n); remaining gap (b′) stated.
 - [Window lemma: graph and lattice view](leading-power-window-graphs.md): smooth set is bracketed by weighted-ℓ¹ ball images (Lemma 1), explaining small-p clustering and Fourier bias; expander, hitting-time, Bohr and flatness routes reduce to the known barriers; conditional IW derandomization remark.
 - [Multiplier treewidth and relation cycles](multiplier-treewidth-and-relation-cycles.md): a linear lower bound for the unfixed Boolean multiplication relation, with a corrected half-size odd variant. Fixed-target transfer requires unchanged output pins or specified simplicial-output deletions; arbitrary propagation and other representations remain open.
-- [Window-lemma character duality](window-lemma-character-duality.md): proved finite-group Fourier inequalities, with ramified relations quotiented and large coefficients distinguished from simultaneous phase closeness; complete orbit-relative mass estimates remain open.
+- [Window-lemma character duality](window-lemma-character-duality.md): proved finite-group Fourier inequalities, with ramified relations quotiented and large coefficients distinguished from simultaneous phase closeness. The Hecke zero-density source already permits a selected subgroup annihilator; smooth-coefficient energy and complete orbit-relative mass estimates remain open.
 
 ## q96 unequal-cut-scale screen
 
