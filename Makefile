@@ -3224,6 +3224,12 @@ verify-coordinate-inverse-words:
 
 verify-arithmetic: verify-coordinate-inverse-words
 
+.PHONY: verify-native-parity-hashes
+verify-native-parity-hashes:
+	python3 tools/check_native_parity_hashes.py
+
+verify-arithmetic: verify-native-parity-hashes
+
 .PHONY: verify-sparse-faithful-character
 verify-sparse-faithful-character:
 	python3 tools/check_sparse_faithful_character.py
