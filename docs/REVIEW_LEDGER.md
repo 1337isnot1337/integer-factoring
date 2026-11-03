@@ -21,8 +21,20 @@ integer arithmetic/rational roots. Full fixed digit boxes and signed/
 zero controls agree with literal products; roughness/carry identities
 are checked separately. SymPy was finite acquisition in a private venv;
 the repository replay needs only the standard library and does not
-implement or benchmark the imported LLL theorem. Focused/default status
-is recorded at integration; no new Lean, independent mathematical
+implement or benchmark the imported LLL theorem. Focused replay passes.
+The [combined frozen default receipt](../evidence/hybrid-fibre-full-verification.json)
+and [complete log](../evidence/hybrid-fibre-full-verification.stdout.txt.xz)
+record `make verify` exiting zero in2266.77 seconds at
+`a77833fad769c4f5d41a5520a53b6fae899d6133`, tree
+`d29052d8fc5fdef085f13e4723278555c4cfe35a`. The marker controls confirm
+private tmp, read-only host, writable frozen checkout and network
+isolation; pre/post tracked and final all-untracked state are empty,
+source/tree unchanged. Both actual new checker outputs, raw/archive
+hashes and decompression roundtrip were checked. GitHub rejected the
+automatic release comment as submitted too quickly; that communication
+failure is preserved and is separate from the successful suite.
+Later PR121 and generic-carry prose are outside this full pin; archival
+prose has separate documentation/whitespace checks. No new Lean, independent mathematical
 acceptance or improved complete bound is claimed. Classical and parent
 carry/source attribution is retained.
 
@@ -40,9 +52,12 @@ and coefficient-field extension do not change this fixed span exclusion.
 Original braid/fusion/kernel/core credit is retained. The diagnostic is
 stopped without a larger-size sweep. Coefficient recombinations, boundary
 subalphabets, new auxiliaries and uniform asymptotic results are outside
-scope. The complete focused replay with receipt generation passes;
-default verification of this addition is pending. The separate frozen
-PR118 verification excludes it. No new Lean, independent mathematical
+scope. The complete focused replay with receipt generation passes.
+The [combined frozen default](../evidence/hybrid-fibre-full-verification.json)
+passes in2266.77 seconds at `a77833f`, including the original sixteen
+tests and all219 coefficient rank pairs. The later113-case follow-up
+has its separate focused replay and is outside that full pin. The
+earlier PR118 default also excludes this addition. No new Lean, independent mathematical
 acceptance or score gain is claimed.
 
 Sol worker 1's [scope clarification](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366719)
@@ -56,7 +71,7 @@ tensor, site count, profile or field. This strengthens the finite
 individual-piece dictionary result to direct decompositions; new linear
 combinations measured as single pieces remain outside scope. Focused
 verification of this follow-up has a separate source pin: the live
-default at `a77833f` covers only the original16-case119 and120. No full
+default at `a77833f` passed and covers only the original16-case119 and120. No full
 restart or stronger complete-bound claim follows.
 
 ## Quartic Gaussian truncation and a stopped q8 completion
