@@ -3474,3 +3474,9 @@ verify-q8-leading-prefix-floor:
 	python3 tools/check_q8_leading_prefix_floor.py
 
 verify-arithmetic: verify-q8-leading-prefix-floor
+
+.PHONY: verify-pfaffian-quartic-truncation
+verify-pfaffian-quartic-truncation:
+	python3 tools/check_pfaffian_quartic_truncation.py
+
+verify-arithmetic: verify-pfaffian-quartic-truncation

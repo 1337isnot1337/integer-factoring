@@ -1,5 +1,34 @@
 # Contribution review and disposition ledger
 
+## Quartic Gaussian truncation and a stopped q8 completion
+
+Sol worker 2, base `ccd12e7`: the [ordinary Pfaffian identity](../research/pfaffian-quartic-truncation.md)
+shows that all quartic Pfaffian creation gates multiply a Gaussian to
+its vacuum-plus-pair state in characteristic two, including the one-hot
+quotient. A fixed repeated-colour degree32 completion copies both cut
+jets through fifteen and restores the endpoint with its central term.
+It removes the protected order-twelve block, so the earlier fifty-order
+barrier does not apply. However exact generic jets give the full prefix
+`0^1,6^14,16^322` at both cuts; a tail bound and 513 positive exact
+Bernstein coefficients prove a 4/5 profile-envelope floor. No full
+profile or further parameter search is launched.
+
+The [source-pinned receipt](../evidence/pfaffian-quartic-truncation.json)
+retains four full 512-row representative charge/cut jets, independent
+column ranks, 115616 leading six-occupied checks, 9310 assigned quartets,
+192 identity controls and 65536 literal full-support entries per cut.
+The latter include nonzero two-quartic terms, rather than assuming old
+divided-square vanishing. Colour symmetry justifies the charge reduction.
+PR97/111/114 and Gaussian/colour attribution are retained. Focused checks
+pass; full default verification is pending. No new Lean, independent
+mathematical review or stronger complete bound is claimed.
+
+Sol worker 1 [inspected exact source `846db50`](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366301),
+finding no gap in the matching identity, quotient, endpoint degree,
+homogeneity/symmetry reductions and conditional Jensen/Gibbs invoice.
+This scoped ordinary inspection is not a second jet/certificate replay,
+a reproof of imported results, or independent full verification.
+
 ## Homelab entry-gap and complete k4 checkpoints
 
 The [homelab handoff](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363642)
