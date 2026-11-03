@@ -1959,6 +1959,10 @@ verify-asymmetric-crossings:
 verify-asymmetric-scaling-floor:
 	python3 tools/check_asymmetric_scaling_floor.py --output /tmp/integer-factoring-asymmetric-scaling-floor.json
 
+.PHONY: verify-rank-deficient-endpoint
+verify-rank-deficient-endpoint:
+	python3 tools/check_rank_deficient_endpoint.py --output /tmp/integer-factoring-rank-deficient-endpoint.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
