@@ -3277,6 +3277,14 @@ verify-determinant-inverse-codes:
 verify-determinant-inverse-profiles:
 	python3 tools/check_determinant_inverse_profiles.py
 
+.PHONY: verify-determinant-inverse-k4
+verify-determinant-inverse-k4:
+	python3 tools/check_determinant_inverse_k4.py
+
+.PHONY: verify-determinant-inverse-k4-full
+verify-determinant-inverse-k4-full:
+	python3 tools/check_determinant_inverse_k4.py --full
+
 .PHONY: verify-pfaffian-derivative-codes
 verify-pfaffian-derivative-codes:
 	python3 tools/check_pfaffian_derivative_codes.py
