@@ -1975,6 +1975,10 @@ verify-fanout-forward-join:
 verify-bundle-joint-compression:
 	python3 tools/check_bundle_joint_compression.py --output /tmp/integer-factoring-bundle-joint-compression.json
 
+.PHONY: verify-two-bundle-joint-image
+verify-two-bundle-joint-image:
+	python3 tools/check_two_bundle_joint_image.py --output /tmp/integer-factoring-two-bundle-joint-image.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
