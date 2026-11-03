@@ -1,0 +1,84 @@
+{
+  "scope": "Classical known-polynomial fibre acquisition, exact carry identity and roughness/primitive consequence. No fast carry selection, complete-bound improvement or LLL implementation.",
+  "source_sha256": {
+    "tools/check_polynomial_digit_fibres.py": "256d98e7cc245bbb2f60da1836bb7bf33302b3354f58ab965a917c736e2a65ca",
+    "research/polynomial-digit-fibres.md": "091c31158b0835a4c2623b4bc662f1a217ce0193a0667cae2b0eeb9ce7b75db3"
+  },
+  "acquisition": "SymPy 1.14.0 in a private venv; finite acquisition, not the LLL implementation.",
+  "factorizations": 3651,
+  "primitive_irreducible_factor_controls": 7165,
+  "factor_certificate_raw_sha256": "d19d48366d42a60416e81364545511a4951d8aae9ddceb37214c496c514de34e",
+  "factor_certificate_archive_sha256": "7bfa6320b3fdc4b3ce8676481c4b9e79a92a84fb3903bdd039cf6a190e822253",
+  "sizes": [
+    {
+      "radix": 2,
+      "operand_digits": 4,
+      "literal_pairs": 256,
+      "distinct_product_polynomials": 96,
+      "three_box_fibre_checks": 288,
+      "carry_identity_controls": 256,
+      "rough_pairs_primitive_controls": 225,
+      "nonzero_fibre_content_histogram": {
+        "1": 225
+      },
+      "zero_fibre": 31
+    },
+    {
+      "radix": 4,
+      "operand_digits": 3,
+      "literal_pairs": 4096,
+      "distinct_product_polynomials": 1834,
+      "three_box_fibre_checks": 5502,
+      "carry_identity_controls": 4096,
+      "rough_pairs_primitive_controls": 441,
+      "nonzero_fibre_content_histogram": {
+        "1": 2401,
+        "2": 686,
+        "3": 686,
+        "4": 49,
+        "6": 98,
+        "9": 49
+      },
+      "zero_fibre": 127
+    },
+    {
+      "radix": 8,
+      "operand_digits": 2,
+      "literal_pairs": 4096,
+      "distinct_product_polynomials": 1847,
+      "three_box_fibre_checks": 5541,
+      "carry_identity_controls": 4096,
+      "rough_pairs_primitive_controls": 225,
+      "nonzero_fibre_content_histogram": {
+        "1": 1369,
+        "2": 666,
+        "3": 370,
+        "4": 303,
+        "5": 222,
+        "6": 312,
+        "7": 222,
+        "8": 54,
+        "9": 25,
+        "10": 54,
+        "12": 84,
+        "14": 54,
+        "15": 30,
+        "16": 9,
+        "18": 30,
+        "20": 18,
+        "21": 30,
+        "24": 18,
+        "25": 9,
+        "28": 18,
+        "30": 18,
+        "35": 18,
+        "36": 9,
+        "42": 18,
+        "49": 9
+      },
+      "zero_fibre": 127
+    }
+  ],
+  "signed_literal_pairs": 81,
+  "signed_fibres_checked": 21
+}
