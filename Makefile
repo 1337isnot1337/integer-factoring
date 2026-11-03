@@ -3427,6 +3427,12 @@ verify-cm-smooth-flag-geometry:
 
 verify-arithmetic: verify-cm-smooth-flag-geometry
 
+.PHONY: verify-fixed-curve-quartic
+verify-fixed-curve-quartic:
+	python3 tools/check_fixed_curve_quartic_floor.py
+
+verify-arithmetic: verify-fixed-curve-quartic
+
 .PHONY: verify-colour-alternation
 verify-colour-alternation:
 	python3 tools/check_colour_alternation.py

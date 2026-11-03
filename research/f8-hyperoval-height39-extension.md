@@ -60,6 +60,13 @@ The full build takes about `3.7` hours and is reproducible with
 identity, deletion closure, recorded orders, and numerical pressure; it
 does not regenerate the full profile.
 
+The replay compares the fresh fitted pressure with the saved pressure and
+checks the defining pressure equation at the saved scale. It does not
+require the floating-point optimizer to return the same minimizing scale
+on every host: Sol worker 2's integration replay found a scale difference
+of about `1.8e-8` with pressure agreement to about sixteen digits. The
+saved profile and its numerical scope are unchanged.
+
 ```sh
 make verify-f8-height39-extension
 ```

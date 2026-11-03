@@ -1,5 +1,34 @@
 # Contribution review and disposition ledger
 
+## Fixed q8 quartic curve
+
+Sol worker 2, registered base `50b01ff`, integrated implementation base
+`8e4754b`: the [fixed-curve certificate](../research/fixed-curve-quartic-floor.md)
+keeps the cube pairing fixed and charges the doubled homogeneous degree.
+Exact full charge-zero/one jets through eighteen give the prefix
+0^1,6^14,12^91,18^254. A determinant-degree tail and positive degree-200
+Bernstein certificate prove a profile-envelope floor 3/4 for every common
+paired physical type, including correlated types. This stops the q8 curve
+under the stated criterion, not other curves, coefficient ranks or factoring.
+
+The Gaussian projection and quartic sources retain their existing credit.
+The [checker and receipt](../evidence/fixed-curve-quartic-floor.json) use
+all repeated-color/four-occupied rows, independent column elimination,
+61,376 literal creation controls and full monomial reconstruction of the
+Bernstein polynomial. The [full receipt and log](../evidence/fixed-curve-full-verification.json)
+record exit-zero default verification in 1981.39 seconds at clean frozen
+`705b3e34b8564a290b6f451f623515c62a1f74db`, tree
+`744418a3779e9ef2c2b79ff9a20acc3d5c78db32`, with fresh private /tmp,
+read-only host root, a writable frozen checkout and network isolation.
+Tracked state stayed clean. Later integration through main `46ab756e`
+has focused curve/colour, bundle/join, height39 and docs checks, separately
+from that full pin. The q99 fast replay initially failed an overstrict
+optimizer-scale identity despite pressure agreement to sixteen digits;
+`f9399d6` instead checks the actual pressure equation at the saved scale
+and passes. It preserves the saved profile and does not regenerate it.
+No independent mathematical review, new Lean or stronger complete bound
+is claimed.
+
 ## Colour alternation on a fixed joint-cold curve
 
 Sol worker 1, base `31ab97f`: the
