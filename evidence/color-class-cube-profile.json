@@ -148,6 +148,42 @@
       1
     ]
   ],
+  "q7_low_orders": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      6
+    ],
+    [
+      4,
+      21
+    ],
+    [
+      6,
+      56
+    ]
+  ],
+  "q8_low_orders": [
+    [
+      0,
+      1
+    ],
+    [
+      2,
+      7
+    ],
+    [
+      4,
+      28
+    ],
+    [
+      6,
+      84
+    ]
+  ],
   "q3_ranks": [
     0,
     1,
@@ -493,8 +529,25 @@
       "envelope_prefix_175": "2664"
     }
   },
+  "conditional_q256_bound": {
+    "q": 256,
+    "known_counts_through_order6": {
+      "0": 1,
+      "2": 255,
+      "4": 32640,
+      "6": 2796160
+    },
+    "remaining_orders": 4292138240,
+    "remaining_average_order_bound": 24.011879699848624,
+    "t": "3/5",
+    "vacuum_probability": "1/64",
+    "pressure_lower_bound": 0.7214734677856363,
+    "threshold": 0.5773502691896258,
+    "hypothesis": "The observed C(q,2) and C(q+1,3) low-order counts persist at q=256.",
+    "scope": "Conditional diagnostic; the low-order count law is verified for q<=8."
+  },
   "source_sha256": {
-    "check_color_class_cube_profile.py": "e413c35a15fb09667abac89a2d21b3edc4931ec3807fb9f1bd4dd38b6e02b9be",
+    "check_color_class_cube_profile.py": "35692d7f16a8496555a3f3b4cc7faadd783d18af26425993c3856a0755bc62c6",
     "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
     "cube_graded_minor_budget.py": "930d32ddec53b5692cef627f1d40986c8e5535beb6cd142a13b58af9d28bdc00"
   },

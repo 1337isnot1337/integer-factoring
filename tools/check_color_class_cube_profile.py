@@ -77,38 +77,26 @@ LEFT, RIGHT = cube.axis_parts(0)
 
 
 def color_matrix(q: int, y: int, z: int, length: int) -> list[np.ndarray]:
-    columns = list(product(range(q), repeat=4))
-    evaluated = [evaluate(GAUSSIAN[mask], y, z, length) for mask in range(256)]
-
-    def color_mask(left, right, color):
-        mask = 0
-        for i, vertex in enumerate(LEFT):
-            if left[i] == color:
-                mask |= 1 << vertex
-        for i, vertex in enumerate(RIGHT):
-            if right[i] == color:
-                mask |= 1 << vertex
-        return mask
-
-    def entry(left, right):
-        result = np.zeros(length, dtype=np.uint8)
-        result[0] = 1
-        for color in range(1, q):
-            factor = evaluated[color_mask(left, right, color)]
-            updated = np.zeros(length, dtype=np.uint8)
-            for i, value in enumerate(result):
-                if value:
-                    stop = min(length - i, len(factor))
-                    updated[i:i + stop] ^= MULTIPLY[value, factor[:stop]]
-            result = updated
-        return result
-
+    columns = np.array(list(product(range(q), repeat=4)), dtype=np.uint8)
     size = len(columns)
-    matrix = [[entry(left, right) for right in columns] for left in columns]
-    return [np.array([[matrix[i][j][k] for j in range(size)]
-                      for i in range(size)], dtype=np.uint8)
-            for k in range(length)]
-
+    evaluated = np.array(
+        [evaluate(GAUSSIAN[mask], y, z, length) for mask in range(256)],
+        dtype=np.uint8)
+    result = np.zeros((size, size, length), dtype=np.uint8)
+    result[:, :, 0] = 1
+    for color in range(1, q):
+        mask = np.zeros((size, size), dtype=np.uint16)
+        for i, vertex in enumerate(LEFT):
+            mask |= (columns[:, None, i] == color).astype(np.uint16) << vertex
+        for i, vertex in enumerate(RIGHT):
+            mask |= (columns[None, :, i] == color).astype(np.uint16) << vertex
+        factor = evaluated[mask]
+        updated = np.zeros_like(result)
+        for i in range(length):
+            for j in range(length - i):
+                updated[:, :, i + j] ^= MULTIPLY[result[:, :, i], factor[:, :, j]]
+        result = updated
+    return [result[:, :, k].copy() for k in range(length)]
 
 def block_toeplitz(blocks: list[np.ndarray], length: int) -> np.ndarray:
     size = blocks[0].shape[0]
@@ -205,6 +193,39 @@ def graded_comparison(profiles):
         cumulative(envelope(Counter({0: 1, 3: 3}))["blocks"], 175))
     return records
 
+
+def conditional_q256_bound():
+    import math
+
+    q = 256
+    n = q ** 4
+    known = {0: 1, 2: q - 1, 4: comb(q, 2), 6: comb(q + 1, 3)}
+    known_n = sum(known.values())
+    known_sum = sum(order * count for order, count in known.items())
+    remaining = n - known_n
+    remaining_average = (24 * n - known_sum) / remaining
+    t = 3 / 5
+    p = 1 / 64
+    z = sum(count * t ** order for order, count in known.items())
+    z += remaining * t ** remaining_average
+    entropy = (-p * math.log2(p) - (1 - p) * math.log2(1 - p)
+               + (1 - p) * math.log2(q - 1))
+    bound = (math.log2(z) - 8 * (1 - p) * math.log2(t)) / (4 * entropy)
+    threshold = 1 / math.sqrt(3)
+    assert bound > threshold + 0.1
+    return {
+        "q": q,
+        "known_counts_through_order6": known,
+        "remaining_orders": remaining,
+        "remaining_average_order_bound": remaining_average,
+        "t": "3/5",
+        "vacuum_probability": "1/64",
+        "pressure_lower_bound": bound,
+        "threshold": threshold,
+        "hypothesis": "The observed C(q,2) and C(q+1,3) low-order counts persist at q=256.",
+        "scope": "Conditional diagnostic; the low-order count law is verified for q<=8.",
+    }
+
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path)
@@ -240,6 +261,12 @@ def main():
     assert sum(q4_orders[:175]) == 2150
     assert len(q4_orders) == 250
     q3 = dict(q3)
+    q7, _ = specialized_profile(7, 2, 3, 7)
+    q8, _ = specialized_profile(8, 2, 3, 7)
+    assert q7 == {0: 1, 2: 6, 4: 21, 6: 56}
+    assert q8 == {0: 1, 2: 7, 4: 28, 6: 84}
+    assert sum(q7.values()) == comb(9, 3)
+    assert sum(q8.values()) == comb(10, 3)
 
     comparison = graded_comparison({3: q3, 4: q4_full})
     result = {
@@ -247,12 +274,17 @@ def main():
         "q2_profile": sorted(q2.items()),
         "q2_ranks": q2_ranks,
         "q3_specialized_profile": sorted(q3.items()),
+        "q7_low_orders": sorted(q7.items()),
+        "q8_low_orders": sorted(q8.items()),
         "q3_ranks": q3_ranks,
         "q3_specialization_stability": stability,
         "low_order_profiles": low_orders,
+        "q7_low_orders": sorted(q7.items()),
+        "q8_low_orders": sorted(q8.items()),
         "q4_full_profile": sorted(q4_full.items()),
         "q4_prefix_sum_175": sum(q4_orders[:175]),
         "graded_comparison": comparison,
+        "conditional_q256_bound": conditional_q256_bound(),
         "source_sha256": {
             name: sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
             for name in ("check_color_class_cube_profile.py",
@@ -275,6 +307,8 @@ def main():
         "status": "passed",
         "q2_profile": sorted(q2.items()),
         "q3_specialized_profile": sorted(q3.items()),
+        "q7_low_orders": sorted(q7.items()),
+        "q8_low_orders": sorted(q8.items()),
         "q4_prefix_through_order6": comb(6, 3),
         "q4_envelope_max_excess": comparison["4"]["max_prefix_excess"],
         "q3_envelope_max_excess": comparison["3"]["max_prefix_excess"],

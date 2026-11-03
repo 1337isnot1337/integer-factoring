@@ -97,9 +97,12 @@ The tested values are
 | 4 | 3 | 6 | 10 |
 | 5 | 4 | 10 | 20 |
 | 6 | 5 | 15 | 35 |
+| 7 | 6 | 21 | 56 |
+| 8 | 7 | 28 | 84 |
 
 The low-order layers follow the monomial counts of degree at most three
-in \(q-1\) color variables. The order-eight column already departs from
+in \(q\) color variables; the cumulative count through order six is
+\(\binom{q+2}{3}\). The order-eight column already departs from
 that pattern at \(q=5\) (\(70\) rather than \(35\)), so this is an
 observed low-order law, not a general free-algebra description.
 
@@ -149,7 +152,50 @@ profile, if it differs, has smaller orders and also satisfies the
 envelope. This is a necessary-condition pass, not a viability proof; the
 generic \(q=256\) profile is still the missing object.
 
-## 3. Scope and next question
+## 3. Conditional pressure exclusion at \(q=256\)
+
+The observed low-order law has a sharp consequence if it persists. At
+\(q=256\) it gives the counts
+
+\[
+ 0^1,\quad 2^{255},\quad 4^{\binom{256}{2}},\quad
+ 6^{\binom{257}{3}},
+ \tag{8}
+\]
+
+so at least \(2{,}829{,}056\) Smith orders are at most six, with known
+order sum \(16{,}908{,}030\). The cut matrix has dimension
+\(n=256^4\), and its entries have \(x\)-degree at most \(24\), so
+the sum of all Smith orders is at most \(24n\). The remaining orders
+therefore have average at most
+
+\[
+ \frac{24n-16{,}908{,}030}{n-2{,}829{,}056}=24.00088\ldots.
+ \tag{9}
+\]
+
+Setting every remaining order to that average minimizes the partition
+function \(Z(t)=\sum_i t^{s_i}\) for \(0<t<1\). At \(t=3/5\) and
+vacuum probability \(1/64\), the pressure lower bound of
+[cube-graded-minor-budget.md](cube-graded-minor-budget.md) is
+
+\[
+ \frac{\log_2 Z(t)-8(1-p)\log_2 t}
+      {4\bigl(H_2(p)+(1-p)\log_2 255\bigr)}
+ \approx 0.7215>\frac1{\sqrt3}.
+ \tag{10}
+\]
+
+Thus, **if the low-order law \(2^{q-1},4^{\binom q2},
+6^{\binom{q+1}3}\) persists to \(q=256\)**, the one-hot color-class
+construction cannot cross the target. The obstruction is the order-four
+growth, not the equal-height hull. The law is verified for
+\(q\le8\); a proof or a counterexample at larger \(q\) is the next
+question. If it fails, it must reduce the order-four count substantially,
+and that reduction is the target for a modified construction.
+
+## 4. Scope and next question
+
 
 The finite profiles are useful as a regression and as a source of the
 monomial pattern in (5). They do not prove a uniform law, and they do not
@@ -168,7 +214,7 @@ uses classes of size \(8\).
 
 The factoring exponent remains \(1/2\); this note adds no score claim.
 
-## 4. Exact replay
+## 5. Exact replay
 
 ```sh
 python3 tools/check_color_class_cube_profile.py \
@@ -177,7 +223,8 @@ python3 tools/check_color_class_cube_profile.py \
 
 The checker recomputes the \(q=2\) Gaussian regression, the \(q=3\)
 specialized profile and three additional specializations, the \(q=4,5,6\)
-low-order layers, the \(q=4\) full specialized profile, and the graded
-envelope comparison for \(q=3,4\). The
+low-order layers, the \(q=4\) full specialized profile, the graded
+envelope comparison for \(q=3,4\), and the conditional \(q=256\)
+pressure diagnostic. The
 receipt records the exact profiles and hashes. The source is
 [`check_color_class_cube_profile.py`](../tools/check_color_class_cube_profile.py).
