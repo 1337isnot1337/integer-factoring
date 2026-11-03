@@ -1,0 +1,43 @@
+{
+  "source_commit": "35b0d7492858f5d27d2d7793a7dfbed45c68f299",
+  "source_tree": "390aa936ad743cc49b2e31be0721ba2d4017522c",
+  "command": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--tmpfs",
+    "/tmp",
+    "--bind",
+    "/home/cinna/integer-factoring-semiprime-field-01a192e7",
+    "/home/cinna/integer-factoring-semiprime-field-01a192e7",
+    "--chdir",
+    "/home/cinna/integer-factoring-semiprime-field-01a192e7",
+    "--unshare-net",
+    "--die-with-parent",
+    "--setenv",
+    "GIT_OPTIONAL_LOCKS",
+    "0",
+    "--",
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 800.8164392769977,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "namespace_control": {
+    "host_marker_visible": false,
+    "mount_namespace": "mnt:[4026533782]",
+    "different_mount_namespace": true,
+    "inner_marker_visible_on_host": false
+  },
+  "scope": "Default non-Lean make verify in a marker-verified private /tmp mount with host root read-only and only this worktree writable; no independent mathematical review.",
+  "stdout_sha256": "9a9b093970ce0c86810928fbb93c3574cf3a444fb8ae507f71f9257a3bc6d5f6",
+  "stdout_archive": "evidence/semiprime-single-field-full-verification.stdout.txt.xz",
+  "archive_sha256": "9b0924d177bbe4a29414cd46c617c868b92f87429895d90465291c739ab7f2fd"
+}

@@ -1,0 +1,32 @@
+{
+  "head": "fd5970d76735c4d4e0f041bc908f3589c5933ee2",
+  "tree": "28aa795ac9b16a670e54a851038bca7c86c95735",
+  "pre_status": "",
+  "commands": [
+    [
+      "make",
+      "verify"
+    ],
+    [
+      "make",
+      "verify-relation-change-events"
+    ]
+  ],
+  "started_utc": "2026-11-02T02:44:55Z",
+  "exit_code": 0,
+  "seconds": 1572.8585639480007,
+  "post_status": "",
+  "scope": "Frozen full replay; later additive-gap proof is prose only. Subsequent main integration has separate focused checks; no Lean or independent review.",
+  "stdout_sha256": "0cc42834123ec1e0714e7849b881e7d6f3e29c187423eee14da702cff0217957",
+  "stdout_archive": "evidence/relation-change-events-full-verification.stdout.txt.xz",
+  "archive_sha256": "da93698a4f050c91b62b4f3816fca556eaba60be6fc63315348e09429bf9b74a",
+  "unchanged_source_blobs_after_integration": {
+    "tools/check_relation_change_events.py": "beaf7aff4a7332cbb8091d4f8f8f5715349cf120",
+    "tools/check_clustered_power_relations.py": "3f36df3bc6ba3b48f12529a54327d9c6409b8d05",
+    "tools/weighted_norm_relations.py": "9f129491f6e02cd54d6c8264bd8a2a286373dd5e"
+  },
+  "integration_head": "584f4a6619a54adcb4cbf72abea723491af597b3",
+  "integration_checks": [
+    "make verify-relation-change-events verify-protected-core-height39-transition verify-entry-moment-cycles verify-docs"
+  ]
+}

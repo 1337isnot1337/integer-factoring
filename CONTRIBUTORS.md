@@ -22,6 +22,44 @@ work retain credit even when they do not advance the selected exponent.
   formalization, verification tools, and maintenance. These files used
   substantial OpenAI assistant support; per-result notes retain detailed scope
   and attribution.
+  The [trace-dual word interface](research/trace-dual-native-counts.md)
+  retains classical trace duality and the credited ring, parity, inverse and
+  exact-division primitives, adding the bijective odd-candidate composition
+  and trial-certified smaller count precision. Sol worker 1 supplied the
+  [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362216)
+  of the new coordinate, bit-division, no-wrap and precision steps.
+  Sol worker 1's [near-height smooth-descent deduction](research/near-height-smooth-descent.md)
+  reuses the credited norm-word decoder and polynomial form arithmetic;
+  the [prescribed-target counterfamily](research/prime-power-descent-obstruction.md)
+  combines classical Bonferroni/CRT estimates with actual prime-power forms.
+  The coordinating worker's [full-cutoff extension](research/full-trial-sieve-obstruction.md)
+  preserves that construction and alignment, replacing only the remainder
+  estimate by the classical combinatorial fundamental lemma. Sol worker 1
+  supplied the [scoped inspection of that new sieve step](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360786),
+  with the review scope retained in the ledger.
+  The coordinating worker contributed its two semiprime controls in
+  [Discussion 51](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19359827);
+  the checker retains both original receipt hashes and comment-level credit.
+  The [CM mixing audit and flag-geometry diagnostic](research/cm-mixing-event-scope.md)
+  retain Khayutin, Blomer, Brumley and Radziwill's theorem credit and the
+  repository's earlier sparse-orbit literature routing.
+  The coordinated [event-boundary recurrence and Mellin contribution](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19356480)
+  supplied the finite group-algebra identity, transform multiplier and original
+  600-control panel integrated into the [event-word boundary note](research/event-word-boundary.md).
+- **Sol worker 2 (OpenAI-assisted repository campaign):** the
+  [separate native-coordinate inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362256),
+  with its imported-primitive limits retained in the ledger, and the
+  [scoped semiprime-field inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360111)
+  and [independent all-component controls](evidence/semiprime-field-independent-review/provenance.json),
+  retained byte-for-byte with their original source and record hashes. The
+  inspection does not claim a full independent rederivation or a coefficient
+  engine; its limits remain in the result note and review ledger.
+- **Homelab worker 4 (DeepSeek campaign, under Cinna Davis):** the
+  one-hot color-class cube construction, specialized profiles and
+  vertex-letter grading corrections, retained at exact source
+  [`1772970`](https://github.com/1337isnot1337/integer-factoring/commit/1772970a7dbaab83eeb0607014a1111e46718d86).
+  The [integration note](research/color-class-cube-profile.md) preserves
+  that source and distinguishes the later generic sector obstruction.
 - **Nil / BOS Reviewer, through nmamano:** the independent Big O Speedrun
   verifier rerun of the half-rate endpoint with Lean and nanoda, reported in
   [issue #28](https://github.com/1337isnot1337/integer-factoring/issues/28)
@@ -35,6 +73,10 @@ work retain credit even when they do not advance the selected exponent.
   arithmetic experiments in [PR #75](https://github.com/1337isnot1337/integer-factoring/pull/75),
   with Grok Bot assistance disclosed in the source. The integration retains
   that credit and data, with explicit domain and quantifier repairs.
+  The [graph/lattice follow-up](research/leading-power-window-graphs.md),
+  source [`a427442`](https://github.com/1337isnot1337/integer-factoring/commit/a427442),
+  supplies the weighted principal-word norm gap and injective-ball lemma
+  used by the later event-separation and word-boundary deductions.
 
 The [research index](research/INDEX.md), individual PRs, and
 [review ledger](docs/REVIEW_LEDGER.md) retain the provenance and status of

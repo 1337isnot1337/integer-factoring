@@ -1,0 +1,385 @@
+{
+  "scope": "Exact band identity and fixed arbitrary-discriminant geometry controls. These finite cutoffs do not certify the uniform analytic estimates or their asymptotic thresholds.",
+  "band": {
+    "piece_coefficients": [
+      [
+        "0",
+        "0"
+      ],
+      [
+        "-3/4",
+        "4/3"
+      ],
+      [
+        "1",
+        "-1"
+      ]
+    ],
+    "integral": "259/6144",
+    "absolute_combination_mass": "175/64"
+  },
+  "controls": [
+    {
+      "discriminant": -1000000007,
+      "Z": 16,
+      "smooth_bound": 13,
+      "cofactor_cap": 15,
+      "auxiliary_prime": 29,
+      "target_form": [
+        29,
+        -27,
+        8620696
+      ],
+      "band_cutoff": 247,
+      "full_height": 18257,
+      "oriented_translates": [
+        {
+          "prime": 167,
+          "source_form": [
+            167,
+            -1,
+            1497006
+          ],
+          "translated_form": [
+            4843,
+            2003,
+            51828
+          ],
+          "residual": 4843
+        },
+        {
+          "prime": 167,
+          "source_form": [
+            167,
+            1,
+            1497006
+          ],
+          "translated_form": [
+            4843,
+            669,
+            51644
+          ],
+          "residual": 4843
+        },
+        {
+          "prime": 173,
+          "source_form": [
+            173,
+            -71,
+            1445094
+          ],
+          "translated_form": [
+            5017,
+            2351,
+            50106
+          ],
+          "residual": 5017
+        },
+        {
+          "prime": 173,
+          "source_form": [
+            173,
+            71,
+            1445094
+          ],
+          "translated_form": [
+            5017,
+            -3043,
+            50292
+          ],
+          "residual": 5017
+        }
+      ]
+    },
+    {
+      "discriminant": -4000000028,
+      "Z": 16,
+      "smooth_bound": 13,
+      "cofactor_cap": 15,
+      "auxiliary_prime": 29,
+      "target_form": [
+        29,
+        -4,
+        34482759
+      ],
+      "band_cutoff": 494,
+      "full_height": 36514,
+      "oriented_translates": [
+        {
+          "prime": 281,
+          "source_form": [
+            281,
+            -68,
+            3558723
+          ],
+          "translated_form": [
+            8149,
+            -5688,
+            123707
+          ],
+          "residual": 8149
+        },
+        {
+          "prime": 281,
+          "source_form": [
+            281,
+            68,
+            3558723
+          ],
+          "translated_form": [
+            8149,
+            2316,
+            122879
+          ],
+          "residual": 8149
+        },
+        {
+          "prime": 293,
+          "source_form": [
+            293,
+            -144,
+            3412987
+          ],
+          "translated_form": [
+            8497,
+            2200,
+            117831
+          ],
+          "residual": 8497
+        },
+        {
+          "prime": 293,
+          "source_form": [
+            293,
+            144,
+            3412987
+          ],
+          "translated_form": [
+            8497,
+            8348,
+            119739
+          ],
+          "residual": 8497
+        }
+      ]
+    },
+    {
+      "discriminant": -1000036000099,
+      "Z": 16,
+      "smooth_bound": 13,
+      "cofactor_cap": 15,
+      "auxiliary_prime": 19,
+      "target_form": [
+        19,
+        -7,
+        13158368423
+      ],
+      "band_cutoff": 7812,
+      "full_height": 577360,
+      "oriented_translates": [
+        {
+          "prime": 4409,
+          "source_form": [
+            4409,
+            -491,
+            56704255
+          ],
+          "translated_form": [
+            83771,
+            -44581,
+            2990365
+          ],
+          "residual": 83771
+        },
+        {
+          "prime": 4409,
+          "source_form": [
+            4409,
+            491,
+            56704255
+          ],
+          "translated_form": [
+            83771,
+            -17145,
+            2985311
+          ],
+          "residual": 83771
+        },
+        {
+          "prime": 4421,
+          "source_form": [
+            4421,
+            -1959,
+            56550545
+          ],
+          "translated_form": [
+            83999,
+            15725,
+            2977069
+          ],
+          "residual": 83999
+        },
+        {
+          "prime": 4421,
+          "source_form": [
+            4421,
+            1959,
+            56550545
+          ],
+          "translated_form": [
+            83999,
+            -33409,
+            2979655
+          ],
+          "residual": 83999
+        }
+      ]
+    },
+    {
+      "discriminant": -4000144000396,
+      "Z": 16,
+      "smooth_bound": 13,
+      "cofactor_cap": 15,
+      "auxiliary_prime": 19,
+      "target_form": [
+        19,
+        -14,
+        52633473692
+      ],
+      "band_cutoff": 15625,
+      "full_height": 1154721,
+      "oriented_translates": [
+        {
+          "prime": 8803,
+          "source_form": [
+            8803,
+            -7902,
+            113603500
+          ],
+          "translated_form": [
+            167257,
+            80128,
+            5988635
+          ],
+          "residual": 167257
+        },
+        {
+          "prime": 8803,
+          "source_form": [
+            8803,
+            7902,
+            113603500
+          ],
+          "translated_form": [
+            167257,
+            -9704,
+            5979179
+          ],
+          "residual": 167257
+        },
+        {
+          "prime": 8807,
+          "source_form": [
+            8807,
+            -5722,
+            113551060
+          ],
+          "translated_form": [
+            167333,
+            135190,
+            6003628
+          ],
+          "residual": 167333
+        },
+        {
+          "prime": 8807,
+          "source_form": [
+            8807,
+            5722,
+            113551060
+          ],
+          "translated_form": [
+            167333,
+            40950,
+            5978828
+          ],
+          "residual": 167333
+        }
+      ]
+    },
+    {
+      "discriminant": -9000324000891,
+      "Z": 16,
+      "smooth_bound": 13,
+      "cofactor_cap": 15,
+      "auxiliary_prime": 19,
+      "target_form": [
+        19,
+        -17,
+        118425315805
+      ],
+      "band_cutoff": 23437,
+      "full_height": 1732081,
+      "oriented_translates": [
+        {
+          "prime": 13187,
+          "source_form": [
+            13187,
+            -2513,
+            170628845
+          ],
+          "translated_form": [
+            250553,
+            -160757,
+            9006245
+          ],
+          "residual": 250553
+        },
+        {
+          "prime": 13187,
+          "source_form": [
+            13187,
+            2513,
+            170628845
+          ],
+          "translated_form": [
+            250553,
+            213505,
+            9025943
+          ],
+          "residual": 250553
+        },
+        {
+          "prime": 13217,
+          "source_form": [
+            13217,
+            -4161,
+            170241759
+          ],
+          "translated_form": [
+            251123,
+            207311,
+            9002861
+          ],
+          "residual": 251123
+        },
+        {
+          "prime": 13217,
+          "source_form": [
+            13217,
+            4161,
+            170241759
+          ],
+          "translated_form": [
+            251123,
+            215633,
+            9006365
+          ],
+          "residual": 251123
+        }
+      ]
+    }
+  ],
+  "oriented_translates_checked": 20,
+  "binary_decay_denominator": 64
+}

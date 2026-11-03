@@ -177,4 +177,10 @@ finite screen, endpoint and inverse controls use only exact F2 arithmetic.
 Remaining constructive routes include more general noncommuting pencils,
 nonmonomial determinant paths, additional physical gauges, and direct
 coefficient recombinations. A new candidate must satisfy inverse as well
-as determinant and shared-minor constraints.
+as determinant and shared-minor constraints. The
+[nearby asymmetric profile](seven-letter-asymmetric-profile.md) passes
+the older inverse-degree bound and crosses its relaxed pressure threshold,
+but the later [adjugate condition](adjugate-seven-letter-pressure-floor.md)
+excludes it at every integer ramification. The
+[box-minor theorem](bare-seven-to-twelve-letters.md) already closes the
+entire bare criterion through twelve letters at every degree and field.

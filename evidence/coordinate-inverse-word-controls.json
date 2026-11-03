@@ -1,0 +1,1371 @@
+{
+  "scope": "Bijective trace-dual odd words, actual lifted pointwise predicates, complete finite prefix counts and charged pretest; exhaustive test oracle only, no fast contractor or stronger factoring exponent.",
+  "bijections": [
+    {
+      "degree": 1,
+      "polynomial": 3,
+      "complete_points": 2,
+      "all_fibres_one": true,
+      "lifted_traces_with_upper_digits": 0
+    },
+    {
+      "degree": 2,
+      "polynomial": 7,
+      "complete_points": 4,
+      "all_fibres_one": true,
+      "lifted_traces_with_upper_digits": 6
+    },
+    {
+      "degree": 3,
+      "polynomial": 11,
+      "complete_points": 8,
+      "all_fibres_one": true,
+      "lifted_traces_with_upper_digits": 21
+    },
+    {
+      "degree": 4,
+      "polynomial": 19,
+      "complete_points": 16,
+      "all_fibres_one": true,
+      "lifted_traces_with_upper_digits": 60
+    },
+    {
+      "degree": 5,
+      "polynomial": 37,
+      "complete_points": 32,
+      "all_fibres_one": true,
+      "lifted_traces_with_upper_digits": 155
+    },
+    {
+      "degree": 6,
+      "polynomial": 67,
+      "complete_points": 64,
+      "all_fibres_one": true,
+      "lifted_traces_with_upper_digits": 342
+    }
+  ],
+  "complete_recoveries": [
+    {
+      "target": 5,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 3,
+        "candidate_bits": 2,
+        "degree": 1,
+        "trial_bits": 1,
+        "count_precision": 1,
+        "inverse_bits": 5,
+        "starting_precision": 1,
+        "exact_halvings": 0,
+        "subtract_steps": 5,
+        "coordinate_traces": 1
+      },
+      "exact_count": 0,
+      "recovered_factor": 5,
+      "queries_used": 1
+    },
+    {
+      "target": 7,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 3,
+        "candidate_bits": 2,
+        "degree": 1,
+        "trial_bits": 1,
+        "count_precision": 1,
+        "inverse_bits": 5,
+        "starting_precision": 1,
+        "exact_halvings": 0,
+        "subtract_steps": 5,
+        "coordinate_traces": 1
+      },
+      "exact_count": 0,
+      "recovered_factor": 7,
+      "queries_used": 1
+    },
+    {
+      "target": 9,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 4,
+        "candidate_bits": 2,
+        "degree": 1,
+        "trial_bits": 1,
+        "count_precision": 1,
+        "inverse_bits": 6,
+        "starting_precision": 1,
+        "exact_halvings": 0,
+        "subtract_steps": 6,
+        "coordinate_traces": 1
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 2
+    },
+    {
+      "target": 11,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 4,
+        "candidate_bits": 2,
+        "degree": 1,
+        "trial_bits": 1,
+        "count_precision": 1,
+        "inverse_bits": 6,
+        "starting_precision": 1,
+        "exact_halvings": 0,
+        "subtract_steps": 6,
+        "coordinate_traces": 1
+      },
+      "exact_count": 0,
+      "recovered_factor": 11,
+      "queries_used": 1
+    },
+    {
+      "target": 13,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 4,
+        "candidate_bits": 2,
+        "degree": 1,
+        "trial_bits": 1,
+        "count_precision": 1,
+        "inverse_bits": 6,
+        "starting_precision": 1,
+        "exact_halvings": 0,
+        "subtract_steps": 6,
+        "coordinate_traces": 1
+      },
+      "exact_count": 0,
+      "recovered_factor": 13,
+      "queries_used": 1
+    },
+    {
+      "target": 15,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 4,
+        "candidate_bits": 2,
+        "degree": 1,
+        "trial_bits": 1,
+        "count_precision": 1,
+        "inverse_bits": 6,
+        "starting_precision": 1,
+        "exact_halvings": 0,
+        "subtract_steps": 6,
+        "coordinate_traces": 1
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 2
+    },
+    {
+      "target": 17,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 5,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 8,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 8,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 17,
+      "queries_used": 1
+    },
+    {
+      "target": 19,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 5,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 8,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 8,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 19,
+      "queries_used": 1
+    },
+    {
+      "target": 21,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 5,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 8,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 8,
+        "coordinate_traces": 2
+      },
+      "exact_count": 2,
+      "recovered_factor": 3,
+      "queries_used": 3
+    },
+    {
+      "target": 23,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 5,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 8,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 8,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 23,
+      "queries_used": 1
+    },
+    {
+      "target": 25,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 5,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 8,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 8,
+        "coordinate_traces": 2
+      },
+      "exact_count": 1,
+      "recovered_factor": 5,
+      "queries_used": 3
+    },
+    {
+      "target": 27,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 5,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 8,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 8,
+        "coordinate_traces": 2
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 3
+    },
+    {
+      "target": 29,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 5,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 8,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 8,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 29,
+      "queries_used": 1
+    },
+    {
+      "target": 31,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 5,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 8,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 8,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 31,
+      "queries_used": 1
+    },
+    {
+      "target": 33,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 3
+    },
+    {
+      "target": 35,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 2,
+      "recovered_factor": 5,
+      "queries_used": 3
+    },
+    {
+      "target": 37,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 37,
+      "queries_used": 1
+    },
+    {
+      "target": 39,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 3
+    },
+    {
+      "target": 41,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 41,
+      "queries_used": 1
+    },
+    {
+      "target": 43,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 43,
+      "queries_used": 1
+    },
+    {
+      "target": 45,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 2,
+      "recovered_factor": 3,
+      "queries_used": 3
+    },
+    {
+      "target": 47,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 47,
+      "queries_used": 1
+    },
+    {
+      "target": 49,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 1,
+      "recovered_factor": 7,
+      "queries_used": 3
+    },
+    {
+      "target": 51,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 3
+    },
+    {
+      "target": 53,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 53,
+      "queries_used": 1
+    },
+    {
+      "target": 55,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 1,
+      "recovered_factor": 5,
+      "queries_used": 3
+    },
+    {
+      "target": 57,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 3
+    },
+    {
+      "target": 59,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 59,
+      "queries_used": 1
+    },
+    {
+      "target": 61,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 0,
+      "recovered_factor": 61,
+      "queries_used": 1
+    },
+    {
+      "target": 63,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 6,
+        "candidate_bits": 3,
+        "degree": 2,
+        "trial_bits": 1,
+        "count_precision": 2,
+        "inverse_bits": 9,
+        "starting_precision": 2,
+        "exact_halvings": 0,
+        "subtract_steps": 9,
+        "coordinate_traces": 2
+      },
+      "exact_count": 2,
+      "recovered_factor": 3,
+      "queries_used": 3
+    },
+    {
+      "target": 65,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 2,
+      "recovered_factor": 5,
+      "queries_used": 4
+    },
+    {
+      "target": 67,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 67,
+      "queries_used": 1
+    },
+    {
+      "target": 69,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 71,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 71,
+      "queries_used": 1
+    },
+    {
+      "target": 73,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 73,
+      "queries_used": 1
+    },
+    {
+      "target": 75,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 3,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 77,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 2,
+      "recovered_factor": 7,
+      "queries_used": 4
+    },
+    {
+      "target": 79,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 79,
+      "queries_used": 1
+    },
+    {
+      "target": 81,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 2,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 83,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 83,
+      "queries_used": 1
+    },
+    {
+      "target": 85,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 5,
+      "queries_used": 4
+    },
+    {
+      "target": 87,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 89,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 89,
+      "queries_used": 1
+    },
+    {
+      "target": 91,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 2,
+      "recovered_factor": 7,
+      "queries_used": 4
+    },
+    {
+      "target": 93,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 95,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 5,
+      "queries_used": 4
+    },
+    {
+      "target": 97,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 97,
+      "queries_used": 1
+    },
+    {
+      "target": 99,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 3,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 101,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 101,
+      "queries_used": 1
+    },
+    {
+      "target": 103,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 103,
+      "queries_used": 1
+    },
+    {
+      "target": 105,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 4,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 107,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 107,
+      "queries_used": 1
+    },
+    {
+      "target": 109,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 109,
+      "queries_used": 1
+    },
+    {
+      "target": 111,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 113,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 113,
+      "queries_used": 1
+    },
+    {
+      "target": 115,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 5,
+      "queries_used": 4
+    },
+    {
+      "target": 117,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 3,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 119,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 7,
+      "queries_used": 4
+    },
+    {
+      "target": 121,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 11,
+      "queries_used": 4
+    },
+    {
+      "target": 123,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 3,
+      "queries_used": 4
+    },
+    {
+      "target": 125,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 5,
+      "queries_used": 4
+    },
+    {
+      "target": 127,
+      "trial_bits": 1,
+      "parameters": {
+        "bits": 7,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 1,
+        "count_precision": 3,
+        "inverse_bits": 11,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 11,
+        "coordinate_traces": 3
+      },
+      "exact_count": 0,
+      "recovered_factor": 127,
+      "queries_used": 1
+    },
+    {
+      "target": 143,
+      "trial_bits": 3,
+      "parameters": {
+        "bits": 8,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 3,
+        "count_precision": 3,
+        "inverse_bits": 12,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 12,
+        "coordinate_traces": 3
+      },
+      "exact_count": 2,
+      "recovered_factor": 11,
+      "queries_used": 4
+    },
+    {
+      "target": 221,
+      "trial_bits": 3,
+      "parameters": {
+        "bits": 8,
+        "candidate_bits": 4,
+        "degree": 3,
+        "trial_bits": 3,
+        "count_precision": 3,
+        "inverse_bits": 12,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 12,
+        "coordinate_traces": 3
+      },
+      "exact_count": 1,
+      "recovered_factor": 13,
+      "queries_used": 4
+    },
+    {
+      "target": 289,
+      "trial_bits": 4,
+      "parameters": {
+        "bits": 9,
+        "candidate_bits": 5,
+        "degree": 4,
+        "trial_bits": 4,
+        "count_precision": 3,
+        "inverse_bits": 14,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 14,
+        "coordinate_traces": 4
+      },
+      "exact_count": 1,
+      "recovered_factor": 17,
+      "queries_used": 5
+    },
+    {
+      "target": 323,
+      "trial_bits": 4,
+      "parameters": {
+        "bits": 9,
+        "candidate_bits": 5,
+        "degree": 4,
+        "trial_bits": 4,
+        "count_precision": 3,
+        "inverse_bits": 14,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 14,
+        "coordinate_traces": 4
+      },
+      "exact_count": 2,
+      "recovered_factor": 17,
+      "queries_used": 5
+    },
+    {
+      "target": 437,
+      "trial_bits": 4,
+      "parameters": {
+        "bits": 9,
+        "candidate_bits": 5,
+        "degree": 4,
+        "trial_bits": 4,
+        "count_precision": 3,
+        "inverse_bits": 14,
+        "starting_precision": 3,
+        "exact_halvings": 0,
+        "subtract_steps": 14,
+        "coordinate_traces": 4
+      },
+      "exact_count": 2,
+      "recovered_factor": 19,
+      "queries_used": 5
+    }
+  ],
+  "division_free_inverse_controls": 1960,
+  "pointwise_controls": 1764,
+  "query_digest": "7316f0607544a721105ba2a83e04889bb4d645ea98d3bc1f815a08fe40ea96d7",
+  "false_roughness_guard": {
+    "target": 105,
+    "trial_bits": 4,
+    "actual_count": 4,
+    "unjustified_precision": 2,
+    "wrapped_count": 0,
+    "pretest_factor": 3
+  },
+  "comparison": {
+    "target": 323,
+    "trial_bits": 4,
+    "old_weighted_trace_plan": {
+      "bits": 9,
+      "candidate_bits": 5,
+      "degree": 21,
+      "genus": 155,
+      "hasse_gap": 2001052,
+      "count_precision": 22,
+      "inverse_bits": 14,
+      "starting_precision": 41,
+      "inverse_precision": 36,
+      "inverse_terms": 12,
+      "exact_halvings": 19
+    },
+    "bijective_plan": {
+      "bits": 9,
+      "candidate_bits": 5,
+      "degree": 4,
+      "trial_bits": 4,
+      "count_precision": 3,
+      "inverse_bits": 14,
+      "starting_precision": 3,
+      "exact_halvings": 0,
+      "subtract_steps": 14,
+      "coordinate_traces": 4
+    }
+  },
+  "rejected_parameters": 5,
+  "source_sha256": {
+    "tools/coordinate_inverse_words.py": "54084c4f2d0d6ed3078efd959e987bcdb418b3f3d9615d15885d90d2b5d88e99",
+    "tools/check_coordinate_inverse_words.py": "8203ee687550713edd870e6ebbbad3f806ec0ea6076dd00cf56b0a44bf0df2c6",
+    "tools/one_trace_inverse_words.py": "b74aeb6ff4e3beef5e2df5980660bb9b8479f0fa43ca6950c7e96d15a583ddc5",
+    "tools/witt_trace_word_circuits.py": "358f8ee944ed966e3b56526abae756e7ee35be9fef868b24f44b44a3ccf72954",
+    "tools/teichmuller_cyclic_carries.py": "dd79f4fc588d3caf1249439a05ffc37a9e10d3d52de9723d3fa0a10a7d7557d1",
+    "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763"
+  }
+}

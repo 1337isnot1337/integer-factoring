@@ -1,12 +1,61 @@
 # Research index
 
-- [Near-identity positive Fourier minorants](near-identity-positive-minorants.md): Fejer positivity bounds the recognizable raw power search by `(2K_p-1)D` if the original smooth set admits a positive Fourier minorant of mean at least `1/D`; neither the kernel nor `D` must be evaluated by the selector. The required uniform arithmetic minorant is open, and density alone is insufficient.
+- [Division-free trace-dual counts at sparsity-sized precision](trace-dual-native-counts.md): a trace-dual coordinate map gives one Teichmuller point per odd half-width candidate. Completed trial division bounds unweighted prefix counts at K=min(ceil(b/2)-1,ceil(b/t)) bits, with polylogarithmic output precision below any fixed positive-score budget. Polynomial Boolean gates remove exact halvings and retain the same small starting precision; summing the unrestricted-degree circuit is still open.
+
+- [Always-positive deep class roots](deep-class-root-projection.md): a root of g^(2^L) at depth 2L gives its canonical two-primary projection. Existing generation and polynomial early-stop extraction give an all-input conditional poly(b)(F(b)+1) bound, without smooth-density or relation premises. The root engine remains missing; no score change.
+
+- [High two-power root certificates](high-root-projection.md): verified high roots of nonsingular row residues project the supplied generators to their full two-primary subgroup. The ambient size bound covers witnesses outside the subgroup, the depth includes the determinant valuation, and every squaring is charged. Efficient root acquisition remains open; no score change.
+
+- [Smooth-pair relations modulo a certified odd kernel](odd-quotient-relations.md): verified odd row annihilators preserve the determinant's two-adic valuation and all two-part factoring directions. A uniform odd multiplier permits positive-kernel search in H^M without an unknown class number. A fast quotient-pair extractor remains open; the existing generation/analytic premises are retained. No score change.
+
+- [Prescribed descent after full subexponential trial budgets](full-trial-sieve-obstruction.md): the fundamental lemma replaces the Bonferroni remainder by a fixed-product sieve bound, extending the rough composite counterfamily to every log Z=o(log D). This covers trial division at positive-score runtime scales; adaptive/collective targets and other preprocessing remain outside the theorem.
+
+- [One primitive field component for promised semiprimes](semiprime-single-field.md): a quadratic recovers unordered signed factor residues at every coprime q>=7, q=3 mod 4. Symmetric CRT avoids cross-level matching with polynomial non-provider cost. The original-index coefficient engine and arbitrary-input reduction remain open; no score change.
+
+
+- [Returning order-five quartic channels](quartic-order-five-obstruction.md): a lowest second-axis coefficient forces at least (q-1)(q-4) order-five channels in the stated spatial-quartic class. Jensen and Young inequalities give restored pressure at least 7/12 for all q>=4096 and common physical types, excluding the earlier q4096 relaxation. Other interactions and smaller alphabets remain outside this result; no score change.
+
+- [Quartic additive-charge fusion](quartic-charge-fusion.md): an even non-Gaussian interaction preserves the homogeneous antipodal endpoint and proves generic prefix 0^1,2^(q-1),4^(2(q-1)) for q=2^s>=4. A q8 binary Toeplitz control confirms the order-four drop 28 to 14. The degree cost rises from three to four per occupied vertex; the returning-order-five obstruction excludes growing alphabets q>=4096 in the stated family.
+
+- [The global divided square of quartic charge creation](charge-creation-square.md): repeated-color cancellation makes the full q8 quartic-gate product exactly linear in its coefficient. For larger alphabets, an eight-column binary relation code determines the possible quadratic term. No higher cut ranks, pressure gain or score change follows.
+
+- [The exact smooth-word boundary of row-change events](event-word-boundary.md): truncated events correspond bijectively to target-prime-free smooth words on every target-containing subgroup, with disjoint same-row fibers and explicit annular character/Euler sums. The contributed formal recurrence and Mellin multiplier retain image multiplicities beyond the reduced range; long-range estimates and target indices remain open.
+
+- [CM mixing and arithmetic event correlations](cm-mixing-event-scope.md): exact scopes/rates of three primary mixing sources, normalized subgroup restriction, and a constructed adjacent-CM-point family forcing Lipschitz cost at least sqrt(D/20) for ambient smooth-flag interpolation. This does not exclude arithmetic weighted estimates or an orbit-specific construction.
+
+- [Sparse divisor data from one faithful character](sparse-faithful-character.md): an exact cyclotomic kernel distance and polynomial sparse decoder retain nilpotent coordinates. Classical lower-sieve level acquisition gives a complete faithful-only conditional factoring reduction with F(b)exp(O(sqrt(b))) cost, preserving every fixed logarithmic-saving exponent. Actual divisor reciprocity gives an inversion-fixed weight-one target and recovers inverse-paired fields; a reciprocal sparse counterexample limits the one-field shortcut. The faster coefficient engine remains open; no score change.
+
+- [Small reduced norms, density and local event separation](small-norm-event-separation.md): using the existing graph/lattice principal-word gap, a truncated smooth predicate retains the covered-subgroup density scale and has T-separated row-change events with explicit short-range cumulants. Long-range correlations and actual target indices remain open; no complete bound change.
+
+- [Near-height smooth descent](near-height-smooth-descent.md): a rejected leading test on a known smooth prime-power target makes the entire smaller-norm ellipse enumerable in O(1+p^k/sqrt(D)) candidates. Six fixed targets verify the enumeration and decoded words; existence of strict descent is a separate condition.
+
+- [Prescribed prime-power descent obstruction](prime-power-descent-obstruction.md): elementary Bonferroni sieving produces rough composite non-perfect-power inputs whose prescribed near-height prime-three target has no smaller smooth norm, for every fixed scalar height constant and saving exponent. This stops the one-shot scalar-height mechanism; adaptive/collective targets and full orbit windows remain outside the theorem.
+
+- [Color parity obstructs large one-hot cube profiles](color-distinct-sector-obstruction.md): closed odd-color sectors and the existing scalar polynomial certificate give a pressure floor 3/4 for every homogeneous antipodal tensor preserving separate color parity, all q>=34, every field and common physical type, in the common-scale unweighted three-axis profile method. This extends the scalar-clone floor to arbitrary parity-preserving tensors; no score change.
+
+- [One half-width trace and a modular-inverse interval test](one-trace-inverse-words.md): one candidate input determines its cofactor through a polynomial inverse; a no-wrap range test gives a complete conditional smallest-factor reduction with charged field, precision, exact divisions and bit costs. The uniform contractor remains open; no score change.
+
+- [Connected event correlations and a finite-order window criterion](connected-event-window-criterion.md): factorial bounds on aggregate cumulants through twice the logarithm of a period bound imply a window linear in inverse event density and the correlation scale. A tree estimate is sufficient but unproved arithmetically; exact saved-event controls neither certify it nor change the complete bound.
+
+- [Fixed nilpotent Gram crossings](nilpotent-gram-crossing.md): a canonical noncommuting flag gives a degree-12 seven-letter tensor with the flip endpoint and both cold ranks one. Its unchanged row profile supplies an exact finite pressure control; the broader bare criterion through twelve letters already excludes both constructions at every degree.
+
+- [Original smooth density from even prime products](small-index-smooth-density.md): a high-precision prime-color partition and one-sided product spectrum prove density exp(-O(b/log b)) on subgroups of index at most D^kappa, kappa<1/4, from the principal split-prime estimate. The full character estimate gives every coset for kappa<1/64. Actual target indices and hit gaps remain open.
+
+- [A uniform obstruction to ambient positive minorants](uniform-ambient-minorant-obstruction.md): an auxiliary split prime and unreduced product norm yield a missed low-bias translate in every large class group, under the pinned analytic input. Ambient mean is at most 2^(-b/64+o(b)), also with subexponential cofactor caps; original target-orbit hitting remains open.
+
+- [An arithmetic obstruction to ambient positive minorants](ambient-minorant-norm-gap.md): missed low-bias translates force exponentially small ambient means on a preprocessing-surviving semiprime family, under the pinned analytic input. The one-sided negative-spectrum repair is also excluded; target-subgroup certificates and original orbit hitting remain open.
+
+- [A confluent seven-letter quantum-spin crossing](confluent-quantum-spin.md): paired Casimir collisions yield an exact degree-six tensor, but its determinant budgets exclude the bare two-place target over every finite coefficient extension. No score change.
+
+- [Uniform density and gap control for changes of the relation row](relation-change-event-density.md): a periodic event process retains at least `delta/(2K_p-1)` density and increases the maximum zero gap by at most `2K_p-2`, without a raw-cluster-length conjecture. The saved cycles attain the segment cap and match measured entry flags. Uniform original density and event moments remain open; no stronger complete bound.
+
+- [Near-identity positive Fourier minorants](near-identity-positive-minorants.md): Fejer positivity bounds the recognizable raw power search by `(2K_p-1)D` if the original smooth set admits a positive Fourier minorant of mean at least `1/D`; neither the kernel nor `D` must be evaluated by the selector. The uniform ambient mean is excluded by the arithmetic norm-gap obstruction; subgroup-specific certificates remain open.
 
 - [Character lifts explain a Path C rank stall exactly](power-character-lift-guards.md): an exact height budget predicts the first generator-seven rank escape at exponent 71962 and forces 14504-position rough gaps for generator five. Under the existing constant-bias contract, sufficiently large valid bases defeat this particular obstruction; no uniform window theorem follows.
 
 - [Repeated smooth relations and pooled rank windows](clustered-hits-and-pooled-rank.md): uniform fixed-row multiplicity at most `2K_p-1`, a weaker sufficient rank condition with the existing conditional factoring transfer, and exact saved-hit certificates; the finite pool reaches rank sooner in window length but uses more probes. No stronger complete bound.
 
-- [Exact entry lower-tail moments on two Path C cycles](entry-moment-cycles.md): both registered cycles close (periods 20456 and 198850); clusters are short (mean run about 6); entry lower-tail constants are O(1) at matched mean counts and improve with q, while the entry density loss makes the predeclared sufficient window wrap the sparse cycle; no uniform moment/window theorem or score improvement.
+- [Exact entry lower-tail moments on two Path C cycles](entry-moment-cycles.md): the [sign correction](entry-moment-tail-sign-correction.md) replaces mislabeled upper-tail statistics with true lower tails from identical saved flags. All matched-mean tests now pass C=2; low-mean constants are constrained by the universal mu/q bound. Periods, gaps, sufficient-window status and the complete bound are unchanged.
 
 - [Normalize Fourier windows on the target cycle](window-orbit-normalization.md): character restriction absorbs all zero target phases into a positive orbit mean, with an exact coset-collision formula and all-scale sufficient window criterion. Rational finite-group controls and PR75 scope repairs do not supply a quantitative arithmetic window or new score.
 
@@ -720,6 +769,8 @@ This index covers research notes on `main`. Open PRs can contain later work. Eac
 
 - [Nine-letter quadratic-inverse probe](nine-letter-quadratic-inverse-probe.md): a general first-two-coefficient tradeoff and complete 31-path schedule, with every exact profile, 248 independent Toeplitz controls and all-scale exclusions.
 - [Inverse-degree compatibility and noncommuting paths](inverse-degree-crossing-compatibility.md): a new cut constraint rules out the formal seven-letter optimum at all integer ramifications; a quadratic-inverse constructor supplies exact endpoints and a complete 5,005-path first-jet exclusion.
+- [Excluded historical seven-letter asymmetric profile](seven-letter-asymmetric-profile.md): the profile passes the older inverse bound and has exact relaxed pressure below threshold, but violates the later adjugate determinant budget by 140 times every positive integer ramification. It is not an active construction target; the bare criterion is already closed through twelve letters.
+- [Short-flag rank-one-row-cut units for the seven-letter quadratic inverse](short-flag-seven-letter-units.md): a historical structural screen; a single rank-one-factor flip lowers the q=7 kernel-flag index from 16 to 8 and gives degree-13 first-jet multiplicity 12, but the `D=1` zero cut is invertible and the bare seven-letter route is already closed through twelve letters.
 - [Pieces-to-factoring transfer](pieces-to-factoring.md): conditional crossing-parameter transfer, with full bit-cost accounting.
 - [Scale-one modular transfer](scale-one-modular-transfer.md): fixed-field transfer and machine costs.
 - [Sparse divisor nonzeroness](sparse-divisor-nonzeroness.md): detection of divisors in weighted polynomial counts.
@@ -1231,7 +1282,8 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [An affine reflection path with eight additional singular places](affine-quadratic-place-crossings.md)
 - [Completed entrywise, finite-frame, mixed-place, and hot-code searches](algorithm-final-search-checkpoint.md)
 - [Supporting lines from opposite flags at several places](asymmetric-mixed-place-crossings.md)
-- [Degenerate asymmetric scaling of complete rectangular two-cut profiles](asymmetric-degenerate-scaling-floor.md): the recorded q4 asymmetric winner `1.001436` is bound-constrained; at zero gauge scale every rectangular `A,B,B,A` complete profile has support value `cos(theta)+sin(theta)`, so the degenerate corner is at least one. q4 replays approach one from above (best `1+1.37e-9`), and a bounded rank-two square-zero screen is worse. No strict crossing; unequal channel counts or non-rectangular cuts remain open.
+- [Degenerate asymmetric scaling of complete rectangular two-cut profiles](asymmetric-degenerate-scaling-floor.md): the recorded q4 asymmetric winner `1.001436` is bound-constrained; at zero gauge scale every rectangular `A,B,B,A` complete profile has support value `cos(theta)+sin(theta)`, so the degenerate corner is at least one. q4 replays approach one from above (best `1+1.37e-9`), and a bounded rank-two square-zero screen is worse. No strict crossing; unequal channel counts within valid rectangular pair cuts are closed, while genuine `3+1` non-pair cuts remain open.
+- [Rank-deficient endpoint perturbations do not improve the q4 pressure](rank-deficient-endpoint-perturbation.md): subtracting a rank-one term at degree zero and restoring it at degree `d` preserves the endpoint and lowers the constant-term rank. A deterministic 9,000-trial natural-gauge screen over `d=1,2,3,4,6,8` finds no improvement over the q4 base `0.7310809359736006`; the unequal-rank cyclic cell `(1,9)` has pressure `1.412832752034821`. Rank lowering alone is not a crossing.
 - [A weighted two-cut bound gives a complete rectangular factoring transfer](asymmetric-modular-transfer.md)
 - [Asymmetric supporting lines for crossing pieces](asymmetric-support-line-crossings.md)
 - [Opposite Bell jets have a unique simultaneous eighth-order carrier](bell-jet-transversality.md)
@@ -1402,6 +1454,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [A profile floor for every homogeneous binary cube tensor](cube-homogeneous-profile-budget.md)
 - [Shared-minor budgets for graded cube alphabets](cube-graded-minor-budget.md)
 - [A uniform floor for scalar Gaussian color clones](cube-scalar-color-clone-floor.md)
+- [Specialized profiles of the one-hot color-class Gaussian cube](color-class-cube-profile.md)
 - [A Gaussian cube floor for every equally weighted Fock alphabet](cube-equal-height-fock-floor.md)
 
 

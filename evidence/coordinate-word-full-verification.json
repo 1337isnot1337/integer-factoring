@@ -1,0 +1,43 @@
+{
+  "source_commit": "e764b055dff1d6bf6f7b52e995b2694314618af7",
+  "source_tree": "281a9f4f92320b504b9815bb852b94d73c95e544",
+  "command": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--tmpfs",
+    "/tmp",
+    "--bind",
+    "/home/cinna/integer-factoring-semiprime-field-01a192e7",
+    "/home/cinna/integer-factoring-semiprime-field-01a192e7",
+    "--chdir",
+    "/home/cinna/integer-factoring-semiprime-field-01a192e7",
+    "--unshare-net",
+    "--die-with-parent",
+    "--setenv",
+    "GIT_OPTIONAL_LOCKS",
+    "0",
+    "--",
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 1214.8577500020037,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "namespace_control": {
+    "host_marker_visible": false,
+    "mount_namespace": "mnt:[4026535133]",
+    "different_mount_namespace": true,
+    "inner_marker_visible_on_host": false
+  },
+  "scope": "Default non-Lean make verify in a newly marker-verified private /tmp mount; host root read-only, only the frozen checkout writable and network unshared. No independent mathematical review.",
+  "stdout_sha256": "821a0b68a3b43fd447b3a14c4db54978c7da74ca4cf09ccd60cd7aa9a0895412",
+  "stdout_archive": "evidence/coordinate-word-full-verification.stdout.txt.xz",
+  "archive_sha256": "7ac9f754444b9079484cf2498894398ff77c26c2a7851ad1b9870487b5e5203c"
+}

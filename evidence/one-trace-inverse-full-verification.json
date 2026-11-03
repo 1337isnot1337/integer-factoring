@@ -1,0 +1,16 @@
+{
+  "source_commit": "2a09eb7a75761fc249cace3dd0c311b70085fc64",
+  "source_tree": "593e90864892be8c30c986dbcc6e186ad0e5ba2a",
+  "command": [
+    "make",
+    "verify"
+  ],
+  "tracked_state_before": "",
+  "exit_code": 0,
+  "seconds": 961.2702523769985,
+  "tracked_state_after": "",
+  "scope": "Default non-Lean verification at the exact source commit; no independent mathematical review.",
+  "stdout_sha256": "35dac5ceaa4dad63b24a442a3a9336a093dd50e8754b448c860ed244d317b69e",
+  "stdout_archive": "evidence/one-trace-inverse-full-verification.stdout.txt.xz",
+  "archive_sha256": "b03adcf067dfb127b1029fc248fe728dbb0ca640dec71d3441ed3715cfc11dfc"
+}

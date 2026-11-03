@@ -1,0 +1,495 @@
+{
+  "scope": "Exact finite controls for the ordinary ambient-minorant obstruction. Uniform prime bias and the infinite-family existence use the cited analytic estimates and least-prime theorem; they are not inferred from these examples.",
+  "walsh_control": {
+    "group": "(Z/2)^4",
+    "bias": "1/15",
+    "sharp_mean": "1/16",
+    "records": [
+      {
+        "mixture": "1",
+        "mean": "1/16",
+        "expectation": "0",
+        "sharp": true
+      },
+      {
+        "mixture": "1/2",
+        "mean": "1/32",
+        "expectation": "-1/30",
+        "sharp": false
+      }
+    ]
+  },
+  "semiprime_controls": [
+    {
+      "A": 11,
+      "factors": [
+        1453,
+        2043650311
+      ],
+      "N": 2969423901883,
+      "bits": 42,
+      "discriminant": -2969423901883,
+      "target": [
+        11,
+        1,
+        67486906861
+      ],
+      "full_height": 994890,
+      "smooth_bound": 10,
+      "small_prime_preprocessing_cutoff": 128,
+      "oriented_translates": 2,
+      "controls": [
+        {
+          "prime": 7,
+          "source_form": [
+            7,
+            3,
+            106050853639
+          ],
+          "translated_form": [
+            77,
+            45,
+            9640986701
+          ]
+        },
+        {
+          "prime": 7,
+          "source_form": [
+            7,
+            -3,
+            106050853639
+          ],
+          "translated_form": [
+            77,
+            67,
+            9640986709
+          ]
+        }
+      ]
+    },
+    {
+      "A": 13,
+      "factors": [
+        677,
+        4647456059
+      ],
+      "N": 3146327751943,
+      "bits": 42,
+      "discriminant": -3146327751943,
+      "target": [
+        13,
+        1,
+        60506302922
+      ],
+      "full_height": 1024097,
+      "smooth_bound": 12,
+      "small_prime_preprocessing_cutoff": 128,
+      "oriented_translates": 4,
+      "controls": [
+        {
+          "prime": 7,
+          "source_form": [
+            7,
+            3,
+            112368848284
+          ],
+          "translated_form": [
+            91,
+            -25,
+            8643757562
+          ]
+        },
+        {
+          "prime": 7,
+          "source_form": [
+            7,
+            -3,
+            112368848284
+          ],
+          "translated_form": [
+            91,
+            53,
+            8643757568
+          ]
+        },
+        {
+          "prime": 11,
+          "source_form": [
+            11,
+            3,
+            71507448908
+          ],
+          "translated_form": [
+            143,
+            -129,
+            5500573022
+          ]
+        },
+        {
+          "prime": 11,
+          "source_form": [
+            11,
+            -3,
+            71507448908
+          ],
+          "translated_form": [
+            143,
+            -25,
+            5500572994
+          ]
+        }
+      ]
+    },
+    {
+      "A": 17,
+      "factors": [
+        3469,
+        194757624823
+      ],
+      "N": 675614200510987,
+      "bits": 50,
+      "discriminant": -675614200510987,
+      "target": [
+        17,
+        1,
+        9935502948691
+      ],
+      "full_height": 15006822,
+      "smooth_bound": 16,
+      "small_prime_preprocessing_cutoff": 256,
+      "oriented_translates": 4,
+      "controls": [
+        {
+          "prime": 7,
+          "source_form": [
+            7,
+            5,
+            24129078589679
+          ],
+          "translated_form": [
+            119,
+            103,
+            1419357564121
+          ]
+        },
+        {
+          "prime": 7,
+          "source_form": [
+            7,
+            -5,
+            24129078589679
+          ],
+          "translated_form": [
+            119,
+            -33,
+            1419357564101
+          ]
+        },
+        {
+          "prime": 13,
+          "source_form": [
+            13,
+            9,
+            12992580779059
+          ],
+          "translated_form": [
+            221,
+            35,
+            764269457593
+          ]
+        },
+        {
+          "prime": 13,
+          "source_form": [
+            13,
+            -9,
+            12992580779059
+          ],
+          "translated_form": [
+            221,
+            69,
+            764269457597
+          ]
+        }
+      ]
+    },
+    {
+      "A": 19,
+      "factors": [
+        18773,
+        6106829566511
+      ],
+      "N": 114643511452111003,
+      "bits": 57,
+      "discriminant": -114643511452111003,
+      "target": [
+        19,
+        1,
+        1508467255948829
+      ],
+      "full_height": 195485303,
+      "smooth_bound": 18,
+      "small_prime_preprocessing_cutoff": 256,
+      "oriented_translates": 6,
+      "controls": [
+        {
+          "prime": 7,
+          "source_form": [
+            7,
+            3,
+            4094411123289679
+          ],
+          "translated_form": [
+            133,
+            115,
+            215495322278429
+          ]
+        },
+        {
+          "prime": 7,
+          "source_form": [
+            7,
+            -3,
+            4094411123289679
+          ],
+          "translated_form": [
+            133,
+            39,
+            215495322278407
+          ]
+        },
+        {
+          "prime": 11,
+          "source_form": [
+            11,
+            1,
+            2605534351184341
+          ],
+          "translated_form": [
+            209,
+            1,
+            137133386904439
+          ]
+        },
+        {
+          "prime": 11,
+          "source_form": [
+            11,
+            -1,
+            2605534351184341
+          ],
+          "translated_form": [
+            209,
+            153,
+            137133386904467
+          ]
+        },
+        {
+          "prime": 17,
+          "source_form": [
+            17,
+            3,
+            1685933991942809
+          ],
+          "translated_form": [
+            323,
+            -303,
+            88733367997061
+          ]
+        },
+        {
+          "prime": 17,
+          "source_form": [
+            17,
+            -3,
+            1685933991942809
+          ],
+          "translated_form": [
+            323,
+            -37,
+            88733367996991
+          ]
+        }
+      ]
+    },
+    {
+      "A": 23,
+      "factors": [
+        12697,
+        682256839687
+      ],
+      "N": 8662615093505839,
+      "bits": 53,
+      "discriminant": -8662615093505839,
+      "target": [
+        23,
+        1,
+        94158859712020
+      ],
+      "full_height": 53735820,
+      "smooth_bound": 22,
+      "small_prime_preprocessing_cutoff": 256,
+      "oriented_translates": 2,
+      "controls": [
+        {
+          "prime": 5,
+          "source_form": [
+            5,
+            1,
+            433130754675292
+          ],
+          "translated_form": [
+            115,
+            1,
+            18831771942404
+          ]
+        },
+        {
+          "prime": 5,
+          "source_form": [
+            5,
+            -1,
+            433130754675292
+          ],
+          "translated_form": [
+            115,
+            -91,
+            18831771942422
+          ]
+        }
+      ]
+    },
+    {
+      "A": 29,
+      "factors": [
+        10093,
+        19533109708451
+      ],
+      "N": 197147676287395943,
+      "bits": 58,
+      "discriminant": -197147676287395943,
+      "target": [
+        29,
+        1,
+        1699548933512034
+      ],
+      "full_height": 256351110,
+      "smooth_bound": 28,
+      "small_prime_preprocessing_cutoff": 256,
+      "oriented_translates": 8,
+      "controls": [
+        {
+          "prime": 3,
+          "source_form": [
+            3,
+            1,
+            16428973023949662
+          ],
+          "translated_form": [
+            87,
+            1,
+            566516311170678
+          ]
+        },
+        {
+          "prime": 3,
+          "source_form": [
+            3,
+            -1,
+            16428973023949662
+          ],
+          "translated_form": [
+            87,
+            59,
+            566516311170688
+          ]
+        },
+        {
+          "prime": 11,
+          "source_form": [
+            11,
+            1,
+            4480629006531726
+          ],
+          "translated_form": [
+            319,
+            1,
+            154504448501094
+          ]
+        },
+        {
+          "prime": 11,
+          "source_form": [
+            11,
+            -1,
+            4480629006531726
+          ],
+          "translated_form": [
+            319,
+            175,
+            154504448501118
+          ]
+        },
+        {
+          "prime": 17,
+          "source_form": [
+            17,
+            5,
+            2899230533638176
+          ],
+          "translated_form": [
+            493,
+            175,
+            99973466677194
+          ]
+        },
+        {
+          "prime": 17,
+          "source_form": [
+            17,
+            -5,
+            2899230533638176
+          ],
+          "translated_form": [
+            493,
+            233,
+            99973466677206
+          ]
+        },
+        {
+          "prime": 19,
+          "source_form": [
+            19,
+            17,
+            2594048372202582
+          ],
+          "translated_form": [
+            551,
+            -173,
+            89449943869068
+          ]
+        },
+        {
+          "prime": 19,
+          "source_form": [
+            19,
+            -17,
+            2594048372202582
+          ],
+          "translated_form": [
+            551,
+            59,
+            89449943869056
+          ]
+        }
+      ]
+    }
+  ],
+  "oriented_translates_checked": 26,
+  "coarse_exponents": {
+    "p": 12,
+    "q": 156,
+    "N": 168,
+    "minorant_binary_decay_denominator": 5376
+  }
+}
