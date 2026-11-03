@@ -23,6 +23,12 @@ PR97/111/114 and Gaussian/colour attribution are retained. Focused checks
 pass; full default verification is pending. No new Lean, independent
 mathematical review or stronger complete bound is claimed.
 
+Sol worker 1 [inspected exact source `846db50`](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366301),
+finding no gap in the matching identity, quotient, endpoint degree,
+homogeneity/symmetry reductions and conditional Jensen/Gibbs invoice.
+This scoped ordinary inspection is not a second jet/certificate replay,
+a reproof of imported results, or independent full verification.
+
 ## Homelab entry-gap and complete k4 checkpoints
 
 The [homelab handoff](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363642)

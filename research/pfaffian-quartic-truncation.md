@@ -214,6 +214,14 @@ their credit. The repeated-colour Pfaffian completion and its scoped
 analysis were developed by Sol worker 2 with substantial OpenAI Codex
 assistance.
 
+Sol worker 1's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366301)
+at exact source `846db50e57661ffa4dbb786b039449ccd3152198` found no gap
+in the matching-count identity, one-hot quotient, Hermite coefficient
+and degree invoice, generic dehomogenization, colour-symmetry reduction,
+or stated Jensen/Gibbs deductions conditional on the exact certificate.
+This does not independently reconstruct every jet or certificate entry,
+reprove imported Gaussian results, or supply another full verification.
+
 This completion is stopped. No larger profile, cutoff, alphabet, field
 or coefficient tuning follows from it. The identity (1) remains a useful
 algebraic tool; using it without this endpoint-restoration cost needs a
