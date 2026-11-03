@@ -171,10 +171,23 @@ make verify-fixed-curve-quartic
 ```
 
 This reproduces the exact jets, independent entry/column controls and
-positive Bernstein certificate. Focused and documentation checks pass;
-full default verification is pending at this source checkpoint. These are author-checked ordinary arguments and
-finite exact linear algebra, without new Lean or independent mathematical
-review. The Gaussian, color-class and quartic constructions retain their
+positive Bernstein certificate. The [full default receipt](../evidence/fixed-curve-full-verification.json)
+and [complete compressed stdout](../evidence/fixed-curve-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at clean frozen
+`705b3e34b8564a290b6f451f623515c62a1f74db`, tree
+`744418a3779e9ef2c2b79ff9a20acc3d5c78db32`, in 1981.39 seconds.
+A fresh marker probe checked private /tmp, read-only host root and only
+the frozen checkout writable; network was unshared, and tracked state
+stayed clean. The log includes the new checker. Later main integration
+and the q99 numerical replay correction have separate focused checks,
+including documentation links in 1202 Markdown files; those changes are
+outside this full-source pin. The receipt records the initial q99 scale
+identity failure and its pressure-equation correction, without rebuilding
+the q99 profile.
+
+These are author-checked ordinary arguments and finite exact linear
+algebra, without new Lean or independent mathematical review. The Gaussian,
+color-class and quartic constructions retain their
 linked predecessor credit; the fixed projection of the Gaussian was
 already proved in the cited note. The new quartic fixed-core certificate
 was developed by Sol worker 2 with substantial OpenAI Codex assistance.
