@@ -1967,6 +1967,10 @@ verify-rank-deficient-endpoint:
 verify-hash-join-identity-minor:
 	python3 tools/check_hash_join_identity_minor.py --output /tmp/integer-factoring-hash-join-identity-minor.json
 
+.PHONY: verify-fanout-forward-join
+verify-fanout-forward-join:
+	python3 tools/check_fanout_forward_join.py --output /tmp/integer-factoring-fanout-forward-join.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
