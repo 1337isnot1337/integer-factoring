@@ -2,6 +2,8 @@
 
 - [Fixed q8 quartic projection floor](fixed-curve-quartic-floor.md): the fixed two-axis curve (x^2,y^2,xy) preserves the endpoint/cold conditions but retains a common-paired-type profile floor 3/4. Complete binary charge jets through eighteen and a degree/entropy certificate stop this curve; no larger profile or score change.
 
+- [Colour alternation on the fixed joint-cold curve](colour-alternation-joint-cold-curve.md): symmetric quartic creation cancels under distinct-colour column alternation, retaining all Gaussian exterior-minor channels. On `(X,Y,Z)=(x^2,y^2,xy)`, exact one-particle orders `(6,6,18,18)` yield an all-alphabet partition lower bound; for `q-1>=2^90` it forces common-scale, unweighted paired-type pressure at least `3/4>1/sqrt(2)`. The conservative threshold does not settle `q=8`; weighted gauges, unequal scales and colour-asymmetric interactions are outside scope. No complete-bound improvement.
+
 - [Division-free trace-dual counts at sparsity-sized precision](trace-dual-native-counts.md): a trace-dual coordinate map gives one Teichmuller point per odd half-width candidate. Completed trial division bounds unweighted prefix counts at K=min(ceil(b/2)-1,ceil(b/t)) bits, with polylogarithmic output precision below any fixed positive-score budget. Polynomial Boolean gates remove exact halvings and retain the same small starting precision; summing the unrestricted-degree circuit is still open.
 
 - [Always-positive deep class roots](deep-class-root-projection.md): a root of g^(2^L) at depth 2L gives its canonical two-primary projection. Existing generation and polynomial early-stop extraction give an all-input conditional poly(b)(F(b)+1) bound, without smooth-density or relation premises. The root engine remains missing; no score change.
@@ -1287,6 +1289,11 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Supporting lines from opposite flags at several places](asymmetric-mixed-place-crossings.md)
 - [Degenerate asymmetric scaling of complete rectangular two-cut profiles](asymmetric-degenerate-scaling-floor.md): the recorded q4 asymmetric winner `1.001436` is bound-constrained; at zero gauge scale every rectangular `A,B,B,A` complete profile has support value `cos(theta)+sin(theta)`, so the degenerate corner is at least one. q4 replays approach one from above (best `1+1.37e-9`), and a bounded rank-two square-zero screen is worse. No strict crossing; unequal channel counts within valid rectangular pair cuts are closed, while genuine `3+1` non-pair cuts remain open.
 - [Rank-deficient endpoint perturbations do not improve the q4 pressure](rank-deficient-endpoint-perturbation.md): subtracting a rank-one term at degree zero and restoring it at degree `d` preserves the endpoint and lowers the constant-term rank. A deterministic 9,000-trial natural-gauge screen over `d=1,2,3,4,6,8` finds no improvement over the q4 base `0.7310809359736006`; the unequal-rank cyclic cell `(1,9)` has pressure `1.412832752034821`. Rank lowering alone is not a crossing.
+- [The identity minor is a hash join, not a Cartesian product](hash-join-identity-minor.md): the source's finite identity-minor check enumerates every ordered message pair; the same equality join is computed exactly by message multiplicities. At `s=1` this is `8,192` message-plus-output operations instead of `1,048,576` pair comparisons. Finite source diagnostic only; it does not compress the evaluator pad or change the exponent.
+- [The source fan-out is a forward map, not an input-message product](fanout-forward-join.md): the full recipient map is injective, so the edge relation is functional. At `h=2` forward evaluation visits `65,536` messages instead of `65,536*(2^32+1)^4` input-message pairs. Finite fan-out diagnostic; later gates and the evaluator pad are untouched.
+- [A proper Fourier-coset bundle compresses jointly, not as a code product](bundle-joint-compression.md): for the source `p=2` bundle the row and column codecs share the same input digits. At `h=2` the joint image has `65,536` pairs instead of the `2^32` code-space product; at `h=1` the factor is `4`. Finite codec diagnostic; full two-cut pad and later gates untouched.
+- [Two bundles compress only when their input digits overlap](two-bundle-joint-image.md): shared inputs give a graph image of one pair per input (factor `65,536` at `h=2`); disjoint inputs give the full rank product (factor `1` at `h=1`). The compression is local to shared digits, so a full pad composition needs the digit-sharing graph.
+- [Component rule for a shared pair plus an independent bundle](three-bundle-joint-image.md): the joint image is the shared graph times the independent rank. At `h=2` this is `2^32` instead of the `2^48` full rank product (factor `65,536`); `h=1` is exact by enumeration (factor `4`). Finite composition rule; full pad unchanged.
 - [A weighted two-cut bound gives a complete rectangular factoring transfer](asymmetric-modular-transfer.md)
 - [Asymmetric supporting lines for crossing pieces](asymmetric-support-line-crossings.md)
 - [Opposite Bell jets have a unique simultaneous eighth-order carrier](bell-jet-transversality.md)
@@ -1691,7 +1698,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 
 [All-mode protected-core floors](jensen-tail-protected-core-floor.md) use a determinant-degree bound on 3,202 unresolved orders, rather than assigning individual values. Retaining the height-below-24 core forces rho >= 17/24 through height37, and >=29/41 through height38, over all characteristic-two fields. Separate alphabets/types and arbitrary homogeneous high splits are allowed; unequal cut scales and other gauges are not excluded.
 
-- [The height-38 protected-core barrier does not extend to height 39](protected-core-height39-transition.md): the same Jensen-tail test admits `70/99 < 1/sqrt(2)` at support height 39, though no split is constructed.
+- [The height-38 protected-core barrier does not extend to height 39](protected-core-height39-transition.md): the same Jensen-tail test admits `70/99` and the nearby exact point `113/160 < 1/sqrt(2)` at support height 39; a numerical band runs near `rho~0.7061--0.7071`, though no split is constructed.
 
 ## Exact Hecke determinant factors and closed places
 
@@ -1726,3 +1733,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## q96 unequal-cut-scale screen
 
 [q96 unequal cut scales stay above one](q96-asymmetric-scale-screen.md): six complete 96-letter profiles are screened under the two-place asymmetric supporting-line criterion. The balanced calibration matches the certified or recorded natural pressures. The best interior support is `1.0037692355`, and the near-one values are a degenerate one-cut boundary layer rather than a fixed-aspect crossing. No exact certificate or score improvement.
+
+## Height-39 F8 hyperoval extension
+
+[Complete q99 height-39 profile](f8-hyperoval-height39-extension.md): adding the three single-word coordinates `160,192,224` to the q96 map gives a valid deletion-closed q99 map with maximum height 39. The complete profile resolves; its numerical natural pressure is `0.7099930431`, a `1.27e-5` gain over q96 but still above `1/sqrt(2)`. No exact certificate or score change.

@@ -1963,6 +1963,26 @@ verify-asymmetric-scaling-floor:
 verify-rank-deficient-endpoint:
 	python3 tools/check_rank_deficient_endpoint.py --output /tmp/integer-factoring-rank-deficient-endpoint.json
 
+.PHONY: verify-hash-join-identity-minor
+verify-hash-join-identity-minor:
+	python3 tools/check_hash_join_identity_minor.py --output /tmp/integer-factoring-hash-join-identity-minor.json
+
+.PHONY: verify-fanout-forward-join
+verify-fanout-forward-join:
+	python3 tools/check_fanout_forward_join.py --output /tmp/integer-factoring-fanout-forward-join.json
+
+.PHONY: verify-bundle-joint-compression
+verify-bundle-joint-compression:
+	python3 tools/check_bundle_joint_compression.py --output /tmp/integer-factoring-bundle-joint-compression.json
+
+.PHONY: verify-two-bundle-joint-image
+verify-two-bundle-joint-image:
+	python3 tools/check_two_bundle_joint_image.py --output /tmp/integer-factoring-two-bundle-joint-image.json
+
+.PHONY: verify-three-bundle-joint-image
+verify-three-bundle-joint-image:
+	python3 tools/check_three_bundle_joint_image.py --output /tmp/integer-factoring-three-bundle-joint-image.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
@@ -3005,6 +3025,10 @@ verify-jensen-core-floors:
 verify-protected-core-height39-transition:
 	python3 tools/check_protected_core_height39.py --output /tmp/protected-core-height39-transition-check.json
 
+.PHONY: verify-protected-core-height39-region
+verify-protected-core-height39-region:
+	python3 tools/check_protected_core_height39_region.py --output /tmp/protected-core-height39-region-check.json
+
 .PHONY: verify-coherent-inverse-f4 verify-coherent-gram-f4
 verify-coherent-inverse-f4:
 	python3 tools/check_coherent_inverse_systems_f4.py
@@ -3023,6 +3047,12 @@ verify-coherent-divided-probes:
 .PHONY: verify-hecke-q5-determinants
 verify-hecke-q5-determinants:
 	python3 tools/check_hecke_q5_determinants.py
+
+.PHONY: verify-f8-height39-extension build-f8-height39-extension
+verify-f8-height39-extension:
+	python3 tools/check_f8_hyperoval_height39_extension.py --output /tmp/f8-height39-extension-check.json
+build-f8-height39-extension:
+	python3 tools/build_f8_hyperoval_height39_extension.py
 
 .PHONY: verify-f8-retraction-refinement verify-f8-retraction-refinement-full verify-f8-retraction-census-full
 verify-f8-retraction-refinement:
@@ -3402,3 +3432,9 @@ verify-fixed-curve-quartic:
 	python3 tools/check_fixed_curve_quartic_floor.py
 
 verify-arithmetic: verify-fixed-curve-quartic
+
+.PHONY: verify-colour-alternation
+verify-colour-alternation:
+	python3 tools/check_colour_alternation.py
+
+verify-arithmetic: verify-colour-alternation

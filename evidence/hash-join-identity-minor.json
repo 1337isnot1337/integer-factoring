@@ -1,0 +1,39 @@
+{
+  "rows": [
+    {
+      "A": 2,
+      "answer": 16,
+      "brute_pairs": 64,
+      "d": 2,
+      "h": 1,
+      "hash_join_work": 32,
+      "hash_output_pairs": 16,
+      "messages_built": 16,
+      "modulus": 257,
+      "pair_reduction_factor": 2.0,
+      "s": 0,
+      "values_per_wire": 4,
+      "wires": 4
+    },
+    {
+      "A": 4,
+      "answer": 4096,
+      "brute_pairs": 1048576,
+      "d": 8,
+      "h": 2,
+      "hash_join_work": 8192,
+      "hash_output_pairs": 4096,
+      "messages_built": 4096,
+      "modulus": 4294967297,
+      "pair_reduction_factor": 128.0,
+      "s": 1,
+      "values_per_wire": 256,
+      "wires": 16
+    }
+  ],
+  "scope": "Finite identity-minor source diagnostic. The equality join is computed exactly in linear message-plus-output work on these cases. This does not assert that the full edge tensors are functional, does not compress the evaluator pad, and does not change the factoring exponent.",
+  "source_sha256": {
+    "check_hash_join_identity_minor.py": "045eb314c4283e8673dd8d22ae2e00996b4b240aad23c10be90dad1e66403577"
+  },
+  "status": "pass"
+}

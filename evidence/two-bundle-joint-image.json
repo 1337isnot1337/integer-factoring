@@ -1,0 +1,40 @@
+{
+  "rows": [
+    {
+      "case": "shared_inputs",
+      "compression_factor": 4,
+      "h": 1,
+      "inputs_each": 4,
+      "joint_image": 4,
+      "left_rank": 4,
+      "rank_product": 16,
+      "right_rank": 4
+    },
+    {
+      "case": "shared_inputs",
+      "compression_factor": 65536,
+      "h": 2,
+      "inputs_each": 65536,
+      "joint_image": 65536,
+      "left_rank": 65536,
+      "rank_product": 4294967296,
+      "right_rank": 65536
+    },
+    {
+      "case": "disjoint_inputs",
+      "compression_factor": 1,
+      "h": 1,
+      "inputs_each": 4,
+      "joint_image": 16,
+      "left_rank": 4,
+      "rank_product": 16,
+      "right_rank": 4
+    }
+  ],
+  "scope": "Finite two-bundle codec diagnostic. Shared input digits give a graph image of the same size as the input space; disjoint input digits give the full rank product at h=1. The full two-cut pad composition and complete factoring bound are unchanged.",
+  "source_sha256": {
+    "check_factoring_network_structure.py": "64ab9aa171e9534d1edb93e3cadc8c5bdf12d3aa94f420ebd70f2107851f69b3",
+    "check_two_bundle_joint_image.py": "5d10cb83157b59e34dd5808fd9f5c72467cd01be554954b39e03a11ee54120f9"
+  },
+  "status": "pass"
+}
