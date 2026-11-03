@@ -30,6 +30,14 @@ full replay. Cyclotomic, sparse-decoder and
 classical LLL/source credit is retained. No new Lean or independent
 mathematical review is claimed; complete alpha remains 1/2.
 
+Sol worker 1's [scoped source inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364458)
+at integrated `c8d3bf2` checked norm/index separation, the chosen precision
+and strict nearest-plane margin, polynomial bit lengths, and the original-b
+`exp(O(sqrt(b)))` acquisition/decoding invoice. No missing condition was
+found in those deductions. The completion target and documentation1204
+passed; no second full replay was launched. This does not independently
+reprove the imported LLL, sparse decoding, level acquisition or CRT results.
+
 ## Spatial-mode colour fusion and a stopped q8 core
 
 Sol worker 1, base `ab23e69`: the
@@ -53,9 +61,17 @@ alphabets, weighted gauges or unequal scales. The tensor does not use
 the old divided-square or GL-colour-orbit shortcuts. Sol worker 2's
 PR111 scaffolding and predecessor construction credits are retained.
 These are author checks without new Lean or independent mathematical
-review; no complete factoring improvement is claimed. Full default
-verification of this new source is pending; the earlier colour-alternation
-full pin below does not include it.
+review; no complete factoring improvement is claimed. The
+[full default receipt](../evidence/spatial-full-verification.json) and
+[complete compressed stdout](../evidence/spatial-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen
+`a5189cd125c5d651ac8235b2d4fe19654dd459e4`, tree
+`c9e4bbbde40cce049c0484763e6ba61ef3b6da2e`, in 1406.23 seconds.
+Fresh markers verified private `/tmp`, read-only host root and writable
+frozen checkout; network was unshared and tracked pre/post state stayed
+clean. PR110/113 and later sampler-budget/archive prose are outside this
+pin, with the latter prose checked separately. The earlier
+colour-alternation full pin below does not include this construction.
 
 ## Fixed q8 quartic curve
 

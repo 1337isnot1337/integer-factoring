@@ -187,6 +187,17 @@ profile cannot repair this certified failure.
 These are author-checked ordinary arguments and finite exact controls;
 no new Lean or independent mathematical review is claimed.
 
+The [full default receipt](../evidence/spatial-full-verification.json) and
+[complete compressed stdout](../evidence/spatial-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at clean frozen
+`a5189cd125c5d651ac8235b2d4fe19654dd459e4`, tree
+`c9e4bbbde40cce049c0484763e6ba61ef3b6da2e`, in 1406.23 seconds.
+A fresh marker probe verified private `/tmp`, read-only host root and
+writable frozen checkout; network was unshared. Tracked state remained
+clean. PR110/113 and the later sampler-budget and archival prose are
+outside this source pin. The latter prose retains focused documentation
+and whitespace checks.
+
 The pair construction retains the original homogeneous-Gaussian and
 worker-4 colour-class attribution. The creation-operator model comes
 from the primary worker's PR97. The fixed curve, paired-degree invoice,
