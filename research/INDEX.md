@@ -1670,3 +1670,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## q96 unequal-cut-scale screen
 
 [q96 unequal cut scales stay above one](q96-asymmetric-scale-screen.md): six complete 96-letter profiles are screened under the two-place asymmetric supporting-line criterion. The balanced calibration matches the certified or recorded natural pressures. The best interior support is `1.0037692355`, and the near-one values are a degenerate one-cut boundary layer rather than a fixed-aspect crossing. No exact certificate or score improvement.
+
+## Height-39 F8 hyperoval extension
+
+[Complete q99 height-39 profile](f8-hyperoval-height39-extension.md): adding the three single-word coordinates `160,192,224` to the q96 map gives a valid deletion-closed q99 map with maximum height 39. The complete profile resolves; its numerical natural pressure is `0.7099930431`, a `1.27e-5` gain over q96 but still above `1/sqrt(2)`. No exact certificate or score change.

@@ -47,7 +47,10 @@ An escape within the protected-core family needs support at least 39, or
 a change to the protected low block itself. A height-39 map would still
 have to satisfy the literal core, constant height-homogeneous maps, the
 common balanced cut scale, and the full uniform transfer. The exact test
-here only says that the height-38 barrier no longer rules it out.
+here only says that the height-38 barrier no longer rules it out. A
+minimal deletion-closed extension is constructed in the
+[q99 height-39 profile](f8-hyperoval-height39-extension.md); it resolves
+completely at numerical `rho ~ 0.709993`, still above the threshold.
 
 ## Scope
 
