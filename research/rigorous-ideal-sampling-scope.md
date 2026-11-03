@@ -30,6 +30,27 @@ independent prime ideals. Proposition 8.12 still uses a randomized
 uniform lattice-point sampler. Expected polynomial sampling cost is
 not a bound on the number of possible samples.
 
+### The quadratic box still has a large norm budget
+
+For the trivial modulus, degree two, BKZ parameter two and `omega=1`,
+Theorem 9.5 chooses the normalized box radius `r=c D^(3/4)`, with an
+absolute constant `c` and `D=|Delta_K|`. Its local ideal-density scale
+is therefore `r^2=c^2 D^(3/2)`. The output norm bound is
+`|Norm(beta)|<=Norm(b) B^N r^2`; the randomizing smooth factor `B^N`
+is retained. This is a larger norm budget than the reduced-height
+scale `sqrt(D)`.
+
+Constant dimension does not make exhaustive box enumeration cheap.
+Already for `O_K` in its complex embedding, a disk of radius
+`c D^(3/4)` contains `Theta(D)` lattice points: the covolume is
+`Theta(sqrt(D))`, and direct counting in the basis `1,omega_K`
+gives the matching area estimate at this radius. Thus enumerating
+all possible lattice samples is a second exponential-cost conversion,
+even after fixing the discrete walk. The norm bound has polynomial
+**bit length**; this does not bound the number of candidates by a
+polynomial. This observation does not exclude a smaller target-dependent
+region, a different sampler, or selecting a successful point directly.
+
 ## A support-size calculation
 
 Let `G` be a finite set of size `h`, let `U` be its uniform probability
