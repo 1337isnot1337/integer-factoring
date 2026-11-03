@@ -24,9 +24,17 @@ asymptotic exclusion. No new k, field or retraction search is added.
 The focused k4 replay passes. The entry checker reproduces every numeric
 field of the saved receipt, including nine specified traversals and
 70,465 prefix records; only the saved scope wording changes. Documentation
-and whitespace checks pass. One frozen full integration verification is
-planned, explicitly including both new targets; no full pass is claimed
-at this edit. No new Lean, independent mathematical review or stronger complete
+and whitespace checks pass. The [full integration receipt](../evidence/homelab-integration-full-verification.json)
+and [complete compressed stdout](../evidence/homelab-integration-full-verification.stdout.txt.xz)
+record `make verify verify-entry-gap-cluster-loss verify-determinant-inverse-k4`
+exiting zero in 1342.17 seconds at clean frozen
+`c9ddfae08e3e979e4a92ca6adf02266fe143ad13`, tree
+`c228943b510d701c2d87c21fcac549717b30e659`. The marker probe confirms a
+private `/tmp`, read-only host root, writable frozen checkout and network
+isolation; pre/post tracked state and the final untracked check are empty.
+Both actual new checker outputs are present. The optional full k4 profile
+reconstruction and later PR118 are outside that pin. Archival prose has
+separate documentation/whitespace checks. No new Lean, independent mathematical review or stronger complete
 factoring exponent is claimed.
 
 ## Selected-annihilator zero-density source check

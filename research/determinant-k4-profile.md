@@ -77,3 +77,9 @@ replay checks the saved profile structure, numerical pressure equation
 and all 130 selected entries; it does not repeat the optional complete
 9,800-order reconstruction. No extra k, field or retraction search was
 performed for this historical integration.
+
+The [full integration replay](../evidence/homelab-integration-full-verification.json)
+passed the default suite plus this selected-entry checker and the entry-gap
+checker in 1342.17 seconds at clean frozen `c9ddfae`. It does not include
+the optional `--full` profile reconstruction. The receipt retains the
+exact source tree, namespace probe and complete compressed stdout.

@@ -78,6 +78,8 @@ A [confluent seven-letter quantum-spin construction](research/confluent-quantum-
 
 The [completed k=4 determinant-code profile](research/determinant-k4-profile.md) resolves all 9,800 cut orders at cutoff 511, with 130 selected original-matrix entry controls. Its sampled natural pressure is about 0.7394803, above the crossing target; no global scale optimum or all-scale exclusion is claimed. This closes the local k panel without a stronger factoring bound.
 
+The [homelab integration replay](evidence/homelab-integration-full-verification.json) passed the default suite plus both the entry-gap and k4 checkers in 1342.17 seconds at clean frozen source `c9ddfae`. Its complete stdout and source hashes are archived. The k4 checker validates the saved complete profile and selected entries; this run does not repeat the optional full profile reconstruction.
+
 A [noncommuting nilpotent Gram test](research/nilpotent-gram-crossing.md) also preserves the endpoint and both cold ranks one, but its row Smith profile forces pressure above the required threshold over every finite coefficient extension. This fixed construction is stopped.
 
 A [color-parity sector theorem](research/color-distinct-sector-obstruction.md) excludes every homogeneous antipodal cube retaining separate color parity at `q>=34`, over every field: its common-scale, unweighted three-axis profile pressure is at least `3/4>1/sqrt(3)` for every common physical type. This includes the one-hot Gaussian. Closed odd-color sectors and the existing scalar polynomial certificate prove the bound without a generic profile computation; changing Gaussian weights while preserving color parity cannot escape it.
