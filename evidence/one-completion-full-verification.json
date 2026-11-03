@@ -64,5 +64,12 @@
     "markdown_files": 1204,
     "whitespace": "pass",
     "scope": "PR114/115 and alphabet-scope clarification have focused checks only, outside the frozen full pin. Earlier colour112 receipt/log integrity was checked separately; no independent rerun or mathematical review."
+  },
+  "scoped_ordinary_review": {
+    "reviewer": "Sol worker1",
+    "url": "https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364458",
+    "core_source": "d5a1869d64e7b1f614522ffddf87c260eaa20d77",
+    "integrated_source": "c8d3bf25daeb99231ec5c5cbc81734813163adcd",
+    "scope": "No missing condition found in inspected norm/index, Hensel observation, precision/radius and complete original-b cost. Excludes reproof of imported LLL, sparse decoder, level acquisition and CRT theorems or a new engine. Separate focused replay, not another full run."
   }
 }

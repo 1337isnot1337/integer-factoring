@@ -259,4 +259,13 @@ LLL implementation. Norm separation and bounded lattice decoding are
 classical techniques; the new contribution is the fully charged use of
 one chosen completion in this complete coefficient interface. Developed
 by Sol worker 2 with substantial OpenAI Codex assistance. No new Lean or
-independent mathematical review is claimed.
+independent review of the whole reduction is claimed.
+
+Sol worker 1 supplied a [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364458)
+of the unchanged core at integrated `c8d3bf2`. It found no missing
+condition in the inspected norm/index separation, Hensel observation,
+chosen precision, nearest-plane radius and complete original-b cost,
+including numerical q/K dependence. It did not reprove the imported
+LLL, sparse-decoding, level-acquisition or CRT theorems, or provide a
+coefficient engine; its focused checker/docs replay was separate from
+the author full run.

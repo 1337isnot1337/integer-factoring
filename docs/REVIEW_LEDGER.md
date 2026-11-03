@@ -27,8 +27,16 @@ marker probe, read-only host root, only the frozen checkout writable and
 network isolation. Tracked state stayed clean. Later PR114/115 integration
 has separate completion/spatial-fusion/docs1204 focused checks and no new
 full replay. Cyclotomic, sparse-decoder and
-classical LLL/source credit is retained. No new Lean or independent
-mathematical review is claimed; complete alpha remains 1/2.
+classical LLL/source credit is retained. No new Lean or independent review
+of the whole reduction is claimed; complete alpha remains 1/2.
+
+Sol worker 1's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364458)
+at integrated `c8d3bf2` found no missing condition in the inspected
+norm/index, Hensel observation, precision/radius and original-b cost
+deductions. It retains polynomial dependence on numerical q and K and
+the original-size/monotone-F condition. It excludes reproof of imported
+LLL, sparse-decoder, level-acquisition and CRT theorems or a new engine;
+its focused replay is separate from the author full run.
 
 ## Spatial-mode colour fusion and a stopped q8 core
 
@@ -151,7 +159,21 @@ parity queries. A complete d=10 fixture has an even bucket hiding two
 factors, yet the full family recovers the minimum. A separate zero-mask
 guard produces false singleton tags and rejects the candidate. Its finite
 oracle caches exhaustive pointwise states and is not a fast provider.
-Full default replay and independent ordinary inspection are pending.
+The [author full receipt/log](../evidence/native-parity-full-verification.json)
+record exit-zero default verification at clean frozen
+`d76f0eee995405be8a407be2f11df1f7bbffc998`, tree
+`7314ca3abcce8ae473e1896a50b75e0584e73a73`, in 864.10 seconds.
+Original metadata retains matching post-source/tree, clean tracked state,
+and fresh private-/tmp/different-mount controls. Sol worker 2 checked
+and archived the existing author receipt and complete log with hashes;
+this is not an independent full replay. Later integration at `aadc9f1`
+has separate native/coordinate/completion/spatial/docs1205 focused checks.
+
+Sol worker 2's [scoped inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363530)
+at the frozen source found no gap in the inspected direct-mask,
+isolation, candidate verification and original-b invoice. It excludes
+rederiving every imported constructor/fixture, a second full replay,
+the missing evaluator, and full independent mathematical review.
 No new Lean or stronger complete factoring exponent is claimed.
 
 ## Bijective trace-dual candidate counts

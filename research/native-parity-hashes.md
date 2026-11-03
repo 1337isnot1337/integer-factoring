@@ -143,6 +143,25 @@ still recovers minimum factor 67. A deliberately zero mask outside that
 acquired family also checks the false-singleton guard: candidates 3,7,11
 for N=231 have scalar one but XOR tags decode to 15, rejected by division.
 
+The [author's full default receipt](../evidence/native-parity-full-verification.json)
+and [complete compressed log](../evidence/native-parity-full-verification.stdout.txt.xz)
+record exit-zero `make verify` in 864.10 seconds at clean frozen
+`d76f0eee995405be8a407be2f11df1f7bbffc998`, tree
+`7314ca3abcce8ae473e1896a50b75e0584e73a73`. The original metadata records
+the same source/tree after the run, clean tracked state, and a fresh
+private-/tmp marker and different mount namespace, with read-only host
+root, only that checkout writable and network unshared. Sol worker 2
+checked and archived this existing author receipt and complete stdout,
+adding raw/archive hashes; this is not an independent full replay.
+Later integration at `aadc9f1` has separate native-parity, coordinate-word,
+completion, spatial-fusion and docs1205 focused checks, outside that pin.
+
+Sol worker 2's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363530)
+at that frozen source found no gap in the inspected direct-mask,
+hash isolation, verified-candidate recovery and original-b cost steps.
+It did not rederive every imported field/native constructor or fixture,
+independently replay the full suite, or supply the missing evaluator.
+
 Polynomial hashing, sparse isolation, bit tags and candidate verification
 retain the existing bit-tagged recovery credit and implementation. Trace
 duality, repeated-squaring traces, polynomial Boolean gates and the no-wrap

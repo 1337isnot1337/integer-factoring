@@ -1,0 +1,59 @@
+{
+  "source_commit": "d76f0eee995405be8a407be2f11df1f7bbffc998",
+  "source_tree": "7314ca3abcce8ae473e1896a50b75e0584e73a73",
+  "command": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--tmpfs",
+    "/tmp",
+    "--bind",
+    "/home/cinna/integer-factoring-native-parity-01a192e7",
+    "/home/cinna/integer-factoring-native-parity-01a192e7",
+    "--chdir",
+    "/home/cinna/integer-factoring-native-parity-01a192e7",
+    "--unshare-net",
+    "--die-with-parent",
+    "--setenv",
+    "GIT_OPTIONAL_LOCKS",
+    "0",
+    "--",
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 864.1034751580155,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "post_source_commit": "d76f0eee995405be8a407be2f11df1f7bbffc998",
+  "post_source_tree": "7314ca3abcce8ae473e1896a50b75e0584e73a73",
+  "namespace_control": {
+    "host_marker_visible": false,
+    "mount_namespace": "mnt:[4026534184]",
+    "different_mount_namespace": true,
+    "inner_marker_visible_on_host": false
+  },
+  "scope": "Default non-Lean make verify in a newly marker-verified private /tmp mount; host root read-only, only the frozen checkout writable and network unshared. No independent mathematical review.",
+  "stdout_sha256": "c4569a823fbea1999c52a864b5503ab00d76f8c315daa6783cd670e67b8afdd5",
+  "stdout_archive": "evidence/native-parity-full-verification.stdout.txt.xz",
+  "stdout_archive_sha256": "b7b358b012779135083048075d9f232f0b1de164850e16d8d2ae3b9b9cf5df01",
+  "archival_scope": "Sol worker2 archived the existing author-provided completed run and checked receipt, source/tree, namespace controls, clean tracked state and complete log integrity. This is not an independent full replay or mathematical review.",
+  "later_integration": {
+    "source_commit": "aadc9f16f92e8e6a01a3cbf4ae7f9ad42ce823e9",
+    "main_base": "c8d3bf25daeb99231ec5c5cbc81734813163adcd",
+    "scope": "Later main113/114/115 integration is outside this author full pin; focused combined checks are recorded separately, not a new full run.",
+    "focused_pass": [
+      "verify-native-parity-hashes",
+      "verify-coordinate-inverse-words",
+      "verify-cyclotomic-completion",
+      "verify-spatial-mode-fusion",
+      "verify-docs"
+    ],
+    "markdown_files": 1205
+  }
+}
