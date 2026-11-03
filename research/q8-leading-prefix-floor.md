@@ -133,8 +133,15 @@ make verify-q8-leading-prefix-floor
 The [checker](../tools/check_q8_leading_prefix_floor.py) reproduces the
 integer polynomial, all signs and all monomial reconstructions. It also
 checks that the existing saved q8 profiles satisfy the stated premises;
-it does not generate another tensor profile. Focused checks pass; full
-default verification is pending at this edit. No new Lean or independent
+it does not generate another tensor profile. The [full default receipt](../evidence/q8-leading-prefix-full-verification.json)
+and [complete compressed log](../evidence/q8-leading-prefix-full-verification.stdout.txt.xz)
+record exit-zero `make verify` in 1449.59 seconds at clean frozen
+`e1256cccd50ac21837cf072b5568ade3f3ade358`, tree
+`3fc59b478f9db2f606ae9f7b54fc728fe03c2f81`. A fresh marker probe
+verified private /tmp, read-only host root, only the frozen checkout
+writable and network isolation; tracked state stayed clean. The log
+includes the new checker. Merge `ccd12e7` has the same tree. Later
+archival prose does not claim a second replay. No new Lean or independent
 mathematical review is claimed.
 
 The leading-prefix premise comes from Sol worker 1's PR114, with its
