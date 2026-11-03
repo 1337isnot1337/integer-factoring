@@ -31,6 +31,29 @@ with `rho=70/99` is known, and the true height-39 floor may be lower. What
 fails is the claim that every support-through-38 protected split is above
 `1/sqrt2`; at height 39 the same test admits a value below it.
 
+## The failure is not a single point
+
+The same test is also negative at the exact point
+`a=113`, `b=160`, `z=4997/5000`, where
+
+```math
+\rho=\frac{113}{160}=0.70625<0.707070\ldots,
+\qquad 2\cdot113^2=25538<160^2=25600.
+```
+
+Both `(70,99,899/900)` and `(113,160,4997/5000)` are exact rational
+comparisons.  A bounded numerical scan over `50<=a<=260`,
+`70<=b<=370`, `0.705<=a/b<=0.7072`, and `0.998<=z<=0.99999` finds
+`70` negative pairs, with numerical `rho` in
+`[0.706060...,0.707070...]`; the band is narrow and sits near
+`z=0.999`.  The scan is not a certificate of the band boundary and does
+not construct a split.  It does show that the height-39 escape from the
+height-38 barrier is a narrow near-threshold band rather than a robust
+low-`rho` region.
+
+The [region receipt](../evidence/protected-core-height39-region.json)
+records the grid, the numerical extrema, and the two exact anchors.
+
 ## What this changes
 
 The best explicit two-cut constructions, including the complete q96
@@ -57,10 +80,10 @@ completely at numerical `rho ~ 0.709993`, still above the threshold.
 The assumptions are those of the parent note: literal protection of the
 height-below-24 coordinate core, constant height-homogeneous paired maps,
 `LP=I`, independent paired types, all hot modes allowed, and a common
-balanced natural cut scale. The comparison is a single exact rational
-point for a necessary condition. It is not a global optimum, a split, an
-exact pressure certificate, or a score change. The complete factoring
-exponent remains `1/2`.
+balanced natural cut scale. The exact comparisons are rational points for
+a necessary condition; the numerical band is not a boundary certificate.
+Neither is a global optimum, a split, an exact pressure certificate, or a
+score change. The complete factoring exponent remains `1/2`.
 
 ## Reproduction
 
@@ -68,6 +91,14 @@ exponent remains `1/2`.
 python3 tools/check_protected_core_height39.py \
   --output evidence/protected-core-height39-transition.json
 make verify-protected-core-height39-transition
+```
+
+For the nearby exact anchors and the numerical band:
+
+```sh
+python3 tools/check_protected_core_height39_region.py \
+  --output evidence/protected-core-height39-region.json
+make verify-protected-core-height39-region
 ```
 
 The [receipt](../evidence/protected-core-height39-transition.json) records

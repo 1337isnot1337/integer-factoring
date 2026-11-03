@@ -3025,6 +3025,10 @@ verify-jensen-core-floors:
 verify-protected-core-height39-transition:
 	python3 tools/check_protected_core_height39.py --output /tmp/protected-core-height39-transition-check.json
 
+.PHONY: verify-protected-core-height39-region
+verify-protected-core-height39-region:
+	python3 tools/check_protected_core_height39_region.py --output /tmp/protected-core-height39-region-check.json
+
 .PHONY: verify-coherent-inverse-f4 verify-coherent-gram-f4
 verify-coherent-inverse-f4:
 	python3 tools/check_coherent_inverse_systems_f4.py
