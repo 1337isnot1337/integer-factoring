@@ -3396,3 +3396,9 @@ verify-cm-smooth-flag-geometry:
 	python3 tools/check_cm_smooth_flag_geometry.py
 
 verify-arithmetic: verify-cm-smooth-flag-geometry
+
+.PHONY: verify-colour-alternation
+verify-colour-alternation:
+	python3 tools/check_colour_alternation.py
+
+verify-arithmetic: verify-colour-alternation
