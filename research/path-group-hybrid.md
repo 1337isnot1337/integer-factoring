@@ -1,9 +1,9 @@
 # A fixed path/group hybrid misses its finite seed budget
 
 The complete [nilpotent-seam coefficients](nilpotent-seam-crossings.md)
-and their cut reflections do not yield a strict seed with
-`S<L^sqrt(2)` at the original six-/eight-site sizes `L=5,13`, even
-after adjoining every affine-line group-sum core and the all-ones core.
+and their cut reflections do not yield a decomposition of the crossing
+with `S<L^sqrt(2)` at the original six-/eight-site sizes `L=5,13`, even
+after adjoining I, every affine-line group-sum core and the all-ones core.
 This is an exact finite statement about using the **individual** dictionary
 elements as pieces. It does not exclude first combining coefficients into
 new low-rank pieces, changing the auxiliary, other sizes, or an asymptotic
@@ -20,13 +20,19 @@ numbered `0,...,L-1`; no relabelling or parameter search is performed.
 The [budget clarification](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366460)
 adds the rank-one all-ones core and charges the number of line cores.
 
-The test concerns a strict polynomial with constant tensor `I`, whose
-positive-degree coefficients are scalar multiples over F4 of these
-dictionary elements. Different dictionary terms occupy different monomial
-slots; their individual costs are added. This is the usual explicit
-finite-seed rank-sum sufficient criterion, with the mandatory constant
-cost included. Boundary subalphabet restrictions are not tested. It is
-not a lower bound on all crossing decompositions.
+The original16 tests concern a strict polynomial that pays a separate
+constant tensor I. Sol worker 1's [scope check](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366719)
+correctly notes that I is not algebraically forced by the full dictionary:
+the affine-plane identity below omits it. A [registered follow-up](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19367169)
+checks113 additional spans without reserving any I cost. The strengthened
+conclusion uses those new tests, rather than silently widening the first16.
+
+In both versions the pieces are scalar multiples over F4 of individual
+dictionary elements, and their `sqrt(rc)` costs are added. The new tests
+cover direct decompositions without a constant-I restriction as well.
+Combining dictionary terms before measuring the rank of the resulting
+new piece is outside scope. Boundary subalphabet restrictions are not
+tested. This is not a lower bound on all crossing decompositions.
 
 Stop if exact separating functionals exclude every dictionary selection
 within that budget. A successful span would only justify constructing and
@@ -77,7 +83,7 @@ Every nonconstant term in a winning thirteen-letter seed costs less
 than25; at most one cost13 line term fits. If that term is used,
 each remaining path piece costs less than12.
 
-It is therefore sufficient to exclude the following generous spans,
+For that reserved-I criterion it is sufficient to exclude these generous spans,
 where I and J are allowed freely and all qualifying path pieces can
 be used without charging their total number:
 
@@ -87,10 +93,31 @@ be used without charging their total number:
 | 13 | none | `rc<625` | 14 | E outside |
 | 13 | one fixed direction, all14 cases | `rc<144` | 7 in each case | E outside |
 
+For the direct criterion with **no reserved I cost**, a winning
+five-letter decomposition has at most one cost5 line piece. With no
+line each path piece costs less than10; with one line less than5.
+A winning thirteen-letter decomposition has at most two cost13 line
+pieces; the remaining path costs are less than38,25,12 for zero,one,two
+line pieces respectively. Repeated uses of one line can be combined
+without increasing its rank cost, so distinct direction subsets suffice.
+Sol worker 1 supplied this bookkeeping clarification; the follow-up
+uses exactly those budgets, without a new tensor/rank construction.
+
+Again allowing I and J freely gives the following113 conservative tests:
+
+| L | Line directions | Path condition | Branches | Span dimension with I,J | Result |
+| --- | --- | --- | --- | --- | --- |
+| 5 | none | `rc<100` | 1 | 28 | E outside |
+| 5 | one | `rc<25` | 6 | 9 each | E outside |
+| 13 | none | `rc<1444` | 1 | 20 | E outside |
+| 13 | one | `rc<625` | 14 | 15 each | E outside |
+| 13 | two | `rc<144` | 91 | 8 each | E outside |
+
 The [receipt](../evidence/path-group-hybrid.json) supplies a sparse F4
-linear functional for each of these16 cases. Each functional annihilates
+linear functional for each of all129 cases. Each functional annihilates
 every tensor in its declared span and pairs nontrivially with E.
-They have only5--9 nonzero entries. Arbitrary F4 coefficients and repeated
+The original witnesses have5--9 nonzero entries; the additional ones
+have at most20. Arbitrary F4 coefficients and repeated
 uses are covered by linearity. Extension fields cannot change solvability
 of a linear system with F4 coefficients and target, so the same fixed
 dictionary exclusion holds after coefficient-field extension.
@@ -106,7 +133,7 @@ crossing endpoint, checks all84 and135 coefficient rank pairs by BOTH
 the existing packed backend and independent dense F4 elimination, and
 checks both reflected orientations. It constructs all6/14 line cores,
 checks the incidence identity, verifies every sparse functional on every
-eligible coefficient, and independently checks the16 span dimensions.
+eligible coefficient, and independently checks all129 span dimensions.
 The original tensor bytes and source hashes are retained.
 
 An earlier private minimum-bottleneck experiment omitted J and used a
@@ -121,5 +148,6 @@ The original path braid, F4/F16 descent, nilpotent auxiliary, fusion
 projector bounds, reflected-piece construction and known group-sum cores
 retain the parent notes' source and contributor credit. This fixed hybrid
 test and its exact certificates were developed by Sol worker 2 with
-OpenAI Codex assistance. No new Lean or independent mathematical
+OpenAI Codex assistance. Sol worker 1's reserved-I scope check and the
+unreserved budget formulas are explicitly credited above. No new Lean or independent mathematical
 acceptance is claimed.
