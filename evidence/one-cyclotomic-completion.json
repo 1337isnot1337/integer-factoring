@@ -1,0 +1,340 @@
+{
+  "scope": "Exact Hensel, integral norm, LLL and one-completion reconstruction controls. Literal-divisor fixtures supply the data; no fast original-index coefficient engine, new Lean, independent mathematical review or stronger complete bound.",
+  "models": [
+    {
+      "prime": 7,
+      "order": 3,
+      "field": 7,
+      "dimension": 2,
+      "residue_degree": 2,
+      "precision": 11,
+      "coefficient_bound": 12,
+      "actual_points": 68,
+      "lll": {
+        "swaps": 0,
+        "size_reductions": 0
+      },
+      "smallest_gram_schmidt_square": [
+        4194304,
+        1
+      ]
+    },
+    {
+      "prime": 11,
+      "order": 5,
+      "field": 31,
+      "dimension": 4,
+      "residue_degree": 4,
+      "precision": 15,
+      "coefficient_bound": 12,
+      "actual_points": 72,
+      "lll": {
+        "swaps": 0,
+        "size_reductions": 0
+      },
+      "smallest_gram_schmidt_square": [
+        1073741824,
+        1
+      ]
+    },
+    {
+      "prime": 19,
+      "order": 9,
+      "field": 73,
+      "dimension": 6,
+      "residue_degree": 6,
+      "precision": 19,
+      "coefficient_bound": 12,
+      "actual_points": 75,
+      "lll": {
+        "swaps": 0,
+        "size_reductions": 0
+      },
+      "smallest_gram_schmidt_square": [
+        274877906944,
+        1
+      ]
+    },
+    {
+      "prime": 31,
+      "order": 15,
+      "field": 25,
+      "dimension": 8,
+      "residue_degree": 4,
+      "precision": 45,
+      "coefficient_bound": 12,
+      "actual_points": 77,
+      "lll": {
+        "swaps": 68,
+        "size_reductions": 174
+      },
+      "smallest_gram_schmidt_square": [
+        15739924018197155227802502580813287565697,
+        628380508362856090186022544
+      ]
+    },
+    {
+      "prime": 31,
+      "order": 15,
+      "field": 19,
+      "dimension": 8,
+      "residue_degree": 4,
+      "precision": 45,
+      "coefficient_bound": 12,
+      "actual_points": 77,
+      "lll": {
+        "swaps": 68,
+        "size_reductions": 176
+      },
+      "smallest_gram_schmidt_square": [
+        15739924018197155227802502580813287565697,
+        628380508362856090186022544
+      ]
+    },
+    {
+      "prime": 43,
+      "order": 21,
+      "field": 87,
+      "dimension": 12,
+      "residue_degree": 6,
+      "precision": 61,
+      "coefficient_bound": 12,
+      "actual_points": 78,
+      "lll": {
+        "swaps": 131,
+        "size_reductions": 555
+      },
+      "smallest_gram_schmidt_square": [
+        4455035806264084804,
+        5
+      ]
+    },
+    {
+      "prime": 43,
+      "order": 21,
+      "field": 117,
+      "dimension": 12,
+      "residue_degree": 6,
+      "precision": 61,
+      "coefficient_bound": 12,
+      "actual_points": 78,
+      "lll": {
+        "swaps": 135,
+        "size_reductions": 521
+      },
+      "smallest_gram_schmidt_square": [
+        2658455991569831745807614120560689152,
+        2409321726693753303
+      ]
+    },
+    {
+      "prime": 47,
+      "order": 23,
+      "field": 2787,
+      "dimension": 22,
+      "residue_degree": 11,
+      "precision": 101,
+      "coefficient_bound": 12,
+      "actual_points": 78,
+      "lll": {
+        "swaps": 475,
+        "size_reductions": 3245
+      },
+      "smallest_gram_schmidt_square": [
+        11277103472544336330654804652179713130752828540073376930070528,
+        13301471125361849413827439540749
+      ]
+    },
+    {
+      "prime": 47,
+      "order": 23,
+      "field": 3189,
+      "dimension": 22,
+      "residue_degree": 11,
+      "precision": 101,
+      "coefficient_bound": 12,
+      "actual_points": 78,
+      "lll": {
+        "swaps": 460,
+        "size_reductions": 3212
+      },
+      "smallest_gram_schmidt_square": [
+        330183272749350717826740008952736673927537415253825505198080,
+        342905218589670344559099925647
+      ]
+    }
+  ],
+  "actual_divisor_coefficients": 681,
+  "generic_bounded_vectors": 97,
+  "integer_norm_controls": 9,
+  "observations_sha256": "c4ccd8a3dbbaafc19c0bfe29c4b9290557f6e5deb884f4f9ad6b5474cebd2008",
+  "lifted_collisions": [
+    {
+      "order": 23,
+      "field": 2787,
+      "words": [
+        35,
+        2752
+      ],
+      "same_mod_two": true,
+      "different_mod_four": true
+    },
+    {
+      "order": 251,
+      "field": 1986479280909191,
+      "words": [
+        416092483755309509616866561424957310477372457714208264637638260404411964784,
+        77375046934722336210694333299746340033338604492691443020767361529348096
+      ],
+      "same_mod_two": true,
+      "different_mod_four": true
+    }
+  ],
+  "supplied_crt_factorizations": [
+    {
+      "integer": 8,
+      "smallest_factor": 2,
+      "polynomial": [
+        4096,
+        -5440,
+        1428,
+        -85,
+        1
+      ],
+      "levels": [
+        23,
+        47,
+        59,
+        83,
+        107,
+        167
+      ],
+      "modulus": 94592356933
+    },
+    {
+      "integer": 9,
+      "smallest_factor": 3,
+      "polynomial": [
+        -729,
+        819,
+        -91,
+        1
+      ],
+      "levels": [
+        23,
+        47,
+        59,
+        83,
+        107,
+        167
+      ],
+      "modulus": 94592356933
+    },
+    {
+      "integer": 11,
+      "smallest_factor": 11,
+      "polynomial": [
+        121,
+        -122,
+        1
+      ],
+      "levels": [
+        23,
+        47,
+        59,
+        83,
+        107,
+        167
+      ],
+      "modulus": 94592356933
+    },
+    {
+      "integer": 15,
+      "smallest_factor": 3,
+      "polynomial": [
+        50625,
+        -58500,
+        8134,
+        -260,
+        1
+      ],
+      "levels": [
+        23,
+        47,
+        59,
+        83,
+        107,
+        167
+      ],
+      "modulus": 94592356933
+    }
+  ],
+  "crt_completion_models": [
+    {
+      "prime": 23,
+      "field": 2047,
+      "dimension": 10,
+      "residue_degree": 10,
+      "precision": 25
+    },
+    {
+      "prime": 47,
+      "field": 2787,
+      "dimension": 22,
+      "residue_degree": 11,
+      "precision": 97
+    },
+    {
+      "prime": 59,
+      "field": 536870911,
+      "dimension": 28,
+      "residue_degree": 28,
+      "precision": 61
+    },
+    {
+      "prime": 83,
+      "field": 1789531,
+      "dimension": 40,
+      "residue_degree": 20,
+      "precision": 169
+    },
+    {
+      "prime": 107,
+      "field": 9007199254740991,
+      "dimension": 52,
+      "residue_degree": 52,
+      "precision": 109
+    },
+    {
+      "prime": 167,
+      "field": 9671406556917033397649407,
+      "dimension": 82,
+      "residue_degree": 82,
+      "precision": 169
+    }
+  ],
+  "rejected_inputs": 8,
+  "composite_order_coefficient_bound": {
+    "order": 105,
+    "monomial_coefficient_bound": 2,
+    "lattice_reconstruction_replayed": false
+  },
+  "optional_interrupted_pilot": {
+    "order": 105,
+    "dimension": 48,
+    "residue_degree": 12,
+    "exit_code": 143,
+    "scope": "Private exact Python LLL pilot deliberately stopped after about seven minutes before output; not a pass. No larger reconstruction run is included."
+  },
+  "source_sha256": {
+    "tools/cyclotomic_completion.py": "d573858ea300da273f2a9ba80a8df897e6416b27ae5d8ee46d017dda42e9c07a",
+    "tools/check_cyclotomic_completion.py": "cf2d78c8decba7bdb70b15eb1c470c039be25015ec9486f4df7d337ff3fd7f34",
+    "tools/check_factoring_primitive_recipients.py": "f796136614c2bf699cc62f1bfbe5cca462740f0c21924c0f4f4215c89e585dc4",
+    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df",
+    "tools/odd_character_residues.py": "6703866bd7a7960a4fa6635442ee62c9449e463ab5b03334882c134578bab623",
+    "tools/sparse_faithful_character.py": "e48f51518993a8640e9a12b182b7ebd25fc4eea88ae26339b6c6c4054c1834cd",
+    "tools/sparse_divisor_residues.py": "03a87aa052bddbe0bc1467a7c329d52949738492389d5354c156cf402ef3b397",
+    "tools/divisor_moment_recovery.py": "334c5089e3745818ad78830f76f89c63ab57a9f5ddd2853a188c8134aa6bcd38",
+    "tools/check_carry_fourier_elimination.py": "ad1065db63bc74779105964c2ed8c3cf5e91f82d514fa70580fa8eb31a091763"
+  }
+}

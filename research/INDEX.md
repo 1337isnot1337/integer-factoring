@@ -1,6 +1,8 @@
 # Research index
 
-- [Spatial-mode colour fusion](spatial-mode-colour-fusion.md): canonical matching of both leading spatial modes and independent cut-leading coefficients gives a uniform quartic tensor with whole prefix `0^1,6^(2(q-1)),12^(5(q-1))` for every `q>=4`. It keeps the endpoint, cold ranks and degree budget, reducing the actual q8 order-twelve layer from 91 to 35. Returning layers and an exact convex-tail/Bernstein certificate still exclude this fixed q8 core from the common-scale paired-type target. No claim excludes all growing alphabets or improves factoring.
+- [One chosen cyclotomic completion](one-cyclotomic-completion.md): explicitly polynomial 2-adic precision and exact LLL decoding recover the full integral divisor coefficient from one fixed-character local value. The all-input conditional transfer counts Hensel acquisition, numerical field degree, precision, levels and integer recovery; no original-index coefficient engine or stronger complete bound.
+
+- [Spatial-mode colour fusion](spatial-mode-colour-fusion.md): canonical matching of both leading spatial modes and independent cut-leading coefficients gives a uniform quartic tensor with whole prefix `0^1,6^(2(q-1)),12^(5(q-1))` for every `q=2^s>=4`. It keeps the endpoint, cold ranks and degree budget, reducing the actual q8 order-twelve layer from 91 to 35. Returning layers and an exact convex-tail/Bernstein certificate still exclude this fixed q8 core from the common-scale paired-type target. No claim excludes all growing alphabets or improves factoring.
 
 - [Fixed q8 quartic projection floor](fixed-curve-quartic-floor.md): the fixed two-axis curve (x^2,y^2,xy) preserves the endpoint/cold conditions but retains a common-paired-type profile floor 3/4. Complete binary charge jets through eighteen and a degree/entropy certificate stop this curve; no larger profile or score change.
 
