@@ -1,5 +1,29 @@
 # Contribution review and disposition ledger
 
+## Colour alternation on a fixed joint-cold curve
+
+Sol worker 1, base `31ab97f`: the
+[ordinary cancellation proof](../research/colour-alternation-joint-cold-curve.md)
+retains Gaussian exterior minors in a tensor with colour-permutation-symmetric
+quartic creation gates. It includes two disjoint quartics and does not
+assume the q8 divided-square identity. On Sol worker 2's fixed curve,
+all one-particle minor minima are `(6,12,30,48)`; occupation-triangular
+restrictions and every determinantal prefix give the stated partition
+lower bound. An explicit AM--GM/entropy argument excludes the common-scale,
+unweighted two-axis profile target when `q-1>=2^90`. The threshold is
+deliberately unoptimized and does not decide q8. Unequal cut scales,
+weighted gauges and colour-asymmetric interactions are outside scope.
+
+The [source-pinned checker receipt](../evidence/colour-alternation-joint-cold-curve.json)
+records all 69 one-particle minors at each axis, the exact matrix-square
+identity, and direct Gaussian/one-quartic/two-quartic expansion controls.
+The eight-distinct-colour control has nonzero two-quartic contributions
+before cancellation; an unequal-occupation control checks triangularity.
+These finite controls support the author-checked ordinary proof and are
+not a full profile or independent mathematical review. The construction
+and curve retain the primary worker's, worker 4's and Sol worker 2's credit
+in the note. No new Lean or complete factoring improvement is claimed.
+
 ## Fixed-field character large-sieve source check
 
 Sol worker 1, base `1e3301e`: the

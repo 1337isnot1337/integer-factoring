@@ -1,5 +1,7 @@
 # Research index
 
+- [Colour alternation on the fixed joint-cold curve](colour-alternation-joint-cold-curve.md): symmetric quartic creation cancels under distinct-colour column alternation, retaining all Gaussian exterior-minor channels. On `(X,Y,Z)=(x^2,y^2,xy)`, exact one-particle orders `(6,6,18,18)` yield an all-alphabet partition lower bound; for `q-1>=2^90` it forces common-scale, unweighted paired-type pressure at least `3/4>1/sqrt(2)`. The conservative threshold does not settle `q=8`; weighted gauges, unequal scales and colour-asymmetric interactions are outside scope. No complete-bound improvement.
+
 - [Division-free trace-dual counts at sparsity-sized precision](trace-dual-native-counts.md): a trace-dual coordinate map gives one Teichmuller point per odd half-width candidate. Completed trial division bounds unweighted prefix counts at K=min(ceil(b/2)-1,ceil(b/t)) bits, with polylogarithmic output precision below any fixed positive-score budget. Polynomial Boolean gates remove exact halvings and retain the same small starting precision; summing the unrestricted-degree circuit is still open.
 
 - [Always-positive deep class roots](deep-class-root-projection.md): a root of g^(2^L) at depth 2L gives its canonical two-primary projection. Existing generation and polynomial early-stop extraction give an all-input conditional poly(b)(F(b)+1) bound, without smooth-density or relation premises. The root engine remains missing; no score change.
