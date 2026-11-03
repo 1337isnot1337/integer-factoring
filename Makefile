@@ -3444,3 +3444,9 @@ verify-cyclotomic-completion:
 	python3 tools/check_cyclotomic_completion.py
 
 verify-arithmetic: verify-cyclotomic-completion
+
+.PHONY: verify-spatial-mode-fusion
+verify-spatial-mode-fusion:
+	python3 tools/check_spatial_mode_colour_fusion.py
+
+verify-arithmetic: verify-spatial-mode-fusion

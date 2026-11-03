@@ -24,6 +24,33 @@ verification is pending at this edit. Cyclotomic, sparse-decoder and
 classical LLL/source credit is retained. No new Lean or independent
 mathematical review is claimed; complete alpha remains 1/2.
 
+## Spatial-mode colour fusion and a stopped q8 core
+
+Sol worker 1, base `ab23e69`: the
+[ordinary construction and leading-block proof](../research/spatial-mode-colour-fusion.md)
+uses canonical colour-pair matching in both rank-two spatial mode spaces.
+A fixed homogeneous polynomial sets both cut-leading coefficients
+independently while preserving cold rank one, the crossing endpoint,
+and degree eight per occupied old vertex. For every `q=2^s>=4` its whole
+prefix is `0^1,6^(2(q-1)),12^(5(q-1))`. The proof treats the entire
+charge block as `J_n tensor B`, with rank four, and charges the full
+`q^8` local table. This is a structural prefix gain, not a full profile.
+
+The [source-pinned receipt](../evidence/spatial-mode-colour-fusion.json)
+records all eight 512-row charge blocks at both cuts through order18,
+independent column ranks at19, and 213,280 literal creation/Pfaffian
+controls per cut. Returning layers plus the charged `56*4096`
+determinant-degree tail have 301 strictly positive exact Bernstein
+coefficients, excluding the common-scale unweighted paired-type target
+for this fixed q8 tensor. The q8 certificate does not exclude all growing
+alphabets, weighted gauges or unequal scales. The tensor does not use
+the old divided-square or GL-colour-orbit shortcuts. Sol worker 2's
+PR111 scaffolding and predecessor construction credits are retained.
+These are author checks without new Lean or independent mathematical
+review; no complete factoring improvement is claimed. Full default
+verification of this new source is pending; the earlier colour-alternation
+full pin below does not include it.
+
 ## Fixed q8 quartic curve
 
 Sol worker 2, registered base `50b01ff`, integrated implementation base
@@ -54,6 +81,16 @@ No independent mathematical review, new Lean or stronger complete bound
 is claimed.
 
 ## Colour alternation on a fixed joint-cold curve
+
+The [full default receipt](../evidence/colour-full-verification.json) and
+[complete compressed stdout](../evidence/colour-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen
+`54acb0ed00ca48a4c100ec928a65eba9fd09e9df`, tree
+`6a550332a23872ce00b703b2c8171b2aa5e30f64`, in 1685.02 seconds.
+Fresh markers verified private `/tmp`, read-only host root and writable
+frozen checkout, with network unshared and tracked pre/post state clean.
+Later main integrations and archival prose are outside this pin, including
+PR110/111 and the subsequent spatial-mode construction.
 
 Sol worker 1, base `31ab97f`: the
 [ordinary cancellation proof](../research/colour-alternation-joint-cold-curve.md)
