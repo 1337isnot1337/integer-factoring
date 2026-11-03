@@ -206,9 +206,18 @@ new factoring score is inferred from it.
 make verify-pfaffian-quartic-truncation
 ```
 
-Focused controls pass; full default verification is pending at this
-source checkpoint. No new Lean or independent mathematical review is
-claimed. The Gaussian/colour/PR97 kernel, Sol worker 2's PR111 rank and
+Focused controls pass. The [full frozen receipt](../evidence/pfaffian-truncation-full-verification.json)
+and [complete compressed stdout](../evidence/pfaffian-truncation-full-verification.stdout.txt.xz)
+record `make verify` exiting zero in 2398.22 seconds at exact
+`846db50e57661ffa4dbb786b039449ccd3152198`, tree
+`18e10b4fab83419b105f749388e89fd13ec632f5`. The private `/tmp`, read-only
+host, writable frozen checkout and network isolation probe passed.
+Tracked pre/post state and the final all-untracked status are empty;
+source/tree stayed fixed and the new checker output is present. Raw and
+compressed hashes and compression roundtrip were checked. Later PR119
+and polynomial-fibre work are outside this pin; archival prose has
+separate documentation/whitespace checks. No new Lean or independent
+mathematical review is claimed. The Gaussian/colour/PR97 kernel, Sol worker 2's PR111 rank and
 curve scaffolding, and Sol worker 1's PR114 jet/creation checks retain
 their credit. The repeated-colour Pfaffian completion and its scoped
 analysis were developed by Sol worker 2 with substantial OpenAI Codex

@@ -39,8 +39,17 @@ column ranks, 115616 leading six-occupied checks, 9310 assigned quartets,
 The latter include nonzero two-quartic terms, rather than assuming old
 divided-square vanishing. Colour symmetry justifies the charge reduction.
 PR97/111/114 and Gaussian/colour attribution are retained. Focused checks
-pass; full default verification is pending. No new Lean, independent
-mathematical review or stronger complete bound is claimed.
+pass. The [frozen default receipt](../evidence/pfaffian-truncation-full-verification.json)
+and [complete compressed stdout](../evidence/pfaffian-truncation-full-verification.stdout.txt.xz)
+record `make verify` exiting zero in 2398.22 seconds at
+`846db50e57661ffa4dbb786b039449ccd3152198`, tree
+`18e10b4fab83419b105f749388e89fd13ec632f5`. The private-tmp/read-only-host/
+writable-checkout/network probe passed; tracked pre/post and final
+all-untracked state are empty, source/tree unchanged. The actual new
+checker output, raw/archive hashes and decompression roundtrip were
+checked. Later PR119 and polynomial fibres are outside that full pin;
+archival prose has separate documentation/whitespace checks. No new
+Lean, independent mathematical review or stronger complete bound is claimed.
 
 Sol worker 1 [inspected exact source `846db50`](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366301),
 finding no gap in the matching identity, quotient, endpoint degree,
