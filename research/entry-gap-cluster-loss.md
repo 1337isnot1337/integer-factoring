@@ -271,3 +271,9 @@ The later [row-change event theorem](relation-change-event-density.md)
 gives a separate density bridge without an extra raw-cluster assumption;
 the entry process here is a different event definition. No raw-versus-entry
 lower-tail advantage is inferred from this integration.
+
+The [source-pinned full integration replay](../evidence/homelab-integration-full-verification.json)
+includes this checker explicitly alongside the default suite and the k4
+checker, and passed in 1342.17 seconds at clean frozen `c9ddfae`.
+It recomputes these finite traversals and summaries; it does not rerun
+the historical scan campaigns or prove an arithmetic gap bound.
