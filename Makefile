@@ -1971,6 +1971,10 @@ verify-hash-join-identity-minor:
 verify-fanout-forward-join:
 	python3 tools/check_fanout_forward_join.py --output /tmp/integer-factoring-fanout-forward-join.json
 
+.PHONY: verify-bundle-joint-compression
+verify-bundle-joint-compression:
+	python3 tools/check_bundle_joint_compression.py --output /tmp/integer-factoring-bundle-joint-compression.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
