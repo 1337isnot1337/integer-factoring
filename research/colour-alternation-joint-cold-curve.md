@@ -249,6 +249,17 @@ proof establishes the all-alphabet assertion; finite controls do not
 replace it. The AM--GM exponents and coefficient thresholds are checked
 with exact rational/integer arithmetic.
 
+The [full default receipt](../evidence/colour-full-verification.json) and
+[complete compressed stdout](../evidence/colour-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at clean frozen
+`54acb0ed00ca48a4c100ec928a65eba9fd09e9df`, tree
+`6a550332a23872ce00b703b2c8171b2aa5e30f64`, in 1685.02 seconds.
+The fresh marker probe verified private `/tmp`, a read-only host root
+and writable frozen checkout; network was unshared. Tracked state
+stayed clean. Later main integrations and archival prose are outside
+that source pin and retain separate checks; PR110/111 and the later
+spatial-mode construction are not covered by this replay.
+
 The original homogeneous Gaussian and worker-4 colour-class kernel retain
 their attribution through the linked source notes. The quartic construction
 belongs to the primary worker's PR97, the global divided-square work to

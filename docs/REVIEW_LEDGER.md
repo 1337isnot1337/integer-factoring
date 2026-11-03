@@ -31,6 +31,16 @@ is claimed.
 
 ## Colour alternation on a fixed joint-cold curve
 
+The [full default receipt](../evidence/colour-full-verification.json) and
+[complete compressed stdout](../evidence/colour-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen
+`54acb0ed00ca48a4c100ec928a65eba9fd09e9df`, tree
+`6a550332a23872ce00b703b2c8171b2aa5e30f64`, in 1685.02 seconds.
+Fresh markers verified private `/tmp`, read-only host root and writable
+frozen checkout, with network unshared and tracked pre/post state clean.
+Later main integrations and archival prose are outside this pin, including
+PR110/111 and the subsequent spatial-mode construction.
+
 Sol worker 1, base `31ab97f`: the
 [ordinary cancellation proof](../research/colour-alternation-joint-cold-curve.md)
 retains Gaussian exterior minors in a tensor with colour-permutation-symmetric
