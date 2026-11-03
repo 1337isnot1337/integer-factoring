@@ -23,9 +23,17 @@ alphabets, weighted gauges or unequal scales. The tensor does not use
 the old divided-square or GL-colour-orbit shortcuts. Sol worker 2's
 PR111 scaffolding and predecessor construction credits are retained.
 These are author checks without new Lean or independent mathematical
-review; no complete factoring improvement is claimed. Full default
-verification of this new source is pending; the earlier colour-alternation
-full pin below does not include it.
+review; no complete factoring improvement is claimed. The
+[full default receipt](../evidence/spatial-full-verification.json) and
+[complete compressed stdout](../evidence/spatial-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen
+`a5189cd125c5d651ac8235b2d4fe19654dd459e4`, tree
+`c9e4bbbde40cce049c0484763e6ba61ef3b6da2e`, in 1406.23 seconds.
+Fresh markers verified private `/tmp`, read-only host root and writable
+frozen checkout; network was unshared and tracked pre/post state stayed
+clean. PR110/113 and later sampler-budget/archive prose are outside this
+pin, with the latter prose checked separately. The earlier
+colour-alternation full pin below does not include this construction.
 
 ## Fixed q8 quartic curve
 
