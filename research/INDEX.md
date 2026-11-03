@@ -1,5 +1,7 @@
 # Research index
 
+- [A fixed path/group hybrid misses its finite seed budget](path-group-hybrid.md): all original nilpotent-seam bidegrees and reflections, affine-line group-sum cores and the all-ones core are retained. Sixteen sparse functionals exclude strict individual-piece seed budgets at five/thirteen labels, with all ranks independently checked. New recombinations and other sizes remain open; this dictionary is stopped.
+
 - [Quartic Pfaffians truncate a Gaussian](pfaffian-quartic-truncation.md): a characteristic-two creation identity removes higher Gaussian occupations. A repeated-colour covariant q8 completion deletes all order12..15 channels, but returns 322 at sixteen; exact generic jets and a positive scalar certificate force a 4/5 profile floor and stop this completion. The identity, full support controls and explicit endpoint/degree costs are retained; no stronger complete bound.
 
 - [Exact entry gaps and the cluster-length loss](entry-gap-cluster-loss.md): for a nonconstant cyclic predicate, the exact entry hitting window is the largest entry distance. Formal moment-window formulas differ by at most the mean-cluster ceiling at fixed parameters; their hypotheses remain separate. Nine specified traversals and censored prefixes are finite controls, with cyclic-subgroup overlap identified; no uniform estimate or score change.

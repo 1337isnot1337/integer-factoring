@@ -1,5 +1,24 @@
 # Contribution review and disposition ledger
 
+## Fixed path/group dictionary and exact finite budget stop
+
+Sol worker 2, base `f015d2d`: the [hybrid test](../research/path-group-hybrid.md)
+retains all original six-/eight-site nilpotent-seam coefficients, their
+cut reflections, all affine-line group cores, and the all-ones core.
+Constant-I costs and strict integer bounds reduce a possible winning
+individual-piece seed to sixteen generous spans. The [receipt](../evidence/path-group-hybrid.json)
+gives sparse F4 functionals annihilating each span and not SWAP. Both
+complete source tensors and all 219 coefficient rank pairs are rebuilt;
+packed ranks agree with independent dense elimination. Scalar multiples
+and coefficient-field extension do not change this fixed span exclusion.
+Original braid/fusion/kernel/core credit is retained. The diagnostic is
+stopped without a larger-size sweep. Coefficient recombinations, boundary
+subalphabets, new auxiliaries and uniform asymptotic results are outside
+scope. The complete focused replay with receipt generation passes;
+default verification of this addition is pending. The separate frozen
+PR118 verification excludes it. No new Lean, independent mathematical
+acceptance or score gain is claimed.
+
 ## Quartic Gaussian truncation and a stopped q8 completion
 
 Sol worker 2, base `ccd12e7`: the [ordinary Pfaffian identity](../research/pfaffian-quartic-truncation.md)
