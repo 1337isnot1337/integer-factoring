@@ -3,6 +3,7 @@
 import argparse
 from hashlib import sha256
 import json
+from itertools import combinations
 from pathlib import Path
 
 import numpy as np
@@ -83,10 +84,17 @@ def check(receipt):
         assert np.array_equal(np.bitwise_xor.reduce(lines), crossing ^ ones)
         expected = [(25, None)] if d == 5 else [(625, None)]+[(144,k) for k in range(14)]
         assert [(c['path_product_strict_cutoff'], c['line']) for c in saved['cases']] == expected
-        for case in saved['cases']:
-            cutoff, line = case['path_product_strict_cutoff'], case['line']
+        unreserved = ([(100,())]+[(25,(i,)) for i in range(6)] if d == 5 else
+                      [(1444,())]+[(625,(i,)) for i in range(14)]+
+                      [(144,pair) for pair in combinations(range(14),2)])
+        assert [(c['path_product_strict_cutoff'], tuple(c['lines']))
+                for c in saved['unreserved_cases']] == unreserved
+        plans = [(c, [] if c['line'] is None else [c['line']]) for c in saved['cases']]
+        plans += [(c,c['lines']) for c in saved['unreserved_cases']]
+        for case, selected_lines in plans:
+            cutoff = case['path_product_strict_cutoff']
             entries = [identity, ones]+[t for cost,t in candidates if cost < cutoff]
-            if line is not None:
+            for line in selected_lines:
                 entries.append(lines[line])
             witness = case['separator']
             assert len(entries) == case['candidate_count']
@@ -94,7 +102,7 @@ def check(receipt):
             assert pairing(crossing, witness) == case['separator_target_value'] != 0
             assert dense_rank(np.array([t.reshape(-1) for t in entries])) == case['span_dimension']
         counts.append({'length':n, 'labels':d, 'full_coefficient_rank_pairs':len(profiles)*len(profiles[0]),
-                       'separators':len(expected), 'line_directions':len(lines)})
+                       'separators':len(expected)+len(unreserved), 'line_directions':len(lines)})
     assert [x['length'] for x in counts] == [6,8]
     return counts
 

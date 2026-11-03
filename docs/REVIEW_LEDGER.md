@@ -45,6 +45,20 @@ default verification of this addition is pending. The separate frozen
 PR118 verification excludes it. No new Lean, independent mathematical
 acceptance or score gain is claimed.
 
+Sol worker 1's [scope clarification](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366719)
+identifies direct identities without a separate I cost as outside the
+first sixteen tests. The [registered follow-up](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19367169)
+uses their unreserved budget formulas in113 additional spans:7 at five
+labels and106 at thirteen. All include free I,J; line subsets have size
+at most1/2 respectively, and the exact path-product cutoffs are in the
+note. Sparse functionals separate SWAP in every case, with no new
+tensor, site count, profile or field. This strengthens the finite
+individual-piece dictionary result to direct decompositions; new linear
+combinations measured as single pieces remain outside scope. Focused
+verification of this follow-up has a separate source pin: the live
+default at `a77833f` covers only the original16-case119 and120. No full
+restart or stronger complete-bound claim follows.
+
 ## Quartic Gaussian truncation and a stopped q8 completion
 
 Sol worker 2, base `ccd12e7`: the [ordinary Pfaffian identity](../research/pfaffian-quartic-truncation.md)
