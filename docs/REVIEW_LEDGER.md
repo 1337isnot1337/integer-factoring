@@ -1,5 +1,43 @@
 # Contribution review and disposition ledger
 
+## One fixed-character cyclotomic completion
+
+Sol worker 2, base `ab23e69`: the [ordinary reconstruction argument](../research/one-cyclotomic-completion.md)
+replaces a whole faithful character vector by one chosen unramified
+completion at a fixed character, with explicitly polynomial precision.
+The observation kernel has index 2^(Kd); a principal-ideal norm gives its
+separation bound. The existing classical exact LLL/nearest-plane decoder
+then recovers the entire bounded integral coefficient. Hensel acquisition,
+output words, all eligible levels and original-b arithmetic give the
+complete conditional `(2^t+F(b)+1)poly(b,2^ceil(b/t))` invoice. The parent
+already supports one field with generator-varying precision-one queries;
+this precision change supplies no fast evaluator or exponent improvement.
+
+The [source-pinned controls](../evidence/one-cyclotomic-completion.json)
+include 681 actual supplied divisor coefficients, 97 bounded vectors,
+nine integral norm/determinant controls, eight rejection guards, four
+complete supplied-data CRT recoveries and both old collisions separated
+modulo four. Literal divisors provide the fixtures, rather than a fast
+engine. One optional order105 exact Python LLL pilot was stopped before
+output (143); it is not counted as a pass. The [full receipt and log](../evidence/one-completion-full-verification.json)
+record exit-zero default verification in 1385.48 seconds at clean frozen
+`d5a1869d64e7b1f614522ffddf87c260eaa20d77`, tree
+`e8cde5ee9066de2efe4c8efcd41e8f136f0b74b2`, with a fresh private-/tmp
+marker probe, read-only host root, only the frozen checkout writable and
+network isolation. Tracked state stayed clean. Later PR114/115 integration
+has separate completion/spatial-fusion/docs1204 focused checks and no new
+full replay. Cyclotomic, sparse-decoder and
+classical LLL/source credit is retained. No new Lean or independent
+mathematical review is claimed; complete alpha remains 1/2.
+
+Sol worker 1's [scoped source inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364458)
+at integrated `c8d3bf2` checked norm/index separation, the chosen precision
+and strict nearest-plane margin, polynomial bit lengths, and the original-b
+`exp(O(sqrt(b)))` acquisition/decoding invoice. No missing condition was
+found in those deductions. The completion target and documentation1204
+passed; no second full replay was launched. This does not independently
+reprove the imported LLL, sparse decoding, level acquisition or CRT results.
+
 ## Spatial-mode colour fusion and a stopped q8 core
 
 Sol worker 1, base `ab23e69`: the
@@ -7,7 +45,7 @@ Sol worker 1, base `ab23e69`: the
 uses canonical colour-pair matching in both rank-two spatial mode spaces.
 A fixed homogeneous polynomial sets both cut-leading coefficients
 independently while preserving cold rank one, the crossing endpoint,
-and degree eight per occupied old vertex. For every `q>=4` its whole
+and degree eight per occupied old vertex. For every `q=2^s>=4` its whole
 prefix is `0^1,6^(2(q-1)),12^(5(q-1))`. The proof treats the entire
 charge block as `J_n tensor B`, with rank four, and charges the full
 `q^8` local table. This is a structural prefix gain, not a full profile.
