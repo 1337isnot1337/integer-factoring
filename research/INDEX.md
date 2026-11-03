@@ -1,5 +1,7 @@
 # Research index
 
+- [Quartic Pfaffians truncate a Gaussian](pfaffian-quartic-truncation.md): a characteristic-two creation identity removes higher Gaussian occupations. A repeated-colour covariant q8 completion deletes all order12..15 channels, but returns 322 at sixteen; exact generic jets and a positive scalar certificate force a 4/5 profile floor and stop this completion. The identity, full support controls and explicit endpoint/degree costs are retained; no stronger complete bound.
+
 - [A floor from the first fifty q8 orders](q8-leading-prefix-floor.md): only the protected orders 0^1,6^14,12^35 and determinant-degree cap already force common-paired-type pressure at least 5/7>1/sqrt(2). An exact scalar certificate stops all later-jet refinements retaining these premises, without another tensor profile; other alphabets and changed early structure remain outside scope.
 
 - [One chosen cyclotomic completion](one-cyclotomic-completion.md): explicitly polynomial 2-adic precision and exact LLL decoding recover the full integral divisor coefficient from one fixed-character local value. The all-input conditional transfer counts Hensel acquisition, numerical field degree, precision, levels and integer recovery; no original-index coefficient engine or stronger complete bound.
