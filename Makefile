@@ -1963,6 +1963,10 @@ verify-asymmetric-scaling-floor:
 verify-rank-deficient-endpoint:
 	python3 tools/check_rank_deficient_endpoint.py --output /tmp/integer-factoring-rank-deficient-endpoint.json
 
+.PHONY: verify-hash-join-identity-minor
+verify-hash-join-identity-minor:
+	python3 tools/check_hash_join_identity_minor.py --output /tmp/integer-factoring-hash-join-identity-minor.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
