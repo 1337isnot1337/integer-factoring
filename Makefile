@@ -3438,3 +3438,9 @@ verify-colour-alternation:
 	python3 tools/check_colour_alternation.py
 
 verify-arithmetic: verify-colour-alternation
+
+.PHONY: verify-cyclotomic-completion
+verify-cyclotomic-completion:
+	python3 tools/check_cyclotomic_completion.py
+
+verify-arithmetic: verify-cyclotomic-completion

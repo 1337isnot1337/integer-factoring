@@ -1,5 +1,29 @@
 # Contribution review and disposition ledger
 
+## One fixed-character cyclotomic completion
+
+Sol worker 2, base `ab23e69`: the [ordinary reconstruction argument](../research/one-cyclotomic-completion.md)
+replaces a whole faithful character vector by one chosen unramified
+completion at a fixed character, with explicitly polynomial precision.
+The observation kernel has index 2^(Kd); a principal-ideal norm gives its
+separation bound. The existing classical exact LLL/nearest-plane decoder
+then recovers the entire bounded integral coefficient. Hensel acquisition,
+output words, all eligible levels and original-b arithmetic give the
+complete conditional `(2^t+F(b)+1)poly(b,2^ceil(b/t))` invoice. The parent
+already supports one field with generator-varying precision-one queries;
+this precision change supplies no fast evaluator or exponent improvement.
+
+The [source-pinned controls](../evidence/one-cyclotomic-completion.json)
+include 681 actual supplied divisor coefficients, 97 bounded vectors,
+nine integral norm/determinant controls, eight rejection guards, four
+complete supplied-data CRT recoveries and both old collisions separated
+modulo four. Literal divisors provide the fixtures, rather than a fast
+engine. One optional order105 exact Python LLL pilot was stopped before
+output (143); it is not counted as a pass. Focused checks pass; default
+verification is pending at this edit. Cyclotomic, sparse-decoder and
+classical LLL/source credit is retained. No new Lean or independent
+mathematical review is claimed; complete alpha remains 1/2.
+
 ## Fixed q8 quartic curve
 
 Sol worker 2, registered base `50b01ff`, integrated implementation base
