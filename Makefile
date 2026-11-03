@@ -3456,3 +3456,9 @@ verify-spatial-mode-fusion:
 	python3 tools/check_spatial_mode_colour_fusion.py
 
 verify-arithmetic: verify-spatial-mode-fusion
+
+.PHONY: verify-q8-leading-prefix-floor
+verify-q8-leading-prefix-floor:
+	python3 tools/check_q8_leading_prefix_floor.py
+
+verify-arithmetic: verify-q8-leading-prefix-floor
