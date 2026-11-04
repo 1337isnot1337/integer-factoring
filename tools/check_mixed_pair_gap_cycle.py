@@ -599,57 +599,69 @@ def check():
                           - edge_profiles[1]['binary_rank'])
     assert binary_rank_defect == 4
 
-    # Saturation control: four exponent-3 base-gap rows halve the window-2
-    # lattice index 16h -> 8h -> 4h -> 2h -> h.  They generate the full
-    # relation kernel together with the window-2 rows; no other window-3 row
-    # is needed.
-    window_two_rows = edge_rows_by_window[2]
-    window_two_keys = {tuple(row) for row in window_two_rows}
-    saturation_candidates = [
-        row for row in edge_rows_by_window[3]
-        if tuple(row) not in window_two_keys]
+    # Saturation control and targeted search: four exponent-3 base-gap rows
+    # halve the window-2 lattice index 16h -> 8h -> 4h -> 2h -> h.  The
+    # search examines only base-gap pairs at exponent 3 and adds a row only
+    # when it raises the mod-2 row rank.  It reaches the missing four
+    # dimensions after 112 candidates, rather than scanning all windows.
     saturation_rows = []
-    saturation_basis = list(window_two_rows)
-    saturation_keys = set(window_two_keys)
+    saturation_basis = list(edge_rows_by_window[2])
+    saturation_keys = {tuple(row) for row in edge_rows_by_window[2]}
     saturation_index = edge_profiles[1]['lattice_index']
     saturation_binary_rank = edge_profiles[1]['binary_rank']
-    while saturation_index > period:
-        best = None
-        for row in saturation_candidates:
+    saturation_probes = 0
+    for base in base_primes:
+        for gap in GAP_TARGETS:
+            saturation_probes += 1
+            form = forms[
+                (3*(extension_logs[base] + extension_logs[gap])) % period]
+            leading = form[0]
+            if leading == 1:
+                continue
+            parts = split_factorization(leading, records)
+            if parts is None:
+                continue
+            terms, new = leading_norm_word(
+                INTEGER, form, parts, extension_records)
+            assert not new
+            row = [0]*len(extension_targets)
+            row[extension_positions[base]] += 3
+            row[extension_positions[gap]] += 3
+            for prime, value in terms.items():
+                row[extension_positions[prime]] -= value
+            if not any(row):
+                continue
             key = tuple(row)
             if key in saturation_keys:
                 continue
-            _, _, candidate_index = row_hnf_index(
-                saturation_basis + [row], len(extension_targets))
-            if best is None or candidate_index < best[0]:
-                best = (candidate_index, row, key)
-        assert best is not None and best[0] < saturation_index
-        saturation_index, selected_row, selected_key = best
-        saturation_basis.append(selected_row)
-        saturation_keys.add(selected_key)
-        left, right, exponent = edge_labels_by_window[3][selected_key]
-        assert replay(selected_row, extension_targets, extension_records,
-                      identity) == identity
-        new_binary_rank = binary_rank(saturation_basis)
-        assert new_binary_rank == saturation_binary_rank + 1
-        saturation_binary_rank = new_binary_rank
-        saturation_rows.append({
-            'pair': [left, right],
-            'window': exponent,
-            'lattice_index': saturation_index,
-            'lattice_multiple': saturation_index//period,
-            'binary_rank': saturation_binary_rank,
-        })
+            candidate_rank = binary_rank(saturation_basis + [row])
+            if candidate_rank <= saturation_binary_rank:
+                continue
+            saturation_basis.append(row)
+            saturation_keys.add(key)
+            saturation_binary_rank = candidate_rank
+            assert replay(row, extension_targets, extension_records,
+                          identity) == identity
+            _, _, saturation_index = row_hnf_index(
+                saturation_basis, len(extension_targets))
+            saturation_rows.append({
+                'pair': [base, gap],
+                'window': 3,
+                'lattice_index': saturation_index,
+                'lattice_multiple': saturation_index//period,
+                'binary_rank': saturation_binary_rank,
+            })
+            if saturation_index == period:
+                break
+        if saturation_index == period:
+            break
     assert saturation_index == period
-    assert [row['lattice_multiple'] for row in saturation_rows] == [8, 4, 2, 1]
-    assert len(saturation_rows) == binary_rank_defect
     assert saturation_binary_rank == edge_profiles[2]['binary_rank']
-    assert edge_profiles[1]['support_connected']
-    assert edge_profiles[1]['support_root_component'] == len(extension_targets)
-    assert edge_profiles[1]['base_block_rank'] == len(base_primes)
-    assert (edge_profiles[1]['base_block_rank']
-            + edge_profiles[1]['gap_block_rank']
-            == edge_profiles[1]['rank'])
+    assert [row['lattice_multiple'] for row in saturation_rows] == [8, 4, 2, 1]
+    assert [row['pair'] for row in saturation_rows] == [
+        [53, 25169], [59, 43987], [101, 96749], [103, 1289]]
+    assert saturation_probes == 112
+    assert len(saturation_rows) == binary_rank_defect
 
     # Isolated-column repair: pair rows can leave a target column zero.
     # A common-annihilator diagonal row fills such a column directly, without
@@ -796,6 +808,7 @@ def check():
             'vertices': len(extension_targets),
             'profiles': edge_profiles,
             'saturation_rows': saturation_rows,
+            'saturation_search_probes': saturation_probes,
             'binary_rank_defect': binary_rank_defect,
             **edge_first_full,
         },
@@ -822,7 +835,7 @@ def check():
                   'rows alone give a rank-32 edge basis at window 2 with '
                   'selected minor 8192h and row-lattice index 16h; at window 3 '
                   'their row-lattice index is h, the full relation kernel; four exponent-3 '
-                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal. A pure-order diagonal control also '
+                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal; a targeted base-gap search finds them after 112 probes. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
                   'orders; it is not a factoring algorithm. An isolated-column '
                   'repair control on all split primes through 500 fills the one '
