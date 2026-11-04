@@ -3084,6 +3084,10 @@ verify-f8-q94-mode11-pilot:
 verify-truncated-profile-lower-bound:
 	python3 tools/check_truncated_profile_lower_bound.py --output /tmp/truncated-profile-lower-bound-check.json
 
+.PHONY: verify-f8-admissible-high-words
+verify-f8-admissible-high-words:
+	python3 tools/check_f8_admissible_high_words.py --output /tmp/f8-admissible-high-words-check.json
+
 .PHONY: verify-f8-minimal-core build-f8-minimal-core
 verify-f8-minimal-core:
 	python3 tools/check_f8_hyperoval_minimal_core.py --output /tmp/f8-minimal-core-check.json
