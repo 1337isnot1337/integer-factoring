@@ -1767,3 +1767,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 [The q96 F8 map has only 45 admissible single-word extensions](f8-admissible-high-words.md): an exhaustive census of single-word vectors preserving `LP=I`, deletion closure, and the graded-letter axioms finds 45 words, all of height at least 26; no single word extends the low core. The q99 triple uses the two pair words `160,192` and the triple `224`, which is admissible only after the pairs. The low-block plateau is not removed by adding single high words; multi-word vectors or a different rank-three image remain.
 
 - [A height-39 extension of the height-16 core stays on the plateau](height39-q32-extension.md): the q32 height-16 coherent map plus one-hot words `96,160,192,224` has complete q36 profiles and numerical pressure `0.7121133`, a `1.7e-6` gain and far above `1/sqrt(2)`; high boundary words do not fix the low-core plateau.
+
+## Core-cutoff pressure trend
+
+[The identity-core cutoff trend stops above the height-38 floor](core-cutoff-pressure-trend.md): the full identity cores at heights 16,18,20,22,24,25 have natural pressures `0.7124842` through `0.7100553`, decreasing but flattening above the proved `29/41` protected-core floor. The q96 boundary helps the 81-word core, but every support-at-most-25 map remains floor-bound. No exact certificate or score change.
