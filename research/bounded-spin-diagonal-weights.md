@@ -29,6 +29,11 @@ decomposition: the forms are the diagonal weights of the coefficient
 algebra on the product-state module, and their multiplicities are the
 sizes of the corresponding evaluation classes.
 
+Restricting the coefficient space to the original pencil span can only
+merge projective form classes. Since `sqrt(a)+sqrt(b) <= sqrt(a+b)`,
+the full six-vertex square-root sums above are lower bounds for the
+same diagnostic on any subspace, including the original pencil span.
+
 ## What the numbers say
 
 The number of distinct forms grows from `13` to `35` to `124`, roughly
