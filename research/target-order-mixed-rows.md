@@ -492,6 +492,46 @@ under the same smoothness hypotheses. The determinant equality also shows
 that the hard part is not a sign or a multiple: it is the index of the
 generated relation lattice.
 
+**Second mixed-pair control (non-cyclic).** The same construction also works
+on the non-cyclic group `D=-4*10403`, of order `90`. Take `Y=30<H=117` and
+targets `{3,11,13,17,19,23}`. Allowing pair powers at exponents `1` and `2`
+gives `11` distinct nonzero rows of rank `6`; the selected minor is
+
+\[
+\begin{pmatrix}
+ 2& 0& 2& 0& 1& 0\\
+-1& 3& 2& 0& 0& 0\\
+ 6& 0& 0& 0& 2& 0\\
+ 1& 1& 0& 1& 0&-1\\
+-1&-1& 0& 4& 0& 0\\
+-1&-1& 0& 1& 1& 0
+\end{pmatrix},
+\qquad \det=180=2|G|.
+\]
+
+The two-part extractor with annihilator `180` returns `101` at window `2`,
+below the order-only window `6`. Thus the pair mechanism is not an artifact
+of cyclicity or of the determinant being exactly `|G|`: a full-rank minor
+with index `2|G|` already gives an annihilator. The row lattice is not the
+full kernel here, only a sublattice of index `2`; full rank is enough.
+
+**Third mixed-pair control (larger gap).** A larger group shows the same
+behavior. Take `N=1009*1013`, so `h=928`, `D^{1/4}=44.966...`, `H=1167`, and
+`Y=31`. The target set is `{3,7,11,17,19,23,389}`. The small primes have
+large orders (`58,116,464,464,464,464`), but small indices; the target `389`
+has order `16` and index `58>D^{1/4}`, so it is a genuine gap target. Mixed
+pair powers at exponents `1` and `2` give rank `2` at window `1` and full
+rank `7` at window `2`. The selected minor has determinant
+
+\[
+1856=2|G|,
+\]
+
+and the two-part extractor returns `1009`. Window `2` is far below
+`ord(389)=16`; the pair rows involving `389` need only smooth words over
+primes at most `31`. This is the largest finite gap crossed here and shows
+that the mixed-pair window need not track the target order.
+
 **Lemma 5.6 (maximal-minor annihilator).** Let `R` be an `r x n` integer
 relation matrix of rank `n`, `r>=n`, with rows in `\ker\phi`. Every nonzero
 `n x n` minor `\Delta` of `R` is a multiple of `|G|`, hence is an
