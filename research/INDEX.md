@@ -1,5 +1,7 @@
 # Research index
 
+- [Diagonal evaluation weights of the bounded-spin coefficient span](bounded-spin-diagonal-weights.md): exact projective diagonal form counts and multiplicities at lengths 8, 10 and 12 (13/35/124 forms; square-root sums 43.0/175.5/808.2 against targets 37.6/146.5/571.3). A compact diagnostic for the missing rank lemma, not a rank bound; no score change.
+
 - [An image floor for bounded-spin correction modules](bounded-spin-image-floor.md): the single-`B`-part correction decomposition has a rigorous rank-sum floor `sqrt((N-m_1)(N-m_2))`; the published eight- and ten-site modules close far above the finite targets, and the twelve-site route closes whenever the correction algebra has dimension at most eighteen. Several `B`-pieces (central idempotents) remain open; no score change.
 
 - [Known polynomial product fibres and rough inputs](polynomial-digit-fibres.md): classical deterministic primitive factorization and explicit divisor enumeration replace Cartesian digit-setting enumeration when the whole integer product polynomial is supplied. Actual roughness forces accepted products to be primitive; all content, bit and carry costs are stated. Standard-library certificates check complete fixed boxes; collective unknown-carry selection remains open and the complete bound is unchanged.
