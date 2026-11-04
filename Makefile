@@ -2106,7 +2106,12 @@ verify-entry-moment-saved:
 verify-entry-gap-cluster-loss:
 	python3 tools/check_entry_gap_cluster_loss.py --output evidence/entry-gap-cluster-loss.json
 
+.PHONY: verify-gap-moment-order
+verify-gap-moment-order:
+	python3 tools/check_gap_moment_order.py --output /tmp/integer-factoring-gap-moment-order.json
+
 verify-arithmetic: verify-entry-moment-saved
+verify-arithmetic: verify-gap-moment-order
 
 .PHONY: verify-output-space-transfer
 verify-output-space-transfer:
