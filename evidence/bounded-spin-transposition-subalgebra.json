@@ -1,0 +1,108 @@
+{
+  "passed": true,
+  "prime": 5,
+  "lengths": [
+    {
+      "length": 8,
+      "paths": 13,
+      "transpositions": 28,
+      "class_sum_rank": 169,
+      "replica_swap_rank": 169,
+      "commute": true,
+      "generated_algebra_dimension": 6,
+      "joint_generalized_dimensions": [
+        [
+          2,
+          1,
+          70
+        ],
+        [
+          3,
+          1,
+          1
+        ],
+        [
+          3,
+          4,
+          43
+        ],
+        [
+          4,
+          1,
+          20
+        ],
+        [
+          4,
+          4,
+          35
+        ]
+      ],
+      "primary_dimensions": [
+        70,
+        43,
+        35,
+        20,
+        1
+      ]
+    },
+    {
+      "length": 10,
+      "paths": 34,
+      "transpositions": 45,
+      "class_sum_rank": 771,
+      "replica_swap_rank": 1156,
+      "commute": true,
+      "generated_algebra_dimension": 6,
+      "joint_generalized_dimensions": [
+        [
+          0,
+          1,
+          35
+        ],
+        [
+          0,
+          4,
+          406
+        ],
+        [
+          1,
+          1,
+          225
+        ],
+        [
+          2,
+          1,
+          335
+        ],
+        [
+          2,
+          4,
+          155
+        ]
+      ],
+      "primary_dimensions": [
+        406,
+        335,
+        225,
+        155,
+        35
+      ]
+    }
+  ],
+  "eight_site_full_algebra": true,
+  "ten_site_full_primary_dimensions": [
+    406,
+    300,
+    225,
+    155,
+    35,
+    34,
+    1
+  ],
+  "ten_site_coarse_335_split": [
+    34,
+    1,
+    300
+  ],
+  "scope": "The replica swap R and the site-transposition class sum T generate the full six-dimensional eight-site row algebra and reproduce its five primary dimensions. At ten sites they generate only a proper six-dimensional subalgebra with five joint generalized eigenspaces 35,155,225,335,406. The published eight-dimensional row algebra splits the coarse 335 block as 34+1+300. Hence the second-coefficient identity is not enough at ten sites. No factor bound changes; the twelve-site coarse computation remains open."
+}
