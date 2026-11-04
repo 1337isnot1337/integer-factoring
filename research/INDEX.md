@@ -1759,3 +1759,4 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## Height-39 F8 hyperoval extension
 
 [Complete q99 height-39 profile](f8-hyperoval-height39-extension.md): adding the three single-word coordinates `160,192,224` to the q96 map gives a valid deletion-closed q99 map with maximum height 39. The complete profile resolves; its numerical natural pressure is `0.7099930431`, a `1.27e-5` gain over q96 but still above `1/sqrt(2)`. No exact certificate or score change.
+- [A height-39 extension of the height-16 core stays on the plateau](height39-q32-extension.md): the q32 height-16 coherent map plus one-hot words `96,160,192,224` has complete q36 profiles and numerical pressure `0.7121133`, a `1.7e-6` gain and far above `1/sqrt(2)`; high boundary words do not fix the low-core plateau.

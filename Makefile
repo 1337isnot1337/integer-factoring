@@ -3065,6 +3065,10 @@ verify-coherent-divided-probes:
 verify-hecke-q5-determinants:
 	python3 tools/check_hecke_q5_determinants.py
 
+.PHONY: verify-height39-q32-extension
+verify-height39-q32-extension:
+	python3 tools/check_height39_q32_extension.py --output /tmp/height39-q32-extension-check.json
+
 .PHONY: verify-f8-height39-extension build-f8-height39-extension
 verify-f8-height39-extension:
 	python3 tools/check_f8_hyperoval_height39_extension.py --output /tmp/f8-height39-extension-check.json
