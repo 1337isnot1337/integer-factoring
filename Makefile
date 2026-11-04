@@ -3554,6 +3554,13 @@ verify-pair-kernel-order12-deformations:
 
 verify-arithmetic: verify-pair-kernel-order12-deformations
 
+.PHONY: verify-low-valuation-quartic-profiles
+verify-low-valuation-quartic-profiles:
+	PYTHONPATH=tools python3 tools/check_low_valuation_quartic_profiles.py --output /tmp/integer-factoring-low-valuation-quartic.json
+	python3 tools/check_docs.py
+
+verify-arithmetic: verify-low-valuation-quartic-profiles
+
 .PHONY: verify-pfaffian-quartic-truncation
 verify-pfaffian-quartic-truncation:
 	python3 tools/check_pfaffian_quartic_truncation.py
