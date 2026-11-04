@@ -306,6 +306,8 @@ def check():
     for edge_window in range(1, MAX_WINDOW+1):
         edge_rows = []
         edge_seen = set()
+        edge_base_rows = []
+        edge_base_seen = set()
         edge_hits = 0
         edge_adjacency = {
             prime: set() for prime in extension_targets}
@@ -344,7 +346,17 @@ def check():
                     if key not in edge_seen:
                         edge_seen.add(key)
                         edge_rows.append(row)
+                    if left in base_primes and right in base_primes:
+                        if key not in edge_base_seen:
+                            edge_base_seen.add(key)
+                            edge_base_rows.append(row)
         edge_rank, edge_pivots = echelon_pivot_rows(edge_rows)
+        base_count = len(base_primes)
+        base_block_rank, _ = echelon_pivot_rows(
+            [row[:base_count] for row in edge_rows])
+        gap_block_rank, _ = echelon_pivot_rows(
+            [row[base_count:] for row in edge_rows])
+        base_pair_rank, _ = echelon_pivot_rows(edge_base_rows)
         edge_vertices = {extension_targets[0]}
         edge_colors = {extension_targets[0]: 0}
         edge_queue = [extension_targets[0]]
@@ -371,6 +383,10 @@ def check():
             'distinct_rows': len(edge_rows),
             'pair_hits': edge_hits,
             'rank': edge_rank,
+            'base_pair_rows': len(edge_base_rows),
+            'base_pair_rank': base_pair_rank,
+            'base_block_rank': base_block_rank,
+            'gap_block_rank': gap_block_rank,
             'root_component': len(edge_vertices),
             'connected': len(edge_vertices) == len(extension_targets),
             'nonbipartite': not edge_bipartite,
@@ -414,6 +430,10 @@ def check():
     assert edge_first_full['first_full_window'] == 2
     assert edge_profiles[1]['support_connected']
     assert edge_profiles[1]['support_root_component'] == len(extension_targets)
+    assert edge_profiles[1]['base_block_rank'] == len(base_primes)
+    assert (edge_profiles[1]['base_block_rank']
+            + edge_profiles[1]['gap_block_rank']
+            == edge_profiles[1]['rank'])
 
     scan_gaps = []
     scan_split_primes = 0

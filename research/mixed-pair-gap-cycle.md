@@ -171,11 +171,19 @@ the `32` vertices occurs in some selected row, and the `2`-section of the
 weighted supports is connected. The word terms, not the pair endpoints
 alone, supply this coverage and connectivity. This is only a finite
 support diagnostic, not a rank theorem: a connected support hypergraph
-does not in general force an incidence matrix to have full rank. The
-edge-only certificate is therefore a finite arithmetic rank fact; a
-uniform version needs a rank or determinant bound for the actual weighted
-pair-word matrix, not merely connectivity of the pair graph or support
-graph. The earlier graph/cycle intuition is only a heuristic.
+does not in general force an incidence matrix to have full rank.
+
+There is a sharper block-rank description. Restrict the window-`2` pair
+rows to the `22` base columns: their rank is `22`. Restrict them to the
+ten gap columns: their rank is `10`. The two block ranks sum to the full
+rank `32`. The base-base pair rows alone have rank only `20`; rows
+involving gap targets repair the two missing base directions while also
+supplying all ten gap directions. Thus gap rows can compensate for a
+deficient base block, unlike the single-hit lemma which needs a full base
+matrix before extension. This is a finite direct-sum rank fact, not a
+uniform repair theorem. A uniform version would need enough target rows
+to repair the base defect and would still pay their first-hit search
+cost.
 
 ## What is and is not proved
 

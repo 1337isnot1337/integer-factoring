@@ -57,8 +57,12 @@
     "first_full_window": 2,
     "profiles": [
       {
+        "base_block_rank": 9,
+        "base_pair_rank": 0,
+        "base_pair_rows": 0,
         "connected": false,
         "distinct_rows": 9,
+        "gap_block_rank": 6,
         "nonbipartite": false,
         "pair_hits": 10,
         "rank": 9,
@@ -68,8 +72,12 @@
         "window": 1
       },
       {
+        "base_block_rank": 22,
+        "base_pair_rank": 20,
+        "base_pair_rows": 20,
         "connected": false,
         "distinct_rows": 53,
+        "gap_block_rank": 10,
         "nonbipartite": false,
         "pair_hits": 57,
         "rank": 32,
@@ -79,8 +87,12 @@
         "window": 2
       },
       {
+        "base_block_rank": 22,
+        "base_pair_rank": 22,
+        "base_pair_rows": 43,
         "connected": true,
         "distinct_rows": 93,
+        "gap_block_rank": 10,
         "nonbipartite": true,
         "pair_hits": 98,
         "rank": 32,
