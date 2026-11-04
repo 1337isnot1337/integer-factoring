@@ -1983,6 +1983,10 @@ verify-two-bundle-joint-image:
 verify-three-bundle-joint-image:
 	python3 tools/check_three_bundle_joint_image.py --output /tmp/integer-factoring-three-bundle-joint-image.json
 
+.PHONY: verify-two-cut-support-density
+verify-two-cut-support-density:
+	python3 tools/check_two_cut_support_density.py --output /tmp/integer-factoring-two-cut-support-density.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
