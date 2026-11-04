@@ -172,6 +172,14 @@ again `rho>5/7`, uniformly over all coefficient fields covered above.
 The opposite cut orientation is still dense and has pressure at least
 `d^4`, as in Section 1.
 
+The actual-rank barrier in
+[the fixed-degree Bell note](bell-diagonal-d8-explicit-family.md) also
+excludes the cubic and quartic paths at `d=32` at `t=2`: the cubic bound
+is `262,144` and the quartic bound `209,716`, while the target is
+`1024^{sqrt(2)}≈18,064`. Thus the `d=32` case that the endpoint pressure
+test leaves open is closed for polynomial paths of those fixed degrees;
+only unbounded-degree or non-polynomial representations remain.
+
 At `d=32`, the same necessary bound instead has, at `x=7`,
 
 ```math

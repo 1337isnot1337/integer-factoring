@@ -68,6 +68,15 @@ At `t=2`:
 The bound crosses the target between total degree ten and eleven; this
 argument does not exclude degree at least eleven.
 
+The same calculation applies at other physical dimensions. For `d=32`
+(`q=1024`) at `t=2`, there are `q^2=1,048,576` words and the target is
+`1024^{sqrt(2)}≈18,064`. A cubic path (total degree three) has four
+coefficients, so some rank is at least `ceil(1,048,576/4)=262,144`; a
+quartic path has five coefficients and bound `209,716`. Both are far
+above the target. Thus the dimension-32 cubic/quartic paths left open by
+the outer-rank endpoint pressure test are excluded at actual rank by the
+same word-count argument.
+
 For a path of local degree `D_path`, the total degree is `2D_path`.
 Thus local degree at most five is excluded at `t=2` (`D=10`), while
 local degree six has total degree `12`; its first failure is `t=3`,
@@ -113,15 +122,37 @@ An explicit path was previously displayed because its **rank fraction**
 candidate's ranks are far above the target, and the censuses above show
 that no linear or monomial path does better.
 
+## Cost consequence
+
+Let `m` be the number of nonzero coefficient tensors. The same word
+count gives `max_a rank(A_a) >= q^t/m`. To meet the width target
+`q^{rho t}`, a family must therefore have
+
+```math
+m >= q^{(1-rho)t}=2^{(1-rho)lambda},
+```
+
+where `lambda=t log_2 q` is the label width. This is exponential in
+`lambda` for every fixed `rho<1`. The Bell polynomial synthesis
+enumerates its `D+1` coefficient tensors (or `Dt+1` path pieces);
+if it meets the width target, that enumeration is exponential in
+`lambda`, while the target complete bound is only
+`2^{O(b/(log b)^{1/2})}`. Thus the polynomial synthesis route cannot
+improve the complete bound under its published piece-cost contract.
+
+A compact evaluator that produces the many coefficients without
+enumerating them would be a different representation; none is supplied.
+This is a method-specific cost obstruction, not a factoring lower
+bound.
+
 ## What remains open
 
 The escape from this barrier requires either unbounded total degree or a
-non-polynomial family. If the degree grows with `t`, the number of
-coefficient tensors grows, and the decomposition cost of those
-coefficients must still be controlled. A fixed-degree search, a larger
-fixed path family, or a fixed-degree linear combination of paths cannot
-work. A genuinely different Bell-basis representation or a non-path
-construction is needed.
+non-polynomial family, and the cost consequence shows that a direct
+polynomial synthesis of the necessary exponential coefficient list
+cannot improve the bound. A compact non-enumerative evaluator, a
+genuinely different Bell-basis representation, or a non-path
+construction remains open.
 
 ## Reproduction
 
