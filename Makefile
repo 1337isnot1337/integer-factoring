@@ -367,6 +367,10 @@ verify-braid-fusion-seam:
 verify-braid-graded-seam:
 	python3 tools/check_quantum_braid_graded_seam.py
 
+.PHONY: verify-all-disjoint-fusion-placements
+verify-all-disjoint-fusion-placements:
+	python3 tools/check_all_disjoint_fusion_placements.py --output /tmp/all-disjoint-fusion-placements.json
+
 .PHONY: verify-braid-spectral-fusion
 verify-braid-spectral-fusion:
 	python3 tools/check_quantum_braid_spectral_fusion.py

@@ -188,6 +188,14 @@ of their sums; the small rank of each individual projector does not
 give that automatically. Wider unchanged prefix scans are not the
 remaining research target.
 
+The [all-disjoint-placement census](all-disjoint-fusion-placements.md)
+resolves the five-label prefix failure: all `60` disjoint placements,
+both orientations and the two pairings span SWAP in dimension `475`,
+not the prefix dimension `80`. The explicit recombination uses `442`
+nonzero pieces, so it is not a cost certificate. The thirteen-label
+case has `277` placements and remains open; a fused kernel is still
+the next structural target.
+
 ## 5. Reproduction
 
 [The compiler](../tools/quantum_braid_graded_seam.py) and

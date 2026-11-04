@@ -1,0 +1,4153 @@
+{
+  "field": "F16 with x^4+x+1",
+  "records": [
+    {
+      "all_placements": {
+        "crossing_in_span": true,
+        "labels": 2,
+        "length": 4,
+        "nonzero_pieces": 68,
+        "placements": 13,
+        "recombination": [
+          {
+            "coefficient": 10,
+            "degree": 0,
+            "orientation": "column",
+            "placement": []
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 12,
+            "degree": 3,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 4,
+            "degree": 3,
+            "orientation": "column",
+            "placement": []
+          },
+          {
+            "coefficient": 3,
+            "degree": 4,
+            "orientation": "column",
+            "placement": []
+          },
+          {
+            "coefficient": 2,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              3
+            ]
+          }
+        ],
+        "recombination_support": 9,
+        "span_dimension": 13
+      },
+      "prefix_control": {
+        "crossing_in_span": true,
+        "labels": 2,
+        "length": 4,
+        "nonzero_pieces": 26,
+        "placements": 4,
+        "recombination": [
+          {
+            "coefficient": 3,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 0,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 5,
+            "degree": 2,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 1,
+            "degree": 3,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 12,
+            "degree": null,
+            "orientation": "identity",
+            "placement": null
+          }
+        ],
+        "recombination_support": 12,
+        "span_dimension": 13
+      }
+    },
+    {
+      "all_placements": {
+        "crossing_in_span": true,
+        "labels": 5,
+        "length": 6,
+        "nonzero_pieces": 674,
+        "placements": 60,
+        "recombination": [
+          {
+            "coefficient": 1,
+            "degree": 0,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 11,
+            "degree": 0,
+            "orientation": "column",
+            "placement": []
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 7,
+            "degree": 2,
+            "orientation": "column",
+            "placement": []
+          },
+          {
+            "coefficient": 13,
+            "degree": 3,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "column",
+            "placement": []
+          },
+          {
+            "coefficient": 7,
+            "degree": 4,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 7,
+            "degree": 4,
+            "orientation": "column",
+            "placement": []
+          },
+          {
+            "coefficient": 4,
+            "degree": 6,
+            "orientation": "row",
+            "placement": []
+          },
+          {
+            "coefficient": 14,
+            "degree": 6,
+            "orientation": "column",
+            "placement": []
+          },
+          {
+            "coefficient": 4,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              8
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              7
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              6
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              5
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              4
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              3
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              3,
+              9
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              3,
+              7
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              3,
+              6
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              3,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              2
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              2,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              2,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              2,
+              7
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              2,
+              6
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              2,
+              6
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              2,
+              6
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              2,
+              6
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              2,
+              6
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              2,
+              6
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              2,
+              6
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              2,
+              6
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              2,
+              6
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              2,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              2,
+              5
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              2,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              2,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              1
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              1,
+              9
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              1,
+              8
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              1,
+              7
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              6
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              6
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              6
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1,
+              6
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              6
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1,
+              6
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              1,
+              6
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              1,
+              6
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              1,
+              6
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 5,
+            "orientation": "column",
+            "placement": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 6,
+            "orientation": "column",
+            "placement": [
+              1,
+              6,
+              9
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 0,
+            "orientation": "column",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1,
+              5
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              1,
+              4
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              1,
+              4
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              4
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              4
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              4
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1,
+              4
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 3,
+            "orientation": "column",
+            "placement": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 4,
+            "orientation": "column",
+            "placement": [
+              1,
+              4,
+              9
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 1,
+            "orientation": "column",
+            "placement": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 2,
+            "orientation": "column",
+            "placement": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 1,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              1,
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              0
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              0
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              9
+            ]
+          },
+          {
+            "coefficient": 12,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              0,
+              9
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              8
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              8
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              0,
+              8
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              7
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              7
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              7
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              0,
+              7
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              0,
+              7
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              6
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              6
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              6
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              0,
+              6
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              0,
+              6
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 0,
+            "orientation": "row",
+            "placement": [
+              0,
+              5
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              0,
+              5
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              5
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              5
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              5
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              0,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              5,
+              9
+            ]
+          },
+          {
+            "coefficient": 6,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              0,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              5,
+              8
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              0,
+              4
+            ]
+          },
+          {
+            "coefficient": 7,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              4
+            ]
+          },
+          {
+            "coefficient": 5,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              4
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              0,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 14,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              4,
+              8
+            ]
+          },
+          {
+            "coefficient": 10,
+            "degree": 1,
+            "orientation": "row",
+            "placement": [
+              0,
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 15,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 13,
+            "degree": 4,
+            "orientation": "row",
+            "placement": [
+              0,
+              4,
+              7
+            ]
+          },
+          {
+            "coefficient": 3,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              3
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              0,
+              3
+            ]
+          },
+          {
+            "coefficient": 9,
+            "degree": 6,
+            "orientation": "row",
+            "placement": [
+              0,
+              3
+            ]
+          },
+          {
+            "coefficient": 2,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 4,
+            "degree": 3,
+            "orientation": "row",
+            "placement": [
+              0,
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 8,
+            "degree": 5,
+            "orientation": "row",
+            "placement": [
+              0,
+              3,
+              8
+            ]
+          },
+          {
+            "coefficient": 11,
+            "degree": 2,
+            "orientation": "row",
+            "placement": [
+              0,
+              3,
+              7
+            ]
+          }
+        ],
+        "recombination_support": 442,
+        "span_dimension": 475
+      },
+      "prefix_control": {
+        "crossing_in_span": false,
+        "labels": 5,
+        "length": 6,
+        "nonzero_pieces": 110,
+        "placements": 9,
+        "recombination": [],
+        "recombination_support": 0,
+        "span_dimension": 80
+      }
+    }
+  ],
+  "scope": "All disjoint three-strand f3 placements on 2*length central sites, both cut orientations and the two identity pairings, over F16. The span membership and recombination are exact. No rank-sum optimum, uniform family, or stronger factoring score is claimed.",
+  "source_sha256": {
+    "research/invertible-fusion-graded-seams.md": "92bb53374f336e872b25718bdfd0338144d53d114acc3e2050529ecba666ec61",
+    "tools/check_all_disjoint_fusion_placements.py": "2c37ce3cec99eb594a4b103139e81152f9e1007cc0685a258eb6e29ece1adf1d",
+    "tools/quantum_braid_graded_seam.py": "9f7c23ed2a98e0d7c3438c6b7fdb6e97ca3e04c812e7aff3688f03aa365f596d"
+  },
+  "status": "completed exact finite checks"
+}

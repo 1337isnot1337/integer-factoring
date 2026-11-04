@@ -35,6 +35,25 @@ def projector_sites(length, free_left, free_right):
     )
 
 
+def all_disjoint_projector_sites(length):
+    """Every set of disjoint f3 triples on the 2*length central sites."""
+    assert length > 0 and length % 2 == 0
+    starts = range(2 * length - 2)
+    result = []
+
+    def visit(index, chosen):
+        if index == len(starts):
+            result.append(tuple(chosen))
+            return
+        visit(index + 1, chosen)
+        start = starts[index]
+        if not chosen or start - chosen[-1] >= 3:
+            visit(index + 1, chosen + [start])
+
+    visit(0, [])
+    return tuple(result)
+
+
 @lru_cache(maxsize=1)
 def _layout(length):
     ps, qs = paths(length), paths(2 * length)
@@ -78,14 +97,13 @@ def _apply_f3(values, start, routes):
     )
 
 
-def coefficient_tensor(length, free_left, free_right):
-    """Axes b,P,Q,R,S; free prefixes followed by f3 triples in each block.
+def coefficient_tensor_sites(length, sites):
+    """Axes b,P,Q,R,S for an arbitrary disjoint f3 placement.
 
     The old central layer is replaced as a whole. Boundary gates are qI+y*e;
     other gates are qI+e. These are candidate pieces, not a strict endpoint pair.
     """
     assert length > 0 and length % 2 == 0
-    sites = projector_sites(length, free_left, free_right)
     d, states_count, boundary, routes = _layout(length)
     states = np.zeros((states_count, d * d, 1), dtype=np.uint8)
     states[boundary, np.arange(d * d), 0] = 1
@@ -110,6 +128,12 @@ def coefficient_tensor(length, free_left, free_right):
                 states = FIELD[Q, states] ^ action
     tensor = states[boundary].transpose(2, 1, 0).reshape(length + 1, d, d, d, d)
     return FIELD[power(Q, length - length * length // 2), tensor]
+
+
+def coefficient_tensor(length, free_left, free_right):
+    return coefficient_tensor_sites(
+        length, projector_sites(length, free_left, free_right)
+    )
 
 
 def rank_bounds(length, free_left, free_right, boundary_degree):
