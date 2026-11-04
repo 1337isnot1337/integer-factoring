@@ -5,8 +5,11 @@ from __future__ import annotations
 import argparse
 from hashlib import sha256
 import json
+from math import isfinite
 from pathlib import Path
 import sys
+
+from scipy.special import logsumexp
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 from coherent_f8_maps import validate_maps
@@ -67,7 +70,17 @@ def main() -> None:
     fresh = pressure(profile)
     assert fresh['completed'] is True
     assert abs(fresh['rho'] - saved['numerical_pressure']['rho']) < 1e-12
-    assert abs(fresh['scale_t'] - saved['numerical_pressure']['scale_t']) < 1e-12
+    # A flat numerical minimum need not return identical argmin bits across
+    # hosts. Check the pressure at the recorded scale, rather than its identity
+    # with a new optimizer's scale.
+    scale = saved['numerical_pressure']['scale_t']
+    rho = saved['numerical_pressure']['rho']
+    assert isfinite(scale) and .01 <= scale <= 2
+    target = sum(float(logsumexp([-scale * order for order in orders]))
+                 for orders in (profile['zero_orders_t'], profile['infinity_orders_t']))
+    height_term = float(logsumexp([-scale * height / rho for height in heights]))
+    saved_scale_residual = abs(target - 4 * rho * height_term)
+    assert saved_scale_residual < 1e-11
     assert fresh['rho'] > 2 ** -0.5
 
     for name in SOURCE_NAMES:
@@ -81,6 +94,7 @@ def main() -> None:
         'tail_count': [0, 0],
         'LP_identity_and_deletion_closure': True,
         'numerical_pressure': fresh,
+        'saved_scale_equation_residual': saved_scale_residual,
         'above_inverse_sqrt_two': True,
         'input_sha256': sha256(args.input.read_bytes()).hexdigest(),
         'base_profile_sha256': saved['base_profile_sha256'],

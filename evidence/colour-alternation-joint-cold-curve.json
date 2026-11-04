@@ -1,0 +1,187 @@
+{
+  "scope": "Fixed-curve structural prefix bounds; no full tensor profile or complete factoring improvement.",
+  "scalars_and_minors": {
+    "cut_controls": [
+      {
+        "axis": 0,
+        "all_minors": 69,
+        "minimum_valuations": [
+          6,
+          12,
+          30,
+          48
+        ]
+      },
+      {
+        "axis": 1,
+        "all_minors": 69,
+        "minimum_valuations": [
+          6,
+          12,
+          30,
+          48
+        ]
+      }
+    ],
+    "one_particle_orders": [
+      6,
+      6,
+      18,
+      18
+    ],
+    "kernel_square_order": 12,
+    "constant_rank": 2
+  },
+  "alternation": {
+    "equal_occupation": [
+      {
+        "row_colors": [
+          1
+        ],
+        "column_colors": [
+          1
+        ],
+        "raw_nonzero_by_quartic_count": [
+          1,
+          0,
+          0
+        ],
+        "alternated_quartic_terms_zero": true
+      },
+      {
+        "row_colors": [
+          1
+        ],
+        "column_colors": [
+          2
+        ],
+        "raw_nonzero_by_quartic_count": [
+          0,
+          0,
+          0
+        ],
+        "alternated_quartic_terms_zero": true
+      },
+      {
+        "row_colors": [
+          1,
+          2
+        ],
+        "column_colors": [
+          1,
+          2
+        ],
+        "raw_nonzero_by_quartic_count": [
+          1,
+          0,
+          0
+        ],
+        "alternated_quartic_terms_zero": true
+      },
+      {
+        "row_colors": [
+          1,
+          2
+        ],
+        "column_colors": [
+          4,
+          7
+        ],
+        "raw_nonzero_by_quartic_count": [
+          0,
+          2,
+          0
+        ],
+        "alternated_quartic_terms_zero": true
+      },
+      {
+        "row_colors": [
+          1,
+          2,
+          4
+        ],
+        "column_colors": [
+          1,
+          2,
+          4
+        ],
+        "raw_nonzero_by_quartic_count": [
+          3,
+          0,
+          0
+        ],
+        "alternated_quartic_terms_zero": true
+      },
+      {
+        "row_colors": [
+          1,
+          2,
+          4
+        ],
+        "column_colors": [
+          1,
+          3,
+          5
+        ],
+        "raw_nonzero_by_quartic_count": [
+          0,
+          4,
+          0
+        ],
+        "alternated_quartic_terms_zero": true
+      },
+      {
+        "row_colors": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "column_colors": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "raw_nonzero_by_quartic_count": [
+          9,
+          0,
+          0
+        ],
+        "alternated_quartic_terms_zero": true
+      },
+      {
+        "row_colors": [
+          1,
+          2,
+          4,
+          7
+        ],
+        "column_colors": [
+          8,
+          9,
+          10,
+          11
+        ],
+        "raw_nonzero_by_quartic_count": [
+          0,
+          0,
+          24
+        ],
+        "alternated_quartic_terms_zero": true
+      }
+    ],
+    "upper_block_raw_nonzero": 18,
+    "upper_block_alternation_zero": true
+  },
+  "pressure": {
+    "sufficient_d_min": "1237940039285380274899124224",
+    "rho_floor": "3/4",
+    "method": "Exact AM-GM and entropy inequalities; no parameter search"
+  },
+  "source_sha256": {
+    "tools/check_colour_alternation.py": "a2bf1aa0de16befc76ff414b945928d9f287921e7d84d5f10832a066d20911c2",
+    "tools/cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
+    "tools/check_quartic_charge_fusion.py": "8fd507feb9225adf4270a7976c4724261684f1935aacb4b3f92e46ddefed64d0"
+  }
+}

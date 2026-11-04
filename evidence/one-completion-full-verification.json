@@ -1,0 +1,75 @@
+{
+  "source_commit": "d5a1869d64e7b1f614522ffddf87c260eaa20d77",
+  "source_tree": "e8cde5ee9066de2efe4c8efcd41e8f136f0b74b2",
+  "command": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--tmpfs",
+    "/tmp",
+    "--dir",
+    "/tmp/factoring-sol2-completion-verify-d5a1869",
+    "--bind",
+    "/tmp/factoring-sol2-completion-verify-d5a1869",
+    "/tmp/factoring-sol2-completion-verify-d5a1869",
+    "--chdir",
+    "/tmp/factoring-sol2-completion-verify-d5a1869",
+    "--unshare-net",
+    "--die-with-parent",
+    "--setenv",
+    "GIT_OPTIONAL_LOCKS",
+    "0",
+    "--setenv",
+    "OPENBLAS_NUM_THREADS",
+    "1",
+    "--",
+    "make",
+    "verify"
+  ],
+  "private_tmp_probe": "private tmp, read-only host, writable frozen checkout",
+  "tracked_before": "",
+  "started_utc": "2026-11-03T01:29:32.501818+00:00",
+  "scope": "Default non-Lean implementation verification of the PR113 completion source and integrated mainab23e69; no mathematical acceptance or stronger factoring bound.",
+  "coordination_start": {
+    "exit_code": 0,
+    "stdout": "{\"data\":{\"addDiscussionComment\":{\"comment\":{\"url\":\"https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364059\"}}}}",
+    "stderr": ""
+  },
+  "exit_code": 0,
+  "seconds": 1385.4790595769882,
+  "completed_utc": "2026-11-03T01:52:39.221888+00:00",
+  "tracked_after": "",
+  "stdout_sha256": "d965b0c2246563b6fb029c52924cffddfb3761d1dba2546d62abb0eb71431857",
+  "coordination_end": {
+    "exit_code": 0,
+    "stdout": "{\"data\":{\"addDiscussionComment\":{\"comment\":{\"url\":\"https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364315\"}}}}",
+    "stderr": ""
+  },
+  "stdout_archive": "evidence/one-completion-full-verification.stdout.txt.xz",
+  "stdout_archive_sha256": "a230297c2e14e49336d936edd1e0c7ba71607b7dd6a0fef2f7fa75fa3927ce66",
+  "later_integration": {
+    "source_commit": "7adcdc2e940908620fee2c114897d6fab31d4de5",
+    "main_commit": "abc1c0036fa36105accf6647bdf1d4b66a4cf1eb",
+    "merge_commit": "27969ce9dd16af569bcf435a1256a2f71d2cef7d",
+    "focused_pass": [
+      "verify-cyclotomic-completion",
+      "verify-spatial-mode-fusion",
+      "verify-docs"
+    ],
+    "markdown_files": 1204,
+    "whitespace": "pass",
+    "scope": "PR114/115 and alphabet-scope clarification have focused checks only, outside the frozen full pin. Earlier colour112 receipt/log integrity was checked separately; no independent rerun or mathematical review."
+  },
+  "scoped_ordinary_review": {
+    "reviewer": "Sol worker1",
+    "url": "https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364458",
+    "core_source": "d5a1869d64e7b1f614522ffddf87c260eaa20d77",
+    "integrated_source": "c8d3bf25daeb99231ec5c5cbc81734813163adcd",
+    "scope": "No missing condition found in inspected norm/index, Hensel observation, precision/radius and complete original-b cost. Excludes reproof of imported LLL, sparse decoder, level acquisition and CRT theorems or a new engine. Separate focused replay, not another full run."
+  }
+}

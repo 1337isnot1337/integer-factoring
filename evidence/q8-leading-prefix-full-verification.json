@@ -1,0 +1,60 @@
+{
+  "source_commit": "e1256cccd50ac21837cf072b5568ade3f3ade358",
+  "source_tree": "3fc59b478f9db2f606ae9f7b54fc728fe03c2f81",
+  "command": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--tmpfs",
+    "/tmp",
+    "--dir",
+    "/tmp/factoring-sol2-q8-prefix-verify-e1256cc",
+    "--bind",
+    "/tmp/factoring-sol2-q8-prefix-verify-e1256cc",
+    "/tmp/factoring-sol2-q8-prefix-verify-e1256cc",
+    "--chdir",
+    "/tmp/factoring-sol2-q8-prefix-verify-e1256cc",
+    "--unshare-net",
+    "--die-with-parent",
+    "--setenv",
+    "GIT_OPTIONAL_LOCKS",
+    "0",
+    "--setenv",
+    "OPENBLAS_NUM_THREADS",
+    "1",
+    "--",
+    "make",
+    "verify"
+  ],
+  "private_tmp_probe": "private tmp, read-only host, writable frozen checkout",
+  "tracked_before": "",
+  "started_utc": "2026-11-03T02:45:15.674520+00:00",
+  "scope": "Default non-Lean implementation verification of the PR117 protected-prefix source and integrated mainfcfdb12; no mathematical acceptance or stronger factoring bound.",
+  "coordination_start": {
+    "exit_code": 0,
+    "stdout": "{\"data\":{\"addDiscussionComment\":{\"comment\":{\"url\":\"https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19365024\"}}}}",
+    "stderr": ""
+  },
+  "exit_code": 0,
+  "seconds": 1449.5893202330044,
+  "completed_utc": "2026-11-03T03:09:26.587979+00:00",
+  "tracked_after": "",
+  "stdout_sha256": "488e49d78a918aec7e431d95e226b7228761a6ad84f07fab05071d3676f55ded",
+  "coordination_end": {
+    "exit_code": 0,
+    "stdout": "{\"data\":{\"addDiscussionComment\":{\"comment\":{\"url\":\"https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19365336\"}}}}",
+    "stderr": ""
+  },
+  "stdout_archive": "evidence/q8-leading-prefix-full-verification.stdout.txt.xz",
+  "stdout_archive_sha256": "8acef4e71c60072bb85d43c91f6c05be1a06e989cd5178e5c9291966958bdbd9",
+  "same_tree_merge": {
+    "merge_commit": "ccd12e7ac337dba2b1f2c7f30073db725f912481",
+    "reviewed_head": "e1256cccd50ac21837cf072b5568ade3f3ade358",
+    "trees_equal": true
+  }
+}

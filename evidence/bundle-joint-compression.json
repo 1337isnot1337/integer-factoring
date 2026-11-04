@@ -1,0 +1,34 @@
+{
+  "rows": [
+    {
+      "ambient_code_product": 16,
+      "bundle_rank": 4,
+      "coset": 0,
+      "distinct_column_codes": 4,
+      "distinct_row_codes": 4,
+      "h": 1,
+      "inputs": 4,
+      "joint_compression_factor": 4,
+      "joint_image": 4,
+      "p": 2
+    },
+    {
+      "ambient_code_product": 4294967296,
+      "bundle_rank": 65536,
+      "coset": 0,
+      "distinct_column_codes": 65536,
+      "distinct_row_codes": 65536,
+      "h": 2,
+      "inputs": 65536,
+      "joint_compression_factor": 65536,
+      "joint_image": 65536,
+      "p": 2
+    }
+  ],
+  "scope": "Finite source-codec diagnostic at h=1,2 for the p=2 Fourier coset. The joint row/column code image is one input-indexed table, not the product of the two code spaces. The full two-cut pad, later gates, and complete factoring bound are unchanged.",
+  "source_sha256": {
+    "check_bundle_joint_compression.py": "f0016fc6833cb119ef8f4530bcfa98bbdd6b0d4bc78956e699fdfbe4e7ee7025",
+    "check_factoring_network_structure.py": "64ab9aa171e9534d1edb93e3cadc8c5bdf12d3aa94f420ebd70f2107851f69b3"
+  },
+  "status": "pass"
+}
