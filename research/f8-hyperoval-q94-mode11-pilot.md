@@ -27,20 +27,19 @@ at scale `0.247919041256729`. This reproduces the pilot quoted in
 complete q99 value `0.7099930431440509` by `6.41e-5`.
 
 The value is still above `1/sqrt(2)` by about `0.002822`, and the pilot
-leaves about 90 percent of the orders unresolved. It is therefore not a
-complete profile, not a certificate, and not a score claim. Its only
-content is that the 11-mode drop is a valid different low block and that
-its truncated profile is slightly better than q99.
+leaves about 90 percent of the orders unresolved. It is a lower bound,
+not a complete profile or a score claim: the map has a height-zero
+letter and all orders are nonnegative, so adding the unresolved orders
+can only increase the pressure (see the
+[truncated-profile lower bound](truncated-profile-lower-bound.md)).
+Therefore the complete q94 pressure is at least `0.709928941871497`,
+and the q94 drop **cannot cross**; a full q94 build is unnecessary for
+the crossing question.
 
-## What the pilot does and does not establish
-
-It establishes a reproducible q94 map and a reproducible truncated
-pressure. It does not establish that the complete q94 pressure is below
-q99; the unresolved tail can move the pressure in either direction.
-The gap to the threshold is still about 44 times the q99 gain and about
-44 times the q99-to-q94 pilot gain, so a complete q94 profile alone is
-unlikely to cross. The next useful test is a higher-cutoff profile
-(cutoff 95 or 127) to see whether the pilot value is stable; a
+The pilot being below q99 is an artifact of the omitted orders, not
+evidence of a better complete low block. It does establish that the
+11-mode drop is valid and gives a reproducible lower bound; it does not
+establish a complete value, a certificate, or a score change. A
 different protected low block remains the structural requirement for a
 crossing.
 
