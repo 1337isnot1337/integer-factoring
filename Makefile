@@ -2276,6 +2276,10 @@ verify-fixed-rational-frames:
 verify-hot-boundary-floor:
 	python3 tools/check_hot_boundary_core_barrier.py
 
+.PHONY: verify-f8-high-image-order-invariance
+verify-f8-high-image-order-invariance:
+	python3 tools/check_f8_high_image_order_invariance.py --output /tmp/f8-high-image-order-invariance-check.json
+
 
 .PHONY: verify-coherent-physical-tail
 verify-coherent-physical-tail:
