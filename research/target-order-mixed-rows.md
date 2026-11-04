@@ -4,8 +4,9 @@
 determinant, the mixed-order-row determinant, the common-multiplier
 determinant identity, the order-index product law, and an order-only
 annihilator criterion; a method-scoped medium-order barrier for the unmixed
-order/density hybrid; and two exact finite certificates, one mixed and one
-order-only. No uniform multiplier selection, no mixed-density positivity
+order/density hybrid; and three exact finite certificates, one mixed and two
+order-only (one of them cyclic). No uniform multiplier selection, no
+mixed-density positivity
 theorem, and no new complete factoring bound is proved. The complete saving
 exponent remains **1/2**.
 
@@ -406,6 +407,140 @@ generating subset is exactly the open hypothesis. The mixed hit at exponent
 `2` remains a distinct row and is not needed for this order-only
 certificate.
 
+**Cyclic gap control.** The second checked group is
+`N=3979=23\cdot 173`, `D=-4N`, with cyclic class group of order and exponent
+`60`. Here `Q=D^{1/4}=11.232...`, `W=2`, and `h/Q=5.343...`; the divisors
+of `h` in the gap interval `(2,5.343...)` are `3,4,5`. The target `29` has
+order `5` and index `12>Q`, so it is a genuine gap target. The targets `7`
+(order `12`, index `5`), `31` (order `10`, index `6`), and `41` (order
+`30`, index `2`) are density-covered by index. The order-only subset
+`{29,7}` has orders `5,12`, lcm `60`, determinant `60=|G|`, and generates
+the group; the extractor returns factor `23` at window `12`. The abstract
+cyclic criterion already holds at `W=5` because `60` divides
+`lcm(1,...,5)`, but no target of order `3` or `4` was available in this
+small prime window, so the target-only generating window is `12`. This is a
+concrete instance of the base-word caveat in Corollary 5.5. It does not give
+a uniform improvement: the partner `7` has order `12>Q` even though its
+index is density-covered.
+
+**Pooled-rank negative control.** One possible escape from the per-target
+order window is to let smooth rows from other targets fill the gap column
+collectively. The same group gives a bounded test. Take smooth bound `Y=20`,
+which is strictly below the norm bound `H=72`, and the target set
+`{5,7,11,13,17,19,29}`; target `29` is included even though it exceeds `Y`,
+because the row label is a target and the smoothing primes are at most `Y`.
+Enumerating all powers `g_p^k`, `k<=5`, with leading coefficient at most `H`
+and a smooth word over primes at most `Y` gives verified rows
+`k e_p-v`. The rank profile is
+
+| window | rows | rank |
+| ---: | ---: | ---: |
+| 1 | 6 | 0 |
+| 2 | 11 | 3 |
+| 3 | 12 | 4 |
+| 4 | 14 | 5 |
+| 5 | 16 | 7 |
+
+Full rank `7` first appears at window `5`, which equals `ord(29)=5`; at window
+`4` the rank is `5<7`. The selected maximal minor is `900=15|G|`; using it as
+an annihilator, the two-part extractor returns `23`. Thus in this example the
+off-diagonal smooth rows do not fill the gap column before the gap target's
+own order window. A regime with `Y>H` would make every small leading
+coefficient automatically smooth; that is not evidence for the density
+mechanism. A positive rank result needs a uniform lower bound on the rank of
+the pooled smooth rows below the order window, not a single full-rank
+instance at the window.
+
+**Mixed-pair complete basis (positive finite control).** The negative control
+above used only pure rows for powers of one target. Mixing targets pairwise
+does much better on the same group. Take the same `Y=20` and
+`H=72`, and all unordered pairs `p<=q` from `{5,7,11,13,17,19,29}`. For each
+pair compute the class of `pq`; if its reduced leading coefficient is at most
+`H` and is `20`-smooth, the smooth word `v` gives the relation
+`e_p+e_q-v`. All `28` pairs were checked. Fifteen have an admissible smooth
+word; five of those rows are zero (trivial exact identities such as
+`5*5=5^2`), three duplicate an earlier row, and the remaining seven distinct
+rows are
+
+\[
+\begin{pmatrix}
+ 1&-2& 0& 0& 0& 1& 0\\
+ 1& 1& 2& 0& 0& 0& 0\\
+-1& 1& 0& 2& 0& 0& 0\\
+ 0& 0& 1& 0& 1& 0& 1\\
+ 1&-1& 0& 1& 0& 0& 1\\
+ 1& 0&-1& 0& 1& 1& 0\\
+-1& 0&-1& 0& 0& 2& 0
+\end{pmatrix},
+\qquad \det=-60=-|G|.
+\]
+
+The seven target classes generate `G` (checked), so `[Z^7:\ker\phi]=60`.
+The rows lie in the kernel, and their lattice has index `|\det|=60`; hence
+the row lattice **equals** the full relation lattice in this example. The
+two-part extractor with annihilator `60` returns `23`. This uses window `1`,
+no order rows, and no smooth row for `29` itself: the gap target
+`ord(29)=5`, index `12` is covered by pair rows. It is the smallest-window
+positive finite certificate in this note and directly crosses the
+order-index gap for this group.
+
+The certificate is finite, not uniform. It does not show that the pair search
+or the density estimate produces a complete relation basis for all targets.
+It isolates the uniform obligation: prove that admissible mixed-pair rows at
+bounded exponent generate `ker\phi`, or at least have index `|G|^{1+o(1)}`,
+under the same smoothness hypotheses. The determinant equality also shows
+that the hard part is not a sign or a multiple: it is the index of the
+generated relation lattice.
+
+**Second mixed-pair control (non-cyclic).** The same construction also works
+on the non-cyclic group `D=-4*10403`, of order `90`. Take `Y=30<H=117` and
+targets `{3,11,13,17,19,23}`. Allowing pair powers at exponents `1` and `2`
+gives `11` distinct nonzero rows of rank `6`; the selected minor is
+
+\[
+\begin{pmatrix}
+ 2& 0& 2& 0& 1& 0\\
+-1& 3& 2& 0& 0& 0\\
+ 6& 0& 0& 0& 2& 0\\
+ 1& 1& 0& 1& 0&-1\\
+-1&-1& 0& 4& 0& 0\\
+-1&-1& 0& 1& 1& 0
+\end{pmatrix},
+\qquad \det=180=2|G|.
+\]
+
+The two-part extractor with annihilator `180` returns `101` at window `2`,
+below the order-only window `6`. Thus the pair mechanism is not an artifact
+of cyclicity or of the determinant being exactly `|G|`: a full-rank minor
+with index `2|G|` already gives an annihilator. The row lattice is not the
+full kernel here, only a sublattice of index `2`; full rank is enough.
+
+**Third mixed-pair control (larger gap).** A larger group shows the same
+behavior. Take `N=1009*1013`, so `h=928`, `D^{1/4}=44.966...`, `H=1167`, and
+`Y=31`. The target set is `{3,7,11,17,19,23,389}`. The small primes have
+large orders (`58,116,464,464,464,464`), but small indices; the target `389`
+has order `16` and index `58>D^{1/4}`, so it is a genuine gap target. Mixed
+pair powers at exponents `1` and `2` give rank `2` at window `1` and full
+rank `7` at window `2`. The selected minor has determinant
+
+\[
+1856=2|G|,
+\]
+
+and the two-part extractor returns `1009`. Window `2` is far below
+`ord(389)=16`; the pair rows involving `389` need only smooth words over
+primes at most `31`. This is the largest finite gap crossed here and shows
+that the mixed-pair window need not track the target order.
+
+The same pair construction has a checked 40-bit instance. For
+`N=1000036000099`, cutoff `177`, the split primes through the cutoff lie in
+the order-`198850` cycle generated by `5`. An exhaustive scan of split primes
+through `100000` in this cycle finds ten order-index gap targets. A full-rank
+base matrix plus one pair row per target gives a simultaneous rank-`32`
+relation matrix with determinant `96768h`, and the two-part extractor returns
+`1000003`. See [mixed-pair rows on a 40-bit cycle](mixed-pair-gap-cycle.md).
+This is a fixed finite certificate, not a uniform first-hit or rank theorem.
+
 **Lemma 5.6 (maximal-minor annihilator).** Let `R` be an `r x n` integer
 relation matrix of rank `n`, `r>=n`, with rows in `\ker\phi`. Every nonzero
 `n x n` minor `\Delta` of `R` is a multiple of `|G|`, hence is an
@@ -435,12 +570,20 @@ The remaining obligations are now separated:
    union of subgroups, and the union bound over many targets is not
    available. A positive result needs a new equidistribution/avoidance lemma
    for prime classes or a structured block construction whose determinant
-   factor is provably nonzero.
+   factor is provably nonzero. The mixed-pair basis suggests weakening the
+   target: do not select one common `z`; allow pair rows `p*q`. Then the
+   obligation is a lower bound on the index of the pair-generated relation
+   lattice, not a per-target order/multiplier selection.
 2. **Mixed-density positivity.** Prove the scaled `M`-matrix condition of
    Lemma 2.2, or replace it by a direct determinant lower bound. By Lemma
    5.6 the route only needs a full-rank pooled matrix; positivity is a
    sufficient, not necessary, interface. The rank gap is the real
-   obligation.
+   obligation. The pooled-rank control above shows that a full-rank instance
+   at the gap window is not by itself a window improvement; the rank must be
+   full below that window, uniformly. The mixed-pair basis attains the
+   strongest possible finite index (`|G|`) at window `1`, so the open part is
+   a uniform relation-basis generation theorem, not a determinant-sign
+   estimate. No such theorem is supplied here.
 3. **Order-only generation.** Prove that the targets of order at most `W`
    generate the class group, or handle the quotient collectively. For a
    cyclic group Corollary 5.5 reduces this to the prime-power divisor
@@ -460,6 +603,9 @@ the hard case is exactly the medium-order, large-index block. For the present
 windows the product `WQ` is `D^{1/4+o(1)}` while `|G|=D^{1/2+o(1)}`, so the
 two windows do not meet; covering the hyperbola's middle requires a
 genuinely collective rank argument or a different arithmetic representation.
+The mixed-pair certificate is finite evidence that the collective route can
+attain a complete relation basis at window `1` in a gap example; it is not a
+uniform bound and does not change the saving exponent.
 
 ## Reproduction
 
@@ -469,10 +615,10 @@ python3 tools/check_target_order_mixed_rows.py \
 make verify-target-order-mixed-rows
 ```
 
-The checker enumerates the reduced forms of the small discriminant, computes
-orders and indices by exact cyclic enumeration, verifies the mixed identity
-and the two-part extraction, verifies that both selected generating sets
-generate the order-`90` group, checks the three-target order-only annihilator
-`90` and its extraction, and checks the determinant identity on synthetic
-nonnegative matrices. It is a finite control; the enumeration cost is not a
-factoring algorithm.
+The checker enumerates the reduced forms of both small discriminants,
+computes orders and indices by exact cyclic enumeration, verifies the mixed
+identity and the two-part extraction, verifies that the selected generating
+sets generate the order-`90` and cyclic order-`60` groups, checks the
+three-target and two-target order-only annihilators and their extraction,
+and checks the determinant identity on synthetic nonnegative matrices. It is
+a finite control; the enumeration cost is not a factoring algorithm.
