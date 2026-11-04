@@ -61,6 +61,8 @@
 
 - [Original smooth density from even prime products](small-index-smooth-density.md): a high-precision prime-color partition and one-sided product spectrum prove density exp(-O(b/log b)) on subgroups of index at most D^kappa, kappa<1/4, from the principal split-prime estimate. The full character estimate gives every coset for kappa<1/64. Actual target indices and hit gaps remain open.
 
+- [Target orders, pure relation rows, and common multipliers](target-order-mixed-rows.md): the identity hit gives a free pure row at the target order; a common multiplier preserves the pure-row determinant, and a common-multiplier determinant identity reduces the hard medium-order block to one scalar. The unmixed order/density hybrid leaves a nonempty medium-order gap, and mixed-density positivity is not automatic. Exact 10403 certificate recovers `101` from a mixed row and three pure rows; no complete bound change.
+
 - [A uniform obstruction to ambient positive minorants](uniform-ambient-minorant-obstruction.md): an auxiliary split prime and unreduced product norm yield a missed low-bias translate in every large class group, under the pinned analytic input. Ambient mean is at most 2^(-b/64+o(b)), also with subexponential cofactor caps; original target-orbit hitting remains open.
 
 - [An arithmetic obstruction to ambient positive minorants](ambient-minorant-norm-gap.md): missed low-bias translates force exponentially small ambient means on a preprocessing-surviving semiprime family, under the pinned analytic input. The one-sided negative-spectrum repair is also excluded; target-subgroup certificates and original orbit hitting remain open.
