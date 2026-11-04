@@ -1,4 +1,4 @@
-# Linear Bell-diagonal paths at d=8 fail the t=2 width target
+# Linear and monomial Bell-diagonal paths at d=8 fail the t=2 width target
 
 ## Result
 
@@ -14,9 +14,11 @@ of at least `1848`. The allowed rank at `rho<1/sqrt(2)` and `t=2` is
 the two-cut width target at `t=2`, and hence no such path gives a
 uniform crossing family.
 
-This closes the simple linear path family, not the whole Bell-diagonal
-`d=8` construction. Nonlinear paths, position-dependent families, and
-other characteristics remain open.
+The same ordered-word census also excludes **monomial** local polynomials
+`z^{d_j}` with `d_j in {0,1,2}`: the minimum possible maximum row rank is
+`1173`, also above the target. This closes the linear and monomial
+quadratic path families, not the whole Bell-diagonal `d=8` construction.
+Non-monomial quadratic paths and other characteristics remain open.
 
 ## Count census
 
@@ -42,6 +44,21 @@ The target at `t=2` is
 
 The inequality is strict and the census is finite.
 
+For monomial local polynomials `z^{d_j}`, with `n_0,n_1,n_2` counts
+summing to `64`, the length-two coefficient rank at degree `d` is the
+number of **ordered** words with `d_i+d_j=d`:
+
+```math
+(n_0^2,\ 2n_0 n_1,\ n_1^2+2n_0 n_2,\ 2n_1 n_2,\ n_2^2).
+```
+
+The ordered form is essential: `linear_profile_ternary` multiplies
+literal words, not unordered pairs. Enumerating all `2,145` triples
+gives a minimum of the maximum entry `1173`, attained at
+`(n_0,n_1,n_2)=(13,17,34)` and `(34,17,13)`. This is also above
+`64^{\sqrt2}`; every monomial quadratic path is excluded at `t=2` on
+the row cut.
+
 ## Relation to the earlier candidate
 
 An explicit path was previously displayed because its **rank fraction**
@@ -53,13 +70,14 @@ shows that no linear path does better than `1848`.
 
 ## What remains open
 
-The Bell-diagonal `d=8` note leaves open nonlinear or
-position-dependent families; this result does not exclude them. A
-successful construction must have both cut ranks at most
-`q^{rho t}` for every `t`, so in particular at `t=2` its profile rank
-must be below `358`, more than five times smaller than the linear
-minimum. The next search should target genuinely nonlinear local
-eigenpolynomials; refining linear paths cannot work.
+The remaining quadratic paths have at least one non-monomial local
+polynomial. A random screen of `2,000` such paths found no maximum
+below `1,334`, but that is not a proof. A successful construction must
+have both cut ranks at most `q^{rho t}` for every `t`, so in particular
+at `t=2` its profile rank must be below `358`, more than three times
+smaller than the monomial minimum. The next search should target
+non-monomial local eigenpolynomials, not refine linear or monomial
+paths.
 
 ## Reproduction
 
