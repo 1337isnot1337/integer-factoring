@@ -1,70 +1,47 @@
-# An explicit d=8 Bell-diagonal path with finite profile below 1/sqrt(2)
+# A d=8 Bell-diagonal finite profile is not a width crossing
 
-## Result
+## Correction and result
 
-The Bell-diagonal construction has an explicit linear path at physical
-dimension `d=8` (local dimension `q=64`) over `F_3` whose two-cut rank
-profiles are below `1/sqrt(2)` for all tested tensor lengths `1` through
-`100`. The maximum rank ratio is
+An earlier version of this note compared the **rank fraction**
+`R/q^t` with `1/sqrt(2)`. That is not the width criterion. The
+`pieces-to-factoring` target requires the rank itself to be at most
+`q^{rho t}` with `rho<1/sqrt(2)`, equivalently a rank fraction at most
+`q^{-(1-rho)t}`, which is exponentially small. A fraction below `1` is
+not enough.
 
-```math
-\frac{43}{64}=0.671875<0.7071067812...
-```
-
-The path is
+For the explicit linear path
 
 ```math
-s_j(z)=1+(z-1)v_j,
+s_j(z)=1+(z-1)v_j
 ```
 
-with `v` the ternary vector in the
-[receipt](../evidence/bell-d8-explicit-family.json). Its value counts are
-`(31,21,12)` and the counts of `Tv` are `(22,30,12)`. At `z=1` every
-local factor is `1`, so the path specializes to the exact scale-one
-crossing; the Bell transform identity `T^2=I` holds over `F_3`.
+over `F_3` at `d=8` (`q=64`), with `v` the ternary vector in the
+[receipt](../evidence/bell-d8-explicit-family.json), the exact profile
+ranks for lengths `1..100` give rank fractions between about `0.43` and
+`0.67`. The corresponding **rank exponents**
 
-## Profile table
-
-The maximum rank ratios for lengths `1` through `12` are
-
-```text
-t=1  43/64              = 0.671875
-t=2  2712/4096          = 0.662109375
-t=3  164475/262144      = 0.627422...
-t=4  9891936/16777216   = 0.589605...
-t=5  633279582/1073741824 = 0.589787...
-t=6  37479881439/68719476736 = 0.545404...
-t=7  2433895866099/4398046511104 = 0.553404...
-t=8  150591989206440/281474976710656 = 0.535010...
-t=9  9519800180198400/18014398509481984 = 0.528455...
-t=10 602643695601065634/1152921504606846976 = 0.522710...
-t=11 37842957437614534656/73786976294838206464 = 0.512868...
-t=12 2431681430557255489800/4722366482869645213696 = 0.514929...
+```math
+e_t=\frac{\log_64 R_t}{t}
 ```
 
-The maximum is at `t=1`; for `t=31..100` the maximum is
-`0.510285...` at `t=31`, and at `t=100` it is `0.429518...`. The
-sequence is not monotone but stays far below the `t=1` value. The
-determinant lower floor at `q=64` is `0.656961...`, so this path is
-slightly above the floor but strictly below the target.
+are `0.904` at `t=1`, `0.950` at `t=2`, `0.984` at `t=10`, `0.995` at
+`t=31`, and `0.998` at `t=100`. They are all above `1/sqrt(2)`; the
+path's ranks grow almost like the full `q^t`, not like `q^{0.707t}`.
 
-## What this does and does not establish
+The path therefore does **not** approach the required width. The
+Bell-diagonal `d=8` constructive target remains open; this finite
+profile is a negative screen, not a candidate.
 
-It establishes an explicit finite profile with both cut ranks below
-`1/sqrt(2)` at every tested length. The pieces are the monomial
-coefficients of the path; there are `t+1` of them, and each has both
-cut ranks bounded by the displayed maximum. A uniform all-length bound
-of the same form would give a two-cut width inequality with exponent at
-most `0.672+o(1)`, below the Bell-diagonal barrier at `d=2,4` and below
-`1/sqrt(2)`.
+## Why the fraction is misleading
 
-It does **not** establish the all-length bound, the full
-`pieces-to-factoring` transfer, or a factoring exponent. The finite
-table is evidence for a promising construction, not a proof; the
-all-length profile bound and the transfer costs remain open. The next
-concrete task is to prove that this path's maximum profile ratio stays
-below a fixed rational `<1/sqrt(2)` for every `t`, or find a path with a
-provable uniform bound.
+The local total at length `t` is `q^t=64^t`. A crossing piece of rank
+`R` must satisfy `R <= 64^{rho t}`; at `rho=0.707`, the allowed fraction
+is `64^{-0.293t}`: about `0.086` at `t=2`, `0.0013` at `t=10`, and
+`1.6e-30` at `t=100`. The observed fractions `0.43..0.67` are many
+orders of magnitude above that. The determinant floor
+`gamma_64=0.656961...` is a lower bound on the **exponent** of a forced
+rank, not an upper bound on a construction; it does not make a rank
+fraction near `0.66` favorable.
 
 ## Reproduction
 
@@ -72,7 +49,9 @@ provable uniform bound.
 make verify-bell-d8-explicit-family
 ```
 
-The checker recomputes the transform, the value and transform counts,
-the `T^2=I` identity, and the profiles for lengths `1..100`, and verifies
-the `43/64` maximum against the receipt. It does not prove the
-all-length statement.
+The checker verifies the transform and counts, the `T^2=I` identity,
+the finite profiles, the rank fractions, and the rank exponents for
+lengths `1..100`. It asserts that every exponent is above
+`1/sqrt(2)` and records the negative result. It does not prove a
+uniform all-length statement; it proves only that this explicit path is
+not a crossing.
