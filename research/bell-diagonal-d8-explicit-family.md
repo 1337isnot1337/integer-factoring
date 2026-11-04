@@ -68,6 +68,15 @@ At `t=2`:
 The bound crosses the target between total degree ten and eleven; this
 argument does not exclude degree at least eleven.
 
+The same calculation applies at other physical dimensions. For `d=32`
+(`q=1024`) at `t=2`, there are `q^2=1,048,576` words and the target is
+`1024^{sqrt(2)}≈18,064`. A cubic path (total degree three) has four
+coefficients, so some rank is at least `ceil(1,048,576/4)=262,144`; a
+quartic path has five coefficients and bound `209,716`. Both are far
+above the target. Thus the dimension-32 cubic/quartic paths left open by
+the outer-rank endpoint pressure test are excluded at actual rank by the
+same word-count argument.
+
 For a path of local degree `D_path`, the total degree is `2D_path`.
 Thus local degree at most five is excluded at `t=2` (`D=10`), while
 local degree six has total degree `12`; its first failure is `t=3`,
