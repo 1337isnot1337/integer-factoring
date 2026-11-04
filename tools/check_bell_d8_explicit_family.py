@@ -75,6 +75,21 @@ def main() -> None:
     assert sum(1 for row in census if row[0] == 1848) == 2
     assert 1848 > 64 ** sqrt(2)
 
+    monomial = []
+    for n0 in range(65):
+        for n1 in range(65 - n0):
+            n2 = 64 - n0 - n1
+            profile = (n0 * (n0 + 1) // 2,
+                       n0 * n1,
+                       n1 * (n1 + 1) // 2 + n0 * n2,
+                       n1 * n2,
+                       n2 * (n2 + 1) // 2)
+            monomial.append((max(profile), n0, n1, n2))
+    monomial_minimum = min(monomial)
+    assert monomial_minimum[0] == 595
+    assert monomial_minimum[1:] in ((34, 17, 13), (13, 17, 34))
+    assert 595 > 64 ** sqrt(2)
+
     receipt = {
         'passed': True,
         'd': 8,
@@ -89,6 +104,8 @@ def main() -> None:
         'not_a_width_crossing': True,
         'linear_t2_minimum_rank': 1848,
         'linear_t2_all_excluded': True,
+        'monomial_t2_minimum_rank': 595,
+        'monomial_t2_all_excluded': True,
         'finite_lengths': MAX_LENGTH,
         'input_sha256': sha256(args.input.read_bytes()).hexdigest(),
         'scope': (
