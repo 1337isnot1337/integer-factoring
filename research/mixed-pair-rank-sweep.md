@@ -89,6 +89,16 @@ finds ten; the window-`4` sweep through `10000` sees only `1117` and `1289`,
 each full at window `2`/`3` with seven target pair hits. This sweep is not an
 exhaustive gap-target census.
 
+The companion note now also proves an **isolated-column repair** lemma: if a
+column is zero in every pair row, adjoining the diagonal row `M e_i` with a
+common annihilator `M` raises the rank by one and multiplies the determinant
+by `M`. A control on all split primes through `500` fills the zero column
+`229` this way and extracts `1000003`. Thus the window-`3` isolated columns
+have two finite repairs: a window-`4` pair hit (no annihilator factor) or a
+common-annihilator row (cost about `sqrt(h)` group operations and a factor `M`
+per isolated column). The second is proved but not free; the first is finite
+here and not yet uniform.
+
 ## What the sweep says
 
 - At the two-target certificate's window `3`, pair rows alone are not
@@ -118,8 +128,10 @@ exhaustive gap-target census.
 The open obligation is unchanged in kind: prove a uniform supply of
 admissible pair rows and a rank or lattice-index lower bound. The finite
 window-`4` receipt makes a uniform window-`4` pair-hit/rank theorem the
-sharper target; a window-`3` density/order hybrid for the isolated targets is
-the alternative. This sweep supplies neither; it records where the finite
+sharper target; a lower-cost density or annihilator row for isolated targets
+is the alternative. The common-annihilator repair is proved, but its
+`sqrt(h)` cost and determinant factor are exactly what a uniform supply would
+need to avoid. This sweep supplies neither; it records where the finite
 construction stops.
 
 ## Reproduction
