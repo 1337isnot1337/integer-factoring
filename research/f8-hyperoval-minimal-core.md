@@ -77,7 +77,11 @@ partial fit to a completed profile is biased. At cutoff 47:
 The q99 extension is the best at the matched cutoff. Dropping mode 11,
 dropping the redundant height-25 word, adding a boundary-coupled
 height-26 word, and composing the mode drop with the q99 extension are
-all worse. The q94 lower-bound argument
+all worse. By the
+[resolved-subset lower-bound lemma](truncated-profile-lower-bound.md),
+each fit above `1/sqrt(2)` also excludes its complete map from crossing:
+the complete q95, q97(`46`), and q97(q94 plus q99) pressures are at least
+the listed cutoff-47 values. The q94 lower-bound argument
 ([mode-11 pilot](../research/f8-hyperoval-q94-mode11-pilot.md)) is
 consistent with this: its complete pressure is at least the cutoff-47
 fit, which is above the q99 full value. The q45 quotient shows the
