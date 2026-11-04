@@ -61,12 +61,23 @@ def main() -> None:
     assert 224 not in words
     assert saved['q99_extension_words'] == [160, 192, 224]
 
+    support = set()
+    for vector in embedding + retraction:
+        support.update(vector)
+    low = [word for word in range(1, 1 << 12) if height(word) <= 25]
+    free = [word for word in low if word not in support]
+    assert saved['low_height_words_total'] == len(low)
+    assert saved['low_height_words_in_support'] == len(low) - len(free)
+    assert saved['free_low_words'] == free == []
+    assert len(low) == saved['low_height_words_total']
+
     receipt = {
         'passed': True,
         'count': len(rows),
         'min_height': 26,
         'max_height': 44,
         'no_low_single_word_extension': True,
+        'low_height_support_saturated': True,
         'q99_pair_words_admissible': True,
         'q99_triple_requires_pairs': True,
         'input_sha256': sha256(args.input.read_bytes()).hexdigest(),

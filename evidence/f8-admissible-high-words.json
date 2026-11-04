@@ -236,5 +236,8 @@
     192,
     224
   ],
-  "scope": "Census of single-word vectors {w:1} that can be added to the q96 F8 hyperoval map while preserving LP=I, deletion closure, and the graded-letter axioms. All admissible single words have height at least 26; the q99 extension uses three of them. This does not screen multi-word additions or different low blocks."
+  "scope": "Census of single-word vectors {w:1} that can be added to the q96 F8 hyperoval map while preserving LP=I, deletion closure, and the graded-letter axioms. All admissible single words have height at least 26; the q99 extension uses three of them. This does not screen multi-word additions or different low blocks. Every word of height at most 25 is in the support of some q96 letter, so there is no low single-word or pair-of-free-words extension.",
+  "low_height_words_total": 102,
+  "low_height_words_in_support": 102,
+  "free_low_words": []
 }

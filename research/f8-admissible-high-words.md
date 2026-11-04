@@ -20,6 +20,16 @@ individually admissible (heights `26` and `28`), while `224` (height
 its deletions need them. Thus `224` is not in the 45-word single-word
 inventory.
 
+## Low-support saturation
+
+Every word of height at most 25 occurs in the support of at least one q96
+letter. There is no word outside the old supports at low height, so the
+single-word census also rules out a pair of free low words: both members
+of a support-disjoint pair would have to be free, and none are. A new
+low coordinate would have to use words already appearing in old
+supports, with coefficients arranged to stay orthogonal; that is a
+change of the letter supports, not an addition of a free word.
+
 ## Interpretation
 
 The q99 height-39 extension is not one arbitrary choice from a large
@@ -33,9 +43,10 @@ this inventory. This is a structural
 limitation of the single-word high extension, not a proof that no
 multi-word addition or different low block can cross.
 
-The next low-block search must therefore allow multi-word vectors,
-different rank-three images, or a different protected structure; adding
-more single high words is not the route.
+The next low-block search must therefore change the letter supports
+themselves, for example through a different rank-three image or a
+different protected structure; adding free low or high words is not the
+route.
 
 ## Reproduction
 
