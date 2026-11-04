@@ -3085,11 +3085,34 @@ verify-f8-height39-extension:
 build-f8-height39-extension:
 	python3 tools/build_f8_hyperoval_height39_extension.py
 
+
+.PHONY: verify-f8-q94-mode11-pilot
+verify-f8-q94-mode11-pilot:
+	python3 tools/check_f8_hyperoval_q94_mode11_pilot.py --output /tmp/f8-q94-mode11-pilot-check.json
+
+.PHONY: verify-truncated-profile-lower-bound
+verify-truncated-profile-lower-bound:
+	python3 tools/check_truncated_profile_lower_bound.py --output /tmp/truncated-profile-lower-bound-check.json
+
+.PHONY: verify-f8-admissible-high-words
+verify-f8-admissible-high-words:
+	python3 tools/check_f8_admissible_high_words.py --output /tmp/f8-admissible-high-words-check.json
+
+.PHONY: verify-bell-d8-explicit-family
+verify-bell-d8-explicit-family:
+	python3 tools/check_bell_d8_explicit_family.py --output /tmp/bell-d8-explicit-family-check.json
+
 .PHONY: verify-f8-minimal-core build-f8-minimal-core
 verify-f8-minimal-core:
 	python3 tools/check_f8_hyperoval_minimal_core.py --output /tmp/f8-minimal-core-check.json
 build-f8-minimal-core:
 	python3 tools/build_f8_hyperoval_minimal_core.py
+
+.PHONY: verify-core-cutoff-trend build-core-cutoff-trend
+verify-core-cutoff-trend:
+	python3 tools/check_core_cutoff_trend.py --output /tmp/core-cutoff-trend-check.json
+build-core-cutoff-trend:
+	python3 tools/measure_core_cutoff_trend.py
 
 .PHONY: verify-f8-retraction-refinement verify-f8-retraction-refinement-full verify-f8-retraction-census-full
 verify-f8-retraction-refinement:

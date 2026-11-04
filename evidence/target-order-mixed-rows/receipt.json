@@ -1,5 +1,358 @@
 {
   "complete_saving_exponent": 0.5,
+  "cyclic_mixed_pair_lattice": {
+    "class_number": 60,
+    "determinant": -60,
+    "discriminant": -15916,
+    "extracted_factor": 23,
+    "factorization": [
+      23,
+      173
+    ],
+    "gap_target": 29,
+    "gap_target_index": 12,
+    "gap_target_order": 5,
+    "integer": 3979,
+    "norm_bound": 72,
+    "pair_products_checked": 28,
+    "relation_lattice_equals_kernel": true,
+    "relation_matrix": [
+      [
+        1,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        2,
+        0
+      ]
+    ],
+    "row_lattice_index": 60,
+    "scope": "Finite mixed-pair certificate: exponent-one pair rows form a complete basis of the relation lattice, so the gap target is covered without its order row; no uniform pair-basis theorem",
+    "smooth_bound": 20,
+    "targets": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      29
+    ],
+    "two_part_basis_orders": [
+      2
+    ],
+    "window": 1,
+    "zero_rows": 5
+  },
+  "cyclic_order_only_group": {
+    "class_group_cyclic": true,
+    "class_group_exponent": 60,
+    "class_number": 60,
+    "d_fourth_root": 11.232035893073048,
+    "discriminant": -15916,
+    "factorization": [
+      23,
+      173
+    ],
+    "gap_window": 2,
+    "integer": 3979,
+    "order_only_certificate": {
+      "determinant": 60,
+      "extracted_factor": 23,
+      "generated_subgroup_size": 60,
+      "orders": [
+        5,
+        12
+      ],
+      "relation_matrix": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          12
+        ]
+      ],
+      "targets": [
+        29,
+        7
+      ],
+      "two_part_basis_orders": [
+        2
+      ],
+      "window": 12
+    },
+    "targets": [
+      {
+        "density_covered_at_kappa_quarter": true,
+        "index": 5,
+        "order": 12,
+        "order_covered_at_W2": false,
+        "target": 7
+      },
+      {
+        "density_covered_at_kappa_quarter": false,
+        "index": 12,
+        "order": 5,
+        "order_covered_at_W2": false,
+        "target": 29
+      },
+      {
+        "density_covered_at_kappa_quarter": true,
+        "index": 6,
+        "order": 10,
+        "order_covered_at_W2": false,
+        "target": 31
+      },
+      {
+        "density_covered_at_kappa_quarter": true,
+        "index": 2,
+        "order": 30,
+        "order_covered_at_W2": false,
+        "target": 41
+      }
+    ]
+  },
+  "cyclic_pooled_smooth_rank": {
+    "annihilator_multiple": 15,
+    "class_number": 60,
+    "discriminant": -15916,
+    "extracted_factor": 23,
+    "factorization": [
+      23,
+      173
+    ],
+    "first_full_window": 5,
+    "gap_target_order": 5,
+    "integer": 3979,
+    "norm_bound": 72,
+    "orders": [
+      20,
+      12,
+      60,
+      15,
+      60,
+      60,
+      5
+    ],
+    "rank_profile": [
+      {
+        "rank": 0,
+        "rows": 6,
+        "window": 1
+      },
+      {
+        "rank": 3,
+        "rows": 11,
+        "window": 2
+      },
+      {
+        "rank": 4,
+        "rows": 12,
+        "window": 3
+      },
+      {
+        "rank": 5,
+        "rows": 14,
+        "window": 4
+      },
+      {
+        "rank": 7,
+        "rows": 16,
+        "window": 5
+      }
+    ],
+    "scope": "Nontrivial-smoothness pooled-rank control: full rank appears only at window 5, the order of the gap target 29; at window 4 the rank is 5 of 7, so pooled smooth rows do not reduce the gap window in this example",
+    "selected_minor_determinant": 900,
+    "smooth_bound": 20,
+    "targets": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      29
+    ],
+    "two_part_basis_orders": [
+      2
+    ]
+  },
+  "large_gap_mixed_pair_rank": {
+    "annihilator_multiple": 2,
+    "class_number": 928,
+    "d_fourth_root": 44.96661031829501,
+    "discriminant": -4088468,
+    "extracted_factor": 1009,
+    "factorization": [
+      1009,
+      1013
+    ],
+    "gap_target": 389,
+    "gap_target_index": 58,
+    "gap_target_order": 16,
+    "integer": 1022117,
+    "norm_bound": 1167,
+    "orders": [
+      58,
+      116,
+      464,
+      464,
+      464,
+      464,
+      16
+    ],
+    "rank_profile": [
+      {
+        "rank": 2,
+        "rows": 3,
+        "window": 1
+      },
+      {
+        "rank": 7,
+        "rows": 11,
+        "window": 2
+      }
+    ],
+    "relation_matrix": [
+      [
+        1,
+        0,
+        0,
+        2,
+        -1,
+        0,
+        1
+      ],
+      [
+        -1,
+        2,
+        0,
+        1,
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        -3,
+        -1,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        -3,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        3,
+        -1,
+        0,
+        2,
+        0,
+        2,
+        0
+      ]
+    ],
+    "scope": "Finite larger-gap mixed-pair control: target 389 has order 16 and index 58 above D^(1/4), but pair rows at window 2 give full rank and a 2|G| minor; extractor returns 1009",
+    "selected_minor_determinant": 1856,
+    "smooth_bound": 31,
+    "targets": [
+      3,
+      7,
+      11,
+      17,
+      19,
+      23,
+      389
+    ],
+    "two_part_basis_orders": [
+      1,
+      4
+    ],
+    "window": 2
+  },
   "mixed_order_determinant": {
     "determinant": 81000,
     "orders": [
@@ -16,7 +369,7 @@
       0
     ]
   },
-  "scope": "Exact small class-group, order-only, and synthetic determinant controls; no uniform multiplier selection, mixed-density positivity, generating-subset bound, or complete factoring improvement",
+  "scope": "Exact small class-group, order-only, pooled-rank, mixed-pair lattice, and synthetic determinant controls, including one cyclic gap example; no uniform multiplier selection, mixed-density positivity, generating-subset bound, or complete factoring improvement",
   "small_group": {
     "all_forms_annihilated": true,
     "class_group_cyclic": false,
@@ -170,6 +523,94 @@
     "two_part_basis_orders": [
       1
     ]
+  },
+  "small_group_mixed_pair_rank": {
+    "annihilator_multiple": 2,
+    "class_group_cyclic": false,
+    "class_number": 90,
+    "discriminant": -41612,
+    "distinct_nonzero_rows": 11,
+    "extracted_factor": 101,
+    "factorization": [
+      101,
+      103
+    ],
+    "integer": 10403,
+    "norm_bound": 117,
+    "order_only_window": 6,
+    "orders": [
+      30,
+      6,
+      15,
+      15,
+      5,
+      3
+    ],
+    "relation_matrix": [
+      [
+        2,
+        0,
+        2,
+        0,
+        1,
+        0
+      ],
+      [
+        -1,
+        3,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        6,
+        0,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        1,
+        0,
+        1,
+        0,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        -1,
+        -1,
+        0,
+        1,
+        1,
+        0
+      ]
+    ],
+    "scope": "Finite non-cyclic mixed-pair control: full rank at window 2, below the order-only window 6; the selected minor is 2|G| and the extractor returns 101",
+    "selected_minor_determinant": 180,
+    "smooth_bound": 30,
+    "targets": [
+      3,
+      11,
+      13,
+      17,
+      19,
+      23
+    ],
+    "two_part_basis_orders": [
+      1
+    ],
+    "window": 2
   },
   "synthetic_common_multiplier_identities": [
     {
