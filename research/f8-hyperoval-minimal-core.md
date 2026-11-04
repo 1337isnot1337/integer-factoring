@@ -82,11 +82,23 @@ all worse. The q94 lower-bound argument
 consistent with this: its complete pressure is at least the cutoff-47
 fit, which is above the q99 full value. The q45 quotient shows the
 opposite failure mode: deleting all unused core words is much worse.
+
+All fifteen height-39 triples whose three deletion pairs are present or
+admissible were also screened at cutoff 31. The q99 chain `224` with
+pairs `160,192` is best (`0.5906329`), followed by `336` (`0.5906693`);
+the chains that add only one new pair are around `0.5918`. This is a
+low-cutoff screen, not a complete-profile census, but it finds no better
+height-39 chain than the one already completed.
+
 The low core is saturated
 ([admissible high words](f8-admissible-high-words.md)), and the fixed
 height-25 boundary and height-24 core leave only high-word extensions,
-which stay on the plateau. This closes the tested low-block variants,
-not the F8 family as a mathematical impossibility.
+which stay on the plateau. Supports at most height 38 are still under
+the `29/41` protected-core floor; the only escape is height at least 39,
+and the tested height-39 chains do not cross. This closes the tested
+low-block and high-word variants, not the F8 family as a mathematical
+impossibility: a different protected low block or ambient tensor is the
+remaining requirement.
 
 ## Scope
 
