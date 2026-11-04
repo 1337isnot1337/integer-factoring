@@ -309,6 +309,8 @@ def check():
         edge_hits = 0
         edge_adjacency = {
             prime: set() for prime in extension_targets}
+        edge_support = {
+            prime: set() for prime in extension_targets}
         for left_index, left in enumerate(extension_targets):
             for right in extension_targets[left_index:]:
                 for exponent in range(1, edge_window+1):
@@ -334,6 +336,10 @@ def check():
                     edge_hits += 1
                     edge_adjacency[left].add(right)
                     edge_adjacency[right].add(left)
+                    support = {left, right} | set(terms)
+                    for prime in support:
+                        edge_support[left].add(prime)
+                        edge_support[prime].add(left)
                     key = tuple(row)
                     if key not in edge_seen:
                         edge_seen.add(key)
@@ -352,6 +358,14 @@ def check():
                     edge_queue.append(neighbor)
                 elif edge_colors.get(neighbor) == edge_colors.get(vertex):
                     edge_bipartite = False
+        support_vertices = {extension_targets[0]}
+        support_queue = [extension_targets[0]]
+        while support_queue:
+            vertex = support_queue.pop()
+            for neighbor in edge_support[vertex]:
+                if neighbor not in support_vertices:
+                    support_vertices.add(neighbor)
+                    support_queue.append(neighbor)
         edge_profiles.append({
             'window': edge_window,
             'distinct_rows': len(edge_rows),
@@ -360,6 +374,9 @@ def check():
             'root_component': len(edge_vertices),
             'connected': len(edge_vertices) == len(extension_targets),
             'nonbipartite': not edge_bipartite,
+            'support_root_component': len(support_vertices),
+            'support_connected': (len(support_vertices)
+                                  == len(extension_targets)),
         })
         if edge_first_full is None and edge_rank == len(extension_targets):
             edge_basis = [edge_rows[index]
@@ -395,6 +412,8 @@ def check():
             }
     assert edge_first_full is not None
     assert edge_first_full['first_full_window'] == 2
+    assert edge_profiles[1]['support_connected']
+    assert edge_profiles[1]['support_root_component'] == len(extension_targets)
 
     scan_gaps = []
     scan_split_primes = 0

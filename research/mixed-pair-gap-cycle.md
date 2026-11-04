@@ -161,15 +161,21 @@ All selected rows replay exactly, and the determinant annihilator extracts
 `1000003`. No base relation row, no order row, and no exponent-`3` row is
 used.
 
-This is not a graph-connectivity effect. At window `2` the pair-endpoint
-graph has root component `1`: no nonzero pair row touches the chosen base
-root. At window `3` the pair-endpoint graph becomes connected and
-non-bipartite, but the matrix is already full rank at window `2`. The
-word terms, not the pair endpoints alone, carry the collective rank. Thus
-the edge-only certificate is a finite arithmetic rank fact; a uniform
-version needs a rank or determinant bound for the actual weighted
-pair-word matrix, not merely connectivity of the pair graph. The earlier
-graph/cycle intuition is therefore only a heuristic.
+This is not a pair-endpoint connectivity effect. At window `2` the
+pair-endpoint graph has root component `1`: no nonzero pair row touches the
+chosen base root. At window `3` the pair-endpoint graph becomes connected
+and non-bipartite, but the matrix is already full rank at window `2`.
+
+The weighted row supports behave differently. At window `2` every one of
+the `32` vertices occurs in some selected row, and the `2`-section of the
+weighted supports is connected. The word terms, not the pair endpoints
+alone, supply this coverage and connectivity. This is only a finite
+support diagnostic, not a rank theorem: a connected support hypergraph
+does not in general force an incidence matrix to have full rank. The
+edge-only certificate is therefore a finite arithmetic rank fact; a
+uniform version needs a rank or determinant bound for the actual weighted
+pair-word matrix, not merely connectivity of the pair graph or support
+graph. The earlier graph/cycle intuition is only a heuristic.
 
 ## What is and is not proved
 

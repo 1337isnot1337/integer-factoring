@@ -63,6 +63,8 @@
         "pair_hits": 10,
         "rank": 9,
         "root_component": 1,
+        "support_connected": false,
+        "support_root_component": 23,
         "window": 1
       },
       {
@@ -72,6 +74,8 @@
         "pair_hits": 57,
         "rank": 32,
         "root_component": 1,
+        "support_connected": true,
+        "support_root_component": 32,
         "window": 2
       },
       {
@@ -81,6 +85,8 @@
         "pair_hits": 98,
         "rank": 32,
         "root_component": 32,
+        "support_connected": true,
+        "support_root_component": 32,
         "window": 3
       }
     ],
