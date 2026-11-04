@@ -1,0 +1,456 @@
+{
+  "scope": "Ordinary quartic Pfaffian identity, exact generic low jets and STOP certificate for one fixed q8 covariant completion. No full profile, independent mathematical review or stronger complete factoring bound.",
+  "registered_base": "ccd12e7ac337dba2b1f2c7f30073db725f912481",
+  "precision": 19,
+  "identity_controls": {
+    "controls": 192,
+    "sha256": "eeab2d4ec3fe1af28bcb192d33efb1fb71f843f0b461265d10360fea507bd0d7"
+  },
+  "invariant_quartets": 9310,
+  "leading_six_occupied_controls": 115616,
+  "cases": [
+    {
+      "axis": 0,
+      "charge": 0,
+      "toeplitz_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        59,
+        102,
+        145
+      ],
+      "smith_prefix": {
+        "0": 1,
+        "16": 42
+      },
+      "independent_column_rank_19": 145
+    },
+    {
+      "axis": 0,
+      "charge": 1,
+      "toeplitz_ranks": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        62,
+        104,
+        146
+      ],
+      "smith_prefix": {
+        "6": 2,
+        "16": 40
+      },
+      "independent_column_rank_19": 146
+    },
+    {
+      "axis": 1,
+      "charge": 0,
+      "toeplitz_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        59,
+        102,
+        145
+      ],
+      "smith_prefix": {
+        "0": 1,
+        "16": 42
+      },
+      "independent_column_rank_19": 145
+    },
+    {
+      "axis": 1,
+      "charge": 1,
+      "toeplitz_ranks": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        14,
+        16,
+        18,
+        20,
+        62,
+        104,
+        146
+      ],
+      "smith_prefix": {
+        "6": 2,
+        "16": 40
+      },
+      "independent_column_rank_19": 146
+    }
+  ],
+  "whole_prefixes": {
+    "0": {
+      "0": 1,
+      "16": 322,
+      "6": 14
+    },
+    "1": {
+      "0": 1,
+      "16": 322,
+      "6": 14
+    }
+  },
+  "literal_controls": {
+    "cases": [
+      {
+        "axis": 0,
+        "literal_full_support_entries": 65536,
+        "nonzero_two_quartic_entries": 609
+      },
+      {
+        "axis": 1,
+        "literal_full_support_entries": 65536,
+        "nonzero_two_quartic_entries": 609
+      }
+    ],
+    "two_quartic_witness": {
+      "axis": 0,
+      "word": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "polynomial": 1103806595072
+    },
+    "sha256": "f71fea9430b494a14e9021130ff2afeaae02d5feddf37c8f04f451481668b1eb"
+  },
+  "pressure_certificate": {
+    "dimension": 4096,
+    "determinant_degree": 229376,
+    "known_orders": 337,
+    "known_sum": 5236,
+    "tail_count": 3759,
+    "tail_mean": "32020/537",
+    "tail_cap": 60,
+    "pressure_floor": "4/5",
+    "polynomial": [
+      [
+        0,
+        70
+      ],
+      [
+        2,
+        -112
+      ],
+      [
+        3,
+        1960
+      ],
+      [
+        5,
+        1610
+      ],
+      [
+        6,
+        27440
+      ],
+      [
+        7,
+        -5880
+      ],
+      [
+        8,
+        90160
+      ],
+      [
+        9,
+        192080
+      ],
+      [
+        11,
+        1893360
+      ],
+      [
+        12,
+        345744
+      ],
+      [
+        13,
+        1036840
+      ],
+      [
+        14,
+        17671360
+      ],
+      [
+        16,
+        43547280
+      ],
+      [
+        17,
+        57479940
+      ],
+      [
+        19,
+        609661920
+      ],
+      [
+        21,
+        333862480
+      ],
+      [
+        22,
+        2771675984
+      ],
+      [
+        24,
+        9348149440
+      ],
+      [
+        27,
+        64494931683
+      ],
+      [
+        29,
+        53751859280
+      ],
+      [
+        30,
+        1052520
+      ],
+      [
+        32,
+        743104698000
+      ],
+      [
+        33,
+        22102920
+      ],
+      [
+        35,
+        24207960
+      ],
+      [
+        36,
+        206293920
+      ],
+      [
+        37,
+        3387426748762
+      ],
+      [
+        38,
+        1016734320
+      ],
+      [
+        39,
+        722028720
+      ],
+      [
+        41,
+        14234280480
+      ],
+      [
+        42,
+        -461645264080
+      ],
+      [
+        43,
+        11692444680
+      ],
+      [
+        44,
+        66426642240
+      ],
+      [
+        46,
+        327388451040
+      ],
+      [
+        47,
+        -2262061793992
+      ],
+      [
+        49,
+        2291719157280
+      ],
+      [
+        51,
+        2509978124640
+      ],
+      [
+        52,
+        -8636963213424
+      ],
+      [
+        54,
+        35139693744960
+      ],
+      [
+        57,
+        -25191001405010
+      ],
+      [
+        59,
+        202053239033520
+      ],
+      [
+        60,
+        5934634020
+      ],
+      [
+        62,
+        -54257845827920
+      ],
+      [
+        63,
+        83084876280
+      ],
+      [
+        65,
+        136496582460
+      ],
+      [
+        66,
+        387729422640
+      ],
+      [
+        67,
+        -81386768741880
+      ],
+      [
+        68,
+        3821904308880
+      ],
+      [
+        71,
+        26753330162160
+      ],
+      [
+        72,
+        -75960984159088
+      ],
+      [
+        73,
+        43951899552120
+      ],
+      [
+        76,
+        615326593729680
+      ],
+      [
+        77,
+        -33232930569601
+      ],
+      [
+        81,
+        4717503885260880
+      ],
+      [
+        87,
+        531149744790
+      ],
+      [
+        90,
+        14872192854120
+      ],
+      [
+        93,
+        104105349978840
+      ],
+      [
+        95,
+        342060435644760
+      ],
+      [
+        98,
+        4788846099026640
+      ],
+      [
+        103,
+        55071730138806360
+      ],
+      [
+        117,
+        998295945332805
+      ],
+      [
+        120,
+        13976143234659270
+      ],
+      [
+        125,
+        321451294397163210
+      ],
+      [
+        147,
+        750518891701202799
+      ]
+    ],
+    "actual_polynomial_degree": 147,
+    "bernstein_degree": 512,
+    "positive_coefficients": 513,
+    "monomial_reconstructions": 513,
+    "minimum_index": 21,
+    "minimum": "70873077021109999079449808296094549207/1013375888650711384986799678504106240",
+    "integer_coefficient_sha256": "f4473321ae0fdfa2b195cb2d285f5be908cb2978deea23d6bf6493d6b95ba069"
+  },
+  "source_sha256": {
+    "tools/pfaffian_quartic_truncation.py": "e7a27965be26afca30db44893337ab61d6478c4ba4ce25ebbfd4e11dfb9eaf61",
+    "tools/check_pfaffian_quartic_truncation.py": "fefceb8fd254720fea9fe0993ace73a619eb4a1a64701e5b8c695db878b39da8",
+    "tools/check_fixed_curve_quartic_floor.py": "29793aa1b4ff47b529eb304aca5f24708f5e2cad3e0e4f861ca042434c874066",
+    "tools/cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
+    "tools/check_quartic_charge_fusion.py": "8fd507feb9225adf4270a7976c4724261684f1935aacb4b3f92e46ddefed64d0"
+  }
+}

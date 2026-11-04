@@ -1,0 +1,84 @@
+{
+  "source_commit": "705b3e34b8564a290b6f451f623515c62a1f74db",
+  "source_tree": "744418a3779e9ef2c2b79ff9a20acc3d5c78db32",
+  "command": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--tmpfs",
+    "/tmp",
+    "--dir",
+    "/tmp/factoring-sol2-curve-verify-705b3e3",
+    "--bind",
+    "/tmp/factoring-sol2-curve-verify-705b3e3",
+    "/tmp/factoring-sol2-curve-verify-705b3e3",
+    "--chdir",
+    "/tmp/factoring-sol2-curve-verify-705b3e3",
+    "--unshare-net",
+    "--die-with-parent",
+    "--setenv",
+    "GIT_OPTIONAL_LOCKS",
+    "0",
+    "--setenv",
+    "OPENBLAS_NUM_THREADS",
+    "1",
+    "--",
+    "make",
+    "verify"
+  ],
+  "private_tmp_probe": "private tmp, read-only host, writable frozen checkout",
+  "tracked_before": "",
+  "started_utc": "2026-11-03T00:44:09.045192+00:00",
+  "scope": "Default non-Lean implementation verification of the PR111 fixed-curve source and integrated main8e4754b; no mathematical acceptance or stronger factoring bound.",
+  "coordination_start": {
+    "exit_code": 0,
+    "stdout": "{\"data\":{\"addDiscussionComment\":{\"comment\":{\"url\":\"https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363401\"}}}}",
+    "stderr": ""
+  },
+  "exit_code": 0,
+  "seconds": 1981.387162864994,
+  "completed_utc": "2026-11-03T01:17:11.978674+00:00",
+  "tracked_after": "",
+  "stdout_sha256": "f48c4a813eaef28f7af1d6b8b08ab484ce7acb08031b3112ea9f62d51b448506",
+  "coordination_end": {
+    "exit_code": 0,
+    "stdout": "{\"data\":{\"addDiscussionComment\":{\"comment\":{\"url\":\"https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363907\"}}}}",
+    "stderr": ""
+  },
+  "stdout_archive": "evidence/fixed-curve-full-verification.stdout.txt.xz",
+  "stdout_archive_sha256": "d9e708200ad07f0a897bad92e5a52c33587b6ebfa262c3612f6ce18be6554a8f",
+  "later_integration": {
+    "source_commit": "f9399d6db634d30b9c0fb3fbcbea31daaadcbdbc",
+    "main_commit": "46ab756e0d8f3bf898bd5d1a359016698dbb4c1c",
+    "focused_pass": [
+      "verify-fixed-curve-quartic",
+      "verify-colour-alternation",
+      "verify-hash-join-identity-minor",
+      "verify-fanout-forward-join",
+      "verify-bundle-joint-compression",
+      "verify-two-bundle-joint-image",
+      "verify-three-bundle-joint-image",
+      "verify-protected-core-height39-region",
+      "verify-f8-height39-extension",
+      "verify-docs"
+    ],
+    "markdown_files": 1202,
+    "earlier_main_ea70aa8_focused_pass": [
+      "verify-rank-deficient-endpoint",
+      "tools/check_short_flag_seven_letter_units.py",
+      "tools/check_free_boundary_module_controls.py"
+    ],
+    "initial_integration_failure": {
+      "source_commit": "16bda9c817c61c8568d69dd5ddab2f43d2045ce0",
+      "check": "verify-f8-height39-extension",
+      "cause": "Numerical argmin scale differed 1.8e-8 between hosts while pressure agreed within 2e-16; replaced scale identity with actual pressure equation at saved scale. Saved order data unchanged.",
+      "coordination": "https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363912"
+    },
+    "scope": "Focused checks only for later integrated contributions and q99 portability fix; outside the frozen full source. No independent mathematical review or full q99 profile regeneration."
+  }
+}

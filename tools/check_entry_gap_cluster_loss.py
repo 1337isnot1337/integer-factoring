@@ -3,7 +3,7 @@
 
 The tool does three things:
 
-* proves the elementary entry-gap equivalence on all short binary words;
+* checks the elementary entry-gap equivalence on all short binary words;
 * measures entry gaps, cluster lengths and conditional windows on complete
   small cofactor orbits, excluding the two cycles reserved by the owner;
 * replays the raw hit-prefix scans for key integrity and stopping-phase
@@ -429,7 +429,11 @@ def main() -> None:
 
     controls = synthetic_controls()
     cases = complete_orbit_cases(args.period_cap, not args.skip_large)
+    saved = json.loads(Path(__file__).resolve().parents[1].joinpath(
+        "evidence/entry-gap-cluster-loss.json").read_text())
     raw_records, integrity = raw_prefix_records()
+    assert integrity["files"] == saved["raw_prefix"]["integrity"]["files"], \
+        "Raw prefix inputs differ from the saved file hashes or record counts"
     raw_summary = raw_prefix_summary(raw_records, integrity)
     assert not integrity["validation_errors"], integrity["validation_errors"][:3]
 
@@ -475,8 +479,9 @@ def main() -> None:
     }
     result = {
         "claim": "Exact entry-gap equivalence and finite entry/cluster diagnostics for Path C",
-        "scope": ("Complete independent cofactor orbits exclude the two owner-named cycles; "
-                  "raw prefixes are censored and no uniform theorem is claimed."),
+        "scope": ("Complete specified cofactor traversals omit the two owner-named generators; "
+                  "some traverse the same cyclic subgroup. Raw prefixes are censored "
+                  "and no uniform theorem is claimed."),
         "synthetic_controls": controls,
         "summary": summary,
         "complete_cases": cases,

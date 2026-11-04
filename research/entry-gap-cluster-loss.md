@@ -3,7 +3,7 @@
 ## Result and scope
 
 Let `f` be the cyclic admissible-class indicator of one generator orbit,
-with period `h` and `s` good classes, and put
+with period `h` and `0<s<h` good classes, and put
 
 \[
  e(k)=f(k)\bigl(1-f(k-1)\bigr). \tag{1}
@@ -38,16 +38,21 @@ runs.  Since `mean_cluster=s/runs`,
     =D_r\lceil mean\_cluster\rceil. \tag{2}
 \]
 
-Thus an entry moment bound gives a window at most a factor
-`ceil(mean_cluster)` larger than the raw-density window.  If
+Thus the entry criterion's formal window at fixed `q,C,Hbar` is at most
+a factor `ceil(mean_cluster)` larger than the corresponding raw-density
+formula. This comparison does not assert that the raw moment hypothesis
+holds at its own window. If
 `mean_cluster` is polynomial in the input length, this is a lower-order
 `O(log b)` term in the log-cost (15) of the existing criterion.  It does
 not by itself improve the factoring exponent: the uniform density and
 moment hypotheses are still unproved.
 
-The finite checks below are independent of the two cycles reserved by the
-owner and worker 5.  They support the structural premise, not a uniform
-theorem.  No factoring score, Lean result or independent mathematical
+The finite checks below omit the two named generator instances reserved by
+the owner and worker 5. They are not nine disjoint cyclic subgroups:
+the [existing cycle analysis](entry-moment-cycles.md) identifies, for example,
+the extra `g=7` traversal as a power reindexing of the reserved `g=5` cycle.
+They support the structural premise, not a uniform theorem. No factoring
+score, Lean result or independent mathematical
 acceptance is claimed.  This ordinary source audit used OpenAI assistant
 support; the owner's Path C scope and the coordination record in
 [Discussion #51](https://github.com/1337isnot1337/integer-factoring/discussions/51)
@@ -59,8 +64,8 @@ Work on the cyclic word `f` of length `h`.  An entry is a position whose
 value is one and whose predecessor is zero.  Number the entries cyclically
 and let `d_r` be the forward distance from entry `r` to the next entry.
 Between those two entries there are exactly `d_r-1` positions, all
-non-entries: the `L_r` positions of the run beginning at entry `r`
-including the entry itself, followed by `G_r` zero positions, with
+non-entries: the `L_r-1` positions after entry `r` in its hit run,
+followed by `G_r` zero positions, with
 `L_r+G_r=d_r`.  Distinct runs are separated by at least one zero, so
 `L_r>=1` and `G_r>=1`; hence `d_r>=2`.  Summing the distances around the
 cycle gives `sum_r d_r=h`.
@@ -239,7 +244,7 @@ criterion had merged:
    successful raw max-gap bound.
 
 The finite data is consistent with a polynomial cluster length and a
-polynomial entry gap on the independent complete orbits, and with the
+polynomial entry gap on the specified complete traversals, and with the
 entry `C=1` moment bound at the predeclared parameters.  The next
 theoretical obligation is a uniform bound on the maximum entry gap
 (equivalently, on the cluster and zero-gap lengths) or a uniform proof of
@@ -252,3 +257,23 @@ proved.
 python3 tools/check_entry_gap_cluster_loss.py \
   --output evidence/entry-gap-cluster-loss.json
 ```
+
+## Integration scope
+
+The homelab worker checkpoint [52b14ea6](https://github.com/1337isnot1337/integer-factoring/commit/52b14ea630e70717bd4160cf26d23775c1651747)
+(duplicate content `e28f6174`) is retained with its original author credit.
+Sol worker 1 corrected the nonconstant-word hypothesis and the `d_r-1`
+counting sentence, and made the overlapping traversal and formal-window
+comparison explicit. The input file hashes are checked against the saved
+receipt before any regenerated output is written. This does not reconstruct
+the original stopped scans or turn their censored prefixes into periods.
+The later [row-change event theorem](relation-change-event-density.md)
+gives a separate density bridge without an extra raw-cluster assumption;
+the entry process here is a different event definition. No raw-versus-entry
+lower-tail advantage is inferred from this integration.
+
+The [source-pinned full integration replay](../evidence/homelab-integration-full-verification.json)
+includes this checker explicitly alongside the default suite and the k4
+checker, and passed in 1342.17 seconds at clean frozen `c9ddfae`.
+It recomputes these finite traversals and summaries; it does not rerun
+the historical scan campaigns or prove an arithmetic gap bound.

@@ -1,0 +1,68 @@
+{
+  "base_natural_rho": 0.7310809359736006,
+  "base_natural_scale": 0.3290111256807374,
+  "degrees": [
+    1,
+    2,
+    3,
+    4,
+    6,
+    8
+  ],
+  "random_seed": 20261102,
+  "records": [
+    {
+      "best_natural_rho": 0.7310809359736006,
+      "best_trial": null,
+      "compensation_degree": 1,
+      "improved": false,
+      "trials": 1500
+    },
+    {
+      "best_natural_rho": 0.7310809359736006,
+      "best_trial": null,
+      "compensation_degree": 2,
+      "improved": false,
+      "trials": 1500
+    },
+    {
+      "best_natural_rho": 0.7310809359736006,
+      "best_trial": null,
+      "compensation_degree": 3,
+      "improved": false,
+      "trials": 1500
+    },
+    {
+      "best_natural_rho": 0.7310809359736006,
+      "best_trial": null,
+      "compensation_degree": 4,
+      "improved": false,
+      "trials": 1500
+    },
+    {
+      "best_natural_rho": 0.7310809359736006,
+      "best_trial": null,
+      "compensation_degree": 6,
+      "improved": false,
+      "trials": 1500
+    },
+    {
+      "best_natural_rho": 0.7310809359736006,
+      "best_trial": null,
+      "compensation_degree": 8,
+      "improved": false,
+      "trials": 1500
+    }
+  ],
+  "scope": "finite deterministic endpoint-perturbation screen; no pressure certificate",
+  "source_sha256": {
+    "check_rank_deficient_endpoint.py": "7b5c86b9ea59cc77e1be97cbda3267834d1e301cdf0be4275be1f7289a92089a",
+    "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "physical_split_crossings.py": "f80920838d10cd0ad8d907bd671a10795749d830cce256399661d959ad40efb8",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38",
+    "search_dense_coupled_reflection_frames.py": "525d26e6f931834d8cb661f506f48698e94da1e3b0c1301f8d0a26d36df3f776",
+    "search_physical_code_gauges.py": "71e1b87a45a9b2551546b9671b07e8ebf9b6d9531bfb927c4c8ed2a03c6bd422"
+  },
+  "status": "pass",
+  "trials_per_degree": 1500
+}

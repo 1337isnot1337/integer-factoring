@@ -23,11 +23,15 @@ work retain credit even when they do not advance the selected exponent.
   substantial OpenAI assistant support; per-result notes retain detailed scope
   and attribution.
   The [trace-dual word interface](research/trace-dual-native-counts.md)
-  retains classical trace duality and the credited ring, parity, inverse and
-  exact-division primitives, adding the bijective odd-candidate composition
+  retains classical trace duality and the credited ring, parity and no-wrap
+  sources, adding the division-free bijective odd-candidate composition
   and trial-certified smaller count precision. Sol worker 1 supplied the
   [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362216)
   of the new coordinate, bit-division, no-wrap and precision steps.
+  The [direct native parity composition](research/native-parity-hashes.md)
+  reuses the existing bit-tagged polynomial hash, sparse isolation and
+  verification proof, with direct Boolean bucket tests and a pure-field
+  one-bit provider contract.
   Sol worker 1's [near-height smooth-descent deduction](research/near-height-smooth-descent.md)
   reuses the credited norm-word decoder and polynomial form arithmetic;
   the [prescribed-target counterfamily](research/prime-power-descent-obstruction.md)

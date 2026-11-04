@@ -36,8 +36,8 @@ retains:
   checked against determinants of the original one-particle matrix;
 - source fingerprints for the constructor, native F8 engine and entry oracle.
 
-The selected entries are not a second reconstruction of all 4,900 matrix
-entries. The complete profile was produced by the same native engine used
+The selected entries are not a second reconstruction of the full cut
+matrices. The complete profile was produced by the same native engine used
 for the registered panel; the new receipt records its exact source pin.
 
 ## 2. Relation to the existing panel
@@ -46,8 +46,9 @@ The [determinant-code note](determinant-inverse-codes.md) registered the
 k=2,3 cases and explicitly declined a bare k walk. This checkpoint adds the
 last F8 case because the sparse map constructor stops at k=4 and because a
 complete profile, not another near-critical fit, is needed to see whether
-the sampled pressure is moving. It is not moving: `0.73964`, `0.73954`,
-`0.73948`.
+the sampled pressure is moving. The observed decrease is small:
+`0.73964`, `0.73954`, `0.73948`; these three points do not establish an
+asymptotic trend or exclusion.
 
 Changing the retraction at k=3 moved the sampled value by less than
 `3e-4`; the k=4 diagonal case is therefore representative evidence for the
@@ -68,3 +69,17 @@ Credit: classical determinant derivative/minor spaces; the existing
 coherent inverse-system, dual-space and F8 compound constructors. This
 checkpoint was prepared with OpenAI assistant support. No new Lean
 formalization or independent mathematical acceptance is claimed.
+
+The homelab worker checkpoint [a7e1d845](https://github.com/1337isnot1337/integer-factoring/commit/a7e1d845b540c769dbb804f677f294c16c6fc96a)
+is integrated with its original author and constructor credit. Its saved
+constructor/engine hashes match the integration sources. The focused
+replay checks the saved profile structure, numerical pressure equation
+and all 130 selected entries; it does not repeat the optional complete
+9,800-order reconstruction. No extra k, field or retraction search was
+performed for this historical integration.
+
+The [full integration replay](../evidence/homelab-integration-full-verification.json)
+passed the default suite plus this selected-entry checker and the entry-gap
+checker in 1342.17 seconds at clean frozen `c9ddfae`. It does not include
+the optional `--full` profile reconstruction. The receipt retains the
+exact source tree, namespace probe and complete compressed stdout.

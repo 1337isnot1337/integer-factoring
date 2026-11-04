@@ -1,0 +1,339 @@
+{
+  "complete_saving_exponent": 0.5,
+  "mixed_order_determinant": {
+    "determinant": 81000,
+    "orders": [
+      30,
+      6,
+      5,
+      15,
+      3
+    ],
+    "z": [
+      0,
+      1,
+      0,
+      0
+    ]
+  },
+  "scope": "Exact small class-group, order-only, and synthetic determinant controls; no uniform multiplier selection, mixed-density positivity, generating-subset bound, or complete factoring improvement",
+  "small_group": {
+    "all_forms_annihilated": true,
+    "class_group_cyclic": false,
+    "class_group_exponent": 30,
+    "class_number": 90,
+    "common_mixed_determinant": 81000,
+    "common_mixed_orders": {
+      "3": 30,
+      "11": 6,
+      "17": 5,
+      "19": 15,
+      "23": 3
+    },
+    "d_fourth_root_floor": 14,
+    "determinant_over_class_number": 6,
+    "discriminant": -41612,
+    "extracted_factor": 101,
+    "factorization": [
+      101,
+      103
+    ],
+    "gap_window": 2,
+    "hybrid_block_determinant": 540,
+    "integer": 10403,
+    "mixed_generators_subgroup_size": 90,
+    "mixed_order_rows": {
+      "mixed_19_by_23": {
+        "determinant": 15,
+        "mixed_order": 15,
+        "multiplier": 23
+      }
+    },
+    "mixed_target": {
+      "class_order": 15,
+      "hit_exponent": 2,
+      "hit_word": {
+        "17": 1
+      },
+      "identity": "(19*23)^2 = 17",
+      "index": 6,
+      "multiplier": 23,
+      "target": 19
+    },
+    "order_only_certificate": {
+      "determinant": 90,
+      "extracted_factor": 101,
+      "generated_subgroup_size": 90,
+      "orders": [
+        3,
+        5,
+        6
+      ],
+      "relation_matrix": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          6
+        ]
+      ],
+      "targets": [
+        23,
+        19,
+        11
+      ],
+      "two_part_basis_orders": [
+        1
+      ],
+      "window": 6
+    },
+    "relation_determinant": 540,
+    "relation_matrix": [
+      [
+        2,
+        2,
+        -1,
+        0
+      ],
+      [
+        0,
+        3,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        15,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        6
+      ]
+    ],
+    "targets": [
+      {
+        "density_covered_at_kappa_quarter": true,
+        "index": 3,
+        "order": 30,
+        "order_covered_at_W2": false,
+        "target": 3
+      },
+      {
+        "density_covered_at_kappa_quarter": false,
+        "index": 15,
+        "order": 6,
+        "order_covered_at_W2": false,
+        "target": 11
+      },
+      {
+        "density_covered_at_kappa_quarter": true,
+        "index": 6,
+        "order": 15,
+        "order_covered_at_W2": false,
+        "target": 17
+      },
+      {
+        "density_covered_at_kappa_quarter": false,
+        "index": 18,
+        "order": 5,
+        "order_covered_at_W2": false,
+        "target": 19
+      },
+      {
+        "density_covered_at_kappa_quarter": false,
+        "index": 30,
+        "order": 3,
+        "order_covered_at_W2": false,
+        "target": 23
+      }
+    ],
+    "two_part_basis_forms": [
+      [
+        101,
+        0,
+        103
+      ]
+    ],
+    "two_part_basis_orders": [
+      1
+    ]
+  },
+  "synthetic_common_multiplier_identities": [
+    {
+      "base_determinant": 6,
+      "determinant": 32,
+      "k": [
+        3,
+        4
+      ],
+      "scalar_denominator": 3,
+      "scalar_numerator": 16,
+      "size": 2,
+      "v": [
+        [
+          1,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "z": [
+        2,
+        1
+      ]
+    },
+    {
+      "base_determinant": 11,
+      "determinant": 79,
+      "k": [
+        5,
+        3
+      ],
+      "scalar_denominator": 11,
+      "scalar_numerator": 79,
+      "size": 2,
+      "v": [
+        [
+          1,
+          1
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "z": [
+        0,
+        4
+      ]
+    },
+    {
+      "base_determinant": 65,
+      "determinant": 709,
+      "k": [
+        4,
+        5,
+        6
+      ],
+      "scalar_denominator": 65,
+      "scalar_numerator": 709,
+      "size": 3,
+      "v": [
+        [
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "z": [
+        1,
+        2,
+        3
+      ]
+    },
+    {
+      "base_determinant": 33,
+      "determinant": 573,
+      "k": [
+        7,
+        5,
+        4
+      ],
+      "scalar_denominator": 11,
+      "scalar_numerator": 191,
+      "size": 3,
+      "v": [
+        [
+          2,
+          1,
+          0
+        ],
+        [
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          2
+        ]
+      ],
+      "z": [
+        0,
+        0,
+        5
+      ]
+    },
+    {
+      "base_determinant": 454,
+      "determinant": 7826,
+      "k": [
+        6,
+        7,
+        5,
+        4
+      ],
+      "scalar_denominator": 227,
+      "scalar_numerator": 3913,
+      "size": 4,
+      "v": [
+        [
+          1,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          0
+        ]
+      ],
+      "z": [
+        2,
+        3,
+        1,
+        4
+      ]
+    }
+  ]
+}

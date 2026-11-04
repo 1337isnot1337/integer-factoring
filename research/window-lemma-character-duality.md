@@ -348,6 +348,85 @@ concerns a genuinely stronger factorable hybrid estimate; no new orbit,
 cutoff or field search was run. The earlier literature investigation and
 its contributor credit are retained.
 
+### Zero-density estimates already allow a chosen annihilator (2026-11-03)
+
+Thorner--Zaman, [*Explicit results on the distribution of zeros of Hecke
+L-functions*, arXiv:1510.08086v1, Theorem 1.1, p. 4](https://arxiv.org/abs/1510.08086v1),
+applies to a congruence subgroup `H` and sums **only** over characters
+trivial on `H`. Write `n=[K:Q]`, `D_K=|disc K|`, and
+`Q=max_(chi(H)=1) N f_chi`. For `1/2<=sigma<1` it gives
+
+```math
+\sum_{\chi(H)=1}N(\sigma,T,\chi)
+ \ll\left(e^{O(n)}D_K^2QT^n\right)^{81(1-\sigma)},
+\qquad
+T\ge\max\{nD_K^{-2/n}Q^{-3/(5n)},1\}.                 \tag{16}
+```
+
+All implied constants are absolute and effective; 81 can be replaced by
+74 when `sigma>=1-10^(-3)`. Here `N` counts zeros with
+`sigma<Re rho<1`, `|Im rho|<=T`, with multiplicity. In an imaginary
+quadratic **field**, ordinary class-group characters have `n=2,Q=1`.
+Thus (16) already bounds the exceptional spectrum in the actual
+annihilator of any selected class-group subgroup, by
+`(C D_K^2 T^2)^(81(1-sigma))` for `T>=1`. Averaging over the entire
+class group is not a necessary limitation of this source. For ring-class
+characters the appropriate ray-class quotient and its conductor norm
+remain in the invoice; setting `Q=1` is not an automatic extension to
+nonmaximal orders.
+
+This is a zero count, rather than a bound for the smooth-word Fourier
+coefficients. To make that distinction explicit, put `f=1_S` on a finite
+abelian group `G`, with the normalized transform used above and
+`delta=hat f(1)`. If `d=[G:U]`, orthogonality gives
+
+```math
+\mathbb E_U f=\delta+
+  \sum_{\substack{\chi\in U^\perp\\\chi\ne1}}\widehat f(\chi).
+```
+
+Suppose an exceptional subset `B` of `U^perp minus {1}` has size `M`,
+and `|hat f(chi)|<=epsilon delta` outside it. Triangle inequality and
+Cauchy--Schwarz give
+
+```math
+|\mathbb E_U f-\delta|
+\le(d-1-M)\epsilon\delta+
+ \sqrt{M\sum_{\chi\in B}|\widehat f(\chi)|^2}.           \tag{17}
+```
+
+A zero-density theorem can bound `M` when the exceptional set means
+having a zero in its rectangle. It does not itself supply either the
+good-coefficient hypothesis or the exceptional coefficient energy in
+(17). Substituting only `|hat f|<=delta` leaves `M delta`; global
+Parseval leaves `sqrt(M delta)`. These crude substitutions do not prove
+a useful relative error for a nonempty exceptional set. This does not
+exclude sharper weighted estimates or a use of the characters' phases.
+Long-window event moments additionally require their shifted products,
+not just the one-set density identity.
+
+Harper, [*Bombieri--Vinogradov and Barban--Davenport--Halberstam type
+theorems for smooth numbers*, arXiv:1208.5992v1, Proposition 1, p. 9](https://arxiv.org/abs/1208.5992v1),
+supplies a useful model for the missing coefficient estimate, with
+explicit zero-free rectangle and truncation conditions. It is a
+**Dirichlet-character** result, with conductor `r<=x^d` for a small
+absolute `d`, as well as modulus and height restrictions. An unramified
+class-group character's finite ideal conductor is one, but its analytic
+conductor still contains `D_K`; one cannot import that proposition by
+setting `r=1`. At recognizable norm scale `x` comparable to `sqrt(D_K)`,
+the discriminant is `x^(2+o(1))`. A Hecke smooth-ideal analogue must
+control that discriminant and its truncation error explicitly. Harper's
+subsequent conductor average with `1/phi(q)` weights is also a separate
+operation from restriction to one fixed field's target subgroup.
+
+Sol worker 1 checked these two theorem statements against rendered
+primary pages in the [registered source check](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19365531).
+No new analytic estimate, event-correlation theorem or stronger complete
+factoring bound is claimed. The existing
+[even-product subgroup density theorem](small-index-smooth-density.md)
+already handles its stated index range without a nonprincipal
+prime-character estimate; that mechanism is not new here.
+
 ## 5. Placement recommendation
 
 Keep this in the integer-factoring research repo, as `research/` notes next to the window lemma.

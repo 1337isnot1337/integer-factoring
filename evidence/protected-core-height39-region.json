@@ -1,0 +1,91 @@
+{
+  "completed": true,
+  "maximum_height": 39,
+  "ambient_height_inventory_q": 450,
+  "grid": {
+    "a": [
+      50,
+      260
+    ],
+    "b": [
+      70,
+      370
+    ],
+    "rho_floor": [
+      141,
+      200
+    ],
+    "rho_ceiling": [
+      442,
+      625
+    ],
+    "z": [
+      0.998,
+      0.99999
+    ],
+    "z_points": 300,
+    "negative_margin": -1e-09
+  },
+  "negative_pair_count": 70,
+  "numeric_min_rho": {
+    "a": 233,
+    "b": 330,
+    "rho": [
+      233,
+      330
+    ],
+    "rho_decimal": 0.706060606060606,
+    "z_interval_numeric": [
+      0.9997104682274248,
+      0.9997104682274248
+    ],
+    "minimum_log_ratio_numeric": -0.0028922745052568644,
+    "negative_grid_points": 1
+  },
+  "numeric_max_rho": {
+    "a": 239,
+    "b": 338,
+    "rho": [
+      239,
+      338
+    ],
+    "rho_decimal": 0.7071005917159763,
+    "z_interval_numeric": [
+      0.999537424749164,
+      0.9998169565217392
+    ],
+    "minimum_log_ratio_numeric": -3.9691313512619217,
+    "negative_grid_points": 43
+  },
+  "exact_anchors": [
+    {
+      "a": 70,
+      "b": 99,
+      "rho": [
+        70,
+        99
+      ],
+      "rho_decimal": 0.7070707070707071,
+      "z": [
+        899,
+        900
+      ],
+      "test_excludes": false
+    },
+    {
+      "a": 113,
+      "b": 160,
+      "rho": [
+        113,
+        160
+      ],
+      "rho_decimal": 0.70625,
+      "z": [
+        4997,
+        5000
+      ],
+      "test_excludes": false
+    }
+  ],
+  "scope": "A numerical map of the H=39 Jensen-tail necessary condition plus two exact rational anchor points. The map is not a certificate of the numerical band boundaries, and the anchors are not a split or a score."
+}
