@@ -1,5 +1,7 @@
 # Research index
 
+- [An image floor for bounded-spin correction modules](bounded-spin-image-floor.md): the single-`B`-part correction decomposition has a rigorous rank-sum floor `sqrt((N-m_1)(N-m_2))`; the published eight- and ten-site modules close far above the finite targets, and the twelve-site route closes whenever the correction algebra has dimension at most eighteen. Several `B`-pieces (central idempotents) remain open; no score change.
+
 - [Known polynomial product fibres and rough inputs](polynomial-digit-fibres.md): classical deterministic primitive factorization and explicit divisor enumeration replace Cartesian digit-setting enumeration when the whole integer product polynomial is supplied. Actual roughness forces accepted products to be primitive; all content, bit and carry costs are stated. Standard-library certificates check complete fixed boxes; collective unknown-carry selection remains open and the complete bound is unchanged.
 
 - [A fixed path/group hybrid misses its finite seed budget](path-group-hybrid.md): all original nilpotent-seam bidegrees and reflections, affine-line group-sum cores and the all-ones core are retained. Sixteen original functionals exclude seeds paying constant I;113 more, following Sol worker 1's scope clarification, exclude direct budgets without that reservation. All ranks are independently checked. New recombinations and other sizes remain open; this dictionary is stopped.
