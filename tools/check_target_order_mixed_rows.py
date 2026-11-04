@@ -3,9 +3,9 @@
 
 This enumerates one small class group and verifies the order rows, the mixed
 order-row determinant, the common-multiplier determinant identity on synthetic
-matrices, and one actual mixed smooth hit with the existing two-part extractor.
-It is not a factoring algorithm; the class-group enumeration is exponential in
-the input bit length.
+matrices, one actual mixed smooth hit, and a three-target order-only annihilator
+with the existing two-part extractor. It is not a factoring algorithm; the
+class-group enumeration is exponential in the input bit length.
 """
 import argparse
 import json
@@ -109,6 +109,21 @@ def exact_class_group(discriminant):
     return forms, identity, multiply, order, prime_form
 
 
+def generated_subgroup_size(generators, identity, multiply):
+    seen = {identity}
+    frontier = [identity]
+    while frontier:
+        following = []
+        for value in frontier:
+            for generator in generators:
+                product = multiply(value, generator)
+                if product not in seen:
+                    seen.add(product)
+                    following.append(product)
+        frontier = following
+    return len(seen)
+
+
 def check_small_group():
     integer = 10403
     discriminant = -4*integer
@@ -149,6 +164,8 @@ def check_small_group():
 
     generators = [target_forms[19], target_forms[23], target_forms[17],
                   target_forms[11]]
+    mixed_subgroup_size = generated_subgroup_size(generators, identity, multiply)
+    assert mixed_subgroup_size == class_number
     # Exact row relations: 2(e19+e23)-e17, 3e23, 15e17, 6e11.
     left = multiply(multiply(power(target_forms[19], 2, identity, multiply),
                              power(target_forms[23], 2, identity, multiply)),
@@ -169,6 +186,35 @@ def check_small_group():
     factors = [ambiguous_factor(form, integer) for form in tops]
     factor = next((value for value in factors if value), None)
     assert factor in (101, 103) and integer % factor == 0
+
+    order_only_primes = (23, 19, 11)
+    order_only_orders = [3, 5, 6]
+    order_only_generators = [target_forms[prime] for prime in order_only_primes]
+    order_only_subgroup_size = generated_subgroup_size(
+        order_only_generators, identity, multiply)
+    assert order_only_subgroup_size == class_number
+    order_only_matrix = [[3, 0, 0], [0, 5, 0], [0, 0, 6]]
+    order_only_determinant = int(determinant(order_only_matrix))
+    assert order_only_determinant == 90 == class_number
+    for prime, expected in zip(order_only_primes, order_only_orders):
+        assert orders[prime] == expected
+        assert power(target_forms[prime], expected, identity, multiply) == identity
+    assert all(power(form, order_only_determinant, identity, multiply) == identity
+               for form in forms)
+    order_only_projected = project_to_two_part(
+        order_only_generators, order_only_determinant, identity, multiply)
+    order_only_basis = two_group_basis(
+        order_only_projected, identity, multiply, inverse_form,
+        class_number.bit_length())
+    order_only_tops = [power(form, 1 << (power_order-1), identity, multiply)
+                       for form, power_order in order_only_basis]
+    order_only_factors = [ambiguous_factor(form, integer)
+                          for form in order_only_tops]
+    order_only_factor = next((value for value in order_only_factors if value),
+                             None)
+    assert order_only_factor in (101, 103) and integer % order_only_factor == 0
+    class_group_exponent = max(order(form, class_number) for form in forms)
+    assert class_group_exponent == 30 and class_group_exponent < class_number
 
     mixed_order_rows = {}
     all_mixed_orders = {}
@@ -193,6 +239,8 @@ def check_small_group():
         'factorization': [101, 103],
         'discriminant': discriminant,
         'class_number': class_number,
+        'class_group_exponent': class_group_exponent,
+        'class_group_cyclic': class_group_exponent == class_number,
         'd_fourth_root_floor': int(abs(discriminant)**(1/4)),
         'gap_window': gap_window,
         'targets': gap_rows,
@@ -205,9 +253,21 @@ def check_small_group():
         'relation_matrix': matrix,
         'relation_determinant': relation_determinant,
         'determinant_over_class_number': relation_determinant//class_number,
+        'mixed_generators_subgroup_size': mixed_subgroup_size,
         'two_part_basis_orders': [power_order for _, power_order in basis],
         'two_part_basis_forms': [list(form) for form in tops],
         'extracted_factor': factor,
+        'order_only_certificate': {
+            'targets': list(order_only_primes),
+            'orders': order_only_orders,
+            'relation_matrix': order_only_matrix,
+            'determinant': order_only_determinant,
+            'generated_subgroup_size': order_only_subgroup_size,
+            'window': max(order_only_orders),
+            'two_part_basis_orders': [power_order
+                                      for _, power_order in order_only_basis],
+            'extracted_factor': order_only_factor,
+        },
         'all_forms_annihilated': True,
         'mixed_order_rows': mixed_order_rows,
         'common_mixed_orders': all_mixed_orders,
@@ -248,9 +308,10 @@ def main():
     parser.add_argument('--output')
     arguments = parser.parse_args()
     receipt = {
-        'scope': ('Exact small class-group and synthetic determinant controls; '
-                  'no uniform multiplier selection, mixed-density positivity, '
-                  'or complete factoring improvement'),
+        'scope': ('Exact small class-group, order-only, and synthetic '
+                  'determinant controls; no uniform multiplier selection, '
+                  'mixed-density positivity, generating-subset bound, or '
+                  'complete factoring improvement'),
         'complete_saving_exponent': Fraction(1, 2).__float__(),
         'small_group': check_small_group(),
         'mixed_order_determinant': check_mixed_order_determinant(),
