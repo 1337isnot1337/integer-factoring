@@ -298,6 +298,43 @@ def check():
     assert combined_factor in (1000003, 1000033)
     assert INTEGER % combined_factor == 0
 
+    # Pure-order control: the diagonal rows ord(p) e_p replay for every
+    # target and already extract a factor.  This does not need any pair or
+    # smooth row; it is a baseline showing that extraction alone is not the
+    # bottleneck.  The rows require the target orders, which the checker gets
+    # from the enumerated cycle.
+    order_rows = [[0]*len(extension_targets)
+                  for _ in extension_targets]
+    order_values = []
+    for target_index, prime in enumerate(extension_targets):
+        target_order = period//gcd(period, extension_logs[prime])
+        order_values.append(target_order)
+        order_rows[target_index][target_index] = target_order
+    for row in order_rows:
+        assert replay(row, extension_targets, extension_records,
+                      identity) == identity
+    order_determinant = 1
+    for value in order_values:
+        order_determinant *= value
+    assert order_determinant % period == 0
+    order_generators = [extension_records[prime][1]
+                        for prime in extension_targets]
+    order_projected = project_to_two_part(
+        order_generators, order_determinant, identity,
+        compose_forms_hnf)
+    order_two_basis = two_group_basis(
+        order_projected, identity, compose_forms_hnf, inverse_form,
+        period.bit_length())
+    order_factors = [
+        ambiguous_factor(
+            power(form, 1 << (power_order-1), identity, compose_forms_hnf),
+            INTEGER)
+        for form, power_order in order_two_basis]
+    order_factor = next(
+        (value for value in order_factors if value), None)
+    assert order_factor in (1000003, 1000033)
+    assert INTEGER % order_factor == 0
+
     # Edge-only collective certificate: use the pair rows themselves, with the
     # base primes among the target columns, and no separate base matrix.  Find
     # the first exponent window at which these rows have full rank.
@@ -477,6 +514,12 @@ def check():
             'gap_targets': scan_gaps,
             'complete': True,
         },
+        'order_basis': {
+            'vertices': len(extension_targets),
+            'orders': order_values,
+            'determinant_bit_length': order_determinant.bit_length(),
+            'extracted_factor': order_factor,
+        },
         'edge_basis': {
             'vertices': len(extension_targets),
             'profiles': edge_profiles,
@@ -503,8 +546,11 @@ def check():
                   'extractor returns 1000003. A full-rank base plus one hit '
                   'per target gives rank 32 and determinant 96768h; the pair '
                   'rows alone give a rank-32 edge basis at window 2 with '
-                  'determinant 8192h. No uniform pair-basis, rank-window, '
-                  'first-hit, or smoothness theorem is claimed.'),
+                  'determinant 8192h. A pure-order diagonal control also '
+                  'extracts the factor, using the enumerated cycle and its '
+                  'orders; it is not a factoring algorithm. No uniform '
+                  'pair-basis, rank-window, first-hit, or smoothness theorem '
+                  'is claimed.'),
     }
 
 

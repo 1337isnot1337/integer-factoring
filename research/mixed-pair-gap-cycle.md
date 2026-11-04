@@ -142,6 +142,30 @@ two-part extractor returns the factor `1000003`. This simultaneous extension
 holds at window `3`; several individual target sets are already full at
 window `2`, so the combined window is not claimed to be minimal.
 
+## Pure-order control
+
+A diagonal control shows that the pair-row and smooth-row constructions are
+not needed for **extraction** in this fixed instance. For each of the `32`
+targets, the row `ord(p)e_p` is a valid relation: `p` raised to its class
+order is principal. The checker asserts all `32` diagonal rows replay, forms
+the diagonal determinant
+
+\[
+ \prod_p \operatorname{ord}(p)
+\]
+
+of bit length `434`, and runs the same two-part extractor. It returns
+`1000003`.
+
+This is not a competing factoring method. The orders are obtained here from
+the enumerated cycle and its discrete logs; the class-group enumeration is the
+dominant cost. A generic order computation by baby-step giant-step costs about
+`sqrt(h)` group operations, and `h` is about `D^{1/2}` in the usual class-group
+regime, so this route is about `D^{1/4}` before any extraction. The pair-row
+certificate avoids global order information but pays the first-hit search.
+Neither is a complete-bound improvement. The control is recorded so the
+finite pair result is not mistaken for an extraction necessity.
+
 ## Edge-only collective basis
 
 The tree lemma still uses a separate full-rank base matrix. On the same
@@ -201,9 +225,9 @@ cost.
 - The tree extension is proved; the edge-only full-rank basis is a finite
   arithmetic fact. No uniform rooted-forest or weighted-pair rank theorem is
   supplied.
-- The base alone already yields the factor in this fixed instance; the
-  gap-target rows test coverage of additional target columns, not extraction
-  necessity.
+- The base alone and the pure-order diagonal control already yield the
+  factor in this fixed instance; the gap-target and pair rows test coverage of
+  additional target columns, not extraction necessity.
 - The certificate does not show that first hits can be found faster than
   scanning candidate pairs. That search is the next cost bottleneck; the
   lemma reduces rank and interaction, not the first-hit search.
