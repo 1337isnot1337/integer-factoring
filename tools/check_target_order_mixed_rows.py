@@ -4,9 +4,10 @@
 This enumerates two small class groups and verifies the order rows, the mixed
 order-row determinant, the common-multiplier determinant identity on synthetic
 matrices, one actual mixed smooth hit, one three-target order-only annihilator,
-and one cyclic two-target order-only annihilator with the existing two-part
-extractor. It is not a factoring algorithm; the class-group enumeration is
-exponential in the input bit length.
+one cyclic two-target order-only annihilator with the existing two-part
+extractor, and a pooled smooth-row rank control at nontrivial smoothness. It is
+not a factoring algorithm; the class-group enumeration is exponential in the
+input bit length.
 """
 import argparse
 import json
@@ -17,6 +18,7 @@ from math import prod
 from arithmetic_two_group import power, project_to_two_part, two_group_basis
 from binary_quadratic_forms import (
     ambiguous_factor, compose_forms, inverse_form, reduced_forms, reduce_form,
+    smooth_prime_word,
 )
 
 
@@ -123,6 +125,33 @@ def generated_subgroup_size(generators, identity, multiply):
                     following.append(product)
         frontier = following
     return len(seen)
+
+
+def echelon_pivot_rows(rows):
+    values = [[Fraction(value) for value in row] for row in rows]
+    origins = list(range(len(rows)))
+    rank = 0
+    pivots = []
+    width = len(rows[0]) if rows else 0
+    for column in range(width):
+        pivot = next((index for index in range(rank, len(values))
+                      if values[index][column]), None)
+        if pivot is None:
+            continue
+        values[rank], values[pivot] = values[pivot], values[rank]
+        origins[rank], origins[pivot] = origins[pivot], origins[rank]
+        pivot_value = values[rank][column]
+        values[rank] = [value/pivot_value for value in values[rank]]
+        for index in range(len(values)):
+            if index != rank and values[index][column]:
+                factor = values[index][column]
+                values[index] = [left-factor*right
+                                 for left, right in zip(values[index], values[rank])]
+        pivots.append(origins[rank])
+        rank += 1
+        if rank == len(values):
+            break
+    return rank, pivots
 
 
 def check_small_group():
@@ -340,6 +369,106 @@ def check_cyclic_order_only_group():
     }
 
 
+def check_cyclic_pooled_smooth_rank():
+    integer = 3979
+    discriminant = -4*integer
+    forms, identity, multiply, order, prime_form = exact_class_group(discriminant)
+    class_number = len(forms)
+    assert class_number == 60 and integer == 23*173
+    smooth_bound = 20
+    norm_bound = int((abs(discriminant)/3)**0.5)
+    assert norm_bound == 72
+    primes = (5, 7, 11, 13, 17, 19, 29)
+    target_forms = {prime: prime_form(prime) for prime in primes}
+    orders = {prime: order(target_forms[prime], class_number)
+              for prime in primes}
+    assert orders == {5: 20, 7: 12, 11: 60, 13: 15, 17: 60, 19: 60, 29: 5}
+    positions = {prime: index for index, prime in enumerate(primes)}
+    width = len(primes)
+
+    rows_by_window = {}
+    for prime in primes:
+        current = identity
+        for exponent in range(1, 6):
+            current = multiply(current, target_forms[prime])
+            leading = current[0]
+            if leading > norm_bound:
+                continue
+            word = smooth_prime_word(current, smooth_bound)
+            if word is None:
+                continue
+            vector = [0]*width
+            for form, word_exponent in word:
+                if form[0] not in positions:
+                    break
+                vector[positions[form[0]]] += word_exponent
+            else:
+                row = [0]*width
+                row[positions[prime]] += exponent
+                row = [row[index]-vector[index] for index in range(width)]
+                value = identity
+                for target, coefficient in zip(primes, row):
+                    if coefficient > 0:
+                        value = multiply(value, power(target_forms[target],
+                                                      coefficient, identity,
+                                                      multiply))
+                    elif coefficient < 0:
+                        value = multiply(value, power(inverse_form(target_forms[target]),
+                                                      -coefficient, identity,
+                                                      multiply))
+                assert value == identity
+                rows_by_window.setdefault(exponent, []).append(row)
+
+    pooled_rows = []
+    rank_profile = []
+    for window in range(1, 6):
+        pooled_rows.extend(rows_by_window.get(window, []))
+        rank, _ = echelon_pivot_rows(pooled_rows)
+        rank_profile.append({'window': window, 'rows': len(pooled_rows),
+                             'rank': rank})
+    assert rank_profile[3]['rank'] == 5
+    assert rank_profile[4]['rank'] == 7
+
+    rank, pivots = echelon_pivot_rows(pooled_rows)
+    assert rank == width
+    minor = [pooled_rows[index] for index in pivots[:width]]
+    determinant_value = int(determinant(minor))
+    assert determinant_value and determinant_value % class_number == 0
+    annihilator = abs(determinant_value)
+    generators = [target_forms[prime] for prime in primes]
+    assert generated_subgroup_size(generators, identity, multiply) == class_number
+    projected = project_to_two_part(generators, annihilator, identity, multiply)
+    basis = two_group_basis(projected, identity, multiply, inverse_form,
+                            class_number.bit_length())
+    tops = [power(form, 1 << (power_order-1), identity, multiply)
+            for form, power_order in basis]
+    factors = [ambiguous_factor(form, integer) for form in tops]
+    factor = next((value for value in factors if value), None)
+    assert factor in (23, 173) and integer % factor == 0
+
+    return {
+        'integer': integer,
+        'factorization': [23, 173],
+        'discriminant': discriminant,
+        'class_number': class_number,
+        'smooth_bound': smooth_bound,
+        'norm_bound': norm_bound,
+        'targets': list(primes),
+        'orders': [orders[prime] for prime in primes],
+        'rank_profile': rank_profile,
+        'first_full_window': 5,
+        'gap_target_order': orders[29],
+        'selected_minor_determinant': determinant_value,
+        'annihilator_multiple': annihilator//class_number,
+        'two_part_basis_orders': [power_order for _, power_order in basis],
+        'extracted_factor': factor,
+        'scope': ('Nontrivial-smoothness pooled-rank control: full rank appears '
+                  'only at window 5, the order of the gap target 29; at window '
+                  '4 the rank is 5 of 7, so pooled smooth rows do not reduce '
+                  'the gap window in this example'),
+    }
+
+
 def check_synthetic_identities():
     rows = []
     for size, k, v, z in (
@@ -372,13 +501,15 @@ def main():
     parser.add_argument('--output')
     arguments = parser.parse_args()
     receipt = {
-        'scope': ('Exact small class-group, order-only, and synthetic '
-                  'determinant controls, including one cyclic gap example; '
-                  'no uniform multiplier selection, mixed-density positivity, '
-                  'generating-subset bound, or complete factoring improvement'),
+        'scope': ('Exact small class-group, order-only, pooled-rank, and '
+                  'synthetic determinant controls, including one cyclic gap '
+                  'example; no uniform multiplier selection, mixed-density '
+                  'positivity, generating-subset bound, or complete factoring '
+                  'improvement'),
         'complete_saving_exponent': Fraction(1, 2).__float__(),
         'small_group': check_small_group(),
         'cyclic_order_only_group': check_cyclic_order_only_group(),
+        'cyclic_pooled_smooth_rank': check_cyclic_pooled_smooth_rank(),
         'mixed_order_determinant': check_mixed_order_determinant(),
         'synthetic_common_multiplier_identities': check_synthetic_identities(),
     }

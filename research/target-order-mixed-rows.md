@@ -423,6 +423,34 @@ concrete instance of the base-word caveat in Corollary 5.5. It does not give
 a uniform improvement: the partner `7` has order `12>Q` even though its
 index is density-covered.
 
+**Pooled-rank negative control.** One possible escape from the per-target
+order window is to let smooth rows from other targets fill the gap column
+collectively. The same group gives a bounded test. Take smooth bound `Y=20`,
+which is strictly below the norm bound `H=72`, and the target set
+`{5,7,11,13,17,19,29}`; target `29` is included even though it exceeds `Y`,
+because the row label is a target and the smoothing primes are at most `Y`.
+Enumerating all powers `g_p^k`, `k<=5`, with leading coefficient at most `H`
+and a smooth word over primes at most `Y` gives verified rows
+`k e_p-v`. The rank profile is
+
+| window | rows | rank |
+| ---: | ---: | ---: |
+| 1 | 6 | 0 |
+| 2 | 11 | 3 |
+| 3 | 12 | 4 |
+| 4 | 14 | 5 |
+| 5 | 16 | 7 |
+
+Full rank `7` first appears at window `5`, which equals `ord(29)=5`; at window
+`4` the rank is `5<7`. The selected maximal minor is `900=15|G|`; using it as
+an annihilator, the two-part extractor returns `23`. Thus in this example the
+off-diagonal smooth rows do not fill the gap column before the gap target's
+own order window. A regime with `Y>H` would make every small leading
+coefficient automatically smooth; that is not evidence for the density
+mechanism. A positive rank result needs a uniform lower bound on the rank of
+the pooled smooth rows below the order window, not a single full-rank
+instance at the window.
+
 **Lemma 5.6 (maximal-minor annihilator).** Let `R` be an `r x n` integer
 relation matrix of rank `n`, `r>=n`, with rows in `\ker\phi`. Every nonzero
 `n x n` minor `\Delta` of `R` is a multiple of `|G|`, hence is an
@@ -457,7 +485,10 @@ The remaining obligations are now separated:
    Lemma 2.2, or replace it by a direct determinant lower bound. By Lemma
    5.6 the route only needs a full-rank pooled matrix; positivity is a
    sufficient, not necessary, interface. The rank gap is the real
-   obligation.
+   obligation. The pooled-rank control above shows that a full-rank instance
+   at the gap window is not by itself a window improvement; the rank must be
+   full below that window, uniformly. No such rank lower bound is supplied
+   here.
 3. **Order-only generation.** Prove that the targets of order at most `W`
    generate the class group, or handle the quotient collectively. For a
    cyclic group Corollary 5.5 reduces this to the prime-power divisor
