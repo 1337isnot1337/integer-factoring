@@ -3078,6 +3078,15 @@ verify-f8-height39-extension:
 build-f8-height39-extension:
 	python3 tools/build_f8_hyperoval_height39_extension.py
 
+
+.PHONY: verify-f8-q94-mode11-pilot
+verify-f8-q94-mode11-pilot:
+	python3 tools/check_f8_hyperoval_q94_mode11_pilot.py --output /tmp/f8-q94-mode11-pilot-check.json
+
+.PHONY: verify-truncated-profile-lower-bound
+verify-truncated-profile-lower-bound:
+	python3 tools/check_truncated_profile_lower_bound.py --output /tmp/truncated-profile-lower-bound-check.json
+
 .PHONY: verify-f8-minimal-core build-f8-minimal-core
 verify-f8-minimal-core:
 	python3 tools/check_f8_hyperoval_minimal_core.py --output /tmp/f8-minimal-core-check.json
