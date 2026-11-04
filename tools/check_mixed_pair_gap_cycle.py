@@ -298,6 +298,43 @@ def check():
     assert combined_factor in (1000003, 1000033)
     assert INTEGER % combined_factor == 0
 
+    # Pure-order control: the diagonal rows ord(p) e_p replay for every
+    # target and already extract a factor.  This does not need any pair or
+    # smooth row; it is a baseline showing that extraction alone is not the
+    # bottleneck.  The rows require the target orders, which the checker gets
+    # from the enumerated cycle.
+    order_rows = [[0]*len(extension_targets)
+                  for _ in extension_targets]
+    order_values = []
+    for target_index, prime in enumerate(extension_targets):
+        target_order = period//gcd(period, extension_logs[prime])
+        order_values.append(target_order)
+        order_rows[target_index][target_index] = target_order
+    for row in order_rows:
+        assert replay(row, extension_targets, extension_records,
+                      identity) == identity
+    order_determinant = 1
+    for value in order_values:
+        order_determinant *= value
+    assert order_determinant % period == 0
+    order_generators = [extension_records[prime][1]
+                        for prime in extension_targets]
+    order_projected = project_to_two_part(
+        order_generators, order_determinant, identity,
+        compose_forms_hnf)
+    order_two_basis = two_group_basis(
+        order_projected, identity, compose_forms_hnf, inverse_form,
+        period.bit_length())
+    order_factors = [
+        ambiguous_factor(
+            power(form, 1 << (power_order-1), identity, compose_forms_hnf),
+            INTEGER)
+        for form, power_order in order_two_basis]
+    order_factor = next(
+        (value for value in order_factors if value), None)
+    assert order_factor in (1000003, 1000033)
+    assert INTEGER % order_factor == 0
+
     # Edge-only collective certificate: use the pair rows themselves, with the
     # base primes among the target columns, and no separate base matrix.  Find
     # the first exponent window at which these rows have full rank.
@@ -306,6 +343,8 @@ def check():
     for edge_window in range(1, MAX_WINDOW+1):
         edge_rows = []
         edge_seen = set()
+        edge_base_rows = []
+        edge_base_seen = set()
         edge_hits = 0
         edge_adjacency = {
             prime: set() for prime in extension_targets}
@@ -344,7 +383,17 @@ def check():
                     if key not in edge_seen:
                         edge_seen.add(key)
                         edge_rows.append(row)
+                    if left in base_primes and right in base_primes:
+                        if key not in edge_base_seen:
+                            edge_base_seen.add(key)
+                            edge_base_rows.append(row)
         edge_rank, edge_pivots = echelon_pivot_rows(edge_rows)
+        base_count = len(base_primes)
+        base_block_rank, _ = echelon_pivot_rows(
+            [row[:base_count] for row in edge_rows])
+        gap_block_rank, _ = echelon_pivot_rows(
+            [row[base_count:] for row in edge_rows])
+        base_pair_rank, _ = echelon_pivot_rows(edge_base_rows)
         edge_vertices = {extension_targets[0]}
         edge_colors = {extension_targets[0]: 0}
         edge_queue = [extension_targets[0]]
@@ -371,6 +420,10 @@ def check():
             'distinct_rows': len(edge_rows),
             'pair_hits': edge_hits,
             'rank': edge_rank,
+            'base_pair_rows': len(edge_base_rows),
+            'base_pair_rank': base_pair_rank,
+            'base_block_rank': base_block_rank,
+            'gap_block_rank': gap_block_rank,
             'root_component': len(edge_vertices),
             'connected': len(edge_vertices) == len(extension_targets),
             'nonbipartite': not edge_bipartite,
@@ -414,6 +467,10 @@ def check():
     assert edge_first_full['first_full_window'] == 2
     assert edge_profiles[1]['support_connected']
     assert edge_profiles[1]['support_root_component'] == len(extension_targets)
+    assert edge_profiles[1]['base_block_rank'] == len(base_primes)
+    assert (edge_profiles[1]['base_block_rank']
+            + edge_profiles[1]['gap_block_rank']
+            == edge_profiles[1]['rank'])
 
     scan_gaps = []
     scan_split_primes = 0
@@ -457,6 +514,12 @@ def check():
             'gap_targets': scan_gaps,
             'complete': True,
         },
+        'order_basis': {
+            'vertices': len(extension_targets),
+            'orders': order_values,
+            'determinant_bit_length': order_determinant.bit_length(),
+            'extracted_factor': order_factor,
+        },
         'edge_basis': {
             'vertices': len(extension_targets),
             'profiles': edge_profiles,
@@ -483,8 +546,11 @@ def check():
                   'extractor returns 1000003. A full-rank base plus one hit '
                   'per target gives rank 32 and determinant 96768h; the pair '
                   'rows alone give a rank-32 edge basis at window 2 with '
-                  'determinant 8192h. No uniform pair-basis, rank-window, '
-                  'first-hit, or smoothness theorem is claimed.'),
+                  'determinant 8192h. A pure-order diagonal control also '
+                  'extracts the factor, using the enumerated cycle and its '
+                  'orders; it is not a factoring algorithm. No uniform '
+                  'pair-basis, rank-window, first-hit, or smoothness theorem '
+                  'is claimed.'),
     }
 
 

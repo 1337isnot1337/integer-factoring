@@ -142,6 +142,30 @@ two-part extractor returns the factor `1000003`. This simultaneous extension
 holds at window `3`; several individual target sets are already full at
 window `2`, so the combined window is not claimed to be minimal.
 
+## Pure-order control
+
+A diagonal control shows that the pair-row and smooth-row constructions are
+not needed for **extraction** in this fixed instance. For each of the `32`
+targets, the row `ord(p)e_p` is a valid relation: `p` raised to its class
+order is principal. The checker asserts all `32` diagonal rows replay, forms
+the diagonal determinant
+
+\[
+ \prod_p \operatorname{ord}(p)
+\]
+
+of bit length `434`, and runs the same two-part extractor. It returns
+`1000003`.
+
+This is not a competing factoring method. The orders are obtained here from
+the enumerated cycle and its discrete logs; the class-group enumeration is the
+dominant cost. A generic order computation by baby-step giant-step costs about
+`sqrt(h)` group operations, and `h` is about `D^{1/2}` in the usual class-group
+regime, so this route is about `D^{1/4}` before any extraction. The pair-row
+certificate avoids global order information but pays the first-hit search.
+Neither is a complete-bound improvement. The control is recorded so the
+finite pair result is not mistaken for an extraction necessity.
+
 ## Edge-only collective basis
 
 The tree lemma still uses a separate full-rank base matrix. On the same
@@ -171,11 +195,19 @@ the `32` vertices occurs in some selected row, and the `2`-section of the
 weighted supports is connected. The word terms, not the pair endpoints
 alone, supply this coverage and connectivity. This is only a finite
 support diagnostic, not a rank theorem: a connected support hypergraph
-does not in general force an incidence matrix to have full rank. The
-edge-only certificate is therefore a finite arithmetic rank fact; a
-uniform version needs a rank or determinant bound for the actual weighted
-pair-word matrix, not merely connectivity of the pair graph or support
-graph. The earlier graph/cycle intuition is only a heuristic.
+does not in general force an incidence matrix to have full rank.
+
+There is a sharper block-rank description. Restrict the window-`2` pair
+rows to the `22` base columns: their rank is `22`. Restrict them to the
+ten gap columns: their rank is `10`. The two block ranks sum to the full
+rank `32`. The base-base pair rows alone have rank only `20`; rows
+involving gap targets repair the two missing base directions while also
+supplying all ten gap directions. Thus gap rows can compensate for a
+deficient base block, unlike the single-hit lemma which needs a full base
+matrix before extension. This is a finite direct-sum rank fact, not a
+uniform repair theorem. A uniform version would need enough target rows
+to repair the base defect and would still pay their first-hit search
+cost.
 
 ## What is and is not proved
 
@@ -193,9 +225,9 @@ graph. The earlier graph/cycle intuition is only a heuristic.
 - The tree extension is proved; the edge-only full-rank basis is a finite
   arithmetic fact. No uniform rooted-forest or weighted-pair rank theorem is
   supplied.
-- The base alone already yields the factor in this fixed instance; the
-  gap-target rows test coverage of additional target columns, not extraction
-  necessity.
+- The base alone and the pure-order diagonal control already yield the
+  factor in this fixed instance; the gap-target and pair rows test coverage of
+  additional target columns, not extraction necessity.
 - The certificate does not show that first hits can be found faster than
   scanning candidate pairs. That search is the next cost bottleneck; the
   lemma reduces rank and interaction, not the first-hit search.
