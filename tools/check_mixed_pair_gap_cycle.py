@@ -298,19 +298,205 @@ def check():
     assert combined_factor in (1000003, 1000033)
     assert INTEGER % combined_factor == 0
 
+    # Pure-order control: the diagonal rows ord(p) e_p replay for every
+    # target and already extract a factor.  This does not need any pair or
+    # smooth row; it is a baseline showing that extraction alone is not the
+    # bottleneck.  The rows require the target orders, which the checker gets
+    # from the enumerated cycle.
+    order_rows = [[0]*len(extension_targets)
+                  for _ in extension_targets]
+    order_values = []
+    for target_index, prime in enumerate(extension_targets):
+        target_order = period//gcd(period, extension_logs[prime])
+        order_values.append(target_order)
+        order_rows[target_index][target_index] = target_order
+    for row in order_rows:
+        assert replay(row, extension_targets, extension_records,
+                      identity) == identity
+    order_determinant = 1
+    for value in order_values:
+        order_determinant *= value
+    assert order_determinant % period == 0
+    order_generators = [extension_records[prime][1]
+                        for prime in extension_targets]
+    order_projected = project_to_two_part(
+        order_generators, order_determinant, identity,
+        compose_forms_hnf)
+    order_two_basis = two_group_basis(
+        order_projected, identity, compose_forms_hnf, inverse_form,
+        period.bit_length())
+    order_factors = [
+        ambiguous_factor(
+            power(form, 1 << (power_order-1), identity, compose_forms_hnf),
+            INTEGER)
+        for form, power_order in order_two_basis]
+    order_factor = next(
+        (value for value in order_factors if value), None)
+    assert order_factor in (1000003, 1000033)
+    assert INTEGER % order_factor == 0
+
     # Edge-only collective certificate: use the pair rows themselves, with the
-    # base primes among the target columns, and no separate base matrix.
-    edge_rows = []
-    edge_seen = set()
-    edge_hits = 0
-    edge_adjacency = {
-        prime: set() for prime in extension_targets}
-    for left_index, left in enumerate(extension_targets):
-        for right in extension_targets[left_index:]:
-            for exponent in range(1, MAX_WINDOW+1):
+    # base primes among the target columns, and no separate base matrix.  Find
+    # the first exponent window at which these rows have full rank.
+    edge_profiles = []
+    edge_first_full = None
+    for edge_window in range(1, MAX_WINDOW+1):
+        edge_rows = []
+        edge_seen = set()
+        edge_base_rows = []
+        edge_base_seen = set()
+        edge_hits = 0
+        edge_adjacency = {
+            prime: set() for prime in extension_targets}
+        edge_support = {
+            prime: set() for prime in extension_targets}
+        for left_index, left in enumerate(extension_targets):
+            for right in extension_targets[left_index:]:
+                for exponent in range(1, edge_window+1):
+                    form = forms[
+                        (exponent*(extension_logs[left]
+                                   + extension_logs[right])) % period]
+                    leading = form[0]
+                    if leading == 1:
+                        continue
+                    parts = split_factorization(leading, records)
+                    if parts is None:
+                        continue
+                    terms, new = leading_norm_word(
+                        INTEGER, form, parts, extension_records)
+                    assert not new
+                    row = [0]*len(extension_targets)
+                    row[extension_positions[left]] += exponent
+                    row[extension_positions[right]] += exponent
+                    for prime, value in terms.items():
+                        row[extension_positions[prime]] -= value
+                    if not any(row):
+                        continue
+                    edge_hits += 1
+                    edge_adjacency[left].add(right)
+                    edge_adjacency[right].add(left)
+                    support = {left, right} | set(terms)
+                    for prime in support:
+                        edge_support[left].add(prime)
+                        edge_support[prime].add(left)
+                    key = tuple(row)
+                    if key not in edge_seen:
+                        edge_seen.add(key)
+                        edge_rows.append(row)
+                    if left in base_primes and right in base_primes:
+                        if key not in edge_base_seen:
+                            edge_base_seen.add(key)
+                            edge_base_rows.append(row)
+        edge_rank, edge_pivots = echelon_pivot_rows(edge_rows)
+        base_count = len(base_primes)
+        base_block_rank, _ = echelon_pivot_rows(
+            [row[:base_count] for row in edge_rows])
+        gap_block_rank, _ = echelon_pivot_rows(
+            [row[base_count:] for row in edge_rows])
+        base_pair_rank, _ = echelon_pivot_rows(edge_base_rows)
+        edge_vertices = {extension_targets[0]}
+        edge_colors = {extension_targets[0]: 0}
+        edge_queue = [extension_targets[0]]
+        edge_bipartite = True
+        while edge_queue:
+            vertex = edge_queue.pop()
+            for neighbor in edge_adjacency[vertex]:
+                if neighbor not in edge_vertices:
+                    edge_vertices.add(neighbor)
+                    edge_colors[neighbor] = edge_colors[vertex] ^ 1
+                    edge_queue.append(neighbor)
+                elif edge_colors.get(neighbor) == edge_colors.get(vertex):
+                    edge_bipartite = False
+        support_vertices = {extension_targets[0]}
+        support_queue = [extension_targets[0]]
+        while support_queue:
+            vertex = support_queue.pop()
+            for neighbor in edge_support[vertex]:
+                if neighbor not in support_vertices:
+                    support_vertices.add(neighbor)
+                    support_queue.append(neighbor)
+        edge_profiles.append({
+            'window': edge_window,
+            'distinct_rows': len(edge_rows),
+            'pair_hits': edge_hits,
+            'rank': edge_rank,
+            'base_pair_rows': len(edge_base_rows),
+            'base_pair_rank': base_pair_rank,
+            'base_block_rank': base_block_rank,
+            'gap_block_rank': gap_block_rank,
+            'root_component': len(edge_vertices),
+            'connected': len(edge_vertices) == len(extension_targets),
+            'nonbipartite': not edge_bipartite,
+            'support_root_component': len(support_vertices),
+            'support_connected': (len(support_vertices)
+                                  == len(extension_targets)),
+        })
+        if edge_first_full is None and edge_rank == len(extension_targets):
+            edge_basis = [edge_rows[index]
+                          for index in edge_pivots[:edge_rank]]
+            for row in edge_basis:
+                assert replay(row, extension_targets, extension_records,
+                              identity) == identity
+            edge_determinant = abs(int(determinant(edge_basis)))
+            assert edge_determinant and edge_determinant % period == 0
+            edge_generators = [extension_records[prime][1]
+                               for prime in extension_targets]
+            edge_projected = project_to_two_part(
+                edge_generators, edge_determinant, identity,
+                compose_forms_hnf)
+            edge_two_basis = two_group_basis(
+                edge_projected, identity, compose_forms_hnf, inverse_form,
+                period.bit_length())
+            edge_factors = [
+                ambiguous_factor(
+                    power(form, 1 << (power_order-1), identity,
+                          compose_forms_hnf),
+                    INTEGER)
+                for form, power_order in edge_two_basis]
+            edge_factor = next(
+                (value for value in edge_factors if value), None)
+            assert edge_factor in (1000003, 1000033)
+            assert INTEGER % edge_factor == 0
+            edge_first_full = {
+                'first_full_window': edge_window,
+                'selected_minor_determinant': edge_determinant,
+                'annihilator_multiple': edge_determinant//period,
+                'extracted_factor': edge_factor,
+            }
+    assert edge_first_full is not None
+    assert edge_first_full['first_full_window'] == 2
+    assert edge_profiles[1]['support_connected']
+    assert edge_profiles[1]['support_root_component'] == len(extension_targets)
+    assert edge_profiles[1]['base_block_rank'] == len(base_primes)
+    assert (edge_profiles[1]['base_block_rank']
+            + edge_profiles[1]['gap_block_rank']
+            == edge_profiles[1]['rank'])
+
+    # Isolated-column repair: pair rows can leave a target column zero.
+    # A common-annihilator diagonal row fills such a column directly, without
+    # a pair hit.  On all split primes through 500, the window-2 pair rows
+    # have rank 49 and the single isolated column is 229.
+    repair_limit = 500
+    repair_targets = tuple(
+        prime for prime in primes_through(repair_limit)
+        if prime in larger_records)
+    repair_records = dict(records)
+    repair_logs = dict(logs)
+    for prime in repair_targets:
+        assert reduce_form(larger_records[prime][1]) in index
+        repair_records[prime] = larger_records[prime]
+        repair_logs[prime] = index[reduce_form(larger_records[prime][1])]
+    repair_positions = {
+        prime: repair_index for repair_index, prime
+        in enumerate(repair_targets)}
+    repair_rows = []
+    repair_seen = set()
+    for left_index, left in enumerate(repair_targets):
+        for right in repair_targets[left_index:]:
+            for exponent in (1, 2):
                 form = forms[
-                    (exponent*(extension_logs[left]
-                               + extension_logs[right])) % period]
+                    (exponent*(repair_logs[left] + repair_logs[right]))
+                    % period]
                 leading = form[0]
                 if leading == 1:
                     continue
@@ -318,61 +504,56 @@ def check():
                 if parts is None:
                     continue
                 terms, new = leading_norm_word(
-                    INTEGER, form, parts, extension_records)
+                    INTEGER, form, parts, repair_records)
                 assert not new
-                row = [0]*len(extension_targets)
-                row[extension_positions[left]] += exponent
-                row[extension_positions[right]] += exponent
+                row = [0]*len(repair_targets)
+                row[repair_positions[left]] += exponent
+                row[repair_positions[right]] += exponent
                 for prime, value in terms.items():
-                    row[extension_positions[prime]] -= value
+                    row[repair_positions[prime]] -= value
                 if not any(row):
                     continue
-                edge_hits += 1
-                edge_adjacency[left].add(right)
-                edge_adjacency[right].add(left)
                 key = tuple(row)
-                if key not in edge_seen:
-                    edge_seen.add(key)
-                    edge_rows.append(row)
-    edge_rank, edge_pivots = echelon_pivot_rows(edge_rows)
-    assert edge_rank == len(extension_targets)
-    edge_seen_vertices = {extension_targets[0]}
-    edge_colors = {extension_targets[0]: 0}
-    edge_queue = [extension_targets[0]]
-    edge_bipartite = True
-    while edge_queue:
-        vertex = edge_queue.pop()
-        for neighbor in edge_adjacency[vertex]:
-            if neighbor not in edge_seen_vertices:
-                edge_seen_vertices.add(neighbor)
-                edge_colors[neighbor] = edge_colors[vertex] ^ 1
-                edge_queue.append(neighbor)
-            elif edge_colors.get(neighbor) == edge_colors.get(vertex):
-                edge_bipartite = False
-    assert len(edge_seen_vertices) == len(extension_targets)
-    assert not edge_bipartite
-    edge_basis = [edge_rows[index]
-                  for index in edge_pivots[:edge_rank]]
-    for row in edge_basis:
-        assert replay(row, extension_targets, extension_records,
+                if key not in repair_seen:
+                    repair_seen.add(key)
+                    repair_rows.append(row)
+    repair_rank, _ = echelon_pivot_rows(repair_rows)
+    isolated_indices = [
+        column for column in range(len(repair_targets))
+        if all(row[column] == 0 for row in repair_rows)]
+    isolated_targets = [repair_targets[column]
+                        for column in isolated_indices]
+    assert isolated_targets == [229]
+    for column in isolated_indices:
+        row = [0]*len(repair_targets)
+        row[column] = period
+        repair_rows.append(row)
+    repaired_rank, repaired_pivots = echelon_pivot_rows(repair_rows)
+    assert repaired_rank == len(repair_targets)
+    repair_basis = [repair_rows[repair_index]
+                    for repair_index in repaired_pivots[:repaired_rank]]
+    for row in repair_basis:
+        assert replay(row, repair_targets, repair_records,
                       identity) == identity
-    edge_determinant = abs(int(determinant(edge_basis)))
-    assert edge_determinant and edge_determinant % period == 0
-    edge_generators = [extension_records[prime][1]
-                       for prime in extension_targets]
-    edge_projected = project_to_two_part(
-        edge_generators, edge_determinant, identity, compose_forms_hnf)
-    edge_two_basis = two_group_basis(
-        edge_projected, identity, compose_forms_hnf, inverse_form,
+    repair_determinant = abs(int(determinant(repair_basis)))
+    assert repair_determinant and repair_determinant % period == 0
+    repair_generators = [repair_records[prime][1]
+                         for prime in repair_targets]
+    repair_projected = project_to_two_part(
+        repair_generators, repair_determinant, identity,
+        compose_forms_hnf)
+    repair_two_basis = two_group_basis(
+        repair_projected, identity, compose_forms_hnf, inverse_form,
         period.bit_length())
-    edge_factors = [
+    repair_factors = [
         ambiguous_factor(
             power(form, 1 << (power_order-1), identity, compose_forms_hnf),
             INTEGER)
-        for form, power_order in edge_two_basis]
-    edge_factor = next((value for value in edge_factors if value), None)
-    assert edge_factor in (1000003, 1000033)
-    assert INTEGER % edge_factor == 0
+        for form, power_order in repair_two_basis]
+    repair_factor = next(
+        (value for value in repair_factors if value), None)
+    assert repair_factor in (1000003, 1000033)
+    assert INTEGER % repair_factor == 0
 
     scan_gaps = []
     scan_split_primes = 0
@@ -416,16 +597,26 @@ def check():
             'gap_targets': scan_gaps,
             'complete': True,
         },
+        'order_basis': {
+            'vertices': len(extension_targets),
+            'orders': order_values,
+            'determinant_bit_length': order_determinant.bit_length(),
+            'extracted_factor': order_factor,
+        },
+        'isolated_column_repair': {
+            'limit': repair_limit,
+            'vertices': len(repair_targets),
+            'pair_rows': len(repair_rows) - len(isolated_indices),
+            'pair_rank': repair_rank,
+            'isolated_targets': isolated_targets,
+            'repaired_rank': repaired_rank,
+            'determinant_bit_length': repair_determinant.bit_length(),
+            'extracted_factor': repair_factor,
+        },
         'edge_basis': {
             'vertices': len(extension_targets),
-            'pair_hits': edge_hits,
-            'distinct_rows': len(edge_rows),
-            'connected': True,
-            'nonbipartite': True,
-            'rank': edge_rank,
-            'selected_minor_determinant': edge_determinant,
-            'annihilator_multiple': edge_determinant//period,
-            'extracted_factor': edge_factor,
+            'profiles': edge_profiles,
+            **edge_first_full,
         },
         'single_hit_extension': {
             'base_rank': base_rank,
@@ -447,9 +638,14 @@ def check():
                   'are multiples of the cycle order, and the two-part '
                   'extractor returns 1000003. A full-rank base plus one hit '
                   'per target gives rank 32 and determinant 96768h; the pair '
-                  'rows alone give a connected non-bipartite rank-32 edge '
-                  'basis with determinant 1259712h. No uniform pair-basis, '
-                  'rank-window, first-hit, or smoothness theorem is claimed.'),
+                  'rows alone give a rank-32 edge basis at window 2 with '
+                  'determinant 8192h. A pure-order diagonal control also '
+                  'extracts the factor, using the enumerated cycle and its '
+                  'orders; it is not a factoring algorithm. An isolated-column '
+                  'repair control on all split primes through 500 fills the one '
+                  'zero pair-row column (229) with a common-annihilator row. No uniform '
+                  'pair-basis, rank-window, first-hit, or smoothness theorem '
+                  'is claimed.'),
     }
 
 

@@ -142,36 +142,111 @@ two-part extractor returns the factor `1000003`. This simultaneous extension
 holds at window `3`; several individual target sets are already full at
 window `2`, so the combined window is not claimed to be minimal.
 
+## Pure-order control
+
+A diagonal control shows that the pair-row and smooth-row constructions are
+not needed for **extraction** in this fixed instance. For each of the `32`
+targets, the row `ord(p)e_p` is a valid relation: `p` raised to its class
+order is principal. The checker asserts all `32` diagonal rows replay, forms
+the diagonal determinant
+
+\[
+ \prod_p \operatorname{ord}(p)
+\]
+
+of bit length `434`, and runs the same two-part extractor. It returns
+`1000003`.
+
+This is not a competing factoring method. The orders are obtained here from
+the enumerated cycle and its discrete logs; the class-group enumeration is the
+dominant cost. A generic order computation by baby-step giant-step costs about
+`sqrt(h)` group operations, and `h` is about `D^{1/2}` in the usual class-group
+regime, so this route is about `D^{1/4}` before any extraction. The pair-row
+certificate avoids global order information but pays the first-hit search.
+Neither is a complete-bound improvement. The control is recorded so the
+finite pair result is not mistaken for an extraction necessity.
+
+## Isolated-column repair
+
+Pair rows can leave a target column completely zero. This is a supply gap,
+not necessarily a determinant obstruction. The following elementary repair
+separates the two.
+
+**Lemma.** Let `R` be a set of relation rows on target set `V`, and let
+`I` be the set of columns that are zero in every row of `R`. Suppose `M`
+annihilates every target class. Adjoin the diagonal rows `M e_i` for
+`i in I`. Then the rank increases by `|I|` and the determinant is
+multiplied by `M^{|I|}`.
+
+**Proof.** The columns in `I` are zero in all original rows, while each new
+row is supported only on one column of `I`. The column spaces are therefore
+independent. \(\square\)
+
+The common annihilator can be a multiple of the cycle order; individual
+orders and discrete logs are not required. On all split primes through
+`500` (`50` targets), the window-`2` pair rows give `104` distinct rows of
+rank `49`. The sole zero column is `229`. Adjoining `h e_229` raises the rank
+to `50`; a selected minor has `69` bits and is a multiple of `h`, and the
+extractor returns `1000003`.
+
+This is the finite complementarity suggested by the rank sweep: isolated
+targets are exactly those needing an external row, and a single common
+annihilator supplies it without a pair hit. It does not improve the complete
+bound. Constructing the annihilator by baby-step giant-step costs about
+`sqrt(h)` group operations, and if many targets are isolated their order rows
+add factors of `M` to the determinant. A density-supplied row at lower cost
+would be the useful hybrid; the lemma only says what to do with the missing
+columns.
+
 ## Edge-only collective basis
 
 The tree lemma still uses a separate full-rank base matrix. On the same
-40-bit target set, the pair rows alone can span a full-rank relation matrix.
-Take all `32` vertices (the `22` base primes and the ten gap targets) and all
-nonzero pair hits at exponent at most `3`. This gives `98` pair hits and `93`
-distinct nonzero rows. Their support graph is connected and non-bipartite.
-The rows have rank `32`; a selected `32 x 32` minor has determinant
+40-bit target set, the pair rows alone can span a full-rank relation matrix,
+and they do so one window earlier than the separate base matrix. Take all
+`32` vertices (the `22` base primes and the ten gap targets) and all nonzero
+pair rows at exponent at most `2`. At window `1` there are `9` distinct rows
+of rank `9`; at window `2` there are `53` distinct rows of rank `32`.
+
+A selected `32 x 32` minor at window `2` has determinant
 
 \[
- 250493731200=1259712h.
+ 1628979200=8192h.
 \]
 
 All selected rows replay exactly, and the determinant annihilator extracts
-`1000003`. No base relation row and no order row is used. Cycles in the pair
-graph are what supply the base directions when the separate base matrix is
-dropped.
+`1000003`. No base relation row, no order row, and no exponent-`3` row is
+used.
 
-This is a finite rank certificate, not a graph theorem. Connectivity and an
-odd cycle make the unweighted incidence block invertible, but the smooth-word
-terms modify the matrix; full rank is checked arithmetically here. A uniform
-version needs a cycle-word rank or determinant bound, which is the graph/cycle
-obligation suggested by the earlier finite controls.
+This is not a pair-endpoint connectivity effect. At window `2` the
+pair-endpoint graph has root component `1`: no nonzero pair row touches the
+chosen base root. At window `3` the pair-endpoint graph becomes connected
+and non-bipartite, but the matrix is already full rank at window `2`.
+
+The weighted row supports behave differently. At window `2` every one of
+the `32` vertices occurs in some selected row, and the `2`-section of the
+weighted supports is connected. The word terms, not the pair endpoints
+alone, supply this coverage and connectivity. This is only a finite
+support diagnostic, not a rank theorem: a connected support hypergraph
+does not in general force an incidence matrix to have full rank.
+
+There is a sharper block-rank description. Restrict the window-`2` pair
+rows to the `22` base columns: their rank is `22`. Restrict them to the
+ten gap columns: their rank is `10`. The two block ranks sum to the full
+rank `32`. The base-base pair rows alone have rank only `20`; rows
+involving gap targets repair the two missing base directions while also
+supplying all ten gap directions. Thus gap rows can compensate for a
+deficient base block, unlike the single-hit lemma which needs a full base
+matrix before extension. This is a finite direct-sum rank fact, not a
+uniform repair theorem. A uniform version would need enough target rows
+to repair the base defect and would still pay their first-hit search
+cost.
 
 ## What is and is not proved
 
 - The checker reconstructs the complete cycle, all pair rows, the exhaustive
   gap scan, the rank profiles, every selected row identity, the maximal
-  minors, the single-hit extension matrix, the edge-only basis, and the
-  extraction. It does not rely on saved smooth flags.
+  minors, the single-hit extension matrix, the window-2 edge-only basis, and
+  the extraction. It does not rely on saved smooth flags.
 - The determinant is a multiple of the **cycle order** `198850`, the subgroup
   generated by the factor base; the ambient class group may be larger. This is
   enough for the extractor because `5` is in the factor base and the rows
@@ -179,12 +254,13 @@ obligation suggested by the earlier finite controls.
 - The ten targets are genuine gap targets for the current sufficient
   windows: their indices exceed `D^{1/4}`, so the small-index density theorem
   does not cover them, and their orders exceed the exponent windows.
-- The tree extension is proved; the edge-only full-rank basis is a finite
-  arithmetic fact. No uniform rooted-forest or cycle-word rank theorem is
+- The tree extension and the isolated-column repair are proved; the
+  edge-only full-rank basis is a finite arithmetic fact. No uniform
+  rooted-forest, isolated-target supply, or weighted-pair rank theorem is
   supplied.
-- The base alone already yields the factor in this fixed instance; the
-  gap-target rows test coverage of additional target columns, not extraction
-  necessity.
+- The base alone and the pure-order diagonal control already yield the
+  factor in this fixed instance; the gap-target and pair rows test coverage of
+  additional target columns, not extraction necessity.
 - The certificate does not show that first hits can be found faster than
   scanning candidate pairs. That search is the next cost bottleneck; the
   lemma reduces rank and interaction, not the first-hit search.
