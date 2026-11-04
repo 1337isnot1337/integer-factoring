@@ -182,11 +182,21 @@ is `45380/117649=0.38572`, against the baseline
 `76800/198850=0.38622`. The strict set is not concentrated on non-unit
 differences.
 
-For the dense generator-five cycle the exact all-shift average is
-`33159.589`; a deterministic sample of 32 units gives `33129.813` with
-minimum `32635` and maximum `34321`. For generator seven the sample
-average is `33112.938`. The sampled unit averages are within `0.15%` of
-the all-shift baseline. These are samples, not exact unit averages.
+For the dense generator-five and generator-seven cycles the exact
+unit average is `33160.779`, against the all-shift average `33159.589`.
+The exact value is
+
+```math
+N_U=682922608,\qquad
+\frac{\varphi(h)}{h}s^2=683013977.024\ldots,
+```
+
+an error fraction of `-5.17*10^{-5}`. The two generators have the same
+`N_U`, as expected from the unit-dilation relation between their
+supports. A deterministic 32-unit sample gives `33129.813` with minimum
+`32635` and maximum `34321` for generator five, and `33112.938` for
+generator seven; the spread shows the cyclic-order variation, while the
+exact unit average remains close to the all-shift baseline.
 
 ## 4. What a uniform cluster-breaking lemma would need
 
@@ -232,21 +242,22 @@ carried out here.
 ## 5. Scope and next check
 
 The exact identity (1) and the finite tables are proved or computed
-exactly by `tools/check_dilation_cluster_break.py`; the unit average for
-the strict cycle is exact, and the dense-cycle unit averages are samples.
+exactly by `tools/check_dilation_cluster_break.py`; the unit averages for
+the strict and dense cycles are exact, and the 32-unit samples only
+illustrate the cyclic-order spread.
 The finite repair does not prove that a fixed small dilation works for
 every target, and it does not bound the number of trials needed to find
 one. It also does not improve the complete exponent: the density
 index barrier and the uniform dilated-gap obligation remain.
 
-The next check is a bounded arithmetic test of unit-difference
-equidistribution on the saved cycles: compare `N_U` with
-`(phi(h)/h)s^2` for the exact sparse cycles, and test whether the
-small-index Fourier terms of the non-unit indicator are controlled by
-the all-coset density receipt. If that test passes, the next note should
-state a precise cluster-breaking lemma and its cost; if it fails, the
-dilation repair is only a finite accident and should not be pursued as a
-uniform route.
+The bounded arithmetic test of unit-difference equidistribution on the
+saved large-period cycles now passes exactly: the strict error fraction is
+`-5.0*10^{-4}` and the dense error fraction is `-5.2*10^{-5}`. The next
+check is to test whether the small-index Fourier terms of the non-unit
+indicator are controlled by the all-coset density receipt. If that test
+passes, the next note should state a precise cluster-breaking lemma and
+its cost; if it fails, the dilation repair is only a finite accident and
+should not be pursued as a uniform route.
 
 The finite data are a continuation of worker 2's hit-gap lane and use
 the saved complete orbits of the gap-moment and entry-moment receipts.

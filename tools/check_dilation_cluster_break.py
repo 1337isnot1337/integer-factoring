@@ -69,6 +69,7 @@ def exact_unit_average(flags: bytes) -> dict:
                 unit_pairs += 1
     average = len(support) - unit_pairs / units
     return {
+        "method": "pair_enumeration",
         "period": period,
         "good_classes": len(support),
         "unit_count": units,
@@ -76,6 +77,34 @@ def exact_unit_average(flags: bytes) -> dict:
         "all_shift_average_runs": len(support) * (period - len(support)) / period,
         "unit_average_runs": average,
         "unit_average_over_good_classes": average / len(support),
+    }
+
+
+def exact_unit_average_bitset(flags: bytes) -> dict:
+    period = len(flags)
+    mask = (1 << period) - 1
+    bits = 0
+    for index, bit in enumerate(flags):
+        if bit:
+            bits |= 1 << index
+    units = unit_list(period)
+    unit_pairs = 0
+    for step in units:
+        rotated = ((bits << step) | (bits >> (period - step))) & mask
+        unit_pairs += (bits & rotated).bit_count()
+    support = sum(flags)
+    average = support - unit_pairs / len(units)
+    return {
+        "method": "bitset_enumeration",
+        "period": period,
+        "good_classes": support,
+        "unit_count": len(units),
+        "unit_difference_pairs": unit_pairs,
+        "all_shift_average_runs": support * (period - support) / period,
+        "unit_average_runs": average,
+        "unit_average_over_good_classes": average / support,
+        "unit_pair_error_fraction":
+            (unit_pairs - len(units) * support * support / period) / (support * support),
     }
 
 
@@ -171,6 +200,8 @@ def generous_record(prime: int) -> dict:
     assert steps["3"]["entry_window_fits_period"]
     sample = sampled_unit_average(flags, SAMPLE_SIZE)
     assert sample["sample_average_over_good_classes"] > 0.7
+    average = exact_unit_average_bitset(flags)
+    assert abs(average["unit_pair_error_fraction"]) < 1e-3
     return {
         "integer": integer,
         "cutoff": cutoff,
@@ -179,6 +210,7 @@ def generous_record(prime: int) -> dict:
         "period": period,
         "good_classes": support,
         "density_denominator": (period + support - 1) // support,
+        "unit_average": average,
         "sample_average": sample,
         "steps": steps,
     }
@@ -201,13 +233,15 @@ def main() -> None:
     generous_seven = generous_record(7)
     for record in (strict, generous_five, generous_seven):
         assert record["period"] == 198850
+    assert (generous_five["unit_average"]["unit_difference_pairs"]
+            == generous_seven["unit_average"]["unit_difference_pairs"])
     assert smallest_odd_prime_not_dividing(198850) == 3
     output = {
         "claim": (
             "On the saved strict generator-seven cycle the entry window wraps "
             "at step one, while a small coprime exponent dilation increases "
-            "the entry run count and makes the entry window fit.  The exact "
-            "unit average is near the good-class count."
+            "the entry run count and makes the entry window fit.  Exact "
+            "unit averages are near the all-shift baseline."
         ),
         "scope": (
             "Finite complete-orbit evidence only.  No uniform cluster-breaking "
