@@ -39,11 +39,16 @@ same diagnostic on any subspace, including the original pencil span.
 The number of distinct forms grows from `13` to `35` to `124`, roughly
 `L_n^1.4`, while the target grows as `L_n^sqrt(2)`. The square-root sum
 is above the target at all three lengths and its ratio grows:
-`1.14`, `1.20`, `1.41`. If a future rank lemma identifies the
-multiplicity of a weight class with a square block and the square root
-with its rank contribution, this sequence would close the finite block
-for these lengths and suggest the same asymptotically. Without that
-lemma the table is only a reproducible finite diagnostic.
+`1.14`, `1.20`, `1.41`.
+
+A direct rank interpretation is nevertheless false. At length eight
+the actual cut ranks can exceed or fall below the number of nonzero
+diagonal evaluations. Deterministic examples include rank pair
+`(169,169)` with diagonal count `161`, rank pair `(133,169)` with count
+`165`, and rank pair `(126,92)` with count `169`. Thus the diagonal
+count is neither an upper nor a lower rank bound. The table is only a
+reproducible weight-distribution diagnostic; a rank theorem would need
+additional structure.
 
 The diagonal forms are also a candidate replacement for the full
 ten-site tensor construction: there are at most `L_n^2` of them, and
@@ -58,7 +63,14 @@ python3 tools/check_bounded_spin_diagonal_weights.py --write-evidence
 ```
 
 The script uses only the standard library and the published path and
-monomial-entry constructors. It writes
+monomial-entry constructors. The rank control at length eight is
+
+```sh
+python3 tools/check_bounded_spin_diagonal_rank_control.py
+```
+
+It builds the actual cut operators and asserts that both inequalities
+fail in a deterministic sample. It writes
 [`evidence/bounded-spin-diagonal-weights.json`](../evidence/bounded-spin-diagonal-weights.json)
 with the lengths, monomial order, distinct-form counts, multiplicities
 and square-root sums. It does not build a cut operator or a tensor.
