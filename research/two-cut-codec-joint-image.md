@@ -85,6 +85,29 @@ non-injective scalar code, not from the invertible Smith transformations.
 The next bounded object is the prefix-truncated image at `k < n`, which
 the existing nested-minor data can already expose.
 
+## Prefix truncation
+
+For a prefix length `k`, retain the first `k` selected nested minors and
+send every later row or column to the code `-1`.  The interval-8 row
+image then grows subquadratically:
+
+| `k` | row pairs | column pairs | joint four-tuple |
+| ---: | ---: | ---: | ---: |
+| 32 | 211 | 202 | 1208 |
+| 64 | 520 | 503 | 3351 |
+| 128 | 1422 | 1398 | 10925 |
+| 192 | 2513 | 2524 | 19405 |
+| 256 | 3656 | 3656 | 22328 |
+
+At `k=128` the row image is `1422/16384 = 0.0868` of the square of the
+code range; at `k=256` it is `3656/65536 = 0.0558`.  This is a genuine
+submultiplicative row-codec marginal.  The full four-tuple still reaches
+the support at `k=256`, so the row marginal alone does not compress the
+complete row-and-column pad.  A composition theorem would need to combine
+the row marginal with the column code and the independent digit blocks;
+the component rule in the bundle notes is the relevant template.
+
+## Research question
 ## Research question
 
 Let `B_0` and `B_1` be the weighted two-cut codec bases.  Does the exact

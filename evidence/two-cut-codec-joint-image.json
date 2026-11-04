@@ -231,11 +231,97 @@
     "prefix_fraction": 0.0557861328125,
     "prefix_joint_pairs": 22328,
     "prefix_row_pairs": 3656,
+    "prefix_truncation": [
+      {
+        "column_pairs": 4,
+        "joint_pairs": 10,
+        "k": 1,
+        "row_fraction_of_square": 1.0,
+        "row_pairs": 4
+      },
+      {
+        "column_pairs": 6,
+        "joint_pairs": 20,
+        "k": 2,
+        "row_fraction_of_square": 0.8888888888888888,
+        "row_pairs": 8
+      },
+      {
+        "column_pairs": 13,
+        "joint_pairs": 46,
+        "k": 4,
+        "row_fraction_of_square": 0.6,
+        "row_pairs": 15
+      },
+      {
+        "column_pairs": 29,
+        "joint_pairs": 131,
+        "k": 8,
+        "row_fraction_of_square": 0.43209876543209874,
+        "row_pairs": 35
+      },
+      {
+        "column_pairs": 79,
+        "joint_pairs": 333,
+        "k": 16,
+        "row_fraction_of_square": 0.2629757785467128,
+        "row_pairs": 76
+      },
+      {
+        "column_pairs": 202,
+        "joint_pairs": 1208,
+        "k": 32,
+        "row_fraction_of_square": 0.19375573921028466,
+        "row_pairs": 211
+      },
+      {
+        "column_pairs": 341,
+        "joint_pairs": 2114,
+        "k": 48,
+        "row_fraction_of_square": 0.14868804664723032,
+        "row_pairs": 357
+      },
+      {
+        "column_pairs": 503,
+        "joint_pairs": 3351,
+        "k": 64,
+        "row_fraction_of_square": 0.12307692307692308,
+        "row_pairs": 520
+      },
+      {
+        "column_pairs": 904,
+        "joint_pairs": 6777,
+        "k": 96,
+        "row_fraction_of_square": 0.09671591029865023,
+        "row_pairs": 910
+      },
+      {
+        "column_pairs": 1398,
+        "joint_pairs": 10925,
+        "k": 128,
+        "row_fraction_of_square": 0.08545159545700379,
+        "row_pairs": 1422
+      },
+      {
+        "column_pairs": 2524,
+        "joint_pairs": 19405,
+        "k": 192,
+        "row_fraction_of_square": 0.06746489838653387,
+        "row_pairs": 2513
+      },
+      {
+        "column_pairs": 3656,
+        "joint_pairs": 22328,
+        "k": 256,
+        "row_fraction_of_square": 0.055352844100591984,
+        "row_pairs": 3656
+      }
+    ],
     "support": 22328
   },
   "scope": "Exact unweighted F4[x] Smith transformations for the interval-4 two-cut Gaussian seed, and the nested-minor prefix image at interval 8. The interval-4 codec image is exact for this specialization; the interval-8 entry is only the exposed prefix proxy, not the Smith codec. No weighted codec, transfer, or score change is claimed.",
   "source_sha256": {
-    "check_two_cut_codec_joint_image.py": "de0d7676770ffc2b7d510a558a47dd360dfdc7d441586a056f97125e59026fe5",
+    "check_two_cut_codec_joint_image.py": "c0d905a39a16a1ff0beef92e975c72776fabdb669725a7331e3e3fc8d2378859",
     "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
     "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
     "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38"

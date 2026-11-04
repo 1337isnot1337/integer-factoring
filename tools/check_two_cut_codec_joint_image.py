@@ -311,6 +311,53 @@ def exact_image(data, q, cut0, cut1):
     }
 
 
+def truncated_prefix_image(data, q, ks):
+    oracle = RectangularOracle(data['values'], q, q, 0, True)
+    params = [0.0] * (oracle.parameters - 1) + [0.1]
+    maps = {}
+    for cut in (0, 1):
+        prefixes = oracle.prefixes(params, cut)
+        row_index = {}
+        col_index = {}
+        for i in range(q * q):
+            row_index.setdefault(prefixes['rows'][i], i)
+            col_index.setdefault(prefixes['cols'][i], i)
+        maps[cut] = (row_index, col_index)
+    entries = []
+    values = data['values']
+    for x in range(q):
+        for y in range(q):
+            for u in range(q):
+                for v in range(q):
+                    if values[x + q * (y + q * (u + q * v))][0]:
+                        entries.append((x * q + y, u * q + v, x * q + u, y * q + v))
+    rows = []
+    for k in ks:
+        row_pairs = set()
+        column_pairs = set()
+        joint_pairs = set()
+        for i0, j0, i1, j1 in entries:
+            r0 = maps[0][0][i0]
+            c0 = maps[0][1][j0]
+            r1 = maps[1][0][i1]
+            c1 = maps[1][1][j1]
+            r0 = r0 if r0 < k else -1
+            c0 = c0 if c0 < k else -1
+            r1 = r1 if r1 < k else -1
+            c1 = c1 if c1 < k else -1
+            row_pairs.add((r0, r1))
+            column_pairs.add((c0, c1))
+            joint_pairs.add((r0, c0, r1, c1))
+        rows.append({
+            'k': k,
+            'row_pairs': len(row_pairs),
+            'column_pairs': len(column_pairs),
+            'joint_pairs': len(joint_pairs),
+            'row_fraction_of_square': len(row_pairs) / ((k + 1) ** 2),
+        })
+    return rows
+
+
 def partition_identity(data, q, cut0, cut1):
     oracle = RectangularOracle(data['values'], q, q, 0, True)
     params = [0.0] * (oracle.parameters - 1) + [0.1]
@@ -379,6 +426,8 @@ def main():
 
     data8 = tensor(8)
     support8, prefix_rows8, prefix_cols8, prefix_joint8 = prefix_image(data8, data8['q_x'])
+    truncation8 = truncated_prefix_image(
+        data8, data8['q_x'], (1, 2, 4, 8, 16, 32, 48, 64, 96, 128, 192, 256))
     gauge_counts = []
     for name, params in gauge_patterns(data8['q_x']):
         _, rows, cols, _ = prefix_image(data8, data8['q_x'], params)
@@ -419,6 +468,7 @@ def main():
             'distinct_tensor_values': distinct8,
             'gauge_counts': gauge_counts,
             'gauge_stable': gauge_stable,
+            'prefix_truncation': truncation8,
         },
         'source_sha256': {
             name: sha256((HERE / name).read_bytes()).hexdigest()
