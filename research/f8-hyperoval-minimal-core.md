@@ -47,14 +47,27 @@ Removing the 52 q96 core words that are not needed by the boundary image
 therefore makes the pressure worse, not better. The unused core words are
 load-bearing for the pressure balance.
 
+## Why the low core is saturated
+
+The q96 map already contains all eleven height-24 words, and the only
+height-25 words are the ten triples, which are the fixed hyperoval
+boundary image and lie in the span of the three non-single embeddings.
+There is therefore no missing low word below height 26 that could be
+added to the core. A four-mode height-26 word such as `46=(3,5,7,11)`
+does couple to the boundary triples, but its cutoff-47 fit is
+`0.7098643`, slightly above the q99 value `0.7098582` at the same
+cutoff. The remaining freedom is high-word extension, which is the
+plateau already seen at q99 and q36.
+
 ## Adjacent 11-mode diagnostic
 
 Dropping mode 11 from the q96 map while retaining all remaining core
-words gives a valid q94 map on 11 modes. A cutoff-47 pilot has numerical
-fit `0.709929`; this is slightly below the q99 value but is not a
-complete profile and is not used as a claim. The q45 quotient shows that
-core size alone is not the mechanism: a smaller deletion-closed core can
-lose more pressure than the removed capacity saves.
+words gives a valid q94 map on 11 modes. Its cutoff-47 fit is `0.709929`,
+which is *above* the q99 value `0.709858` at the same cutoff; the earlier
+comparison to the full q99 profile was cutoff-biased. The q45 quotient
+shows that core size alone is not the mechanism: a smaller
+deletion-closed core can lose more pressure than the removed capacity
+saves.
 
 ## Scope
 

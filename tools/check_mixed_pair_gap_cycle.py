@@ -298,6 +298,82 @@ def check():
     assert combined_factor in (1000003, 1000033)
     assert INTEGER % combined_factor == 0
 
+    # Edge-only collective certificate: use the pair rows themselves, with the
+    # base primes among the target columns, and no separate base matrix.
+    edge_rows = []
+    edge_seen = set()
+    edge_hits = 0
+    edge_adjacency = {
+        prime: set() for prime in extension_targets}
+    for left_index, left in enumerate(extension_targets):
+        for right in extension_targets[left_index:]:
+            for exponent in range(1, MAX_WINDOW+1):
+                form = forms[
+                    (exponent*(extension_logs[left]
+                               + extension_logs[right])) % period]
+                leading = form[0]
+                if leading == 1:
+                    continue
+                parts = split_factorization(leading, records)
+                if parts is None:
+                    continue
+                terms, new = leading_norm_word(
+                    INTEGER, form, parts, extension_records)
+                assert not new
+                row = [0]*len(extension_targets)
+                row[extension_positions[left]] += exponent
+                row[extension_positions[right]] += exponent
+                for prime, value in terms.items():
+                    row[extension_positions[prime]] -= value
+                if not any(row):
+                    continue
+                edge_hits += 1
+                edge_adjacency[left].add(right)
+                edge_adjacency[right].add(left)
+                key = tuple(row)
+                if key not in edge_seen:
+                    edge_seen.add(key)
+                    edge_rows.append(row)
+    edge_rank, edge_pivots = echelon_pivot_rows(edge_rows)
+    assert edge_rank == len(extension_targets)
+    edge_seen_vertices = {extension_targets[0]}
+    edge_colors = {extension_targets[0]: 0}
+    edge_queue = [extension_targets[0]]
+    edge_bipartite = True
+    while edge_queue:
+        vertex = edge_queue.pop()
+        for neighbor in edge_adjacency[vertex]:
+            if neighbor not in edge_seen_vertices:
+                edge_seen_vertices.add(neighbor)
+                edge_colors[neighbor] = edge_colors[vertex] ^ 1
+                edge_queue.append(neighbor)
+            elif edge_colors.get(neighbor) == edge_colors.get(vertex):
+                edge_bipartite = False
+    assert len(edge_seen_vertices) == len(extension_targets)
+    assert not edge_bipartite
+    edge_basis = [edge_rows[index]
+                  for index in edge_pivots[:edge_rank]]
+    for row in edge_basis:
+        assert replay(row, extension_targets, extension_records,
+                      identity) == identity
+    edge_determinant = abs(int(determinant(edge_basis)))
+    assert edge_determinant and edge_determinant % period == 0
+    edge_generators = [extension_records[prime][1]
+                       for prime in extension_targets]
+    edge_projected = project_to_two_part(
+        edge_generators, edge_determinant, identity, compose_forms_hnf)
+    edge_two_basis = two_group_basis(
+        edge_projected, identity, compose_forms_hnf, inverse_form,
+        period.bit_length())
+    edge_factors = [
+        ambiguous_factor(
+            power(form, 1 << (power_order-1), identity, compose_forms_hnf),
+            INTEGER)
+        for form, power_order in edge_two_basis]
+    edge_factor = next((value for value in edge_factors if value), None)
+    assert edge_factor in (1000003, 1000033)
+    assert INTEGER % edge_factor == 0
+
     scan_gaps = []
     scan_split_primes = 0
     scan_noncycle = 0
@@ -340,6 +416,17 @@ def check():
             'gap_targets': scan_gaps,
             'complete': True,
         },
+        'edge_basis': {
+            'vertices': len(extension_targets),
+            'pair_hits': edge_hits,
+            'distinct_rows': len(edge_rows),
+            'connected': True,
+            'nonbipartite': True,
+            'rank': edge_rank,
+            'selected_minor_determinant': edge_determinant,
+            'annihilator_multiple': edge_determinant//period,
+            'extracted_factor': edge_factor,
+        },
         'single_hit_extension': {
             'base_rank': base_rank,
             'base_rows': len(base_rows),
@@ -354,14 +441,15 @@ def check():
         },
         'scope': ('Finite 40-bit mixed-pair cycle certificate. The 22 split '
                   'primes through 177 lie in the order-198850 cycle generated '
-                  'by 5. Two gap targets with order above the window and '
-                  'index above D^(1/4) are covered by pair rows at window 2 or '
-                  '3. Determinants are multiples of the cycle order, and the '
-                  'two-part extractor returns 1000003. A full-rank base '
-                  'matrix plus one smooth pair hit per gap target gives a '
-                  'simultaneous rank-32 matrix at window 3, determinant '
-                  '96768h. No uniform pair-basis, rank-window, or smoothness '
-                  'theorem is claimed.'),
+                  'by 5. An exhaustive scan through 100000 finds ten gap '
+                  'targets with order above the window and index above '
+                  'D^(1/4); all have exponent-1/2/3 pair hits. Determinants '
+                  'are multiples of the cycle order, and the two-part '
+                  'extractor returns 1000003. A full-rank base plus one hit '
+                  'per target gives rank 32 and determinant 96768h; the pair '
+                  'rows alone give a connected non-bipartite rank-32 edge '
+                  'basis with determinant 1259712h. No uniform pair-basis, '
+                  'rank-window, first-hit, or smoothness theorem is claimed.'),
     }
 
 
