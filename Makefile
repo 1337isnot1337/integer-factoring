@@ -3539,6 +3539,13 @@ verify-colour-asymmetric-order12-floor:
 
 verify-arithmetic: verify-colour-asymmetric-order12-floor
 
+.PHONY: verify-pair-kernel-order12-deformations
+verify-pair-kernel-order12-deformations:
+	PYTHONPATH=tools python3 tools/check_pair_kernel_order12_deformations.py --output /tmp/integer-factoring-pair-kernel-order12-deformations.json
+	python3 tools/check_docs.py
+
+verify-arithmetic: verify-pair-kernel-order12-deformations
+
 .PHONY: verify-pfaffian-quartic-truncation
 verify-pfaffian-quartic-truncation:
 	python3 tools/check_pfaffian_quartic_truncation.py
