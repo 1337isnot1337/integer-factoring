@@ -90,6 +90,15 @@ def main() -> None:
     assert monomial_minimum[1:] in ((13, 17, 34), (34, 17, 13))
     assert 1173 > 64 ** sqrt(2)
 
+    universal = []
+    for degree in range(7):
+        slots = 2 * degree + 1
+        bound = (64 * 64 + slots - 1) // slots
+        universal.append((degree, slots, bound))
+    assert [row[2] for row in universal[:6]] == [4096, 1366, 820, 586, 456, 373]
+    assert 373 > 64 ** sqrt(2)
+    assert universal[6][2] == 316 < 64 ** sqrt(2)
+
     receipt = {
         'passed': True,
         'd': 8,
@@ -106,6 +115,10 @@ def main() -> None:
         'linear_t2_all_excluded': True,
         'monomial_t2_minimum_rank': 1173,
         'monomial_t2_all_excluded': True,
+        'universal_t2_degree_bounds': [list(row) for row in universal],
+        'universal_t2_minimum_bound_through_degree_5': 373,
+        'universal_t2_paths_excluded_through_degree': 5,
+        'universal_t2_degree_6_bound': 316,
         'finite_lengths': MAX_LENGTH,
         'input_sha256': sha256(args.input.read_bytes()).hexdigest(),
         'scope': (
