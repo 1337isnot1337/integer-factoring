@@ -2123,8 +2123,13 @@ verify-entry-gap-cluster-loss:
 verify-gap-moment-order:
 	python3 tools/check_gap_moment_order.py --output /tmp/integer-factoring-gap-moment-order.json
 
+.PHONY: verify-dilation-cluster-break
+verify-dilation-cluster-break:
+	python3 tools/check_dilation_cluster_break.py --output /tmp/integer-factoring-dilation-cluster-break.json
+
 verify-arithmetic: verify-entry-moment-saved
 verify-arithmetic: verify-gap-moment-order
+verify-arithmetic: verify-dilation-cluster-break
 
 .PHONY: verify-output-space-transfer
 verify-output-space-transfer:

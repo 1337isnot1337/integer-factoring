@@ -81,6 +81,8 @@
 
 - [Moment order, maximum gaps, and the cofactor window](gap-moment-order-equivalence.md): at the period-scale order `q+1>=log2(2N)` the lower-tail criterion is equivalent, up to an absolute constant in `C`, to a maximum-gap bound `G<W`; at smaller orders it is strictly stronger. Ten saved complete orbits have `G/(D log2 h)` between `0.166` and `1.136`, an abstract clustered orbit reaches `85.3`, and raising the order shrinks the sufficient window by `4.6` on the saved generator-five cycle. The remaining target is a uniform gap law `G=O(D log h)`; no score change.
 
+- [Exponent dilation and the strict cluster-entry wrap](dilation-cluster-break.md): the strict generator-seven entry window wraps at step one but fits after a small coprime exponent dilation; the exact all-shift average cluster count is `s(1-s/h)`, and the strict unit average is `342.409` of `343`. The new target is unit-difference equidistribution, a weaker arithmetic statement than the maximum-gap law; no uniform theorem or score change.
+
 - [Normalize Fourier windows on the target cycle](window-orbit-normalization.md): character restriction absorbs all zero target phases into a positive orbit mean, with an exact coset-collision formula and all-scale sufficient window criterion. Rational finite-group controls and PR75 scope repairs do not supply a quantitative arithmetic window or new score.
 
 - [Self-dual Pfaffian codes and uniform crossing blocks](pfaffian-derivative-codes.md): a strict equal-copy Gaussian compression has self-dual deletion codes, a uniform subset constructor, and two explicit Hamming kernels giving every vertex-degree block. Complete finite profiles with independent literal/Toeplitz controls are above the critical target; no score improvement.
