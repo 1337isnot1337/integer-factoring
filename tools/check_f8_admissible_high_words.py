@@ -71,6 +71,17 @@ def main() -> None:
     assert saved['free_low_words'] == free == []
     assert len(low) == saved['low_height_words_total']
 
+    from itertools import combinations
+    triples = sorted(sum(1 << bit for bit in triple)
+                     for triple in combinations(range(12), 3)
+                     if sum(2 * bit + 1 for bit in triple) == 25)
+    boundary = sorted(base['boundary_words'])
+    assert saved['height25_triples'] == triples
+    assert saved['boundary_words'] == boundary
+    assert triples == boundary
+    assert saved['boundary_is_all_height25_triples'] is True
+    assert saved['other_height25_triples'] == []
+
     receipt = {
         'passed': True,
         'count': len(rows),
@@ -78,6 +89,7 @@ def main() -> None:
         'max_height': 44,
         'no_low_single_word_extension': True,
         'low_height_support_saturated': True,
+        'boundary_is_all_height25_triples': True,
         'q99_pair_words_admissible': True,
         'q99_triple_requires_pairs': True,
         'input_sha256': sha256(args.input.read_bytes()).hexdigest(),
