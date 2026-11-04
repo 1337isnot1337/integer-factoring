@@ -3497,3 +3497,9 @@ verify-polynomial-digit-fibres:
 	python3 tools/check_polynomial_digit_fibres.py
 
 verify-arithmetic: verify-polynomial-digit-fibres
+
+.PHONY: verify-target-order-mixed-rows
+verify-target-order-mixed-rows:
+	python3 tools/check_target_order_mixed_rows.py --output /tmp/integer-factoring-target-order-mixed-rows.json
+
+verify-arithmetic: verify-target-order-mixed-rows
