@@ -74,11 +74,14 @@ verify-tate-coordinate:
 
 verify-frontier: verify-tate-coordinate
 
-.PHONY: verify-theta-programs
+.PHONY: verify-theta-programs verify-theta-parity
+verify-theta-parity:
+	python3 tools/check_theta_parity_program.py >/dev/null
+
 verify-theta-programs:
 	python3 tools/check_theta_coordinate_program.py
 
-verify-frontier: verify-theta-programs
+verify-frontier: verify-theta-programs verify-theta-parity
 
 .PHONY: verify-q7-parameter
 verify-q7-parameter:
