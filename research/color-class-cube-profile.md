@@ -170,7 +170,8 @@ its common-scale unweighted three-axis target without that computation.
 
 This specialized contribution is retained from worker 4, exact source
 `1772970a7dbaab83eeb0607014a1111e46718d86`, including the correction
-history above. The finite profiles are regression controls and do not
+history above. The \(q=7,8\) rows and endpoint check are from commits
+`657a21e` and `d4fd713`, integrated here at `47aac516`. The finite profiles are regression controls and do not
 prove a uniform monomial law. The historical `q4_full_profile` receipt
 key records 250 of 256 orders through order 39, rather than an exhaustive
 profile.
