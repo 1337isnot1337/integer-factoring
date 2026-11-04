@@ -125,6 +125,23 @@ def sampled_unit_average(flags: bytes, size: int) -> dict:
     }
 
 
+def coset_profile(flags: bytes, modulus: int) -> dict:
+    counts = [0] * modulus
+    for index, bit in enumerate(flags):
+        if bit:
+            counts[index % modulus] += 1
+    mean = sum(counts) / modulus
+    maximum_deviation = max(abs(count - mean) for count in counts)
+    return {
+        "modulus": modulus,
+        "mean": mean,
+        "minimum": min(counts),
+        "maximum": max(counts),
+        "maximum_relative_deviation": maximum_deviation / mean,
+        "counts": counts,
+    }
+
+
 def entry_stats(flags: bytes, step: int, integer: int, check_moment: bool) -> dict:
     period = len(flags)
     dilated = flags if step == 1 else dilate(flags, step)
@@ -174,6 +191,12 @@ def strict_record() -> dict:
     assert entries["3"]["runs"] > entries["1"]["runs"]
     average = exact_unit_average(flags)
     assert average["unit_average_over_good_classes"] > 0.99
+    profiles = {
+        str(modulus): coset_profile(flags, modulus)
+        for modulus in (2, 5, 41, 97)
+        if period % modulus == 0
+    }
+    assert profiles["97"]["maximum_relative_deviation"] > 0.5
     return {
         "integer": integer,
         "cutoff": cutoff,
@@ -183,6 +206,7 @@ def strict_record() -> dict:
         "good_classes": sum(flags),
         "density_denominator": (period + sum(flags) - 1) // sum(flags),
         "unit_average": average,
+        "coset_profiles": profiles,
         "steps": entries,
     }
 
@@ -202,6 +226,12 @@ def generous_record(prime: int) -> dict:
     assert sample["sample_average_over_good_classes"] > 0.7
     average = exact_unit_average_bitset(flags)
     assert abs(average["unit_pair_error_fraction"]) < 1e-3
+    profiles = {
+        str(modulus): coset_profile(flags, modulus)
+        for modulus in (2, 5, 41, 97)
+        if period % modulus == 0
+    }
+    assert profiles["97"]["maximum_relative_deviation"] < 0.2
     return {
         "integer": integer,
         "cutoff": cutoff,
@@ -211,6 +241,7 @@ def generous_record(prime: int) -> dict:
         "good_classes": support,
         "density_denominator": (period + support - 1) // support,
         "unit_average": average,
+        "coset_profiles": profiles,
         "sample_average": sample,
         "steps": steps,
     }

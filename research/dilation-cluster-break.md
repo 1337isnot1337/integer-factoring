@@ -198,6 +198,34 @@ supports. A deterministic 32-unit sample gives `33129.813` with minimum
 generator seven; the spread shows the cyclic-order variation, while the
 exact unit average remains close to the all-shift baseline.
 
+### 3.1 First-order cosets are not enough
+
+The exact pair error is small, but it is not a consequence of first-order
+uniformity across the prime-index cosets. Counting `S` by residue modulo
+each prime factor of `h` gives:
+
+| `q` | strict mean | min | max | max rel. dev. |
+| ---: | ---: | ---: | ---: | ---: |
+| 2 | 171.5 | 170 | 173 | 0.0087 |
+| 5 | 68.6 | 66 | 73 | 0.0641 |
+| 41 | 8.366 | 3 | 11 | 0.6414 |
+| 97 | 3.536 | 1 | 5 | 0.7172 |
+
+| `q` | dense mean | min | max | max rel. dev. |
+| ---: | ---: | ---: | ---: | ---: |
+| 2 | 21026.5 | 20751 | 21302 | 0.0131 |
+| 5 | 8410.6 | 8391 | 8433 | 0.0027 |
+| 41 | 1025.683 | 1000 | 1063 | 0.0364 |
+| 97 | 433.536 | 403 | 470 | 0.0841 |
+
+At `q=97` the strict coset counts range from `1` to `5` around mean
+`3.536`, a maximum relative deviation `0.717`. The all-coset lower
+bound's constant-factor control is therefore sharp at the large prime
+factors; `1+o(1)` first-order uniformity is false on this set. Yet the
+exact `N_U` is within `5*10^{-4}s^2` of the baseline. The unit-difference
+equidistribution is a second-moment cancellation over the unit indicator,
+not a corollary of first-order coset uniformity.
+
 ## 4. What a uniform cluster-breaking lemma would need
 
 The finite data suggest the following target.
@@ -241,12 +269,11 @@ density character estimates to unit-difference equidistribution.
 One caution is essential. The all-coset receipt's count (8) is a lower
 bound obtained from a weighted product measure. It gives a constant-factor
 lower bound in every small coset, not `1+o(1)` uniformity of the
-unweighted class set. The pair count `N_U` is a second-moment quantity of
-the unweighted indicator, so the constant-factor estimate alone does not
-control the Fourier terms in (2). The next arithmetic question is whether
-the prime-color weight variation can be removed to `1+o(1)` coset
-uniformity, or whether a separate unweighted second-moment estimate is
-needed.
+unweighted class set. The finite strict profile above shows that
+`1+o(1)` first-order uniformity is false at `q=97`, while the pair error
+is `5*10^{-4}`. Removing the prime-color weight variation alone therefore
+cannot suffice; the pair count is a second-moment quantity of the
+unweighted indicator, and a separate convolution estimate is needed.
 
 ## 5. Scope and next check
 
@@ -261,9 +288,10 @@ index barrier and the uniform dilated-gap obligation remain.
 
 The bounded arithmetic test of unit-difference equidistribution on the
 saved large-period cycles now passes exactly: the strict error fraction is
-`-5.0*10^{-4}` and the dense error fraction is `-5.2*10^{-5}`. The next
-check is to test whether the small-index Fourier terms of the non-unit
-indicator are controlled by the all-coset density receipt. If that test
+`-5.0*10^{-4}` and the dense error fraction is `-5.2*10^{-5}`. The
+first-order coset profile shows that `1+o(1)` coset uniformity fails at
+`q=97`, so the next check is a second-moment/convolution estimate for the
+unit indicator, not removal of the density weight. If that estimate
 passes, the next note should state a precise cluster-breaking lemma and
 its cost; if it fails, the dilation repair is only a finite accident and
 should not be pursued as a uniform route.
