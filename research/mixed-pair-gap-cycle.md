@@ -144,6 +144,12 @@ window `2`, so the combined window is not claimed to be minimal.
 - The ten targets are genuine gap targets for the current sufficient
   windows: their indices exceed `D^{1/4}`, so the small-index density theorem
   does not cover them, and their orders exceed the exponent windows.
+- The base alone already yields the factor in this fixed instance; the
+  gap-target rows test coverage of additional target columns, not extraction
+  necessity.
+- The certificate does not show that first hits can be found faster than
+  scanning candidate pairs. That search is the next cost bottleneck; the
+  lemma reduces rank and interaction, not the first-hit search.
 - The scan is exhaustive only up to `100000` for this one input. It does not
   prove that a first hit exists for every target, nor that the first-hit
   exponent is uniformly small. Those are now the precise open obligations.
