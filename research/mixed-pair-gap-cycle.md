@@ -1,8 +1,8 @@
 # Mixed-pair rows on a 40-bit cycle
 
 **Status.** Exact finite certificate on one fixed 40-bit input. No uniform
-smoothness, rank-window, or stronger factoring theorem is proved. The complete
-saving exponent remains **1/2**.
+smoothness, first-hit, rank-window, or stronger factoring theorem is proved.
+The complete saving exponent remains **1/2**.
 
 This continues [target orders and mixed rows](target-order-mixed-rows.md),
 where exponent-one pair rows form complete relation bases in three small
@@ -31,7 +31,7 @@ All `22` split primes through `Y` lie in this cycle:
  5,7,19,37,47,53,59,73,83,97,101,103,107,109,113,127,131,137,151,163,167,173.
 \]
 
-For each unordered pair `p<=q` of targets and exponent `k=1,2,3`, form the
+For an unordered pair `p<=q` of targets and exponent `k=1,2,3`, form the
 class of `(pq)^k`. If its reduced leading coefficient `A<=H=577360` factors
 over the split primes through `Y`, the exact decoder gives a signed word `v`
 with `(pq)^k=\prod r^{v_r}`. The integer relation is
@@ -40,40 +40,113 @@ with `(pq)^k=\prod r^{v_r}`. The integer relation is
  k(e_p+e_q)-v.
 \]
 
-No order row is used. Two split primes outside the cutoff have order above
-the window and index above `D^{1/4}=1000.009...` in the cycle:
+No order row is used.
 
-| target | order | index | first full window | selected minor | extractor |
+## Exhaustive gap scan
+
+Scan every split prime `p<=100000` whose form lies in the cycle. The `22`
+base primes and `4,902` further split primes all lie in the cycle; no split
+prime in this range falls outside it. Exactly ten of these primes have both
+`ord(p)>3` and index above
+
+\[
+ D^{1/4}=1000.009\ldots,
+\]
+
+so they are genuine order-index gap targets for the current sufficient
+windows. For each, the table gives the first smooth pair hit `(k,q)` with
+`q` in the base, the first window at which the full `23`-column target set
+has rank `23`, and the selected maximal minor divided by `h`. The exact
+determinants are in the receipt.
+
+| target | order | index | first hit `(k,q)` | first full window | minor / `h` |
 | ---: | ---: | ---: | ---: | ---: | ---: |
-| 1117 | 194 | 1025 | 2 | 814489600 = 4096 h | 1000003 |
-| 1289 | 97 | 2050 | 3 | 198850000 = 1000 h | 1000003 |
+| 1117 | 194 | 1025 | (2,103) | 2 | 4096 |
+| 1289 | 97 | 2050 | (2,37) | 3 | 1000 |
+| 25169 | 97 | 2050 | (2,47) | 3 | 2944 |
+| 29207 | 97 | 2050 | (1,59) | 2 | 1080 |
+| 38677 | 194 | 1025 | (1,107) | 3 | 344 |
+| 43987 | 82 | 2425 | (3,59) | 3 | 3048 |
+| 67819 | 41 | 4850 | (1,167) | 2 | 1632 |
+| 70589 | 97 | 2050 | (1,97) | 2 | 430 |
+| 79823 | 194 | 1025 | (2,103) | 3 | 3184 |
+| 96749 | 194 | 1025 | (2,173) | 3 | 2032 |
 
-The target set has `23` columns. At window `1` the rank is `0`; at window `2`
-the first target reaches full rank `23`, while the second reaches rank `22`
-and needs window `3`. The selected maximal minors are multiples of the cycle
-order `h`. Using the determinant as an annihilator, the existing two-part
-extractor returns the factor `1000003`.
+Every target has a smooth pair hit at exponent at most `3`, and every
+selected minor is a multiple of the cycle order. The base set alone has no
+rows at window `1`; four target sets contain one or two exponent-one pair
+rows, but none is full at window `1`. Each target set becomes full at window
+`2` or `3`.
 
-The finite result places the pair mechanism squarely in the regime that
-matters: a 40-bit input, a cutoff far below `D^{1/4}`, target orders in the
-hundreds, and exponent windows `2` or `3`. It is not a claim that pair rows
-are uniformly available or that the selected rank is full for all targets.
+## Single-hit extension lemma
+
+The finite scan is not the main structural point. The following elementary
+observation separates the rank problem from the first-hit problem.
+
+**Lemma.** Let `B` be a target set with a relation matrix `R_B` of full rank
+`|B|`. Let `p_1,...,p_t` be additional targets, and suppose for each `i`
+there is one relation
+
+\[
+ r_i=k_i e_{p_i}+w_i,\qquad k_i\ne0,
+\]
+
+whose support `w_i` lies in `B`. Then the `|B|+t` rows obtained from `R_B`
+by adding zero columns at the new targets, together with the `r_i`, have full
+rank `|B|+t` and determinant
+
+\[
+ \left(\prod_i k_i\right)\det R_B
+\]
+
+up to sign.
+
+**Proof.** Order the new target columns last. The base rows have zero entries
+there; row `r_i` has a nonzero entry only in its own new column among those
+columns. The matrix is block triangular after that ordering, and the new
+block is diagonal with entries `k_i`. \(\square\)
+
+A relation row for `p_i` comes from one smooth pair `(p_i q_i)^{k_i}` with
+`q_i` in `B`. Thus **one smooth pair hit per gap target** extends a full-rank
+base matrix; no rank condition on the gap target and no interaction among the
+gap targets is needed. The first-hit exponent is the only new window cost.
+
+For the 40-bit cycle, the base alone has rank `22` at window `3`, with selected
+determinant
+
+\[
+ 200440800=1008h.
+\]
+
+The ten hits listed above add one diagonal row each. The combined `32`-column
+matrix has rank `32` and determinant
+
+\[
+ 200440800\cdot(2\cdot2\cdot2\cdot1\cdot1\cdot3\cdot1\cdot1\cdot2\cdot2)
+ =19242316800=96768h.
+\]
+
+All `32` rows replay exactly, and using the determinant as annihilator the
+two-part extractor returns the factor `1000003`. This simultaneous extension
+holds at window `3`; several individual target sets are already full at
+window `2`, so the combined window is not claimed to be minimal.
 
 ## What is and is not proved
 
-- The checker reconstructs the complete cycle, all pair rows, the rank
-  profile, every selected row identity, the maximal minor, and the extraction.
-  It does not rely on saved smooth flags.
+- The checker reconstructs the complete cycle, all pair rows, the exhaustive
+  gap scan, the rank profiles, every selected row identity, the maximal
+  minors, the single-hit extension matrix, and the extraction. It does not
+  rely on saved smooth flags.
 - The determinant is a multiple of the **cycle order** `198850`, the subgroup
   generated by the factor base; the ambient class group may be larger. This is
   enough for the extractor because `5` is in the factor base and the rows
   annihilate that subgroup.
-- The two targets are genuine gap targets for the current sufficient
+- The ten targets are genuine gap targets for the current sufficient
   windows: their indices exceed `D^{1/4}`, so the small-index density theorem
   does not cover them, and their orders exceed the exponent windows.
-- The open obligation is unchanged in kind: prove a uniform supply of
-  admissible pair rows and a rank (or lattice-index) lower bound. This
-  certificate supplies neither; it is a fixed 40-bit example.
+- The scan is exhaustive only up to `100000` for this one input. It does not
+  prove that a first hit exists for every target, nor that the first-hit
+  exponent is uniformly small. Those are now the precise open obligations.
 - The class-group enumeration used by the checker is exponential in the input
   size. The certificate is not a factoring algorithm and does not change the
   complete bound.
