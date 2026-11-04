@@ -1,4 +1,4 @@
-# All disjoint f3 placements span the five-label graded crossing
+# All disjoint f3 placements: five labels span, thirteen labels miss
 
 ## Exact finite result
 
@@ -17,6 +17,7 @@ over `F16` gives:
 | ---: | ---: | ---: | ---: | ---: | :---: | ---: | :---: |
 | 4 | 2 | 13 | 68 | 13 | yes | 13 | yes |
 | 6 | 5 | 60 | 674 | 475 | **yes** | 80 | no |
+| 8 | 13 | 277 | 4086 | 4014 | **no** | 146 | no |
 
 At five labels the enlarged span has dimension `475` rather than `80`
 and contains the crossing. An explicit recombination uses `442`
@@ -33,30 +34,35 @@ not a cost certificate.
 
 The parent note correctly reported that the **prefix** span misses the
 five- and thirteen-label crossings. The present census shows that at
-five labels the failure is removed by non-prefix disjoint placements.
-It does not address thirteen labels, where the full placement census
-has `277` disjoint placements and was not run here.
+five labels the failure is removed by non-prefix disjoint placements,
+but at thirteen labels it is not. Since the separating functional
+vanishes on every disjoint central `f_3` placement, adding more
+placements of the same kind cannot help at that length.
 
-The remaining constructive target is therefore sharper:
+The remaining constructive target is sharper:
 
-1. run the all-placement census at thirteen labels;
-2. if the span still misses, add genuinely fused projectors rather than
-   more disjoint `f_3` placements;
-3. if it contains the crossing, find a grouped representation with
-   rank sum below the finite-block threshold, not merely a large
-   spanning recombination.
-
-The last step is the only one that could affect the complete bound.
+1. use the certificate's boundary support as a guide: test `f_3`
+   insertions at noncentral layers, and boundary or temporally fused
+   operators, rather than more disjoint central placements;
+2. if a larger candidate family contains the crossing, find a grouped
+   representation with rank sum below the finite-block threshold, not
+   merely a large spanning recombination;
+3. only a favorable rank-sum certificate can affect the complete bound.
 
 ## Reproduction
 
 ```sh
 python3 tools/check_all_disjoint_fusion_placements.py \
   --output evidence/all-disjoint-fusion-placements.json
+python3 tools/check_all_disjoint_fusion_length8.py \
+  --output evidence/all-disjoint-fusion-placements-length8.json
 make verify-all-disjoint-fusion-placements
+make verify-all-disjoint-fusion-placements-length8
 ```
 
-The receipt records the placement counts, exact span dimensions,
-membership decisions, the explicit recombination, and source hashes.
+The first receipt records the placement counts, exact span dimensions,
+membership decisions, and the explicit five-label recombination. The
+thirteen-label receipt stores the separating functional, its support,
+and the exact matrix and dual hashes. Both record source hashes.
 No new Lean formalization or independent mathematical acceptance is
 claimed.

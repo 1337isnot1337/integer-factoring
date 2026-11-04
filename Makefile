@@ -371,6 +371,10 @@ verify-braid-graded-seam:
 verify-all-disjoint-fusion-placements:
 	python3 tools/check_all_disjoint_fusion_placements.py --output /tmp/all-disjoint-fusion-placements.json
 
+.PHONY: verify-all-disjoint-fusion-placements-length8
+verify-all-disjoint-fusion-placements-length8:
+	python3 tools/check_all_disjoint_fusion_length8.py --output /tmp/all-disjoint-fusion-placements-length8.json
+
 .PHONY: verify-braid-spectral-fusion
 verify-braid-spectral-fusion:
 	python3 tools/check_quantum_braid_spectral_fusion.py
