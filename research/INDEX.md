@@ -1,6 +1,7 @@
 # Research index
 
 - [Diagonal evaluation weights of the bounded-spin coefficient span](bounded-spin-diagonal-weights.md): exact projective diagonal form counts and multiplicities at lengths 8, 10 and 12 (13/35/124 forms; square-root sums 43.0/175.5/808.2 against targets 37.6/146.5/571.3). A compact diagnostic for the missing rank lemma, not a rank bound; no score change.
+- [Diagonal trace forms for the bounded-spin primary decomposition](bounded-spin-diagonal-trace.md): the projection trace identity reduces the ten-site primary dimensions to normalized diagonal evaluations at `(a,b,b,a)`; the seven ten-site dimensions match modulo five. At twelve sites there are 35 trace forms with square-root diagnostic `467.99`, below the `571.29` target, but this is not a rank bound; the missing object is the twelve-site coefficient idempotents.
 
 - [An image floor for bounded-spin correction modules](bounded-spin-image-floor.md): the single-`B`-part correction decomposition has a rigorous rank-sum floor `sqrt((N-m_1)(N-m_2))`; the published eight- and ten-site modules close far above the finite targets, and the twelve-site route closes whenever the correction algebra has dimension at most eighteen. Several `B`-pieces (central idempotents) remain open; no score change.
 
