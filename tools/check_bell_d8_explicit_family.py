@@ -11,7 +11,7 @@ from pathlib import Path
 import sys
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from bell_crossing import pencil_profiles, transform
+from bell_crossing import linear_profile_ternary, pencil_profiles, transform
 
 INPUT = Path('evidence/bell-d8-explicit-family.json')
 MAX_LENGTH = 100
@@ -64,6 +64,32 @@ def main() -> None:
     exponent_max = max(item['max_rank_exponent'] for item in profiles)
     exponent_min = min(item['max_rank_exponent'] for item in profiles)
 
+    census = []
+    for a in range(65):
+        for b in range(65 - a):
+            c = 64 - a - b
+            profile = linear_profile_ternary((a, b, c), 2)
+            census.append((max(profile), a, b, c))
+    minimum = min(census)
+    assert minimum[0] == 1848
+    assert sum(1 for row in census if row[0] == 1848) == 2
+    assert 1848 > 64 ** sqrt(2)
+
+    monomial = []
+    for n0 in range(65):
+        for n1 in range(65 - n0):
+            n2 = 64 - n0 - n1
+            profile = (n0 * n0,
+                       2 * n0 * n1,
+                       n1 * n1 + 2 * n0 * n2,
+                       2 * n1 * n2,
+                       n2 * n2)
+            monomial.append((max(profile), n0, n1, n2))
+    monomial_minimum = min(monomial)
+    assert monomial_minimum[0] == 1173
+    assert monomial_minimum[1:] in ((13, 17, 34), (34, 17, 13))
+    assert 1173 > 64 ** sqrt(2)
+
     receipt = {
         'passed': True,
         'd': 8,
@@ -76,18 +102,25 @@ def main() -> None:
         'max_rank_exponent': exponent_max,
         'all_rank_exponents_above_inverse_sqrt_two': True,
         'not_a_width_crossing': True,
+        'linear_t2_minimum_rank': 1848,
+        'linear_t2_all_excluded': True,
+        'monomial_t2_minimum_rank': 1173,
+        'monomial_t2_all_excluded': True,
         'finite_lengths': MAX_LENGTH,
         'input_sha256': sha256(args.input.read_bytes()).hexdigest(),
         'scope': (
             'Exact finite profile of the explicit linear Bell-diagonal path '
             'over F3 at d=8 for tensor lengths 1 through 100. The rank '
             'fractions are below 1, but every rank exponent is above '
-            '1/sqrt(2); this path is not a width crossing. No score change.'
+            '1/sqrt(2). The count census shows every linear ternary path has '
+            'length-two rank at least 1848, above 64^sqrt(2); the whole linear '
+            'path family is excluded at t=2. No score change.'
         ),
     }
     args.output.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps({'passed': True, 'd': 8, 'max_rank_fraction': maximum,
-                      'max_rank_exponent': exponent_max, 'crossing': False}))
+                      'max_rank_exponent': exponent_max, 'linear_t2_min': 1848,
+                      'linear_paths_excluded': True}))
 
 
 if __name__ == '__main__':
