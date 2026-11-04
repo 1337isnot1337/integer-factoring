@@ -43,6 +43,12 @@ the two cut transformation matrices to
 [`native_rectangular_smith_f4.cpp`](../tools/native_rectangular_smith_f4.cpp)
 and compute the joint image of the two bases.
 
+A finite exact unweighted start is recorded in
+[the codec-image note](two-cut-codec-joint-image.md): the interval-4 Smith
+transformations give `56` row-codec and `56` column-codec pairs out of `256`,
+while the exposed interval-8 prefix proxy is `3656/65536`. The weighted codec
+and its transfer remain open.
+
 ## Research question
 
 Let `B_0` and `B_1` be the two cut codec bases, with dimensions `P_0` and
