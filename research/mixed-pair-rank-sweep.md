@@ -51,8 +51,8 @@ in the cycle and none are skipped.
 - No full rank at window `3`: `4` targets.
 - The two-part extractor returns `1000003` for all `167` full-rank targets.
 
-The two targets with index above `D^{1/4}=1000.008...` reproduce the
-two-target certificate:
+The only two targets in this sweep with index above
+`D^{1/4}=1000.008...` reproduce the two-target certificate:
 
 | target | order | index | first full window | selected minor | extractor |
 | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -70,7 +70,9 @@ The four rank failures are:
 
 A one-off run with `--max-target 10000` (not part of the committed receipt)
 found `608` outside targets, `7` rank failures, and the same two targets with
-index above `D^{1/4}`. Every additional failure again had index `1`, `2`, or
+index above `D^{1/4}` in that range. The companion 40-bit note scans gap
+targets exhaustively through `100000` and finds ten; this sweep is not an
+exhaustive gap-target census. Every additional failure again had index `1`, `2`, or
 `10`. The pattern is stable under the larger sweep, but it remains a finite
 observation on this cycle.
 
@@ -80,8 +82,8 @@ observation on this cycle.
   targets have rank `22` rather than `23`. A uniform pair-only rank theorem at
   this window cannot be asserted from the two-target certificate.
 - Every rank failure here has index at most `10`, far inside the small-index
-  density range. The two targets outside that range, with index `1025` and
-  `2050`, are full rank. This is a finite hint of **complementarity**: density
+  density range. The only two targets outside that range in this sweep,
+  with index `1025` and `2050`, are full rank. This is a finite hint of **complementarity**: density
   or order rows cover the small-index side, while pair rows cover the
   medium/large-index gap side. It is not a proof of that division, and it does
   not supply a uniform rank lower bound.
