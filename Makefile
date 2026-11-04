@@ -3569,3 +3569,9 @@ verify-mixed-pair-rank-sweep:
 	python3 tools/check_mixed_pair_rank_sweep.py --max-target 2500 --max-window 3 --output /tmp/integer-factoring-mixed-pair-rank-sweep.json
 
 verify-arithmetic: verify-mixed-pair-rank-sweep
+
+.PHONY: verify-mixed-pair-rank-sweep-w4
+verify-mixed-pair-rank-sweep-w4:
+	python3 tools/check_mixed_pair_rank_sweep.py --max-target 10000 --max-window 4 --output /tmp/integer-factoring-mixed-pair-rank-sweep-w4.json
+
+verify-arithmetic: verify-mixed-pair-rank-sweep-w4
