@@ -122,15 +122,37 @@ An explicit path was previously displayed because its **rank fraction**
 candidate's ranks are far above the target, and the censuses above show
 that no linear or monomial path does better.
 
+## Cost consequence
+
+Let `m` be the number of nonzero coefficient tensors. The same word
+count gives `max_a rank(A_a) >= q^t/m`. To meet the width target
+`q^{rho t}`, a family must therefore have
+
+```math
+m >= q^{(1-rho)t}=2^{(1-rho)lambda},
+```
+
+where `lambda=t log_2 q` is the label width. This is exponential in
+`lambda` for every fixed `rho<1`. The Bell polynomial synthesis
+enumerates its `D+1` coefficient tensors (or `Dt+1` path pieces);
+if it meets the width target, that enumeration is exponential in
+`lambda`, while the target complete bound is only
+`2^{O(b/(log b)^{1/2})}`. Thus the polynomial synthesis route cannot
+improve the complete bound under its published piece-cost contract.
+
+A compact evaluator that produces the many coefficients without
+enumerating them would be a different representation; none is supplied.
+This is a method-specific cost obstruction, not a factoring lower
+bound.
+
 ## What remains open
 
 The escape from this barrier requires either unbounded total degree or a
-non-polynomial family. If the degree grows with `t`, the number of
-coefficient tensors grows, and the decomposition cost of those
-coefficients must still be controlled. A fixed-degree search, a larger
-fixed path family, or a fixed-degree linear combination of paths cannot
-work. A genuinely different Bell-basis representation or a non-path
-construction is needed.
+non-polynomial family, and the cost consequence shows that a direct
+polynomial synthesis of the necessary exponential coefficient list
+cannot improve the bound. A compact non-enumerative evaluator, a
+genuinely different Bell-basis representation, or a non-path
+construction remains open.
 
 ## Reproduction
 
