@@ -86,7 +86,40 @@ original algebra has dimension eight. A polynomial dimension bound for
 the twelve-site algebra would therefore close this route; a growing
 `d_B` above eighteen leaves the image floor inconclusive.
 
-## 3. What remains
+## 3. Asymptotic consequence
+
+The extreme tensor at length `n=2r` has rank
+
+```math
+a_r=\frac{(2+\sqrt2)^r+(2-\sqrt2)^r}{4}
+    =O\bigl((2+\sqrt2)^{n/2}\bigr),
+```
+
+so its per-site base is `sqrt(2+sqrt2)=1.848...`. The cut length is
+`L_n=Theta(phi^n)` with `phi=1.618...`, hence `N=L_n^2=Theta(phi^{2n})`.
+If the correction algebra has dimension `d_B=exp(o(n))`, then
+
+```math
+m_k\le d_B a_{n/2}=o(N),
+```
+
+and the floor (2) is `N-o(N)`. The finite target is
+`L_n^{sqrt2}=N^{1/sqrt2}`, and
+
+```math
+\frac{N}{L_n^{sqrt2}}
+=L_n^{2-\sqrt2}
+=\phi^{(2-\sqrt2)n+o(n)}\longrightarrow\infty.
+```
+
+Therefore no single low-rank-`T` correction decomposition can cross for
+large `n`, even if its coefficient algebra has subexponential dimension.
+The eight- and ten-site failures above are not finite-size accidents;
+the single-module route is asymptotically closed. This does not close a
+sum of several `B`-pieces, a different local kernel, or a non-low-rank
+generator.
+
+## 4. What remains
 
 A decomposition of `X` into several `B`-pieces can have a much smaller
 rank sum than one high-rank `B`-piece, because the pieces can cancel in
