@@ -61,12 +61,35 @@ def main() -> None:
     assert 224 not in words
     assert saved['q99_extension_words'] == [160, 192, 224]
 
+    support = set()
+    for vector in embedding + retraction:
+        support.update(vector)
+    low = [word for word in range(1, 1 << 12) if height(word) <= 25]
+    free = [word for word in low if word not in support]
+    assert saved['low_height_words_total'] == len(low)
+    assert saved['low_height_words_in_support'] == len(low) - len(free)
+    assert saved['free_low_words'] == free == []
+    assert len(low) == saved['low_height_words_total']
+
+    from itertools import combinations
+    triples = sorted(sum(1 << bit for bit in triple)
+                     for triple in combinations(range(12), 3)
+                     if sum(2 * bit + 1 for bit in triple) == 25)
+    boundary = sorted(base['boundary_words'])
+    assert saved['height25_triples'] == triples
+    assert saved['boundary_words'] == boundary
+    assert triples == boundary
+    assert saved['boundary_is_all_height25_triples'] is True
+    assert saved['other_height25_triples'] == []
+
     receipt = {
         'passed': True,
         'count': len(rows),
         'min_height': 26,
         'max_height': 44,
         'no_low_single_word_extension': True,
+        'low_height_support_saturated': True,
+        'boundary_is_all_height25_triples': True,
         'q99_pair_words_admissible': True,
         'q99_triple_requires_pairs': True,
         'input_sha256': sha256(args.input.read_bytes()).hexdigest(),
