@@ -90,6 +90,26 @@ def main() -> None:
     assert monomial_minimum[1:] in ((13, 17, 34), (34, 17, 13))
     assert 1173 > 64 ** sqrt(2)
 
+    polynomial = []
+    for degree in range(12):
+        slots = degree + 1
+        bound = (64 * 64 + slots - 1) // slots
+        polynomial.append((degree, slots, bound))
+    assert [row[2] for row in polynomial] == [
+        4096, 2048, 1366, 1024, 820, 683,
+        586, 512, 456, 410, 373, 342,
+    ]
+    assert all(row[2] > 64 ** sqrt(2) for row in polynomial[:11])
+    assert polynomial[11][2] == 342 < 64 ** sqrt(2)
+
+    q32 = 1024
+    target32 = q32 ** sqrt(2)
+    cubic32 = (q32 * q32 + 3) // 4
+    quartic32 = (q32 * q32 + 4) // 5
+    assert cubic32 == 262144
+    assert quartic32 == 209716
+    assert cubic32 > target32 and quartic32 > target32
+
     universal = []
     for degree in range(7):
         slots = 2 * degree + 1
@@ -137,6 +157,12 @@ def main() -> None:
         'linear_t2_all_excluded': True,
         'monomial_t2_minimum_rank': 1173,
         'monomial_t2_all_excluded': True,
+        'polynomial_t2_degree_bounds': [list(row) for row in polynomial],
+        'polynomial_t2_minimum_bound_through_degree_10': 373,
+        'polynomial_t2_degree_11_bound': 342,
+        'dimension_32_cubic_t2_bound': 262144,
+        'dimension_32_quartic_t2_bound': 209716,
+        'dimension_32_target': target32,
         'universal_t2_degree_bounds': [list(row) for row in universal],
         'universal_t2_minimum_bound_through_degree_5': 373,
         'universal_t2_paths_excluded_through_degree': 5,

@@ -42,8 +42,9 @@ pilot.  It is not a complete profile.  The q99 height-39 map is
 
 The [height-38 protected-core floor](jensen-tail-protected-core-floor.md)
 applies to every constant height-homogeneous paired map that retains the
-height-below-24 core and is supported through height 38.  For every `H <= 38`,
-the identity core `C_H` retains that low core and has support below 38, so
+full height-below-24 core and is supported through height 38.  The identity
+cores `C_24` and `C_25` contain that core, and every `C_H` with
+`26 <= H <= 38` contains it as well, so those maps satisfy
 
 ```math
 \rho(C_H) \ge 29/41 = 0.7073170731707317.
@@ -52,9 +53,19 @@ the identity core `C_H` retains that low core and has support below 38, so
 The measured `H=25` value is `0.7100553`, about `2.74e-3` above the floor and
 `2.95e-3` above `1/sqrt(2)`.  Adding core words down to height 38 therefore
 cannot cross: the floor is a proved barrier, not a numerical extrapolation.
-The q96 and q94 maps are also support-at-most-25, so the floor contains them.
-The q99 map escapes the floor only because it uses a height-39 coordinate;
-its pressure is still `0.7099930`.
+The smaller cores `H < 24` do not contain the full low core, so the floor does
+not apply to them; their measured pressures are nevertheless higher, not
+lower.
+
+The q96 full map retains the 81-word height-below-24 core and has support at
+most 25, so the floor applies to it.  The q94 mode drop removes mode 11,
+including words of that height-below-24 core; it therefore *leaves* the
+floor's hypothesis.  Its cutoff-47 pilot `0.709929` is below q96 and q99 but
+still above `1/sqrt(2)`; a complete q94 profile is a separate checkpoint.
+This is the first low-block change in the direction required by the
+[canonical height-25 boundary note](f8-admissible-high-words.md).  The q99
+map escapes the floor by using a height-39 coordinate; its pressure is still
+`0.7099930`.
 
 The [q45 minimal-core note](f8-hyperoval-minimal-core.md) shows the opposite
 failure mode: deleting the q96 core words unused by the boundary image raises
@@ -64,10 +75,11 @@ height-38 floor still prevents the enlarged identity cores from crossing.
 ## Consequence
 
 Larger identity cores and additional height-24/25 boundary words are not a
-route below `1/sqrt(2)`.  The next change must alter the low block or its
-gauge while keeping a height-39-supported boundary.  A natural bounded test is
-the q94 mode-drop low block plus the q99 height-39 coordinates; it remains a
-finite map optimization, not an escape from the low-core bottleneck.
+route below `1/sqrt(2)`.  The q94 mode drop is a genuine low-block change: it
+removes part of the old protected core instead of adding boundary words.  The
+next bounded test is the q94 low block plus the q99 height-39 coordinates; it
+is a finite map composition and remains above the target if the pilot scale
+persists.
 
 ## Reproduce
 

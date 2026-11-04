@@ -1,63 +1,86 @@
-# Fixed-degree Bell-diagonal paths fail the width target
+# Polynomial Bell-basis decompositions of fixed degree fail the width target
 
 ## Result
 
-At physical dimension `d=8` (`q=64`) over `F_3`, consider any polynomial
-path `s_j(z)` with `s_j(1)=1` for every local eigenvalue `j`, and let
-`D` be the maximum local degree. At tensor length `t`, the tensor
-`P_{s(z)}^{tensor t}` has at most `tD+1` coefficient tensors, indexed
-by the powers `z^0,...,z^{tD}`.
-
-In the row Bell basis, the rank of a coefficient is the number of words
-whose coefficient polynomial is nonzero, with the multinomial
-multiplicity of the word type. There are `q^t` words. For every word,
-the product of its local polynomials is nonzero because it equals `1`
-at `z=1`. Thus the word contributes to at least one coefficient, and the
-sum of the row ranks over all `z`-degrees is at least `q^t`. Therefore
-some coefficient has row rank at least
+Work in the row Bell basis of the `d=8` (`q=64`) crossing over `F_3`.
+Let
 
 ```math
-\left\lceil {q^t\over tD+1}\right\rceil .
+F(z)=\sum_{a=0}^{D} z^a A_a
 ```
 
-The target at `rho<1/sqrt(2)` allows at most `q^{rho t}`. Since
+be any polynomial tensor with `F(1)=cP_1`, where `P_1` is the Bell
+crossing tensor and `c!=0`. In the row basis, `P_1` has coefficient `1`
+on every word. Hence for each of the `q^t` words, the word coefficient
+polynomial satisfies `f_\nu(1)=c!=0`, so it is nonzero and contributes
+to at least one `z`-degree.
+
+The row rank of `A_a` is the number of words whose coefficient at
+degree `a` is nonzero. Therefore the sum of the row ranks over
+`a=0,...,D` is at least `q^t`, and some coefficient has row rank at
+least
 
 ```math
-{q^t/(tD+1)\over q^{rho t}}
-={q^{(1-rho)t}\over tD+1}\longrightarrow\infty,
+\left\lceil {q^t\over D+1}\right\rceil .
 ```
 
-the average bound exceeds the target for some `t`, for every **fixed**
-`D`. Hence no Bell-diagonal tensor-power path of bounded local degree
-can satisfy the two-cut width inequality at every length, and none gives
-a uniform crossing family.
+The target at length `t` is `q^{rho t}`. Since
 
-This is a row-cut argument and does not use the Bell transform. At
-`t=2` it already excludes every path of degree at most five; a degree-six
-path fails at `t=3`. The linear and monomial quadratic censuses below
-are sharper finite special cases.
+```math
+{q^t/(D+1)\over q^{rho t}}
+={q^{(1-rho)t}\over D+1}\longrightarrow\infty,
+```
 
-## Explicit failures
+for every **fixed** total degree `D` there is a finite `t` at which the
+row cut alone exceeds the target. Thus no fixed-degree polynomial
+Bell-basis decomposition can satisfy the two-cut width inequality at
+every length.
+
+At `d=8,t=2`, `q^t=4096`; the target is
+`64^{2rho}<64^{sqrt(2)}\approx357`. The bound is
+`ceil(4096/(D+1))`, which is `373` at `D=10` and `342` at `D=11`.
+Hence every polynomial Bell decomposition of total degree at most ten
+fails at `t=2`.
+
+A Bell tensor-power path with local degree `D_path` has total degree
+`tD_path`; the earlier fixed-degree path barrier is the special case
+`D=tD_path`. The linear and monomial quadratic censuses below are
+sharper finite special cases.
+
+## Degree table
 
 At `t=2`:
 
-| max degree `D` | coefficients `2D+1` | row bound `ceil(4096/(2D+1))` |
+| total degree `D` | coefficients `D+1` | row bound `ceil(4096/(D+1))` |
 | ---: | ---: | ---: |
-| 0 | 1 | 4096 |
-| 1 | 3 | 1366 |
-| 2 | 5 | 820 |
-| 3 | 7 | 586 |
-| 4 | 9 | 456 |
-| 5 | 11 | 373 |
-| 6 | 13 | 316 |
+| 1 | 2 | 2048 |
+| 2 | 3 | 1366 |
+| 3 | 4 | 1024 |
+| 4 | 5 | 820 |
+| 5 | 6 | 683 |
+| 6 | 7 | 586 |
+| 7 | 8 | 512 |
+| 8 | 9 | 456 |
+| 9 | 10 | 410 |
+| 10 | 11 | 373 |
+| 11 | 12 | 342 |
 
-The target is `64^{2rho}<64^{sqrt(2)}\approx357`, so `D<=5` fails at
-`t=2`. At `D=6`, the first failure is `t=3`:
-`ceil(64^3/(18+1))=13798>64^{3/sqrt(2)}\approx6784`.
+The bound crosses the target between total degree ten and eleven; this
+argument does not exclude degree at least eleven.
 
-The general threshold is only an existence statement: for each fixed
-`D`, some finite `t` fails. It does not claim a uniform bound on that
-`t`.
+The same calculation applies at other physical dimensions. For `d=32`
+(`q=1024`) at `t=2`, there are `q^2=1,048,576` words and the target is
+`1024^{sqrt(2)}≈18,064`. A cubic path (total degree three) has four
+coefficients, so some rank is at least `ceil(1,048,576/4)=262,144`; a
+quartic path has five coefficients and bound `209,716`. Both are far
+above the target. Thus the dimension-32 cubic/quartic paths left open by
+the outer-rank endpoint pressure test are excluded at actual rank by the
+same word-count argument.
+
+For a path of local degree `D_path`, the total degree is `2D_path`.
+Thus local degree at most five is excluded at `t=2` (`D=10`), while
+local degree six has total degree `12`; its first failure is `t=3`,
+where `ceil(64^3/(18+1))=13798>64^{3/sqrt(2)}\approx6784`.
 
 ## Linear and monomial refinements
 
@@ -99,16 +122,37 @@ An explicit path was previously displayed because its **rank fraction**
 candidate's ranks are far above the target, and the censuses above show
 that no linear or monomial path does better.
 
+## Cost consequence
+
+Let `m` be the number of nonzero coefficient tensors. The same word
+count gives `max_a rank(A_a) >= q^t/m`. To meet the width target
+`q^{rho t}`, a family must therefore have
+
+```math
+m >= q^{(1-rho)t}=2^{(1-rho)lambda},
+```
+
+where `lambda=t log_2 q` is the label width. This is exponential in
+`lambda` for every fixed `rho<1`. The Bell polynomial synthesis
+enumerates its `D+1` coefficient tensors (or `Dt+1` path pieces);
+if it meets the width target, that enumeration is exponential in
+`lambda`, while the target complete bound is only
+`2^{O(b/(log b)^{1/2})}`. Thus the polynomial synthesis route cannot
+improve the complete bound under its published piece-cost contract.
+
+A compact evaluator that produces the many coefficients without
+enumerating them would be a different representation; none is supplied.
+This is a method-specific cost obstruction, not a factoring lower
+bound.
+
 ## What remains open
 
-The escape from the fixed-degree barrier would require the local degree
-`D_t` to grow with `t`, at least fast enough that
-`q^{(1-rho)t}/(tD_t+1)` stays bounded. That is a different
-representation: the path must interpolate many more tensor coefficients,
-and the decomposition cost of those coefficients must still be
-controlled. Increasing a fixed degree, or searching a larger fixed
-family, cannot work. A different Bell-diagonal representation or a
-non-path construction is needed.
+The escape from this barrier requires either unbounded total degree or a
+non-polynomial family, and the cost consequence shows that a direct
+polynomial synthesis of the necessary exponential coefficient list
+cannot improve the bound. A compact non-enumerative evaluator, a
+genuinely different Bell-basis representation, or a non-path
+construction remains open.
 
 ## Reproduction
 
@@ -116,7 +160,7 @@ non-path construction is needed.
 make verify-bell-d8-explicit-family
 ```
 
-The checker verifies the degree table, the linear minimum `1848`, the
-monomial ordered-word minimum `1173`, the explicit path's profiles, and
-the first fixed-degree failures through `D=12`. It does not enumerate
-paths of unbounded degree.
+The checker verifies the total-degree table through `D=11`, the
+path-local degree table through `D=6`, the linear minimum `1848`, the
+monomial ordered-word minimum `1173`, and the explicit path's profiles.
+It does not enumerate unbounded-degree or non-polynomial families.
