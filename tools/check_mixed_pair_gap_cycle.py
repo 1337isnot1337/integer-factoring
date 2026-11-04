@@ -66,6 +66,43 @@ def split_factorization(value, records):
     return tuple(parts) if value == 1 else None
 
 
+def extended_gcd(left, right):
+    if right == 0:
+        return (abs(left), 1 if left >= 0 else -1, 0)
+    divisor, first, second = extended_gcd(right, left % right)
+    return (divisor, second, first - (left // right)*second)
+
+
+def row_hnf_basis(rows, width):
+    matrix = [list(row) for row in rows]
+    rank = 0
+    for column in range(width):
+        candidates = [index for index in range(rank, len(matrix))
+                      if matrix[index][column]]
+        if not candidates:
+            continue
+        pivot = candidates[0]
+        for candidate in candidates[1:]:
+            left = matrix[pivot][column]
+            right = matrix[candidate][column]
+            divisor, first, second = extended_gcd(left, right)
+            pivot_row = matrix[pivot]
+            candidate_row = matrix[candidate]
+            new_pivot = [
+                first*x + second*y
+                for x, y in zip(pivot_row, candidate_row)]
+            new_candidate = [
+                (-right//divisor)*x + (left//divisor)*y
+                for x, y in zip(pivot_row, candidate_row)]
+            matrix[pivot] = new_pivot
+            matrix[candidate] = new_candidate
+        matrix[rank], matrix[pivot] = matrix[pivot], matrix[rank]
+        rank += 1
+        if rank == width:
+            break
+    return matrix[:rank], rank
+
+
 def replay(row, targets, records, identity):
     value = identity
     for target, coefficient in zip(targets, row):
@@ -457,10 +494,39 @@ def check():
                 (value for value in edge_factors if value), None)
             assert edge_factor in (1000003, 1000033)
             assert INTEGER % edge_factor == 0
+            edge_hnf_basis, edge_hnf_rank = row_hnf_basis(
+                edge_rows, len(extension_targets))
+            assert edge_hnf_rank == len(extension_targets)
+            for row in edge_hnf_basis:
+                assert replay(row, extension_targets, extension_records,
+                              identity) == identity
+            edge_lattice_index = abs(int(determinant(edge_hnf_basis)))
+            assert edge_lattice_index % period == 0
+            assert edge_determinant % edge_lattice_index == 0
+            lattice_projected = project_to_two_part(
+                edge_generators, edge_lattice_index, identity,
+                compose_forms_hnf)
+            lattice_two_basis = two_group_basis(
+                lattice_projected, identity, compose_forms_hnf, inverse_form,
+                period.bit_length())
+            lattice_factors = [
+                ambiguous_factor(
+                    power(form, 1 << (power_order-1), identity,
+                          compose_forms_hnf),
+                    INTEGER)
+                for form, power_order in lattice_two_basis]
+            lattice_factor = next(
+                (value for value in lattice_factors if value), None)
+            assert lattice_factor in (1000003, 1000033)
+            assert INTEGER % lattice_factor == 0
             edge_first_full = {
                 'first_full_window': edge_window,
                 'selected_minor_determinant': edge_determinant,
                 'annihilator_multiple': edge_determinant//period,
+                'lattice_index': edge_lattice_index,
+                'lattice_multiple': edge_lattice_index//period,
+                'lattice_bit_length': edge_lattice_index.bit_length(),
+                'lattice_extracted_factor': lattice_factor,
                 'extracted_factor': edge_factor,
             }
     assert edge_first_full is not None
@@ -639,7 +705,7 @@ def check():
                   'extractor returns 1000003. A full-rank base plus one hit '
                   'per target gives rank 32 and determinant 96768h; the pair '
                   'rows alone give a rank-32 edge basis at window 2 with '
-                  'determinant 8192h. A pure-order diagonal control also '
+                  'selected minor 8192h and row-lattice index 16h. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
                   'orders; it is not a factoring algorithm. An isolated-column '
                   'repair control on all split primes through 500 fills the one '
