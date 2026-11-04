@@ -75,6 +75,72 @@ def main() -> None:
     assert sum(1 for row in census if row[0] == 1848) == 2
     assert 1848 > 64 ** sqrt(2)
 
+    monomial = []
+    for n0 in range(65):
+        for n1 in range(65 - n0):
+            n2 = 64 - n0 - n1
+            profile = (n0 * n0,
+                       2 * n0 * n1,
+                       n1 * n1 + 2 * n0 * n2,
+                       2 * n1 * n2,
+                       n2 * n2)
+            monomial.append((max(profile), n0, n1, n2))
+    monomial_minimum = min(monomial)
+    assert monomial_minimum[0] == 1173
+    assert monomial_minimum[1:] in ((13, 17, 34), (34, 17, 13))
+    assert 1173 > 64 ** sqrt(2)
+
+    polynomial = []
+    for degree in range(12):
+        slots = degree + 1
+        bound = (64 * 64 + slots - 1) // slots
+        polynomial.append((degree, slots, bound))
+    assert [row[2] for row in polynomial] == [
+        4096, 2048, 1366, 1024, 820, 683,
+        586, 512, 456, 410, 373, 342,
+    ]
+    assert all(row[2] > 64 ** sqrt(2) for row in polynomial[:11])
+    assert polynomial[11][2] == 342 < 64 ** sqrt(2)
+
+    q32 = 1024
+    target32 = q32 ** sqrt(2)
+    cubic32 = (q32 * q32 + 3) // 4
+    quartic32 = (q32 * q32 + 4) // 5
+    assert cubic32 == 262144
+    assert quartic32 == 209716
+    assert cubic32 > target32 and quartic32 > target32
+
+    universal = []
+    for degree in range(7):
+        slots = 2 * degree + 1
+        bound = (64 * 64 + slots - 1) // slots
+        universal.append((degree, slots, bound))
+    assert [row[2] for row in universal[:6]] == [4096, 1366, 820, 586, 456, 373]
+    assert 373 > 64 ** sqrt(2)
+    assert universal[6][2] == 316 < 64 ** sqrt(2)
+
+    fixed_degree = []
+    for degree in range(1, 13):
+        for length in range(2, 200):
+            bound = (64 ** length + length * degree) // (length * degree + 1)
+            target = 64 ** (length / sqrt(2))
+            if bound > target:
+                fixed_degree.append((degree, length, bound, target))
+                break
+        else:
+            raise AssertionError('no fixed-degree failure found')
+    assert [(degree, length, bound)
+            for degree, length, bound, _target in fixed_degree[:6]] == [
+        (1, 2, 1366),
+        (2, 2, 820),
+        (3, 2, 586),
+        (4, 2, 456),
+        (5, 2, 373),
+        (6, 3, 13798),
+    ]
+    for degree, length, bound, target in fixed_degree:
+        assert bound > target
+
     receipt = {
         'passed': True,
         'd': 8,
@@ -89,6 +155,23 @@ def main() -> None:
         'not_a_width_crossing': True,
         'linear_t2_minimum_rank': 1848,
         'linear_t2_all_excluded': True,
+        'monomial_t2_minimum_rank': 1173,
+        'monomial_t2_all_excluded': True,
+        'polynomial_t2_degree_bounds': [list(row) for row in polynomial],
+        'polynomial_t2_minimum_bound_through_degree_10': 373,
+        'polynomial_t2_degree_11_bound': 342,
+        'dimension_32_cubic_t2_bound': 262144,
+        'dimension_32_quartic_t2_bound': 209716,
+        'dimension_32_target': target32,
+        'universal_t2_degree_bounds': [list(row) for row in universal],
+        'universal_t2_minimum_bound_through_degree_5': 373,
+        'universal_t2_paths_excluded_through_degree': 5,
+        'universal_t2_degree_6_bound': 316,
+        'fixed_degree_first_failures': [
+            [degree, length, bound]
+            for degree, length, bound, _target in fixed_degree
+        ],
+        'fixed_degree_asymptotic_barrier': True,
         'finite_lengths': MAX_LENGTH,
         'input_sha256': sha256(args.input.read_bytes()).hexdigest(),
         'scope': (

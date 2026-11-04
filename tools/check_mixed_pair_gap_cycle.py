@@ -28,8 +28,10 @@ from check_target_order_mixed_rows import determinant, echelon_pivot_rows
 INTEGER = 1000036000099
 CUTOFF = 177
 BASE_PRIME = 5
-GAP_TARGETS = (1117, 1289)
+GAP_TARGETS = (1117, 1289, 25169, 29207, 38677, 43987, 67819,
+               70589, 79823, 96749)
 MAX_WINDOW = 3
+SCAN_LIMIT = 100000
 
 
 def cycle_forms(records):
@@ -92,7 +94,7 @@ def check():
             for prime in base_primes}
     assert logs[BASE_PRIME] == 1
 
-    larger = build_prime_form_factor_base(delta, max(GAP_TARGETS))
+    larger = build_prime_form_factor_base(delta, SCAN_LIMIT)
     larger_records = {record.prime: (record.root, tuple(record.positive))
                       for record in larger['records']}
     height = isqrt(INTEGER//3)
@@ -185,6 +187,216 @@ def check():
             'extracted_factor': factor,
         })
 
+    # A full-rank base matrix plus one smooth pair hit per new target gives a
+    # full-rank relation matrix by block-triangular extension.  Record the
+    # explicit instance used in the note: the 22 base primes at window 3, then
+    # one minimal pair hit per gap target.
+    base_positions = {prime: index for index, prime in enumerate(base_primes)}
+    base_rows = []
+    for left_index, left in enumerate(base_primes):
+        for right in base_primes[left_index:]:
+            for exponent in range(1, MAX_WINDOW+1):
+                form = forms[(exponent*(logs[left]+logs[right])) % period]
+                leading = form[0]
+                if leading == 1:
+                    continue
+                parts = split_factorization(leading, records)
+                if parts is None:
+                    continue
+                terms, new = leading_norm_word(
+                    INTEGER, form, parts, records)
+                assert not new
+                row = [0]*len(base_primes)
+                row[base_positions[left]] += exponent
+                row[base_positions[right]] += exponent
+                for prime, value in terms.items():
+                    row[base_positions[prime]] -= value
+                if any(row) and row not in base_rows:
+                    base_rows.append(row)
+    base_rank, base_pivots = echelon_pivot_rows(base_rows)
+    assert base_rank == len(base_primes)
+    base_basis = [base_rows[index]
+                  for index in base_pivots[:base_rank]]
+    base_determinant = abs(int(determinant(base_basis)))
+    assert base_determinant and base_determinant % period == 0
+
+    extension_targets = tuple(base_primes) + GAP_TARGETS
+    extension_positions = {
+        prime: index for index, prime in enumerate(extension_targets)}
+    extension_records = dict(records)
+    extension_logs = dict(logs)
+    for gap_target in GAP_TARGETS:
+        extension_records[gap_target] = larger_records[gap_target]
+        extension_logs[gap_target] = index[
+            reduce_form(larger_records[gap_target][1])]
+    extended_rows = []
+    for row in base_basis:
+        full = [0]*len(extension_targets)
+        for prime in base_primes:
+            full[extension_positions[prime]] = row[base_positions[prime]]
+        extended_rows.append(full)
+    hit_records = []
+    for gap_target in GAP_TARGETS:
+        hits = []
+        for pair_prime in base_primes:
+            for exponent in range(1, MAX_WINDOW+1):
+                form = forms[
+                    (exponent*(extension_logs[gap_target]
+                               + extension_logs[pair_prime])) % period]
+                leading = form[0]
+                if leading == 1:
+                    continue
+                parts = split_factorization(leading, records)
+                if parts is None:
+                    continue
+                terms, new = leading_norm_word(
+                    INTEGER, form, parts, extension_records)
+                assert not new
+                hits.append((exponent, pair_prime, leading, terms))
+        assert hits
+        exponent, pair_prime, leading, terms = min(hits)
+        row = [0]*len(extension_targets)
+        row[extension_positions[gap_target]] += exponent
+        row[extension_positions[pair_prime]] += exponent
+        for prime, value in terms.items():
+            row[extension_positions[prime]] -= value
+        extended_rows.append(row)
+        hit_records.append({
+            'target': gap_target,
+            'pair_prime': pair_prime,
+            'exponent': exponent,
+            'leading_coefficient': leading,
+            'word': {str(prime): value for prime, value in terms.items()},
+        })
+    extended_rank, _ = echelon_pivot_rows(extended_rows)
+    assert extended_rank == len(extension_targets)
+    combined_determinant = abs(int(determinant(extended_rows)))
+    expected_determinant = base_determinant
+    for hit in hit_records:
+        expected_determinant *= hit['exponent']
+    assert combined_determinant == expected_determinant
+    assert combined_determinant % period == 0
+    for row in extended_rows:
+        assert replay(row, extension_targets, extension_records,
+                      identity) == identity
+    combined_annihilator = combined_determinant
+    combined_generators = [extension_records[prime][1]
+                           for prime in extension_targets]
+    combined_projected = project_to_two_part(
+        combined_generators, combined_annihilator, identity,
+        compose_forms_hnf)
+    combined_basis = two_group_basis(
+        combined_projected, identity, compose_forms_hnf, inverse_form,
+        period.bit_length())
+    combined_factors = [
+        ambiguous_factor(
+            power(form, 1 << (power_order-1), identity, compose_forms_hnf),
+            INTEGER)
+        for form, power_order in combined_basis]
+    combined_factor = next(
+        (value for value in combined_factors if value), None)
+    assert combined_factor in (1000003, 1000033)
+    assert INTEGER % combined_factor == 0
+
+    # Edge-only collective certificate: use the pair rows themselves, with the
+    # base primes among the target columns, and no separate base matrix.
+    edge_rows = []
+    edge_seen = set()
+    edge_hits = 0
+    edge_adjacency = {
+        prime: set() for prime in extension_targets}
+    for left_index, left in enumerate(extension_targets):
+        for right in extension_targets[left_index:]:
+            for exponent in range(1, MAX_WINDOW+1):
+                form = forms[
+                    (exponent*(extension_logs[left]
+                               + extension_logs[right])) % period]
+                leading = form[0]
+                if leading == 1:
+                    continue
+                parts = split_factorization(leading, records)
+                if parts is None:
+                    continue
+                terms, new = leading_norm_word(
+                    INTEGER, form, parts, extension_records)
+                assert not new
+                row = [0]*len(extension_targets)
+                row[extension_positions[left]] += exponent
+                row[extension_positions[right]] += exponent
+                for prime, value in terms.items():
+                    row[extension_positions[prime]] -= value
+                if not any(row):
+                    continue
+                edge_hits += 1
+                edge_adjacency[left].add(right)
+                edge_adjacency[right].add(left)
+                key = tuple(row)
+                if key not in edge_seen:
+                    edge_seen.add(key)
+                    edge_rows.append(row)
+    edge_rank, edge_pivots = echelon_pivot_rows(edge_rows)
+    assert edge_rank == len(extension_targets)
+    edge_seen_vertices = {extension_targets[0]}
+    edge_colors = {extension_targets[0]: 0}
+    edge_queue = [extension_targets[0]]
+    edge_bipartite = True
+    while edge_queue:
+        vertex = edge_queue.pop()
+        for neighbor in edge_adjacency[vertex]:
+            if neighbor not in edge_seen_vertices:
+                edge_seen_vertices.add(neighbor)
+                edge_colors[neighbor] = edge_colors[vertex] ^ 1
+                edge_queue.append(neighbor)
+            elif edge_colors.get(neighbor) == edge_colors.get(vertex):
+                edge_bipartite = False
+    assert len(edge_seen_vertices) == len(extension_targets)
+    assert not edge_bipartite
+    edge_basis = [edge_rows[index]
+                  for index in edge_pivots[:edge_rank]]
+    for row in edge_basis:
+        assert replay(row, extension_targets, extension_records,
+                      identity) == identity
+    edge_determinant = abs(int(determinant(edge_basis)))
+    assert edge_determinant and edge_determinant % period == 0
+    edge_generators = [extension_records[prime][1]
+                       for prime in extension_targets]
+    edge_projected = project_to_two_part(
+        edge_generators, edge_determinant, identity, compose_forms_hnf)
+    edge_two_basis = two_group_basis(
+        edge_projected, identity, compose_forms_hnf, inverse_form,
+        period.bit_length())
+    edge_factors = [
+        ambiguous_factor(
+            power(form, 1 << (power_order-1), identity, compose_forms_hnf),
+            INTEGER)
+        for form, power_order in edge_two_basis]
+    edge_factor = next((value for value in edge_factors if value), None)
+    assert edge_factor in (1000003, 1000033)
+    assert INTEGER % edge_factor == 0
+
+    scan_gaps = []
+    scan_split_primes = 0
+    scan_noncycle = 0
+    for prime in primes_through(SCAN_LIMIT):
+        if prime in records or prime not in larger_records:
+            continue
+        scan_split_primes += 1
+        form = reduce_form(larger_records[prime][1])
+        if form not in index:
+            scan_noncycle += 1
+            continue
+        prime_log = index[form]
+        prime_index = gcd(period, prime_log)
+        prime_order = period//prime_index
+        if prime_order > MAX_WINDOW and prime_index > fourth_root:
+            scan_gaps.append({
+                'target': prime,
+                'order': prime_order,
+                'index': prime_index,
+            })
+    assert tuple(entry['target'] for entry in scan_gaps) == GAP_TARGETS
+    assert scan_noncycle == 0
+
     return {
         'integer': INTEGER,
         'factorization': [1000003, 1000033],
@@ -197,13 +409,47 @@ def check():
         'base_primes': list(base_primes),
         'base_logs': [logs[prime] for prime in base_primes],
         'gap_results': results,
+        'gap_scan': {
+            'limit': SCAN_LIMIT,
+            'split_primes': scan_split_primes,
+            'noncycle_split_primes': scan_noncycle,
+            'gap_targets': scan_gaps,
+            'complete': True,
+        },
+        'edge_basis': {
+            'vertices': len(extension_targets),
+            'pair_hits': edge_hits,
+            'distinct_rows': len(edge_rows),
+            'connected': True,
+            'nonbipartite': True,
+            'rank': edge_rank,
+            'selected_minor_determinant': edge_determinant,
+            'annihilator_multiple': edge_determinant//period,
+            'extracted_factor': edge_factor,
+        },
+        'single_hit_extension': {
+            'base_rank': base_rank,
+            'base_rows': len(base_rows),
+            'base_determinant': base_determinant,
+            'base_multiple': base_determinant//period,
+            'targets': hit_records,
+            'combined_rank': extended_rank,
+            'combined_rows': len(extended_rows),
+            'combined_determinant': combined_determinant,
+            'combined_multiple': combined_determinant//period,
+            'extracted_factor': combined_factor,
+        },
         'scope': ('Finite 40-bit mixed-pair cycle certificate. The 22 split '
                   'primes through 177 lie in the order-198850 cycle generated '
-                  'by 5. Two gap targets with order above the window and '
-                  'index above D^(1/4) are covered by pair rows at window 2 or '
-                  '3. Determinants are multiples of the cycle order, and the '
-                  'two-part extractor returns 1000003. No uniform pair-basis, '
-                  'rank-window, or smoothness theorem is claimed.'),
+                  'by 5. An exhaustive scan through 100000 finds ten gap '
+                  'targets with order above the window and index above '
+                  'D^(1/4); all have exponent-1/2/3 pair hits. Determinants '
+                  'are multiples of the cycle order, and the two-part '
+                  'extractor returns 1000003. A full-rank base plus one hit '
+                  'per target gives rank 32 and determinant 96768h; the pair '
+                  'rows alone give a connected non-bipartite rank-32 edge '
+                  'basis with determinant 1259712h. No uniform pair-basis, '
+                  'rank-window, first-hit, or smoothness theorem is claimed.'),
     }
 
 
