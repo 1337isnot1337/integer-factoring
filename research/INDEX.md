@@ -1762,3 +1762,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 [A minimal deletion-closed F8 core does not lower the pressure](f8-hyperoval-minimal-core.md): the 45-coordinate deletion closure of the ten height-25 boundary triples has a complete cutoff-127 profile with numerical pressure `0.7156911630`. Deleting the 52 q96 core words unused by the boundary image is worse than q96/q99; the extra core words are load-bearing. No exact certificate or score change.
 
 - [A height-39 extension of the height-16 core stays on the plateau](height39-q32-extension.md): the q32 height-16 coherent map plus one-hot words `96,160,192,224` has complete q36 profiles and numerical pressure `0.7121133`, a `1.7e-6` gain and far above `1/sqrt(2)`; high boundary words do not fix the low-core plateau.
+
+## Core-cutoff pressure trend
+
+[The identity-core cutoff trend stops above the height-38 floor](core-cutoff-pressure-trend.md): the full identity cores at heights 16,18,20,22,24,25 have natural pressures `0.7124842` through `0.7100553`, decreasing but flattening above the proved `29/41` protected-core floor. The q96 boundary helps the 81-word core, but every support-at-most-25 map remains floor-bound. No exact certificate or score change.
