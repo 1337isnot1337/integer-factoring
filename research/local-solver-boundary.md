@@ -56,8 +56,12 @@ support. This is forced for an injective full basis: the four codes determine
 the four tensor indices. A full-rank codec therefore cannot beat the raw
 support factor; only a strict rank truncation or a non-injective scalar code
 could. If the intended two-cut bases are the full Smith bases, this closes
-that version of the route at the support factor. The prefix-truncated image
-at `k<n` is the next object; the codec-image note tabulates it.
+that version of the route at the support factor. The codec-image note also
+tabulates the prefix-truncated image at `k<n` and records a lossless lower
+bound: if a codebook `C` is paired with a residual alphabet `R`, injectivity
+on the support forces `|C||R| >= support`, so truncation defers collision
+resolution rather than removing it. A changed source or a certified
+sublinear collision resolver is required for this route.
 
 ## Research question
 
