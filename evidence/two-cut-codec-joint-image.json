@@ -1,0 +1,69 @@
+{
+  "interval4": {
+    "codec": {
+      "column_codec_pairs": 56,
+      "diagonal": true,
+      "invariant_degrees_cut0": [
+        0,
+        4,
+        4,
+        4,
+        4,
+        8,
+        8,
+        8,
+        8,
+        8,
+        8,
+        12,
+        12,
+        12,
+        12,
+        16
+      ],
+      "invariant_degrees_cut1": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "raw_value_pairs": 16,
+      "row_codec_pairs": 56,
+      "transform_max_degree_cut0": 7,
+      "transform_max_degree_cut1": 15,
+      "verified": true
+    },
+    "codec_fraction": 0.21875,
+    "prefix_col_pairs": 56,
+    "prefix_fraction": 0.21875,
+    "prefix_row_pairs": 56,
+    "support": 104
+  },
+  "interval8": {
+    "distinct_tensor_values": 429,
+    "prefix_col_pairs": 3656,
+    "prefix_fraction": 0.0557861328125,
+    "prefix_row_pairs": 3656,
+    "support": 22328
+  },
+  "scope": "Exact unweighted F4[x] Smith transformations for the interval-4 two-cut Gaussian seed, and the nested-minor prefix image at interval 8. The interval-4 codec image is exact for this specialization; the interval-8 entry is only the exposed prefix proxy, not the Smith codec. No weighted codec, transfer, or score change is claimed.",
+  "source_sha256": {
+    "check_two_cut_codec_joint_image.py": "f92c9c099c85b10a7c090dbed6358331c1bab9bdbc5e83ea3714d2d9eca573e0",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38"
+  },
+  "status": "pass"
+}

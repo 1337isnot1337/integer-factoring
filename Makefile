@@ -1987,6 +1987,10 @@ verify-three-bundle-joint-image:
 verify-two-cut-support-density:
 	python3 tools/check_two_cut_support_density.py --output /tmp/integer-factoring-two-cut-support-density.json
 
+.PHONY: verify-two-cut-codec-joint-image
+verify-two-cut-codec-joint-image:
+	python3 tools/check_two_cut_codec_joint_image.py --output /tmp/integer-factoring-two-cut-codec-joint-image.json
+
 .PHONY: verify-local-solver-boundary
 verify-local-solver-boundary:
 	python3 tools/check_hash_join_identity_minor.py --output /tmp/integer-factoring-hash-join-identity-minor.json
