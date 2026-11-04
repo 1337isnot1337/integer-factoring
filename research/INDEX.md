@@ -1485,6 +1485,7 @@ The [session record](escape-half-session-20261031.md) gives the reading path and
 - [Shared-minor budgets for graded cube alphabets](cube-graded-minor-budget.md)
 - [A uniform floor for scalar Gaussian color clones](cube-scalar-color-clone-floor.md)
 - [Specialized profiles of the one-hot color-class Gaussian cube](color-class-cube-profile.md)
+- [Parity escapes in the color-class cube lose the endpoint or the spectrum](color-class-parity-escape-controls.md)
 - [A Gaussian cube floor for every equally weighted Fock alphabet](cube-equal-height-fock-floor.md)
 
 

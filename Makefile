@@ -2222,6 +2222,10 @@ verify-cube-shared-budgets:
 verify-color-class-cube-profile:
 	python3 tools/check_color_class_cube_profile.py --output /tmp/integer-factoring-color-class-cube-profile.json
 
+.PHONY: verify-color-class-parity-escapes
+verify-color-class-parity-escapes:
+	python3 tools/check_color_class_parity_escapes.py > /tmp/integer-factoring-color-class-parity-escapes.json
+
 .PHONY: verify-coherent-full-tail
 verify-coherent-full-tail:
 	python3 tools/check_coherent_full_tail_core.py --evidence evidence/coherent-full-tail-core.json --output /tmp/integer-factoring-coherent-full-tail-controls.json
