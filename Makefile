@@ -3540,3 +3540,9 @@ verify-target-order-mixed-rows:
 	python3 tools/check_target_order_mixed_rows.py --output /tmp/integer-factoring-target-order-mixed-rows.json
 
 verify-arithmetic: verify-target-order-mixed-rows
+
+.PHONY: verify-mixed-pair-gap-cycle
+verify-mixed-pair-gap-cycle:
+	python3 tools/check_mixed_pair_gap_cycle.py --output /tmp/integer-factoring-mixed-pair-gap-cycle.json
+
+verify-arithmetic: verify-mixed-pair-gap-cycle
