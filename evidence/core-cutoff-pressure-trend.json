@@ -1,0 +1,89 @@
+{
+  "completed": true,
+  "construction": "The natural two-cut map restricted to the identity core of all one-hot words with height below H; the row and column cuts are the restricted tensor profiles.",
+  "cutoff_definition": "core words satisfy height(word) < H",
+  "heights": [
+    16,
+    18,
+    20,
+    22,
+    24,
+    25
+  ],
+  "rows": [
+    {
+      "H": 16,
+      "q": 28,
+      "pressure": {
+        "rho": 0.7124841635989507,
+        "scale_t": 0.3407915124178001,
+        "completed": true,
+        "queries": 14
+      },
+      "seconds": 3.0838353633880615
+    },
+    {
+      "H": 18,
+      "q": 38,
+      "pressure": {
+        "rho": 0.7116418233895179,
+        "scale_t": 0.31469232290926774,
+        "completed": true,
+        "queries": 15
+      },
+      "seconds": 23.713329792022705
+    },
+    {
+      "H": 20,
+      "q": 49,
+      "pressure": {
+        "rho": 0.7110773177567727,
+        "scale_t": 0.29566496532486897,
+        "completed": true,
+        "queries": 13
+      },
+      "seconds": 215.43459033966064
+    },
+    {
+      "H": 22,
+      "q": 64,
+      "pressure": {
+        "rho": 0.7105903583541862,
+        "scale_t": 0.2780334985986807,
+        "completed": true,
+        "queries": 13
+      },
+      "seconds": 758.3103747367859
+    },
+    {
+      "H": 24,
+      "q": 81,
+      "pressure": {
+        "rho": 0.7102275227039717,
+        "scale_t": 0.26396351552252123,
+        "completed": true,
+        "queries": 21
+      },
+      "seconds": 1559.0759756565094
+    },
+    {
+      "H": 25,
+      "q": 92,
+      "pressure": {
+        "rho": 0.7100552807213277,
+        "scale_t": 0.2569742280260311,
+        "completed": true,
+        "queries": 13
+      },
+      "seconds": 3712.933155298233
+    }
+  ],
+  "quick_heights": [
+    16,
+    18,
+    20
+  ],
+  "height38_floor": 0.7073170731707317,
+  "threshold": 0.7071067811865476,
+  "scope": "Complete finite natural profiles for the listed identity cores. Pressures are numerical fits, not exact certificates. All values are above the height-38 protected-core floor and 1/sqrt(2); no factoring exponent changes."
+}

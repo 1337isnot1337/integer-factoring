@@ -1,0 +1,241 @@
+{
+  "scope": "Parity-refined degree-four theta programs with conservative ordinary modular/Sturm certificates; no uniform success theorem and no faster factoring bound",
+  "phase_results": [
+    {
+      "phase": 3,
+      "fit_limit": 1536,
+      "variables": 2,
+      "columns": 16,
+      "binary_rank": 6,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 1536,
+      "validation": {
+        "checked_limit": 1664,
+        "odd_coefficients_per_coordinate": 832,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 1,
+      "maximum_quadratic_variables": 0,
+      "original_module_missing_coordinates": [],
+      "original_module_status": "certified_by_ordinary_modular_Sturm_proof",
+      "original_evaluator_controls": 9,
+      "charged_original_evaluator_steps": 18
+    },
+    {
+      "phase": 5,
+      "fit_limit": 4096,
+      "variables": 4,
+      "columns": 71,
+      "binary_rank": 30,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 7680,
+      "validation": {
+        "checked_limit": 7808,
+        "odd_coefficients_per_coordinate": 3904,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 15,
+      "maximum_quadratic_variables": 3,
+      "original_module_missing_coordinates": [
+        0
+      ],
+      "original_module_status": "bounded_module_excluded",
+      "original_evaluator_controls": 9,
+      "charged_original_evaluator_steps": 1963
+    },
+    {
+      "phase": 7,
+      "fit_limit": 4096,
+      "variables": 6,
+      "columns": 211,
+      "binary_rank": 84,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 21504,
+      "validation": {
+        "checked_limit": 21632,
+        "odd_coefficients_per_coordinate": 10816,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 51,
+      "maximum_quadratic_variables": 3,
+      "original_module_missing_coordinates": [],
+      "original_module_status": "certified_by_ordinary_modular_Sturm_proof",
+      "original_evaluator_controls": 9,
+      "charged_original_evaluator_steps": 5184
+    },
+    {
+      "phase": 11,
+      "fit_limit": 4096,
+      "variables": 10,
+      "columns": 1002,
+      "binary_rank": 318,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 84480,
+      "validation": {
+        "checked_limit": 84608,
+        "odd_coefficients_per_coordinate": 42304,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 205,
+      "maximum_quadratic_variables": 4,
+      "original_module_missing_coordinates": [],
+      "original_module_status": "certified_by_ordinary_modular_Sturm_proof",
+      "original_evaluator_controls": 9,
+      "charged_original_evaluator_steps": 16858
+    },
+    {
+      "phase": 13,
+      "fit_limit": 4096,
+      "variables": 12,
+      "columns": 1821,
+      "binary_rank": 546,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 139776,
+      "validation": {
+        "checked_limit": 139904,
+        "odd_coefficients_per_coordinate": 69952,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 348,
+      "maximum_quadratic_variables": 4,
+      "original_module_missing_coordinates": [
+        0
+      ],
+      "original_module_status": "bounded_module_excluded",
+      "original_evaluator_controls": 9,
+      "charged_original_evaluator_steps": 23823
+    },
+    {
+      "phase": 17,
+      "fit_limit": 9692,
+      "variables": 16,
+      "columns": 4846,
+      "binary_rank": 1224,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 313344,
+      "validation": {
+        "checked_limit": 313472,
+        "odd_coefficients_per_coordinate": 156736,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 814,
+      "maximum_quadratic_variables": 4,
+      "original_module_missing_coordinates": [
+        0
+      ],
+      "original_module_status": "bounded_module_excluded",
+      "original_evaluator_controls": 9,
+      "charged_original_evaluator_steps": 38934
+    },
+    {
+      "phase": 19,
+      "fit_limit": 14632,
+      "variables": 18,
+      "columns": 7316,
+      "binary_rank": 1654,
+      "missing_coordinates": [],
+      "separating_covectors": [],
+      "Sturm_bound_inclusive": 437760,
+      "validation": {
+        "checked_limit": 437888,
+        "odd_coefficients_per_coordinate": 218944,
+        "failures": []
+      },
+      "status": "certified_by_ordinary_modular_Sturm_proof",
+      "program_instructions": 1085,
+      "maximum_quadratic_variables": 4,
+      "original_module_missing_coordinates": [],
+      "original_module_status": "certified_by_ordinary_modular_Sturm_proof",
+      "original_evaluator_controls": 9,
+      "charged_original_evaluator_steps": 42146
+    }
+  ],
+  "certified_phases": [
+    3,
+    5,
+    7,
+    11,
+    13,
+    17,
+    19
+  ],
+  "repaired_phases": [
+    5,
+    13,
+    17
+  ],
+  "original_module_excluded_phases": [
+    5,
+    13,
+    17
+  ],
+  "evaluator_controls": 63,
+  "charged_evaluator_steps": 128926,
+  "underfit_regression": {
+    "phase": 17,
+    "validation": {
+      "checked_limit": 1024,
+      "odd_coefficients_per_coordinate": 512,
+      "failures": [
+        {
+          "coordinate": 0,
+          "first_failed_index": 1
+        },
+        {
+          "coordinate": 1,
+          "first_failed_index": 3
+        },
+        {
+          "coordinate": 2,
+          "first_failed_index": 3
+        },
+        {
+          "coordinate": 3,
+          "first_failed_index": 1
+        },
+        {
+          "coordinate": 4,
+          "first_failed_index": 1
+        },
+        {
+          "coordinate": 5,
+          "first_failed_index": 3
+        },
+        {
+          "coordinate": 6,
+          "first_failed_index": 1
+        }
+      ]
+    }
+  },
+  "original_partial_refused": {
+    "phase": 13,
+    "status": "bounded_module_excluded"
+  },
+  "program_artifact": {
+    "path": "evidence/theta-parity-programs.json.gz",
+    "uncompressed_bytes": 120499,
+    "compressed_bytes": 12231,
+    "uncompressed_sha256": "ebf3f3cf5b519beac705d05076710a00b37f9348352ddd50dcf9dff67e501d28",
+    "compressed_sha256": "258654ae270de742b41c7d729739835e794ff2cb90817a2cf9b478d595d5e227"
+  },
+  "source_sha256": {
+    "tools/theta_parity_program.py": "d3da623ce50aaf048c0b3d05e61bec6e9b3e2cc425e8ae8963f6fde8dcf356a3",
+    "tools/check_theta_parity_program.py": "573c411edcba289c9479feb003269c5a67fa164a77ce8356669f2c1b0d4fe86f",
+    "tools/theta_coordinate_program.py": "656bd94de0bb3401c494c54af803b4165a9a27174aa068729d6d78933771bc0a",
+    "tools/tate_coordinate_compiler.py": "4abb1d071debcd045b110780c8472d215fe44d89103f0033474250e6cb4c37d1",
+    "tools/cyclotomic_character_decoder.py": "6dbe7906b53b99ef830a5cb7115f1be5a2dd94e3d3d4083c366e01add8e9f4df"
+  }
+}

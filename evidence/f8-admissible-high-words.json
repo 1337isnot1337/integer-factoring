@@ -1,0 +1,269 @@
+{
+  "completed": true,
+  "base_profile_sha256": "a2d23fb1e21f9c4d67bdaa3df6baf48736839afca0b2ba795571a9378c091d4e",
+  "admissible_single_words": [
+    {
+      "word": 46,
+      "height": 26,
+      "charge": 4
+    },
+    {
+      "word": 160,
+      "height": 26,
+      "charge": 2
+    },
+    {
+      "word": 272,
+      "height": 26,
+      "charge": 2
+    },
+    {
+      "word": 520,
+      "height": 26,
+      "charge": 2
+    },
+    {
+      "word": 1028,
+      "height": 26,
+      "charge": 2
+    },
+    {
+      "word": 2050,
+      "height": 26,
+      "charge": 2
+    },
+    {
+      "word": 56,
+      "height": 27,
+      "charge": 3
+    },
+    {
+      "word": 84,
+      "height": 27,
+      "charge": 3
+    },
+    {
+      "word": 98,
+      "height": 27,
+      "charge": 3
+    },
+    {
+      "word": 140,
+      "height": 27,
+      "charge": 3
+    },
+    {
+      "word": 146,
+      "height": 27,
+      "charge": 3
+    },
+    {
+      "word": 266,
+      "height": 27,
+      "charge": 3
+    },
+    {
+      "word": 518,
+      "height": 27,
+      "charge": 3
+    },
+    {
+      "word": 192,
+      "height": 28,
+      "charge": 2
+    },
+    {
+      "word": 288,
+      "height": 28,
+      "charge": 2
+    },
+    {
+      "word": 528,
+      "height": 28,
+      "charge": 2
+    },
+    {
+      "word": 1032,
+      "height": 28,
+      "charge": 2
+    },
+    {
+      "word": 2052,
+      "height": 28,
+      "charge": 2
+    },
+    {
+      "word": 88,
+      "height": 29,
+      "charge": 3
+    },
+    {
+      "word": 100,
+      "height": 29,
+      "charge": 3
+    },
+    {
+      "word": 148,
+      "height": 29,
+      "charge": 3
+    },
+    {
+      "word": 268,
+      "height": 29,
+      "charge": 3
+    },
+    {
+      "word": 320,
+      "height": 30,
+      "charge": 2
+    },
+    {
+      "word": 544,
+      "height": 30,
+      "charge": 2
+    },
+    {
+      "word": 1040,
+      "height": 30,
+      "charge": 2
+    },
+    {
+      "word": 2056,
+      "height": 30,
+      "charge": 2
+    },
+    {
+      "word": 104,
+      "height": 31,
+      "charge": 3
+    },
+    {
+      "word": 152,
+      "height": 31,
+      "charge": 3
+    },
+    {
+      "word": 384,
+      "height": 32,
+      "charge": 2
+    },
+    {
+      "word": 576,
+      "height": 32,
+      "charge": 2
+    },
+    {
+      "word": 1056,
+      "height": 32,
+      "charge": 2
+    },
+    {
+      "word": 2064,
+      "height": 32,
+      "charge": 2
+    },
+    {
+      "word": 112,
+      "height": 33,
+      "charge": 3
+    },
+    {
+      "word": 640,
+      "height": 34,
+      "charge": 2
+    },
+    {
+      "word": 1088,
+      "height": 34,
+      "charge": 2
+    },
+    {
+      "word": 2080,
+      "height": 34,
+      "charge": 2
+    },
+    {
+      "word": 768,
+      "height": 36,
+      "charge": 2
+    },
+    {
+      "word": 1152,
+      "height": 36,
+      "charge": 2
+    },
+    {
+      "word": 2112,
+      "height": 36,
+      "charge": 2
+    },
+    {
+      "word": 1280,
+      "height": 38,
+      "charge": 2
+    },
+    {
+      "word": 2176,
+      "height": 38,
+      "charge": 2
+    },
+    {
+      "word": 1536,
+      "height": 40,
+      "charge": 2
+    },
+    {
+      "word": 2304,
+      "height": 40,
+      "charge": 2
+    },
+    {
+      "word": 2560,
+      "height": 42,
+      "charge": 2
+    },
+    {
+      "word": 3072,
+      "height": 44,
+      "charge": 2
+    }
+  ],
+  "count": 45,
+  "min_height": 26,
+  "max_height": 44,
+  "q99_extension_words": [
+    160,
+    192,
+    224
+  ],
+  "scope": "Census of single-word vectors {w:1} that can be added to the q96 F8 hyperoval map while preserving LP=I, deletion closure, and the graded-letter axioms. All admissible single words have height at least 26; the q99 extension uses three of them. This does not screen multi-word additions or different low blocks. Every word of height at most 25 is in the support of some q96 letter, so there is no low single-word or pair-of-free-words extension. The q96 boundary words are exactly all ten height-25 triples, so there is no alternative height-25 boundary set.",
+  "low_height_words_total": 102,
+  "low_height_words_in_support": 102,
+  "free_low_words": [],
+  "height25_triples": [
+    52,
+    76,
+    82,
+    97,
+    138,
+    145,
+    262,
+    265,
+    517,
+    1027
+  ],
+  "boundary_words": [
+    52,
+    76,
+    82,
+    97,
+    138,
+    145,
+    262,
+    265,
+    517,
+    1027
+  ],
+  "boundary_is_all_height25_triples": true,
+  "other_height25_triples": []
+}
