@@ -529,6 +529,7 @@
       "envelope_prefix_175": "2664"
     }
   },
+  "endpoint_check_q3_q4": true,
   "conditional_q256_bound": {
     "q": 256,
     "known_counts_through_order6": {
@@ -547,7 +548,7 @@
     "scope": "Conditional diagnostic; the low-order count law is verified for q<=8."
   },
   "source_sha256": {
-    "check_color_class_cube_profile.py": "35692d7f16a8496555a3f3b4cc7faadd783d18af26425993c3856a0755bc62c6",
+    "check_color_class_cube_profile.py": "e4c1c280329297d89d6bf29b00576e918006fee6cd897431b0a7024c55aa1f14",
     "cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593",
     "cube_graded_minor_budget.py": "930d32ddec53b5692cef627f1d40986c8e5535beb6cd142a13b58af9d28bdc00"
   },

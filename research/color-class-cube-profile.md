@@ -106,6 +106,15 @@ in \(q\) color variables; the cumulative count through order six is
 that pattern at \(q=5\) (\(70\) rather than \(35\)), so this is an
 observed low-order law, not a general free-algebra description.
 
+The checker also verifies the endpoint at \((1,1,1)\): every
+antipodal-equal coloring has value \(1\), and every other coloring has
+value \(0\), for \(q=3,4\). Endpoint-preserving random perturbations of
+the non-endpoint entries at \(q=3\) drive the specialized profile to all
+orders zero. That is worse for the partition function (it approaches the
+maximum \(n\)), not better. The observed low-order profile is therefore a
+special favorable feature of the product tensor, not a generic lower
+bound. The conditional exclusion below concerns this product tensor only.
+
 ## 2. Graded comparison
 
 The shared-minor theorem of

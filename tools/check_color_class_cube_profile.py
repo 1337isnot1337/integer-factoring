@@ -194,6 +194,23 @@ def graded_comparison(profiles):
     return records
 
 
+
+def endpoint_check(q):
+    values = np.array([1 if len(GAUSSIAN[mask]) % 2 else 0
+                       for mask in range(256)], dtype=np.uint8)
+    pairs = [(v, v ^ 7) for v in range(4)]
+    for coloring in product(range(q), repeat=8):
+        value = 1
+        for color in range(1, q):
+            mask = 0
+            for vertex in range(8):
+                if coloring[vertex] == color:
+                    mask |= 1 << vertex
+            value &= int(values[mask])
+        endpoint = all(coloring[i] == coloring[j] for i, j in pairs)
+        assert value == int(endpoint)
+    return True
+
 def conditional_q256_bound():
     import math
 
@@ -269,6 +286,7 @@ def main():
     assert sum(q8.values()) == comb(10, 3)
 
     comparison = graded_comparison({3: q3, 4: q4_full})
+    assert endpoint_check(3) and endpoint_check(4)
     result = {
         "status": "passed",
         "q2_profile": sorted(q2.items()),
@@ -284,6 +302,7 @@ def main():
         "q4_full_profile": sorted(q4_full.items()),
         "q4_prefix_sum_175": sum(q4_orders[:175]),
         "graded_comparison": comparison,
+        "endpoint_check_q3_q4": True,
         "conditional_q256_bound": conditional_q256_bound(),
         "source_sha256": {
             name: sha256(Path(__file__).with_name(name).read_bytes()).hexdigest()
