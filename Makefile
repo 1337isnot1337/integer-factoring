@@ -74,11 +74,14 @@ verify-tate-coordinate:
 
 verify-frontier: verify-tate-coordinate
 
-.PHONY: verify-theta-programs
+.PHONY: verify-theta-programs verify-theta-parity
+verify-theta-parity:
+	python3 tools/check_theta_parity_program.py >/dev/null
+
 verify-theta-programs:
 	python3 tools/check_theta_coordinate_program.py
 
-verify-frontier: verify-theta-programs
+verify-frontier: verify-theta-programs verify-theta-parity
 
 .PHONY: verify-q7-parameter
 verify-q7-parameter:
@@ -3087,6 +3090,10 @@ verify-truncated-profile-lower-bound:
 .PHONY: verify-f8-admissible-high-words
 verify-f8-admissible-high-words:
 	python3 tools/check_f8_admissible_high_words.py --output /tmp/f8-admissible-high-words-check.json
+
+.PHONY: verify-bell-d8-explicit-family
+verify-bell-d8-explicit-family:
+	python3 tools/check_bell_d8_explicit_family.py --output /tmp/bell-d8-explicit-family-check.json
 
 .PHONY: verify-f8-minimal-core build-f8-minimal-core
 verify-f8-minimal-core:
