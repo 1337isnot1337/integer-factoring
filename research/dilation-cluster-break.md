@@ -232,12 +232,21 @@ the unit average is just the generator-order cluster count and gives no
 improvement. The interval control is not unit-invariant, but its identity
 step has one run; dilation breaks it. The arithmetic input is therefore a
 statement that the smooth set is far from both a union of multiplicative
-cosets and an interval. The
-all-coset density theorem controls cosets of small-index subgroups;
-the non-unit indicator has Fourier support on the small-index subgroups
-(and on the large prime factors of `h`, whose cosets have few residues). This suggests a route from the existing density
-character estimates to unit-difference equidistribution. It is not
-carried out here.
+cosets and an interval. The all-coset density theorem controls cosets of
+small-index subgroups; the non-unit indicator has Fourier support on the
+small-index subgroups (and on the large prime factors of `h`, whose
+cosets have few residues). This suggests a route from the existing
+density character estimates to unit-difference equidistribution.
+
+One caution is essential. The all-coset receipt's count (8) is a lower
+bound obtained from a weighted product measure. It gives a constant-factor
+lower bound in every small coset, not `1+o(1)` uniformity of the
+unweighted class set. The pair count `N_U` is a second-moment quantity of
+the unweighted indicator, so the constant-factor estimate alone does not
+control the Fourier terms in (2). The next arithmetic question is whether
+the prime-color weight variation can be removed to `1+o(1)` coset
+uniformity, or whether a separate unweighted second-moment estimate is
+needed.
 
 ## 5. Scope and next check
 
