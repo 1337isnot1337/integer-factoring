@@ -1728,3 +1728,5 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## Height-39 F8 hyperoval extension
 
 [Complete q99 height-39 profile](f8-hyperoval-height39-extension.md): adding the three single-word coordinates `160,192,224` to the q96 map gives a valid deletion-closed q99 map with maximum height 39. The complete profile resolves; its numerical natural pressure is `0.7099930431`, a `1.27e-5` gain over q96 but still above `1/sqrt(2)`. No exact certificate or score change.
+
+[A minimal deletion-closed F8 core does not lower the pressure](f8-hyperoval-minimal-core.md): the 45-coordinate deletion closure of the ten height-25 boundary triples has a complete cutoff-127 profile with numerical pressure `0.7156911630`. Deleting the 52 q96 core words unused by the boundary image is worse than q96/q99; the extra core words are load-bearing. No exact certificate or score change.

@@ -3030,6 +3030,12 @@ verify-f8-height39-extension:
 build-f8-height39-extension:
 	python3 tools/build_f8_hyperoval_height39_extension.py
 
+.PHONY: verify-f8-minimal-core build-f8-minimal-core
+verify-f8-minimal-core:
+	python3 tools/check_f8_hyperoval_minimal_core.py --output /tmp/f8-minimal-core-check.json
+build-f8-minimal-core:
+	python3 tools/build_f8_hyperoval_minimal_core.py
+
 .PHONY: verify-f8-retraction-refinement verify-f8-retraction-refinement-full verify-f8-retraction-census-full
 verify-f8-retraction-refinement:
 	python3 tools/check_f8_hyperoval_retraction_entries.py evidence/f8-hyperoval-retraction-678.json --output evidence/f8-hyperoval-retraction-678-entry-controls.json
