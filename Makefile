@@ -3532,6 +3532,13 @@ verify-q8-leading-prefix-floor:
 
 verify-arithmetic: verify-q8-leading-prefix-floor
 
+.PHONY: verify-colour-asymmetric-order12-floor
+verify-colour-asymmetric-order12-floor:
+	PYTHONPATH=tools python3 tools/check_colour_asymmetric_order12_floor.py --output /tmp/integer-factoring-colour-asymmetric-order12-floor.json
+	python3 tools/check_docs.py
+
+verify-arithmetic: verify-colour-asymmetric-order12-floor
+
 .PHONY: verify-pfaffian-quartic-truncation
 verify-pfaffian-quartic-truncation:
 	python3 tools/check_pfaffian_quartic_truncation.py
