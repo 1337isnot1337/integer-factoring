@@ -234,6 +234,125 @@
       2
     ]
   },
+  "large_gap_mixed_pair_rank": {
+    "annihilator_multiple": 2,
+    "class_number": 928,
+    "d_fourth_root": 44.96661031829501,
+    "discriminant": -4088468,
+    "extracted_factor": 1009,
+    "factorization": [
+      1009,
+      1013
+    ],
+    "gap_target": 389,
+    "gap_target_index": 58,
+    "gap_target_order": 16,
+    "integer": 1022117,
+    "norm_bound": 1167,
+    "orders": [
+      58,
+      116,
+      464,
+      464,
+      464,
+      464,
+      16
+    ],
+    "rank_profile": [
+      {
+        "rank": 2,
+        "rows": 3,
+        "window": 1
+      },
+      {
+        "rank": 7,
+        "rows": 11,
+        "window": 2
+      }
+    ],
+    "relation_matrix": [
+      [
+        1,
+        0,
+        0,
+        2,
+        -1,
+        0,
+        1
+      ],
+      [
+        -1,
+        2,
+        0,
+        1,
+        3,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        1,
+        1,
+        0,
+        0,
+        2
+      ],
+      [
+        3,
+        0,
+        2,
+        1,
+        1,
+        0,
+        0
+      ],
+      [
+        -3,
+        -1,
+        2,
+        0,
+        0,
+        2,
+        0
+      ],
+      [
+        1,
+        -3,
+        0,
+        0,
+        4,
+        0,
+        0
+      ],
+      [
+        3,
+        -1,
+        0,
+        2,
+        0,
+        2,
+        0
+      ]
+    ],
+    "scope": "Finite larger-gap mixed-pair control: target 389 has order 16 and index 58 above D^(1/4), but pair rows at window 2 give full rank and a 2|G| minor; extractor returns 1009",
+    "selected_minor_determinant": 1856,
+    "smooth_bound": 31,
+    "targets": [
+      3,
+      7,
+      11,
+      17,
+      19,
+      23,
+      389
+    ],
+    "two_part_basis_orders": [
+      1,
+      4
+    ],
+    "window": 2
+  },
   "mixed_order_determinant": {
     "determinant": 81000,
     "orders": [
