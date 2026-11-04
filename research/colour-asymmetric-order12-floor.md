@@ -95,7 +95,13 @@ fixed q8 pair kernel, not merely for the symmetric choice.  To reduce the
 order-twelve floor one must reduce the rank-four diagonal Gaussian block
 `B` or change the order-six one-particle sector.  Both require changing
 the pair kernel's leading spatial maps, not reweighting the quartic gates.
-That is the next assumption to test.
+Moreover, an arbitrary pair-kernel term of valuation at least twelve
+cannot lower (1): in total occupation four it appears only in products of
+valuation at least eighteen, so it cannot change the order-twelve
+occupation-four block.  The finite order-twelve deformation controls are
+in the [pair-kernel note](pair-kernel-order12-gauge.md).  Terms below
+valuation twelve or a different order-six leading pair map are the next
+assumptions to test.
 
 ## 3. Finite controls
 

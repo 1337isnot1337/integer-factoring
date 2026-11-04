@@ -5,9 +5,11 @@
 The [colour-asymmetric order-twelve floor](colour-asymmetric-order12-floor.md)
 closes reweighting of the distinct-colour quartic gates.  The next local
 escape is to change the pair kernel itself at order twelve while keeping
-its order-six leading block.  This note records a bounded q8 control for a
-specific family of such deformations.  It is finite evidence, not a
-uniform gauge theorem.
+its order-six leading block.  The valuation grading below proves that
+**arbitrary** order-twelve pair-kernel deformations cannot lower the
+protected order-twelve floor.  The note also records finite q8 controls
+for seven rank-one supports; these are not a uniform gauge theorem for
+the exact low prefix.
 
 Take the canonical spatial-mode pair matrix `P` and its exact leading
 order-six block `P_6`.  The nonzero row space of `P_6` is
@@ -41,6 +43,35 @@ entire prefix (3) unchanged.  The two patterns with exactly one factor in
 `R` keep order-twelve at `35` but move fourteen channels from order
 sixteen to orders fifteen and seventeen.  The support with neither
 factor in `R` raises order-twelve to `42`.
+
+## Valuation-grading stability
+
+Keep the hypotheses of the colour-asymmetric theorem: the spatial-mode
+pair kernel, the fixed four-parent leg grouping, distinct-colour XOR-zero
+quartic gates of valuation at least twelve, and the endpoint and cold
+ranks.  Add an arbitrary pair-kernel term of valuation at least twelve at
+each cut.
+
+The order-twelve `P=Q` block in total occupation four is a sum of
+products of two pair entries.  The unperturbed pair kernel has leading
+valuation six, so a product using one new order-twelve entry has
+valuation at least `12+6=18`; a product using two has valuation at least
+twenty-four.  It therefore does not change the order-twelve
+occupation-four block.  A distinct-colour quartic gate cannot act on the
+`P=Q` block, which uses only two colours.  Hence the rank-four Gaussian
+block `B` is unchanged, and the same argument leaves the `q-1`
+same-colour occupation-four channels unchanged.
+
+The new pair terms can act inside the lower occupation-two sector at
+order twelve.  Those channels are disjoint from the occupation-four
+block and can only increase the total low prefix.  They cannot cancel
+`B`.  Consequently the floor `5(q-1)` of the colour-asymmetric theorem
+persists under arbitrary pair-kernel terms of valuation at least twelve.
+At q8 the protected-prefix floor `5/7` also persists: the extra channels
+have order at most twelve, and the existing profile certificate may leave
+them in its conservative tail.  This stability does not cover
+pair-kernel terms below valuation twelve, which can change the order-six
+leading maps or the `P=Q` block directly.
 
 ## Pair-block gauge observation
 
@@ -90,13 +121,16 @@ fourteen axis-pattern cases.
 
 ## What is and is not proved
 
-- This is a finite q8 control for one order-twelve endpoint-zero
-  polynomial `q` and seven support patterns.  It is not an all-kernel or
-  all-deformation theorem.
-- The pair-block gauge calculation (5) is exact under its hypotheses, but
-  the quartic block and the full Smith prefix require the finite check.
-- A non-gauge pair-kernel deformation, a different leading pair kernel,
-  lower-valuation deformations, and other alphabets remain open.  No
+- The valuation-grading argument excludes arbitrary pair-kernel
+  deformations of valuation at least twelve from lowering the protected
+  order-twelve floor.  It does not claim the exact finite low prefix is
+  gauge-invariant.
+- The seven rank-one support patterns are a finite q8 illustration for
+  one endpoint-zero order-twelve polynomial `q`.  The pair-block gauge
+  calculation (5) is exact under its hypotheses, but the quartic block
+  and the exact prefix variation require the finite check.
+- Pair-kernel terms below valuation twelve, a different leading pair
+  kernel, a different leg grouping, and other alphabets remain open.  No
   pressure or factoring exponent is changed; the complete score remains
   `1/2`.
 
