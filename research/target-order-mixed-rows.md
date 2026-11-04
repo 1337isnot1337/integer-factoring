@@ -451,6 +451,47 @@ mechanism. A positive rank result needs a uniform lower bound on the rank of
 the pooled smooth rows below the order window, not a single full-rank
 instance at the window.
 
+**Mixed-pair complete basis (positive finite control).** The negative control
+above used only pure rows for powers of one target. Mixing targets pairwise
+does much better on the same group. Take the same `Y=20` and
+`H=72`, and all unordered pairs `p<=q` from `{5,7,11,13,17,19,29}`. For each
+pair compute the class of `pq`; if its reduced leading coefficient is at most
+`H` and is `20`-smooth, the smooth word `v` gives the relation
+`e_p+e_q-v`. All `28` pairs were checked. Fifteen have an admissible smooth
+word; five of those rows are zero (trivial exact identities such as
+`5*5=5^2`), three duplicate an earlier row, and the remaining seven distinct
+rows are
+
+\[
+\begin{pmatrix}
+ 1&-2& 0& 0& 0& 1& 0\\
+ 1& 1& 2& 0& 0& 0& 0\\
+-1& 1& 0& 2& 0& 0& 0\\
+ 0& 0& 1& 0& 1& 0& 1\\
+ 1&-1& 0& 1& 0& 0& 1\\
+ 1& 0&-1& 0& 1& 1& 0\\
+-1& 0&-1& 0& 0& 2& 0
+\end{pmatrix},
+\qquad \det=-60=-|G|.
+\]
+
+The seven target classes generate `G` (checked), so `[Z^7:\ker\phi]=60`.
+The rows lie in the kernel, and their lattice has index `|\det|=60`; hence
+the row lattice **equals** the full relation lattice in this example. The
+two-part extractor with annihilator `60` returns `23`. This uses window `1`,
+no order rows, and no smooth row for `29` itself: the gap target
+`ord(29)=5`, index `12` is covered by pair rows. It is the smallest-window
+positive finite certificate in this note and directly crosses the
+order-index gap for this group.
+
+The certificate is finite, not uniform. It does not show that the pair search
+or the density estimate produces a complete relation basis for all targets.
+It isolates the uniform obligation: prove that admissible mixed-pair rows at
+bounded exponent generate `ker\phi`, or at least have index `|G|^{1+o(1)}`,
+under the same smoothness hypotheses. The determinant equality also shows
+that the hard part is not a sign or a multiple: it is the index of the
+generated relation lattice.
+
 **Lemma 5.6 (maximal-minor annihilator).** Let `R` be an `r x n` integer
 relation matrix of rank `n`, `r>=n`, with rows in `\ker\phi`. Every nonzero
 `n x n` minor `\Delta` of `R` is a multiple of `|G|`, hence is an
@@ -480,15 +521,20 @@ The remaining obligations are now separated:
    union of subgroups, and the union bound over many targets is not
    available. A positive result needs a new equidistribution/avoidance lemma
    for prime classes or a structured block construction whose determinant
-   factor is provably nonzero.
+   factor is provably nonzero. The mixed-pair basis suggests weakening the
+   target: do not select one common `z`; allow pair rows `p*q`. Then the
+   obligation is a lower bound on the index of the pair-generated relation
+   lattice, not a per-target order/multiplier selection.
 2. **Mixed-density positivity.** Prove the scaled `M`-matrix condition of
    Lemma 2.2, or replace it by a direct determinant lower bound. By Lemma
    5.6 the route only needs a full-rank pooled matrix; positivity is a
    sufficient, not necessary, interface. The rank gap is the real
    obligation. The pooled-rank control above shows that a full-rank instance
    at the gap window is not by itself a window improvement; the rank must be
-   full below that window, uniformly. No such rank lower bound is supplied
-   here.
+   full below that window, uniformly. The mixed-pair basis attains the
+   strongest possible finite index (`|G|`) at window `1`, so the open part is
+   a uniform relation-basis generation theorem, not a determinant-sign
+   estimate. No such theorem is supplied here.
 3. **Order-only generation.** Prove that the targets of order at most `W`
    generate the class group, or handle the quotient collectively. For a
    cyclic group Corollary 5.5 reduces this to the prime-power divisor
@@ -508,6 +554,9 @@ the hard case is exactly the medium-order, large-index block. For the present
 windows the product `WQ` is `D^{1/4+o(1)}` while `|G|=D^{1/2+o(1)}`, so the
 two windows do not meet; covering the hyperbola's middle requires a
 genuinely collective rank argument or a different arithmetic representation.
+The mixed-pair certificate is finite evidence that the collective route can
+attain a complete relation basis at window `1` in a gap example; it is not a
+uniform bound and does not change the saving exponent.
 
 ## Reproduction
 

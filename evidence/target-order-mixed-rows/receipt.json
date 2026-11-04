@@ -1,5 +1,104 @@
 {
   "complete_saving_exponent": 0.5,
+  "cyclic_mixed_pair_lattice": {
+    "class_number": 60,
+    "determinant": -60,
+    "discriminant": -15916,
+    "extracted_factor": 23,
+    "factorization": [
+      23,
+      173
+    ],
+    "gap_target": 29,
+    "gap_target_index": 12,
+    "gap_target_order": 5,
+    "integer": 3979,
+    "norm_bound": 72,
+    "pair_products_checked": 28,
+    "relation_lattice_equals_kernel": true,
+    "relation_matrix": [
+      [
+        1,
+        -2,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        1,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        0,
+        2,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        1,
+        0,
+        1
+      ],
+      [
+        1,
+        -1,
+        0,
+        1,
+        0,
+        0,
+        1
+      ],
+      [
+        1,
+        0,
+        -1,
+        0,
+        1,
+        1,
+        0
+      ],
+      [
+        -1,
+        0,
+        -1,
+        0,
+        0,
+        2,
+        0
+      ]
+    ],
+    "row_lattice_index": 60,
+    "scope": "Finite mixed-pair certificate: exponent-one pair rows form a complete basis of the relation lattice, so the gap target is covered without its order row; no uniform pair-basis theorem",
+    "smooth_bound": 20,
+    "targets": [
+      5,
+      7,
+      11,
+      13,
+      17,
+      19,
+      29
+    ],
+    "two_part_basis_orders": [
+      2
+    ],
+    "window": 1,
+    "zero_rows": 5
+  },
   "cyclic_order_only_group": {
     "class_group_cyclic": true,
     "class_group_exponent": 60,
@@ -151,7 +250,7 @@
       0
     ]
   },
-  "scope": "Exact small class-group, order-only, pooled-rank, and synthetic determinant controls, including one cyclic gap example; no uniform multiplier selection, mixed-density positivity, generating-subset bound, or complete factoring improvement",
+  "scope": "Exact small class-group, order-only, pooled-rank, mixed-pair lattice, and synthetic determinant controls, including one cyclic gap example; no uniform multiplier selection, mixed-density positivity, generating-subset bound, or complete factoring improvement",
   "small_group": {
     "all_forms_annihilated": true,
     "class_group_cyclic": false,

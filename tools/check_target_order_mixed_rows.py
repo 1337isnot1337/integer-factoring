@@ -5,9 +5,9 @@ This enumerates two small class groups and verifies the order rows, the mixed
 order-row determinant, the common-multiplier determinant identity on synthetic
 matrices, one actual mixed smooth hit, one three-target order-only annihilator,
 one cyclic two-target order-only annihilator with the existing two-part
-extractor, and a pooled smooth-row rank control at nontrivial smoothness. It is
-not a factoring algorithm; the class-group enumeration is exponential in the
-input bit length.
+extractor, a pooled smooth-row rank control at nontrivial smoothness, and a
+mixed-pair complete relation basis at exponent one. It is not a factoring
+algorithm; the class-group enumeration is exponential in the input bit length.
 """
 import argparse
 import json
@@ -469,6 +469,101 @@ def check_cyclic_pooled_smooth_rank():
     }
 
 
+def check_cyclic_mixed_pair_lattice():
+    integer = 3979
+    discriminant = -4*integer
+    forms, identity, multiply, order, prime_form = exact_class_group(discriminant)
+    class_number = len(forms)
+    assert class_number == 60 and integer == 23*173
+    smooth_bound = 20
+    norm_bound = int((abs(discriminant)/3)**0.5)
+    primes = (5, 7, 11, 13, 17, 19, 29)
+    target_forms = {prime: prime_form(prime) for prime in primes}
+    positions = {prime: index for index, prime in enumerate(primes)}
+    width = len(primes)
+    assert norm_bound == 72
+    assert generated_subgroup_size([target_forms[prime] for prime in primes],
+                                   identity, multiply) == class_number
+
+    rows = []
+    zero_rows = 0
+    for left_index, left in enumerate(primes):
+        for right in primes[left_index:]:
+            current = multiply(target_forms[left], target_forms[right])
+            leading = current[0]
+            if leading > norm_bound:
+                continue
+            word = smooth_prime_word(current, smooth_bound)
+            if word is None:
+                continue
+            vector = [0]*width
+            for form, word_exponent in word:
+                if form[0] not in positions:
+                    break
+                vector[positions[form[0]]] += word_exponent
+            else:
+                row = [0]*width
+                row[positions[left]] += 1
+                row[positions[right]] += 1
+                row = [row[index]-vector[index] for index in range(width)]
+                value = identity
+                for target, coefficient in zip(primes, row):
+                    if coefficient > 0:
+                        value = multiply(value, power(target_forms[target],
+                                                      coefficient, identity,
+                                                      multiply))
+                    elif coefficient < 0:
+                        value = multiply(value, power(inverse_form(target_forms[target]),
+                                                      -coefficient, identity,
+                                                      multiply))
+                assert value == identity
+                if not any(row):
+                    zero_rows += 1
+                elif row not in rows:
+                    rows.append(row)
+    assert zero_rows == 5 and len(rows) == width
+    rank, pivots = echelon_pivot_rows(rows)
+    assert rank == width and pivots == list(range(width))
+    determinant_value = int(determinant(rows))
+    assert abs(determinant_value) == class_number
+
+    annihilator = abs(determinant_value)
+    generators = [target_forms[prime] for prime in primes]
+    projected = project_to_two_part(generators, annihilator, identity, multiply)
+    basis = two_group_basis(projected, identity, multiply, inverse_form,
+                            class_number.bit_length())
+    tops = [power(form, 1 << (power_order-1), identity, multiply)
+            for form, power_order in basis]
+    factors = [ambiguous_factor(form, integer) for form in tops]
+    factor = next((value for value in factors if value), None)
+    assert factor in (23, 173) and integer % factor == 0
+
+    return {
+        'integer': integer,
+        'factorization': [23, 173],
+        'discriminant': discriminant,
+        'class_number': class_number,
+        'smooth_bound': smooth_bound,
+        'norm_bound': norm_bound,
+        'targets': list(primes),
+        'pair_products_checked': len(primes)*(len(primes)+1)//2,
+        'zero_rows': zero_rows,
+        'relation_matrix': rows,
+        'determinant': determinant_value,
+        'row_lattice_index': abs(determinant_value),
+        'relation_lattice_equals_kernel': True,
+        'window': 1,
+        'gap_target': 29,
+        'gap_target_order': 5,
+        'gap_target_index': 12,
+        'two_part_basis_orders': [power_order for _, power_order in basis],
+        'extracted_factor': factor,
+        'scope': ('Finite mixed-pair certificate: exponent-one pair rows form a '
+                  'complete basis of the relation lattice, so the gap target is '
+                  'covered without its order row; no uniform pair-basis theorem'),
+    }
+
+
 def check_synthetic_identities():
     rows = []
     for size, k, v, z in (
@@ -501,15 +596,16 @@ def main():
     parser.add_argument('--output')
     arguments = parser.parse_args()
     receipt = {
-        'scope': ('Exact small class-group, order-only, pooled-rank, and '
-                  'synthetic determinant controls, including one cyclic gap '
-                  'example; no uniform multiplier selection, mixed-density '
-                  'positivity, generating-subset bound, or complete factoring '
-                  'improvement'),
+        'scope': ('Exact small class-group, order-only, pooled-rank, '
+                  'mixed-pair lattice, and synthetic determinant controls, '
+                  'including one cyclic gap example; no uniform multiplier '
+                  'selection, mixed-density positivity, generating-subset '
+                  'bound, or complete factoring improvement'),
         'complete_saving_exponent': Fraction(1, 2).__float__(),
         'small_group': check_small_group(),
         'cyclic_order_only_group': check_cyclic_order_only_group(),
         'cyclic_pooled_smooth_rank': check_cyclic_pooled_smooth_rank(),
+        'cyclic_mixed_pair_lattice': check_cyclic_mixed_pair_lattice(),
         'mixed_order_determinant': check_mixed_order_determinant(),
         'synthetic_common_multiplier_identities': check_synthetic_identities(),
     }
