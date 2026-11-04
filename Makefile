@@ -3088,6 +3088,10 @@ verify-truncated-profile-lower-bound:
 verify-f8-admissible-high-words:
 	python3 tools/check_f8_admissible_high_words.py --output /tmp/f8-admissible-high-words-check.json
 
+.PHONY: verify-bell-d8-explicit-family
+verify-bell-d8-explicit-family:
+	python3 tools/check_bell_d8_explicit_family.py --output /tmp/bell-d8-explicit-family-check.json
+
 .PHONY: verify-f8-minimal-core build-f8-minimal-core
 verify-f8-minimal-core:
 	python3 tools/check_f8_hyperoval_minimal_core.py --output /tmp/f8-minimal-core-check.json
