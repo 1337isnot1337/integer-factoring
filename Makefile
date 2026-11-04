@@ -3563,3 +3563,9 @@ verify-mixed-pair-gap-cycle:
 	python3 tools/check_mixed_pair_gap_cycle.py --output /tmp/integer-factoring-mixed-pair-gap-cycle.json
 
 verify-arithmetic: verify-mixed-pair-gap-cycle
+
+.PHONY: verify-mixed-pair-rank-sweep
+verify-mixed-pair-rank-sweep:
+	python3 tools/check_mixed_pair_rank_sweep.py --max-target 2500 --max-window 3 --output /tmp/integer-factoring-mixed-pair-rank-sweep.json
+
+verify-arithmetic: verify-mixed-pair-rank-sweep
