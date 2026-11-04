@@ -49,6 +49,14 @@ transformations give `56` row-codec and `56` column-codec pairs out of `256`,
 while the exposed interval-8 prefix proxy is `3656/65536`. The weighted codec
 and its transfer remain open.
 
+The same check records the full four-tuple `(row0,column0,row1,column1)`.
+At interval 4 the exact transformed four-tuple has `104` values, equal to the
+support; the interval-8 prefix four-tuple has `22328`, also equal to the
+support. This is forced for an injective full basis: the four codes determine
+the four tensor indices. A full-rank codec therefore cannot beat the raw
+support factor; only a strict rank truncation or a non-injective scalar code
+could. The prefix-truncated image at `k<n` is the next object.
+
 ## Research question
 
 Let `B_0` and `B_1` be the two cut codec bases, with dimensions `P_0` and

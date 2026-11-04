@@ -65,6 +65,26 @@ reduces the concern that `3656` is an artifact of one gauge, but it is
 still a finite observation about the exposed prefix image, not a proof
 about the weighted Smith codec.
 
+The row and column marginals are not the joint four-tuple.  For the full
+basis, the checker also counts
+
+```text
+(row code cut 0, column code cut 0, row code cut 1, column code cut 1).
+```
+
+At interval 4 the exact transformed four-tuple has `104` distinct values,
+equal to the support, and the nested-minor four-tuple also has `104`.  At
+interval 8 the nested-minor four-tuple has `22328`, again equal to the
+support.  This is forced for any injective row/column basis: the four
+codes determine the two row labels and two column labels, hence the
+four-index tensor entry.  Therefore a full-rank Smith basis cannot
+compress the two-cut joint image beyond the raw support factor.
+
+A codec compression must come from a strict rank truncation or a
+non-injective scalar code, not from the invertible Smith transformations.
+The next bounded object is the prefix-truncated image at `k < n`, which
+the existing nested-minor data can already expose.
+
 ## Research question
 
 Let `B_0` and `B_1` be the weighted two-cut codec bases.  Does the exact

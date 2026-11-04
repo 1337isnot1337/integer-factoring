@@ -237,6 +237,7 @@ def prefix_image(data, q, params=None):
         maps[cut] = (row_index, col_index)
     row_pairs = set()
     col_pairs = set()
+    joint_pairs = set()
     support = 0
     values = data['values']
     for x in range(q):
@@ -252,7 +253,8 @@ def prefix_image(data, q, params=None):
                     col1 = maps[1][1][y * q + v]
                     row_pairs.add((row0, row1))
                     col_pairs.add((col0, col1))
-    return support, len(row_pairs), len(col_pairs)
+                    joint_pairs.add((row0, col0, row1, col1))
+    return support, len(row_pairs), len(col_pairs), len(joint_pairs)
 
 
 def exact_image(data, q, cut0, cut1):
@@ -274,6 +276,7 @@ def exact_image(data, q, cut0, cut1):
     values = data['values']
     row_pairs = set()
     col_pairs = set()
+    joint_pairs = set()
     raw_pairs = set()
     for x in range(q):
         for y in range(q):
@@ -286,6 +289,11 @@ def exact_image(data, q, cut0, cut1):
                     row_pairs.add((tuple(map(tuple, U0[i0])), tuple(map(tuple, U1[i1]))))
                     col_pairs.add((tuple(map(tuple, (V0[k][j0] for k in range(n)))),
                                    tuple(map(tuple, (V1[k][j1] for k in range(n))))))
+                    joint_pairs.add((
+                        tuple(map(tuple, U0[i0])),
+                        tuple(map(tuple, (V0[k][j0] for k in range(n)))),
+                        tuple(map(tuple, U1[i1])),
+                        tuple(map(tuple, (V1[k][j1] for k in range(n))))))
                     raw_pairs.add((tuple(cut0[i0][j0]), tuple(cut1[i1][j1])))
     return {
         'verified': verified,
@@ -298,6 +306,7 @@ def exact_image(data, q, cut0, cut1):
             deg(U1[i][j]) if U1[i][j] else -1 for i in range(n) for j in range(n)),
         'row_codec_pairs': len(row_pairs),
         'column_codec_pairs': len(col_pairs),
+        'joint_codec_pairs': len(joint_pairs),
         'raw_value_pairs': len(raw_pairs),
     }
 
@@ -366,13 +375,13 @@ def main():
     data4, q4, cut04, cut14 = cut_matrices(4)
     exact = exact_image(data4, q4, cut04, cut14)
     partition = partition_identity(data4, q4, cut04, cut14)
-    support4, prefix_rows4, prefix_cols4 = prefix_image(data4, q4)
+    support4, prefix_rows4, prefix_cols4, prefix_joint4 = prefix_image(data4, q4)
 
     data8 = tensor(8)
-    support8, prefix_rows8, prefix_cols8 = prefix_image(data8, data8['q_x'])
+    support8, prefix_rows8, prefix_cols8, prefix_joint8 = prefix_image(data8, data8['q_x'])
     gauge_counts = []
     for name, params in gauge_patterns(data8['q_x']):
-        _, rows, cols = prefix_image(data8, data8['q_x'], params)
+        _, rows, cols, _ = prefix_image(data8, data8['q_x'], params)
         gauge_counts.append({'gauge': name, 'row_pairs': rows, 'column_pairs': cols})
     gauge_stable = all(
         entry['row_pairs'] == prefix_rows8 and entry['column_pairs'] == prefix_cols8
@@ -396,6 +405,7 @@ def main():
             'codec': exact,
             'prefix_row_pairs': prefix_rows4,
             'prefix_col_pairs': prefix_cols4,
+            'prefix_joint_pairs': prefix_joint4,
             'codec_fraction': exact['row_codec_pairs'] / (n4 * n4),
             'prefix_fraction': prefix_rows4 / (n4 * n4),
             'partition_identity': partition,
@@ -404,6 +414,7 @@ def main():
             'support': support8,
             'prefix_row_pairs': prefix_rows8,
             'prefix_col_pairs': prefix_cols8,
+            'prefix_joint_pairs': prefix_joint8,
             'prefix_fraction': prefix_rows8 / (n8 * n8),
             'distinct_tensor_values': distinct8,
             'gauge_counts': gauge_counts,
@@ -429,6 +440,7 @@ def main():
         'interval4_partition_identical': partition['identical'],
         'interval8_support': support8,
         'interval8_prefix_row_pairs': prefix_rows8,
+        'interval8_prefix_joint_pairs': prefix_joint8,
         'interval8_prefix_fraction': result['interval8']['prefix_fraction'],
         'interval8_gauge_stable': gauge_stable,
     }, sort_keys=True))
