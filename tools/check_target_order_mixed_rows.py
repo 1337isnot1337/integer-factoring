@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """Exact finite control for the target-order and common-multiplier rows.
 
-This enumerates one small class group and verifies the order rows, the mixed
+This enumerates two small class groups and verifies the order rows, the mixed
 order-row determinant, the common-multiplier determinant identity on synthetic
-matrices, one actual mixed smooth hit, and a three-target order-only annihilator
-with the existing two-part extractor. It is not a factoring algorithm; the
-class-group enumeration is exponential in the input bit length.
+matrices, one actual mixed smooth hit, one three-target order-only annihilator,
+and one cyclic two-target order-only annihilator with the existing two-part
+extractor. It is not a factoring algorithm; the class-group enumeration is
+exponential in the input bit length.
 """
 import argparse
 import json
@@ -276,6 +277,69 @@ def check_small_group():
     }
 
 
+def check_cyclic_order_only_group():
+    integer = 3979
+    discriminant = -4*integer
+    forms, identity, multiply, order, prime_form = exact_class_group(discriminant)
+    class_number = len(forms)
+    assert class_number == 60 and integer == 23*173
+    primes = (7, 29, 31, 41)
+    target_forms = {prime: prime_form(prime) for prime in primes}
+    orders = {prime: order(target_forms[prime], class_number)
+              for prime in primes}
+    indices = {prime: class_number//orders[prime] for prime in primes}
+    assert orders == {7: 12, 29: 5, 31: 10, 41: 30}
+    assert indices == {7: 5, 29: 12, 31: 6, 41: 2}
+    exponent = max(order(form, class_number) for form in forms)
+    assert exponent == 60 == class_number
+    fourth_root = abs(discriminant)**0.25
+    assert orders[29] > 2 and indices[29] > fourth_root
+    assert orders[7] > fourth_root and indices[7] <= fourth_root
+
+    generators = [target_forms[29], target_forms[7]]
+    matrix = [[5, 0], [0, 12]]
+    annihilator = int(determinant(matrix))
+    assert annihilator == 60 == class_number
+    assert generated_subgroup_size(generators, identity, multiply) == class_number
+    assert all(power(form, annihilator, identity, multiply) == identity
+               for form in forms)
+    projected = project_to_two_part(generators, annihilator, identity, multiply)
+    basis = two_group_basis(projected, identity, multiply, inverse_form,
+                            class_number.bit_length())
+    tops = [power(form, 1 << (power_order-1), identity, multiply)
+            for form, power_order in basis]
+    factors = [ambiguous_factor(form, integer) for form in tops]
+    factor = next((value for value in factors if value), None)
+    assert factor in (23, 173) and integer % factor == 0
+
+    return {
+        'integer': integer,
+        'factorization': [23, 173],
+        'discriminant': discriminant,
+        'class_number': class_number,
+        'class_group_exponent': exponent,
+        'class_group_cyclic': True,
+        'd_fourth_root': fourth_root,
+        'gap_window': 2,
+        'targets': [
+            {'target': prime, 'order': orders[prime], 'index': indices[prime],
+             'order_covered_at_W2': orders[prime] <= 2,
+             'density_covered_at_kappa_quarter': indices[prime] <= fourth_root}
+            for prime in primes
+        ],
+        'order_only_certificate': {
+            'targets': [29, 7],
+            'orders': [5, 12],
+            'relation_matrix': matrix,
+            'determinant': annihilator,
+            'generated_subgroup_size': class_number,
+            'window': 12,
+            'two_part_basis_orders': [power_order for _, power_order in basis],
+            'extracted_factor': factor,
+        },
+    }
+
+
 def check_synthetic_identities():
     rows = []
     for size, k, v, z in (
@@ -309,11 +373,12 @@ def main():
     arguments = parser.parse_args()
     receipt = {
         'scope': ('Exact small class-group, order-only, and synthetic '
-                  'determinant controls; no uniform multiplier selection, '
-                  'mixed-density positivity, generating-subset bound, or '
-                  'complete factoring improvement'),
+                  'determinant controls, including one cyclic gap example; '
+                  'no uniform multiplier selection, mixed-density positivity, '
+                  'generating-subset bound, or complete factoring improvement'),
         'complete_saving_exponent': Fraction(1, 2).__float__(),
         'small_group': check_small_group(),
+        'cyclic_order_only_group': check_cyclic_order_only_group(),
         'mixed_order_determinant': check_mixed_order_determinant(),
         'synthetic_common_multiplier_identities': check_synthetic_identities(),
     }

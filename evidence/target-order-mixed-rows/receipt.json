@@ -1,5 +1,75 @@
 {
   "complete_saving_exponent": 0.5,
+  "cyclic_order_only_group": {
+    "class_group_cyclic": true,
+    "class_group_exponent": 60,
+    "class_number": 60,
+    "d_fourth_root": 11.232035893073048,
+    "discriminant": -15916,
+    "factorization": [
+      23,
+      173
+    ],
+    "gap_window": 2,
+    "integer": 3979,
+    "order_only_certificate": {
+      "determinant": 60,
+      "extracted_factor": 23,
+      "generated_subgroup_size": 60,
+      "orders": [
+        5,
+        12
+      ],
+      "relation_matrix": [
+        [
+          5,
+          0
+        ],
+        [
+          0,
+          12
+        ]
+      ],
+      "targets": [
+        29,
+        7
+      ],
+      "two_part_basis_orders": [
+        2
+      ],
+      "window": 12
+    },
+    "targets": [
+      {
+        "density_covered_at_kappa_quarter": true,
+        "index": 5,
+        "order": 12,
+        "order_covered_at_W2": false,
+        "target": 7
+      },
+      {
+        "density_covered_at_kappa_quarter": false,
+        "index": 12,
+        "order": 5,
+        "order_covered_at_W2": false,
+        "target": 29
+      },
+      {
+        "density_covered_at_kappa_quarter": true,
+        "index": 6,
+        "order": 10,
+        "order_covered_at_W2": false,
+        "target": 31
+      },
+      {
+        "density_covered_at_kappa_quarter": true,
+        "index": 2,
+        "order": 30,
+        "order_covered_at_W2": false,
+        "target": 41
+      }
+    ]
+  },
   "mixed_order_determinant": {
     "determinant": 81000,
     "orders": [
@@ -16,7 +86,7 @@
       0
     ]
   },
-  "scope": "Exact small class-group, order-only, and synthetic determinant controls; no uniform multiplier selection, mixed-density positivity, generating-subset bound, or complete factoring improvement",
+  "scope": "Exact small class-group, order-only, and synthetic determinant controls, including one cyclic gap example; no uniform multiplier selection, mixed-density positivity, generating-subset bound, or complete factoring improvement",
   "small_group": {
     "all_forms_annihilated": true,
     "class_group_cyclic": false,

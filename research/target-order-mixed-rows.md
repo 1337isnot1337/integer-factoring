@@ -4,8 +4,9 @@
 determinant, the mixed-order-row determinant, the common-multiplier
 determinant identity, the order-index product law, and an order-only
 annihilator criterion; a method-scoped medium-order barrier for the unmixed
-order/density hybrid; and two exact finite certificates, one mixed and one
-order-only. No uniform multiplier selection, no mixed-density positivity
+order/density hybrid; and three exact finite certificates, one mixed and two
+order-only (one of them cyclic). No uniform multiplier selection, no
+mixed-density positivity
 theorem, and no new complete factoring bound is proved. The complete saving
 exponent remains **1/2**.
 
@@ -406,6 +407,22 @@ generating subset is exactly the open hypothesis. The mixed hit at exponent
 `2` remains a distinct row and is not needed for this order-only
 certificate.
 
+**Cyclic gap control.** The second checked group is
+`N=3979=23\cdot 173`, `D=-4N`, with cyclic class group of order and exponent
+`60`. Here `Q=D^{1/4}=11.232...`, `W=2`, and `h/Q=5.343...`; the divisors
+of `h` in the gap interval `(2,5.343...)` are `3,4,5`. The target `29` has
+order `5` and index `12>Q`, so it is a genuine gap target. The targets `7`
+(order `12`, index `5`), `31` (order `10`, index `6`), and `41` (order
+`30`, index `2`) are density-covered by index. The order-only subset
+`{29,7}` has orders `5,12`, lcm `60`, determinant `60=|G|`, and generates
+the group; the extractor returns factor `23` at window `12`. The abstract
+cyclic criterion already holds at `W=5` because `60` divides
+`lcm(1,...,5)`, but no target of order `3` or `4` was available in this
+small prime window, so the target-only generating window is `12`. This is a
+concrete instance of the base-word caveat in Corollary 5.5. It does not give
+a uniform improvement: the partner `7` has order `12>Q` even though its
+index is density-covered.
+
 **Lemma 5.6 (maximal-minor annihilator).** Let `R` be an `r x n` integer
 relation matrix of rank `n`, `r>=n`, with rows in `\ker\phi`. Every nonzero
 `n x n` minor `\Delta` of `R` is a multiple of `|G|`, hence is an
@@ -469,10 +486,10 @@ python3 tools/check_target_order_mixed_rows.py \
 make verify-target-order-mixed-rows
 ```
 
-The checker enumerates the reduced forms of the small discriminant, computes
-orders and indices by exact cyclic enumeration, verifies the mixed identity
-and the two-part extraction, verifies that both selected generating sets
-generate the order-`90` group, checks the three-target order-only annihilator
-`90` and its extraction, and checks the determinant identity on synthetic
-nonnegative matrices. It is a finite control; the enumeration cost is not a
-factoring algorithm.
+The checker enumerates the reduced forms of both small discriminants,
+computes orders and indices by exact cyclic enumeration, verifies the mixed
+identity and the two-part extraction, verifies that the selected generating
+sets generate the order-`90` and cyclic order-`60` groups, checks the
+three-target and two-target order-only annihilators and their extraction,
+and checks the determinant identity on synthetic nonnegative matrices. It is
+a finite control; the enumeration cost is not a factoring algorithm.
