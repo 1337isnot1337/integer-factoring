@@ -30,6 +30,14 @@ low coordinate would have to use words already appearing in old
 supports, with coefficients arranged to stay orthogonal; that is a
 change of the letter supports, not an addition of a free word.
 
+## Boundary uniqueness at height 25
+
+The ten boundary words `52,76,82,97,138,145,262,265,517,1027` are exactly
+all ten triples of modes whose heights sum to 25. There is no
+alternative height-25 boundary set in the 12-mode ambient. Any rank-three
+image on a different boundary must change the supported heights (for
+example the q99 height-39 extension) or the ambient field.
+
 ## Interpretation
 
 The q99 height-39 extension is not one arbitrary choice from a large
@@ -43,10 +51,10 @@ this inventory. This is a structural
 limitation of the single-word high extension, not a proof that no
 multi-word addition or different low block can cross.
 
-The next low-block search must therefore change the letter supports
-themselves, for example through a different rank-three image or a
-different protected structure; adding free low or high words is not the
-route.
+The next low-block search must therefore change the supported heights
+or the ambient structure; at height 25 the boundary, the low support,
+and the single-word high inventory are all fixed. Adding free low or
+high words is not the route.
 
 ## Reproduction
 
