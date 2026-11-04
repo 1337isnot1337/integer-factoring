@@ -1983,6 +1983,19 @@ verify-two-bundle-joint-image:
 verify-three-bundle-joint-image:
 	python3 tools/check_three_bundle_joint_image.py --output /tmp/integer-factoring-three-bundle-joint-image.json
 
+.PHONY: verify-two-cut-support-density
+verify-two-cut-support-density:
+	python3 tools/check_two_cut_support_density.py --output /tmp/integer-factoring-two-cut-support-density.json
+
+.PHONY: verify-local-solver-boundary
+verify-local-solver-boundary:
+	python3 tools/check_hash_join_identity_minor.py --output /tmp/integer-factoring-hash-join-identity-minor.json
+	python3 tools/check_fanout_forward_join.py --output /tmp/integer-factoring-fanout-forward-join.json
+	python3 tools/check_bundle_joint_compression.py --output /tmp/integer-factoring-bundle-joint-compression.json
+	python3 tools/check_two_bundle_joint_image.py --output /tmp/integer-factoring-two-bundle-joint-image.json
+	python3 tools/check_three_bundle_joint_image.py --output /tmp/integer-factoring-three-bundle-joint-image.json
+	python3 tools/check_two_cut_support_density.py --output /tmp/integer-factoring-two-cut-support-density.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
@@ -3055,6 +3068,10 @@ verify-coherent-divided-probes:
 .PHONY: verify-hecke-q5-determinants
 verify-hecke-q5-determinants:
 	python3 tools/check_hecke_q5_determinants.py
+
+.PHONY: verify-height39-q32-extension
+verify-height39-q32-extension:
+	python3 tools/check_height39_q32_extension.py --output /tmp/height39-q32-extension-check.json
 
 .PHONY: verify-f8-height39-extension build-f8-height39-extension
 verify-f8-height39-extension:
