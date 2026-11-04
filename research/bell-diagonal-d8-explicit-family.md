@@ -1,47 +1,65 @@
-# A d=8 Bell-diagonal finite profile is not a width crossing
+# Linear Bell-diagonal paths at d=8 fail the t=2 width target
 
-## Correction and result
+## Result
 
-An earlier version of this note compared the **rank fraction**
-`R/q^t` with `1/sqrt(2)`. That is not the width criterion. The
-`pieces-to-factoring` target requires the rank itself to be at most
-`q^{rho t}` with `rho<1/sqrt(2)`, equivalently a rank fraction at most
-`q^{-(1-rho)t}`, which is exponentially small. A fraction below `1` is
-not enough.
-
-For the explicit linear path
+At physical dimension `d=8` (`q=64`) over `F_3`, every **linear** path
 
 ```math
 s_j(z)=1+(z-1)v_j
 ```
 
-over `F_3` at `d=8` (`q=64`), with `v` the ternary vector in the
-[receipt](../evidence/bell-d8-explicit-family.json), the exact profile
-ranks for lengths `1..100` give rank fractions between about `0.43` and
-`0.67`. The corresponding **rank exponents**
+with a ternary vector `v` of length `64` has a length-two profile rank
+of at least `1848`. The allowed rank at `rho<1/sqrt(2)` and `t=2` is
+`q^{2rho}<64^{sqrt(2)}<1848`. Therefore no linear ternary path can meet
+the two-cut width target at `t=2`, and hence no such path gives a
+uniform crossing family.
+
+This closes the simple linear path family, not the whole Bell-diagonal
+`d=8` construction. Nonlinear paths, position-dependent families, and
+other characteristics remain open.
+
+## Count census
+
+For a path with value counts `(a,b,c)`, `a+b+c=64`, the length-two rank
+profile is `linear_profile_ternary((a,b,c),2)`. Enumerating all 2,145
+count triples gives a minimum of the maximum profile entry
 
 ```math
-e_t=\frac{\log_64 R_t}{t}
+\min_{a+b+c=64}\ \max_j P_2(j)=1848,
 ```
 
-are `0.904` at `t=1`, `0.950` at `t=2`, `0.984` at `t=10`, `0.995` at
-`t=31`, and `0.998` at `t=100`. They are all above `1/sqrt(2)`; the
-path's ranks grow almost like the full `q^t`, not like `q^{0.707t}`.
+attained at `(22,42,0)` and `(42,22,0)`.
+The transform counts are not needed for this lower bound: the row cut
+alone has rank at least `1848`, and the column cut has the same
+minimum over its own count triple. Hence every linear ternary path has
+`max(R_0,R_infinity)\ge1848`.
 
-The path therefore does **not** approach the required width. The
-Bell-diagonal `d=8` constructive target remains open; this finite
-profile is a negative screen, not a candidate.
+The target at `t=2` is
 
-## Why the fraction is misleading
+```math
+64^{2/\sqrt2}=64^{\sqrt2}\approx 357.0<1848.
+```
 
-The local total at length `t` is `q^t=64^t`. A crossing piece of rank
-`R` must satisfy `R <= 64^{rho t}`; at `rho=0.707`, the allowed fraction
-is `64^{-0.293t}`: about `0.086` at `t=2`, `0.0013` at `t=10`, and
-`1.6e-30` at `t=100`. The observed fractions `0.43..0.67` are many
-orders of magnitude above that. The determinant floor
-`gamma_64=0.656961...` is a lower bound on the **exponent** of a forced
-rank, not an upper bound on a construction; it does not make a rank
-fraction near `0.66` favorable.
+The inequality is strict and the census is finite.
+
+## Relation to the earlier candidate
+
+An explicit path was previously displayed because its **rank fraction**
+`R/q^t` was below one. That was the wrong criterion: the target is
+`R<=q^{rho t}`, so the allowed fraction at `t=2` is
+`64^{-(1-rho)2}`, about `0.086` at `rho=1/sqrt(2)`, not `0.66`. The
+candidate's ranks are in fact far above the target, and the census
+shows that no linear path does better than `1848`.
+
+## What remains open
+
+The Bell-diagonal `d=8` note leaves open nonlinear or
+position-dependent families; this result does not exclude them. A
+successful construction must have both cut ranks at most
+`q^{rho t}` for every `t`, so in particular at `t=2` its profile rank
+must be below `358`, more than five times smaller than the linear
+minimum. The next search should target genuinely nonlinear local
+eigenpolynomials; refining linear paths cannot work.
 
 ## Reproduction
 
@@ -49,9 +67,6 @@ fraction near `0.66` favorable.
 make verify-bell-d8-explicit-family
 ```
 
-The checker verifies the transform and counts, the `T^2=I` identity,
-the finite profiles, the rank fractions, and the rank exponents for
-lengths `1..100`. It asserts that every exponent is above
-`1/sqrt(2)` and records the negative result. It does not prove a
-uniform all-length statement; it proves only that this explicit path is
-not a crossing.
+The checker enumerates all count triples, verifies the minimum `1848`,
+verifies the explicit path and its profiles, and checks the strict
+inequality against `64^{sqrt2}`. It does not enumerate nonlinear paths.
