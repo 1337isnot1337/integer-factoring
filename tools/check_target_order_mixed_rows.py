@@ -5,9 +5,10 @@ This enumerates two small class groups and verifies the order rows, the mixed
 order-row determinant, the common-multiplier determinant identity on synthetic
 matrices, one actual mixed smooth hit, one three-target order-only annihilator,
 one cyclic two-target order-only annihilator with the existing two-part
-extractor, a pooled smooth-row rank control at nontrivial smoothness, and a
-mixed-pair complete relation basis at exponent one. It is not a factoring
-algorithm; the class-group enumeration is exponential in the input bit length.
+extractor, a pooled smooth-row rank control at nontrivial smoothness, a mixed-pair
+complete relation basis at exponent one, and a non-cyclic mixed-pair full-rank
+control at window two. It is not a factoring algorithm; the class-group
+enumeration is exponential in the input bit length.
 """
 import argparse
 import json
@@ -564,6 +565,103 @@ def check_cyclic_mixed_pair_lattice():
     }
 
 
+def check_small_group_mixed_pair_rank():
+    integer = 10403
+    discriminant = -4*integer
+    forms, identity, multiply, order, prime_form = exact_class_group(discriminant)
+    class_number = len(forms)
+    assert class_number == 90 and integer == 101*103
+    smooth_bound = 30
+    norm_bound = int((abs(discriminant)/3)**0.5)
+    assert norm_bound == 117
+    primes = (3, 11, 13, 17, 19, 23)
+    target_forms = {prime: prime_form(prime) for prime in primes}
+    orders = {prime: order(target_forms[prime], class_number)
+              for prime in primes}
+    assert orders == {3: 30, 11: 6, 13: 15, 17: 15, 19: 5, 23: 3}
+    positions = {prime: index for index, prime in enumerate(primes)}
+    width = len(primes)
+    assert generated_subgroup_size([target_forms[prime] for prime in primes],
+                                   identity, multiply) == class_number
+
+    rows = []
+    for left_index, left in enumerate(primes):
+        for right in primes[left_index:]:
+            base = multiply(target_forms[left], target_forms[right])
+            current = identity
+            for exponent in range(1, 3):
+                current = multiply(current, base)
+                leading = current[0]
+                if leading > norm_bound:
+                    continue
+                word = smooth_prime_word(current, smooth_bound)
+                if word is None:
+                    continue
+                vector = [0]*width
+                for form, word_exponent in word:
+                    if form[0] not in positions:
+                        break
+                    vector[positions[form[0]]] += word_exponent
+                else:
+                    row = [0]*width
+                    row[positions[left]] += exponent
+                    row[positions[right]] += exponent
+                    row = [row[index]-vector[index] for index in range(width)]
+                    value = identity
+                    for target, coefficient in zip(primes, row):
+                        if coefficient > 0:
+                            value = multiply(value, power(target_forms[target],
+                                                          coefficient, identity,
+                                                          multiply))
+                        elif coefficient < 0:
+                            value = multiply(value, power(inverse_form(target_forms[target]),
+                                                          -coefficient, identity,
+                                                          multiply))
+                    assert value == identity
+                    if any(row) and row not in rows:
+                        rows.append(row)
+    assert len(rows) == 11
+    rank, pivots = echelon_pivot_rows(rows)
+    assert rank == width
+    minor = [rows[index] for index in pivots[:width]]
+    determinant_value = int(determinant(minor))
+    assert determinant_value == 2*class_number
+
+    annihilator = abs(determinant_value)
+    generators = [target_forms[prime] for prime in primes]
+    projected = project_to_two_part(generators, annihilator, identity, multiply)
+    basis = two_group_basis(projected, identity, multiply, inverse_form,
+                            class_number.bit_length())
+    tops = [power(form, 1 << (power_order-1), identity, multiply)
+            for form, power_order in basis]
+    factors = [ambiguous_factor(form, integer) for form in tops]
+    factor = next((value for value in factors if value), None)
+    assert factor in (101, 103) and integer % factor == 0
+
+    return {
+        'integer': integer,
+        'factorization': [101, 103],
+        'discriminant': discriminant,
+        'class_number': class_number,
+        'class_group_cyclic': False,
+        'smooth_bound': smooth_bound,
+        'norm_bound': norm_bound,
+        'targets': list(primes),
+        'orders': [orders[prime] for prime in primes],
+        'distinct_nonzero_rows': len(rows),
+        'relation_matrix': minor,
+        'selected_minor_determinant': determinant_value,
+        'annihilator_multiple': annihilator//class_number,
+        'window': 2,
+        'order_only_window': 6,
+        'two_part_basis_orders': [power_order for _, power_order in basis],
+        'extracted_factor': factor,
+        'scope': ('Finite non-cyclic mixed-pair control: full rank at window 2, '
+                  'below the order-only window 6; the selected minor is '
+                  '2|G| and the extractor returns 101'),
+    }
+
+
 def check_synthetic_identities():
     rows = []
     for size, k, v, z in (
@@ -606,6 +704,7 @@ def main():
         'cyclic_order_only_group': check_cyclic_order_only_group(),
         'cyclic_pooled_smooth_rank': check_cyclic_pooled_smooth_rank(),
         'cyclic_mixed_pair_lattice': check_cyclic_mixed_pair_lattice(),
+        'small_group_mixed_pair_rank': check_small_group_mixed_pair_rank(),
         'mixed_order_determinant': check_mixed_order_determinant(),
         'synthetic_common_multiplier_identities': check_synthetic_identities(),
     }
