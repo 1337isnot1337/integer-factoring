@@ -166,6 +166,38 @@ certificate avoids global order information but pays the first-hit search.
 Neither is a complete-bound improvement. The control is recorded so the
 finite pair result is not mistaken for an extraction necessity.
 
+## Isolated-column repair
+
+Pair rows can leave a target column completely zero. This is a supply gap,
+not necessarily a determinant obstruction. The following elementary repair
+separates the two.
+
+**Lemma.** Let `R` be a set of relation rows on target set `V`, and let
+`I` be the set of columns that are zero in every row of `R`. Suppose `M`
+annihilates every target class. Adjoin the diagonal rows `M e_i` for
+`i in I`. Then the rank increases by `|I|` and the determinant is
+multiplied by `M^{|I|}`.
+
+**Proof.** The columns in `I` are zero in all original rows, while each new
+row is supported only on one column of `I`. The column spaces are therefore
+independent. \(\square\)
+
+The common annihilator can be a multiple of the cycle order; individual
+orders and discrete logs are not required. On all split primes through
+`500` (`50` targets), the window-`2` pair rows give `104` distinct rows of
+rank `49`. The sole zero column is `229`. Adjoining `h e_229` raises the rank
+to `50`; a selected minor has `69` bits and is a multiple of `h`, and the
+extractor returns `1000003`.
+
+This is the finite complementarity suggested by the rank sweep: isolated
+targets are exactly those needing an external row, and a single common
+annihilator supplies it without a pair hit. It does not improve the complete
+bound. Constructing the annihilator by baby-step giant-step costs about
+`sqrt(h)` group operations, and if many targets are isolated their order rows
+add factors of `M` to the determinant. A density-supplied row at lower cost
+would be the useful hybrid; the lemma only says what to do with the missing
+columns.
+
 ## Edge-only collective basis
 
 The tree lemma still uses a separate full-rank base matrix. On the same
@@ -222,8 +254,9 @@ cost.
 - The ten targets are genuine gap targets for the current sufficient
   windows: their indices exceed `D^{1/4}`, so the small-index density theorem
   does not cover them, and their orders exceed the exponent windows.
-- The tree extension is proved; the edge-only full-rank basis is a finite
-  arithmetic fact. No uniform rooted-forest or weighted-pair rank theorem is
+- The tree extension and the isolated-column repair are proved; the
+  edge-only full-rank basis is a finite arithmetic fact. No uniform
+  rooted-forest, isolated-target supply, or weighted-pair rank theorem is
   supplied.
 - The base alone and the pure-order diagonal control already yield the
   factor in this fixed instance; the gap-target and pair rows test coverage of

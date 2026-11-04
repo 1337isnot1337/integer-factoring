@@ -472,6 +472,89 @@ def check():
             + edge_profiles[1]['gap_block_rank']
             == edge_profiles[1]['rank'])
 
+    # Isolated-column repair: pair rows can leave a target column zero.
+    # A common-annihilator diagonal row fills such a column directly, without
+    # a pair hit.  On all split primes through 500, the window-2 pair rows
+    # have rank 49 and the single isolated column is 229.
+    repair_limit = 500
+    repair_targets = tuple(
+        prime for prime in primes_through(repair_limit)
+        if prime in larger_records)
+    repair_records = dict(records)
+    repair_logs = dict(logs)
+    for prime in repair_targets:
+        assert reduce_form(larger_records[prime][1]) in index
+        repair_records[prime] = larger_records[prime]
+        repair_logs[prime] = index[reduce_form(larger_records[prime][1])]
+    repair_positions = {
+        prime: repair_index for repair_index, prime
+        in enumerate(repair_targets)}
+    repair_rows = []
+    repair_seen = set()
+    for left_index, left in enumerate(repair_targets):
+        for right in repair_targets[left_index:]:
+            for exponent in (1, 2):
+                form = forms[
+                    (exponent*(repair_logs[left] + repair_logs[right]))
+                    % period]
+                leading = form[0]
+                if leading == 1:
+                    continue
+                parts = split_factorization(leading, records)
+                if parts is None:
+                    continue
+                terms, new = leading_norm_word(
+                    INTEGER, form, parts, repair_records)
+                assert not new
+                row = [0]*len(repair_targets)
+                row[repair_positions[left]] += exponent
+                row[repair_positions[right]] += exponent
+                for prime, value in terms.items():
+                    row[repair_positions[prime]] -= value
+                if not any(row):
+                    continue
+                key = tuple(row)
+                if key not in repair_seen:
+                    repair_seen.add(key)
+                    repair_rows.append(row)
+    repair_rank, _ = echelon_pivot_rows(repair_rows)
+    isolated_indices = [
+        column for column in range(len(repair_targets))
+        if all(row[column] == 0 for row in repair_rows)]
+    isolated_targets = [repair_targets[column]
+                        for column in isolated_indices]
+    assert isolated_targets == [229]
+    for column in isolated_indices:
+        row = [0]*len(repair_targets)
+        row[column] = period
+        repair_rows.append(row)
+    repaired_rank, repaired_pivots = echelon_pivot_rows(repair_rows)
+    assert repaired_rank == len(repair_targets)
+    repair_basis = [repair_rows[repair_index]
+                    for repair_index in repaired_pivots[:repaired_rank]]
+    for row in repair_basis:
+        assert replay(row, repair_targets, repair_records,
+                      identity) == identity
+    repair_determinant = abs(int(determinant(repair_basis)))
+    assert repair_determinant and repair_determinant % period == 0
+    repair_generators = [repair_records[prime][1]
+                         for prime in repair_targets]
+    repair_projected = project_to_two_part(
+        repair_generators, repair_determinant, identity,
+        compose_forms_hnf)
+    repair_two_basis = two_group_basis(
+        repair_projected, identity, compose_forms_hnf, inverse_form,
+        period.bit_length())
+    repair_factors = [
+        ambiguous_factor(
+            power(form, 1 << (power_order-1), identity, compose_forms_hnf),
+            INTEGER)
+        for form, power_order in repair_two_basis]
+    repair_factor = next(
+        (value for value in repair_factors if value), None)
+    assert repair_factor in (1000003, 1000033)
+    assert INTEGER % repair_factor == 0
+
     scan_gaps = []
     scan_split_primes = 0
     scan_noncycle = 0
@@ -520,6 +603,16 @@ def check():
             'determinant_bit_length': order_determinant.bit_length(),
             'extracted_factor': order_factor,
         },
+        'isolated_column_repair': {
+            'limit': repair_limit,
+            'vertices': len(repair_targets),
+            'pair_rows': len(repair_rows) - len(isolated_indices),
+            'pair_rank': repair_rank,
+            'isolated_targets': isolated_targets,
+            'repaired_rank': repaired_rank,
+            'determinant_bit_length': repair_determinant.bit_length(),
+            'extracted_factor': repair_factor,
+        },
         'edge_basis': {
             'vertices': len(extension_targets),
             'profiles': edge_profiles,
@@ -548,7 +641,9 @@ def check():
                   'rows alone give a rank-32 edge basis at window 2 with '
                   'determinant 8192h. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
-                  'orders; it is not a factoring algorithm. No uniform '
+                  'orders; it is not a factoring algorithm. An isolated-column '
+                  'repair control on all split primes through 500 fills the one '
+                  'zero pair-row column (229) with a common-annihilator row. No uniform '
                   'pair-basis, rank-window, first-hit, or smoothness theorem '
                   'is claimed.'),
     }
