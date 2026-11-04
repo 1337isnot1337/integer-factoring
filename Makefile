@@ -316,6 +316,10 @@ verify-bounded-spin-projector:
 verify-bounded-spin-support:
 	python3 tools/check_bounded_spin_support.py
 
+.PHONY: verify-bounded-spin-diagonal-trace
+verify-bounded-spin-diagonal-trace:
+	python3 tools/check_bounded_spin_diagonal_trace.py --output /tmp/bounded-spin-diagonal-trace.json
+
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py
