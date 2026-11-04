@@ -120,6 +120,12 @@ asymmetric subset is at least `4`.  The checker asserts the floor and the
 canonical equality; the [receipt](../evidence/colour-asymmetric-order12-floor.json)
 records all sixteen cases.  The proof covers arbitrary field
 coefficients; the finite subsets only exercise the block inequality.
+A separate [lower-valuation control](low-valuation-quartic-controls.md)
+replaces the outer quartic exponents by `(a,32-a)` for `a=6,9,10,11`.
+The exact q8 order-twelve increments are `283,35,35,35`; lowering the
+valuation adds low-order channels and does not reduce the protected
+block.  That control is finite and does not prove a lower-valuation
+theorem.
 
 ## 4. Reproduction
 
