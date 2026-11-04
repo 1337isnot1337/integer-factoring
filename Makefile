@@ -74,11 +74,14 @@ verify-tate-coordinate:
 
 verify-frontier: verify-tate-coordinate
 
-.PHONY: verify-theta-programs
+.PHONY: verify-theta-programs verify-theta-parity
+verify-theta-parity:
+	python3 tools/check_theta_parity_program.py >/dev/null
+
 verify-theta-programs:
 	python3 tools/check_theta_coordinate_program.py
 
-verify-frontier: verify-theta-programs
+verify-frontier: verify-theta-programs verify-theta-parity
 
 .PHONY: verify-q7-parameter
 verify-q7-parameter:
@@ -3554,3 +3557,9 @@ verify-target-order-mixed-rows:
 	python3 tools/check_target_order_mixed_rows.py --output /tmp/integer-factoring-target-order-mixed-rows.json
 
 verify-arithmetic: verify-target-order-mixed-rows
+
+.PHONY: verify-mixed-pair-gap-cycle
+verify-mixed-pair-gap-cycle:
+	python3 tools/check_mixed_pair_gap_cycle.py --output /tmp/integer-factoring-mixed-pair-gap-cycle.json
+
+verify-arithmetic: verify-mixed-pair-gap-cycle
