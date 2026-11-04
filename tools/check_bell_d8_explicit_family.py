@@ -99,6 +99,28 @@ def main() -> None:
     assert 373 > 64 ** sqrt(2)
     assert universal[6][2] == 316 < 64 ** sqrt(2)
 
+    fixed_degree = []
+    for degree in range(1, 13):
+        for length in range(2, 200):
+            bound = (64 ** length + length * degree) // (length * degree + 1)
+            target = 64 ** (length / sqrt(2))
+            if bound > target:
+                fixed_degree.append((degree, length, bound, target))
+                break
+        else:
+            raise AssertionError('no fixed-degree failure found')
+    assert [(degree, length, bound)
+            for degree, length, bound, _target in fixed_degree[:6]] == [
+        (1, 2, 1366),
+        (2, 2, 820),
+        (3, 2, 586),
+        (4, 2, 456),
+        (5, 2, 373),
+        (6, 3, 13798),
+    ]
+    for degree, length, bound, target in fixed_degree:
+        assert bound > target
+
     receipt = {
         'passed': True,
         'd': 8,
@@ -119,6 +141,11 @@ def main() -> None:
         'universal_t2_minimum_bound_through_degree_5': 373,
         'universal_t2_paths_excluded_through_degree': 5,
         'universal_t2_degree_6_bound': 316,
+        'fixed_degree_first_failures': [
+            [degree, length, bound]
+            for degree, length, bound, _target in fixed_degree
+        ],
+        'fixed_degree_asymptotic_barrier': True,
         'finite_lengths': MAX_LENGTH,
         'input_sha256': sha256(args.input.read_bytes()).hexdigest(),
         'scope': (
