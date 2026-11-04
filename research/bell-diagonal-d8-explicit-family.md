@@ -71,13 +71,11 @@ shows that no linear path does better than `1848`.
 ## What remains open
 
 The remaining quadratic paths have at least one non-monomial local
-polynomial. A random screen of `2,000` such paths found no maximum
-below `1,334`, but that is not a proof. A successful construction must
-have both cut ranks at most `q^{rho t}` for every `t`, so in particular
-at `t=2` its profile rank must be below `358`, more than three times
-smaller than the monomial minimum. The next search should target
-non-monomial local eigenpolynomials, not refine linear or monomial
-paths.
+polynomial. A successful construction must have both cut ranks at most
+`q^{rho t}` for every `t`, so in particular at `t=2` its profile rank
+must be below `358`, more than three times smaller than the monomial
+minimum. The next search should target non-monomial local
+eigenpolynomials, not refine linear or monomial paths.
 
 ## Reproduction
 
@@ -85,6 +83,7 @@ paths.
 make verify-bell-d8-explicit-family
 ```
 
-The checker enumerates all count triples, verifies the minimum `1848`,
-verifies the explicit path and its profiles, and checks the strict
-inequality against `64^{sqrt2}`. It does not enumerate nonlinear paths.
+The checker enumerates all count triples, verifies the linear minimum
+`1848` and the monomial ordered-word minimum `1173`, checks the strict
+inequalities against `64^{sqrt2}`, and verifies the explicit path's
+profiles. It does not enumerate nonlinear paths.
