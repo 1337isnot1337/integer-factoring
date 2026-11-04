@@ -404,8 +404,11 @@ def check():
     # the first exponent window at which these rows have full rank.
     edge_profiles = []
     edge_first_full = None
+    edge_rows_by_window = {}
+    edge_labels_by_window = {}
     for edge_window in range(1, MAX_WINDOW+1):
         edge_rows = []
+        edge_row_labels = {}
         edge_seen = set()
         edge_base_rows = []
         edge_base_seen = set()
@@ -447,10 +450,13 @@ def check():
                     if key not in edge_seen:
                         edge_seen.add(key)
                         edge_rows.append(row)
+                        edge_row_labels[key] = (left, right, exponent)
                     if left in base_primes and right in base_primes:
                         if key not in edge_base_seen:
                             edge_base_seen.add(key)
                             edge_base_rows.append(row)
+        edge_rows_by_window[edge_window] = list(edge_rows)
+        edge_labels_by_window[edge_window] = dict(edge_row_labels)
         edge_rank, edge_pivots = echelon_pivot_rows(edge_rows)
         edge_hnf_basis = None
         edge_lattice_index = None
@@ -569,6 +575,45 @@ def check():
     assert edge_first_full['first_full_window'] == 2
     assert edge_profiles[1]['lattice_multiple'] == 16
     assert edge_profiles[2]['lattice_multiple'] == 1
+
+    # Saturation control: four exponent-3 base-gap rows halve the window-2
+    # lattice index 16h -> 8h -> 4h -> 2h -> h.  They generate the full
+    # relation kernel together with the window-2 rows; no other window-3 row
+    # is needed.
+    window_two_rows = edge_rows_by_window[2]
+    window_two_keys = {tuple(row) for row in window_two_rows}
+    saturation_candidates = [
+        row for row in edge_rows_by_window[3]
+        if tuple(row) not in window_two_keys]
+    saturation_rows = []
+    saturation_basis = list(window_two_rows)
+    saturation_keys = set(window_two_keys)
+    saturation_index = edge_profiles[1]['lattice_index']
+    while saturation_index > period:
+        best = None
+        for row in saturation_candidates:
+            key = tuple(row)
+            if key in saturation_keys:
+                continue
+            _, _, candidate_index = row_hnf_index(
+                saturation_basis + [row], len(extension_targets))
+            if best is None or candidate_index < best[0]:
+                best = (candidate_index, row, key)
+        assert best is not None and best[0] < saturation_index
+        saturation_index, selected_row, selected_key = best
+        saturation_basis.append(selected_row)
+        saturation_keys.add(selected_key)
+        left, right, exponent = edge_labels_by_window[3][selected_key]
+        assert replay(selected_row, extension_targets, extension_records,
+                      identity) == identity
+        saturation_rows.append({
+            'pair': [left, right],
+            'window': exponent,
+            'lattice_index': saturation_index,
+            'lattice_multiple': saturation_index//period,
+        })
+    assert saturation_index == period
+    assert [row['lattice_multiple'] for row in saturation_rows] == [8, 4, 2, 1]
     assert edge_profiles[1]['support_connected']
     assert edge_profiles[1]['support_root_component'] == len(extension_targets)
     assert edge_profiles[1]['base_block_rank'] == len(base_primes)
@@ -720,6 +765,7 @@ def check():
         'edge_basis': {
             'vertices': len(extension_targets),
             'profiles': edge_profiles,
+            'saturation_rows': saturation_rows,
             **edge_first_full,
         },
         'single_hit_extension': {
@@ -744,7 +790,8 @@ def check():
                   'per target gives rank 32 and determinant 96768h; the pair '
                   'rows alone give a rank-32 edge basis at window 2 with '
                   'selected minor 8192h and row-lattice index 16h; at window 3 '
-                  'their row-lattice index is h, the full relation kernel. A pure-order diagonal control also '
+                  'their row-lattice index is h, the full relation kernel; four exponent-3 '
+                  'base-gap rows saturate the window-2 index 16h to h. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
                   'orders; it is not a factoring algorithm. An isolated-column '
                   'repair control on all split primes through 500 fills the one '
