@@ -53,6 +53,54 @@
   },
   "interval8": {
     "distinct_tensor_values": 429,
+    "gauge_counts": [
+      {
+        "column_pairs": 3656,
+        "gauge": "zero",
+        "row_pairs": 3656
+      },
+      {
+        "column_pairs": 3656,
+        "gauge": "infinity_positive",
+        "row_pairs": 3656
+      },
+      {
+        "column_pairs": 3656,
+        "gauge": "zero_positive",
+        "row_pairs": 3656
+      },
+      {
+        "column_pairs": 3656,
+        "gauge": "alternating",
+        "row_pairs": 3656
+      },
+      {
+        "column_pairs": 3656,
+        "gauge": "random_1",
+        "row_pairs": 3656
+      },
+      {
+        "column_pairs": 3656,
+        "gauge": "random_2",
+        "row_pairs": 3656
+      },
+      {
+        "column_pairs": 3656,
+        "gauge": "random_3",
+        "row_pairs": 3656
+      },
+      {
+        "column_pairs": 3656,
+        "gauge": "wide_4",
+        "row_pairs": 3656
+      },
+      {
+        "column_pairs": 3656,
+        "gauge": "wide_5",
+        "row_pairs": 3656
+      }
+    ],
+    "gauge_stable": true,
     "prefix_col_pairs": 3656,
     "prefix_fraction": 0.0557861328125,
     "prefix_row_pairs": 3656,
@@ -60,7 +108,7 @@
   },
   "scope": "Exact unweighted F4[x] Smith transformations for the interval-4 two-cut Gaussian seed, and the nested-minor prefix image at interval 8. The interval-4 codec image is exact for this specialization; the interval-8 entry is only the exposed prefix proxy, not the Smith codec. No weighted codec, transfer, or score change is claimed.",
   "source_sha256": {
-    "check_two_cut_codec_joint_image.py": "f92c9c099c85b10a7c090dbed6358331c1bab9bdbc5e83ea3714d2d9eca573e0",
+    "check_two_cut_codec_joint_image.py": "f357fe334ae28ea8aa99aac53bdbc22f722c54f482b5d946d9d7ff11cde6da14",
     "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
     "native_rectangular_smith_f4.py": "5c96128e3713138a08752c22036154cb65983a0b47ca66aa2ca18949d765ce4a",
     "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38"

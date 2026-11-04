@@ -50,6 +50,16 @@ The interval-4 exact codec and prefix counts agree at `56`, but the
 interval-8 prefix number is not a Smith codec image.  It is a finite
 proxy for the still-missing weighted codec computation.
 
+The prefix count is also stable under deterministic weight changes.  The
+checker repeats the interval-8 count at nine gauges: all heights zero,
+positive heights on either end, alternating heights, three small random
+height vectors, and two wider random vectors.  Every gauge gives exactly
+`3656` row pairs and `3656` column pairs.  The selected row/column
+permutations do change; only the joint image size is invariant.  This
+reduces the concern that `3656` is an artifact of one gauge, but it is
+still a finite observation about the exposed prefix image, not a proof
+about the weighted Smith codec.
+
 ## Research question
 
 Let `B_0` and `B_1` be the weighted two-cut codec bases.  Does the exact

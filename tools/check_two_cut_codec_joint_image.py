@@ -16,6 +16,7 @@ import argparse
 from hashlib import sha256
 import json
 from pathlib import Path
+import random
 import sys
 
 HERE = Path(__file__).resolve().parent
@@ -206,9 +207,25 @@ def cut_matrices(interval):
     return data, q, cut0, cut1
 
 
-def prefix_image(data, q):
+def gauge_patterns(q):
+    stride = 4 * (q - 1)
+    length = 2 * stride
+    yield 'zero', [0.0] * length + [0.1]
+    yield 'infinity_positive', [0.05] * stride + [0.0] * stride + [0.1]
+    yield 'zero_positive', [0.0] * stride + [0.05] * stride + [0.1]
+    yield 'alternating', [0.05 if i % 2 else -0.05 for i in range(length)] + [0.1]
+    for seed in (1, 2, 3):
+        generator = random.Random(seed)
+        yield f'random_{seed}', [generator.uniform(-0.1, 0.1) for _ in range(length)] + [0.1]
+    for seed in (4, 5):
+        generator = random.Random(seed)
+        yield f'wide_{seed}', [generator.uniform(-0.3, 0.3) for _ in range(length)] + [0.2]
+
+
+def prefix_image(data, q, params=None):
     oracle = RectangularOracle(data['values'], q, q, 0, True)
-    params = [0.0] * (oracle.parameters - 1) + [0.1]
+    if params is None:
+        params = [0.0] * (oracle.parameters - 1) + [0.1]
     maps = {}
     for cut in (0, 1):
         prefixes = oracle.prefixes(params, cut)
@@ -296,6 +313,13 @@ def main():
 
     data8 = tensor(8)
     support8, prefix_rows8, prefix_cols8 = prefix_image(data8, data8['q_x'])
+    gauge_counts = []
+    for name, params in gauge_patterns(data8['q_x']):
+        _, rows, cols = prefix_image(data8, data8['q_x'], params)
+        gauge_counts.append({'gauge': name, 'row_pairs': rows, 'column_pairs': cols})
+    gauge_stable = all(
+        entry['row_pairs'] == prefix_rows8 and entry['column_pairs'] == prefix_cols8
+        for entry in gauge_counts)
     distinct8 = len({entry[0] for entry in data8['values'] if entry[0]})
     n4 = q4 * q4
     n8 = data8['q_x'] ** 2
@@ -324,6 +348,8 @@ def main():
             'prefix_col_pairs': prefix_cols8,
             'prefix_fraction': prefix_rows8 / (n8 * n8),
             'distinct_tensor_values': distinct8,
+            'gauge_counts': gauge_counts,
+            'gauge_stable': gauge_stable,
         },
         'source_sha256': {
             name: sha256((HERE / name).read_bytes()).hexdigest()
@@ -345,6 +371,7 @@ def main():
         'interval8_support': support8,
         'interval8_prefix_row_pairs': prefix_rows8,
         'interval8_prefix_fraction': result['interval8']['prefix_fraction'],
+        'interval8_gauge_stable': gauge_stable,
     }, sort_keys=True))
 
 
