@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "base": "q32 binary height-16 coherent winner",
+  "base_q": 32,
+  "base_maximum_height": 16,
+  "extension_words": [
+    96,
+    160,
+    192,
+    224
+  ],
+  "extension_heights": [
+    24,
+    26,
+    28,
+    39
+  ],
+  "q": 36,
+  "modes": 12,
+  "maximum_height": 39,
+  "order_counts": [
+    1296,
+    1296
+  ],
+  "tail_counts": [
+    0,
+    0
+  ],
+  "baseline_numerical_pressure": {
+    "rho": 0.7121150125007152,
+    "scale_t": 0.3294694788557057,
+    "completed": true,
+    "queries": 15
+  },
+  "numerical_pressure": {
+    "rho": 0.7121133074903934,
+    "scale_t": 0.32941460147217116,
+    "completed": true,
+    "queries": 20
+  },
+  "above_inverse_sqrt_two": true,
+  "gain_over_baseline": 1.7050103218174684e-06,
+  "scope": "Complete finite profile of the q32 map plus four one-hot height-24/26/28/39 labels. Numerical pressure only; not an exact certificate, a split, or a score change."
+}

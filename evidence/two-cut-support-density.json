@@ -1,0 +1,28 @@
+{
+  "rows": [
+    {
+      "alphabet": 4,
+      "entries": 256,
+      "interval": 4,
+      "nonzero_entries": 104,
+      "support_compression_factor": 2.4615384615384617,
+      "support_fraction": 0.40625,
+      "two_cut_product": 256
+    },
+    {
+      "alphabet": 16,
+      "entries": 65536,
+      "interval": 8,
+      "nonzero_entries": 22328,
+      "support_compression_factor": 2.9351486922250087,
+      "support_fraction": 0.3406982421875,
+      "two_cut_product": 65536
+    }
+  ],
+  "scope": "Finite support-density diagnostic for the interval-4/8 Gaussian seed. The two-cut joint image is the tensor support. It is about one third full, a constant-factor compression, not an exponent change. The Smith codec, later gates, and complete bound are unchanged.",
+  "source_sha256": {
+    "check_two_cut_support_density.py": "d1c01727c049571c3eb6ad2dcc873cd901cf56f3429266c46892aee6da6cbde0",
+    "reflection_dual_rail_gaussian.py": "6d4780f02b9479d2473c823f74c4749f47e1db0bd32e5318bd601bdd51010a38"
+  },
+  "status": "pass"
+}

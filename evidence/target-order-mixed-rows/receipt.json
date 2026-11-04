@@ -16,9 +16,11 @@
       0
     ]
   },
-  "scope": "Exact small class-group and synthetic determinant controls; no uniform multiplier selection, mixed-density positivity, or complete factoring improvement",
+  "scope": "Exact small class-group, order-only, and synthetic determinant controls; no uniform multiplier selection, mixed-density positivity, generating-subset bound, or complete factoring improvement",
   "small_group": {
     "all_forms_annihilated": true,
+    "class_group_cyclic": false,
+    "class_group_exponent": 30,
     "class_number": 90,
     "common_mixed_determinant": 81000,
     "common_mixed_orders": {
@@ -39,6 +41,7 @@
     "gap_window": 2,
     "hybrid_block_determinant": 540,
     "integer": 10403,
+    "mixed_generators_subgroup_size": 90,
     "mixed_order_rows": {
       "mixed_19_by_23": {
         "determinant": 15,
@@ -56,6 +59,42 @@
       "index": 6,
       "multiplier": 23,
       "target": 19
+    },
+    "order_only_certificate": {
+      "determinant": 90,
+      "extracted_factor": 101,
+      "generated_subgroup_size": 90,
+      "orders": [
+        3,
+        5,
+        6
+      ],
+      "relation_matrix": [
+        [
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          5,
+          0
+        ],
+        [
+          0,
+          0,
+          6
+        ]
+      ],
+      "targets": [
+        23,
+        19,
+        11
+      ],
+      "two_part_basis_orders": [
+        1
+      ],
+      "window": 6
     },
     "relation_determinant": 540,
     "relation_matrix": [
