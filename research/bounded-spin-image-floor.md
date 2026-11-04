@@ -138,6 +138,28 @@ least `225`, above the `146.5` target. The open question is whether the
 twelve-site primary dimensions and their two-cut pairing can give a
 sum below `571.29`.
 
+The central idempotents are not themselves that decomposition. Using
+the published ten-site characters, idempotents and cut-reciprocity
+matrix, the seven central idempotents have row/column rank pairs
+
+```text
+(34,931), (1,1156), (225,356), (300,581),
+(35,771), (406,776), (155,715),
+```
+
+and square-root rank sum `1970.901...`, far above the `146.50` target.
+The finite `225` minmax is attained by noncentral common-kernel pieces.
+Thus the remaining target is a structured noncentral decomposition of
+the twelve-site coefficient space, not merely its central idempotents.
+The small diagnostic is reproducible with standard-library Python:
+
+```sh
+python3 tools/check_bounded_spin_idempotent_s.py
+```
+
+It checks the seven row ranks against the published primary dimensions
+and checks the listed column ranks; it does not rebuild a cut operator.
+
 The [second-coefficient identity](bounded-spin-second-coefficient.md)
 identifies the eight-site primary blocks with transposition class sums,
 and the three-jet identities constrain the coefficient span at every
