@@ -302,6 +302,62 @@ def exact_image(data, q, cut0, cut1):
     }
 
 
+def partition_identity(data, q, cut0, cut1):
+    oracle = RectangularOracle(data['values'], q, q, 0, True)
+    params = [0.0] * (oracle.parameters - 1) + [0.1]
+    maps = {}
+    for cut in (0, 1):
+        prefixes = oracle.prefixes(params, cut)
+        row_index = {}
+        col_index = {}
+        for i in range(q * q):
+            row_index.setdefault(prefixes['rows'][i], i)
+            col_index.setdefault(prefixes['cols'][i], i)
+        maps[cut] = (row_index, col_index)
+    U0, V0, _ = smith_with_transforms(cut0)
+    U1, V1, _ = smith_with_transforms(cut1)
+    n = q * q
+    prefix_row_classes = {}
+    codec_row_classes = {}
+    prefix_column_classes = {}
+    codec_column_classes = {}
+    values = data['values']
+    for x in range(q):
+        for y in range(q):
+            for u in range(q):
+                for v in range(q):
+                    if not values[x + q * (y + q * (u + q * v))][0]:
+                        continue
+                    key = (x, y, u, v)
+                    i0, i1 = x * q + y, x * q + u
+                    j0, j1 = u * q + v, y * q + v
+                    prefix_row_key = (maps[0][0][i0], maps[1][0][i1])
+                    codec_row_key = (tuple(map(tuple, U0[i0])), tuple(map(tuple, U1[i1])))
+                    prefix_column_key = (maps[0][1][j0], maps[1][1][j1])
+                    codec_column_key = (
+                        tuple(map(tuple, (V0[k][j0] for k in range(n)))),
+                        tuple(map(tuple, (V1[k][j1] for k in range(n)))))
+                    prefix_row_classes.setdefault(prefix_row_key, set()).add(key)
+                    codec_row_classes.setdefault(codec_row_key, set()).add(key)
+                    prefix_column_classes.setdefault(prefix_column_key, set()).add(key)
+                    codec_column_classes.setdefault(codec_column_key, set()).add(key)
+    prefix_row_partition = {frozenset(items) for items in prefix_row_classes.values()}
+    codec_row_partition = {frozenset(items) for items in codec_row_classes.values()}
+    prefix_column_partition = {frozenset(items) for items in prefix_column_classes.values()}
+    codec_column_partition = {frozenset(items) for items in codec_column_classes.values()}
+    return {
+        'row_identical': prefix_row_partition == codec_row_partition,
+        'column_identical': prefix_column_partition == codec_column_partition,
+        'identical': (prefix_row_partition == codec_row_partition
+                      and prefix_column_partition == codec_column_partition),
+        'row_class_sizes': sorted(len(items) for items in prefix_row_partition),
+        'column_class_sizes': sorted(len(items) for items in prefix_column_partition),
+        'row_common_classes': len(prefix_row_partition & codec_row_partition),
+        'column_common_classes': len(prefix_column_partition & codec_column_partition),
+        'total_classes': len(prefix_row_partition),
+    }
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
@@ -309,6 +365,7 @@ def main():
 
     data4, q4, cut04, cut14 = cut_matrices(4)
     exact = exact_image(data4, q4, cut04, cut14)
+    partition = partition_identity(data4, q4, cut04, cut14)
     support4, prefix_rows4, prefix_cols4 = prefix_image(data4, q4)
 
     data8 = tensor(8)
@@ -341,6 +398,7 @@ def main():
             'prefix_col_pairs': prefix_cols4,
             'codec_fraction': exact['row_codec_pairs'] / (n4 * n4),
             'prefix_fraction': prefix_rows4 / (n4 * n4),
+            'partition_identity': partition,
         },
         'interval8': {
             'support': support8,
@@ -368,6 +426,7 @@ def main():
         'interval4_support': support4,
         'interval4_codec_row_pairs': exact['row_codec_pairs'],
         'interval4_prefix_row_pairs': prefix_rows4,
+        'interval4_partition_identical': partition['identical'],
         'interval8_support': support8,
         'interval8_prefix_row_pairs': prefix_rows8,
         'interval8_prefix_fraction': result['interval8']['prefix_fraction'],

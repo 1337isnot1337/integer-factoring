@@ -24,9 +24,14 @@ and for cut 1 they are all zero: the cut-1 matrix is unimodular over
 Over the tensor support, the exact unweighted row-codec image and
 column-codec image each contain `56` distinct pairs, out of `16^2 = 256`
 possible pairs.  The raw tensor support is `104`, so the codec image is
-smaller than the support.  The exposed nested-minor prefix image also has
-`56` pairs at this interval, but the two counts are different objects;
-the agreement is numerical, not an identification.
+smaller than the support.
+
+The exposed nested-minor prefix partition is not merely the same
+cardinality: it is identical to the exact unweighted row- and column-codec
+partition on all `104` support entries.  There are `48` two-element
+classes and `8` singleton classes.  Thus at interval 4 the oracle's
+prefix data already determines the unweighted Smith codec image exactly,
+not just its size.
 
 Raw tensor values are shared by the two cuts at each four-index entry, so
 only `16` distinct raw value pairs occur.  This value collision is not a
