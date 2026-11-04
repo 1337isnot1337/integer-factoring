@@ -55,7 +55,9 @@ support; the interval-8 prefix four-tuple has `22328`, also equal to the
 support. This is forced for an injective full basis: the four codes determine
 the four tensor indices. A full-rank codec therefore cannot beat the raw
 support factor; only a strict rank truncation or a non-injective scalar code
-could. The prefix-truncated image at `k<n` is the next object.
+could. If the intended two-cut bases are the full Smith bases, this closes
+that version of the route at the support factor. The prefix-truncated image
+at `k<n` is the next object; the codec-image note tabulates it.
 
 ## Research question
 

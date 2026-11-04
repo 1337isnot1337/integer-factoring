@@ -82,8 +82,10 @@ compress the two-cut joint image beyond the raw support factor.
 
 A codec compression must come from a strict rank truncation or a
 non-injective scalar code, not from the invertible Smith transformations.
-The next bounded object is the prefix-truncated image at `k < n`, which
-the existing nested-minor data can already expose.
+If "the two cut codec bases" means the full Smith bases, the local-solver
+route is closed at the support factor.  The next bounded object is the
+prefix-truncated image at `k < n`, which the existing nested-minor data
+can already expose.
 
 ## Prefix truncation
 
