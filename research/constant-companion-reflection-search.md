@@ -16,6 +16,14 @@ value was approximately `1.001436002791`, above the required threshold
 one. These are reproducible search observations, not global optimality
 certificates.
 
+**Update (2026-11-02).**  The asymmetric value `1.001436002791` is
+bound-constrained: the winning angle is exactly the search's lower bound
+`0.03`.  Relaxing the angle and then the gauge scale drives the support
+value toward one from above; the tested q4 infimum is one, not a strict
+crossing.  See
+[degenerate asymmetric scaling](asymmetric-degenerate-scaling-floor.md).
+The balanced values are unaffected.
+
 ## 1. The companion identity
 
 Let `G^2=0` in Bell coordinates and let `f=w^-k`. The coupled physical

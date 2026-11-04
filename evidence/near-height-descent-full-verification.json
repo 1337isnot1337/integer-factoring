@@ -1,0 +1,47 @@
+{
+  "source_commit": "7863baaf60455495e5eaa011bcf76190100ded23",
+  "source_tree": "e18f3993123d4e2cd3cb14bb8facdf4eb0edc03c",
+  "command": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--tmpfs",
+    "/tmp",
+    "--dir",
+    "/tmp/sol1-near-height-replay-7863baa",
+    "--bind",
+    "/tmp/sol1-near-height-replay-7863baa",
+    "/tmp/sol1-near-height-replay-7863baa",
+    "--chdir",
+    "/tmp/sol1-near-height-replay-7863baa",
+    "--unshare-net",
+    "--die-with-parent",
+    "--setenv",
+    "GIT_OPTIONAL_LOCKS",
+    "0",
+    "--",
+    "make",
+    "verify"
+  ],
+  "tracked_state_before": "",
+  "scope": "Default non-Lean verification in a verified private /tmp namespace; host root read-only, only frozen checkout writable. No independent mathematical review.",
+  "exit_code": 0,
+  "seconds": 835.8242845060013,
+  "tracked_state_after": "",
+  "stdout_sha256": "cadf69cb7f019491229c7a046571a0b9c8749b9026968b3a8f8d857a06c8e4a9",
+  "stdout_archive": "evidence/near-height-descent-full-verification.stdout.txt.xz",
+  "archive_sha256": "c0234442580765a8fbe23227985ad597eb37dfc8fa6b578010874b74c29390d0",
+  "followup_scope": {
+    "source_commit": "5fbb3f17278ec5be2493c77730d3c0d722e7f447",
+    "commands": [
+      "make verify-near-height-smooth-descent verify-semiprime-single-field verify-docs",
+      "git diff --cached --check"
+    ],
+    "scope": "Focused checks cover the later lower-sieve proof/checker additions, contributed semiprime controls and PR101 integration. They are not a second full default replay. Links passed in 1185 Markdown files."
+  }
+}

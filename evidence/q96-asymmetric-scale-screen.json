@@ -1,0 +1,416 @@
+{
+  "scope": "Deterministic numerical screen of six complete q96 profiles under the two-place asymmetric supporting-line criterion. The balanced calibration matches certified or recorded natural pressures. Interior angles keep both weights at least 0.05. No global optimality or exact pressure certificate is claimed; the factoring exponent is unchanged.",
+  "profiles": [
+    {
+      "name": "f8_hyperoval_full",
+      "profile_path": "evidence/f8-hyperoval-q96-full-profile.json",
+      "profile_sha256": "a2d23fb1e21f9c4d67bdaa3df6baf48736839afca0b2ba795571a9378c091d4e",
+      "channel_counts": [
+        9216,
+        9216
+      ],
+      "height_count": 96,
+      "expected_rho": 0.710005835,
+      "balanced": {
+        "support": 1.0040998807936936,
+        "rho": 0.7100058346978247,
+        "log_scale": -1.7135246861066897,
+        "scale": 0.18022941963703673
+      },
+      "calibration_error": 3.0217528479425937e-10,
+      "interior": {
+        "support": 1.0037757401027645,
+        "log_scale": -1.7809302004618295,
+        "scale": 0.1684813529225166,
+        "angle": 1.4417958660634995,
+        "a": 0.1286429729773555,
+        "b": 0.9916909727851451
+      },
+      "boundary": [
+        {
+          "angle": 0.0001,
+          "support": 1.0000309561279632,
+          "log_scale": -10.444645317654764,
+          "scale": 2.9103697859374403e-05
+        },
+        {
+          "angle": 0.0003,
+          "support": 1.0000928122826749,
+          "log_scale": -9.345469968757321,
+          "scale": 8.736026882551051e-05
+        },
+        {
+          "angle": 0.001,
+          "support": 1.0003087189378035,
+          "log_scale": -8.139517911705411,
+          "scale": 0.00029177782701012933
+        },
+        {
+          "angle": 0.003,
+          "support": 1.000920518106291,
+          "log_scale": -7.035150475514055,
+          "scale": 0.0008803856784717685
+        },
+        {
+          "angle": 0.01,
+          "support": 1.003001722663034,
+          "log_scale": -5.809813818941759,
+          "scale": 0.002997988188982462
+        },
+        {
+          "angle": 0.03,
+          "support": 1.004643538006361,
+          "log_scale": -1.8455321401639742,
+          "scale": 0.15794125163977354
+        }
+      ]
+    },
+    {
+      "name": "coherent_four_boundary",
+      "profile_path": "evidence/coherent-q96-four-boundary-candidate.json",
+      "profile_sha256": "caebb759b0c64baf6b4a25ea2691f22af5fa0c3fd74452266cb351e0f041338f",
+      "channel_counts": [
+        9216,
+        9216
+      ],
+      "height_count": 96,
+      "expected_rho": 0.710005865250026,
+      "balanced": {
+        "support": 1.0040999240010113,
+        "rho": 0.7100058652500121,
+        "log_scale": -1.7135141237893161,
+        "scale": 0.18023132328742045
+      },
+      "calibration_error": 1.3877787807814457e-14,
+      "interior": {
+        "support": 1.0037792125938336,
+        "log_scale": -1.7801630575640854,
+        "scale": 0.16861065178482423,
+        "angle": 1.4414662071729145,
+        "a": 0.12896988572718923,
+        "b": 0.99164851060016
+      },
+      "boundary": [
+        {
+          "angle": 0.0001,
+          "support": 1.0000310348924115,
+          "log_scale": -10.447187190194143,
+          "scale": 2.9029813910562644e-05
+        },
+        {
+          "angle": 0.0003,
+          "support": 1.0000930486543191,
+          "log_scale": -9.348014981885365,
+          "scale": 8.713821847486223e-05
+        },
+        {
+          "angle": 0.001,
+          "support": 1.000309507758986,
+          "log_scale": -8.142074171237528,
+          "scale": 0.00029103291965247184
+        },
+        {
+          "angle": 0.003,
+          "support": 1.0009228924781,
+          "log_scale": -7.037738359837025,
+          "scale": 0.0008781102876702606
+        },
+        {
+          "angle": 0.01,
+          "support": 1.003009732207749,
+          "log_scale": -5.812522374181497,
+          "scale": 0.002989878959470189
+        },
+        {
+          "angle": 0.03,
+          "support": 1.004649795945534,
+          "log_scale": -1.8446103351246939,
+          "scale": 0.15808690980534676
+        }
+      ]
+    },
+    {
+      "name": "coherent_coordinate",
+      "profile_path": "evidence/coherent-q96-coordinate-reference.json",
+      "profile_sha256": "d905fb8029db94fcf4c8c0be302ced84b97215329a20ce047e8bb1ac32e689d3",
+      "channel_counts": [
+        9216,
+        9216
+      ],
+      "height_count": 96,
+      "expected_rho": null,
+      "balanced": {
+        "support": 1.0040999376215536,
+        "rho": 0.7100058748811898,
+        "log_scale": -1.7135111709601312,
+        "scale": 0.18023185548051765
+      },
+      "calibration_error": null,
+      "interior": {
+        "support": 1.0037809116735286,
+        "log_scale": -1.7798492572788922,
+        "scale": 0.16866357015790698,
+        "angle": 1.441328914668622,
+        "a": 0.12910603041866822,
+        "b": 0.9916307946557196
+      },
+      "boundary": [
+        {
+          "angle": 0.0001,
+          "support": 1.0000307689055128,
+          "log_scale": -10.43858104751023,
+          "scale": 2.9280726778467914e-05
+        },
+        {
+          "angle": 0.0003,
+          "support": 1.0000922511993628,
+          "log_scale": -9.339414223876942,
+          "scale": 8.789090540444585e-05
+        },
+        {
+          "angle": 0.001,
+          "support": 1.000306855474319,
+          "log_scale": -8.13349480684733,
+          "scale": 0.0002935405386269889
+        },
+        {
+          "angle": 0.003,
+          "support": 1.0009149861390656,
+          "log_scale": -7.02922054078715,
+          "scale": 0.0008856218177179039
+        },
+        {
+          "angle": 0.01,
+          "support": 1.0029839656143256,
+          "log_scale": -5.804212322821567,
+          "scale": 0.0030148285297101323
+        },
+        {
+          "angle": 0.03,
+          "support": 1.0046471378059907,
+          "log_scale": -1.8451333445976024,
+          "scale": 0.1580042504716672
+        }
+      ]
+    },
+    {
+      "name": "coherent_hot_f4_hyperoval",
+      "profile_path": "evidence/coherent-hot-f4-hyperoval-q96.json",
+      "profile_sha256": "b50063336be144180e018906b900c954abffaa9aec462c2b1e390541697b3005",
+      "channel_counts": [
+        9216,
+        9216
+      ],
+      "height_count": 96,
+      "expected_rho": 0.7100058606356884,
+      "balanced": {
+        "support": 1.0040999174753524,
+        "rho": 0.7100058606356744,
+        "log_scale": -1.7135157102724727,
+        "scale": 0.1802310373536886
+      },
+      "calibration_error": 1.3988810110276972e-14,
+      "interior": {
+        "support": 1.003779125983821,
+        "log_scale": -1.780186349208692,
+        "scale": 0.1686067246111813,
+        "angle": 1.4414761580576172,
+        "a": 0.12896001794080952,
+        "b": 0.9916497939155264
+      },
+      "boundary": [
+        {
+          "angle": 0.0001,
+          "support": 1.0000310631469853,
+          "log_scale": -10.448097775873629,
+          "scale": 2.9003391809356715e-05
+        },
+        {
+          "angle": 0.0003,
+          "support": 1.0000931333013912,
+          "log_scale": -9.348921838794107,
+          "scale": 8.705923239937009e-05
+        },
+        {
+          "angle": 0.001,
+          "support": 1.0003097885539487,
+          "log_scale": -8.142974943318821,
+          "scale": 0.00029077088335891833
+        },
+        {
+          "angle": 0.003,
+          "support": 1.0009237231615244,
+          "log_scale": -7.038618393011636,
+          "scale": 0.0008773378614163587
+        },
+        {
+          "angle": 0.01,
+          "support": 1.0030123633964945,
+          "log_scale": -5.813329749663129,
+          "scale": 0.0029874659787270854
+        },
+        {
+          "angle": 0.03,
+          "support": 1.0046483894688631,
+          "log_scale": -1.8447965841850418,
+          "scale": 0.15805746900868767
+        }
+      ]
+    },
+    {
+      "name": "f8_retraction_678",
+      "profile_path": "evidence/f8-hyperoval-retraction-678.json",
+      "profile_sha256": "339e6eb106cdc5181c82a590edffdb4e61c4f768fdc4311ebf0a73193dd08baa",
+      "channel_counts": [
+        9216,
+        9216
+      ],
+      "height_count": 96,
+      "expected_rho": 0.7100057889694728,
+      "balanced": {
+        "support": 1.0040998161240182,
+        "rho": 0.7100057889694587,
+        "log_scale": -1.7135403934093754,
+        "scale": 0.18022658874122255
+      },
+      "calibration_error": 1.4099832412739488e-14,
+      "interior": {
+        "support": 1.0037699801885105,
+        "log_scale": -1.7821472693161526,
+        "scale": 0.16827642424679065,
+        "angle": 1.4423150079120974,
+        "a": 0.1281281273804596,
+        "b": 0.9917576230984951
+      },
+      "boundary": [
+        {
+          "angle": 0.0001,
+          "support": 1.0000307938533828,
+          "log_scale": -10.439391248381364,
+          "scale": 2.92570131158368e-05
+        },
+        {
+          "angle": 0.0003,
+          "support": 1.0000923254822252,
+          "log_scale": -9.340212477148617,
+          "scale": 8.782077419661332e-05
+        },
+        {
+          "angle": 0.001,
+          "support": 1.0003070965381342,
+          "log_scale": -8.13424969917799,
+          "scale": 0.00029331903074346143
+        },
+        {
+          "angle": 0.003,
+          "support": 1.0009156531223904,
+          "log_scale": -7.029857098565848,
+          "scale": 0.0008850582476523356
+        },
+        {
+          "angle": 0.01,
+          "support": 1.0029855280841233,
+          "log_scale": -5.804417362419558,
+          "scale": 0.003014210433849618
+        },
+        {
+          "angle": 0.03,
+          "support": 1.0046352959441944,
+          "log_scale": -1.8467948521349629,
+          "scale": 0.15774194319167886
+        }
+      ]
+    },
+    {
+      "name": "f8_retraction_789",
+      "profile_path": "evidence/f8-hyperoval-retraction-789.json",
+      "profile_sha256": "8843740e917d0b47ff82b09c37e64993256e69c5704bd9b950cb7439577ced8e",
+      "channel_counts": [
+        9216,
+        9216
+      ],
+      "height_count": 96,
+      "expected_rho": 0.7100057871974014,
+      "balanced": {
+        "support": 1.0040998136179309,
+        "rho": 0.7100057871973874,
+        "log_scale": -1.7135410625419385,
+        "scale": 0.18022646814578364
+      },
+      "calibration_error": 1.3988810110276972e-14,
+      "interior": {
+        "support": 1.0037692354525074,
+        "log_scale": -1.7823443760335582,
+        "scale": 0.1682432591018344,
+        "angle": 1.4423973625730253,
+        "a": 0.12804645108327795,
+        "b": 0.991768171683775
+      },
+      "boundary": [
+        {
+          "angle": 0.0001,
+          "support": 1.0000307388863976,
+          "log_scale": -10.437603307862585,
+          "scale": 2.930936970633236e-05
+        },
+        {
+          "angle": 0.0003,
+          "support": 1.0000921606572368,
+          "log_scale": -9.338427375952435,
+          "scale": 8.797768317321524e-05
+        },
+        {
+          "angle": 0.001,
+          "support": 1.0003065480082207,
+          "log_scale": -8.132466419303057,
+          "scale": 0.0002938425673353143
+        },
+        {
+          "angle": 0.003,
+          "support": 1.0009140151440084,
+          "log_scale": -7.028079598126965,
+          "scale": 0.0008866328380789842
+        },
+        {
+          "angle": 0.01,
+          "support": 1.0029801573947024,
+          "log_scale": -5.8026615142317715,
+          "scale": 0.0030195075789078503
+        },
+        {
+          "angle": 0.03,
+          "support": 1.0046345834906705,
+          "log_scale": -1.8469290724087866,
+          "scale": 0.15772077244567365
+        }
+      ]
+    }
+  ],
+  "interior_best": {
+    "name": "f8_retraction_789",
+    "support": 1.0037692354525074,
+    "angle": 1.4423973625730253,
+    "a": 0.12804645108327795,
+    "b": 0.991768171683775,
+    "scale": 0.1682432591018344
+  },
+  "grid": {
+    "angle_start": 0.05,
+    "angle_stop": 1.5207963267948965,
+    "angle_count": 121,
+    "scale_bounds_log": [
+      -7.0,
+      3.0
+    ],
+    "boundary_angles": [
+      0.0001,
+      0.0003,
+      0.001,
+      0.003,
+      0.01,
+      0.03
+    ]
+  },
+  "elapsed_seconds": 20.230638089589775,
+  "completed": true
+}

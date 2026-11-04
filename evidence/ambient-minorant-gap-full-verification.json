@@ -1,0 +1,16 @@
+{
+  "source_commit": "4b6d914ee0e292d69a72951b1de0c0ec1254ddd7",
+  "source_tree": "43d86328965639d613972758feca016e810544cf",
+  "command": [
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 720.931022372999,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "scope": "Default non-Lean verification at the exact source commit; no independent mathematical review.",
+  "stdout_sha256": "66b156c4aa66f59adc6c4ca3151a56e9322cfb4e38fff129dbe58c5b63934b9d",
+  "stdout_archive": "evidence/ambient-minorant-gap-full-verification.stdout.txt.xz",
+  "archive_sha256": "1cac8e80ec21cc4ad4ba849cb8598c9c4337e3205b0a4febbeefb2bb37179356"
+}

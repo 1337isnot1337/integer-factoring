@@ -1,0 +1,36 @@
+{
+  "rows": [
+    {
+      "base": 4,
+      "cartesian_message_pairs": 264196,
+      "digit_bits": 2,
+      "distinct_message_vectors": 4,
+      "forward_reduction_factor": 66049,
+      "forward_work": 4,
+      "h": 1,
+      "inputs": 4,
+      "max_messages_per_input": 1,
+      "modulus": 257,
+      "wires": 2
+    },
+    {
+      "base": 256,
+      "cartesian_message_pairs": 22300745219299810582928583705584021778006016,
+      "digit_bits": 8,
+      "distinct_message_vectors": 65536,
+      "forward_reduction_factor": 340282367237851113631112422265381191681,
+      "forward_work": 65536,
+      "h": 2,
+      "inputs": 65536,
+      "max_messages_per_input": 1,
+      "modulus": 4294967297,
+      "wires": 4
+    }
+  ],
+  "scope": "Finite forward-evaluation diagnostic for the source fan-out at h=1,2. The full recipient map is injective, so one message is visited per input instead of the Cartesian input-message set. The later evaluator pad, full contracted tensor, and complete factoring bound are unchanged.",
+  "source_sha256": {
+    "check_factoring_network_structure.py": "64ab9aa171e9534d1edb93e3cadc8c5bdf12d3aa94f420ebd70f2107851f69b3",
+    "check_fanout_forward_join.py": "a18d902a366fe50bc9fa4d18982afc1179add9a913f3529e48365cf3d96ea064"
+  },
+  "status": "pass"
+}

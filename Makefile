@@ -1955,6 +1955,34 @@ verify-asymmetric-crossings:
 	python3 tools/check_asymmetric_support_line.py --output /tmp/integer-factoring-asymmetric-support-replay.json
 	OPENBLAS_NUM_THREADS=1 python3 tools/check_asymmetric_pressure_oracle.py --output /tmp/integer-factoring-asymmetric-oracle-replay.json
 
+.PHONY: verify-asymmetric-scaling-floor
+verify-asymmetric-scaling-floor:
+	python3 tools/check_asymmetric_scaling_floor.py --output /tmp/integer-factoring-asymmetric-scaling-floor.json
+
+.PHONY: verify-rank-deficient-endpoint
+verify-rank-deficient-endpoint:
+	python3 tools/check_rank_deficient_endpoint.py --output /tmp/integer-factoring-rank-deficient-endpoint.json
+
+.PHONY: verify-hash-join-identity-minor
+verify-hash-join-identity-minor:
+	python3 tools/check_hash_join_identity_minor.py --output /tmp/integer-factoring-hash-join-identity-minor.json
+
+.PHONY: verify-fanout-forward-join
+verify-fanout-forward-join:
+	python3 tools/check_fanout_forward_join.py --output /tmp/integer-factoring-fanout-forward-join.json
+
+.PHONY: verify-bundle-joint-compression
+verify-bundle-joint-compression:
+	python3 tools/check_bundle_joint_compression.py --output /tmp/integer-factoring-bundle-joint-compression.json
+
+.PHONY: verify-two-bundle-joint-image
+verify-two-bundle-joint-image:
+	python3 tools/check_two_bundle_joint_image.py --output /tmp/integer-factoring-two-bundle-joint-image.json
+
+.PHONY: verify-three-bundle-joint-image
+verify-three-bundle-joint-image:
+	python3 tools/check_three_bundle_joint_image.py --output /tmp/integer-factoring-three-bundle-joint-image.json
+
 .PHONY: verify-explicit-fusion
 verify-explicit-fusion:
 	python3 tools/check_explicit_fused_row.py --output /tmp/integer-factoring-explicit-fused-row-replay.json
@@ -2069,6 +2097,16 @@ verify-cofactor-orbit-moments:
 verify-entry-moment-cycles:
 	python3 tools/check_entry_moment_cycles.py --output /tmp/integer-factoring-entry-moment-cycles.json
 	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json
+
+.PHONY: verify-entry-moment-saved
+verify-entry-moment-saved:
+	python3 tools/check_entry_moment_cycles.py --replay evidence/entry-moment-cycles.json --saved-flags
+
+.PHONY: verify-entry-gap-cluster-loss
+verify-entry-gap-cluster-loss:
+	python3 tools/check_entry_gap_cluster_loss.py --output evidence/entry-gap-cluster-loss.json
+
+verify-arithmetic: verify-entry-moment-saved
 
 .PHONY: verify-output-space-transfer
 verify-output-space-transfer:
@@ -2987,6 +3025,14 @@ verify-rectangular-pascal-coordinates:
 verify-jensen-core-floors:
 	python3 tools/check_jensen_tail_core_floor.py
 
+.PHONY: verify-protected-core-height39-transition
+verify-protected-core-height39-transition:
+	python3 tools/check_protected_core_height39.py --output /tmp/protected-core-height39-transition-check.json
+
+.PHONY: verify-protected-core-height39-region
+verify-protected-core-height39-region:
+	python3 tools/check_protected_core_height39_region.py --output /tmp/protected-core-height39-region-check.json
+
 .PHONY: verify-coherent-inverse-f4 verify-coherent-gram-f4
 verify-coherent-inverse-f4:
 	python3 tools/check_coherent_inverse_systems_f4.py
@@ -3005,6 +3051,12 @@ verify-coherent-divided-probes:
 .PHONY: verify-hecke-q5-determinants
 verify-hecke-q5-determinants:
 	python3 tools/check_hecke_q5_determinants.py
+
+.PHONY: verify-f8-height39-extension build-f8-height39-extension
+verify-f8-height39-extension:
+	python3 tools/check_f8_hyperoval_height39_extension.py --output /tmp/f8-height39-extension-check.json
+build-f8-height39-extension:
+	python3 tools/build_f8_hyperoval_height39_extension.py
 
 .PHONY: verify-f8-retraction-refinement verify-f8-retraction-refinement-full verify-f8-retraction-census-full
 verify-f8-retraction-refinement:
@@ -3026,6 +3078,10 @@ verify-mixed-graph-retractions:
 .PHONY: verify-asymmetric-profile-bundle
 verify-asymmetric-profile-bundle:
 	python3 tools/check_asymmetric_profile_bundle.py
+
+.PHONY: verify-q96-asymmetric-scale
+verify-q96-asymmetric-scale:
+	python3 tools/check_q96_asymmetric_scales.py --output /tmp/q96-asymmetric-scale-check.json
 
 .PHONY: verify-q12-reflection-graphs verify-q12-reflection-graphs-independent
 verify-q12-reflection-graphs:
@@ -3159,6 +3215,48 @@ verify-witt-trace-words:
 	python3 tools/check_witt_trace_word_circuits.py
 
 verify-arithmetic: verify-witt-trace-words
+
+.PHONY: verify-one-trace-inverse-words
+verify-one-trace-inverse-words:
+	python3 tools/check_one_trace_inverse_words.py
+
+verify-arithmetic: verify-one-trace-inverse-words
+
+.PHONY: verify-coordinate-inverse-words
+verify-coordinate-inverse-words:
+	python3 tools/check_coordinate_inverse_words.py
+
+verify-arithmetic: verify-coordinate-inverse-words
+
+.PHONY: verify-native-parity-hashes
+verify-native-parity-hashes:
+	python3 tools/check_native_parity_hashes.py
+
+verify-arithmetic: verify-native-parity-hashes
+
+.PHONY: verify-sparse-faithful-character
+verify-sparse-faithful-character:
+	python3 tools/check_sparse_faithful_character.py
+
+verify-arithmetic: verify-sparse-faithful-character
+
+.PHONY: verify-odd-quotient-relations
+verify-odd-quotient-relations:
+	python3 tools/check_odd_quotient_relations.py
+
+verify-arithmetic: verify-odd-quotient-relations
+
+.PHONY: verify-high-root-projection
+verify-high-root-projection:
+	python3 tools/check_high_root_projection.py
+
+verify-arithmetic: verify-high-root-projection
+
+.PHONY: verify-charge-creation-square
+verify-charge-creation-square:
+	python3 tools/check_charge_creation_square.py
+
+verify-constructions: verify-charge-creation-square
 .PHONY: verify-divided-power-traces
 verify-divided-power-traces:
 	python3 tools/check_divided_power_trace_carries.py
@@ -3219,6 +3317,14 @@ verify-determinant-inverse-codes:
 verify-determinant-inverse-profiles:
 	python3 tools/check_determinant_inverse_profiles.py
 
+.PHONY: verify-determinant-inverse-k4
+verify-determinant-inverse-k4:
+	python3 tools/check_determinant_inverse_k4.py
+
+.PHONY: verify-determinant-inverse-k4-full
+verify-determinant-inverse-k4-full:
+	python3 tools/check_determinant_inverse_k4.py --full
+
 .PHONY: verify-pfaffian-derivative-codes
 verify-pfaffian-derivative-codes:
 	python3 tools/check_pfaffian_derivative_codes.py
@@ -3247,3 +3353,148 @@ verify-power-character-lifts: verify-clustered-power-relations
 	python3 tools/check_power_character_lifts.py
 
 verify-arithmetic: verify-power-character-lifts
+
+.PHONY: verify-relation-change-events
+verify-relation-change-events: verify-clustered-power-relations
+	python3 tools/check_relation_change_events.py
+
+verify-arithmetic: verify-relation-change-events
+
+.PHONY: verify-event-cumulant-windows
+verify-event-cumulant-windows: verify-relation-change-events
+	python3 tools/check_event_cumulant_windows.py
+
+verify-arithmetic: verify-event-cumulant-windows
+
+.PHONY: verify-small-norm-event-separation
+verify-small-norm-event-separation: verify-event-cumulant-windows
+	python3 tools/check_small_norm_event_separation.py
+
+verify-arithmetic: verify-small-norm-event-separation
+
+.PHONY: verify-event-word-boundary
+verify-event-word-boundary: verify-small-norm-event-separation
+	python3 tools/check_event_word_boundary.py
+
+verify-arithmetic: verify-event-word-boundary
+
+.PHONY: verify-near-height-smooth-descent
+verify-near-height-smooth-descent:
+	python3 tools/check_near_height_smooth_descent.py
+
+verify-arithmetic: verify-near-height-smooth-descent
+
+.PHONY: verify-ambient-minorant-gap
+verify-ambient-minorant-gap:
+	python3 tools/check_ambient_minorant_gap.py --output /tmp/integer-factoring-ambient-minorant-gap.json
+
+verify-arithmetic: verify-ambient-minorant-gap
+
+.PHONY: verify-confluent-quantum-spin
+verify-confluent-quantum-spin:
+	python3 tools/check_confluent_quantum_spin.py --output /tmp/integer-factoring-confluent-quantum-spin.json
+
+verify-arithmetic: verify-confluent-quantum-spin
+
+.PHONY: verify-uniform-ambient-minorant-gap
+verify-uniform-ambient-minorant-gap: verify-ambient-minorant-gap
+	python3 tools/check_uniform_ambient_minorant_gap.py --output /tmp/integer-factoring-uniform-ambient-minorant-gap.json
+
+verify-arithmetic: verify-uniform-ambient-minorant-gap
+
+.PHONY: verify-small-index-smooth-density
+verify-small-index-smooth-density:
+	python3 tools/check_small_index_smooth_density.py --output /tmp/integer-factoring-small-index-smooth-density.json
+
+verify-arithmetic: verify-small-index-smooth-density
+
+.PHONY: verify-nilpotent-gram-crossing
+verify-nilpotent-gram-crossing:
+	python3 tools/check_nilpotent_gram_crossing.py --output /tmp/integer-factoring-nilpotent-gram-crossing.json
+
+verify-arithmetic: verify-nilpotent-gram-crossing
+
+.PHONY: verify-color-distinct-sector
+verify-color-distinct-sector:
+	python3 tools/check_cube_scalar_color_clone_floor.py --output /tmp/integer-factoring-cube-scalar-color-clone-floor.json
+	python3 tools/check_color_distinct_sector.py --output /tmp/integer-factoring-color-distinct-sector.json
+
+verify-arithmetic: verify-color-distinct-sector
+
+.PHONY: verify-quartic-charge-fusion
+verify-quartic-charge-fusion:
+	python3 tools/check_quartic_charge_fusion.py --output /tmp/integer-factoring-quartic-charge-fusion.json
+
+verify-arithmetic: verify-quartic-charge-fusion
+
+.PHONY: verify-semiprime-single-field
+verify-semiprime-single-field:
+	python3 tools/check_semiprime_single_field.py --output /tmp/integer-factoring-semiprime-single-field.json
+
+verify-arithmetic: verify-semiprime-single-field
+
+.PHONY: verify-quartic-order-five
+verify-quartic-order-five:
+	python3 tools/check_quartic_order_five.py --output /tmp/integer-factoring-quartic-order-five.json
+
+verify-arithmetic: verify-quartic-order-five
+
+.PHONY: verify-cm-smooth-flag-geometry
+verify-cm-smooth-flag-geometry:
+	python3 tools/check_cm_smooth_flag_geometry.py
+
+verify-arithmetic: verify-cm-smooth-flag-geometry
+
+.PHONY: verify-fixed-curve-quartic
+verify-fixed-curve-quartic:
+	python3 tools/check_fixed_curve_quartic_floor.py
+
+verify-arithmetic: verify-fixed-curve-quartic
+
+.PHONY: verify-colour-alternation
+verify-colour-alternation:
+	python3 tools/check_colour_alternation.py
+
+verify-arithmetic: verify-colour-alternation
+
+.PHONY: verify-cyclotomic-completion
+verify-cyclotomic-completion:
+	python3 tools/check_cyclotomic_completion.py
+
+verify-arithmetic: verify-cyclotomic-completion
+
+.PHONY: verify-spatial-mode-fusion
+verify-spatial-mode-fusion:
+	python3 tools/check_spatial_mode_colour_fusion.py
+
+verify-arithmetic: verify-spatial-mode-fusion
+
+.PHONY: verify-q8-leading-prefix-floor
+verify-q8-leading-prefix-floor:
+	python3 tools/check_q8_leading_prefix_floor.py
+
+verify-arithmetic: verify-q8-leading-prefix-floor
+
+.PHONY: verify-pfaffian-quartic-truncation
+verify-pfaffian-quartic-truncation:
+	python3 tools/check_pfaffian_quartic_truncation.py
+
+verify-arithmetic: verify-pfaffian-quartic-truncation
+
+.PHONY: verify-path-group-hybrid
+verify-path-group-hybrid:
+	python3 tools/check_path_group_hybrid.py
+
+verify-arithmetic: verify-path-group-hybrid
+
+.PHONY: verify-polynomial-digit-fibres
+verify-polynomial-digit-fibres:
+	python3 tools/check_polynomial_digit_fibres.py
+
+verify-arithmetic: verify-polynomial-digit-fibres
+
+.PHONY: verify-target-order-mixed-rows
+verify-target-order-mixed-rows:
+	python3 tools/check_target_order_mixed_rows.py --output /tmp/integer-factoring-target-order-mixed-rows.json
+
+verify-arithmetic: verify-target-order-mixed-rows

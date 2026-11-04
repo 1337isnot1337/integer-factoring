@@ -14,8 +14,10 @@ The output is a finite diagnostic.  It proves no uniform window estimate.
 from __future__ import annotations
 
 import argparse
+import copy
 import hashlib
 import json
+import lzma
 import math
 from math import gcd, isqrt, prod
 from pathlib import Path
@@ -48,7 +50,8 @@ def ceil_root(integer: int, degree: int) -> int:
     return high
 
 
-def complete_cycle(integer: int, cutoff: int, prime: int) -> dict:
+def complete_cycle(integer: int, cutoff: int, prime: int, other: int | None = None,
+                   composition_limit: int = CAP) -> dict:
     """Enumerate one full cyclic subgroup and return its exact flags."""
     delta = -integer if integer % 4 == 3 else -4 * integer
     height = isqrt(abs(delta) // 3)
@@ -59,9 +62,14 @@ def complete_cycle(integer: int, cutoff: int, prime: int) -> dict:
     prime_product = prod(records)
     identity = (1, delta % 2, (delta % 2 - delta) // 4)
     current = identity
+    other_index = None
+    target = records[other][1] if other is not None else None
     flags = bytearray()
     gcd_hits = 0
-    for step in range(1, CAP + 1):
+    for step in range(1, composition_limit + 1):
+        if target is not None and current == target:
+            assert other_index is None
+            other_index = len(flags)
         leading = current[0]
         divisor = gcd(leading, integer)
         proper_gcd = 1 < divisor < integer
@@ -76,14 +84,14 @@ def complete_cycle(integer: int, cutoff: int, prime: int) -> dict:
         if current == identity:
             break
     else:
-        raise RuntimeError(f"Cycle for N={integer}, p={prime} did not close in {CAP} steps")
+        raise RuntimeError(f"Cycle for N={integer}, p={prime} did not close in {composition_limit} steps")
     flags = bytes(flags)
     period = len(flags)
     assert period == step
     assert flags[0] == 1
     assert period <= 2 * integer, "Input-only period bound failed"
     assert all(flags[index] == flags[-index] for index in range(period))
-    return {
+    record = {
         "integer": integer,
         "input_bits": integer.bit_length(),
         "discriminant": delta,
@@ -95,17 +103,55 @@ def complete_cycle(integer: int, cutoff: int, prime: int) -> dict:
         "prime_root": records[prime][0],
         "prime_product": prime_product,
         "period": period,
+        "walk_compositions": step,
         "identity_reached": True,
         "leading_gcd_hits": gcd_hits,
         "flags": flags,
         "flags_sha256": hashlib.sha256(flags).hexdigest(),
         "inverse_symmetry_checked": True,
     }
+    if other is not None:
+        if other_index is None:
+            raise RuntimeError("Other prime form is not in the enumerated cycle")
+        other_k = least_power_above(other, height)
+        record["derived_other_generator"] = {
+            "prime": other, "discrete_index": other_index,
+            "least_power_above_height": other_k,
+            "actual_start_phase": (other_index * other_k) % period,
+            "prime_form": list(target),
+            "index_acquisition": "Tracked during the existing base cycle; zero extra walk compositions.",
+        }
+    return record
 
 
 def entry_flags(flags: bytes) -> bytes:
     period = len(flags)
     return bytes(flags[index] * (1 - flags[index - 1]) for index in range(period))
+
+
+def maximum_cyclic_run(flags: bytes, value: int) -> int:
+    period = len(flags)
+    if all(flag == value for flag in flags):
+        return period
+    start = next(index for index, flag in enumerate(flags) if flag != value)
+    best = 0
+    run = 0
+    for offset in range(1, period + 1):
+        if flags[(start + offset) % period] == value:
+            run += 1
+            best = max(best, run)
+        else:
+            run = 0
+    return best
+
+
+def maximum_entry_gap(entries: bytes) -> int:
+    positions = [index for index, entry in enumerate(entries) if entry]
+    period = len(entries)
+    if len(positions) < 2:
+        return period - 1
+    return max((positions[(index + 1) % len(positions)] - positions[index]) % period
+               for index in range(len(positions))) - 1
 
 
 def cyclic_window_counts(flags: bytes, window: int) -> list[int]:
@@ -124,7 +170,7 @@ def lower_tail_record(flags: bytes, window: int, order: int, constant: int) -> d
     """Exact check of (1/h) sum (mu-A)_+^{2q} <= (C q W delta)^q."""
     period, good = len(flags), sum(flags)
     counts = cyclic_window_counts(flags, window)
-    deviations = [good * window - period * count for count in counts]
+    deviations = [period * count - good * window for count in counts]
     lower = sum((-value) ** (2 * order) for value in deviations if value < 0)
     # lower <= (C q W good)^q * period^(q+1)
     unit_rhs = (order * window * good) ** order * period ** (order + 1)
@@ -147,7 +193,7 @@ def lower_tail_record(flags: bytes, window: int, order: int, constant: int) -> d
 def required_constant(flags: bytes, window: int, order: int) -> float:
     period, good = len(flags), sum(flags)
     counts = cyclic_window_counts(flags, window)
-    deviations = [good * window - period * count for count in counts]
+    deviations = [period * count - good * window for count in counts]
     lower = sum((-value) ** (2 * order) for value in deviations if value < 0)
     if lower == 0:
         return 0.0
@@ -171,6 +217,36 @@ def start_record(flags: bytes, window: int, phase: int) -> dict:
             "window_hits": count, "window_empty": count == 0}
 
 
+def derived_power_walk_control(flags: bytes, other: dict) -> dict:
+    jump = other["discrete_index"]
+    period = len(flags) // gcd(len(flags), jump)
+    walked = bytes(flags[(jump * k) % len(flags)] for k in range(period))
+    entries = entry_flags(walked)
+    start = other["least_power_above_height"]
+    controls = []
+    for name, process in (("raw", walked), ("entry", entries)):
+        good = sum(process)
+        for multiple in (1, 2, 4, 8):
+            window = (multiple * period + good - 1) // good
+            controls.append({"process": name, "mean_multiple": multiple,
+                             **start_record(process, window, start)})
+    return {
+        "direction_prime": other["prime"], "stride_in_base_cycle": jump,
+        "period": period, "start_exponent": start,
+        "start_base_phase": other["actual_start_phase"],
+        "raw_good": sum(walked), "entry_good": sum(entries),
+        "raw_flags_sha256": hashlib.sha256(walked).hexdigest(),
+        "entry_flags_sha256": hashlib.sha256(entries).hexdigest(),
+        "first_hit_offset": next(k for k in range(period) if walked[(start + k) % period]),
+        "first_entry_offset": next(k for k in range(period) if entries[(start + k) % period]),
+        "run_profile": {"max_hit_run": maximum_cyclic_run(walked, 1),
+                        "max_zero_run": maximum_cyclic_run(walked, 0),
+                        "max_entry_gap": maximum_entry_gap(entries)},
+        "matched_mean_start_controls": controls,
+        "legacy_entry_window_3260": start_record(entries, 3260, start),
+    }
+
+
 def profile_cycle(record: dict) -> dict:
     flags = record.pop("flags")
     other_phase = None
@@ -184,6 +260,12 @@ def profile_cycle(record: dict) -> dict:
     assert all(entry <= hit for entry, hit in zip(entries, flags))
     assert sum(1 for index in range(period)
                if flags[index] and not flags[index - 1]) == entry_count
+    run_profile = {
+        "max_hit_run": maximum_cyclic_run(flags, 1),
+        "max_zero_run": maximum_cyclic_run(flags, 0),
+        "max_entry_gap": maximum_entry_gap(entries),
+        "hit_runs": entry_count,
+    }
     assert good * period == sum(flags) * period
     mean_run = good / entry_count
     assert abs(entry_count / period - (good / period) / mean_run) < 1e-15
@@ -191,6 +273,7 @@ def profile_cycle(record: dict) -> dict:
     orders = sorted({order, order * order})
     start = record["least_power_above_height"]
     record.update({
+        "run_profile": run_profile,
         "density": {"good_classes": good, "period": period,
                     "decimal": good / period},
         "entry": {"entries": entry_count, "density_decimal": entry_count / period,
@@ -217,7 +300,7 @@ def profile_cycle(record: dict) -> dict:
                                   required_constant(process_flags, window, moment_order),
                                   "start": start_record(process_flags, window, start)})
                     if other_phase is not None:
-                        check["start_derived_other"] = start_record(
+                        check["shifted_base_walk_start"] = start_record(
                             process_flags, window, other_phase)
                     item["lower_tail"] = check
                 sufficient.append(item)
@@ -236,7 +319,7 @@ def profile_cycle(record: dict) -> dict:
                     "constant_two_bound_holds": check2["moment_bound_holds"],
                     "required_constant_decimal": required_constant(process_flags, window, moment_order),
                     "start": start_record(process_flags, window, start),
-                    **({"start_derived_other": start_record(
+                    **({"shifted_base_walk_start": start_record(
                         process_flags, window, other_phase)}
                        if other_phase is not None else {}),
                 })
@@ -256,74 +339,66 @@ def profile_cycle(record: dict) -> dict:
                               "first_hit_offset": next((offset for offset in range(period)
                                                         if flags[(start + offset) % period]), None)}
     if other_phase is not None:
-        record["derived_other_generator"]["flag"] = flags[other_phase]
-        record["derived_other_generator"]["first_hit_offset"] = next(
-            (offset for offset in range(period)
-             if flags[(other_phase + offset) % period]), None)
+        other = record["derived_other_generator"]
+        other["shifted_base_walk_start"] = {
+            "direction_prime": record["generator_prime"], "stride_in_base_cycle": 1,
+            "phase": other_phase, "flag": flags[other_phase],
+            "first_hit_offset": next(offset for offset in range(period)
+                                     if flags[(other_phase + offset) % period]),
+        }
+        other["actual_power_walk"] = derived_power_walk_control(flags, other)
     return record
 
 
-def g7_index(integer: int, cutoff: int, generator: int, other: int,
-             period: int) -> dict:
-    """Find the exact discrete index of the other prime form in the cycle."""
-    delta = -integer if integer % 4 == 3 else -4 * integer
-    base = build_prime_form_factor_base(delta, cutoff)
-    records = {item.prime: (item.root, item.positive) for item in base["records"]}
-    identity = (1, delta % 2, (delta % 2 - delta) // 4)
-    current, index = identity, None
-    target = records[other][1]
-    for exponent in range(period):
-        if current == target:
-            index = exponent
-            break
-        current = compose_with_prime_form(current, generator, *records[generator])
-    if index is None:
-        raise RuntimeError("Other prime form is not in the enumerated cycle")
-    height = isqrt(abs(delta) // 3)
-    k_other = least_power_above(other, height)
-    phase = (index * k_other) % period
-    return {"prime": other, "discrete_index": index,
-            "least_power_above_height": k_other,
-            "actual_start_phase": phase,
-            "prime_form": list(target)}
-
-
-def replay(expected_path: Path) -> None:
+def replay(expected_path: Path, *, saved_flags: bool = False) -> None:
     expected = json.loads(expected_path.read_text())
+    if saved_flags:
+        root = Path(__file__).resolve().parents[1]
+        sources = json.loads((root / "evidence/clustered-power-relations/receipt.json").read_text())["certificates"]
+    total = 0
     for cycle in expected["cycles"]:
         if "derived_other_generator" in cycle:
             other = cycle["derived_other_generator"]["prime"]
         else:
             other = None
-        record = complete_cycle(cycle["integer"], cycle["cutoff"],
-                                cycle["generator_prime"])
-        if other is not None:
-            record["derived_other_generator"] = g7_index(
-                cycle["integer"], cycle["cutoff"], cycle["generator_prime"],
-                other, record["period"])
+        if saved_flags:
+            source = next(item for item in sources if item["N"] == cycle["integer"])
+            record = copy.deepcopy(cycle)
+            record["flags"] = lzma.decompress((root / source["flags_file"]).read_bytes())
+            assert hashlib.sha256(record["flags"]).hexdigest() == cycle["flags_sha256"]
+        else:
+            record = complete_cycle(cycle["integer"], cycle["cutoff"],
+                                    cycle["generator_prime"], other, CAP - total)
+        total += record["walk_compositions"]
         record = profile_cycle(record)
         assert record == cycle, f"Replay mismatch for N={cycle['integer']}"
+    assert total == expected["total_walk_compositions"] <= expected["composition_cap"] == CAP
+    assert expected["derived_lookup_compositions"] == 0
 
 
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--output", type=Path)
     parser.add_argument("--replay", type=Path)
+    parser.add_argument("--saved-flags", action="store_true",
+                        help="Reprofile the archived flags without new group compositions; requires --replay")
     args = parser.parse_args()
+    if args.saved_flags and not args.replay:
+        parser.error("--saved-flags requires --replay")
     if args.replay:
-        replay(args.replay)
-        print(f"Replay matches {args.replay}")
+        replay(args.replay, saved_flags=args.saved_flags)
+        mode = "Saved-flag profile (zero new compositions)" if args.saved_flags else "Replay"
+        print(f"{mode} matches {args.replay}")
         return
     specifications = (
         (450296711, 23, 2, None),
         (1000036000099, 19, 5, 7),
     )
     cycles = []
+    total = 0
     for integer, cutoff, prime, other in specifications:
-        record = complete_cycle(integer, cutoff, prime)
-        if other is not None:
-            record["derived_other_generator"] = g7_index(
-                integer, cutoff, prime, other, record["period"])
+        record = complete_cycle(integer, cutoff, prime, other, CAP - total)
+        total += record["walk_compositions"]
         record = profile_cycle(record)
         cycles.append(record)
     result = {
@@ -334,6 +409,9 @@ def main() -> None:
                       "saturation <= cap"),
         "cap_cofactor": CAP_COFACTOR,
         "composition_cap": CAP,
+        "composition_cap_scope": "Aggregate base-walk compositions; derived index tracked in the existing walk.",
+        "total_walk_compositions": total,
+        "derived_lookup_compositions": 0,
         "complete_cycles": len(cycles),
         "cycles": cycles,
         "factoring_exponent_improved": False,

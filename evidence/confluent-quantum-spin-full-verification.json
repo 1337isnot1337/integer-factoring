@@ -1,0 +1,16 @@
+{
+  "source_commit": "570f6166360eeca50243e822465358fe1ffd8ce0",
+  "source_tree": "75caae02d8570d497ff2f49e48a3bfc051c30808",
+  "command": [
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 731.3965106859978,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "scope": "Default non-Lean verification at the exact source commit; no independent mathematical review.",
+  "stdout_sha256": "b1abc97cb31d00f96e17e8fa9f8ecbac90976536909ebfa7226452a3ef994689",
+  "stdout_archive": "evidence/confluent-quantum-spin-full-verification.stdout.txt.xz",
+  "archive_sha256": "115cdfe346325f87dd4ec32451f687f0b0a1814b91d413079b681c1535411584"
+}

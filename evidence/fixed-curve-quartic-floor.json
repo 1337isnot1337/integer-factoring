@@ -1,0 +1,224 @@
+{
+  "scope": "Fixed (x^2,y^2,xy) quartic cube at q8; exact generic binary jets and an all-common-paired-type profile-envelope floor. No complete profile, coefficient-rank lower bound or factoring improvement.",
+  "precision": 19,
+  "one_particle_orders": [
+    6,
+    6,
+    18,
+    18
+  ],
+  "registered_base": "50b01ff3cce5138532c476fe856826e8bfcf1ef1",
+  "cases": [
+    {
+      "fusion": false,
+      "charge": 0,
+      "dimension": 512,
+      "occupancy": {
+        "0": 1,
+        "2": 42,
+        "3": 168,
+        "4": 301
+      },
+      "nonzero_jet_entries": 925,
+      "toeplitz_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        20,
+        28,
+        36,
+        44,
+        52,
+        60,
+        110
+      ],
+      "smith_prefix": {
+        "0": 1,
+        "12": 7,
+        "18": 42
+      },
+      "independent_column_ranks": {
+        "7": 7,
+        "13": 20,
+        "18": 60,
+        "19": 110
+      }
+    },
+    {
+      "fusion": false,
+      "charge": 1,
+      "dimension": 512,
+      "occupancy": {
+        "1": 4,
+        "2": 36,
+        "3": 172,
+        "4": 300
+      },
+      "nonzero_jet_entries": 840,
+      "toeplitz_ranks": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        26,
+        40,
+        54,
+        68,
+        82,
+        96,
+        148
+      ],
+      "smith_prefix": {
+        "6": 2,
+        "12": 12,
+        "18": 38
+      },
+      "independent_column_ranks": {
+        "7": 2,
+        "13": 26,
+        "18": 96,
+        "19": 148
+      }
+    },
+    {
+      "fusion": true,
+      "charge": 0,
+      "dimension": 512,
+      "occupancy": {
+        "0": 1,
+        "2": 42,
+        "3": 168,
+        "4": 301
+      },
+      "nonzero_jet_entries": 18397,
+      "toeplitz_ranks": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        20,
+        28,
+        36,
+        44,
+        52,
+        60,
+        98
+      ],
+      "smith_prefix": {
+        "0": 1,
+        "12": 7,
+        "18": 30
+      },
+      "independent_column_ranks": {
+        "7": 7,
+        "13": 20,
+        "18": 60,
+        "19": 98
+      }
+    },
+    {
+      "fusion": true,
+      "charge": 1,
+      "dimension": 512,
+      "occupancy": {
+        "1": 4,
+        "2": 36,
+        "3": 172,
+        "4": 300
+      },
+      "nonzero_jet_entries": 16296,
+      "toeplitz_ranks": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        4,
+        6,
+        8,
+        10,
+        12,
+        26,
+        40,
+        54,
+        68,
+        82,
+        96,
+        142
+      ],
+      "smith_prefix": {
+        "6": 2,
+        "12": 12,
+        "18": 32
+      },
+      "independent_column_ranks": {
+        "7": 2,
+        "13": 26,
+        "18": 96,
+        "19": 142
+      }
+    }
+  ],
+  "literal_creation_controls": 61376,
+  "pressure_certificate": {
+    "whole_dimension": 4096,
+    "known_orders": 360,
+    "known_order_sum": 5748,
+    "determinant_degree": 229376,
+    "tail_count": 3736,
+    "tail_mean_upper": "55907/934",
+    "tail_order_used": 60,
+    "bernstein_degree": 200,
+    "factored_difference": {
+      "0": 14,
+      "14": -21,
+      "18": 91,
+      "36": 254,
+      "46": -147,
+      "78": -343,
+      "162": 3736
+    },
+    "positive_coefficients": 201,
+    "minimum_coefficient": "159818155002157432543656401926117432152578010819121/11428713242989840255078602148494026588963248234060",
+    "minimum_index": 135,
+    "coefficient_sha256": "4b452ae494a688c539c9bfee09d40ca597f9dfaf23b708b1c53adeab22b77365",
+    "profile_floor": "3/4",
+    "target": "1/sqrt(2)"
+  },
+  "source_sha256": {
+    "tools/check_fixed_curve_quartic_floor.py": "29793aa1b4ff47b529eb304aca5f24708f5e2cad3e0e4f861ca042434c874066",
+    "tools/check_quartic_charge_fusion.py": "8fd507feb9225adf4270a7976c4724261684f1935aacb4b3f92e46ddefed64d0",
+    "tools/cube_homogeneous_gaussian.py": "2281e1013bca1e6d595e039562be856533d7732e50ab1018b8eed55b5fb24593"
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "scope": "Periodic relation-change density bridge; integer postprocessing only, no new arithmetic cycle.",
+  "input_semantic_sha256": {
+    "receipt.json": "7edc3cb95ebced9b30063d92501182040e5571a1273919ebd5b510af69ab859e",
+    "row-audit.json": "e1efe5802d6759528f4c8e07c3294f9b9dbaff7d73a5e33ca0552c2511a2d572",
+    "pool-audit.json": "33ba78d5dd51f58860c5ec89bbd4c10f779996d2261bdc8d540323af441a658d"
+  },
+  "results": [
+    {
+      "prime": 5,
+      "period": 198850,
+      "K": 9,
+      "multiplicity_bound": 17,
+      "hits": 343,
+      "events": 61,
+      "maximum_identical_row_segment": 17,
+      "event_flags_sha256": "afa278a38e3b9cb408bbb5fade6b30dfa97ed87da42b50c73b19db7cb81c0ae0",
+      "equals_previous_pure_entry_process": true
+    },
+    {
+      "prime": 7,
+      "period": 198850,
+      "K": 7,
+      "multiplicity_bound": 13,
+      "hits": 343,
+      "events": 73,
+      "maximum_identical_row_segment": 13,
+      "event_flags_sha256": "a3d178abc66dde884433cdd4db73c7cbdaa9772226ac8d94da4481b31de6cfa8",
+      "equals_previous_pure_entry_process": true
+    }
+  ],
+  "all_good_control": {
+    "group_order": 3,
+    "prime": 2,
+    "height": 2,
+    "K": 2,
+    "hits": 3,
+    "events": 1,
+    "pure_entries": 0,
+    "bound": 3,
+    "density_bound_attained": true
+  },
+  "complete_factoring_exponent": "1/2; unchanged"
+}

@@ -1,0 +1,30 @@
+{
+  "rows": [
+    {
+      "compression_factor": 4,
+      "full_rank_product": 64,
+      "h": 1,
+      "h1_enumerated": true,
+      "independent_rank": 4,
+      "joint_image": 16,
+      "shared_inputs": 4,
+      "shared_pair_image": 4
+    },
+    {
+      "compression_factor": 65536,
+      "full_rank_product": 281474976710656,
+      "h": 2,
+      "h1_enumerated": false,
+      "independent_rank": 65536,
+      "joint_image": 4294967296,
+      "shared_inputs": 65536,
+      "shared_pair_image": 65536
+    }
+  ],
+  "scope": "Finite three-bundle codec diagnostic. The joint image of a shared-input pair and one independent bundle is the product of the shared graph and the independent rank. h=1 is exact by enumeration; h=2 uses the component rule. The full two-cut pad and complete factoring bound are unchanged.",
+  "source_sha256": {
+    "check_factoring_network_structure.py": "64ab9aa171e9534d1edb93e3cadc8c5bdf12d3aa94f420ebd70f2107851f69b3",
+    "check_three_bundle_joint_image.py": "2aba0ec167785a500421f1d70161760815aa7c14ea380398ff9236faa80a6b1c"
+  },
+  "status": "pass"
+}

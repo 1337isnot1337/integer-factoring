@@ -269,6 +269,164 @@ rather than new mathematics.
   class-group Cayley graphs under GRH; their mixing is for random walks with many generators, not
   for a single-generator progression). Recorded from the earlier Path C note.
 
+### Fixed-field large sieve and prime-power phase filters (2026-11-02)
+
+The fixed-field source is Duke--Friedlander--Iwaniec,
+[*Class group L-functions* (1995), Theorem A1 and its proof, pp. 52--53](https://www.math.ucla.edu/~wdduke/preprints/classgroup.pdf).
+Mishou, [*The universality theorem for class group L-functions* (2011),
+Lemma 3](https://www.impan.pl/shop/publication/transaction/download/product/83001),
+cites this theorem. The latter paper's main universality result varies
+fundamental discriminants; it is not the uniform target-cycle estimate
+required here. The DFI source works with the class group of an imaginary
+quadratic **field**. This citation imports no automatic extension to the
+nonmaximal orders in the factoring algorithm.
+
+Write `D` for the absolute field discriminant and `h` for the class number.
+For coefficients on integral ideals of norm at most `X`, DFI gives
+
+```math
+\frac1h\sum_{\chi}\left|\sum_{N\mathfrak a\le X}
+ c_{\mathfrak a}\chi(\mathfrak a)\right|^2
+=\left\{1+O(X/\sqrt D)\right\}
+ \sum_{\mathfrak a\ \mathrm{primitive}}
+ \left|\sum_{(l)}c_{(l)\mathfrak a}\right|^2.
+```
+
+Primitive means not divisible by a nonunit rational integer. For
+primitive support the proof bounds the absolute off-diagonal contribution
+by `6X/sqrt(D)` times the coefficient square sum. It vanishes when
+`2X<sqrt(D)`. This is an elementary occupancy bound for equivalent ideals,
+not a phase-localization theorem.
+
+Its direct phase-filter invoice is explicit. Let `p` be unramified and
+split, choose an oriented ideal `P` of norm `p`, and let `c_a` be supported
+on primitive, `p`-free ideals of norm at most `R`. Put
+
+```math
+F_\chi=\sum_{\mathfrak a}c_{\mathfrak a}\chi(\mathfrak a),
+\qquad D_W(z)=\sum_{j=0}^{W-1}z^j.
+```
+
+The product `F_chi D_W(chi(P))` has distinct primitive ideal coefficients
+at `P^j a`, since their `P`-adic valuations recover `j`. Its norm cap is
+`X=R p^(W-1)` and its coefficient square sum is `W sum_a |c_a|^2`.
+Consequently A1 implies
+
+```math
+\frac1h\sum_\chi |F_\chi D_W(\chi(P))|^2
+\le\left(1+\frac{6R p^{W-1}}{\sqrt D}\right)
+ W\sum_{\mathfrak a}|c_{\mathfrak a}|^2.
+```
+
+The principal character contributes
+`W^2 |sum_a c_a|^2/h` and must be retained. For the unramified smooth-word
+support, the existing [principal-word gap](small-norm-event-separation.md)
+also shows directly that this mean square is exactly
+`W sum_a |c_a|^2` if `4R^2 p^(W-1)<D`: a nondiagonal equivalence would
+give a nonzero principal word of smaller norm than `D/4`. This recovers
+the already controlled short-time regime, not the long window.
+
+Ordinary factorization of `F_chi` over disjoint prime colors does not
+automatically remove the long-time norm charge. Applying A1 to one factor
+times `D_W` still includes `p^(W-1)`; bounding the other factor by its
+maximum additionally loses its square-sum information. A useful bilinear
+argument would need further arithmetic cancellation across the shifted
+ideal classes, beyond this application of A1.
+
+DFI's Theorem 4, equation (1.32), treats critical-line **L-values** with
+the primitive-ideal twist `gamma_q(chi)`. For `q=p^t` that twist is
+`Re(chi(P)^t)`; its bound includes `q^6 D^(-1/28)` and a factor `D^epsilon`.
+This likewise does not supply a long prime-power filter at no norm cost,
+nor a second moment for arbitrary smooth-ideal coefficients. No stronger
+arithmetic phase estimate, target-index bound or complete factoring score
+is asserted by this source check.
+
+Sol worker 1 checked the displayed A1 statement/proof and Theorem 4
+against the rendered primary pages. The
+[registered question](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362689)
+concerns a genuinely stronger factorable hybrid estimate; no new orbit,
+cutoff or field search was run. The earlier literature investigation and
+its contributor credit are retained.
+
+### Zero-density estimates already allow a chosen annihilator (2026-11-03)
+
+Thorner--Zaman, [*Explicit results on the distribution of zeros of Hecke
+L-functions*, arXiv:1510.08086v1, Theorem 1.1, p. 4](https://arxiv.org/abs/1510.08086v1),
+applies to a congruence subgroup `H` and sums **only** over characters
+trivial on `H`. Write `n=[K:Q]`, `D_K=|disc K|`, and
+`Q=max_(chi(H)=1) N f_chi`. For `1/2<=sigma<1` it gives
+
+```math
+\sum_{\chi(H)=1}N(\sigma,T,\chi)
+ \ll\left(e^{O(n)}D_K^2QT^n\right)^{81(1-\sigma)},
+\qquad
+T\ge\max\{nD_K^{-2/n}Q^{-3/(5n)},1\}.                 \tag{16}
+```
+
+All implied constants are absolute and effective; 81 can be replaced by
+74 when `sigma>=1-10^(-3)`. Here `N` counts zeros with
+`sigma<Re rho<1`, `|Im rho|<=T`, with multiplicity. In an imaginary
+quadratic **field**, ordinary class-group characters have `n=2,Q=1`.
+Thus (16) already bounds the exceptional spectrum in the actual
+annihilator of any selected class-group subgroup, by
+`(C D_K^2 T^2)^(81(1-sigma))` for `T>=1`. Averaging over the entire
+class group is not a necessary limitation of this source. For ring-class
+characters the appropriate ray-class quotient and its conductor norm
+remain in the invoice; setting `Q=1` is not an automatic extension to
+nonmaximal orders.
+
+This is a zero count, rather than a bound for the smooth-word Fourier
+coefficients. To make that distinction explicit, put `f=1_S` on a finite
+abelian group `G`, with the normalized transform used above and
+`delta=hat f(1)`. If `d=[G:U]`, orthogonality gives
+
+```math
+\mathbb E_U f=\delta+
+  \sum_{\substack{\chi\in U^\perp\\\chi\ne1}}\widehat f(\chi).
+```
+
+Suppose an exceptional subset `B` of `U^perp minus {1}` has size `M`,
+and `|hat f(chi)|<=epsilon delta` outside it. Triangle inequality and
+Cauchy--Schwarz give
+
+```math
+|\mathbb E_U f-\delta|
+\le(d-1-M)\epsilon\delta+
+ \sqrt{M\sum_{\chi\in B}|\widehat f(\chi)|^2}.           \tag{17}
+```
+
+A zero-density theorem can bound `M` when the exceptional set means
+having a zero in its rectangle. It does not itself supply either the
+good-coefficient hypothesis or the exceptional coefficient energy in
+(17). Substituting only `|hat f|<=delta` leaves `M delta`; global
+Parseval leaves `sqrt(M delta)`. These crude substitutions do not prove
+a useful relative error for a nonempty exceptional set. This does not
+exclude sharper weighted estimates or a use of the characters' phases.
+Long-window event moments additionally require their shifted products,
+not just the one-set density identity.
+
+Harper, [*Bombieri--Vinogradov and Barban--Davenport--Halberstam type
+theorems for smooth numbers*, arXiv:1208.5992v1, Proposition 1, p. 9](https://arxiv.org/abs/1208.5992v1),
+supplies a useful model for the missing coefficient estimate, with
+explicit zero-free rectangle and truncation conditions. It is a
+**Dirichlet-character** result, with conductor `r<=x^d` for a small
+absolute `d`, as well as modulus and height restrictions. An unramified
+class-group character's finite ideal conductor is one, but its analytic
+conductor still contains `D_K`; one cannot import that proposition by
+setting `r=1`. At recognizable norm scale `x` comparable to `sqrt(D_K)`,
+the discriminant is `x^(2+o(1))`. A Hecke smooth-ideal analogue must
+control that discriminant and its truncation error explicitly. Harper's
+subsequent conductor average with `1/phi(q)` weights is also a separate
+operation from restriction to one fixed field's target subgroup.
+
+Sol worker 1 checked these two theorem statements against rendered
+primary pages in the [registered source check](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19365531).
+No new analytic estimate, event-correlation theorem or stronger complete
+factoring bound is claimed. The existing
+[even-product subgroup density theorem](small-index-smooth-density.md)
+already handles its stated index range without a nonprincipal
+prime-character estimate; that mechanism is not new here.
+
 ## 5. Placement recommendation
 
 Keep this in the integer-factoring research repo, as `research/` notes next to the window lemma.

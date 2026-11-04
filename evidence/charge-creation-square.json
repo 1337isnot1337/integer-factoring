@@ -1,0 +1,108 @@
+{
+  "nonzero_divided_square": {
+    "colors": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ],
+    "integer_partitions": 7
+  },
+  "q16_distinct_subsets": {
+    "panels": [
+      {
+        "augmented_rank": 5,
+        "integer_partitions": 0,
+        "subsets": 6000,
+        "total_xor_zero": false
+      },
+      {
+        "augmented_rank": 4,
+        "integer_partitions": 7,
+        "subsets": 15,
+        "total_xor_zero": true
+      },
+      {
+        "augmented_rank": 5,
+        "integer_partitions": 3,
+        "subsets": 420,
+        "total_xor_zero": true
+      }
+    ],
+    "records_sha256": "3437f81918854520135a0e25780766a90cd75e9ff9bb7179ead5a7a1e43a47dd",
+    "subsets": 6435
+  },
+  "q8_full_disjoint_expansion": {
+    "integer_terms": 987840,
+    "multiplicity_histogram": {
+      "4": 211680,
+      "8": 17640
+    },
+    "odd_coefficients": 0,
+    "ordered_quartets": 168,
+    "spatial_partitions": 35,
+    "supported_words": 229320,
+    "word_counts_sha256": "1c548932a7274c3462509041fd2cc4c9612d3eb5c71b30b0222672dc4b09fb9c"
+  },
+  "repeated_color_involutions": [
+    {
+      "colors": [
+        1,
+        2,
+        4,
+        7,
+        1,
+        2,
+        4,
+        7
+      ],
+      "valid_partitions": 8
+    },
+    {
+      "colors": [
+        1,
+        2,
+        4,
+        7,
+        1,
+        3,
+        5,
+        7
+      ],
+      "valid_partitions": 4
+    },
+    {
+      "colors": [
+        1,
+        1,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "valid_partitions": 0
+    }
+  ],
+  "scope": "Exact quartic creation-product coefficients over characteristic two. No Smith profile, pressure, global contraction or factoring bound.",
+  "source_sha256": "c349d3293b77af8149f69a86ab9c13cb03eaf5d8b00ebd085651de0912f890ac",
+  "total_xor_alone_insufficient": {
+    "augmented_rank": 7,
+    "colors": [
+      1,
+      2,
+      4,
+      8,
+      16,
+      32,
+      64,
+      127
+    ],
+    "integer_partitions": 0
+  }
+}

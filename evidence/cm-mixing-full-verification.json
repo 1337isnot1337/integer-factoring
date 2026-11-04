@@ -1,0 +1,56 @@
+{
+  "source_commit": "78b3c115c10148f89b3eb393c37c89b1bb3d3239",
+  "source_tree": "b0d2acb893e87d1026c51cb1e55b7e246eef20e8",
+  "command": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--tmpfs",
+    "/tmp",
+    "--dir",
+    "/tmp/sol1-cm-mixing-replay-78b3c11",
+    "--bind",
+    "/tmp/sol1-cm-mixing-replay-78b3c11",
+    "/tmp/sol1-cm-mixing-replay-78b3c11",
+    "--chdir",
+    "/tmp/sol1-cm-mixing-replay-78b3c11",
+    "--unshare-net",
+    "--die-with-parent",
+    "--setenv",
+    "GIT_OPTIONAL_LOCKS",
+    "0",
+    "--",
+    "make",
+    "verify"
+  ],
+  "tracked_state_before": "",
+  "scope": "Default non-Lean verification in a verified private /tmp namespace; host root read-only, only frozen checkout writable. No independent mathematical review.",
+  "exit_code": 0,
+  "seconds": 2201.0552127450064,
+  "tracked_state_after": "",
+  "stdout_sha256": "95524baf31a479a492632b4fce44410583e55f9c31f2fa82c97ebf047057d086",
+  "stdout_archive": "evidence/cm-mixing-full-verification.stdout.txt.xz",
+  "archive_sha256": "fefd32f02365d91fee07d4b67850b9b87bcdfa0a0b284ef407c15cb2ef75d9ed",
+  "followup_scope": {
+    "source_commit": "a6db160ec00ad9ee29a91e6b36783c60277a775f",
+    "scope": "PR103 review archive integration and the explicit one-sided-minorant caveat; new checker unchanged. Focused and docs checks passed in 1186 Markdown files.",
+    "hosted_run": "https://github.com/1337isnot1337/integer-factoring/actions/runs/41527780930",
+    "hosted_observed_successes": [
+      "exact-certificates (make verify)",
+      "arithmetic-sieve"
+    ],
+    "hosted_limit": "Existing half-rate CI job was still in progress when these successes were observed; no claim that all hosted jobs had finished."
+  },
+  "post_main104_scope": {
+    "source_commit": "acc9fd276e8e93669a38ee3400846976aecb5bba",
+    "commands": [
+      "make verify-cm-smooth-flag-geometry verify-near-height-smooth-descent verify-docs"
+    ],
+    "scope": "Focused integration checks; links in 1187 Markdown files. PR104 has its own separate full source pin; no second combined full replay is claimed."
+  }
+}

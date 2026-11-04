@@ -1,0 +1,43 @@
+{
+  "child_pid": 2785200,
+  "command": [
+    "make",
+    "verify",
+    "verify-entry-gap-cluster-loss",
+    "verify-determinant-inverse-k4"
+  ],
+  "completed_utc": "2026-11-03T04:24:39.147178+00:00",
+  "elapsed_seconds": 1342.1733690289839,
+  "exit_code": 0,
+  "focused_output_checks": {
+    "entry_gap_complete_traversals": 9,
+    "entry_gap_prefix_records": 70465,
+    "k4_full_profile_recomputed": false,
+    "k4_saved_complete_orders": 9800,
+    "k4_selected_polynomial_entries": 130
+  },
+  "frozen_worktree": "/tmp/sol1-homelab-integration-full-c9ddfae",
+  "integration_scope": "Homelab sources52b14ea/a7e1d84 integrated and repaired at c9ddfae. Default verification plus both new targets explicitly; no optional full k4 profile reconstruction, no Lean targets. Later PR118 is outside this source pin.",
+  "namespace_probe": {
+    "frozen_checkout_writable": true,
+    "host_root_read_only": true,
+    "namespace_probe": "PASS",
+    "network_unshared_by_bwrap": true,
+    "private_tmp": true
+  },
+  "post_source_commit": "c9ddfae08e3e979e4a92ca6adf02266fe143ad13",
+  "post_source_tree": "c228943b510d701c2d87c21fcac549717b30e659",
+  "post_status": "",
+  "post_untracked_status_verified_empty": true,
+  "pre_status": "",
+  "runner_pid": 2784687,
+  "scope": "Default suite plus both new homelab checkers. No optional full k4 reconstruction or Lean targets.",
+  "source_commit": "c9ddfae08e3e979e4a92ca6adf02266fe143ad13",
+  "source_tree": "c228943b510d701c2d87c21fcac549717b30e659",
+  "started_utc": "2026-11-03T04:02:19.053492+00:00",
+  "status": "complete",
+  "stdout_archive": "evidence/homelab-integration-full-verification.stdout.txt.xz",
+  "stdout_archive_sha256": "5dfb6f95ea8bee806ca3d0cdf8c8bcb3cadebd90d78ce8f42d7bf7383f15010c",
+  "stdout_path": "/home/cinna/.local/state/factoring-fleet-20261102/sol1-homelab-integration-full.stdout.txt",
+  "stdout_sha256": "985c177c545a8136aa8147c2254fb2884c1e28dc72e0f4f6c598f366b7aaf96b"
+}

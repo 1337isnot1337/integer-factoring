@@ -1,0 +1,43 @@
+{
+  "source_commit": "b1b85810d35a69513099917160192365bca3bd16",
+  "source_tree": "cd56e4f50292c303c0756f9b25b1fa4d3969ca0a",
+  "command": [
+    "bwrap",
+    "--ro-bind",
+    "/",
+    "/",
+    "--dev",
+    "/dev",
+    "--proc",
+    "/proc",
+    "--tmpfs",
+    "/tmp",
+    "--bind",
+    "/home/cinna/integer-factoring-quartic-charge-01a192e7",
+    "/home/cinna/integer-factoring-quartic-charge-01a192e7",
+    "--chdir",
+    "/home/cinna/integer-factoring-quartic-charge-01a192e7",
+    "--unshare-net",
+    "--die-with-parent",
+    "--setenv",
+    "GIT_OPTIONAL_LOCKS",
+    "0",
+    "--",
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 950.8230098240019,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "namespace_control": {
+    "host_marker_visible": false,
+    "mount_namespace": "mnt:[4026534009]",
+    "different_mount_namespace": true,
+    "inner_marker_visible_on_host": false
+  },
+  "scope": "Default non-Lean make verify in a marker-verified private /tmp mount with host root read-only and only this worktree writable; no independent mathematical review.",
+  "stdout_sha256": "3c004c10ea6055534876e1d2f80d03a374b23f6c11639860e13d62aeb300928d",
+  "stdout_archive": "evidence/quartic-charge-full-verification.stdout.txt.xz",
+  "archive_sha256": "b35e5770db17e273b36b47516bcabb07df6926c1e11c2051d50644a11ad2200c"
+}

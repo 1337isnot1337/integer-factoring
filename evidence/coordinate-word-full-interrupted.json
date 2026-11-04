@@ -1,0 +1,12 @@
+{
+  "source_commit": "e764b055dff1d6bf6f7b52e995b2694314618af7",
+  "source_tree": "281a9f4f92320b504b9815bb852b94d73c95e544",
+  "exit_code": 143,
+  "status": "incomplete_interrupted",
+  "reason": "Exec session returned SIGTERM (143), before a final wrapper receipt. No checker failure is recorded; termination cause not confirmed.",
+  "last_command": "python3 tools/check_geometric_row_inverses.py --output /tmp/integer-factoring-geometric-row-inverse-audit.json",
+  "stdout_sha256": "f0640a9337134919910364751e78d5d3a9081c158a6d6ef7b2c65418dd5c133d",
+  "tracked_state_after": "",
+  "stdout_archive": "evidence/coordinate-word-full-interrupted.stdout.txt.xz",
+  "archive_sha256": "ec77c5c5bc7d8ab4be401e94b3b8f0165478f0f35326b351ee35286f9c4558b6"
+}

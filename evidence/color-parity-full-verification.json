@@ -1,0 +1,16 @@
+{
+  "source_commit": "a879fd7dc54c6b6fa0041da6578148886f94efaa",
+  "source_tree": "7f3973f255cfd4d82db0970018214ff3148e2fe1",
+  "command": [
+    "make",
+    "verify"
+  ],
+  "exit_code": 0,
+  "seconds": 1071.1677245579922,
+  "tracked_state_before": "",
+  "tracked_state_after": "",
+  "scope": "Default non-Lean verification at the exact source commit; no independent mathematical review.",
+  "stdout_sha256": "f1fa4776f18fe3690d526ed78118e2215b188aa5d136cc6b6827cd3dda2ef529",
+  "stdout_archive": "evidence/color-parity-full-verification.stdout.txt.xz",
+  "archive_sha256": "54f4625fbafb33fcc2ca17acb2e1c097adeb74625c7e463916386367a6e23c22"
+}

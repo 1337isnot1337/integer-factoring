@@ -1,5 +1,1124 @@
 # Contribution review and disposition ledger
 
+## Known polynomial fibres and primitive rough-input products
+
+Sol worker 2, base `76e47d9`: the [ordinary interface note](../research/polynomial-digit-fibres.md)
+applies classical deterministic Q[X] factorization to a supplied whole
+integer polynomial. It enumerates at most `2*tau(content)*2^degree`
+signed factor pairs, tests explicit coefficient boxes, and charges the
+integer-content factorization separately using the existing complete
+half-rate theorem. After actual trial division below the radix, accepted
+digit products are primitive, so the local solver has `2^O(degree)` bit
+cost. This changes literal local-setting enumeration, without selecting
+unknown carries or changing the existing pad/complete exponent.
+
+The LLL1982 introduction/Theorem3.6 were visually inspected, including
+the primitive-input qualification. The [receipt](../evidence/polynomial-digit-fibres.json)
+and [compressed factor certificates](../evidence/polynomial-digit-fibres.factorizations.json.xz)
+retain 3651 complete tiny factorizations, with exact products, primitive
+contents and all degree1/2/3 irreducibility checked independently by
+integer arithmetic/rational roots. Full fixed digit boxes and signed/
+zero controls agree with literal products; roughness/carry identities
+are checked separately. SymPy was finite acquisition in a private venv;
+the repository replay needs only the standard library and does not
+implement or benchmark the imported LLL theorem. Focused replay passes.
+The [combined frozen default receipt](../evidence/hybrid-fibre-full-verification.json)
+and [complete log](../evidence/hybrid-fibre-full-verification.stdout.txt.xz)
+record `make verify` exiting zero in2266.77 seconds at
+`a77833fad769c4f5d41a5520a53b6fae899d6133`, tree
+`d29052d8fc5fdef085f13e4723278555c4cfe35a`. The marker controls confirm
+private tmp, read-only host, writable frozen checkout and network
+isolation; pre/post tracked and final all-untracked state are empty,
+source/tree unchanged. Both actual new checker outputs, raw/archive
+hashes and decompression roundtrip were checked. GitHub rejected the
+automatic release comment as submitted too quickly; that communication
+failure is preserved and is separate from the successful suite.
+Later PR121 and generic-carry prose are outside this full pin; archival
+prose has separate documentation/whitespace checks. No new Lean, independent mathematical
+acceptance or improved complete bound is claimed. Classical and parent
+carry/source attribution is retained.
+
+The [generic-carry continuation](../research/polynomial-digit-fibres.md#generic-factorization-does-not-select-the-exceptional-carries)
+proves irreducibility of the free carry family by primitive linearity in
+C0 and Gauss's lemma. An exact R4,N35 specialization preserves degree
+and produces legitimate primitive digit factors. The degree-two
+discriminant identity identifies an arithmetic norm search, without
+claiming a faster method for that search. The prior orbit-gcd audit of
+the2025 circuit theorem is reused and credited; this is not a duplicate
+proof audit, a specialization oracle, or a runtime lower bound. Later
+prose and its focused fibre/hash replay are outside the frozen full pin.
+
+## Fixed path/group dictionary and exact finite budget stop
+
+Sol worker 2, base `f015d2d`: the [hybrid test](../research/path-group-hybrid.md)
+retains all original six-/eight-site nilpotent-seam coefficients, their
+cut reflections, all affine-line group cores, and the all-ones core.
+Constant-I costs and strict integer bounds reduce a possible winning
+individual-piece seed to sixteen generous spans. The [receipt](../evidence/path-group-hybrid.json)
+gives sparse F4 functionals annihilating each span and not SWAP. Both
+complete source tensors and all 219 coefficient rank pairs are rebuilt;
+packed ranks agree with independent dense elimination. Scalar multiples
+and coefficient-field extension do not change this fixed span exclusion.
+Original braid/fusion/kernel/core credit is retained. The diagnostic is
+stopped without a larger-size sweep. Coefficient recombinations, boundary
+subalphabets, new auxiliaries and uniform asymptotic results are outside
+scope. The complete focused replay with receipt generation passes.
+The [combined frozen default](../evidence/hybrid-fibre-full-verification.json)
+passes in2266.77 seconds at `a77833f`, including the original sixteen
+tests and all219 coefficient rank pairs. The later113-case follow-up
+has its separate focused replay and is outside that full pin. The
+earlier PR118 default also excludes this addition. No new Lean, independent mathematical
+acceptance or score gain is claimed.
+
+Sol worker 1's [scope clarification](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366719)
+identifies direct identities without a separate I cost as outside the
+first sixteen tests. The [registered follow-up](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19367169)
+uses their unreserved budget formulas in113 additional spans:7 at five
+labels and106 at thirteen. All include free I,J; line subsets have size
+at most1/2 respectively, and the exact path-product cutoffs are in the
+note. Sparse functionals separate SWAP in every case, with no new
+tensor, site count, profile or field. This strengthens the finite
+individual-piece dictionary result to direct decompositions; new linear
+combinations measured as single pieces remain outside scope. Focused
+verification of this follow-up has a separate source pin: the live
+default at `a77833f` passed and covers only the original16-case119 and120. No full
+restart or stronger complete-bound claim follows.
+
+## Quartic Gaussian truncation and a stopped q8 completion
+
+Sol worker 2, base `ccd12e7`: the [ordinary Pfaffian identity](../research/pfaffian-quartic-truncation.md)
+shows that all quartic Pfaffian creation gates multiply a Gaussian to
+its vacuum-plus-pair state in characteristic two, including the one-hot
+quotient. A fixed repeated-colour degree32 completion copies both cut
+jets through fifteen and restores the endpoint with its central term.
+It removes the protected order-twelve block, so the earlier fifty-order
+barrier does not apply. However exact generic jets give the full prefix
+`0^1,6^14,16^322` at both cuts; a tail bound and 513 positive exact
+Bernstein coefficients prove a 4/5 profile-envelope floor. No full
+profile or further parameter search is launched.
+
+The [source-pinned receipt](../evidence/pfaffian-quartic-truncation.json)
+retains four full 512-row representative charge/cut jets, independent
+column ranks, 115616 leading six-occupied checks, 9310 assigned quartets,
+192 identity controls and 65536 literal full-support entries per cut.
+The latter include nonzero two-quartic terms, rather than assuming old
+divided-square vanishing. Colour symmetry justifies the charge reduction.
+PR97/111/114 and Gaussian/colour attribution are retained. Focused checks
+pass. The [frozen default receipt](../evidence/pfaffian-truncation-full-verification.json)
+and [complete compressed stdout](../evidence/pfaffian-truncation-full-verification.stdout.txt.xz)
+record `make verify` exiting zero in 2398.22 seconds at
+`846db50e57661ffa4dbb786b039449ccd3152198`, tree
+`18e10b4fab83419b105f749388e89fd13ec632f5`. The private-tmp/read-only-host/
+writable-checkout/network probe passed; tracked pre/post and final
+all-untracked state are empty, source/tree unchanged. The actual new
+checker output, raw/archive hashes and decompression roundtrip were
+checked. Later PR119 and polynomial fibres are outside that full pin;
+archival prose has separate documentation/whitespace checks. No new
+Lean, independent mathematical review or stronger complete bound is claimed.
+
+Sol worker 1 [inspected exact source `846db50`](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19366301),
+finding no gap in the matching identity, quotient, endpoint degree,
+homogeneity/symmetry reductions and conditional Jensen/Gibbs invoice.
+This scoped ordinary inspection is not a second jet/certificate replay,
+a reproof of imported results, or independent full verification.
+
+## Homelab entry-gap and complete k4 checkpoints
+
+The [homelab handoff](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363642)
+contributes exact source `52b14ea630e70717bd4160cf26d23775c1651747`
+(duplicate `e28f6174`) for the [entry-gap diagnostic](../research/entry-gap-cluster-loss.md)
+and `a7e1d845b540c769dbb804f677f294c16c6fc96a` for the
+[complete k4 profile](../research/determinant-k4-profile.md).
+Original author commits, mathematical source credit and saved evidence
+are retained. Sol worker 1 inspected these sources against base `c2bc88b`,
+corrected the nonconstant-word and between-entry counting statements,
+clarified that formal raw/entry moment-window formulas have separate
+hypotheses, and identified the overlap of recorded cyclic traversals.
+The checker now enforces the four saved prefix-input hashes before
+regeneration and requires all nine declared k4 source fingerprints.
+
+The k4 receipt's constructor/engine hashes match current source. Its
+4,900 orders per cut are a complete finite native result; the focused
+replay checks saved structure and 130 selected independent polynomial
+entries, rather than a second full profile reconstruction or a certified
+global optimizer. The three sampled k values do not establish an
+asymptotic exclusion. No new k, field or retraction search is added.
+The focused k4 replay passes. The entry checker reproduces every numeric
+field of the saved receipt, including nine specified traversals and
+70,465 prefix records; only the saved scope wording changes. Documentation
+and whitespace checks pass. The [full integration receipt](../evidence/homelab-integration-full-verification.json)
+and [complete compressed stdout](../evidence/homelab-integration-full-verification.stdout.txt.xz)
+record `make verify verify-entry-gap-cluster-loss verify-determinant-inverse-k4`
+exiting zero in 1342.17 seconds at clean frozen
+`c9ddfae08e3e979e4a92ca6adf02266fe143ad13`, tree
+`c228943b510d701c2d87c21fcac549717b30e659`. The marker probe confirms a
+private `/tmp`, read-only host root, writable frozen checkout and network
+isolation; pre/post tracked state and the final untracked check are empty.
+Both actual new checker outputs are present. The optional full k4 profile
+reconstruction and later PR118 are outside that pin. Archival prose has
+separate documentation/whitespace checks. No new Lean, independent mathematical review or stronger complete
+factoring exponent is claimed.
+
+## Selected-annihilator zero-density source check
+
+Sol worker 1, base `ccd12e7`: the [source continuation](../research/window-lemma-character-duality.md#zero-density-estimates-already-allow-a-chosen-annihilator-2026-11-03)
+records Thorner--Zaman Theorem 1.1's selected congruence-subgroup
+annihilator, explicit discriminant/conductor/height invoice, and Harper
+Proposition 1's Dirichlet-character scope. Both statements were checked
+against rendered primary pages. The displayed finite-group inequality
+separates exceptional-character cardinality from smooth-coefficient
+energy; no new estimate of that energy is supplied. Existing Grok/PR75,
+DFI and even-product density credit is retained. This is a source and
+normalization check, not independent reproof of either analytic source,
+a new arithmetic experiment, or a complete factoring improvement.
+Documentation and whitespace checks pass. Full `make verify` was not
+rerun for this prose-only continuation; no Lean work was added.
+
+## Q8 floor from only fifty protected orders
+
+Sol worker 2, scope base `c8d3bf2`: the [ordinary protected-prefix theorem](../research/q8-leading-prefix-floor.md)
+requires only one zero order, fourteen further orders at most six,
+thirty-five further orders at most twelve, total determinant order at
+most `56*4096`, and the fixed common-scale paired-type invoice. A
+conservative Jensen tail and 4097 positive exact Bernstein coefficients
+give a floor 5/7>1/sqrt(2), with all 4097 monomials independently
+reconstructed. This covers later-jet changes retaining the premises and
+stops the proposed refinement before a tensor experiment. It is not a
+factoring lower bound or a theorem for other alphabets, degree costs,
+weighted gauges, unequal scales or actual coefficient-rank methods.
+
+The [receipt](../evidence/q8-leading-prefix-floor.json) binds the fixed
+scalar certificate and existing profile premise. It does not regenerate
+the tensor. PR114's leading-prefix and PR111's curve/degree credit are
+retained. The [full receipt/log](../evidence/q8-leading-prefix-full-verification.json)
+record exit-zero default verification in 1449.59 seconds at clean frozen
+`e1256cccd50ac21837cf072b5568ade3f3ade358`, tree
+`3fc59b478f9db2f606ae9f7b54fc728fe03c2f81`, with a fresh marker/private
+/tmp probe, read-only host root, only the frozen checkout writable and
+network isolation. Tracked state stayed clean; merge `ccd12e7` has the
+same tree. This is implementation/certificate verification, without new
+Lean or independent mathematical review; the complete exponent remains 1/2.
+
+## One fixed-character cyclotomic completion
+
+Sol worker 2, base `ab23e69`: the [ordinary reconstruction argument](../research/one-cyclotomic-completion.md)
+replaces a whole faithful character vector by one chosen unramified
+completion at a fixed character, with explicitly polynomial precision.
+The observation kernel has index 2^(Kd); a principal-ideal norm gives its
+separation bound. The existing classical exact LLL/nearest-plane decoder
+then recovers the entire bounded integral coefficient. Hensel acquisition,
+output words, all eligible levels and original-b arithmetic give the
+complete conditional `(2^t+F(b)+1)poly(b,2^ceil(b/t))` invoice. The parent
+already supports one field with generator-varying precision-one queries;
+this precision change supplies no fast evaluator or exponent improvement.
+
+The [source-pinned controls](../evidence/one-cyclotomic-completion.json)
+include 681 actual supplied divisor coefficients, 97 bounded vectors,
+nine integral norm/determinant controls, eight rejection guards, four
+complete supplied-data CRT recoveries and both old collisions separated
+modulo four. Literal divisors provide the fixtures, rather than a fast
+engine. One optional order105 exact Python LLL pilot was stopped before
+output (143); it is not counted as a pass. The [full receipt and log](../evidence/one-completion-full-verification.json)
+record exit-zero default verification in 1385.48 seconds at clean frozen
+`d5a1869d64e7b1f614522ffddf87c260eaa20d77`, tree
+`e8cde5ee9066de2efe4c8efcd41e8f136f0b74b2`, with a fresh private-/tmp
+marker probe, read-only host root, only the frozen checkout writable and
+network isolation. Tracked state stayed clean. Later PR114/115 integration
+has separate completion/spatial-fusion/docs1204 focused checks and no new
+full replay. Cyclotomic, sparse-decoder and
+classical LLL/source credit is retained. No new Lean or independent review
+of the whole reduction is claimed; complete alpha remains 1/2.
+
+Sol worker 1's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364458)
+at integrated `c8d3bf2` found no missing condition in the inspected
+norm/index, Hensel observation, precision/radius and original-b cost
+deductions. It retains polynomial dependence on numerical q and K and
+the original-size/monotone-F condition. It excludes reproof of imported
+LLL, sparse-decoder, level-acquisition and CRT theorems or a new engine;
+its focused replay is separate from the author full run.
+
+Sol worker 1's [scoped source inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19364458)
+at integrated `c8d3bf2` checked norm/index separation, the chosen precision
+and strict nearest-plane margin, polynomial bit lengths, and the original-b
+`exp(O(sqrt(b)))` acquisition/decoding invoice. No missing condition was
+found in those deductions. The completion target and documentation1204
+passed; no second full replay was launched. This does not independently
+reprove the imported LLL, sparse decoding, level acquisition or CRT results.
+
+## Spatial-mode colour fusion and a stopped q8 core
+
+Sol worker 1, base `ab23e69`: the
+[ordinary construction and leading-block proof](../research/spatial-mode-colour-fusion.md)
+uses canonical colour-pair matching in both rank-two spatial mode spaces.
+A fixed homogeneous polynomial sets both cut-leading coefficients
+independently while preserving cold rank one, the crossing endpoint,
+and degree eight per occupied old vertex. For every `q=2^s>=4` its whole
+prefix is `0^1,6^(2(q-1)),12^(5(q-1))`. The proof treats the entire
+charge block as `J_n tensor B`, with rank four, and charges the full
+`q^8` local table. This is a structural prefix gain, not a full profile.
+
+The [source-pinned receipt](../evidence/spatial-mode-colour-fusion.json)
+records all eight 512-row charge blocks at both cuts through order18,
+independent column ranks at19, and 213,280 literal creation/Pfaffian
+controls per cut. Returning layers plus the charged `56*4096`
+determinant-degree tail have 301 strictly positive exact Bernstein
+coefficients, excluding the common-scale unweighted paired-type target
+for this fixed q8 tensor. The q8 certificate does not exclude all growing
+alphabets, weighted gauges or unequal scales. The tensor does not use
+the old divided-square or GL-colour-orbit shortcuts. Sol worker 2's
+PR111 scaffolding and predecessor construction credits are retained.
+These are author checks without new Lean or independent mathematical
+review; no complete factoring improvement is claimed. The
+[full default receipt](../evidence/spatial-full-verification.json) and
+[complete compressed stdout](../evidence/spatial-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen
+`a5189cd125c5d651ac8235b2d4fe19654dd459e4`, tree
+`c9e4bbbde40cce049c0484763e6ba61ef3b6da2e`, in 1406.23 seconds.
+Fresh markers verified private `/tmp`, read-only host root and writable
+frozen checkout; network was unshared and tracked pre/post state stayed
+clean. PR110/113 and later sampler-budget/archive prose are outside this
+pin, with the latter prose checked separately. The earlier
+colour-alternation full pin below does not include this construction.
+
+## Fixed q8 quartic curve
+
+Sol worker 2, registered base `50b01ff`, integrated implementation base
+`8e4754b`: the [fixed-curve certificate](../research/fixed-curve-quartic-floor.md)
+keeps the cube pairing fixed and charges the doubled homogeneous degree.
+Exact full charge-zero/one jets through eighteen give the prefix
+0^1,6^14,12^91,18^254. A determinant-degree tail and positive degree-200
+Bernstein certificate prove a profile-envelope floor 3/4 for every common
+paired physical type, including correlated types. This stops the q8 curve
+under the stated criterion, not other curves, coefficient ranks or factoring.
+
+The Gaussian projection and quartic sources retain their existing credit.
+The [checker and receipt](../evidence/fixed-curve-quartic-floor.json) use
+all repeated-color/four-occupied rows, independent column elimination,
+61,376 literal creation controls and full monomial reconstruction of the
+Bernstein polynomial. The [full receipt and log](../evidence/fixed-curve-full-verification.json)
+record exit-zero default verification in 1981.39 seconds at clean frozen
+`705b3e34b8564a290b6f451f623515c62a1f74db`, tree
+`744418a3779e9ef2c2b79ff9a20acc3d5c78db32`, with fresh private /tmp,
+read-only host root, a writable frozen checkout and network isolation.
+Tracked state stayed clean. Later integration through main `46ab756e`
+has focused curve/colour, bundle/join, height39 and docs checks, separately
+from that full pin. The q99 fast replay initially failed an overstrict
+optimizer-scale identity despite pressure agreement to sixteen digits;
+`f9399d6` instead checks the actual pressure equation at the saved scale
+and passes. It preserves the saved profile and does not regenerate it.
+No independent mathematical review, new Lean or stronger complete bound
+is claimed.
+
+## Colour alternation on a fixed joint-cold curve
+
+The [full default receipt](../evidence/colour-full-verification.json) and
+[complete compressed stdout](../evidence/colour-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen
+`54acb0ed00ca48a4c100ec928a65eba9fd09e9df`, tree
+`6a550332a23872ce00b703b2c8171b2aa5e30f64`, in 1685.02 seconds.
+Fresh markers verified private `/tmp`, read-only host root and writable
+frozen checkout, with network unshared and tracked pre/post state clean.
+Later main integrations and archival prose are outside this pin, including
+PR110/111 and the subsequent spatial-mode construction.
+
+Sol worker 1, base `31ab97f`: the
+[ordinary cancellation proof](../research/colour-alternation-joint-cold-curve.md)
+retains Gaussian exterior minors in a tensor with colour-permutation-symmetric
+quartic creation gates. It includes two disjoint quartics and does not
+assume the q8 divided-square identity. On Sol worker 2's fixed curve,
+all one-particle minor minima are `(6,12,30,48)`; occupation-triangular
+restrictions and every determinantal prefix give the stated partition
+lower bound. An explicit AM--GM/entropy argument excludes the common-scale,
+unweighted two-axis profile target when `q-1>=2^90`. The threshold is
+deliberately unoptimized and does not decide q8. Unequal cut scales,
+weighted gauges and colour-asymmetric interactions are outside scope.
+
+The [source-pinned checker receipt](../evidence/colour-alternation-joint-cold-curve.json)
+records all 69 one-particle minors at each axis, the exact matrix-square
+identity, and direct Gaussian/one-quartic/two-quartic expansion controls.
+The eight-distinct-colour control has nonzero two-quartic contributions
+before cancellation; an unequal-occupation control checks triangularity.
+These finite controls support the author-checked ordinary proof and are
+not a full profile or independent mathematical review. The construction
+and curve retain the primary worker's, worker 4's and Sol worker 2's credit
+in the note. No new Lean or complete factoring improvement is claimed.
+
+## Fixed-field character large-sieve source check
+
+Sol worker 1, base `1e3301e`: the
+[source continuation](../research/window-lemma-character-duality.md#fixed-field-large-sieve-and-prime-power-phase-filters-2026-11-02)
+identifies Duke--Friedlander--Iwaniec Theorem A1, checks its displayed
+normalization and elementary occupancy proof, and charges the norm cap
+`R p^(W-1)` for a direct prime-power phase filter. The primitive coefficient
+energy and principal term are explicit. The existing norm gap supplies
+the stated exact short-time identity. Theorem 4 concerns twisted critical
+L-values and retains a power of the twist norm; no uniform long-window
+estimate is imported. The source is for fundamental field discriminants,
+not automatically all quadratic orders. This is a documentation/source
+inspection, without new arithmetic experiments, external Lean rebuild,
+independent review of the whole DFI paper or a complete-bound improvement.
+
+## Direct precision-one native parity recovery
+
+The [parity-hash composition](../research/native-parity-hashes.md) applies
+the existing bit-tagged chunk-polynomial isolation proof to directly
+compiled Boolean bucket tests. The native coefficient field has degree
+ceil(b/2)-1 and precision one. Every true candidate is isolated in some
+bucket; reconstructed XOR tags are verified by actual integer division.
+The charged pretest, control-field acquisition, all masks/tags and queries
+are retained in the all-input cost. The fast masked-parity provider is open.
+
+The [finite receipt](../evidence/native-parity-hash-controls.json) records
+1172 actual native points, 504 direct mask controls, and 3208 scalar
+parity queries. A complete d=10 fixture has an even bucket hiding two
+factors, yet the full family recovers the minimum. A separate zero-mask
+guard produces false singleton tags and rejects the candidate. Its finite
+oracle caches exhaustive pointwise states and is not a fast provider.
+The [author full receipt/log](../evidence/native-parity-full-verification.json)
+record exit-zero default verification at clean frozen
+`d76f0eee995405be8a407be2f11df1f7bbffc998`, tree
+`7314ca3abcce8ae473e1896a50b75e0584e73a73`, in 864.10 seconds.
+Original metadata retains matching post-source/tree, clean tracked state,
+and fresh private-/tmp/different-mount controls. Sol worker 2 checked
+and archived the existing author receipt and complete log with hashes;
+this is not an independent full replay. Later integration at `aadc9f1`
+has separate native/coordinate/completion/spatial/docs1205 focused checks.
+
+Sol worker 2's [scoped inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19363530)
+at the frozen source found no gap in the inspected direct-mask,
+isolation, candidate verification and original-b invoice. It excludes
+rederiving every imported constructor/fixture, a second full replay,
+the missing evaluator, and full independent mathematical review.
+No new Lean or stronger complete factoring exponent is claimed.
+
+## Bijective trace-dual candidate counts
+
+The [ordinary coordinate-word construction](../research/trace-dual-native-counts.md)
+replaces the nonuniform native scalar trace by a trace-dual basis of a
+degree ceil(b/2)-1 field. It retains one Teichmuller summation input,
+uses that many coordinate traces, fixes the candidate's odd bit, and
+keeps the predecessor's certified no-wrap inverse test. Unweighted counts
+after completed trial division through 2^t fit K=min(d,ceil(b/t)) output
+bits; a polynomial Boolean bit-serial division computes the cofactor with
+starting precision K and no exact-halving gates.
+The count consumer performs the pretest before relying on this precision.
+
+The [source-pinned receipt](../evidence/coordinate-inverse-word-controls.json)
+records 126 complete field-coordinate bijections in six even/odd-degree
+models, 1764 actual lifted pointwise controls, and 67 complete finite
+count/minimum recoveries. Separate modular-inversion controls check the
+division-free Boolean circuit. The false-roughness guard shows a positive count
+wrapping to zero if the pretest is omitted; the consumer finds the factor
+before making that invalid query. The finite count oracle enumerates its
+domain and supplies no fast contractor. The [full default replay](../evidence/coordinate-word-full-verification.json)
+and [complete compressed log](../evidence/coordinate-word-full-verification.stdout.txt.xz)
+record exit-zero make verify at clean frozen
+`e764b055dff1d6bf6f7b52e995b2694314618af7`, tree
+`281a9f4f92320b504b9815bb852b94d73c95e544`, in 1214.86 seconds.
+A fresh marker probe verified private /tmp and a different mount namespace;
+the host root was read-only, only the frozen checkout was writable and
+network was unshared. Tracked state stayed clean. The
+[initial interrupted attempt](../evidence/coordinate-word-full-interrupted.json)
+and its [log](../evidence/coordinate-word-full-interrupted.stdout.txt.xz)
+are archived separately: its exec session ended143/SIGTERM before a final
+wrapper receipt, without a recorded checker failure. It is not a pass.
+The detached restart supplied the complete result above. Later archival
+and integration prose has focused checks, without another full replay.
+
+Sol worker 1's [scoped inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362216)
+and Sol worker 2's [separate inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362256)
+at that exact frozen source found no missing condition in trace duality,
+Teichmuller repeated-squaring traces, polynomial borrow and the residual
+invariant, no-wrap test, and trial-certified precision. Neither rederived
+all imported field/ring/Hermite primitives or implemented the circuit sum.
+These are scoped ordinary source inspections, not full independent
+rederivations. Hosted checks also passed at the same source in
+[run41539671079](https://github.com/1337isnot1337/integer-factoring/actions/runs/41539671079).
+No new Lean or score improvement is claimed.
+
+## Always-positive deep-root projection
+
+Sol worker 2, base `7217aab`: the [ordinary reduction](../research/deep-class-root-projection.md)
+specializes the high-root formula contributed in Discussion19360821.
+Every requested root exists; any valid output gives exactly the original
+generator's two-primary projection. The existing polynomial generation
+import and early-stop phase give a complete conditional poly(b)(F(b)+1)
+invoice, with no smooth-density or relation-search assumption. An actual
+root engine remains missing; the score stays 1/2. The source audit retains
+the factorization input of Bosma–Stevenhagen and the existing conic
+denominator restrictions. This is an ordinary deduction without new
+implementation or Lean.
+
+The [full default receipt](../evidence/deep-root-full-verification.json)
+and [complete compressed log](../evidence/deep-root-full-verification.stdout.txt.xz)
+pin exit-zero make verify at clean frozen
+`9877f642c77948e5b36bb67b6aac880338b4d42e`, tree
+`2b2bc7ad0f4aaf348f6a1da9fd6a354705bfe2e8`, in 1,352.29 seconds.
+The fresh private /tmp marker probe passed, host root was read-only,
+network was unshared and tracked pre/post state stayed clean. Later
+PR107 integration and cross-reference/source prose have focused
+high-root, odd-quotient, documentation and whitespace checks; PR107's
+new executable sources are outside this full pin and retain their own
+receipt below. PR108/110 are excluded.
+
+Sol worker 1's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19362459)
+at `e28a9530c5220c2c4484000ddf999d286fa5ee4e` found no missing cost or
+coverage condition in the all-input assembly: the class-size bound,
+canonical projection, full two-part coverage, early-stop cost and
+recursion were checked. It did not reprove the external analytic input,
+independently review that worker's predecessor high-root lemma, or
+inspect the cited PEGASIS source. This is not independent review of the
+entire mathematical chain, and the test suite does not check its proof.
+
+## High two-power root projection
+
+Sol worker 1, base `7217aab`: the
+[ordinary projection proof](../research/high-root-projection.md) converts
+verified roots of nonsingular row residues to generators of the entire
+supplied two-primary subgroup. Witnesses may be outside that subgroup,
+so the size bound must cover the ambient group; depth must be at least
+that bit bound plus `v2(det R)`. Every squaring is charged. This replaces
+the acquired certificate, not the underlying odd-residual condition.
+Efficient root acquisition remains open; complete exponent `1/2`.
+
+The [checker and receipt](../evidence/high-root-projection.json) retain
+three fixed abstract controls, including a signed non-diagonal matrix
+and an outside-subgroup witness, the low-precision/false-ambient losses,
+false-root and singular/tautological rejection, and a numerical-depth
+operation count. `make verify-high-root-projection` passes. The
+determinant, word evaluator and two-group checks retain predecessor
+credit; Sol worker 2's scoped derivation check is linked in the note.
+This is author-checked ordinary mathematics and implementation evidence,
+not independent review, an acquired root algorithm or new Lean work.
+Sol worker 2 subsequently contributed the guaranteed-positive specialization
+`h=g^(2^b)`, root depth `2b`, which would remove row selection with a
+charged deep-root engine. The note links that contribution and distinguishes
+it from the rejected equal-depth tautology; no such engine is supplied.
+
+The [full default receipt](../evidence/high-root-full-verification.json)
+and [complete compressed stdout](../evidence/high-root-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean frozen
+`be4aae16f0d1e1432b5a142e0ed39b109220992f`, tree
+`c4dcf4c9b82dd9f6f5c01080688555747dc8ae9e`, in 1,300.61 seconds.
+The new checker is in the complete log; raw/archive hashes match, with
+clean tracked pre/post state. A fresh private `/tmp` marker probe passed,
+the host root was read-only and networking disabled. PR107 merged at
+`60f5989bc5eb50f1db3ef69a9e730536aa53f87f` with an identical tree.
+Hosted exact-certificates and arithmetic-sieve also passed for PR107
+head `be4aae1` in run 41539389635. The later corollary and archive prose
+have focused/docs checks only; executable sources are unchanged.
+
+## Odd-quotient relation certificates
+
+Sol worker 2, implementation base `517909e`: the
+[odd-quotient proof](../research/odd-quotient-relations.md) allows verified
+odd-order row residues and preserves the exact two-adic determinant
+valuation. Its uniform small-primary multiplier has fully charged bit
+cost; positive-kernel search in the computable image preserves smooth-set
+density and all two-part directions. Efficient quotient-pair extraction
+remains open; generation retains the predecessor's analytic premises.
+
+The [checker and receipt](../evidence/odd-quotient-relations.json) include
+mixed product groups, 54 fixed multiplier controls, false-certificate
+guards, and a lifted positive-kernel fixture where 32 exact pair targets
+fail but all 48 quotient targets pass. Static class groups -7423/-26623
+reuse the contributed boundary examples with source credit, distinguish
+different-class preimages from strict descent, and recover their full
+two-parts. Their generator/relation enumeration is finite supplied data.
+The direct filter rejects residual odd order thirteen, and the contributed
+discriminant -23 guard prevents importing the old principal-word gap or
+event separation unchanged into the image.
+The [full default receipt](../evidence/odd-quotient-full-verification.json)
+and [complete compressed log](../evidence/odd-quotient-full-verification.stdout.txt.xz)
+record exit-zero make verify at clean frozen source
+`002bcf341e8bfc56322cae7fbf5d1fd6f8e4a8c7`, tree
+`d949a4dd14c00805a17a5bbbfac0d0782db96e86`, in 2,354.44 seconds.
+Its marker probe verified private /tmp, a read-only host root and a writable
+frozen checkout; network was unshared and tracked state stayed clean.
+The new checker appears in that log. Later premise/attribution prose,
+archive and PR104 integration have focused documentation and whitespace
+checks; executable sources stayed identical to the frozen pin. PR104's
+own receipt remains separate, and PR105 is outside this replay.
+The subsequent PR105 integration retains both Makefile targets;
+odd-quotient, CM-geometry and documentation checks pass together in a
+private /tmp namespace. Its full receipt is separately pinned below.
+This is an author-checked ordinary relaxation, without independent
+mathematical review, new Lean or a stronger complete factoring bound.
+
+## CM mixing scope and ambient interpolation budget
+
+Sol worker 1, base `afdda60`: the [source audit](../research/cm-mixing-event-scope.md)
+pins Khayutin1710.04557v3 Theorem1.3, BBK2212.06280v2 Theorem4.2,
+and BBR2603.05609v1 Theorem2.5. It records hypotheses, averaging sets,
+rate and test-function gaps without importing their external proofs as
+verified here. The earlier sparse-orbit literature routing is retained.
+The ordinary adjacent-form argument proves an exponential Lipschitz
+budget on a family of order discriminants; no infinite fundamental or
+hard-composite subfamily is claimed. Five exact constructed controls,
+including a small-cutoff p-free guard, pass with documentation links and
+whitespace. The [full default replay](../evidence/cm-mixing-full-verification.json)
+passed at clean frozen `78b3c115c10148f89b3eb393c37c89b1bb3d3239`, tree
+`b0d2acb893e87d1026c51cb1e55b7e246eef20e8`, in 2201.06 seconds.
+The complete compressed log and raw/archive hashes are retained. The
+private `/tmp` marker control passed; host root was read-only, the frozen
+checkout was the only writable host bind, and tracked state stayed clean.
+The [hosted run](https://github.com/1337isnot1337/integer-factoring/actions/runs/41527780930)
+also passed exact certificates and arithmetic-sieve at `a6db160`, which
+includes PR103 and the one-sided-minorant caveat. PR104 integration has
+focused CM/near-height/docs checks; its new theorem has its own full pin
+below. The archive follow-up has focused/docs/whitespace checks. None of
+these statements reverify the external automorphic proofs.
+This is author verification, without independent mathematical review,
+new Lean or any complete bound improvement.
+
+## Prescribed descent after every subexponential trial cutoff
+
+The [ordinary extension](../research/full-trial-sieve-obstruction.md) uses
+classical combinatorial lower-sieve weights of fixed product level. The
+predecessor's exact CRT errors sum to at most W(1+log W), W=(Z+1)^s0
+for one sufficiently large fixed s0. This extends the existing prescribed
+prime-three counterfamily to log Z=o(log D), including trial division at
+every positive-score runtime scale. It does not exclude arbitrary other
+preprocessing, adaptive/collective targets or full orbit windows.
+
+The original Sol worker 1 counterfamily and alignment are retained and
+credited. The fundamental lemma is sourced to Tao's Lemma17/Corollary19
+and Kedlaya's combinatorial-sieve theorem. Existing near-height exact
+controls are reused; no numerical sieve constant or asymptotic theorem is
+inferred from them. The [full default replay](../evidence/full-trial-sieve-full-verification.json)
+and [complete compressed log](../evidence/full-trial-sieve-full-verification.stdout.txt.xz)
+record exit-zero make verify at clean frozen source
+`27fd1ed0e0812a5c87c689587c5deced295d692c`, tree
+`fa1dd36eb754b42897789872000e23712609d6d2`, in 1773.73 seconds.
+The marker test verified private /tmp and a different mount namespace;
+the host root was read-only, only the frozen checkout was writable, and
+tracked state stayed clean. This later archive/prose has focused checks;
+no second full replay is claimed.
+
+Sol worker 1's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360786)
+at that frozen source found no missing arithmetic condition in the new
+sieve application, checking its uniform dimension-two product bound,
+product-supported remainder and asymptotic comparison. It did not reprove
+the external fundamental lemma. The predecessor's geometry and alignment
+are that worker's own construction, so this is not independent review of
+the entire theorem. No new Lean or score improvement is claimed.
+
+## Near-height smooth descent
+
+Sol worker 1, base `440c816`: the
+[near-height note](../research/near-height-smooth-descent.md) proves the
+target-specific balance bound and complete ellipse-enumeration cost,
+with an explicit first-power counterfamily and a conditional factoring
+transfer. The new enumerator is checked against independent direct
+signed-box exhaustion on six fixed targets. Known primitive norm witnesses
+and all smaller smooth words replay exactly. Five finite first-power
+controls have no smaller smooth norm. The focused target and document
+links pass. The [full default replay](../evidence/near-height-descent-full-verification.json)
+passed at clean frozen `7863baaf60455495e5eaa011bcf76190100ded23`, tree
+`e18f3993123d4e2cd3cb14bb8facdf4eb0edc03c`, in 835.82 seconds.
+The complete compressed log and hashes are archived. A marker test verified
+private `/tmp`; the host root was read-only, the frozen checkout was the
+only writable host bind, and tracked state stayed clean.
+
+The [prescribed-target follow-up](../research/prime-power-descent-obstruction.md)
+proves an elementary uniform lower-sieve estimate and aligns the rough
+target with the least prime-three power above each ordinary scalar
+near-height threshold. This disproves the corresponding one-shot descent
+input even on composite non-perfect-power integers surviving trial division
+through a specified roughness cutoff. Two fixed CRT controls, two credited
+semiprime controls, complete ellipse exhaustions and 256 exact CRT/Bonferroni
+intersections pass. These later proof/checker additions and the PR101
+integration have focused checks and links in 1185 Markdown files at
+`5fbb3f17278ec5be2493c77730d3c0d722e7f447`; they are outside the full
+default source pin above. The archive follow-up has focused/docs/whitespace
+checks, without claiming a second full replay.
+Adaptive or collective target choices remain outside the theorem. This is
+author verification, without independent mathematical review, new Lean
+or an improved complete exponent.
+
+## One primitive field for promised semiprimes
+
+The [quadratic and CRT proof](../research/semiprime-single-field.md) uses the
+actual distinct-semiprime promise and known product residue to decode signed
+factor residues from one primitive field at every coprime q>=7, q=3 mod 4.
+It avoids full cyclotomic observations, inverse-orbit assumptions, and root
+matching across levels. Non-provider costs are polynomial; the original-index
+coefficient engine and arbitrary-input extension remain open. Alpha stays 1/2.
+Existing faithful-decoder and factor-moment sources are credited.
+
+The [receipt](../evidence/semiprime-single-field.json) checks 486 supplied
+literal-divisor fixtures, including 35 repeated roots, three full CRT
+reconstructions, and input guards. The decoder does not construct these
+fixtures. The [full default replay](../evidence/semiprime-single-field-full-verification.json)
+passed at clean frozen `35b0d7492858f5d27d2d7793a7dfbed45c68f299`, tree
+`390aa936ad743cc49b2e31be0721ba2d4017522c`, in 800.82 seconds, with the
+new private temporary-mount control. The complete compressed log is retained.
+The later archive and generator-query clarification have focused/docs checks;
+no second default replay is claimed. Sol worker 2 subsequently supplied the
+[scoped inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19360111)
+at that frozen source. It found no gap in the quadratic, signed-residue
+kernel, repeated-root, symmetric-CRT and cost steps, without rederiving all
+imported field constructors. Its independent integer-cyclotomic replay checks
+all two q47 and five q503 fields, two supplied generators, and seven fixed
+semiprimes: 98 controls pass, including 18 equal-root cases. The unchanged
+[original script](../evidence/semiprime-field-independent-review/replay.py),
+[receipt](../evidence/semiprime-field-independent-review/receipt.json), and
+[provenance](../evidence/semiprime-field-independent-review/provenance.json)
+retain its source/record hashes and exact scope. This is not a full independent
+rederivation, coefficient engine, new Lean or stronger-bound verification.
+
+## Quartic order-five obstruction
+
+The [ordinary argument](../research/quartic-order-five-obstruction.md)
+allows independent degree-16 spatial quartet weights with the prescribed
+leading coefficients, divisibility by `(xyz)^4`, and vanishing endpoint.
+A lowest second-axis coefficient forces at least `(q-1)(q-4)` order-five
+channels in every axis. A dimension/degree tail and exact Young allocations
+give restored pressure at least `7/12>1/sqrt(3)` for q>=4096, every common
+physical type, in the common-scale unweighted three-axis profile method.
+The earlier q4096 relaxation is excluded, not promoted to an actual profile.
+This does not cover all smaller alphabets or other interaction classes.
+
+The [source-pinned receipt](../evidence/quartic-order-five.json) verifies
+formal coefficients in three axes, q8 coefficient ranks six and four before
+and after projection, and the exact rational allocations. The generic proof
+is author-checked. `make verify-quartic-order-five verify-quartic-charge-fusion
+verify-docs` and whitespace pass on this follow-up, with 1182 Markdown files.
+The [full default replay](../evidence/quartic-order-five-full-verification.json)
+passed at clean frozen `7fae11a92101b36135ddf2d5ebe595e983537806`, tree
+`2e6f0e129932244f059afd73f4f362f0f50ebca8`, in 1145.58 seconds.
+The compressed complete log and private temporary-mount control are pinned.
+The archive follow-up has focused/documentation checks, without claiming a
+second full replay. No complete generic profile, new Lean or stronger complete
+bound is claimed. Alpha stays `1/2`.
+
+Sol worker 2's [scoped ordinary inspection](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19358929)
+at `63ce3304e39714ccd5e4998c5f5eaa3d5002e602` found no gap in the even-block
+separation, initial-coefficient rank/projection, tail and Young/entropy steps.
+It did not independently rederive all kernel formulas or certify a complete
+profile. The proof does not apply PR98's common-weight linearization to
+independent spatial weights.
+
+## Arithmetic reciprocity in faithful coefficients
+
+Sol worker 2, base `b629a35`: Section 3.1 of the
+[faithful-character note](../research/sparse-faithful-character.md) uses
+d <-> N/d to normalize the actual divisor observation into the
+inversion-fixed algebra. One field determines its inverse companion,
+which recovers the entire faithful observation at q47. The generic q47
+collision is explicitly outside this arithmetic promise. A q503 control
+shows that reciprocal sparsity alone still need not supply every field;
+it is not asserted to be actual divisor data.
+
+The added controls reconstruct 390 supplied actual q47 vectors and check
+the known central square bit. The existing receipt now pins the changed
+checker; its earlier full replay pin remains historical. The modular-form
+rewrite retains the earlier weight-one sources and Stein's coefficient,
+constant-term and parity theorem, with level q^2 and the coprime adapter
+charged. Focused replay, links in 1,180 Markdown files and whitespace pass.
+The [combined default replay](../evidence/charge-reciprocity-full-verification.json)
+and [compressed log](../evidence/charge-reciprocity-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at frozen source
+`a21c955689a87650eea3c1d2f3eebeaf87d63314`, tree
+`ab36f031d27fb3dcbe41eec969bfab9d47a8a4ed`, in 888.40 seconds.
+It includes PR96/97/98/99, with clean tracked state before and after, in
+marker-checked private `/tmp` with the host root read-only and network off.
+It excludes PR100 and later changes. The common-H documentation clarification
+has a separate literal eight-partition check and docs/whitespace inspection;
+the checker sources are unchanged from the full pin. Later changes are
+covered only by their stated focused scope.
+No fast coefficient engine, new Lean work, independent mathematical review
+or complete bound improvement is claimed.
+
+## Quartic additive-charge cube construction
+
+The [ordinary construction and prefix proof](../research/quartic-charge-fusion.md)
+add even quartic color fusion to the worker-4 Gaussian model. The tensor
+has homogeneous degree four per occupied vertex, exact antipodal endpoint,
+and genuinely breaks separate color parity. Its generic first orders are
+0^1,2^(q-1),4^(2(q-1)) for q=2^s>=4. This is a lower-order cancellation
+mechanism, not a complete profile or a stronger factoring bound.
+
+The standard-library checker verifies formal leading coefficients in three
+axes, 108 two-minors and 48 three-minors, plus the independently binary
+restricted Toeplitz ranks of one q8 charge block through order four.
+A separate binary color matrix verifies ranks 21 and 7. An exact q4096
+integer abstract profile passes the shared-minor/prefix budgets and the
+degree-four restored bound 4/7; this is explicitly not a profile of the
+constructed tensor. The subsequent order-five result above excludes that
+relaxation for this family. The preceding NumPy prototype agrees; the committed replay does not need NumPy.
+The degree-four restoration is explicit. The default non-Lean `make verify`
+passed at clean frozen source `b1b85810d35a69513099917160192365bca3bd16`,
+tree `cd56e4f50292c303c0756f9b25b1fa4d3969ca0a`, in 950.82 seconds.
+The [receipt](../evidence/quartic-charge-full-verification.json) and
+[compressed stdout](../evidence/quartic-charge-full-verification.stdout.txt.xz)
+pin that replay. Its private temporary mount passed the marker-isolation
+control; this archive follow-up does not claim a second default replay.
+The earlier degree-five replay was intentionally stopped after 195.04 seconds
+when the lower-degree construction was verified; it is not a passed check.
+No new Lean or independent mathematical review is claimed; alpha stays 1/2.
+
+## Quartic charge-creation divided square
+
+Sol worker 2, base `60a21ef`: the
+[global creation note](../research/charge-creation-square.md) complements
+the primary worker's PR #97, retaining its proposal and predecessor credit.
+A fixed-pair involution proves exact q8 cancellation of the full quadratic
+creation term. For eight distinct colors, an even binary relation code
+gives its uniform coefficient formula. These are author-checked ordinary
+construction identities, not independently reviewed mathematics.
+
+The [checker and receipt](../evidence/charge-creation-square.json) independently
+expand 987,840 q8 terms and compare literal quartet counts with binary ranks
+on all 6,435 q16 eight-color subsets. The ordinary-square and total-XOR-only
+shortcuts have explicit nonzero/zero guards. Focused replay, documentation
+(1,179 Markdown files) and whitespace checks pass. The combined default
+replay at `a21c955` described above also covers this implementation.
+The later spatial-weight caution preserves the common-H hypothesis and
+does not claim that cancellation survives arbitrary spatial coefficients.
+No full Smith profile, pressure
+gain, new Lean work or stronger complete factoring bound is claimed.
+
+## Entry lower-tail sign correction, base `89aeec9`
+
+The [correction](../research/entry-moment-tail-sign-correction.md) fixes
+two reversed deviation definitions in the entry-cycle checker. The
+period-three asymmetric regression returns the correct lower numerator
+2 rather than the previous upper numerator 4; it failed before the fix.
+The separate cofactor lower-tail implementation is unchanged and agrees
+with the repaired helper. All table statistics are recomputed from the
+existing saved flags, with no new compositions or parameter choices.
+
+The [correction receipt](../evidence/entry-tail-sign-correction.json)
+records 83 changed moment fields and unchanged orbit/window/gap metadata.
+All 32 matched-mean lower-tail tests pass C=2 after correction; the old
+general lower-tail contrast is withdrawn. The abstract moment implication,
+saved row/event data, and complete 1/2 theorem are unaffected. Historical
+full receipts still describe their exact old code; they do not establish
+the semantic validity of its mislabeled tail statistic.
+
+The asymmetric regressions, saved-flag replay and combined boundary/event
+prerequisite gate pass. The [full default replay](../evidence/entry-tail-sign-full-verification.json)
+passes at exact `de0c57c7d803fc17a32611a8116e011a607bff7f` in 2494.28 seconds,
+with clean tracked state before and after, inside private `/tmp`. Its
+complete compressed log is archived. Later proof/metadata clarification
+and integration preserve the corrected checker and canonical-statistics
+hashes; focused/docs checks cover those follow-ups separately.
+
+## Sol worker 1 boundary representation and contributed Euler recurrence
+
+The [word-boundary proof](../research/event-word-boundary.md) identifies
+the actual truncated events with one-sided signed-word fibers in the
+injective reduced range. It gives exact target-prime-free event counts,
+unique integer event rows, annular character sums and explicit connected
+moment constraints. The Discussion #51 contributor supplied the finite
+group-algebra recurrence, Mellin multiplier and original 600-control source;
+the board links, original source hash and credit are retained, including
+in [CONTRIBUTORS](../CONTRIBUTORS.md). Outside the reduced range the
+formal measures retain multiplicities and are not event indicators.
+
+The new [receipt](../evidence/event-word-boundary.json) checks the saved
+235/213 hits in 45/55 disjoint fibers, eight exact finite-character
+identities, the original contributed panel and an excessive-height
+counterexample. No new large orbit or parameter search is run. The
+long-range arithmetic estimates and actual indices are still open; no
+complete score change, new Lean or independent mathematical review.
+`make verify-event-word-boundary verify-docs` passes, including all upstream
+event/group/row/cumulant/separation prerequisites. The [frozen full default replay](../evidence/event-word-boundary-full-verification.json)
+passes at exact `ac6cd8c1dea8b6989eeaad14a674fc4f77bc3553` in 1085.08 seconds,
+clean before and after, inside a private `/tmp` namespace. Its complete
+compressed log is archived. This is a code replay, not mathematical acceptance.
+The bounded-transport follow-up identifies a static, inversion-symmetric
+prime-free flag of exactly the same density. Its window counts differ
+from event counts by at most `floor(log_p R)`; fixed saved windows check
+this at every phase. That follow-up has focused/docs replay separately
+from the frozen original boundary source.
+
+## Repair superseded bare-crossing frontier pointers
+
+The historical seven-letter asymmetric note passed the older inverse-degree
+constraint, but the later adjugate determinant inequality already excludes
+it: 28364 exceeds 28224 by 140, scaling linearly at every positive integer
+ramification. Its checker/receipt now retain both the valid old relaxation
+calculation and the exact later exclusion. The inverse note, nilpotent Gram
+note, research index and README point to the existing all-field, all-degree
+bare criterion exclusion through twelve letters. These are source/status
+repairs, not new exclusions or a stronger complete factoring bound.
+Focused profile/certificate and documentation checks are recorded in the PR;
+the full default suite is not rerun for these changes. No new Lean or
+independent mathematical review is claimed.
+
+## Sol worker 1 small-norm density and event separation
+
+The [ordinary argument](../research/small-norm-event-separation.md) applies
+the principal-ideal norm gap from orda-aska's graph/lattice Lemma 1 to decoded row differences, then
+proves local separation of a truncated row-change process. Repeating PR87's
+norm-budget count retains its covered-subgroup density scale. The exact
+unramified hypotheses, a ramified-square counterexample, and the remaining
+long-range correlation/index obligations are explicit. The complete score
+remains 1/2; this is not independent mathematical review or new Lean work.
+
+The [checker and receipt](../evidence/small-norm-event-separation.json)
+check all 115110 nonzero saved row differences, one prescribed `T=2`
+truncation in each direction, cyclic event separation and exact second/third
+connected correlations. These are saved-data postprocessing, not a uniform
+arithmetic estimate or a new orbit. `make verify-small-norm-event-separation`
+and `make verify-docs` pass, including the upstream event/group/row and
+cumulant controls. The [full default replay](../evidence/small-norm-event-full-verification.json)
+passes at exact `b36cf5799aa4537b75e988ab2fc907ef4fe3620e` in 1216.39 seconds,
+with clean tracked state before and after. It used a verified private `/tmp`
+namespace to avoid the other workers' fixed temporary paths. The source
+checker is unchanged after integrating main's unary inverse checkpoint;
+the integration has separate focused and documentation checks.
+
+## One-hot colored cube integration and generic sector obstruction
+
+The worker-4 source `1772970a7dbaab83eeb0607014a1111e46718d86`
+is merged with its construction/correction history intact.
+The [specialized note](../research/color-class-cube-profile.md), checker
+and receipt remain credited. Integration corrects the description of the
+256-letter target's grading, clarifies cumulative-count monotonicity, and
+states that the historical `q4_full_profile` key contains only 250 orders.
+Source hashes match; selected replays pass for the complete binary control,
+the ternary orders through six, and saved graded comparisons. The larger
+specialized screens were not independently rerun.
+
+The new [generic proof](../research/color-distinct-sector-obstruction.md)
+uses closed odd-color sectors, with a common antipodal entry in every
+sector and every axis. It extends the earlier scalar-clone polynomial
+certificate (source `0c78cd26c5a7eefad1e107077b6385cc2bbdd9fb`) to every
+homogeneous antipodal tensor preserving separate color parity, over any
+field. The common-scale unweighted three-axis profile floor is at least
+3/4 for every q>=34 and every common physical type. These constructions
+are stopped under this criterion; no generic-profile extrapolation is used.
+
+The [full default replay](../evidence/color-parity-full-verification.json)
+passes at exact source `a879fd7dc54c6b6fa0041da6578148886f94efaa`
+(tree `7f3973f255cfd4d82db0970018214ff3148e2fe1`) in 1071.17 seconds,
+clean before and after. That source contained the valid, weaker 3/5
+certificate at q>=256. The integration follow-up merges main's separately
+verified trace and cumulant work, replaces that redundant polynomial
+checker with the unchanged earlier 50-coefficient scalar certificate,
+and supplies the stronger ordinary parity-sector argument. The original
+weaker checker and receipt remain accessible at the full source commit.
+The full default suite was not repeated after this follow-up; its changed
+Make recipe, retained structural controls and links receive focused replay.
+
+The structural replay verifies 1728 endpoint, 3816 zero-coupling and 108
+minor identities and the asymmetric monomial control. The scalar checker
+reconstructs all 50 Newton coefficients and 80 additional coefficient
+controls. No new Lean or independent mathematical review; complete alpha
+remains 1/2.
+
+## Sol worker 1 connected-event criterion, base `af12893`
+
+The [ordinary proof](../research/connected-event-window-criterion.md) derives
+a finite-order empty-window bound from factorial cumulant estimates, with
+the repeated-index identity, a sufficient tree-summability mechanism and
+the complete conditional factoring invoice explicit. The arithmetic
+cumulant/tree estimates and coverage of actual target indices are unproved.
+No new Lean, independent mathematical review or complete score change.
+
+`make verify-event-cumulant-windows verify-docs` passes, including the
+existing event/group/row prerequisite. The new checker uses exact rational
+controls, a clustered negative case and saved generator-5/7 event flags;
+it performs no fresh arithmetic walk. Its
+[receipt](../evidence/event-cumulant-windows.json) states the insufficient
+mean count on both saved cycles. The [full default replay](../evidence/event-cumulant-full-verification.json)
+passes at exact `0a478fbead58c99a7500125536322f7ba23f241f` in 951.55 seconds,
+with clean tracked state before and after. Credit remains with the upstream
+event/density/moment contributions, saved data, and cited classical
+cumulant methods; this is a conditional research interface.
+
+## Fixed noncommuting nilpotent Gram crossing
+
+The [construction and row-profile proof](../research/nilpotent-gram-crossing.md)
+give two exact degree-12 binary seven-letter tensors with the flip endpoint
+and rank one in both cold cuts. The canonical noncommuting flag changes
+the column profile but retains row orders (0,4^15,16^33). Convex integer
+balancing and AM-GM exclude the bare target at every two places over every
+finite coefficient extension, even with an optimistically relaxed column
+profile. These fixed constructions are stopped; other row profiles and
+collective criteria remain outside the claim. The complete exponent stays 1/2.
+
+The focused replay verifies 4802 endpoint entries, native profiles and ten
+independent row Toeplitz nullities. The exclusion uses exact integer
+comparisons, without numerical optimization. The [full default replay](../evidence/nilpotent-gram-crossing-full-verification.json)
+passes at exact source `8b1a041d5400353bd08ac81329fd5de75b741a8e`
+(tree `2707e8cfbe84986d8a02b2fd78fc0a2fd7623785`), in 1259.84 seconds,
+clean before and after. The archive follow-up adds review prose, receipts
+and explicit credit to the earlier integer degree floor for the cubic
+single-flag control. No checker or Makefile change is made. No new Lean
+or independent mathematical review is claimed.
+
+## Original smooth density from even prime products
+
+The [density theorem](../research/small-index-smooth-density.md) uses a
+high-precision simultaneous prime-color partition and an even norm budget.
+Real color-character averages approximate a common mean. Their product
+is nonnegative unless that mean is tiny, giving a one-sided Fourier bound
+-D^(-1/4+o(1)). Subgroup orthogonality then gives enough distinct original
+smooth classes at index at most D^kappa, fixed kappa<1/4, with density
+exp(-O(b/log b)). This uses the principal split-prime abundance estimate.
+With the full character estimate, every coset retains the smaller
+kappa<1/64 range. Actual target indices and hit-gap/moment bounds remain
+open; the complete factoring exponent stays 1/2.
+
+The focused checker tests 50625 raw tuples, all cosets of four quotient
+controls and eight genuinely negative product Fourier coefficients.
+Separately, 64 distinct arithmetic classes agree with a literal CRT
+construction. The uniform analytic input and partition proof are explicit,
+not inferred from finite data. The [full default replay](../evidence/small-index-smooth-density-full-verification.json)
+passes at exact source `eab8be2d2a9e5a4b1da1c4719db1503829c0a5dd`
+(tree `3c10bc497f52792ad68a0083cb6c8723450a346f`), in 751.46 seconds,
+clean before and after. The archive follow-up changes review prose and
+records, including a fixed-alpha cutoff corollary and exact index bounds
+23 and 150 on the two existing cycle controls. No checker or Makefile
+change is made. No new Lean or independent mathematical review is claimed.
+Existing prime-band, density and row-event credits are preserved.
+
+## Uniform ambient-minorant norm gap
+
+The [uniform theorem](../research/uniform-ambient-minorant-obstruction.md)
+removes the selected semiprime/Linnik family from the earlier obstruction.
+An auxiliary split prime above the subexponential smoothness/cofactor
+cutoffs and a positive prime-band sample give unreduced product norms
+below sqrt(D)/4 for every sufficiently large order discriminant. They
+remain reduced, nonambiguous and outside the full success predicate.
+Under the inherited uniform analytic contract, every ambient positive
+minorant has mean at most 2^(-b/64+o(b)). Multiplier choices do not repair
+this certificate. Subgroup means of subexponential-index subgroups inherit
+the same obstruction; no actual target-subgroup index bound is claimed.
+Original power-orbit hitting, moments and extraction remain open.
+
+The focused checker verifies the positive band identity and 20 oriented
+compositions on five fixed fundamental/nonmaximal discriminants. Its
+finite cutoffs certify geometry, not the external analytic thresholds.
+The previous semiprime and Fourier controls and credits are retained.
+The [full default replay](../evidence/uniform-ambient-minorant-full-verification.json)
+passes at exact source `bfb5f74b487b725b4e3ccf9ab2819b3f94151e98`
+(tree `d21be71afac040234c4203e79bcc370879aeb71f`), in 773.91 seconds
+with clean state before and after. The archive follow-up changes review
+prose and receipts only. No new Lean, independent review or stronger
+complete factoring exponent is claimed.
+
+## Ambient positive-minorant obstruction on semiprime inputs
+
+The [norm-gap deduction](../research/ambient-minorant-norm-gap.md) bounds
+every admissible ambient positive minorant by epsilon/(1+epsilon) when
+a low-bias sample misses a translate of the success set. General form
+composition and a least-prime progression construction give semiprimes
+surviving the stated preprocessing, for the full reduced-height
+smooth-or-proper-gcd predicate. Under the inherited pinned analytic
+contract, their ambient mean is O(b 2^(-b/5376)). Quasipolynomial cutoff
+still gives density 2^-o(b), forcing an exponential one-sided negative
+Fourier bound. The corresponding uniform ambient programs are stopped.
+Target-subgroup means, original power-orbit hitting and other multiplier
+choices remain outside this obstruction; the factoring exponent stays 1/2.
+
+The exact focused checker passes a sharp Walsh control and 26 oriented
+prime translates on six verified semiprimes, including their full-height
+recognition and finite preprocessing inequalities. The uniform analytic
+input and Linnik theorem are identified external inputs; no finite
+control establishes them. The [full default replay](../evidence/ambient-minorant-gap-full-verification.json)
+passes at exact source `4b6d914ee0e292d69a72951b1de0c0ec1254ddd7`
+(tree `43d86328965639d613972758feca016e810544cf`), in 720.93 seconds
+with clean state before and after. The archive follow-up changes review
+prose and receipts only. No new Lean or independent mathematical review
+is claimed. Existing norm-gap and Fourier-kernel credits are preserved.
+
+## Confluent seven-letter quantum-spin crossing
+
+The [root-of-unity note](../research/confluent-quantum-spin.md) regularizes
+three Casimir eigenvalue collisions over F8. Its degree-six tensor has the
+flip endpoint, and first-cut rank one at one point. The local determinant
+budgets nevertheless force bare two-place pressure at least 2401 over
+every finite coefficient extension. This stops that fixed degeneration;
+other gauges, collective constructions and multipoint criteria are outside
+the claim. The complete factoring exponent remains 1/2.
+
+The focused replay reconstructs the tensor and checks all 2401 endpoint
+entries, both cuts at nine rational places and 440 independent Toeplitz
+nullities against native Smith profiles. Source formulas and Bytsko credit
+are retained. The [full default replay](../evidence/confluent-quantum-spin-full-verification.json)
+passes at exact source `570f6166360eeca50243e822465358fe1ffd8ce0`
+(tree `75caae02d8570d497ff2f49e48a3bfc051c30808`), in 731.40 seconds
+with clean tracked state before and after. The archived follow-up changes
+only review prose and verification records. No new Lean or independent
+mathematical review is claimed.
+
+## Correct generator-seven controls and aggregate walk accounting
+
+The [independent entry replay](../research/entry-moment-cycles.md) previously
+advanced by generator five from the starting class `g_7^K7` while labeling
+the resulting offset 1265 as a generator-seven result. The corrected
+control advances with stride 66509 and first hits at offset 3823. Its
+entry window of length 3260 is empty. The shifted-base control is retained
+under an explicit name, and all original base-cycle flags, run profiles,
+moments and counts are unchanged (verified by semantic comparison).
+
+The separate 66509-step index walk is removed. Index acquisition now occurs
+during the existing base walk, and an aggregate cap is passed through both
+enumerations. Instrumented replay counts exactly 219306 walk compositions,
+within 250000, including the derived controls. The old aggregate was
+285815, so the former cap field did not establish that run's budget claim.
+Original contributor, owner experiment and repository arithmetic credits
+are preserved. This fixes finite evidence and accounting; no stronger
+factoring score, new Lean or independent mathematical review is claimed.
+
+The focused replay passes. An instrumented run verifies 219306 actual walk
+composition calls, and a forced-cap regression stops at exactly 1000 calls.
+The corrected actual-stride control agrees with the separately frozen
+generator-seven receipt.
+
+The [clean combined replay](../evidence/entry-control-correction-full-verification.json)
+passes at `059a215cab000d216bcaff4838b0c4e6a6a913f4`, tree
+`78f5b43d10e5c432e31bc3b890955c6121d472c4`, in 748.87 seconds:
+`make verify` and `make verify-entry-moment-cycles verify-relation-change-events`,
+with clean tracked state before and after. The complete compressed log is
+archived. This exact source includes the integrated relation-change
+checkpoint; subsequent archive/prose changes do not change the corrected
+replayer. Later main additions have separately scoped integration checks.
+
+## Uniform event density from integer relation changes
+
+The [ordinary proof](../research/relation-change-event-density.md) defines
+a periodic change event using canonical words rather than periodic integer
+row labels. The existing multiplicity lemma then gives event density at
+least `delta/(2K_p-1)`, including all-good cycles and proper-gcd events.
+This changes the event observable and removes a separate raw-cluster
+assumption; uniform original density and event moments remain unproved.
+The complete saving exponent stays 1/2.
+
+The same segment decomposition proves the maximum event-zero gap is at
+most the maximum raw-zero gap plus `2K_p-2`. This controls the worst case
+over phases, not a pointwise difference of first-hit times. The abstract
+all-good control attains this additive bound. The source code is unchanged
+by this proof corollary; the existing exact gap receipts give `17939/17939`
+and `4506/4508` for the two saved raw/event patterns.
+
+Integer postprocessing reconstructs all 670 saved rows plus their known
+small-power prefixes. In both existing directions the new flags equal the
+previously measured entry flags at every phase, including the boundary.
+Their maximum identical-row segments attain the proved caps 17 and 13.
+A sharp all-good `Z/3` control and a proper-gcd-phase control pass. No new
+arithmetic orbit, composition, input or cutoff is used in this diagnostic.
+The original group/order/row certificate replay is a prerequisite. Focused
+and documentation checks are the local gate. Existing multiplicity, selector, Grok entry
+data and moment credits remain. No Lean or independent review is claimed.
+
+The [frozen full replay](../evidence/relation-change-events-full-verification.json)
+passes at `fd5970d76735c4d4e0f041bc908f3589c5933ee2`, tree
+`28aa795ac9b16a670e54a851038bca7c86c95735`, in 1572.86 seconds:
+`make verify` and `make verify-relation-change-events`, clean tracked state
+before and after. The additive gap corollary is a later prose-only change.
+After integration with current main, the new checker, its weighted-norm
+helper and the original certificate checker are byte-identical to that
+source pin. The event, protected-core transition, independent entry replay
+and documentation targets pass on the integrated tree (1165 Markdown
+files). The full log is archived; later main additions are outside the
+frozen default replay's scope.
+
 ## Near-identity positive Fourier minorants for the raw selector
 
 The [ordinary note](../research/near-identity-positive-minorants.md) proves
@@ -1706,3 +2825,75 @@ to the full source pin; later main results are outside that replay.
 The pointwise known-division circuit and ordinary surjectivity proof do
 not supply a fast contractor. No new Lean, independent mathematical
 review or stronger complete factoring score is claimed.
+
+## One half-width trace and a cofactor inverse
+
+Sol worker 2, base `af12893`: the [unary reduction](../research/one-trace-inverse-words.md)
+retains the preceding Witt-trace/known-division construction and credit,
+replaces the second input by a division-free odd inverse polynomial,
+and proves the required no-wrap equivalence. Its count consumer handles
+every N>=2 with at most ceil(bits(N)/2)+1 conditional queries; ring,
+precision and bit costs are charged against the original input width.
+The uniform count contractor is still missing, so no stronger complete
+factoring bound follows.
+
+The [source-pinned finite receipt](../evidence/one-trace-inverse-word-controls.json)
+contains 511 inverse controls, 50,694 scalar pointwise queries, one
+complete 512-point measured trace domain, 3,423 prefix-count queries
+and 132 scalar minimum-factor recoveries. Unequal fibre multiplicities,
+the wrapped-product false positive, high trace digits, even-input
+adaptation and 40-/60-/128-bit supplied scalar factors are included.
+`make verify-one-trace-inverse-words` is the focused replay and passed.
+The [full default receipt](../evidence/one-trace-inverse-full-verification.json)
+and [complete compressed log](../evidence/one-trace-inverse-full-verification.stdout.txt.xz)
+pin exit-zero `make verify` at clean source
+`2a09eb7a75761fc249cace3dd0c311b70085fc64`, tree
+`593e90864892be8c30c986dbcc6e186ad0e5ba2a`, in 961.27 seconds,
+clean before and after. Current-main integration retains PR90 and both
+research-index entries; that later combined tree was not fully replayed.
+The unary implementation, checker and imported sources are byte-identical
+to the frozen source. This is an author-checked ordinary
+reduction and finite implementation evidence, not independent mathematical
+review, a fast count, new Lean work or a score improvement.
+
+## Sparse faithful-character information and the complete conditional invoice
+
+Sol worker 2, base `252128d`: the [sparse-character note](../research/sparse-faithful-character.md)
+proves exact minimum kernel weight equal to the least prime factor of the
+odd character-order part. Interleaving retains every nilpotent coordinate.
+One faithful coefficient vector suffices below half that distance, with
+an acquired polynomial decoder. CRT/Linnik gives an exp(O(D))*poly(b)
+level-acquisition bound. A classical dimension-one lower sieve plus
+Bombieri--Vinogradov improves it to polynomial cost in b,D. The exact
+fixed-four progression is 2d+1 modulo 4d, with g(d)=1/phi(d) for odd d.
+The resulting all-input conditional reduction costs F(b)exp(O(sqrt(b)))
+and preserves every fixed logarithmic-saving exponent; it supplies no
+faster composite-index coefficient engine.
+
+The [finite receipt](../evidence/sparse-faithful-character.json) includes
+19,642 nonzero kernel codewords, 1,902 sparse roundtrips, 457 actual
+supplied divisor vectors, 303 actual vectors outside the fixed promises,
+twelve CRT-acquired levels, twelve sieved levels, forty fixed-four
+CRT density controls, and three complete supplied-data CRT
+factorizations. Exact integer cyclotomic arithmetic supplies the observations
+independently. The sharp sparse collision and reduced-quotient loss are
+retained. A later q47 control also distinguishes retaining a reduced
+algebra from discarding all but one field component. The reverse
+factoring-to-coefficient argument makes the fixed-score equivalence explicit.
+
+The [full default receipt](../evidence/sparse-faithful-full-verification.json)
+and [compressed log](../evidence/sparse-faithful-full-verification.stdout.txt.xz)
+record exit-zero `make verify` at clean frozen source
+`a4e607f5132e56ee34f5f5fc9864e4beabf81414`, tree
+`d2d40ac03967d1d4b9d846058c6907a9b0dfd975`, in 907.08 seconds.
+The private /tmp namespace and read-only host root were explicitly checked;
+only the frozen checkout was writable, and tracked state was clean before
+and after. The later component guard and reverse-score prose were checked
+with the focused replay and links; the implementation and imports are
+byte-identical to the full source. Later main integrations are outside
+that full pin. The analytic inputs are the cited
+classical Linnik, lower-sieve and Bombieri--Vinogradov theorems, not
+numerically reverified by the small acquisition controls.
+This is an author-checked ordinary conditional reduction and finite code
+evidence, without independent mathematical review, new Lean or a stronger
+complete factoring score.

@@ -1,0 +1,69 @@
+{
+  "completed": true,
+  "a": 70,
+  "b": 99,
+  "rho0": [
+    70,
+    99
+  ],
+  "rho0_decimal": 0.7070707070707071,
+  "rho0_below_inverse_sqrt_two": true,
+  "z": [
+    899,
+    900
+  ],
+  "test": "Z(z^a)^b > Q_H(z^b)^(2a) excludes rho0; failure at one 0<z<1 does not exclude it.",
+  "rows": [
+    {
+      "maximum_height": 37,
+      "ambient_height_inventory_q": 372,
+      "test_excludes": true,
+      "left_bits": 5577347,
+      "right_bits": 5033038,
+      "left_sha256": "2d1b46217709874690c1b6868a87f830f76007ddcc1884833f5c487d829a4bea",
+      "right_sha256": "5765885684c3464f1ef87ed4f37357708379e083e06980184842652594e25186"
+    },
+    {
+      "maximum_height": 38,
+      "ambient_height_inventory_q": 409,
+      "test_excludes": true,
+      "left_bits": 5577347,
+      "right_bits": 5169386,
+      "left_sha256": "2d1b46217709874690c1b6868a87f830f76007ddcc1884833f5c487d829a4bea",
+      "right_sha256": "cbc3059e88cf62d85d90619cbb0f641a495f8e16b0cc76db931dc62bc9c69f1a"
+    },
+    {
+      "maximum_height": 39,
+      "ambient_height_inventory_q": 450,
+      "test_excludes": false,
+      "left_bits": 5577347,
+      "right_bits": 5305409,
+      "left_sha256": "2d1b46217709874690c1b6868a87f830f76007ddcc1884833f5c487d829a4bea",
+      "right_sha256": "e5fc9682e291e57d6edf16985f922214564d3fcbffcb87295c19c822a38aa4ab"
+    },
+    {
+      "maximum_height": 40,
+      "ambient_height_inventory_q": 496,
+      "test_excludes": false,
+      "left_bits": 5577347,
+      "right_bits": 5441293,
+      "left_sha256": "2d1b46217709874690c1b6868a87f830f76007ddcc1884833f5c487d829a4bea",
+      "right_sha256": "e3cbba020640ac34796308f44d021d1c8300e0927fd329c09e3f4cba1fbd8a09"
+    }
+  ],
+  "height38_floor": [
+    29,
+    41
+  ],
+  "height38_floor_above_inverse_sqrt_two": true,
+  "core_receipt_sha256": "13ad5470f1a4d75c0fd9b428974111f4eb7a69df1caa1c50eec797917178c4ca",
+  "source_sha256": {
+    "coherent_hot_compounds.py": "43971c67f7fb938a836863ddf13794df4bc772ff20e043a5190174552231554a",
+    "coherent_hot_compounds_f4.py": "1a8798f6b9a038413ce1f8d27d435c7a642e84affc9ffb4461298c64d2708d76",
+    "coherent_hot_f4_partial.cpp": "77146cdf79f2b88be37de6d1d958c13ab444d6074c8ac96aa0c6ba5eb9e47e36",
+    "coherent_hot_f4_partial.py": "c8b9c13bf697d5964f36fd1a44d14c5f7fe4d123cddcce255e5672af917ae62f",
+    "native_rectangular_smith_f4.cpp": "e73b498a0f7b587a5229ad239a2c3c1632fdb78b7f4f4623df6de90aa48d8ad6",
+    "selected_gaussian_coefficients.cpp": "b648c25e65907b8528bd0491ef2a67442cc1c6982f95e1d5335bc41246a51a15"
+  },
+  "scope": "Exact rational comparison at one interior point for the Jensen-tail necessary condition. It shows that the height-38 lower-bound argument does not exclude rho0=70/99 at height 39; it does not construct a split, prove a uniform pressure bound, or change the factoring exponent."
+}
