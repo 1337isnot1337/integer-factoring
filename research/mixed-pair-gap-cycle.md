@@ -239,10 +239,14 @@ The `16`-defect is saturated by just four exponent-`3` base-gap rows:
  (53,25169),\quad (59,43987),\quad (101,96749),\quad (103,1289).
 \]
 
-Adding them successively gives indices `8h`, `4h`, `2h`, `h`. Thus the
-window-`2` rows plus these four rows generate the full kernel; no other
-window-`3` row is needed. This is a finite `2`-primary repair, not a
-uniform bound on how many repair rows exist or how they are found.
+Adding them successively gives indices `8h`, `4h`, `2h`, `h`. The mod-`2`
+row ranks are `27` at window `2` and `31` at window `3`; each repair row
+raises the rank by one. Since one additional row can raise the mod-`2` rank
+by at most one, **four rows are necessary**, and the displayed four achieve
+the full kernel. Thus the window-`2` rows plus these four rows generate the
+full kernel; no other window-`3` row is needed. This is a finite
+`2`-primary repair, not a uniform bound on how many repair rows exist or how
+they are found.
 
 The window-`2` certificate uses no base relation row, no order row, and no
 exponent-`3` row.
@@ -288,7 +292,8 @@ cost.
   edge-only bases are finite arithmetic facts. HNF checks index `16h` at
   window `2` and index `h` at window `3`; the latter makes the pair rows a
   complete relation basis for the cycle subgroup. Four exponent-`3` base-gap
-  rows saturate the window-`2` `2`-defect. No uniform rooted-forest,
+  rows saturate the window-`2` `2`-defect, and the mod-`2` rank gap proves
+  four is minimal. No uniform rooted-forest,
   isolated-target supply, lattice-index, saturation-count, or weighted-pair
   rank theorem is supplied.
 - The base alone and the pure-order diagonal control already yield the

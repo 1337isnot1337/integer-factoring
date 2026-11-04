@@ -130,6 +130,23 @@ def row_hnf_basis(rows, width):
     return basis, rank
 
 
+def binary_rank(rows):
+    pivots = {}
+    for row in rows:
+        mask = 0
+        for column, value in enumerate(row):
+            if value & 1:
+                mask |= 1 << column
+        while mask:
+            pivot = mask.bit_length() - 1
+            if pivot in pivots:
+                mask ^= pivots[pivot]
+            else:
+                pivots[pivot] = mask
+                break
+    return len(pivots)
+
+
 def replay(row, targets, records, identity):
     value = identity
     for target, coefficient in zip(targets, row):
@@ -498,6 +515,7 @@ def check():
         edge_profiles.append({
             'window': edge_window,
             'distinct_rows': len(edge_rows),
+            'binary_rank': binary_rank(edge_rows),
             'pair_hits': edge_hits,
             'rank': edge_rank,
             'base_pair_rows': len(edge_base_rows),
@@ -575,6 +593,11 @@ def check():
     assert edge_first_full['first_full_window'] == 2
     assert edge_profiles[1]['lattice_multiple'] == 16
     assert edge_profiles[2]['lattice_multiple'] == 1
+    assert edge_profiles[1]['binary_rank'] == 27
+    assert edge_profiles[2]['binary_rank'] == 31
+    binary_rank_defect = (edge_profiles[2]['binary_rank']
+                          - edge_profiles[1]['binary_rank'])
+    assert binary_rank_defect == 4
 
     # Saturation control: four exponent-3 base-gap rows halve the window-2
     # lattice index 16h -> 8h -> 4h -> 2h -> h.  They generate the full
@@ -589,6 +612,7 @@ def check():
     saturation_basis = list(window_two_rows)
     saturation_keys = set(window_two_keys)
     saturation_index = edge_profiles[1]['lattice_index']
+    saturation_binary_rank = edge_profiles[1]['binary_rank']
     while saturation_index > period:
         best = None
         for row in saturation_candidates:
@@ -606,14 +630,20 @@ def check():
         left, right, exponent = edge_labels_by_window[3][selected_key]
         assert replay(selected_row, extension_targets, extension_records,
                       identity) == identity
+        new_binary_rank = binary_rank(saturation_basis)
+        assert new_binary_rank == saturation_binary_rank + 1
+        saturation_binary_rank = new_binary_rank
         saturation_rows.append({
             'pair': [left, right],
             'window': exponent,
             'lattice_index': saturation_index,
             'lattice_multiple': saturation_index//period,
+            'binary_rank': saturation_binary_rank,
         })
     assert saturation_index == period
     assert [row['lattice_multiple'] for row in saturation_rows] == [8, 4, 2, 1]
+    assert len(saturation_rows) == binary_rank_defect
+    assert saturation_binary_rank == edge_profiles[2]['binary_rank']
     assert edge_profiles[1]['support_connected']
     assert edge_profiles[1]['support_root_component'] == len(extension_targets)
     assert edge_profiles[1]['base_block_rank'] == len(base_primes)
@@ -766,6 +796,7 @@ def check():
             'vertices': len(extension_targets),
             'profiles': edge_profiles,
             'saturation_rows': saturation_rows,
+            'binary_rank_defect': binary_rank_defect,
             **edge_first_full,
         },
         'single_hit_extension': {
@@ -791,7 +822,7 @@ def check():
                   'rows alone give a rank-32 edge basis at window 2 with '
                   'selected minor 8192h and row-lattice index 16h; at window 3 '
                   'their row-lattice index is h, the full relation kernel; four exponent-3 '
-                  'base-gap rows saturate the window-2 index 16h to h. A pure-order diagonal control also '
+                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
                   'orders; it is not a factoring algorithm. An isolated-column '
                   'repair control on all split primes through 500 fills the one '
