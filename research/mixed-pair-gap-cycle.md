@@ -227,7 +227,14 @@ has index `h`; the pair-row lattice therefore has index `16` in that kernel.
 The quotient is a `2`-group, and the selected `8192h` minor is
 `512*16h`, not the lattice covolume.
 
-No base relation row, no order row, and no exponent-`3` row is used.
+At window `3` the index drops to exactly `h`. Since the target set contains
+`5` and generates the order-`h` cycle, the full relation kernel also has
+index `h`; hence the window-`3` pair rows generate the **entire** relation
+kernel of `Z^32 -> <5>`. The window-`2` pair rows are already a sublattice
+of index `16`; the only missing part is a `2`-group.
+
+The window-`2` certificate uses no base relation row, no order row, and no
+exponent-`3` row.
 
 This is not a pair-endpoint connectivity effect. At window `2` the
 pair-endpoint graph has root component `1`: no nonzero pair row touches the
@@ -267,9 +274,11 @@ cost.
   windows: their indices exceed `D^{1/4}`, so the small-index density theorem
   does not cover them, and their orders exceed the exponent windows.
 - The tree extension and the isolated-column repair are proved; the
-  edge-only full-rank basis is a finite arithmetic fact, with its row-lattice
-  index `16h` checked by HNF. No uniform rooted-forest, isolated-target
-  supply, lattice-index, or weighted-pair rank theorem is supplied.
+  edge-only bases are finite arithmetic facts. HNF checks index `16h` at
+  window `2` and index `h` at window `3`; the latter makes the pair rows a
+  complete relation basis for the cycle subgroup. No uniform rooted-forest,
+  isolated-target supply, lattice-index, or weighted-pair rank theorem is
+  supplied.
 - The base alone and the pure-order diagonal control already yield the
   factor in this fixed instance; the gap-target and pair rows test coverage of
   additional target columns, not extraction necessity.

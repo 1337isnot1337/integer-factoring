@@ -67,15 +67,23 @@ def split_factorization(value, records):
 
 
 def extended_gcd(left, right):
-    if right == 0:
-        return (abs(left), 1 if left >= 0 else -1, 0)
-    divisor, first, second = extended_gcd(right, left % right)
-    return (divisor, second, first - (left // right)*second)
+    old_divisor, divisor = left, right
+    old_first, first = 1, 0
+    old_second, second = 0, 1
+    while divisor:
+        quotient = old_divisor//divisor
+        old_divisor, divisor = divisor, old_divisor - quotient*divisor
+        old_first, first = first, old_first - quotient*first
+        old_second, second = second, old_second - quotient*second
+    if old_divisor < 0:
+        return (-old_divisor, -old_first, -old_second)
+    return (old_divisor, old_first, old_second)
 
 
-def row_hnf_basis(rows, width):
+def row_hnf_index(rows, width):
     matrix = [list(row) for row in rows]
     rank = 0
+    pivots = []
     for column in range(width):
         candidates = [index for index in range(rank, len(matrix))
                       if matrix[index][column]]
@@ -97,10 +105,29 @@ def row_hnf_basis(rows, width):
             matrix[pivot] = new_pivot
             matrix[candidate] = new_candidate
         matrix[rank], matrix[pivot] = matrix[pivot], matrix[rank]
+        if matrix[rank][column] < 0:
+            matrix[rank] = [-value for value in matrix[rank]]
+        pivot_value = matrix[rank][column]
+        pivots.append(pivot_value)
+        for above in range(rank):
+            quotient = matrix[above][column]//pivot_value
+            if quotient:
+                matrix[above] = [
+                    value - quotient*pivot_entry
+                    for value, pivot_entry
+                    in zip(matrix[above], matrix[rank])]
         rank += 1
         if rank == width:
             break
-    return matrix[:rank], rank
+    index = 1
+    for pivot in pivots:
+        index *= pivot
+    return matrix[:rank], rank, index
+
+
+def row_hnf_basis(rows, width):
+    basis, rank, _ = row_hnf_index(rows, width)
+    return basis, rank
 
 
 def replay(row, targets, records, identity):
@@ -425,6 +452,16 @@ def check():
                             edge_base_seen.add(key)
                             edge_base_rows.append(row)
         edge_rank, edge_pivots = echelon_pivot_rows(edge_rows)
+        edge_hnf_basis = None
+        edge_lattice_index = None
+        if edge_rank == len(extension_targets):
+            edge_hnf_basis, edge_hnf_rank, edge_lattice_index = (
+                row_hnf_index(edge_rows, len(extension_targets)))
+            assert edge_hnf_rank == len(extension_targets)
+            for row in edge_hnf_basis:
+                assert replay(row, extension_targets, extension_records,
+                              identity) == identity
+            assert edge_lattice_index % period == 0
         base_count = len(base_primes)
         base_block_rank, _ = echelon_pivot_rows(
             [row[:base_count] for row in edge_rows])
@@ -467,6 +504,11 @@ def check():
             'support_root_component': len(support_vertices),
             'support_connected': (len(support_vertices)
                                   == len(extension_targets)),
+            'lattice_index': edge_lattice_index,
+            'lattice_multiple': (None if edge_lattice_index is None
+                                 else edge_lattice_index//period),
+            'lattice_bit_length': (None if edge_lattice_index is None
+                                   else edge_lattice_index.bit_length()),
         })
         if edge_first_full is None and edge_rank == len(extension_targets):
             edge_basis = [edge_rows[index]
@@ -494,14 +536,8 @@ def check():
                 (value for value in edge_factors if value), None)
             assert edge_factor in (1000003, 1000033)
             assert INTEGER % edge_factor == 0
-            edge_hnf_basis, edge_hnf_rank = row_hnf_basis(
-                edge_rows, len(extension_targets))
-            assert edge_hnf_rank == len(extension_targets)
-            for row in edge_hnf_basis:
-                assert replay(row, extension_targets, extension_records,
-                              identity) == identity
-            edge_lattice_index = abs(int(determinant(edge_hnf_basis)))
-            assert edge_lattice_index % period == 0
+            assert edge_hnf_basis is not None
+            assert edge_lattice_index is not None
             assert edge_determinant % edge_lattice_index == 0
             lattice_projected = project_to_two_part(
                 edge_generators, edge_lattice_index, identity,
@@ -531,6 +567,8 @@ def check():
             }
     assert edge_first_full is not None
     assert edge_first_full['first_full_window'] == 2
+    assert edge_profiles[1]['lattice_multiple'] == 16
+    assert edge_profiles[2]['lattice_multiple'] == 1
     assert edge_profiles[1]['support_connected']
     assert edge_profiles[1]['support_root_component'] == len(extension_targets)
     assert edge_profiles[1]['base_block_rank'] == len(base_primes)
@@ -705,7 +743,8 @@ def check():
                   'extractor returns 1000003. A full-rank base plus one hit '
                   'per target gives rank 32 and determinant 96768h; the pair '
                   'rows alone give a rank-32 edge basis at window 2 with '
-                  'selected minor 8192h and row-lattice index 16h. A pure-order diagonal control also '
+                  'selected minor 8192h and row-lattice index 16h; at window 3 '
+                  'their row-lattice index is h, the full relation kernel. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
                   'orders; it is not a factoring algorithm. An isolated-column '
                   'repair control on all split primes through 500 fills the one '
