@@ -61,12 +61,18 @@ The only two targets in this sweep with index above
 
 The four rank failures are:
 
-| target | order | index | rank profile `(window: rank/rows)` |
-| ---: | ---: | ---: | :--- |
-| 353 | 99425 | 2 | `1:0/0`, `2:20/20`, `3:22/44` |
-| 937 | 198850 | 1 | `1:0/0`, `2:20/20`, `3:22/44` |
-| 1511 | 99425 | 2 | `1:0/0`, `2:20/20`, `3:22/44` |
-| 2339 | 19885 | 10 | `1:0/0`, `2:20/20`, `3:22/44` |
+| target | order | index | target pair hits | rank profile `(window: rank/rows)` |
+| ---: | ---: | ---: | ---: | :--- |
+| 353 | 99425 | 2 | 0 | `1:0/0`, `2:20/20`, `3:22/44` |
+| 937 | 198850 | 1 | 0 | `1:0/0`, `2:20/20`, `3:22/44` |
+| 1511 | 99425 | 2 | 0 | `1:0/0`, `2:20/20`, `3:22/44` |
+| 2339 | 19885 | 10 | 0 | `1:0/0`, `2:20/20`, `3:22/44` |
+
+The four failures are **isolated target columns**: there is no pair hit
+involving the target at any exponent `1..3`, so the target column is
+identically zero and the base rows alone have rank `22`. They are not
+connected-graph rank defects or determinant cancellations. The two full-rank
+gap targets each have five target pair hits.
 
 A one-off run with `--max-target 10000` (not part of the committed receipt)
 found `608` outside targets, `7` rank failures, and the same two targets with
@@ -79,8 +85,10 @@ observation on this cycle.
 ## What the sweep says
 
 - Pair rows alone are not universal at window `3` on this cycle: `4` of `171`
-  targets have rank `22` rather than `23`. A uniform pair-only rank theorem at
-  this window cannot be asserted from the two-target certificate.
+  targets have no pair hit and rank `22` rather than `23`. A uniform pair-only
+  first-hit/rank theorem at this window cannot be asserted from the two-target
+  certificate. The failure is a supply failure for the target pair, not a
+  connected-graph rank defect.
 - Every rank failure here has index at most `10`, far inside the small-index
   density range. The only two targets outside that range in this sweep,
   with index `1025` and `2050`, are full rank. This is a finite hint of **complementarity**: density
@@ -94,8 +102,9 @@ observation on this cycle.
   `4096h`/`1000h` factors in the two-target certificate are not representative
   of a uniform constant.
 - The rank failure at an index-`1` target shows that index alone does not
-  determine the rank defect. The failure set is a property of the pair-row
-  lattice, not just the target order/index pair.
+  guarantee a pair hit. The failure set is a property of the pair-row supply,
+  not just the target order/index pair. In this sweep, however, every target
+  without a pair hit is density-covered.
 
 The open obligation is unchanged: prove a uniform supply of admissible pair
 rows and a rank or lattice-index lower bound, or prove that the rank-deficient

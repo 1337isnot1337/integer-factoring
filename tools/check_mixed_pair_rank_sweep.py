@@ -68,6 +68,7 @@ def probe(max_target, max_window):
         target_index = gcd(period, target_logs[target])
 
         rows_by_window = {}
+        target_pair_hits = 0
         for left_index, left in enumerate(targets):
             for right in targets[left_index:]:
                 for exponent in range(1, max_window+1):
@@ -90,6 +91,8 @@ def probe(max_target, max_window):
                     if any(row) and row not in rows_by_window.setdefault(
                             exponent, []):
                         rows_by_window[exponent].append(row)
+                        if left == target or right == target:
+                            target_pair_hits += 1
 
         pooled = []
         profile = []
@@ -113,6 +116,8 @@ def probe(max_target, max_window):
             'rank_profile': profile,
             'rows_by_window': {str(window): len(rows)
                                for window, rows in rows_by_window.items()},
+            'target_pair_hits': target_pair_hits,
+            'target_isolated': target_pair_hits == 0,
         }
         if selected is not None:
             for row in selected:
@@ -175,7 +180,12 @@ def summary(receipt):
             'order': record['order'],
             'index': record['index'],
             'rank_profile': record['rank_profile'],
+            'target_pair_hits': record['target_pair_hits'],
+            'target_isolated': record['target_isolated'],
         } for record in failures],
+        'isolated_targets': [
+            record['target'] for record in receipt['results']
+            if record['target_isolated']],
         'index_above_fourth_root': len(gap_results),
         'gap_results': [{
             'target': record['target'],
@@ -184,6 +194,7 @@ def summary(receipt):
             'first_full_window': record['first_full_window'],
             'minor_multiple': record.get('minor_multiple'),
             'extracted_factor': record.get('extracted_factor'),
+            'target_pair_hits': record['target_pair_hits'],
         } for record in gap_results],
         'extraction_successes': sum(
             1 for record in receipt['results']
