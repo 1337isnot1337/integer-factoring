@@ -109,7 +109,47 @@ complete row-and-column pad.  A composition theorem would need to combine
 the row marginal with the column code and the independent digit blocks;
 the component rule in the bundle notes is the relevant template.
 
-## Research question
+A one-sided truncation, keeping `k` row codes and the full column code,
+has the following interval-8 joint image sizes.  The last column is the
+factor by which the code count is smaller than the support `22328`.
+
+| `k` | row-truncated, full column | support/code factor |
+| ---: | ---: | ---: |
+| 16 | 5897 | 3.786 |
+| 32 | 8152 | 2.739 |
+| 64 | 11860 | 1.882 |
+| 128 | 17750 | 1.258 |
+| 256 | 22328 | 1.000 |
+
+## Lossless lower bound and the value-class diagnostic
+
+The truncation table is not a lossless compression.  If a code is a
+truncated pair `(r_k, c_k)` and two support entries share that code, a
+decoder must receive additional residual information to separate them.
+More generally, for any deterministic lossless codebook `C` and residual
+alphabet `R`, injectivity on the support gives
+
+```text
+|C| * |R| >= support.
+```
+
+Thus shrinking the codebook by a factor `F = support/|C|` requires a
+residual alphabet of size at least `F` on average.  The full-basis
+four-tuple has `F=1`; the `k=32` one-sided table has `F~2.74` and the
+two-sided `k=32` table has `F~18.5`, but those factors are paid back as
+residual resolution.  The truncation data therefore locate where
+resolution work is deferred, not a free reduction of the local-solver
+image.
+
+The raw value classes give the same warning in a scalar form.  At
+interval 4 there are `16` distinct raw values over `104` support entries,
+with largest class `24`.  At interval 8 there are `429` distinct values
+over `22328` entries, with largest class `522` and average class
+`22328/429 ~= 52.0`.  A value-only hash has `429` codes and must resolve
+classes as large as `522`; it is not a lossless codec by itself.  These
+counts are diagnostics for a possible non-injective scalar code, not an
+instance of one.
+
 ## Research question
 
 Let `B_0` and `B_1` be the weighted two-cut codec bases.  Does the exact
