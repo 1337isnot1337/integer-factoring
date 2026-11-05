@@ -3560,4 +3560,8 @@ verify-arithmetic: verify-target-order-mixed-rows
 verify-mixed-pair-gap-cycle:
 	python3 tools/check_mixed_pair_gap_cycle.py --output /tmp/integer-factoring-mixed-pair-gap-cycle.json
 
-verify-arithmetic: verify-mixed-pair-gap-cycle
+.PHONY: verify-two-primary-order-saturation
+verify-two-primary-order-saturation:
+	python3 tools/check_two_primary_order_saturation.py --output /tmp/integer-factoring-two-primary-order-saturation.json
+
+verify-arithmetic: verify-mixed-pair-gap-cycle verify-two-primary-order-saturation
