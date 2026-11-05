@@ -174,28 +174,32 @@ remaining directions require a different row type, such as a diagonal/common
 annihilator row or a collective gap row. This is finite evidence, not a
 uniform saturation or obstruction theorem.
 
-### One order-derived row closes every residual index
+### One half-cycle row closes every residual index
 
-The stability above is **pair-only**. Adding one order-derived row repairs
-all `77` window-`4` targets with index above one to index `1`:
+The stability above is **pair-only**. Adding one row built from the known
+half-cycle element `h/2` repairs all `77` window-`4` targets with index above
+one to index `1`:
 
-- `37` targets are repaired by an odd-order diagonal row `ord(p)e_p`;
-- `40` targets are repaired by a half-order difference
-  `(ord(p)/2)e_p-(ord(q)/2)e_q` between even-order coordinates.
+- if the target log is even, `(h/2)e_p`;
+- if the target log is odd, `(h/2)(e_5-e_p)`.
 
-Every added row is replayed, and every repaired lattice extracts `1000003`.
-The ten index-`3` cases are not separate smooth-pair obstructions: an
-odd-order diagonal or half-order coefficient that is not divisible by `3`
-supplies the missing `3`-direction. Thus the finite per-target lattice-index
-defect is order-derived, not a stable index obstruction. This matches worker
-1's collective order-derived saturation of the window-`2` 2-primary defect
-and extends it to the `77` individual target sets.
+The parity is read from the half-power `g_p^{h/2}`: it is the identity for
+even log and the unique order-`2` element for odd log. Thus no full target
+order is needed. In the sweep, `37` targets use the single half-cycle row and
+`40` use the difference; every row replays, and every repaired lattice
+extracts `1000003`.
 
-It is not a saving: the orders come from the enumerated cycle, and the
-pure-order diagonal control already extracts the factor on this instance.
-The remaining question is the uniform cost and availability of the needed
-order data, or of the alternative pair first hit, not the lattice index
-itself.
+The ten index-`3` cases are included: `h/2=99425` is odd and not divisible by
+`3`, so the same row supplies the missing `3`-direction. The finite
+per-target lattice-index defect is therefore half-cycle-derived, not a stable
+index obstruction. This is the individual-set analogue of worker 1's
+order-derived saturation of the collective window-`2` 2-primary defect, with
+the order data reduced to the half-cycle and one parity bit.
+
+It is not a saving: `h` comes from the enumerated cycle, and the pure-order
+diagonal control already extracts the factor on this instance. The remaining
+question is the uniform cost and availability of the half-cycle parity data,
+or of the alternative pair first hit, not the lattice index itself.
 
 The companion note now also proves an **isolated-column repair** lemma: if a
 column is zero in every pair row, adjoining the diagonal row `M e_i` with a
@@ -233,10 +237,10 @@ here and not yet uniform.
   acquires a hit.
 
 The finite lattice-index question is now closed: every target in the sweep
-reaches index `1` using one order-derived row, with no additional smooth pair
-hit. What remains is a uniform cost/supply question: obtain the needed order
-data (or an alternative pair first hit) for every target, without enumerating
-the whole cycle, and charge it in the complete algorithm. The
+reaches index `1` using one half-cycle row, with no additional smooth pair
+hit. What remains is a uniform cost/supply question: obtain the half-cycle
+parity data (or an alternative pair first hit) for every target, without
+enumerating the whole cycle, and charge it in the complete algorithm. The
 common-annihilator repair is a proved fallback, but its `sqrt(h)` cost and
 determinant factor are exactly what a uniform supply would need to avoid.
 This sweep supplies neither; it records the finite index closure and where the

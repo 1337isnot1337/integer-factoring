@@ -1,17 +1,15 @@
 #!/usr/bin/env python3
-"""Close the finite per-target pair-lattice index by allowed row types.
+"""Close the finite per-target pair-lattice index with half-cycle rows.
 
 Loads the committed window-4 sweep, takes every target whose HNF lattice
-index in the relation kernel is above one, and tests two repairs:
-
-* one order-derived row: an odd-order diagonal ``ord(p)e_p`` or an even-order
-  half-order difference ``(ord(p)/2)e_p - (ord(q)/2)e_q``;
-* for the remaining targets, pair rows at the first later exponent window.
-
-The cycle order is ``198850 = 2*5^2*41*97``, so order-derived rows can only
-remove 2-primary (and other divisor-primary) defects.  A 3-primary defect is
-not order-derived and is tested separately.  Every added row is replayed.
-Finite diagnostic only; no uniform supply, cost, or complete-bound claim.
+index in the relation kernel is above one, and adds one row built from the
+known half-cycle element ``h/2``.  For a cyclic group of even order ``h`` and
+a log-one base generator, a target log of even parity gives the relation
+``(h/2)e_p``, while odd parity gives ``(h/2)e_5 - (h/2)e_p``.  Parity is
+detected by the target's half-power, so no full target order is needed.
+Odd-order diagonal and half-order difference rows are kept as fallbacks, as
+are later pair windows.  Every added row is replayed.  Finite diagnostic
+only; no uniform supply, cost, or complete-bound claim.
 """
 import argparse
 import itertools
@@ -128,6 +126,19 @@ def run():
         orders = {prime: period//gcd(period, target_logs[prime])
                   for prime in targets_set}
         candidates = []
+        half_period = period//2
+        for position, prime in enumerate(targets_set):
+            if target_logs[prime] % 2 == 0:
+                row = [0]*width
+                row[position] = half_period
+                candidates.append(('half-cycle-single', prime, None,
+                                   half_period, row))
+            elif prime != BASE_PRIME:
+                row = [0]*width
+                row[targets_set.index(BASE_PRIME)] = half_period
+                row[position] = -half_period
+                candidates.append(('half-cycle-difference', BASE_PRIME, prime,
+                                   half_period, row))
         for position, prime in enumerate(targets_set):
             order = orders[prime]
             if order % 2:
@@ -204,8 +215,8 @@ def run():
                   'repair, cost, supply, or complete-bound claim.'),
         'cycle_order': period,
         'w4_targets': len(targets),
-        'order_saturated': order_records,
-        'order_saturated_count': len(order_records),
+        'half_cycle_saturated': order_records,
+        'half_cycle_saturated_count': len(order_records),
         'pair_saturated': pair_records,
         'pair_saturated_count': len(pair_records),
         'final_index_distribution': {str(value): final_indices.count(value)
@@ -230,7 +241,7 @@ def main():
             handle.write(text)
     print(json.dumps({
         'w4_targets': receipt['w4_targets'],
-        'order_saturated_count': receipt['order_saturated_count'],
+        'half_cycle_saturated_count': receipt['half_cycle_saturated_count'],
         'pair_saturated_count': receipt['pair_saturated_count'],
         'pair_window_distribution': receipt['pair_window_distribution'],
         'final_index_distribution': receipt['final_index_distribution'],

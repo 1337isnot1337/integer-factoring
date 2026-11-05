@@ -3,14 +3,13 @@
   "final_index_distribution": {
     "1": 77
   },
-  "max_final_index": 1,
-  "order_saturated": [
+  "half_cycle_saturated": [
     {
       "coefficient": 99425,
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 229,
       "row": [
         99425,
@@ -35,7 +34,7 @@
         0,
         0,
         0,
-        -1025
+        -99425
       ],
       "target": 229,
       "w4_index": 3
@@ -45,7 +44,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 281,
       "row": [
         99425,
@@ -80,7 +79,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 353,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -115,7 +114,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 593,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -150,7 +149,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 617,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -185,7 +184,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 653,
       "row": [
         99425,
@@ -220,7 +219,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 659,
       "row": [
         99425,
@@ -251,11 +250,11 @@
       "w4_index": 2
     },
     {
-      "coefficient": 3977,
+      "coefficient": 99425,
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 797,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -280,7 +279,7 @@
         0,
         0,
         0,
-        3977
+        99425
       ],
       "target": 797,
       "w4_index": 3
@@ -290,7 +289,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 857,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -325,7 +324,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 877,
       "row": [
         99425,
@@ -360,7 +359,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 937,
       "row": [
         99425,
@@ -395,7 +394,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 983,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -430,7 +429,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 1223,
       "row": [
         99425,
@@ -465,7 +464,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 1321,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -500,7 +499,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 1409,
       "row": [
         99425,
@@ -525,7 +524,7 @@
         0,
         0,
         0,
-        -3977
+        -99425
       ],
       "target": 1409,
       "w4_index": 2
@@ -535,7 +534,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 1511,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -570,7 +569,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 1571,
       "row": [
         99425,
@@ -605,7 +604,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 1613,
       "row": [
         99425,
@@ -640,7 +639,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 1667,
       "row": [
         99425,
@@ -665,7 +664,7 @@
         0,
         0,
         0,
-        -3977
+        -99425
       ],
       "target": 1667,
       "w4_index": 2
@@ -675,7 +674,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 1721,
       "row": [
         99425,
@@ -700,7 +699,7 @@
         0,
         0,
         0,
-        -3977
+        -99425
       ],
       "target": 1721,
       "w4_index": 2
@@ -710,7 +709,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 1877,
       "row": [
         99425,
@@ -745,7 +744,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 1879,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -780,7 +779,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 2011,
       "row": [
         99425,
@@ -815,7 +814,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 2027,
       "row": [
         99425,
@@ -850,7 +849,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 2063,
       "row": [
         99425,
@@ -885,7 +884,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 2137,
       "row": [
         99425,
@@ -920,7 +919,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 2161,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -955,7 +954,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 2179,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -990,7 +989,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 2207,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1025,7 +1024,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 2213,
       "row": [
         99425,
@@ -1060,7 +1059,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 2243,
       "row": [
         99425,
@@ -1095,7 +1094,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 2267,
       "row": [
         99425,
@@ -1126,11 +1125,11 @@
       "w4_index": 2
     },
     {
-      "coefficient": 19885,
+      "coefficient": 99425,
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 2339,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1155,7 +1154,7 @@
         0,
         0,
         0,
-        19885
+        99425
       ],
       "target": 2339,
       "w4_index": 4
@@ -1165,7 +1164,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 2399,
       "row": [
         99425,
@@ -1200,7 +1199,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 2549,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1235,7 +1234,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 2591,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1270,7 +1269,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 2741,
       "row": [
         99425,
@@ -1305,7 +1304,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 2803,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1340,7 +1339,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 2851,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1375,7 +1374,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 2927,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1410,7 +1409,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 3109,
       "row": [
         99425,
@@ -1445,7 +1444,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 3167,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1480,7 +1479,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 3449,
       "row": [
         99425,
@@ -1515,7 +1514,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 3539,
       "row": [
         99425,
@@ -1550,7 +1549,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 3559,
       "row": [
         99425,
@@ -1581,11 +1580,11 @@
       "w4_index": 2
     },
     {
-      "coefficient": 19885,
+      "coefficient": 99425,
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 3571,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1610,7 +1609,7 @@
         0,
         0,
         0,
-        19885
+        99425
       ],
       "target": 3571,
       "w4_index": 2
@@ -1620,7 +1619,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 3583,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1655,7 +1654,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 3643,
       "row": [
         99425,
@@ -1680,7 +1679,7 @@
         0,
         0,
         0,
-        -19885
+        -99425
       ],
       "target": 3643,
       "w4_index": 2
@@ -1690,7 +1689,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 3761,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1725,7 +1724,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 4091,
       "row": [
         99425,
@@ -1760,7 +1759,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 4129,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1795,7 +1794,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 4271,
       "row": [
         99425,
@@ -1820,7 +1819,7 @@
         0,
         0,
         0,
-        -1025
+        -99425
       ],
       "target": 4271,
       "w4_index": 2
@@ -1830,7 +1829,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 4289,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1865,7 +1864,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 4373,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -1900,7 +1899,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 4463,
       "row": [
         99425,
@@ -1925,7 +1924,7 @@
         0,
         0,
         0,
-        -2425
+        -99425
       ],
       "target": 4463,
       "w4_index": 2
@@ -1935,7 +1934,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 4649,
       "row": [
         99425,
@@ -1960,7 +1959,7 @@
         0,
         0,
         0,
-        -2425
+        -99425
       ],
       "target": 4649,
       "w4_index": 2
@@ -1970,7 +1969,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 4663,
       "row": [
         99425,
@@ -2005,7 +2004,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 4957,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2040,7 +2039,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 4987,
       "row": [
         99425,
@@ -2075,7 +2074,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5309,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2110,7 +2109,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 5501,
       "row": [
         99425,
@@ -2145,7 +2144,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5569,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2180,7 +2179,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5857,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2215,7 +2214,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 6991,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2250,7 +2249,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 6997,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2285,7 +2284,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 7057,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2320,7 +2319,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 7243,
       "row": [
         99425,
@@ -2355,7 +2354,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 7253,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2386,11 +2385,11 @@
       "w4_index": 2
     },
     {
-      "coefficient": 19885,
+      "coefficient": 99425,
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 7457,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2415,7 +2414,7 @@
         0,
         0,
         0,
-        19885
+        99425
       ],
       "target": 7457,
       "w4_index": 2
@@ -2425,7 +2424,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 7499,
       "row": [
         99425,
@@ -2460,7 +2459,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 8069,
       "row": [
         99425,
@@ -2495,7 +2494,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 8527,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2530,7 +2529,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 8597,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2565,7 +2564,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 8693,
       "row": [
         99425,
@@ -2590,7 +2589,7 @@
         0,
         0,
         0,
-        -19885
+        -99425
       ],
       "target": 8693,
       "w4_index": 2
@@ -2600,7 +2599,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 8863,
       "row": [
         99425,
@@ -2631,11 +2630,11 @@
       "w4_index": 2
     },
     {
-      "coefficient": 19885,
+      "coefficient": 99425,
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 9007,
-      "mechanism": "odd-diagonal",
+      "mechanism": "half-cycle-single",
       "right": null,
       "row": [
         0,
@@ -2660,7 +2659,7 @@
         0,
         0,
         0,
-        19885
+        99425
       ],
       "target": 9007,
       "w4_index": 2
@@ -2670,7 +2669,7 @@
       "extracted_factor": 1000003,
       "final_index": 1,
       "left": 5,
-      "mechanism": "half-difference",
+      "mechanism": "half-cycle-difference",
       "right": 9539,
       "row": [
         99425,
@@ -2701,7 +2700,8 @@
       "w4_index": 2
     }
   ],
-  "order_saturated_count": 77,
+  "half_cycle_saturated_count": 77,
+  "max_final_index": 1,
   "pair_saturated": [],
   "pair_saturated_count": 0,
   "pair_window_distribution": {},
