@@ -35,7 +35,7 @@ MAX_WINDOW = 3
 SCAN_LIMIT = 100000
 
 
-def cycle_forms(records):
+def cycle_forms(records, base_prime=BASE_PRIME):
     delta = -INTEGER
     identity = (1, 1, (1-delta)//4)
     current = identity
@@ -45,7 +45,7 @@ def cycle_forms(records):
         index[current] = len(forms)
         forms.append(current)
         current = compose_with_prime_form(
-            current, BASE_PRIME, *records[BASE_PRIME])
+            current, base_prime, *records[base_prime])
         if current == identity:
             return forms, index, identity
 
@@ -812,6 +812,101 @@ def check():
         [5, 43987], [5, 96749]]
     assert [row['lattice_multiple'] for row in torsion_half_rows] == [2, 1]
 
+    # Second-cycle control: replace the generator 5 by 7.  The period and the
+    # window-2 lattice index are unchanged, and the same order-derived rows
+    # saturate the defect.  This rules out a base-5 log-table artifact.
+    second_prime = 7
+    second_forms, second_index, _ = cycle_forms(records, second_prime)
+    second_period = len(second_forms)
+    assert second_period == period
+    second_logs = {
+        target: second_index[reduce_form(extension_records[target][1])]
+        for target in extension_targets}
+    second_rows = []
+    second_seen = set()
+    for left_index, left in enumerate(extension_targets):
+        for right in extension_targets[left_index:]:
+            for exponent in range(1, 3):
+                form = second_forms[
+                    (exponent*(second_logs[left] + second_logs[right]))
+                    % second_period]
+                leading = form[0]
+                if leading == 1:
+                    continue
+                parts = split_factorization(leading, records)
+                if parts is None:
+                    continue
+                terms, new = leading_norm_word(
+                    INTEGER, form, parts, extension_records)
+                assert not new
+                row = [0]*len(extension_targets)
+                row[extension_positions[left]] += exponent
+                row[extension_positions[right]] += exponent
+                for prime, value in terms.items():
+                    row[extension_positions[prime]] -= value
+                if not any(row):
+                    continue
+                key = tuple(row)
+                if key not in second_seen:
+                    second_seen.add(key)
+                    second_rows.append(row)
+    _, second_rank, second_lattice_index = row_hnf_index(
+        second_rows, len(extension_targets))
+    assert second_rank == len(extension_targets)
+    assert second_lattice_index == 16*period
+    second_orders = {
+        target: second_period//gcd(second_period, second_logs[target])
+        for target in extension_targets}
+    second_torsion_rows = list(second_rows)
+    second_rank = binary_rank(second_torsion_rows)
+    second_odd_rows = []
+    for target in extension_targets:
+        if second_orders[target] % 2 == 0:
+            continue
+        row = [0]*len(extension_targets)
+        row[extension_positions[target]] = second_orders[target]
+        candidate_rank = binary_rank(second_torsion_rows + [row])
+        if candidate_rank <= second_rank:
+            continue
+        second_torsion_rows.append(row)
+        second_rank = candidate_rank
+        _, _, second_index_value = row_hnf_index(
+            second_torsion_rows, len(extension_targets))
+        second_odd_rows.append({
+            'target': target,
+            'order': second_orders[target],
+            'lattice_index': second_index_value,
+            'lattice_multiple': second_index_value//second_period,
+        })
+    second_even = [target for target in extension_targets
+                   if second_orders[target] % 2 == 0]
+    second_half = {
+        target: second_orders[target]//2 for target in second_even}
+    second_half_rows = []
+    for left, right in itertools.combinations(second_even, 2):
+        row = [0]*len(extension_targets)
+        row[extension_positions[left]] += second_half[left]
+        row[extension_positions[right]] -= second_half[right]
+        candidate_rank = binary_rank(second_torsion_rows + [row])
+        if candidate_rank <= second_rank:
+            continue
+        second_torsion_rows.append(row)
+        second_rank = candidate_rank
+        _, _, second_index_value = row_hnf_index(
+            second_torsion_rows, len(extension_targets))
+        second_half_rows.append({
+            'pair': [left, right],
+            'coefficients': [second_half[left], -second_half[right]],
+            'lattice_index': second_index_value,
+            'lattice_multiple': second_index_value//second_period,
+        })
+        if second_index_value == second_period:
+            break
+    assert second_index_value == second_period
+    assert [row['target'] for row in second_odd_rows] == [1289, 25169]
+    assert [row['pair'] for row in second_half_rows] == [
+        [5, 43987], [5, 96749]]
+
     # Isolated-column repair: pair rows can leave a target column zero.
     # A common-annihilator diagonal row fills such a column directly, without
     # a pair hit.  On all split primes through 500, the window-2 pair rows
@@ -971,6 +1066,14 @@ def check():
                 'lattice_index': torsion_index,
             },
             'binary_rank_defect': binary_rank_defect,
+            'second_cycle': {
+                'cycle_prime': second_prime,
+                'period': second_period,
+                'window2_lattice_multiple': 16,
+                'odd_order_rows': second_odd_rows,
+                'half_order_rows': second_half_rows,
+                'lattice_multiple': 1,
+            },
             **edge_first_full,
         },
         'single_hit_extension': {
