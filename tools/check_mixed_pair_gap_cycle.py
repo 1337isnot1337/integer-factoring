@@ -67,15 +67,23 @@ def split_factorization(value, records):
 
 
 def extended_gcd(left, right):
-    if right == 0:
-        return (abs(left), 1 if left >= 0 else -1, 0)
-    divisor, first, second = extended_gcd(right, left % right)
-    return (divisor, second, first - (left // right)*second)
+    old_divisor, divisor = left, right
+    old_first, first = 1, 0
+    old_second, second = 0, 1
+    while divisor:
+        quotient = old_divisor//divisor
+        old_divisor, divisor = divisor, old_divisor - quotient*divisor
+        old_first, first = first, old_first - quotient*first
+        old_second, second = second, old_second - quotient*second
+    if old_divisor < 0:
+        return (-old_divisor, -old_first, -old_second)
+    return (old_divisor, old_first, old_second)
 
 
-def row_hnf_basis(rows, width):
+def row_hnf_index(rows, width):
     matrix = [list(row) for row in rows]
     rank = 0
+    pivots = []
     for column in range(width):
         candidates = [index for index in range(rank, len(matrix))
                       if matrix[index][column]]
@@ -97,10 +105,46 @@ def row_hnf_basis(rows, width):
             matrix[pivot] = new_pivot
             matrix[candidate] = new_candidate
         matrix[rank], matrix[pivot] = matrix[pivot], matrix[rank]
+        if matrix[rank][column] < 0:
+            matrix[rank] = [-value for value in matrix[rank]]
+        pivot_value = matrix[rank][column]
+        pivots.append(pivot_value)
+        for above in range(rank):
+            quotient = matrix[above][column]//pivot_value
+            if quotient:
+                matrix[above] = [
+                    value - quotient*pivot_entry
+                    for value, pivot_entry
+                    in zip(matrix[above], matrix[rank])]
         rank += 1
         if rank == width:
             break
-    return matrix[:rank], rank
+    index = 1
+    for pivot in pivots:
+        index *= pivot
+    return matrix[:rank], rank, index
+
+
+def row_hnf_basis(rows, width):
+    basis, rank, _ = row_hnf_index(rows, width)
+    return basis, rank
+
+
+def binary_rank(rows):
+    pivots = {}
+    for row in rows:
+        mask = 0
+        for column, value in enumerate(row):
+            if value & 1:
+                mask |= 1 << column
+        while mask:
+            pivot = mask.bit_length() - 1
+            if pivot in pivots:
+                mask ^= pivots[pivot]
+            else:
+                pivots[pivot] = mask
+                break
+    return len(pivots)
 
 
 def replay(row, targets, records, identity):
@@ -377,8 +421,11 @@ def check():
     # the first exponent window at which these rows have full rank.
     edge_profiles = []
     edge_first_full = None
+    edge_rows_by_window = {}
+    edge_labels_by_window = {}
     for edge_window in range(1, MAX_WINDOW+1):
         edge_rows = []
+        edge_row_labels = {}
         edge_seen = set()
         edge_base_rows = []
         edge_base_seen = set()
@@ -420,11 +467,24 @@ def check():
                     if key not in edge_seen:
                         edge_seen.add(key)
                         edge_rows.append(row)
+                        edge_row_labels[key] = (left, right, exponent)
                     if left in base_primes and right in base_primes:
                         if key not in edge_base_seen:
                             edge_base_seen.add(key)
                             edge_base_rows.append(row)
+        edge_rows_by_window[edge_window] = list(edge_rows)
+        edge_labels_by_window[edge_window] = dict(edge_row_labels)
         edge_rank, edge_pivots = echelon_pivot_rows(edge_rows)
+        edge_hnf_basis = None
+        edge_lattice_index = None
+        if edge_rank == len(extension_targets):
+            edge_hnf_basis, edge_hnf_rank, edge_lattice_index = (
+                row_hnf_index(edge_rows, len(extension_targets)))
+            assert edge_hnf_rank == len(extension_targets)
+            for row in edge_hnf_basis:
+                assert replay(row, extension_targets, extension_records,
+                              identity) == identity
+            assert edge_lattice_index % period == 0
         base_count = len(base_primes)
         base_block_rank, _ = echelon_pivot_rows(
             [row[:base_count] for row in edge_rows])
@@ -455,6 +515,7 @@ def check():
         edge_profiles.append({
             'window': edge_window,
             'distinct_rows': len(edge_rows),
+            'binary_rank': binary_rank(edge_rows),
             'pair_hits': edge_hits,
             'rank': edge_rank,
             'base_pair_rows': len(edge_base_rows),
@@ -467,6 +528,11 @@ def check():
             'support_root_component': len(support_vertices),
             'support_connected': (len(support_vertices)
                                   == len(extension_targets)),
+            'lattice_index': edge_lattice_index,
+            'lattice_multiple': (None if edge_lattice_index is None
+                                 else edge_lattice_index//period),
+            'lattice_bit_length': (None if edge_lattice_index is None
+                                   else edge_lattice_index.bit_length()),
         })
         if edge_first_full is None and edge_rank == len(extension_targets):
             edge_basis = [edge_rows[index]
@@ -494,14 +560,8 @@ def check():
                 (value for value in edge_factors if value), None)
             assert edge_factor in (1000003, 1000033)
             assert INTEGER % edge_factor == 0
-            edge_hnf_basis, edge_hnf_rank = row_hnf_basis(
-                edge_rows, len(extension_targets))
-            assert edge_hnf_rank == len(extension_targets)
-            for row in edge_hnf_basis:
-                assert replay(row, extension_targets, extension_records,
-                              identity) == identity
-            edge_lattice_index = abs(int(determinant(edge_hnf_basis)))
-            assert edge_lattice_index % period == 0
+            assert edge_hnf_basis is not None
+            assert edge_lattice_index is not None
             assert edge_determinant % edge_lattice_index == 0
             lattice_projected = project_to_two_part(
                 edge_generators, edge_lattice_index, identity,
@@ -531,12 +591,161 @@ def check():
             }
     assert edge_first_full is not None
     assert edge_first_full['first_full_window'] == 2
-    assert edge_profiles[1]['support_connected']
-    assert edge_profiles[1]['support_root_component'] == len(extension_targets)
-    assert edge_profiles[1]['base_block_rank'] == len(base_primes)
-    assert (edge_profiles[1]['base_block_rank']
-            + edge_profiles[1]['gap_block_rank']
-            == edge_profiles[1]['rank'])
+    assert edge_profiles[1]['lattice_multiple'] == 16
+    assert edge_profiles[2]['lattice_multiple'] == 1
+    assert edge_profiles[1]['binary_rank'] == 27
+    assert edge_profiles[2]['binary_rank'] == 31
+    binary_rank_defect = (edge_profiles[2]['binary_rank']
+                          - edge_profiles[1]['binary_rank'])
+    assert binary_rank_defect == 4
+
+    # Saturation control and targeted search: four exponent-3 base-gap rows
+    # halve the window-2 lattice index 16h -> 8h -> 4h -> 2h -> h.  The
+    # search examines only base-gap pairs at exponent 3 and adds a row only
+    # when it raises the mod-2 row rank.  It reaches the missing four
+    # dimensions after 112 candidates, rather than scanning all windows.
+    saturation_rows = []
+    saturation_basis = list(edge_rows_by_window[2])
+    saturation_keys = {tuple(row) for row in edge_rows_by_window[2]}
+    saturation_index = edge_profiles[1]['lattice_index']
+    saturation_binary_rank = edge_profiles[1]['binary_rank']
+    saturation_probes = 0
+    for base in base_primes:
+        for gap in GAP_TARGETS:
+            saturation_probes += 1
+            form = forms[
+                (3*(extension_logs[base] + extension_logs[gap])) % period]
+            leading = form[0]
+            if leading == 1:
+                continue
+            parts = split_factorization(leading, records)
+            if parts is None:
+                continue
+            terms, new = leading_norm_word(
+                INTEGER, form, parts, extension_records)
+            assert not new
+            row = [0]*len(extension_targets)
+            row[extension_positions[base]] += 3
+            row[extension_positions[gap]] += 3
+            for prime, value in terms.items():
+                row[extension_positions[prime]] -= value
+            if not any(row):
+                continue
+            key = tuple(row)
+            if key in saturation_keys:
+                continue
+            candidate_rank = binary_rank(saturation_basis + [row])
+            if candidate_rank <= saturation_binary_rank:
+                continue
+            saturation_basis.append(row)
+            saturation_keys.add(key)
+            saturation_binary_rank = candidate_rank
+            assert replay(row, extension_targets, extension_records,
+                          identity) == identity
+            _, _, saturation_index = row_hnf_index(
+                saturation_basis, len(extension_targets))
+            saturation_rows.append({
+                'pair': [base, gap],
+                'window': 3,
+                'lattice_index': saturation_index,
+                'lattice_multiple': saturation_index//period,
+                'binary_rank': saturation_binary_rank,
+            })
+            if saturation_index == period:
+                break
+        if saturation_index == period:
+            break
+    assert saturation_index == period
+    assert saturation_binary_rank == edge_profiles[2]['binary_rank']
+    assert [row['lattice_multiple'] for row in saturation_rows] == [8, 4, 2, 1]
+    assert [row['pair'] for row in saturation_rows] == [
+        [53, 25169], [59, 43987], [101, 96749], [103, 1289]]
+    assert saturation_probes == 112
+    assert len(saturation_rows) == binary_rank_defect
+
+    # Hybrid saturation: two odd-order diagonal rows already expose half of
+    # the 2-primary defect.  With those two order rows present, only two
+    # exponent-3 base-gap pair rows are needed.  The two remaining gaps have
+    # even order, so their diagonal order rows vanish modulo 2.  This is a
+    # finite supply comparison, not a cost or uniformity claim.
+    hybrid_rows = list(edge_rows_by_window[2])
+    hybrid_keys = {tuple(row) for row in hybrid_rows}
+    hybrid_binary_rank = edge_profiles[1]['binary_rank']
+    hybrid_order_rows = []
+    for target_index, target in enumerate(extension_targets):
+        row = order_rows[target_index]
+        candidate_rank = binary_rank(hybrid_rows + [row])
+        if candidate_rank <= hybrid_binary_rank:
+            continue
+        hybrid_rows.append(row)
+        hybrid_keys.add(tuple(row))
+        hybrid_binary_rank = candidate_rank
+        hybrid_order_rows.append({
+            'target': target,
+            'order': order_values[target_index],
+            'binary_rank': hybrid_binary_rank,
+        })
+    assert [row['target'] for row in hybrid_order_rows] == [1289, 25169]
+    assert [row['order'] for row in hybrid_order_rows] == [97, 97]
+    assert hybrid_binary_rank == 29
+    _, _, hybrid_index = row_hnf_index(
+        hybrid_rows, len(extension_targets))
+    assert hybrid_index == 4*period
+    hybrid_index_after_orders = hybrid_index
+
+    hybrid_pair_rows = []
+    hybrid_probes = 0
+    for base in base_primes:
+        for gap in GAP_TARGETS:
+            hybrid_probes += 1
+            form = forms[
+                (3*(extension_logs[base] + extension_logs[gap])) % period]
+            leading = form[0]
+            if leading == 1:
+                continue
+            parts = split_factorization(leading, records)
+            if parts is None:
+                continue
+            terms, new = leading_norm_word(
+                INTEGER, form, parts, extension_records)
+            assert not new
+            row = [0]*len(extension_targets)
+            row[extension_positions[base]] += 3
+            row[extension_positions[gap]] += 3
+            for prime, value in terms.items():
+                row[extension_positions[prime]] -= value
+            if not any(row):
+                continue
+            key = tuple(row)
+            if key in hybrid_keys:
+                continue
+            candidate_rank = binary_rank(hybrid_rows + [row])
+            if candidate_rank <= hybrid_binary_rank:
+                continue
+            hybrid_rows.append(row)
+            hybrid_keys.add(key)
+            hybrid_binary_rank = candidate_rank
+            assert replay(row, extension_targets, extension_records,
+                          identity) == identity
+            _, _, hybrid_index = row_hnf_index(
+                hybrid_rows, len(extension_targets))
+            hybrid_pair_rows.append({
+                'pair': [base, gap],
+                'probe': hybrid_probes,
+                'binary_rank': hybrid_binary_rank,
+                'lattice_index': hybrid_index,
+                'lattice_multiple': hybrid_index//period,
+            })
+            if hybrid_index == period:
+                break
+        if hybrid_index == period:
+            break
+    assert hybrid_index == period
+    assert hybrid_binary_rank == edge_profiles[2]['binary_rank']
+    assert [row['pair'] for row in hybrid_pair_rows] == [
+        [59, 43987], [101, 96749]]
+    assert [row['lattice_multiple'] for row in hybrid_pair_rows] == [2, 1]
+    assert hybrid_probes == 110
 
     # Isolated-column repair: pair rows can leave a target column zero.
     # A common-annihilator diagonal row fills such a column directly, without
@@ -682,6 +891,16 @@ def check():
         'edge_basis': {
             'vertices': len(extension_targets),
             'profiles': edge_profiles,
+            'saturation_rows': saturation_rows,
+            'saturation_search_probes': saturation_probes,
+            'hybrid_saturation': {
+                'order_rows': hybrid_order_rows,
+                'index_after_orders': hybrid_index_after_orders,
+                'pair_rows': hybrid_pair_rows,
+                'pair_search_probes': hybrid_probes,
+                'lattice_index': hybrid_index,
+            },
+            'binary_rank_defect': binary_rank_defect,
             **edge_first_full,
         },
         'single_hit_extension': {
@@ -705,7 +924,9 @@ def check():
                   'extractor returns 1000003. A full-rank base plus one hit '
                   'per target gives rank 32 and determinant 96768h; the pair '
                   'rows alone give a rank-32 edge basis at window 2 with '
-                  'selected minor 8192h and row-lattice index 16h. A pure-order diagonal control also '
+                  'selected minor 8192h and row-lattice index 16h; at window 3 '
+                  'their row-lattice index is h, the full relation kernel; four exponent-3 '
+                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal; a targeted base-gap search finds them after 112 probes, and two odd-order diagonal rows plus two pair rows also saturate. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
                   'orders; it is not a factoring algorithm. An isolated-column '
                   'repair control on all split primes through 500 fills the one '

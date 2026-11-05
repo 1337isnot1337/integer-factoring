@@ -316,6 +316,10 @@ verify-bounded-spin-projector:
 verify-bounded-spin-support:
 	python3 tools/check_bounded_spin_support.py
 
+.PHONY: verify-bounded-spin-diagonal-trace
+verify-bounded-spin-diagonal-trace:
+	python3 tools/check_bounded_spin_diagonal_trace.py --output /tmp/bounded-spin-diagonal-trace.json
+
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py
@@ -3116,6 +3120,10 @@ verify-core-cutoff-trend:
 	python3 tools/check_core_cutoff_trend.py --output /tmp/core-cutoff-trend-check.json
 build-core-cutoff-trend:
 	python3 tools/measure_core_cutoff_trend.py
+
+.PHONY: verify-f8-low-block-pilots
+verify-f8-low-block-pilots:
+	python3 tools/check_f8_low_block_pilots.py --output /tmp/f8-low-block-pilots.json
 
 .PHONY: verify-f8-retraction-refinement verify-f8-retraction-refinement-full verify-f8-retraction-census-full
 verify-f8-retraction-refinement:

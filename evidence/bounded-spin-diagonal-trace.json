@@ -1,0 +1,98 @@
+{
+  "status": "pass",
+  "prime": 5,
+  "length_ten": {
+    "primary_dimensions": [
+      34,
+      1,
+      225,
+      300,
+      35,
+      406,
+      155
+    ],
+    "trace_values": [
+      4,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "forms": {
+      "distinct_forms": 19,
+      "multiplicities": [
+        160,
+        144,
+        112,
+        104,
+        96,
+        72,
+        68,
+        68,
+        64,
+        64,
+        48,
+        32,
+        28,
+        24,
+        18,
+        16,
+        16,
+        16,
+        6
+      ],
+      "square_root_sum": 137.67348777732525,
+      "class_size_sum": 1156
+    }
+  },
+  "length_twelve": {
+    "labels": 89,
+    "identity_trace": 1,
+    "identity_diagonal_one": true,
+    "forms": {
+      "distinct_forms": 35,
+      "multiplicities": [
+        800,
+        624,
+        616,
+        544,
+        544,
+        476,
+        384,
+        368,
+        320,
+        304,
+        304,
+        288,
+        256,
+        224,
+        196,
+        192,
+        184,
+        160,
+        152,
+        128,
+        128,
+        124,
+        112,
+        80,
+        80,
+        72,
+        56,
+        48,
+        48,
+        32,
+        32,
+        24,
+        12,
+        8,
+        1
+      ],
+      "square_root_sum": 467.98854081455573,
+      "class_size_sum": 7921
+    }
+  },
+  "scope": "Exact diagonal trace control for the ten-site primary decomposition; the twelve-site forms reduce the open primary-dimension computation to the coefficient idempotents. No score change."
+}
