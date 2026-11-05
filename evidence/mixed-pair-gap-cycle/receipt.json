@@ -201,6 +201,52 @@
       }
     ],
     "saturation_search_probes": 112,
+    "second_cycle": {
+      "cycle_prime": 7,
+      "half_order_rows": [
+        {
+          "coefficients": [
+            99425,
+            -41
+          ],
+          "lattice_index": 397700,
+          "lattice_multiple": 2,
+          "pair": [
+            5,
+            43987
+          ]
+        },
+        {
+          "coefficients": [
+            99425,
+            -97
+          ],
+          "lattice_index": 198850,
+          "lattice_multiple": 1,
+          "pair": [
+            5,
+            96749
+          ]
+        }
+      ],
+      "lattice_multiple": 1,
+      "odd_order_rows": [
+        {
+          "lattice_index": 1590800,
+          "lattice_multiple": 8,
+          "order": 97,
+          "target": 1289
+        },
+        {
+          "lattice_index": 795400,
+          "lattice_multiple": 4,
+          "order": 97,
+          "target": 25169
+        }
+      ],
+      "period": 198850,
+      "window2_lattice_multiple": 16
+    },
     "selected_minor_determinant": 1628979200,
     "torsion_saturation": {
       "half_order_rows": [
