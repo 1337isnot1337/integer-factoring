@@ -663,6 +663,90 @@ def check():
     assert saturation_probes == 112
     assert len(saturation_rows) == binary_rank_defect
 
+    # Hybrid saturation: two odd-order diagonal rows already expose half of
+    # the 2-primary defect.  With those two order rows present, only two
+    # exponent-3 base-gap pair rows are needed.  The two remaining gaps have
+    # even order, so their diagonal order rows vanish modulo 2.  This is a
+    # finite supply comparison, not a cost or uniformity claim.
+    hybrid_rows = list(edge_rows_by_window[2])
+    hybrid_keys = {tuple(row) for row in hybrid_rows}
+    hybrid_binary_rank = edge_profiles[1]['binary_rank']
+    hybrid_order_rows = []
+    for target_index, target in enumerate(extension_targets):
+        row = order_rows[target_index]
+        candidate_rank = binary_rank(hybrid_rows + [row])
+        if candidate_rank <= hybrid_binary_rank:
+            continue
+        hybrid_rows.append(row)
+        hybrid_keys.add(tuple(row))
+        hybrid_binary_rank = candidate_rank
+        hybrid_order_rows.append({
+            'target': target,
+            'order': order_values[target_index],
+            'binary_rank': hybrid_binary_rank,
+        })
+    assert [row['target'] for row in hybrid_order_rows] == [1289, 25169]
+    assert [row['order'] for row in hybrid_order_rows] == [97, 97]
+    assert hybrid_binary_rank == 29
+    _, _, hybrid_index = row_hnf_index(
+        hybrid_rows, len(extension_targets))
+    assert hybrid_index == 4*period
+    hybrid_index_after_orders = hybrid_index
+
+    hybrid_pair_rows = []
+    hybrid_probes = 0
+    for base in base_primes:
+        for gap in GAP_TARGETS:
+            hybrid_probes += 1
+            form = forms[
+                (3*(extension_logs[base] + extension_logs[gap])) % period]
+            leading = form[0]
+            if leading == 1:
+                continue
+            parts = split_factorization(leading, records)
+            if parts is None:
+                continue
+            terms, new = leading_norm_word(
+                INTEGER, form, parts, extension_records)
+            assert not new
+            row = [0]*len(extension_targets)
+            row[extension_positions[base]] += 3
+            row[extension_positions[gap]] += 3
+            for prime, value in terms.items():
+                row[extension_positions[prime]] -= value
+            if not any(row):
+                continue
+            key = tuple(row)
+            if key in hybrid_keys:
+                continue
+            candidate_rank = binary_rank(hybrid_rows + [row])
+            if candidate_rank <= hybrid_binary_rank:
+                continue
+            hybrid_rows.append(row)
+            hybrid_keys.add(key)
+            hybrid_binary_rank = candidate_rank
+            assert replay(row, extension_targets, extension_records,
+                          identity) == identity
+            _, _, hybrid_index = row_hnf_index(
+                hybrid_rows, len(extension_targets))
+            hybrid_pair_rows.append({
+                'pair': [base, gap],
+                'probe': hybrid_probes,
+                'binary_rank': hybrid_binary_rank,
+                'lattice_index': hybrid_index,
+                'lattice_multiple': hybrid_index//period,
+            })
+            if hybrid_index == period:
+                break
+        if hybrid_index == period:
+            break
+    assert hybrid_index == period
+    assert hybrid_binary_rank == edge_profiles[2]['binary_rank']
+    assert [row['pair'] for row in hybrid_pair_rows] == [
+        [59, 43987], [101, 96749]]
+    assert [row['lattice_multiple'] for row in hybrid_pair_rows] == [2, 1]
+    assert hybrid_probes == 110
+
     # Isolated-column repair: pair rows can leave a target column zero.
     # A common-annihilator diagonal row fills such a column directly, without
     # a pair hit.  On all split primes through 500, the window-2 pair rows
@@ -809,6 +893,13 @@ def check():
             'profiles': edge_profiles,
             'saturation_rows': saturation_rows,
             'saturation_search_probes': saturation_probes,
+            'hybrid_saturation': {
+                'order_rows': hybrid_order_rows,
+                'index_after_orders': hybrid_index_after_orders,
+                'pair_rows': hybrid_pair_rows,
+                'pair_search_probes': hybrid_probes,
+                'lattice_index': hybrid_index,
+            },
             'binary_rank_defect': binary_rank_defect,
             **edge_first_full,
         },
@@ -835,7 +926,7 @@ def check():
                   'rows alone give a rank-32 edge basis at window 2 with '
                   'selected minor 8192h and row-lattice index 16h; at window 3 '
                   'their row-lattice index is h, the full relation kernel; four exponent-3 '
-                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal; a targeted base-gap search finds them after 112 probes. A pure-order diagonal control also '
+                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal; a targeted base-gap search finds them after 112 probes, and two odd-order diagonal rows plus two pair rows also saturate. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
                   'orders; it is not a factoring algorithm. An isolated-column '
                   'repair control on all split primes through 500 fills the one '

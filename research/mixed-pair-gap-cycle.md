@@ -254,6 +254,17 @@ pairs at exponent `3`. This is a finite search-cost reduction; it is not a
 uniform bound on the defect size or on the number of base-gap candidates
 needed for other inputs.
 
+A hybrid check separates the defect into diagonal and pair directions. The
+odd-order targets `1289` and `25169` both have order `97`; their diagonal
+rows raise the mod-`2` rank from `27` to `29` and lower the index from `16h`
+to `4h`. The remaining two directions involve the even-order gaps `43987`
+(order `82`) and `96749` (order `194`), whose diagonal order rows vanish
+modulo `2`. A base-gap search then needs only the pair rows `(59,43987)` and
+`(101,96749)`, found at probes `66` and `110`, to reach `2h` and `h`.
+Thus two diagonal rows replace two of the four smooth pair hits in this
+finite instance. Whether the order rows are cheaper than the pair hits is a
+separate supply/cost question; no uniform split or saving is claimed.
+
 The window-`2` certificate uses no base relation row, no order row, and no
 exponent-`3` row.
 
@@ -300,7 +311,8 @@ cost.
   complete relation basis for the cycle subgroup. Four exponent-`3` base-gap
   rows saturate the window-`2` `2`-defect, the mod-`2` rank gap proves four
   is minimal, and a targeted base-gap search finds them after `112`
-  candidates. No uniform rooted-forest,
+  candidates; two odd-order diagonal rows plus two pair rows also work. No
+  uniform rooted-forest,
   isolated-target supply, lattice-index, saturation-count, or weighted-pair
   rank theorem is supplied.
 - The base alone and the pure-order diagonal control already yield the
