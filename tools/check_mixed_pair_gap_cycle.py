@@ -9,6 +9,7 @@ selected rows, the maximal minor, and the two-part extraction.  This is a
 finite control, not a uniform rank or smoothness theorem.
 """
 import argparse
+import itertools
 import json
 import sys
 from math import gcd, isqrt
@@ -747,6 +748,70 @@ def check():
     assert [row['lattice_multiple'] for row in hybrid_pair_rows] == [2, 1]
     assert hybrid_probes == 110
 
+    # Order-derived saturation: the 2-primary defect can also be repaired
+    # without any exponent-3 smooth hit.  Odd-order targets contribute their
+    # diagonal order rows.  For even-order targets p, (ord(p)/2)e_p maps to
+    # the unique order-2 element h/2, so the difference of the two half-order
+    # rows is a relation.  These order-only rows reach the full kernel.
+    torsion_rows = list(edge_rows_by_window[2])
+    torsion_binary_rank = edge_profiles[1]['binary_rank']
+    torsion_odd_rows = []
+    for target_index, target in enumerate(extension_targets):
+        if order_values[target_index] & 1 == 0:
+            continue
+        row = order_rows[target_index]
+        candidate_rank = binary_rank(torsion_rows + [row])
+        if candidate_rank <= torsion_binary_rank:
+            continue
+        torsion_rows.append(row)
+        torsion_binary_rank = candidate_rank
+        _, _, torsion_index = row_hnf_index(
+            torsion_rows, len(extension_targets))
+        torsion_odd_rows.append({
+            'target': target,
+            'order': order_values[target_index],
+            'binary_rank': torsion_binary_rank,
+            'lattice_index': torsion_index,
+            'lattice_multiple': torsion_index//period,
+        })
+    assert [row['target'] for row in torsion_odd_rows] == [1289, 25169]
+    assert [row['lattice_multiple'] for row in torsion_odd_rows] == [8, 4]
+
+    even_targets = [target for target_index, target
+                    in enumerate(extension_targets)
+                    if order_values[target_index] % 2 == 0]
+    half_orders = {
+        target: order_values[extension_positions[target]]//2
+        for target in even_targets}
+    torsion_half_rows = []
+    for left, right in itertools.combinations(even_targets, 2):
+        row = [0]*len(extension_targets)
+        row[extension_positions[left]] += half_orders[left]
+        row[extension_positions[right]] -= half_orders[right]
+        candidate_rank = binary_rank(torsion_rows + [row])
+        if candidate_rank <= torsion_binary_rank:
+            continue
+        assert replay(row, extension_targets, extension_records,
+                      identity) == identity
+        torsion_rows.append(row)
+        torsion_binary_rank = candidate_rank
+        _, _, torsion_index = row_hnf_index(
+            torsion_rows, len(extension_targets))
+        torsion_half_rows.append({
+            'pair': [left, right],
+            'coefficients': [half_orders[left], -half_orders[right]],
+            'binary_rank': torsion_binary_rank,
+            'lattice_index': torsion_index,
+            'lattice_multiple': torsion_index//period,
+        })
+        if torsion_index == period:
+            break
+    assert torsion_index == period
+    assert torsion_binary_rank == edge_profiles[2]['binary_rank']
+    assert [row['pair'] for row in torsion_half_rows] == [
+        [5, 43987], [5, 96749]]
+    assert [row['lattice_multiple'] for row in torsion_half_rows] == [2, 1]
+
     # Isolated-column repair: pair rows can leave a target column zero.
     # A common-annihilator diagonal row fills such a column directly, without
     # a pair hit.  On all split primes through 500, the window-2 pair rows
@@ -900,6 +965,11 @@ def check():
                 'pair_search_probes': hybrid_probes,
                 'lattice_index': hybrid_index,
             },
+            'torsion_saturation': {
+                'odd_order_rows': torsion_odd_rows,
+                'half_order_rows': torsion_half_rows,
+                'lattice_index': torsion_index,
+            },
             'binary_rank_defect': binary_rank_defect,
             **edge_first_full,
         },
@@ -926,7 +996,7 @@ def check():
                   'rows alone give a rank-32 edge basis at window 2 with '
                   'selected minor 8192h and row-lattice index 16h; at window 3 '
                   'their row-lattice index is h, the full relation kernel; four exponent-3 '
-                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal; a targeted base-gap search finds them after 112 probes, and two odd-order diagonal rows plus two pair rows also saturate. A pure-order diagonal control also '
+                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal; a targeted base-gap search finds them after 112 probes. Two odd-order diagonal rows plus two half-order differences also saturate without any exponent-3 hit. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
                   'orders; it is not a factoring algorithm. An isolated-column '
                   'repair control on all split primes through 500 fills the one '

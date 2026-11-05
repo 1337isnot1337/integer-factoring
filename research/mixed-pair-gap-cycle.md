@@ -265,6 +265,26 @@ Thus two diagonal rows replace two of the four smooth pair hits in this
 finite instance. Whether the order rows are cheaper than the pair hits is a
 separate supply/cost question; no uniform split or saving is claimed.
 
+A stronger order-derived certificate removes the remaining pair hits as well.
+For an even-order target `p`, the row `(ord(p)/2)e_p` maps to the unique
+order-`2` element `h/2`; hence the difference of two such rows is a relation.
+The odd-order rows for `1289` and `25169` lower the index `16h -> 4h`, and the
+two half-order differences
+
+`99425 e_5 - 41 e_43987`,  `99425 e_5 - 97 e_96749`
+
+lower it `4h -> 2h -> h`. Thus window-`2` smooth rows plus these four
+order-derived rows generate the full kernel, with **no exponent-`3` smooth
+hit at all**. The finite 2-primary repair can be supplied by order data rather
+than by additional smooth pairs.
+
+This does not yet give a saving: it replaces four smooth hits by four
+order-derived rows, and the checker obtains the orders from the enumerated
+cycle. The open question is whether the needed orders, or just their
+`2`-adic parts, can be computed more cheaply than the extra smooth search,
+and whether the construction generalizes when `h` has higher `2`-adic
+valuation.
+
 The window-`2` certificate uses no base relation row, no order row, and no
 exponent-`3` row.
 
@@ -311,7 +331,8 @@ cost.
   complete relation basis for the cycle subgroup. Four exponent-`3` base-gap
   rows saturate the window-`2` `2`-defect, the mod-`2` rank gap proves four
   is minimal, and a targeted base-gap search finds them after `112`
-  candidates; two odd-order diagonal rows plus two pair rows also work. No
+  candidates; two odd-order diagonal rows plus two pair rows also work, and
+  four order-derived rows saturate without any exponent-`3` smooth hit. No
   uniform rooted-forest,
   isolated-target supply, lattice-index, saturation-count, or weighted-pair
   rank theorem is supplied.
