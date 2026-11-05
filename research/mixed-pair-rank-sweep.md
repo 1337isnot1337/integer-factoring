@@ -150,6 +150,30 @@ relation kernel; the remaining finite obstruction is first-hit supply, not
 lattice index. This is a targeted subset of the ten known gap targets, not an
 exhaustive gap census, and it is still finite evidence.
 
+### Residual defects are not one-window saturation
+
+The `77` window-`4` targets with lattice index above one were recomputed at
+window `5`. Sixty-nine reach index `1`, but eight remain:
+
+| target | order | window-4 index | window-5 index | window-6 index |
+| ---: | ---: | ---: | ---: | ---: |
+| 593 | 99425 | `3` | `3` | `3` |
+| 983 | 99425 | `2` | `2` | `2` |
+| 1223 | 198850 | `2` | `2` | `2` |
+| 1721 | 7954 | `2` | `2` | `2` |
+| 2161 | 99425 | `2` | `2` | `2` |
+| 4957 | 99425 | `2` | `2` | `2` |
+| 5501 | 198850 | `2` | `2` | `2` |
+| 8863 | 198850 | `2` | `2` | `2` |
+
+The residual indices are stable from window `4` through window `6`. Unlike
+worker 1's collective window-`2` defect, which four exponent-`3` base-gap
+rows saturate, these per-target defects are not repaired by extra pair
+exponents. A larger window alone is therefore not the missing mechanism; the
+remaining directions require a different row type, such as a diagonal/common
+annihilator row or a collective gap row. This is finite evidence, not a
+uniform saturation or obstruction theorem.
+
 The companion note now also proves an **isolated-column repair** lemma: if a
 column is zero in every pair row, adjoining the diagonal row `M e_i` with a
 common annihilator `M` raises the rank by one and multiplies the determinant
@@ -215,4 +239,11 @@ subset is reproduced by
 make verify-mixed-pair-gap-lattice-index
 ```
 
-and stored in `evidence/mixed-pair-gap-lattice-index.json`.
+and stored in `evidence/mixed-pair-gap-lattice-index.json`. The
+saturation-depth diagnostic is
+
+```sh
+make verify-mixed-pair-saturation-depth
+```
+
+with receipt `evidence/mixed-pair-saturation-depth.json`.

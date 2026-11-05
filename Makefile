@@ -3589,3 +3589,9 @@ verify-mixed-pair-gap-lattice-index:
 	python3 tools/check_mixed_pair_rank_sweep.py --max-window 4 --targets 1117,1289,25169,29207,38677,43987,67819,70589,79823,96749 --output /tmp/integer-factoring-mixed-pair-gap-lattice-index.json
 
 verify-arithmetic: verify-mixed-pair-gap-lattice-index
+
+.PHONY: verify-mixed-pair-saturation-depth
+verify-mixed-pair-saturation-depth:
+	python3 tools/check_mixed_pair_saturation_depth.py --output /tmp/integer-factoring-mixed-pair-saturation-depth.json
+
+verify-arithmetic: verify-mixed-pair-saturation-depth
