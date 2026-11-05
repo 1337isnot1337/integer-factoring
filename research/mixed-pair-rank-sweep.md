@@ -124,6 +124,32 @@ quotient can have `3`-torsion. It is target-set dependent: the companion
 constant-index target for the uniform obligation, but no uniform lattice-index
 bound is proved.
 
+### The ten known gap targets
+
+The companion census supplies ten gap targets through `100000`. Running the
+same window-`4` HNF computation on exactly those targets gives:
+
+| target | order | first window | selected minor | lattice index | pair hits |
+| ---: | ---: | ---: | ---: | ---: | ---: |
+| 1117 | 194 | 2 | `4096` | `1` | 7 |
+| 1289 | 97 | 3 | `1000` | `1` | 7 |
+| 25169 | 97 | 3 | `2944` | `1` | 10 |
+| 29207 | 97 | 2 | `-1080` | `1` | 6 |
+| 38677 | 194 | 3 | `-344` | `1` | 6 |
+| 43987 | 82 | 3 | `3048` | `1` | 2 |
+| 67819 | 41 | 2 | `1632` | `1` | 12 |
+| 70589 | 97 | 2 | `430` | `1` | 7 |
+| 79823 | 194 | 3 | `3184` | `2` | 3 |
+| 96749 | 194 | 3 | `2032` | `1` | 4 |
+
+All ten are full rank at window `4`, none is isolated, and every covolume
+annihilator extracts `1000003`. The selected minors range from `344` to
+`4096`, but the lattice indices are `1` for nine targets and `2` for
+`79823`. For the gap block the pair-row lattice is therefore almost the full
+relation kernel; the remaining finite obstruction is first-hit supply, not
+lattice index. This is a targeted subset of the ten known gap targets, not an
+exhaustive gap census, and it is still finite evidence.
+
 The companion note now also proves an **isolated-column repair** lemma: if a
 column is zero in every pair row, adjoining the diagonal row `M e_i` with a
 common annihilator `M` raises the rank by one and multiplies the determinant
@@ -182,4 +208,11 @@ make verify-mixed-pair-rank-sweep-w4
 ```
 
 The receipts are `evidence/mixed-pair-rank-sweep.json` (window `3`) and
-`evidence/mixed-pair-rank-sweep-w4.json` (window `4`).
+`evidence/mixed-pair-rank-sweep-w4.json` (window `4`). The ten-target gap
+subset is reproduced by
+
+```sh
+make verify-mixed-pair-gap-lattice-index
+```
+
+and stored in `evidence/mixed-pair-gap-lattice-index.json`.

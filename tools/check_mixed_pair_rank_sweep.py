@@ -30,7 +30,7 @@ from check_mixed_pair_gap_cycle import (
 )
 
 
-def probe(max_target, max_window):
+def probe(max_target, max_window, explicit_targets=None):
     delta = -INTEGER
     base = build_prime_form_factor_base(delta, CUTOFF)
     records = {record.prime: (record.root, tuple(record.positive))
@@ -49,8 +49,14 @@ def probe(max_target, max_window):
                       for record in larger['records']}
     height = isqrt(INTEGER//3)
     fourth_root = abs(delta)**0.25
-    outside = [prime for prime in primes_through(max_target)
-               if prime > CUTOFF and prime in larger_records]
+    if explicit_targets is None:
+        outside = [prime for prime in primes_through(max_target)
+                   if prime > CUTOFF and prime in larger_records]
+    else:
+        outside = sorted(set(explicit_targets))
+        for target in outside:
+            assert target <= max_target, (target, max_target)
+            assert target in larger_records, target
     results = []
     skipped = []
     for target in outside:
@@ -180,6 +186,8 @@ def probe(max_target, max_window):
         'base_primes': list(base_primes),
         'outside_targets_in_cycle': [record['target'] for record in results],
         'outside_targets_skipped': skipped,
+        'target_selection': ('explicit' if explicit_targets is not None
+                             else 'all-split-primes'),
         'results': results,
         'scope': ('Finite rank and lattice-index diagnostic over outside '
                   'split primes in the 40-bit order-198850 cycle. Pair rows '
@@ -245,11 +253,19 @@ def summary(receipt):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--max-target', type=int, default=2500)
+    parser.add_argument('--max-target', type=int, default=None)
     parser.add_argument('--max-window', type=int, default=3)
+    parser.add_argument('--targets', help='comma-separated target subset')
     parser.add_argument('--output')
     arguments = parser.parse_args()
-    receipt = probe(arguments.max_target, arguments.max_window)
+    explicit = None
+    if arguments.targets:
+        explicit = [int(value) for value in arguments.targets.split(',')
+                    if value.strip()]
+    if arguments.max_target is None:
+        arguments.max_target = max(explicit) if explicit else 2500
+    receipt = probe(arguments.max_target, arguments.max_window,
+                    explicit_targets=explicit)
     text = json.dumps(receipt, indent=2, sort_keys=True) + '\n'
     if arguments.output:
         with open(arguments.output, 'w') as handle:

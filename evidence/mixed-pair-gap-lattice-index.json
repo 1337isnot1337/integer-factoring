@@ -1,0 +1,488 @@
+{
+  "base_primes": [
+    5,
+    7,
+    19,
+    37,
+    47,
+    53,
+    59,
+    73,
+    83,
+    97,
+    101,
+    103,
+    107,
+    109,
+    113,
+    127,
+    131,
+    137,
+    151,
+    163,
+    167,
+    173
+  ],
+  "cutoff": 177,
+  "cycle_order": 198850,
+  "discriminant": -1000036000099,
+  "factorization": [
+    1000003,
+    1000033
+  ],
+  "fourth_root": 1000.0089999032518,
+  "height_bound": 577360,
+  "integer": 1000036000099,
+  "max_target": 96749,
+  "outside_targets_in_cycle": [
+    1117,
+    1289,
+    25169,
+    29207,
+    38677,
+    43987,
+    67819,
+    70589,
+    79823,
+    96749
+  ],
+  "outside_targets_skipped": [],
+  "results": [
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 2,
+      "index": 1025,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 18,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 198850,
+      "lattice_multiple": 1,
+      "minor_multiple": 4096,
+      "order": 194,
+      "rank_profile": [
+        {
+          "rank": 0,
+          "rows": 0,
+          "window": 1
+        },
+        {
+          "rank": 23,
+          "rows": 23,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 49,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 68,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "2": 23,
+        "3": 26,
+        "4": 19
+      },
+      "selected_minor_determinant": 814489600,
+      "target": 1117,
+      "target_isolated": false,
+      "target_pair_hits": 7
+    },
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 3,
+      "index": 2050,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 18,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 198850,
+      "lattice_multiple": 1,
+      "minor_multiple": 1000,
+      "order": 97,
+      "rank_profile": [
+        {
+          "rank": 0,
+          "rows": 0,
+          "window": 1
+        },
+        {
+          "rank": 22,
+          "rows": 22,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 49,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 68,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "2": 22,
+        "3": 27,
+        "4": 19
+      },
+      "selected_minor_determinant": 198850000,
+      "target": 1289,
+      "target_isolated": false,
+      "target_pair_hits": 7
+    },
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 3,
+      "index": 2050,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 18,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 198850,
+      "lattice_multiple": 1,
+      "minor_multiple": 2944,
+      "order": 97,
+      "rank_profile": [
+        {
+          "rank": 0,
+          "rows": 0,
+          "window": 1
+        },
+        {
+          "rank": 22,
+          "rows": 22,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 48,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 71,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "2": 22,
+        "3": 26,
+        "4": 23
+      },
+      "selected_minor_determinant": 585414400,
+      "target": 25169,
+      "target_isolated": false,
+      "target_pair_hits": 10
+    },
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 2,
+      "index": 2050,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 18,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 198850,
+      "lattice_multiple": 1,
+      "minor_multiple": -1080,
+      "order": 97,
+      "rank_profile": [
+        {
+          "rank": 2,
+          "rows": 2,
+          "window": 1
+        },
+        {
+          "rank": 23,
+          "rows": 23,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 48,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 67,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "1": 2,
+        "2": 21,
+        "3": 25,
+        "4": 19
+      },
+      "selected_minor_determinant": -214758000,
+      "target": 29207,
+      "target_isolated": false,
+      "target_pair_hits": 6
+    },
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 3,
+      "index": 1025,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 18,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 198850,
+      "lattice_multiple": 1,
+      "minor_multiple": -344,
+      "order": 194,
+      "rank_profile": [
+        {
+          "rank": 2,
+          "rows": 2,
+          "window": 1
+        },
+        {
+          "rank": 22,
+          "rows": 22,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 47,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 67,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "1": 2,
+        "2": 20,
+        "3": 25,
+        "4": 20
+      },
+      "selected_minor_determinant": -68404400,
+      "target": 38677,
+      "target_isolated": false,
+      "target_pair_hits": 6
+    },
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 3,
+      "index": 2425,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 18,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 198850,
+      "lattice_multiple": 1,
+      "minor_multiple": 3048,
+      "order": 82,
+      "rank_profile": [
+        {
+          "rank": 0,
+          "rows": 0,
+          "window": 1
+        },
+        {
+          "rank": 20,
+          "rows": 20,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 45,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 63,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "2": 20,
+        "3": 25,
+        "4": 18
+      },
+      "selected_minor_determinant": 606094800,
+      "target": 43987,
+      "target_isolated": false,
+      "target_pair_hits": 2
+    },
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 2,
+      "index": 4850,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 18,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 198850,
+      "lattice_multiple": 1,
+      "minor_multiple": 1632,
+      "order": 41,
+      "rank_profile": [
+        {
+          "rank": 1,
+          "rows": 1,
+          "window": 1
+        },
+        {
+          "rank": 23,
+          "rows": 24,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 50,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 73,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "1": 1,
+        "2": 23,
+        "3": 26,
+        "4": 23
+      },
+      "selected_minor_determinant": 324523200,
+      "target": 67819,
+      "target_isolated": false,
+      "target_pair_hits": 12
+    },
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 2,
+      "index": 2050,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 18,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 198850,
+      "lattice_multiple": 1,
+      "minor_multiple": 430,
+      "order": 97,
+      "rank_profile": [
+        {
+          "rank": 2,
+          "rows": 2,
+          "window": 1
+        },
+        {
+          "rank": 23,
+          "rows": 26,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 51,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 68,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "1": 2,
+        "2": 24,
+        "3": 25,
+        "4": 17
+      },
+      "selected_minor_determinant": 85505500,
+      "target": 70589,
+      "target_isolated": false,
+      "target_pair_hits": 7
+    },
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 3,
+      "index": 1025,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 19,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 397700,
+      "lattice_multiple": 2,
+      "minor_multiple": 3184,
+      "order": 194,
+      "rank_profile": [
+        {
+          "rank": 0,
+          "rows": 0,
+          "window": 1
+        },
+        {
+          "rank": 22,
+          "rows": 22,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 46,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 64,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "2": 22,
+        "3": 24,
+        "4": 18
+      },
+      "selected_minor_determinant": 633138400,
+      "target": 79823,
+      "target_isolated": false,
+      "target_pair_hits": 3
+    },
+    {
+      "extracted_factor": 1000003,
+      "first_full_window": 3,
+      "index": 1025,
+      "index_above_fourth_root": true,
+      "lattice_bit_length": 18,
+      "lattice_extracted_factor": 1000003,
+      "lattice_index": 198850,
+      "lattice_multiple": 1,
+      "minor_multiple": 2032,
+      "order": 194,
+      "rank_profile": [
+        {
+          "rank": 0,
+          "rows": 0,
+          "window": 1
+        },
+        {
+          "rank": 21,
+          "rows": 21,
+          "window": 2
+        },
+        {
+          "rank": 23,
+          "rows": 46,
+          "window": 3
+        },
+        {
+          "rank": 23,
+          "rows": 65,
+          "window": 4
+        }
+      ],
+      "rows_by_window": {
+        "2": 21,
+        "3": 25,
+        "4": 19
+      },
+      "selected_minor_determinant": 404063200,
+      "target": 96749,
+      "target_isolated": false,
+      "target_pair_hits": 4
+    }
+  ],
+  "scope": "Finite rank and lattice-index diagnostic over outside split primes in the 40-bit order-198850 cycle. Pair rows at windows 1..max_window are tested for full rank, HNF row-lattice index, and extraction. No uniform pair supply, rank-window, lattice-index, or complete-bound claim.",
+  "target_selection": "explicit"
+}

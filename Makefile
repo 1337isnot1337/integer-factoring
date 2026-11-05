@@ -3575,3 +3575,9 @@ verify-mixed-pair-rank-sweep-w4:
 	python3 tools/check_mixed_pair_rank_sweep.py --max-target 10000 --max-window 4 --output /tmp/integer-factoring-mixed-pair-rank-sweep-w4.json
 
 verify-arithmetic: verify-mixed-pair-rank-sweep-w4
+
+.PHONY: verify-mixed-pair-gap-lattice-index
+verify-mixed-pair-gap-lattice-index:
+	python3 tools/check_mixed_pair_rank_sweep.py --max-window 4 --targets 1117,1289,25169,29207,38677,43987,67819,70589,79823,96749 --output /tmp/integer-factoring-mixed-pair-gap-lattice-index.json
+
+verify-arithmetic: verify-mixed-pair-gap-lattice-index
