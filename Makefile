@@ -3595,3 +3595,9 @@ verify-mixed-pair-saturation-depth:
 	python3 tools/check_mixed_pair_saturation_depth.py --output /tmp/integer-factoring-mixed-pair-saturation-depth.json
 
 verify-arithmetic: verify-mixed-pair-saturation-depth
+
+.PHONY: verify-mixed-pair-order-saturation
+verify-mixed-pair-order-saturation:
+	python3 tools/check_mixed_pair_order_saturation.py --output /tmp/integer-factoring-mixed-pair-order-saturation.json
+
+verify-arithmetic: verify-mixed-pair-order-saturation

@@ -150,7 +150,7 @@ relation kernel; the remaining finite obstruction is first-hit supply, not
 lattice index. This is a targeted subset of the ten known gap targets, not an
 exhaustive gap census, and it is still finite evidence.
 
-### Residual defects are not one-window saturation
+### Pair-only residual defects are not one-window saturation
 
 The `77` window-`4` targets with lattice index above one were recomputed at
 window `5`. Sixty-nine reach index `1`, but eight remain:
@@ -173,6 +173,29 @@ exponents. A larger window alone is therefore not the missing mechanism; the
 remaining directions require a different row type, such as a diagonal/common
 annihilator row or a collective gap row. This is finite evidence, not a
 uniform saturation or obstruction theorem.
+
+### One order-derived row closes every residual index
+
+The stability above is **pair-only**. Adding one order-derived row repairs
+all `77` window-`4` targets with index above one to index `1`:
+
+- `37` targets are repaired by an odd-order diagonal row `ord(p)e_p`;
+- `40` targets are repaired by a half-order difference
+  `(ord(p)/2)e_p-(ord(q)/2)e_q` between even-order coordinates.
+
+Every added row is replayed, and every repaired lattice extracts `1000003`.
+The ten index-`3` cases are not separate smooth-pair obstructions: an
+odd-order diagonal or half-order coefficient that is not divisible by `3`
+supplies the missing `3`-direction. Thus the finite per-target lattice-index
+defect is order-derived, not a stable index obstruction. This matches worker
+1's collective order-derived saturation of the window-`2` 2-primary defect
+and extends it to the `77` individual target sets.
+
+It is not a saving: the orders come from the enumerated cycle, and the
+pure-order diagonal control already extracts the factor on this instance.
+The remaining question is the uniform cost and availability of the needed
+order data, or of the alternative pair first hit, not the lattice index
+itself.
 
 The companion note now also proves an **isolated-column repair** lemma: if a
 column is zero in every pair row, adjoining the diagonal row `M e_i` with a
@@ -209,13 +232,15 @@ here and not yet uniform.
   supply, not just the target order/index pair. At window `4` the same target
   acquires a hit.
 
-The open obligation is now sharper: prove a uniform window-`4` first-hit
-supply and a constant (or subexponential) bound on the pair-row lattice index
-in the full relation kernel. The common-annihilator repair is a proved
-fallback, but its `sqrt(h)` cost and determinant factor are exactly what a
-uniform supply would need to avoid. A lower-cost density row for isolated
-targets is the alternative. This sweep supplies neither; it records the finite
-lattice-index distribution and where the construction stops.
+The finite lattice-index question is now closed: every target in the sweep
+reaches index `1` using one order-derived row, with no additional smooth pair
+hit. What remains is a uniform cost/supply question: obtain the needed order
+data (or an alternative pair first hit) for every target, without enumerating
+the whole cycle, and charge it in the complete algorithm. The
+common-annihilator repair is a proved fallback, but its `sqrt(h)` cost and
+determinant factor are exactly what a uniform supply would need to avoid.
+This sweep supplies neither; it records the finite index closure and where the
+construction stops.
 
 ## Reproduction
 
@@ -246,4 +271,11 @@ saturation-depth diagnostic is
 make verify-mixed-pair-saturation-depth
 ```
 
-with receipt `evidence/mixed-pair-saturation-depth.json`.
+with receipt `evidence/mixed-pair-saturation-depth.json`. The order-derived
+closure is
+
+```sh
+make verify-mixed-pair-order-saturation
+```
+
+with receipt `evidence/mixed-pair-order-saturation.json`.
