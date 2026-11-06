@@ -201,6 +201,48 @@ diagonal control already extracts the factor on this instance. The remaining
 question is the uniform cost and availability of the half-cycle parity data,
 or of the alternative pair first hit, not the lattice index itself.
 
+### A second cycle with `v_2(h)=3`
+
+The main cycle has `h=198850=2*99425`, so the half-cycle construction only
+needs the first `2`-primary layer. To test higher `2`-adic valuation, use
+`N=450296711=20323*22157` with base generator `2`. The period is
+`h=20456=8*2557`, so `v_2(h)=3`. The committed clustered-power receipt uses
+cutoff `23` for this period; its five base pair rows have rank one, so this
+control raises the base cutoff to `60`. That gives nine split base primes
+`(2,3,5,11,23,29,31,41,59)` and full pair-row rank at window `4`; the period
+and generator are unchanged.
+
+The window-`4` sweep over split cycle targets through `20000` has `1131`
+targets: `1127` at lattice index `1` and four at index `2`, with no rank
+failures. The direct half-order extension,
+
+```
+(ord_p/2)e_p - (h/2)e_2   for even target order,
+ord_p e_p                 for odd target order,
+```
+
+leaves all four at index `2`; the same happens after layers `h/2` and `h/4`.
+The primitive layer-three difference `(h/8)(e_p-e_q)` has coefficient
+`h/8=2557` and repairs each residual lattice:
+
+| target | log | primitive pair | index after layers `1`,`2`,`3` |
+|---:|---:|:---|---:|
+| `79` | `5455` | `(5,79)` | `2`,`2`,`1` |
+| `653` | `1653` | `(31,653)` | `2`,`2`,`1` |
+| `3911` | `13513` | `(2,3911)` | `2`,`2`,`1` |
+| `17321` | `15661` | `(31,17321)` | `2`,`2`,`1` |
+
+Every added row replays to the identity, and each repaired covolume
+`h` projects to a two-group basis whose top powers return `20323`.
+
+The structural point is that a higher `2`-adic valuation makes the
+half-order coefficients divisible by `4`; the half-order rows already lie in
+the pair-row lattice and cannot lower an index-two defect. The useful row is
+the primitive difference from the layer where the selected logs agree modulo
+the full `2`-power. This is not supplied by the half-order construction
+itself: the depth, the pairing, and the cost remain open. It is a finite
+second-cycle control, not a uniform theorem and not a complete-bound change.
+
 The companion note now also proves an **isolated-column repair** lemma: if a
 column is zero in every pair row, adjoining the diagonal row `M e_i` with a
 common annihilator `M` raises the rank by one and multiplies the determinant
@@ -236,9 +278,9 @@ here and not yet uniform.
   supply, not just the target order/index pair. At window `4` the same target
   acquires a hit.
 
-The finite lattice-index question is now closed: every target in the sweep
-reaches index `1` using one half-cycle row, with no additional smooth pair
-hit. What remains is a uniform cost/supply question: obtain the half-cycle
+On the main cycle, the finite lattice-index question is now closed: every
+target in the sweep reaches index `1` using one half-cycle row, with no
+additional smooth pair hit. What remains is a uniform cost/supply question: obtain the half-cycle
 parity data (or an alternative pair first hit) for every target, without
 enumerating the whole cycle, and charge it in the complete algorithm. The
 common-annihilator repair is a proved fallback, but its `sqrt(h)` cost and
@@ -282,4 +324,11 @@ closure is
 make verify-mixed-pair-order-saturation
 ```
 
-with receipt `evidence/mixed-pair-order-saturation.json`.
+with receipt `evidence/mixed-pair-order-saturation.json`. The second-cycle
+`v_2(h)=3` control is
+
+```sh
+make verify-mixed-pair-second-cycle
+```
+
+with receipt `evidence/mixed-pair-second-cycle.json`.

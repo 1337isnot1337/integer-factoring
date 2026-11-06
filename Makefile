@@ -3601,3 +3601,9 @@ verify-mixed-pair-order-saturation:
 	python3 tools/check_mixed_pair_order_saturation.py --output /tmp/integer-factoring-mixed-pair-order-saturation.json
 
 verify-arithmetic: verify-mixed-pair-order-saturation
+
+.PHONY: verify-mixed-pair-second-cycle
+verify-mixed-pair-second-cycle:
+	python3 tools/check_mixed_pair_second_cycle.py --output /tmp/integer-factoring-mixed-pair-second-cycle.json
+
+verify-arithmetic: verify-mixed-pair-second-cycle
