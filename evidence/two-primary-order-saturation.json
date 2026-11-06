@@ -1,0 +1,57 @@
+{
+  "cases": [
+    {
+      "all_2_primary_quotients_odd": true,
+      "all_full_lattices_equal_kernel": true,
+      "cases_checked": 4096,
+      "h": 8,
+      "width": 4
+    },
+    {
+      "all_2_primary_quotients_odd": true,
+      "all_full_lattices_equal_kernel": true,
+      "cases_checked": 4096,
+      "h": 16,
+      "width": 3
+    },
+    {
+      "all_2_primary_quotients_odd": true,
+      "all_full_lattices_equal_kernel": true,
+      "cases_checked": 32768,
+      "h": 8,
+      "width": 5
+    },
+    {
+      "all_2_primary_quotients_odd": true,
+      "all_full_lattices_equal_kernel": true,
+      "cases_checked": 20736,
+      "h": 12,
+      "width": 4
+    },
+    {
+      "all_2_primary_quotients_odd": true,
+      "all_full_lattices_equal_kernel": true,
+      "cases_checked": 13824,
+      "h": 24,
+      "width": 3
+    },
+    {
+      "all_2_primary_quotients_odd": true,
+      "all_full_lattices_equal_kernel": true,
+      "cases_checked": 46656,
+      "h": 36,
+      "width": 3
+    },
+    {
+      "all_2_primary_quotients_odd": true,
+      "all_full_lattices_equal_kernel": true,
+      "cases_checked": 8000,
+      "h": 20,
+      "width": 3
+    }
+  ],
+  "cases_checked": 130176,
+  "failures": 0,
+  "full_lattice_cases_checked": 130176,
+  "scope": "Exhaustive small cyclic-group control for the order-derived two-primary and full-prime saturation theorems; no uniform cost or factoring claim."
+}

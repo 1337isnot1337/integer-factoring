@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "prime": 5,
+  "length": 12,
+  "paths": 89,
+  "coarse_dimensions": [
+    [
+      0,
+      1,
+      1320
+    ],
+    [
+      0,
+      4,
+      165
+    ],
+    [
+      1,
+      1,
+      2015
+    ],
+    [
+      1,
+      4,
+      1266
+    ],
+    [
+      4,
+      1,
+      670
+    ],
+    [
+      4,
+      4,
+      2485
+    ]
+  ],
+  "sum": 7921,
+  "target": "89**sqrt(2)=571.286269...",
+  "scope": "Twelve-site replica-swap and transposition class sum coarse joint generalized dimensions. The six blocks sum to 7921. The coarse partition is not the full twelve-site primary decomposition and is not a cut-rank certificate."
+}
