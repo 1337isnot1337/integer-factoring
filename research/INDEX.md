@@ -1777,3 +1777,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 ## Core-cutoff pressure trend
 
 [The identity-core cutoff trend stops above the height-38 floor](core-cutoff-pressure-trend.md): the full identity cores at heights 16,18,20,22,24,25 have natural pressures `0.7124842` through `0.7100553`, decreasing but flattening above the proved `29/41` protected-core floor. The q96 boundary helps the 81-word core, but every support-at-most-25 map remains floor-bound. No exact certificate or score change.
+
+## q94 mode-drop profile
+
+[Dropping the height-23 mode does not lower the complete q94 pressure](f8-hyperoval-q94-mode-drop.md): removing mode 11 from the q96 map gives a valid q94 map with complete cutoff-135 profiles (`8836` orders per cut, no tails). Its numerical pressure is `0.7100458192`, above q96 `0.7100058347` and q99 `0.7099930431`; the cutoff-47 pilot `0.709929` did not survive. The removed height-23 core words are load-bearing and the single-mode-drop low-block change is not a route. No exact certificate or score change.
