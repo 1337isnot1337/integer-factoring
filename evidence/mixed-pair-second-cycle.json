@@ -147,7 +147,7 @@
       "target_order": 20456
     }
   ],
-  "scope": "Finite second-cycle v2=3 control: half-order differences alone leave four residual index-two lattices; primitive layer-three differences repair them and extract a factor. No uniform pair/depth selection, cost, or complete-bound claim.",
+  "scope": "Finite second-cycle v2=3 check: half-order differences alone leave four residual index-two lattices; primitive layer-three differences, odd multiples of the top-level unit-aligned rows, repair them and extract a factor. The two-primary saturation theorem supplies the general depth/pair selection; no cost or complete-bound claim.",
   "target_limit": 20000,
   "targets_scanned": 1131,
   "v2_period": 3,

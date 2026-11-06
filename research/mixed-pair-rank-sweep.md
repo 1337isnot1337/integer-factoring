@@ -236,12 +236,17 @@ Every added row replays to the identity, and each repaired covolume
 `h` projects to a two-group basis whose top powers return `20323`.
 
 The structural point is that a higher `2`-adic valuation makes the
-half-order coefficients divisible by `4`; the half-order rows already lie in
-the pair-row lattice and cannot lower an index-two defect. The useful row is
-the primitive difference from the layer where the selected logs agree modulo
-the full `2`-power. This is not supplied by the half-order construction
-itself: the depth, the pairing, and the cost remain open. It is a finite
-second-cycle control, not a uniform theorem and not a complete-bound change.
+half-order coefficients divisible by `4`; the half-order row is the `j=1`
+specialization and cannot lower an index-two defect. The useful row is the
+top-level, unit-aligned pair row of the proved
+[two-primary saturation theorem](two-primary-order-saturation.md). Here all
+four targets have order `h`, so `level_i=3`; with a top anchor of the same
+log residue modulo `8`, the theorem's row is an odd multiple of the displayed
+`2557(e_p-e_q)`. The theorem supplies the depth and top-anchor pairing. This
+control checks the `v_2(h)=3`, `j=t` arithmetic branch on a second cycle; the
+lower-level branch is covered by the theorem and its small-case checker. The
+cost of obtaining the unit/order data and the odd part of the quotient remain
+open. This is finite evidence, not a complete-bound change.
 
 The companion note now also proves an **isolated-column repair** lemma: if a
 column is zero in every pair row, adjoining the diagonal row `M e_i` with a

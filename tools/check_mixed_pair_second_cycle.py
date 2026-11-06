@@ -10,13 +10,17 @@ through 20000 are scanned.
 
 The direct generalisation of the half-order difference row,
 ``(ord_p/2)e_p - (h/2)e_anchor`` for even order and ``ord_p e_p`` for odd
-order, leaves every residual index at two.  Deeper layered differences
-``(h/2^e)(e_p-e_q)`` for logs congruent modulo ``2^e`` are tested.  Layers
-one and two also leave index two; the primitive layer-three difference
-``(h/8)(e_p-e_q)`` repairs each residual to index one.  All rows replay and
-the repaired covolume annihilators extract a factor.  Finite second-cycle
-diagnostic only; no uniform pair/depth selection, cost, or complete-bound
-claim.
+order, leaves every residual index at two.  This is the level-one
+specialization; the proved two-primary saturation theorem predicts the
+top-level, unit-aligned pair row for these order-``h`` targets.  Deeper
+layered differences ``(h/2^e)(e_p-e_q)`` for logs congruent modulo ``2^e``
+are tested.  Layers one and two also leave index two; the primitive
+layer-three difference ``(h/8)(e_p-e_q)`` is an odd multiple of the
+unit-aligned theorem row and repairs each residual to index one.  All rows
+replay and the repaired covolume annihilators extract a factor.  Finite
+second-cycle check of the ``v_2(h)=3`` top-level branch; the theorem supplies
+the general depth/pair selection.  Cost and complete-bound claims remain
+open.
 """
 import argparse
 import json
@@ -306,10 +310,12 @@ def run():
 
     return {
         'scope': (
-            'Finite second-cycle v2=3 control: half-order differences alone '
+            'Finite second-cycle v2=3 check: half-order differences alone '
             'leave four residual index-two lattices; primitive layer-three '
-            'differences repair them and extract a factor. No uniform '
-            'pair/depth selection, cost, or complete-bound claim.'),
+            'differences, odd multiples of the top-level unit-aligned rows, '
+            'repair them and extract a factor. The two-primary saturation '
+            'theorem supplies the general depth/pair selection; no cost or '
+            'complete-bound claim.'),
         'integer': INTEGER,
         'factorization': list(FACTORIZATION),
         'discriminant': delta,
