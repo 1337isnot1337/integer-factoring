@@ -3561,6 +3561,13 @@ verify-low-valuation-quartic-profiles:
 
 verify-arithmetic: verify-low-valuation-quartic-profiles
 
+.PHONY: verify-repeated-colour-quartic-control
+verify-repeated-colour-quartic-control:
+	PYTHONPATH=tools python3 tools/check_repeated_colour_quartic_control.py --output /tmp/integer-factoring-repeated-colour-quartic.json
+	python3 tools/check_docs.py
+
+verify-arithmetic: verify-repeated-colour-quartic-control
+
 .PHONY: verify-pfaffian-quartic-truncation
 verify-pfaffian-quartic-truncation:
 	python3 tools/check_pfaffian_quartic_truncation.py
