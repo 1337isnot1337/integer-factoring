@@ -316,6 +316,22 @@ verify-bounded-spin-projector:
 verify-bounded-spin-support:
 	python3 tools/check_bounded_spin_support.py
 
+.PHONY: verify-bounded-spin-coarse-twelve
+verify-bounded-spin-coarse-twelve:
+	python3 tools/check_bounded_spin_coarse_twelve.py
+
+.PHONY: verify-bounded-spin-diagonal-trace
+verify-bounded-spin-diagonal-trace:
+	python3 tools/check_bounded_spin_diagonal_trace.py --output /tmp/bounded-spin-diagonal-trace.json
+
+.PHONY: verify-bounded-spin-transposition-subalgebra
+verify-bounded-spin-transposition-subalgebra:
+	python3 tools/check_bounded_spin_transposition_subalgebra.py
+
+.PHONY: verify-bounded-spin-missing-direction
+verify-bounded-spin-missing-direction:
+	python3 tools/check_bounded_spin_missing_direction.py
+
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py
@@ -3115,6 +3131,16 @@ verify-core-cutoff-trend:
 build-core-cutoff-trend:
 	python3 tools/measure_core_cutoff_trend.py
 
+.PHONY: verify-f8-low-block-pilots
+verify-f8-low-block-pilots:
+	python3 tools/check_f8_low_block_pilots.py --output /tmp/f8-low-block-pilots.json
+
+.PHONY: verify-f8-q94-profile build-f8-q94-profile
+verify-f8-q94-profile:
+	python3 tools/check_f8_hyperoval_q94_profile.py --output /tmp/f8-q94-profile-check.json
+build-f8-q94-profile:
+	python3 tools/build_f8_hyperoval_q94_profile.py
+
 .PHONY: verify-f8-retraction-refinement verify-f8-retraction-refinement-full verify-f8-retraction-census-full
 verify-f8-retraction-refinement:
 	python3 tools/check_f8_hyperoval_retraction_entries.py evidence/f8-hyperoval-retraction-678.json --output evidence/f8-hyperoval-retraction-678-entry-controls.json
@@ -3560,4 +3586,8 @@ verify-arithmetic: verify-target-order-mixed-rows
 verify-mixed-pair-gap-cycle:
 	python3 tools/check_mixed_pair_gap_cycle.py --output /tmp/integer-factoring-mixed-pair-gap-cycle.json
 
-verify-arithmetic: verify-mixed-pair-gap-cycle
+.PHONY: verify-two-primary-order-saturation
+verify-two-primary-order-saturation:
+	python3 tools/check_two_primary_order_saturation.py --output /tmp/integer-factoring-two-primary-order-saturation.json
+
+verify-arithmetic: verify-mixed-pair-gap-cycle verify-two-primary-order-saturation

@@ -227,7 +227,85 @@ has index `h`; the pair-row lattice therefore has index `16` in that kernel.
 The quotient is a `2`-group, and the selected `8192h` minor is
 `512*16h`, not the lattice covolume.
 
-No base relation row, no order row, and no exponent-`3` row is used.
+At window `3` the index drops to exactly `h`. Since the target set contains
+`5` and generates the order-`h` cycle, the full relation kernel also has
+index `h`; hence the window-`3` pair rows generate the **entire** relation
+kernel of `Z^32 -> <5>`. The window-`2` pair rows are already a sublattice
+of index `16`; the only missing part is a `2`-group.
+
+The `16`-defect is saturated by just four exponent-`3` base-gap rows:
+
+\[
+ (53,25169),\quad (59,43987),\quad (101,96749),\quad (103,1289).
+\]
+
+Adding them successively gives indices `8h`, `4h`, `2h`, `h`. The mod-`2`
+row ranks are `27` at window `2` and `31` at window `3`; each repair row
+raises the rank by one. Since one additional row can raise the mod-`2` rank
+by at most one, **four rows are necessary**, and the displayed four achieve
+the full kernel. Thus the window-`2` rows plus these four rows generate the
+full kernel; no other window-`3` row is needed.
+
+The checker also implements a targeted search: after the window-`2` rows, it
+scans only base-gap pairs at exponent `3`, adds a candidate only when it
+raises the mod-`2` rank, and stops when the index reaches `h`. It finds the
+same four rows after `112` base-gap candidates, instead of testing all `528`
+pairs at exponent `3`. This is a finite search-cost reduction; it is not a
+uniform bound on the defect size or on the number of base-gap candidates
+needed for other inputs.
+
+A hybrid check separates the defect into diagonal and pair directions. The
+odd-order targets `1289` and `25169` both have order `97`; their diagonal
+rows raise the mod-`2` rank from `27` to `29` and lower the index from `16h`
+to `4h`. The remaining two directions involve the even-order gaps `43987`
+(order `82`) and `96749` (order `194`), whose diagonal order rows vanish
+modulo `2`. A base-gap search then needs only the pair rows `(59,43987)` and
+`(101,96749)`, found at probes `66` and `110`, to reach `2h` and `h`.
+Thus two diagonal rows replace two of the four smooth pair hits in this
+finite instance. Whether the order rows are cheaper than the pair hits is a
+separate supply/cost question; no uniform split or saving is claimed.
+
+A stronger order-derived certificate removes the remaining pair hits as well.
+For an even-order target `p`, the row `(ord(p)/2)e_p` maps to the unique
+order-`2` element `h/2`; hence the difference of two such rows is a relation.
+The odd-order rows for `1289` and `25169` lower the index `16h -> 4h`, and the
+two half-order differences
+
+`99425 e_5 - 41 e_43987`,  `99425 e_5 - 97 e_96749`
+
+lower it `4h -> 2h -> h`. Thus window-`2` smooth rows plus these four
+order-derived rows generate the full kernel, with **no exponent-`3` smooth
+hit at all**. The finite 2-primary repair can be supplied by order data rather
+than by additional smooth pairs.
+
+This does not yet give a saving: it replaces four smooth hits by four
+order-derived rows, and the checker obtains the orders from the enumerated
+cycle. The open question is whether the needed orders, or just their
+`2`-adic parts, can be computed more cheaply than the extra smooth search,
+and whether the construction generalizes when `h` has higher `2`-adic
+valuation.
+
+A second-cycle control replaces the generator `5` by `7`. The period remains
+`198850`, the window-`2` rows again have index `16h`, and the same four
+order-derived rows saturate to `h`. Thus the finite repair is not an artifact
+of the base-`5` log table.
+
+A growing-target control adds the first five split cycle primes beyond the
+cutoff, `179, 181, 191, 223, 229`, to the `32`-target set. At `37` vertices
+the window-`2` pair rows number `72`, have rank `37`, and again have a pure
+`2`-power index, now `32h` (odd quotient `1`). The odd-order targets
+`1289, 25169` (order `97`) and `179` (order `99425`) lower it
+`32h -> 16h -> 8h -> 4h`; the half-order differences
+
+`99425 e_5 - 97 e_96749`,  `99425 e_5 - 99425 e_191`
+
+lower it `4h -> 2h -> h`. Thus the same order-derived repair survives a
+larger target set with no exponent-`3` pair row. This tests one growing
+target set, not a uniform supply or cost theorem; the extra fine-prime
+targets also have to be searched for in an actual run.
+
+The window-`2` certificate uses no base relation row, no order row, and no
+exponent-`3` row.
 
 This is not a pair-endpoint connectivity effect. At window `2` the
 pair-endpoint graph has root component `1`: no nonzero pair row touches the
@@ -267,9 +345,17 @@ cost.
   windows: their indices exceed `D^{1/4}`, so the small-index density theorem
   does not cover them, and their orders exceed the exponent windows.
 - The tree extension and the isolated-column repair are proved; the
-  edge-only full-rank basis is a finite arithmetic fact, with its row-lattice
-  index `16h` checked by HNF. No uniform rooted-forest, isolated-target
-  supply, lattice-index, or weighted-pair rank theorem is supplied.
+  edge-only bases are finite arithmetic facts. HNF checks index `16h` at
+  window `2` and index `h` at window `3`; the latter makes the pair rows a
+  complete relation basis for the cycle subgroup. Four exponent-`3` base-gap
+  rows saturate the window-`2` `2`-defect, the mod-`2` rank gap proves four
+  is minimal, and a targeted base-gap search finds them after `112`
+  candidates; two odd-order diagonal rows plus two pair rows also work, and
+  four order-derived rows saturate without any exponent-`3` smooth hit, and a
+  second cycle generated by `7` gives the same indices and repair. No uniform
+  rooted-forest,
+  isolated-target supply, lattice-index, saturation-count, or weighted-pair
+  rank theorem is supplied.
 - The base alone and the pure-order diagonal control already yield the
   factor in this fixed instance; the gap-target and pair rows test coverage of
   additional target columns, not extraction necessity.
