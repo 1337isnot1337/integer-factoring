@@ -907,6 +907,119 @@ def check():
     assert [row['pair'] for row in second_half_rows] == [
         [5, 43987], [5, 96749]]
 
+    # Growing-target control: add the first five split cycle primes beyond
+    # the cutoff (179, 181, 191, 223, 229) to the 32-target set.  The
+    # window-2 pair lattice stays pure 2-power (index 32h), and order-derived
+    # rows still saturate it to h.  This tests the target-set growth
+    # obligation, not a uniform supply theorem.
+    growth_targets = (179, 181, 191, 223, 229)
+    growth_set = tuple(base_primes) + GAP_TARGETS + growth_targets
+    growth_positions = {
+        prime: position for position, prime in enumerate(growth_set)}
+    growth_records = dict(extension_records)
+    growth_logs = dict(extension_logs)
+    for prime in growth_targets:
+        assert prime in larger_records
+        form = reduce_form(larger_records[prime][1])
+        assert form in index
+        growth_records[prime] = larger_records[prime]
+        growth_logs[prime] = index[form]
+    growth_rows = []
+    growth_seen = set()
+    for left_index, left in enumerate(growth_set):
+        for right in growth_set[left_index:]:
+            for exponent in (1, 2):
+                form = forms[
+                    (exponent*(growth_logs[left] + growth_logs[right]))
+                    % period]
+                leading = form[0]
+                if leading == 1:
+                    continue
+                parts = split_factorization(leading, records)
+                if parts is None:
+                    continue
+                terms, new = leading_norm_word(
+                    INTEGER, form, parts, growth_records)
+                assert not new
+                row = [0]*len(growth_set)
+                row[growth_positions[left]] += exponent
+                row[growth_positions[right]] += exponent
+                for prime, value in terms.items():
+                    row[growth_positions[prime]] -= value
+                if not any(row):
+                    continue
+                key = tuple(row)
+                if key not in growth_seen:
+                    growth_seen.add(key)
+                    growth_rows.append(row)
+    growth_initial_rows = len(growth_rows)
+    growth_initial_binary_rank = binary_rank(growth_rows)
+    growth_rank, growth_index = row_hnf_index(
+        growth_rows, len(growth_set))[1:]
+    assert growth_initial_rows == 72
+    assert growth_rank == len(growth_set)
+    assert growth_initial_binary_rank == 31
+    assert growth_index == 32*period
+    growth_initial_index = growth_index
+    growth_binary_rank = growth_initial_binary_rank
+
+    growth_orders = {
+        target: period//gcd(period, growth_logs[target])
+        for target in growth_set}
+    growth_odd_rows = []
+    for target in growth_set:
+        if growth_orders[target] % 2 == 0:
+            continue
+        row = [0]*len(growth_set)
+        row[growth_positions[target]] = growth_orders[target]
+        candidate_rank = binary_rank(growth_rows + [row])
+        if candidate_rank <= growth_binary_rank:
+            continue
+        growth_rows.append(row)
+        growth_binary_rank = candidate_rank
+        growth_index = row_hnf_index(growth_rows, len(growth_set))[2]
+        growth_odd_rows.append({
+            'target': target,
+            'order': growth_orders[target],
+            'binary_rank': growth_binary_rank,
+            'lattice_index': growth_index,
+            'lattice_multiple': growth_index//period,
+        })
+    assert [row['target'] for row in growth_odd_rows] == [
+        1289, 25169, 179]
+    assert [row['lattice_multiple'] for row in growth_odd_rows] == [16, 8, 4]
+
+    growth_even = [target for target in growth_set
+                   if growth_orders[target] % 2 == 0]
+    growth_half = {
+        target: growth_orders[target]//2 for target in growth_even}
+    growth_half_rows = []
+    for left, right in itertools.combinations(growth_even, 2):
+        row = [0]*len(growth_set)
+        row[growth_positions[left]] += growth_half[left]
+        row[growth_positions[right]] -= growth_half[right]
+        candidate_rank = binary_rank(growth_rows + [row])
+        if candidate_rank <= growth_binary_rank:
+            continue
+        assert replay(row, growth_set, growth_records, identity) == identity
+        growth_rows.append(row)
+        growth_binary_rank = candidate_rank
+        growth_index = row_hnf_index(growth_rows, len(growth_set))[2]
+        growth_half_rows.append({
+            'pair': [left, right],
+            'coefficients': [growth_half[left], -growth_half[right]],
+            'binary_rank': growth_binary_rank,
+            'lattice_index': growth_index,
+            'lattice_multiple': growth_index//period,
+        })
+        if growth_index == period:
+            break
+    assert growth_index == period
+    assert [row['pair'] for row in growth_half_rows] == [
+        [5, 96749], [5, 191]]
+    assert [row['lattice_multiple'] for row in growth_half_rows] == [2, 1]
+    assert growth_binary_rank == 36
+
     # Isolated-column repair: pair rows can leave a target column zero.
     # A common-annihilator diagonal row fills such a column directly, without
     # a pair hit.  On all split primes through 500, the window-2 pair rows
@@ -1074,6 +1187,17 @@ def check():
                 'half_order_rows': second_half_rows,
                 'lattice_multiple': 1,
             },
+            'extended_target_control': {
+                'additional_targets': list(growth_targets),
+                'vertices': len(growth_set),
+                'window2_rows': growth_initial_rows,
+                'window2_rank': growth_rank,
+                'window2_binary_rank': growth_initial_binary_rank,
+                'window2_lattice_multiple': growth_initial_index//period,
+                'odd_order_rows': growth_odd_rows,
+                'half_order_rows': growth_half_rows,
+                'lattice_multiple': 1,
+            },
             **edge_first_full,
         },
         'single_hit_extension': {
@@ -1099,7 +1223,7 @@ def check():
                   'rows alone give a rank-32 edge basis at window 2 with '
                   'selected minor 8192h and row-lattice index 16h; at window 3 '
                   'their row-lattice index is h, the full relation kernel; four exponent-3 '
-                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal; a targeted base-gap search finds them after 112 probes. Two odd-order diagonal rows plus two half-order differences also saturate without any exponent-3 hit. A pure-order diagonal control also '
+                  'base-gap rows saturate the window-2 index 16h to h, with the mod-2 rank gap proving four is minimal; a targeted base-gap search finds them after 112 probes. Two odd-order diagonal rows plus two half-order differences also saturate without any exponent-3 hit. Adding the first five split cycle primes beyond the cutoff keeps the window-2 index pure 2-power at 32h; three odd-order rows and two half-order differences saturate it to h. A pure-order diagonal control also '
                   'extracts the factor, using the enumerated cycle and its '
                   'orders; it is not a factoring algorithm. An isolated-column '
                   'repair control on all split primes through 500 fills the one '
