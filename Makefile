@@ -324,6 +324,10 @@ verify-bounded-spin-diagonal-trace:
 verify-bounded-spin-transposition-subalgebra:
 	python3 tools/check_bounded_spin_transposition_subalgebra.py
 
+.PHONY: verify-bounded-spin-twelve-coefficient-dimension
+verify-bounded-spin-twelve-coefficient-dimension:
+	python3 tools/check_bounded_spin_twelve_coefficient_dimension.py
+
 .PHONY: verify-bounded-spin-missing-direction
 verify-bounded-spin-missing-direction:
 	python3 tools/check_bounded_spin_missing_direction.py
