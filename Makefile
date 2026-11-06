@@ -3622,6 +3622,12 @@ verify-mixed-pair-annihilator-repair:
 
 verify-arithmetic: verify-mixed-pair-annihilator-repair
 
+.PHONY: verify-mixed-pair-annihilator-second-cycle
+verify-mixed-pair-annihilator-second-cycle:
+	python3 tools/check_mixed_pair_annihilator_second_cycle.py --output /tmp/integer-factoring-mixed-pair-annihilator-second-cycle.json
+
+verify-arithmetic: verify-mixed-pair-annihilator-second-cycle
+
 .PHONY: verify-two-primary-order-saturation
 verify-two-primary-order-saturation:
 	python3 tools/check_two_primary_order_saturation.py --output /tmp/integer-factoring-two-primary-order-saturation.json

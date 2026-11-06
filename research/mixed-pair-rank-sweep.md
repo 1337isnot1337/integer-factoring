@@ -283,6 +283,38 @@ lower-level branch is covered by the theorem and its small-case checker. The
 cost of obtaining the unit/order data and the odd part of the quotient remain
 open. This is finite evidence, not a complete-bound change.
 
+### Annihilator-derived second-cycle repair
+
+The second-cycle row above was selected using the known period and target
+logs. The HNF covolume `E=h*2` and group powers recover the depth and the
+anchor without either, beyond the base pair rows. At level `j=1,2,3,4` set
+`a=E/2^j` and group the targets by the form value `g_p^a`. Within each
+nontrivial class form `a(e_p-e_q)`; on the identity class form `a e_p`.
+
+Levels one through three leave all four residuals at index `2`. At level
+four, `a=h/8=2557`, the class rows are the displayed layer-three
+differences and repair each target to index `1`:
+
+| target | level | class count | pair | index after level `4` |
+|---:|---:|---:|:---|---:|
+| `79` | `4` | `7` | `(5,79)` | `1` |
+| `653` | `4` | `7` | `(31,653)` | `1` |
+| `3911` | `4` | `7` | `(2,3911)` | `1` |
+| `17321` | `4` | `7` | `(31,17321)` | `1` |
+
+Every row replays and each repaired covolume `h` extracts `20323`. The
+annihilator walk thus follows higher `2`-adic order without enumerating `h`
+or reading additional target-log data for the repair row. The class bound
+and uniform cost remain open.
+
+The receipt is produced by
+
+```sh
+make verify-mixed-pair-annihilator-second-cycle
+```
+
+and stored in `evidence/mixed-pair-annihilator-second-cycle.json`.
+
 The companion note now also proves an **isolated-column repair** lemma: if a
 column is zero in every pair row, adjoining the diagonal row `M e_i` with a
 common annihilator `M` raises the rank by one and multiplies the determinant
