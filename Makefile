@@ -3127,6 +3127,12 @@ build-core-cutoff-trend:
 verify-f8-low-block-pilots:
 	python3 tools/check_f8_low_block_pilots.py --output /tmp/f8-low-block-pilots.json
 
+.PHONY: verify-f8-q94-profile build-f8-q94-profile
+verify-f8-q94-profile:
+	python3 tools/check_f8_hyperoval_q94_profile.py --output /tmp/f8-q94-profile-check.json
+build-f8-q94-profile:
+	python3 tools/build_f8_hyperoval_q94_profile.py
+
 .PHONY: verify-f8-retraction-refinement verify-f8-retraction-refinement-full verify-f8-retraction-census-full
 verify-f8-retraction-refinement:
 	python3 tools/check_f8_hyperoval_retraction_entries.py evidence/f8-hyperoval-retraction-678.json --output evidence/f8-hyperoval-retraction-678-entry-controls.json
