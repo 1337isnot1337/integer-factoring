@@ -1774,6 +1774,9 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 [The q96 F8 map has only 45 admissible single-word extensions](f8-admissible-high-words.md): an exhaustive census of single-word vectors preserving `LP=I`, deletion closure, and the graded-letter axioms finds 45 words, all of height at least 26; no single word extends the low core. The q99 triple uses the two pair words `160,192` and the triple `224`, which is admissible only after the pairs. The low-block plateau is not removed by adding single high words; multi-word vectors or a different rank-three image remain.
 
 [Height-25 boundary-image freedom is already closed](f8-high-image-closure.md): the common-core floor `rho >= 17/24` covers every four-label height-25 boundary embedding, including arbitrary rank-three images, nonbinary coefficients and mixed three/five-particle words. A cutoff-47 control gives identical 935-order hashes for the hyperoval and a random image, with known-order lower pressure `0.7098760178`. The remaining protected-core escape is height at least 39; the minimal q99 extension is still `0.7099930`. No score change.
+
+[Every single-mode drop of the q96 F8 map is excluded](f8-single-mode-drop-closure.md): all twelve principal-submap mode drops are valid, and their cutoff-47 known-order lower bounds are all above `1/sqrt(2)`. The best is the q94 mode-11 drop at `0.7099289419`; its complete pressure is at least that value. Deleting q96 letters does not cross; the next low-block search must change the surviving coordinates or ambient structure. No score change.
+
 - [A height-39 extension of the height-16 core stays on the plateau](height39-q32-extension.md): the q32 height-16 coherent map plus one-hot words `96,160,192,224` has complete q36 profiles and numerical pressure `0.7121133`, a `1.7e-6` gain and far above `1/sqrt(2)`; high boundary words do not fix the low-core plateau.
 
 ## Core-cutoff pressure trend

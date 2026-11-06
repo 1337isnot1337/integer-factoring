@@ -2280,6 +2280,10 @@ verify-hot-boundary-floor:
 verify-f8-high-image-order-invariance:
 	python3 tools/check_f8_high_image_order_invariance.py --output /tmp/f8-high-image-order-invariance-check.json
 
+.PHONY: verify-f8-single-mode-drop-census
+verify-f8-single-mode-drop-census:
+	python3 tools/check_f8_single_mode_drop_census.py --output /tmp/f8-single-mode-drop-census-check.json
+
 
 .PHONY: verify-coherent-physical-tail
 verify-coherent-physical-tail:
