@@ -47,14 +47,62 @@ Removing the 52 q96 core words that are not needed by the boundary image
 therefore makes the pressure worse, not better. The unused core words are
 load-bearing for the pressure balance.
 
-## Adjacent 11-mode diagnostic
+## Why the low core is saturated
 
-Dropping mode 11 from the q96 map while retaining all remaining core
-words gives a valid q94 map on 11 modes. A cutoff-47 pilot has numerical
-fit `0.709929`; this is slightly below the q99 value but is not a
-complete profile and is not used as a claim. The q45 quotient shows that
-core size alone is not the mechanism: a smaller deletion-closed core can
-lose more pressure than the removed capacity saves.
+The q96 map already contains all eleven height-24 words, and the only
+height-25 words are the ten triples, which are the fixed hyperoval
+boundary image and lie in the span of the three non-single embeddings.
+There is therefore no missing low word below height 26 that could be
+added to the core. A four-mode height-26 word such as `46=(3,5,7,11)`
+does couple to the boundary triples, but its cutoff-47 fit is
+`0.7098643`, slightly above the q99 value `0.7098582` at the same
+cutoff. The remaining freedom is high-word extension, which is the
+plateau already seen at q99 and q36.
+
+## Matched-cutoff low-block diagnostics
+
+Cutoff-47 fits are comparable only at the same cutoff. The complete q99
+profile is `0.7099930`, but its cutoff-47 fit is `0.7098582`; comparing a
+partial fit to a completed profile is biased. At cutoff 47:
+
+| map | change from q96 | fit |
+| --- | --- | ---: |
+| q96 | none | `0.7098760` |
+| q99 | add `160,192,224` | `0.7098582` |
+| q94 | drop mode 11 | `0.7099289` |
+| q95 | drop word `31` | `0.7098923` |
+| q97 | add word `46` | `0.7098643` |
+| q97 | q94 plus `160,192,224` | `0.7099123` |
+
+The q99 extension is the best at the matched cutoff. Dropping mode 11,
+dropping the redundant height-25 word, adding a boundary-coupled
+height-26 word, and composing the mode drop with the q99 extension are
+all worse. By the
+[resolved-subset lower-bound lemma](truncated-profile-lower-bound.md),
+each fit above `1/sqrt(2)` also excludes its complete map from crossing:
+the complete q95, q97(`46`), and q97(q94 plus q99) pressures are at least
+the listed cutoff-47 values. The q94 lower-bound argument
+([mode-11 pilot](../research/f8-hyperoval-q94-mode11-pilot.md)) is
+consistent with this: its complete pressure is at least the cutoff-47
+fit, which is above the q99 full value. The q45 quotient shows the
+opposite failure mode: deleting all unused core words is much worse.
+
+All fifteen height-39 triples whose three deletion pairs are present or
+admissible were also screened at cutoff 31. The q99 chain `224` with
+pairs `160,192` is best (`0.5906329`), followed by `336` (`0.5906693`);
+the chains that add only one new pair are around `0.5918`. This is a
+low-cutoff screen, not a complete-profile census, but it finds no better
+height-39 chain than the one already completed.
+
+The low core is saturated
+([admissible high words](f8-admissible-high-words.md)), and the fixed
+height-25 boundary and height-24 core leave only high-word extensions,
+which stay on the plateau. Supports at most height 38 are still under
+the `29/41` protected-core floor; the only escape is height at least 39,
+and the tested height-39 chains do not cross. This closes the tested
+low-block and high-word variants, not the F8 family as a mathematical
+impossibility: a different protected low block or ambient tensor is the
+remaining requirement.
 
 ## Scope
 
