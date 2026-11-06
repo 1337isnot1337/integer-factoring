@@ -1,0 +1,39 @@
+{
+  "augmented_dimension": 10,
+  "b0_cut_ranks": [
+    1156,
+    1
+  ],
+  "coefficient_values": [
+    11
+  ],
+  "coefficients": [
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11,
+    11
+  ],
+  "contains_crossing": true,
+  "field": "F16 with x^4+x+1",
+  "labels": 34,
+  "layer": 0,
+  "length": 10,
+  "nonzero_slices": 10,
+  "scope": "At length 10 (34 labels) the same central first-layer pure e insertion has ten nonzero degree slices, spans the crossing in dimension 10, and reconstructs it with coefficient 11 on every slice. The b=0 slice has cut ranks (1156,1), so the full-first-cut profile persists. This is a finite spanning check, not a rank-sum or cost certificate. The full per-slice cut-rank table is omitted because it is expensive and does not improve the bound.",
+  "site": 9,
+  "source_sha256": {
+    "tools/check_boundary_e_gate_crossing.py": "b3f9bd0d184186076ae59124a0990fece66d72633edf85fa498af15104b6f353",
+    "tools/check_boundary_e_gate_length10.py": "00f5b6c26955b13e2c15a615e68e050674cd07d692d6b8e16e2addf669df8f47",
+    "tools/quantum_braid_graded_seam.py": "399c8f9d8a56d05ed6d760da9e4a90dcdb74bf04109adbfa4b89c6269d3bb641"
+  },
+  "span_dimension": 10,
+  "status": "completed exact finite spot-check",
+  "support": 10,
+  "terms": 10
+}

@@ -23,11 +23,18 @@ with
 | 4 | 2 | 4 | 4 | 7 |
 | 6 | 5 | 6 | 6 | 3 |
 | 8 | 13 | 8 | 8 | 13 |
+| 10 | 34 | 10 | 10 | 11 |
 
 Each row is an exact coefficientwise reconstruction, not a rank or
 cost estimate. At `n=8` the identity uses **eight pieces**, compared
 with the `4086` nonzero pieces in the full disjoint-`f_3` census. It
 uses no `f_3` placement at all.
+
+The `n=10` row is a heavy spot-check (`tools/check_boundary_e_gate_length10.py`).
+It spans in dimension `10` with coefficient `11` and has `b=0` cut
+ranks `(1156,1)`, so the full-first-cut profile persists at the next
+length. The full per-slice cut-rank table is not computed there because
+it is expensive and does not change the rank-sum conclusion.
 
 ## The central site is isolated
 
@@ -99,6 +106,10 @@ obligations.
 python3 tools/check_boundary_e_gate_crossing.py \
   --output evidence/boundary-e-gate-crossing.json
 make verify-boundary-e-gate-crossing
+
+# Heavy length-ten spot-check, not part of the default verify target.
+python3 tools/check_boundary_e_gate_length10.py \
+  --output evidence/boundary-e-gate-length10.json
 ```
 
 The receipt records the exact coefficients, support, site census,
