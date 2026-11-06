@@ -290,6 +290,20 @@ A second-cycle control replaces the generator `5` by `7`. The period remains
 order-derived rows saturate to `h`. Thus the finite repair is not an artifact
 of the base-`5` log table.
 
+A growing-target control adds the first five split cycle primes beyond the
+cutoff, `179, 181, 191, 223, 229`, to the `32`-target set. At `37` vertices
+the window-`2` pair rows number `72`, have rank `37`, and again have a pure
+`2`-power index, now `32h` (odd quotient `1`). The odd-order targets
+`1289, 25169` (order `97`) and `179` (order `99425`) lower it
+`32h -> 16h -> 8h -> 4h`; the half-order differences
+
+`99425 e_5 - 97 e_96749`,  `99425 e_5 - 99425 e_191`
+
+lower it `4h -> 2h -> h`. Thus the same order-derived repair survives a
+larger target set with no exponent-`3` pair row. This tests one growing
+target set, not a uniform supply or cost theorem; the extra fine-prime
+targets also have to be searched for in an actual run.
+
 The window-`2` certificate uses no base relation row, no order row, and no
 exponent-`3` row.
 
