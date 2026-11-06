@@ -32,17 +32,19 @@ ordered by this lower bound.
 | 1 | 54 | `0.7656071830015263` | `0.7656071830015263` |
 | 0 | 49 | `0.8182248402897341` | `0.8254155465585895` |
 
-Every lower bound is above `1/sqrt(2)`. The best single-mode drop is
-mode `11` at `0.7099289419`, still `2.82e-3` above the threshold. Hence
-**no single-mode principal-submap drop of the q96 map can cross**. The
-lower bounds get worse as more modes are removed; the q49 mode-0 drop
-is far above.
+Every lower bound is above `1/sqrt(2)`. The best cutoff-47 lower bound is
+mode `11` at `0.7099289419`, still `2.82e-3` above the threshold; its
+complete profile is even higher at `0.7100458192`. Hence **no single-mode
+principal-submap drop of the q96 map can cross**. The lower bounds get
+worse as more modes are removed; the q49 mode-0 drop is far above.
 
 This sharpens the earlier q94 pilot: mode `11` is not merely one tested
 drop, it is the best of all twelve, and its lower bound excludes it.
 It also illustrates why cutoff-31 screens are not decisive: mode `7`
 looked best at cutoff 31 (`0.7147345`) but its cutoff-47 lower bound is
-`0.7110242`, worse than several other drops.
+`0.7110242`, worse than several other drops. Worker 5's completed q94
+profile gives `0.7100458192`, above q96; the lower bounds are conservative,
+but every one already lies above the threshold.
 
 ## What remains
 
@@ -50,12 +52,15 @@ The census covers single-mode deletions only. Multi-mode deletions,
 coordinate substitutions, a different rank-three image outside the
 height-25 theorem, and a different ambient tensor remain outside it.
 The q96 core words are load-bearing: deleting low letters raises the
-pressure, and the q45 minimal core is much worse. The next low-block
-search should **change** the surviving coordinates or the ambient
-structure, not merely delete letters from the q96 map.
+pressure, the completed q94 profile is `0.7100458192` (above q96), and
+the q45 minimal core is much worse. The next low-block search should
+**change** the surviving coordinates or the ambient structure, not merely
+delete letters from the q96 map.
 
-The complete factoring exponent remains `1/2`; no score, exact pressure
-certificate, or uniform transfer is claimed.
+The complete q94 cross-check is in
+[q94 mode drop](f8-hyperoval-q94-mode-drop.md). The complete factoring
+exponent remains `1/2`; no score, exact pressure certificate, or uniform
+transfer is claimed.
 
 ## Reproduction
 
