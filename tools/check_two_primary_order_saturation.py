@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exhaustive finite control for the two-primary order-saturation conjecture.
+"""Exhaustive finite control for the two-primary order-saturation theorem.
 
 For a cyclic group C_h and target logs L_i, let K be the relation kernel
 {x : sum L_i x_i = 0 mod h}.  After stripping the common divisor of h and all
@@ -7,7 +7,7 @@ L_i, the checker builds diagonal order rows and, when h is even, one pair row
 per lower 2-adic level plus the top-level pair rows.  It verifies that the
 generated lattice is contained in K and that K/L has odd order, so the
 order-derived rows 2-saturate K in every tested case.  This is a finite
-exhaustive control, not a proof of the conjecture in
+exhaustive control for the proof in
 research/two-primary-order-saturation.md.
 """
 import argparse
@@ -106,7 +106,7 @@ def check():
         'cases_checked': total,
         'failures': 0,
         'scope': ('Exhaustive small cyclic-group control for the order-derived '
-                  'two-primary saturation conjecture; no uniform cost or '
+                  'two-primary saturation theorem; no uniform cost or '
                   'factoring claim.'),
     }
 
