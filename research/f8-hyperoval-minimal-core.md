@@ -69,7 +69,7 @@ partial fit to a completed profile is biased. At cutoff 47:
 | --- | --- | ---: |
 | q96 | none | `0.7098760` |
 | q99 | add `160,192,224` | `0.7098582` |
-| q94 | drop mode 11 | `0.7099289` |
+| q94 | drop mode 11 | `0.7100458` (complete) |
 | q95 | drop word `31` | `0.7098923` |
 | q97 | add word `46` | `0.7098643` |
 | q97 | q94 plus `160,192,224` | `0.7099123` |
@@ -77,7 +77,10 @@ partial fit to a completed profile is biased. At cutoff 47:
 The q99 extension is the best at the matched cutoff. Dropping mode 11,
 dropping the redundant height-25 word, adding a boundary-coupled
 height-26 word, and composing the mode drop with the q99 extension are
-all worse. By the
+all worse. The q94 cutoff-47 pilot was tail-favorable: the
+[complete q94 profile](f8-hyperoval-q94-mode-drop.md) is
+`0.7100458192`, above q96 and q99. Its earlier lower-bound argument
+remains true but is no longer needed for the q94 exclusion. By the
 [resolved-subset lower-bound lemma](truncated-profile-lower-bound.md),
 each fit above `1/sqrt(2)` also excludes its complete map from crossing:
 the complete q95, q97(`46`), and q97(q94 plus q99) pressures are at least
