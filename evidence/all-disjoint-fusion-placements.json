@@ -4145,9 +4145,9 @@
   ],
   "scope": "All disjoint three-strand f3 placements on 2*length central sites, both cut orientations and the two identity pairings, over F16. The span membership and recombination are exact. No rank-sum optimum, uniform family, or stronger factoring score is claimed.",
   "source_sha256": {
-    "research/invertible-fusion-graded-seams.md": "92bb53374f336e872b25718bdfd0338144d53d114acc3e2050529ecba666ec61",
+    "research/invertible-fusion-graded-seams.md": "240513cd39b1c22fa0397876204b31d63f9567d4ad0dad247e554789250c65cb",
     "tools/check_all_disjoint_fusion_placements.py": "2c37ce3cec99eb594a4b103139e81152f9e1007cc0685a258eb6e29ece1adf1d",
-    "tools/quantum_braid_graded_seam.py": "9f7c23ed2a98e0d7c3438c6b7fdb6e97ca3e04c812e7aff3688f03aa365f596d"
+    "tools/quantum_braid_graded_seam.py": "399c8f9d8a56d05ed6d760da9e4a90dcdb74bf04109adbfa4b89c6269d3bb641"
   },
   "status": "completed exact finite checks"
 }

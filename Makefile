@@ -375,6 +375,10 @@ verify-all-disjoint-fusion-placements:
 verify-all-disjoint-fusion-placements-length8:
 	python3 tools/check_all_disjoint_fusion_length8.py --output /tmp/all-disjoint-fusion-placements-length8.json
 
+.PHONY: verify-boundary-e-gate-crossing
+verify-boundary-e-gate-crossing:
+	python3 tools/check_boundary_e_gate_crossing.py --output /tmp/boundary-e-gate-crossing.json
+
 .PHONY: verify-braid-spectral-fusion
 verify-braid-spectral-fusion:
 	python3 tools/check_quantum_braid_spectral_fusion.py

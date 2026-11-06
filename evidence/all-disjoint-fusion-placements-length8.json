@@ -14680,7 +14680,7 @@
   "scope": "All 277 disjoint three-strand f3 placements at thirteen labels, both cut orientations and the two identity pairings, over F16. The 4086-piece span has exact dimension 4014 and does not contain the crossing, while the 146-piece prefix span has dimension 146 and also misses it. A stored separating functional vanishes on every piece and evaluates to 4 on the crossing. No rank-sum optimum, uniform family, or stronger factoring score is claimed.",
   "source_sha256": {
     "tools/check_all_disjoint_fusion_length8.py": "d78303c67c4fa3e76e3ad4410e4156674b00b2b33e3a24a52bb4db2698cad7dc",
-    "tools/quantum_braid_graded_seam.py": "9f7c23ed2a98e0d7c3438c6b7fdb6e97ca3e04c812e7aff3688f03aa365f596d",
+    "tools/quantum_braid_graded_seam.py": "399c8f9d8a56d05ed6d760da9e4a90dcdb74bf04109adbfa4b89c6269d3bb641",
     "tools/rank_f16_matrix_dual.cpp": "26db89f0bebdb2bfe9632fd05a5de762a32cd8e57782312ea23a49740df40013"
   },
   "status": "completed exact finite check",

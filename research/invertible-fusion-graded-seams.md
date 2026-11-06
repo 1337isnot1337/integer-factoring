@@ -193,8 +193,12 @@ resolves the five-label prefix failure: all `60` disjoint placements,
 both orientations and the two pairings span SWAP in dimension `475`,
 not the prefix dimension `80`. The explicit recombination uses `442`
 nonzero pieces, so it is not a cost certificate. The thirteen-label
-case has `277` placements and remains open; a fused kernel is still
-the next structural target.
+case has `277` placements and misses the crossing, but a single pure
+`e` insertion at the central site in the first layer spans it exactly
+with eight degree slices; see
+[the boundary e-gate identity](boundary-e-gate-crossing.md). The
+first-cut rank is full on every slice, so a fused transport or
+grouping identity is still the next structural target.
 
 ## 5. Reproduction
 

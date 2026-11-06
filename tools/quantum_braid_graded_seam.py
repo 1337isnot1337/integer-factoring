@@ -97,18 +97,21 @@ def _apply_f3(values, start, routes):
     )
 
 
-def coefficient_tensor_sites(length, sites):
+def coefficient_tensor_sites(length, sites, layer=None):
     """Axes b,P,Q,R,S for an arbitrary disjoint f3 placement.
 
-    The old central layer is replaced as a whole. Boundary gates are qI+y*e;
+    The selected layer is replaced as a whole. Boundary gates are qI+y*e;
     other gates are qI+e. These are candidate pieces, not a strict endpoint pair.
     """
     assert length > 0 and length % 2 == 0
+    if layer is None:
+        layer = length - 1
+    assert 0 <= layer < 2 * length - 1
     d, states_count, boundary, routes = _layout(length)
     states = np.zeros((states_count, d * d, 1), dtype=np.uint8)
     states[boundary, np.arange(d * d), 0] = 1
     for diagonal in range(2 * length - 1):
-        if diagonal == length - 1:
+        if diagonal == layer:
             for site in sites:
                 states = _apply_f3(states, site, routes)
             continue
@@ -126,7 +129,7 @@ def coefficient_tensor_sites(length, sites):
                 states = following
             else:
                 states = FIELD[Q, states] ^ action
-    tensor = states[boundary].transpose(2, 1, 0).reshape(length + 1, d, d, d, d)
+    tensor = states[boundary].transpose(2, 1, 0).reshape(-1, d, d, d, d)
     return FIELD[power(Q, length - length * length // 2), tensor]
 
 
