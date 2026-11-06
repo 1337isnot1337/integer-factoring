@@ -21,6 +21,9 @@ def library():
     version = subprocess.check_output(['pkg-config','--modversion','flint'],text=True).strip()
     cflags = shlex.split(subprocess.check_output(['pkg-config','--cflags','flint'],text=True))
     libs = shlex.split(subprocess.check_output(['pkg-config','--libs','flint'],text=True))
+    if not any(item == '-lflint' or item.startswith('-lflint.') for item in libs):
+        # Some FLINT 3 pkg-config files omit the core library.
+        libs.insert(0,'-lflint')
     flags = ['-O3','-shared','-fPIC']+cflags
     digest = sha256(source.read_bytes()+repr((compiler,flags,libs,version)).encode()).hexdigest()[:24]
     cache = Path(tempfile.gettempdir())/('integer-factoring-gf5-flint-'+str(os.getuid()))

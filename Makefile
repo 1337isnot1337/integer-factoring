@@ -320,6 +320,14 @@ verify-bounded-spin-support:
 verify-bounded-spin-diagonal-trace:
 	python3 tools/check_bounded_spin_diagonal_trace.py --output /tmp/bounded-spin-diagonal-trace.json
 
+.PHONY: verify-bounded-spin-transposition-subalgebra
+verify-bounded-spin-transposition-subalgebra:
+	python3 tools/check_bounded_spin_transposition_subalgebra.py
+
+.PHONY: verify-bounded-spin-missing-direction
+verify-bounded-spin-missing-direction:
+	python3 tools/check_bounded_spin_missing_direction.py
+
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py
