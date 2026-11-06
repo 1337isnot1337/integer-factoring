@@ -201,6 +201,41 @@ diagonal control already extracts the factor on this instance. The remaining
 question is the uniform cost and availability of the half-cycle parity data,
 or of the alternative pair first hit, not the lattice index itself.
 
+### Annihilator-derived half-cycle repair
+
+The half-cycle row above used the enumerated cycle length `h`. The HNF
+covolume carries the same information up to the lattice index:
+`E = covol(L) = h [K:L]`. Test, for `j=1,2,...`, whether
+`g_p^{E/2^j}` is the identity for every target `p`. Because
+`h=198850` has `v_2(h)=1`, at the first `j` where some target is nonidentity
+we can write `a=E/2^j=(h/2)m` with `m` odd. The half-power again separates
+even from odd target logs, so one candidate row is `a e_p` or
+`a(e_5-e_p)`. This uses only the pair-row HNF covolume and group
+exponentiation, not the cycle length.
+
+On the `77` window-`4` targets with index above one:
+
+- one annihilator-derived row leaves index `1` for `66` targets and reduces
+  the single index-`6` target to index `3`;
+- the `11` odd residuals are exactly the ten original index-`3` targets plus
+  that index-`6` target. Dividing `a` by the fixed small odd divisor `3`
+  gives exponent `h/2` and repairs all eleven to index `1`.
+
+Every final row replays and every repaired lattice extracts `1000003`. The
+finite sweep thus needs no cycle enumeration and no odd-unit data. The odd
+divisor bound `3` is empirical, not uniform; a general odd part needs the
+unit-aligned rows of [full order-saturation](full-order-saturation.md). The
+cost is one HNF covolume, `O(v_2(E))` exponentiation sweeps, and a bounded
+odd-divisor retest per target; uniform supply and cost remain open.
+
+The receipt is produced by
+
+```sh
+make verify-mixed-pair-annihilator-repair
+```
+
+and stored in `evidence/mixed-pair-annihilator-repair.json`.
+
 ### A second cycle with `v_2(h)=3`
 
 The main cycle has `h=198850=2*99425`, so the half-cycle construction only
