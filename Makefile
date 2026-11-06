@@ -3611,3 +3611,9 @@ verify-arithmetic: verify-mixed-pair-second-cycle verify-two-primary-order-satur
 .PHONY: verify-two-primary-order-saturation
 verify-two-primary-order-saturation:
 	python3 tools/check_two_primary_order_saturation.py --output /tmp/integer-factoring-two-primary-order-saturation.json
+
+.PHONY: verify-full-order-saturation
+verify-full-order-saturation:
+	python3 tools/check_full_order_saturation.py --output /tmp/integer-factoring-full-order-saturation.json
+
+verify-arithmetic: verify-full-order-saturation
