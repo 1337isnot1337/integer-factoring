@@ -4,8 +4,10 @@
 
 This note isolates the `2`-primary part of a cyclic relation lattice. The
 main result is a lattice theorem: order-derived rows always 2-saturate the
-relation kernel of a cyclic group. It does **not** bound the odd part of the
-index, the cost of obtaining the orders, or the complete factoring exponent.
+relation kernel of a cyclic group. A full-prime extension, using the same
+local argument at every prime, generates the entire kernel when the units
+modulo the relevant prime powers are available. It does **not** bound the
+cost of obtaining those orders or units, or the complete factoring exponent.
 
 The motivating certificate is the 40-bit mixed-pair cycle in
 [mixed-pair-gap-cycle.md](mixed-pair-gap-cycle.md). There the window-`2`
@@ -106,6 +108,39 @@ Thus `K_2` is contained in `M_2`. The reverse containment follows from
 `M` contained in `K`. Therefore `M_2 = K_2`, so the index `[K:M]` has no
 factor `2`, i.e. it is odd. ∎
 
+## Full-prime extension
+
+The same localization works at every prime. Keep the normalization
+`gcd(h',L'_1,...,L'_n)=1`, and for each prime `l | h'` choose an anchor
+`k(l)` with `l` not dividing `L'_{k(l)}`. Such an anchor exists by
+primitivity, and its level `v_l(o_{k(l)})` is maximal. Put `j_i=v_l(o_i)`.
+Adjoin, in addition to the diagonal rows `D_i=o_i e_i`, the pair rows
+
+`P_{i,l} = u_{k(l)} (o_i/l^{j_i}) e_i
+          - u_i (h'/(l^{j_i} g_{k(l)})) e_{k(l)}`
+
+for every `i != k(l)`. The row is integral because the anchor has maximal
+`l`-level, and it lies in `K` by the same calculation as before.
+
+**Theorem (full-prime form).** The diagonal and all `P_{i,l}` rows generate
+`K`, not merely its `2`-primary part.
+
+**Proof.** Localize at `l`. Since `h' = l^t h_l` with `h_l` a unit in `Z_l`,
+the relation is `sum L'_i x_i = 0 mod l^t`. The anchor log is a unit, so
+`K_l` has basis `l^t e_{k(l)}` and `e_i-c_i e_{k(l)}`, where
+`c_i=L'_i/L'_{k(l)}`. The diagonal row `D_{k(l)}` is `l^t` times a unit, so
+it supplies `l^t e_{k(l)}`. For `i != k(l)`, the coefficient of `e_i` in
+`P_{i,l}` is a unit, and the row is a unit multiple of `e_i-c_i e_{k(l)}`
+over `Z_l`. Hence `M_l=K_l` for every `l|h'`; for primes not dividing `h'`,
+`h'` is a unit and the diagonal rows already generate `Z_l^n`. Therefore
+`M=K`. ∎
+
+This extension is the all-prime version recorded by Worker 2 in
+[Discussion #51](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19429751).
+The `2`-primary theorem is the cheaper special case: it needs only `2`-adic
+orders/units, while the full-prime rows need the units at every odd prime
+dividing `h'`, in practice the full logs.
+
 ## Consequences and limits
 
 - If `M_0` is any other relation lattice contained in `K` (for example the
@@ -118,9 +153,9 @@ factor `2`, i.e. it is odd. ∎
   modulo the relevant `2`-powers. When `v_2(h')=1`, all units are odd and the
   rows use only the orders: `P_{i,k,1} = (o_i/2)e_i - (o_k/2)e_k`. For higher
   `2`-adic valuation the unit alignment is additional data.
-- The odd part of `K/M_0` is untouched. A complete factoring route still
-  needs smooth relations for that odd quotient, or another argument that it
-  is trivial.
+- Without the full-prime units, the odd part of `K/M_0` is untouched. With
+  the full-prime rows it is also removed, but only because the full logs are
+  supplied; this is a lattice closure, not a cheap odd-quotient search.
 - The cost of obtaining the orders/units is not addressed. In particular,
   this mechanism does not by itself improve the complete bound.
 
@@ -150,16 +185,19 @@ The theorem is proved above; the following are independent finite checks.
   `130176` small cyclic cases for
   `(h,n) = (8,4),(16,3),(8,5),(12,4),(24,3),(36,3),(20,3)`.
   It verifies that every constructed lattice lies in `K` and that `K/M` has
-  odd order. Evidence: `evidence/two-primary-order-saturation.json`.
+  odd order. For the full-prime extension it also verifies that the
+  diagonal-plus-all-prime rows equal `K` in every case. Evidence:
+  `evidence/two-primary-order-saturation.json`.
 - `make verify-two-primary-order-saturation` runs that checker.
 - `make verify-mixed-pair-gap-cycle` checks the 40-bit rows, both cycle
   generators, and the smooth/order-derived repair certificates.
 
 ## Open obligations
 
-1. Prove or refute a uniform bound on the **odd** quotient
-   `K/(M_0+M)` for a natural window-`2` relation lattice `M_0`.
-2. Determine whether the needed `2`-adic order/unit data can be obtained
-   faster than the extra smooth pair search.
+1. Determine whether the needed `2`-adic order/unit data can be obtained
+   faster than the extra smooth pair search, and whether the full-prime units
+   can ever be supplied more cheaply than the full logs.
+2. Prove or refute a uniform bound on the **odd** quotient when only
+   `2`-primary order data (not the full-prime units) is available.
 3. Extend the cost accounting to a second discriminant and a growing target
    set; the present 40-bit instance is a fixed certificate.

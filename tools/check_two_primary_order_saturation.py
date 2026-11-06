@@ -1,13 +1,17 @@
 #!/usr/bin/env python3
-"""Exhaustive finite control for the two-primary order-saturation theorem.
+"""Exhaustive finite control for order-derived relation saturation.
 
 For a cyclic group C_h and target logs L_i, let K be the relation kernel
 {x : sum L_i x_i = 0 mod h}.  After stripping the common divisor of h and all
-L_i, the checker builds diagonal order rows and, when h is even, one pair row
-per lower 2-adic level plus the top-level pair rows.  It verifies that the
-generated lattice is contained in K and that K/L has odd order, so the
-order-derived rows 2-saturate K in every tested case.  This is a finite
-exhaustive control for the proof in
+L_i, the checker builds diagonal order rows and one pair row per lower
+2-adic level plus the top-level pair rows.  It verifies that the generated
+lattice is contained in K and that K/L has odd order, so the order-derived
+rows 2-saturate K in every tested case.
+
+The full-prime extension also builds the anchor pair rows for every prime
+dividing h, using the units modulo the relevant prime powers.  It verifies
+that these rows generate all of K, not only its 2-primary part.  These are
+finite exhaustive controls for the proofs in
 research/two-primary-order-saturation.md.
 """
 import argparse
@@ -73,6 +77,80 @@ def build_rows(h, logs):
     return h, logs, rows
 
 
+def prime_factors(value):
+    factors = []
+    divisor = 2
+    while divisor*divisor <= value:
+        if value % divisor:
+            divisor += 1
+            continue
+        factors.append(divisor)
+        while value % divisor == 0:
+            value //= divisor
+        divisor += 1
+    if value > 1:
+        factors.append(value)
+    return factors
+
+
+def valuation(value, prime):
+    exponent = 0
+    while value % prime == 0:
+        value //= prime
+        exponent += 1
+    return exponent
+
+
+def build_full_rows(h, logs):
+    count = len(logs)
+    common = 0
+    for value in logs:
+        common = gcd(common, gcd(h, value))
+    h //= common
+    logs = [value//common for value in logs]
+    orders = []
+    units = []
+    gcds = []
+    for value in logs:
+        divisor = gcd(h, value)
+        gcds.append(divisor)
+        orders.append(h//divisor)
+        units.append(value//divisor)
+    rows = [[0]*count for _ in range(count)]
+    for index, order in enumerate(orders):
+        rows[index][index] = order
+    for prime in prime_factors(h):
+        anchor = next(index for index, value in enumerate(logs)
+                      if value % prime)
+        levels = [valuation(order, prime) for order in orders]
+        assert levels[anchor] == max(levels)
+        for index in range(count):
+            if index == anchor:
+                continue
+            level = levels[index]
+            prime_power = prime**level
+            coefficient = units[anchor]*(orders[index]//prime_power)
+            numerator = coefficient*logs[index]
+            assert numerator % logs[anchor] == 0
+            other = numerator//logs[anchor]
+            row = [0]*count
+            row[index] = coefficient
+            row[anchor] -= other
+            rows.append(row)
+    return h, logs, rows
+
+
+def check_full_case(h, logs):
+    reduced_h, reduced_logs, rows = build_full_rows(h, logs)
+    assert all(sum(value*coefficient
+                   for value, coefficient in zip(reduced_logs, row))
+               % reduced_h == 0 for row in rows)
+    basis, rank, index = row_hnf_index(rows, len(logs))
+    assert rank == len(logs)
+    assert index == reduced_h, (h, logs, reduced_h, index)
+    return index//reduced_h
+
+
 def check_case(h, logs):
     reduced_h, reduced_logs, rows = build_rows(h, logs)
     basis, rank, index = row_hnf_index(rows, len(logs))
@@ -93,21 +171,24 @@ def check():
         for logs in itertools.product(range(h), repeat=width):
             quotient = check_case(h, logs)
             assert quotient & 1
+            assert check_full_case(h, logs) == 1
             count += 1
         cases.append({
             'h': h,
             'width': width,
             'cases_checked': count,
-            'all_quotients_odd': True,
+            'all_2_primary_quotients_odd': True,
+            'all_full_lattices_equal_kernel': True,
         })
         total += count
     return {
         'cases': cases,
         'cases_checked': total,
+        'full_lattice_cases_checked': total,
         'failures': 0,
         'scope': ('Exhaustive small cyclic-group control for the order-derived '
-                  'two-primary saturation theorem; no uniform cost or '
-                  'factoring claim.'),
+                  'two-primary and full-prime saturation theorems; no uniform '
+                  'cost or factoring claim.'),
     }
 
 
