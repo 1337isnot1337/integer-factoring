@@ -1,4 +1,4 @@
-# A three-plus-one cut support diagnostic and its one-piece obstruction
+# A three-plus-one cut support diagnostic and its two-alternative obstruction
 
 ## Result and scope
 
@@ -38,7 +38,7 @@ R_{3+1}=\frac{a+b}{2}.                                \tag{2}
 This is only a diagnostic of the Smith orders under the unusual cut.  It
 is not a crossing criterion.
 
-## Why it is not a crossing criterion
+## The two-alternative obstruction
 
 The endpoint tensor itself is
 
@@ -46,36 +46,37 @@ The endpoint tensor itself is
 E(x,y,u,v)=[x=v][y=u].                                \tag{3}
 ```
 
-Under either `3+1` or `1+3` cut, `E` has rank `q`, not `q^2`: the
+The pairing of the four legs matters.  Under the **two alternative cuts**
+`(x,y,u)|(v)` and `(x)|(y,u,v)`, `E` has rank `q` on both sides: the
 `(x,y,u)|(v)` matrix has one nonzero entry in each `v` column, and the
-`(x)|(y,u,v)` matrix has one nonzero entry in each `x` row.  Therefore
-the **single trivial piece** `A_1=E` has both cut ranks `q` and rank-sum
-cost `q`.
+`(x)|(y,u,v)` matrix has one nonzero entry in each `x` row.  Therefore the
+single trivial piece `A_1=E` has rank-sum cost `q`.
 
-For every `q>1`, `q < q^{sqrt(2)}`.  A criterion that admitted the
-`3+1`/`1+3` cuts would therefore certify the trivial one-piece
-decomposition of the endpoint as a strict crossing, independently of any
-cancellation or auxiliary construction.  The low diagnostic value is an
-artifact of changing the two flattenings used by the factoring interface,
-not evidence of a new seed.
+For every `q>1`, `q < q^{sqrt(2)}`.  A rank-sum criterion that admitted
+this **pair** of cuts would certify the trivial one-piece endpoint as a
+strict crossing, independently of any cancellation or auxiliary
+construction.  The low diagnostic value is an artifact of changing both
+flattenings used by the factoring interface, not evidence of a new seed.
+The interpretation of the table as a support value below one is
+withdrawn.
 
-The ordinary two cuts `(x,y)|(u,v)` and `(x,u)|(y,v)` are essential: both
-have rank `q^2` for `E`, so the one-piece seed has cost `q^2` and is
-correctly excluded.  Any proposed non-rectangular escape must either
-preserve the two-cut interface and change the channel algebra inside a
-piece, or prove a new lower-bound criterion that does not admit the
-trivial endpoint.  The `3+1` profile above supplies neither.  In
-particular, the earlier interpretation of this table as a support value
-below one is withdrawn.
+The ordinary cuts `(x,y)|(u,v)` and `(x,u)|(y,v)` both have rank `q^2`
+for `E`, so the one-piece seed has cost `q^2` and is correctly excluded.
 
 ## What remains open
 
-The table is still a reproducible diagnostic of the rank-four Smith
-profile under an alternative leg grouping.  The following questions are
-separate and are **not** advanced by it:
+The obstruction is specific to the **both-alternative** pair.  A mixed
+pair with one standard cut and one `3+1`/`1+3` cut does **not** admit the
+one-piece endpoint: the two endpoint ranks are `q` and `q^2`, so the
+trivial cost is `q^{3/2} > q^{sqrt(2)}`.  Such a mixed pair is not tested
+here, and its channel/letter invoice and zero-scale normalization are
+open.
 
-- which non-rectangular grouping, if any, survives inside a piece while
-  retaining both standard flattenings;
+The following questions are also separate and are not advanced by the
+table:
+
+- which mixed non-rectangular pairing, if any, can be used by a piece
+  while retaining a valid two-cut interface;
 - the correct channel/letter invoice for a grouped side;
 - effective rank factors, degree, coefficient bit growth, and the
   finite-alphabet recursion.
@@ -96,4 +97,4 @@ support values; the [receipt](../evidence/three-plus-one-support.json)
 records the six scale/angle cases and the formal zero-scale identities.
 The Gaussian tensor, matrix oracle and asymmetric support expression are
 existing repository machinery; the alternative cut construction and the
-one-piece obstruction are the new content.
+two-alternative obstruction are the new content.

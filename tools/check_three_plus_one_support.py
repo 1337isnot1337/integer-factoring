@@ -123,9 +123,10 @@ def main():
         b = math.sqrt(1 - a * a)
         zero_scale[str(a)] = {'rectangular': a + b, 'three_plus_one': (a + b) / 2}
     payload = {
-        'scope': ('Diagnostic for the q4 3+1/1+3 alternative leg cut; not a '
-                  'crossing criterion because the one-piece endpoint has cost q '
-                  '< q**sqrt(2); no transfer or complete-bound claim'),
+        'scope': ('Diagnostic for the q4 3+1/1+3 alternative leg-cut pair; not '
+                  'a crossing criterion because the one-piece endpoint has cost '
+                  'q < q**sqrt(2) for this pair; mixed standard/3+1 pairs are '
+                  'untested; no transfer or complete-bound claim'),
         'alphabet': q,
         'cut_ranks': {'rectangular_2_plus_2': q * q, 'three_plus_one': q},
         'zero_scale_identity': zero_scale,
