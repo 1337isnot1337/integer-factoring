@@ -77,6 +77,33 @@ withdrawn.
 The ordinary cuts `(x,y)|(u,v)` and `(x,u)|(y,v)` both have rank `q^2`
 for `E`, so the one-piece seed has cost `q^2` and is correctly excluded.
 
+## Mixed-cut endpoint control
+
+A mixed pair with one standard cut and one `1+3` cut is the remaining
+support-only possibility.  At q4, with `i` the standard `(x,u)|(y,v)`
+cut at infinity and `j` the `(x)|(y,u,v)` cut at zero, the Gaussian
+diagnostic and the **one-piece endpoint** have the following values at
+scale `1e-4`:
+
+| `a` | Gaussian `i` + `1+3` | endpoint `i` + `1+3` | Gaussian `3+1` + `j` | endpoint `3+1` + `j` |
+| ---: | ---: | ---: | ---: | ---: |
+| `0.05` | `0.5926434308` | `0.5493746089` | `1.0993104311` | `1.0993104311` |
+| `0.20` | `0.7030219537` | `0.6898979486` | `1.1528292710` | `1.1528292710` |
+| `0.50` | `0.9383361895` | `0.9330127019` | `1.1885206326` | `1.1885206326` |
+| `0.95` | `1.1089322899` | `1.1061249500` | `0.8595744515` | `0.8595744515` |
+
+The Gaussian profile is **above** the endpoint profile in the first
+orientation and **equal** to it in the second.  At q8 the same
+comparison approaches equality as `t` decreases: at `a=0.05`, `t=1e-6`,
+the first-orientation values are `0.549382364` (Gaussian) and
+`0.549374609` (endpoint).  Thus the mixed support value is the endpoint
+value up to a positive finite-scale correction, not a cancellation gap.
+The endpoint is one piece with ranks `q` and `q^2`, whose rank-sum cost
+`q^{3/2}` is above `q^{sqrt(2)}`; it is a valid negative control, not a
+seed.  This closes the **support-only mixed-cut** lane.  A mixed leg cut
+still needs a different transfer that charges the unequal widths; the
+support value alone does not supply one.
+
 ## What remains open
 
 The obstruction is specific to the **both-alternative** pair.  A mixed
@@ -89,8 +116,8 @@ open.
 The following questions are also separate and are not advanced by the
 table:
 
-- which mixed non-rectangular pairing, if any, can be used by a piece
-  while retaining a valid two-cut interface;
+- whether any non-rectangular cut can be used with a new transfer that
+  charges unequal widths; the support-only mixed lane is now closed;
 - the correct channel/letter invoice for a grouped side;
 - effective rank factors, degree, coefficient bit growth, and the
   finite-alphabet recursion.

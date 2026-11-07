@@ -57,6 +57,20 @@ def profile(matrix, rank, scale):
     return infinity['orders'], zero['orders']
 
 
+def endpoint_matrices(q):
+    one, zero = (1, 0), (0, 0)
+    rect0 = [[one if x == v and y == u else zero
+              for u in range(q) for v in range(q)]
+             for x in range(q) for y in range(q)]
+    rect1 = [[one if x == v and y == u else zero
+              for y in range(q) for v in range(q)]
+             for x in range(q) for u in range(q)]
+    one_three = [[one if y == u and x == v else zero
+                  for y in range(q) for u in range(q) for v in range(q)]
+                 for x in range(q)]
+    return rect0, rect1, one_three
+
+
 def support(orders_infinity, orders_zero, a, b, q):
     gx = np.zeros(q)
     gy = np.zeros(q)
@@ -118,6 +132,27 @@ def main():
             else:
                 assert rect_value > 1.1
                 assert candidate < 0.75
+    endpoint = endpoint_matrices(q)
+    endpoint_rect0_inf, _ = profile(endpoint[0], q * q, 1e-4)
+    endpoint_rect1_inf, endpoint_rect1_zero = profile(endpoint[1], q * q, 1e-4)
+    _, endpoint_one_three_zero = profile(endpoint[2], q, 1e-4)
+    endpoint_control = []
+    for angle in (0.05, 0.2, 0.5, 0.95):
+        b = math.sqrt(1 - angle * angle)
+        endpoint_control.append({
+            'a': angle, 'b': b,
+            'gaussian_std0_13': support(rect_inf, one_zero, angle, b, q),
+            'endpoint_std0_13': support(endpoint_rect0_inf, endpoint_one_three_zero, angle, b, q),
+            'gaussian_std1_13': support(rect2_inf, one_zero, angle, b, q),
+            'endpoint_std1_13': support(endpoint_rect1_inf, endpoint_one_three_zero, angle, b, q),
+            'gaussian_31_std1': support(three_inf, rect2_zero, angle, b, q),
+            'endpoint_31_std1': support(three_inf, endpoint_rect1_zero, angle, b, q),
+            'gaussian_minus_endpoint_std0': (
+                support(rect_inf, one_zero, angle, b, q)
+                - support(endpoint_rect0_inf, endpoint_one_three_zero, angle, b, q)),
+        })
+        assert endpoint_control[-1]['gaussian_minus_endpoint_std0'] >= -1e-6
+
     zero_scale = {}
     for a in (1 / math.sqrt(2), 0.2):
         b = math.sqrt(1 - a * a)
@@ -132,6 +167,7 @@ def main():
         'zero_scale_identity': zero_scale,
         'cases': cases,
         'small_scale_candidate_minimum': min(c['three_plus_one_support'] for c in cases),
+        'mixed_endpoint_control': endpoint_control,
         'trivial_endpoint': {
             'three_plus_one_rank': q, 'one_three_rank': q,
             'rank_sum_cost': q, 'threshold': q ** math.sqrt(2),
