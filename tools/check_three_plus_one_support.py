@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
-"""Numerical support diagnostic for a 3+1/1+3 two-cut profile.
+"""Diagnostic for a 3+1/1+3 alternative leg cut.
 
 The q4 endpoint tensor is cut as (x,y,u)|(v) and (x)|(y,u,v).  Both cut
 matrices are rectangular 64x4 and have rank four.  The existing asymmetric
-support equation is applied to the four Smith channels at the zero and
-infinity ends, with zero physical letter heights.  The q4 rectangular
-2+2 cuts are replayed as a calibration: their support is above one, while
-the 3+1 profile is below one at small intrinsic scale.  This is a candidate
-diagnostic, not a transfer theorem or a complete-bound claim.
+support expression is evaluated on the four Smith channels at the zero and
+infinity ends, with zero physical letter heights.  The q4 rectangular 2+2
+cuts are replayed as a calibration.
+
+This is not a crossing criterion: under these alternative cuts the endpoint
+tensor itself has rank q on both sides, so the trivial one-piece seed has
+cost q < q**sqrt(2).  The low value is an artifact of changing the standard
+two flattenings, not evidence of a transfer or a complete-bound improvement.
 """
 
 from __future__ import annotations
@@ -120,13 +123,19 @@ def main():
         b = math.sqrt(1 - a * a)
         zero_scale[str(a)] = {'rectangular': a + b, 'three_plus_one': (a + b) / 2}
     payload = {
-        'scope': ('Numerical support diagnostic for the q4 3+1/1+3 cut; '
-                  'no transfer theorem, endpoint invoice or complete-bound claim'),
+        'scope': ('Diagnostic for the q4 3+1/1+3 alternative leg cut; not a '
+                  'crossing criterion because the one-piece endpoint has cost q '
+                  '< q**sqrt(2); no transfer or complete-bound claim'),
         'alphabet': q,
         'cut_ranks': {'rectangular_2_plus_2': q * q, 'three_plus_one': q},
         'zero_scale_identity': zero_scale,
         'cases': cases,
         'small_scale_candidate_minimum': min(c['three_plus_one_support'] for c in cases),
+        'trivial_endpoint': {
+            'three_plus_one_rank': q, 'one_three_rank': q,
+            'rank_sum_cost': q, 'threshold': q ** math.sqrt(2),
+            'passes_alternative_criterion': q < q ** math.sqrt(2),
+        },
     }
     raw = json.dumps(payload, separators=(',', ':'), sort_keys=True)
     args.output.parent.mkdir(parents=True, exist_ok=True)
