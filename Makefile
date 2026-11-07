@@ -332,6 +332,12 @@ verify-bounded-spin-transposition-subalgebra:
 verify-bounded-spin-twelve-coefficient-dimension:
 	python3 tools/check_bounded_spin_twelve_coefficient_dimension.py
 
+.PHONY: verify-bounded-spin-twelve-coefficient-table build-bounded-spin-twelve-coefficient-table
+verify-bounded-spin-twelve-coefficient-table:
+	python3 tools/check_bounded_spin_twelve_coefficient_table.py --output /tmp/bounded-spin-twelve-table.json
+build-bounded-spin-twelve-coefficient-table:
+	python3 tools/build_bounded_spin_twelve_coefficient_table.py
+
 .PHONY: verify-bounded-spin-missing-direction
 verify-bounded-spin-missing-direction:
 	python3 tools/check_bounded_spin_missing_direction.py
