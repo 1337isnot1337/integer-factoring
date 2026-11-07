@@ -1,0 +1,136 @@
+#!/usr/bin/env python3
+"""Lower bound for the twelve-site R,T subalgebra from generic orbits."""
+from __future__ import annotations
+
+from hashlib import sha256
+import json
+from pathlib import Path
+import sys
+
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+import numpy as np
+
+from check_bounded_spin_transposition_subalgebra import (
+    frame, replica_swap, transposition_class_sum, transposition_matrices,
+)
+from native_gf5_flint import inverse, multiply, pivot_columns, rank
+
+ROOT = Path(__file__).resolve().parents[1]
+OUTPUT = ROOT / 'evidence/bounded-spin-twelve-RT-orbit.json'
+SEEDS = (1, 2, 3, 4, 5)
+
+
+def operators(length):
+    paths, words, vectors, inverse_norms = frame(length)
+    matrices = transposition_matrices(length, words, vectors, inverse_norms)
+    return len(paths), transposition_class_sum(matrices), replica_swap(len(paths))
+
+
+def orbit_basis(class_sum, replica, seed):
+    rng = np.random.default_rng(seed)
+    vector = rng.integers(0, 5, size=len(class_sum), dtype=np.uint8)
+    basis = [vector]
+    frontier = [vector]
+    while frontier:
+        new = []
+        for current in frontier:
+            for matrix in (class_sum, replica):
+                image = multiply(matrix, current.reshape(-1, 1))[:, 0]
+                if rank(np.array(basis + [image])) > len(basis):
+                    basis.append(image)
+                    new.append(image)
+        frontier = new
+    return basis
+
+
+def orbit_model(class_sum, replica, basis):
+    """Action matrices of R,T on the cyclic orbit, and their joint blocks."""
+    frame = np.array(basis, dtype=np.uint8).T
+    rows = np.array(pivot_columns(frame.T))
+    square = frame[rows]
+    assert rank(square) == len(basis)
+    inverse_square = inverse(square)
+
+    def action(matrix):
+        images = np.array([multiply(matrix, vector.reshape(-1, 1))[:, 0]
+                           for vector in basis], dtype=np.uint8)
+        result = multiply(inverse_square, images[:, rows].T)
+        assert np.array_equal(multiply(frame, result), images.T)
+        return result
+
+    class_action = action(class_sum)
+    replica_action = action(replica)
+    identity = np.eye(len(basis), dtype=np.uint8)
+    space = [identity]
+    frontier = [identity]
+    while frontier:
+        new = []
+        for left in frontier:
+            for generator in (class_action, replica_action):
+                product = multiply(left, generator)
+                if rank(np.array([x.reshape(-1) for x in space + [product]])) > len(space):
+                    space.append(product)
+                    new.append(product)
+        frontier = new
+
+    identity_int = np.eye(len(basis), dtype=np.int64)
+    joint = {}
+    for value in range(5):
+        power = identity_int.copy()
+        for _ in range(6):
+            power = multiply(power, (class_action.astype(np.int64)
+                                     - value * identity_int) % 5)
+        for sign in (1, 4):
+            dimension = len(basis) - rank(np.vstack(
+                (power, (replica_action.astype(np.int64) - sign * identity_int) % 5)))
+            if dimension:
+                joint[value, sign] = dimension
+    assert sum(joint.values()) == len(basis)
+    return {
+        'class_sum_action': class_action.tolist(),
+        'replica_action': replica_action.tolist(),
+        'generated_algebra_dimension': len(space),
+        'joint_generalized_dimensions': [[value, sign, dimension]
+                                         for (value, sign), dimension in sorted(joint.items())],
+    }
+
+
+def main() -> None:
+    ten_paths, ten_class_sum, ten_replica = operators(10)
+    ten_orbit = len(orbit_basis(ten_class_sum, ten_replica, 1))
+    assert ten_orbit == 6
+    twelve_paths, twelve_class_sum, twelve_replica = operators(12)
+    twelve_basis = orbit_basis(twelve_class_sum, twelve_replica, 1)
+    orbits = {str(seed): len(orbit_basis(twelve_class_sum, twelve_replica, seed))
+              for seed in SEEDS}
+    assert set(orbits.values()) == {8}
+    model = orbit_model(twelve_class_sum, twelve_replica, twelve_basis)
+    assert model['generated_algebra_dimension'] == 8
+    assert model['joint_generalized_dimensions'] == [
+        [0, 1, 1], [0, 4, 1], [1, 1, 1], [1, 4, 1], [4, 1, 2], [4, 4, 2]]
+    receipt = {
+        'passed': True,
+        'prime': 5,
+        'ten_site_control': {'paths': ten_paths, 'orbit_dimension': ten_orbit},
+        'twelve_site': {
+            'paths': twelve_paths,
+            'generic_orbit_dimensions': orbits,
+            'orbit_lower_bound': 8,
+            'full_coefficient_dimension': 10,
+            'remaining_dimensions': 2,
+            'generic_orbit_model': model,
+        },
+        'constructor_sha256': sha256(
+            (ROOT / 'tools/check_bounded_spin_transposition_subalgebra.py').read_bytes()).hexdigest(),
+        'scope': ('The five generic orbits give a lower bound of 8 for the algebra '
+                  'generated by R and T on the twelve-site module. The exact '
+                  'subalgebra dimension, the missing directions, and any cut-rank '
+                  'bound remain open; no score change.'),
+    }
+    OUTPUT.write_text(json.dumps(receipt, indent=2) + '\n')
+    print(json.dumps({'passed': True, 'ten_site': ten_orbit,
+                      'twelve_site': orbits, 'orbit_lower_bound': 8}))
+
+
+if __name__ == '__main__':
+    main()
