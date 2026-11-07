@@ -328,6 +328,10 @@ verify-bounded-spin-diagonal-trace:
 verify-bounded-spin-transposition-subalgebra:
 	python3 tools/check_bounded_spin_transposition_subalgebra.py
 
+.PHONY: verify-bounded-spin-twelve-RT-orbit
+verify-bounded-spin-twelve-RT-orbit:
+	python3 tools/check_bounded_spin_twelve_RT_orbit.py
+
 .PHONY: verify-bounded-spin-twelve-coefficient-dimension
 verify-bounded-spin-twelve-coefficient-dimension:
 	python3 tools/check_bounded_spin_twelve_coefficient_dimension.py
@@ -3138,6 +3142,12 @@ build-core-cutoff-trend:
 .PHONY: verify-f8-low-block-pilots
 verify-f8-low-block-pilots:
 	python3 tools/check_f8_low_block_pilots.py --output /tmp/f8-low-block-pilots.json
+
+.PHONY: verify-f8-swap-pilot build-f8-swap-pilot
+verify-f8-swap-pilot:
+	python3 tools/check_f8_low_block_swap_pilot.py --output /tmp/f8-swap-pilot-check.json
+build-f8-swap-pilot:
+	python3 tools/build_f8_low_block_swap_pilot.py
 
 .PHONY: verify-f8-q94-profile build-f8-q94-profile
 verify-f8-q94-profile:
