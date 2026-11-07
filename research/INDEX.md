@@ -1783,6 +1783,7 @@ The [symbolic profile classification](orthogonal-joint-global-rigidity.md#5-all-
 
 [Every single-mode drop of the q96 F8 map is excluded](f8-single-mode-drop-closure.md): all twelve principal-submap mode drops are valid, and their cutoff-47 known-order lower bounds are all above `1/sqrt(2)`. The best cutoff-47 lower bound is the q94 mode-11 drop at `0.7099289419`; its completed profile is `0.7100458192`, above q96. Deleting q96 letters does not cross; the next low-block search must change the surviving coordinates or ambient structure. No score change.
 
+[A second mode deletion does not rescue the q94 low-block drop](f8-two-mode-drop-screen.md): the eleven two-mode drops containing mode 11 are all valid, and their cutoff-47 known-order lower bounds are above `1/sqrt(2)`. The best pair `(11,10)` is `0.7100574`, above the completed q94 pressure `0.7100458`. The deletion descent does not continue; the low block must be changed, not further reduced. No score change.
 - [A height-39 extension of the height-16 core stays on the plateau](height39-q32-extension.md): the q32 height-16 coherent map plus one-hot words `96,160,192,224` has complete q36 profiles and numerical pressure `0.7121133`, a `1.7e-6` gain and far above `1/sqrt(2)`; high boundary words do not fix the low-core plateau.
 
 ## Core-cutoff pressure trend

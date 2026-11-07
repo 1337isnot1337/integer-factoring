@@ -2300,6 +2300,10 @@ verify-f8-high-image-order-invariance:
 verify-f8-single-mode-drop-census:
 	python3 tools/check_f8_single_mode_drop_census.py --output /tmp/f8-single-mode-drop-census-check.json
 
+.PHONY: verify-f8-two-mode-drop-screen
+verify-f8-two-mode-drop-screen:
+	python3 tools/check_f8_two_mode_drop_screen.py --output /tmp/f8-two-mode-drop-screen-check.json
+
 
 .PHONY: verify-coherent-physical-tail
 verify-coherent-physical-tail:
