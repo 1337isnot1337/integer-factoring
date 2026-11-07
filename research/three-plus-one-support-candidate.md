@@ -38,13 +38,27 @@ R_{3+1}=\frac{a+b}{2}.                                \tag{2}
 This is only a diagnostic of the Smith orders under the unusual cut.  It
 is not a crossing criterion.
 
-## The two-alternative obstruction
+## The cut-interface lemma
 
-The endpoint tensor itself is
+Let all four alphabets have size `q` and let
 
 ```math
 E(x,y,u,v)=[x=v][y=u].                                \tag{3}
 ```
+
+For any bipartition of the four legs, the flattening rank of `E` is `q^2`
+exactly when both matched pairs `(x,v)` and `(y,u)` are split across the
+two sides; otherwise it is `q`.  Indeed, a split pair contributes one free
+diagonal label to the image, while an unsplit pair contributes a free
+label on each side but no additional cross-relation.
+
+Consequently a **one-piece** endpoint seed has rank-sum cost `q` for a
+pair in which neither cut splits both pairs, `q^{3/2}` when exactly one
+cut does, and `q^2` when both do.  Since `q<q^{sqrt(2)}<q^{3/2}<q^2` for
+`q>1`, only the first case is trivially certified by the endpoint.
+This is a necessary interface condition, not a lower bound.
+
+## The two-alternative obstruction
 
 The pairing of the four legs matters.  Under the **two alternative cuts**
 `(x,y,u)|(v)` and `(x)|(y,u,v)`, `E` has rank `q` on both sides: the
