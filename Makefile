@@ -3590,6 +3590,13 @@ verify-repeated-colour-quartic-control:
 
 verify-arithmetic: verify-repeated-colour-quartic-control
 
+.PHONY: verify-three-plus-one-support
+verify-three-plus-one-support:
+	PYTHONPATH=tools python3 tools/check_three_plus_one_support.py --output /tmp/integer-factoring-three-plus-one-support.json
+	python3 tools/check_docs.py
+
+verify-arithmetic: verify-three-plus-one-support
+
 .PHONY: verify-pfaffian-quartic-truncation
 verify-pfaffian-quartic-truncation:
 	python3 tools/check_pfaffian_quartic_truncation.py
