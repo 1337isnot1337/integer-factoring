@@ -13,7 +13,7 @@ import numpy as np
 from check_bounded_spin_transposition_subalgebra import (
     frame, replica_swap, transposition_class_sum, transposition_matrices,
 )
-from native_gf5_flint import multiply, rank
+from native_gf5_flint import inverse, multiply, pivot_columns, rank
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'evidence/bounded-spin-twelve-RT-orbit.json'
@@ -26,7 +26,7 @@ def operators(length):
     return len(paths), transposition_class_sum(matrices), replica_swap(len(paths))
 
 
-def orbit_dimension(class_sum, replica, seed):
+def orbit_basis(class_sum, replica, seed):
     rng = np.random.default_rng(seed)
     vector = rng.integers(0, 5, size=len(class_sum), dtype=np.uint8)
     basis = [vector]
@@ -40,17 +40,74 @@ def orbit_dimension(class_sum, replica, seed):
                     basis.append(image)
                     new.append(image)
         frontier = new
-    return len(basis)
+    return basis
+
+
+def orbit_model(class_sum, replica, basis):
+    """Action matrices of R,T on the cyclic orbit, and their joint blocks."""
+    frame = np.array(basis, dtype=np.uint8).T
+    rows = np.array(pivot_columns(frame.T))
+    square = frame[rows]
+    assert rank(square) == len(basis)
+    inverse_square = inverse(square)
+
+    def action(matrix):
+        images = np.array([multiply(matrix, vector.reshape(-1, 1))[:, 0]
+                           for vector in basis], dtype=np.uint8)
+        result = multiply(inverse_square, images[:, rows].T)
+        assert np.array_equal(multiply(frame, result), images.T)
+        return result
+
+    class_action = action(class_sum)
+    replica_action = action(replica)
+    identity = np.eye(len(basis), dtype=np.uint8)
+    space = [identity]
+    frontier = [identity]
+    while frontier:
+        new = []
+        for left in frontier:
+            for generator in (class_action, replica_action):
+                product = multiply(left, generator)
+                if rank(np.array([x.reshape(-1) for x in space + [product]])) > len(space):
+                    space.append(product)
+                    new.append(product)
+        frontier = new
+
+    identity_int = np.eye(len(basis), dtype=np.int64)
+    joint = {}
+    for value in range(5):
+        power = identity_int.copy()
+        for _ in range(6):
+            power = multiply(power, (class_action.astype(np.int64)
+                                     - value * identity_int) % 5)
+        for sign in (1, 4):
+            dimension = len(basis) - rank(np.vstack(
+                (power, (replica_action.astype(np.int64) - sign * identity_int) % 5)))
+            if dimension:
+                joint[value, sign] = dimension
+    assert sum(joint.values()) == len(basis)
+    return {
+        'class_sum_action': class_action.tolist(),
+        'replica_action': replica_action.tolist(),
+        'generated_algebra_dimension': len(space),
+        'joint_generalized_dimensions': [[value, sign, dimension]
+                                         for (value, sign), dimension in sorted(joint.items())],
+    }
 
 
 def main() -> None:
     ten_paths, ten_class_sum, ten_replica = operators(10)
-    ten_orbit = orbit_dimension(ten_class_sum, ten_replica, 1)
+    ten_orbit = len(orbit_basis(ten_class_sum, ten_replica, 1))
     assert ten_orbit == 6
     twelve_paths, twelve_class_sum, twelve_replica = operators(12)
-    orbits = {str(seed): orbit_dimension(twelve_class_sum, twelve_replica, seed)
+    twelve_basis = orbit_basis(twelve_class_sum, twelve_replica, 1)
+    orbits = {str(seed): len(orbit_basis(twelve_class_sum, twelve_replica, seed))
               for seed in SEEDS}
     assert set(orbits.values()) == {8}
+    model = orbit_model(twelve_class_sum, twelve_replica, twelve_basis)
+    assert model['generated_algebra_dimension'] == 8
+    assert model['joint_generalized_dimensions'] == [
+        [0, 1, 1], [0, 4, 1], [1, 1, 1], [1, 4, 1], [4, 1, 2], [4, 4, 2]]
     receipt = {
         'passed': True,
         'prime': 5,
@@ -61,6 +118,7 @@ def main() -> None:
             'orbit_lower_bound': 8,
             'full_coefficient_dimension': 10,
             'remaining_dimensions': 2,
+            'generic_orbit_model': model,
         },
         'constructor_sha256': sha256(
             (ROOT / 'tools/check_bounded_spin_transposition_subalgebra.py').read_bytes()).hexdigest(),

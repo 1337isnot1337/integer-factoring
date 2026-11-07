@@ -71,8 +71,17 @@ dim <R,T>_{12} >= 8,    dim <R,T>_{10} = 6.
 The full twelve-site coefficient algebra has dimension `10`, so at most
 two further algebra directions can remain. The coarse six-block partition
 is therefore not the full `R,T` algebra: there is at least one additional
-generalized direction. The exact subalgebra dimension, the missing
-directions, and the primary refinement remain open.
+generalized direction. On the orbit, the actions of `R,T` are explicit
+`8 x 8` matrices; the generated matrix algebra has dimension `8`, and its
+six joint generalized blocks have dimensions
+
+```text
+(0,+):1  (0,-):1  (1,+):1  (1,-):1  (4,+):2  (4,-):2.
+```
+
+This is a finite-dimensional model of the `R,T` part only. The exact
+subalgebra dimension, the two missing coefficient directions, and the full
+primary refinement remain open.
 
 ## What is now reduced
 
@@ -80,7 +89,7 @@ The twelve-site primary calculation needs:
 
 1. the ten-dimensional coefficient multiplication table or regular
    representation at length twelve, using the eight-dimensional `R,T`
-   subalgebra as a starting point;
+   orbit model as a starting point;
 2. the central idempotents in that ten-dimensional algebra;
 3. the exact rank of each idempotent, or an exact trace form that
    determines it.
