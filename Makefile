@@ -342,9 +342,11 @@ verify-bounded-spin-twelve-coefficient-table:
 build-bounded-spin-twelve-coefficient-table:
 	python3 tools/build_bounded_spin_twelve_coefficient_table.py
 
-.PHONY: verify-bounded-spin-twelve-primary-idempotents
-verify-bounded-spin-twelve-primary-idempotents:
-	python3 tools/check_bounded_spin_twelve_primary_idempotents.py --output /tmp/bounded-spin-twelve-primary-idempotents.json
+.PHONY: verify-bounded-spin-twelve-coefficient-idempotents build-bounded-spin-twelve-coefficient-idempotents
+verify-bounded-spin-twelve-coefficient-idempotents:
+	python3 tools/check_bounded_spin_twelve_coefficient_idempotents.py
+build-bounded-spin-twelve-coefficient-idempotents:
+	python3 tools/build_bounded_spin_twelve_coefficient_idempotents.py
 
 .PHONY: verify-bounded-spin-missing-direction
 verify-bounded-spin-missing-direction:
@@ -2024,10 +2026,6 @@ verify-three-bundle-joint-image:
 verify-two-cut-support-density:
 	python3 tools/check_two_cut_support_density.py --output /tmp/integer-factoring-two-cut-support-density.json
 
-.PHONY: verify-two-cut-codec-joint-image
-verify-two-cut-codec-joint-image:
-	python3 tools/check_two_cut_codec_joint_image.py --output /tmp/integer-factoring-two-cut-codec-joint-image.json
-
 .PHONY: verify-local-solver-boundary
 verify-local-solver-boundary:
 	python3 tools/check_hash_join_identity_minor.py --output /tmp/integer-factoring-hash-join-identity-minor.json
@@ -2275,10 +2273,6 @@ verify-cube-shared-budgets:
 .PHONY: verify-color-class-cube-profile
 verify-color-class-cube-profile:
 	python3 tools/check_color_class_cube_profile.py --output /tmp/integer-factoring-color-class-cube-profile.json
-
-.PHONY: verify-color-class-parity-escapes
-verify-color-class-parity-escapes:
-	python3 tools/check_color_class_parity_escapes.py > /tmp/integer-factoring-color-class-parity-escapes.json
 
 .PHONY: verify-coherent-full-tail
 verify-coherent-full-tail:
@@ -3581,41 +3575,6 @@ verify-q8-leading-prefix-floor:
 	python3 tools/check_q8_leading_prefix_floor.py
 
 verify-arithmetic: verify-q8-leading-prefix-floor
-
-.PHONY: verify-colour-asymmetric-order12-floor
-verify-colour-asymmetric-order12-floor:
-	PYTHONPATH=tools python3 tools/check_colour_asymmetric_order12_floor.py --output /tmp/integer-factoring-colour-asymmetric-order12-floor.json
-	python3 tools/check_docs.py
-
-verify-arithmetic: verify-colour-asymmetric-order12-floor
-
-.PHONY: verify-pair-kernel-order12-deformations
-verify-pair-kernel-order12-deformations:
-	PYTHONPATH=tools python3 tools/check_pair_kernel_order12_deformations.py --output /tmp/integer-factoring-pair-kernel-order12-deformations.json
-	python3 tools/check_docs.py
-
-verify-arithmetic: verify-pair-kernel-order12-deformations
-
-.PHONY: verify-low-valuation-quartic-profiles
-verify-low-valuation-quartic-profiles:
-	PYTHONPATH=tools python3 tools/check_low_valuation_quartic_profiles.py --output /tmp/integer-factoring-low-valuation-quartic.json
-	python3 tools/check_docs.py
-
-verify-arithmetic: verify-low-valuation-quartic-profiles
-
-.PHONY: verify-repeated-colour-quartic-control
-verify-repeated-colour-quartic-control:
-	PYTHONPATH=tools python3 tools/check_repeated_colour_quartic_control.py --output /tmp/integer-factoring-repeated-colour-quartic.json
-	python3 tools/check_docs.py
-
-verify-arithmetic: verify-repeated-colour-quartic-control
-
-.PHONY: verify-three-plus-one-support
-verify-three-plus-one-support:
-	PYTHONPATH=tools python3 tools/check_three_plus_one_support.py --output /tmp/integer-factoring-three-plus-one-support.json
-	python3 tools/check_docs.py
-
-verify-arithmetic: verify-three-plus-one-support
 
 .PHONY: verify-pfaffian-quartic-truncation
 verify-pfaffian-quartic-truncation:

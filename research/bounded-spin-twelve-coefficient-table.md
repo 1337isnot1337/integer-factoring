@@ -45,13 +45,13 @@ products.
 ## What this does and does not give
 
 This removes the multiplication table from the twelve-site primary
-calculation. The central idempotents, the primary dimensions, the cut
-module ranks, and the rank formula are still open. In particular, the
-table alone does not determine the two-cut rank product or a factoring
-exponent. The complete factoring score remains `1/2`.
+calculation. The primitive central idempotents are now computed in
+[the idempotent note](bounded-spin-twelve-coefficient-idempotents.md):
+the algebra is `F5^6 x dual x dual`, with regular ranks
+`1,1,1,1,1,1,2,2`. The cut-module ranks, the two-cut pairing, and the
+rank formula are still open. In particular, the table alone does not
+determine the two-cut rank product or a factoring exponent. The complete
+factoring score remains `1/2`.
 
-The primitive central idempotents are now computed in
-[the primary-idempotent note](bounded-spin-twelve-primary-idempotents.md):
-the algebra has eight primaries with regular block dimensions
-`1,2,1,1,1,1,1,2`.  Their ranks on the twelve-site cut modules remain
-open.
+The next concrete target is the exact action of these eight idempotents
+on the twelve-site cut modules.
