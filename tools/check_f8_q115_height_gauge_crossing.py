@@ -84,6 +84,27 @@ def main() -> None:
     assert upper['rho'] < CRITICAL
     assert upper['strictly_below_critical_numerically'] is True
     assert known['rho'] <= upper['rho']
+    sensitivity = {}
+    for w11 in (11, 12, 13, 14, 15):
+        weights = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, w11]
+        variant_heights = []
+        for row in embedding:
+            heights = {sum(weights[i] for i in range(12) if int(word) >> i & 1) for word in row}
+            assert len(heights) == 1
+            variant_heights.append(next(iter(heights)))
+        variant_known = fit({'cuts': [{'retained_orders_t': cut} for cut in orders]}, variant_heights)
+        variant_upper = fit({'cuts': [{'retained_orders_t': cut} for cut in augmented]}, variant_heights)
+        assert abs(variant_known['rho'] - saved['sensitivity'][f'W{w11}']['known_rho']) < 1e-14
+        assert abs(variant_upper['rho'] - saved['sensitivity'][f'W{w11}']['upper_rho']) < 1e-14
+        sensitivity[f'W{w11}'] = {
+            'mode11_height': w11,
+            'known_rho': variant_known['rho'],
+            'upper_rho': variant_upper['rho'],
+            'crosses': variant_upper['rho'] < CRITICAL,
+        }
+    assert sensitivity['W11']['crosses'] is True
+    assert sensitivity['W13']['crosses'] is False
+    assert all(not sensitivity[f'W{w}']['crosses'] for w in (12, 14, 15))
 
     receipt = {
         'status': 'PASS',
@@ -102,6 +123,8 @@ def main() -> None:
         'complete_profile_recomputed_this_run': False,
         'uniform_transfer_proved': False,
         'factoring_exponent_improved': False,
+        'height_sensitivity_upper_rho': {k: v['upper_rho'] for k, v in sensitivity.items()},
+        'only_duplicate_height_11_crosses': True,
         'scope': saved['scope'],
     }
     args.output.write_text(json.dumps(receipt, indent=2) + '\n')

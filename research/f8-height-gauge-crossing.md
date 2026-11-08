@@ -61,15 +61,42 @@ protected structure with a different height function. The floor
 theorems do not apply as stated. The q94 deletion and the q96 low-block
 pilots remain above target; the gauge does not delete letters.
 
+## Height sensitivity and the duplicate
+
+The crossing is sensitive to the mode-11 height. Replaying the same
+q115 orders with a different `w11` gives the following tail-augmented
+upper pressures:
+
+| `w11` | weighting | upper `rho` | below target? |
+|---:|---|---:|:---:|
+| 11 | duplicate of mode 5 | `0.7067324703` | yes |
+| 12 | even height | `0.7082128683` | no |
+| 13 | next odd distinct | `0.7091841819` | no |
+| 14 | even height | `0.7098097697` | no |
+| 15 | odd distinct | `0.7102083474` | no |
+
+The q96 map without the nineteen added words has complete pressure
+`0.7064473232` at `w11=11`; it is not low-core maximal. The q115 map
+adds the missing weighted-low words, which raises the pressure to the
+quoted candidate, but makes the low block maximal under `W`.
+
+Only the duplicate `w11=11` crosses. The next odd distinct choice
+`w11=13` is above target. Thus the candidate requires two physical
+letters of height `11` and no letter of height `23`; this is not the
+standard one-letter-per-odd-height height polynomial `Q_H` used in the
+protected-core floor. The floor does not exclude it, but duplicate
+heights must be justified in the physical two-cut map and in the
+uniform transfer. If the transfer excludes repeated heights, this
+candidate is blocked.
+
 ## Open obligations
 
 This is a **numerical candidate crossing of the natural two-cut
 pressure**, not a score. The remaining checks are:
 
-- certify the tail-augmented upper bound beyond the local optimizer grid;
-- resolve the complete q115 profile (the cutoff-47 upper already lies
-  below target, so this is confirmation rather than a necessity for the
-  candidate);
+- establish whether repeated mode heights are admissible; the only crossing has duplicate height 11, while the next odd distinct height 13 fails;
+- resolve the complete q115 profile if the duplicate is accepted (the
+  cutoff-47 upper already lies below target, so this is confirmation);
 - prove that the height assignment `W` is an admissible physical gauge,
   including the duplicate height `11` and the uniform transfer with all
   costs;

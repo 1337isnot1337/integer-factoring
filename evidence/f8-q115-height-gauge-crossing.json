@@ -2545,5 +2545,43 @@
   "upper_below_critical": true,
   "critical_rho": 0.7071067811865475,
   "upper_margin": 0.0003743108905138737,
-  "scope": "Numerical candidate crossing of the natural two-cut pressure for the q115 height-gauge map. The q115 map is exact (LP=I, deletion closure, height homogeneity) and the cutoff-47 orders are exact; the tail-augmented upper rho is numerically below 1/sqrt(2). The fit is not globally certified, the heights have a duplicate 11, the complete profile is not resolved, and the uniform transfer/all costs are not proved. No factoring exponent or score is claimed."
+  "scope": "Numerical candidate crossing of the natural two-cut pressure for the q115 height-gauge map. The q115 map is exact (LP=I, deletion closure, height homogeneity) and the cutoff-47 orders are exact; the tail-augmented upper rho is numerically below 1/sqrt(2). The fit is not globally certified, the heights have a duplicate 11, the complete profile is not resolved, and the uniform transfer/all costs are not proved. No factoring exponent or score is claimed.",
+  "sensitivity": {
+    "W11": {
+      "mode11_height": 11,
+      "known_rho": 0.6999902708909971,
+      "upper_rho": 0.7067324702960336,
+      "crosses": true,
+      "comment": "duplicates mode 5 height 11"
+    },
+    "W12": {
+      "mode11_height": 12,
+      "known_rho": 0.7026215396182081,
+      "upper_rho": 0.7082128683130011,
+      "crosses": false,
+      "comment": "even height, not in the standard odd-height family"
+    },
+    "W13": {
+      "mode11_height": 13,
+      "known_rho": 0.7047131987820412,
+      "upper_rho": 0.7091841819263434,
+      "crosses": false,
+      "comment": "next odd distinct height"
+    },
+    "W14": {
+      "mode11_height": 14,
+      "known_rho": 0.7063193243631511,
+      "upper_rho": 0.7098097696976258,
+      "crosses": false,
+      "comment": "even height"
+    },
+    "W15": {
+      "mode11_height": 15,
+      "known_rho": 0.7074969076994053,
+      "upper_rho": 0.7102083474365208,
+      "crosses": false,
+      "comment": "odd distinct"
+    }
+  },
+  "admissibility_question": "The only crossing in the one-mode height scan is w11=11, which duplicates mode 5 and changes the physical height polynomial from one letter at each odd height to two letters at height 11. The next odd distinct choice w11=13 fails. Duplicate heights must therefore be justified for the physical two-cut map and uniform transfer; if they are excluded, this candidate is blocked."
 }
