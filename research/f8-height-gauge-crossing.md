@@ -44,8 +44,22 @@ unresolved tail order `48` gives an upper bound. The numerical fits are
 < \frac1{\sqrt2}=0.7071067811865475.
 ```
 
-The upper margin is `3.7431e-4`. Thus the complete natural two-cut
-pressure of this q115 map is numerically below the target. For
+The cutoff-47 upper is also certified by exact rational arithmetic for
+the tail-augmented profile. With `rho=706733/1000000`,
+`z=2651072/2651073`, 192-bit interval arithmetic proves
+
+```math
+4A\log Q-B(\log Z_0+\log Z_\infty)>0,
+```
+
+with a positive lower gap of `2.9836e58` in units of `2^-192`; a
+224-bit replay passes, and the nearby bound `rho=706732/1000000` fails.
+Since the unresolved tail orders are at least `48`, replacing them by
+`48` only increases both channel sums, so the exact inequality
+certifies the complete q115 two-cut pressure is below `706733/1000000`.
+The exact margin to `1/sqrt(2)` is `3.7378e-4`. Thus the complete
+natural two-cut pressure of this q115 map is below the target by an
+exact arithmetic certificate, not only by a local numerical fit. For
 comparison, the q96 map at the same weights but without the nineteen
 added words has complete numerical pressure `0.7064473232`; the q115
 map is the maximal low-core version and is the better transfer
@@ -91,12 +105,12 @@ candidate is blocked.
 
 ## Open obligations
 
-This is a **numerical candidate crossing of the natural two-cut
-pressure**, not a score. The remaining checks are:
+This is a certified **two-cut pressure crossing of the natural weighted
+problem**, not a score. The remaining checks are:
 
-- establish whether repeated mode heights are admissible; the only crossing has duplicate height 11, while the next odd distinct height 13 fails;
-- resolve the complete q115 profile if the duplicate is accepted (the
-  cutoff-47 upper already lies below target, so this is confirmation);
+- establish whether repeated mode heights are admissible; the only crossing has duplicate height 11, while the next odd distinct height 13 fails; the exact certificate does not settle this;
+- resolve the complete q115 profile if the duplicate is accepted; the
+  cutoff-47 upper is already exact, so this is confirmation;
 - prove that the height assignment `W` is an admissible physical gauge,
   including the duplicate height `11` and the uniform transfer with all
   costs;
@@ -110,9 +124,12 @@ is not automatic.
 
 ```sh
 make verify-f8-q115-height-gauge-crossing
+make verify-f8-q115-height-gauge-pressure
 ```
 
 The checker rebuilds the q115 map from the q96 receipt, validates
 `LP=I`, deletion closure, the weighted low core, and height homogeneity,
-then replays the saved cutoff-47 orders and both fits. The receipt is
+then replays the saved cutoff-47 orders and both fits. The exact
+pressure certificate is [evidence/f8-q115-height-gauge-pressure.json](../evidence/f8-q115-height-gauge-pressure.json).
+The map receipt is
 [`evidence/f8-q115-height-gauge-crossing.json`](../evidence/f8-q115-height-gauge-crossing.json).

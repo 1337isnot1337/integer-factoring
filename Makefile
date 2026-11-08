@@ -2322,6 +2322,10 @@ verify-f8-two-mode-drop-screen:
 verify-f8-q115-height-gauge-crossing:
 	python3 tools/check_f8_q115_height_gauge_crossing.py --output /tmp/f8-q115-height-gauge-crossing-check.json
 
+.PHONY: verify-f8-q115-height-gauge-pressure
+verify-f8-q115-height-gauge-pressure:
+	python3 tools/certify_f8_q115_height_gauge.py
+
 
 .PHONY: verify-coherent-physical-tail
 verify-coherent-physical-tail:
