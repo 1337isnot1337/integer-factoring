@@ -158,7 +158,13 @@ escapes are:
 The existing rectangular oracle already exposes both pairings as `cut=0`
 and `cut=1`; both still have `AB` channels, so the cross-pairing alone does
 not change the zero-scale count.  A genuine escape needs a `3+1` or `1+3`
-partition whose Smith matrix is rectangular.
+partition whose Smith matrix is rectangular.  The q4/q8
+[cut diagnostic](three-plus-one-support-candidate.md) shows that the
+both-alternative support pair is trivially certified by the endpoint and
+that the mixed support value agrees with the endpoint up to a positive
+finite-scale correction; changing the support leg grouping alone
+therefore does not supply the escape.  A mixed cut would need a new
+transfer that charges its unequal widths.
 
 The next experiment should construct one explicit unequal-channel or
 non-rectangular two-cut profile and evaluate its support value.  A tested
