@@ -1,0 +1,434 @@
+{
+  "status": "pass",
+  "prime": 5,
+  "length": 12,
+  "dimension": 10,
+  "basis_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "table_sha256": "5bc6374218b3fa579b31af4eee12f10d30fb241e7a3d9fc728ab52beba8eb25c",
+  "structure": "F5^6 x F5[e]/(e^2) x F5[e]/(e^2)",
+  "regular_rank_partition": [
+    1,
+    1,
+    2,
+    1,
+    2,
+    1,
+    1,
+    1
+  ],
+  "primitive_central_idempotents": [
+    {
+      "index": 0,
+      "idempotent": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "regular_rank": 1,
+      "block_basis": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0
+        ]
+      ],
+      "trace_form": [
+        [
+          1
+        ]
+      ],
+      "trace_form_rank": 1,
+      "kind": "scalar",
+      "nilpotent": null
+    },
+    {
+      "index": 1,
+      "idempotent": [
+        1,
+        0,
+        2,
+        2,
+        1,
+        2,
+        4,
+        4,
+        3,
+        4
+      ],
+      "regular_rank": 1,
+      "block_basis": [
+        [
+          1,
+          0,
+          2,
+          2,
+          1,
+          2,
+          4,
+          4,
+          3,
+          4
+        ]
+      ],
+      "trace_form": [
+        [
+          1
+        ]
+      ],
+      "trace_form_rank": 1,
+      "kind": "scalar",
+      "nilpotent": null
+    },
+    {
+      "index": 2,
+      "idempotent": [
+        1,
+        4,
+        1,
+        3,
+        0,
+        2,
+        2,
+        3,
+        4,
+        0
+      ],
+      "regular_rank": 2,
+      "block_basis": [
+        [
+          1,
+          4,
+          1,
+          3,
+          0,
+          2,
+          2,
+          3,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          3,
+          1,
+          0
+        ]
+      ],
+      "trace_form": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "trace_form_rank": 1,
+      "kind": "dual",
+      "nilpotent": [
+        1,
+        4,
+        3,
+        2,
+        0,
+        2,
+        2,
+        4,
+        1,
+        0
+      ]
+    },
+    {
+      "index": 3,
+      "idempotent": [
+        2,
+        3,
+        1,
+        4,
+        2,
+        0,
+        0,
+        4,
+        4,
+        2
+      ],
+      "regular_rank": 1,
+      "block_basis": [
+        [
+          2,
+          3,
+          1,
+          4,
+          2,
+          0,
+          0,
+          4,
+          4,
+          2
+        ]
+      ],
+      "trace_form": [
+        [
+          1
+        ]
+      ],
+      "trace_form_rank": 1,
+      "kind": "scalar",
+      "nilpotent": null
+    },
+    {
+      "index": 4,
+      "idempotent": [
+        2,
+        3,
+        1,
+        4,
+        2,
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "regular_rank": 2,
+      "block_basis": [
+        [
+          2,
+          3,
+          1,
+          4,
+          2,
+          0,
+          3,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          0
+        ]
+      ],
+      "trace_form": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "trace_form_rank": 1,
+      "kind": "dual",
+      "nilpotent": [
+        2,
+        3,
+        1,
+        4,
+        2,
+        0,
+        3,
+        1,
+        4,
+        0
+      ]
+    },
+    {
+      "index": 5,
+      "idempotent": [
+        2,
+        3,
+        1,
+        4,
+        2,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      "regular_rank": 1,
+      "block_basis": [
+        [
+          2,
+          3,
+          1,
+          4,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "trace_form": [
+        [
+          1
+        ]
+      ],
+      "trace_form_rank": 1,
+      "kind": "scalar",
+      "nilpotent": null
+    },
+    {
+      "index": 6,
+      "idempotent": [
+        4,
+        1,
+        2,
+        0,
+        4,
+        4,
+        0,
+        0,
+        1,
+        0
+      ],
+      "regular_rank": 1,
+      "block_basis": [
+        [
+          4,
+          1,
+          2,
+          0,
+          4,
+          4,
+          0,
+          0,
+          1,
+          0
+        ]
+      ],
+      "trace_form": [
+        [
+          1
+        ]
+      ],
+      "trace_form_rank": 1,
+      "kind": "scalar",
+      "nilpotent": null
+    },
+    {
+      "index": 7,
+      "idempotent": [
+        4,
+        1,
+        2,
+        3,
+        4,
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "regular_rank": 1,
+      "block_basis": [
+        [
+          4,
+          1,
+          2,
+          3,
+          4,
+          0,
+          1,
+          2,
+          3,
+          4
+        ]
+      ],
+      "trace_form": [
+        [
+          1
+        ]
+      ],
+      "trace_form_rank": 1,
+      "kind": "scalar",
+      "nilpotent": null
+    }
+  ],
+  "trace_form": {
+    "rank": 8,
+    "radical_dimension": 2,
+    "radical_basis": [
+      [
+        1,
+        4,
+        3,
+        2,
+        0,
+        2,
+        2,
+        4,
+        1,
+        0
+      ],
+      [
+        2,
+        3,
+        1,
+        4,
+        2,
+        0,
+        3,
+        1,
+        4,
+        0
+      ]
+    ],
+    "square_zero": true
+  },
+  "checks": {
+    "idempotent_count": 8,
+    "sum_is_unit": true,
+    "pairwise_orthogonal": true,
+    "six_scalar_blocks": true,
+    "two_dual_blocks": true,
+    "regular_rank_sum": 10,
+    "trace_form_rank_plus_radical": 10
+  },
+  "seconds": 0.095,
+  "scope": "Exact primitive central idempotents of the twelve-site coefficient algebra over F5. The algebra is the product of six copies of F5 and two dual-number blocks. Cut-module ranks, the two-cut pairing, and any factoring score change remain open."
+}

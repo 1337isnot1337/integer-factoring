@@ -89,10 +89,12 @@ The twelve-site primary calculation needs:
 
 1. the ten-dimensional coefficient multiplication table or regular
    representation at length twelve, using the eight-dimensional `R,T`
-   orbit model as a starting point;
-2. the central idempotents in that ten-dimensional algebra;
-3. the exact rank of each idempotent, or an exact trace form that
-   determines it.
+   orbit model as a starting point; this is now in
+   [the table note](bounded-spin-twelve-coefficient-table.md);
+2. the central idempotents in that ten-dimensional algebra; these are
+   now in [the idempotent note](bounded-spin-twelve-coefficient-idempotents.md);
+3. the exact rank of each idempotent on the cut modules, or an exact
+   trace form that determines it.
 
 The dimension is no longer an unknown. The ten-site idempotents and
 their seven primary dimensions are not a valid short cut, because the
