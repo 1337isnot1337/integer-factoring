@@ -2304,6 +2304,10 @@ verify-f8-single-mode-drop-census:
 verify-f8-two-mode-drop-screen:
 	python3 tools/check_f8_two_mode_drop_screen.py --output /tmp/f8-two-mode-drop-screen-check.json
 
+.PHONY: verify-f8-q115-height-gauge-crossing
+verify-f8-q115-height-gauge-crossing:
+	python3 tools/check_f8_q115_height_gauge_crossing.py --output /tmp/f8-q115-height-gauge-crossing-check.json
+
 
 .PHONY: verify-coherent-physical-tail
 verify-coherent-physical-tail:
