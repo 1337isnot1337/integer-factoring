@@ -1,4 +1,4 @@
-# A height-gauge q115 map numerically crosses the two-cut target
+# A q115 height regrading has weighted pressure below target but is not a physical gauge
 
 ## Question
 
@@ -77,6 +77,31 @@ pilots remain above target; the gauge does not delete letters.
 
 ## Height sensitivity and the duplicate
 
+## Physical deletion-edge obstruction
+
+The weighting `W` is not an inherited physical height. In a coherent
+physical map, every induced deletion edge `(a,j,k)` satisfies
+`h_j-h_k=2a+1`; see equation (2) of
+[the shared letter-gauge theorem](coherent-shared-letter-gauges.md). For
+the q115 map, deleting mode `11` from word `2048` reaches the vacuum.
+The `W` height difference is `11`, whereas the natural physical edge
+difference is `23=2*11+1`. Thus `W` relabels the label heights without
+changing the physical deletion operator; the q115 map is a weighted
+word map, not a coherent physical map with inherited heights. The
+standard-height validation and `LP=I` do not repair this: they verify
+the word map, not the physical edge grading.
+
+The duplicate height `11` is a symptom of this mismatch, not the only
+problem. The next odd distinct choice `w11=13` also fails the edge
+relation, and `w11=23` is the only inherited physical height for that
+mode, which returns the standard q96 pressure `0.7100058347`. The exact
+certificate above is therefore a finite statement about the weighted
+combinatorial profile; it does not give a physical two-cut pressure or
+a transfer. A legal variation must use the shared letter gauge
+`theta_j` (which preserves the natural `h_j` and the edge relation and
+pays the physical type cost `8 sum p_j f_j`), not a mode-height
+regrading.
+
 The crossing is sensitive to the mode-11 height. Replaying the same
 q115 orders with a different `w11` gives the following tail-augmented
 upper pressures:
@@ -105,8 +130,8 @@ candidate is blocked.
 
 ## Open obligations
 
-This is a certified **two-cut pressure crossing of the natural weighted
-problem**, not a score. The remaining checks are:
+This is a certified **weighted-word two-cut pressure crossing**, not a
+physical gauge and not a score. The remaining checks are:
 
 - establish whether repeated mode heights are admissible; the only crossing has duplicate height 11, while the next odd distinct height 13 fails; the exact certificate does not settle this;
 - resolve the complete q115 profile if the duplicate is accepted; the
