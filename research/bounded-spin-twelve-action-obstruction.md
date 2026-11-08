@@ -3,11 +3,16 @@
 ## Scope
 
 The twelve-site coefficient algebra has dimension `10`
-([proof](bounded-spin-twelve-coefficient-dimension.md)), while the generic
-`R,T` orbit has dimension `8` with an explicit `8 x 8` orbit model. The two
-missing directions are not identified. This note records a computational
-obstruction to resolving them by the existing word-pair expansion. It is a
-negative diagnostic, not a no-go theorem and not a bound.
+([proof](bounded-spin-twelve-coefficient-dimension.md)), and the exact
+ten-dimensional multiplication table and primary decomposition are now
+available ([table](bounded-spin-twelve-coefficient-table.md),
+[idempotents](bounded-spin-twelve-coefficient-idempotents.md)). The generic
+`R,T` orbit has dimension `8` with an explicit `8 x 8` orbit model; the
+exact identification of the `R,T` subalgebra inside the ten-dimensional
+algebra remains open. This note records a computational obstruction to
+computing the **action of the coefficient directions and idempotents on the
+cut modules** by the existing word-pair expansion. It is a negative
+diagnostic, not a no-go theorem and not a bound.
 
 ## Exact finite data
 
@@ -34,20 +39,20 @@ is why the same construction is routine there.
 ## What this rules out
 
 - The full word-pair tensor, and the naive action obtained from it, is not a
-  practical route to the two missing twelve-site directions on this machine.
-- Trace forms do not distinguish the missing directions: the tested
+  practical route to the twelve-site cut-module action on this machine.
+- Trace forms do not distinguish the coefficient directions: the tested
   coefficient sets all have trace-form rank `6`, and indices `8,9` span only
   a rank-`2` trace image. Trace quotients cannot replace the action.
 
 ## What is still open
 
-- Identify the two coefficient directions outside the eight-dimensional
-  `R,T` orbit model.
-- Compute the full ten-dimensional multiplication table, or an equivalent
-  quotient, and its primary decomposition. A transfer-matrix or matrix-
-  product-operator contraction of the local six-vertex model is the natural
-  replacement for the word-pair expansion. A quotient that does not expand
-  all `924^2` word pairs would also suffice.
+- The exact row and column ranks of the eight primitive central idempotents
+  on the `89^2=7921`-state cut modules, and their two-cut pairing.
+- The exact identification of the `R,T` subalgebra inside the ten-dimensional
+  coefficient algebra, and of the eight-dimensional orbit model as a quotient.
+- A transfer-matrix or matrix-product-operator contraction of the local
+  six-vertex model is the natural replacement for the word-pair expansion.
+  A quotient that does not expand all `924^2` word pairs would also suffice.
 - The complete factoring bound is unchanged; no crossing or rank partition
   is claimed here.
 
@@ -56,4 +61,7 @@ is why the same construction is routine there.
 The timing diagnostic is the `/tmp/apply12.py` prototype used during the
 campaign; it is not a repository checker. The established numbers are in
 `evidence/bounded-spin-twelve-RT-orbit.json` and the companion
-[note](bounded-spin-twelve-coefficient-dimension.md).
+[note](bounded-spin-twelve-coefficient-dimension.md). The peer table and
+idempotent certificates are reproducible with
+`make verify-bounded-spin-twelve-coefficient-table` and
+`make verify-bounded-spin-twelve-coefficient-idempotents`.
