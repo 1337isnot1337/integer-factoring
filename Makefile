@@ -342,6 +342,10 @@ verify-bounded-spin-twelve-coefficient-table:
 build-bounded-spin-twelve-coefficient-table:
 	python3 tools/build_bounded_spin_twelve_coefficient_table.py
 
+.PHONY: verify-bounded-spin-twelve-primary-idempotents
+verify-bounded-spin-twelve-primary-idempotents:
+	python3 tools/check_bounded_spin_twelve_primary_idempotents.py --output /tmp/bounded-spin-twelve-primary-idempotents.json
+
 .PHONY: verify-bounded-spin-missing-direction
 verify-bounded-spin-missing-direction:
 	python3 tools/check_bounded_spin_missing_direction.py
