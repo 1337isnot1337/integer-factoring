@@ -2545,7 +2545,7 @@
   "upper_below_critical": true,
   "critical_rho": 0.7071067811865475,
   "upper_margin": 0.0003743108905138737,
-  "scope": "Numerical candidate crossing of the natural two-cut pressure for the q115 height-gauge map. The q115 map is exact (LP=I, deletion closure, height homogeneity) and the cutoff-47 orders are exact; the tail-augmented upper rho is numerically below 1/sqrt(2). The fit is not globally certified, the heights have a duplicate 11, the complete profile is not resolved, and the uniform transfer/all costs are not proved. No factoring exponent or score is claimed.",
+  "scope": "q115 map from the q96 F8 profile plus the 19 W-low words. The weighted W11 cutoff-47 upper is exactly below target, but W is not an inherited physical height: the mode-11 deletion edge has natural difference 23, not 11. The same map with natural heights has a truncated lower bound above 1/sqrt(2), so the physical q115 map cannot cross. No transfer or score is claimed.",
   "sensitivity": {
     "W11": {
       "mode11_height": 11,
@@ -2583,5 +2583,11 @@
       "comment": "odd distinct"
     }
   },
-  "admissibility_question": "The only crossing in the one-mode height scan is w11=11, which duplicates mode 5 and changes the physical height polynomial from one letter at each odd height to two letters at height 11. The next odd distinct choice w11=13 fails. Duplicate heights must therefore be justified for the physical two-cut map and uniform transfer; if they are excluded, this candidate is blocked."
+  "admissibility_question": "The only crossing in the one-mode height scan is w11=11, which duplicates mode 5 and changes the physical height polynomial from one letter at each odd height to two letters at height 11. The next odd distinct choice w11=13 fails. Duplicate heights must therefore be justified for the physical two-cut map and uniform transfer; if they are excluded, this candidate is blocked.",
+  "standard_grading": {
+    "known_rho": 0.7098280632435985,
+    "upper_rho": 0.7108892131290154,
+    "truncated_lower_exceeds_critical": true,
+    "scope": "With the inherited natural heights, the same q115 map has a cutoff-47 truncated lower bound above 1/sqrt(2). The truncated-profile lemma then excludes the complete physical q115 pressure from crossing; no full profile is needed."
+  }
 }

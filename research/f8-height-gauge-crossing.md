@@ -102,6 +102,15 @@ a transfer. A legal variation must use the shared letter gauge
 pays the physical type cost `8 sum p_j f_j`), not a mode-height
 regrading.
 
+The same q115 map with the inherited natural heights also fails. Its
+cutoff-47 retained orders give a truncated lower bound
+`0.7098280632 > 1/sqrt(2)`. Since the profile is truncated, this is a
+lower bound on the complete pressure; the [truncated-profile
+lemma](truncated-profile-lower-bound.md) then excludes the physical
+q115 map from crossing. Thus the q115 lane is closed in both gradings:
+the natural-height map cannot cross, and the `W` crossing is not a
+physical gauge.
+
 The crossing is sensitive to the mode-11 height. Replaying the same
 q115 orders with a different `w11` gives the following tail-augmented
 upper pressures:

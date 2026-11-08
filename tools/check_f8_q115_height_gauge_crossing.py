@@ -84,6 +84,12 @@ def main() -> None:
     assert upper['rho'] < CRITICAL
     assert upper['strictly_below_critical_numerically'] is True
     assert known['rho'] <= upper['rho']
+    standard_known = fit({'cuts': [{'retained_orders_t': cut} for cut in orders]}, standard_heights)
+    standard_upper = fit({'cuts': [{'retained_orders_t': cut} for cut in augmented]}, standard_heights)
+    assert abs(standard_known['rho'] - saved['standard_grading']['known_rho']) < 1e-14
+    assert abs(standard_upper['rho'] - saved['standard_grading']['upper_rho']) < 1e-14
+    assert standard_known['rho'] > CRITICAL
+    assert saved['standard_grading']['truncated_lower_exceeds_critical'] is True
     sensitivity = {}
     for w11 in (11, 12, 13, 14, 15):
         weights = [1, 3, 5, 7, 9, 11, 13, 15, 17, 19, 21, w11]
@@ -125,6 +131,8 @@ def main() -> None:
         'factoring_exponent_improved': False,
         'height_sensitivity_upper_rho': {k: v['upper_rho'] for k, v in sensitivity.items()},
         'only_duplicate_height_11_crosses': True,
+        'standard_height_truncated_lower_rho': standard_known['rho'],
+        'standard_height_truncated_lower_exceeds_critical': True,
         'scope': saved['scope'],
     }
     args.output.write_text(json.dumps(receipt, indent=2) + '\n')
