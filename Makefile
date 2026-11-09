@@ -346,6 +346,10 @@ build-bounded-spin-twelve-coefficient-table:
 verify-bounded-spin-missing-direction:
 	python3 tools/check_bounded_spin_missing_direction.py
 
+.PHONY: verify-bounded-spin-twelve-missing-direction
+verify-bounded-spin-twelve-missing-direction:
+	python3 tools/check_bounded_spin_twelve_missing_direction.py
+
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py

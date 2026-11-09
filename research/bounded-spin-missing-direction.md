@@ -58,6 +58,16 @@ split the twelve-site `R,T`-coarse blocks, is open. This note does not
 construct the twelve-site model, prove a rank bound, or change the
 factoring exponent; the complete bound remains `1/2`.
 
+## Update: the twelve-site analogue
+
+The twelve-site case is now checked in
+[the separator-direction note](bounded-spin-twelve-missing-direction.md).
+The ten-site completing basis direction `b_4` alone gives dimension `7`
+there, but the ten-site separator sum `b_2+b_4` completes the
+ten-dimensional twelve-site coefficient algebra.  The roles of the
+completing direction and the separator therefore reverse; the exact
+twelve-site primary decomposition and cut ranks remain open.
+
 ## Reproduction
 
 ```sh

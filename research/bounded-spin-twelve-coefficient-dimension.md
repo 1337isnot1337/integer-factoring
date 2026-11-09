@@ -83,6 +83,15 @@ This is a finite-dimensional model of the `R,T` part only. The exact
 subalgebra dimension, the two missing coefficient directions, and the full
 primary refinement remain open.
 
+**Update.** The coefficient-algebra image is now exact: `R` is the table
+unit `C_0` and the class sum `T` generates a five-dimensional subalgebra,
+so `dim <R,T> = 5` in the regular representation. The orbit dimension `8`
+above is a statement about the action on the `7921`-state module, not about
+the coefficient algebra. The ten-site completing basis direction `b_4`
+only reaches `7` at twelve sites, while the ten-site separator sum
+`b_2+b_4` completes the algebra. See
+[the separator-direction note](bounded-spin-twelve-missing-direction.md).
+
 ## What is now reduced
 
 The twelve-site primary calculation needs:

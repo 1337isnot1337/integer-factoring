@@ -1,0 +1,208 @@
+{
+  "passed": true,
+  "length": 12,
+  "prime": 5,
+  "basis_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "ten_site_control": {
+    "witness_count": 8,
+    "replica_coordinates": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "class_sum_coordinates": [
+      0,
+      2,
+      0,
+      1,
+      0,
+      2,
+      2,
+      0
+    ],
+    "matches_published_ten_site": true,
+    "generated_dimension": 6,
+    "b4_generated_dimension": 8,
+    "b2_b4_sum_generated_dimension": 7,
+    "b2_b4_pair_generated_dimension": 8
+  },
+  "entry_witness_count": 10,
+  "unit_coordinates_control": true,
+  "replica_coordinates": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "class_sum_coordinates": [
+    3,
+    3,
+    1,
+    2,
+    1,
+    3,
+    3,
+    1,
+    2,
+    1
+  ],
+  "generated_dimension": 5,
+  "single_direction_scan": [
+    {
+      "coordinate_index": 0,
+      "polynomial_coefficient": 0,
+      "generated_dimension": 5
+    },
+    {
+      "coordinate_index": 1,
+      "polynomial_coefficient": 2,
+      "generated_dimension": 7
+    },
+    {
+      "coordinate_index": 2,
+      "polynomial_coefficient": 3,
+      "generated_dimension": 7
+    },
+    {
+      "coordinate_index": 3,
+      "polynomial_coefficient": 4,
+      "generated_dimension": 6
+    },
+    {
+      "coordinate_index": 4,
+      "polynomial_coefficient": 5,
+      "generated_dimension": 7
+    },
+    {
+      "coordinate_index": 5,
+      "polynomial_coefficient": 6,
+      "generated_dimension": 8
+    },
+    {
+      "coordinate_index": 6,
+      "polynomial_coefficient": 7,
+      "generated_dimension": 8
+    },
+    {
+      "coordinate_index": 7,
+      "polynomial_coefficient": 8,
+      "generated_dimension": 7
+    },
+    {
+      "coordinate_index": 8,
+      "polynomial_coefficient": 9,
+      "generated_dimension": 6
+    },
+    {
+      "coordinate_index": 9,
+      "polynomial_coefficient": 10,
+      "generated_dimension": 6
+    }
+  ],
+  "completing_coordinate_indices": [],
+  "completing_polynomial_coefficients": [],
+  "ten_site_analogue": {
+    "coordinate_index": 4,
+    "polynomial_coefficient": 5,
+    "generated_dimension": 7
+  },
+  "ten_site_analogue_completes": false,
+  "completing_pairs": [
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      2,
+      5
+    ]
+  ],
+  "completing_sums": [
+    [
+      1,
+      5
+    ],
+    [
+      2,
+      4
+    ]
+  ],
+  "separator_coordinates": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "separator_polynomial_coefficients": [
+    3,
+    5
+  ],
+  "separator_generated_dimension": 10,
+  "completing_sum_polynomial_coefficients": [
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      5
+    ]
+  ],
+  "completing_pair_polynomial_coefficients": [
+    [
+      2,
+      6
+    ],
+    [
+      3,
+      5
+    ],
+    [
+      3,
+      6
+    ]
+  ],
+  "table_sha256": "5bc6374218b3fa579b31af4eee12f10d30fb241e7a3d9fc728ab52beba8eb25c",
+  "dimension_receipt_sha256": "dfc4f12fa69643aa13b58becd3afca97ecb1260a24cb78eda15814fd9deaa91d",
+  "ten_site_model_sha256": "d90022bd8760fa64c850344136d63375497b4c004da2a7e3f7f86406a479de43",
+  "source_sha256": {
+    "bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
+    "bounded_spin_six_vertex.py": "fba0658d6ad3dd1b308f61420ca6e3d17533a8e2eace2f66dbe5a9e5bbe907f8",
+    "check_bounded_spin_transposition_subalgebra.py": "af54b26f269bf6b241a52883356c7360f99dfc77367f8d9293bfc40345243524",
+    "build_bounded_spin_twelve_coefficient_table.py": "ea879f8edf4344dc7127e4b0657b00f8e66c6033e9082e361019f633e008df49"
+  },
+  "scope": "A twelve-site structural diagnostic: exact R,T coordinates in the published ten-dimensional coefficient table, the exact generated dimension, a single basis-direction scan, and a linear-combination scan of the ten-site separator direction. No primary decomposition, idempotent rank, cut-rank bound, or score change is claimed.",
+  "elapsed_seconds": 0.8903808277100325
+}
