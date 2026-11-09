@@ -84,11 +84,15 @@ ten-dimensional coefficient algebra; no two-dimensional complement is
 needed.  This removes the algebra-generation part of the twelve-site
 primary calculation.
 
-It does **not** determine the primitive central idempotents, the exact
-twelve-site primary dimensions, the cut-module ranks, a two-cut rank
-product, or the factoring exponent.  It also does not prove that the
-same word separates the twelve-site coarse blocks; that remains with the
-twelve-site primary calculation.  The complete bound is still `1/2`.
+It does **not** by itself determine the idempotent cut-module ranks, the
+two-cut pairing, or the factoring exponent.  The primitive central
+idempotents are now computed in
+[the idempotent note](bounded-spin-twelve-coefficient-idempotents.md):
+the algebra is `F5^6` times two dual-number blocks, with eight primitive
+central idempotents of regular ranks `1,1,1,1,1,1,2,2`.  What remains is
+to act with the idempotents on the twelve-site cut modules and to compare
+the separator direction with the coarse-block characters.  The complete
+bound is still `1/2`.
 
 ## Reproduction
 

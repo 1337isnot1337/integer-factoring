@@ -65,8 +65,10 @@ The twelve-site case is now checked in
 The ten-site completing basis direction `b_4` alone gives dimension `7`
 there, but the ten-site separator sum `b_2+b_4` completes the
 ten-dimensional twelve-site coefficient algebra.  The roles of the
-completing direction and the separator therefore reverse; the exact
-twelve-site primary decomposition and cut ranks remain open.
+completing direction and the separator therefore reverse.  The primitive
+central idempotents are now computed in
+[the idempotent note](bounded-spin-twelve-coefficient-idempotents.md);
+their exact cut-module ranks and the separator's block action remain open.
 
 ## Reproduction
 
