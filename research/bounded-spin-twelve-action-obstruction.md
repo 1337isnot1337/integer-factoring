@@ -43,6 +43,10 @@ is why the same construction is routine there.
 - Trace forms do not distinguish the coefficient directions: the tested
   coefficient sets all have trace-form rank `6`, and indices `8,9` span only
   a rank-`2` trace image. Trace quotients cannot replace the action.
+- A naive large-prime lift cannot turn the `F5` traces into exact ranks:
+  the ten-site table is commutative and unital at `p=5` but noncommutative
+  at `p=7,11,10007` with full-rank witnesses; see
+  [the lift obstruction](bounded-spin-characteristic-five-lift-obstruction.md).
 
 ## What is still open
 
