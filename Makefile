@@ -3621,3 +3621,7 @@ verify-two-primary-order-saturation:
 	python3 tools/check_two_primary_order_saturation.py --output /tmp/integer-factoring-two-primary-order-saturation.json
 
 verify-arithmetic: verify-mixed-pair-gap-cycle verify-two-primary-order-saturation
+
+.PHONY: verify-full-conservation-piece-count
+verify-full-conservation-piece-count:
+	python3 tools/check_full_conservation_piece_count.py --output /tmp/integer-factoring-full-conservation-piece-count.json

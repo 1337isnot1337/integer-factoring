@@ -33,6 +33,11 @@ bound on arbitrary crossing tensors or factoring algorithms. The existing
 half-rate construction has a broader operator structure, and its proved
 factoring exponent remains `1/2`.
 
+Over an odd alphabet the Boolean degree filtration used below is not
+available. The separate [odd-alphabet reduction](full-conservation-two-piece-reduction.md)
+proves only the per-piece floor `sqrt(rc)>=q` and reduces q=13 to a
+two-piece search; it is not an odd-alphabet analogue of (2).
+
 ## 1. Convolution ranks and Boolean degree
 
 For `f:G→F`, write `C_f(a,b)=f(a+b)`. Permuting the rows and columns
