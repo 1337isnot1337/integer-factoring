@@ -23,6 +23,7 @@ from native_gf5_flint import rank
 ROOT = Path(__file__).resolve().parents[1]
 TABLE = ROOT / 'evidence/bounded-spin-twelve-coefficient-table.json'
 DIMENSION = ROOT / 'evidence/bounded-spin-twelve-coefficient-dimension.json'
+IDEMPOTENTS = ROOT / 'evidence/bounded-spin-twelve-coefficient-idempotents.json'
 TEN_MODEL = ROOT / 'evidence/bounded-spin-ten-algebra-model.json'
 OUTPUT = ROOT / 'evidence/bounded-spin-twelve-missing-direction.json'
 TEN_BASIS = [0, 2, 3, 4, 5, 6, 7, 10]
@@ -63,6 +64,27 @@ def generated_algebra(unit, regular, generators):
                         new.append(candidate)
         frontier = new
     return np.array(space, dtype=np.uint8)
+
+
+def coordinate_product(left_vector, right_vector, regular):
+    return (np.tensordot(left_vector, regular, axes=(0, 0)) @ right_vector) % PRIME
+
+
+def trace_weights(table):
+    return np.array([sum(int(table[a][b][b]) for b in range(len(table))) % PRIME
+                     for a in range(len(table))], dtype=np.uint8)
+
+
+def trace_left(element, weights):
+    return int(element @ weights % PRIME)
+
+
+def block_character(element, idempotent, weights, regular):
+    product = coordinate_product(element, idempotent, regular)
+    numerator = trace_left(product, weights)
+    denominator = trace_left(idempotent, weights)
+    assert denominator % PRIME
+    return numerator * pow(denominator, -1, PRIME) % PRIME
 
 
 def ten_site_control():
@@ -122,6 +144,7 @@ def main() -> None:
     basis_indices = saved['basis_indices']
     entry_matrix = saved['entry_matrix']
     unit = saved['unit']
+    table = np.array(saved['table'], dtype=np.uint8)
     regular = np.array(saved['regular'], dtype=np.uint8)
     ten_control = ten_site_control()
 
@@ -146,6 +169,36 @@ def main() -> None:
     assert solve_mod(entry_matrix, unit_rhs) == unit
     replica_coordinates = np.array(solve_mod(entry_matrix, replica_rhs), dtype=np.uint8)
     class_coordinates = np.array(solve_mod(entry_matrix, class_rhs), dtype=np.uint8)
+
+    idempotent_saved = json.loads(IDEMPOTENTS.read_text())
+    weights = trace_weights(table)
+    separator = np.zeros(10, dtype=np.uint8); separator[2] = 1; separator[4] = 1
+    primitive_values = []
+    for item in idempotent_saved['primitive_central_idempotents']:
+        idempotent = np.array(item['idempotent'], dtype=np.uint8)
+        assert trace_left(idempotent, weights) == item['regular_rank']
+        values = {
+            'index': item['index'],
+            'kind': item['kind'],
+            'regular_rank': item['regular_rank'],
+            'class_sum': int(block_character(class_coordinates, idempotent, weights, regular)),
+            'separator': int(block_character(separator, idempotent, weights, regular)),
+            'replica': int(block_character(replica_coordinates, idempotent, weights, regular)),
+        }
+        primitive_values.append(values)
+    assert [item['class_sum'] for item in primitive_values] == [0, 2, 3, 3, 0, 0, 1, 3]
+    assert [item['separator'] for item in primitive_values] == [2, 0, 2, 3, 0, 3, 4, 1]
+    assert all(item['replica'] == 1 for item in primitive_values)
+    joint_pairs = [(item['class_sum'], item['separator']) for item in primitive_values]
+    assert len(set(joint_pairs)) == 8
+    character_separation = {
+        'primitive_count': len(primitive_values),
+        'joint_pairs': joint_pairs,
+        'joint_pairs_distinct': True,
+        'class_sum_distinct_values': len({item['class_sum'] for item in primitive_values}),
+        'separator_distinct_values': len({item['separator'] for item in primitive_values}),
+        'replica_is_unit': True,
+    }
 
     subalgebra = generated_algebra(unit, regular, [class_coordinates, replica_coordinates])
     exact_dimension = len(subalgebra)
@@ -175,7 +228,6 @@ def main() -> None:
                                                    (first + second) % PRIME]))
             if sum_dimension == 10:
                 sums.append([i, j])
-    separator = np.zeros(10, dtype=np.uint8); separator[2] = 1; separator[4] = 1
     separator_dimension = len(generated_algebra(unit, regular,
                                                 [class_coordinates, replica_coordinates,
                                                  separator]))
@@ -189,6 +241,8 @@ def main() -> None:
         'ten_site_control': ten_control,
         'entry_witness_count': len(witness),
         'unit_coordinates_control': True,
+        'primitive_character_values': primitive_values,
+        'joint_character_separation': character_separation,
         'replica_coordinates': replica_coordinates.tolist(),
         'class_sum_coordinates': class_coordinates.tolist(),
         'generated_dimension': exact_dimension,
@@ -209,6 +263,7 @@ def main() -> None:
         'table_sha256': sha256(TABLE.read_bytes()).hexdigest(),
         'dimension_receipt_sha256': sha256(DIMENSION.read_bytes()).hexdigest(),
         'ten_site_model_sha256': sha256(TEN_MODEL.read_bytes()).hexdigest(),
+        'idempotent_receipt_sha256': sha256(IDEMPOTENTS.read_bytes()).hexdigest(),
         'source_sha256': {name: sha256((ROOT / 'tools' / name).read_bytes()).hexdigest()
                           for name in ('bounded_spin_crossing.py',
                                        'bounded_spin_six_vertex.py',
@@ -217,8 +272,9 @@ def main() -> None:
         'scope': ('A twelve-site structural diagnostic: exact R,T coordinates in the '
                   'published ten-dimensional coefficient table, the exact generated '
                   'dimension, a single basis-direction scan, and a linear-combination '
-                  'scan of the ten-site separator direction. No primary decomposition, '
-                  'idempotent rank, cut-rank bound, or score change is claimed.'),
+                  'scan of the ten-site separator direction, and the joint T/separator '
+                  'character values on the eight primitive central idempotents. No '
+                  'cut-rank bound or score change is claimed.'),
         'elapsed_seconds': time.monotonic() - started,
     }
     OUTPUT.write_text(json.dumps(receipt, indent=2) + '\n')
@@ -228,6 +284,7 @@ def main() -> None:
                       'completing_indices': receipt['completing_coordinate_indices'],
                       'completing_sums': receipt['completing_sums'],
                       'completing_pairs': receipt['completing_pairs'],
+                      'joint_character_separation': character_separation['joint_pairs_distinct'],
                       'replica': replica_coordinates.tolist(),
                       'class_sum': class_coordinates.tolist(),
                       'seconds': receipt['elapsed_seconds']}))

@@ -75,6 +75,32 @@ generic module vector under `R,T`; the latter was bounded below by `8` in
 representations need not have the same dimension because `R` collapses
 to the algebra unit here.
 
+## Character values on the primitive central idempotents
+
+Using the trace-left form from the exact table and the eight primitive
+central idempotents from
+[the idempotent certificate](../evidence/bounded-spin-twelve-coefficient-idempotents.json),
+the scalar character values of `T` and the separator `S=b_2+b_4` are
+
+```text
+index  rank  kind   T  S
+   0     1   scalar 0  2
+   1     1   scalar 2  0
+   2     2   dual   3  2
+   3     1   scalar 3  3
+   4     2   dual   0  0
+   5     1   scalar 0  3
+   6     1   scalar 1  4
+   7     1   scalar 3  1
+```
+
+The pair `(T,S)` takes eight distinct values.  Thus the two generators
+separate all eight primitive central blocks, even though `T` alone has
+only four distinct scalar values and `S` alone has five.  The replica
+swap is the algebra unit and has value `1` on every block, as expected.
+This is a statement about the coefficient algebra's characters; it does
+not compute the action of the idempotents on the twelve-site cut modules.
+
 ## Consequence for the twelve-site primary target
 
 The missing algebra direction at twelve sites is now a **single explicit
