@@ -98,21 +98,30 @@ the scalar character values of `T` and the separator `S=b_2+b_4` are
 ```text
 index  rank  kind   T  S
    0     1   scalar 0  2
-   1     1   scalar 2  0
-   2     2   dual   3  2
-   3     1   scalar 3  3
-   4     2   dual   0  0
-   5     1   scalar 0  3
-   6     1   scalar 1  4
-   7     1   scalar 3  1
+   1     1   scalar 1  0
+   2     2   dual   1  2
+   3     1   scalar 4  3
+   4     2   dual   4  0
+   5     1   scalar 1  3
+   6     1   scalar 0  4
+   7     1   scalar 1  1
 ```
 
 The pair `(T,S)` takes eight distinct values.  Thus the two generators
 separate all eight primitive central blocks, even though `T` alone has
-only four distinct scalar values and `S` alone has five.  The replica
+only three distinct values (`0,1,4`, matching the parallel `R,T` note)
+and `S` alone has five.  The replica
 swap is the algebra unit and has value `1` on every block, as expected.
 This is a statement about the coefficient algebra's characters; it does
 not compute the action of the idempotents on the twelve-site cut modules.
+
+An earlier revision of this note evaluated the block products in `uint8`;
+the second matrix product overflowed and produced incorrect `T` values.
+The checker now promotes every table product to `int64` and reduces modulo
+five after each contraction, and its `T` values agree block-by-block with
+the independent parallel computation in
+[the `R,T` coefficient note](bounded-spin-twelve-RT-coefficient.md).
+The separator values and the joint separation are unchanged.
 
 ## Consequence for the twelve-site primary target
 

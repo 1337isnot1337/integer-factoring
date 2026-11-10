@@ -45,11 +45,15 @@ def original_form(four_paths):
 
 
 def generated_algebra(unit, regular, generators):
+    regular = np.asarray(regular, dtype=np.int64)
+    unit = np.asarray(unit, dtype=np.int64)
+
     def left(vector):
-        return (np.tensordot(vector, regular, axes=(0, 0)) % PRIME).astype(np.uint8)
+        return np.tensordot(np.asarray(vector, dtype=np.int64), regular,
+                            axes=(0, 0)) % PRIME
 
     def product(left_vector, right_vector):
-        return (left(left_vector) @ right_vector) % PRIME
+        return left(left_vector) @ np.asarray(right_vector, dtype=np.int64) % PRIME
 
     space = [unit]
     frontier = [unit]
@@ -67,16 +71,18 @@ def generated_algebra(unit, regular, generators):
 
 
 def coordinate_product(left_vector, right_vector, regular):
-    return (np.tensordot(left_vector, regular, axes=(0, 0)) @ right_vector) % PRIME
+    left = np.tensordot(np.asarray(left_vector, dtype=np.int64),
+                        np.asarray(regular, dtype=np.int64), axes=(0, 0)) % PRIME
+    return left @ np.asarray(right_vector, dtype=np.int64) % PRIME
 
 
 def trace_weights(table):
     return np.array([sum(int(table[a][b][b]) for b in range(len(table))) % PRIME
-                     for a in range(len(table))], dtype=np.uint8)
+                     for a in range(len(table))], dtype=np.int64)
 
 
 def trace_left(element, weights):
-    return int(element @ weights % PRIME)
+    return int(np.asarray(element, dtype=np.int64) @ weights % PRIME)
 
 
 def block_character(element, idempotent, weights, regular):
@@ -186,7 +192,7 @@ def main() -> None:
             'replica': int(block_character(replica_coordinates, idempotent, weights, regular)),
         }
         primitive_values.append(values)
-    assert [item['class_sum'] for item in primitive_values] == [0, 2, 3, 3, 0, 0, 1, 3]
+    assert [item['class_sum'] for item in primitive_values] == [0, 1, 1, 4, 4, 1, 0, 1]
     assert [item['separator'] for item in primitive_values] == [2, 0, 2, 3, 0, 3, 4, 1]
     assert all(item['replica'] == 1 for item in primitive_values)
     joint_pairs = [(item['class_sum'], item['separator']) for item in primitive_values]
