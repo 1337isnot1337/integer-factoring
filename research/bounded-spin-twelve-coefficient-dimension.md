@@ -79,9 +79,11 @@ six joint generalized blocks have dimensions
 (0,+):1  (0,-):1  (1,+):1  (1,-):1  (4,+):2  (4,-):2.
 ```
 
-This is a finite-dimensional model of the `R,T` part only. The exact
-subalgebra dimension, the two missing coefficient directions, and the full
-primary refinement remain open.
+This is a finite-dimensional model of the `R,T` part only. The orbit
+algebra itself is now identified abstractly as `F5^4 x dual x dual`; see
+[the orbit-algebra note](bounded-spin-twelve-RT-orbit-algebra.md). The actual
+embedding, the two missing coefficient directions, and the full primary
+refinement remain open.
 
 ## What is now reduced
 
