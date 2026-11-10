@@ -332,7 +332,9 @@
     1,
     0
   ],
-  "cut_radical_is_coefficient_8": true,
+  "cut_radical_basis_position": 8,
+  "cut_radical_coefficient_index": 9,
+  "cut_radical_is_coefficient_9": true,
   "regular_trace_vector": [
     0,
     0,
@@ -372,6 +374,10 @@
     ]
   ],
   "cut_radical_outside_regular": true,
+  "rt_subalgebra_dimension": 5,
+  "cut_radical_in_rt_subalgebra": false,
+  "cut_radical_extension_dimension": 6,
+  "cut_radical_in_completing_pairs": false,
   "idempotent_trace_residues": {
     "row": [
       0,
@@ -404,6 +410,6 @@
     1,
     1
   ],
-  "seconds": 75.0,
-  "scope": "Cut trace form of the twelve-site central-idempotent algebra. The row and column forms have rank 9 with a one-dimensional radical spanned by coefficient direction 8; this direction has nonzero regular trace and is outside the regular trace radical. The idempotent trace residues are ranks modulo five. Exact ranks and any score change remain open."
+  "seconds": 73.3,
+  "scope": "Cut trace form of the twelve-site central-idempotent algebra. The row and column forms have rank 9 with a one-dimensional radical spanned by coefficient direction C_9 (basis position 8); this direction has nonzero regular trace and is outside the regular trace radical. It lies outside the five-dimensional coefficient subalgebra <C_0,T> and extends it only to dimension 6, so it is not a minimal completing direction. The idempotent trace residues are ranks modulo five. Exact ranks and any score change remain open."
 }
