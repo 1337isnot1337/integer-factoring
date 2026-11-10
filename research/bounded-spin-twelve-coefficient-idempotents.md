@@ -81,10 +81,11 @@ exact twelve-site block structure, including the correct regular ranks.
 The two extra dimensions beyond the eight-dimensional `R,T` orbit model
 are not two further non-scalar blocks.  The full algebra has six scalar
 blocks and two dual blocks; an eight-dimensional orbit model can only see
-part of this structure.  The orbit algebra is identified abstractly as
-`F5^4 x dual x dual` in
-[the orbit-algebra note](bounded-spin-twelve-RT-orbit-algebra.md); its actual
-embedding in the ten-dimensional algebra remains a separate check.
+part of this structure.  The orbit-action algebra is identified abstractly
+as `F5^4 x dual x dual` in
+[the orbit-algebra note](bounded-spin-twelve-RT-orbit-algebra.md); it is a
+different object from the five-dimensional coefficient subalgebra generated
+by `C_0` and `T`, and its actual relation to the cut module remains open.
 
 ## What does not follow
 
