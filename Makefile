@@ -332,6 +332,12 @@ verify-bounded-spin-transposition-subalgebra:
 verify-bounded-spin-twelve-RT-orbit:
 	python3 tools/check_bounded_spin_twelve_RT_orbit.py
 
+.PHONY: verify-bounded-spin-twelve-RT-orbit-algebra build-bounded-spin-twelve-RT-orbit-algebra
+verify-bounded-spin-twelve-RT-orbit-algebra:
+	python3 tools/check_bounded_spin_twelve_RT_orbit_algebra.py --output /tmp/bounded-spin-twelve-RT-orbit-algebra.json
+build-bounded-spin-twelve-RT-orbit-algebra:
+	python3 tools/build_bounded_spin_twelve_RT_orbit_algebra.py
+
 .PHONY: verify-bounded-spin-characteristic-five-lift
 verify-bounded-spin-characteristic-five-lift:
 	python3 tools/check_bounded_spin_characteristic_five_lift.py --output /tmp/bounded-spin-characteristic-five-lift.json

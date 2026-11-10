@@ -314,6 +314,220 @@
       ]
     }
   ],
+  "separator_coefficients": [
+    0,
+    0,
+    1,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "separator_completes_algebra": true,
+  "separator_block_actions": [
+    {
+      "idempotent_index": 0,
+      "kind": "scalar",
+      "regular_rank": 1,
+      "action_matrix": [
+        [
+          2
+        ]
+      ],
+      "trace": 2,
+      "determinant": 2,
+      "characteristic_coefficients_low_to_high": [
+        3,
+        1
+      ],
+      "eigenvalues": [
+        2
+      ]
+    },
+    {
+      "idempotent_index": 1,
+      "kind": "scalar",
+      "regular_rank": 1,
+      "action_matrix": [
+        [
+          0
+        ]
+      ],
+      "trace": 0,
+      "determinant": 0,
+      "characteristic_coefficients_low_to_high": [
+        0,
+        1
+      ],
+      "eigenvalues": [
+        0
+      ]
+    },
+    {
+      "idempotent_index": 2,
+      "kind": "dual",
+      "regular_rank": 2,
+      "action_matrix": [
+        [
+          4,
+          4
+        ],
+        [
+          4,
+          0
+        ]
+      ],
+      "trace": 4,
+      "determinant": 4,
+      "characteristic_coefficients_low_to_high": [
+        4,
+        1,
+        1
+      ],
+      "eigenvalues": [
+        2
+      ]
+    },
+    {
+      "idempotent_index": 3,
+      "kind": "scalar",
+      "regular_rank": 1,
+      "action_matrix": [
+        [
+          3
+        ]
+      ],
+      "trace": 3,
+      "determinant": 3,
+      "characteristic_coefficients_low_to_high": [
+        2,
+        1
+      ],
+      "eigenvalues": [
+        3
+      ]
+    },
+    {
+      "idempotent_index": 4,
+      "kind": "dual",
+      "regular_rank": 2,
+      "action_matrix": [
+        [
+          2,
+          4
+        ],
+        [
+          4,
+          3
+        ]
+      ],
+      "trace": 0,
+      "determinant": 0,
+      "characteristic_coefficients_low_to_high": [
+        0,
+        0,
+        1
+      ],
+      "eigenvalues": [
+        0
+      ]
+    },
+    {
+      "idempotent_index": 5,
+      "kind": "scalar",
+      "regular_rank": 1,
+      "action_matrix": [
+        [
+          3
+        ]
+      ],
+      "trace": 3,
+      "determinant": 3,
+      "characteristic_coefficients_low_to_high": [
+        2,
+        1
+      ],
+      "eigenvalues": [
+        3
+      ]
+    },
+    {
+      "idempotent_index": 6,
+      "kind": "scalar",
+      "regular_rank": 1,
+      "action_matrix": [
+        [
+          4
+        ]
+      ],
+      "trace": 4,
+      "determinant": 4,
+      "characteristic_coefficients_low_to_high": [
+        1,
+        1
+      ],
+      "eigenvalues": [
+        4
+      ]
+    },
+    {
+      "idempotent_index": 7,
+      "kind": "scalar",
+      "regular_rank": 1,
+      "action_matrix": [
+        [
+          1
+        ]
+      ],
+      "trace": 1,
+      "determinant": 1,
+      "characteristic_coefficients_low_to_high": [
+        4,
+        1
+      ],
+      "eigenvalues": [
+        1
+      ]
+    }
+  ],
+  "class_sum_separator_joint_characters": {
+    "0": [
+      0,
+      2
+    ],
+    "1": [
+      1,
+      0
+    ],
+    "2": [
+      1,
+      2
+    ],
+    "3": [
+      4,
+      3
+    ],
+    "4": [
+      4,
+      0
+    ],
+    "5": [
+      1,
+      3
+    ],
+    "6": [
+      0,
+      4
+    ],
+    "7": [
+      1,
+      1
+    ]
+  },
+  "class_sum_separator_separates_primaries": true,
   "class_sum_holdouts": {
     "nonzero_entries_checked": 24,
     "zero_entries_checked": 25,
@@ -379,7 +593,7 @@
     "generated_dimension": 6,
     "matches_published_model": true
   },
-  "scope": "Exact coefficient-algebra computations at twelve sites: the replica-swap unit C0 and transposition class sum T generate a five-dimensional commutative subalgebra, with T satisfying x(x-1)^2(x+1)^2. The eight primitive central idempotents see eigenvalues 0,1,4, with the two dual blocks carrying nontrivial nilpotent actions. This is not the eight-dimensional R,T orbit on the cut module; no cut-module rank, two-cut pairing, rank bound, or factoring score change is claimed.",
+  "scope": "Exact coefficient-algebra computations at twelve sites: the replica-swap unit C0 and transposition class sum T generate a five-dimensional commutative subalgebra, with T satisfying x(x-1)^2(x+1)^2. The eight primitive central idempotents see eigenvalues 0,1,4, with the two dual blocks carrying nontrivial nilpotent actions. The coefficient combination C3+C5 completes the full ten-dimensional algebra and, together with T, separates the eight central idempotents at the character level; this is a coefficient-algebra statement, not a split of the cut module coarse blocks. This is not the eight-dimensional R,T orbit on the cut module; no cut-module rank, two-cut pairing, rank bound, or factoring score change is claimed.",
   "source_sha256": {
     "bounded_spin_crossing.py": "cefc38c88cdf76650f4966fa9e49d0edbc9ce4c2eec3848dd2716f35ee3819bd",
     "bounded_spin_six_vertex.py": "fba0658d6ad3dd1b308f61420ca6e3d17533a8e2eace2f66dbe5a9e5bbe907f8",
