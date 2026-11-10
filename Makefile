@@ -332,9 +332,19 @@ verify-bounded-spin-transposition-subalgebra:
 verify-bounded-spin-twelve-RT-orbit:
 	python3 tools/check_bounded_spin_twelve_RT_orbit.py
 
+.PHONY: verify-bounded-spin-twelve-RT-orbit-algebra build-bounded-spin-twelve-RT-orbit-algebra
+verify-bounded-spin-twelve-RT-orbit-algebra:
+	python3 tools/check_bounded_spin_twelve_RT_orbit_algebra.py --output /tmp/bounded-spin-twelve-RT-orbit-algebra.json
+build-bounded-spin-twelve-RT-orbit-algebra:
+	python3 tools/build_bounded_spin_twelve_RT_orbit_algebra.py
+
 .PHONY: verify-bounded-spin-characteristic-five-lift
 verify-bounded-spin-characteristic-five-lift:
 	python3 tools/check_bounded_spin_characteristic_five_lift.py --output /tmp/bounded-spin-characteristic-five-lift.json
+
+.PHONY: verify-bounded-spin-twelve-cut-trace-form
+verify-bounded-spin-twelve-cut-trace-form:
+	python3 tools/check_bounded_spin_twelve_cut_trace_form.py --output /tmp/bounded-spin-twelve-cut-trace-form.json
 
 .PHONY: verify-bounded-spin-twelve-coefficient-dimension
 verify-bounded-spin-twelve-coefficient-dimension:
@@ -359,6 +369,10 @@ verify-bounded-spin-missing-direction:
 .PHONY: verify-bounded-spin-twelve-missing-direction
 verify-bounded-spin-twelve-missing-direction:
 	python3 tools/check_bounded_spin_twelve_missing_direction.py
+
+.PHONY: verify-bounded-spin-twelve-RT-coefficient
+verify-bounded-spin-twelve-RT-coefficient:
+	python3 tools/check_bounded_spin_twelve_RT_coefficient.py
 
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:

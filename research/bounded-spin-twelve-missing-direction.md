@@ -75,6 +75,19 @@ generic module vector under `R,T`; the latter was bounded below by `8` in
 representations need not have the same dimension because `R` collapses
 to the algebra unit here.
 
+## Relation to the parallel \(R,T\) and cut-trace work
+
+Worker 1 independently identified the same five-dimensional coefficient
+subalgebra in
+[the \(R,T\) coefficient note](bounded-spin-twelve-RT-coefficient.md),
+including the minimal polynomial `x(x-1)^2(x+1)^2` and the two dual
+blocks where `T` acts nilpotently.  Worker 1 also computed the cut trace
+form: it has rank `9` with a one-dimensional radical spanned by `C_8`,
+and the eight idempotent trace residues give ranks modulo five
+([cut-trace note](bounded-spin-twelve-cut-trace-form.md)).  The new
+point here is the **single separator combination** and its joint
+character separation; no exact cut rank or two-cut pairing is claimed.
+
 ## Character values on the primitive central idempotents
 
 Using the trace-left form from the exact table and the eight primitive
