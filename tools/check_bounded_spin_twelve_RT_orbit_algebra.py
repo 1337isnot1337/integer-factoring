@@ -36,6 +36,13 @@ def check():
     assert stored['full_coefficient_structure'] == (
         'F5^6 x F5[e]/(e^2) x F5[e]/(e^2)')
     assert stored['checks']['regular_rank_sum'] == 8
+    assert stored['t_primary_ranks'] == {
+        'coefficient_regular': {'0': 2, '1': 5, '4': 3},
+        'orbit_regular': {'0': 2, '1': 2, '4': 4},
+    }
+    assert stored['t_primary_mismatch'] is True
+    assert (stored['t_primary_ranks']['orbit_regular']['4']
+            > stored['t_primary_ranks']['coefficient_regular']['4'])
     return {
         'status': 'pass',
         'structure': stored['structure'],
@@ -47,6 +54,8 @@ def check():
             block['regular_rank'] for block in blocks),
         'trace_form': stored['trace_form']['rank'],
         'radical_dimension': stored['trace_form']['radical_dimension'],
+        't_primary_ranks': stored['t_primary_ranks'],
+        't_primary_mismatch': stored['t_primary_mismatch'],
         'orbit_evidence_sha256': stored['orbit_evidence_sha256'],
         'scope': stored['scope'],
     }
