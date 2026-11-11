@@ -53,6 +53,24 @@ on arbitrary crossing tensors.  In particular it does **not** close the
 general non-conservation translation-invariant lane, and it does not
 change the complete factoring score `1/2`.
 
+## Relation to the all-decomposition cutoff
+
+There is a stronger existing statement.  The
+[minimum-cut rank budget](minimum-cut-rank-budget.md) proves
+
+```math
+\sum_i\sqrt{r_i c_i}>d^{\sqrt2}
+```
+
+for **every** exact decomposition of `E_d`, with no conservation or
+piece-count restriction, for all `2<=d<=21`.  Since `T_I=E_q`, this
+already closes the `q=5,7,11,13` conservation seeds, and also `q=17,19`,
+without the floor argument.  The composition above is an independent,
+conservation-specific check of the same boundary.  In particular, the
+active q=13 free-conservation search is excluded by the minimum-cut
+cutoff unless its label dimension is not q or its target is not
+`q^sqrt(2)`; that scope distinction should be stated explicitly.
+
 ## Relation to the parallel work
 
 The floor (1) is worker 4's finite support lemma, posted at
