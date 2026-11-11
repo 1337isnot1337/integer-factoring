@@ -1,0 +1,173 @@
+{
+  "status": "pass",
+  "prime": 5,
+  "ten_site_control": {
+    "dimensions": [
+      34,
+      1,
+      225,
+      300,
+      35,
+      406,
+      155
+    ],
+    "row_residues": [
+      4,
+      1,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "column_residues": [
+      4,
+      1,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    "R_signs": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      -1,
+      1
+    ]
+  },
+  "twelve_site_primary_R_split": [
+    {
+      "idempotent_index": 0,
+      "T_eigenvalue": 0,
+      "S_eigenvalue": 2,
+      "rank_residue": 0,
+      "R_trace_residue": 0,
+      "R_plus_residue": 0,
+      "R_minus_residue": 0,
+      "status": "undetermined"
+    },
+    {
+      "idempotent_index": 1,
+      "T_eigenvalue": 1,
+      "S_eigenvalue": 0,
+      "rank_residue": 3,
+      "R_trace_residue": 1,
+      "R_plus_residue": 2,
+      "R_minus_residue": 1,
+      "status": "mixed"
+    },
+    {
+      "idempotent_index": 2,
+      "T_eigenvalue": 1,
+      "S_eigenvalue": 2,
+      "rank_residue": 1,
+      "R_trace_residue": 0,
+      "R_plus_residue": 3,
+      "R_minus_residue": 3,
+      "status": "mixed"
+    },
+    {
+      "idempotent_index": 3,
+      "T_eigenvalue": 4,
+      "S_eigenvalue": 3,
+      "rank_residue": 2,
+      "R_trace_residue": 1,
+      "R_plus_residue": 4,
+      "R_minus_residue": 3,
+      "status": "mixed"
+    },
+    {
+      "idempotent_index": 4,
+      "T_eigenvalue": 4,
+      "S_eigenvalue": 0,
+      "rank_residue": 2,
+      "R_trace_residue": 1,
+      "R_plus_residue": 4,
+      "R_minus_residue": 3,
+      "status": "mixed"
+    },
+    {
+      "idempotent_index": 5,
+      "T_eigenvalue": 1,
+      "S_eigenvalue": 3,
+      "rank_residue": 1,
+      "R_trace_residue": 3,
+      "R_plus_residue": 2,
+      "R_minus_residue": 4,
+      "status": "mixed"
+    },
+    {
+      "idempotent_index": 6,
+      "T_eigenvalue": 0,
+      "S_eigenvalue": 4,
+      "rank_residue": 2,
+      "R_trace_residue": 1,
+      "R_plus_residue": 4,
+      "R_minus_residue": 3,
+      "status": "mixed"
+    },
+    {
+      "idempotent_index": 7,
+      "T_eigenvalue": 1,
+      "S_eigenvalue": 1,
+      "rank_residue": 3,
+      "R_trace_residue": 4,
+      "R_plus_residue": 1,
+      "R_minus_residue": 2,
+      "status": "mixed"
+    }
+  ],
+  "mixed_primaries": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "pure_primaries_modulo_five": [],
+  "undetermined_primaries": [
+    0
+  ],
+  "T_group_sums": {
+    "0": {
+      "idempotents": [
+        0,
+        6
+      ],
+      "rank_residue_sum": 2,
+      "R_plus_residue_sum": 4,
+      "R_minus_residue_sum": 3
+    },
+    "1": {
+      "idempotents": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "rank_residue_sum": 3,
+      "R_plus_residue_sum": 3,
+      "R_minus_residue_sum": 0
+    },
+    "4": {
+      "idempotents": [
+        3,
+        4
+      ],
+      "rank_residue_sum": 4,
+      "R_plus_residue_sum": 3,
+      "R_minus_residue_sum": 1
+    }
+  },
+  "source_sha256": {
+    "cut_trace_form": null,
+    "separator_split": null
+  },
+  "scope": "Modulo-five R-sign split of each twelve-site primitive central idempotent image, obtained from the ordinary and replica-swap twisted cut trace residues. All seven nontrivial primaries are mixed modulo five; idempotent 0 is undetermined because both residues vanish. This does not give exact dimensions, exact ranks, or a two-cut pairing, and no score change is claimed."
+}
