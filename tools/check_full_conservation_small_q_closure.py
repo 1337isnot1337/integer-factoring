@@ -51,7 +51,9 @@ def main() -> None:
                   'all-field two-piece crossing bound. For q=5 the floor excludes two '
                   'pieces and q^2 exceeds the target; for q=7,11,13 the floor caps a '
                   'crossing at two pieces and the two-piece bound exceeds the target. '
-                  'All fields. q=17 and larger are not closed; no score change.'),
+                  'The q=17 row is open for this composition only; the existing '
+                  'minimum-cut theorem independently closes every full-conservation '
+                  'seed with q<=21. All fields; no score change.'),
         'source_sha256': {
             'two_piece_note': sha256((ROOT / 'research' /
                                       'two-piece-rank-sum-obstruction.md').read_bytes()).hexdigest(),

@@ -61,7 +61,7 @@
       "mechanism": "not closed: at least three pieces remain"
     }
   ],
-  "scope": "Combines the full-conservation piece floor q (worker 4) with the all-field two-piece crossing bound. For q=5 the floor excludes two pieces and q^2 exceeds the target; for q=7,11,13 the floor caps a crossing at two pieces and the two-piece bound exceeds the target. All fields. q=17 and larger are not closed; no score change.",
+  "scope": "Combines the full-conservation piece floor q (worker 4) with the all-field two-piece crossing bound. For q=5 the floor excludes two pieces and q^2 exceeds the target; for q=7,11,13 the floor caps a crossing at two pieces and the two-piece bound exceeds the target. The q=17 row is open for this composition only; the existing minimum-cut theorem independently closes every full-conservation seed with q<=21. All fields; no score change.",
   "source_sha256": {
     "two_piece_note": "30601a6a0a7c379238e8d960afb183ff7d0ac8b705c7351674ad6d39ac573827"
   }

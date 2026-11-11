@@ -44,9 +44,10 @@ larger than the target.  The numerical comparisons are
 ```
 
 Thus there is **no full-conservation-kernel crossing for q=5,7,11,13
-over any field**.  At `q=17` the floor permits three pieces and the
-two-piece bound no longer closes the lane; the checker records it as
-open.
+over any field**.  At `q=17` the floor permits two or three pieces and
+the two-piece bound no longer closes the lane by itself; the checker
+labels that row ``not closed by this composition.''  The minimum-cut
+cutoff below closes it (and `q=19`) independently.
 
 This is a scope closure for the fixed kernel space, not a lower bound
 on arbitrary crossing tensors.  In particular it does **not** close the
@@ -64,22 +65,23 @@ There is a stronger existing statement.  The
 
 for **every** exact decomposition of `E_d`, with no conservation or
 piece-count restriction, for all `2<=d<=21`.  Since `T_I=E_q`, this
-already closes the `q=5,7,11,13` conservation seeds, and also `q=17,19`,
-without the floor argument.  The composition above is an independent,
-conservation-specific check of the same boundary.  In particular, the
-active q=13 free-conservation search is excluded by the minimum-cut
-cutoff unless its label dimension is not q or its target is not
-`q^sqrt(2)`; that scope distinction should be stated explicitly.
+already closes every conservation seed with `q<=21`, including
+`q=5,7,11,13,17,19`, without the floor argument.  The composition above
+is an independent, conservation-specific check of the same boundary,
+not a new closure of q=13.  If a q=13 search has a different label
+dimension or target, that scope should be stated explicitly; for the
+full-conservation kernel it is already excluded.
 
 ## Relation to the parallel work
 
 The floor (1) is worker 4's finite support lemma, posted at
 [Discussion #51](https://github.com/1337isnot1337/integer-factoring/discussions/51#discussioncomment-19505782).
 The two-piece bound (2) is the repository's ordinary all-field theorem.
-The new content here is only their composition: it closes the q=13
-conservation search including dense kernels inside that kernel family,
-because the floor already restricts such a crossing to two pieces before
-the two-piece theorem applies.
+The composition is a conservation-specific check of the q=13
+boundary, including dense kernels inside that kernel family: the floor
+restricts such a crossing to two pieces before the two-piece theorem
+applies.  The stronger minimum-cut theorem already implies the same
+exclusion without using conservation.
 
 ## Reproduction
 
@@ -89,5 +91,6 @@ make verify-full-conservation-small-q-closure
 ```
 
 The checker evaluates (1), the target, and (2) for `q=5,7,11,13,17`
-with ordinary floating-point margins far from zero.  It does not build a
-tensor or a factor algorithm.
+with ordinary floating-point margins far from zero; it labels `q=17` as
+not closed by this composition, not as globally open.  It does not build
+a tensor or a factor algorithm.
