@@ -57,8 +57,17 @@ T=4: rank residue 4, R+ residue 3, R- residue 1
 At ten sites the same calculation is an exact control.  The row residues
 equal the seven published primary dimensions modulo five, and the column
 residues equal `+d_i` for `34,1,225,300,35,155` and `-d_i` for `406`.
-This fixes the orientation of the two forms and recovers the known pure
-`R` signs of the ten-site primaries.
+The signs are the known joint `(T,R)` coarse labels: the two `T=2`
+primaries `300,35` lie in the `R=+` coarse block `335`, while `406` is
+the `T=0,R=-` primary.  This fixes the orientation of the two forms and
+recovers the known pure `R` signs of the ten-site primaries.
+
+The column form is not the **column-cut rank**.  The exact ten-site
+column-cut rank pairs are `[931,1156,356,581,771,776,715]` in
+[the idempotent-S control](../tools/check_bounded_spin_idempotent_s.py),
+whose residues do not match the column trace residues above.  The two
+forms are the row and column diagonal orientations of the same row-cut
+matrix; the column cut is a different operator.
 
 At twelve sites the result is only a modulo-five congruence.  It does
 not give exact dimensions, exact row or column ranks, a rank product, or

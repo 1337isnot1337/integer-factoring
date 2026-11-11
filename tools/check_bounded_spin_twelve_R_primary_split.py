@@ -21,6 +21,7 @@ ROOT = Path(__file__).resolve().parents[1]
 PRIME = 5
 INVERSE_TWO = 3
 TEN_SIGNS = [1, 1, 1, 1, 1, -1, 1]
+TEN_COLUMN_CUT_RANKS = [931, 1156, 356, 581, 771, 776, 715]
 
 
 def original_form(four_paths):
@@ -60,10 +61,14 @@ def ten_site_control():
     expected_columns = [s * d % PRIME for s, d in zip(TEN_SIGNS, model['dimensions'])]
     assert rows == expected_rows, (rows, expected_rows)
     assert columns == expected_columns, (columns, expected_columns)
+    column_cut_residues = [value % PRIME for value in TEN_COLUMN_CUT_RANKS]
+    assert column_cut_residues != columns
     return {
         'dimensions': model['dimensions'],
         'row_residues': rows,
         'column_residues': columns,
+        'column_cut_ranks': TEN_COLUMN_CUT_RANKS,
+        'column_cut_residues': column_cut_residues,
         'R_signs': TEN_SIGNS,
     }
 
