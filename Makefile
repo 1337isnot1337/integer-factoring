@@ -346,6 +346,10 @@ verify-bounded-spin-characteristic-five-lift:
 verify-bounded-spin-twelve-cut-trace-form:
 	python3 tools/check_bounded_spin_twelve_cut_trace_form.py --output /tmp/bounded-spin-twelve-cut-trace-form.json
 
+.PHONY: verify-bounded-spin-twelve-T-primary-dimensions
+verify-bounded-spin-twelve-T-primary-dimensions:
+	python3 tools/check_bounded_spin_twelve_T_primary_dimensions.py --output /tmp/bounded-spin-twelve-T-primary-dimensions.json
+
 .PHONY: verify-bounded-spin-twelve-coefficient-dimension
 verify-bounded-spin-twelve-coefficient-dimension:
 	python3 tools/check_bounded_spin_twelve_coefficient_dimension.py
