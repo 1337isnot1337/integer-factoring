@@ -1,0 +1,156 @@
+{
+  "passed": true,
+  "prime": 5,
+  "length": 12,
+  "basis_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "joint_characters_T_S": {
+    "0": [
+      0,
+      2
+    ],
+    "1": [
+      1,
+      0
+    ],
+    "2": [
+      1,
+      2
+    ],
+    "3": [
+      4,
+      3
+    ],
+    "4": [
+      4,
+      0
+    ],
+    "5": [
+      1,
+      3
+    ],
+    "6": [
+      0,
+      4
+    ],
+    "7": [
+      1,
+      1
+    ]
+  },
+  "idempotent_trace_residues": {
+    "row": [
+      0,
+      1,
+      0,
+      1,
+      0,
+      0,
+      0,
+      4
+    ],
+    "column": [
+      0,
+      4,
+      0,
+      1,
+      0,
+      0,
+      0,
+      1
+    ]
+  },
+  "coarse_groups": {
+    "0": {
+      "idempotents": [
+        0,
+        6
+      ],
+      "separator_characters": [
+        2,
+        4
+      ],
+      "row_nonzero_primary_residues": [],
+      "column_nonzero_primary_residues": [],
+      "row_split_certified": false,
+      "column_split_certified": false,
+      "row_split_obstructed_by_zero_residue": true,
+      "column_split_obstructed_by_zero_residue": true
+    },
+    "1": {
+      "idempotents": [
+        1,
+        2,
+        5,
+        7
+      ],
+      "separator_characters": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "row_nonzero_primary_residues": [
+        1,
+        7
+      ],
+      "column_nonzero_primary_residues": [
+        1,
+        7
+      ],
+      "row_split_certified": true,
+      "column_split_certified": true,
+      "row_split_obstructed_by_zero_residue": false,
+      "column_split_obstructed_by_zero_residue": false
+    },
+    "4": {
+      "idempotents": [
+        3,
+        4
+      ],
+      "separator_characters": [
+        0,
+        3
+      ],
+      "row_nonzero_primary_residues": [
+        3
+      ],
+      "column_nonzero_primary_residues": [
+        3
+      ],
+      "row_split_certified": false,
+      "column_split_certified": false,
+      "row_split_obstructed_by_zero_residue": true,
+      "column_split_obstructed_by_zero_residue": true
+    }
+  },
+  "certified_split_groups": {
+    "row": [
+      1
+    ],
+    "column": [
+      1
+    ]
+  },
+  "unresolved_groups": {
+    "row": [
+      0,
+      4
+    ],
+    "column": [
+      0,
+      4
+    ]
+  },
+  "scope": "Modulo-five separator splitting of the twelve-site T coarse blocks, using the corrected cut-trace idempotent rank residues and the coefficient-algebra joint T,S characters. T=1 splits into two nonzero primaries in both orientations; T=4 has only one nonzero residue and is not certified to split; T=0 has zero residues for both primaries and remains unresolved. This is not an exact dimension or rank computation and no score change is claimed."
+}
