@@ -101,6 +101,43 @@ both the scalar multiplicities and the two square-zero directions. The
 remaining target is still the exact row and column ranks of these
 idempotents on the 7921-state cut modules, followed by the two-cut pairing.
 
+## The separator direction at the algebra level
+
+The completing pair `(3,5)` is the separator combination
+`S=C_3+C_5` carried over from the ten-site lane. In the basis above it is
+
+```text
+S = (0, 0, 1, 0, 1, 0, 0, 0, 0, 0),
+```
+
+and it raises the five-dimensional `<T>` subalgebra to the full
+ten-dimensional coefficient algebra. Its actions on the eight primitive
+central idempotents are
+
+```text
+idempotent   0   1   2          3   4          5   6   7
+S action     2   0   [4 4;4 0]  3   [2 4;4 3]  3   4   1
+```
+
+with the two-dimensional matrices acting on the dual blocks. The joint
+`T,S` character pairs are
+
+```text
+idempotent   0     1     2     3     4     5     6     7
+(T,S)       (0,2) (1,0) (1,2) (4,3) (4,0) (1,3) (0,4) (1,1)
+```
+
+so `S` separates the primaries inside every `T` block: the `T=0` block
+splits as `2,4`, the `T=1` block as `0,2,1,3`, and the `T=4` block as
+`3,0`. In particular, `<T,S>` already has one character for every one of
+the eight primaries.
+
+This is still a coefficient-algebra statement. It does not prove that
+the same coefficient word separates the twelve-site **cut-module** coarse
+blocks, and it supplies no exact rank or two-cut pairing. It does remove
+the character-level ambiguity in the separator direction and gives the
+next computation a fixed pair of algebra directions to test.
+
 ## Reproduction
 
 ```sh
@@ -110,5 +147,5 @@ make verify-bounded-spin-twelve-RT-coefficient
 
 The checker replays the ten-site control, the twelve-site entry solve,
 the structured holdouts, the minimal polynomial, the one-direction
-extensions, the completing pairs, and the eight block actions. The
-complete factoring score remains `1/2`.
+extensions, the completing pairs, the eight `T` block actions, and the
+`T,S` joint characters. The complete factoring score remains `1/2`.
