@@ -370,6 +370,10 @@ verify-bounded-spin-missing-direction:
 verify-bounded-spin-twelve-missing-direction:
 	python3 tools/check_bounded_spin_twelve_missing_direction.py
 
+.PHONY: verify-full-conservation-small-q-closure
+verify-full-conservation-small-q-closure:
+	python3 tools/check_full_conservation_small_q_closure.py
+
 .PHONY: verify-bounded-spin-twelve-RT-coefficient
 verify-bounded-spin-twelve-RT-coefficient:
 	python3 tools/check_bounded_spin_twelve_RT_coefficient.py
