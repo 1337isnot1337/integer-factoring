@@ -1,0 +1,68 @@
+{
+  "status": "pass",
+  "prime_labels": [
+    5,
+    7,
+    11,
+    13,
+    17
+  ],
+  "closure": [
+    {
+      "q": 5,
+      "target_q_sqrt2": 9.738517742335421,
+      "piece_floor_q": 5,
+      "one_piece_cost_q_squared": 25,
+      "max_pieces_from_floor": 1,
+      "two_piece_lower_bound": 14.38053466608855,
+      "closed": true,
+      "mechanism": "one-piece cost and two-piece floor"
+    },
+    {
+      "q": 7,
+      "target_q_sqrt2": 15.672890873693548,
+      "piece_floor_q": 7,
+      "one_piece_cost_q_squared": 49,
+      "max_pieces_from_floor": 2,
+      "two_piece_lower_bound": 23.52800127277914,
+      "closed": true,
+      "mechanism": "floor caps at two pieces; all-field two-piece bound"
+    },
+    {
+      "q": 11,
+      "target_q_sqrt2": 29.69967241476071,
+      "piece_floor_q": 11,
+      "one_piece_cost_q_squared": 121,
+      "max_pieces_from_floor": 2,
+      "two_piece_lower_bound": 45.17666990423029,
+      "closed": true,
+      "mechanism": "floor caps at two pieces; all-field two-piece bound"
+    },
+    {
+      "q": 13,
+      "target_q_sqrt2": 37.614370371925176,
+      "piece_floor_q": 13,
+      "one_piece_cost_q_squared": 169,
+      "max_pieces_from_floor": 2,
+      "two_piece_lower_bound": 57.429852727428965,
+      "closed": true,
+      "mechanism": "floor caps at two pieces; all-field two-piece bound"
+    }
+  ],
+  "open": [
+    {
+      "q": 17,
+      "target_q_sqrt2": 54.9689640664787,
+      "piece_floor_q": 17,
+      "one_piece_cost_q_squared": 289,
+      "max_pieces_from_floor": 3,
+      "two_piece_lower_bound": 84.40496263576686,
+      "closed": false,
+      "mechanism": "not closed: at least three pieces remain"
+    }
+  ],
+  "scope": "Combines the full-conservation piece floor q (worker 4) with the all-field two-piece crossing bound. For q=5 the floor excludes two pieces and q^2 exceeds the target; for q=7,11,13 the floor caps a crossing at two pieces and the two-piece bound exceeds the target. All fields. q=17 and larger are not closed; no score change.",
+  "source_sha256": {
+    "two_piece_note": "30601a6a0a7c379238e8d960afb183ff7d0ac8b705c7351674ad6d39ac573827"
+  }
+}
