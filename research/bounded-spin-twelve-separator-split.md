@@ -80,7 +80,10 @@ of five, not forced to zero.
 
 The next target is the `R` character of each primary, which would turn
 these `T`-group splits into splits of the six joint `(R,T)` coarse blocks.
-Exact component dimensions and the two-cut pairing remain open.
+[The R-primary split](bounded-spin-twelve-R-primary-split.md) now answers
+this modulo five: all seven nontrivial primaries are mixed in `R`, so the
+central primaries do not give pure `R` refinements. Exact component
+dimensions and the two-cut pairing remain open.
 
 ## Reproduction
 
