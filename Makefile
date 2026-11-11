@@ -374,6 +374,10 @@ verify-bounded-spin-twelve-missing-direction:
 verify-bounded-spin-twelve-RT-coefficient:
 	python3 tools/check_bounded_spin_twelve_RT_coefficient.py
 
+.PHONY: verify-bounded-spin-twelve-separator-split
+verify-bounded-spin-twelve-separator-split:
+	python3 tools/check_bounded_spin_twelve_separator_split.py
+
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py

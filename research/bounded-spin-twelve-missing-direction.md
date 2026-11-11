@@ -64,9 +64,18 @@ dim <R,T,b_2,b_4>   = 8.
 Thus the ten-site result used the **basis direction** `b_4` and the
 separator was the sum `b_2+b_4`.  At twelve sites the roles reverse: the
 basis direction `b_4` does **not** complete, while the separator sum
-`b_2+b_4` does complete.  The ten-site structural mechanism therefore
-does transfer, but the direction to carry over is the separator
-combination, not the basis coordinate alone.
+`b_2+b_4` does complete.  The *mechanism* of replacing a basis
+coordinate by a sum survives, but the specific twelve-site completing
+sums do not transfer back to ten sites.  A complete ten-site scan of the
+basis sums finds the completing coefficient pairs
+
+```text
+(0,5), (2,5), (3,10), (4,5), (4,10), (5,6), (7,10),
+```
+
+which contain neither twelve-site completing pair `(2,6)` nor `(3,5)`.
+The twelve-site completion is therefore a genuinely new finite
+structure, not the reduction of the published ten-site separator.
 
 The exact dimension `5` is a statement about the coefficient algebra's
 regular representation.  It is not the dimension of the orbit of a
@@ -84,9 +93,14 @@ including the minimal polynomial `x(x-1)^2(x+1)^2` and the two dual
 blocks where `T` acts nilpotently.  Worker 1 also computed the cut trace
 form: it has rank `9` with a one-dimensional radical spanned by `C_8`,
 and the eight idempotent trace residues give ranks modulo five
-([cut-trace note](bounded-spin-twelve-cut-trace-form.md)).  The new
-point here is the **single separator combination** and its joint
-character separation; no exact cut rank or two-cut pairing is claimed.
+([cut-trace note](bounded-spin-twelve-cut-trace-form.md)).  Worker 3
+then combined the joint characters with those residues and, in the
+scoping update, used an explicit nonzero diagonal entry of idempotent
+`0` to split the remaining `T=0` group modulo five
+([separator-split note](bounded-spin-twelve-separator-split.md)); our
+contribution is the single separator **sum** that completes the algebra
+and the ten-site role-reversal control, not the cut-rank certificate.
+No exact component dimension or two-cut pairing is claimed.
 
 ## Character values on the primitive central idempotents
 

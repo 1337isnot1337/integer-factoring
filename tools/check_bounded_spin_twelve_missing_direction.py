@@ -132,13 +132,25 @@ def ten_site_control():
                                                   np.array(replica, dtype=np.uint8), b2, b4]))
     assert (rt_dimension, b4_dimension, b2_b4_sum_dimension,
             b2_b4_pair_dimension) == (6, 8, 7, 8)
+    completing_sums = []
+    for i in range(8):
+        for j in range(i + 1, 8):
+            first = np.zeros(8, dtype=np.int64); first[i] = 1
+            second = np.zeros(8, dtype=np.int64); second[j] = 1
+            if len(generated_algebra(model_unit, model_regular,
+                                     [np.array(class_sum, dtype=np.int64),
+                                      np.array(replica, dtype=np.int64),
+                                      (first + second) % PRIME])) == 8:
+                completing_sums.append([TEN_BASIS[i], TEN_BASIS[j]])
+    assert [2, 6] not in completing_sums and [3, 5] not in completing_sums
     return {'witness_count': len(TEN_WITNESS), 'replica_coordinates': replica,
             'class_sum_coordinates': class_sum,
             'matches_published_ten_site': True,
             'generated_dimension': rt_dimension,
             'b4_generated_dimension': b4_dimension,
             'b2_b4_sum_generated_dimension': b2_b4_sum_dimension,
-            'b2_b4_pair_generated_dimension': b2_b4_pair_dimension}
+            'b2_b4_pair_generated_dimension': b2_b4_pair_dimension,
+            'completing_sums_coefficients': completing_sums}
 
 
 def main() -> None:
@@ -239,6 +251,10 @@ def main() -> None:
                                                  separator]))
     assert separator_dimension == 10
     assert [2, 4] in sums and [1, 5] in sums
+    twelve_sum_coefficients = [[basis_indices[i], basis_indices[j]] for i, j in sums]
+    transferred_sums = [pair for pair in twelve_sum_coefficients
+                        if pair in ten_control['completing_sums_coefficients']]
+    assert not transferred_sums
     receipt = {
         'passed': True,
         'length': LENGTH,
@@ -262,8 +278,8 @@ def main() -> None:
         'separator_coordinates': [0, 0, 1, 0, 1, 0, 0, 0, 0, 0],
         'separator_polynomial_coefficients': [basis_indices[2], basis_indices[4]],
         'separator_generated_dimension': separator_dimension,
-        'completing_sum_polynomial_coefficients': [
-            [basis_indices[i], basis_indices[j]] for i, j in sums],
+        'completing_sum_polynomial_coefficients': twelve_sum_coefficients,
+        'transferred_completing_sum_polynomial_coefficients': transferred_sums,
         'completing_pair_polynomial_coefficients': [
             [basis_indices[i], basis_indices[j]] for i, j in pairs],
         'table_sha256': sha256(TABLE.read_bytes()).hexdigest(),

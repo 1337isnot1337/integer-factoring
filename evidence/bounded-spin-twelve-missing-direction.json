@@ -40,7 +40,37 @@
     "generated_dimension": 6,
     "b4_generated_dimension": 8,
     "b2_b4_sum_generated_dimension": 7,
-    "b2_b4_pair_generated_dimension": 8
+    "b2_b4_pair_generated_dimension": 8,
+    "completing_sums_coefficients": [
+      [
+        0,
+        5
+      ],
+      [
+        2,
+        5
+      ],
+      [
+        3,
+        10
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        5,
+        6
+      ],
+      [
+        7,
+        10
+      ]
+    ]
   },
   "entry_witness_count": 10,
   "unit_coordinates_control": true,
@@ -287,6 +317,7 @@
       5
     ]
   ],
+  "transferred_completing_sum_polynomial_coefficients": [],
   "completing_pair_polynomial_coefficients": [
     [
       2,
@@ -312,5 +343,5 @@
     "build_bounded_spin_twelve_coefficient_table.py": "ea879f8edf4344dc7127e4b0657b00f8e66c6033e9082e361019f633e008df49"
   },
   "scope": "A twelve-site structural diagnostic: exact R,T coordinates in the published ten-dimensional coefficient table, the exact generated dimension, a single basis-direction scan, and a linear-combination scan of the ten-site separator direction, and the joint T/separator character values on the eight primitive central idempotents. No cut-rank bound or score change is claimed.",
-  "elapsed_seconds": 0.8777519101276994
+  "elapsed_seconds": 0.895620312076062
 }

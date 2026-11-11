@@ -310,6 +310,15 @@ def main() -> None:
     if completing_pairs != [[2, 6], [3, 5], [3, 6]]:
         raise ValueError('unexpected completing pairs')
 
+    separator = np.zeros(len(basis), dtype=np.int64)
+    for degree in (3, 5):
+        separator[basis.index(degree)] = 1
+    if generated_dimension(
+            regular, unit, [class_sum, separator]) != len(basis):
+        raise ValueError('the 3+5 separator does not complete the algebra')
+    if [3, 5] not in completing_pairs:
+        raise ValueError('the 3+5 separator is not a completing pair')
+
     block_actions = [block_action(regular, class_sum, block)
                      for block in blocks['primitive_central_idempotents']]
     expected_actions = {
@@ -329,6 +338,44 @@ def main() -> None:
         if action['kind'] == 'dual' and action['regular_rank'] != 2:
             raise ValueError('dual block does not have rank two')
 
+    separator_actions = [block_action(regular, separator, block)
+                         for block in blocks['primitive_central_idempotents']]
+    expected_separator_matrices = {
+        0: [[2]], 1: [[0]], 2: [[4, 4], [4, 0]], 3: [[3]],
+        4: [[2, 4], [4, 3]], 5: [[3]], 6: [[4]], 7: [[1]],
+    }
+    for action in separator_actions:
+        if action['action_matrix'] != expected_separator_matrices[
+                action['idempotent_index']]:
+            raise ValueError('separator has an unexpected block action')
+    joint = {
+        action['idempotent_index']: (
+            expected_eigenvalues[action['idempotent_index']][0],
+            action['eigenvalues'][0],
+        )
+        for action in separator_actions
+    }
+    expected_joint = {
+        0: (0, 2), 1: (1, 0), 2: (1, 2), 3: (4, 3),
+        4: (4, 0), 5: (1, 3), 6: (0, 4), 7: (1, 1),
+    }
+    if joint != expected_joint:
+        raise ValueError('unexpected joint class-sum/separator characters')
+    if len(set(joint.values())) != len(joint):
+        raise ValueError('class sum and separator do not separate the primaries')
+    class_sum_groups = {}
+    for action in block_actions:
+        class_sum_groups.setdefault(
+            tuple(action['eigenvalues']), []).append(action['idempotent_index'])
+    separator_group_actions = {
+        index: separator_actions[index]['eigenvalues']
+        for index in range(len(separator_actions))
+    }
+    for group in class_sum_groups.values():
+        if len(group) > 1 and len({tuple(separator_group_actions[i])
+                                   for i in group}) == 1:
+            raise ValueError('separator does not refine a class-sum block')
+
     ten = ten_control()
     receipt = {
         'passed': True,
@@ -346,6 +393,12 @@ def main() -> None:
         'extensions_by_one_coefficient': extensions,
         'completing_coefficient_pairs': completing_pairs,
         'central_idempotent_block_actions': block_actions,
+        'separator_coefficients': separator.tolist(),
+        'separator_completes_algebra': True,
+        'separator_block_actions': separator_actions,
+        'class_sum_separator_joint_characters': {
+            str(index): [value[0], value[1]] for index, value in joint.items()},
+        'class_sum_separator_separates_primaries': True,
         'class_sum_holdouts': holdouts,
         'ten_site_control': ten,
         'scope': (
@@ -354,9 +407,13 @@ def main() -> None:
             'five-dimensional commutative subalgebra, with T satisfying '
             'x(x-1)^2(x+1)^2. The eight primitive central idempotents see '
             'eigenvalues 0,1,4, with the two dual blocks carrying nontrivial '
-            'nilpotent actions. This is not the eight-dimensional R,T orbit on '
-            'the cut module; no cut-module rank, two-cut pairing, rank bound, '
-            'or factoring score change is claimed.'
+            'nilpotent actions. The coefficient combination C3+C5 completes '
+            'the full ten-dimensional algebra and, together with T, separates '
+            'the eight central idempotents at the character level; this is a '
+            'coefficient-algebra statement, not a split of the cut module '
+            'coarse blocks. This is not the eight-dimensional R,T orbit on the '
+            'cut module; no cut-module rank, two-cut pairing, rank bound, or '
+            'factoring score change is claimed.'
         ),
         'source_sha256': {
             'bounded_spin_crossing.py': sha256(
@@ -375,6 +432,9 @@ def main() -> None:
         'subalgebra_dimension': 5,
         'minimal_polynomial': 'x*(x-1)^2*(x+1)^2',
         'completing_pairs': completing_pairs,
+        'separator_coefficients': separator.tolist(),
+        'separator_joint_characters': {
+            str(index): [value[0], value[1]] for index, value in joint.items()},
         'ten_site_dimension': ten['generated_dimension'],
         'holdouts': holdouts,
     }, indent=2))
