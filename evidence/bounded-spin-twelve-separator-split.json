@@ -70,7 +70,36 @@
       4
     ]
   },
-  "coarse_groups": {
+  "idempotent_zero_diagonal_witnesses": {
+    "idempotent_coefficient_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    "basis_position": 8,
+    "coefficient": 9,
+    "row_path_indices": [
+      38,
+      82
+    ],
+    "row_degree_nine_coefficient": 1,
+    "row_diagonal_entry": 4,
+    "column_path_indices": [
+      38,
+      82
+    ],
+    "column_degree_nine_coefficient": 4,
+    "column_diagonal_entry": 1,
+    "nonzero_in_both_orientations": true
+  },
+  "t_eigenspace_groups": {
     "0": {
       "idempotents": [
         0,
@@ -81,15 +110,17 @@
         4
       ],
       "row_nonzero_primary_residues": [
+        0,
         6
       ],
       "column_nonzero_primary_residues": [
+        0,
         6
       ],
-      "row_split_certified": false,
-      "column_split_certified": false,
-      "row_split_obstructed_by_zero_residue": true,
-      "column_split_obstructed_by_zero_residue": true
+      "row_split_certified": true,
+      "column_split_certified": true,
+      "row_split_obstructed_by_zero_residue": false,
+      "column_split_obstructed_by_zero_residue": false
     },
     "1": {
       "idempotents": [
@@ -143,23 +174,21 @@
       "column_split_obstructed_by_zero_residue": false
     }
   },
-  "certified_split_groups": {
+  "certified_split_t_groups": {
     "row": [
+      0,
       1,
       4
     ],
     "column": [
+      0,
       1,
       4
     ]
   },
-  "unresolved_groups": {
-    "row": [
-      0
-    ],
-    "column": [
-      0
-    ]
+  "unresolved_t_groups": {
+    "row": [],
+    "column": []
   },
-  "scope": "Modulo-five separator splitting of the twelve-site T coarse blocks, using the cut-trace idempotent rank residues and the coefficient-algebra joint T,S characters. T=1 and T=4 split in both orientations; the T=0 group is not certified because the first idempotent has residue zero in both cuts. This is not an exact dimension or rank computation and no score change is claimed."
+  "scope": "Modulo-five separator splitting of the twelve-site T-eigenspace groups, using the cut-trace idempotent rank residues and the coefficient-algebra joint T,S characters. All three T groups split in both orientations. For T=0, the first idempotent has zero trace residue but an explicit nonzero diagonal entry in each orientation, so its rank is a positive multiple of five. These T groups are unions of the joint R,T coarse blocks; R labels of the primaries are not determined here, so no individual joint coarse block is certified to split. This is not an exact dimension or rank computation and no score change is claimed."
 }
