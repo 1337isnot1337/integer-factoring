@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""T-primary cut dimensions of the twelve-site coefficient algebra.
+"""T-primary trace weights of the twelve-site coefficient algebra.
 
-The class sum T satisfies x(x-1)^2(x+1)^2.  Its trace powers on the row
-and column cut modules therefore determine the dimensions of the three
-generalized eigenspaces modulo five, together with the nilpotent trace
-corrections.  The result is a checksum and a structural invariant, not
-an exact rank computation.
+The class sum T satisfies x(x-1)^2(x+1)^2.  Its power traces under the
+two cut trace functionals determine trace weights for the three primary
+groups modulo five, together with nilpotent trace corrections.  These
+are not module dimensions; the result is a checksum, not an exact rank
+computation.
 """
 from __future__ import annotations
 
@@ -35,7 +35,7 @@ def t_power_traces(regular, unit, class_sum, trace_vector, count=6):
     return [int(power @ trace_vector % PRIME) for power in powers]
 
 
-def primary_dimensions(traces):
+def primary_trace_weights(traces):
     rows = [
         [1, pow(4, k, PRIME), k % PRIME, k * pow(4, k, PRIME) % PRIME]
         for k in range(1, 5)
@@ -48,20 +48,20 @@ def primary_dimensions(traces):
             solutions.append(candidate)
     if len(solutions) != 1:
         raise ValueError(f'expected one T-primary solution, got {solutions}')
-    d1, d4, m1, m4 = solutions[0]
-    d0 = (traces[0] - d1 - d4) % PRIME
-    predicted = (d1 + d4 * pow(4, 5, PRIME) + 5 * m1
+    a1, a4, m1, m4 = solutions[0]
+    a0 = (traces[0] - a1 - a4) % PRIME
+    predicted = (a1 + a4 * pow(4, 5, PRIME) + 5 * m1
                  + 5 * pow(4, 5, PRIME) * m4) % PRIME
     if predicted != traces[5]:
         raise ValueError('T-primary trace recurrence does not reproduce T^5')
     return {
-        'dimensions_by_eigenvalue': {'0': d0, '1': d1, '4': d4},
+        'trace_weights_by_eigenvalue': {'0': a0, '1': a1, '4': a4},
         'nilpotent_trace_corrections': {'1': m1, '4': m4},
         't5_check': predicted,
     }
 
 
-def idempotent_group_sums(traces, joint_characters):
+def idempotent_trace_group_sums(traces, joint_characters):
     groups = {'0': [], '1': [], '4': []}
     for index, (t_value, _) in joint_characters.items():
         value = str(t_value)
@@ -86,14 +86,14 @@ def check():
     for cut_name in ('row', 'column'):
         trace_vector = np.array(cut['trace_vectors'][cut_name], dtype=np.int64)
         traces = t_power_traces(regular, unit, class_sum, trace_vector)
-        primary = primary_dimensions(traces)
-        group_sums = idempotent_group_sums(cut['idempotent_trace_residues'][cut_name], joint)
-        if group_sums != primary['dimensions_by_eigenvalue']:
-            raise ValueError(f'{cut_name}: idempotent group sums do not match T-primary dimensions')
+        primary = primary_trace_weights(traces)
+        group_sums = idempotent_trace_group_sums(cut['idempotent_trace_residues'][cut_name], joint)
+        if group_sums != primary['trace_weights_by_eigenvalue']:
+            raise ValueError(f'{cut_name}: idempotent trace sums do not match T-primary trace weights')
         result[cut_name] = {
             'power_traces_0_to_5': traces,
             **primary,
-            'idempotent_group_sums': group_sums,
+            'idempotent_trace_group_sums': group_sums,
         }
     return {
         'status': 'pass',
@@ -102,10 +102,11 @@ def check():
         'basis_indices': table['basis_indices'],
         'class_sum_coordinates': rt['class_sum_coordinates'],
         'cuts': result,
-        'scope': ('T-primary dimensions and nilpotent trace corrections of the '
-                  'twelve-site row and column cut modules, modulo five.  They '
-                  'are congruences, not exact dimensions; individual central '
-                  'idempotent ranks, the two-cut pairing, and the score remain open.'),
+        'scope': ('T-primary trace-functional weights and nilpotent trace corrections '
+                  'for the twelve-site row and column cut trace orientations, '
+                  'modulo five.  These are not module dimensions; C_0 is not '
+                  'the cut-module identity.  Exact ranks, the two-cut pairing, '
+                  'and the score remain open.'),
     }
 
 
@@ -118,8 +119,8 @@ def main():
         args.output.write_text(json.dumps(result, indent=2) + '\n')
     print(json.dumps({
         'status': result['status'],
-        'row': result['cuts']['row']['dimensions_by_eigenvalue'],
-        'column': result['cuts']['column']['dimensions_by_eigenvalue'],
+        'row': result['cuts']['row']['trace_weights_by_eigenvalue'],
+        'column': result['cuts']['column']['trace_weights_by_eigenvalue'],
         'scope': result['scope'],
     }, indent=2))
 

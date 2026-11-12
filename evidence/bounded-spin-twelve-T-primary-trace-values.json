@@ -36,7 +36,7 @@
         1,
         4
       ],
-      "dimensions_by_eigenvalue": {
+      "trace_weights_by_eigenvalue": {
         "0": 2,
         "1": 3,
         "4": 4
@@ -46,7 +46,7 @@
         "4": 4
       },
       "t5_check": 4,
-      "idempotent_group_sums": {
+      "idempotent_trace_group_sums": {
         "0": 2,
         "1": 3,
         "4": 4
@@ -61,7 +61,7 @@
         2,
         1
       ],
-      "dimensions_by_eigenvalue": {
+      "trace_weights_by_eigenvalue": {
         "0": 1,
         "1": 3,
         "4": 2
@@ -71,12 +71,12 @@
         "4": 2
       },
       "t5_check": 1,
-      "idempotent_group_sums": {
+      "idempotent_trace_group_sums": {
         "0": 1,
         "1": 3,
         "4": 2
       }
     }
   },
-  "scope": "T-primary dimensions and nilpotent trace corrections of the twelve-site row and column cut modules, modulo five.  They are congruences, not exact dimensions; individual central idempotent ranks, the two-cut pairing, and the score remain open."
+  "scope": "T-primary trace-functional weights and nilpotent trace corrections for the twelve-site row and column cut trace orientations, modulo five.  These are not module dimensions; C_0 is not the cut-module identity.  Exact ranks, the two-cut pairing, and the score remain open."
 }
