@@ -1,0 +1,93 @@
+{
+  "passed": true,
+  "prime": 5,
+  "length": 10,
+  "basis_indices": [
+    0,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    10
+  ],
+  "primary_dimensions": [
+    34,
+    1,
+    225,
+    300,
+    35,
+    406,
+    155
+  ],
+  "row_idempotent_traces": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "row_idempotent_ranks": [
+    34,
+    1,
+    225,
+    300,
+    35,
+    406,
+    155
+  ],
+  "column_idempotent_traces": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "column_idempotent_ranks": [
+    931,
+    1156,
+    356,
+    581,
+    771,
+    776,
+    715
+  ],
+  "swapped_pair_traces": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    1,
+    0
+  ],
+  "ordinary_pair_traces": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    4,
+    0
+  ],
+  "path_swap_row_traces": [
+    4,
+    1,
+    0,
+    0,
+    0,
+    4,
+    0
+  ],
+  "row_traces_match_dimensions": true,
+  "swapped_pair_matches_row_trace": true,
+  "ordinary_pair_matches_path_swap": true,
+  "path_swap_is_not_coefficient_unit_action": true,
+  "column_traces_are_not_ranks": true,
+  "scope": "Ten-site operator control for the diagonal trace orientation. The row idempotents are genuine projections: their ordinary traces equal the (a,b,b,a) residues and the primary dimensions. The (a,b,a,b) residues equal trace(P e), where P is the path-pair swap. P is not the action of the coefficient unit, so this is not an R-character of e and not the ordinary column-cut trace. The column trace functional is the ordinary trace on the column-cut module; it is not the column rank. At twelve sites the column residues therefore cannot be used as column ranks without a separate column operator check. No twelve-site rank or score change is claimed."
+}

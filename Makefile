@@ -378,6 +378,10 @@ verify-bounded-spin-twelve-RT-coefficient:
 verify-bounded-spin-twelve-separator-split:
 	python3 tools/check_bounded_spin_twelve_separator_split.py
 
+.PHONY: verify-bounded-spin-ten-trace-orientation
+verify-bounded-spin-ten-trace-orientation:
+	python3 tools/check_bounded_spin_ten_trace_orientation.py
+
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py
