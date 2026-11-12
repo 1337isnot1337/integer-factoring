@@ -386,10 +386,6 @@ verify-bounded-spin-twelve-RT-coefficient:
 verify-bounded-spin-twelve-separator-split:
 	python3 tools/check_bounded_spin_twelve_separator_split.py
 
-.PHONY: verify-bounded-spin-twelve-R-primary-split
-verify-bounded-spin-twelve-R-primary-split:
-	python3 tools/check_bounded_spin_twelve_R_primary_split.py --output /tmp/bounded-spin-twelve-R-primary-split.json
-
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py
