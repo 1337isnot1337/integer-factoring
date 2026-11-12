@@ -41,13 +41,15 @@ larger than the target.  The numerical comparisons are
  7      15.672891         2          23.528001
 11      29.699672         2          45.176670
 13      37.614370         2          57.429853
+17      54.968964         3          84.404963
+19      64.332538         3          99.018706
 ```
 
 Thus there is **no full-conservation-kernel crossing for q=5,7,11,13
-over any field**.  At `q=17` the floor permits two or three pieces and
-the two-piece bound no longer closes the lane by itself; the checker
-labels that row ``not closed by this composition.''  The minimum-cut
-cutoff below closes it (and `q=19`) independently.
+over any field** by this floor composition.  At `q=17,19` the floor
+permits three pieces, so the two-piece bound no longer closes the lane
+by itself; the checker labels those rows ``not closed by this
+composition.''  The minimum-cut cutoff below closes them independently.
 
 This is a scope closure for the fixed kernel space, not a lower bound
 on arbitrary crossing tensors.  In particular it does **not** close the
@@ -68,9 +70,9 @@ piece-count restriction, for all `2<=d<=21`.  Since `T_I=E_q`, this
 already closes every conservation seed with `q<=21`, including
 `q=5,7,11,13,17,19`, without the floor argument.  The composition above
 is an independent, conservation-specific check of the same boundary,
-not a new closure of q=13.  If a q=13 search has a different label
-dimension or target, that scope should be stated explicitly; for the
-full-conservation kernel it is already excluded.
+not a new closure of q=13.  The q>=22 conservation family remains open;
+if a q=13 search has a different label dimension or target, that scope
+should be stated explicitly.
 
 ## Relation to the parallel work
 
@@ -91,6 +93,6 @@ make verify-full-conservation-small-q-closure
 ```
 
 The checker evaluates (1), the target, and (2) for `q=5,7,11,13,17`
-with ordinary floating-point margins far from zero; it labels `q=17` as
-not closed by this composition, not as globally open.  It does not build
-a tensor or a factor algorithm.
+with ordinary floating-point margins far from zero; it labels `q=17,19`
+as not closed by this composition, not as globally open.  It does not
+build a tensor or a factor algorithm.
