@@ -19,9 +19,11 @@ row:    0, 1, 0, 1, 0, 0, 0, 4
 column: 0, 4, 0, 1, 0, 0, 0, 1.
 ```
 
-Here the row residues are ordinary ranks and the column residues are the
-replica-swap-twisted traces, not a separate column-cut rank. Grouping by
-the `T` eigenvalue gives
+Here the row residues are the ordinary row-cut trace and the column
+residues are a second diagonal trace orientation, not a separate
+column-cut rank. Neither orientation is `tr(e_i R)`; see the
+[column-trace retraction](bounded-spin-twelve-column-trace-correction.md).
+Grouping by the `T` eigenvalue gives
 
 ```text
 T=0:  idempotents 0,6         row residues 0,0       column residues 0,0
@@ -65,15 +67,13 @@ dimensions of the joint `T,S` components, their ranks, a two-cut rank
 product, or a factoring exponent. It uses the corrected cut-trace
 certificate and the coefficient-algebra joint `T,S` characters.
 
-## Relation to the R refinement
+## Relation to the withdrawn R interpretation
 
-The column trace is the replica-swap-twisted trace, so the corrected row
-and column residues also give the `R=+` and `R=-` multiplicities modulo
-five. The corrected result is much weaker than the earlier
-pre-correction claim: no nontrivial primary is certified mixed. Primaries
-`1` and `7` are pure `R=-`, primary `3` is pure `R=+`, and the other five
-primaries are undetermined because both residues vanish. See
-[the R-primary note](bounded-spin-twelve-R-primary-split.md).
+The attempted `R`-primary split is [withdrawn](bounded-spin-twelve-column-trace-correction.md).
+In the coefficient algebra `R=C_0` is the unit, so `e_i R=e_i`; the second
+trace orientation is therefore not a replica-swap-twisted trace `tr(e_i R)`
+and does not give `R=+` and `R=-` multiplicities. No `R` character,
+`R`-pure refinement, or `R`-mixed obstruction is claimed here.
 
 ## What changed
 
@@ -83,7 +83,8 @@ nonsingular part of that separation to the cut-module partition. The
 direct diagonal witness makes idempotent `0` nonzero but does not split
 `T=0`; `T=4` also remains uncertified. The unresolved targets are now the
 exact ranks of idempotents `0,6` (both multiples of five) and the dual
-idempotent `4`.
+idempotent `4`. The second trace orientation is not `tr(e_i R)`, so no
+`R` refinement is available from these residues.
 
 ## Reproduction
 
