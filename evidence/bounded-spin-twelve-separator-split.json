@@ -70,7 +70,36 @@
       1
     ]
   },
-  "coarse_groups": {
+  "idempotent_zero_diagonal_witnesses": {
+    "idempotent_coefficient_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      4,
+      0
+    ],
+    "basis_position": 8,
+    "coefficient": 9,
+    "row_path_indices": [
+      38,
+      82
+    ],
+    "row_degree_nine_coefficient": 1,
+    "row_diagonal_entry": 4,
+    "column_path_indices": [
+      38,
+      82
+    ],
+    "column_degree_nine_coefficient": 4,
+    "column_diagonal_entry": 1,
+    "nonzero_in_both_orientations": true
+  },
+  "t_eigenspace_groups": {
     "0": {
       "idempotents": [
         0,
@@ -80,8 +109,12 @@
         2,
         4
       ],
-      "row_nonzero_primary_residues": [],
-      "column_nonzero_primary_residues": [],
+      "row_nonzero_primary_residues": [
+        0
+      ],
+      "column_nonzero_primary_residues": [
+        0
+      ],
       "row_split_certified": false,
       "column_split_certified": false,
       "row_split_obstructed_by_zero_residue": true,
@@ -134,7 +167,7 @@
       "column_split_obstructed_by_zero_residue": true
     }
   },
-  "certified_split_groups": {
+  "certified_split_t_groups": {
     "row": [
       1
     ],
@@ -142,7 +175,7 @@
       1
     ]
   },
-  "unresolved_groups": {
+  "unresolved_t_groups": {
     "row": [
       0,
       4
@@ -152,5 +185,5 @@
       4
     ]
   },
-  "scope": "Modulo-five separator splitting of the twelve-site T coarse blocks, using the corrected cut-trace idempotent rank residues and the coefficient-algebra joint T,S characters. T=1 splits into two nonzero primaries in both orientations; T=4 has only one nonzero residue and is not certified to split; T=0 has zero residues for both primaries and remains unresolved. This is not an exact dimension or rank computation and no score change is claimed."
+  "scope": "Modulo-five separator splitting of the twelve-site T-eigenspace groups, using the corrected cut-trace idempotent rank residues and the coefficient-algebra joint T,S characters. T=1 splits into two nonzero primaries (S=0 and S=1) in both orientations. T=4 has only one nonzero residue and is not certified to split. For T=0, the first idempotent has zero trace residue but an explicit nonzero diagonal entry in each orientation, so its rank is a positive multiple of five; the second T=0 idempotent still has zero residue, so only one T=0 component is certified and the group is not certified to split. These T groups are unions of the joint R,T coarse blocks; R labels of the primaries are not determined here. This is not an exact dimension or rank computation and no score change is claimed."
 }
