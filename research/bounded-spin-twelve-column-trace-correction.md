@@ -26,8 +26,8 @@ replica-swap-twisted trace.  The claimed decomposition into `R=+` and
 `R=-` multiplicities was an algebraic misinterpretation and is not a
 structural fact.
 
-The column form is the ordinary trace functional of the column-cut
-module, not the column-cut **rank** and not `tr(e_i R)`.  The exact
+The column form is a second diagonal trace functional, not the
+column-cut **rank** and not `tr(e_i R)`.  The exact
 ten-site column-cut rank pairs are
 `[931,1156,356,581,771,776,715]` in
 [the idempotent-S control](../tools/check_bounded_spin_idempotent_s.py);
@@ -58,9 +58,12 @@ upper bounds for the sum of the central idempotent ranks inside each
 
 ## What is retained
 
-- The exact twelve-site cut trace residues and the cut-trace radical
-  `C_8` remain valid in their original scope; only the `R`-twist
-  interpretation of the second orientation is withdrawn.
+- The corrected exact twelve-site cut trace residues are recorded in the
+  [rank-3 cut trace certificate](bounded-spin-twelve-cut-trace-form.md):
+  both orientations have rank `3` and a seven-dimensional radical, and
+  `C_9`, not `C_8`, is the radical direction carried by the first
+  idempotent. The earlier `C_8` label was an indexing artifact; only the
+  `R`-twist interpretation of the second orientation is withdrawn.
 - The separator's `T`-group split and the `T,S` character data are
   unaffected.
 - No `R` character, R-pure refinement, or R-mixed obstruction is claimed.

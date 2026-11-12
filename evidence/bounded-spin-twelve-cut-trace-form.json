@@ -16,20 +16,19 @@
   ],
   "trace_vectors": {
     "row": [
-      4,
       1,
-      4,
+      1,
       0,
       0,
-      3,
       2,
       3,
+      2,
       0,
-      0
+      0,
+      1
     ],
     "column": [
       1,
-      4,
       1,
       0,
       0,
@@ -37,54 +36,53 @@
       1,
       4,
       0,
-      0
+      0,
+      4
     ]
+  },
+  "trace_vector_normalization": {
+    "row": {
+      "raw_unit_trace": 4,
+      "scale": 4
+    },
+    "column": {
+      "raw_unit_trace": 1,
+      "scale": 1
+    }
   },
   "trace_forms": {
     "row": [
       [
-        4,
         1,
-        4,
+        1,
         0,
         0,
-        3,
         2,
         3,
+        2,
         0,
-        0
+        0,
+        1
       ],
       [
         1,
-        0,
-        3,
-        3,
         1,
-        1,
-        2,
-        3,
         0,
-        3
-      ],
-      [
-        4,
-        3,
         0,
         2,
         3,
-        3,
-        3,
-        3,
+        2,
+        0,
         0,
         1
       ],
       [
         0,
-        3,
-        2,
-        4,
-        4,
-        2,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         0,
         0,
@@ -92,51 +90,51 @@
       ],
       [
         0,
-        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        2,
+        0,
+        0,
         3,
-        4,
-        1,
-        1,
-        1,
+        2,
+        3,
         0,
         0,
         1
       ],
       [
         3,
-        1,
-        3,
-        2,
-        1,
         3,
         0,
-        1,
+        0,
+        2,
+        3,
+        2,
+        0,
         0,
         4
       ],
       [
         2,
         2,
+        0,
+        0,
         3,
-        0,
-        1,
-        0,
-        0,
-        4,
-        0,
-        0
-      ],
-      [
-        3,
-        3,
+        2,
         3,
         0,
         0,
-        1,
-        4,
-        4,
-        0,
-        3
+        1
       ],
       [
         0,
@@ -152,21 +150,32 @@
       ],
       [
         0,
-        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
         1,
+        1,
+        0,
         0,
         1,
         4,
+        1,
         0,
-        3,
         0,
-        3
+        4
       ]
     ],
     "column": [
       [
         1,
-        4,
         1,
         0,
         0,
@@ -174,89 +183,18 @@
         1,
         4,
         0,
-        0
-      ],
-      [
-        4,
-        0,
-        2,
-        4,
-        3,
-        3,
-        1,
-        4,
         0,
         4
       ],
       [
         1,
-        2,
-        3,
-        1,
-        4,
-        4,
-        4,
-        4,
-        0,
-        3
-      ],
-      [
-        0,
-        4,
-        1,
-        2,
-        2,
         1,
         0,
         0,
-        0,
-        0
-      ],
-      [
-        0,
-        3,
-        4,
-        2,
-        3,
-        3,
-        3,
-        0,
-        0,
-        3
-      ],
-      [
-        4,
-        3,
         4,
         1,
-        3,
         4,
         0,
-        3,
-        0,
-        2
-      ],
-      [
-        1,
-        1,
-        4,
-        0,
-        3,
-        0,
-        0,
-        2,
-        0,
-        0
-      ],
-      [
-        4,
-        4,
-        4,
-        0,
-        0,
-        3,
-        2,
-        2,
         0,
         4
       ],
@@ -274,24 +212,168 @@
       ],
       [
         0,
-        4,
-        3,
         0,
-        3,
-        2,
         0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
         4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
         0,
         4
+      ],
+      [
+        1,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        4,
+        4,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        4,
+        4,
+        0,
+        0,
+        4,
+        1,
+        4,
+        0,
+        0,
+        1
       ]
     ]
   },
   "trace_form_rank": {
-    "row": 9,
-    "column": 9
+    "row": 3,
+    "column": 3
   },
   "trace_radical": {
     "row": [
+      [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
       [
         0,
         0,
@@ -307,6 +389,78 @@
     ],
     "column": [
       [
+        4,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        4,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
         0,
         0,
         0,
@@ -320,7 +474,12 @@
       ]
     ]
   },
-  "cut_radical_vector": [
+  "trace_radical_dimension": {
+    "row": 7,
+    "column": 7
+  },
+  "coefficient_9_in_trace_radical": true,
+  "idempotent_0_coefficient": [
     0,
     0,
     0,
@@ -329,10 +488,10 @@
     0,
     0,
     0,
-    1,
+    4,
     0
   ],
-  "cut_radical_is_coefficient_8": true,
+  "idempotent_0_is_4_C9": true,
   "regular_trace_vector": [
     0,
     0,
@@ -371,27 +530,32 @@
       0
     ]
   ],
-  "cut_radical_outside_regular": true,
+  "coefficient_9_regular_trace": 4,
+  "coefficient_9_outside_regular_radical": true,
+  "rt_subalgebra_dimension": 5,
+  "coefficient_9_in_rt_subalgebra": false,
+  "coefficient_9_extension_dimension": 6,
+  "coefficient_9_in_completing_pairs": false,
   "idempotent_trace_residues": {
     "row": [
       0,
-      3,
       1,
-      2,
-      2,
+      0,
       1,
-      2,
-      3
+      0,
+      0,
+      0,
+      4
     ],
     "column": [
       0,
-      1,
+      4,
       0,
       1,
-      1,
-      3,
-      1,
-      4
+      0,
+      0,
+      0,
+      1
     ]
   },
   "idempotent_regular_ranks": [
@@ -404,6 +568,6 @@
     1,
     1
   ],
-  "seconds": 75.0,
-  "scope": "Cut trace form of the twelve-site central-idempotent algebra. The row and column forms have rank 9 with a one-dimensional radical spanned by coefficient direction 8; this direction has nonzero regular trace and is outside the regular trace radical. The idempotent trace residues are ranks modulo five. Exact ranks and any score change remain open."
+  "seconds": 76.2,
+  "scope": "Cut trace form of the twelve-site central-idempotent algebra, with the exact table basis mapped into the original-pencil coefficient indices and the coefficient unit normalized to trace one. The row and column forms have rank 3 and a seven-dimensional radical; coefficient direction C_9 lies in the radical, and the first central idempotent is 4*C_9. The idempotent trace residues are ranks modulo five and sum to one. C_9 lies outside the five-dimensional coefficient subalgebra <C_0,T> and extends it only to dimension 6, so it is not a minimal completing direction. Exact ranks and any score change remain open."
 }

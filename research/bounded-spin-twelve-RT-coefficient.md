@@ -39,7 +39,7 @@ The two dual blocks have characteristic polynomials `(x-1)^2` and
 
 This is a coefficient-algebra computation. It is not the eight-dimensional
 generic `R,T` **orbit on the 7921-state cut module** recorded in
-[the twelve-site orbit note](bounded-spin-twelve-coefficient-dimension.md#the-rt-subalgebra-is-at-least-eight-dimensional); the two
+[the twelve-site orbit note](bounded-spin-twelve-coefficient-dimension.md#the-class-sumreplica-swap-cut-orbit-has-dimension-eight); the two
 dimensions measure different objects. No cut-module rank, two-cut pairing,
 rank bound, or factoring exponent changes.
 

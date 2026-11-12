@@ -120,14 +120,14 @@ def main() -> None:
         raise ValueError('T=1 row split was expected')
     if report['1']['column_split_certified'] is not True:
         raise ValueError('T=1 column split was expected')
-    if report['4']['row_split_certified'] is not True:
-        raise ValueError('T=4 row split was expected')
-    if report['4']['column_split_certified'] is not True:
-        raise ValueError('T=4 column split was expected')
-    if report['0']['row_split_certified'] is not True:
-        raise ValueError('T=0 row split was expected')
-    if report['0']['column_split_certified'] is not True:
-        raise ValueError('T=0 column split was expected')
+    if report['4']['row_split_certified'] is not False:
+        raise ValueError('T=4 row split should not be certified')
+    if report['4']['column_split_certified'] is not False:
+        raise ValueError('T=4 column split should not be certified')
+    if report['0']['row_split_certified'] is not False:
+        raise ValueError('T=0 split should remain uncertified')
+    if report['0']['column_split_certified'] is not False:
+        raise ValueError('T=0 split should remain uncertified')
 
     receipt = {
         'passed': True,
@@ -152,14 +152,17 @@ def main() -> None:
         },
         'scope': (
             'Modulo-five separator splitting of the twelve-site T-eigenspace '
-            'groups, using the cut-trace idempotent rank residues and the '
-            'coefficient-algebra joint T,S characters. All three T groups split '
-            'in both orientations. For T=0, the first idempotent has zero trace '
-            'residue but an explicit nonzero diagonal entry in each orientation, '
-            'so its rank is a positive multiple of five. These T groups are '
-            'unions of the joint R,T coarse blocks; R labels of the primaries '
-            'are not determined here, so no individual joint coarse block is '
-            'certified to split. This is not an exact dimension or rank '
+            'groups, using the corrected cut-trace idempotent rank residues '
+            'and the coefficient-algebra joint T,S characters. T=1 splits '
+            'into two nonzero primaries (S=0 and S=1) in both orientations. '
+            'T=4 has only one nonzero residue and is not certified to split. '
+            'For T=0, the first idempotent has zero trace residue but an '
+            'explicit nonzero diagonal entry in each orientation, so its rank '
+            'is a positive multiple of five; the second T=0 idempotent still '
+            'has zero residue, so only one T=0 component is certified and the '
+            'group is not certified to split. These T groups are unions of the '
+            'joint R,T coarse blocks; R labels of the primaries are not '
+            'determined here. This is not an exact dimension or rank '
             'computation and no score change is claimed.'
         ),
     }
