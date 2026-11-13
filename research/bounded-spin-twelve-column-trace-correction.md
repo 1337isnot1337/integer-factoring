@@ -62,8 +62,9 @@ idempotent ranks inside each `T` block, not the individual ranks.  Reproduce wit
   `C_9`, not `C_8`, is the radical direction carried by the first
   idempotent. The earlier `C_8` label was an indexing artifact; only the
   `R`-twist interpretation of the second orientation is withdrawn.
-- The separator's `T`-group split and the `T,S` character data are
-  unaffected.
+- The coefficient-level `T,S` character data are unaffected. Direct
+  witnesses now give two nonzero central components in every `T` group;
+  this is not a full block decomposition or an exact rank.
 - No `R` character, R-pure refinement, or R-mixed obstruction is claimed.
 
 ## Reproduction
