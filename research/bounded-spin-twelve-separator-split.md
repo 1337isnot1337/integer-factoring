@@ -79,19 +79,19 @@ idempotents `0,4,6` and one for idempotents `1,3,7`; idempotents `2` and
 ## Coarse T dimensions are not the coefficient-table T groups
 
 The exact coarse `T`-primary dimensions are `1485,3281,3155`, summing to
-`7921`. They belong to the Kronecker class sum `T_coarse = sum M_i kron
-M_i`, not to the coefficient-entry class sum used by the joint characters.
-The two operators differ by the path-pair swap on the column pair. The
-[ten-site normalization control](bounded-spin-T-normalization.md) shows
-that this changes the spectrum: coarse dimensions `441,225,490` versus
-entry dimensions `441,225,335,155`.
-
-The coefficient-table row trace group sums are `0,0,1` modulo five while
-the coarse dimensions are `0,1,0`; this is not evidence for a mere label
-exchange. The twelve-site `T_entry` spectrum is still open, so the exact
-coarse dimensions should not be combined with the joint `T,S` characters.
-The row split above uses the coefficient-table labels and does not depend
-on this normalization question.
+`7921`. Their residues `0,1,0` do not match the coefficient-table row
+trace group sums `0,0,1` (`T=0: 0`, `T=1: 5 = 0`, `T=4: 1`). This is not
+a label permutation: the coarse class-sum matrix uses the contraction
+`M[p1,p3]M[p2,p4]`, while the coefficient-table row cut uses
+`M[p1,p4]M[p2,p3]`. The two diagonal traces are `66` and `264` modulo
+five, respectively, so they are different cut orientations of the same
+tensor. The [ten-site normalization control](bounded-spin-T-normalization.md)
+shows that this orientation change alters the spectrum: coarse
+generalized dimensions `441,225,490` versus entry dimensions
+`441,225,335,155`. The exact dimensions must not be combined with the
+joint `T,S` characters until the twelve-site entry-convention spectrum
+is computed. The row split above uses the coefficient-table labels and
+does not depend on this open check.
 
 ## Relation to the withdrawn R interpretation
 

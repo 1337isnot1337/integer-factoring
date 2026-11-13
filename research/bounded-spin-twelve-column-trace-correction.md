@@ -37,7 +37,7 @@ the cut-state count modulo five, but a unit trace alone does not identify
 `C_0` with the cut-module identity.  The relation between the trace
 functionals and the column-cut ranks remains open.
 
-## Exact `T`-primary dimensions
+## Exact coarse `T`-primary dimensions
 
 The coarse `(T,R)` certificate records exact joint generalized dimensions
 `1320,165,2015,1266,670,2485`.  Summing the two `R` signs gives the exact
@@ -47,24 +47,31 @@ The coarse `(T,R)` certificate records exact joint generalized dimensions
 T=0: 1485    T=1: 3281    T=4: 3155,    sum 7921.
 ```
 
-They are dimensions of the cut module, and their residues are
-`0,1,0 mod 5`.  They are not values of a diagonal trace functional, and
-they must not be read off from the `T`-power or cut-trace residue tables.
-The exact dimensions are upper bounds for the sum of the central
-idempotent ranks inside each `T` block, not the individual ranks.  Reproduce with
+They are dimensions of the cut module in the **coarse class-sum**
+labelling, and their residues are `0,1,0 mod 5`.  They are not values of
+a diagonal trace functional, and they must not be read off from the
+`T`-power or cut-trace residue tables.  They are upper bounds for the
+sum of the central idempotent ranks inside each coarse `T` block, not
+the individual ranks.  Reproduce with
 `make verify-bounded-spin-twelve-T-primary-exact`.
 
-### Normalization check
+### Orientation check
 
 The exact coarse dimensions have residues `0,1,0` for `T=0,1,4`, while
 the coefficient-table row trace residues grouped by the joint `T`
-characters sum to `0,0,1`. The coarse operator is `T_coarse = sum M_i
-kron M_i`; the coefficient-entry operator is `T_entry = T_coarse R`.
-The [ten-site control](bounded-spin-T-normalization.md) shows that this
-swap changes the spectrum: coarse `441,225,490` versus entry
-`441,225,335,155`. The exact dimensions and the joint characters should
-therefore not be combined until the twelve-site `T_entry` spectrum is
-computed.
+characters sum to `0,0,1`. This is not a label permutation: the coarse
+class-sum matrix uses the contraction `M[p1,p3]M[p2,p4]`, while the
+coefficient-table row cut uses `M[p1,p4]M[p2,p3]`. The two diagonal
+traces are `66` and `264` modulo five, respectively, so the two matrices
+are different cut orientations of the same tensor. The
+[ten-site normalization control](bounded-spin-T-normalization.md) shows
+that this orientation change alters the spectrum: coarse generalized
+dimensions `441,225,490` versus entry dimensions `441,225,335,155`.
+The coarse dimensions must not be combined with the coefficient-table
+joint `T,S` characters; the twelve-site entry-convention spectrum remains
+open. Reproduce the trace comparison with
+`make verify-bounded-spin-twelve-T-primary-exact` and the spectrum
+comparison with `make verify-bounded-spin-T-normalization`.
 
 ## What is retained
 
@@ -74,8 +81,9 @@ computed.
   `C_9`, not `C_8`, is the radical direction carried by the first
   idempotent. The earlier `C_8` label was an indexing artifact; only the
   `R`-twist interpretation of the second orientation is withdrawn.
-- The separator's `T`-group split and the `T,S` character data are
-  unaffected.
+- The coefficient-level `T,S` character data are unaffected. Direct
+  witnesses now give two nonzero central components in every `T` group;
+  this is not a full block decomposition or an exact rank.
 - No `R` character, R-pure refinement, or R-mixed obstruction is claimed.
 
 ## Reproduction
