@@ -43,8 +43,24 @@ example maximizes the gap `q^2 rank K-r c`.
 
 ## What this does and does not show
 
-The failure of (1) is a **negative diagnostic for one proposed
-shortcut**.  It does not contradict any proved statement:
+A weaker piecewise inequality also fails:
+
+```math
+\sqrt{r(T_K)c(T_K)}\ge\sqrt q\,\operatorname{rank}K. \tag{5}
+```
+
+For the full-rank kernel
+
+```math
+K=\begin{pmatrix}1&1&1\\1&0&1\\1&1&0\end{pmatrix}
+```
+
+on the same group, `rank K=3` and both cut ranks are `5`, so the cost
+is `5` while `sqrt(3)*3=5.196...`.  Thus one cannot recover the
+`q^(3/2)` decomposition bound from either per-piece inequality.
+
+The failure of (1) and (5) is a **negative diagnostic for proposed
+shortcuts**.  It does not contradict any proved statement:
 
 - the all-field minimum-cut cutoff still closes every exact
   decomposition with `q<=21`;
@@ -52,9 +68,9 @@ shortcut**.  It does not contradict any proved statement:
   barrier for its stated groups and fields;
 - the minimum-rank piece floor and the two-piece bounds are unchanged.
 
-In particular, (3) is a single piece, not an exact decomposition of
-the identity, so it is not a seed or a counterexample to any crossing
-statement.  The `q>=22` full-conservation lane over a general field
+In particular, (3) and the full-rank kernel are single pieces, not
+exact decompositions of the identity, so they are not seeds or
+counterexamples to any crossing statement.  The `q>=22` full-conservation lane over a general field
 remains open; the rank-product route would need a different lower
 bound that survives this example.
 

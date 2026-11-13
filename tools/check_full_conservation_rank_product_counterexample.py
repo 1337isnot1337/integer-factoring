@@ -56,6 +56,11 @@ def check() -> dict:
         if minimum is None or gap > minimum[0]:
             minimum = (gap, r, c, candidate_rank, mask)
     assert minimum is not None
+    full_rank_kernel = [[1, 1, 1], [1, 0, 1], [1, 1, 0]]
+    full_rank_cuts = cuts(full_rank_kernel)
+    full_rank = rank_two(full_rank_kernel)
+    assert (full_rank, full_rank_cuts) == (3, (5, 5))
+    assert full_rank_cuts[0] * full_rank_cuts[1] < Q * full_rank * full_rank
     return {
         'passed': True,
         'prime': PRIME,
@@ -70,6 +75,12 @@ def check() -> dict:
         'witness_ratio': (row_cut * column_cut)
         / (Q * Q * kernel_rank),
         'all_q3_kernels_checked': 1 << (Q * Q),
+        'full_rank_kernel': full_rank_kernel,
+        'full_rank_kernel_rank': full_rank,
+        'full_rank_cuts': list(full_rank_cuts),
+        'weaker_sqrt_q_rank_bound_fails': (
+            full_rank_cuts[0] * full_rank_cuts[1]
+            < Q * full_rank * full_rank),
         'scope': (
             'A full-conservation kernel of rank two on Z/3 at characteristic '
             'two has both cut ranks four, so sqrt(r c)=4 is below q sqrt(rank)='
