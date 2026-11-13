@@ -31,12 +31,11 @@ column-cut **rank** and not `tr(e_i R)`.  The exact
 ten-site column-cut rank pairs are
 `[931,1156,356,581,771,776,715]` in
 [the idempotent-S control](../tools/check_bounded_spin_idempotent_s.py);
-their residues do not match the column trace residues either.  Also, the
-trace functional evaluated at `C_0` is `4` in the row orientation and
-`1` in the column orientation, while `C_0` is not the cut-module
-identity; these traces are therefore not module dimensions.  The
-relation between the trace functionals and the column-cut ranks remains
-open.
+their residues do not match the column trace residues either.  In the
+corrected normalization both row and column unit traces are `1`, matching
+the cut-state count modulo five, but a unit trace alone does not identify
+`C_0` with the cut-module identity.  The relation between the trace
+functionals and the column-cut ranks remains open.
 
 ## Exact `T`-primary dimensions
 
@@ -49,11 +48,10 @@ T=0: 1485    T=1: 3281    T=4: 3155,    sum 7921.
 ```
 
 They are dimensions of the cut module, and their residues are
-`0,1,0 mod 5`.  They are not the trace-functional values `2,3,4` in the
-`T`-power table; the row trace functional has total `4 mod 5` at `C_0`,
-while the module dimension is `7921 = 1 mod 5`.  The exact dimensions are
-upper bounds for the sum of the central idempotent ranks inside each
-`T` block, not the individual ranks.  Reproduce with
+`0,1,0 mod 5`.  They are not values of a diagonal trace functional, and
+they must not be read off from the `T`-power or cut-trace residue tables.
+The exact dimensions are upper bounds for the sum of the central
+idempotent ranks inside each `T` block, not the individual ranks.  Reproduce with
 `make verify-bounded-spin-twelve-T-primary-exact`.
 
 ### Label check
