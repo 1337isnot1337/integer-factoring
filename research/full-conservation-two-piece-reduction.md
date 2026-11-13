@@ -41,11 +41,23 @@ pieces has rank-sum cost at least `kq`. At the finite-seed threshold
 | 17 | 54.9690 | 2 or 3 |
 | 19 | 64.3325 | 2 or 3 |
 
-In particular, **the open q=13 general free-conservation search reduces
-to two pieces**. This is a reduction of the search space, not an
+In particular, **the q=13 general free-conservation search reduces to
+two pieces**. This is a reduction of the search space, not an
 odd-alphabet rank-sum obstruction. At q=17 and q=19 three pieces remain
 possible; for larger q the floor allows up to about `q^(sqrt(2)-1)`
 pieces.
+
+**Scope correction.** The two-piece reduction is not the decisive
+statement for the fixed conservation family. The identity `T_I` is the
+crossing tensor `E_q`, and the
+[minimum-cut rank budget](minimum-cut-rank-budget.md) proves, for every
+field and every exact decomposition of `E_d`,
+`sum sqrt(r_i c_i) > d^sqrt(2)` for all `2 <= d <= 21`. Therefore the
+whole conservation-kernel family is already closed for `q <= 21`, with
+arbitrary piece count, independently of the floor below. The first
+unexcluded conservation alphabet is `q=23`; the q=13 two-piece search is
+closed. See [§3](#3-piece-count-reduction) for the exact table and the
+remaining q=23 scope.
 
 The characteristic-two theorem in
 [the full-conservation barrier](full-conservation-rank-sum-barrier.md)
@@ -130,7 +142,17 @@ exactly two pieces.
 
 For `q=5` the target is below `2q`, so only the one-piece identity is
 possible, and it fails. For `q=17,19` the target lies between `3q` and
-`4q`, so at most three pieces are possible.
+`4q`, so at most three pieces are possible. At `q=23` the target
+`84.2896` lies between `3q=69` and `4q=92`, so at most three pieces are
+possible.
+
+The per-piece floor is only a reduction. For every `q <= 21`, the
+stronger [minimum-cut rank budget](minimum-cut-rank-budget.md) closes the
+family outright: it excludes every exact decomposition of `E_q` for all
+`2 <= q <= 21`, with no piece-count restriction. Thus the q=7,11,13
+two-piece reductions and the q=17,19 three-piece windows are superseded
+as crossing questions. The two-piece catalogue below remains a finite
+control, not an open search target.
 
 The script
 [`check_full_conservation_piece_count.py`](../tools/check_full_conservation_piece_count.py)
@@ -166,12 +188,11 @@ theorem. In particular, the catalogue does not cover arbitrary dense
 kernels, mixed supports with cancellation, or nonlinear recombinations.
 
 The recorded q=13 minimum is `169`, compared with target `37.6144`.
-The next useful step is a structural classification of two-piece
-splittings, or a direct two-piece search that preserves the exact cut
-ranks and the free conservation coordinate. The trivial entry-plus-
-complement pair already shows that the coarse floor `2q` is far from
-the observed catalogue scale, but it does not prove a two-piece lower
-bound.
+The trivial entry-plus-complement pair already shows that the coarse
+floor `2q` is far from the observed catalogue scale, but it does not
+prove a two-piece lower bound. The minimum-cut budget now supplies the
+required closure through `q=21`; a structural two-piece classification
+is no longer on the critical path.
 
 ## 5. Verification
 
@@ -185,3 +206,18 @@ piece-floor checks, the piece-count table, and the five finite
 two-piece catalogues. A pass checks the implementation and the stated
 finite controls. It does not establish an odd-alphabet obstruction or
 a stronger complete factoring exponent.
+
+The closure through `q=21` is the separate, already-checked
+[minimum-cut certificate](minimum-cut-rank-budget.md):
+
+```sh
+python3 tools/check_minimum_cut_rank_budget.py \
+  --output evidence/minimum-cut-rank-budget.json
+```
+
+That checker verifies 71,354 rank profiles, 577,536 feasible dual
+vertices, 498,130 unrounded endpoint inequalities, and the exact
+comparison `L^408 > d^577` for every `2 <= d <= 21`; the checked
+run reports PASS and a first uncertified profile at `d=22`. The identity
+`T_I=E_q` is immediate from (1): `[x+y=u+v][y=u]=[x=v][y=u]`. No q=22
+or q=23 conservation closure is claimed here.

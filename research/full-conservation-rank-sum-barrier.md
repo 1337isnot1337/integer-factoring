@@ -35,8 +35,11 @@ factoring exponent remains `1/2`.
 
 Over an odd alphabet the Boolean degree filtration used below is not
 available. The separate [odd-alphabet reduction](full-conservation-two-piece-reduction.md)
-proves only the per-piece floor `sqrt(rc)>=q` and reduces q=13 to a
-two-piece search; it is not an odd-alphabet analogue of (2).
+proves the per-piece floor `sqrt(rc)>=q` and records that the existing
+[minimum-cut rank budget](minimum-cut-rank-budget.md) closes the
+conservation family for all `q<=21`; the floor itself is not an
+odd-alphabet analogue of (2). The first numerically unexcluded
+conservation alphabet is `q=23`.
 
 ## 1. Convolution ranks and Boolean degree
 
