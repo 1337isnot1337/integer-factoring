@@ -37,7 +37,7 @@ the cut-state count modulo five, but a unit trace alone does not identify
 `C_0` with the cut-module identity.  The relation between the trace
 functionals and the column-cut ranks remains open.
 
-## Exact `T`-primary dimensions
+## Exact coarse `T`-primary dimensions
 
 The coarse `(T,R)` certificate records exact joint generalized dimensions
 `1320,165,2015,1266,670,2485`.  Summing the two `R` signs gives the exact
@@ -47,11 +47,12 @@ The coarse `(T,R)` certificate records exact joint generalized dimensions
 T=0: 1485    T=1: 3281    T=4: 3155,    sum 7921.
 ```
 
-They are dimensions of the cut module, and their residues are
-`0,1,0 mod 5`.  They are not values of a diagonal trace functional, and
-they must not be read off from the `T`-power or cut-trace residue tables.
-The exact dimensions are upper bounds for the sum of the central
-idempotent ranks inside each `T` block, not the individual ranks.  Reproduce with
+They are dimensions of the cut module in the **coarse class-sum**
+labelling, and their residues are `0,1,0 mod 5`.  They are not values of
+a diagonal trace functional, and they must not be read off from the
+`T`-power or cut-trace residue tables.  They are upper bounds for the
+sum of the central idempotent ranks inside each coarse `T` block, not
+the individual ranks.  Reproduce with
 `make verify-bounded-spin-twelve-T-primary-exact`.
 
 ### Label check
