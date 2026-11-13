@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "length": 10,
+  "prime": 5,
+  "paths": 34,
+  "module_dimension": 1156,
+  "transposition_matrices": 45,
+  "coarse_T_generalized_nullities": {
+    "0": [
+      385,
+      441,
+      441
+    ],
+    "1": [
+      225,
+      225,
+      225
+    ],
+    "2": [
+      490,
+      490,
+      490
+    ],
+    "3": [
+      0,
+      0,
+      0
+    ],
+    "4": [
+      0,
+      0,
+      0
+    ]
+  },
+  "entry_T_generalized_nullities": {
+    "0": [
+      385,
+      441,
+      441
+    ],
+    "1": [
+      225,
+      225,
+      225
+    ],
+    "2": [
+      335,
+      335,
+      335
+    ],
+    "3": [
+      155,
+      155,
+      155
+    ],
+    "4": [
+      0,
+      0,
+      0
+    ]
+  },
+  "coarse_T_primary_dimensions": {
+    "0": 441,
+    "1": 225,
+    "2": 490
+  },
+  "entry_T_primary_dimensions": {
+    "0": 441,
+    "1": 225,
+    "2": 335,
+    "3": 155
+  },
+  "ten_site_primary_dimensions": [
+    34,
+    1,
+    225,
+    300,
+    35,
+    406,
+    155
+  ],
+  "coarse_T2_splits_as_entry_T2_plus_T3": [
+    335,
+    155
+  ],
+  "scope": "Exact ten-site control comparing the coarse Kronecker class sum T_coarse = sum M_i kron M_i with the coefficient-entry class sum T_entry = T_coarse R, where R swaps the column path pair. Both acts on the 1156-dimensional path-pair module. The spectra differ: T_coarse has generalized dimensions 441,225,490 at eigenvalues 0,1,2, while T_entry has dimensions 441,225,335,155 at eigenvalues 0,1,2,3. The published primary dimensions 34,1,225,300,35,406,155 split the coarse T=2 block as 335+155, matching T_entry. Therefore the twelve-site exact coarse T-primary dimensions 1485,3281,3155 are not automatically the coefficient-table T group dimensions; the twelve-site entry-convention spectrum remains open. No cut rank, two-cut pairing, or score change is claimed."
+}

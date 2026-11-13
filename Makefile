@@ -320,6 +320,10 @@ verify-bounded-spin-support:
 verify-bounded-spin-coarse-twelve:
 	python3 tools/check_bounded_spin_coarse_twelve.py
 
+.PHONY: verify-bounded-spin-twelve-T-primary-exact
+verify-bounded-spin-twelve-T-primary-exact:
+	python3 tools/check_bounded_spin_twelve_T_primary_exact.py
+
 .PHONY: verify-bounded-spin-diagonal-trace
 verify-bounded-spin-diagonal-trace:
 	python3 tools/check_bounded_spin_diagonal_trace.py --output /tmp/bounded-spin-diagonal-trace.json
@@ -377,6 +381,14 @@ verify-bounded-spin-twelve-RT-coefficient:
 .PHONY: verify-bounded-spin-twelve-separator-split
 verify-bounded-spin-twelve-separator-split:
 	python3 tools/check_bounded_spin_twelve_separator_split.py
+
+.PHONY: verify-bounded-spin-ten-trace-orientation
+verify-bounded-spin-ten-trace-orientation:
+	python3 tools/check_bounded_spin_ten_trace_orientation.py
+
+.PHONY: verify-bounded-spin-T-normalization
+verify-bounded-spin-T-normalization:
+	python3 tools/check_bounded_spin_T_normalization.py
 
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
