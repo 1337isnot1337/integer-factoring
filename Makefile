@@ -2192,7 +2192,17 @@ verify-entry-moment-saved:
 verify-entry-gap-cluster-loss:
 	python3 tools/check_entry_gap_cluster_loss.py --output evidence/entry-gap-cluster-loss.json
 
+.PHONY: verify-gap-moment-order
+verify-gap-moment-order:
+	python3 tools/check_gap_moment_order.py --output /tmp/integer-factoring-gap-moment-order.json
+
+.PHONY: verify-dilation-cluster-break
+verify-dilation-cluster-break:
+	python3 tools/check_dilation_cluster_break.py --output /tmp/integer-factoring-dilation-cluster-break.json
+
 verify-arithmetic: verify-entry-moment-saved
+verify-arithmetic: verify-gap-moment-order
+verify-arithmetic: verify-dilation-cluster-break
 
 .PHONY: verify-output-space-transfer
 verify-output-space-transfer:
@@ -3638,8 +3648,62 @@ verify-arithmetic: verify-target-order-mixed-rows
 verify-mixed-pair-gap-cycle:
 	python3 tools/check_mixed_pair_gap_cycle.py --output /tmp/integer-factoring-mixed-pair-gap-cycle.json
 
+verify-arithmetic: verify-mixed-pair-gap-cycle
+
+.PHONY: verify-mixed-pair-rank-sweep
+verify-mixed-pair-rank-sweep:
+	python3 tools/check_mixed_pair_rank_sweep.py --max-target 2500 --max-window 3 --output /tmp/integer-factoring-mixed-pair-rank-sweep.json
+
+verify-arithmetic: verify-mixed-pair-rank-sweep
+
+.PHONY: verify-mixed-pair-rank-sweep-w4
+verify-mixed-pair-rank-sweep-w4:
+	python3 tools/check_mixed_pair_rank_sweep.py --max-target 10000 --max-window 4 --output /tmp/integer-factoring-mixed-pair-rank-sweep-w4.json
+
+verify-arithmetic: verify-mixed-pair-rank-sweep-w4
+
+.PHONY: verify-mixed-pair-gap-lattice-index
+verify-mixed-pair-gap-lattice-index:
+	python3 tools/check_mixed_pair_rank_sweep.py --max-window 4 --targets 1117,1289,25169,29207,38677,43987,67819,70589,79823,96749 --output /tmp/integer-factoring-mixed-pair-gap-lattice-index.json
+
+verify-arithmetic: verify-mixed-pair-gap-lattice-index
+
+.PHONY: verify-mixed-pair-saturation-depth
+verify-mixed-pair-saturation-depth:
+	python3 tools/check_mixed_pair_saturation_depth.py --output /tmp/integer-factoring-mixed-pair-saturation-depth.json
+
+verify-arithmetic: verify-mixed-pair-saturation-depth
+
+.PHONY: verify-mixed-pair-order-saturation
+verify-mixed-pair-order-saturation:
+	python3 tools/check_mixed_pair_order_saturation.py --output /tmp/integer-factoring-mixed-pair-order-saturation.json
+
+verify-arithmetic: verify-mixed-pair-order-saturation
+
+.PHONY: verify-mixed-pair-second-cycle
+verify-mixed-pair-second-cycle:
+	python3 tools/check_mixed_pair_second_cycle.py --output /tmp/integer-factoring-mixed-pair-second-cycle.json
+
+verify-arithmetic: verify-mixed-pair-second-cycle verify-two-primary-order-saturation
+
+.PHONY: verify-mixed-pair-annihilator-repair
+verify-mixed-pair-annihilator-repair:
+	python3 tools/check_mixed_pair_annihilator_repair.py --output /tmp/integer-factoring-mixed-pair-annihilator-repair.json
+
+verify-arithmetic: verify-mixed-pair-annihilator-repair
+
+.PHONY: verify-mixed-pair-annihilator-second-cycle
+verify-mixed-pair-annihilator-second-cycle:
+	python3 tools/check_mixed_pair_annihilator_second_cycle.py --output /tmp/integer-factoring-mixed-pair-annihilator-second-cycle.json
+
+verify-arithmetic: verify-mixed-pair-annihilator-second-cycle
+
 .PHONY: verify-two-primary-order-saturation
 verify-two-primary-order-saturation:
 	python3 tools/check_two_primary_order_saturation.py --output /tmp/integer-factoring-two-primary-order-saturation.json
 
-verify-arithmetic: verify-mixed-pair-gap-cycle verify-two-primary-order-saturation
+.PHONY: verify-full-order-saturation
+verify-full-order-saturation:
+	python3 tools/check_full_order_saturation.py --output /tmp/integer-factoring-full-order-saturation.json
+
+verify-arithmetic: verify-full-order-saturation
