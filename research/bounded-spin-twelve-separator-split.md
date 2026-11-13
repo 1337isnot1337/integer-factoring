@@ -80,11 +80,13 @@ idempotents `0,4,6` and one for idempotents `1,3,7`; idempotents `2` and
 
 The exact coarse `T`-primary dimensions are `1485,3281,3155`, summing to
 `7921`. Their residues `0,1,0` do not match the coefficient-table row
-trace group sums `0,0,1` (`T=0: 0`, `T=1: 5 = 0`, `T=4: 1`). The mismatch
-is exactly an exchange of the labels `1` and `4`. The coarse class-sum
-`T` and the coefficient-table `T` are therefore not normalized
-identically; until that normalization is fixed, the exact dimensions
-should not be combined with the joint `T,S` characters. The row split
+trace group sums `0,0,1` (`T=0: 0`, `T=1: 5 = 0`, `T=4: 1`). This is not
+a label permutation: the coarse class-sum matrix uses the contraction
+`M[p1,p3]M[p2,p4]`, while the coefficient-table row cut uses
+`M[p1,p4]M[p2,p3]`. The two diagonal traces are `66` and `264` modulo
+five, respectively, so they are different cut orientations of the same
+tensor. The exact dimensions should not be combined with the joint `T,S`
+characters until the orientation relation is settled. The row split
 above uses the coefficient-table labels and does not depend on this open
 check.
 

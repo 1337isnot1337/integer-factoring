@@ -11,6 +11,11 @@ from __future__ import annotations
 import json
 from pathlib import Path
 
+import numpy as np
+
+from native_gf5_flint import multiply
+from check_bounded_spin_transposition_subalgebra import frame, transposition_matrices
+
 ROOT = Path(__file__).resolve().parents[1]
 EVIDENCE = ROOT / 'evidence/bounded-spin-coarse-twelve.json'
 EXPECTED = {(0, 1): 1320, (0, 4): 165, (1, 1): 2015,
@@ -26,6 +31,14 @@ def check() -> dict:
              for t in (0, 1, 4)}
     assert exact == {0: 1485, 1: 3281, 4: 3155}
     assert sum(exact.values()) == 89 * 89
+    ps, words, vectors, inverse_norms = frame(12)
+    matrices = transposition_matrices(12, words, vectors, inverse_norms)
+    coarse_trace = sum(pow(int(np.trace(matrix)) % 5, 2, 5) for matrix in matrices) % 5
+    coefficient_row_trace = sum(
+        int(np.trace(multiply(matrix.astype(np.int64), matrix.astype(np.int64)))) % 5
+        for matrix in matrices) % 5
+    assert coarse_trace == 1
+    assert coefficient_row_trace == 4
     return {
         'passed': True,
         'length': 12,
@@ -35,14 +48,18 @@ def check() -> dict:
         'coarse_T_primary_dimensions': {str(k): v for k, v in exact.items()},
         'T_residues_mod_5': {str(k): v % 5 for k, v in exact.items()},
         'sum': sum(exact.values()),
+        'coarse_T_trace_mod_5': coarse_trace,
+        'coefficient_row_cut_T_trace_mod_5': coefficient_row_trace,
         'scope': ('Exact coarse class-sum T-primary module dimensions obtained '
                   'by summing the two exact R signs of the coarse (T,R) '
                   'generalized eigenspaces. These are dimensions, not cut ranks. '
-                  'The coarse class-sum T labels are not yet reconciled with the '
-                  'coefficient-table T labels (the residues suggest exchanging '
-                  'labels 1 and 4), so do not combine these dimensions with the '
-                  'joint T,S characters. Individual central-idempotent ranks and '
-                  'the two-cut pairing remain open.'),
+                  'The coarse class-sum T matrix uses the contraction '
+                  'M[p1,p3]M[p2,p4], while the coefficient-table row cut uses '
+                  'M[p1,p4]M[p2,p3]; their traces are 66 and 264 modulo five, '
+                  'so they are different cut orientations, not a relabeling. '
+                  'Do not combine these coarse dimensions with the joint T,S '
+                  'characters. Individual central-idempotent ranks and the '
+                  'two-cut pairing remain open.'),
     }
 
 

@@ -55,15 +55,20 @@ sum of the central idempotent ranks inside each coarse `T` block, not
 the individual ranks.  Reproduce with
 `make verify-bounded-spin-twelve-T-primary-exact`.
 
-### Label check
+### Orientation check
 
 The exact coarse dimensions have residues `0,1,0` for `T=0,1,4`, while
 the coefficient-table row trace residues grouped by the joint `T`
-characters sum to `0,0,1`. The two multisets agree after exchanging the
-labels `1` and `4`, so the coarse class-sum `T` and the coefficient-table
-`T` are not normalized identically. This is an open reconciliation
-check; the exact dimensions and the joint characters should not be
-combined until it is settled.
+characters sum to `0,0,1`. This is not a label permutation: the coarse
+class-sum matrix uses the contraction `M[p1,p3]M[p2,p4]`, while the
+coefficient-table row cut uses `M[p1,p4]M[p2,p3]`. The two diagonal
+traces are `66` and `264` modulo five, respectively, so the two matrices
+are different cut orientations of the same tensor. Their exact
+generalized dimensions need not agree, and the coarse dimensions must
+not be combined with the coefficient-table joint `T,S` characters. The
+relation between the two orientations remains an open check.
+Reproduce the trace comparison with
+`make verify-bounded-spin-twelve-T-primary-exact`.
 
 ## What is retained
 
