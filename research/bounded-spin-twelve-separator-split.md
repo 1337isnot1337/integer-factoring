@@ -1,4 +1,4 @@
-# The twelve-site separator splits the T=1 group modulo five
+# The twelve-site separator splits all T groups modulo five
 
 ## Result
 
@@ -12,17 +12,20 @@ idempotent   0     1     2     3     4     5     6     7
 ```
 
 The [corrected cut trace certificate](../evidence/bounded-spin-twelve-cut-trace-form.json)
-records the idempotent rank residues modulo five:
+records the idempotent trace-functional residues modulo five:
 
 ```text
 row:    0, 1, 0, 1, 0, 0, 0, 4
 column: 0, 4, 0, 1, 0, 0, 0, 1.
 ```
 
-Here the row residues are the ordinary row-cut trace and the column
-residues are a second diagonal trace orientation, not a separate
-column-cut rank. Neither orientation is `tr(e_i R)`; see the
+Here the column residues are values of the `trace(P e)` functional, not a
+column-cut rank and not `tr(e_i R)`; see the
+[ten-site trace control](bounded-spin-ten-trace-orientation.md) and the
 [column-trace retraction](bounded-spin-twelve-column-trace-correction.md).
+Only the row pairing is a cut trace, so the split certificate below is
+for the row cut. The column functional is recorded as a checksum but
+does not certify a column split.
 Grouping by the `T` eigenvalue gives
 
 ```text
@@ -31,41 +34,63 @@ T=1:  idempotents 1,2,5,7     row residues 1,0,0,4   column residues 4,0,0,1
 T=4:  idempotents 3,4         row residues 1,0       column residues 1,0
 ```
 
-A nonzero rank residue certifies that the corresponding primary image is
-nonzero. Therefore `T=1` splits into two row components and two column
-components, namely the primaries with `S=0` and `S=1`. The `T=4` group has
-only one nonzero residue in each orientation (`S=3`), so its split is
-**not** certified. The `T=0` group has only one certified nonzero
-primary, as explained next, so it is also **not** certified to split.
+A nonzero row trace residue certifies that the corresponding primary
+image is nonzero. The nonzero row residues already split `T=1` (`S=0` and
+`S=1`) and give one nonzero component in each of `T=0` and `T=4`. The
+remaining primaries with zero row residues are resolved by explicit row
+diagonal matrix entries next.
 
-## The first idempotent is nonzero
+## Direct diagonal witnesses
 
-Idempotent `0` has zero trace residue in both orientations, but it is not
-forced to zero. Its coefficient vector is supported only at coefficient
-`9`:
-
-```text
-e_0 = 4 C_9.
-```
-
-At the twelve-site path indices `(38,82)`, the diagonal entries are
+For an idempotent action, a nonzero diagonal matrix entry proves that the
+operator is nonzero. The checker evaluates three such entries directly
+from the path-pair polynomial forms:
 
 ```text
-row    (a,b,b,a):  [z^9] P = 1,   e_0 entry = 4,
-column (a,b,a,b):  [z^9] P = 4,   e_0 entry = 1.
+idempotent  path pair   row entry   column functional   consequence
+0           (38,82)     4           1                   rank >= 5
+2           (0,1)       3           2                   rank >= 5
+4           (0,0)       2           2                   rank >= 5
+5           (0,0)       1           1                   rank >= 5
+6           (0,0)       4           4                   rank >= 5
 ```
 
-Both are nonzero, so the idempotent operator is nonzero in both
-orientations. Since its trace residue is zero, its rank is a positive
-multiple of five. This certifies one `T=0` component, with separator
-character `S=2`; the other `T=0` idempotent `6` (`S=4`) still has zero
-residues and may be zero or a positive multiple of five. Hence `T=0` is
-not split by the present certificate.
+Because each idempotent action is a projection over `F5`, its ordinary
+row trace equals its rank. Idempotents `0`, `2`, `4`, `5`, and `6` have
+zero row trace residue, so a nonzero row entry forces their ranks to be
+positive multiples of five, hence at least five. The nonzero row residues
+of idempotents `1`, `3`, and `7` give the remaining nonzero components.
+Thus all eight primaries are nonzero in the row cut.
 
-This is a modulo-five splitting certificate. It does not give the exact
-dimensions of the joint `T,S` components, their ranks, a two-cut rank
-product, or a factoring exponent. It uses the corrected cut-trace
-certificate and the coefficient-algebra joint `T,S` characters.
+Therefore every `T` group splits into all of its separator components in
+the row cut:
+
+```text
+T=0:  S=2 (idempotent 0), S=4 (idempotent 6)
+T=1:  S=0 (idempotent 1), S=1 (idempotent 7),
+      S=2 (idempotent 2), S=3 (idempotent 5)
+T=4:  S=3 (idempotent 3), S=0 (idempotent 4)
+```
+
+This is a modulo-five row-cut splitting certificate. The column
+functional does not give column ranks, so no column split is claimed. It
+does not give the exact dimensions of the joint `T,S` components, their
+exact ranks, a two-cut rank product, or a factoring exponent. The rank lower bounds are five for
+idempotents `0,4,6` and one for idempotents `1,3,7`; idempotents `2` and
+`5` are nonzero but are not needed for the splits.
+
+## Coarse T dimensions are not the coefficient-table T groups
+
+The exact coarse `T`-primary dimensions are `1485,3281,3155`, summing to
+`7921`. The coefficient-table row cut uses the entry contraction
+`M[p1,p4]M[p2,p3]`, not the coarse contraction `M[p1,p3]M[p2,p4]`; the
+two diagonal traces are `264` and `66` modulo five. The
+[T normalization control](bounded-spin-T-normalization.md) shows how the
+orientation change flips the `R=-` eigenvalue, and gives the exact
+coefficient-table `T_entry` layer dimensions `1485,4500,1936` for
+`T=0,1,4`. Their residues `0,0,1` match the row trace group sums. The row
+split above uses these coefficient-table labels; individual component
+dimensions remain open.
 
 ## Relation to the withdrawn R interpretation
 
@@ -77,14 +102,15 @@ and does not give `R=+` and `R=-` multiplicities. No `R` character,
 
 ## What changed
 
-The previous separator checkpoint established the character separation
-at the coefficient-algebra level. This note transfers only the `T=1`
-nonsingular part of that separation to the cut-module partition. The
-direct diagonal witness makes idempotent `0` nonzero but does not split
-`T=0`; `T=4` also remains uncertified. The unresolved targets are now the
-exact ranks of idempotents `0,6` (both multiples of five) and the dual
-idempotent `4`. The second trace orientation is not `tr(e_i R)`, so no
-`R` refinement is available from these residues.
+The first separator checkpoint established only character separation at
+the coefficient-algebra level. A later revision restricted the cut-module
+conclusion to `T=1` because the row trace residues of idempotents `0`,
+`4`, and `6` vanish. The present certificate removes that restriction
+with explicit nonzero row diagonal entries: the trace residue alone is
+not the only possible witness. All three `T` groups are now certified to
+split in the row cut. The column pairing is a `trace(P e)` functional,
+not a column rank, so column splits remain withdrawn. Exact component
+dimensions and the two-cut pairing remain open.
 
 ## Reproduction
 
@@ -95,7 +121,7 @@ make verify-bounded-spin-twelve-separator-split
 
 The checker reads the RT coefficient receipt and the corrected cut
 trace-form receipt, checks their common basis, verifies the three `T`
-groups, and evaluates the two explicit diagonal entries that make
-idempotent `0` nonzero. It records the one certified `T=1` split and the
-unresolved `T=0` and `T=4` groups. No full cut operator or exact rank
-computation is performed.
+groups, and evaluates explicit nonzero row diagonal entries of
+idempotents `0`, `4`, and `6`. It records all three certified row-cut
+`T`-group splits and the resulting rank lower bounds. No full cut
+operator or exact rank computation is performed.

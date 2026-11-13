@@ -4,8 +4,8 @@
 
 The twelve-site coefficient table and the diagonal trace forms determine
 the trace form of every product on the cut module. Evaluating the eight
-primitive central idempotents gives their ranks modulo five. The corrected
-structural facts are
+primitive central idempotents gives the values of the cut trace functionals
+on them modulo five. The corrected structural facts are
 
 ```text
 row cut trace form rank       3
@@ -22,7 +22,7 @@ than one-dimensional. `C_9` has regular trace `4`, so it is not in the
 regular trace radical. The cut module therefore has a large
 trace-invisible subspace that the regular representation does not see.
 
-The idempotent rank residues in the two orientations are
+The idempotent trace-functional residues in the two orientations are
 
 ```text
 row:    0, 1, 0, 1, 0, 0, 0, 4
@@ -30,10 +30,12 @@ column: 0, 4, 0, 1, 0, 0, 0, 1
 ```
 
 for regular ranks `1,1,2,1,2,1,1,1`. Each list sums to one modulo five,
-matching the `89^2 = 7921` cut states. These are the ranks modulo five.
-The first scalar idempotent has trace zero in both cuts; each dual block
-has even trace, as required. The residues are checksums for the exact
-rank computation, not the ranks themselves.
+matching the normalized trace of the coefficient unit. These are the
+values of the cut trace functionals modulo five, not module dimensions;
+for an idempotent projection, however, the trace equals the rank, so a
+nonzero functional value or a nonzero diagonal matrix entry gives a rank
+lower bound. The residues are checksums for the exact rank computation,
+not the exact ranks themselves.
 
 ## Correction and normalization
 
@@ -64,9 +66,9 @@ is normalized independently.
   radical. An argument that uses only a single invisible direction, or
   that identifies the cut radical with the regular radical, is incomplete.
 - The first central idempotent is `4 C_9`; its zero residue is explained
-  by the fact that `C_9` lies in the cut trace radical. This does not show
-  that the idempotent has zero rank: its rank is still only known to be a
-  multiple of five.
+  by the fact that `C_9` lies in the cut trace radical. A direct nonzero
+  diagonal entry shows that the idempotent has nonzero rank; since its
+  trace is zero modulo five, its rank is a positive multiple of five.
 - `C_9` lies outside the five-dimensional coefficient subalgebra
   `<C_0,T>` and extends it only to dimension `6`. It is not one of the
   minimal completing pairs `(2,6)`, `(3,5)`, `(3,6)` found by the peer

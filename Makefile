@@ -394,6 +394,10 @@ verify-bounded-spin-twelve-separator-split:
 verify-bounded-spin-ten-trace-orientation:
 	python3 tools/check_bounded_spin_ten_trace_orientation.py
 
+.PHONY: verify-bounded-spin-T-normalization
+verify-bounded-spin-T-normalization:
+	python3 tools/check_bounded_spin_T_normalization.py
+
 .PHONY: verify-bounded-spin-growth
 verify-bounded-spin-growth:
 	python3 tools/check_bounded_spin_growth.py
