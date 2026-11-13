@@ -54,15 +54,17 @@ The exact dimensions are upper bounds for the sum of the central
 idempotent ranks inside each `T` block, not the individual ranks.  Reproduce with
 `make verify-bounded-spin-twelve-T-primary-exact`.
 
-### Label check
+### Normalization check
 
 The exact coarse dimensions have residues `0,1,0` for `T=0,1,4`, while
 the coefficient-table row trace residues grouped by the joint `T`
-characters sum to `0,0,1`. The two multisets agree after exchanging the
-labels `1` and `4`, so the coarse class-sum `T` and the coefficient-table
-`T` are not normalized identically. This is an open reconciliation
-check; the exact dimensions and the joint characters should not be
-combined until it is settled.
+characters sum to `0,0,1`. The coarse operator is `T_coarse = sum M_i
+kron M_i`; the coefficient-entry operator is `T_entry = T_coarse R`.
+The [ten-site control](bounded-spin-T-normalization.md) shows that this
+swap changes the spectrum: coarse `441,225,490` versus entry
+`441,225,335,155`. The exact dimensions and the joint characters should
+therefore not be combined until the twelve-site `T_entry` spectrum is
+computed.
 
 ## What is retained
 

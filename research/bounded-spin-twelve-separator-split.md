@@ -76,17 +76,22 @@ exact ranks, a two-cut rank product, or a factoring exponent. The rank lower bou
 idempotents `0,4,6` and one for idempotents `1,3,7`; idempotents `2` and
 `5` are nonzero but are not needed for the splits.
 
-## Exact T-primary dimension check
+## Coarse T dimensions are not the coefficient-table T groups
 
 The exact coarse `T`-primary dimensions are `1485,3281,3155`, summing to
-`7921`. Their residues `0,1,0` do not match the coefficient-table row
-trace group sums `0,0,1` (`T=0: 0`, `T=1: 5 = 0`, `T=4: 1`). The mismatch
-is exactly an exchange of the labels `1` and `4`. The coarse class-sum
-`T` and the coefficient-table `T` are therefore not normalized
-identically; until that normalization is fixed, the exact dimensions
-should not be combined with the joint `T,S` characters. The row split
-above uses the coefficient-table labels and does not depend on this open
-check.
+`7921`. They belong to the Kronecker class sum `T_coarse = sum M_i kron
+M_i`, not to the coefficient-entry class sum used by the joint characters.
+The two operators differ by the path-pair swap on the column pair. The
+[ten-site normalization control](bounded-spin-T-normalization.md) shows
+that this changes the spectrum: coarse dimensions `441,225,490` versus
+entry dimensions `441,225,335,155`.
+
+The coefficient-table row trace group sums are `0,0,1` modulo five while
+the coarse dimensions are `0,1,0`; this is not evidence for a mere label
+exchange. The twelve-site `T_entry` spectrum is still open, so the exact
+coarse dimensions should not be combined with the joint `T,S` characters.
+The row split above uses the coefficient-table labels and does not depend
+on this normalization question.
 
 ## Relation to the withdrawn R interpretation
 
