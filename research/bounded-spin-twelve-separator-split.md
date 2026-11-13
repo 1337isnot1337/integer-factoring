@@ -75,9 +75,9 @@ T=4:  S=3 (idempotent 3), S=0 (idempotent 4)
 This is a modulo-five row-cut splitting certificate. The column
 functional does not give column ranks, so no column split is claimed. It
 does not give the exact dimensions of the joint `T,S` components, their
-exact ranks, a two-cut rank product, or a factoring exponent. The rank lower bounds are five for
-idempotents `0,4,6` and one for idempotents `1,3,7`; idempotents `2` and
-`5` are nonzero but are not needed for the splits.
+exact ranks, a two-cut rank product, or a factoring exponent. The rank
+lower bounds are five for idempotents `0,2,4,5,6` and one for idempotents
+`1,3,7`.
 
 ## Coarse T dimensions are not the coefficient-table T groups
 

@@ -49,9 +49,11 @@ or transfer-matrix column computation.
 
 This leaves the corrected row residues and the separator's `T=1`
 two-component split.  It removes the previously claimed column splits
-and the uncertified `T=0` and `T=4` splits.  The exact `T`-primary module
-dimensions are `1485,3281,3155`; they are upper bounds for sums of the
-individual central-idempotent ranks, not the ranks themselves.
+and the uncertified `T=0` and `T=4` splits.  The exact coarse `T`-primary
+module dimensions are `1485,3281,3155`; the coefficient-entry layers are
+`1485,4500,1936` after the orientation sign flip. Both are upper bounds
+for sums of the individual central-idempotent ranks, not the ranks
+themselves; see [the normalization control](bounded-spin-T-normalization.md).
 
 ## Reproduction
 
