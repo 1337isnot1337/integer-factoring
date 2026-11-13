@@ -112,30 +112,20 @@ def main() -> None:
             witness = witnesses.get(str(index))
             if witness is not None and witness['row_diagonal_entry'] % 5:
                 row_nonzero = sorted(set(row_nonzero + [index]))
-            if witness is not None and witness['column_diagonal_entry'] % 5:
-                column_nonzero = sorted(set(column_nonzero + [index]))
         report[str(t_value)] = {
             'idempotents': indices,
             'separator_characters': distinct_s,
             'row_nonzero_primary_residues': row_nonzero,
-            'column_nonzero_primary_residues': column_nonzero,
+            'column_functional_nonzero_primaries': column_nonzero,
             'row_split_certified': len(row_nonzero) >= 2,
-            'column_split_certified': len(column_nonzero) >= 2,
+            'column_rank_split_certified': False,
             'row_split_obstructed_by_zero_residue':
                 len(row_nonzero) < 2,
-            'column_split_obstructed_by_zero_residue':
-                len(column_nonzero) < 2,
         }
 
-    if report['1']['row_split_certified'] is not True:
-        raise ValueError('T=1 row split was expected')
-    if report['1']['column_split_certified'] is not True:
-        raise ValueError('T=1 column split was expected')
-    for t_value in (0, 4):
+    for t_value in (0, 1, 4):
         if report[str(t_value)]['row_split_certified'] is not True:
             raise ValueError(f'T={t_value} row split was expected')
-        if report[str(t_value)]['column_split_certified'] is not True:
-            raise ValueError(f'T={t_value} column split was expected')
 
     receipt = {
         'passed': True,
@@ -146,40 +136,33 @@ def main() -> None:
         'idempotent_trace_residues': residues,
         'idempotent_diagonal_witnesses': witnesses,
         't_eigenspace_groups': report,
-        'certified_split_t_groups': {
-            'row': [int(t) for t, row in report.items()
-                    if row['row_split_certified']],
-            'column': [int(t) for t, row in report.items()
-                       if row['column_split_certified']],
-        },
-        'unresolved_t_groups': {
-            'row': [int(t) for t, row in report.items()
-                    if not row['row_split_certified']],
-            'column': [int(t) for t, row in report.items()
-                       if not row['column_split_certified']],
-        },
+        'certified_row_split_t_groups': [
+            int(t) for t, row in report.items() if row['row_split_certified']],
+        'column_rank_splits_certified': [],
         'scope': (
             'Modulo-five separator splitting of the twelve-site T-eigenspace '
-            'groups, using the corrected cut-trace functional residues, the '
-            'coefficient-algebra joint T,S characters, and explicit nonzero '
-            'diagonal matrix entries of the central idempotent actions. All '
-            'three T groups split in both orientations: T=1 by the nonzero '
-            'residues of primaries 1 and 7, T=0 by explicit entries of '
+            'groups, using the corrected row-cut trace-functional residues, '
+            'the coefficient-algebra joint T,S characters, and explicit '
+            'nonzero row-diagonal matrix entries of the central idempotent '
+            'actions. All three T groups split in the row cut: T=1 by the '
+            'nonzero residues of primaries 1 and 7, T=0 by explicit entries of '
             'idempotents 0 and 6, and T=4 by the residue of primary 3 and an '
             'explicit entry of idempotent 4. Because each idempotent action is '
-            'a projection, a zero trace residue forces its rank to be a '
+            'a projection, a zero row trace residue forces its rank to be a '
             'multiple of five; combined with the witness this gives rank at '
-            'least five for idempotents 0, 4, and 6. These T groups are unions '
-            'of the joint R,T coarse blocks; R labels of the primaries are not '
-            'determined here. This is not an exact dimension or rank '
-            'computation and no score change is claimed.'
+            'least five for idempotents 0, 4, and 6. The column pairing is a '
+            'trace(P e) functional, not a column rank, so no column split is '
+            'certified. These T groups are unions of the joint R,T coarse '
+            'blocks; R labels of the primaries are not determined here. This '
+            'is not an exact dimension or rank computation and no score change '
+            'is claimed.'
         ),
     }
     OUTPUT.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps({
         'passed': True,
-        'certified_split_t_groups': receipt['certified_split_t_groups'],
-        'unresolved_t_groups': receipt['unresolved_t_groups'],
+        'certified_row_split_t_groups': receipt['certified_row_split_t_groups'],
+        'column_rank_splits_certified': receipt['column_rank_splits_certified'],
         'idempotent_diagonal_witnesses': witnesses,
         't_eigenspace_groups': report,
     }, indent=2))

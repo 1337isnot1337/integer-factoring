@@ -38,6 +38,34 @@ identity; these traces are therefore not module dimensions.  The
 relation between the trace functionals and the column-cut ranks remains
 open.
 
+## Exact `T`-primary dimensions
+
+The coarse `(T,R)` certificate records exact joint generalized dimensions
+`1320,165,2015,1266,670,2485`.  Summing the two `R` signs gives the exact
+`T`-primary module dimensions
+
+```text
+T=0: 1485    T=1: 3281    T=4: 3155,    sum 7921.
+```
+
+They are dimensions of the cut module, and their residues are
+`0,1,0 mod 5`.  They are not the trace-functional values `2,3,4` in the
+`T`-power table; the row trace functional has total `4 mod 5` at `C_0`,
+while the module dimension is `7921 = 1 mod 5`.  The exact dimensions are
+upper bounds for the sum of the central idempotent ranks inside each
+`T` block, not the individual ranks.  Reproduce with
+`make verify-bounded-spin-twelve-T-primary-exact`.
+
+### Label check
+
+The exact coarse dimensions have residues `0,1,0` for `T=0,1,4`, while
+the coefficient-table row trace residues grouped by the joint `T`
+characters sum to `0,0,1`. The two multisets agree after exchanging the
+labels `1` and `4`, so the coarse class-sum `T` and the coefficient-table
+`T` are not normalized identically. This is an open reconciliation
+check; the exact dimensions and the joint characters should not be
+combined until it is settled.
+
 ## What is retained
 
 - The corrected exact twelve-site cut trace residues are recorded in the
