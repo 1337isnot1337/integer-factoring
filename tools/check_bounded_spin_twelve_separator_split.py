@@ -70,7 +70,9 @@ def idempotent_diagonal_witnesses(basis):
         raise ValueError('unexpected coefficient basis')
     witnesses = {
         '0': diagonal_witness(basis, IDEMPOTENTS, 0, (38, 82)),
+        '2': diagonal_witness(basis, IDEMPOTENTS, 2, (0, 1)),
         '4': diagonal_witness(basis, IDEMPOTENTS, 4, (0, 0)),
+        '5': diagonal_witness(basis, IDEMPOTENTS, 5, (0, 0)),
         '6': diagonal_witness(basis, IDEMPOTENTS, 6, (0, 0)),
     }
     for index, witness in witnesses.items():
@@ -126,6 +128,8 @@ def main() -> None:
     for t_value in (0, 1, 4):
         if report[str(t_value)]['row_split_certified'] is not True:
             raise ValueError(f'T={t_value} row split was expected')
+    if report['1']['row_nonzero_primary_residues'] != [1, 2, 5, 7]:
+        raise ValueError('the T=1 group should have four nonzero primaries')
 
     receipt = {
         'passed': True,
@@ -144,13 +148,14 @@ def main() -> None:
             'groups, using the corrected row-cut trace-functional residues, '
             'the coefficient-algebra joint T,S characters, and explicit '
             'nonzero row-diagonal matrix entries of the central idempotent '
-            'actions. All three T groups split in the row cut: T=1 by the '
-            'nonzero residues of primaries 1 and 7, T=0 by explicit entries of '
-            'idempotents 0 and 6, and T=4 by the residue of primary 3 and an '
-            'explicit entry of idempotent 4. Because each idempotent action is '
-            'a projection, a zero row trace residue forces its rank to be a '
-            'multiple of five; combined with the witness this gives rank at '
-            'least five for idempotents 0, 4, and 6. The column pairing is a '
+            'actions. All eight primaries are nonzero in the row cut, so the '
+            'separator splits every T group into all of its S components: '
+            'T=0 into S=2 (idempotent 0) and S=4 (idempotent 6); T=1 into '
+            'S=0 (1), S=1 (7), S=2 (2), and S=3 (5); T=4 into S=3 (3) and '
+            'S=0 (4). Because each idempotent action is a projection, a zero '
+            'row trace residue forces its rank to be a multiple of five; '
+            'combined with the witness this gives rank at least five for '
+            'idempotents 0, 2, 4, 5, and 6. The column pairing is a '
             'trace(P e) functional, not a column rank, so no column split is '
             'certified. These T groups are unions of the joint R,T coarse '
             'blocks; R labels of the primaries are not determined here. This '

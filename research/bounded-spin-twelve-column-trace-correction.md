@@ -64,13 +64,12 @@ class-sum matrix uses the contraction `M[p1,p3]M[p2,p4]`, while the
 coefficient-table row cut uses `M[p1,p4]M[p2,p3]`. The two diagonal
 traces are `66` and `264` modulo five, respectively, so the two matrices
 are different cut orientations of the same tensor. The
-[ten-site normalization control](bounded-spin-T-normalization.md) shows
-that this orientation change alters the spectrum: coarse generalized
-dimensions `441,225,490` versus entry dimensions `441,225,335,155`.
-The coarse dimensions must not be combined with the coefficient-table
-joint `T,S` characters; the twelve-site entry-convention spectrum remains
-open. Reproduce the trace comparison with
-`make verify-bounded-spin-twelve-T-primary-exact` and the spectrum
+[T normalization control](bounded-spin-T-normalization.md) shows that
+this orientation change flips the `R=-` eigenvalue. Flipping the sign in
+the exact coarse joint dimensions gives the exact coefficient-table
+entry dimensions `1485,4500,1936` for `T=0,1,4`, whose residues `0,0,1`
+match the row trace group sums. Reproduce the trace comparison with
+`make verify-bounded-spin-twelve-T-primary-exact` and the dimension
 comparison with `make verify-bounded-spin-T-normalization`.
 
 ## What is retained
