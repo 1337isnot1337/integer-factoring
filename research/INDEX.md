@@ -1153,7 +1153,8 @@ Integrated from [exact PR #27 source](https://github.com/1337isnot1337/integer-f
 - [Flag quotients exclude finite rank-sum seeds through eighty-two labels](flagged-cut-rank-budget.md)
 - [A common rank quotient for all affine-selector frames](frame-filtration-barrier.md)
 - [A rank-sum obstruction for every binary conservation kernel](full-conservation-rank-sum-barrier.md)
-- [Small odd conservation kernels cannot cross](full-conservation-small-q-closure.md): combining the full-conservation piece floor `q` with the all-field two-piece crossing bound closes the kernel family at `q=5,7,11,13` for every field; at `q=17` the floor allows three pieces and the lane remains open. No score change.
+- [Small odd conservation kernels cannot cross](full-conservation-small-q-closure.md): combining the full-conservation piece floor `q` with the all-field two-piece crossing bound closes the kernel family at `q=5,7,11,13` for every field. At `q=17,19` the floor allows three pieces and that composition leaves them open, but the all-field minimum-cut cutoff closes every exact decomposition with `q<=21`; only `q>=22` remains open. No score change.
+- [A rank-two conservation kernel with sub-square-root rank cost](full-conservation-rank-product-counterexample.md): the proposed shortcut `sqrt(r c)>=q sqrt(rank K)` fails on `Z/3` over `F_2`, where a rank-two kernel has both cut ranks four. The characteristic-two p-group rank-sum theorem and the all-field `q<=21` minimum-cut cutoff stand; the `q>=22` general-field lane remains open. Negative diagnostic; no score change.
 - [Formal crossing limits are excluded through sixty-four labels](geometric-border-cutoff.md)
 - [Geometric compression excludes exact rank-sum seeds through ninety-five labels](geometric-cut-rank-budget.md)
 - [The geometric compression bounds still admit the dyadic scalar profile](geometric-cut-relaxation-limit.md)
