@@ -70,34 +70,145 @@
       1
     ]
   },
-  "idempotent_zero_diagonal_witnesses": {
-    "idempotent_coefficient_vector": [
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      0,
-      4,
-      0
-    ],
-    "basis_position": 8,
-    "coefficient": 9,
-    "row_path_indices": [
-      38,
-      82
-    ],
-    "row_degree_nine_coefficient": 1,
-    "row_diagonal_entry": 4,
-    "column_path_indices": [
-      38,
-      82
-    ],
-    "column_degree_nine_coefficient": 4,
-    "column_diagonal_entry": 1,
-    "nonzero_in_both_orientations": true
+  "idempotent_diagonal_witnesses": {
+    "0": {
+      "idempotent_coefficient_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        4,
+        0
+      ],
+      "regular_rank": 1,
+      "path_indices": [
+        38,
+        82
+      ],
+      "row_form_on_basis": [
+        0,
+        3,
+        1,
+        2,
+        2,
+        0,
+        2,
+        2,
+        1,
+        3
+      ],
+      "column_form_on_basis": [
+        1,
+        2,
+        0,
+        3,
+        2,
+        4,
+        1,
+        1,
+        4,
+        3
+      ],
+      "row_diagonal_entry": 4,
+      "column_diagonal_entry": 1,
+      "nonzero_in_both_orientations": true
+    },
+    "4": {
+      "idempotent_coefficient_vector": [
+        2,
+        3,
+        1,
+        4,
+        2,
+        0,
+        3,
+        2,
+        1,
+        0
+      ],
+      "regular_rank": 2,
+      "path_indices": [
+        0,
+        0
+      ],
+      "row_form_on_basis": [
+        1,
+        3,
+        0,
+        1,
+        0,
+        3,
+        0,
+        1,
+        0,
+        3
+      ],
+      "column_form_on_basis": [
+        1,
+        3,
+        0,
+        1,
+        0,
+        3,
+        0,
+        1,
+        0,
+        3
+      ],
+      "row_diagonal_entry": 2,
+      "column_diagonal_entry": 2,
+      "nonzero_in_both_orientations": true
+    },
+    "6": {
+      "idempotent_coefficient_vector": [
+        4,
+        1,
+        2,
+        0,
+        4,
+        4,
+        0,
+        0,
+        1,
+        0
+      ],
+      "regular_rank": 1,
+      "path_indices": [
+        0,
+        0
+      ],
+      "row_form_on_basis": [
+        1,
+        3,
+        0,
+        1,
+        0,
+        3,
+        0,
+        1,
+        0,
+        3
+      ],
+      "column_form_on_basis": [
+        1,
+        3,
+        0,
+        1,
+        0,
+        3,
+        0,
+        1,
+        0,
+        3
+      ],
+      "row_diagonal_entry": 4,
+      "column_diagonal_entry": 4,
+      "nonzero_in_both_orientations": true
+    }
   },
   "t_eigenspace_groups": {
     "0": {
@@ -110,15 +221,13 @@
         4
       ],
       "row_nonzero_primary_residues": [
-        0
+        0,
+        6
       ],
-      "column_nonzero_primary_residues": [
-        0
-      ],
-      "row_split_certified": false,
-      "column_split_certified": false,
-      "row_split_obstructed_by_zero_residue": true,
-      "column_split_obstructed_by_zero_residue": true
+      "column_functional_nonzero_primaries": [],
+      "row_split_certified": true,
+      "column_rank_split_certified": false,
+      "row_split_obstructed_by_zero_residue": false
     },
     "1": {
       "idempotents": [
@@ -137,14 +246,13 @@
         1,
         7
       ],
-      "column_nonzero_primary_residues": [
+      "column_functional_nonzero_primaries": [
         1,
         7
       ],
       "row_split_certified": true,
-      "column_split_certified": true,
-      "row_split_obstructed_by_zero_residue": false,
-      "column_split_obstructed_by_zero_residue": false
+      "column_rank_split_certified": false,
+      "row_split_obstructed_by_zero_residue": false
     },
     "4": {
       "idempotents": [
@@ -156,34 +264,22 @@
         3
       ],
       "row_nonzero_primary_residues": [
+        3,
+        4
+      ],
+      "column_functional_nonzero_primaries": [
         3
       ],
-      "column_nonzero_primary_residues": [
-        3
-      ],
-      "row_split_certified": false,
-      "column_split_certified": false,
-      "row_split_obstructed_by_zero_residue": true,
-      "column_split_obstructed_by_zero_residue": true
+      "row_split_certified": true,
+      "column_rank_split_certified": false,
+      "row_split_obstructed_by_zero_residue": false
     }
   },
-  "certified_split_t_groups": {
-    "row": [
-      1
-    ],
-    "column": [
-      1
-    ]
-  },
-  "unresolved_t_groups": {
-    "row": [
-      0,
-      4
-    ],
-    "column": [
-      0,
-      4
-    ]
-  },
-  "scope": "Modulo-five separator splitting of the twelve-site T-eigenspace groups, using the corrected cut-trace idempotent rank residues and the coefficient-algebra joint T,S characters. T=1 splits into two nonzero primaries (S=0 and S=1) in both orientations. T=4 has only one nonzero residue and is not certified to split. For T=0, the first idempotent has zero trace residue but an explicit nonzero diagonal entry in each orientation, so its rank is a positive multiple of five; the second T=0 idempotent still has zero residue, so only one T=0 component is certified and the group is not certified to split. These T groups are unions of the joint R,T coarse blocks; R labels of the primaries are not determined here. This is not an exact dimension or rank computation and no score change is claimed."
+  "certified_row_split_t_groups": [
+    0,
+    1,
+    4
+  ],
+  "column_rank_splits_certified": [],
+  "scope": "Modulo-five separator splitting of the twelve-site T-eigenspace groups, using the corrected row-cut trace-functional residues, the coefficient-algebra joint T,S characters, and explicit nonzero row-diagonal matrix entries of the central idempotent actions. All three T groups split in the row cut: T=1 by the nonzero residues of primaries 1 and 7, T=0 by explicit entries of idempotents 0 and 6, and T=4 by the residue of primary 3 and an explicit entry of idempotent 4. Because each idempotent action is a projection, a zero row trace residue forces its rank to be a multiple of five; combined with the witness this gives rank at least five for idempotents 0, 4, and 6. The column pairing is a trace(P e) functional, not a column rank, so no column split is certified. These T groups are unions of the joint R,T coarse blocks; R labels of the primaries are not determined here. This is not an exact dimension or rank computation and no score change is claimed."
 }

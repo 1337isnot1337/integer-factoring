@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """Modulo-five separator splitting of the twelve-site cut coarse blocks.
 
-The eleven/eight idempotent trace residues from the cut trace form give
-nonzero rank residues for the joint T,S primaries.  A T-eigenspace group is
-certified to split in an orientation when at least two of its joint
-primaries have nonzero residue there.  The groups are unions of the
+The idempotent trace functional residues from the cut trace form give
+nonzero rank residues for the joint T,S primaries, and direct diagonal
+matrix entries certify the remaining zero-residue primaries.  A
+T-eigenspace group is certified to split in an orientation when at least
+two of its joint primaries are nonzero there.  The groups are unions of the
 joint R,T coarse blocks; R labels of the primaries are not determined
 here.  Exact dimensions and ranks remain open.
 """
@@ -38,37 +39,44 @@ def original_form(four_paths):
     return result
 
 
-def idempotent_zero_witnesses(basis):
-    if basis[8] != 9:
-        raise ValueError('unexpected coefficient-nine basis position')
-    idempotents = json.loads(IDEMPOTENTS.read_text())
-    zero = idempotents['primitive_central_idempotents'][0]
-    if zero['index'] != 0:
-        raise ValueError('unexpected first idempotent')
-    vector = zero['idempotent']
-    if any(value for index, value in enumerate(vector) if index != 8):
-        raise ValueError('idempotent zero is not supported on coefficient nine')
-    if vector[8] != 4:
-        raise ValueError('unexpected coefficient of idempotent zero')
+def diagonal_witness(basis, idempotent_data, index, path_indices):
+    idempotents = json.loads(IDEMPOTENTS.read_text())['primitive_central_idempotents']
+    entry = idempotents[index]
+    if entry['index'] != index:
+        raise ValueError('unexpected idempotent index')
+    vector = entry['idempotent']
     ps = paths(12)
-    row = original_form((ps[38], ps[82], ps[82], ps[38]))[9]
-    column = original_form((ps[38], ps[82], ps[38], ps[82]))[9]
-    if row != 1 or column != 4:
-        raise ValueError('unexpected diagonal witnesses for idempotent zero')
-    if vector[8] * row % PRIME == 0 or vector[8] * column % PRIME == 0:
-        raise ValueError('idempotent zero diagonal witness vanished')
+    a, b = ps[path_indices[0]], ps[path_indices[1]]
+    row_form = original_form((a, b, b, a))
+    column_form = original_form((a, b, a, b))
+    row_basis = [row_form[label] for label in basis]
+    column_basis = [column_form[label] for label in basis]
+    row_entry = sum(vector[k] * row_basis[k] for k in range(len(basis))) % PRIME
+    column_entry = sum(vector[k] * column_basis[k] for k in range(len(basis))) % PRIME
     return {
         'idempotent_coefficient_vector': vector,
-        'basis_position': 8,
-        'coefficient': basis[8],
-        'row_path_indices': [38, 82],
-        'row_degree_nine_coefficient': row,
-        'row_diagonal_entry': vector[8] * row % PRIME,
-        'column_path_indices': [38, 82],
-        'column_degree_nine_coefficient': column,
-        'column_diagonal_entry': vector[8] * column % PRIME,
-        'nonzero_in_both_orientations': True,
+        'regular_rank': entry['regular_rank'],
+        'path_indices': list(path_indices),
+        'row_form_on_basis': row_basis,
+        'column_form_on_basis': column_basis,
+        'row_diagonal_entry': row_entry,
+        'column_diagonal_entry': column_entry,
+        'nonzero_in_both_orientations': row_entry % PRIME != 0 and column_entry % PRIME != 0,
     }
+
+
+def idempotent_diagonal_witnesses(basis):
+    if basis != [0, 2, 3, 4, 5, 6, 7, 8, 9, 10]:
+        raise ValueError('unexpected coefficient basis')
+    witnesses = {
+        '0': diagonal_witness(basis, IDEMPOTENTS, 0, (38, 82)),
+        '4': diagonal_witness(basis, IDEMPOTENTS, 4, (0, 0)),
+        '6': diagonal_witness(basis, IDEMPOTENTS, 6, (0, 0)),
+    }
+    for index, witness in witnesses.items():
+        if not witness['nonzero_in_both_orientations']:
+            raise ValueError(f'idempotent {index} diagonal witness vanished')
+    return witnesses
 
 
 def main() -> None:
@@ -85,7 +93,7 @@ def main() -> None:
         raise ValueError('expected eight primaries in both inputs')
     if set(joint) != set(range(8)):
         raise ValueError('unexpected idempotent indices')
-    zero_witness = idempotent_zero_witnesses(rt['basis_indices'])
+    witnesses = idempotent_diagonal_witnesses(rt['basis_indices'])
 
     groups = {}
     for index, (t_value, s_value) in joint.items():
@@ -100,34 +108,24 @@ def main() -> None:
         row_nonzero = [index for index in indices if residues['row'][index] % 5]
         column_nonzero = [index for index in indices
                           if residues['column'][index] % 5]
-        if t_value == 0:
-            row_nonzero = sorted(row_nonzero + [0])
-            column_nonzero = sorted(column_nonzero + [0])
+        for index in indices:
+            witness = witnesses.get(str(index))
+            if witness is not None and witness['row_diagonal_entry'] % 5:
+                row_nonzero = sorted(set(row_nonzero + [index]))
         report[str(t_value)] = {
             'idempotents': indices,
             'separator_characters': distinct_s,
             'row_nonzero_primary_residues': row_nonzero,
-            'column_nonzero_primary_residues': column_nonzero,
+            'column_functional_nonzero_primaries': column_nonzero,
             'row_split_certified': len(row_nonzero) >= 2,
-            'column_split_certified': len(column_nonzero) >= 2,
+            'column_rank_split_certified': False,
             'row_split_obstructed_by_zero_residue':
                 len(row_nonzero) < 2,
-            'column_split_obstructed_by_zero_residue':
-                len(column_nonzero) < 2,
         }
 
-    if report['1']['row_split_certified'] is not True:
-        raise ValueError('T=1 row split was expected')
-    if report['1']['column_split_certified'] is not True:
-        raise ValueError('T=1 column split was expected')
-    if report['4']['row_split_certified'] is not False:
-        raise ValueError('T=4 row split should not be certified')
-    if report['4']['column_split_certified'] is not False:
-        raise ValueError('T=4 column split should not be certified')
-    if report['0']['row_split_certified'] is not False:
-        raise ValueError('T=0 split should remain uncertified')
-    if report['0']['column_split_certified'] is not False:
-        raise ValueError('T=0 split should remain uncertified')
+    for t_value in (0, 1, 4):
+        if report[str(t_value)]['row_split_certified'] is not True:
+            raise ValueError(f'T={t_value} row split was expected')
 
     receipt = {
         'passed': True,
@@ -136,42 +134,36 @@ def main() -> None:
         'basis_indices': rt['basis_indices'],
         'joint_characters_T_S': {str(k): list(v) for k, v in joint.items()},
         'idempotent_trace_residues': residues,
-        'idempotent_zero_diagonal_witnesses': zero_witness,
+        'idempotent_diagonal_witnesses': witnesses,
         't_eigenspace_groups': report,
-        'certified_split_t_groups': {
-            'row': [int(t) for t, row in report.items()
-                    if row['row_split_certified']],
-            'column': [int(t) for t, row in report.items()
-                       if row['column_split_certified']],
-        },
-        'unresolved_t_groups': {
-            'row': [int(t) for t, row in report.items()
-                    if not row['row_split_certified']],
-            'column': [int(t) for t, row in report.items()
-                       if not row['column_split_certified']],
-        },
+        'certified_row_split_t_groups': [
+            int(t) for t, row in report.items() if row['row_split_certified']],
+        'column_rank_splits_certified': [],
         'scope': (
             'Modulo-five separator splitting of the twelve-site T-eigenspace '
-            'groups, using the corrected cut-trace idempotent rank residues '
-            'and the coefficient-algebra joint T,S characters. T=1 splits '
-            'into two nonzero primaries (S=0 and S=1) in both orientations. '
-            'T=4 has only one nonzero residue and is not certified to split. '
-            'For T=0, the first idempotent has zero trace residue but an '
-            'explicit nonzero diagonal entry in each orientation, so its rank '
-            'is a positive multiple of five; the second T=0 idempotent still '
-            'has zero residue, so only one T=0 component is certified and the '
-            'group is not certified to split. These T groups are unions of the '
-            'joint R,T coarse blocks; R labels of the primaries are not '
-            'determined here. This is not an exact dimension or rank '
-            'computation and no score change is claimed.'
+            'groups, using the corrected row-cut trace-functional residues, '
+            'the coefficient-algebra joint T,S characters, and explicit '
+            'nonzero row-diagonal matrix entries of the central idempotent '
+            'actions. All three T groups split in the row cut: T=1 by the '
+            'nonzero residues of primaries 1 and 7, T=0 by explicit entries of '
+            'idempotents 0 and 6, and T=4 by the residue of primary 3 and an '
+            'explicit entry of idempotent 4. Because each idempotent action is '
+            'a projection, a zero row trace residue forces its rank to be a '
+            'multiple of five; combined with the witness this gives rank at '
+            'least five for idempotents 0, 4, and 6. The column pairing is a '
+            'trace(P e) functional, not a column rank, so no column split is '
+            'certified. These T groups are unions of the joint R,T coarse '
+            'blocks; R labels of the primaries are not determined here. This '
+            'is not an exact dimension or rank computation and no score change '
+            'is claimed.'
         ),
     }
     OUTPUT.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps({
         'passed': True,
-        'certified_split_t_groups': receipt['certified_split_t_groups'],
-        'unresolved_t_groups': receipt['unresolved_t_groups'],
-        'idempotent_zero_diagonal_witnesses': zero_witness,
+        'certified_row_split_t_groups': receipt['certified_row_split_t_groups'],
+        'column_rank_splits_certified': receipt['column_rank_splits_certified'],
+        'idempotent_diagonal_witnesses': witnesses,
         't_eigenspace_groups': report,
     }, indent=2))
 

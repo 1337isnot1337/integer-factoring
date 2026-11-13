@@ -32,13 +32,17 @@ def check() -> dict:
         'prime': 5,
         'joint_T_R_dimensions': [[a, b, value]
                                  for (a, b), value in sorted(joint.items())],
-        'exact_T_primary_dimensions': {str(k): v for k, v in exact.items()},
+        'coarse_T_primary_dimensions': {str(k): v for k, v in exact.items()},
         'T_residues_mod_5': {str(k): v % 5 for k, v in exact.items()},
         'sum': sum(exact.values()),
-        'scope': ('Exact T-primary module dimensions obtained by summing the '
-                  'two exact R signs of the coarse (T,R) generalized eigenspaces. '
-                  'These are dimensions, not cut ranks; the individual central '
-                  'idempotent ranks and the two-cut pairing remain open.'),
+        'scope': ('Exact coarse class-sum T-primary module dimensions obtained '
+                  'by summing the two exact R signs of the coarse (T,R) '
+                  'generalized eigenspaces. These are dimensions, not cut ranks. '
+                  'The coarse class-sum T labels are not yet reconciled with the '
+                  'coefficient-table T labels (the residues suggest exchanging '
+                  'labels 1 and 4), so do not combine these dimensions with the '
+                  'joint T,S characters. Individual central-idempotent ranks and '
+                  'the two-cut pairing remain open.'),
     }
 
 
