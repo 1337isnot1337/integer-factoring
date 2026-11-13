@@ -89,6 +89,6 @@ python3 tools/check_full_conservation_small_q_closure.py
 make verify-full-conservation-small-q-closure
 ```
 
-The checker evaluates (1), the target, and (2) for `q=5,7,11,13,17`
+The checker evaluates (1), the target, and (2) for `q=5,7,11,13,17,19`
 with ordinary floating-point margins far from zero.  It does not build a
 tensor or a factor algorithm.

@@ -9,7 +9,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = ROOT / 'evidence' / 'full-conservation-small-q-closure.json'
-PRIMES = (5, 7, 11, 13, 17)
+PRIMES = (5, 7, 11, 13, 17, 19)
 
 
 def main() -> None:
@@ -46,12 +46,12 @@ def main() -> None:
         'status': 'pass',
         'prime_labels': list(PRIMES),
         'closure': [row for row in rows if row['closed']],
-        'open': [row for row in rows if not row['closed']],
+        'open_for_this_composition': [row for row in rows if not row['closed']],
         'scope': ('Combines the full-conservation piece floor q (worker 4) with the '
                   'all-field two-piece crossing bound. For q=5 the floor excludes two '
                   'pieces and q^2 exceeds the target; for q=7,11,13 the floor caps a '
                   'crossing at two pieces and the two-piece bound exceeds the target. '
-                  'All fields. q=17 and larger are not closed; no score change.'),
+                  'All fields. q=17,19 remain open for this floor-plus-two-piece composition; the separate minimum-cut budget closes them and every q<=21. No score change.'),
         'source_sha256': {
             'two_piece_note': sha256((ROOT / 'research' /
                                       'two-piece-rank-sum-obstruction.md').read_bytes()).hexdigest(),
@@ -60,7 +60,7 @@ def main() -> None:
     OUTPUT.write_text(json.dumps(receipt, indent=2) + '\n')
     print(json.dumps({'passed': True,
                       'closed_q': [row['q'] for row in receipt['closure']],
-                      'open_q': [row['q'] for row in receipt['open']],
+                      'open_for_this_composition_q': [row['q'] for row in receipt['open_for_this_composition']],
                       'q13_two_piece_lower': next(row['two_piece_lower_bound']
                                                   for row in rows if row['q'] == 13),
                       'q13_target': next(row['target_q_sqrt2']

@@ -5,7 +5,8 @@
     7,
     11,
     13,
-    17
+    17,
+    19
   ],
   "closure": [
     {
@@ -49,7 +50,7 @@
       "mechanism": "floor caps at two pieces; all-field two-piece bound"
     }
   ],
-  "open": [
+  "open_for_this_composition": [
     {
       "q": 17,
       "target_q_sqrt2": 54.9689640664787,
@@ -59,9 +60,19 @@
       "two_piece_lower_bound": 84.40496263576686,
       "closed": false,
       "mechanism": "not closed: at least three pieces remain"
+    },
+    {
+      "q": 19,
+      "target_q_sqrt2": 64.33253802902136,
+      "piece_floor_q": 19,
+      "one_piece_cost_q_squared": 361,
+      "max_pieces_from_floor": 3,
+      "two_piece_lower_bound": 99.01870636744457,
+      "closed": false,
+      "mechanism": "not closed: at least three pieces remain"
     }
   ],
-  "scope": "Combines the full-conservation piece floor q (worker 4) with the all-field two-piece crossing bound. For q=5 the floor excludes two pieces and q^2 exceeds the target; for q=7,11,13 the floor caps a crossing at two pieces and the two-piece bound exceeds the target. All fields. q=17 and larger are not closed; no score change.",
+  "scope": "Combines the full-conservation piece floor q (worker 4) with the all-field two-piece crossing bound. For q=5 the floor excludes two pieces and q^2 exceeds the target; for q=7,11,13 the floor caps a crossing at two pieces and the two-piece bound exceeds the target. All fields. q=17,19 remain open for this floor-plus-two-piece composition; the separate minimum-cut budget closes them and every q<=21. No score change.",
   "source_sha256": {
     "two_piece_note": "30601a6a0a7c379238e8d960afb183ff7d0ac8b705c7351674ad6d39ac573827"
   }
