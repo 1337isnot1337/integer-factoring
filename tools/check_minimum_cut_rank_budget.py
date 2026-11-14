@@ -178,13 +178,14 @@ def rank_sum_certificates():
                 "is_tensor_decomposition": False}}
 
 
-def no_rank_one_twenty_two_frontier():
-    """Close the no-rank-one part of the d=22 minimum-cut frontier.
+def diagonal_rank_one_twenty_two_frontier():
+    """Close the diagonal-rank-one part of the d=22 minimum-cut frontier.
 
     The surviving profile has total minimum rank 22.  The nonlinear
-    surplus bound excludes total minimum rank at least 23.  At minimum
-    rank 22, the quotient complement bound excludes every decomposition
-    whose pieces all have minimum rank at least two.
+    surplus bound excludes total minimum rank at least 23, including
+    diagonal (1,1) pieces.  At minimum rank 22, the quotient complement
+    bound excludes every decomposition whose rank-one pieces, if any,
+    are all (1,1).  Non-diagonal rank-one pieces remain open.
     """
     d = 22
     n = d * d
@@ -216,7 +217,7 @@ def no_rank_one_twenty_two_frontier():
 
     return {
         "dimension": d,
-        "scope": "no rank-one pieces; every piece has both cut ranks at least two",
+        "scope": "every rank-one piece, if any, is diagonal (1,1); all other pieces have both cut ranks at least two",
         "total_minimum_rank_at_least_23_excluded": True,
         "minimum_rank_23_lower_numerator_over_scale": str(Fraction(minimum_rank_23, SCALE)),
         "all_small_minima_excluded_numerator_over_scale": str(Fraction(small_minimum, SCALE)),
@@ -225,7 +226,8 @@ def no_rank_one_twenty_two_frontier():
         "surviving_complement_rank": surviving_complement,
         "required_rank_two_complement": required_complement,
         "surviving_profile_killed_by_quotient": True,
-        "rank_one_profiles_remain_open": True,
+        "diagonal_rank_one_pieces_included": True,
+        "non_diagonal_rank_one_profiles_remain_open": True,
     }
 
 
@@ -352,7 +354,7 @@ def main():
               "minimum_seed_dimension_for_a_strict_rank_sum_win": 22,
               "rational_root_scale": SCALE, "rank_sum": certificate,
               "nonlinear_surplus_controls": nonlinear_controls(),
-              "twenty_two_no_rank_one_frontier": no_rank_one_twenty_two_frontier(),
+              "twenty_two_diagonal_rank_one_frontier": diagonal_rank_one_twenty_two_frontier(),
               "finite_field_controls": matrix_controls()}
     if args.output:
         args.output.write_text(json.dumps(result, indent=2) + "\n")
