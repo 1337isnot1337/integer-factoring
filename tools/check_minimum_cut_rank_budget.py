@@ -178,6 +178,57 @@ def rank_sum_certificates():
                 "is_tensor_decomposition": False}}
 
 
+def no_rank_one_twenty_two_frontier():
+    """Close the no-rank-one part of the d=22 minimum-cut frontier.
+
+    The surviving profile has total minimum rank 22.  The nonlinear
+    surplus bound excludes total minimum rank at least 23.  At minimum
+    rank 22, the quotient complement bound excludes every decomposition
+    whose pieces all have minimum rank at least two.
+    """
+    d = 22
+    n = d * d
+
+    def scaled_lower(terms):
+        return sum(coefficient * root_numerator(radicand)
+                   for radicand, coefficient in surds(terms))
+
+    def exceeds_target(numerator):
+        return numerator ** 408 > (d ** 577) * (SCALE ** 408)
+
+    minimum_rank_23 = scaled_lower((361, 3704))       # 19 + 2 sqrt(926)
+    small_minimum = scaled_lower((289, 1395, 928))    # 17 + sqrt(1395) + sqrt(928)
+    split_surplus = scaled_lower((256, 928, 6, 926))  # 16 + sqrt(928) + sqrt(6) + sqrt(926)
+    assert exceeds_target(minimum_rank_23)
+    assert exceeds_target(small_minimum)
+    assert exceeds_target(split_surplus)
+
+    ceiling = root_numerator(928)
+    if ceiling * ceiling < 928 * SCALE * SCALE:
+        ceiling += 1
+    minimum_22 = 18 * SCALE + 2 * ceiling
+    assert minimum_22 ** 169 < (d ** 239) * (SCALE ** 169)
+
+    required_complement = max(s * (d - 2 * s) for s in range(d + 1))
+    surviving_complement = 2 + (d - 4)
+    assert required_complement == 60
+    assert surviving_complement == 20 < required_complement
+
+    return {
+        "dimension": d,
+        "scope": "no rank-one pieces; every piece has both cut ranks at least two",
+        "total_minimum_rank_at_least_23_excluded": True,
+        "minimum_rank_23_lower_numerator_over_scale": str(Fraction(minimum_rank_23, SCALE)),
+        "all_small_minima_excluded_numerator_over_scale": str(Fraction(small_minimum, SCALE)),
+        "split_surplus_excluded_numerator_over_scale": str(Fraction(split_surplus, SCALE)),
+        "minimum_22_diagnostic": "18+2sqrt(928)",
+        "surviving_complement_rank": surviving_complement,
+        "required_rank_two_complement": required_complement,
+        "surviving_profile_killed_by_quotient": True,
+        "rank_one_profiles_remain_open": True,
+    }
+
+
 def nonlinear_controls():
     """Test the general scalar lemma, including its exact numerical extrema."""
     rng = random.Random(20261104)
@@ -301,6 +352,7 @@ def main():
               "minimum_seed_dimension_for_a_strict_rank_sum_win": 22,
               "rational_root_scale": SCALE, "rank_sum": certificate,
               "nonlinear_surplus_controls": nonlinear_controls(),
+              "twenty_two_no_rank_one_frontier": no_rank_one_twenty_two_frontier(),
               "finite_field_controls": matrix_controls()}
     if args.output:
         args.output.write_text(json.dumps(result, indent=2) + "\n")

@@ -489,6 +489,19 @@
     "exact_numerical_extrema": 16,
     "scope": "Rank-budget relaxation only; extrema need not be tensor-realizable."
   },
+  "twenty_two_no_rank_one_frontier": {
+    "dimension": 22,
+    "scope": "no rank-one pieces; every piece has both cut ranks at least two",
+    "total_minimum_rank_at_least_23_excluded": true,
+    "minimum_rank_23_lower_numerator_over_scale": "399302481/5000000",
+    "all_small_minima_excluded_numerator_over_scale": "848127909/10000000",
+    "split_surplus_excluded_numerator_over_scale": "396714151/5000000",
+    "minimum_22_diagnostic": "18+2sqrt(928)",
+    "surviving_complement_rank": 20,
+    "required_rank_two_complement": 60,
+    "surviving_profile_killed_by_quotient": true,
+    "rank_one_profiles_remain_open": true
+  },
   "finite_field_controls": {
     "higher_rank_quotient_checks": 216,
     "exact_crossing_decompositions": 216,

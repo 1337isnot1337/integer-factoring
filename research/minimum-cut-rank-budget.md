@@ -270,7 +270,7 @@ only as readable summaries of exact rational certificates.
 
 ### The next numerical frontier is not a tensor certificate
 
-At `d=22`, the no-rank-one profile receives the rounded bound
+At `d=22`, the no-rank-one **rank-budget relaxation** receives the rounded bound
 `98657731/1250000` from (11), below the target. The nonlinear
 rank-budget relaxation is attained by the numerical rank pairs
 
@@ -291,7 +291,69 @@ requires its column complement to have rank at least
 The other two pieces have total column rank only `18+2=20`,
 contradicting rank subadditivity. Thus this profile identifies a
 missing higher-cut constraint in the present finite certificate;
-it is not a passing seed or evidence of realizability.
+it is not a passing seed or evidence of realizability.  The next
+subsection uses that constraint to close the entire rank-one-free
+`d=22` case.
+
+### The no-rank-one `d=22` profile
+
+The quotient constraint above does not by itself give a `d=22` cutoff, but
+it does eliminate every decomposition with no rank-one piece.  Put
+`M=sum_i min(r_i,c_i)`.  The minimum-cut budget gives `M>=d=22`.
+
+For `M>=23`, the nonlinear surplus bound in the form
+
+```math
+\sum_i\sqrt{r_ic_i}\ge M-4+2\sqrt{2(N-M+2)}          \tag{14}
+```
+
+is increasing in `M` for `M<=N`, and at `M=23` it gives
+
+```math
+19+2\sqrt{926}>22^{\sqrt2}.                           \tag{15}
+```
+
+For `M>=N` the weaker bound `sum_i sqrt(r_ic_i)>=M>=N` is already
+above the target.  Thus only `M=22` can survive.
+
+Assume now that every piece has both cut ranks at least two, and put
+`A=sum_{r_i>c_i}(r_i-c_i)`, `B=sum_{c_i>r_i}(c_i-r_i)`.  The two rank
+budgets give `A,B>=N-M=462`.  If one orientation has all unbalanced
+pieces with minimum rank at least three, then concavity of
+`g_m(t)=sqrt(m(m+t))-m` and `g_m(t)>=g_3(t)` give the lower bound
+
+```math
+22+g_3(462)+g_2(462)
+=17+\sqrt{1395}+\sqrt{928}>22^{\sqrt2}.               \tag{16}
+```
+
+If one orientation has at least two unbalanced pieces, then the same
+concavity argument, applied with one surplus unit separated, gives
+
+```math
+22+g_2(1)+g_2(461)+g_2(462)
+=16+\sqrt{928}+\sqrt6+\sqrt{926}>22^{\sqrt2}.        \tag{17}
+```
+
+The exact inequalities (15)--(17) are checked by raising both sides to
+the power `408` and using `577^2>2*408^2`; the square roots are rounded
+downward.
+
+The only remaining possibility is one unbalanced piece in each
+orientation, both with minimum rank two.  The column-heavy piece then
+has row rank `2` and column rank `2+t` for some `t>=462`.  The other
+pieces are the row-heavy piece, whose column rank is `2`, and diagonal
+pieces whose minimum ranks sum to `22-2-2=18`.  Hence the column
+complement of the column-heavy piece has rank `20`.  The quotient bound
+(4) for row rank two requires that complement to have rank at least
+
+```math
+\max_s s(22-2s)=60,                                    \tag{18}
+```
+
+a contradiction.  This excludes every rank-one-free `d=22` decomposition.
+Rank-one pieces at `d=22` are not covered by this argument, so the
+all-field cutoff in (2) remains stated for `d<=21`.
 
 ## Verification
 

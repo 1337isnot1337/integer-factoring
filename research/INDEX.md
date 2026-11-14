@@ -1012,7 +1012,7 @@ These ordinary proofs and finite controls were integrated from [exact PR #23 sou
 - [A multiplication network with logarithmic wire widths](logarithmic-wire-network.md)
 - [A multigraded crossing on uniform set partitions](matching-code-lift.md)
 - [Homogeneous matching duals from Jack integrality](matching-gram-unipotence.md)
-- [A minimum-cut rank budget and a twenty-one-label cutoff](minimum-cut-rank-budget.md)
+- [A minimum-cut rank budget and a twenty-one-label cutoff](minimum-cut-rank-budget.md): every exact decomposition with `d<=21` has square-root rank sum above `d^sqrt(2)`. The numerical `d=22` profile is killed by the quotient complement constraint, and a separate total-minimum-rank reduction excludes every rank-one-free `d=22` decomposition; rank-one profiles at `d=22` remain open. No score change.
 - [Streamed modular factors in every fixed characteristic](modular-factor-space-odd.md)
 - [Polynomial-space evaluation of the ambient modular factors](modular-factor-space.md)
 - [Linear space for the regular modular factors](near-linear-factor-space.md)
