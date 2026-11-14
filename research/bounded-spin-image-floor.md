@@ -138,6 +138,14 @@ least `225`, above the `146.5` target. The open question is whether the
 twelve-site primary dimensions and their two-cut pairing can give a
 sum below `571.29`.
 
+At twelve sites the exact coefficient-entry `T` layers are
+`1485,4500,1936` for `T=0,1,4`. The row-cut separator certifies that all
+eight primaries are nonzero, with row ranks at least five for idempotents
+`0,2,4,5,6` and at least one for `1,3,7`. These are only row lower
+bounds. The two-cut sum requires the paired column ranks, and the column
+trace functional is not a column rank; the exact row ranks alone do not
+settle the central decomposition.
+
 The central idempotents are not themselves that decomposition. Using
 the published ten-site characters, idempotents and cut-reciprocity
 matrix, the seven central idempotents have row/column rank pairs
@@ -163,8 +171,12 @@ and checks the listed column ranks; it does not rebuild a cut operator.
 The [second-coefficient identity](bounded-spin-second-coefficient.md)
 identifies the eight-site primary blocks with transposition class sums,
 and the three-jet identities constrain the coefficient span at every
-length. A representation-theoretic computation of the twelve-site
-primary dimensions and cut pairing is the next concrete target. The
+length. The exact twelve-site coefficient-entry `T` layers are now known,
+but the individual primary ranks and the column-cut pairing still need an
+operator-level computation. The naive word-pair expansion is infeasible
+([obstruction](bounded-spin-twelve-action-obstruction.md)); a
+transfer-matrix or sparse streaming construction of the column operator
+is the next concrete target. The
 image floor above rules out the shorter single-module shortcut; it does
 not rule out that central decomposition.
 

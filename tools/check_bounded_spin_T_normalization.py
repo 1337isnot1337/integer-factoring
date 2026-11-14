@@ -26,6 +26,8 @@ import sys
 import numpy as np
 
 ROOT = Path(__file__).resolve().parents[1]
+COARSE = ROOT / 'evidence/bounded-spin-coarse-twelve.json'
+CUT = ROOT / 'evidence/bounded-spin-twelve-cut-trace-form.json'
 sys.path.insert(0, str(ROOT / 'tools'))
 
 from check_bounded_spin_transposition_subalgebra import (
@@ -94,6 +96,26 @@ def check() -> dict:
     if entry_single[2] + entry_single[3] != coarse_single[2]:
         raise ValueError('the coarse T=2 block does not split as expected')
 
+    coarse_twelve = json.loads(COARSE.read_text())
+    joint = {(int(t), int(r)): int(dimension)
+            for t, r, dimension in coarse_twelve['coarse_dimensions']}
+    entry_twelve = {}
+    for (value, sign), dimension in joint.items():
+        entry_value = value if sign == 1 else (-value) % PRIME
+        entry_twelve[entry_value] = entry_twelve.get(entry_value, 0) + dimension
+    expected_twelve = {0: 1485, 1: 4500, 4: 1936}
+    if entry_twelve != expected_twelve:
+        raise ValueError('unexpected twelve-site entry-convention dimensions')
+    cut = json.loads(CUT.read_text())
+    row_group_sums = {}
+    for index, (value, _) in enumerate([
+            (0, 0), (1, 0), (1, 0), (4, 0), (4, 0), (1, 0), (0, 0), (1, 0)]):
+        row_group_sums[value] = (row_group_sums.get(value, 0)
+                                 + cut['idempotent_trace_residues']['row'][index]) % PRIME
+    if {value: total % PRIME for value, total in row_group_sums.items()} != {
+            value: dimension % PRIME for value, dimension in expected_twelve.items()}:
+        raise ValueError('entry dimensions do not match the row trace group sums')
+
     return {
         'passed': True,
         'length': LENGTH,
@@ -114,8 +136,14 @@ def check() -> dict:
         'ten_site_primary_dimensions': TEN_PRIMARY_DIMENSIONS,
         'coarse_T2_splits_as_entry_T2_plus_T3': [
             entry_single[2], entry_single[3]],
+        'twelve_site_coarse_T_primary_dimensions': {
+            str(value): sum(dimension for (t, _), dimension in joint.items() if t == value)
+            for value in (0, 1, 4)},
+        'twelve_site_entry_T_primary_dimensions': {
+            str(value): dimension for value, dimension in expected_twelve.items()},
         'scope': (
-            'Exact ten-site control comparing the coarse Kronecker class sum '
+            'Exact ten-site control and exact twelve-site layer comparison for the '
+            'coarse Kronecker class sum '
             'T_coarse = sum M_i kron M_i with the coefficient-entry class sum '
             'T_entry = T_coarse R, where R swaps the column path pair. Both '
             'acts on the 1156-dimensional path-pair module. The spectra differ: '
@@ -124,9 +152,13 @@ def check() -> dict:
             '0,1,2,3. The published primary dimensions 34,1,225,300,35,406,155 '
             'split the coarse T=2 block as 335+155, matching T_entry. Therefore '
             'the twelve-site exact coarse T-primary dimensions 1485,3281,3155 '
-            'are not automatically the coefficient-table T group dimensions; '
-            'the twelve-site entry-convention spectrum remains open. No cut '
-            'rank, two-cut pairing, or score change is claimed.'
+            'are not the coefficient-table T group dimensions. Because '
+            'T_entry = T_coarse R and R^2 = 1, the twelve-site entry '
+            'dimensions are obtained by flipping the R sign: 1485, 4500, 1936 '
+            'for T=0,1,4. Their residues 0,0,1 match the coefficient-table row '
+            'trace group sums. Individual central-idempotent ranks and the '
+            'two-cut pairing remain open; no cut rank or score change is '
+            'claimed.'
         ),
     }
 

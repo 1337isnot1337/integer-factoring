@@ -48,15 +48,24 @@ The exact coarse `T`-primary dimensions `1485,3281,3155` belong to
 `T_coarse`. The separator joint characters and the row trace groups use
 the coefficient-table `T`, which is the entry-convention operator. Their
 group sums are `0,0,1` modulo five, while the coarse dimensions are
-`0,1,0`. The ten-site control explains why the two need not agree: the
-path-pair swap can split a coarse generalized eigenspace into several
-entry-convention eigenvalues.
+`0,1,0`.
 
-Therefore the exact coarse dimensions should not be combined with the
-joint `T,S` characters until the twelve-site `T_entry` spectrum is
-computed. That computation is the next target. The all-three-group row
-split is independent of this normalization question; it uses the
-coefficient-table characters and the row trace directly.
+Because `T_coarse` is a sum of `M_i kron M_i`, it commutes with the path
+swap `R`. Hence `T_entry = T_coarse R` acts as `+T_coarse` on the `R=+`
+part and as `-T_coarse` on the `R=-` part. Flipping the `R=-` eigenvalue
+sign in the exact coarse joint dimensions gives the exact twelve-site
+entry dimensions
+
+```text
+T_entry=0: 1320+165           = 1485
+T_entry=1: 2015+2485          = 4500
+T_entry=4: 670+1266           = 1936,
+```
+
+summing to `7921`. Their residues `0,0,1` match the coefficient-table
+row trace group sums. These are the exact dimensions of the
+coefficient-table `T` layers in the row cut. Individual central
+idempotent ranks and the two-cut pairing remain open.
 
 ## Reproduction
 

@@ -49,49 +49,48 @@ from the path-pair polynomial forms:
 ```text
 idempotent  path pair   row entry   column functional   consequence
 0           (38,82)     4           1                   rank >= 5
+2           (0,1)       3           2                   rank >= 5
 4           (0,0)       2           2                   rank >= 5
+5           (0,0)       1           1                   rank >= 5
 6           (0,0)       4           4                   rank >= 5
 ```
 
 Because each idempotent action is a projection over `F5`, its ordinary
-row trace equals its rank. Idempotents `0`, `4`, and `6` have zero row
-trace residue, so a nonzero row entry forces their ranks to be positive
-multiples of five, hence at least five. The nonzero row residues of
-idempotents `1` and `7` (`T=1`) and idempotent `3` (`T=4`) already give
-nonzero components there.
+row trace equals its rank. Idempotents `0`, `2`, `4`, `5`, and `6` have
+zero row trace residue, so a nonzero row entry forces their ranks to be
+positive multiples of five, hence at least five. The nonzero row residues
+of idempotents `1`, `3`, and `7` give the remaining nonzero components.
+Thus all eight primaries are nonzero in the row cut.
 
-Therefore every `T` group splits into two nonzero separator components in
+Therefore every `T` group splits into all of its separator components in
 the row cut:
 
 ```text
-T=0:  S=2 (idempotent 0) and S=4 (idempotent 6)
-T=1:  S=0 (idempotent 1) and S=1 (idempotent 7)
-T=4:  S=3 (idempotent 3) and S=0 (idempotent 4)
+T=0:  S=2 (idempotent 0), S=4 (idempotent 6)
+T=1:  S=0 (idempotent 1), S=1 (idempotent 7),
+      S=2 (idempotent 2), S=3 (idempotent 5)
+T=4:  S=3 (idempotent 3), S=0 (idempotent 4)
 ```
 
 This is a modulo-five row-cut splitting certificate. The column
 functional does not give column ranks, so no column split is claimed. It
 does not give the exact dimensions of the joint `T,S` components, their
-exact ranks, a two-cut rank product, or a factoring exponent. The rank lower bounds are five for
-idempotents `0,4,6` and one for idempotents `1,3,7`; idempotents `2` and
-`5` are nonzero but are not needed for the splits.
+exact ranks, a two-cut rank product, or a factoring exponent. The rank
+lower bounds are five for idempotents `0,2,4,5,6` and one for idempotents
+`1,3,7`.
 
 ## Coarse T dimensions are not the coefficient-table T groups
 
 The exact coarse `T`-primary dimensions are `1485,3281,3155`, summing to
-`7921`. Their residues `0,1,0` do not match the coefficient-table row
-trace group sums `0,0,1` (`T=0: 0`, `T=1: 5 = 0`, `T=4: 1`). This is not
-a label permutation: the coarse class-sum matrix uses the contraction
-`M[p1,p3]M[p2,p4]`, while the coefficient-table row cut uses
-`M[p1,p4]M[p2,p3]`. The two diagonal traces are `66` and `264` modulo
-five, respectively, so they are different cut orientations of the same
-tensor. The [ten-site normalization control](bounded-spin-T-normalization.md)
-shows that this orientation change alters the spectrum: coarse
-generalized dimensions `441,225,490` versus entry dimensions
-`441,225,335,155`. The exact dimensions must not be combined with the
-joint `T,S` characters until the twelve-site entry-convention spectrum
-is computed. The row split above uses the coefficient-table labels and
-does not depend on this open check.
+`7921`. The coefficient-table row cut uses the entry contraction
+`M[p1,p4]M[p2,p3]`, not the coarse contraction `M[p1,p3]M[p2,p4]`; the
+two diagonal traces are `264` and `66` modulo five. The
+[T normalization control](bounded-spin-T-normalization.md) shows how the
+orientation change flips the `R=-` eigenvalue, and gives the exact
+coefficient-table `T_entry` layer dimensions `1485,4500,1936` for
+`T=0,1,4`. Their residues `0,0,1` match the row trace group sums. The row
+split above uses these coefficient-table labels; individual component
+dimensions remain open.
 
 ## Relation to the withdrawn R interpretation
 

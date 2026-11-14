@@ -83,5 +83,15 @@
     335,
     155
   ],
-  "scope": "Exact ten-site control comparing the coarse Kronecker class sum T_coarse = sum M_i kron M_i with the coefficient-entry class sum T_entry = T_coarse R, where R swaps the column path pair. Both acts on the 1156-dimensional path-pair module. The spectra differ: T_coarse has generalized dimensions 441,225,490 at eigenvalues 0,1,2, while T_entry has dimensions 441,225,335,155 at eigenvalues 0,1,2,3. The published primary dimensions 34,1,225,300,35,406,155 split the coarse T=2 block as 335+155, matching T_entry. Therefore the twelve-site exact coarse T-primary dimensions 1485,3281,3155 are not automatically the coefficient-table T group dimensions; the twelve-site entry-convention spectrum remains open. No cut rank, two-cut pairing, or score change is claimed."
+  "twelve_site_coarse_T_primary_dimensions": {
+    "0": 1485,
+    "1": 3281,
+    "4": 3155
+  },
+  "twelve_site_entry_T_primary_dimensions": {
+    "0": 1485,
+    "1": 4500,
+    "4": 1936
+  },
+  "scope": "Exact ten-site control and exact twelve-site layer comparison for the coarse Kronecker class sum T_coarse = sum M_i kron M_i with the coefficient-entry class sum T_entry = T_coarse R, where R swaps the column path pair. Both acts on the 1156-dimensional path-pair module. The spectra differ: T_coarse has generalized dimensions 441,225,490 at eigenvalues 0,1,2, while T_entry has dimensions 441,225,335,155 at eigenvalues 0,1,2,3. The published primary dimensions 34,1,225,300,35,406,155 split the coarse T=2 block as 335+155, matching T_entry. Therefore the twelve-site exact coarse T-primary dimensions 1485,3281,3155 are not the coefficient-table T group dimensions. Because T_entry = T_coarse R and R^2 = 1, the twelve-site entry dimensions are obtained by flipping the R sign: 1485, 4500, 1936 for T=0,1,4. Their residues 0,0,1 match the coefficient-table row trace group sums. Individual central-idempotent ranks and the two-cut pairing remain open; no cut rank or score change is claimed."
 }
