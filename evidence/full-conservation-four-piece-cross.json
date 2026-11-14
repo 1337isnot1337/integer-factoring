@@ -1,0 +1,235 @@
+{
+  "status": "pass",
+  "labels": [
+    29,
+    31,
+    33,
+    35,
+    37,
+    39
+  ],
+  "rows": [
+    {
+      "q": 29,
+      "target_q_sqrt2": 116.98847565710699,
+      "one_piece_cost": 841,
+      "two_piece_bound": 181.87547096021302,
+      "three_piece_lower_bound": 160.3565752415051,
+      "three_piece_profile": [
+        4,
+        48,
+        789,
+        48,
+        4
+      ],
+      "four_piece_lower_bound": 137.21453921933477,
+      "four_piece_profile": {
+        "small_ranks": [
+          2,
+          2,
+          3,
+          22
+        ],
+        "row_small_mask": 3,
+        "row_small": [
+          2,
+          2
+        ],
+        "column_small": [
+          3,
+          22
+        ]
+      },
+      "four_piece_profiles": 30748,
+      "small_rank_cap": 29,
+      "five_piece_floor": 145,
+      "margin": 20.22606356222778
+    },
+    {
+      "q": 31,
+      "target_q_sqrt2": 128.5594287023956,
+      "one_piece_cost": 961,
+      "two_piece_bound": 200.21792008955612,
+      "three_piece_lower_bound": 176.06664815842908,
+      "three_piece_profile": [
+        4,
+        56,
+        901,
+        56,
+        4
+      ],
+      "four_piece_lower_bound": 148.76880375003867,
+      "four_piece_profile": {
+        "small_ranks": [
+          2,
+          2,
+          3,
+          24
+        ],
+        "row_small_mask": 3,
+        "row_small": [
+          2,
+          2
+        ],
+        "column_small": [
+          3,
+          24
+        ]
+      },
+      "four_piece_profiles": 65072,
+      "small_rank_cap": 35,
+      "five_piece_floor": 155,
+      "margin": 20.20937504764308
+    },
+    {
+      "q": 33,
+      "target_q_sqrt2": 140.44394123225428,
+      "one_piece_cost": 1089,
+      "two_piece_bound": 219.10199704906734,
+      "three_piece_lower_bound": 191.81236246936368,
+      "three_piece_profile": [
+        4,
+        64,
+        1021,
+        64,
+        4
+      ],
+      "four_piece_lower_bound": 160.31772318704546,
+      "four_piece_profile": {
+        "small_ranks": [
+          2,
+          2,
+          3,
+          26
+        ],
+        "row_small_mask": 3,
+        "row_small": [
+          2,
+          2
+        ],
+        "column_small": [
+          3,
+          26
+        ]
+      },
+      "four_piece_profiles": 122118,
+      "small_rank_cap": 41,
+      "five_piece_floor": 165,
+      "margin": 19.873781954791184
+    },
+    {
+      "q": 35,
+      "target_q_sqrt2": 152.63072584715155,
+      "one_piece_cost": 1225,
+      "two_piece_bound": 238.5108678534748,
+      "three_piece_lower_bound": 207.17102372081968,
+      "three_piece_profile": [
+        4,
+        56,
+        1149,
+        71,
+        5
+      ],
+      "four_piece_lower_bound": 172.35013782153518,
+      "four_piece_profile": {
+        "small_ranks": [
+          2,
+          2,
+          3,
+          28
+        ],
+        "row_small_mask": 3,
+        "row_small": [
+          2,
+          2
+        ],
+        "column_small": [
+          3,
+          28
+        ]
+      },
+      "four_piece_profiles": 210193,
+      "small_rank_cap": 47,
+      "five_piece_floor": 175,
+      "margin": 19.719411974383632
+    },
+    {
+      "q": 37,
+      "target_q_sqrt2": 165.1095321175039,
+      "one_piece_cost": 1369,
+      "two_piece_bound": 258.42917663394053,
+      "three_piece_lower_bound": 223.87364695438578,
+      "three_piece_profile": [
+        5,
+        80,
+        1301,
+        64,
+        4
+      ],
+      "four_piece_lower_bound": 184.36742301986789,
+      "four_piece_profile": {
+        "small_ranks": [
+          2,
+          2,
+          3,
+          30
+        ],
+        "row_small_mask": 3,
+        "row_small": [
+          2,
+          2
+        ],
+        "column_small": [
+          3,
+          30
+        ]
+      },
+      "four_piece_profiles": 365133,
+      "small_rank_cap": 54,
+      "five_piece_floor": 185,
+      "margin": 19.257890902363982
+    },
+    {
+      "q": 39,
+      "target_q_sqrt2": 177.87099966050144,
+      "one_piece_cost": 1521,
+      "two_piece_bound": 278.84284120073625,
+      "three_piece_lower_bound": 241.0,
+      "three_piece_profile": [
+        5,
+        71,
+        1445,
+        71,
+        5
+      ],
+      "four_piece_lower_bound": 196.37496358551343,
+      "four_piece_profile": {
+        "small_ranks": [
+          2,
+          2,
+          3,
+          32
+        ],
+        "row_small_mask": 3,
+        "row_small": [
+          2,
+          2
+        ],
+        "column_small": [
+          3,
+          32
+        ]
+      },
+      "four_piece_profiles": 555121,
+      "small_rank_cap": 60,
+      "five_piece_floor": 195,
+      "margin": 18.503963925011988
+    }
+  ],
+  "scope": "For odd q=29,31,33,35,37,39 an exact crossing decomposition below q^sqrt(2) has at most four pieces. One, two, and three pieces are excluded by q^2, the all-field two-piece bound, and the three-piece cross relaxation. For four pieces, every piece has both ranks at least two and smaller rank at most floor(q^sqrt(2)-3q). Writing the larger rank L and smaller rank m, the quotient bound gives L<=q^2-f(m), and the two total-rank budgets fix the sums of L in the row-small and column-small groups. The checker enumerates every small-rank multiset and orientation partition, and minimizes the concave group costs at the bound vertices. All cases clear the target with margin >1. This is a finite cross-constraint closure, not a score change and not a claim for even q or q>=41.",
+  "source_sha256": {
+    "three_piece_tool": "911c93f30aecfbf6ab6fdd7385e070f8eca8803fc46a78c65cd8118f50b28fda",
+    "two_piece_note": "30601a6a0a7c379238e8d960afb183ff7d0ac8b705c7351674ad6d39ac573827",
+    "minimum_cut_note": "66c8db366f1b46b67e87d9496c75c2b8fb989b8824eceb9b97fa57d4b1a98389"
+  }
+}

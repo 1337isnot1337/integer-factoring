@@ -378,6 +378,10 @@ verify-full-conservation-small-q-closure:
 verify-full-conservation-three-piece-cross:
 	python3 tools/check_full_conservation_three_piece_cross.py
 
+.PHONY: verify-full-conservation-four-piece-cross
+verify-full-conservation-four-piece-cross:
+	python3 tools/check_full_conservation_four_piece_cross.py
+
 .PHONY: verify-bounded-spin-twelve-RT-coefficient
 verify-bounded-spin-twelve-RT-coefficient:
 	python3 tools/check_bounded_spin_twelve_RT_coefficient.py

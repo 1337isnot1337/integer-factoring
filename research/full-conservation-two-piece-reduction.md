@@ -56,9 +56,10 @@ field and every exact decomposition of `E_d`,
 whole conservation-kernel family is already closed for `q <= 21`, with
 arbitrary piece count, independently of the floor below. The three-piece
 cross argument in [§4](#4-three-piece-cross-windows-close-q232527)
-also closes `q=23,25,27`; the first remaining odd window is `q=29`. The
-q=13 two-piece search is closed. See [§3](#3-piece-count-reduction) for
-the exact table.
+also closes `q=23,25,27`; the four-piece windows `q=29,31,33,35,37,39`
+are closed in [the four-piece note](full-conservation-four-piece-cross.md).
+The first remaining odd window is `q=41`. The q=13 two-piece search is
+closed. See [§3](#3-piece-count-reduction) for the exact table.
 
 The characteristic-two theorem in
 [the full-conservation barrier](full-conservation-rank-sum-barrier.md)
@@ -146,8 +147,9 @@ possible, and it fails. For `q=17,19` the target lies between `3q` and
 `4q`, so at most three pieces are possible. At `q=23` the target
 `84.2896` lies between `3q=69` and `4q=92`, so at most three pieces are
 possible; the next section excludes those three pieces. The same cap holds
-at `q=25,27`. The first remaining odd window is `q=29`, where the target
-`116.9885` lies between `4q=116` and `5q=145`.
+at `q=25,27`. At `q=29` the target `116.9885` lies between `4q=116` and
+`5q=145`; the four-piece note closes `q=29..39`, so the first remaining
+odd window is `q=41`.
 
 The per-piece floor is only a reduction. For every `q <= 21`, the
 stronger [minimum-cut rank budget](minimum-cut-rank-budget.md) closes the
@@ -184,7 +186,10 @@ f(k)=\max_{0\le s\le q}s(q-ks).
 
 The values are `K_23=38`, `K_25=44`, `K_27=51`. A piece with both ranks
 at least `K_q+1` would cost more than `T-2q`, so every piece has row rank
-or column rank at most `K_q`. Transposing the decomposition if necessary,
+or column rank at most `K_q`. No piece has a zero or unit rank: a unit
+row rank forces column rank at least `N` by the floor, while the quotient
+bound applied to that piece forces column rank below `N` because `f(1)>0`;
+the column case is symmetric. Transposing the decomposition if necessary,
 two pieces have row ranks `r_1,r_2<=K_q`. Then
 `r_3=N-r_1-r_2>q`, so `f(r_3)=0`.
 
@@ -228,8 +233,9 @@ of a three-piece counterexample, proving the claim.
 
 This is a finite computer-assisted sign check over `K_q^2` rank pairs, not
 an enumeration of tensors. It uses only the universal quotient bounds and
-the piece floor. It does not cover `q=22`, the even labels `q=24,26,28`,
-or any `q>=29`; at `q=29` the floor first permits four pieces.
+the piece floor. The four-piece windows `q=29,31,33,35,37,39` are closed in
+[the four-piece note](full-conservation-four-piece-cross.md). This section
+does not cover `q=22`, the even labels, or `q>=41`.
 
 ## 5. Finite two-piece catalogue
 
@@ -300,5 +306,6 @@ That checker verifies 71,354 rank profiles, 577,536 feasible dual
 vertices, 498,130 unrounded endpoint inequalities, and the exact
 comparison `L^408 > d^577` for every `2 <= d <= 21`; the checked
 run reports PASS and a first uncertified profile at `d=22`. The identity
-`T_I=E_q` is immediate from (1): `[x+y=u+v][y=u]=[x=v][y=u]`. No closure is claimed here for `q=22`, the even labels `q=24,26,28`, or
-`q>=29`; the three-piece windows `q=23,25,27` are closed in §4.
+`T_I=E_q` is immediate from (1): `[x+y=u+v][y=u]=[x=v][y=u]`. No closure is claimed here for `q=22`, the even labels, or `q>=41`; the
+three-piece windows `q=23,25,27` are closed in §4, and `q=29..39` in the
+[four-piece note](full-conservation-four-piece-cross.md).
