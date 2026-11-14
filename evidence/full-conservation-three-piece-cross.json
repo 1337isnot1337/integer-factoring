@@ -1,0 +1,66 @@
+{
+  "status": "pass",
+  "labels": [
+    23,
+    25,
+    27
+  ],
+  "rows": [
+    {
+      "q": 23,
+      "target_q_sqrt2": 84.28959632772819,
+      "piece_floor_q": 23,
+      "three_piece_lower_bound": 117.32759329953902,
+      "three_piece_profile": [
+        3,
+        30,
+        485,
+        40,
+        4
+      ],
+      "margin": 33.03799697181083,
+      "small_rank_cap": 38,
+      "two_piece_bound": 130.29420918085523,
+      "four_piece_floor": 92
+    },
+    {
+      "q": 25,
+      "target_q_sqrt2": 94.8387278177818,
+      "piece_floor_q": 25,
+      "three_piece_lower_bound": 131.44491801254964,
+      "three_piece_profile": [
+        3,
+        36,
+        573,
+        48,
+        4
+      ],
+      "margin": 36.606190194767834,
+      "small_rank_cap": 44,
+      "two_piece_bound": 146.89176967048937,
+      "four_piece_floor": 100
+    },
+    {
+      "q": 27,
+      "target_q_sqrt2": 105.74358934867503,
+      "piece_floor_q": 27,
+      "three_piece_lower_bound": 145.60376350362088,
+      "three_piece_profile": [
+        3,
+        42,
+        669,
+        56,
+        4
+      ],
+      "margin": 39.86017415494585,
+      "small_rank_cap": 51,
+      "two_piece_bound": 164.09321534248443,
+      "four_piece_floor": 108
+    }
+  ],
+  "scope": "For q=23,25,27 an exact crossing decomposition below q^sqrt(2) has at most three pieces. The identity costs q^2, the floor q excludes at least four pieces, the all-field two-piece bound excludes two pieces, and the cross-quotient vertex relaxation excludes three pieces. The three-piece check transposes if necessary so two pieces have row rank at most floor(q^sqrt(2)-2q); all q=23,25,27 cases clear the target with margin >1. No other q and no score change.",
+  "source_sha256": {
+    "two_piece_note": "30601a6a0a7c379238e8d960afb183ff7d0ac8b705c7351674ad6d39ac573827",
+    "minimum_cut_note": "66c8db366f1b46b67e87d9496c75c2b8fb989b8824eceb9b97fa57d4b1a98389"
+  }
+}

@@ -1152,8 +1152,8 @@ Integrated from [exact PR #27 source](https://github.com/1337isnot1337/integer-f
 - [Flag quotients exclude finite rank-sum seeds through eighty-two labels](flagged-cut-rank-budget.md)
 - [A common rank quotient for all affine-selector frames](frame-filtration-barrier.md)
 - [A rank-sum obstruction for every binary conservation kernel](full-conservation-rank-sum-barrier.md)
-- [Odd full-conservation pieces cost at least q; the q<=21 family is closed](full-conservation-two-piece-reduction.md)
-- [Small odd conservation kernels cannot cross](full-conservation-small-q-closure.md): combining the full-conservation piece floor `q` with the all-field two-piece crossing bound closes the floor argument through `q=13`; the stronger minimum-cut budget closes every conservation alphabet through `q=21`. No score change.
+- [Odd full-conservation pieces cost at least q; the q<=21 family is closed, as are the q=23,25,27 three-piece windows](full-conservation-two-piece-reduction.md)
+- [Small odd conservation kernels cannot cross](full-conservation-small-q-closure.md): combining the full-conservation piece floor `q` with the all-field two-piece crossing bound closes the floor argument through `q=13`; the stronger minimum-cut budget closes every conservation alphabet through `q=21`, and the three-piece cross relaxation closes `q=23,25,27`. No score change.
 - [Formal crossing limits are excluded through sixty-four labels](geometric-border-cutoff.md)
 - [Geometric compression excludes exact rank-sum seeds through ninety-five labels](geometric-cut-rank-budget.md)
 - [The geometric compression bounds still admit the dyadic scalar profile](geometric-cut-relaxation-limit.md)
