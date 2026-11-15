@@ -1,4 +1,4 @@
-# A minimum-cut rank budget and a twenty-one-label cutoff
+# A minimum-cut rank budget and a twenty-two-label cutoff
 
 ## Results and scope
 
@@ -23,14 +23,14 @@ exact finite certificate that
 ```math
 \boxed{\qquad
 \sum_i\sqrt{r_ic_i}>d^{\sqrt2}
-\quad\text{for every }2\le d\le21.
+\quad\text{for every }2\le d\le22.
 \qquad}                                                \tag{2}
 ```
 
 Thus a finite seed passing the strict sufficient criterion in
 [rank-sum amplification](finite-seed-amplification.md) needs at
-least **twenty-two labels**. This strengthens the separately verified
-twelve-label cutoff. It does not assert that a winning twenty-two-label
+least **twenty-three labels**. This strengthens the separately verified
+twelve-label cutoff. It does not assert that a winning twenty-three-label
 seed exists, and it does not exclude other amplification methods or
 better asymptotic crossing families.
 
@@ -268,9 +268,11 @@ L_{21}=\frac{65335133917}{878000000}
 All square-root rounding is downward. Floating-point values appear
 only as readable summaries of exact rational certificates.
 
-### The next numerical frontier is not a tensor certificate
+## 6. The twenty-two-label cutoff
 
-At `d=22`, the no-rank-one profile receives the rounded bound
+### The first linear profile failure is not a tensor certificate
+
+At `d=22`, the no-rank-one **rank-budget relaxation** receives the rounded bound
 `98657731/1250000` from (11), below the target. The nonlinear
 rank-budget relaxation is attained by the numerical rank pairs
 
@@ -291,15 +293,153 @@ requires its column complement to have rank at least
 The other two pieces have total column rank only `18+2=20`,
 contradicting rank subadditivity. Thus this profile identifies a
 missing higher-cut constraint in the present finite certificate;
-it is not a passing seed or evidence of realizability.
+it is not a passing seed or evidence of realizability.  The quotient
+constraint closes the diagonal and rank-one-free cases, and Section 6.3
+closes the remaining rank-one cases.
+
+### The `d=22` profile with only diagonal rank-one pieces
+
+The quotient constraint above does not by itself give a `d=22` cutoff, but
+it does eliminate every decomposition whose rank-one pieces are all `(1,1)`.
+Put
+`M=sum_i min(r_i,c_i)`.  The minimum-cut budget gives `M>=d=22`.
+
+For `M>=23`, the nonlinear surplus bound in the form
+
+```math
+\sum_i\sqrt{r_ic_i}\ge M-4+2\sqrt{2(N-M+2)}          \tag{14}
+```
+
+is increasing in `M` for `M<=N`, and at `M=23` it gives
+
+```math
+19+2\sqrt{926}>22^{\sqrt2}.                           \tag{15}
+```
+
+For `M>=N` the weaker bound `sum_i sqrt(r_ic_i)>=M>=N` is already
+above the target.  Thus only `M=22` can survive.
+
+Assume now that every piece either has both cut ranks at least two or is
+the diagonal rank-one piece `(1,1)`.  Put
+`A=sum_{r_i>c_i}(r_i-c_i)`, `B=sum_{c_i>r_i}(c_i-r_i)`.  The two rank
+budgets give `A,B>=N-M=462`; the diagonal rank-one pieces have zero
+surplus and are already counted in `M`.  If one orientation has all unbalanced
+pieces with minimum rank at least three, then concavity of
+`g_m(t)=sqrt(m(m+t))-m` and `g_m(t)>=g_3(t)` give the lower bound
+
+```math
+22+g_3(462)+g_2(462)
+=17+\sqrt{1395}+\sqrt{928}>22^{\sqrt2}.               \tag{16}
+```
+
+If one orientation has at least two unbalanced pieces, then the same
+concavity argument, applied with one surplus unit separated, gives
+
+```math
+22+g_2(1)+g_2(461)+g_2(462)
+=16+\sqrt{928}+\sqrt6+\sqrt{926}>22^{\sqrt2}.        \tag{17}
+```
+
+The exact inequalities (15)--(17) are checked by raising both sides to
+the power `408` and using `577^2>2*408^2`; the square roots are rounded
+downward.
+
+The only remaining possibility is one unbalanced piece in each
+orientation, both with minimum rank two.  The column-heavy piece then
+has row rank `2` and column rank `2+t` for some `t>=462`.  The other
+pieces are the row-heavy piece, whose column rank is `2`, and diagonal
+pieces (possibly including `(1,1)`) whose minimum ranks sum to
+`22-2-2=18`.  Hence the column
+complement of the column-heavy piece has rank `20`.  The quotient bound
+(4) for row rank two requires that complement to have rank at least
+
+```math
+\max_s s(22-2s)=60,                                    \tag{18}
+```
+
+a contradiction.  The surviving diagonal pieces may include `(1,1)`
+pieces; they contribute their minimum rank one to the complement, so the
+complement is still `20`.  This excludes every `d=22` decomposition whose
+rank-one pieces are all diagonal.
+
+### Non-diagonal rank-one pieces
+
+The remaining case has a rank-one piece `(1,b)` or `(a,1)` with
+`a,b>=2`.  At `d=22` the checker enumerates all unordered pairs in
+`P_22` and finds exactly fifteen pairs that are not already above the
+target by the linear bounds (8)--(10):
+
+```math
+(0,0),(0,2),(0,3),(0,4),(0,5),(0,6),\quad
+(1,1),(1,2),(1,3),(1,4),(1,5),(1,6),\quad
+(2,2),(2,3),(2,4).
+```
+
+Every one has both maxima at most six.  Thus in a possibly surviving
+profile every rank-one piece has other cut rank at most six.
+
+Assume that at least one rank-one piece is non-diagonal.  Remove all
+rank-one pieces, and let `r>=1` be their number and `T` the sum of
+their other cut ranks.  Put `s=T-r`.  At least one removed piece is
+non-diagonal, so `s>=1`; since every other rank is at most six,
+`T<=6r`, hence `s<=5r`.  A rank-one piece with other rank `z` costs
+`sqrt z` and contributes at most `z` to either cut total.  Therefore
+the total reduction in either cut is at most `T`, and concavity of the
+square root gives
+
+```math
+\sum_i\sqrt{z_i}
+\ge\sqrt{T-r+1}+(r-1)=\sqrt{s+1}+(r-1).          \tag{19}
+```
+
+Let `M'` be the minimum rank of the remaining rank-one-free pieces.
+If a remainder exists, `M'>=max(2,22-r)` and both remaining cut totals
+are at least `N-T`.  The generalized form of (14) gives
+
+```math
+\text{remainder cost}
+\ge M'-4+2\sqrt{2(N-T-M'+2)}.                     \tag{20}
+```
+
+For fixed `r` the resulting lower bound
+
+```math
+L(r,s)=\sqrt{s+1}+(r-1)+M'-4
+      +2\sqrt{2(N-(r+s)-M'+2)}                     \tag{21}
+```
+
+is concave in `s`, so its minimum on
+`1<=s<=min(5r,N-M'-r)` is attained at an endpoint.  The checker
+evaluates every endpoint for `1<=r<=N`; the minimum is at
+`(r,s)=(1,1)`, `M'=21`, and equals
+
+```math
+\boxed{\quad 17+\sqrt2+2\sqrt{926}
+=79.2747097\ldots>22^{\sqrt2}.\quad}             \tag{22}
+```
+
+If no remainder exists, every piece is rank-one.  In a failing profile
+each piece has `row rank + column rank <=7`, while the two cut budgets
+force the sum to be at least `2N=968`; hence `r>=139`.  The cost is at
+least `r>22^{\sqrt2}`.  If `r>N`, the same cost bound is immediate.
+Thus no non-diagonal rank-one piece can occur in a `d=22`
+decomposition below the target.
+
+Combining this with the diagonal case excludes every `d=22`
+decomposition.  Therefore (2) holds for every `2<=d<=22`, and a finite
+seed passing the strict rank-sum criterion needs at least
+**twenty-three labels**.  The finite profile and endpoint comparisons
+are verified by the checker; the field-independent inputs are (1), the
+quotient bound (4), and the nonlinear surplus lemma (14).
 
 ## Verification
 
 The checker independently verifies the unrounded endpoint inequalities
 for every selected dual, the higher-rank quotient bound on small
 finite-field examples, and the minimum-cut budget on exact crossing
-decompositions. It also records the first unsuccessful dimension
-without treating it as a positive seed.
+decompositions. It also checks the `d=22` profile enumeration, the
+rank-one endpoint reduction, and records `d=23` as the first dimension
+not covered, without treating any relaxation as a positive seed.
 
 ```sh
 python tools/check_minimum_cut_rank_budget.py \
@@ -308,4 +448,5 @@ python tools/check_minimum_cut_rank_budget.py \
 
 The field-independent proof is Sections 1--4. The finite arithmetic
 certificate in Section 5 tests every permitted pair of scalar maxima;
-it does not infer a universal theorem from random tensor samples.
+Section 6 adds the finite `d=22` profile and rank-one endpoint checks.
+Neither section infers a universal theorem from random tensor samples.

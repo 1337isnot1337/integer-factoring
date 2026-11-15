@@ -370,6 +370,10 @@ build-bounded-spin-twelve-coefficient-idempotents:
 verify-bounded-spin-missing-direction:
 	python3 tools/check_bounded_spin_missing_direction.py
 
+.PHONY: verify-full-conservation-rank-product-counterexample
+verify-full-conservation-rank-product-counterexample:
+	python3 tools/check_full_conservation_rank_product_counterexample.py
+
 .PHONY: verify-full-conservation-small-q-closure
 verify-full-conservation-small-q-closure:
 	python3 tools/check_full_conservation_small_q_closure.py

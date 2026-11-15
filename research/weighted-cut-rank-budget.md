@@ -43,8 +43,8 @@ These are restrictions on the finite rank-sum criterion from
 [finite-seed amplification](https://github.com/1337isnot1337/integer-factoring/blob/147652574e7ce1ff68b2c378712846cbf438da34/research/finite-seed-amplification.md). They
 do not prove a lower bound for factoring, exclude different ways of
 amplifying a seed, or establish a new factoring exponent. The previous
-[minimum-cut certificate](https://github.com/1337isnot1337/integer-factoring/blob/147652574e7ce1ff68b2c378712846cbf438da34/research/minimum-cut-rank-budget.md) excluded seeds
-through twenty-one labels. The new argument uses all weighted cut
+[minimum-cut certificate](minimum-cut-rank-budget.md) excluded seeds
+through twenty-two labels after its rank-one refinement. The new argument uses all weighted cut
 budgets and a rational certificate; it does not enumerate tensors.
 
 ## 1. The quotient inequality and all subset choices

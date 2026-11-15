@@ -1011,7 +1011,7 @@ These ordinary proofs and finite controls were integrated from [exact PR #23 sou
 - [A multiplication network with logarithmic wire widths](logarithmic-wire-network.md)
 - [A multigraded crossing on uniform set partitions](matching-code-lift.md)
 - [Homogeneous matching duals from Jack integrality](matching-gram-unipotence.md)
-- [A minimum-cut rank budget and a twenty-one-label cutoff](minimum-cut-rank-budget.md)
+- [A minimum-cut rank budget and a twenty-two-label cutoff](minimum-cut-rank-budget.md): every exact decomposition with `d<=22` has square-root rank sum above `d^sqrt(2)`. The `d=22` proof combines the quotient complement constraint, a total-minimum-rank reduction for diagonal and no-rank-one profiles, and a finite rank-one reduction whose minimum is `17+sqrt2+2sqrt926`. A finite seed passing the strict criterion needs at least twenty-three labels. No score change.
 - [Streamed modular factors in every fixed characteristic](modular-factor-space-odd.md)
 - [Polynomial-space evaluation of the ambient modular factors](modular-factor-space.md)
 - [Linear space for the regular modular factors](near-linear-factor-space.md)
@@ -1152,9 +1152,10 @@ Integrated from [exact PR #27 source](https://github.com/1337isnot1337/integer-f
 - [Flag quotients exclude finite rank-sum seeds through eighty-two labels](flagged-cut-rank-budget.md)
 - [A common rank quotient for all affine-selector frames](frame-filtration-barrier.md)
 - [A rank-sum obstruction for every binary conservation kernel](full-conservation-rank-sum-barrier.md)
-- [Odd full-conservation pieces cost at least q; the q<=21 family is closed, as are the q=23,25,27 three-piece windows](full-conservation-two-piece-reduction.md)
+- [Odd full-conservation pieces cost at least q; the q<=22 family is closed, as are the q=23,25,27 three-piece windows](full-conservation-two-piece-reduction.md)
 - [Four-piece cross windows close q=29 through q=39](full-conservation-four-piece-cross.md): every piece has both ranks at least two, the smaller rank is capped by `floor(q^sqrt2-3q)`, and the quotient bound plus total-rank budgets become a finite concave transport problem; all checked minima exceed the target by more than 18.
-- [Small odd conservation kernels cannot cross](full-conservation-small-q-closure.md): combining the full-conservation piece floor `q` with the all-field two-piece crossing bound closes the floor argument through `q=13`; the stronger minimum-cut budget closes every conservation alphabet through `q=21`, the three-piece relaxation closes `q=23,25,27`, and the four-piece relaxation closes `q=29..39`. No score change.
+- [Small odd conservation kernels cannot cross](full-conservation-small-q-closure.md): combining the full-conservation piece floor `q` with the all-field two-piece crossing bound closes the kernel family at `q=5,7,11,13` for every field. The all-field minimum-cut cutoff closes every exact decomposition with `q<=22`; worker 4 separately closes the `q=23,25,27` three-piece and `q=29..39` four-piece windows. Even labels and `q>=41` remain outside these checks. No score change.
+- [A rank-two conservation kernel with sub-square-root rank cost](full-conservation-rank-product-counterexample.md): the proposed shortcut `sqrt(r c)>=q sqrt(rank K)` fails on `Z/3` over `F_2`, where a rank-two kernel has both cut ranks four. The characteristic-two p-group rank-sum theorem and the all-field `q<=22` minimum-cut cutoff stand; the general `q>=23` lane remains open. Negative diagnostic; no score change.
 - [Formal crossing limits are excluded through sixty-four labels](geometric-border-cutoff.md)
 - [Geometric compression excludes exact rank-sum seeds through ninety-five labels](geometric-cut-rank-budget.md)
 - [The geometric compression bounds still admit the dyadic scalar profile](geometric-cut-relaxation-limit.md)

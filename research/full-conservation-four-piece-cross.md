@@ -12,8 +12,8 @@ excluded by the [three-piece cross relaxation](full-conservation-two-piece-reduc
 and `5q>q^sqrt(2)` excludes at least five pieces. The new content is the
 four-piece case.
 
-This is a finite cross-constraint closure. It does not cover even labels,
-`q=22`, or `q>=41`, and it does not change the complete factoring score
+This is a finite cross-constraint closure. It does not cover even labels
+or `q>=41`, and it does not change the complete factoring score
 `1/2`.
 
 ## 1. Four-piece reduction
@@ -93,7 +93,8 @@ one-, two-, and three-piece exclusions for every listed label.
 - Odd `q=41` and larger are not checked. The same four-piece model gives
   `208.83` at `q=41`, above the target `190.91`, but that case is not in
   the checked receipt and is not claimed here.
-- Even labels and `q=22` are outside the odd conservation floor.
+- Even labels are outside the odd conservation floor; `q=22` is closed by
+  the minimum-cut cutoff, not by this note.
 - The complete bound remains `1/2`.
 
 ## 4. Verification

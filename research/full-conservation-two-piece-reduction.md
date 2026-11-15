@@ -52,8 +52,8 @@ statement for the fixed conservation family. The identity `T_I` is the
 crossing tensor `E_q`, and the
 [minimum-cut rank budget](minimum-cut-rank-budget.md) proves, for every
 field and every exact decomposition of `E_d`,
-`sum sqrt(r_i c_i) > d^sqrt(2)` for all `2 <= d <= 21`. Therefore the
-whole conservation-kernel family is already closed for `q <= 21`, with
+`sum sqrt(r_i c_i) > d^sqrt(2)` for all `2 <= d <= 22`. Therefore the
+whole conservation-kernel family is already closed for `q <= 22`, with
 arbitrary piece count, independently of the floor below. The three-piece
 cross argument in [§4](#4-three-piece-cross-windows-close-q232527)
 also closes `q=23,25,27`; the four-piece windows `q=29,31,33,35,37,39`
@@ -151,10 +151,10 @@ at `q=25,27`. At `q=29` the target `116.9885` lies between `4q=116` and
 `5q=145`; the four-piece note closes `q=29..39`, so the first remaining
 odd window is `q=41`.
 
-The per-piece floor is only a reduction. For every `q <= 21`, the
+The per-piece floor is only a reduction. For every `q <= 22`, the
 stronger [minimum-cut rank budget](minimum-cut-rank-budget.md) closes the
 family outright: it excludes every exact decomposition of `E_q` for all
-`2 <= q <= 21`, with no piece-count restriction. The q=23,25,27 three-piece
+`2 <= q <= 22`, with no piece-count restriction. The q=23,25,27 three-piece
 windows are closed separately in §4. Thus the q=7,11,13 two-piece
 reductions and the q=17,19 three-piece windows are superseded as crossing
 questions. The two-piece catalogue below remains a finite
@@ -235,7 +235,7 @@ This is a finite computer-assisted sign check over `K_q^2` rank pairs, not
 an enumeration of tensors. It uses only the universal quotient bounds and
 the piece floor. The four-piece windows `q=29,31,33,35,37,39` are closed in
 [the four-piece note](full-conservation-four-piece-cross.md). This section
-does not cover `q=22`, the even labels, or `q>=41`.
+does not cover the even labels or `q>=41`.
 
 ## 5. Finite two-piece catalogue
 
@@ -304,8 +304,9 @@ python3 tools/check_minimum_cut_rank_budget.py \
 
 That checker verifies 71,354 rank profiles, 577,536 feasible dual
 vertices, 498,130 unrounded endpoint inequalities, and the exact
-comparison `L^408 > d^577` for every `2 <= d <= 21`; the checked
-run reports PASS and a first uncertified profile at `d=22`. The identity
-`T_I=E_q` is immediate from (1): `[x+y=u+v][y=u]=[x=v][y=u]`. No closure is claimed here for `q=22`, the even labels, or `q>=41`; the
+comparison `L^408 > d^577` for every `2 <= d <= 21`; the d=22 profile
+and rank-one endpoint checks extend the certificate to `d <= 22`, with
+`d=23` the first dimension not covered. The identity
+`T_I=E_q` is immediate from (1): `[x+y=u+v][y=u]=[x=v][y=u]`. No closure is claimed here for the even labels or `q>=41`; the
 three-piece windows `q=23,25,27` are closed in §4, and `q=29..39` in the
 [four-piece note](full-conservation-four-piece-cross.md).

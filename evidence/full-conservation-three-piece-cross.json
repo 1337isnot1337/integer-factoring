@@ -61,6 +61,6 @@
   "scope": "For q=23,25,27 an exact crossing decomposition below q^sqrt(2) has at most three pieces. The identity costs q^2, the floor q excludes at least four pieces, the all-field two-piece bound excludes two pieces, and the cross-quotient vertex relaxation excludes three pieces. The three-piece check transposes if necessary so two pieces have row rank at most floor(q^sqrt(2)-2q); all q=23,25,27 cases clear the target with margin >1. No other q and no score change.",
   "source_sha256": {
     "two_piece_note": "30601a6a0a7c379238e8d960afb183ff7d0ac8b705c7351674ad6d39ac573827",
-    "minimum_cut_note": "66c8db366f1b46b67e87d9496c75c2b8fb989b8824eceb9b97fa57d4b1a98389"
+    "minimum_cut_note": "d8d500a4f036dbf584da239fedab34cbcacbe169a30cd99e91a9c1e7bd07027e"
   }
 }
