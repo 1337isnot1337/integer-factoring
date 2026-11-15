@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Exact minimum-cut rank budgets and the twenty-one-label rank-sum cutoff."""
+"""Exact minimum-cut rank budgets and the twenty-two-label rank-sum cutoff."""
 
 from __future__ import annotations
 
@@ -170,7 +170,7 @@ def rank_sum_certificates():
             "unrounded_endpoint_checks": endpoints, "certificates": records,
             "nonlinear_improves_linear_frontier": {"dimension": 21,
                 "old_linear_bound": str(linear), "exact_power_test_failed": True},
-            "first_uncertified_profile": {"dimension": 22, "a": 0, "b": 0,
+            "first_linear_profile_failure": {"dimension": 22, "a": 0, "b": 0,
                 "rational_lower_bound": str(failed), "method": method,
                 "dual": point, "numerical_rank_pairs": numerical,
                 "required_rank_two_complement": required_complement,
@@ -229,6 +229,98 @@ def diagonal_rank_one_twenty_two_frontier():
         "diagonal_rank_one_pieces_included": True,
         "non_diagonal_rank_one_profiles_remain_open": True,
     }
+
+
+def twenty_two_profile_frontier():
+    """Enumerate the exact d=22 scalar profiles.
+
+    Only fifteen profiles fail the linear dual.  Every one has both
+    forced rank-one maxima at most six, which is the scope used by the
+    rank-one reduction below.
+    """
+    d = 22
+    products = [0] + sorted({a * b for a in range(1, d + 1)
+                             for b in range(1, d + 1)})
+    failing = []
+    count = 0
+    for index, a in enumerate(products):
+        for b in products[index:]:
+            if (a, b) == (0, 1):
+                continue
+            bound, method, _, _, _ = profile_bound(d, a, b)
+            count += 1
+            if not bound ** 408 > d ** 577:
+                failing.append({"a": a, "b": b,
+                                "lower_bound": str(bound),
+                                "method": method})
+    expected = {(0, 0), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6),
+                (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6),
+                (2, 2), (2, 3), (2, 4)}
+    assert {(record["a"], record["b"]) for record in failing} == expected
+    assert max(max(record["a"], record["b"]) for record in failing) == 6
+    return {"maximum_pairs": count,
+            "failing_pairs": failing,
+            "all_failing_maxima_at_most_six": True}
+
+
+def twenty_two_rank_one_frontier():
+    """Close the non-diagonal rank-one part of the d=22 frontier.
+
+    Remove all rank-one pieces.  If ``r`` are removed and ``T`` is the
+    sum of their other cut ranks, then ``T-r=s>=1``.  The removed cost
+    is at least ``sqrt(s+1)+(r-1)``.  The rank-one-free remainder has
+    minimum rank at least ``max(2,22-r)`` and both cut totals at least
+    ``484-T``, so the nonlinear surplus bound applies.  For fixed r the
+    resulting lower bound is concave in s, and a finite endpoint check
+    has minimum ``17+sqrt2+2sqrt926`` at ``(r,s)=(1,1)``.
+    """
+    d = 22
+    n = d * d
+    profile_frontier = twenty_two_profile_frontier()
+    assert profile_frontier["all_failing_maxima_at_most_six"]
+
+    def exceeds_target(numerator):
+        return numerator ** 408 > (d ** 577) * (SCALE ** 408)
+
+    best_numerator = None
+    best_parameters = None
+    checked = 0
+    for r in range(1, n + 1):
+        remainder_minimum = max(2, d - r)
+        # Each removed rank-one piece has other cut rank at most six,
+        # hence T <= 6r and s=T-r <= 5r.  The remainder needs T <= n-2.
+        maximum_s = min(5 * r, n - remainder_minimum - r)
+        if maximum_s < 1:
+            continue
+        for s in {1, maximum_s}:
+            cost_numerator = (r - 1) * SCALE + root_numerator(s + 1)
+            remainder_numerator = ((remainder_minimum - 4) * SCALE
+                + 2 * root_numerator(2 * (n - (r + s) - remainder_minimum + 2)))
+            numerator = cost_numerator + remainder_numerator
+            assert exceeds_target(numerator)
+            checked += 1
+            if best_numerator is None or numerator < best_numerator:
+                best_numerator = numerator
+                best_parameters = {"r": r, "s": s,
+                                   "remainder_minimum": remainder_minimum}
+
+    assert best_parameters == {"r": 1, "s": 1, "remainder_minimum": 21}
+    assert best_numerator == 17 * SCALE + root_numerator(2) + 2 * root_numerator(926)
+    # If every piece is rank-one, each piece has other cut rank at most
+    # six.  The two cut budgets require 7r >= 2*d*d, so r >= 139 and the
+    # total cost is at least r, already above the target.
+    assert (2 * n + 6) // 7 == 139
+    assert 139 > d
+    return {"dimension": d,
+            "endpoint_checks": checked,
+            "minimum_lower_numerator_over_scale": str(Fraction(best_numerator, SCALE)),
+            "minimum_decimal": float(Fraction(best_numerator, SCALE)),
+            "minimum_parameters": best_parameters,
+            "all_rank_one_piece_count_floor": 139,
+            "all_rank_one_cost_floor": 139,
+            "non_diagonal_rank_one_pieces_excluded": True,
+            "profiles": profile_frontier}
+
 
 
 def nonlinear_controls():
@@ -351,16 +443,18 @@ def main():
     certificate = rank_sum_certificates()
     result = {"status": "PASS", "scope": "Finite rank-sum amplification only; no factoring lower bound.",
               "minimum_cut_budget": "sum_i min(r_i,c_i)>=d",
-              "minimum_seed_dimension_for_a_strict_rank_sum_win": 22,
+              "minimum_seed_dimension_for_a_strict_rank_sum_win": 23,
               "rational_root_scale": SCALE, "rank_sum": certificate,
               "nonlinear_surplus_controls": nonlinear_controls(),
               "twenty_two_diagonal_rank_one_frontier": diagonal_rank_one_twenty_two_frontier(),
+              "twenty_two_rank_one_frontier": twenty_two_rank_one_frontier(),
               "finite_field_controls": matrix_controls()}
     if args.output:
         args.output.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({"status": result["status"],
-                      "minimum_seed_dimension": 22,
+                      "minimum_seed_dimension": 23,
                       "maximum_pairs": certificate["maximum_pairs"],
+                      "twenty_two_maximum_pairs": result["twenty_two_rank_one_frontier"]["profiles"]["maximum_pairs"],
                       "feasible_vertices": certificate["feasible_vertices"],
                       "unrounded_endpoints": certificate["unrounded_endpoint_checks"],
                       "matrix_controls": result["finite_field_controls"]}))

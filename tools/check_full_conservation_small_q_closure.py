@@ -30,7 +30,7 @@ def main() -> None:
         else:
             closed = False
             mechanism = 'not closed by this composition: three pieces possible'
-        closed_by_minimum_cut = q <= 21
+        closed_by_minimum_cut = q <= 22
         assert closed == (q in (5, 7, 11, 13))
         assert two_piece > q ** 1.5
         rows.append({
@@ -51,7 +51,7 @@ def main() -> None:
                                           if row['closed_by_floor_and_two_piece']],
         'not_closed_by_floor_composition': [row for row in rows
                                            if not row['closed_by_floor_and_two_piece']],
-        'minimum_cut_cutoff': 21,
+        'minimum_cut_cutoff': 22,
         'all_rows_closed_by_minimum_cut': all(row['closed_by_minimum_cut']
                                               for row in rows),
         'scope': ('Combines the full-conservation piece floor q (worker 4) with the '
@@ -60,7 +60,7 @@ def main() -> None:
                   'crossing at two pieces and the two-piece bound exceeds the target. '
                   'The q=17 and q=19 rows are open for this floor composition only; '
                   'the existing minimum-cut theorem independently closes every '
-                  'full-conservation seed with q<=21. All fields; no score change.'),
+                  'full-conservation seed with q<=22. All fields; no score change.'),
         'source_sha256': {
             'two_piece_note': sha256((ROOT / 'research' /
                                       'two-piece-rank-sum-obstruction.md').read_bytes()).hexdigest(),

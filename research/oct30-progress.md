@@ -190,9 +190,9 @@ Each has narrower scope than an impossibility theorem for factoring.
 | [Ideal Hankel normalization](ideal-hankel-endpoint.md) | Its regular-unipotent leading coefficient cannot have opposite-cut rank one for `d>=3`. | Parameter-dependent gauges, higher endpoint rank, and other Smith profiles. |
 
 The current [all-field small-seed certificate](minimum-cut-rank-budget.md)
-excludes the strict finite rank-sum sufficient criterion through twenty-one
+excludes the strict finite rank-sum sufficient criterion through twenty-two
 labels. A seed passing that particular criterion therefore needs at
-least twenty-two labels. A separate
+least twenty-three labels. A separate
 [two-piece theorem](two-piece-rank-sum-obstruction.md) requires at least
 three nonzero pieces at every dimension. These statements do not
 exclude a different amplification method on a smaller seed. Their

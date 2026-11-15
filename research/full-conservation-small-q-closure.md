@@ -66,13 +66,15 @@ There is a stronger existing statement.  The
 ```
 
 for **every** exact decomposition of `E_d`, with no conservation or
-piece-count restriction, for all `2<=d<=21`.  Since `T_I=E_q`, this
-already closes every conservation seed with `q<=21`, including
+piece-count restriction, for all `2<=d<=22`.  Since `T_I=E_q`, this
+already closes every conservation seed with `q<=22`, including
 `q=5,7,11,13,17,19`, without the floor argument.  The composition above
 is an independent, conservation-specific check of the same boundary,
-not a new closure of q=13.  The q>=22 conservation family remains open;
-if a q=13 search has a different label dimension or target, that scope
-should be stated explicitly.
+not a new closure of q=13.  The general `q>=23` conservation family
+remains open; worker 4 has separately closed the `q=23,25,27`
+three-piece windows, and the `q>=29` or higher-piece-count ranges are
+not covered here.  If a q=13 search has a different label dimension or
+target, that scope should be stated explicitly.
 
 ## Relation to the parallel work
 

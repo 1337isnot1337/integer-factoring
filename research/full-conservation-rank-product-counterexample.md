@@ -63,15 +63,14 @@ The failure of (1) and (5) is a **negative diagnostic for proposed
 shortcuts**.  It does not contradict any proved statement:
 
 - the all-field minimum-cut cutoff still closes every exact
-  decomposition with `q<=21`;
+  decomposition with `q<=22`;
 - the characteristic-two p-group rank-sum theorem still proves the
   barrier for its stated groups and fields;
 - the minimum-rank piece floor and the two-piece bounds are unchanged.
 
 In particular, (3) and the full-rank kernel are single pieces, not
 exact decompositions of the identity, so they are not seeds or
-counterexamples to any crossing statement.  The `q>=22` full-conservation lane over a general field
-remains open; the rank-product route would need a different lower
+counterexamples to any crossing statement.  The general `q>=23` full-conservation lane remains open; the rank-product route would need a different lower
 bound that survives this example.
 
 ## Reproduction
