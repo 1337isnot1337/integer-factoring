@@ -332,6 +332,10 @@ verify-bounded-spin-diagonal-trace:
 verify-bounded-spin-transposition-subalgebra:
 	python3 tools/check_bounded_spin_transposition_subalgebra.py
 
+.PHONY: verify-bounded-spin-twelve-row-action
+verify-bounded-spin-twelve-row-action:
+	python3 tools/check_bounded_spin_twelve_row_action.py --samples 8
+
 .PHONY: verify-bounded-spin-twelve-RT-orbit
 verify-bounded-spin-twelve-RT-orbit:
 	python3 tools/check_bounded_spin_twelve_RT_orbit.py
