@@ -1012,7 +1012,7 @@ These ordinary proofs and finite controls were integrated from [exact PR #23 sou
 - [A multiplication network with logarithmic wire widths](logarithmic-wire-network.md)
 - [A multigraded crossing on uniform set partitions](matching-code-lift.md)
 - [Homogeneous matching duals from Jack integrality](matching-gram-unipotence.md)
-- [A minimum-cut rank budget and a twenty-two-label cutoff](minimum-cut-rank-budget.md): every exact decomposition with `d<=22` has square-root rank sum above `d^sqrt(2)`. The `d=22` proof combines the quotient complement constraint, a total-minimum-rank reduction for diagonal and no-rank-one profiles, and a finite rank-one reduction whose minimum is `17+sqrt2+2sqrt926`. A finite seed passing the strict criterion needs at least twenty-three labels. No score change.
+- [A minimum-cut rank budget and a twenty-two-label cutoff](minimum-cut-rank-budget.md): every exact decomposition with `d<=22` has square-root rank sum above `d^sqrt(2)`. The `d=22` proof combines a rank-budget admissibility test (only `(0,0)` and `(1,1)` profiles survive, so every rank-one piece is diagonal) with the quotient complement constraint and a total-minimum-rank reduction. A finite seed passing the strict criterion needs at least twenty-three labels. No score change.
 - [Streamed modular factors in every fixed characteristic](modular-factor-space-odd.md)
 - [Polynomial-space evaluation of the ambient modular factors](modular-factor-space.md)
 - [Linear space for the regular modular factors](near-linear-factor-space.md)

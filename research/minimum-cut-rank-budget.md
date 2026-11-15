@@ -294,8 +294,8 @@ The other two pieces have total column rank only `18+2=20`,
 contradicting rank subadditivity. Thus this profile identifies a
 missing higher-cut constraint in the present finite certificate;
 it is not a passing seed or evidence of realizability.  The quotient
-constraint closes the diagonal and rank-one-free cases, and Section 6.3
-closes the remaining rank-one cases.
+constraint closes the diagonal and rank-one-free cases; Section 6.3
+shows that every remaining profile is inadmissible.
 
 ### The `d=22` profile with only diagonal rank-one pieces
 
@@ -362,84 +362,37 @@ pieces; they contribute their minimum rank one to the complement, so the
 complement is still `20`.  This excludes every `d=22` decomposition whose
 rank-one pieces are all diagonal.
 
-### Non-diagonal rank-one pieces
+### Admissible profiles exclude non-diagonal rank-one pieces
 
-The remaining case has a rank-one piece `(1,b)` or `(a,1)` with
-`a,b>=2`.  At `d=22` the checker enumerates all unordered pairs in
-`P_22` and finds exactly fifteen pairs that are not already above the
-target by the linear bounds (8)--(10):
-
-```math
-(0,0),(0,2),(0,3),(0,4),(0,5),(0,6),\quad
-(1,1),(1,2),(1,3),(1,4),(1,5),(1,6),\quad
-(2,2),(2,3),(2,4).
-```
-
-Every one has both maxima at most six.  Thus in a possibly surviving
-profile every rank-one piece has other cut rank at most six.
-
-Assume that at least one rank-one piece is non-diagonal.  Remove all
-rank-one pieces, and let `r>=1` be their number and `T` the sum of
-their other cut ranks.  Put `s=T-r`.  At least one removed piece is
-non-diagonal, so `s>=1`; since every other rank is at most six,
-`T<=6r`, hence `s<=5r`.  A rank-one piece with other rank `z` costs
-`sqrt z` and contributes at most `z` to either cut total.  Therefore
-the total reduction in either cut is at most `T`, and concavity of the
-square root gives
+The rank budgets (5) are lower bounds on the two cut totals.  If one of
+them exceeds `N=d^2`, no decomposition can have the corresponding profile
+maximum.  At `d=22` the budget at two is already
 
 ```math
-\sum_i\sqrt{z_i}
-\ge\sqrt{T-r+1}+(r-1)=\sqrt{s+1}+(r-1).          \tag{19}
+\operatorname{rank\_budget}(22,2)=485>484=N.                 \tag{19}
 ```
 
-Let `M'` be the minimum rank of the remaining rank-one-free pieces.
-If a remainder exists, `M'>=max(2,22-r)` and both remaining cut totals
-are at least `N-T`.  The generalized form of (14) gives
+The checker enumerates every unordered pair in `P_22`.  Exactly `15750`
+pairs have a budget above `N`; the only admissible pairs are `(0,0)` and
+`(1,1)`.  Both fail the linear and nonlinear rank-budget relaxations and
+are handled by the diagonal/no-rank-one argument above.
 
-```math
-\text{remainder cost}
-\ge M'-4+2\sqrt{2(N-T-M'+2)}.                     \tag{20}
-```
-
-For fixed `r` the resulting lower bound
-
-```math
-L(r,s)=\sqrt{s+1}+(r-1)+M'-4
-      +2\sqrt{2(N-(r+s)-M'+2)}                     \tag{21}
-```
-
-is concave in `s`, so its minimum on
-`1<=s<=min(5r,N-M'-r)` is attained at an endpoint.  The checker
-evaluates every endpoint for `1<=r<=N`; the minimum is at
-`(r,s)=(1,1)`, `M'=21`, and equals
-
-```math
-\boxed{\quad 17+\sqrt2+2\sqrt{926}
-=79.2747097\ldots>22^{\sqrt2}.\quad}             \tag{22}
-```
-
-If no remainder exists, every piece is rank-one.  In a failing profile
-each piece has `row rank + column rank <=7`, while the two cut budgets
-force the sum to be at least `2N=968`; hence `r>=139`.  The cost is at
-least `r>22^{\sqrt2}`.  If `r>N`, the same cost bound is immediate.
-Thus no non-diagonal rank-one piece can occur in a `d=22`
-decomposition below the target.
-
-Combining this with the diagonal case excludes every `d=22`
-decomposition.  Therefore (2) holds for every `2<=d<=22`, and a finite
-seed passing the strict rank-sum criterion needs at least
-**twenty-three labels**.  The finite profile and endpoint comparisons
-are verified by the checker; the field-independent inputs are (1), the
-quotient bound (4), and the nonlinear surplus lemma (14).
+A non-diagonal rank-one piece `(1,b)` or `(a,1)` has `b>=2` or `a>=2`,
+so it forces an inadmissible profile.  Therefore every rank-one piece in
+a `d=22` decomposition is the diagonal piece `(1,1)`, which is exactly
+the hypothesis of Section 6.2.  Combining the two cases proves (2) for
+every `2<=d<=22`, so a finite seed passing the strict rank-sum criterion
+needs at least **twenty-three labels**.  The field-independent inputs are
+(1), the quotient bound (4), and the nonlinear surplus lemma (14).
 
 ## Verification
 
 The checker independently verifies the unrounded endpoint inequalities
 for every selected dual, the higher-rank quotient bound on small
 finite-field examples, and the minimum-cut budget on exact crossing
-decompositions. It also checks the `d=22` profile enumeration, the
-rank-one endpoint reduction, and records `d=23` as the first dimension
-not covered, without treating any relaxation as a positive seed.
+decompositions. It also checks the `d=22` profile admissibility, the diagonal/quotient
+endpoint reduction, and records `d=23` as the first dimension not
+covered, without treating any relaxation as a positive seed.
 
 ```sh
 python tools/check_minimum_cut_rank_budget.py \
@@ -448,5 +401,6 @@ python tools/check_minimum_cut_rank_budget.py \
 
 The field-independent proof is Sections 1--4. The finite arithmetic
 certificate in Section 5 tests every permitted pair of scalar maxima;
-Section 6 adds the finite `d=22` profile and rank-one endpoint checks.
-Neither section infers a universal theorem from random tensor samples.
+Section 6 adds the finite `d=22` profile admissibility and
+diagonal/quotient endpoint checks.  Neither section infers a universal
+theorem from random tensor samples.

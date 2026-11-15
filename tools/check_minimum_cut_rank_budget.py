@@ -185,7 +185,8 @@ def diagonal_rank_one_twenty_two_frontier():
     surplus bound excludes total minimum rank at least 23, including
     diagonal (1,1) pieces.  At minimum rank 22, the quotient complement
     bound excludes every decomposition whose rank-one pieces, if any,
-    are all (1,1).  Non-diagonal rank-one pieces remain open.
+    are all (1,1).  Non-diagonal rank-one pieces are excluded separately
+    by the rank-budget admissibility test.
     """
     d = 22
     n = d * d
@@ -227,100 +228,76 @@ def diagonal_rank_one_twenty_two_frontier():
         "required_rank_two_complement": required_complement,
         "surviving_profile_killed_by_quotient": True,
         "diagonal_rank_one_pieces_included": True,
-        "non_diagonal_rank_one_profiles_remain_open": True,
+        "non_diagonal_rank_one_profiles_remain_open": False,
+        "non_diagonal_rank_one_profiles_excluded_by_admissibility": True,
     }
 
 
 def twenty_two_profile_frontier():
-    """Enumerate the exact d=22 scalar profiles.
+    """Enumerate the exact d=22 scalar profiles with admissible budgets.
 
-    Only fifteen profiles fail the linear dual.  Every one has both
-    forced rank-one maxima at most six, which is the scope used by the
-    rank-one reduction below.
+    The height budgets (5) are lower bounds on the two cut totals, so a
+    profile whose budget exceeds ``N=d*d`` cannot occur.  After this
+    admissibility test only ``(0,0)`` and ``(1,1)`` remain, and both are
+    handled by the diagonal/no-rank-one argument.  In particular a
+    non-diagonal rank-one piece would force a maximum at least two and
+    therefore an inadmissible profile.
     """
     d = 22
+    n = d * d
     products = [0] + sorted({a * b for a in range(1, d + 1)
                              for b in range(1, d + 1)})
+    admissible = []
+    inadmissible = []
     failing = []
-    count = 0
     for index, a in enumerate(products):
         for b in products[index:]:
             if (a, b) == (0, 1):
                 continue
+            row_budget, column_budget = rank_budget(d, a), rank_budget(d, b)
+            record = {"a": a, "b": b,
+                      "row_budget": row_budget,
+                      "column_budget": column_budget}
+            if row_budget > n or column_budget > n:
+                inadmissible.append(record)
+                continue
             bound, method, _, _, _ = profile_bound(d, a, b)
-            count += 1
+            record.update(lower_bound=str(bound), method=method)
+            admissible.append(record)
             if not bound ** 408 > d ** 577:
-                failing.append({"a": a, "b": b,
-                                "lower_bound": str(bound),
-                                "method": method})
-    expected = {(0, 0), (0, 2), (0, 3), (0, 4), (0, 5), (0, 6),
-                (1, 1), (1, 2), (1, 3), (1, 4), (1, 5), (1, 6),
-                (2, 2), (2, 3), (2, 4)}
-    assert {(record["a"], record["b"]) for record in failing} == expected
-    assert max(max(record["a"], record["b"]) for record in failing) == 6
-    return {"maximum_pairs": count,
+                failing.append(record)
+    assert {(record["a"], record["b"]) for record in failing} == {(0, 0), (1, 1)}
+    assert all(max(record["a"], record["b"]) <= 1 for record in admissible)
+    assert len(admissible) + len(inadmissible) == 15752
+    assert len(inadmissible) == 15750
+    return {"maximum_pairs": len(admissible) + len(inadmissible),
+            "admissible_pairs": admissible,
+            "inadmissible_pairs": len(inadmissible),
             "failing_pairs": failing,
-            "all_failing_maxima_at_most_six": True}
+            "only_admissible_failures_are_zero_and_one": True}
 
 
-def twenty_two_rank_one_frontier():
-    """Close the non-diagonal rank-one part of the d=22 frontier.
+def twenty_two_non_diagonal_rank_one_exclusion():
+    """Exclude non-diagonal rank-one pieces by the rank-budget test.
 
-    Remove all rank-one pieces.  If ``r`` are removed and ``T`` is the
-    sum of their other cut ranks, then ``T-r=s>=1``.  The removed cost
-    is at least ``sqrt(s+1)+(r-1)``.  The rank-one-free remainder has
-    minimum rank at least ``max(2,22-r)`` and both cut totals at least
-    ``484-T``, so the nonlinear surplus bound applies.  For fixed r the
-    resulting lower bound is concave in s, and a finite endpoint check
-    has minimum ``17+sqrt2+2sqrt926`` at ``(r,s)=(1,1)``.
+    A rank-one piece ``(1,b)`` with ``b>=2`` forces the profile maximum
+    ``b>=2``.  The rank budget at two is already ``485>22^2``, so no such
+    profile is possible; the cut-exchanged statement excludes ``(a,1)``.
     """
     d = 22
     n = d * d
-    profile_frontier = twenty_two_profile_frontier()
-    assert profile_frontier["all_failing_maxima_at_most_six"]
-
-    def exceeds_target(numerator):
-        return numerator ** 408 > (d ** 577) * (SCALE ** 408)
-
-    best_numerator = None
-    best_parameters = None
-    checked = 0
-    for r in range(1, n + 1):
-        remainder_minimum = max(2, d - r)
-        # Each removed rank-one piece has other cut rank at most six,
-        # hence T <= 6r and s=T-r <= 5r.  The remainder needs T <= n-2.
-        maximum_s = min(5 * r, n - remainder_minimum - r)
-        if maximum_s < 1:
-            continue
-        for s in {1, maximum_s}:
-            cost_numerator = (r - 1) * SCALE + root_numerator(s + 1)
-            remainder_numerator = ((remainder_minimum - 4) * SCALE
-                + 2 * root_numerator(2 * (n - (r + s) - remainder_minimum + 2)))
-            numerator = cost_numerator + remainder_numerator
-            assert exceeds_target(numerator)
-            checked += 1
-            if best_numerator is None or numerator < best_numerator:
-                best_numerator = numerator
-                best_parameters = {"r": r, "s": s,
-                                   "remainder_minimum": remainder_minimum}
-
-    assert best_parameters == {"r": 1, "s": 1, "remainder_minimum": 21}
-    assert best_numerator == 17 * SCALE + root_numerator(2) + 2 * root_numerator(926)
-    # If every piece is rank-one, each piece has other cut rank at most
-    # six.  The two cut budgets require 7r >= 2*d*d, so r >= 139 and the
-    # total cost is at least r, already above the target.
-    assert (2 * n + 6) // 7 == 139
-    assert 139 > d
+    assert rank_budget(d, 2) == 485 > n
+    frontier = twenty_two_profile_frontier()
+    assert {(record["a"], record["b"]) for record in frontier["failing_pairs"]} == {
+        (0, 0), (1, 1)}
     return {"dimension": d,
-            "endpoint_checks": checked,
-            "minimum_lower_numerator_over_scale": str(Fraction(best_numerator, SCALE)),
-            "minimum_decimal": float(Fraction(best_numerator, SCALE)),
-            "minimum_parameters": best_parameters,
-            "all_rank_one_piece_count_floor": 139,
-            "all_rank_one_cost_floor": 139,
+            "rank_budget_at_two": rank_budget(d, 2),
+            "label_total": n,
             "non_diagonal_rank_one_pieces_excluded": True,
-            "profiles": profile_frontier}
-
+            "maximum_pairs": frontier["maximum_pairs"],
+            "failing_profiles": frontier["failing_pairs"],
+            "scope": ("Every non-diagonal rank-one piece forces a profile maximum "
+                      "at least two; the corresponding rank budget exceeds N.")}
 
 
 def nonlinear_controls():
@@ -447,14 +424,14 @@ def main():
               "rational_root_scale": SCALE, "rank_sum": certificate,
               "nonlinear_surplus_controls": nonlinear_controls(),
               "twenty_two_diagonal_rank_one_frontier": diagonal_rank_one_twenty_two_frontier(),
-              "twenty_two_rank_one_frontier": twenty_two_rank_one_frontier(),
+              "twenty_two_non_diagonal_rank_one_exclusion": twenty_two_non_diagonal_rank_one_exclusion(),
               "finite_field_controls": matrix_controls()}
     if args.output:
         args.output.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps({"status": result["status"],
                       "minimum_seed_dimension": 23,
                       "maximum_pairs": certificate["maximum_pairs"],
-                      "twenty_two_maximum_pairs": result["twenty_two_rank_one_frontier"]["profiles"]["maximum_pairs"],
+                      "twenty_two_maximum_pairs": result["twenty_two_non_diagonal_rank_one_exclusion"]["maximum_pairs"],
                       "feasible_vertices": certificate["feasible_vertices"],
                       "unrounded_endpoints": certificate["unrounded_endpoint_checks"],
                       "matrix_controls": result["finite_field_controls"]}))
