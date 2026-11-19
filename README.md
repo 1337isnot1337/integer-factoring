@@ -1,5 +1,7 @@
 # Deterministic integer factoring bounds
 
+[Deterministic factoring project page](https://1337isnot1337.github.io/projects/integer-factoring/) — a readable overview with illustrations, context, and links to the source.
+
 [![Apache-2.0](https://img.shields.io/badge/license-Apache--2.0-blue)](LICENSE)
 
 This repository studies worst-case deterministic factoring. Given an integer `N >= 2` in binary, the algorithm outputs its smallest prime factor. Let `n` be the input bit length. Runtime is measured in finite-alphabet Turing-machine steps.
