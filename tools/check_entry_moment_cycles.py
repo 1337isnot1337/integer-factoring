@@ -15,6 +15,7 @@ from __future__ import annotations
 
 import argparse
 import copy
+from decimal import Decimal, localcontext
 import hashlib
 import json
 import lzma
@@ -32,6 +33,11 @@ CAP = 250_000
 CAP_COFACTOR = 1
 
 
+def _require(condition: bool, message: str) -> None:
+    if not condition:
+        raise ValueError(message)
+
+
 def ceil_root(integer: int, degree: int) -> int:
     if integer < 0 or degree < 1:
         raise ValueError("Require a nonnegative integer and positive degree")
@@ -46,7 +52,7 @@ def ceil_root(integer: int, degree: int) -> int:
             high = middle
         else:
             low = middle
-    assert (high - 1) ** degree < integer <= high ** degree
+    _require((high - 1) ** degree < integer <= high ** degree, "ceil_root bracket invariant failed")
     return high
 
 
@@ -68,7 +74,7 @@ def complete_cycle(integer: int, cutoff: int, prime: int, other: int | None = No
     gcd_hits = 0
     for step in range(1, composition_limit + 1):
         if target is not None and current == target:
-            assert other_index is None
+            _require(other_index is None, "Duplicate index for derived generator")
             other_index = len(flags)
         leading = current[0]
         divisor = gcd(leading, integer)
@@ -87,10 +93,10 @@ def complete_cycle(integer: int, cutoff: int, prime: int, other: int | None = No
         raise RuntimeError(f"Cycle for N={integer}, p={prime} did not close in {composition_limit} steps")
     flags = bytes(flags)
     period = len(flags)
-    assert period == step
-    assert flags[0] == 1
-    assert period <= 2 * integer, "Input-only period bound failed"
-    assert all(flags[index] == flags[-index] for index in range(period))
+    _require(period == step, "Cycle period step mismatch")
+    _require(flags[0] == 1, "Identity form must satisfy hit predicate")
+    _require(period <= 2 * integer, "Input-only period bound failed")
+    _require(all(flags[index] == flags[-index] for index in range(period)), "Inverse symmetry failed")
     record = {
         "integer": integer,
         "input_bits": integer.bit_length(),
@@ -162,7 +168,7 @@ def cyclic_window_counts(flags: bytes, window: int) -> list[int]:
     for phase in range(period):
         counts.append(current)
         current += flags[(phase + remainder) % period] - flags[phase]
-    assert sum(counts) == good * window
+    _require(sum(counts) == good * window, "Cyclic window sum mismatch")
     return counts
 
 
@@ -174,7 +180,7 @@ def lower_tail_record(flags: bytes, window: int, order: int, constant: int) -> d
     lower = sum((-value) ** (2 * order) for value in deviations if value < 0)
     # lower <= (C q W good)^q * period^(q+1)
     unit_rhs = (order * window * good) ** order * period ** (order + 1)
-    assert lower >= 0 and unit_rhs >= 1
+    _require(lower >= 0 and unit_rhs >= 1, "Invalid lower-tail moment denominator")
     rhs = constant ** order * unit_rhs
     empty = sum(1 for count in counts if count == 0)
     return {
@@ -197,10 +203,13 @@ def required_constant(flags: bytes, window: int, order: int) -> float:
     lower = sum((-value) ** (2 * order) for value in deviations if value < 0)
     if lower == 0:
         return 0.0
-    # C^q = lower / ((q W good)^q period^(q+1)).
-    log10_cq = (math.log10(lower) - order * math.log10(order * window * good)
-                - (order + 1) * math.log10(period))
-    return 10.0 ** (log10_cq / order)
+    # C^q = lower / ((q W good)^q period^(q+1)), evaluated in 80-digit Decimal to
+    # avoid float53 log10 subtraction cancellation and cross-libm ulp drift.
+    with localcontext() as ctx:
+        ctx.prec = 80
+        unit_rhs = Decimal(order * window * good) ** order * Decimal(period) ** (order + 1)
+        ratio = Decimal(lower) / unit_rhs
+        return float((ratio.ln() / Decimal(order)).exp())
 
 
 def sufficient_window(flags: bytes, order: int, constant: int, period_bound: int) -> int:
@@ -256,19 +265,21 @@ def profile_cycle(record: dict) -> dict:
     entries = entry_flags(flags)
     entry_count = sum(entries)
     run_count = sum(flags[index] * (1 - flags[index - 1]) for index in range(period))
-    assert entry_count == run_count
-    assert all(entry <= hit for entry, hit in zip(entries, flags))
-    assert sum(1 for index in range(period)
-               if flags[index] and not flags[index - 1]) == entry_count
+    _require(entry_count == run_count, "Entry count does not match cyclic run count")
+    _require(all(entry <= hit for entry, hit in zip(entries, flags)), "Entry flag outside hit support")
+    _require(
+        sum(1 for index in range(period) if flags[index] and not flags[index - 1]) == entry_count,
+        "Entry transition count mismatch",
+    )
     run_profile = {
         "max_hit_run": maximum_cyclic_run(flags, 1),
         "max_zero_run": maximum_cyclic_run(flags, 0),
         "max_entry_gap": maximum_entry_gap(entries),
         "hit_runs": entry_count,
     }
-    assert good * period == sum(flags) * period
+    _require(good * period == sum(flags) * period, "Good-class count mismatch")
     mean_run = good / entry_count
-    assert abs(entry_count / period - (good / period) / mean_run) < 1e-15
+    _require(abs(entry_count / period - (good / period) / mean_run) < 1e-15, "Mean run identity drift")
     order = (record["input_bits"] + 1).bit_length()
     orders = sorted({order, order * order})
     start = record["least_power_above_height"]
@@ -350,6 +361,33 @@ def profile_cycle(record: dict) -> dict:
     return record
 
 
+def _is_decimal_key(key: str | None) -> bool:
+    return key == "decimal" or (key is not None and key.endswith("_decimal"))
+
+
+def assert_records_match(got: object, expected: object, *, key: str | None = None, path: str = "record") -> None:
+    if type(got) is not type(expected):
+        raise ValueError(f"Type mismatch at {path}: got {type(got).__name__}, expected {type(expected).__name__}")
+    if isinstance(got, dict):
+        if set(got) != set(expected):
+            raise ValueError(f"Key mismatch at {path}: got {sorted(got)}, expected {sorted(expected)}")
+        for child_key in sorted(got):
+            assert_records_match(got[child_key], expected[child_key], key=child_key, path=f"{path}.{child_key}")
+        return
+    if isinstance(got, list):
+        if len(got) != len(expected):
+            raise ValueError(f"Length mismatch at {path}: got {len(got)}, expected {len(expected)}")
+        for idx, (lhs, rhs) in enumerate(zip(got, expected)):
+            assert_records_match(lhs, rhs, key=None, path=f"{path}[{idx}]")
+        return
+    if isinstance(got, float) and _is_decimal_key(key):
+        if not math.isclose(got, expected, rel_tol=1e-12, abs_tol=1e-15):
+            raise ValueError(f"Decimal summary mismatch at {path}: got {got!r}, expected {expected!r}")
+        return
+    if got != expected:
+        raise ValueError(f"Exact field mismatch at {path}: got {got!r}, expected {expected!r}")
+
+
 def replay(expected_path: Path, *, saved_flags: bool = False) -> None:
     expected = json.loads(expected_path.read_text())
     if saved_flags:
@@ -365,15 +403,21 @@ def replay(expected_path: Path, *, saved_flags: bool = False) -> None:
             source = next(item for item in sources if item["N"] == cycle["integer"])
             record = copy.deepcopy(cycle)
             record["flags"] = lzma.decompress((root / source["flags_file"]).read_bytes())
-            assert hashlib.sha256(record["flags"]).hexdigest() == cycle["flags_sha256"]
+            _require(
+                hashlib.sha256(record["flags"]).hexdigest() == cycle["flags_sha256"],
+                f"Archived flags SHA-256 mismatch for N={cycle['integer']}",
+            )
         else:
             record = complete_cycle(cycle["integer"], cycle["cutoff"],
                                     cycle["generator_prime"], other, CAP - total)
         total += record["walk_compositions"]
         record = profile_cycle(record)
-        assert record == cycle, f"Replay mismatch for N={cycle['integer']}"
-    assert total == expected["total_walk_compositions"] <= expected["composition_cap"] == CAP
-    assert expected["derived_lookup_compositions"] == 0
+        assert_records_match(record, cycle, path=f"cycle[{cycle['integer']}]")
+    _require(
+        total == expected["total_walk_compositions"] <= expected["composition_cap"] == CAP,
+        "Aggregate walk composition cap mismatch",
+    )
+    _require(expected["derived_lookup_compositions"] == 0, "Nonzero derived lookup compositions")
 
 
 def main() -> None:
