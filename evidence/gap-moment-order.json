@@ -1,0 +1,452 @@
+{
+  "abstract_clustered_control": {
+    "claim": "An interval-clustered admissible set satisfies the density and violates the recorded gap bound.",
+    "density": 0.5,
+    "density_denominator": 2,
+    "gap_ratio_over_d_log2_h": 85.33333333333333,
+    "good_classes": 2048,
+    "integer_gap_bound": 52,
+    "maximum_inadmissible_gap": 2048,
+    "period": 4096,
+    "saved_integer_bound_holds": false
+  },
+  "claim": "Finite gap/order tradeoff for the cofactor lower-tail moment criterion",
+  "empty_window_controls": {
+    "abstract_clustered": {
+      "constant": 1,
+      "lower_tail_moment_bound_holds": false,
+      "maximum_gap": 2048,
+      "minimum_hits": 0,
+      "note": "Gap exceeds the prescribed window, so an empty window contradicts the bound.",
+      "order": 40,
+      "window": 102
+    },
+    "saved_strict_seven_at_gap": {
+      "constant": 1,
+      "lower_tail_moment_bound_holds": true,
+      "maximum_gap": 4506,
+      "minimum_hits": 0,
+      "note": "The empty window alone does not contradict the bound here because delta*W is still below the moment order; the prescribed window is larger.",
+      "order": 40,
+      "window": 4506
+    }
+  },
+  "generous_cycle_scans": {
+    "5": {
+      "density_denominator": 5,
+      "generator": {
+        "form": [
+          5,
+          1,
+          50001800005
+        ],
+        "kind": "prime",
+        "norm": 5
+      },
+      "good_classes": 42053,
+      "maximum_inadmissible_gap": 100,
+      "period": 198850,
+      "scans": [
+        {
+          "constant": 1,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 2,
+          "lower_tail_moment_bound_holds": false,
+          "maximum_gap": 100,
+          "maximum_hits": 520,
+          "minimum_hits": 318,
+          "order": 6,
+          "period": 198850,
+          "window": 1925,
+          "wrapping": false
+        },
+        {
+          "constant": 2,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 100,
+          "maximum_hits": 868,
+          "minimum_hits": 642,
+          "order": 6,
+          "period": 198850,
+          "window": 3480,
+          "wrapping": false
+        },
+        {
+          "constant": 1,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 100,
+          "maximum_hits": 140,
+          "minimum_hits": 42,
+          "order": 20,
+          "period": 198850,
+          "window": 405,
+          "wrapping": false
+        },
+        {
+          "constant": 2,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 100,
+          "maximum_hits": 247,
+          "minimum_hits": 98,
+          "order": 20,
+          "period": 198850,
+          "window": 780,
+          "wrapping": false
+        },
+        {
+          "constant": 1,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 100,
+          "maximum_hits": 144,
+          "minimum_hits": 43,
+          "order": 40,
+          "period": 198850,
+          "window": 415,
+          "wrapping": false
+        },
+        {
+          "constant": 2,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 100,
+          "maximum_hits": 257,
+          "minimum_hits": 103,
+          "order": 40,
+          "period": 198850,
+          "window": 805,
+          "wrapping": false
+        },
+        {
+          "constant": 1,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 100,
+          "maximum_hits": 161,
+          "minimum_hits": 53,
+          "order": 60,
+          "period": 198850,
+          "window": 490,
+          "wrapping": false
+        },
+        {
+          "constant": 2,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 100,
+          "maximum_hits": 307,
+          "minimum_hits": 128,
+          "order": 60,
+          "period": 198850,
+          "window": 960,
+          "wrapping": false
+        }
+      ]
+    },
+    "7": {
+      "density_denominator": 5,
+      "generator": {
+        "form": [
+          7,
+          -5,
+          35715571433
+        ],
+        "kind": "prime",
+        "norm": 7
+      },
+      "good_classes": 42053,
+      "maximum_inadmissible_gap": 64,
+      "period": 198850,
+      "scans": [
+        {
+          "constant": 1,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 64,
+          "maximum_hits": 495,
+          "minimum_hits": 343,
+          "order": 6,
+          "period": 198850,
+          "window": 1925,
+          "wrapping": false
+        },
+        {
+          "constant": 2,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 64,
+          "maximum_hits": 887,
+          "minimum_hits": 656,
+          "order": 6,
+          "period": 198850,
+          "window": 3480,
+          "wrapping": false
+        },
+        {
+          "constant": 1,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 64,
+          "maximum_hits": 132,
+          "minimum_hits": 42,
+          "order": 20,
+          "period": 198850,
+          "window": 405,
+          "wrapping": false
+        },
+        {
+          "constant": 2,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 64,
+          "maximum_hits": 223,
+          "minimum_hits": 113,
+          "order": 20,
+          "period": 198850,
+          "window": 780,
+          "wrapping": false
+        },
+        {
+          "constant": 1,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 64,
+          "maximum_hits": 136,
+          "minimum_hits": 45,
+          "order": 40,
+          "period": 198850,
+          "window": 415,
+          "wrapping": false
+        },
+        {
+          "constant": 2,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 64,
+          "maximum_hits": 226,
+          "minimum_hits": 119,
+          "order": 40,
+          "period": 198850,
+          "window": 805,
+          "wrapping": false
+        },
+        {
+          "constant": 1,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 64,
+          "maximum_hits": 158,
+          "minimum_hits": 55,
+          "order": 60,
+          "period": 198850,
+          "window": 490,
+          "wrapping": false
+        },
+        {
+          "constant": 2,
+          "gap_below_window": true,
+          "lower_tail_least_positive_integer_constant": 1,
+          "lower_tail_moment_bound_holds": true,
+          "maximum_gap": 64,
+          "maximum_hits": 263,
+          "minimum_hits": 146,
+          "order": 60,
+          "period": 198850,
+          "window": 960,
+          "wrapping": false
+        }
+      ]
+    }
+  },
+  "panel": {
+    "all_integer_bounds_hold": true,
+    "complete_orbits": 10,
+    "maximum_gap_ratio_over_d_log2_h": 1.136278348564577,
+    "minimum_gap_ratio_over_d_log2_h": 0.16602412634635527,
+    "rows": [
+      {
+        "density_denominator": 3,
+        "gap_ratio_over_d_log2_h": 1.0811461045368942,
+        "good_classes": 23,
+        "integer": 1022117,
+        "integer_gap_bound": 36,
+        "kind": "prime",
+        "maximum_inadmissible_gap": 19,
+        "norm": 3,
+        "period": 58,
+        "period_bit_length": 6,
+        "saved_integer_bound_holds": true
+      },
+      {
+        "density_denominator": 3,
+        "gap_ratio_over_d_log2_h": 0.2845121327728669,
+        "good_classes": 24,
+        "integer": 1022117,
+        "integer_gap_bound": 36,
+        "kind": "residual",
+        "maximum_inadmissible_gap": 5,
+        "norm": 49,
+        "period": 58,
+        "period_bit_length": 6,
+        "saved_integer_bound_holds": true
+      },
+      {
+        "density_denominator": 2,
+        "gap_ratio_over_d_log2_h": 0.5395784106256546,
+        "good_classes": 3200,
+        "integer": 100160063,
+        "integer_gap_bound": 52,
+        "kind": "prime",
+        "maximum_inadmissible_gap": 13,
+        "norm": 2,
+        "period": 4230,
+        "period_bit_length": 13,
+        "saved_integer_bound_holds": true
+      },
+      {
+        "density_denominator": 2,
+        "gap_ratio_over_d_log2_h": 0.22923913397017365,
+        "good_classes": 313,
+        "integer": 100160063,
+        "integer_gap_bound": 36,
+        "kind": "prime",
+        "maximum_inadmissible_gap": 4,
+        "norm": 3,
+        "period": 423,
+        "period_bit_length": 9,
+        "saved_integer_bound_holds": true
+      },
+      {
+        "density_denominator": 2,
+        "gap_ratio_over_d_log2_h": 0.19162312682361993,
+        "good_classes": 6376,
+        "integer": 100160063,
+        "integer_gap_bound": 56,
+        "kind": "residual",
+        "maximum_inadmissible_gap": 5,
+        "norm": 59,
+        "period": 8460,
+        "period_bit_length": 14,
+        "saved_integer_bound_holds": true
+      },
+      {
+        "density_denominator": 2,
+        "gap_ratio_over_d_log2_h": 0.16602412634635527,
+        "good_classes": 3200,
+        "integer": 100160063,
+        "integer_gap_bound": 52,
+        "kind": "residual",
+        "maximum_inadmissible_gap": 4,
+        "norm": 677,
+        "period": 4230,
+        "period_bit_length": 13,
+        "saved_integer_bound_holds": true
+      },
+      {
+        "density_denominator": 5,
+        "gap_ratio_over_d_log2_h": 1.136278348564577,
+        "good_classes": 42053,
+        "integer": 1000036000099,
+        "integer_gap_bound": 180,
+        "kind": "prime",
+        "maximum_inadmissible_gap": 100,
+        "norm": 5,
+        "period": 198850,
+        "period_bit_length": 18,
+        "saved_integer_bound_holds": true
+      },
+      {
+        "density_denominator": 5,
+        "gap_ratio_over_d_log2_h": 0.7272181430813294,
+        "good_classes": 42053,
+        "integer": 1000036000099,
+        "integer_gap_bound": 180,
+        "kind": "prime",
+        "maximum_inadmissible_gap": 64,
+        "norm": 7,
+        "period": 198850,
+        "period_bit_length": 18,
+        "saved_integer_bound_holds": true
+      },
+      {
+        "density_denominator": 5,
+        "gap_ratio_over_d_log2_h": 0.4431485559401851,
+        "good_classes": 42053,
+        "integer": 1000036000099,
+        "integer_gap_bound": 180,
+        "kind": "residual",
+        "maximum_inadmissible_gap": 39,
+        "norm": 167,
+        "period": 198850,
+        "period_bit_length": 18,
+        "saved_integer_bound_holds": true
+      },
+      {
+        "density_denominator": 5,
+        "gap_ratio_over_d_log2_h": 0.647678658681809,
+        "good_classes": 42053,
+        "integer": 1000036000099,
+        "integer_gap_bound": 180,
+        "kind": "residual",
+        "maximum_inadmissible_gap": 57,
+        "norm": 9169,
+        "period": 198850,
+        "period_bit_length": 18,
+        "saved_integer_bound_holds": true
+      }
+    ]
+  },
+  "scope": "Saved complete orbits and one abstract clustered control. No uniform gap, density, moment, or window theorem is proved; the complete factoring exponent remains 1/2.",
+  "strict_cycle_scans": {
+    "7": {
+      "density_denominator": 580,
+      "entry_count": 73,
+      "entry_density_denominator": 2724,
+      "entry_maximum_gap": 4508,
+      "entry_order_40_window": 226092,
+      "entry_wraps_period": true,
+      "generator": {
+        "form": [
+          7,
+          -5,
+          35715571433
+        ],
+        "kind": "prime",
+        "norm": 7
+      },
+      "good_classes": 343,
+      "maximum_inadmissible_gap": 4506,
+      "period": 198850,
+      "raw_order_40": {
+        "constant": 1,
+        "gap_below_window": true,
+        "lower_tail_least_positive_integer_constant": 1,
+        "lower_tail_moment_bound_holds": true,
+        "maximum_gap": 4506,
+        "maximum_hits": 158,
+        "minimum_hits": 30,
+        "order": 40,
+        "period": 198850,
+        "window": 48140,
+        "wrapping": false
+      }
+    }
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "base_logs": {
+    "11": 15798,
+    "2": 1,
+    "23": 14012,
+    "29": 18376,
+    "3": 611,
+    "31": 8333,
+    "41": 9787,
+    "5": 3079,
+    "59": 5929
+  },
+  "base_prime": 2,
+  "base_primes": [
+    2,
+    3,
+    5,
+    11,
+    23,
+    29,
+    31,
+    41,
+    59
+  ],
+  "cutoff": 60,
+  "discriminant": -450296711,
+  "factorization": [
+    20323,
+    22157
+  ],
+  "half_order_still_index_two": 4,
+  "integer": 450296711,
+  "lattice_index_counts": {
+    "1": 1127,
+    "2": 4
+  },
+  "period": 20456,
+  "period_factorization": [
+    8,
+    2557
+  ],
+  "primitive_repairs": 4,
+  "rank_failures": [],
+  "residual_targets": [
+    {
+      "base_lattice_index": 2,
+      "extracted_factor": 20323,
+      "half_order_lattice_index": 2,
+      "layered_lattice_indexes": {
+        "1": 2,
+        "2": 2,
+        "3": 1
+      },
+      "log": 5455,
+      "primitive_row": {
+        "coefficients": [
+          2557,
+          -2557
+        ],
+        "kind": "difference",
+        "pair": [
+          5,
+          79
+        ]
+      },
+      "repaired_covolume": 20456,
+      "repaired_lattice_index": 1,
+      "target": 79,
+      "target_order": 20456
+    },
+    {
+      "base_lattice_index": 2,
+      "extracted_factor": 20323,
+      "half_order_lattice_index": 2,
+      "layered_lattice_indexes": {
+        "1": 2,
+        "2": 2,
+        "3": 1
+      },
+      "log": 1653,
+      "primitive_row": {
+        "coefficients": [
+          2557,
+          -2557
+        ],
+        "kind": "difference",
+        "pair": [
+          31,
+          653
+        ]
+      },
+      "repaired_covolume": 20456,
+      "repaired_lattice_index": 1,
+      "target": 653,
+      "target_order": 20456
+    },
+    {
+      "base_lattice_index": 2,
+      "extracted_factor": 20323,
+      "half_order_lattice_index": 2,
+      "layered_lattice_indexes": {
+        "1": 2,
+        "2": 2,
+        "3": 1
+      },
+      "log": 13513,
+      "primitive_row": {
+        "coefficients": [
+          2557,
+          -2557
+        ],
+        "kind": "difference",
+        "pair": [
+          2,
+          3911
+        ]
+      },
+      "repaired_covolume": 20456,
+      "repaired_lattice_index": 1,
+      "target": 3911,
+      "target_order": 20456
+    },
+    {
+      "base_lattice_index": 2,
+      "extracted_factor": 20323,
+      "half_order_lattice_index": 2,
+      "layered_lattice_indexes": {
+        "1": 2,
+        "2": 2,
+        "3": 1
+      },
+      "log": 15661,
+      "primitive_row": {
+        "coefficients": [
+          2557,
+          -2557
+        ],
+        "kind": "difference",
+        "pair": [
+          31,
+          17321
+        ]
+      },
+      "repaired_covolume": 20456,
+      "repaired_lattice_index": 1,
+      "target": 17321,
+      "target_order": 20456
+    }
+  ],
+  "scope": "Finite second-cycle v2=3 check: half-order differences alone leave four residual index-two lattices; primitive layer-three differences, odd multiples of the top-level unit-aligned rows, repair them and extract a factor. The two-primary saturation theorem supplies the general depth/pair selection; no cost or complete-bound claim.",
+  "target_limit": 20000,
+  "targets_scanned": 1131,
+  "v2_period": 3,
+  "window": 4
+}

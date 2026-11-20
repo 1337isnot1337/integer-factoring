@@ -1,0 +1,87 @@
+{
+  "base_prime": 2,
+  "cutoff": 60,
+  "h_enumeration_used_for_repair": false,
+  "integer": 450296711,
+  "period": 20456,
+  "residual_targets": [
+    79,
+    653,
+    3911,
+    17321
+  ],
+  "results": [
+    {
+      "annihilator_bits": 16,
+      "class_count": 7,
+      "coefficient_bits": 12,
+      "extracted_factor": 20323,
+      "first_reduction_level": 4,
+      "new_index": 1,
+      "original_index": 2,
+      "repaired_covolume": 20456,
+      "row_kind": "difference",
+      "row_pair": [
+        5,
+        79
+      ],
+      "target": 79,
+      "target_order": 20456
+    },
+    {
+      "annihilator_bits": 16,
+      "class_count": 7,
+      "coefficient_bits": 12,
+      "extracted_factor": 20323,
+      "first_reduction_level": 4,
+      "new_index": 1,
+      "original_index": 2,
+      "repaired_covolume": 20456,
+      "row_kind": "difference",
+      "row_pair": [
+        31,
+        653
+      ],
+      "target": 653,
+      "target_order": 20456
+    },
+    {
+      "annihilator_bits": 16,
+      "class_count": 7,
+      "coefficient_bits": 12,
+      "extracted_factor": 20323,
+      "first_reduction_level": 4,
+      "new_index": 1,
+      "original_index": 2,
+      "repaired_covolume": 20456,
+      "row_kind": "difference",
+      "row_pair": [
+        2,
+        3911
+      ],
+      "target": 3911,
+      "target_order": 20456
+    },
+    {
+      "annihilator_bits": 16,
+      "class_count": 7,
+      "coefficient_bits": 12,
+      "extracted_factor": 20323,
+      "first_reduction_level": 4,
+      "new_index": 1,
+      "original_index": 2,
+      "repaired_covolume": 20456,
+      "row_kind": "difference",
+      "row_pair": [
+        31,
+        17321
+      ],
+      "target": 17321,
+      "target_order": 20456
+    }
+  ],
+  "scope": "Finite second-cycle annihilator repair: the HNF covolume E=h*2 drives a walk over 2-adic levels. Class rows grouped by g_p^{E/2^j} leave the four index-two targets unchanged at levels one through three and reach index one at level four (a=h/8). The repair selection uses the base pair rows and group powers, not the cycle length or additional target-log data. The class bound and uniform cost remain open.",
+  "target_logs_used_for_repair": false,
+  "uniform_cost_claim": false,
+  "v2_period": 3
+}
