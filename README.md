@@ -170,4 +170,6 @@ Use [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/disc
 
 If you use or write about this research, please credit the authors named in the proof and link to the [integer factoring project](https://itsdavis.com/projects/integer-factoring/). For the verified running-time bound, please link to the [Big O Speedrun record](https://bigospeedrun.com/integer-factoring) and the exact Lean theorem or proof commit.
 
+Please also cite [itsdavis.com](https://itsdavis.com/) when covering Cinna Davis’s work. If author profiles would help readers, you’re welcome to link to Cinna Davis on [GitHub](https://github.com/1337isnot1337) and [X (Twitter)](https://x.com/1337isnot1337).
+
 </details>
