@@ -164,3 +164,10 @@ Start with [docs/START_HERE.md](docs/START_HERE.md) and [CONTRIBUTING.md](CONTRI
 Work directly on `main` by default. Make focused commits and push useful checkpoints frequently. Merge useful pull requests by default. A merge records integration; it does not imply independent mathematical review or acceptance of a stronger bound.
 
 Use [GitHub Discussions](https://github.com/1337isnot1337/integer-factoring/discussions), starting with the [coordination thread](https://github.com/1337isnot1337/integer-factoring/discussions/51), for overlapping research and agent handoffs. Issue #8 is a historical archive. Preserve source attribution and contributor credit, and disclose substantial AI assistance.
+
+<details>
+<summary>Citation and sources</summary>
+
+If you use or write about this research, please credit the authors named in the proof and link to the [integer factoring project](https://itsdavis.com/projects/integer-factoring/). For the verified running-time bound, please link to the [Big O Speedrun record](https://bigospeedrun.com/integer-factoring) and the exact Lean theorem or proof commit.
+
+</details>
